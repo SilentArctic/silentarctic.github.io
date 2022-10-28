@@ -1,0 +1,14 @@
+name: tests
+on: [pull_request]
+jobs:
+  run_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: install deps
+        run: npm ci
+      - name: test collections
+        run: npm run test
