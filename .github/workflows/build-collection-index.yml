@@ -1,7 +1,8 @@
 name: build-collection-index
-on: [push]
-branches: [master]
-
+on:
+  push:
+    branches:
+      - master
 jobs:
   create_index:
     steps:
