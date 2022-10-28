@@ -1,0 +1,528 @@
+{
+   "$schema": "../schemas/schema.json",
+   "_meta": {
+      "source": {
+         "json": "book-of-online-sourced-triumphs-1-mutation",
+         "full": "B.O.O.S.T. #1: Mutation",
+         "abbreviation": "BOOST:1",
+         "color": "#30F030",
+         "url": "https://www.drivethrurpg.com/product/314884/BOOST-1-Mutation/",
+         "version": "2021.7.20",
+         "authors": [
+            "Genesys RPG Community",
+            "Flame112",
+            "Archellus",
+            "Caleb \"Cptn_Smitty\" Smith",
+            "J. Scott \"DrainSmith\" Zumwalt"
+         ],
+         "convertedBy": [
+            "Craftidore"
+         ],
+         "releaseDate": "24 May 2020"
+      },
+      "defaultItemSettings": [
+         {
+            "name": "mutation"
+         }
+      ]
+   },
+   "adversary": [
+      {
+         "name": "Clawbberers",
+         "page": 4,
+         "type": "minion",
+         "characteristics": {
+            "brawn": 3,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 3,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 6,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "brawl",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "coercion",
+               "characteristic": "willpower",
+               "source": "crb"
+            },
+            {
+               "name": "ranged",
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "resilience",
+               "characteristic": "brawn",
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            "Adversary 1"
+         ],
+         "abilities": [
+            {
+               "name": "Aquatic",
+               "description": "This adversary may breath underwater and never suffers movement penalties for traveling through water."
+            },
+            {
+               "name": "Blood Frenzy",
+               "description": "While at least one opponent in an encounter is suffering a Critical Injury, this adversary increases the base damage of its attacks by 2."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Lesser Claw",
+               "skill": "Brawl",
+               "damage": 5,
+               "critical": 3,
+               "range": "engaged",
+               "qualities": [
+                  "Ensnare 1",
+                  "Vicious 2"
+               ]
+            },
+            {
+               "name": "Coral Clawncher",
+               "skill": "Ranged",
+               "damage": 5,
+               "critical": 3,
+               "range": "medium",
+               "qualities": [
+                  "Burn 2"
+               ]
+            }
+         ],
+         "description": [
+            "Those who are desperate enough to drink the waters downstream of the tainted Red Lobster Lake risk undergoing a terrible mutation into a human/lobster hybrid. These poor individuals are inevitably shunned, or worse, cooked and consumed with butter by the rest of society. Most Clawbberers eventually find their way to the estuary-estates of King Claw, where they can find companionship and acceptance of other lobsterlike individuals.",
+            "{@b Author:} Flame112"
+         ]
+      },
+      {
+         "name": "Killer Vegtables",
+         "page": 4,
+         "type": "rival",
+         "characteristics": {
+            "brawn": 3,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 3,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 6,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "brawl",
+               "characteristic": "brawn",
+               "ranks": 3
+            },
+            {
+               "name": "cool",
+               "characteristic": "presence",
+               "ranks": 2
+            },
+            {
+               "name": "stealth",
+               "characteristic": "agility",
+               "ranks": 4
+            }
+         ],
+         "talents": [
+            {
+               "name": "Lucky Strike",
+               "description": " Brawn"
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Terrifying",
+               "description": "At the start of the encounter, all of its opponents must make a {@difficulty hard|fear} as an out-of-turn incidental, as per page 243 of the {@title Genesys} Core Rulebook. If there are multiple sources of fear in the encounter, the opponents only make one fear check against the most terrifying enemy."
+            },
+            {
+               "name": "Sticky",
+               "description": "When wound threshold exceeded, they explode, throwing their sticky vegetables innards on to all characters that are engaged. Any non-giant vegetable characters are immobilized for one round."
+            },
+            {
+               "name": "Attack of Opportunity",
+               "description": "Add {@dice boost|2} to combat check against immobilized targets"
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Slam",
+               "skill": "Brawl",
+               "damage": 6,
+               "critical": 5,
+               "range": "engaged",
+               "qualities": [
+                  "knockdown"
+               ]
+            },
+            {
+               "name": "Horrible Teeth",
+               "skill": "Brawl",
+               "damage": 5,
+               "critical": 2,
+               "range": "engaged",
+               "qualities": [
+                  "Pierce 2",
+                  "Vicious 3"
+               ]
+            }
+         ],
+         "description": [
+            "A team of rogue agri-scientists, frustrated with the ethical constraints of their benefactors, created an underground laboratory to seek revenge by engineering horrible abominations. These creatures quickly got out of control, much to the ambivalence of their creators. Now, giant sized vegetables roam the countryside, seeking human flesh.",
+            "{@b Author:} J. Scott \"DrainSmith\" Zumwalt"
+         ]
+      },
+      {
+         "name": "King Claw",
+         "page": 4,
+         "type": "nemesis",
+         "characteristics": {
+            "brawn": 5,
+            "agility": 1,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 3,
+            "presence": 4
+         },
+         "derived": {
+            "soak": 6,
+            "wounds": 24,
+            "strain": 13,
+            "defense": [
+               2,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "athletics",
+               "characteristic": "brawn",
+               "ranks": 2
+            },
+            {
+               "name": "brawl",
+               "characteristic": "brawn",
+               "ranks": 4
+            },
+            {
+               "name": "Coercion",
+               "characteristic": "willpower",
+               "ranks": 5
+            },
+            {
+               "name": "discipline",
+               "characteristic": "willpower",
+               "ranks": 2
+            },
+            {
+               "name": "leadership",
+               "characteristic": "presence",
+               "ranks": 2
+            },
+            {
+               "name": "resilience",
+               "characteristic": "brawn",
+               "ranks": 2
+            }
+         ],
+         "talents": [
+            "Adversary 2"
+         ],
+         "abilities": [
+            {
+               "name": "Claw Sweep",
+               "description": "May spend {@symbols a} from a Brawl check to hit an additional engaged opponent that would be no more difficult to attack than the original target, dealing base damage +1 damage per {@symbols s}."
+            },
+            {
+               "name": "Clawmander",
+               "description": "May spend a maneuver to direct all allied characters in the current encounter; each may immediately perform a free maneuver or add {@symbols s} to the results of their next check."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "{@gear the claw}",
+               "skill": "Brawl",
+               "damage": 8,
+               "critical": 2,
+               "range": "engaged",
+               "qualities": [
+                  "Ensnare 1",
+                  "Vicious 4"
+               ]
+            }
+         ],
+         "description": [
+            "With his hefty bulk, seven feet of height, and enormous Claw, the reigning King Claw is an imposing figure despite his age. Aside from The Claw, he appears to be a normal human, wearing a crown of woven coral and a slick-looking scale mail made from hardened seaweed. When he slew the old King Claw and stole The Claw so many decades ago, he dreamed only of conquest and power, but over the years his bloodlust has mellowed and he now seeks to carve out a more permanent place in the world where he and his Clawbberers can live in peace.",
+            "{@b Author:} Flame112"
+         ]
+      }
+   ],
+   "archetype": [
+      {
+         "name": "Super Mutant",
+         "page": 33,
+         "characteristics": {
+            "brawn": 3,
+            "agility": 1,
+            "intellect": 1,
+            "cunning": 1,
+            "willpower": 1,
+            "presence": 1
+         },
+         "wt": 11,
+         "st": 9,
+         "xp": 170,
+         "skills": {
+            "skills": [
+               "resilience",
+               "athletics"
+            ],
+            "ranksTotal": 1,
+            "ranksEach": 1,
+            "description": [
+               "Super Mutants begin with one rank in {@skill resilience||crb} or {@skill athletics||crb}. You still can't train either skill above rank 2 during character creation."
+            ],
+            "choice": true
+         },
+         "abilities": [
+            {
+               "name": "Super Mutations",
+               "description": [
+                  "A Super Mutant may spend a maneuver to choose one of the following mutations. This character gains the benefit of that mutation until they take a maneuver to choose a different mutation or until they exceed their Strain threshold. Each time this character uses this maneuver, they reduce their strain threshold by 1 until the end of the current encounter (Or until the end of the next encounter if they use this maneuver outside of structured gameplay).",
+                  {
+                     "type": "list",
+                     "items": [
+                        "{@b Wings:} Your Super Mutant character can fly. See page 100 of the {@title Genesys} Core Rulebook for details on flying",
+                        "{@b Amphibious:} Your Super Mutant character can breathe underwater and move through water without penalty.",
+                        "{@b Scaly Hide:} Increase your Super Mutant character's soak by +1.",
+                        "{@b Natural Weapons:} Your Super Mutant character's unarmed attacks have their damage increased by +2 and have a Critical rating of 3.",
+                        "{@b Pheremones:} The Super Mutant adds {@dice boost} to all Social checks they make against characters The Super Mutant adds {@dice boost} to all Social checks they make against characters within short range. Additionally, a character within short range adds {@dice setback} to all Social checks that target the Super Mutant."
+                     ]
+                  }
+               ]
+            }
+         ],
+         "description": [
+            "A Super Mutant is a person that has undergone an extreme and particular form of mutation, changing their genetic make-up. While they usually appear like a normal person, they have the ability to mutate different parts of their body. This includes instantaneously growing gills, wings, claws, scales or even manipulating their body chemistry. But these mutations are limited, only able to manifest one at a time. And they take a toll on the Super Mutant, sapping them of strength with each mutation.",
+            "{@b Author:} Caleb \"Cptn_Smitty\" Smith"
+         ]
+      }
+   ],
+   "book": [],
+   "career": [],
+   "gear": [
+      {
+         "name": "Mutagen Gun",
+         "type": "weapon",
+         "page": 3,
+         "description": [
+            "These highly dangerous guns are the thought and experiment of mad scientists long gone. It uses tanks of a highly dangerous mutagen and combines it with a high-powered energy beam to implant targets with a volatile mutagen. These weapons are not without dangers to wield, and stories of fatal mishaps are told far and wide as tanks implode or leak turning their deadly fluids on the wielder.",
+            "The GM may spend {@symbols d} generated on a combat check using the Mutagen Gun to affect the user with the {@quality Mutagen} quality.",
+            "{@b Author:} Archellus"
+         ],
+         "skill": {
+            "name": "ranged (heavy)",
+            "source": "crb"
+         },
+         "damage": "4",
+         "critical": 4,
+         "range": "engaged",
+         "encumbrance": 5,
+         "price": 2000,
+         "rarity": 8,
+         "special": [
+            {
+               "name": "stun damage",
+               "source": "crb"
+            },
+            {
+               "name": "breach",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "mutagen",
+               "value": 3,
+               "source": "boost 1"
+            },
+            {
+               "name": "prepare",
+               "value": 1,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "The Claw",
+         "type": "weapon",
+         "page": 3,
+         "description": [
+            "The Claw is a large crab claw, marred by countless nicks and scratches, which replaces the bearer's arm and hand from the elbow down. After the new bearer inserts their arm intoThe Claw, it permanently bonds with the bearer and rewrites their nervous system until manipulating The Claw becomes as natural as their former hand. Anyone who bears The Claw earns the loyalty of the Clawbberers, a legion of lobsterlike goons. However, they will also find themselves targeted by a multitude of jealous foes who wish to usurp the throne and stealThe Claw for themselves.",
+            "The Claw may never be unequipped or disarmed, and the bearer adds {@dice black|2} to any roll they make which requires the use of two hands and fine motor control. The Claw can only be removed as a result of the Maimed critical injury or a {@difficulty daunting|medicine}. If The Claw suffers damage or is destroyed by {@symbols t} or the Sunder quality, it automatically regenerates one step of damage every day.",
+            "{@b Author:} Flame112"
+         ],
+         "skill": {
+            "name": "brawl",
+            "source": "crb"
+         },
+         "damage": "+3",
+         "critical": 2,
+         "range": "engaged",
+         "encumbrance": 0,
+         "price": "n/a",
+         "rarity": 9,
+         "special": [
+            {
+               "name": "ensnare",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "vicious",
+               "value": 4,
+               "source": "crb"
+            }
+         ]
+      }
+   ],
+   "quality": [
+      {
+         "name": "Mutagen",
+         "page": 3,
+         "activation": "active",
+         "itemTypes": "weapon",
+         "description": [
+            "Weapons with mutagen qualities cause horrid temporary mutations in other living beings. When triggered, and at the end of the target's turns, the target suffers 2 strain each round for a number of rounds equal to the weapon's Mutagen rating. Additionally, each time strain is suffered due to the Mutagen quality, the victim's body horribly mutates in some detrimental way.",
+            "Roll 1d10 to determine what part of the target's body is affected:",
+            {
+               "type": "table",
+               "title": "mutagen effects",
+               "columns": [
+                  {
+                     "header": "D10",
+                     "value": "d10"
+                  },
+                  {
+                     "header": "Affected Part",
+                     "value": "affectedpart"
+                  },
+                  {
+                     "header": "Effect",
+                     "value": "effect",
+                     "size": 2
+                  }
+               ],
+               "rows": [
+                  {
+                     "d10": "1-2",
+                     "affectedpart": "Left Leg",
+                     "effect": "The target falls prone and treats all movement as difficult terrain."
+                  },
+                  {
+                     "d10": "3-4",
+                     "affectedpart": "Right Leg",
+                     "effect": "The target falls prone and treats all movement as difficult terrain."
+                  },
+                  {
+                     "d10": "5-6",
+                     "affectedpart": "Left Arm",
+                     "effect": "The target drops anything they are carrying in the affected arm and increases difficulty of all checks by +{@dice difficulty} for all actions that require the use of this arm."
+                  },
+                  {
+                     "d10": "7-8",
+                     "affectedpart": "Right Arm",
+                     "effect": "The target drops anything they are carrying in the affected arm and increases difficulty of all checks by +{@dice difficulty} for all actions that require the use of this arm."
+                  },
+                  {
+                     "d10": "9",
+                     "affectedpart": "Body",
+                     "effect": "The target's body is wracked by pain. They suffer a number of wounds equal to the weapons Mutagen rating."
+                  },
+                  {
+                     "d10": "10",
+                     "affectedpart": "Head",
+                     "effect": "The target's head mutates in a horrifying way. The target upgrades all checks once and must make a fear check (see page 243 of the {@title Genesys} Core Rulebook). The difficulty of the fear check is equal to the weapon's rank in Mutagen."
+                  }
+               ]
+            },
+            "Every time a new mutation is rolled the original body reforms and the effect on that body parts end.",
+            "A victim might be able to end the mutations by making an {@difficulty average|resilience} as an action on their turn, while allies can attempt a {@difficulty hard|medicine} as an action on their turn to end the effects. Otherwise, the effects end at the end of the encounter.",
+            "{@b Author:} Archellus"
+         ]
+      }
+   ],
+   "rule": [],
+   "setting": [
+      {
+         "name": "mutation",
+         "summary": [
+            "The Book Of Online Sourced Triumphs (B.O.O.S.T.) is a Genesys community project with the goal of creating content that relates to a specific theme. The theme for this issue is \"Mutation\"."
+         ]
+      }
+   ],
+   "sidebar": [],
+   "skill": [],
+   "spell": [],
+   "table": [],
+   "talent": [
+      {
+         "name": "Mutant",
+         "page": 2,
+         "tier": 1,
+         "activation": "passive",
+         "ranked": false,
+         "description": [
+            "Your character has acquired a mutation. Choose one characteristic to be your character's Positive Mutation. Any skill checks involving your character's Positive Mutation characteristic add {@dice boost|2}. Choose another characteristic to be your character's Negative Mutation. Any skill checks involving your character's Negative Mutation characteristic add {@dice setback|2}. These {@dice setback} cannot be removed from the pool by any other abilities or talents. You must narratively describe your mutation.",
+            "{@b Author:} J. Scott \"DrainSmith\" Zumwalt"
+         ]
+      },
+      {
+         "name": "Mutant (Improved)",
+         "page": 2,
+         "tier": 2,
+         "activation": "passive",
+         "ranked": false,
+         "description": [
+            "{@i Your character must have purchased the Mutant talent to benefit from this talent.} Skill checks involving your Positive Mutation add {@symbols t} to the results. Skill checks involving your Negative Mutation add {@symbols hh} to the results.",
+            "{@b Author:} J. Scott \"DrainSmith\" Zumwalt"
+         ]
+      },
+      {
+         "name": "Rapid Adaptation",
+         "page": 2,
+         "tier": 3,
+         "activation": "active (incidental, out of turn)",
+         "ranked": true,
+         "description": [
+            "When you purchase this talent for your character, select one other ranked talent your character has purchased, which has a starting Tier no greater than your ranks in Rapid Adaptation. Your character counts their ranks in the selected talent as if they were one higher. Once per encounter, your character may suffer 2 strain in order to change which talent this applies to.",
+            "{@b Author:} Flame112"
+         ]
+      }
+   ],
+   "vehicle": [],
+   "optionFeature": [],
+   "specialization": []
+}
