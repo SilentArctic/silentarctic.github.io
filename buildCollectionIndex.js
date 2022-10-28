@@ -1,4 +1,3 @@
-const core = require('@actions/core');
 const fs = require('fs');
 
 try {
@@ -18,5 +17,5 @@ try {
    const data = JSON.stringify(index, null, 3);
    fs.writeFileSync('./api/index.json', data);
 } catch (error) {
-   core.setFailed(error.message);
+   console.error(error);
 }
