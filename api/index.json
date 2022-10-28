@@ -1,0 +1,17 @@
+{
+   "crb.json": {
+      "json": "core-rule-book",
+      "full": "Genesys Core Rulebook",
+      "abbreviation": "CRB",
+      "color": "#14C0F1",
+      "url": "https://www.fantasyflightgames.com/en/products/genesys/",
+      "version": "2022.6.29",
+      "authors": [
+         "Fantasy Flight Games"
+      ],
+      "convertedBy": [
+         "SilentArctic"
+      ],
+      "releaseDate": "30 November 2017"
+   }
+}
