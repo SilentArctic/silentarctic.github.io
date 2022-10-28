@@ -25,4 +25,4 @@ jobs:
       - name: fetch and push changes
         run: |
           git fetch origin master
-          git push origin HEAD:master
+          git push origin HEAD:master --force
