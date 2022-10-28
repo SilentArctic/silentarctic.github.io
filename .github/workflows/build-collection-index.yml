@@ -1,0 +1,18 @@
+name: build-collection-index
+on: [push]
+branches: [master]
+
+steps:
+  - name: checkout
+    uses: actions/checkout@v2
+  - name: Compile index.json from collections in ~/api
+    run: node ./buildCollectionIndex.js
+  - name: check for and commit changes
+    run: |
+      git status
+      git add ./api/index.json
+      git commit -m "[ACTION] recreate collection index"
+  - name: fetch and push changes
+    run: |
+      git fetch origin master
+      git push origin HEAD:master

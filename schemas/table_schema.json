@@ -1,0 +1,71 @@
+{
+   "$id": "https://genesysref.netlify.app/schema/table_schema.json",
+   "type": "array",
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string"
+         },
+         "page": {
+            "type": "integer"
+         },
+         "subtitle": {
+            "type": "string"
+         },
+         "foot": {
+            "type": "string"
+         },
+         "columns": {
+            "type": "array",
+            "items": {
+               "type": "object",
+               "properties": {
+                  "header": {
+                     "type": "string"
+                  },
+                  "value": {
+                     "type": "string"
+                  },
+                  "size": {
+                     "type": "number"
+                  }
+               },
+               "required": [
+                  "header",
+                  "value"
+               ],
+               "optional": [
+                  "size"
+               ],
+               "additionalProperties": false
+            }
+         },
+         "rows": {
+            "type": "array",
+            "items": {
+               "type": "object",
+               "properties": {
+                  "subtitle": {
+                     "type": "string"
+                  }
+               },
+               "optional": [
+                  "subtitle"
+               ]
+            }
+         }
+      },
+      "required": [
+         "name",
+         "columns",
+         "rows"
+      ],
+      "optional": [
+         "page",
+         "subtitle",
+         "foot"
+      ],
+      "additionalProperties": false
+   }
+}

@@ -1,0 +1,63 @@
+{
+   "$id": "https://genesysref.netlify.app/schema/talent_schema.json",
+   "type": "array",
+   "items": [
+      {
+         "type": "object",
+         "properties": {
+            "name": {
+               "type": "string"
+            },
+            "imageUrl": {
+               "type": "string"
+            },
+            "page": {
+               "type": "integer"
+            },
+            "tier": {
+               "type": "integer",
+               "enum": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+               ]
+            },
+            "activation": {
+               "type": "string",
+               "enum": [
+                  "passive",
+                  "active (incidental, out of turn)",
+                  "active (incidental)",
+                  "active (maneuver)",
+                  "active (action)"
+               ]
+            },
+            "ranked": {
+               "type": "boolean"
+            },
+            "description": {
+               "type": "array",
+               "items": {
+                  "type": "string"
+               }
+            },
+            "settings": { "$ref": "_settings_schema.json" }
+         },
+         "required": [
+            "name",
+            "tier",
+            "activation",
+            "ranked",
+            "description"
+         ],
+         "optional": [
+            "imageUrl",
+            "page",
+            "settings"
+         ],
+         "additionalProperties": false
+      }
+   ]
+}

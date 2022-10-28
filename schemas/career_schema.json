@@ -1,0 +1,132 @@
+{
+   "$id": "https://genesysref.netlify.app/schema/career_schema.json",
+   "type": "array",
+   "items": [
+      {
+         "type": "object",
+         "properties": {
+            "name": {
+               "type": "string"
+            },
+            "page": {
+               "type": "integer"
+            },
+            "skills": {
+               "type": "array",
+               "items": [
+                  {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
+                        },
+                        "source": {
+                           "type": "string"
+                        }
+                     },
+                     "required": [
+                        "name"
+                     ],
+                     "optional": [
+                        "source"
+                     ],
+                     "additionalProperties": false
+                  }
+               ]
+            },
+            "description": {
+               "type": "array",
+               "items": [
+                  {
+                     "type": "string"
+                  }
+               ]
+            },
+            "startingGear": {
+               "type": "object",
+               "properties": {
+                  "description": {
+                     "type": "array",
+                     "items": [
+                        {
+                           "type": "string"
+                        }
+                     ]
+                  },
+                  "gear": {
+                     "type": "array",
+                     "items": [
+                        {
+                           "type": "string"
+                        }
+                     ]
+                  }
+               },
+               "required": [
+                  "description",
+                  "gear"
+               ],
+               "additionalProperties": false
+            },
+            "usefulTalents": {
+               "type": "object",
+               "properties": {
+                  "description": {
+                     "type": "array",
+                     "items": [
+                        {
+                           "type": "string"
+                        }
+                     ]
+                  },
+                  "talents": {
+                     "type": "array",
+                     "items": [
+                        {
+                           "type": "object",
+                           "properties": {
+                              "tier": {
+                                 "type": "integer"
+                              },
+                              "name": {
+                                 "type": "string"
+                              },
+                              "source": {
+                                 "type": "string"
+                              }
+                           },
+                           "required": [
+                              "tier",
+                              "name"
+                           ],
+                           "optional": [
+                              "source"
+                           ],
+                           "additionalProperties": false
+                        }
+                     ]
+                  }
+               },
+               "required": [
+                  "description",
+                  "talents"
+               ],
+               "additionalProperties": false
+            },
+            "settings": { "$ref": "./_settings_schema.json" }
+         },
+         "required": [
+            "name",
+            "skills",
+            "description"
+         ],
+         "optional": [
+            "startingGear",
+            "usefulTalents",
+            "page",
+            "settings"
+         ],
+         "additionalProperties": false
+      }
+   ]
+}

@@ -1,0 +1,586 @@
+{
+   "$id": "https://genesysref.netlify.app/schema/gear_schema.json",
+   "type": "array",
+   "items": {
+      "oneOf": [
+         {
+            "type": "object",
+            "properties": {
+               "name": {
+                  "type": "string"
+               },
+               "type": {
+                  "type": "string",
+                  "enum": ["weapon"]
+               },
+               "page": {
+                  "type": "integer"
+               },
+               "imageUrl": {
+                  "type": "string"
+               },
+               "description": {
+                  "type": "array",
+                  "items": {
+                     "type": "string"
+                  }
+               },
+               "skill": {
+                  "type": "object",
+                  "properties": {
+                     "name": {
+                        "type": "string"
+                     },
+                     "source": {
+                        "type": "string"
+                     }
+                  },
+                  "required": [
+                     "name"
+                  ],
+                  "optional": [
+                     "source"
+                  ],
+                  "additionalProperties": false
+               },
+               "damage": {
+                  "type": [
+                     "string",
+                     "integer"
+                  ]
+               },
+               "critical": {
+                  "type": "integer"
+               },
+               "range": {
+                  "type": "string",
+                  "enum": [
+                     "engaged",
+                     "short",
+                     "medium",
+                     "long",
+                     "extreme",
+                     "strategic"
+                  ]
+               },
+               "encumbrance": {
+                  "type": "integer"
+               },
+               "hardPoints": {
+                  "type": "integer"
+               },
+               "price": {
+                  "oneOf": [
+                     {
+                        "type": "integer"
+                     },
+                     {
+                        "type": "string",
+                        "enum": ["priceless", "n/a", "if you have to ask..."]
+                     }
+                  ]
+               },
+               "restricted": {
+                  "type": "boolean"
+               },
+               "rarity": {
+                  "type": "integer"
+               },
+               "special": {
+                  "type": "array",
+                  "items": {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
+                        },
+                        "value": {
+                           "type": "integer"
+                        },
+                        "source": {
+                           "type": "string"
+                        }
+                     },
+                     "required": [
+                        "name"
+                     ],
+                     "optional": [
+                        "value",
+                        "source"
+                     ],
+                     "additionalProperties": false
+                  }
+               },
+               "modifiers": {
+                  "type": "array",
+                  "items": {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
+                        },
+                        "type": {
+                           "type": "string",
+                           "enum": [
+                              "characteristic",
+                              "skill",
+                              "derived"
+                           ]
+                        },
+                        "value": {
+                           "type": ["string", "integer"]
+                        }
+                     },
+                     "required": [
+                        "name",
+                        "type",
+                        "value"
+                     ],
+                     "additionalProperties": false
+                  }
+               },
+               "settings": { "$ref": "./_settings_schema.json" }
+            },
+            "required": [
+               "name",
+               "type",
+               "description",
+               "skill",
+               "damage",
+               "critical",
+               "range",
+               "encumbrance",
+               "price",
+               "rarity"
+            ],
+            "optional": [
+               "imageUrl",
+               "page",
+               "hardPoints",
+               "restricted",
+               "modifiers",
+               "special",
+               "settings"
+            ],
+            "additionalProperties": false
+         },
+
+         {
+            "type": "object",
+            "properties": {
+               "name": {
+                  "type": "string"
+               },
+               "type": {
+                  "type": "string",
+                  "enum": ["armor"]
+               },
+               "page": {
+                  "type": "integer"
+               },
+               "imageUrl": {
+                  "type": "string"
+               },
+               "description": {
+                  "type": "array",
+                  "items": {
+                     "type": "string"
+                  }
+               },
+               "defense": {
+                  "type": "integer"
+               },
+               "soak": {
+                  "type": "string"
+               },
+               "encumbrance": {
+                  "type": "integer"
+               },
+               "hardPoints": {
+                  "type": "integer"
+               },
+               "price": {
+                  "oneOf": [
+                     {
+                        "type": "integer"
+                     },
+                     {
+                        "type": "string",
+                        "enum": ["priceless", "n/a", "if you have to ask..."]
+                     }
+                  ]
+               },
+               "restricted": {
+                  "type": "boolean"
+               },
+               "rarity": {
+                  "type": "integer"
+               },
+               "special": {
+                  "type": "array",
+                  "items": {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
+                        },
+                        "value": {
+                           "type": "integer"
+                        },
+                        "source": {
+                           "type": "string"
+                        }
+                     },
+                     "required": [
+                        "name"
+                     ],
+                     "optional": [
+                        "value",
+                        "source"
+                     ],
+                     "additionalProperties": false
+                  }
+               },
+               "modifiers": {
+                  "type": "array",
+                  "items": {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
+                        },
+                        "type": {
+                           "type": "string",
+                           "enum": [
+                              "characteristic",
+                              "skill",
+                              "derived"
+                           ]
+                        },
+                        "value": {
+                           "type": ["string", "integer"]
+                        }
+                     },
+                     "required": [
+                        "name",
+                        "type",
+                        "value"
+                     ],
+                     "additionalProperties": false
+                  }
+               },
+               "settings": { "$ref": "./_settings_schema.json" }
+            },
+            "required": [
+               "name",
+               "type",
+               "description",
+               "defense",
+               "soak",
+               "encumbrance",
+               "price",
+               "rarity"
+            ],
+            "optional": [
+               "imageUrl",
+               "page",
+               "hardPoints",
+               "restricted",
+               "modifiers",
+               "special",
+               "settings"
+            ],
+            "additionalProperties": false
+         },
+
+         {
+            "type": "object",
+            "properties": {
+               "name": {
+                  "type": "string"
+               },
+               "type": {
+                  "type": "string",
+                  "enum": ["gear", "treasure", "alchemy"]
+               },
+               "page": {
+                  "type": "integer"
+               },
+               "imageUrl": {
+                  "type": "string"
+               },
+               "description": {
+                  "type": "array",
+                  "items": {
+                     "type": "string"
+                  }
+               },
+               "encumbrance": {
+                  "type": "integer"
+               },
+               "price": {
+                  "oneOf": [
+                     {
+                        "type": "integer"
+                     },
+                     {
+                        "type": "string",
+                        "enum": ["priceless", "n/a", "if you have to ask..."]
+                     }
+                  ]
+               },
+               "restricted": {
+                  "type": "boolean"
+               },
+               "rarity": {
+                  "type": "integer"
+               },
+               "special": {
+                  "type": "array",
+                  "items": {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
+                        },
+                        "value": {
+                           "type": "integer"
+                        },
+                        "source": {
+                           "type": "string"
+                        }
+                     },
+                     "required": [
+                        "name"
+                     ],
+                     "optional": [
+                        "value",
+                        "source"
+                     ],
+                     "additionalProperties": false
+                  }
+               },
+               "modifiers": {
+                  "type": "array",
+                  "items": {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
+                        },
+                        "type": {
+                           "type": "string",
+                           "enum": [
+                              "characteristic",
+                              "skill",
+                              "derived"
+                           ]
+                        },
+                        "value": {
+                           "type": ["string", "integer"]
+                        }
+                     },
+                     "required": [
+                        "name",
+                        "type",
+                        "value"
+                     ],
+                     "additionalProperties": false
+                  }
+               },
+               "settings": { "$ref": "./_settings_schema.json" }
+            },
+            "required": [
+               "name",
+               "type",
+               "description",
+               "price",
+               "rarity"
+            ],
+            "optional": [
+               "imageUrl",
+               "page",
+               "restricted",
+               "modifiers",
+               "encumbrance",
+               "special",
+               "settings"
+            ],
+            "additionalProperties": false
+         },
+
+         {
+            "type": "object",
+            "properties": {
+               "name": {
+                  "type": "string"
+               },
+               "type": {
+                  "type": "string",
+                  "enum": ["cybernetic", "g-mod"]
+               },
+               "page": {
+                  "type": "integer"
+               },
+               "imageUrl": {
+                  "type": "string"
+               },
+               "description": {
+                  "type": "array",
+                  "items": {
+                     "type": "string"
+                  }
+               },
+               "price": {
+                  "oneOf": [
+                     {
+                        "type": "integer"
+                     },
+                     {
+                        "type": "string",
+                        "enum": ["priceless", "n/a", "if you have to ask..."]
+                     }
+                  ]
+               },
+               "restricted": {
+                  "type": "boolean"
+               },
+               "rarity": {
+                  "type": "integer"
+               },
+               "modifiers": {
+                  "type": "array",
+                  "items": {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
+                        },
+                        "type": {
+                           "type": "string",
+                           "enum": [
+                              "characteristic",
+                              "skill",
+                              "derived"
+                           ]
+                        },
+                        "value": {
+                           "type": ["string", "integer"]
+                        }
+                     },
+                     "required": [
+                        "name",
+                        "type",
+                        "value"
+                     ],
+                     "additionalProperties": false
+                  }
+               },
+               "settings": { "$ref": "./_settings_schema.json" }
+            },
+            "required": [
+               "name",
+               "type",
+               "description",
+               "price",
+               "rarity"
+            ],
+            "optional": [
+               "imageUrl",
+               "page",
+               "restricted",
+               "modifiers",
+               "settings"
+            ],
+            "additionalProperties": false
+         },
+
+         {
+            "type": "object",
+            "properties": {
+               "name": {
+                  "type": "string"
+               },
+               "type": {
+                  "type": "string",
+                  "enum": ["implement"]
+               },
+               "page": {
+                  "type": "integer"
+               },
+               "imageUrl": {
+                  "type": "string"
+               },
+               "description": {
+                  "type": "array",
+                  "items": {
+                     "type": "string"
+                  }
+               },
+               "damage": {
+                  "type": "string"
+               },
+               "encumbrance": {
+                  "type": "integer"
+               },
+               "price": {
+                  "oneOf": [
+                     {
+                        "type": "integer"
+                     },
+                     {
+                        "type": "string",
+                        "enum": ["priceless", "n/a", "if you have to ask..."]
+                     }
+                  ]
+               },
+               "rarity": {
+                  "type": "integer"
+               },
+               "special": {
+                  "type": "array",
+                  "items": {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
+                        },
+                        "value": {
+                           "type": "integer"
+                        },
+                        "source": {
+                           "type": "string"
+                        }
+                     },
+                     "required": [
+                        "name"
+                     ],
+                     "optional": [
+                        "value",
+                        "source"
+                     ],
+                     "additionalProperties": false
+                  }
+               },
+               "settings": { "$ref": "./_settings_schema.json" }
+            },
+            "required": [
+               "name",
+               "type",
+               "description",
+               "damage",
+               "encumbrance",
+               "price",
+               "rarity"
+            ],
+            "optional": [
+               "imageUrl",
+               "page",
+               "special",
+               "settings"
+            ],
+            "additionalProperties": false
+         }
+      ]
+   }
+}

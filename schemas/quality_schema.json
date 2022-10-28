@@ -1,0 +1,39 @@
+{
+   "$id": "https://genesysref.netlify.app/schema/quality_schema.json",
+   "type": "array",
+   "items": [
+      {
+         "type": "object",
+         "properties": {
+            "name": {
+               "type": "string"
+            },
+            "page": {
+               "type": "integer"
+            },
+            "activation": {
+               "type": "string",
+               "enum": [
+                  "active",
+                  "passive"
+               ]
+            },
+            "itemTypes": {
+               "type": "string",
+               "enum": ["weapon", "armor", "any"]
+            },
+            "description": { "$ref": "_varyingDisplay_schema.json" }
+         },
+         "required": [
+            "name",
+            "activation",
+            "itemTypes",
+            "description"
+         ],
+         "optional": [
+            "page"
+         ],
+         "additionalProperties": false
+      }
+   ]
+}

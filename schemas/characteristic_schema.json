@@ -1,0 +1,29 @@
+{
+   "$id": "https://genesysref.netlify.app/schema/characteristic_schema.json",
+   "type": "array",
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string"
+         },
+         "description": {
+            "type": "array",
+            "items": {
+               "type": "string"
+            }
+         },
+         "page": {
+            "type": "integer"
+         }
+      },
+      "required": [
+         "name",
+         "description"
+      ],
+      "optional": [
+         "page"
+      ],
+      "additionalProperties": false
+   }
+}

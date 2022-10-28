@@ -1,0 +1,150 @@
+{
+   "$id": "https://genesysref.netlify.app/schema/vehicle_schema.json",
+   "type": "array",
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string"
+         },
+         "page": {
+            "type": "integer"
+         },
+         "imageUrl": {
+            "type": "string"
+         },
+         "silhouette": {
+            "type": "integer"
+         },
+         "maxSpeed": {
+            "type": "integer"
+         },
+         "handling": {
+            "type": "integer"
+         },
+         "defense": {
+            "type": "integer"
+         },
+         "armor": {
+            "type": "integer"
+         },
+         "htt": {
+            "type": "integer"
+         },
+         "sst": {
+            "type": "integer"
+         },
+         "controlSkill": {
+            "type": "object",
+            "properties": {
+               "name": {
+                  "type": "string"
+               },
+               "source": {
+                  "type": "string"
+               }
+            },
+            "required": [
+               "name"
+            ],
+            "optional": [
+               "source"
+            ],
+            "additionalProperties": false
+         },
+         "complement": {
+            "type": "string"
+         },
+         "passengers": {
+            "type": ["string", "integer"]
+         },
+         "consumables": {
+            "type": "string"
+         },
+         "encumbranceCapacity": {
+            "type": "integer"
+         },
+         "price": {
+            "type": "integer"
+         },
+         "rarity": {
+            "type": "integer"
+         },
+         "weapons": {
+            "type": "array",
+            "items": {
+               "type": "object",
+               "properties": {
+                  "name": {
+                     "type": "string"
+                  },
+                  "description": {
+                     "type": "string"
+                  }
+               },
+               "required": [
+                  "name"
+               ],
+               "optional": [
+                  "description"
+               ],
+               "additionalProperties": false
+            }
+         },
+         "abilities": {
+            "type": "array",
+            "items": {
+               "type": "object",
+               "properties": {
+                  "name": {
+                     "type": "string"
+                  },
+                  "description": {
+                     "type": "string"
+                  }
+               },
+               "required": [
+                  "name"
+               ],
+               "optional": [
+                  "description"
+               ],
+               "additionalProperties": false
+            }
+         },
+         "description": {
+            "type": "array",
+            "items": {
+               "type": "string"
+            }
+         },
+         "settings": { "$ref": "./_settings_schema.json" }
+      },
+      "required": [
+         "name",
+         "silhouette",
+         "maxSpeed",
+         "handling",
+         "defense",
+         "armor",
+         "htt",
+         "sst",
+         "controlSkill",
+         "complement",
+         "consumables",
+         "encumbranceCapacity",
+         "price",
+         "rarity",
+         "description"
+      ],
+      "optional": [
+         "page",
+         "imageUrl",
+         "passengers",
+         "weapons",
+         "abilities",
+         "settings"
+      ],
+      "additionalProperties": false
+   }
+}

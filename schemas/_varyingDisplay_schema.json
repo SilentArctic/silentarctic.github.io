@@ -1,0 +1,323 @@
+{
+   "$id": "https://genesysref.netlify.app/schema/_varyingDisplay_schema.json",
+   "type": "array",
+   "items": {
+      "oneOf": [
+         {
+            "type": "string"
+         },
+
+         {
+            "type": "object",
+            "properties": {
+               "type": {
+                  "type": "string",
+                  "enum": [
+                     "text",
+                     "sidebar",
+                     "example",
+                     "read-aloud",
+                     "codeblock"
+                  ]
+               },
+               "title": {
+                  "type": "string"
+               },
+               "forceTitleLevel": {
+                  "type": "integer"
+               },
+               "page": {
+                  "type": "integer"
+               },
+               "hasModal": {
+                  "type": "boolean"
+               },
+               "entries": { "$ref": "_varyingDisplay_schema.json" },
+               "_ref": {
+                  "type": "object",
+                  "properties": {
+                     "name": {
+                        "type": "string"
+                     },
+                     "source": {
+                        "type": "string"
+                     }
+                  },
+                  "required": [
+                     "name"
+                  ],
+                  "optional": [
+                     "source"
+                  ],
+                  "additionalProperties": false
+               }
+            },
+            "required": [
+               "entries"
+            ],
+            "optional": [
+               "type",
+               "title",
+               "page",
+               "forceTitleLevel",
+               "hasModal",
+               "_ref"
+            ],
+            "additionalProperties": false
+         },
+
+         {
+            "type": "object",
+            "properties": {
+               "type": {
+                  "type": "string",
+                  "enum": ["notice"]
+               },
+               "variant": {
+                  "type": "string",
+                  "enum": [
+                     "info",
+                     "success",
+                     "warn",
+                     "error"
+                  ]
+               },
+               "entries": {
+                  "type": "array",
+                  "items": {
+                     "type": "string"
+                  }
+               }
+            },
+            "required": [
+               "type",
+               "entries"
+            ],
+            "optional": [
+               "variant"
+            ],
+            "additionalProperties": false
+         },
+
+         {
+            "type": "object",
+            "properties": {
+               "type": {
+                  "type": "string",
+                  "enum": ["quote"]
+               },
+               "entries": {
+                  "type": "array",
+                  "items": {
+                     "type": "string"
+                  }
+               },
+               "by": {
+                  "type": "string"
+               }
+            },
+            "required": [
+               "type",
+               "entries"
+            ],
+            "optional": [
+               "by"
+            ],
+            "additionalProperties": false
+         },
+
+         {
+            "type": "object",
+            "properties": {
+               "type": {
+                  "type": "string",
+                  "enum": ["list", "list-no-bullet"]
+               },
+               "title": {
+                  "type": "string"
+               },
+               "description": {
+                  "type": "string"
+               },
+               "items": {
+                  "type": "array",
+                  "list": {
+                     "type": "string"
+                  }
+               }
+            },
+            "required": [
+               "type",
+               "items"
+            ],
+            "optional": [
+               "title",
+               "description"
+            ],
+            "additionalProperties": false
+         },
+
+         {
+            "type": "object",
+            "properties": {
+               "type": {
+                  "type": "string",
+                  "enum": ["table"]
+               },
+               "title": {
+                  "type": "string"
+               },
+               "subtitle": {
+                  "type": "string"
+               },
+               "foot": {
+                  "type": "string"
+               },
+               "columns": {
+                  "type": "array",
+                  "items": {
+                     "type": "object",
+                     "properties": {
+                        "header": {
+                           "type": "string"
+                        },
+                        "value": {
+                           "type": "string"
+                        },
+                        "size": {
+                           "type": "number"
+                        }
+                     },
+                     "required": [
+                        "header",
+                        "value"
+                     ],
+                     "optional": [
+                        "size"
+                     ],
+                     "additionalProperties": false
+                  }
+               },
+               "rows": {
+                  "type": "array",
+                  "items": {
+                     "type": "object",
+                     "properties": {
+                        "subtitle": {
+                           "type": "string"
+                        }
+                     },
+                     "optional": [
+                        "subtitle"
+                     ]
+                  }
+               },
+               "_ref": {
+                  "type": "object",
+                  "properties": {
+                     "name": {
+                        "type": "string"
+                     },
+                     "source": {
+                        "type": "string"
+                     }
+                  },
+                  "required": [
+                     "name"
+                  ],
+                  "optional": [
+                     "source"
+                  ],
+                  "additionalProperties": false
+               }
+            },
+            "required": [
+               "type",
+               "columns",
+               "rows"
+            ],
+            "optional": [
+               "title",
+               "subtitle",
+               "foot",
+               "_ref"
+            ],
+            "additionalProperties": false
+         },
+
+         {
+            "type": "object",
+            "properties": {
+               "type": {
+                  "type": "string",
+                  "enum": ["grid"]
+               },
+               "columns": {
+                  "type": "integer"
+               },
+               "entries": { "$ref": "_varyingDisplay_schema.json" }
+            },
+            "required": [
+               "type",
+               "columns",
+               "entries"
+            ],
+            "additionalProperties": false
+         },
+
+         {
+            "type": "object",
+            "properties": {
+               "type": {
+                  "type": "string",
+                  "enum": ["image"]
+               },
+               "imageUrl": {
+                  "type": "string"
+               }
+            },
+            "required": [
+               "type",
+               "imageUrl"
+            ]
+         },
+
+         {
+            "type": "object",
+            "properties": {
+               "type": {
+                  "type": "string",
+                  "enum": ["rule"]
+               },
+               "_ref": {
+                  "type": "object",
+                  "properties": {
+                     "name": {
+                        "type": "string"
+                     },
+                     "source": {
+                        "type": "string"
+                     }
+                  },
+                  "required": [
+                     "name"
+                  ],
+                  "optional": [
+                     "source"
+                  ],
+                  "additionalProperties": false
+               },
+               "description": {
+                  "type": "array"
+               }
+            },
+            "required": [
+               "type",
+               "_ref",
+               "description"
+            ],
+            "additionalProperties": false
+         }
+      ]
+   }
+}

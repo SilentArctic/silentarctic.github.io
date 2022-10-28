@@ -1,0 +1,113 @@
+{
+   "$id": "https://genesysref.netlify.app/schema/specialization_schema.json",
+   "type": "array",
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string"
+         },
+         "page": {
+            "type": "integer"
+         },
+         "imageUrl": {
+            "type": "string"
+         },
+         "career": {
+            "type": "object",
+            "properties": {
+               "name": {
+                  "type": "string"
+               },
+               "source": {
+                  "type": "string"
+               }
+            },
+            "required": [
+               "name"
+            ],
+            "optional": [
+               "source"
+            ],
+            "additionalProperties": false
+         },
+         "skills": {
+            "type": "array",
+            "items": {
+               "type": "object",
+               "properties": {
+                  "name": {
+                     "type": "string"
+                  },
+                  "source": {
+                     "type": "string"
+                  }
+               },
+               "required": [
+                  "name"
+               ],
+               "optional": [
+                  "source"
+               ],
+               "additionalProperties": false
+            }
+         },
+         "talents": {
+            "type": "array",
+            "minItems": 5,
+            "maxItems": 5,
+            "items": {
+               "type": "array",
+               "minItems": 4,
+               "maxItems": 4,
+               "items": {
+                  "type": "object",
+                  "properties": {
+                     "name": {
+                        "type": "string"
+                     },
+                     "right": {
+                        "type": "boolean"
+                     },
+                     "down": {
+                        "type": "boolean"
+                     },
+                     "source": {
+                        "type": "string"
+                     }
+                  },
+                  "required": [
+                     "name"
+                  ],
+                  "optional": [
+                     "right",
+                     "down",
+                     "source"
+                  ],
+                  "additionalProperties": false
+               }
+            }
+         },
+         "description": {
+            "type": "array",
+            "items": {
+               "type": "string"
+            }
+         },
+         "settings": { "$ref": "./_settings_schema.json" }
+      },
+      "required": [
+         "name",
+         "talents"
+      ],
+      "optional": [
+         "page",
+         "imageUrl",
+         "career",
+         "skills",
+         "description",
+         "settings"
+      ],
+      "additionalProperties": false
+   }
+}

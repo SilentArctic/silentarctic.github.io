@@ -1,0 +1,24 @@
+{
+   "$id": "https://genesysref.netlify.app/schema/rule_schema.json",
+   "type": "array",
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string"
+         },
+         "page": {
+            "type": "integer"
+         },
+         "description": { "$ref": "./_varyingDisplay_schema.json" }
+      },
+      "required": [
+         "name",
+         "description"
+      ],
+      "optional": [
+         "page"
+      ],
+      "additionalProperties": false
+   }
+}
