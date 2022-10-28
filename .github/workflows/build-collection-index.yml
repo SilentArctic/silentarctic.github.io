@@ -3,20 +3,21 @@ on: [push]
 branches: [master]
 
 jobs:
-job1:
-runs-on: [ubuntu-latest]
-
-steps:
-  - name: checkout
-    uses: actions/checkout@v2
-  - name: Compile index.json from collections in ~/api
-    run: node ./buildCollectionIndex.js
-  - name: check for and commit changes
-    run: |
-      git status
-      git add ./api/index.json
-      git commit -m "[ACTION] recreate collection index"
-  - name: fetch and push changes
-    run: |
-      git fetch origin master
-      git push origin HEAD:master
+  create_index:
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          check-latest: true
+      - name: Compile index.json from collections in ~/api
+        run: node ./buildCollectionIndex.js
+      - name: check for and commit changes
+        run: |
+          git status
+          git add ./api/index.json
+          git commit -m "[ACTION] recreate collection index"
+      - name: fetch and push changes
+        run: |
+          git fetch origin master
+          git push origin HEAD:master
