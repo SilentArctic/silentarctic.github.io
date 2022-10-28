@@ -1,0 +1,334 @@
+{
+   "$id": "https://genesysref.netlify.app/schema/adversary_schema.json",
+   "type": "array",
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string"
+         },
+         "page": {
+            "type": "integer"
+         },
+         "type": {
+            "type": "string",
+            "enum": [
+               "minion",
+               "rival",
+               "nemesis"
+            ]
+         },
+         "characteristics": {
+            "type": "object",
+            "properties": {
+               "brawn": {
+                  "type": "integer"
+               },
+               "agility": {
+                  "type": "integer"
+               },
+               "intellect": {
+                  "type": "integer"
+               },
+               "cunning": {
+                  "type": "integer"
+               },
+               "willpower": {
+                  "type": "integer"
+               },
+               "presence": {
+                  "type": "integer"
+               }
+            },
+            "required": [
+               "brawn",
+               "agility",
+               "intellect",
+               "cunning",
+               "willpower",
+               "presence"
+            ],
+            "additionalProperties": false
+         },
+         "derived": {
+            "type": "object",
+            "properties": {
+               "soak": {
+                  "type": "integer"
+               },
+               "wounds": {
+                  "type": "integer"
+               },
+               "strain": {
+                  "type": "integer"
+               },
+               "defense": {
+                  "type": "array",
+                  "items": {
+                     "type": "integer"
+                  }
+               }
+            },
+            "required": [
+               "soak",
+               "wounds",
+               "defense"
+            ],
+            "optional": [
+               "strain"
+            ],
+            "additionalProperties": false
+         },
+         "powerLevels": {
+            "type": "object",
+            "properties": {
+               "combat": {
+                  "type": "integer"
+               },
+               "general": {
+                  "type": "integer"
+               },
+               "social": {
+                  "type": "integer"
+               }
+            },
+            "required": [
+               "combat",
+               "general",
+               "social"
+            ],
+            "additionalProperties": false
+         },
+         "skills": {
+            "type": "array",
+            "items": {
+               "type": "object",
+               "properties": {
+                  "name": {
+                     "type": "string"
+                  },
+                  "characteristic": {
+                     "type": "string",
+                     "enum": [
+                        "brawn",
+                        "agility",
+                        "intellect",
+                        "cunning",
+                        "willpower",
+                        "presence"
+                     ]
+                  },
+                  "ranks": {
+                     "type": "integer"
+                  },
+                  "source": {
+                     "type": "string"
+                  }
+               },
+               "required": [
+                  "name",
+                  "characteristic"
+               ],
+               "optional": [
+                  "ranks",
+                  "source"
+               ],
+               "additionalProperties": false
+            }
+         },
+         "motivations": {
+            "type": "array",
+            "items": {
+               "type": "object",
+               "properties": {
+                  "name": {
+                     "type": "string"
+                  },
+                  "description": {
+                     "type": "string"
+                  }
+               },
+               "required": [
+                  "name",
+                  "description"
+               ],
+               "additionalProperties": false
+            }
+         },
+         "talents": {
+            "type": "array",
+            "items": {
+               "type": ["object", "string"],
+               "properties": {
+                  "name": {
+                     "type": "string"
+                  },
+                  "description": {
+                     "type": "string"
+                  }
+               },
+               "required": [
+                  "name",
+                  "description"
+               ],
+               "additionalProperties": false
+            }
+         },
+         "abilities": {
+            "type": "array",
+            "items": {
+               "type": ["object", "string"],
+               "properties": {
+                  "name": {
+                     "type": "string"
+                  },
+                  "description": {
+                     "type": "string"
+                  }
+               },
+               "required": [
+                  "name",
+                  "description"
+               ],
+               "additionalProperties": false
+            }
+         },
+         "spells": {
+            "type": "object",
+            "properties": {
+               "skills": {
+                  "type": "array",
+                  "items": {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
+                        },
+                        "source": {
+                           "type": "string"
+                        }
+                     },
+                     "required": [
+                        "name"
+                     ],
+                     "optional": [
+                        "source"
+                     ],
+                     "additionalProperties": false
+                  }
+               },
+               "spells": {
+                  "type": "array",
+                  "items": {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
+                        },
+                        "description": {
+                           "type": "string"
+                        }
+                     },
+                     "required": [
+                        "name",
+                        "description"
+                     ],
+                     "additionalProperties": false
+                  }
+               }
+            },
+            "required": [
+               "skills",
+               "spells"
+            ],
+            "additionalProperties": false
+         },
+         "weapons": {
+            "type": "array",
+            "items": {
+               "type": "object",
+               "properties": {
+                  "name": {
+                     "type": "string"
+                  },
+                  "skill": {
+                     "type": "string"
+                  },
+                  "damage": {
+                     "type": "integer"
+                  },
+                  "critical": {
+                     "type": "integer"
+                  },
+                  "range": {
+                     "type": "string",
+                     "enum": [
+                        "engaged",
+                        "short",
+                        "medium",
+                        "long",
+                        "extreme",
+                        "strategic"
+                     ]
+                  },
+                  "qualities": {
+                     "type": "array",
+                     "items": {
+                        "type": "string"
+                     }
+                  }
+               },
+               "required": [
+                  "name",
+                  "skill",
+                  "damage",
+                  "critical",
+                  "range"
+               ],
+               "optional": [
+                  "qualities"
+               ],
+               "additionalProperties": false
+            }
+         },
+         "gear": {
+            "type": "array",
+            "items": {
+               "type": "string"
+            }
+         },
+         "description": {
+            "type": "array",
+            "items": {
+               "type": "string"
+            }
+         },
+         "settings": { "$ref": "./_settings_schema.json" },
+         "tags": {
+            "type": "array",
+            "items": {
+               "type": "string"
+            }
+         }
+      },
+      "required": [
+         "name",
+         "type",
+         "characteristics",
+         "skills"
+      ],
+      "optional": [
+         "page",
+         "description",
+         "powerLevels",
+         "motivations",
+         "talents",
+         "abilities",
+         "equipment",
+         "gear",
+         "tags",
+         "settings"
+      ],
+      "additionalProperties": false
+   }
+}

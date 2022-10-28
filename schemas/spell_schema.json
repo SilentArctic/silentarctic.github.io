@@ -1,0 +1,110 @@
+{
+   "$id": "https://genesysref.netlify.app/schema/spell_schema.json",
+   "type": "array",
+   "items": [
+      {
+         "type": "object",
+         "properties": {
+            "name": {
+               "type": "string"
+            },
+            "page": {
+               "type": "integer"
+            },
+            "imageUrl": {
+               "type": "string"
+            },
+            "concentration": {
+               "type": "boolean"
+            },
+            "difficulty": {
+               "type": "string",
+               "enum": ["simple", "easy", "average", "hard", "daunting", "formidable"]
+            },
+            "skills": {
+               "type": "array",
+               "items": [
+                  {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
+                        },
+                        "source": {
+                           "type": "string"
+                        }
+                     },
+                     "required": [
+                        "name"
+                     ],
+                     "optional": [
+                        "source"
+                     ],
+                     "additionalProperties": false
+                  }
+               ]
+            },
+            "narrative": {
+               "type": "array",
+               "items": [
+                  {
+                     "type": "string"
+                  }
+               ]
+            },
+            "structured": {
+               "type": "array",
+               "items": [
+                  {
+                     "type": "string"
+                  }
+               ]
+            },
+            "additionalEffects": {
+               "type": "array",
+               "items": [
+                  {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
+                        },
+                        "description": {
+                           "type": "array",
+                           "items": [
+                              {
+                                 "type": "string"
+                              }
+                           ]
+                        },
+                        "difficultyMod": {
+                           "type": "integer"
+                        }
+                     },
+                     "required": [
+                        "name",
+                        "description",
+                        "difficultyMod"
+                     ],
+                     "additionalProperties": false
+                  }
+               ]
+            }
+         },
+         "required": [
+            "name",
+            "concentration",
+            "difficulty",
+            "skills",
+            "narrative",
+            "structured",
+            "additionalEffects"
+         ],
+         "optional": [
+            "page",
+            "imageUrl"
+         ],
+         "additionalProperties": false
+      }
+   ]
+}

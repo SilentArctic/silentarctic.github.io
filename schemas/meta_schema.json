@@ -1,0 +1,112 @@
+{
+   "$id": "https://genesysref.netlify.app/schema/meta_schema.json",
+   "type": "object",
+   "properties": {
+      "source": {
+         "type": "object",
+         "properties": {
+            "json": {
+               "type": "string"
+            },
+            "full": {
+               "type": "string"
+            },
+            "abbreviation": {
+               "type": "string"
+            },
+            "language": {
+               "type": "string"
+            },
+            "color": {
+               "type": "string"
+            },
+            "url": {
+               "type": "string"
+            },
+            "version": {
+               "type": "string"
+            },
+            "authors": {
+               "type": "array",
+               "items": {
+                  "type": "string"
+               }
+            },
+            "convertedBy": {
+               "type": "array",
+               "items": {
+                  "type": "string"
+               }
+            },
+            "translatedBy": {
+               "type": "array",
+               "items": {
+                  "type": "string"
+               }
+            },
+            "releaseDate": {
+               "type": "string"
+            }
+         },
+         "required": [
+            "json",
+            "full",
+            "abbreviation",
+            "version",
+            "authors"
+         ],
+         "optional": [
+            "color",
+            "url",
+            "convertedBy",
+            "releaseDate"
+         ],
+         "additionalProperties": false
+      },
+      "filters": {
+         "type": "object",
+         "properties": {
+            "settings": {
+               "type": "array",
+               "items": {
+                  "type": "string"
+               }
+            },
+            "magicSkills": {
+               "type": "array",
+               "items": {
+                  "type": "string"
+               }
+            },
+            "optionFeatureType": {
+               "type": "array",
+               "items": {
+                  "type": "string"
+               }
+            },
+            "optionFeatureClass": {
+               "type": "array",
+               "items": {
+                  "type": "string"
+               }
+            }
+         },
+         "optional": [
+            "settings",
+            "magicSkills",
+            "optionFeatureType",
+            "optionFeatureClass"
+         ],
+         "additionalProperties": false
+      },
+      "defaultItemSettings": { "$ref": "_settings_schema.json" }
+   },
+   "required": [
+      "source",
+      "defaultItemSettings"
+   ],
+   "optional": [
+      "filters"
+   ],
+   "additionalProperties": false
+}

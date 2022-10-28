@@ -1,0 +1,24 @@
+{
+   "$id": "https://genesysref.netlify.app/schema/book_schema.json",
+   "type": "array",
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string"
+         },
+         "releaseYear": {
+            "type": "integer"
+         },
+         "chapters": { "$ref": "_varyingDisplay_schema.json" }
+      },
+      "required": [
+         "name",
+         "chapters"
+      ],
+      "optional": [
+         "releaseYear"
+      ],
+      "additionalProperties": false
+   }
+}

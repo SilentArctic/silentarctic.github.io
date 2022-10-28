@@ -1,0 +1,28 @@
+name: build-collection-index
+on:
+  push:
+    branches:
+      - master
+jobs:
+  create_index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Compile index.json from collections in ~/api
+        run: node ./buildCollectionIndex.js
+      - name: git - set identity
+        run: |
+          git config user.email "silentarcticdev@gmail.com"
+          git config user.name "SilentArctic"
+      - name: check for and commit changes
+        run: |
+          git status
+          git add api/index.json
+          git commit -m "[ACTION] recreate collection index"
+      - name: fetch and push changes
+        run: |
+          git fetch origin master
+          git push origin HEAD:master

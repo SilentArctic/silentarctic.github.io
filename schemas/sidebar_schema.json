@@ -1,0 +1,31 @@
+{
+   "$id": "https://genesysref.netlify.app/schema/sidebar_schema.json",
+   "type": "array",
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string"
+         },
+         "page": {
+            "type": "integer"
+         },
+         "description": { "$ref": "./_varyingDisplay_schema.json" },
+         "summary": {
+            "type": "array",
+            "items": {
+               "type": ["string", "integer"]
+            }
+         }
+      },
+      "required": [
+         "name",
+         "description"
+      ],
+      "optional": [
+         "page",
+         "summary"
+      ],
+      "additionalProperties": false
+   }
+}
