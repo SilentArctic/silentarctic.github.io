@@ -1,17 +1,15 @@
 name: build-collection-index
 on:
-  push:
+  pull_request:
     branches:
       - master
 jobs:
-  run_tests:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo running shadow tests...
   create_index:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
       - uses: actions/setup-node@v3
         with:
           node-version: 16
@@ -21,12 +19,9 @@ jobs:
         run: |
           git config user.email "silentarcticdev@gmail.com"
           git config user.name "SilentArctic"
-      - name: check for and commit changes
+      - name: commit and push changes
         run: |
+          git add api/index.json api/community/index.json
           git status
-          git add api/index.json
-          git commit -m "[ACTION] recreate collection index"
-      - name: fetch and push changes
-        run: |
-          git fetch origin master
-          git push origin HEAD:master --force
+          git diff-index --quiet HEAD || git commit -m "[ACTION] recreate collection index" --allow-empty
+          git push

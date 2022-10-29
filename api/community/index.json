@@ -1,0 +1,36 @@
+{
+   "BOOST-1.json": {
+      "json": "book-of-online-sourced-triumphs-1-mutation",
+      "full": "B.O.O.S.T. #1: Mutation",
+      "abbreviation": "BOOST:1",
+      "color": "#30F030",
+      "url": "https://www.drivethrurpg.com/product/314884/BOOST-1-Mutation/",
+      "version": "2021.7.20",
+      "authors": [
+         "Genesys RPG Community",
+         "Flame112",
+         "Archellus",
+         "Caleb \"Cptn_Smitty\" Smith",
+         "J. Scott \"DrainSmith\" Zumwalt"
+      ],
+      "convertedBy": [
+         "Craftidore"
+      ],
+      "releaseDate": "24 May 2020"
+   },
+   "fallout.json": {
+      "json": "fallout-a-post-apocalyptic-campaign-setting",
+      "full": "Fallout: A Post-Apocalyptic Campaign Setting",
+      "abbreviation": "Fallout",
+      "color": "#0e4e0b",
+      "url": "https://www.dropbox.com/sh/sy07kxd2n3haz1d/AABkZzrdf0zFleUrUsAKmwbca?dl=0",
+      "version": "2022.10.26",
+      "authors": [
+         "Phil \"DarthGM\" Maiewski"
+      ],
+      "convertedBy": [
+         "enby"
+      ],
+      "releaseDate": "12 April 2019"
+   }
+}
