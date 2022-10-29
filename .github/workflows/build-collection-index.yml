@@ -21,7 +21,7 @@ jobs:
           git config user.name "SilentArctic"
       - name: commit and push changes
         run: |
-          git add api/index.json
+          git add api/index.json api/community/index.json
           git status
           git commit -m "[ACTION] recreate collection index"
           git push
