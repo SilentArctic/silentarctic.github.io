@@ -6,7 +6,7 @@ on:
 jobs:
   run_tests:
     steps:
-      - uses: echo running mock tests...
+      - uses: echo running shadow tests...
   create_index:
     runs-on: ubuntu-latest
     steps:
