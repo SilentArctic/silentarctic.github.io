@@ -8,7 +8,7 @@ const collections = {
    ...requireDirectory(module, '../api', { recurse: false }),
    ...requireDirectory(module, '../api/community'),
 };
-
+delete collections.index;
 
 /* checks if schema is valid */
 function validateSchema(file) {

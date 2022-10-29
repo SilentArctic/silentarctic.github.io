@@ -23,5 +23,5 @@ jobs:
         run: |
           git add api/index.json api/community/index.json
           git status
-          git commit -m "[ACTION] recreate collection index"
+          git diff-index --quiet HEAD || git commit -m "[ACTION] recreate collection index" --allow-empty
           git push
