@@ -4,12 +4,13 @@ on:
     branches:
       - master
 jobs:
+  run_tests:
+    steps:
+      - uses: echo running mock tests...
   create_index:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.PAT }}
       - uses: actions/setup-node@v3
         with:
           node-version: 16
