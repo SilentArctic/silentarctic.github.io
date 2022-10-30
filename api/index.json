@@ -12,7 +12,8 @@
       "convertedBy": [
          "SilentArctic"
       ],
-      "releaseDate": "30 November 2017"
+      "releaseDate": "30 November 2017",
+      "originType": "core"
    },
    "expanded-players-guide.json": {
       "json": "expanded-players-guide",
@@ -28,7 +29,8 @@
       ],
       "url": "https://www.fantasyflightgames.com/en/products/genesys/products/expanded-players-guide/",
       "version": "2022.10.25",
-      "releaseDate": "20 September 2019"
+      "releaseDate": "20 September 2019",
+      "originType": "core"
    },
    "realms-of-terrinoth.json": {
       "json": "realms-of-terrinoth",
@@ -40,7 +42,8 @@
       "authors": [
          "Fantasy Flight Games"
       ],
-      "releaseDate": "2 April 2018"
+      "releaseDate": "2 April 2018",
+      "originType": "core"
    },
    "secrets-of-the-crucible.json": {
       "json": "secrets-of-the-crucible",
@@ -55,7 +58,8 @@
       "convertedBy": [
          "SilentArctic"
       ],
-      "releaseDate": "1 August 2020"
+      "releaseDate": "1 August 2020",
+      "originType": "core"
    },
    "shadow-of-the-beanstalk.json": {
       "json": "shadow-of-the-beanstalk",
@@ -70,6 +74,7 @@
       "convertedBy": [
          "SilentArctic"
       ],
-      "releaseDate": "7 February 2019"
+      "releaseDate": "7 February 2019",
+      "originType": "core"
    }
 }
