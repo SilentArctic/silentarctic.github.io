@@ -1,5 +1,5 @@
 {
-   "crb.json": {
+   "core-rule-book.json": {
       "json": "core-rule-book",
       "full": "Genesys Core Rulebook",
       "abbreviation": "CRB",
@@ -14,7 +14,7 @@
       ],
       "releaseDate": "30 November 2017"
    },
-   "epg.json": {
+   "expanded-players-guide.json": {
       "json": "expanded-players-guide",
       "full": "Expanded Player's Guide",
       "abbreviation": "EPG",
@@ -30,7 +30,7 @@
       "version": "2022.10.25",
       "releaseDate": "20 September 2019"
    },
-   "rot.json": {
+   "realms-of-terrinoth.json": {
       "json": "realms-of-terrinoth",
       "full": "Realms of Terrinoth",
       "abbreviation": "RoT",
@@ -42,22 +42,7 @@
       ],
       "releaseDate": "2 April 2018"
    },
-   "sotb.json": {
-      "json": "shadow-of-the-beanstalk",
-      "full": "Android: Shadow of the Beanstalk",
-      "abbreviation": "SotB",
-      "color": "#40B3B5",
-      "url": "https://www.fantasyflightgames.com/en/products/genesys/products/shadow-beanstalk/",
-      "version": "2022.4.25.1",
-      "authors": [
-         "Fantasy Flight Games"
-      ],
-      "convertedBy": [
-         "SilentArctic"
-      ],
-      "releaseDate": "7 February 2019"
-   },
-   "sotc.json": {
+   "secrets-of-the-crucible.json": {
       "json": "secrets-of-the-crucible",
       "full": "Keyforge: Secrets of the Crucible",
       "abbreviation": "SotC",
@@ -71,5 +56,20 @@
          "SilentArctic"
       ],
       "releaseDate": "1 August 2020"
+   },
+   "shadow-of-the-beanstalk.json": {
+      "json": "shadow-of-the-beanstalk",
+      "full": "Android: Shadow of the Beanstalk",
+      "abbreviation": "SotB",
+      "color": "#40B3B5",
+      "url": "https://www.fantasyflightgames.com/en/products/genesys/products/shadow-beanstalk/",
+      "version": "2022.4.25.1",
+      "authors": [
+         "Fantasy Flight Games"
+      ],
+      "convertedBy": [
+         "SilentArctic"
+      ],
+      "releaseDate": "7 February 2019"
    }
 }
