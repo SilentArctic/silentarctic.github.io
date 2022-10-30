@@ -16,7 +16,8 @@
       "convertedBy": [
          "Craftidore"
       ],
-      "releaseDate": "24 May 2020"
+      "releaseDate": "24 May 2020",
+      "originType": "community"
    },
    "fallout-a-post-apocalyptic-campaign-setting.json": {
       "json": "fallout-a-post-apocalyptic-campaign-setting",
@@ -31,6 +32,7 @@
       "convertedBy": [
          "enby"
       ],
-      "releaseDate": "12 April 2019"
+      "releaseDate": "12 April 2019",
+      "originType": "community"
    }
 }
