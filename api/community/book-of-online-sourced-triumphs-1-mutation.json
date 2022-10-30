@@ -1,5 +1,5 @@
 {
-   "$schema": "../schemas/schema.json",
+   "$schema": "../../schemas/schema.json",
    "_meta": {
       "source": {
          "json": "book-of-online-sourced-triumphs-1-mutation",
