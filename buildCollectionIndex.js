@@ -10,7 +10,8 @@ function createIndex(path) {
          let data = fs.readFileSync(`${path}/${file}`);
          data = JSON.parse(data);
 
-         index[file] = data._meta.source;
+         const originType = path.includes('community') ? 'community' : 'core';
+         index[file] = { ...data._meta.source, originType };
       });
 
    /* overwrite index.js with new data */
