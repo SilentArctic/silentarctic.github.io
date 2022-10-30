@@ -1,5 +1,5 @@
 {
-   "BOOST-1.json": {
+   "book-of-online-sourced-triumphs-1-mutation.json": {
       "json": "book-of-online-sourced-triumphs-1-mutation",
       "full": "B.O.O.S.T. #1: Mutation",
       "abbreviation": "BOOST:1",
@@ -18,7 +18,7 @@
       ],
       "releaseDate": "24 May 2020"
    },
-   "fallout.json": {
+   "fallout-a-post-apocalyptic-campaign-setting.json": {
       "json": "fallout-a-post-apocalyptic-campaign-setting",
       "full": "Fallout: A Post-Apocalyptic Campaign Setting",
       "abbreviation": "Fallout",
