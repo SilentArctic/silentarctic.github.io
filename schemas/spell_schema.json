@@ -1,5 +1,5 @@
 {
-   "$id": "https://genesysref.netlify.app/schema/spell_schema.json",
+   "$id": "https://silentarctic.github.io/schemas/spell_schema.json",
    "type": "array",
    "items": [
       {

@@ -1,0 +1,51 @@
+{
+   "$id": "https://silentarctic.github.io/schemas/spell_effects_schema.json",
+   "type": "array",
+   "items": {
+      "type": "object",
+      "properties": {
+         "spell": {
+            "type": "string"
+         },
+         "add": {
+            "type": "array",
+            "items": {
+               "type": "object",
+               "properties": {
+                  "name": {
+                     "type": "string"
+                  },
+                  "description": {
+                     "type": "array",
+                     "items": {
+                        "type": "string"
+                     }
+                  },
+                  "difficultyMod": {
+                     "type": "integer"
+                  }
+               },
+               "required": [
+                  "name",
+                  "description",
+                  "difficultyMod"
+               ]
+            }
+         },
+         "remove": {
+            "type": "array",
+            "items": {
+               "type": "string"
+            }
+         }
+      },
+      "required": [
+         "spell"
+      ],
+      "optional": [
+         "add",
+         "remove"
+      ],
+      "additionalProperties": false
+   }
+}

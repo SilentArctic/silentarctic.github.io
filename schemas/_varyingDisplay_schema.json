@@ -1,5 +1,5 @@
 {
-   "$id": "https://genesysref.netlify.app/schema/_varyingDisplay_schema.json",
+   "$id": "https://silentarctic.github.io/schemas/_varyingDisplay_schema.json",
    "type": "array",
    "items": {
       "oneOf": [

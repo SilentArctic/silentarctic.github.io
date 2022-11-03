@@ -1,5 +1,5 @@
 {
-   "$id": "https://genesysref.netlify.app/schema/meta_schema.json",
+   "$id": "https://silentarctic.github.io/schemas/meta_schema.json",
    "type": "object",
    "properties": {
       "source": {

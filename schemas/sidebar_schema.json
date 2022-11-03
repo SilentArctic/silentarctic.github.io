@@ -1,5 +1,5 @@
 {
-   "$id": "https://genesysref.netlify.app/schema/sidebar_schema.json",
+   "$id": "https://silentarctic.github.io/schemas/sidebar_schema.json",
    "type": "array",
    "items": {
       "type": "object",
