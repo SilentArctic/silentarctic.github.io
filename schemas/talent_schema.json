@@ -1,5 +1,5 @@
 {
-   "$id": "https://genesysref.netlify.app/schema/talent_schema.json",
+   "$id": "https://silentarctic.github.io/schemas/talent_schema.json",
    "type": "array",
    "items": [
       {

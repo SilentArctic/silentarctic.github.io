@@ -15,6 +15,7 @@ exports.sidebar_schema = require('./sidebar_schema.json');
 exports.skill_schema = require('./skill_schema.json');
 exports.specialization_schema = require('./specialization_schema.json');
 exports.spell_schema = require('./spell_schema.json');
+exports.spell_effects_schema = require('./spell_effects_schema.json');
 exports.table_schema = require('./table_schema.json');
 exports.talent_schema = require('./talent_schema.json');
 exports.vehicle_schema = require('./vehicle_schema.json');

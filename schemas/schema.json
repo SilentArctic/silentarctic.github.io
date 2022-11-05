@@ -1,5 +1,5 @@
 {
-   "$id": "https://genesysref.netlify.app/schema/schema.json",
+   "$id": "https://silentarctic.github.io/schemas/schema.json",
    "type": "object",
    "properties": {
       "$schema": {
@@ -20,6 +20,7 @@
       "skill": { "$ref": "skill_schema.json" },
       "specialization": { "$ref": "specialization_schema.json" },
       "spell": { "$ref": "spell_schema.json" },
+      "spellEffects": { "$ref": "spell_effects_schema.json" },
       "table": { "$ref": "table_schema.json" },
       "talent": { "$ref": "talent_schema.json" },
       "quality": { "$ref": "quality_schema.json" },

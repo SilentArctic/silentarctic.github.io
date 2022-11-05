@@ -1,5 +1,5 @@
 {
-   "$id": "https://genesysref.netlify.app/schema/adversary_schema.json",
+   "$id": "https://silentarctic.github.io/schemas/adversary_schema.json",
    "type": "array",
    "items": {
       "type": "object",
