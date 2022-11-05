@@ -7,8 +7,31 @@
          "name": {
             "type": "string"
          },
+         "subtitle": {
+            "type": "string"
+         },
          "releaseYear": {
             "type": "integer"
+         },
+         "coverImageUrl": {
+            "type": "string"
+         },
+         "coverBackgroundUrl": {
+            "type": "string"
+         },
+         "backgroundUrl": {
+            "type": "string"
+         },
+         "credits": {
+            "type": "object",
+            "patternProperties": {
+               "^[a-zA-Z ]*$": {
+                  "type": "array",
+                  "items": {
+                     "type": "string0"
+                  }
+               }
+            }
          },
          "chapters": { "$ref": "_varyingDisplay_schema.json" }
       },
@@ -17,7 +40,12 @@
          "chapters"
       ],
       "optional": [
-         "releaseYear"
+         "subtitle",
+         "releaseYear",
+         "coverImageUrl",
+         "coverBackgroundUrl",
+         "backgroundUrl",
+         "credits"
       ],
       "additionalProperties": false
    }
