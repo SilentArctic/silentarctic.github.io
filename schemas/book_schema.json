@@ -28,7 +28,7 @@
                "^[a-zA-Z ]*$": {
                   "type": "array",
                   "items": {
-                     "type": "string0"
+                     "type": "string"
                   }
                }
             }
