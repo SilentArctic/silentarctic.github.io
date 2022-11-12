@@ -19,5 +19,5 @@ exports.spell_effects_schema = require('./spell_effects_schema.json');
 exports.table_schema = require('./table_schema.json');
 exports.talent_schema = require('./talent_schema.json');
 exports.vehicle_schema = require('./vehicle_schema.json');
-exports._settings_schema = require('./_settings_schema.json');
-exports._varyingDisplay_schema = require('./_varyingDisplay_schema.json');
+exports.settings_sub_schema = require('./settings_sub_schema.json');
+exports.varyingDisplay_sub_schema = require('./varyingDisplay_sub_schema.json');

@@ -36,8 +36,8 @@
                   "additionalProperties": false
                }
             },
-            "description": { "$ref": "_varyingDisplay_schema.json" },
-            "info": { "$ref": "_varyingDisplay_schema.json" },
+            "description": { "$ref": "varyingDisplay_sub_schema.json" },
+            "info": { "$ref": "varyingDisplay_sub_schema.json" },
             "summary": {
                "type": "array",
                "items": {
@@ -47,7 +47,7 @@
             "meta": {
                "type": "object"
             },
-            "settings": { "$ref": "_settings_schema.json" }
+            "settings": { "$ref": "settings_sub_schema.json" }
          },
          "required": [
             "name",

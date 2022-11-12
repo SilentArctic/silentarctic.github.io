@@ -33,7 +33,7 @@
                }
             }
          },
-         "chapters": { "$ref": "_varyingDisplay_schema.json" }
+         "chapters": { "$ref": "varyingDisplay_sub_schema.json" }
       },
       "required": [
          "name",
