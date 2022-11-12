@@ -99,7 +99,7 @@
          ],
          "additionalProperties": false
       },
-      "defaultItemSettings": { "$ref": "_settings_schema.json" }
+      "defaultItemSettings": { "$ref": "settings_sub_schema.json" }
    },
    "required": [
       "source",

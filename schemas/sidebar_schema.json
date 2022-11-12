@@ -10,7 +10,7 @@
          "page": {
             "type": "integer"
          },
-         "description": { "$ref": "./_varyingDisplay_schema.json" },
+         "description": { "$ref": "./varyingDisplay_sub_schema.json" },
          "summary": {
             "type": "array",
             "items": {

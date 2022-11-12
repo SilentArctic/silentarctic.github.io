@@ -7,8 +7,8 @@
          "name": {
             "type": "string"
          },
-         "chapters": { "$ref": "_varyingDisplay_schema.json" },
-         "settings": { "$ref": "_settings_schema.json" }
+         "chapters": { "$ref": "varyingDisplay_sub_schema.json" },
+         "settings": { "$ref": "settings_sub_schema.json" }
       },
       "required": [
          "name",

@@ -73,7 +73,7 @@
                   "additionalProperties": false
                }
             },
-            "settings": { "$ref": "./_settings_schema.json" }
+            "settings": { "$ref": "./settings_sub_schema.json" }
          },
          "required": [
             "name",

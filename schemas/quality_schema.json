@@ -22,7 +22,7 @@
                "type": "string",
                "enum": ["weapon", "armor", "any"]
             },
-            "description": { "$ref": "_varyingDisplay_schema.json" }
+            "description": { "$ref": "varyingDisplay_sub_schema.json" }
          },
          "required": [
             "name",

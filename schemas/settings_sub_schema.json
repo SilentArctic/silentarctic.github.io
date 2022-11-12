@@ -1,5 +1,5 @@
 {
-   "$id": "https://silentarctic.github.io/schemas/_settings_schema.json",
+   "$id": "https://silentarctic.github.io/schemas/settings_sub_schema.json",
    "type": "array",
    "items": [
       {

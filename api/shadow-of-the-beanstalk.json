@@ -7,7 +7,7 @@
          "abbreviation": "SotB",
          "color": "#40B3B5",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/shadow-beanstalk/",
-         "version": "2022.4.25.1",
+         "version": "2022.11.11",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -10572,7 +10572,7 @@
          ],
          "modifiers": [
             {
-               "name": "Brawl",
+               "name": "Brawn",
                "type": "characteristic",
                "value": 1
             },
@@ -11797,7 +11797,7 @@
          "type": "cybernetic",
          "description": [
             "Enhanced reflexes were initially developed to heal damaged nervous systems and to cure neurodegenerative disorders like Parkinson's disease and ALS. Every bit as painful and invasive as bone lacing, this implant uses nanomachines and nerve therapy to supercharge a user's nervous system. Individuals with enhanced reflexes are incredibly quick, but they often find it difficult to sit still and tend to see the rest of the world as if it were moving in slow motion.",
-            "Enhanced reflexes increase your character's ranks in {@skill Coordination||crb} and {@crb Vigilance} by 1 and decrease their strain threshold by 1."
+            "Enhanced reflexes increase your character's ranks in {@skill Coordination||crb} and {@skill Vigilance||crb} by 1 and decrease their strain threshold by 1."
          ],
          "price": 800,
          "rarity": 5,
