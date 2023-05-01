@@ -89,6 +89,12 @@
                "items": {
                   "type": "string"
                }
+            },
+            "talentPrereqs": {
+               "type": "array",
+               "items": {
+                  "type": "string"
+               }
             }
          },
          "optional": [

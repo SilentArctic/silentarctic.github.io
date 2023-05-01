@@ -7,7 +7,7 @@
          "abbreviation": "RoT",
          "color": "#A75A0E",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/realms-terrinoth/",
-         "version": "2022.11.12",
+         "version": "2023.4.30",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -9488,24 +9488,73 @@
          "rarity": 1,
          "special": [
             {
-               "name": "inaccurate",
+               "name": "Inaccurate",
                "value": 1,
                "source": "crb"
             },
             {
-               "name": "limited ammo",
+               "name": "Limited Ammo",
                "value": 1,
                "source": "crb"
             },
             {
-               "name": "vicious",
+               "name": "Vicious",
                "value": 1,
                "source": "crb"
             }
          ],
          "description": [
+            {
+               "title": "Melee Stats",
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Skill"
+                  },
+                  {
+                     "header": "Dam",
+                     "value": "damage"
+                  },
+                  {
+                     "header": "Crit"
+                  },
+                  {
+                     "header": "Range"
+                  },
+                  {
+                     "header": "Encum",
+                     "value": "encumbrance"
+                  },
+                  {
+                     "header": "HP",
+                     "value": "hardPoints"
+                  },
+                  {
+                     "header": "Price"
+                  },
+                  {
+                     "header": "Rarity"
+                  },
+                  {
+                     "header": "Special"
+                  }
+               ],
+               "rows": [
+                  {
+                     "skill": "{@skill Melee (Light)||crb}",
+                     "damage": "+2",
+                     "crit": 3,
+                     "range": "Engaged",
+                     "encumbrance": 1,
+                     "hardPoints": 1,
+                     "price": 50,
+                     "rarity": 1,
+                     "special": "{@quality Inaccurate|Inaccurate 1|crb}, {@quality Vicious|Vicious 1|crb}"
+                  }
+               ]
+            },
             "The rangers of the Dunwarr Mountains are fond of saying that the only thing better than an axe is an axe you can throw at someone. No amount of balancing a hand axe for throwing can make it a truly accurate weapon, but if it hits, it is likely to do some serious damage.",
-            "Your character can hurl a throwing axe at their foe using the profile in {@table 2–6: Ranged Weapons} on page 95, or they can wield one using the following profile: (Melee (Light); Damage +2; Critical 3; Range [Engaged]; Inaccurate 1, Vicious 1)."
+            "Your character can hurl a throwing axe at their foe using the profile in {@table 2-6: Ranged Weapons} on page 95, or they can wield one using the following profile: ({@skill Melee (Light)||crb}; Damage +2; Critical 3; Range [Engaged]; {@quality Inaccurate|Inaccurate 1|crb}, {@quality Vicious|Vicious 1|crb})."
          ],
          "page": 95
       },

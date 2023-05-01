@@ -12,36 +12,76 @@
                "type": "string"
             },
             "characteristics": {
-               "type": "object",
-               "properties": {
-                  "brawn": {
-                     "type": "integer"
+               "oneOf": [
+                  {
+                     "type": "object",
+                     "properties": {
+                        "brawn": {
+                           "type": "integer"
+                        },
+                        "agility": {
+                           "type": "integer"
+                        },
+                        "intellect": {
+                           "type": "integer"
+                        },
+                        "cunning": {
+                           "type": "integer"
+                        },
+                        "willpower": {
+                           "type": "integer"
+                        },
+                        "presence": {
+                           "type": "integer"
+                        }
+                     },
+                     "required": [
+                        "brawn",
+                        "agility",
+                        "intellect",
+                        "cunning",
+                        "willpower",
+                        "presence"
+                     ],
+                     "additionalProperties": false
                   },
-                  "agility": {
-                     "type": "integer"
-                  },
-                  "intellect": {
-                     "type": "integer"
-                  },
-                  "cunning": {
-                     "type": "integer"
-                  },
-                  "willpower": {
-                     "type": "integer"
-                  },
-                  "presence": {
-                     "type": "integer"
+
+                  {
+                     "type": "array",
+                     "items": {
+                        "type": "object",
+                        "properties": {
+                           "brawn": {
+                              "type": "integer"
+                           },
+                           "agility": {
+                              "type": "integer"
+                           },
+                           "intellect": {
+                              "type": "integer"
+                           },
+                           "cunning": {
+                              "type": "integer"
+                           },
+                           "willpower": {
+                              "type": "integer"
+                           },
+                           "presence": {
+                              "type": "integer"
+                           }
+                        },
+                        "required": [
+                           "brawn",
+                           "agility",
+                           "intellect",
+                           "cunning",
+                           "willpower",
+                           "presence"
+                        ],
+                        "additionalProperties": false
+                     }
                   }
-               },
-               "required": [
-                  "brawn",
-                  "agility",
-                  "intellect",
-                  "cunning",
-                  "willpower",
-                  "presence"
-               ],
-               "additionalProperties": false
+               ]
             },
             "page": {
                "type": "integer"
@@ -50,10 +90,30 @@
                "type": "string"
             },
             "wt": {
-               "type": "integer"
+               "oneOf": [
+                  {
+                     "type": "integer"
+                  },
+                  {
+                     "type": "array",
+                     "items": {
+                        "type": "integer"
+                     }
+                  }
+               ]
             },
             "st": {
-               "type": "integer"
+               "oneOf": [
+                  {
+                     "type": "integer"
+                  },
+                  {
+                     "type": "array",
+                     "items": {
+                        "type": "integer"
+                     }
+                  }
+               ]
             },
             "xp": {
                "type": "integer"
@@ -132,8 +192,10 @@
                      }
                   },
                   "required": [
-                     "name",
                      "description"
+                  ],
+                  "optional": [
+                     "name"
                   ],
                   "additionalProperties": false
                }
@@ -148,6 +210,23 @@
                "type": "array",
                "items": {
                   "type": "string"
+               }
+            },
+            "names": {
+               "type": "object",
+               "properties": {
+                  "description": {
+                     "type": "array",
+                     "items": {
+                        "type": "string"
+                     }
+                  },
+                  "names": {
+                     "type": "array",
+                     "items": {
+                        "type": "string"
+                     }
+                  }
                }
             },
             "settings": { "$ref": "./settings_sub_schema.json" }
@@ -166,6 +245,7 @@
             "nickname",
             "imageUrl",
             "why",
+            "names",
             "settings"
          ],
          "additionalProperties": false

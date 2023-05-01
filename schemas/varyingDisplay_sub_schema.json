@@ -189,10 +189,10 @@
                         }
                      },
                      "required": [
-                        "header",
-                        "value"
+                        "header"
                      ],
                      "optional": [
+                        "value",
                         "size"
                      ],
                      "additionalProperties": false

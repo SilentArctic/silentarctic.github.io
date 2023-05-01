@@ -19,12 +19,7 @@
                "imageUrl": {
                   "type": "string"
                },
-               "description": {
-                  "type": "array",
-                  "items": {
-                     "type": "string"
-                  }
-               },
+               "description": { "$ref": "./varyingDisplay_sub_schema.json" },
                "skill": {
                   "type": "object",
                   "properties": {
@@ -301,7 +296,7 @@
                },
                "type": {
                   "type": "string",
-                  "enum": ["gear", "treasure", "alchemy"]
+                  "enum": ["gear", "treasure", "alchemy", "artifact"]
                },
                "page": {
                   "type": "integer"
@@ -309,12 +304,7 @@
                "imageUrl": {
                   "type": "string"
                },
-               "description": {
-                  "type": "array",
-                  "items": {
-                     "type": "string"
-                  }
-               },
+               "description": { "$ref": "./varyingDisplay_sub_schema.json" },
                "encumbrance": {
                   "type": "integer"
                },
