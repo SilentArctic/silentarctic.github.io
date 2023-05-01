@@ -7,7 +7,7 @@
          "abbreviation": "CRB",
          "color": "#14C0F1",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/",
-         "version": "2022.11.12",
+         "version": "2023.4.30",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -7214,6 +7214,16 @@
          "itemTypes": "weapon",
          "description": [
             "When an attack with this weapon results in a Critical Injury or Hit, the character adds ten times the Vicious rating to the Critical roll. With Vicious 3, for example, you would add +30 to the resulting Critical Injury or Hit result."
+         ]
+      },
+      {
+         "name": "Personal Scale",
+         "page": 225,
+         "activation": "passive",
+         "itemTypes": "vehicle",
+         "description": [
+            "This quality exists only for vehicle weapons. We use this quality when we want to put small-scale weapons on a vehicle, such as the machine guns on the side of a combat helicopter, or a grenade launcher on an APC.",
+            "The quality has the following rule: {@b this vehicle weapon's entire profile uses personal scale instead of planetary scale.}"
          ]
       }
    ],

@@ -10,6 +10,9 @@
          "page": {
             "type": "integer"
          },
+         "variant": {
+            "type": "boolean"
+         },
          "imageUrl": {
             "type": "string"
          },
@@ -62,13 +65,36 @@
             "type": "string"
          },
          "encumbranceCapacity": {
-            "type": "integer"
+            "type": ["string", "integer"]
+         },
+         "ftlRange": {
+            "type": "string",
+            "enum": [
+               "None",
+               "Short",
+               "Medium",
+               "Long",
+               "Extreme"
+            ]
+         },
+         "ftlSpeed": {
+            "type": "string",
+            "enum": [
+               "none",
+               "slow",
+               "average",
+               "fast",
+               "very fast"
+            ]
          },
          "price": {
             "type": "integer"
          },
          "rarity": {
             "type": "integer"
+         },
+         "restricted": {
+            "type": "boolean"
          },
          "weapons": {
             "type": "array",
@@ -112,12 +138,7 @@
                "additionalProperties": false
             }
          },
-         "description": {
-            "type": "array",
-            "items": {
-               "type": "string"
-            }
-         },
+         "description": { "$ref": "./varyingDisplay_sub_schema.json" },
          "settings": { "$ref": "./settings_sub_schema.json" }
       },
       "required": [
@@ -133,16 +154,20 @@
          "complement",
          "consumables",
          "encumbranceCapacity",
-         "price",
          "rarity",
          "description"
       ],
       "optional": [
          "page",
+         "variant",
          "imageUrl",
          "passengers",
          "weapons",
          "abilities",
+         "ftlRange",
+         "ftlSpeed",
+         "price",
+         "restricted",
          "settings"
       ],
       "additionalProperties": false
