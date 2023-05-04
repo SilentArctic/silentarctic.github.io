@@ -161,26 +161,54 @@
          "weapons": [
             {
                "name": "Fiery breath",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 16,
                "critical": 3,
                "range": "Medium",
                "qualities": [
-                  "Blast 16",
-                  "Burn 3",
-                  "Prepare 1"
+                  {
+                     "name": "Blast",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Burn",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Prepare",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 17,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Knockdown",
-                  "Sunder",
-                  "Vicious 5"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Sunder",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 5,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -303,43 +331,75 @@
          "weapons": [
             {
                "name": "Scimitar",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Defensive 1"
+                  {
+                     "name": "Defensive",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Two katars",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Accurate 1"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Three daggers",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
                "range": "Short",
                "qualities": [
-                  "Accurate 1",
-                  "Limited Ammo 3"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Bow",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
                "range": "Medium",
                "qualities": [
-                  "Unwieldy 2"
+                  {
+                     "name": "Unwieldy",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -418,12 +478,18 @@
          "weapons": [
             {
                "name": "Limbs",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Knockdown"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -504,13 +570,23 @@
          "weapons": [
             {
                "name": "Claws and Fangs",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Knockdown",
-                  "Vicious 1"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -597,36 +673,67 @@
          "weapons": [
             {
                "name": "Sword",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Defensive 1"
+                  {
+                     "name": "Defensive",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Lance",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 9,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Knockdown",
-                  "a lance can only be used while mounted and can only be used to attack immediately after performing a maneuver to engage the target."
-               ]
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
+               ],
+               "details": "A lance can only be used while mounted and can only be used to attack immediately after performing a maneuver to engage the target."
             },
             {
                "name": "Large Shield",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 5,
                "range": "Engaged",
                "qualities": [
-                  "Defensive 2",
-                  "Deflection 2",
-                  "Inaccurate 2",
-                  "Knockdown"
+                  {
+                     "name": "Defensive",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Deflection",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Inaccurate",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -660,7 +767,10 @@
             "presence": 1
          },
          "derived": {
-            "defense": [0, 0],
+            "defense": [
+               0,
+               0
+            ],
             "soak": 3,
             "wounds": 6
          },
@@ -696,7 +806,10 @@
          "weapons": [
             {
                "name": "Fangs and Claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Engaged"
@@ -722,7 +835,10 @@
          "derived": {
             "soak": 4,
             "wounds": 7,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -806,7 +922,10 @@
          "weapons": [
             {
                "name": "Two Bone Blades",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 4,
                "range": "Engaged"
@@ -993,23 +1112,40 @@
          "weapons": [
             {
                "name": "Thorny vines",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 4,
                "range": "Short",
                "qualities": [
-                  "Auto-fire",
-                  "Ensnare 3"
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Ensnare",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Snapping jaws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 2"
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1102,24 +1238,46 @@
          "weapons": [
             {
                "name": "Sword",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Defensive 1"
+                  {
+                     "name": "Defensive",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Flail",
-               "skill": "Melee (Heavy)",
+               "skill": {
+                  "name": "Melee (Heavy)",
+                  "source": "crb"
+               },
                "damage": 9,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Cumbersome 3",
-                  "Linked 1",
-                  "Unwieldy 3"
+                  {
+                     "name": "Cumbersome",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Unwieldy",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1204,13 +1362,23 @@
          "weapons": [
             {
                "name": "Two Freezing Blades",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Accurate 1",
-                  "Sunder"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Sunder",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1281,15 +1449,33 @@
          "weapons": [
             {
                "name": "Deepwood Longbow",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 2,
                "range": "Extreme",
                "qualities": [
-                  "Accurate 1",
-                  "Cumbersome 3",
-                  "Superior",
-                  "Unwieldy 3"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Cumbersome",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Superior",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Unwieldy",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1400,23 +1586,40 @@
          "weapons": [
             {
                "name": "Stone Blades",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 2"
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Stone Fists",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Disorient 2",
-                  "Knockdown"
+                  {
+                     "name": "Disorient",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1549,19 +1752,29 @@
          "weapons": [
             {
                "name": "Conjured Scimitar",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 9,
                "critical": 2,
                "range": "Engaged"
             },
             {
                "name": "Illusionary Claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 2"
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1651,37 +1864,78 @@
          "weapons": [
             {
                "name": "Greatsword",
-               "skill": "Melee (Heavy)",
+               "skill": {
+                  "name": "Melee (Heavy)",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Defensive 1",
-                  "Pierce 1",
-                  "Unwieldy 3"
+                  {
+                     "name": "Defensive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Unwieldy",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Fiery Breath",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Short",
                "qualities": [
-                  "Blast 6",
-                  "Burn 1",
-                  "Prepare 1",
-                  "Slow-Firing 2"
+                  {
+                     "name": "Blast",
+                     "ranks": 6,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Burn",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Prepare",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Talons",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1751,12 +2005,18 @@
          "weapons": [
             {
                "name": "Ethereal Hammer",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Stun Damage"
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1903,36 +2163,73 @@
          "weapons": [
             {
                "name": "Axe",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Portable Bolt Thrower",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 9,
                "critical": 2,
                "range": "Extreme",
                "qualities": [
-                  "Cumbersome 3",
-                  "Pierce 2",
-                  "Prepare 1"
+                  {
+                     "name": "Cumbersome",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Prepare",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Dwarven Firebombs",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
                "range": "Short",
                "qualities": [
-                  "Blast 6",
-                  "Burn 2",
-                  "Limited Ammo 1"
+                  {
+                     "name": "Blast",
+                     "ranks": 6,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Burn",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2029,25 +2326,50 @@
          "weapons": [
             {
                "name": "Fiery Breath",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 12,
                "critical": 3,
                "range": "Medium",
                "qualities": [
-                  "Blast 12",
-                  "Burn 3",
-                  "Slow-Firing 2"
+                  {
+                     "name": "Blast",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Burn",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 11,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Knockdown",
-                  "Vicious 3"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2129,22 +2451,36 @@
          "weapons": [
             {
                "name": "Hooked Claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Ensnare 1"
+                  {
+                     "name": "Ensnare",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Fangs",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2213,22 +2549,36 @@
          "weapons": [
             {
                "name": "Claws and Fangs",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Spiked Tail",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Ensnare 1"
+                  {
+                     "name": "Ensnare",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2260,7 +2610,10 @@
          "derived": {
             "wounds": 12,
             "soak": 3,
-            "defense": [1, 2]
+            "defense": [
+               1,
+               2
+            ]
          },
          "skills": [
             {
@@ -2308,11 +2661,19 @@
          "weapons": [
             {
                "name": "Hooves or Talons",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 4,
                "range": "Engaged",
-               "qualities": ["Knockdown"]
+               "qualities": [
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
+               ]
             }
          ]
       },
@@ -2376,13 +2737,23 @@
          "weapons": [
             {
                "name": "Huge Limbs",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 4,
                "range": "Short",
                "qualities": [
-                  "Knockdown",
-                  "Prepare 1"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Prepare",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2449,14 +2820,28 @@
          "weapons": [
             {
                "name": "Huge Club",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 12,
                "critical": 2,
                "range": "Short",
                "qualities": [
-                  "Inaccurate 1",
-                  "Knockdown",
-                  "Prepare 1"
+                  {
+                     "name": "Inaccurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Prepare",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2524,23 +2909,41 @@
          "weapons": [
             {
                "name": "Jaws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 2"
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Constricting coils",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Ensnare 4",
-                  "Stun 4"
+                  {
+                     "name": "Ensnare",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2720,19 +3123,29 @@
          "weapons": [
             {
                "name": "Jagged Blade",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
                "range": "Engaged"
             },
             {
                "name": "Crude Bow",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 4,
                "range": "Medium",
                "qualities": [
-                  "Unwieldy 2"
+                  {
+                     "name": "Unwieldy",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2835,12 +3248,19 @@
          "weapons": [
             {
                "name": "Pointy Teeth",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 3,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3022,23 +3442,40 @@
          "weapons": [
             {
                "name": "Massive Claw",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Ensnare 1",
-                  "Knockdown"
+                  {
+                     "name": "Ensnare",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Hurled Bone Shards",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
                "range": "Short",
                "qualities": [
-                  "Vicious 2"
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3109,23 +3546,40 @@
          "weapons": [
             {
                "name": "Claws and Fangs",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Tail",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Disorient 3",
-                  "Knockdown"
+                  {
+                     "name": "Disorient",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3231,25 +3685,50 @@
          "weapons": [
             {
                "name": "Freezing Blood Torrent",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 3,
                "range": "Medium",
                "qualities": [
-                  "Blast 8",
-                  "Concussive 1",
-                  "Ensnare 4"
+                  {
+                     "name": "Blast",
+                     "ranks": 8,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Concussive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Ensnare",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Claws and Fangs",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Knockdown",
-                  "Vicious 3"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3319,22 +3798,36 @@
          "weapons": [
             {
                "name": "Brittle Axe",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Freezing Touch",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Stun 3"
+                  {
+                     "name": "Stun",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3422,26 +3915,55 @@
          "weapons": [
             {
                "name": "Halberd",
-               "skill": "Melee (Heavy)",
+               "skill": {
+                  "name": "Melee (Heavy)",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Defensive 1",
-                  "Pierce 3"
+                  {
+                     "name": "Defensive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Large shield",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 5,
                "range": "Engaged",
                "qualities": [
-                  "Defensive 2",
-                  "Deflection 2",
-                  "Inaccurate 2",
-                  "Knockdown"
+                  {
+                     "name": "Defensive",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Deflection",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Inaccurate",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3521,12 +4043,19 @@
          "weapons": [
             {
                "name": "Brace of Dwarven Pickaxes",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Pierce 2"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3595,17 +4124,27 @@
          "weapons": [
             {
                "name": "Claws and Teeth",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 2,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Crude Blade",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 3,
                "range": "Engaged"
@@ -3673,25 +4212,50 @@
          "weapons": [
             {
                "name": "Pseudopods",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Burn 2",
-                  "Sunder"
+                  {
+                     "name": "Burn",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Sunder",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Lava Projectile",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 9,
                "critical": 3,
                "range": "Short",
                "qualities": [
-                  "Blast 4",
-                  "Burn 2",
-                  "Concussive 1"
+                  {
+                     "name": "Blast",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Burn",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Concussive",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3757,14 +4321,28 @@
          "weapons": [
             {
                "name": "Claws and Fangs",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Knockdown",
-                  "Pierce 2",
-                  "Vicious 1"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3845,13 +4423,24 @@
          "weapons": [
             {
                "name": "Spear",
-               "skill": "Melee (Heavy)",
+               "skill": {
+                  "name": "Melee (Heavy)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Accurate 1",
-                  "Defensive 1"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Defensive",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3992,13 +4581,24 @@
          "weapons": [
             {
                "name": "Bloodstained Fangs",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Ensnare 1",
-                  "Vicious 2"
+                  {
+                     "name": "Ensnare",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4065,12 +4665,19 @@
          "weapons": [
             {
                "name": "Saber",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Defensive 1"
+                  {
+                     "name": "Defensive",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4152,12 +4759,19 @@
          "weapons": [
             {
                "name": "Ancient Sword",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Defensive 1"
+                  {
+                     "name": "Defensive",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4230,35 +4844,68 @@
          "weapons": [
             {
                "name": "Dolochs",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Accurate 1",
-                  "Linked 1"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Fists",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Linked 1",
-                  "Vicious 1"
+                  {
+                     "name": "Linked",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Sling",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 4,
                "range": "Medium",
                "qualities": [
-                  "Disorient 2",
-                  "Prepare 1"
+                  {
+                     "name": "Disorient",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Prepare",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4329,20 +4976,34 @@
          "weapons": [
             {
                "name": "Claws and Fangs",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Engaged"
             },
             {
                "name": "Tail Stinger",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
                "range": "Medium",
                "qualities": [
-                  "Slow-Firing 1",
-                  "Pierce 2"
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4424,34 +5085,63 @@
          "weapons": [
             {
                "name": "Claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Mawed Tentacles",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
                "range": "Short",
                "qualities": [
-                  "Ensnare 3",
-                  "Linked 1"
+                  {
+                     "name": "Ensnare",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Jaws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Pierce 2",
-                  "Vicious 2"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4523,13 +5213,24 @@
          "weapons": [
             {
                "name": "Pseudopods",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Linked 1",
-                  "Burn 1"
+                  {
+                     "name": "Linked",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Burn",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4601,13 +5302,24 @@
          "weapons": [
             {
                "name": "Pseudopods",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Ensnare 1",
-                  "Linked 1"
+                  {
+                     "name": "Ensnare",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4679,13 +5391,24 @@
          "weapons": [
             {
                "name": "Pseudopods",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Linked 1",
-                  "Stun 5"
+                  {
+                     "name": "Linked",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun",
+                     "ranks": 5,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4770,15 +5493,26 @@
          "weapons": [
             {
                "name": "Fangs",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Pierce 1",
-                  "Vicious 2",
-                  "A character wounded by this weapon by make a {@difficulty Hard|Resilience} or suffer 4 additional wounds, and must check again on their next turn if the check generates {@symbols d}."
-               ]
+                  {
+                     "name": "Pierce",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ],
+               "details": "A character wounded by this weapon by make a {@difficulty Hard|Resilience} or suffer 4 additional wounds, and must check again on their next turn if the check generates {@symbols d}."
             }
          ],
          "gear": [],
@@ -4885,13 +5619,24 @@
          "weapons": [
             {
                "name": "Ceremonial Dagger",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Accurate 1",
-                  "Vicious 1"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4967,24 +5712,44 @@
          "weapons": [
             {
                "name": "Cudgel",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Disorient 2",
-                  "Knockdown"
+                  {
+                     "name": "Disorient",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Spiked Chain",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 5,
                "range": "Short",
                "qualities": [
-                  "Ensnare 2",
-                  "Knockdown"
+                  {
+                     "name": "Ensnare",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -5089,12 +5854,19 @@
          "weapons": [
             {
                "name": "Hatchet",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -5168,23 +5940,41 @@
          "weapons": [
             {
                "name": "Orc Throwing Spear",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
                "range": "Medium",
                "qualities": [
-                  "Accurate 1",
-                  "Limited Ammo 1"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Axe",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -5342,12 +6132,19 @@
          "weapons": [
             {
                "name": "Cutlass",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Defensive 1"
+                  {
+                     "name": "Defensive",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -5448,7 +6245,10 @@
          "weapons": [
             {
                "name": "Mace",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 4,
                "range": "Engaged"
@@ -5528,14 +6328,20 @@
          "weapons": [
             {
                "name": "Rusted Blade",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
                "range": "Engaged"
             },
             {
                "name": "Worn Bow",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Medium"
@@ -5571,7 +6377,10 @@
          "derived": {
             "wounds": 5,
             "soak": 4,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -5664,25 +6473,51 @@
          "weapons": [
             {
                "name": "Massive Swords",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 9,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Linked 1",
-                  "Pierce 1"
+                  {
+                     "name": "Linked",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Stone Fists",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Concussive 1",
-                  "Disorient 3",
-                  "Linked 1"
+                  {
+                     "name": "Concussive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Disorient",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -5756,14 +6591,28 @@
          "weapons": [
             {
                "name": "Burning Fangs",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Burn 2",
-                  "Sunder",
-                  "Vicious 2"
+                  {
+                     "name": "Burn",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Sunder",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -5826,12 +6675,19 @@
          "weapons": [
             {
                "name": "Claws and Stingers",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 1,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Pierce 3"
+                  {
+                     "name": "Pierce",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -5894,13 +6750,23 @@
          "weapons": [
             {
                "name": "Spectral Hands",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 1,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Breach 1",
-                  "Stun Damage"
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -5982,22 +6848,37 @@
          "weapons": [
             {
                "name": "Spear",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Accurate 1 or Ranged"
-               ]
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ],
+               "details": "A Singhara hunter can throw the spear with the following weapon profile: ({@skill Ranged||crb}; Damage 6; Critical 3; Range [Short]; {@quality Accurate|Accurate 1|crb}, {@quality Limited Ammo|Limited Ammo 1|crb})."
             },
             {
                "name": "Claws and Teeth",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -6087,23 +6968,37 @@
          "weapons": [
             {
                "name": "Spear",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Accurate 1",
-                  "Can be thrown up to Short range, with an otherwise identical profile."
-               ]
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ],
+               "details": "Can be thrown up to Short range, with an otherwise identical profile."
             },
             {
                "name": "Claws and Teeth",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -6182,12 +7077,19 @@
          "weapons": [
             {
                "name": "Talons",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -6266,35 +7168,66 @@
          "weapons": [
             {
                "name": "Two Fanged Claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 9,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Knockdown",
-                  "Vicious 2"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Slavering Maw",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Pierce 2",
-                  "Sunder"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Sunder",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Spiny Tail",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 4,
                "range": "Short",
                "qualities": [
-                  "Ensnare 2",
-                  "Vicious 1"
+                  {
+                     "name": "Ensnare",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -6382,14 +7315,28 @@
          "weapons": [
             {
                "name": "The Club of All Goblins",
-               "skill": "Melee (Heavy)",
+               "skill": {
+                  "name": "Melee (Heavy)",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Inaccurate 1",
-                  "Knockdown",
-                  "Vicious 2"
+                  {
+                     "name": "Inaccurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -6568,13 +7515,24 @@
          "weapons": [
             {
                "name": "Dueling Rapier",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Defensive 1",
-                  "Pierce 3"
+                  {
+                     "name": "Defensive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -6657,7 +7615,10 @@
          "weapons": [
             {
                "name": "Dagger",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 3,
                "range": "Engaged"
@@ -6744,23 +7705,40 @@
          "weapons": [
             {
                "name": "Dagger",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 3,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Accurate 1"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Blackjack",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 5,
                "range": "Engaged",
                "qualities": [
-                  "Disorient 2",
-                  "Stun Damage"
+                  {
+                     "name": "Disorient",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -6869,23 +7847,41 @@
          "weapons": [
             {
                "name": "Eldritch Blade",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Disorient 2",
-                  "Pierce 4"
+                  {
+                     "name": "Disorient",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Claws and Teeth",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -6954,12 +7950,19 @@
          "weapons": [
             {
                "name": "Viper bow",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
                "range": "Long",
                "qualities": [
-                  "Unwieldy 3"
+                  {
+                     "name": "Unwieldy",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -6993,7 +7996,10 @@
          "derived": {
             "wounds": 14,
             "soak": 4,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -7034,12 +8040,18 @@
          "weapons": [
             {
                "name": "Hooves or Claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Knockdown"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             }
          ]
@@ -7100,32 +8112,53 @@
          "weapons": [
             {
                "name": "Axe",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Sword",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Defensive 1"
+                  {
+                     "name": "Defensive",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Bow",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
                "range": "Medium",
                "qualities": [
-                  "Unwieldy 2"
+                  {
+                     "name": "Unwieldy",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -7218,22 +8251,35 @@
          "weapons": [
             {
                "name": "Fangs",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 2"
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Knockdown"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -7334,12 +8380,19 @@
          "weapons": [
             {
                "name": "Sacrificial blade",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -7416,24 +8469,44 @@
          "weapons": [
             {
                "name": "Spectral Claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 2,
                "critical": 1,
                "range": "Engaged",
                "qualities": [
-                  "Breach 1",
-                  "Stun Damage"
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Wailing Cry",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 2,
                "critical": 5,
                "range": "Medium",
                "qualities": [
-                  "Breach 1",
-                  "Stun Damage"
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -7510,23 +8583,40 @@
          "weapons": [
             {
                "name": "Massive Jaws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 12,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Ensnare 2",
-                  "Vicious 4"
+                  {
+                     "name": "Ensnare",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Tail and Fins",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Knockdown"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -7620,24 +8710,46 @@
          "weapons": [
             {
                "name": "Fiery Breath",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
                "range": "Short",
                "qualities": [
-                  "Blast 8",
-                  "Burn 2",
-                  "Prepare 1"
+                  {
+                     "name": "Blast",
+                     "ranks": 8,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Burn",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Prepare",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 2"
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],

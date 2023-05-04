@@ -317,7 +317,7 @@
                },
                "description": { "$ref": "./varyingDisplay_sub_schema.json" },
                "encumbrance": {
-                  "type": "integer"
+                  "type": ["integer", "string"]
                },
                "price": {
                   "oneOf": [
