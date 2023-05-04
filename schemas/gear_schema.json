@@ -13,6 +13,9 @@
                   "type": "string",
                   "enum": ["weapon"]
                },
+               "class": {
+                  "type": "string"
+               },
                "page": {
                   "type": "integer"
                },
@@ -50,12 +53,12 @@
                "range": {
                   "type": "string",
                   "enum": [
-                     "engaged",
-                     "short",
-                     "medium",
-                     "long",
-                     "extreme",
-                     "strategic"
+                     "Engaged",
+                     "Short",
+                     "Medium",
+                     "Long",
+                     "Extreme",
+                     "Strategic"
                   ]
                },
                "encumbrance": {
@@ -151,6 +154,7 @@
             "optional": [
                "imageUrl",
                "page",
+               "class",
                "hardPoints",
                "restricted",
                "modifiers",
@@ -169,6 +173,9 @@
                "type": {
                   "type": "string",
                   "enum": ["armor"]
+               },
+               "class": {
+                  "type": "string"
                },
                "page": {
                   "type": "integer"
@@ -279,6 +286,7 @@
             "optional": [
                "imageUrl",
                "page",
+               "class",
                "hardPoints",
                "restricted",
                "modifiers",
@@ -297,6 +305,9 @@
                "type": {
                   "type": "string",
                   "enum": ["gear", "treasure", "alchemy", "artifact"]
+               },
+               "class": {
+                  "type": "string"
                },
                "page": {
                   "type": "integer"
@@ -390,6 +401,7 @@
             "optional": [
                "imageUrl",
                "page",
+               "class",
                "restricted",
                "modifiers",
                "encumbrance",
@@ -408,6 +420,9 @@
                "type": {
                   "type": "string",
                   "enum": ["cybernetic", "g-mod"]
+               },
+               "class": {
+                  "type": "string"
                },
                "page": {
                   "type": "integer"
@@ -478,6 +493,7 @@
             "optional": [
                "imageUrl",
                "page",
+               "class",
                "restricted",
                "modifiers",
                "settings"

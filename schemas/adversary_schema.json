@@ -252,7 +252,26 @@
                      "type": "string"
                   },
                   "skill": {
-                     "type": "string"
+                     "oneOf": [
+                        {
+                           "type": "object",
+                           "properties": {
+                              "name": {
+                                 "type": "string"
+                              },
+                              "source": {
+                                 "type": "string"
+                              }
+                           },
+                           "required": [
+                              "name"
+                           ],
+                           "additionalProperties": false
+                        },
+                        {
+                           "type": "string"
+                        }
+                     ]
                   },
                   "damage": {
                      "type": "integer"
@@ -263,19 +282,48 @@
                   "range": {
                      "type": "string",
                      "enum": [
-                        "engaged",
-                        "short",
-                        "medium",
-                        "long",
-                        "extreme",
-                        "strategic"
+                        "Engaged",
+                        "Short",
+                        "Medium",
+                        "Long",
+                        "Extreme",
+                        "Strategic"
                      ]
                   },
                   "qualities": {
                      "type": "array",
                      "items": {
-                        "type": "string"
+                        "oneOf": [
+                           {
+                              "type": "object",
+                              "properties": {
+                                 "name": {
+                                    "type": "string"
+                                 },
+                                 "ranks": {
+                                    "type": "integer"
+                                 },
+                                 "source": {
+                                    "type": "string"
+                                 }
+                              },
+                              "required": [
+                                 "name"
+                              ],
+                              "optional": [
+                                 "value",
+                                 "source"
+                              ],
+                              "additionalProperties": false
+                           },
+                           {
+                              "type": "string"
+                           }
+                        ]
                      }
+                  },
+                  "details": {
+                     "type": "string"
                   }
                },
                "required": [
@@ -286,7 +334,8 @@
                   "range"
                ],
                "optional": [
-                  "qualities"
+                  "qualities",
+                  "details"
                ],
                "additionalProperties": false
             }
