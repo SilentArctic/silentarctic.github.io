@@ -7,7 +7,7 @@
          "abbreviation": "RoT",
          "color": "#A75A0E",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/realms-terrinoth/",
-         "version": "2023.4.30",
+         "version": "2023.5.4",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -164,7 +164,7 @@
                "skill": "Ranged",
                "damage": 16,
                "critical": 3,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
                   "Blast 16",
                   "Burn 3",
@@ -176,7 +176,7 @@
                "skill": "Brawl",
                "damage": 17,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Knockdown",
                   "Sunder",
@@ -306,7 +306,7 @@
                "skill": "Melee (Light)",
                "damage": 6,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Defensive 1"
                ]
@@ -316,7 +316,7 @@
                "skill": "Melee (Light)",
                "damage": 5,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Accurate 1"
                ]
@@ -326,7 +326,7 @@
                "skill": "Ranged",
                "damage": 5,
                "critical": 3,
-               "range": "short",
+               "range": "Short",
                "qualities": [
                   "Accurate 1",
                   "Limited Ammo 3"
@@ -337,7 +337,7 @@
                "skill": "Ranged",
                "damage": 7,
                "critical": 3,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
                   "Unwieldy 2"
                ]
@@ -421,7 +421,7 @@
                "skill": "Brawl",
                "damage": 8,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Knockdown"
                ]
@@ -507,7 +507,7 @@
                "skill": "Brawl",
                "damage": 6,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Knockdown",
                   "Vicious 1"
@@ -600,7 +600,7 @@
                "skill": "Melee (Light)",
                "damage": 6,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Defensive 1"
                ]
@@ -610,7 +610,7 @@
                "skill": "Melee (Light)",
                "damage": 9,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Knockdown",
                   "a lance can only be used while mounted and can only be used to attack immediately after performing a maneuver to engage the target."
@@ -621,7 +621,7 @@
                "skill": "Melee (Light)",
                "damage": 4,
                "critical": 5,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Defensive 2",
                   "Deflection 2",
@@ -699,7 +699,7 @@
                "skill": "Brawl",
                "damage": 6,
                "critical": 3,
-               "range": "engaged"
+               "range": "Engaged"
             }
          ],
          "gear": []
@@ -809,7 +809,7 @@
                "skill": "Melee (Light)",
                "damage": 6,
                "critical": 4,
-               "range": "engaged"
+               "range": "Engaged"
             }
          ],
          "gear": [],
@@ -996,7 +996,7 @@
                "skill": "Brawl",
                "damage": 4,
                "critical": 4,
-               "range": "short",
+               "range": "Short",
                "qualities": [
                   "Auto-fire",
                   "Ensnare 3"
@@ -1007,7 +1007,7 @@
                "skill": "Brawl",
                "damage": 8,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 2"
                ]
@@ -1105,7 +1105,7 @@
                "skill": "Melee (Light)",
                "damage": 8,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Defensive 1"
                ]
@@ -1115,7 +1115,7 @@
                "skill": "Melee (Heavy)",
                "damage": 9,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Cumbersome 3",
                   "Linked 1",
@@ -1207,7 +1207,7 @@
                "skill": "Melee (Light)",
                "damage": 5,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Accurate 1",
                   "Sunder"
@@ -1284,7 +1284,7 @@
                "skill": "Ranged",
                "damage": 8,
                "critical": 2,
-               "range": "extreme",
+               "range": "Extreme",
                "qualities": [
                   "Accurate 1",
                   "Cumbersome 3",
@@ -1403,7 +1403,7 @@
                "skill": "Melee",
                "damage": 7,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 2"
                ]
@@ -1413,7 +1413,7 @@
                "skill": "Brawl",
                "damage": 5,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Disorient 2",
                   "Knockdown"
@@ -1552,14 +1552,14 @@
                "skill": "Melee (Light)",
                "damage": 9,
                "critical": 2,
-               "range": "engaged"
+               "range": "Engaged"
             },
             {
                "name": "Illusionary Claws",
                "skill": "Brawl",
                "damage": 6,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 2"
                ]
@@ -1654,7 +1654,7 @@
                "skill": "Melee (Heavy)",
                "damage": 8,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Defensive 1",
                   "Pierce 1",
@@ -1666,7 +1666,7 @@
                "skill": "Ranged",
                "damage": 6,
                "critical": 3,
-               "range": "short",
+               "range": "Short",
                "qualities": [
                   "Blast 6",
                   "Burn 1",
@@ -1679,7 +1679,7 @@
                "skill": "Brawl",
                "damage": 5,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 1"
                ]
@@ -1754,7 +1754,7 @@
                "skill": "Melee (Light)",
                "damage": 7,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Stun Damage"
                ]
@@ -1906,7 +1906,7 @@
                "skill": "Melee (Light)",
                "damage": 8,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 1"
                ]
@@ -1916,7 +1916,7 @@
                "skill": "Ranged",
                "damage": 9,
                "critical": 2,
-               "range": "extreme",
+               "range": "Extreme",
                "qualities": [
                   "Cumbersome 3",
                   "Pierce 2",
@@ -1928,7 +1928,7 @@
                "skill": "Ranged",
                "damage": 8,
                "critical": 3,
-               "range": "short",
+               "range": "Short",
                "qualities": [
                   "Blast 6",
                   "Burn 2",
@@ -2032,7 +2032,7 @@
                "skill": "Ranged",
                "damage": 12,
                "critical": 3,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
                   "Blast 12",
                   "Burn 3",
@@ -2044,7 +2044,7 @@
                "skill": "Brawl",
                "damage": 11,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Knockdown",
                   "Vicious 3"
@@ -2132,7 +2132,7 @@
                "skill": "Brawl",
                "damage": 6,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Ensnare 1"
                ]
@@ -2142,7 +2142,7 @@
                "skill": "Brawl",
                "damage": 5,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 1"
                ]
@@ -2216,7 +2216,7 @@
                "skill": "Brawl",
                "damage": 5,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 1"
                ]
@@ -2226,7 +2226,7 @@
                "skill": "Brawl",
                "damage": 5,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Ensnare 1"
                ]
@@ -2311,7 +2311,7 @@
                "skill": "Brawl",
                "damage": 5,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": ["Knockdown"]
             }
          ]
@@ -2379,7 +2379,7 @@
                "skill": "Brawl",
                "damage": 10,
                "critical": 4,
-               "range": "short",
+               "range": "Short",
                "qualities": [
                   "Knockdown",
                   "Prepare 1"
@@ -2452,7 +2452,7 @@
                "skill": "Melee",
                "damage": 12,
                "critical": 2,
-               "range": "short",
+               "range": "Short",
                "qualities": [
                   "Inaccurate 1",
                   "Knockdown",
@@ -2527,7 +2527,7 @@
                "skill": "Brawl",
                "damage": 6,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 2"
                ]
@@ -2537,7 +2537,7 @@
                "skill": "Brawl",
                "damage": 10,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Ensnare 4",
                   "Stun 4"
@@ -2723,14 +2723,14 @@
                "skill": "Melee (Light)",
                "damage": 5,
                "critical": 3,
-               "range": "engaged"
+               "range": "Engaged"
             },
             {
                "name": "Crude Bow",
                "skill": "Ranged",
                "damage": 6,
                "critical": 4,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
                   "Unwieldy 2"
                ]
@@ -2838,7 +2838,7 @@
                "skill": "Brawl",
                "damage": 3,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 1"
                ]
@@ -3025,7 +3025,7 @@
                "skill": "Melee (Light)",
                "damage": 7,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Ensnare 1",
                   "Knockdown"
@@ -3036,7 +3036,7 @@
                "skill": "Ranged",
                "damage": 5,
                "critical": 3,
-               "range": "short",
+               "range": "Short",
                "qualities": [
                   "Vicious 2"
                ]
@@ -3112,7 +3112,7 @@
                "skill": "Brawl",
                "damage": 7,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 1"
                ]
@@ -3122,7 +3122,7 @@
                "skill": "Brawl",
                "damage": 7,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Disorient 3",
                   "Knockdown"
@@ -3234,7 +3234,7 @@
                "skill": "Ranged",
                "damage": 10,
                "critical": 3,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
                   "Blast 8",
                   "Concussive 1",
@@ -3246,7 +3246,7 @@
                "skill": "Brawl",
                "damage": 8,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Knockdown",
                   "Vicious 3"
@@ -3322,7 +3322,7 @@
                "skill": "Melee (Light)",
                "damage": 6,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 1"
                ]
@@ -3332,7 +3332,7 @@
                "skill": "Brawl",
                "damage": 5,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Stun 3"
                ]
@@ -3425,7 +3425,7 @@
                "skill": "Melee (Heavy)",
                "damage": 7,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Defensive 1",
                   "Pierce 3"
@@ -3436,7 +3436,7 @@
                "skill": "Melee (Light)",
                "damage": 5,
                "critical": 5,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Defensive 2",
                   "Deflection 2",
@@ -3524,7 +3524,7 @@
                "skill": "Melee (Light)",
                "damage": 4,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Pierce 2"
                ]
@@ -3598,7 +3598,7 @@
                "skill": "Brawl",
                "damage": 2,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 1"
                ]
@@ -3608,7 +3608,7 @@
                "skill": "Melee (Light)",
                "damage": 4,
                "critical": 3,
-               "range": "engaged"
+               "range": "Engaged"
             }
          ],
          "gear": [],
@@ -3676,7 +3676,7 @@
                "skill": "Brawl",
                "damage": 7,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Burn 2",
                   "Sunder"
@@ -3687,7 +3687,7 @@
                "skill": "Ranged",
                "damage": 9,
                "critical": 3,
-               "range": "short",
+               "range": "Short",
                "qualities": [
                   "Blast 4",
                   "Burn 2",
@@ -3760,7 +3760,7 @@
                "skill": "Brawl",
                "damage": 6,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Knockdown",
                   "Pierce 2",
@@ -3848,7 +3848,7 @@
                "skill": "Melee (Heavy)",
                "damage": 6,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Accurate 1",
                   "Defensive 1"
@@ -3995,7 +3995,7 @@
                "skill": "Brawl",
                "damage": 6,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Ensnare 1",
                   "Vicious 2"
@@ -4068,7 +4068,7 @@
                "skill": "Melee (Light)",
                "damage": 6,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Defensive 1"
                ]
@@ -4155,7 +4155,7 @@
                "skill": "Melee (Light)",
                "damage": 6,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Defensive 1"
                ]
@@ -4233,7 +4233,7 @@
                "skill": "Brawl",
                "damage": 5,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Accurate 1",
                   "Linked 1"
@@ -4244,7 +4244,7 @@
                "skill": "Brawl",
                "damage": 4,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Linked 1",
                   "Vicious 1"
@@ -4255,7 +4255,7 @@
                "skill": "Ranged",
                "damage": 4,
                "critical": 4,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
                   "Disorient 2",
                   "Prepare 1"
@@ -4332,14 +4332,14 @@
                "skill": "Brawl",
                "damage": 6,
                "critical": 3,
-               "range": "engaged"
+               "range": "Engaged"
             },
             {
                "name": "Tail Stinger",
                "skill": "Ranged",
                "damage": 7,
                "critical": 3,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
                   "Slow-Firing 1",
                   "Pierce 2"
@@ -4427,7 +4427,7 @@
                "skill": "Brawl",
                "damage": 7,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 1"
                ]
@@ -4437,7 +4437,7 @@
                "skill": "Brawl",
                "damage": 7,
                "critical": 3,
-               "range": "short",
+               "range": "Short",
                "qualities": [
                   "Ensnare 3",
                   "Linked 1"
@@ -4448,7 +4448,7 @@
                "skill": "Brawl",
                "damage": 6,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Pierce 2",
                   "Vicious 2"
@@ -4460,9 +4460,9 @@
             "source:RoT",
             "Official",
             "setting:Fantasy",
-            "Combat CR:TBD",
-            "Social CR:TBD",
-            "General CR:TBD"
+            "Combat CR:-",
+            "Social CR:-",
+            "General CR:-"
          ]
       },
       {
@@ -4526,7 +4526,7 @@
                "skill": "Brawl",
                "damage": 6,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Linked 1",
                   "Burn 1"
@@ -4604,7 +4604,7 @@
                "skill": "Brawl",
                "damage": 6,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Ensnare 1",
                   "Linked 1"
@@ -4682,7 +4682,7 @@
                "skill": "Brawl",
                "damage": 6,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Linked 1",
                   "Stun 5"
@@ -4773,7 +4773,7 @@
                "skill": "Brawl",
                "damage": 5,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Pierce 1",
                   "Vicious 2",
@@ -4888,7 +4888,7 @@
                "skill": "Melee (Light)",
                "damage": 4,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Accurate 1",
                   "Vicious 1"
@@ -4970,7 +4970,7 @@
                "skill": "Melee",
                "damage": 10,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Disorient 2",
                   "Knockdown"
@@ -4981,7 +4981,7 @@
                "skill": "Ranged",
                "damage": 7,
                "critical": 5,
-               "range": "short",
+               "range": "Short",
                "qualities": [
                   "Ensnare 2",
                   "Knockdown"
@@ -5092,7 +5092,7 @@
                "skill": "Melee (Light)",
                "damage": 5,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 1"
                ]
@@ -5171,7 +5171,7 @@
                "skill": "Ranged",
                "damage": 7,
                "critical": 3,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
                   "Accurate 1",
                   "Limited Ammo 1"
@@ -5182,7 +5182,7 @@
                "skill": "Melee (Light)",
                "damage": 7,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 1"
                ]
@@ -5345,7 +5345,7 @@
                "skill": "Melee (Light)",
                "damage": 6,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Defensive 1"
                ]
@@ -5451,7 +5451,7 @@
                "skill": "Melee (Light)",
                "damage": 5,
                "critical": 4,
-               "range": "engaged"
+               "range": "Engaged"
             }
          ],
          "gear": [
@@ -5531,14 +5531,14 @@
                "skill": "Melee",
                "damage": 5,
                "critical": 3,
-               "range": "engaged"
+               "range": "Engaged"
             },
             {
                "name": "Worn Bow",
                "skill": "Ranged",
                "damage": 6,
                "critical": 3,
-               "range": "medium"
+               "range": "Medium"
             }
          ],
          "gear": [
@@ -5667,7 +5667,7 @@
                "skill": "Melee (Light)",
                "damage": 9,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Linked 1",
                   "Pierce 1"
@@ -5678,7 +5678,7 @@
                "skill": "Brawl",
                "damage": 7,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Concussive 1",
                   "Disorient 3",
@@ -5759,7 +5759,7 @@
                "skill": "Brawl",
                "damage": 7,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Burn 2",
                   "Sunder",
@@ -5829,7 +5829,7 @@
                "skill": "Brawl",
                "damage": 1,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Pierce 3"
                ]
@@ -5897,7 +5897,7 @@
                "skill": "Brawl",
                "damage": 1,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Breach 1",
                   "Stun Damage"
@@ -5985,7 +5985,7 @@
                "skill": "Melee (Light)",
                "damage": 6,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Accurate 1 or Ranged"
                ]
@@ -5995,7 +5995,7 @@
                "skill": "Brawl",
                "damage": 5,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 1"
                ]
@@ -6090,7 +6090,7 @@
                "skill": "Melee (Light)",
                "damage": 8,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Accurate 1",
                   "Can be thrown up to Short range, with an otherwise identical profile."
@@ -6101,7 +6101,7 @@
                "skill": "Brawl",
                "damage": 7,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 1"
                ]
@@ -6185,7 +6185,7 @@
                "skill": "Brawl",
                "damage": 6,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 1"
                ]
@@ -6269,7 +6269,7 @@
                "skill": "Brawl",
                "damage": 9,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Knockdown",
                   "Vicious 2"
@@ -6280,7 +6280,7 @@
                "skill": "Brawl",
                "damage": 7,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Pierce 2",
                   "Sunder"
@@ -6291,7 +6291,7 @@
                "skill": "Brawl",
                "damage": 6,
                "critical": 4,
-               "range": "short",
+               "range": "Short",
                "qualities": [
                   "Ensnare 2",
                   "Vicious 1"
@@ -6385,7 +6385,7 @@
                "skill": "Melee (Heavy)",
                "damage": 8,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Inaccurate 1",
                   "Knockdown",
@@ -6571,7 +6571,7 @@
                "skill": "Melee (Light)",
                "damage": 5,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Defensive 1",
                   "Pierce 3"
@@ -6660,7 +6660,7 @@
                "skill": "Melee (Light)",
                "damage": 4,
                "critical": 3,
-               "range": "engaged"
+               "range": "Engaged"
             }
          ],
          "gear": [
@@ -6747,7 +6747,7 @@
                "skill": "Melee (Light)",
                "damage": 3,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Accurate 1"
                ]
@@ -6757,7 +6757,7 @@
                "skill": "Melee (Light)",
                "damage": 5,
                "critical": 5,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Disorient 2",
                   "Stun Damage"
@@ -6872,7 +6872,7 @@
                "skill": "Melee",
                "damage": 4,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Disorient 2",
                   "Pierce 4"
@@ -6883,7 +6883,7 @@
                "skill": "Brawl",
                "damage": 4,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 1"
                ]
@@ -6957,7 +6957,7 @@
                "skill": "Ranged",
                "damage": 8,
                "critical": 3,
-               "range": "long",
+               "range": "Long",
                "qualities": [
                   "Unwieldy 3"
                ]
@@ -7037,7 +7037,7 @@
                "skill": "Brawl",
                "damage": 6,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Knockdown"
                ]
@@ -7103,7 +7103,7 @@
                "skill": "Melee (Light)",
                "damage": 6,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 1"
                ]
@@ -7113,7 +7113,7 @@
                "skill": "Melee (Light)",
                "damage": 6,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Defensive 1"
                ]
@@ -7123,7 +7123,7 @@
                "skill": "Ranged",
                "damage": 7,
                "critical": 3,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
                   "Unwieldy 2"
                ]
@@ -7221,7 +7221,7 @@
                "skill": "Brawl",
                "damage": 6,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 2"
                ]
@@ -7231,7 +7231,7 @@
                "skill": "Brawl",
                "damage": 8,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Knockdown"
                ]
@@ -7337,7 +7337,7 @@
                "skill": "Melee (Light)",
                "damage": 4,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 1"
                ]
@@ -7419,7 +7419,7 @@
                "skill": "Brawl",
                "damage": 2,
                "critical": 1,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Breach 1",
                   "Stun Damage"
@@ -7430,7 +7430,7 @@
                "skill": "Ranged",
                "damage": 2,
                "critical": 5,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
                   "Breach 1",
                   "Stun Damage"
@@ -7513,7 +7513,7 @@
                "skill": "Brawl",
                "damage": 12,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Ensnare 2",
                   "Vicious 4"
@@ -7524,7 +7524,7 @@
                "skill": "Brawl",
                "damage": 10,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Knockdown"
                ]
@@ -7623,7 +7623,7 @@
                "skill": "Ranged",
                "damage": 8,
                "critical": 3,
-               "range": "short",
+               "range": "Short",
                "qualities": [
                   "Blast 8",
                   "Burn 2",
@@ -7635,7 +7635,7 @@
                "skill": "Brawl",
                "damage": 8,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
                   "Vicious 2"
                ]
@@ -8659,7 +8659,7 @@
          },
          "damage": "+3",
          "critical": 3,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 2,
          "hardPoints": 1,
          "price": 150,
@@ -8685,7 +8685,7 @@
          },
          "damage": "+1",
          "critical": 4,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 2,
          "hardPoints": 0,
          "price": 150,
@@ -8711,7 +8711,7 @@
          },
          "damage": "+2",
          "critical": 3,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 1,
          "hardPoints": 1,
          "price": 60,
@@ -8738,7 +8738,7 @@
          },
          "damage": "+4",
          "critical": 3,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 4,
          "hardPoints": 2,
          "price": 150,
@@ -8774,7 +8774,7 @@
          },
          "damage": "+4",
          "critical": 3,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 4,
          "hardPoints": 2,
          "price": 300,
@@ -8810,7 +8810,7 @@
          },
          "damage": "+4",
          "critical": 2,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 3,
          "hardPoints": 2,
          "price": 300,
@@ -8847,7 +8847,7 @@
          },
          "damage": "+3",
          "critical": 3,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 5,
          "hardPoints": 3,
          "price": 250,
@@ -8878,7 +8878,7 @@
          },
          "damage": "+1",
          "critical": 2,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 1,
          "hardPoints": 1,
          "price": 175,
@@ -8904,7 +8904,7 @@
          },
          "damage": "+2",
          "critical": 4,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 2,
          "hardPoints": 1,
          "price": 90,
@@ -8937,7 +8937,7 @@
          },
          "damage": "+3",
          "critical": 3,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 3,
          "hardPoints": 1,
          "price": 110,
@@ -8965,7 +8965,7 @@
          },
          "damage": "+3",
          "critical": 4,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 2,
          "hardPoints": 1,
          "price": 75,
@@ -8984,7 +8984,7 @@
          },
          "damage": "+1",
          "critical": 2,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 3,
          "hardPoints": 1,
          "price": 160,
@@ -9010,7 +9010,7 @@
          },
          "damage": "+4",
          "critical": 4,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 4,
          "hardPoints": 2,
          "price": 100,
@@ -9036,7 +9036,7 @@
          },
          "damage": "+0",
          "critical": 6,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 2,
          "hardPoints": 1,
          "price": 80,
@@ -9079,7 +9079,7 @@
          },
          "damage": "+1",
          "critical": 5,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 2,
          "hardPoints": 2,
          "price": 160,
@@ -9122,7 +9122,7 @@
          },
          "damage": "+2",
          "critical": 5,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 3,
          "hardPoints": 2,
          "price": 280,
@@ -9175,7 +9175,7 @@
          },
          "damage": "+2",
          "critical": 4,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 2,
          "hardPoints": 1,
          "price": 40,
@@ -9201,7 +9201,7 @@
          },
          "damage": "+3",
          "critical": 2,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 1,
          "hardPoints": 1,
          "price": 200,
@@ -9227,7 +9227,7 @@
          },
          "damage": "+5",
          "critical": 4,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 4,
          "hardPoints": 2,
          "price": 600,
@@ -9268,7 +9268,7 @@
          },
          "damage": 7,
          "critical": 3,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 2,
          "hardPoints": 1,
          "price": 275,
@@ -9294,7 +9294,7 @@
          },
          "damage": 7,
          "critical": 2,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 3,
          "hardPoints": 1,
          "price": 600,
@@ -9325,7 +9325,7 @@
          },
          "damage": 5,
          "critical": 2,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 3,
          "hardPoints": 0,
          "price": 750,
@@ -9356,7 +9356,7 @@
          },
          "damage": 8,
          "critical": 2,
-         "range": "long",
+         "range": "Long",
          "encumbrance": 4,
          "hardPoints": 2,
          "price": 1000,
@@ -9392,7 +9392,7 @@
          },
          "damage": 6,
          "critical": 2,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 3,
          "hardPoints": 2,
          "price": 800,
@@ -9423,7 +9423,7 @@
          },
          "damage": 8,
          "critical": 3,
-         "range": "long",
+         "range": "Long",
          "encumbrance": 3,
          "hardPoints": 2,
          "price": 450,
@@ -9449,7 +9449,7 @@
          },
          "damage": 4,
          "critical": 4,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 0,
          "hardPoints": 0,
          "price": 20,
@@ -9481,7 +9481,7 @@
          },
          "damage": "+2",
          "critical": 3,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 1,
          "hardPoints": 1,
          "price": 50,
@@ -10453,10 +10453,20 @@
          ]
       }
    ],
+   "setting": [
+      {
+         "name": "Terrinoth",
+         "page": 0,
+         "summary": [
+            "See {@title Realms of Terrinoth} for more information on the Terrinoth setting."
+         ]
+      }
+   ],
    "sidebar": [
       {
          "name": "GM Advice: Adjudicating Heroic Abilities",
          "page": 76,
+         "type": "character",
          "description": [
             "While all Heroic Abilities have an important narrative impact, some abilities have a stronger or entirely narrative effect. While it's simple to resolve the use of abilities that directly interact with the mechanics of the game, primary ability effects like Foretelling and Connected can leave a lot up to the GM. As the GM, you should resolve these abilities in much the same way as any other activity the PCs undertake that doesn't call for a skill check, or any other question the players might ask about the setting.",
             "While these effects do place certain restrictions on your response, they also allow plenty of freedom to resolve the use of an ability in the way that works best for your game and campaign. The favor a PC gains by using Connected or the knowledge they gain through All the Facts provide opportunities for you to keep the action on track by providing the PCs with the information or opportunity they need to progress the adventure. However you choose to resolve the ability, just make sure the player gains the benefit they expect from their chosen ability and that it has a suitably heroic impact on the game!"

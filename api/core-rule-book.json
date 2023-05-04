@@ -7,7 +7,7 @@
          "abbreviation": "CRB",
          "color": "#14C0F1",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/",
-         "version": "2023.4.30",
+         "version": "2023.5.4",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -109,34 +109,63 @@
          "weapons": [
             {
                "name": "Venomous fangs",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Burn 2",
-                  "Pierce 3"
+                  {
+                     "name": "Burn",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Acid Spit",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 4,
-               "range": "short",
+               "range": "Short",
                "qualities": [
-                  "Burn 2",
-                  "Pierce 3"
+                  {
+                     "name": "Burn",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Webbing",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 1,
                "critical": 6,
-               "range": "short",
+               "range": "Short",
                "qualities": [
-                  "Ensnare 3"
+                  {
+                     "name": "Ensnare",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -206,17 +235,23 @@
          "weapons": [
             {
                "name": "Rusty Blade",
-               "skill": "Melee (Light)",
+               "skill": {
+                  "name": "Melee (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 4,
-               "range": "engaged"
+               "range": "Engaged"
             },
             {
                "name": "Old Bow",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
-               "range": "medium"
+               "range": "Medium"
             }
          ],
          "gear": [],
@@ -298,20 +333,34 @@
          "weapons": [
             {
                "name": "Fangs",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
-               "range": "engaged"
+               "range": "Engaged"
             },
             {
                "name": "Buffeting Wings",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Disorient 3",
-                  "Stun 3"
+                  {
+                     "name": "Disorient",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -403,24 +452,44 @@
          "weapons": [
             {
                "name": "Cudgel",
-               "skill": "Melee (Heavy)",
+               "skill": {
+                  "name": "Melee (Heavy)",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Disorient 2",
-                  "Knockdown"
+                  {
+                     "name": "Disorient",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Spiked Chain",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 5,
-               "range": "short",
+               "range": "Short",
                "qualities": [
-                  "Ensnare 2",
-                  "Knockdown"
+                  {
+                     "name": "Ensnare",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -489,17 +558,23 @@
          "weapons": [
             {
                "name": "Revolver",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
-               "range": "medium"
+               "range": "Medium"
             },
             {
                "name": "Cutlass",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 3,
-               "range": "engaged"
+               "range": "Engaged"
             }
          ],
          "gear": [
@@ -578,13 +653,26 @@
          "weapons": [
             {
                "name": "Fists or claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Disorient 2 or Vicious 1"
-               ]
+                  {
+                     "name": "Disorient",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ],
+               "details": "If this adversary has fists, use the {@quality Disorient||crb} quality. If this adversary has claws, use the {@quality Vicious||crb} quality."
             }
          ],
          "gear": [],
@@ -685,24 +773,46 @@
          "weapons": [
             {
                "name": "Dueling Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 2,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
-                  "Accurate 1",
-                  "Limited Ammo 2"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Rapier",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 3,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Defensive 1",
-                  "Pierce 2"
+                  {
+                     "name": "Defensive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -795,20 +905,30 @@
          "weapons": [
             {
                "name": "Fusil",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
-                  "Accurate 1"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Saber",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
-               "range": "engaged"
+               "range": "Engaged"
             }
          ],
          "gear": [
@@ -908,14 +1028,41 @@
          "weapons": [
             {
                "name": "Finely Crafted Shudder Blade",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 2",
-                  "Vicious 3",
-                  "laser pistol Ranged (Light)"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Laser Pistol",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -988,14 +1135,21 @@
          "weapons": [
             {
                "name": "Tiny Pincers",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 1,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 3",
-                  "Add {@dice boost|2} if target is immobilized."
-               ]
+                  {
+                     "name": "Pierce",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
+               ],
+               "details": "Add {@dice boost|2} if target is immobilized."
             }
          ],
          "gear": [],
@@ -1079,33 +1233,58 @@
          "weapons": [
             {
                "name": "Laser Rifle",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
-               "range": "long",
+               "range": "Long",
                "qualities": [
-                  "Pierce 4"
+                  {
+                     "name": "Pierce",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Mono-Molecular Cutlass",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 2"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Cutter Laser equipped with a hoverplatform",
-               "skill": "Gunnery",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
                "damage": 9,
                "critical": 3,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
-                  "Breach 2",
-                  "Inaccurate 2"
+                  {
+                     "name": "Breach",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Inaccurate",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1277,24 +1456,41 @@
          "weapons": [
             {
                "name": "Thrashing Appendage",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Knockdown",
-                  "may spend {@symbols aa} to knock all other characters engaged with the target prone"
-               ]
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
+               ],
+               "details": "May spend {@symbols aa} to knock all other characters engaged with the target prone."
             },
             {
                "name": "Vicious Maw",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 3",
-                  "Vicious 3"
+                  {
+                     "name": "Pierce",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1385,12 +1581,19 @@
          "weapons": [
             {
                "name": "DEW Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
-               "range": "short",
+               "range": "Short",
                "qualities": [
-                  "Burn 1"
+                  {
+                     "name": "Burn",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1457,23 +1660,24 @@
          "weapons": [
             {
                "name": "Battle Rifle",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
-               "range": "long",
-               "qualities": [
-                  "Damage 4"
-               ]
+               "range": "Long"
             },
             {
                "name": "Bayonet",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 3,
-               "range": "engaged",
-               "qualities": [
-                  "if attached to the end of a rifle, gains the {@quality Defensive} 1 quality."
-               ]
+               "range": "Engaged",
+               "details": "If attached to the end of a rifle, gains the {@quality Defensive|Defensive 1|crb} quality."
             }
          ],
          "gear": [
@@ -1582,23 +1786,41 @@
          "weapons": [
             {
                "name": "Rune-Covered Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
-                  "Accurate 1"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Wicked Knife",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 3",
-                  "Vicious 2"
+                  {
+                     "name": "Pierce",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1669,10 +1891,13 @@
          "weapons": [
             {
                "name": "Fangs and Claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
-               "range": "engaged"
+               "range": "Engaged"
             }
          ],
          "gear": [],
@@ -1857,12 +2082,19 @@
          "weapons": [
             {
                "name": "Really Big and Sharp Knife",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 2"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1976,10 +2208,13 @@
          "weapons": [
             {
                "name": "Silenced Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 4,
-               "range": "short"
+               "range": "Short"
             }
          ],
          "gear": [
@@ -2140,12 +2375,18 @@
          "weapons": [
             {
                "name": "Assault Rifle",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
-               "range": "long",
+               "range": "Long",
                "qualities": [
-                  "Auto-fire"
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2214,21 +2455,34 @@
          "weapons": [
             {
                "name": "Studded gloves",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Disorient 2",
-                  "Knockdown"
+                  {
+                     "name": "Disorient",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Club",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
-               "range": "engaged"
+               "range": "Engaged"
             }
          ],
          "gear": [
@@ -2303,14 +2557,28 @@
          "weapons": [
             {
                "name": "Rapid-fire Flechette Gun",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 2,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
-                  "Auto-fire",
-                  "Pierce 2",
-                  "Vicious 2"
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2394,36 +2662,72 @@
          "weapons": [
             {
                "name": "Portable Laser Cannon",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 3,
-               "range": "long",
+               "range": "Long",
                "qualities": [
-                  "Accurate 1",
-                  "Burn 1",
-                  "Cumbersome 4"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Burn",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Cumbersome",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Laser Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
-               "range": "short",
+               "range": "Short",
                "qualities": [
-                  "Accurate 1",
-                  "Burn 1"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Burn",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Exosuit Fists",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Disorient 3",
-                  "Knockdown"
+                  {
+                     "name": "Disorient",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2442,7 +2746,7 @@
             "source:GCRB",
             "Official",
             "setting:Science Fiction",
-            "Combat CR:TBD",
+            "Combat CR:1",
             "Social CR:2",
             "General CR:4"
          ]
@@ -3993,7 +4297,7 @@
          },
          "damage": "+1",
          "critical": 3,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 1,
          "price": 25,
          "rarity": 1,
@@ -4019,7 +4323,7 @@
          },
          "damage": 6,
          "critical": 4,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 2,
          "price": 350,
          "rarity": 4,
@@ -4048,7 +4352,7 @@
          },
          "damage": "+3",
          "critical": 3,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 2,
          "price": 150,
          "rarity": 1,
@@ -4076,7 +4380,7 @@
          },
          "damage": "+4",
          "critical": 3,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 4,
          "price": 300,
          "rarity": 4,
@@ -4112,7 +4416,7 @@
          },
          "damage": "+4",
          "critical": 2,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 3,
          "price": 300,
          "rarity": 4,
@@ -4148,7 +4452,7 @@
          },
          "damage": "+3",
          "critical": 3,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 5,
          "price": 250,
          "rarity": 3,
@@ -4180,7 +4484,7 @@
          },
          "damage": "+2",
          "critical": 4,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 2,
          "price": 90,
          "rarity": 1,
@@ -4212,7 +4516,7 @@
          },
          "damage": "+3",
          "critical": 4,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 2,
          "price": 75,
          "rarity": 1,
@@ -4235,7 +4539,7 @@
          },
          "damage": "+0",
          "critical": 6,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 2,
          "price": 80,
          "rarity": 1,
@@ -4275,7 +4579,7 @@
          },
          "damage": "+3",
          "critical": 2,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 1,
          "price": 200,
          "rarity": 2,
@@ -4303,7 +4607,7 @@
          },
          "damage": 7,
          "critical": 3,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 2,
          "price": 275,
          "rarity": 2,
@@ -4331,7 +4635,7 @@
          },
          "damage": 7,
          "critical": 2,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 3,
          "price": 600,
          "rarity": 4,
@@ -4363,7 +4667,7 @@
          },
          "damage": 8,
          "critical": 3,
-         "range": "long",
+         "range": "Long",
          "encumbrance": 3,
          "price": 450,
          "rarity": 4,
@@ -4606,7 +4910,7 @@
          },
          "damage": "+4",
          "critical": 4,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 2,
          "price": 525,
          "rarity": 5,
@@ -4640,7 +4944,7 @@
          },
          "damage": "+3",
          "critical": 2,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 5,
          "price": 400,
          "rarity": 7,
@@ -4684,7 +4988,7 @@
          },
          "damage": "+1",
          "critical": 2,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 1,
          "price": 110,
          "rarity": 3,
@@ -4712,7 +5016,7 @@
          },
          "damage": 11,
          "critical": 3,
-         "range": "long",
+         "range": "Long",
          "encumbrance": 7,
          "price": 1100,
          "rarity": 6,
@@ -4748,7 +5052,7 @@
          },
          "damage": 8,
          "critical": 3,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 1,
          "price": 50,
          "rarity": 6,
@@ -4785,7 +5089,7 @@
          },
          "damage": 12,
          "critical": 1,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 5,
          "price": 4500,
          "rarity": 10,
@@ -4826,7 +5130,7 @@
          },
          "damage": 9,
          "critical": 3,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 3,
          "price": 400,
          "rarity": 0,
@@ -4861,7 +5165,7 @@
          },
          "damage": 8,
          "critical": 3,
-         "range": "long",
+         "range": "Long",
          "encumbrance": 4,
          "price": 500,
          "rarity": 4,
@@ -4884,7 +5188,7 @@
          },
          "damage": 5,
          "critical": 4,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 2,
          "price": 280,
          "rarity": 7,
@@ -5073,7 +5377,7 @@
          },
          "damage": "+2",
          "critical": 3,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 1,
          "price": 150,
          "rarity": 5,
@@ -5105,7 +5409,7 @@
          },
          "damage": "+1",
          "critical": 3,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 1,
          "price": 290,
          "rarity": 7,
@@ -5141,7 +5445,7 @@
          },
          "damage": 6,
          "critical": 3,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 4,
          "price": 450,
          "rarity": 8,
@@ -5169,7 +5473,7 @@
          },
          "damage": 8,
          "critical": 3,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 6,
          "price": 900,
          "rarity": 8,
@@ -5197,7 +5501,7 @@
          },
          "damage": 6,
          "critical": 3,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 4,
          "price": 900,
          "rarity": 7,
@@ -5232,7 +5536,7 @@
          },
          "damage": 10,
          "critical": 2,
-         "range": "long",
+         "range": "Long",
          "encumbrance": 8,
          "price": 1450,
          "rarity": 9,
@@ -5279,7 +5583,7 @@
          },
          "damage": 12,
          "critical": 2,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 6,
          "price": 850,
          "rarity": 7,
@@ -5420,7 +5724,7 @@
          },
          "damage": "+1",
          "critical": 4,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 1,
          "price": 40,
          "rarity": 1,
@@ -5448,7 +5752,7 @@
          },
          "damage": "+2",
          "critical": 3,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 1,
          "price": 70,
          "rarity": 2,
@@ -5470,7 +5774,7 @@
          },
          "damage": 6,
          "critical": 6,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 1,
          "price": 100,
          "rarity": 1,
@@ -5502,7 +5806,7 @@
          },
          "damage": 8,
          "critical": 3,
-         "range": "long",
+         "range": "Long",
          "encumbrance": 4,
          "price": 1000,
          "rarity": 7,
@@ -5529,7 +5833,7 @@
          },
          "damage": 5,
          "critical": 4,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 1,
          "price": 100,
          "rarity": 3,
@@ -5551,7 +5855,7 @@
          },
          "damage": 6,
          "critical": 3,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 1,
          "price": 300,
          "rarity": 3,
@@ -5574,7 +5878,7 @@
          },
          "damage": 8,
          "critical": 3,
-         "range": "long",
+         "range": "Long",
          "encumbrance": 4,
          "price": 750,
          "rarity": 4,
@@ -5607,7 +5911,7 @@
          },
          "damage": 10,
          "critical": 3,
-         "range": "long",
+         "range": "Long",
          "encumbrance": 6,
          "price": 1500,
          "rarity": 6,
@@ -5646,7 +5950,7 @@
          },
          "damage": 20,
          "critical": 2,
-         "range": "extreme",
+         "range": "Extreme",
          "encumbrance": 8,
          "price": 100000,
          "rarity": 8,
@@ -5696,7 +6000,7 @@
          },
          "damage": 8,
          "critical": 3,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 3,
          "price": 500,
          "rarity": 3,
@@ -5732,7 +6036,7 @@
          },
          "damage": 5,
          "critical": 3,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 2,
          "price": 400,
          "rarity": 6,
@@ -5760,7 +6064,7 @@
          },
          "damage": 9,
          "critical": 2,
-         "range": "extreme",
+         "range": "Extreme",
          "encumbrance": 4,
          "price": 1200,
          "rarity": 6,
@@ -5903,7 +6207,7 @@
          },
          "damage": "+1",
          "critical": 2,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 1,
          "price": 240,
          "rarity": 3,
@@ -5931,7 +6235,7 @@
          },
          "damage": 6,
          "critical": 4,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 1,
          "price": 160,
          "rarity": 2,
@@ -5962,7 +6266,7 @@
          },
          "damage": 4,
          "critical": 2,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 1,
          "price": 500,
          "rarity": 5,
@@ -5994,7 +6298,7 @@
          },
          "damage": 4,
          "critical": 2,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 3,
          "price": 800,
          "rarity": 5,
@@ -6030,7 +6334,7 @@
          },
          "damage": 6,
          "critical": 3,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 2,
          "price": 650,
          "rarity": 7,
@@ -6062,7 +6366,7 @@
          },
          "damage": 8,
          "critical": 3,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 4,
          "price": 900,
          "rarity": 7,
@@ -6094,7 +6398,7 @@
          },
          "damage": 10,
          "critical": 2,
-         "range": "extreme",
+         "range": "Extreme",
          "encumbrance": 5,
          "price": 2000,
          "rarity": 6,
@@ -6130,7 +6434,7 @@
          },
          "damage": 12,
          "critical": 4,
-         "range": "long",
+         "range": "Long",
          "encumbrance": 5,
          "price": 3000,
          "rarity": 6,
@@ -6399,7 +6703,7 @@
          },
          "damage": "+2",
          "critical": 2,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 1,
          "price": 450,
          "rarity": 5,
@@ -6431,7 +6735,7 @@
          },
          "damage": 15,
          "critical": 3,
-         "range": "long",
+         "range": "Long",
          "encumbrance": 6,
          "price": 4500,
          "rarity": 3,
@@ -6474,7 +6778,7 @@
          },
          "damage": 8,
          "critical": 4,
-         "range": "long",
+         "range": "Long",
          "encumbrance": 5,
          "price": 1000,
          "rarity": 5,
@@ -6511,7 +6815,7 @@
          },
          "damage": 9,
          "critical": 3,
-         "range": "extreme",
+         "range": "Extreme",
          "encumbrance": 8,
          "price": 3120,
          "rarity": 6,
@@ -6544,7 +6848,7 @@
          },
          "damage": 5,
          "critical": 3,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 2,
          "price": 360,
          "rarity": 4,
@@ -6573,7 +6877,7 @@
          },
          "damage": 6,
          "critical": 3,
-         "range": "long",
+         "range": "Long",
          "encumbrance": 4,
          "price": 860,
          "rarity": 4,
@@ -6601,7 +6905,7 @@
          },
          "damage": 6,
          "critical": 4,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 1,
          "price": 200,
          "rarity": 5,
@@ -6644,7 +6948,7 @@
          },
          "damage": 10,
          "critical": 2,
-         "range": "long",
+         "range": "Long",
          "encumbrance": 7,
          "price": 2000,
          "rarity": 7,
@@ -6684,7 +6988,7 @@
          },
          "damage": 10,
          "critical": 2,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 2,
          "price": 1200,
          "rarity": 4,
@@ -6712,7 +7016,7 @@
          },
          "damage": 10,
          "critical": 2,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 4,
          "price": 1400,
          "rarity": 4,
@@ -6740,7 +7044,7 @@
          },
          "damage": 15,
          "critical": 2,
-         "range": "extreme",
+         "range": "Extreme",
          "encumbrance": 7,
          "price": 10000,
          "rarity": 6,
@@ -6788,7 +7092,7 @@
          },
          "damage": 6,
          "critical": 4,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 1,
          "price": 200,
          "rarity": 1,
@@ -6810,7 +7114,7 @@
          },
          "damage": 7,
          "critical": 4,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 3,
          "price": 375,
          "rarity": 1,
@@ -7055,7 +7359,7 @@
          "activation": "active",
          "itemTypes": "weapon",
          "description": [
-            "A weapon with Ensnare binds a foe and restricts their movements. When Ensnare is triggered, one target hit by the attack becomes immobilized (see page 114) for a number of rounds equal to the weapon's Ensnare rating. An immobilized target cannot perform maneuvers. If multiple targets suffer hits from a weapon with Ensnare, the quality may be triggered multiple times, affecting a different target each time.",
+            "A weapon with Ensnare binds a foe and restricts their movements. When Ensnare is triggered, one target hit by the attack becomes {@rule immobilized} (see page 114) for a number of rounds equal to the weapon's Ensnare rating. An {@rule immobilized} target cannot perform maneuvers. If multiple targets suffer hits from a weapon with Ensnare, the quality may be triggered multiple times, affecting a different target each time.",
             "An Ensnared target may perform an action to attempt a {@difficulty hard} Athletics check on their turn to break free from the effect."
          ]
       },
@@ -7229,7 +7533,23 @@
    ],
    "rule": [
       {
+         "name": "Accelerate",
+         "type": "vehicle maneuver",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Pilot Only:} Yes",
+                  "{@b Silhouette:} Any",
+                  "{@b Current Speed:} Any"
+               ]
+            },
+            "The pilot may increase the vehicle's current speed by one or more, to a maximum of the vehicle's maximum speed. The vehicle suffers a number of system strain equal to the amount its speed increased minus 1, to a minimum of 0."
+         ]
+      },
+      {
          "name": "Actions",
+         "type": "action",
          "page": 101,
          "description": [
             "During a character's turn, they generally have the chance to perform one primary activity. This is the character's action. Actions include any activity complex enough to warrant a skill check, such as slicing into a computer network, firing a rifle, or leaping across a chasm.",
@@ -7360,6 +7680,7 @@
       },
       {
          "name": "Actions (Brief)",
+         "type": "action",
          "page": 101,
          "description": [
             {
@@ -7376,10 +7697,11 @@
       },
       {
          "name": "Collisions",
+         "type": "vehicle",
          "page": 222,
          "description": [
             "There are occasions when vehicles will run into the terrain around them, or into another nearby vehicle. In these cases, there are two possible types of collisions: glancing blows (minor collisions) and head-on hits (major collisions). Collisions can be mitigated by ship's or vehicle's defenses.",
-            "In the case of a minor collision, all vehicles involved suffer a single Critical Hit (see Vehicle Critical Hits, on page 231). Subtract the vehicle's defense times 10 from the rolled on {@table III.2-19: Critical Hit Result}, on page 230. If the result is reduced to zero or less, the vehicle's shields or other defenses have nullified the collision entirely, and the Critical Hit is canceled.",
+            "In the case of a minor collision, all vehicles involved suffer a single Critical Hit (see Vehicle Critical Hits, on page 231). Subtract the vehicle's defense times 10 from the rolled on {@table III.2-19: Vehicle Critical Hit Result}, on page 230. If the result is reduced to zero or less, the vehicle's shields or other defenses have nullified the collision entirely, and the Critical Hit is canceled.",
             "In the case of a major collision, all vehicles involved suffer a single Critical Hit as well. Subtract the vehicle's defense times 5 from the Critical Hit result. If the result is reduced to zero or less, the Critical Hit is canceled.",
             "At your discretion, some particularly large vehicles might be able to ignore collisions with very small vehicles. However, larger vehicles have a harder time avoiding collisions with terrain features."
          ]
@@ -7387,6 +7709,7 @@
       {
          "name": "Combat (Brief)",
          "page": 101,
+         "type": "combat",
          "description": [
             {
                "type": "list",
@@ -7403,6 +7726,7 @@
       },
       {
          "name": "Cybernetics",
+         "type": "character",
          "page": 177,
          "description": [
             "Although modern cybernetics can give a disabled individual a replacement for a missing extremity, in the future they may do much more. These cybernetics are special pieces of gear that must be installed on a character with an {@difficulty Average|Medicine} check. They cannot be removed without surgery, requiring a second successful {@difficulty Average|Medicine} check.",
@@ -7411,6 +7735,7 @@
       },
       {
          "name": "Disoriented",
+         "type": "status",
          "page": 114,
          "description": [
             "A disoriented character adds {@dice setback} to all checks they make. Most effects that disorient a character last for a set duration. If a set duration is not specified, disorientation lasts until the end of the character's next turn. If a character is disoriented multiple times, each instance increases the total duration of the effect by the instance's specified duration, but may not increase the total duration beyond the scope of the present encounter."
@@ -7419,6 +7744,7 @@
       {
          "name": "Effects of Fear",
          "page": 243,
+         "type": "status",
          "description": [
             "In the list below, we've provided some mechanical effects for failing fear checks (and succeeding on them as well). Of course, you can also add narrative effects to a check, depending on the circumstances.",
             "Suggested effects for failing or generating {@symbols h or d}:",
@@ -7445,6 +7771,7 @@
       {
          "name": "Environmental Effects",
          "page": 110,
+         "type": "environment",
          "description": [
             "Your characters may end up adventuring in countless environments, from the frozen wastes of the icy tundra, to lost ruins in steamy jungles, to the bustling streets of busy cities. Characters can often find themselves fighting in hazardous or exotic circumstances, ranging from the cold, hard vacuum of space to the infernal heat of a volcanic planet. The following sections cover rules imposed by those environments.",
             {
@@ -7548,6 +7875,7 @@
       {
          "name": "Environmental Effects (Brief)",
          "page": 111,
+         "type": "environment",
          "description": [
             {
                "type": "list",
@@ -7568,14 +7896,36 @@
          ]
       },
       {
+         "name": "Fire, Acid, and Corrosive Atmospheres",
+         "page": 111,
+         "type": "environment",
+         "description": [
+            "Fundamentally, the effects of fire, acids, and corrosive atmospheres are treated with the same rules. When characters are exposed to a fire, acid, or a corrosive atmosphere, the GM determines how dangerous the situation is by applying a rating. This rating is generally between 1 and 10, although higher ratings may also apply. A lower rating typically indicates minor, low-heat fire or mildly corrosive liquid or atmosphere. The higher the rating, the hotter the fire or the more corrosive the atmosphere. See {@table I.6-8: Fire, Acid, and Corrosive Atmospheres} for some examples of different ratings.",
+            "Each round at the beginning of their turn, a character subjected to one of these hazards suffers wounds equal to its rating. This damage persists until they are no longer exposed to the hazard. With some corrosive atmospheres, the GM may decide they do not cause damage unless inhaled. In such cases, the character can hold their breath for a number of rounds equal to their Brawn before having to breathe and suffer damage.",
+            "It's primarily up to the GM to decide how long the damage from one of these sources lasts. Acids usually neutralize themselves after a certain period of time (as few as several rounds, or as long as several minutes or hours). Fires burn for as long as they have a fuel source, which again could be very briefly or for a very long time. A corrosive atmosphere, on the other hand, usually deals damage as long as the character is exposed to it.",
+            "{@b Putting out fire/neutralizing acid:} A victim might be able to stop the damage caused by fire by rolling around on the ground and making a {@skill Coordination} check. This is an {@difficulty Average} check on hard surfaces such as the deck of a spaceship, or an {@difficulty Easy} check on grass or soft ground. Jumping into a body of water stops the damage immediately. In the case of acid, it's up to the GM to determine if the same procedures negate the damage, or if the character must apply some neutralizing substance instead. The only way to stop taking damage from a corrosive atmosphere is to leave it."
+         ]
+      },
+      {
          "name": "Immobilized",
+         "type": "status",
          "page": 114,
          "description": [
             "An immobilized character cannot perform maneuvers (including maneuvers purchased via strain or by spending {@symbols a}). Most effects that immobilize a character last for a set duration. If a set duration is not specified, immobilization lasts until the end of the character's next turn. If a character is immobilized multiple times, each instance increases the total duration of the effect by the instance's specified duration, but may not increase the total duration beyond the scope of the present encounter."
          ]
       },
       {
+         "name": "Incapacitated",
+         "page": 113,
+         "type": "status",
+         "description": [
+            "A character is {@b incapacitated} once they have suffered more wounds than their wound threshold or more strain than their strain threshold. Incapacitation means that a character is unconscious and no longer able to act until the number of wounds or strain they are suffering is decreased below their wound or strain threshold.",
+            "Since exceeding a character's wound threshold triggers a Critical Injury, it's possible (and often likely!) for an incapacitated character to also be critically injured."
+         ]
+      },
+      {
          "name": "Incidentals",
+         "type": "incidental",
          "page": 97,
          "description": [
             "Incidentals are anything a character wants to do that takes very little time, or has no measurable effect on the ongoing encounter. This includes dropping something they're holding, letting go of someone, saying something, looking around, gesturing, or making other minor movements. We have no exhaustive list of possible incidentals, because the possibilities for what a character can do as an incidental are so varied, and because, like we said, most of them don't have any mechanical effect.",
@@ -7585,6 +7935,7 @@
       },
       {
          "name": "Incidentals (Brief)",
+         "type": "incidental",
          "page": 97,
          "description": [
             {
@@ -7600,201 +7951,28 @@
          ]
       },
       {
-         "name": "Range Bands",
-         "page": 105,
+         "name": "Item Maintenance",
+         "page": 89,
+         "type": "gear",
          "description": [
-            "{@title Genesys} relies on broad terms to describe ranges and distances. Rather than have a player's attention focused on a grid, counting squares, {@title Genesys} uses more abstract means to represent positions, distances, and ranges, thus allowing the players to focus on the action and the adventure.",
-            "The distance between two points—people, objects, or adversaries—is defined by general range categories. These range categories are used to determine how far a ranged attack can reach, how far apart two people are from each other, how much effort is needed to move between two places, and so on. The most common ranges are short, medium, long, and extreme range. Another relative position—engaged—exists to represent characters who are in extremely close proximity to each other.",
+            "Invariably, items start to wear down. Rolling {@symbols d} may indicate a item has malfunctioned, misfired, jammed, broken down, or otherwise been rendered inoperable or impaired until it can be repaired.",
+            "All items, from low-tech weapons to more sophisticated devices, can be repaired with the {@skill Mechanics} skill.",
+            "Item damage are generally classified as minor, moderate, or major. The magnitude of the required repairs indicates two things: the severity of any penalties applied to the user when trying to operate the defective item, and the difficulty rating of the necessary repairs. Repairing an item requires adequate time and tools, generally one to two hours per difficulty level. If a character attempts repairs in less time, the difficulty increases by one. Likewise, if the character lacks the proper tools, the difficulty increases by one. These factors are cumulative, so if your character tries to repair a pistol without the proper tools and in half the time it would normally take, you should increase the difficulty of the check by two.",
+            "The cost of repairs is equal to a percentage of the item's base cost: 25% if it's a minor repair, 50% if it's a moderate repair, and 100% if it requires major work. Reduce the total by 10% for each {@symbols a} received on the repair check if your character is doing the work themself.",
             {
-               "title": "The Five Range Bands",
-               "page": 106,
-               "entries": [
-                  "For ease of play, distance in {@title Genesys} is divided up into five different bands, from engaged to extreme. As always, the GM has the final say in determining the range between the attacker and the target.",
-                  "With the engaged status and the other range bands, the GM is free to describe things dynamically and set scenes without having to worry about exact distances. Exact distances in meters do not matter. The details and adventure come first, creating a vivid picture in the minds of the players while allowing the GM to quickly provide the mechanical information they need to use their actions and build strategies.",
-                  {
-                     "title": "Engaged",
-                     "page": 106,
-                     "entries": [
-                        "To reflect two or more targets who are grappling or otherwise engaged in hand-to-hand combat, there is a special range status called engaged. Two characters engaged with each other are in very close proximity. A warrior needs to be engaged with a target to hit them with their sword. When two or more characters are engaged with each other, it is called an engagement.",
-                        "Engaged is also used to indicate that a person is close enough to an item to use it. A hacker needs to be engaged with a security terminal to attempt to hack it. A pilot needs to be engaged with their fighter jet to board it. A hunter needs to be engaged with a tree if they want to hide behind it for cover while tracking their target. The engaged status simply indicates that two things are close enough to each other to directly interact.",
-                        "Consider engaged as a subcategory of short range. Obviously, someone can be slightly farther away if they're at short range, instead of being engaged with someone else. However, the difference in distance is relatively minor. Thus, spending a maneuver to move to engage someone or something is as much a matter of moving into combat cautiously enough to avoid receiving a blow unnecessarily as it is moving a physical distance."
-                     ]
-                  },
-                  {
-                     "title": "Short Range",
-                     "page": 106,
-                     "entries": [
-                        "Short range indicates up to several meters between targets. Many thrown weapons and small firearms are most accurate at short range. Two people within short range of each other can talk comfortably without raising their voices. Moving to another spot within short range is usually easy to do and generally only requires one maneuver."
-                     ]
-                  },
-                  {
-                     "title": "Medium Range",
-                     "page": 106,
-                     "entries": [
-                        "Medium range can be up to several dozen meters away. More reliable pistols can reach to medium range, but few thrown weapons can reach this far. Two people within medium range of each other need to talk loudly to hear each other. Moving from short range to medium range takes little exertion and generally requires one maneuver."
-                     ]
-                  },
-                  {
-                     "title": "Long Range",
-                     "page": 106,
-                     "entries": [
-                        "Long range is farther than a few dozen meters. Rifles, mounted weapons, and weapons that use the Gunnery skill can reliably reach this far without too much trouble. Two people within long range of each other need to yell loudly to hear each other. Moving from medium range to long range requires two maneuvers, as it involves a greater distance and takes more time than moving between medium range and short range. This means that in most cases, a character cannot close the distance between short and long range in a single round, as it would take three maneuvers (one for short to medium, plus two for medium to long)."
-                     ]
-                  },
-                  {
-                     "title": "Extreme Range",
-                     "page": 107,
-                     "entries": [
-                        "Extreme range is the farthest range at which two targets can interact. High-tech sniper weaponry and some vehicle-mounted armaments may reach out to this range. Two people at extreme range may not be able to hear each other even if they shout. Moving between long range and extreme range can be timeconsuming and exerting, and it requires two maneuvers. This means that in most cases, a character can move the entire distance between long and extreme range in a single round, but suffers strain or gives up their action to do so."
-                     ]
-                  },
-                  {
-                     "type": "sidebar",
-                     "_ref": {
-                        "name": "Relative Positioning"
-                     },
-                     "entries": []
-                  }
-               ]
-            }
-         ]
-      },
-      {
-         "name": "Range Bands (Brief)",
-         "page": 105,
-         "description": [
-            {
-               "type": "list",
-               "description": "See {@rule Range Bands} for more details.",
-               "items": [
-                  "{@b Engaged:} Close enough to hear another person's whispers.",
-                  "{@b Short:} Close enough to have a normal conversation.",
-                  "{@b Medium:} You might have to speak up to be heard.",
-                  "{@b Long:} You must shout to be heard.",
-                  "{@b Extreme:} You might be able to see someone waving.",
-                  "{@b Strategic:} You would need a telescope to see your target."
-               ]
-            }
-         ]
-      },
-      {
-         "name": "Painkillers",
-         "page": 116,
-         "description": [
-            "Painkillers are our generic term for consumable autohealing items (see page 94). Regardless of the setting or their name, they all work the same way.",
-            "The first painkiller used on a character automatically heals 5 wounds. The second painkiller only heals 4 wounds, the third painkiller heals 3 wounds, and so on. The sixth painkiller has no effect (we say the target is too oversaturated with medicine or healing magic or whatever to benefit from anything else).",
-            "Administering a painkiller requires one maneuver, and the character doing the administering must be engaged with the target to treat them. This also means that a character with a free hand can administer a painkiller to themself by spending a maneuver.",
-            "Painkillers (in any of their variants) can never heal Critical Injuries."
-         ]
-      },
-      {
-         "name": "Recovery and Healing",
-         "page": 116,
-         "description": [
-            "While characters can be afflicted with various ailments and types of damage, there are thankfully several options for recovery. Recovery can vary in time and effectiveness, based on the resources and expertise available to the characters. With the proper resources and sufficient time, characters can recover from virtually any encounter.",
-            {
-               "title": "Healing Wounds",
-               "forceTitleLevel": 3,
-               "page": 116,
-               "entries": [
-                  "There are several ways that characters can heal wounds. Some allow for natural, if slow, healing; others require access to high-tech medical facilities.",
-                  {
-                     "forceTitleLevel": 4,
-                     "entries": [
-                        {
-                           "title": "Natural Rest",
-                           "page": 116,
-                           "entries": [
-                              "For each full night's rest, the character heals one wound, regardless of the character's current state of health. At the end of each full week of rest, the character may attempt a Resilience check to recover from one Critical Injury. The difficulty is equal to the Critical Injury's severity rating (see {@table I.6-10: Critical Injury Result}, on page 115). On a successful check, the character recovers from the Critical Injury and is no longer affected. On a failed check, the character retains the Critical Injury, but still heals one wound. A {@symbols t} result means the character can heal one additional Critical Injury.",
-                              {
-                                 "type": "table",
-                                 "_ref": {
-                                    "name": "Table I.6-11: Medical Check Difficulty"
-                                 },
-                                 "columns": [],
-                                 "rows": []
-                              }
-                           ]
-                        },
-                        {
-                           "title": "Medical Care",
-                           "page": 116,
-                           "entries": [
-                              "A character may attempt a Medicine check to help a character heal wounds. Each character may only receive one Medicine check each encounter, as there is only so much good that first aid can do to help a character.",
-                              "The difficulty of the check is based on the target's current state of health (see {@table I.6-11: Medical Check Difficulty}). On a successful check, the target heals a number of wounds equal to the number of {@symbols s} generated by the Medicine roll and heals an amount of strain equal to the number of {@symbols a} generated.",
-                              "A character may also attempt to help someone recover from a Critical Injury by making a Medicine check with a difficulty equal to the severity rating of the Critical Injury (see {@table I.6-10: Critical Injury Result}). A character may attempt one Medicine check per week per Critical Injury.",
-                              "A character may attempt to heal their own wounds or Critical Injuries with Medicine, but doing this themselves increases the difficulty of the Medicine check by two. In addition, attempting a Medicine check without medical equipment of some kind (such as a first aid kit or doctor's tools) increases the difficulty of the check by one."
-                           ]
-                        },
-                        {
-                           "type": "rule",
-                           "_ref": {
-                              "name": "Painkillers"
-                           },
-                           "description": []
-                        },
-                        {
-                           "title": "Recovering from Strain",
-                           "page": 117,
-                           "entries": [
-                              "Fortunately, recovering from strain is fairly easy. Taking a moment to catch one's breath, eating a good meal, and spending time relaxing with friends are all ways a player character might recover from strain.",
-                              "At the end of an encounter, each player can make a {@difficulty Simple|Discipline or Cool}. Each {@symbols s} recovers 1 strain. Furthermore, a good night's rest generally removes all strain a character has suffered."
-                           ]
-                        },
-                        {
-                           "title": "Recovering from Critical Injuries",
-                           "page": 117,
-                           "entries": [
-                              "Since lingering Critical Injuries make subsequent injuries increasingly dangerous, they should be treated as quickly and efficiently as possible. Critical Injuries vary in severity, which represents the difficulty of any corresponding Medicine check to treat and remove the injury.",
-                              "It's important to note that even if the effect of a Critical Injury has expired, the Critical Injury still persists until treated. For example, with a Critical Injury result of 23, which indicates the Off-Balance Critical Injury, the character adds {@dice setback} to their next skill check. Even after this effect has been applied, the Off-Balance Critical Injury still exists and lingers until treated, making subsequent Critical Injury rolls against the character that much more dangerous to them."
-                           ]
-                        }
-                     ]
-                  }
-               ]
-            }
-         ]
-      },
-      {
-         "name": "Recovery and Healing (Brief)",
-         "page": 116,
-         "description": [
-            {
-               "type": "list",
-               "title": "Rest",
-               "items": [
-                  "Each full night of rest heals 1 wound and all strain.",
-                  "Each full week of rest, check {@skill Resilience} to recover 1 Critical Injury. {@symbols t} heals +1 Critical Injury. Failed checks heal 1 wound."
-               ]
-            },
-            {
-               "type": "list",
-               "title": "Medicine Checks",
-               "items": [
-                  "Heal 1 wound per uncancelled {@symbols s} and 1 strain per uncancelled {@symbols a}.",
-                  "One check per target per encounter.",
-                  "One attempt per week for Critical Injuries."
-               ]
-            },
-            {
-               "type": "list",
-               "title": "Painkillers",
-               "items": [
-                  "Max 5 uses per day. Heals 5 wounds. Heals 1 fewer wounds each subsequent use."
-               ]
-            },
-            {
-               "type": "list",
-               "title": "Strain Recovery",
-               "items": [
-                  "At the end of an encounter, each player can make a {@difficulty Simple|Discipline or Cool}. Each {@symbols s} recovers 1 strain. Furthermore, a good night's rest generally removes all strain a character has suffered."
-               ]
+               "type": "table",
+               "columns": [],
+               "rows": [],
+               "_ref": {
+                  "name": "Table I.5-4: Repairing Gear"
+               }
             }
          ]
       },
       {
          "name": "Maneuvers",
          "page": 97,
+         "type": "maneuver",
          "description": [
             "Just as {@title Genesys} uses an abstract method of describing combat, we similarly describe movement in broad strokes. Characters often do far more than shooting or swinging weapons in combat, like pulling out medical supplies to heal a wounded comrade, activating the systems to open a door, or scaling a wall to gain an advantage over their opponents.",
             "Not all undertakings require a check. These minor activities, known as maneuvers, cover a wide range of activities that any character can perform. They require an investment of time and effort on the character's part, but they are simple enough that there is no chance of failure when doing them. Technically, characters perform maneuvers during narrative gameplay as well as during structured gameplay, or encounters. However, maneuvers are tracked and defined during encounters, because characters' time and efforts are more limited by the frantic pace of conflict.",
@@ -7936,6 +8114,7 @@
       {
          "name": "Maneuvers (Brief)",
          "page": 97,
+         "type": "maneuver",
          "description": [
             {
                "type": "list",
@@ -7957,22 +8136,258 @@
          ]
       },
       {
+         "name": "Move",
+         "page": 100,
+         "type": "maneuver",
+         "description": [
+            "One of the most important maneuvers a character can make is to move—from one piece of cover to the next, to a wounded ally's side, away from the claws of a vicious bear, or out of range of an enemy's crossbow. The game defines several different broad types of movement. When characters move, they do one of the following:",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Change range increment.} Performing this maneuver allows a character to move between short and medium range relative to another person or object. Performing two move maneuvers allows a character to move between medium and long range or between long and extreme range. When covering long distances, multiple maneuvers do not have to be performed on the same turn, but the character is not considered to be in the new range increment until all required maneuvers have been performed. For more detail on determining range, see {@rule Range Bands}, page 105.",
+                  "{@b Engage or disengage from an opponent.} If a target is already within short range of a character, the character can perform a maneuver to engage that target. If the character is engaged with an opponent or adversary, they must perform a maneuver to disengage from that opponent before moving to any other location. This only changes their range relative to their opponent from engaged to short and represents the effort of backing away and avoiding their opponent's attacks. Characters do not need to perform this maneuver to leave an engagement consisting only of friendly characters or allies.",
+                  "{@b Move within short range.} Performing this maneuver allows an unengaged character to move to another position that is currently within short range of them."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Painkillers",
+         "type": "gear",
+         "page": 116,
+         "description": [
+            "Painkillers are our generic term for consumable autohealing items (see page 94). Regardless of the setting or their name, they all work the same way.",
+            "The first painkiller used on a character automatically heals 5 wounds. The second painkiller only heals 4 wounds, the third painkiller heals 3 wounds, and so on. The sixth painkiller has no effect (we say the target is too oversaturated with medicine or healing magic or whatever to benefit from anything else).",
+            "Administering a painkiller requires one maneuver, and the character doing the administering must be engaged with the target to treat them. This also means that a character with a free hand can administer a painkiller to themself by spending a maneuver.",
+            "Painkillers (in any of their variants) can never heal Critical Injuries."
+         ]
+      },
+      {
          "name": "Prone",
          "page": 100,
+         "type": "status",
          "description": [
             "Dropping prone and standing from a prone position each requires a maneuver. Dropping prone allows the character to add {@dice setback} to all ranged attacks made against them, although they also must add {@dice boost} to all melee attacks made against them."
          ]
       },
       {
+         "name": "Range Bands",
+         "page": 105,
+         "type": "combat",
+         "description": [
+            "{@title Genesys} relies on broad terms to describe ranges and distances. Rather than have a player's attention focused on a grid, counting squares, {@title Genesys} uses more abstract means to represent positions, distances, and ranges, thus allowing the players to focus on the action and the adventure.",
+            "The distance between two points—people, objects, or adversaries—is defined by general range categories. These range categories are used to determine how far a ranged attack can reach, how far apart two people are from each other, how much effort is needed to move between two places, and so on. The most common ranges are short, medium, long, and extreme range. Another relative position—engaged—exists to represent characters who are in extremely close proximity to each other.",
+            {
+               "title": "The Five Range Bands",
+               "page": 106,
+               "entries": [
+                  "For ease of play, distance in {@title Genesys} is divided up into five different bands, from engaged to extreme. As always, the GM has the final say in determining the range between the attacker and the target.",
+                  "With the engaged status and the other range bands, the GM is free to describe things dynamically and set scenes without having to worry about exact distances. Exact distances in meters do not matter. The details and adventure come first, creating a vivid picture in the minds of the players while allowing the GM to quickly provide the mechanical information they need to use their actions and build strategies.",
+                  {
+                     "title": "Engaged",
+                     "page": 106,
+                     "entries": [
+                        "To reflect two or more targets who are grappling or otherwise engaged in hand-to-hand combat, there is a special range status called engaged. Two characters engaged with each other are in very close proximity. A warrior needs to be engaged with a target to hit them with their sword. When two or more characters are engaged with each other, it is called an engagement.",
+                        "Engaged is also used to indicate that a person is close enough to an item to use it. A hacker needs to be engaged with a security terminal to attempt to hack it. A pilot needs to be engaged with their fighter jet to board it. A hunter needs to be engaged with a tree if they want to hide behind it for cover while tracking their target. The engaged status simply indicates that two things are close enough to each other to directly interact.",
+                        "Consider engaged as a subcategory of short range. Obviously, someone can be slightly farther away if they're at short range, instead of being engaged with someone else. However, the difference in distance is relatively minor. Thus, spending a maneuver to move to engage someone or something is as much a matter of moving into combat cautiously enough to avoid receiving a blow unnecessarily as it is moving a physical distance."
+                     ]
+                  },
+                  {
+                     "title": "Short Range",
+                     "page": 106,
+                     "entries": [
+                        "Short range indicates up to several meters between targets. Many thrown weapons and small firearms are most accurate at short range. Two people within short range of each other can talk comfortably without raising their voices. Moving to another spot within short range is usually easy to do and generally only requires one maneuver."
+                     ]
+                  },
+                  {
+                     "title": "Medium Range",
+                     "page": 106,
+                     "entries": [
+                        "Medium range can be up to several dozen meters away. More reliable pistols can reach to medium range, but few thrown weapons can reach this far. Two people within medium range of each other need to talk loudly to hear each other. Moving from short range to medium range takes little exertion and generally requires one maneuver."
+                     ]
+                  },
+                  {
+                     "title": "Long Range",
+                     "page": 106,
+                     "entries": [
+                        "Long range is farther than a few dozen meters. Rifles, mounted weapons, and weapons that use the Gunnery skill can reliably reach this far without too much trouble. Two people within long range of each other need to yell loudly to hear each other. Moving from medium range to long range requires two maneuvers, as it involves a greater distance and takes more time than moving between medium range and short range. This means that in most cases, a character cannot close the distance between short and long range in a single round, as it would take three maneuvers (one for short to medium, plus two for medium to long)."
+                     ]
+                  },
+                  {
+                     "title": "Extreme Range",
+                     "page": 107,
+                     "entries": [
+                        "Extreme range is the farthest range at which two targets can interact. High-tech sniper weaponry and some vehicle-mounted armaments may reach out to this range. Two people at extreme range may not be able to hear each other even if they shout. Moving between long range and extreme range can be timeconsuming and exerting, and it requires two maneuvers. This means that in most cases, a character can move the entire distance between long and extreme range in a single round, but suffers strain or gives up their action to do so."
+                     ]
+                  },
+                  {
+                     "type": "sidebar",
+                     "_ref": {
+                        "name": "Relative Positioning"
+                     },
+                     "entries": []
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Range Bands (Brief)",
+         "page": 105,
+         "type": "combat",
+         "description": [
+            {
+               "type": "list",
+               "description": "See {@rule Range Bands} for more details.",
+               "items": [
+                  "{@b Engaged:} Close enough to hear another person's whispers.",
+                  "{@b Short:} Close enough to have a normal conversation.",
+                  "{@b Medium:} You might have to speak up to be heard.",
+                  "{@b Long:} You must shout to be heard.",
+                  "{@b Extreme:} You might be able to see someone waving.",
+                  "{@b Strategic:} You would need a telescope to see your target."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Recovery and Healing",
+         "page": 116,
+         "type": "character",
+         "description": [
+            "While characters can be afflicted with various ailments and types of damage, there are thankfully several options for recovery. Recovery can vary in time and effectiveness, based on the resources and expertise available to the characters. With the proper resources and sufficient time, characters can recover from virtually any encounter.",
+            {
+               "title": "Healing Wounds",
+               "forceTitleLevel": 3,
+               "page": 116,
+               "entries": [
+                  "There are several ways that characters can heal wounds. Some allow for natural, if slow, healing; others require access to high-tech medical facilities.",
+                  {
+                     "forceTitleLevel": 4,
+                     "entries": [
+                        {
+                           "title": "Natural Rest",
+                           "page": 116,
+                           "entries": [
+                              "For each full night's rest, the character heals one wound, regardless of the character's current state of health. At the end of each full week of rest, the character may attempt a Resilience check to recover from one Critical Injury. The difficulty is equal to the Critical Injury's severity rating (see {@table I.6-10: Critical Injury Result}, on page 115). On a successful check, the character recovers from the Critical Injury and is no longer affected. On a failed check, the character retains the Critical Injury, but still heals one wound. A {@symbols t} result means the character can heal one additional Critical Injury.",
+                              {
+                                 "type": "table",
+                                 "_ref": {
+                                    "name": "Table I.6-11: Medical Check Difficulty"
+                                 },
+                                 "columns": [],
+                                 "rows": []
+                              }
+                           ]
+                        },
+                        {
+                           "title": "Medical Care",
+                           "page": 116,
+                           "entries": [
+                              "A character may attempt a Medicine check to help a character heal wounds. Each character may only receive one Medicine check each encounter, as there is only so much good that first aid can do to help a character.",
+                              "The difficulty of the check is based on the target's current state of health (see {@table I.6-11: Medical Check Difficulty}). On a successful check, the target heals a number of wounds equal to the number of {@symbols s} generated by the Medicine roll and heals an amount of strain equal to the number of {@symbols a} generated.",
+                              "A character may also attempt to help someone recover from a Critical Injury by making a Medicine check with a difficulty equal to the severity rating of the Critical Injury (see {@table I.6-10: Critical Injury Result}). A character may attempt one Medicine check per week per Critical Injury.",
+                              "A character may attempt to heal their own wounds or Critical Injuries with Medicine, but doing this themselves increases the difficulty of the Medicine check by two. In addition, attempting a Medicine check without medical equipment of some kind (such as a first aid kit or doctor's tools) increases the difficulty of the check by one."
+                           ]
+                        },
+                        {
+                           "type": "rule",
+                           "_ref": {
+                              "name": "Painkillers"
+                           },
+                           "description": []
+                        },
+                        {
+                           "title": "Recovering from Strain",
+                           "page": 117,
+                           "entries": [
+                              "Fortunately, recovering from strain is fairly easy. Taking a moment to catch one's breath, eating a good meal, and spending time relaxing with friends are all ways a player character might recover from strain.",
+                              "At the end of an encounter, each player can make a {@difficulty Simple|Discipline or Cool}. Each {@symbols s} recovers 1 strain. Furthermore, a good night's rest generally removes all strain a character has suffered."
+                           ]
+                        },
+                        {
+                           "title": "Recovering from Critical Injuries",
+                           "page": 117,
+                           "entries": [
+                              "Since lingering Critical Injuries make subsequent injuries increasingly dangerous, they should be treated as quickly and efficiently as possible. Critical Injuries vary in severity, which represents the difficulty of any corresponding Medicine check to treat and remove the injury.",
+                              "It's important to note that even if the effect of a Critical Injury has expired, the Critical Injury still persists until treated. For example, with a Critical Injury result of 23, which indicates the Off-Balance Critical Injury, the character adds {@dice setback} to their next skill check. Even after this effect has been applied, the Off-Balance Critical Injury still exists and lingers until treated, making subsequent Critical Injury rolls against the character that much more dangerous to them."
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Recovery and Healing (Brief)",
+         "page": 116,
+         "type": "character",
+         "description": [
+            {
+               "type": "list",
+               "title": "Rest",
+               "items": [
+                  "Each full night of rest heals 1 wound and all strain.",
+                  "Each full week of rest, check {@skill Resilience} to recover 1 Critical Injury. {@symbols t} heals +1 Critical Injury. Failed checks heal 1 wound."
+               ]
+            },
+            {
+               "type": "list",
+               "title": "Medicine Checks",
+               "items": [
+                  "Heal 1 wound per uncancelled {@symbols s} and 1 strain per uncancelled {@symbols a}.",
+                  "One check per target per encounter.",
+                  "One attempt per week for Critical Injuries."
+               ]
+            },
+            {
+               "type": "list",
+               "title": "Painkillers",
+               "items": [
+                  "Max 5 uses per day. Heals 5 wounds. Heals 1 fewer wounds each subsequent use."
+               ]
+            },
+            {
+               "type": "list",
+               "title": "Strain Recovery",
+               "items": [
+                  "At the end of an encounter, each player can make a {@difficulty Simple|Discipline or Cool}. Each {@symbols s} recovers 1 strain. Furthermore, a good night's rest generally removes all strain a character has suffered."
+               ]
+            }
+         ]
+      },
+      {
          "name": "Staggered",
          "page": 114,
+         "type": "status",
          "description": [
             "A staggered character cannot perform actions (including downgrading actions to maneuvers). Most effects that stagger a character last for a set duration. If a set duration is not specified, the staggered effect lasts until the end of the character's next turn. If a character is staggered multiple times, each instance increases the total duration of the effect by the instance's specified duration, but may not increase the total duration beyond the scope of the present encounter."
          ]
       },
       {
+         "name": "The Right Tool for the Job",
+         "page": 93,
+         "type": "gear",
+         "description": [
+            "Besides their characteristics, most pieces of gear have just one rule. It's a rule we like to call \"the right tool for the job.\"",
+            "The rule is this: Due to the narrative-driven nature of our game, not every piece of equipment grants a unique rule or bonus to gameplay mechanics. Instead, most pieces of gear assist your character in performing tasks they might not be able to accomplish without them. A pair of binoculars allow your character to spot foes from a long way away, for example; a cell phone lets you communicate over long distances, and a camp stove lets your character cook food in the wilderness. In these cases, your character's equipment makes a task possible. The gear doesn't grant any additional bonus in the rules; it just lets your character do something they normally couldn't.",
+            "At other times, a piece of gear helps your character do something better. For example, a compass may not be vital to successfully following a trail through the woods, but it probably would be useful. Likewise, a propane lantern would be helpful in starting a larger fire, since it has a fuel source and igniter. Whenever a character uses a piece of gear to aid in a task that the character could still normally perform without the equipment, you and the GM can agree to add {@dice boost} to the dice pool.",
+            "That's what we mean by the right tool for the job. The whole thing is a bit of a judgement call for you and your GM, but as is the case in most of these situations, the GM has the final say.",
+            {
+               "title": "Unique Rules",
+               "page": 93,
+               "forceTitleLevel": 6,
+               "entries": [
+                  "Other pieces of gear have rules unique to that item described in the item's entry."
+               ]
+            }
+         ]
+      },
+      {
          "name": "Vehicle Maneuvers",
          "page": 226,
+         "type": "vehicle maneuver",
          "description": [
             "Less involved than actions, maneuvers are simple activities that do not typically require a skill check. Beyond all the maneuvers in personal combat, there are several maneuvers that apply specifically to vehicles. These additional maneuvers follow the usual rules governing maneuvers (see page 97). In addition (and especially in larger vehicles), characters are assumed to be able to perform any personal maneuvers such as dropping prone, managing gear, interacting with the environment, or aiming with vehicle or personal weapons (although you should use common sense as to what a character can and cannot do given the situation).",
             "All maneuvers have a current speed, which is how fast the vehicle has to be going to perform the maneuver.",
@@ -8068,6 +8483,7 @@
       {
          "name": "Vehicle Maneuvers (Brief)",
          "page": 226,
+         "type": "vehicle maneuver",
          "description": [
             "When piloting a vehicle, a check is generally not necessary unless the maneuver or action calls for one. At the beginning or end of each turn the vehicle must move a number of range bands based on its speed. See {@table III.2-14: Vehicle Speeds in Structured Encounters}.",
             {
@@ -8085,6 +8501,7 @@
       {
          "name": "Vehicle Actions",
          "page": 227,
+         "type": "vehicle action",
          "description": [
             "In combat involving vehicles, your character can perform some actions that specifically apply to their vehicle. Some of these actions are labeled as Pilot Only actions. A vehicle may benefit from only one Pilot Only action per round (see Pilot Only Maneuvers and Actions, on page 226). Pilot Only actions are actions that affect the movement of the vehicle itself, which may only move so fast and so far.",
             "Like vehicle maneuvers, vehicle actions have a current speed requirement that the vehicle has to be traveling at to perform the action. Also remember that any of the actions listed starting on page 101 of Part I–Chapter 6: Combat Encounters can also be performed in combats involving vehicles, within the bounds of common sense.",
@@ -8259,6 +8676,7 @@
       {
          "name": "Vehicle Actions (Brief)",
          "page": 227,
+         "type": "vehicle action",
          "description": [
             {
                "type": "list",
@@ -8272,6 +8690,17 @@
                   "{@b Attack:} Use vehicle weapons."
                ]
             }
+         ]
+      },
+      {
+         "name": "Vehicle Critical Hits",
+         "page": 231,
+         "type": "vehicle",
+         "description": [
+            "Vehicles do not suffer Critical Injuries; instead, when a vehicle would otherwise suffer a Critical Injury due to {@symbols a} or {@symbols t} on an attack (or any other effect), it suffers a Critical Hit instead. Effects that apply to the results of Critical Injuries, such as the {@quality Vicious} quality, do not apply to Critical Hits (and effects that apply to Critical Hits do not apply to Critical Injuries).",
+            "When an attack generates a Critical Hit, the attacker rolls on {@table III.2-19: Vehicle Critical Hit Result}, on the previous page, and the target suffers the listed effects. Critical Hits are divided into four severity levels, which dictate the difficulty of the check required to repair the Critical Hit, as listed in the table. These difficulties can be further modified at your discretion.",
+            "Once a vehicle suffers a Critical Hit, it counts as suffering that Critical Hit until it is repaired. This status counts even if the effects of the Critical Hit only last a single round. While a vehicle is suffering a Critical Hit, any additional Critical Hits generated against it add +10 to the roll on {@table III.2-19: Vehicle Critical Hit Result} per existing Critical Hit.",
+            "Remember that an attack must inflict damage for the attacker to activate a Critical Hit. Because vehicles operate on the planetary scale for damage, a hit from a personal scale weapon must inflict at least 10 damage (1 damage on planetary scale) after reductions for armor for the attacker to be able to inflict a Critical Hit."
          ]
       }
    ],
@@ -9120,8 +9549,18 @@
    ],
    "sidebar": [
       {
+         "name": "Black-Market Items",
+         "page": 83,
+         "type": "gear",
+         "description": [
+            "Nearly every setting has its \"black market,\" an illicit network of merchants and traders who buy and sell whatever happens to be illegal in that setting. Sometimes this commerce happens in an actual market, but more often, such deals happen through a labyrinthine web of contacts, cutouts, and middlemen.",
+            "If your characters want to buy something that happens to be illegal, they're probably going to have to go into the black market to do so. Buying and selling on the black market follows all the same rules as regular buying and selling, except that instead of making a {@skill Negotiation} check to find items or determine the price your character can sell them at, they need to make a {@skill Streetwise} check instead."
+         ]
+      },
+      {
          "name": "Dangerous Driving in Narrative Encounters",
          "page": 228,
+         "type": "vehicle",
          "description": [
             "If a character attempts a particularly difficult or foolhardy trick with a vehicle in narrative encounters, you should have that character make a check as if they were performing the dangerous driving action, determining the speed of the vehicle based on the player's description and the circumstances of the scene."
          ]
@@ -9129,16 +9568,18 @@
       {
          "name": "Flying",
          "page": 100,
+         "type": "movement",
          "description": [
             "Flight in {@title Genesys} is handled in two different ways. Vehicles and starships that fly use the rules found in Part III: Game Master Toolkit, page 220, to handle their flight. Some pieces of equipment allow individuals to mimic such flight and use these rules as well.",
             "However, some creatures and individuals can fly, but not at the same speeds as vehicles. In these cases, the creatures or individuals simply move from one place to the other by flying, but still use the rules presented in this chapter for situations such as combat. Their flight is handled mostly narratively, with a commonsense approach. For example, a flying creature could easily fly over difficult or impassable terrain, or fly over water without having to swim. It could cover vertical distances in the same way that individuals cover horizontal ones. However, there are some points to keep in mind concerning flying creatures.",
-            "Creatures and species that can hover rely on swiftly moving wings, bags of lighter-than-air gas, or other systems to move while staying above the ground. This type of movement follows the same game rules as those for other creatures, with the following exceptions: hovering creatures ignore difficult or impassable terrain as long as they can reasonably stay above it, and they ignore the penalties for moving through water. They generally have to stay relatively close to the ground (within medium range) unless noted otherwise.",
-            "Creatures that can fly (such as most birds) use aerodynamic principles such as lift to stay aloft. These follow all the same rules concerning terrain as creatures that hover. However, they have to maintain at least some speed to stay aloft, and thus while flying must spend one maneuver every turn to move (they can actually change position, or just circle or wheel in place and effectively remain where they are). Most flying creatures can move faster than hovering or ground creatures, and they can move from long range to short range using a single maneuver."
+            "Creatures and species that can hover rely on swiftly moving wings, bags of lighter-than-air gas, or other systems to move while staying above the ground. This type of movement follows the same game rules as those for other creatures, with the following exceptions: hovering creatures ignore {@sidebar Hazards and Difficult Terrain|difficult or impassable terrain} as long as they can reasonably stay above it, and they ignore the penalties for moving through water. They generally have to stay relatively close to the ground (within medium range) unless noted otherwise.",
+            "Creatures that can fly (such as most birds) use aerodynamic principles such as lift to stay aloft. These follow all the same rules concerning terrain as creatures that hover. However, they have to maintain at least some speed to stay aloft, and thus while flying must spend one maneuver every turn to {@rule move} (they can actually change position, or just circle or wheel in place and effectively remain where they are). Most flying creatures can move faster than hovering or ground creatures, and they can move from long range to short range using a single maneuver."
          ]
       },
       {
          "name": "Hazards and Difficult Terrain",
          "page": 227,
+         "type": "environment",
          "description": [
             "Dangerous obstacles can make a stunt even more hazardous to perform. You should add {@dice setback} to checks based on the obstacles involved. See the table below for suggestions.",
             {
@@ -9154,6 +9595,7 @@
       {
          "name": "Other Skills in Combat",
          "page": 103,
+         "type": "combat",
          "description": [
             "Although the core rules only have three combat skills, we know that your game is likely going to include more (depending on the setting, or your own invention). In addition, you may have invented your own combat skills.",
             "The most important thing to know about those skills is whether they are used to make ranged attacks or close combat attacks. This determines how you use those skills when making a combat check."
@@ -9162,6 +9604,7 @@
       {
          "name": "Ranged Attacks and Melee Attacks",
          "page": 103,
+         "type": "combat",
          "description": [
             "Ranged attacks and melee attacks are two different types of attacks, meaning they are also two different types of combat checks. A ranged attack is an attack made with a ranged weapon of some sort, most likely using the Ranged skill (or one of its variants). A melee attack is an attack made in close combat with an opponent, and with a weapon designed for use in close combat. Such an attack is most likely to be made using the Brawl or Melee skill (or one of its variants)."
          ]
@@ -9169,6 +9612,7 @@
       {
          "name": "Relative Positioning",
          "page": 107,
+         "type": "combat",
          "description": [
             "Because of the narrative, abstract way in which distance is measured, both the players and Game Master must be aware of how positioning relative to two or more targets is measured. Once combat begins, the Game Master tells each player where their character is relative to the opponents. It's then up to the player to track their character's range relative to those opponents as the battle progresses.",
             "For example, during a battle within a huge hangar bay, the PCs are ambushed by four security guards. Two approach from one side and two from the other. The GM indicates that each pair of security guards is in the medium range band with respect to the characters. During their turns, the PCs split up to attack. Two of the PCs move toward one group of guards, getting within short range, and the other group moves to the opposite set of guards. Both groups of characters are now within short range of their respective targets, but at medium range from the other group of targets."
@@ -9177,6 +9621,7 @@
       {
          "name": "States of Health",
          "page": 113,
+         "type": "character",
          "description": [
             "Player characters may pass through several states of health over the course of their adventures. State of health is a general representation of overall fitness or well-being.",
             "A character is {@b unwounded} and operating at peak performance if they are currently suffering from no wounds and have no Critical Injuries.",
@@ -9189,6 +9634,7 @@
       {
          "name": "Tracking Ammo",
          "page": 89,
+         "type": "gear",
          "description": [
             "Combat in our game tends to be fast-paced and narrative based, with rounds lasting an unspecified amount of \"game-world\" time and combat encounters usually wrapping up in a few total rounds. That narrative-driven approach also means that when your character attacks with a ranged weapon, one attack could represent a single, carefully lined up shot, or a few shots snapped off with a pistol.",
             "All this means that we really encourage you and your GM not to worry too much about ammunition. Carefully tallying how many bullets your character has in the clip goes against the {@title Genesys} game experience (and the longstanding traditions of most action movies).",
@@ -9199,6 +9645,7 @@
       {
          "name": "Vehicle Components",
          "page": 221,
+         "type": "vehicle",
          "description": [
             "Most vehicles have a number of components, and these components can be damaged. We list the components and describe what happens when they become damaged (generally from a Critical Hit) here:",
             "{@b Brakes:} If a vehicle's brakes are compromised, its pilot cannot perform the decelerate maneuver. The vehicle can still coast to a stop over a long distance, or stop by colliding with something.",
@@ -13515,15 +13962,39 @@
          "weapons": [
             {
                "name": "15 starboard and 15 port 24-pounder cannons",
-               "description": "Fire Arc Starboard and Fire Arc Port; Damage 6; Critical 3; Range [Long]."
+               "fireArc": "Starboard and Port",
+               "skill": {
+                  "name": "Gunnery"
+               },
+               "damage": 6,
+               "critical": 3,
+               "range": "Long"
             },
             {
                "name": "4 starboard and 4 port 9-pounder cannons",
-               "description": "Fire Arc Starboard and Fire Arc Port; Damage 4; Critical 5; Range [Medium]."
+               "fireArc": "Starboard and Port",
+               "skill": {
+                  "name": "Gunnery"
+               },
+               "damage": 4,
+               "critical": 5,
+               "range": "Medium"
             },
             {
                "name": "2 forward \"long nines\"",
-               "description": "Fire Arc Forward; Damage 4; Critical 5; Range [Long]; Accurate 1."
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery"
+               },
+               "damage": 4,
+               "critical": 5,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Accurate",
+                     "ranks": 1
+                  }
+               ]
             }
          ],
          "description": [
@@ -13605,15 +14076,62 @@
          "weapons": [
             {
                "name": "Rotary Cannon",
-               "description": "Fire Arc Forward; Damage 2; Critical 5; Range [Long]; Auto-fire."
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery"
+               },
+               "damage": 2,
+               "critical": 5,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Auto-fire"
+                  }
+               ]
             },
             {
                "name": "Air-to-air Missiles",
-               "description": "(Fire Arc Forward; Damage 5; Critical 3; Range [Extreme]; Guided 3, Limited Ammo 6."
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery"
+               },
+               "damage": 5,
+               "critical": 3,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Guided",
+                     "ranks": 3
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 6
+                  }
+               ]
             },
             {
                "name": "Anti-ship Missile",
-               "description": "Fire Arc Forward; Damage 8; Critical 1; Range [Strategic]; Blast 5, Breach 2, Limited Ammo 1."
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery"
+               },
+               "damage": 8,
+               "critical": 1,
+               "range": "Strategic",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 5
+                  },
+                  {
+                     "name": "Breach",
+                     "ranks": 2
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 1
+                  }
+               ]
             }
          ],
          "settings": [
