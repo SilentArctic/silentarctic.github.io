@@ -3630,6 +3630,175 @@
          "rarity": 4
       },
       {
+         "name": "Circlet of the Void",
+         "page": 131,
+         "type": "artifact",
+         "description": [
+            "This platinum headband holds nine luminescent jeweled disks arrayed equidistantly around the edge. The jewels are crystalline datarecorders with cerebral interface pads that rest against the wearer's head. The wearer can determine their exact location in the galaxy just by looking at the stars in the sky or around their ship. Circlets of the Void were originally given to Imperial sailing masters; over the millennia, the knowledge of how to build them has been lost, but a few of these relics may still be found in the possession of wealthy (or lucky) ship captains.",
+            "A character making an {@skill Astrocartography||crb} check upgrades their ability three times while wearing a Circlet of the Void. This bonus may also be applied to any {@skill Knowledge||crb} checks related to astrocartography or stellar geography they make."
+         ],
+         "encumbrance": 1,
+         "price": 3000000,
+         "rarity": 9
+      },
+      {
+         "name": "Dominus Orb",
+         "page": 131,
+         "type": "artifact",
+         "description": [
+            "This large ivory orb glows a faint lambent yellow and is mounted at the end of a heavy rod with three razor-edged armatures. The Dominus Orb is an ancient relic from the time of the {@rule Mahact Gene-Sorcerers|Mahact} kings. It was taken by the Lazax when they defeated the {@rule Mahact Gene-Sorcerers|Mahact}, and they used it in their conquests of other empires. Since the sacking of {@rule Mecatol Rex}, the orb has appeared among various empires as the focus of tales of massive battles. Generals and marshals who have wielded it have been able to spur their forces to victory over seemingly insurmountable odds, the legends say. When the bearer hoists the Dominus Orb aloft, its armatures retract and the orb ascends several meters above the bearer.",
+            "A character in possession of the Dominus Orb may deploy it as a maneuver. All other living beings within long range heal all strain they are currently suffering, and they ignore the effects of all Critical Injuries on any skill checks they make until the end of the encounter. (The beings still suffer the Critical Injuries; they just ignore their effects.) Additionally, for the remainder of the encounter, whenever the orb's wielder issues a command, anyone affected by the orb must succeed on a {@difficulty Daunting|Discipline} or obey the order unquestioningly.",
+            "The orb may only be deployed once per game session."
+         ],
+         "encumbrance": 3,
+         "price": 100000000,
+         "rarity": 10,
+         "restricted": true
+      },
+      {
+         "name": "Immortal Cuirass of the Imperial Guard",
+         "page": 132,
+         "type": "artifact",
+         "description": [
+            {
+               "type": "table",
+               "columns": [
+                  { "header": "Defense" },
+                  { "header": "Soak" },
+                  { "header": "Encum", "value": "encumbrance" },
+                  { "header": "HP", "value": "hardPoints" },
+                  { "header": "price" },
+                  { "header": "rarity" },
+                  { "header": "special" }
+               ],
+               "rows": [
+                  {
+                     "defense": 1,
+                     "soak": "+2",
+                     "encumbrance": 3,
+                     "hardPoints": 0,
+                     "price": 9000000,
+                     "rarity": 9,
+                     "special": "{@quality Reinforced||crb}"
+                  }
+               ]
+            },
+            "The Immortal Cuirasses are segmented breastplates used by the elite Imperial Guard of the Lazax Empire. Several have survived through the ages, and they are prized by warriors across the galaxy. Sensors within an Immortal Cuirass adjust the armor's plates to fit the wearer, and embedded energy collectors administer a burst of healing radiation to restore the wearer's vitality. Their only true weakness is that, as they were designed for a species with four arms, most wearers must tolerate two additional large openings along the sides of their chest.",
+            "Once per session while wearing an Immortal Cuirass of the Imperial Guard, your character may heal up to 10 strain and 10 wounds as an incidental. Your character may perform this incidental even if they are incapacitated."
+         ],
+         "encumbrance": 3,
+         "price": 9000000,
+         "rarity": 9
+      },
+      {
+         "name": "The Obsidian",
+         "page": 132,
+         "type": "artifact",
+         "description": [
+            {
+               "type": "table",
+               "columns": [
+                  { "header": "Skill" },
+                  { "header": "Dam", "value": "damage" },
+                  { "header": "Crit" },
+                  { "header": "Range" },
+                  { "header": "Encum", "value": "encumbrance" },
+                  { "header": "HP", "value": "hardPoints" },
+                  { "header": "Price" },
+                  { "header": "Rarity" },
+                  { "header": "Special" }
+               ],
+               "rows": [
+                  {
+                     "skill": "{@skill Melee||crb}",
+                     "damage": "+8",
+                     "crit": 2,
+                     "range": "Engaged",
+                     "encumbrance": 4,
+                     "hadPoints": 0,
+                     "price": 50000000,
+                     "rarity": 10,
+                     "special": "{@quality Accurate|Accurate 2|crb}, {@quality Cumbersome|Cumbersome 3|crb}, {@quality Sunder||crb}, {@quality Vicious|Vicious 3|crb}"
+                  }
+               ]
+            },
+            "Almost two meters long, this blade is an heirloom from an ancient species that plied the starlanes long before even the rise of the Mahact. The surface of the blade is cold to the touch. It is entirely black, reflecting no light at all, yet those who view it claim to see something stirring within its inky depths. Seeing the blade's irregular swirling effects can induce nausea and vertigo, but the person who wields it sees—and hears—something else entirely.",
+            "Within the blade is an artificial sentience that can communicate with the blade's possessor. This sentience has witnessed and catalogued thousands of battles and can provide guidance to the wielder. The advice proves valuable, but the blade's end goal is always to corrupt the wielder's thoughts to an unthinking desire for destruction and conquest.",
+            "While within short range of the Obsidian, a character is {@rule disoriented||crb}. While wielding the Obsidian, your character cannot be {@rule disoriented||crb}. Your character also adds {@symbols sa} to all {@skill Leadership||crb} checks and {@skill Knowledge||crb} checks they make while wielding the Obsidian. The GM may spend {@sybmols d} from any skill checks your character makes while wielding the Obsidian to have the Obsidian's whispers distract your character, adding {@dice setback|2} to all skill checks they make for the remainder of the encounter. Other narrative effects could cause your character's motivations to change to ones based on conquest, domination, or superiority.",
+            "This weapon requires two hands to wield."
+         ],
+         "encumbrance": 4,
+         "price": 50000000,
+         "rarity": 10
+      },
+      {
+         "name": "Prophet's Tears",
+         "page": 132,
+         "type": "artifact",
+         "description": [
+            "Nearly a century ago, a Hylar Questor cruiser located a world on the edge of the galactic spiral that its crew named Zembasi. Believing the world to be uninhabited, the Hylar were amazed to find an intact building with a stasis vault containing millions of small vials of semiopaque fluids. These vials contained genetic data as well as microbial creatures.",
+            "Upon further examination, the scientists discovered that these vials were the genetic matrix of an advanced species that had gone extinct a millennia before. The microbial creatures can bond the matrix to another living host, granting the host access to some of the deceased being's memories. The Hylar believe that the extinct Zembasi civilization had a method of preserving their most brilliant minds so that future generations could bond with and learn from their ancestors.",
+            "It wasn't long before one bold Hylar scientist consumed one and gained flashes of the lost Zembasi's memories as well as their emotions, which caused the scientist mental trauma. Eventually, they needed to undergo genetic reconstruction to purge the effects of the \"Prophet's Tears.\" The {@rule Universities of Jol-Nar|University of Jol-Nar} continues to experiment with the vials, but over the years, several cases of Prophet's Tears have ended up in foreign research labs or on black markets in clandestine corners of the galaxy.",
+            "When a character consumes a vial of Prophet's Tears, they permanently increase their {@characteristic Intellect||crb} by 1, to a maximum of 6. {@symbols d} may be spent from any skill check the character makes to have the character suffer a traumatic memory from the genetic matrix, {@rule staggered|staggering|crb} the character until the end of their next turn. These effects may be simultaneously removed by undergoing genetic reconstruction at a medical facility, a relatively simple but expensive process that costs 5,000 aurei."
+         ],
+         "encumbrance": 0,
+         "price": 2000000,
+         "rarity": 8
+      },
+      {
+         "name": "Reaper",
+         "page": 133,
+         "type": "artifact",
+         "description": [
+            {
+               "type": "table",
+               "columns": [
+                  { "header": "Skill" },
+                  { "header": "Dam", "value": "damage" },
+                  { "header": "Crit" },
+                  { "header": "Range" },
+                  { "header": "Encum", "value": "encumbrance" },
+                  { "header": "HP", "value": "hardPoints" },
+                  { "header": "Price" },
+                  { "header": "Rarity" },
+                  { "header": "Special" }
+               ],
+               "rows": [
+                  {
+                     "skill": "{@skill Ranged (Light)||crb}",
+                     "damage": "5",
+                     "crit": 1,
+                     "range": "Long",
+                     "encumbrance": 2,
+                     "hadPoints": 0,
+                     "price": 5000000,
+                     "rarity": 8,
+                     "special": "{@quality Accurate|Accurate 1|crb}, {@quality Defensive|Defensive 1|crb}, {@quality Pierce|Pierce 5|crb}, {@quality Vicious|Vicious 3|crb}"
+                  }
+               ]
+            },
+            "These firearms were developed long ago by the Mahact kings for use by their deadliest sharpshooters. Reapers have a long barrel with a slightly angled handgrip. When one is drawn, a metallic sleeve unfurls from the grip and tightly encases the shooter's hand and forearm. This stabilizes the shooter's aim and provides a small amount of protection in close-quarters combat.",
+            "The Reaper draws bioelectric energy from the shooter and uses an ill-understood process to focus it into a relatively lowpowered beam that nevertheless causes fearsome injuries in living targets. Shooters must be careful of this ability, as Reapers have no limiters on the amount of energy that they drain. There are a dozen known Reapers currently circulating throughout the galaxy, sometimes passing to a new owner after the previous wielder killed themself from overuse.",
+            "{@symbols d} may not be spent to cause a Reaper to run out of ammo. When your character uses a Reaper to make a {@skill Ranged (Light)||crb} check, they suffer 3 strain. If your character exceeds their strain threshold while wielding a Reaper, they suffer a Critical Injury and add +30 to the result."
+         ],
+         "encumbrance": 2,
+         "price": 5000000,
+         "rarity": 8
+      },
+      {
+         "name": "Shard of the Throne",
+         "page": 133,
+         "type": "artifact",
+         "description": [
+            "When {@rule Mecatol Rex} was attacked, the {@rule Federation of Sol|Federation of Sol's} bombs destroyed much of the imperial palace. As ground troops combed through the rubble, one squad found the Throne of the Lazax Emperor, damaged yet intact. The ancient seat of power and symbol of Lazax might and authority had somehow survived the direct hit that destroyed much of the palace. The soldiers took several pieces of the throne's precious-metal form as souvenirs. Over the centuries, pieces of the throne have been passed down from one generation to the next, sold on the black market, or stolen.",
+            "The Shards of the Throne serve as tangible reminders that the mightiest of empires can be brought low by the will of the people. That same will can carry a being from pauper to king, if they can gather an army to carry them there. Possession of a shard of the Throne of Emperors is seen as a symbol of status in high society, and as a badge of might among military forces. Some believe that no one can truly claim the Throne of Emperors unless they possess all of the shards and restore the throne to its former glory.",
+            "While openly displaying a Shard of the Throne, your character upgrades the ability of any {@skill Coercion||crb} checks and {@characteristic Presence||crb}-based skill checks they make twice."
+         ],
+         "encumbrance": "0-4",
+         "price": 8000000,
+         "rarity": 9
+      },
+      {
          "name": "Integral Particle Beam",
          "page": 58,
          "type": "weapon",
