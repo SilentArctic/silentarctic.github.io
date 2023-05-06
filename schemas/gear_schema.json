@@ -586,6 +586,112 @@
                "settings"
             ],
             "additionalProperties": false
+         },
+
+         {
+            "type": "object",
+            "properties": {
+               "name": {
+                  "type": "string"
+               },
+               "type": {
+                  "type": "string",
+                  "enum": ["attachment"]
+               },
+               "class": {
+                  "type": "string"
+               },
+               "page": {
+                  "type": "integer"
+               },
+               "imageUrl": {
+                  "type": "string"
+               },
+               "description": { "$ref": "./varyingDisplay_sub_schema.json" },
+               "hardPoints": {
+                  "type": "number"
+               },
+               "price": {
+                  "oneOf": [
+                     {
+                        "type": "integer"
+                     },
+                     {
+                        "type": "string",
+                        "enum": ["priceless", "n/a", "if you have to ask..."]
+                     }
+                  ]
+               },
+               "restricted": {
+                  "type": "boolean"
+               },
+               "rarity": {
+                  "type": "integer"
+               },
+               "qualities": {
+                  "type": "array",
+                  "items": {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
+                        },
+                        "ranks": {
+                           "type": ["integer", "string"]
+                        },
+                        "source": {
+                           "type": "string"
+                        }
+                     },
+                     "required": [
+                        "name"
+                     ],
+                     "optional": [
+                        "ranks",
+                        "source"
+                     ],
+                     "additionalProperties": false
+                  }
+               },
+               "modifiers": {
+                  "type": "array",
+                  "items": {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
+                        },
+                        "value": {
+                           "type": ["string", "integer"]
+                        }
+                     },
+                     "required": [
+                        "name",
+                        "value"
+                     ],
+                     "additionalProperties": false
+                  }
+               },
+               "settings": { "$ref": "./settings_sub_schema.json" }
+            },
+            "required": [
+               "name",
+               "type",
+               "description",
+               "hardPoints",
+               "price",
+               "rarity"
+            ],
+            "optional": [
+               "imageUrl",
+               "page",
+               "class",
+               "restricted",
+               "qualities",
+               "modifiers",
+               "settings"
+            ],
+            "additionalProperties": false
          }
       ]
    }
