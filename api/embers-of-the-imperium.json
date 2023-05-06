@@ -350,7 +350,7 @@
          "gear": [
             "Spec Ops drop armor: 1 defense, +2 soak, add {@dice boost} to {@skill Stealth||crb} checks",
             "{@gear Encryptos|Encrypted} {@gear comm-bead}",
-            "1 {@gear extra ammo|grenade reload}",
+            "1 {@gear extra ammunition|grenade reload}",
             "1 dose of {@gear dermal sealer}"
          ]
       },
@@ -1418,7 +1418,7 @@
             {
                "name": "Biomechanical",
                "description": [
-                  "A Titan does not need to breathe and can survive in vacuum without protection. They do need to sleep and consume moderate amounts of silicates and other minerals to survive"
+                  "A Titan does not need to breathe and can survive in {@rule vacuum||crb} without protection. They do need to sleep and consume moderate amounts of silicates and other minerals to survive"
                ]
             }
          ],
@@ -2947,7 +2947,7 @@
          "description": [
             "Several species must wear armored suits to interact or even survive in the wider galaxy. The {@archetype Creuss}, {@archetype Hylar}, and {@archetype Gashlai} are all well-known for needing environmental protections in an oxygen atmosphere, but there are dozens of other species as well. Since each species has its own unique physiology and environmental requirements, this protection is inevitably produced on each species' homeworld.",
             "However, in the last decade, several noted armorers who have set up shop on {@rule Mecatol Rex} have begun producing bespoke environmental protection gear for these species. The most popular is the Periclis suit, produced by the Herbedar Cooperative. Each must be made to individual specifications and thus is horrendously expensive, but anyone who owns a Periclis suit agrees that the results are worth it.",
-            "A Periclis suit must be crafted to the exact specifications of the wearer, a process that generally takes two weeks. Each suit allows the wearer to survive in nearly any environment, including underwater and in vacuum, indefinitely (the suit includes nutrient recyclers that help keep the wearer alive, although the sustenance they provide is not particularly enjoyable). Note that these suits are not bulky enough to impose additional {@dice setback} on certain checks.",
+            "A Periclis suit must be crafted to the exact specifications of the wearer, a process that generally takes two weeks. Each suit allows the wearer to survive in nearly any environment, including {@rule water and swimming|underwater|crb} and in {@rule vacuum||crb}, indefinitely (the suit includes nutrient recyclers that help keep the wearer alive, although the sustenance they provide is not particularly enjoyable). Note that these suits are not bulky enough to impose additional {@dice setback} on certain checks.",
             "In addition, because each suit must be made to order, the Herbedar Cooperative does not like spending time and resources making them for species who can survive perfectly well in oxygen/nitrogen atmospheres. For any character who is not a {@archetype Gashlai}, water-breathing {@archetype Hylar}, or {@archetype Creuss}, the cost of the suit doubles (to 4,000 aurei) and the time to construct it increases to 6 weeks.",
             "This armor may be modified with {@table 2-1: Culteral Manufacturing Differences|Culteral Manufacturing Differences}."
          ],
@@ -3014,8 +3014,8 @@
          "type": "armor",
          "class": "civilian",
          "description": [
-            "Civilian space suits are designed for comfort and ease of mobility, as well as for survival in vacuum. They are generally made of a tough but flexible cloth with an internal gel-armor layer that dissipates impacts. The gel also instantly hardens when exposed to vacuum, which means the suit has self-sealing capabilities against small breaches. Mag-boots and a limited-mobility pack complete the setup, and the whole outfit is light and small enough that it can be worn by fighter pilots, spacewalking construction workers, or passengers whose ship has suffered a catastrophic decompression.",
-            "A space suit has enough air, water, and power to keep your character alive in vacuum for up to three days. The limited-mobility pack and mag-boots allow your character to move in zero-gravity environments without treating them as difficult terrain.",
+            "Civilian space suits are designed for comfort and ease of mobility, as well as for survival in {@rule vacuum||crb}. They are generally made of a tough but flexible cloth with an internal gel-armor layer that dissipates impacts. The gel also instantly hardens when exposed to {@rule vacuum||crb}, which means the suit has self-sealing capabilities against small breaches. Mag-boots and a limited-mobility pack complete the setup, and the whole outfit is light and small enough that it can be worn by fighter pilots, spacewalking construction workers, or passengers whose ship has suffered a catastrophic decompression.",
+            "A space suit has enough air, water, and power to keep your character alive in {@rule vacuum||crb} for up to three days. The limited-mobility pack and mag-boots allow your character to move in zero-gravity environments without treating them as {@rule difficult and impassable terrain|difficult terrain|crb}.",
             "This armor may be modified with {@table 2-1: Culteral Manufacturing Differences|Culteral Manufacturing Differences}."
          ],
          "defense": 1,
@@ -3217,7 +3217,7 @@
          "class": "clandestine",
          "description": [
             "Many missions performed by covert operatives involve watching from the shadows and moving through darkened buildings and environments. For species who can't see in the dark, an umbral lens (usually in the form of eyewear or a lens placed directly over the pupil) picks up a range of wavelengths and allows them to see as if it were daylight.",
-            "While wearing an umbral lens, your character removes {@dice setback|2} from checks they make due to darkness.",
+            "While wearing an umbral lens, your character removes {@dice setback|2} from checks they make due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness|crb}.",
             "This item may be modified with {@table 2-1: Culteral Manufacturing Differences|Culteral Manufacturing Differences}."
          ],
          "encumbrance": 1,
@@ -3526,7 +3526,7 @@
          "description": [
             "Useful for anyone seeking shelter in a hostile environment, a habitent has a domed structure large enough to sustain a number of individuals whose silhouettes added together total 6 or less. A habitent is packed in a carrying case the size of a {@gear spacer trunk}, and it takes only a few minutes for its internal mechanisms to unfurl or for its user to stow the structure.",
             "Habitents are self-contained and come with air purification systems and temperature regulators that can handle extreme heat and extreme cold. These systems work for up to two weeks.",
-            "A reinforced version can maintain integrity and remain airtight underwater and in vacuum. It comes with a small pump and air storage that allows it to inflate and add air (or remove water) after a person enters. This version has air recycling supplies that can last for one week.",
+            "A reinforced version can maintain integrity and remain airtight {@rule water and swimming|underwater|crb} and in {@rule vacuum||crb}. It comes with a small pump and air storage that allows it to inflate and add air (or remove water) after a person enters. This version has air recycling supplies that can last for one week.",
             "This item may be modified with {@table 2-1: Culteral Manufacturing Differences|Culteral Manufacturing Differences}."
          ],
          "encumbrance": 6,
@@ -3540,7 +3540,7 @@
          "class": "survival",
          "description": [
             "Light beacons are small, handheld objects that emit light on command. Found practically everywhere, they are common in toolboxes and emergency kits and are carried by security personnel across the galaxy.",
-            "A light beacon provides illumination out to medium range and removes {@dice setback|2} added to checks due to darkness.",
+            "A light beacon provides illumination out to medium range and removes {@dice setback|2} added to checks due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness|crb}.",
             "This item may be modified with {@table 2-1: Culteral Manufacturing Differences|Culteral Manufacturing Differences}."
          ],
          "encumbrance": 0,
@@ -3797,6 +3797,887 @@
          "encumbrance": "0-4",
          "price": 8000000,
          "rarity": 9
+      },
+      {
+         "name": "Anti-Armor",
+         "page": 126,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "Foot soldiers regularly find themselves in combat against heavily armored opponents and light armored vehicles. Several cultures have devised methods for personal weapons to have the force necessary to pierce the armor of their foes. These advancements vary by weapon, but the results are the same: the weapon is able to punch through opponents' defenses with impressive results.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment may be used with any {@skill Ranged (Heavy)||crb} weapon.",
+                  "{@b Modifiers:} The weapon's damage decreases by 2, and it gains the {@quality Breach|Breach 2|crb} and {@quality Slow-Firing|Slow-Firing 1|crb} item qualities. It also gains {@quality Cumbersome|Cumbersome 3|crb} or increases its existing {@quality Cumbersome||crb} rating by 1, whichever is greater. Finally, the weapon's encumbrance increases by 2.",
+                  "{@b Hard Points Required:} 3."
+               ]
+            }
+         ],
+         "qualities": [
+            {
+               "name": "Breach",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Slow-Firing",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Cumbersome",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "modifiers": [
+            {
+               "name": "encumbrance",
+               "value": 2
+            }
+         ],
+         "hardPoints": 3,
+         "price": 1000,
+         "rarity": 2
+      },
+      {
+         "name": "Artisan Workmanship",
+         "page": 126,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "Although most of the weapons in the galaxy are made by large corporations or government industries, the best are produced by talented artisans who handcraft each weapon to a user's particular specifications.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any weapon.",
+                  "{@b Modifiers:} This weapon gains the {@quality Superior||crb} item quality.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "qualities": [
+            {
+               "name": "Superior",
+               "source": "crb"
+            }
+         ],
+         "hardPoints": 1,
+         "price": 750,
+         "rarity": 7
+      },
+      {
+         "name": "Balanced Hilt",
+         "page": 126,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "Although blades are often more of an affectation than a common weapon in the galaxy, there are those who prefer to use a knife or sword over a beam weapon or shot weapon. These people know the value of ensuring the hilt and blade of their weapon are well-balanced, making the weapon easier to handle.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment may be applied to any one-handed weapon that uses the {@skill Melee||crb} skill.",
+                  "{@b Modifiers:} The weapon gains the {@quality Accurate|Accurate 1|crb} item quality or increases any existing {@quality Accurate||crb} quality by 1. (If the weapon has the {@quality Inaccurate||crb} item quality, it reduces that quality's rating by 1, to a minimum of 0, instead.)",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "qualities": [
+            {
+               "name": "Accurate",
+               "ranks": 1,
+               "source": "crb"
+            }
+         ],
+         "hardPoints": 1,
+         "price": 800,
+         "rarity": 6
+      },
+      {
+         "name": "Carbo-Mesh Bonding",
+         "page": 125,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "Carbo-mesh bonding is a strengthening technique that layers a carbon mesh onto a weapon to improve its tensile strength and heat dissipation. This hypercarbon mesh is chemically bonded to the item, leaving a faint grid pattern on its surface.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment may be applied to any weapon.",
+                  "{@b Modifiers:} The weapon gains the {@quality Reinforced||crb} item quality.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "qualities": [
+            {
+               "name": "Reinforced",
+               "source": "crb"
+            }
+         ],
+         "hardPoints": 1,
+         "price": 250,
+         "rarity": 5
+      },
+      {
+         "name": "Compact Reconstruction",
+         "page": 127,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "Skilled weaponsmiths are able to take the components of larger firearms and reconfigure them to fit into a smaller casing or shell. This reduces the size and bulk of a firearm, allowing for ease of carrying and usage. This conversion does have a tendency to reduce the weapon's effective power.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment may be applied to any {@skill Ranged (Light)||crb} or {@skill Ranged (Heavy)||crb} weapon without the {@quality Cumbersome||crb} or {@quality Unwieldy||crb} item quality.",
+                  "{@b Modifiers:} Add {@dice setback} to checks made to detect or find the weapon. Reduce the weapon's encumbrance value by 2, to a minimum of 1, and reduce its damage by 1, to a minimum of 1.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "modifiers": [
+            {
+               "name": "encumbrance",
+               "value": -2
+            },
+            {
+               "name": "damage",
+               "value": -1
+            }
+         ],
+         "hardPoints": 1,
+         "price": 70,
+         "rarity": 2
+      },
+      {
+         "name": "Decksweeper Module",
+         "page": 127,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            {
+               "title": "Decksweeper Module Stats",
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Skill"
+                  },
+                  {
+                     "header": "Dam",
+                     "value": "damage"
+                  },
+                  {
+                     "header": "Crit"
+                  },
+                  {
+                     "header": "Range"
+                  },
+                  {
+                     "header": "Qualities"
+                  }
+               ],
+               "rows": [
+                  {
+                     "skill": "{@skill Ranged (Heavy)||crb}",
+                     "damage": "6",
+                     "crit": 4,
+                     "range": "Short",
+                     "qualities": "{@quality Blast|Blast 6|crb}, {@quality Concussive|Concussive 1|crb}, {@quality Limited Ammo|Limited Ammo 1|crb}, {@quality Vicious|Vicious 1|crb}"
+                  }
+               ]
+            },
+            "Ship-boarding actions are some of the most dangerous tasks stellar marines perform. To provide a little extra firepower and a means of clearing cramped quarters without causing a catastrophic hull breach, some troopers take to attaching an additional one-shot weapon to their gun. Appearing to be nothing more than a simple canister, this tube is packed with monofilament razor shrapnel backed with a powerful concussive charge. When a decksweeper module is fired, the concussion and shrapnel can kill or incapacitate anyone in a wide cone in front of it.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be used with any {@skill Ranged (Heavy)||crb} weapon.",
+                  "{@b Modifiers:} After a decksweeper module is installed on your character's weapon, your character may fire the weapon using the following secondary weapon profile: {@skill Ranged (Heavy)||crb}; Damage 6; Critical 4; Range (Short); {@quality Blast|Blast 6|crb}, {@quality Concussive|Concussive 1|crb}, {@quality Limited Ammo|Limited Ammo 1|crb}, {@quality Vicious|Vicious 1|crb}. The weapon increases any {@quality Cumbersome||crb} or {@quality Unwieldy||crb} item qualities it already has by 1 and increases its encumbrance by 1. Reloads cost 25 aurei.",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ],
+         "qualities": [
+            {
+               "name": "Cumbersome",
+               "ranks": "+1",
+               "source": "crb"
+            },
+            {
+               "name": "Unwieldy",
+               "ranks": "+1",
+               "source": "crb"
+            }
+         ],
+         "modifiers": [
+            {
+               "name": "encumbrance",
+               "value": 1
+            }
+         ],
+         "hardPoints": 2,
+         "price": 840,
+         "rarity": 5
+      },
+      {
+         "name": "Enhanced Focal Lenses",
+         "page": 127,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "Increasing the thickness of a beam weapon's focal prisms or lenses can keep the beam tightly focused over longer distances, effectively boosting its range.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any {@skill Ranged (Heavy)||crb} or {@skill Gunnery||crb} beam weapons.",
+                  "{@b Modifiers:} The weapon's range increases by one range band, to a maximum of extreme range. The weapon's base damage decreases by 1.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "modifiers": [
+            {
+               "name": "range",
+               "value": 1
+            },
+            {
+               "name": "damage",
+               "value": -1
+            }
+         ],
+         "hardPoints": 1,
+         "price": 125,
+         "rarity": 2
+      },
+      {
+         "name": "Extended Hilt",
+         "page": 127,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "This attachment extends the area where a wielder can grip their weapon, offering more freedom for precision and control. An extended hilt also allows the wielder to have a wider grip when wielding a weapon with two hands, adding both leverage and precision to their attacks.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment may be used with any melee weapon with an encumbrance value of 2 or higher.",
+                  "{@b Modifiers:} The weapon can now be wielded with two hands if it could not already. Your character adds {@symbols a} to the results of combat checks they make with this weapon, provided they use two hands to wield it.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "modifiers": [
+            {
+               "name": "symbols",
+               "value": "a"
+            }
+         ],
+         "hardPoints": 1,
+         "price": 50,
+         "rarity": 1
+      },
+      {
+         "name": "Force Booster",
+         "page": 127,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "A force booster is a microthrust booster installed in a wrist mount connected to a hand-held tool. The booster activates when the tool is at the apex of its swing, maximizing the force of the strike. When applied to combat weapons, the results are no less impressive. Users must be careful, however, because they can swing too hard and injure themselves.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment may be used with any axe, hammer, or similar {@skill Melee||crb} weapon.",
+                  "{@b Modifiers:} The weapon's base damage increases by 2, and it gains the {@quality Vicious|Vicious 1|crb} item quality or increases its existing {@quality Vicious||crb} quality by 1. When your character makes a combat check with this weapon, your GM may spend {@symbols hh} or {@symbols d} to cause your character to lose control of the weapon and have it land in a location of the GM's choice within medium range (if the check was successful, your character loses control of the weapon after hitting their target).",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ],
+         "qualities": [
+            {
+               "name": "Vicious",
+               "ranks": 1,
+               "source": "crb"
+            }
+         ],
+         "modifiers": [
+            {
+               "name": "damage",
+               "value": 2
+            }
+         ],
+         "hardPoints": 1,
+         "price": 200,
+         "rarity": 3
+      },
+      {
+         "name": "Heavy Barrel",
+         "page": 127,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "The weapon's standard barrel, emitter, projector, or capacitors are modified to give the weapon the ability to fire a more powerful blast. Whatever form it takes, the heavy barrel attachment has a tendency to destabilize the weapon, making it harder for the shooter to land an accurate shot. Few can argue with the impactful results, however, when the weapon strikes true.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment may be used with any {@skill Ranged (Light)||crb} or {@skill Ranged (Heavy)||crb} weapon.",
+                  "{@b Modifiers:} The weapon increases its base damage by 2 and gains the {@quality Inaccurate|Inaccurate 1|crb} quality.",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ],
+         "qualities": [
+            {
+               "name": "Inaccurate",
+               "ranks": 1,
+               "source": "crb"
+            }
+         ],
+         "modifiers": [
+            {
+               "name": "damage",
+               "value": 2
+            }
+         ],
+         "hardPoints": 2,
+         "price": 275,
+         "rarity": 2
+      },
+      {
+         "name": "Mag-Scope",
+         "page": 127,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "This scope provides an enhanced view of distant targets, allowing the wielder to make shots at long distances with less difficulty. The technology is conceptually similar to the simple telescopic lenses of ancient history, but the mag-scope uses powerful electronics to enhance the view and even compensate for poor lighting conditions somewhat.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be used with any ranged weapon that could logically benefit from the addition of a telescopic sight.",
+                  "{@b Modifiers:} Your character reduces the difficulty of ranged combat checks made with this weapon at long and extreme range by 1. Your character may remove {@dice setback} added to combat checks they make with this weapon due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness, smoke, or other environmental effects|crb} that obscure vision.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "modifiers": [
+            {
+               "name": "dice",
+               "value": "-setback"
+            }
+         ],
+         "hardPoints": 1,
+         "price": 230,
+         "rarity": 1
+      },
+      {
+         "name": "Motion Stabilizers",
+         "page": 128,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "Motion stabilizers are any sort of technology used to arrest unwanted motion on a weapon. They may do so by utilizing motion restrictors, antigrav emitter pods, or even a harness worn by the wielder",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment may be applied to any weapon with the {@quality Cumbersome||crb} or {@quality Unwieldy||crb} item quality.",
+                  "{@b Modifiers:} The weapon's {@quality Cumbersome||crb} and {@quality Unwieldy||crb} item qualities decrease by 1, to a minimum of 1, and its encumbrance value decreases by 3, to a minimum of 1.",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ],
+         "qualities": [
+            {
+               "name": "Cumbersome",
+               "ranks": -1,
+               "source": "crb"
+            },
+            {
+               "name": "Unwieldy",
+               "ranks": -1,
+               "source": "crb"
+            }
+         ],
+         "modifiers": [
+            {
+               "name": "encumbrance",
+               "value": -3
+            }
+         ],
+         "hardPoints": 2,
+         "price": 800,
+         "rarity": 4
+      },
+      {
+         "name": "Persistence Ammo Sight",
+         "page": 128,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "Persistence ammo utilizes miniaturized guidance and maneuvering fields to enable projectiles to strike a target they originally missed. Depending on the projectile fired, this maneuvering is performed via microdirectional fins, maneuvering verniers, or alteration of magnetic energy fields. Once a target is designated by the system's scope, any projectiles that miss their target circle back around to attempt a second strike.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment may be used with any ranged weapon that fires solid projectiles.",
+                  "{@b Modifiers:} This weapon gains the {@quality Guided|Guided 2|crb} item quality. When your character makes a combat check with this weapon, your GM may spend {@symbols hh} to cause this weapon to run out of ammo. This attachment cannot be combined with any bonus from another scope or sight.",
+                  "{@b Hard Points Required:} 3."
+               ]
+            }
+         ],
+         "qualities": [
+            {
+               "name": "Guided",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "hardPoints": 3,
+         "price": 1500,
+         "rarity": 8
+      },
+      {
+         "name": "Quick-Discharge Capacitors",
+         "page": 128,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "Self-styled gunslingers prefer any modification that allows them to fire their weapon more rapidly, even if accuracy suffers. Adding extra capacitors that can release stored energy in a single burst adds to the weight of a shot but can disrupt the weapon's circuitry.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any {@skill Ranged (Light)||crb} beam weapon.",
+                  "{@b Modifiers:} When your character makes their first combat check with this weapon in an encounter, add {@symbols sh} to the results.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "hardPoints": 1,
+         "price": 100,
+         "rarity": 3
+      },
+      {
+         "name": "Regenerative Ammo Reactor",
+         "page": 128,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "A common terror among frontline soldiers is the threat of their weapon running dry in the middle of a battle. Microreactors are prohibitively expensive (even the microentropic field taps recently designed by the {@archetype Naaz-Rokha}), but they can be installed into a weapon to provide a more lasting source of power.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment may be applied to any energy-based {@skill Ranged (Light)||crb}, {@skill Ranged (Heavy)||crb}, or {@skill Gunnery||crb} weapon.",
+                  "{@b Modifiers:} {@symbols d} may not be spent to cause this weapon to run out of ammo.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "hardPoints": 1,
+         "price": 200,
+         "rarity": 4
+      },
+      {
+         "name": "Saimoc Crystaledge Honing",
+         "page": 128,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "{@archetype Letnev} forces have developed a process to grind up and bond saimoc crystals to the edges of bladed weapons. The microscopic honing process seeds an edge with millions of sharp, serrated points. The effectiveness of \"saimoc honing\" has spread to other cultures as well. The cost of the honing process is prohibitive, but for those who can afford it, the result is a fine, deadly blade that can carve through virtually anything or anyone.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be used with any {@skill Melee||crb} weapon with a physical blade.",
+                  "{@b Modifiers:} The weapon gains the {@quality Vicious|Vicious 2|crb} item quality or raises its existing {@quality Vicious||crb} by 2, and it gains the {@quality Sunder||crb} item quality.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "qualities": [
+            {
+               "name": "Vicious",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Sunder",
+               "source": "crb"
+            }
+         ],
+         "hardPoints": 1,
+         "price": 1500,
+         "rarity": 9
+      },
+      {
+         "name": "Variable-Form Weapon",
+         "page": 128,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            {
+               "title": "Bladed Defensive Weapon Stats",
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Skill"
+                  },
+                  {
+                     "header": "Dam",
+                     "value": "damage"
+                  },
+                  {
+                     "header": "Crit"
+                  },
+                  {
+                     "header": "Range"
+                  },
+                  {
+                     "header": "Qualities"
+                  }
+               ],
+               "rows": [
+                  {
+                     "skill": "{@skill Melee||crb}",
+                     "damage": "1",
+                     "crit": 2,
+                     "range": "Engaged",
+                     "qualities": "{@quality Defensive|Defensive 1|crb}, {@quality Inferior|Inferior 1|crb}, {@quality Pierce|Pierce 2|crb}"
+                  }
+               ]
+            },
+            {
+               "title": "Blunt Offensive Weapon Stats",
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Skill"
+                  },
+                  {
+                     "header": "Dam",
+                     "value": "damage"
+                  },
+                  {
+                     "header": "Crit"
+                  },
+                  {
+                     "header": "Range"
+                  },
+                  {
+                     "header": "Qualities"
+                  }
+               ],
+               "rows": [
+                  {
+                     "skill": "{@skill Melee||crb}",
+                     "damage": "4",
+                     "crit": 4,
+                     "range": "Engaged",
+                     "qualities": "{@quality Inferior|Inferior 1|crb}, {@quality Knockdown||crb}, {@quality Vicious|Vicious 2|crb}"
+                  }
+               ]
+            },
+            "Combatants may need a close-quarters weapon one minute and a ranged weapon the next. Many have found ways to cause their weapon to change from one type of weapon to another. Some ranged weapons may be equipped with simple blades, but the most advanced of these variable-form weapons can actually re-form into a melee weapon at the wielder's command.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment may be used with any {@skill Ranged (Light)||crb} or {@skill Ranged (Heavy)||crb} weapon.",
+                  "{@b Modifiers:} When this attachment is installed, your character chooses one of the following secondary weapons. Once per turn while wielding the weapon, your character may cause it to change into a melee form or back into its ranged form as an incidental. While the weapon is in its melee form, your character can make a Melee combat check using the chosen profile.",
+                  {
+                     "type": "list",
+                     "items": [
+                        "{@b Bladed defensive weapon} ({@skill Melee||crb}; Damage 1; Critical 2; Range [Engaged]; {@quality Defensive|Defensive 1|crb}, {@quality Inferior|Inferior 1|crb}, {@quality Pierce|Pierce 2|crb})",
+                        "{@b Blunt offensive weapon} ({@skill Melee||crb}; Damage 4; Critical 4; Range [Engaged]; {@quality Inferior|Inferior 1|crb}, {@quality Knockdown||crb}, {@quality Vicious|Vicious 2|crb})"
+                     ]
+                  },
+                  "{@b Hard Points Required:} 3."
+               ]
+            }
+         ],
+         "hardPoints": 3,
+         "price": 250,
+         "rarity": 5
+      },
+      {
+         "name": "Antigrav Rig",
+         "page": 128,
+         "type": "attachment",
+         "class": "armor",
+         "description": [
+            "An antigrav rig allows its wearer to defy gravity in minor yet useful ways. While not powerful enough to provide the wearer with true flight, it allows them to leap great distances and slows their descent when they fall from a great height.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any armor.",
+                  "{@b Modifiers:} When wearing this armor, as a maneuver, your character may move to any point within short range, even vertically. Once per encounter, the antigrav rig can be activated to allow your character to leap to any point within medium range as a maneuver, or activated as an out-ofturn incidental to reduce your character's falling distance by two range bands.",
+                  "{@b Hard Points Required:} 3."
+               ]
+            }
+         ],
+         "hardPoints": 3,
+         "price": 700,
+         "rarity": 6
+      },
+      {
+         "name": "Augmentation Network",
+         "page": 129,
+         "type": "attachment",
+         "class": "armor",
+         "description": [
+            "These rigs are installed in heavier armor and monitor the wearer's physical and psychological condition. They use electrochemical stimulants that make the wearer more alert and heighten their reflexes. The rig is not without drawbacks; soldiers who use an augmentation network become impatient and unfocused, and they often suffer profound exhaustion after use.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment may be installed in any armor with a soak value of 2 or higher.",
+                  "{@b Modifiers:} When wearing this armor, as an incidental, your character may choose to add {@dice boost} to {@skill Perception||crb} checks, {@skill Vigilance||crb} checks, and all combat checks for the remainder of the encounter and must add {@dice setback} to all other checks until the end of the encounter. If they do so, at the end of the encounter they suffer 8 strain.",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ],
+         "hardPoints": 2,
+         "price": 225,
+         "rarity": 5
+      },
+      {
+         "name": "Duranium Alloy Plating",
+         "page": 130,
+         "type": "attachment",
+         "class": "armor",
+         "description": [
+            "Alloyed duranium is often used in dreadnought hull armor, and much smaller plates can be slipped into or layered atop personal protective gear for added protection. The only problem is that any duranium alloy is incredibly heavy.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment may be applied to any armor.",
+                  "{@b Modifiers:} : Increase the soak provided by the armor by 1. Increase the armor's encumbrance value by 3. The armor gains the {@quality Cumbersome|Cumbersome 3|crb} item quality.",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ],
+         "qualities": [
+            {
+               "name": "Cumbersome",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "modifiers": [
+            {
+               "name": "soak",
+               "value": 1
+            },
+            {
+               "name": "encumbrance",
+               "value": 3
+            }
+         ],
+         "hardPoints": 2,
+         "price": 500,
+         "rarity": 3
+      },
+      {
+         "name": "Dynamic Epaulets",
+         "page": 130,
+         "type": "attachment",
+         "class": "armor",
+         "description": [
+            "Often used by field commanders, dynamic epaulets modify armor design to draw attention and help them inspire those around them. Functional as well as cosmetic, this attachment includes enhancements that augment the wearer's communications devices, as well as speakers that allow their voice to carry over the din of battle.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any armor.",
+                  "{@b Modifiers:} When wearing this armor, your character adds {@symbols s} to the results of all {@skill Leadership||crb} checks they make.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "modifiers": [
+            {
+               "name": "Leadership",
+               "value": "s"
+            }
+         ],
+         "hardPoints": 1,
+         "price": 120,
+         "rarity": 6
+      },
+      {
+         "name": "Equipment Mount",
+         "page": 0,
+         "type": "attachment",
+         "class": "armor",
+         "description": [
+            "A person has only so many hands to hold weapons and equipment. Equipment mounts allow the wearer to attach a small weapon or piece of equipment to their armored suit, allowing that item to be ready to use at a moment's notice.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any armor. This attachment may be purchased and applied multiple times to the same suit of armor, taking up 1 hard point each time.",
+                  "{@b Modifiers:} Your character may mount one weapon or piece of equipment to their armor, allowing them to draw or ready that item as an incidental while wearing the armor. The mounted item may not have an encumbrance value higher than 2.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "hardPoints": 1,
+         "price": 25,
+         "rarity": 1
+      },
+      {
+         "name": "Integrated Deflector Shield",
+         "page": 130,
+         "type": "attachment",
+         "class": "armor",
+         "description": [
+            "This attachment consists of a power cell and a lattice of projector strips woven into the armor's surface or laid underneath its protective plates. When activated, the lattice projects an energy shield around the wearer. Constant attacks can overload the field quickly, causing it to short out until repairs can be made.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any armor.",
+                  "{@b Modifiers:} Increase the defense of the armor by 2. When your character is targeted by a combat check while wearing this armor, the attacker may spend {@symbols aaa} or {@symbols t} to cause the armor to become damaged one step (see {@rule Item Maintenance||crb} on page 89 of the {@title Genesys} Core Rulebook) and this attachment to no longer increase the armor's defense until the armor is repaired.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "modifiers": [
+            {
+               "name": "defense",
+               "value": 2
+            }
+         ],
+         "hardPoints": 1,
+         "price": 350,
+         "rarity": 5
+      },
+      {
+         "name": "Lifter Pods",
+         "page": 130,
+         "type": "attachment",
+         "class": "armor",
+         "description": [
+            "Lifter pods were originally designed for use by factory and construction workers, but many soldiers have also found them handy. Their microemitter grav-panels provide stability by making minor adjustments to the wearer's balance and relieving the pressure and strain of heavy loads.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any armor that covers the torso, elbows, and knees.",
+                  "{@b Modifiers:} When wearing armor with this attachment, your character increases their encumbrance threshold by 4 and decreases the {@quality Cumbersome||crb} and {@quality Unwieldy||crb} ratings of any items they carry by 1.",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ],
+         "qualities": [
+            {
+               "name": "Cumbersome",
+               "ranks": "-1",
+               "source": "crb"
+            },
+            {
+               "name": "Unwieldy",
+               "ranks": "-1",
+               "source": "crb"
+            }
+         ],
+         "modifiers": [
+            {
+               "name": "encumbranceThreshold",
+               "value": 4
+            }
+         ],
+         "hardPoints": 2,
+         "price": 150,
+         "rarity": 3
+      },
+      {
+         "name": "Multisensor Suite",
+         "page": 130,
+         "type": "attachment",
+         "class": "armor",
+         "description": [
+            "A multisensor suite equips a helmet with an assortment of optical and audio enhancements. Its sensors grant the wearer sight in the thermographic, starlight, ultraviolet, infrared, and radio wave spectra. Its audio sensors can detect frequencies beyond most beings' auditory range. These sensor suites are invaluable for combat operations in darkened or obscured environments, providing explorers with a host of scanning options without requiring a quintisensor.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any armor with a helmet.",
+                  "{@b Modifiers:} When wearing this armor, your character may remove {@dice setback|2} added to skill checks they make due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness, smoke, or other environmental effects|crb} that obscure vision or sound.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "hardPoints": 1,
+         "price": 840,
+         "rarity": 4
+      },
+      {
+         "name": "Samaritan System",
+         "page": 130,
+         "type": "attachment",
+         "class": "armor",
+         "description": [
+            "This attachment consists of an interwoven lattice of sensors and microtubes that stretch across the interior of the armor. The sensors monitor the wearer's vital signs. When the system detects that the wearer has lost consciousness, it releases a dose of dermal sealer at the point of injury. The system stores three doses of dermal sealer, which can be replenished from a standard dermal sealer device.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be used with any armor.",
+                  "{@b Modifiers:} Once per encounter when wearing this armor, your character may administer one dose of dermal sealer to themself as an incidental. The wearer may even do this on their turn while incapacitated (this overrides the normal rules about not performing actions, maneuvers, or incidentals while incapacitated). After this system has administered three doses, it must be replenished, which requires three dermal sealers and five minutes of work.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "hardPoints": 1,
+         "price": 300,
+         "rarity": 7
+      },
+      {
+         "name": "Shockshin Lattice",
+         "page": 131,
+         "type": "attachment",
+         "class": "armor",
+         "description": [
+            "Shockskin is a nasty surprise in hand-to-hand combat. It covers armor's surface in a mesh of threads that can stun an opponent. When the threads are struck, they send a biodisruptive pulse through the attacker's limb. These pulses are also triggered when the armor's wearer performs strikes of their own with their arms, legs, or body.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment may be applied to any armor that covers the entire body.",
+                  "{@b Modifiers:} When wearing this armor and targeted by a {@skill Brawl||crb} check, your character may spend {@symbols hhh} or {@symbols d} to cause the attacker to suffer 4 strain. When your character makes a {@skill Brawl||crb} check while wearing this armor, they may spend {@symbols aa} to cause the target to suffer 4 strain.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "hardPoints": 1,
+         "price": 125,
+         "rarity": 4
+      },
+      {
+         "name": "Terror Enhancement",
+         "page": 131,
+         "type": "attachment",
+         "class": "armor",
+         "description": [
+            "Making armor look more frightening has long been a tactic of most cultures in the galaxy. However, modern technology has allowed these theatrics to be taken to new heights. Simple paintings of blood or skulls (or another species' equivalent) on helmets or chest plates is just the beginning. True terror enhancements use holographics to create the effect of ominous lighting, subtle infrasonic projectors to create feelings of unease, and pheromone dispensers to affect species whose primary sense is smell.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any armor.",
+                  "{@b Modifiers:} When wearing this attachment, your character adds {@symbols s} to any {@skill Coercion||crb} checks they make and {@symbols f} to any {@skill Charm||crb} or {@skill Stealth||crb} checks they make. Once per session, you may spend a Story Point to force one character within short range of your character to make a {@difficulty Hard|fear|1}, with the overall results adjudicated by your GM.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "hardPoints": 1,
+         "price": 180,
+         "rarity": 3
+      },
+      {
+         "name": "Vacuum Seals",
+         "page": 131,
+         "type": "attachment",
+         "class": "armor",
+         "description": [
+            "These vacuum seals fill the gaps between the protective plates and pads of existing armor and come with a short-term air supply. Vacuum-sealed armor can keep a trooper alive and functional in space or any hostile atmosphere for a short time.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any armor that covers the entire body and includes a helmet.",
+                  "{@b Modifiers:} The armor is now {@rule vacuum||crb} sealed, granting the wearer immunity to the hazardous effects of {@rule vacuum||crb} or of {@rule fire, acid, and corrosive atmospheres|toxic|crb} or {@rule water and swimming|underwater|crb} environments. This protection lasts for one hour. If the wearer has not reached an area with breathable atmosphere, they begin to suffocate (see {@rule Suffocation||crb} on page 112 of the {@title Genesys} Core Rulebook).",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ],
+         "hardPoints": 2,
+         "price": 150,
+         "rarity": 3
       },
       {
          "name": "Integral Particle Beam",
@@ -4537,7 +5418,7 @@
          "activation": "passive",
          "ranked": "false",
          "description": [
-            "Your character does not count zero-gravity environments as difficult terrain. When your character is exposed to vacuum without protective gear, they may hold their breath for a number of rounds equal to twice their {@characteristic Brawn||crb} and only suffer 2 wounds for each round they are exposed to vacuum."
+            "Your character does not count zero-gravity environments as {@rule difficult and impassable terrain|difficult terrain|crb}. When your character is exposed to {@rule vacuum||crb} without protective gear, they may hold their breath for a number of rounds equal to twice their {@characteristic Brawn||crb} and only suffer 2 wounds for each round they are exposed to {@rule vacuum||crb}."
          ]
       },
       {
@@ -4599,7 +5480,7 @@
          "activation": "passive",
          "ranked": false,
          "description": [
-            "When you take this talent, your character gains {@skill Perception||crb} or {@skill Stealth||crb} as a career skill. In addition, your character may remove {@dice setback} added to their checks due to darkness."
+            "When you take this talent, your character gains {@skill Perception||crb} or {@skill Stealth||crb} as a career skill. In addition, your character may remove {@dice setback} added to their checks due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness|crb}."
          ]
       },
       {
@@ -4609,7 +5490,7 @@
          "activation": "passive",
          "ranked": false,
          "description": [
-            "When you take this talent, your character gains {@skill Athletics||crb} or {@skill Coordination||crb} as a career skill. In addition, when making a check using one of these skills in a zero-gravity environment, your character may spend {@symbols aa} to heal 3 strain."
+            "When you take this talent, your character gains {@skill Athletics||crb} or {@skill Coordination||crb} as a career skill. In addition, when making a check using one of these skills in a {@rule gravity|zero-gravity|crb} environment, your character may spend {@symbols aa} to heal 3 strain."
          ]
       },
       {
