@@ -263,24 +263,46 @@
          "weapons": [
             {
                "name": "Fletcher Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 2,
                "range": "Medium",
                "qualities": [
-                  "Pierce 2",
-                  "Vicious 2"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Molotov Cocktail",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 4,
                "range": "Short",
                "qualities": [
-                  "Blast 7",
-                  "Burn 3"
+                  {
+                     "name": "Blast",
+                     "ranks": 7,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Burn",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -386,47 +408,92 @@
          "weapons": [
             {
                "name": "Integrated Rotary Cannon",
-               "skill": "Gunnery",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 3,
                "range": "Long",
                "qualities": [
-                  "Auto-fire"
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Integrated Heavy Gauss Rifle",
-               "skill": "Gunnery",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 2,
                "range": "Extreme",
                "qualities": [
-                  "Breach 1",
-                  "Slow-firing 1"
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-firing",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Integrated Micro-missile Launcher",
-               "skill": "Gunnery",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
                "damage": 12,
                "critical": 4,
                "range": "Long",
                "qualities": [
-                  "Blast 10",
-                  "Guided 3",
-                  "Limited Ammo 3"
+                  {
+                     "name": "Blast",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Guided",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Armored Fist",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Concussive 1",
-                  "Knockdown",
-                  "Sunder"
+                  {
+                     "name": "Concussive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Sunder",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -533,13 +600,23 @@
          "weapons": [
             {
                "name": "Concealed Stun Baton",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 5,
                "range": "Engaged",
                "qualities": [
-                  "Disorient 3",
-                  "Stun Damage"
+                  {
+                     "name": "Disorient",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -717,14 +794,28 @@
          "weapons": [
             {
                "name": "Synap Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 6,
                "range": "Short",
                "qualities": [
-                  "Disorient 4",
-                  "Stun 3",
-                  "Stun Damage"
+                  {
+                     "name": "Disorient",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -805,12 +896,19 @@
          "weapons": [
             {
                "name": "Titanium Shovel",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Stun 2"
+                  {
+                     "name": "Stun",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -913,13 +1011,23 @@
          "weapons": [
             {
                "name": "Stun Baton",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 5,
                "range": "Engaged",
                "qualities": [
-                  "Disorient 3",
-                  "Stun Damage"
+                  {
+                     "name": "Disorient",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -989,12 +1097,19 @@
          "weapons": [
             {
                "name": "Light Fletcher",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 2,
                "range": "Medium",
                "qualities": [
-                  "Pierce 2"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1362,12 +1477,18 @@
          "weapons": [
             {
                "name": "Submachine Gun",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
                "range": "Medium",
                "qualities": [
-                  "Auto-fire"
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1453,12 +1574,19 @@
          "weapons": [
             {
                "name": "Electrified Metal Jaws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Stun 4"
+                  {
+                     "name": "Stun",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1571,24 +1699,43 @@
          "weapons": [
             {
                "name": "Shotgun Loaded with Stun Rounds",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
                "range": "Short",
                "qualities": [
-                  "Knockdown",
-                  "Stun Damage"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Stun Baton",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 5,
                "range": "Engaged",
                "qualities": [
-                  "Disorient 3",
-                  "Stun Damage"
+                  {
+                     "name": "Disorient",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1662,12 +1809,19 @@
          "weapons": [
             {
                "name": "Baseball bat",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Disorient 2"
+                  {
+                     "name": "Disorient",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1743,7 +1897,10 @@
          "weapons": [
             {
                "name": "Utility Knife",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 3,
                "critical": 4,
                "range": "Engaged"
@@ -1858,13 +2015,24 @@
          "weapons": [
             {
                "name": "Hand Cannon",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
                "range": "Medium",
                "qualities": [
-                  "Inaccurate 1",
-                  "Limited Ammo 4"
+                  {
+                     "name": "Inaccurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1947,14 +2115,28 @@
          "weapons": [
             {
                "name": "Synap Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 6,
                "range": "Short",
                "qualities": [
-                  "Disorient 4",
-                  "Stun 3",
-                  "Stun Damage"
+                  {
+                     "name": "Disorient",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2068,13 +2250,24 @@
          "weapons": [
             {
                "name": "Laser Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Short",
                "qualities": [
-                  "Accurate 1",
-                  "Burn 1"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Burn",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2271,14 +2464,28 @@
          "weapons": [
             {
                "name": "Synap Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 6,
                "range": "Short",
                "qualities": [
-                  "Disorient 4",
-                  "Stun 3",
-                  "Stun Damage"
+                  {
+                     "name": "Disorient",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2372,24 +2579,45 @@
          "weapons": [
             {
                "name": "Synap Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 6,
                "range": "Short",
                "qualities": [
-                  "Disorient 4",
-                  "Stun 3",
-                  "Stun Damage"
+                  {
+                     "name": "Disorient",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Stun-knuckles",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Stun 3"
+                  {
+                     "name": "Stun",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2463,13 +2691,23 @@
          "weapons": [
             {
                "name": "Distended Jaws And Oversized Claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 12,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Ensare",
-                  "Sunder"
+                  {
+                     "name": "Ensnare",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Sunder",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2565,13 +2803,23 @@
          "weapons": [
             {
                "name": "Titanium claw",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 3,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Pierce 3",
-                  "Sunder"
+                  {
+                     "name": "Pierce",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Sunder",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2637,12 +2885,18 @@
          "weapons": [
             {
                "name": "Sledgehammer",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Knockdown"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2800,36 +3054,72 @@
          "weapons": [
             {
                "name": "Light Machine Gun",
-               "skill": "Gunnery",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 3,
                "range": "Long",
                "qualities": [
-                  "Auto-fire"
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Micro-missile pod",
-               "skill": "Gunnery",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
                "damage": 12,
                "critical": 4,
                "range": "Long",
                "qualities": [
-                  "Blast 10",
-                  "Guided 3",
-                  "Limited Ammo 6"
+                  {
+                     "name": "Blast",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Guided",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 6,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Armor-piercing Missiles",
-               "skill": "Gunnery",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
                "damage": 20,
                "critical": 2,
                "range": "Extreme",
                "qualities": [
-                  "Breach 2",
-                  "Guided 4",
-                  "Limited Ammo 2"
+                  {
+                     "name": "Breach",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Guided",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2914,15 +3204,25 @@
          "weapons": [
             {
                "name": "Bite",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 3,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Knockdown",
-                  "Vicious 2",
-                  "Gains Pierce 2 against prone targets."
-               ]
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ],
+               "details": "Gains Pierce 2 against prone targets."
             }
          ],
          "gear": [],
@@ -3046,7 +3346,10 @@
          "weapons": [
             {
                "name": "Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Medium"
@@ -3433,13 +3736,23 @@
          "weapons": [
             {
                "name": "Scavenged Industrial Laser Rifle",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
                "range": "Medium",
                "qualities": [
-                  "Burn 1",
-                  "Inferior"
+                  {
+                     "name": "Burn",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Inferior",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3515,23 +3828,40 @@
          "weapons": [
             {
                "name": "Armor-piercing Submachine Gun",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
                "range": "Medium",
                "qualities": [
-                  "Auto-fire",
-                  "Pierce 2"
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Machete",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3596,12 +3926,19 @@
          "weapons": [
             {
                "name": "Manipulator Arms",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 6,
                "range": "Engaged",
                "qualities": [
-                  "Inaccurate 1"
+                  {
+                     "name": "Inaccurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3707,24 +4044,45 @@
          "weapons": [
             {
                "name": "Retrofitted strength-augmenting gauntlet",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Concussive 1",
-                  "Knockdown"
+                  {
+                     "name": "Concussive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Laser Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Short",
                "qualities": [
-                  "Accurate 1",
-                  "Burn 1"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Burn",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3932,35 +4290,67 @@
          "weapons": [
             {
                "name": "Bullpup carbine",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
                "range": "Medium",
                "qualities": [
-                  "Accurate 1",
-                  "Auto-fire"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "2 Monofilament Grenades",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
                "range": "Short",
                "qualities": [
-                  "Blast 7",
-                  "Limited Ammo 1",
-                  "Vicious 1"
+                  {
+                     "name": "Blast",
+                     "ranks": 7,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Custom Combat Knife",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 2"
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4057,13 +4447,14 @@
          "weapons": [
             {
                "name": "HHI M-3 Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 4,
                "range": "Medium",
-               "qualities": [
-                  "as an incidental may choose to apply one of the following qualities before making an attack: Blast 4, Pierce 2, Stun Damage"
-               ]
+               "details": "As an incidental may choose to apply one of the following qualities before making an attack: {@quality Blast|Blast 4|crb}, {@quality Pierce|Pierce 2|crb}, {@quality Stun Damage||crb}."
             }
          ],
          "gear": [
@@ -4143,13 +4534,23 @@
          "weapons": [
             {
                "name": "Fangs and Bite",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Knockdown",
-                  "Stun 5"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun",
+                     "ranks": 5,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4230,23 +4631,34 @@
          "weapons": [
             {
                "name": "HHI M-3 Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 4,
                "range": "Medium",
-               "qualities": [
-                  "As an incidental may choose to apply one of the following qualities before making an attack: Blast 4, Pierce 2, Stun Damage"
-               ]
+               "details": "As an incidental may choose to apply one of the following qualities before making an attack: {@quality Blast|Blast 4|crb}, {@quality Pierce|Pierce 2|crb}, {@quality Stun Damage||crb}."
             },
             {
                "name": "Stun Baton",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 5,
                "range": "Engaged",
                "qualities": [
-                  "Disorient 3",
-                  "Stun Damage"
+                  {
+                     "name": "Disorient",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4328,27 +4740,59 @@
          "weapons": [
             {
                "name": "Electrified Power Gauntlet",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Concussive 2",
-                  "Knockdown",
-                  "Prepare 1",
-                  "Stun Damage"
+                  {
+                     "name": "Concussive",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Prepare",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Riot Shield",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 5,
                "range": "Engaged",
                "qualities": [
-                  "Defensive 2",
-                  "Deflection 2",
-                  "Inaccurate 2"
+                  {
+                     "name": "Defensive",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Deflection",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Inaccurate",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4438,36 +4882,63 @@
          "weapons": [
             {
                "name": "HHI Scoped Gauss Rifle",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 2,
                "range": "Extreme",
                "qualities": [
-                  "Cumbersome 2",
-                  "Pierce 5",
-                  "Slow-Firing 1",
-                  "Reduce difficulty of combat checks at long range or greater by 1"
-               ]
+                  {
+                     "name": "Cumbersome",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 5,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ],
+               "details": "Reduce difficulty of combat checks at long range or greater by 1."
             },
             {
                "name": "HHI SP-10 Shotgun",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
                "range": "Short",
-               "qualities": [
-                  "As an incidental may choose to apply one of the following qualities before making an attack: Blast 5, Knockdown, Stun Damage , Vicious 2"
-               ]
+               "details": "As an incidental may choose to apply one of the following qualities before making an attack: {@qualiyt Blast|Blast 5|crb}, {@quality Knockdown||crb}, {@quality Stun Damage||crb}, {@quality Vicious|Vicious 2|crb}"
             },
             {
                "name": "Backup Fletcher Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 2,
                "range": "Medium",
                "qualities": [
-                  "Pierce 2",
-                  "Vicious 2"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4659,13 +5130,24 @@
          "weapons": [
             {
                "name": "Gold-Plated Laser Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Short",
                "qualities": [
-                  "Accurate 1",
-                  "Burn 1"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Burn",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4761,26 +5243,55 @@
          "weapons": [
             {
                "name": "Fletcher",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 2,
                "range": "Medium",
                "qualities": [
-                  "Blast 4",
-                  "Pierce 2",
-                  "Vicious 3"
+                  {
+                     "name": "Blast",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Power Gauntlet",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Concussive 2",
-                  "Knockdown",
-                  "Prepare 1"
+                  {
+                     "name": "Concussive",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Prepare",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4849,23 +5360,41 @@
          "weapons": [
             {
                "name": "Brass Knuckles",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 3,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Disorient 3"
+                  {
+                     "name": "Disorient",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Fletcher Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 2,
                "range": "Medium",
                "qualities": [
-                  "Pierce 2",
-                  "Vicious 2"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4971,14 +5500,28 @@
          "weapons": [
             {
                "name": "Synap Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 6,
                "range": "Short",
                "qualities": [
-                  "Disorient 4",
-                  "Stun 3",
-                  "Stun Damage"
+                  {
+                     "name": "Disorient",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -5046,12 +5589,18 @@
          "weapons": [
             {
                "name": "Assault Rifle",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
                "range": "Long",
                "qualities": [
-                  "Auto-fire"
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -5147,23 +5696,40 @@
          "weapons": [
             {
                "name": "Augmented Fists",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Disorient 3",
-                  "Knockdown"
+                  {
+                     "name": "Disorient",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Heavy Pistol with linked sight",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
                "range": "Medium",
                "qualities": [
-                  "Accurate 1"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -5756,27 +6322,59 @@
          "weapons": [
             {
                "name": "Auto-fletcher",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 3,
                "critical": 2,
                "range": "Medium",
                "qualities": [
-                  "Auto-fire",
-                  "Pierce 2",
-                  "Vicious 2"
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Micro-waterknife",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Prepare 1",
-                  "Sunder",
-                  "Unwieldy 3",
-                  "Vicious 3"
+                  {
+                     "name": "Prepare",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Sunder",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Unwieldy",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -5850,14 +6448,28 @@
          "weapons": [
             {
                "name": "Synap Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 6,
                "range": "Short",
                "qualities": [
-                  "Disorient 4",
-                  "Stun 3",
-                  "Stun Damage"
+                  {
+                     "name": "Disorient",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -6035,14 +6647,28 @@
          "weapons": [
             {
                "name": "Palm Stunner",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 5,
                "range": "Engaged",
                "qualities": [
-                  "Disorient 2",
-                  "Slow-Firing 2",
-                  "Stun Damage"
+                  {
+                     "name": "Disorient",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -6132,13 +6758,24 @@
          "weapons": [
             {
                "name": "Fletcher pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 2,
                "range": "Medium",
                "qualities": [
-                  "Pierce 2",
-                  "Vicious 2"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -6217,19 +6854,29 @@
          "weapons": [
             {
                "name": "Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
                "range": "Medium"
             },
             {
                "name": "Mono-switchblade",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Pierce 2"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -6333,25 +6980,50 @@
          "weapons": [
             {
                "name": "Custom six-shooter",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 2,
                "range": "Medium",
                "qualities": [
-                  "Accurate 1"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Plasma Cutter",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 12,
                "critical": 3,
                "range": "Engaged",
                "qualities": [
-                  "Burn 1",
-                  "Prepare 1",
-                  "Sunder",
-                  "Unwieldy 2"
+                  {
+                     "name": "Burn",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Prepare",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Sunder",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Unwieldy",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -6440,14 +7112,28 @@
          "weapons": [
             {
                "name": "Shotgun",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
                "range": "Short",
                "qualities": [
-                  "Blast 4",
-                  "Knockdown",
-                  "Vicious 2"
+                  {
+                     "name": "Blast",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -6543,36 +7229,72 @@
          "weapons": [
             {
                "name": "Heavy fletcher",
-               "skill": "Gunnery",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 2,
                "range": "Medium",
                "qualities": [
-                  "Blast 6",
-                  "Pierce 4",
-                  "Vicious 3"
+                  {
+                     "name": "Blast",
+                     "ranks": 6,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Laser Cannon",
-               "skill": "Gunnery",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 3,
                "range": "Long",
                "qualities": [
-                  "Accurate 1",
-                  "Burn 1",
-                  "Cumbersome 4"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Burn",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Cumbersome",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Power-augmented Exosuit fists",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Knockdown"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -6648,23 +7370,41 @@
          "weapons": [
             {
                "name": "Laser Rifle",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
                "range": "Medium",
                "qualities": [
-                  "Accurate 1",
-                  "Burn 1"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Burn",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Monoblade Combat Knife",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Pierce 2"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -6818,7 +7558,10 @@
          "weapons": [
             {
                "name": "Tiny Head Nubs",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 0,
                "critical": 8,
                "range": "Engaged"
@@ -7080,12 +7823,19 @@
          "weapons": [
             {
                "name": "Tusks",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -7200,14 +7950,28 @@
          "weapons": [
             {
                "name": "Auto-fletcher",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 3,
                "critical": 2,
                "range": "Medium",
                "qualities": [
-                  "Auto-fire",
-                  "Pierce 2",
-                  "Vicious 2"
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -7338,27 +8102,58 @@
          "weapons": [
             {
                "name": "Charged Crystal Katana",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 2,
                "range": "Engaged",
                "qualities": [
-                  "Defensive 1",
-                  "Pierce 3",
-                  "Reinforced"
+                  {
+                     "name": "Defensive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Reinforced",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Fists and feet",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 4,
                "range": "Engaged",
                "qualities": [
-                  "Disorient 1",
-                  "Knockdown",
-                  "Stun 5",
-                  "Stun Damage"
+                  {
+                     "name": "Disorient",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun",
+                     "ranks": 5,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -11514,7 +12309,7 @@
          "class": "tools",
          "description": [
             "Emergency oxygen bottles are a common sight from Midway Station all the way to Mars. They have disposable mouth pieces and modular valves, letting them serve as an emergency O2 supply or refill a pressurized compartment.",
-            "Your character can use an O2 bottle to avoid the effects of suffocation in a low-oxygen environment (such as in vacuum, underwater, or in a choking cloud of gas) for up to ten minutes. Your character still suffers any other effects from that environment (such as wounds from being exposed to vacuum, for example)."
+            "Your character can use an O2 bottle to avoid the effects of {@rule suffocation||crb} in a low-oxygen environment (such as in vacuum, underwater, or in a choking cloud of gas) for up to ten minutes. Your character still suffers any other effects from that environment (such as wounds from being exposed to vacuum, for example)."
          ],
          "encumbrance": 1,
          "price": 35,

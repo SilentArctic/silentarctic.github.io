@@ -7725,12 +7725,38 @@
          ]
       },
       {
+         "name": "Concealment (Darkness, Smoke, and Intervening Terrain)",
+         "page": 110,
+         "type": "environment",
+         "description": [
+            "Concealment is a situation that occurs when a character is hard to spot because of environmental effects such as darkness, smoke, tall grass, or mist. Concealment imposes penalties on ranged attacks and sight-based skill checks such as many {@skill Perception} checks. Conversely, it can provide bonuses for checks on other skills, such as Stealth.",
+            "The exact bonuses and penalties can be modified by the GM if needed. However, in general, concealment can be divided into levels based on how obscuring the concealment is. See {@table I.6-7: Concealment} for examples of different types of concealment. In each case, the type of concealment adds a number of {@dice setback} equal to the \"Dice Added\" entry to any ranged combat checks, {@skill Vigilance} checks, or {@skill Perception} checks against targets with concealment. Conversely, it adds a number of {@dice boost} equal to the \"Dice Added\" entry to any {@skill Stealth} checks made by a character with concealment. These Boosts or Setbacks may also be added to other skill checks if the GM feels it's appropriate."
+         ]
+      },
+      {
+         "name": "Cover",
+         "page": 110,
+         "type": "environment",
+         "description": [
+            "When the guns start firing, most characters dive for cover. To keep things simple, being behind some sort of cover — a rock, crate, wall, or vehicle, for example — allows the character to gain a ranged defense of 1 and adds {@dice setback} to certain skill checks, such as Perception. A single {@dice setback} is sufficient for most situations, although the GM may add additional {@dice setback} if the target is particularly well covered, such as if they are within a trench, blockhouse, bunker, or any other prepared position. The same holds true for the increase in ranged defense."
+         ]
+      },
+      {
          "name": "Cybernetics",
          "type": "character",
          "page": 177,
          "description": [
             "Although modern cybernetics can give a disabled individual a replacement for a missing extremity, in the future they may do much more. These cybernetics are special pieces of gear that must be installed on a character with an {@difficulty Average|Medicine} check. They cannot be removed without surgery, requiring a second successful {@difficulty Average|Medicine} check.",
             "Thematically, cybernetics are supposed to enhance a character, so the ones presented here increase a character's derived stats, skills, or characteristics. To avoid letting increases get out of control, each stat, skill, or characteristic can only be increased by +1 due to cybernetics, no matter how many different cybernetics your character has that would increase that number."
+         ]
+      },
+      {
+         "name": "Difficult and Impassable Terrain",
+         "page": 110,
+         "type": "environment",
+         "description": [
+            "Difficult terrain is a catchall description of terrain that is hard to move through or over. It can include tight passageways, slippery ice, thick undergrowth, loose rubble, shifting sand, or waist-deep water (or any number of other circumstances). Essentially, it's terrain that characters move through with difficulty. Characters entering or moving through difficult terrain must perform twice as many maneuvers to move the same distance they would in normal terrain.",
+            "Impassable terrain is a description of terrain that is simply impossible to move through via maneuvers. This includes sheer cliffs, walls higher than a character can jump, and deep pits. Impassable terrain is not always an insurmountable obstacle, but it's an obstacle that requires special skills to circumvent. Depending on the impassable terrain in question and the resources at the character's disposal, the GM may allow the character to overcome impassable terrain by using a skill, probably the {@skill Athletics} or {@skill Coordination} skill (see {@b Chapter 3: Skills} on page 52). During an encounter, this means the character must spend at least one action (and possibly give up one or more maneuvers) to accomplish this."
          ]
       },
       {
@@ -7896,6 +7922,15 @@
          ]
       },
       {
+         "name": "Falling",
+         "page": 112,
+         "type": "movement",
+         "description": [
+            "Gravity kills. If a character falls from a height, the GM should determine the distance between the location from which the character fell and their point of impact below, then apply the closest comparable range band. Next, the GM consults {@table I.6-9: Falling Damage} to determine the damage suffered. Damage is reduced by soak; however, the strain suffered is not.",
+            "A character can reduce the damage taken from falling by making an {@difficulty Average|Athletics or Coordination}. Each {@symbols s} reduces the damage suffered by one, while each {@symbols a} reduces the strain suffered by one. A {@symbols t} could, at the GM's discretion, reduce the overall distance fallen by one range band as the character grabs onto a handhold or does something else to arrest their fall."
+         ]
+      },
+      {
          "name": "Fire, Acid, and Corrosive Atmospheres",
          "page": 111,
          "type": "environment",
@@ -7904,6 +7939,18 @@
             "Each round at the beginning of their turn, a character subjected to one of these hazards suffers wounds equal to its rating. This damage persists until they are no longer exposed to the hazard. With some corrosive atmospheres, the GM may decide they do not cause damage unless inhaled. In such cases, the character can hold their breath for a number of rounds equal to their Brawn before having to breathe and suffer damage.",
             "It's primarily up to the GM to decide how long the damage from one of these sources lasts. Acids usually neutralize themselves after a certain period of time (as few as several rounds, or as long as several minutes or hours). Fires burn for as long as they have a fuel source, which again could be very briefly or for a very long time. A corrosive atmosphere, on the other hand, usually deals damage as long as the character is exposed to it.",
             "{@b Putting out fire/neutralizing acid:} A victim might be able to stop the damage caused by fire by rolling around on the ground and making a {@skill Coordination} check. This is an {@difficulty Average} check on hard surfaces such as the deck of a spaceship, or an {@difficulty Easy} check on grass or soft ground. Jumping into a body of water stops the damage immediately. In the case of acid, it's up to the GM to determine if the same procedures negate the damage, or if the character must apply some neutralizing substance instead. The only way to stop taking damage from a corrosive atmosphere is to leave it."
+         ]
+      },
+      {
+         "name": "Gravity",
+         "page": 110,
+         "type": "environment",
+         "description": [
+            "If your game takes place in a futuristic setting, characters might find themselves in a situation where they are away from an artificial gravity device, floating in open space, or walking in the crushing gravity of a supergiant planet.",
+            "Normal gravity is the default and does not affect any skill checks, attacks, or the like. However, sometimes the characters end up in an environment without normal gravity: a starship with artificial gravity that has been disrupted by damage (or, depending on the setting, a starship without artificial gravity at all) or a large planet with a higher-than-normal gravitational pull, for instance.",
+            "Stronger-than-normal gravity adds up to {@dice setback|3} to any {@characteristic Brawn}-based skill checks (except {@skill Resilience} checks) and to {@skill Coordination} skill checks, depending on how strong the gravity is. Weaker-than-normal gravity adds up to {@dice boost|3} to any {@characteristic Brawn}-based skill checks (except {@skill Resilience} checks) and {@skill Coordination} skill checks, depending on how weak the gravity is.",
+            "Zero gravity, on the other hand, does not grant any {@dice boost} or {@dice setback} to skill checks, because moving in zero gravity is completely different from moving in a gravity field. Characters can move in three dimensions in zero gravity, but they count all movement as movement through {@rule difficult and impassable terrain|difficult terrain}, due to having to constantly grab handholds, evaluate angles, and so forth.",
+            "A character's encumbrance threshold does not change due to different gravity, and items still maintain their usual encumbrance. This is because an item's weight may change, but its size and mass (and therefore its inertia) do not. Those pesky details can prove an unpleasant surprise to inexperienced spacers who attempt to shift something large and heavy while in zero gravity."
          ]
       },
       {
@@ -8366,6 +8413,14 @@
          ]
       },
       {
+         "name": "Suffocation",
+         "page": 112,
+         "type": "environment",
+         "description": [
+            "A suffocating character suffers 3 strain each round at the beginning of their turn, until they are no longer suffocating (how to stop suffocating depends entirely on the circumstances that led to the suffocation in the first place, but it usually involves reaching a breathable atmosphere or removing something preventing the character from breathing). Once the character exceeds their strain threshold, they are incapacitated. In addition, at the beginning of each of their subsequent turns, if the character is still suffocating, they suffer one Critical Injury. This continues until the character stops suffocating or dies."
+         ]
+      },
+      {
          "name": "The Right Tool for the Job",
          "page": 93,
          "type": "gear",
@@ -8382,6 +8437,15 @@
                   "Other pieces of gear have rules unique to that item described in the item's entry."
                ]
             }
+         ]
+      },
+      {
+         "name": "Vacuum",
+         "page": 111,
+         "type": "environment",
+         "description": [
+            "For astronauts, vacuum is an all-too-familiar and extremely dangerous environment lurking just outside the protective hull of their starship. Vacuum is not just the lack of breathable air; the lack of pressure and extreme heat or cold can cause veins to rupture, blood to boil, and delicate membranes to freeze or tear.",
+            "When exposed to vacuum without protective gear, a character may hold their breath for a number of rounds equal to their Brawn characteristic. Once this number is reached, the character begins suffocating (see {@rule Suffocation} on page 112). Furthermore, during each round in which a character is exposed to vacuum, they also suffer 3 wounds. When the character exceeds their wound threshold, they are incapacitated and suffer one Critical Injury as usual, plus one additional Critical Injury during each additional round in which they are exposed to vacuum (which likely and quickly results in death). This is in addition to the Critical Injuries they suffer from suffocating."
          ]
       },
       {
@@ -8701,6 +8765,15 @@
             "When an attack generates a Critical Hit, the attacker rolls on {@table III.2-19: Vehicle Critical Hit Result}, on the previous page, and the target suffers the listed effects. Critical Hits are divided into four severity levels, which dictate the difficulty of the check required to repair the Critical Hit, as listed in the table. These difficulties can be further modified at your discretion.",
             "Once a vehicle suffers a Critical Hit, it counts as suffering that Critical Hit until it is repaired. This status counts even if the effects of the Critical Hit only last a single round. While a vehicle is suffering a Critical Hit, any additional Critical Hits generated against it add +10 to the roll on {@table III.2-19: Vehicle Critical Hit Result} per existing Critical Hit.",
             "Remember that an attack must inflict damage for the attacker to activate a Critical Hit. Because vehicles operate on the planetary scale for damage, a hit from a personal scale weapon must inflict at least 10 damage (1 damage on planetary scale) after reductions for armor for the attacker to be able to inflict a Critical Hit."
+         ]
+      },
+      {
+         "name": "Water and Swimming",
+         "page": 111,
+         "type": "environment",
+         "description": [
+            "Bodies of water such as lakes, rivers, oceans, and swamps are pretty common in most locations, and sometimes characters need to cross them. Luckily, most individuals can swim, although some may be a lot better at it than others! Unless otherwise noted, characters treat any body of water as {@rule difficult and impassable terrain|difficult terrain}. The GM may also decide that some bodies of water, such as a river with a swift current or an ocean in a storm, are so difficult to move through that they require a successful {@skill Athletics} check to swim in. In this case, it requires at least one action as well as any number of maneuvers to swim through the water from one location to another.",
+            "If completely submerged in water, a character can hold their breath for a number of rounds equal to their {@characteristic Brawn||crb} characteristic. Once this number is reached, the character starts to drown and is treated as suffocating (see {@rule Suffocation}, page 112) on each successive round until they surface or find some other source of air."
          ]
       }
    ],

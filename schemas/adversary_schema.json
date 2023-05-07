@@ -18,6 +18,9 @@
                "nemesis"
             ]
          },
+         "variant": {
+            "type": "boolean"
+         },
          "characteristics": {
             "type": "object",
             "properties": {
@@ -266,6 +269,9 @@
                            "required": [
                               "name"
                            ],
+                           "optional": [
+                              "source0"
+                           ],
                            "additionalProperties": false
                         },
                         {
@@ -311,7 +317,7 @@
                                  "name"
                               ],
                               "optional": [
-                                 "value",
+                                 "ranks",
                                  "source"
                               ],
                               "additionalProperties": false
@@ -368,6 +374,7 @@
       ],
       "optional": [
          "page",
+         "variant",
          "description",
          "powerLevels",
          "motivations",
