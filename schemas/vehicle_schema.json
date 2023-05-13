@@ -13,6 +13,9 @@
          "variant": {
             "type": "boolean"
          },
+         "hasVariants": {
+            "type": "boolean"
+         },
          "imageUrl": {
             "type": "string"
          },
@@ -222,6 +225,7 @@
       "optional": [
          "page",
          "variant",
+         "hasVariants",
          "imageUrl",
          "passengers",
          "weapons",
