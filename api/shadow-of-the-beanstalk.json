@@ -676,7 +676,7 @@
          "abilities": [
             {
                "name": "Early Warning",
-               "description": "Adds {@dice boost} to its operator's checks to determine Initiative."
+               "description": "Adds {@dice boost} to its operator's checks to {@rule determine Initiative||crb}."
             },
             "Flyer",
             "Construct",
@@ -1563,7 +1563,7 @@
          "abilities": [
             {
                "name": "Cybereyes",
-               "description": "May see in infrared and may remove up to {@dice setback|2} added to this character's check due to darkness."
+               "description": "May see in infrared and may remove up to {@dice setback|2} added to this character's check due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness|crb}."
             },
             "Silhouette 0",
             {
@@ -8292,9 +8292,9 @@
                ]
             },
             {
-               "name": "Inoranic",
+               "name": "Inorganic",
                "description": [
-                  "Since bioroids are inorganic, they do not gain the benefits of healing wounds with slap patches (painkillers) or a Medicine check. Bioroids can heal wounds and strain naturally by resting, as their systems attempt self-repairs. Bioroids can also be \"healed\" by using the Mechanics skill instead of the Medicine skill, but otherwise following the rules in the Medical Care section on page 116 of the Genesys Core Rulebook."
+                  "Since bioroids are inorganic, they do not gain the benefits of healing wounds with {@gear slap-patch|slap patches} ({@rule painkillers||crb}) or a {@skill Medicine||crb} check. Bioroids can heal wounds and strain naturally by resting, as their systems attempt self-repairs. Bioroids can also be \"healed\" by using the {@skill Mechanics||crb} skill instead of the {@skill Medicine||crb} skill, but otherwise following the rules in the Medical Care section on page 116 of the {@title Genesys} Core Rulebook."
                ]
             }
          ],
@@ -8390,7 +8390,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "A cyborg starts with one rank in Mechanics. They obtain this rank before spending experience points, and this skill may not be increased higher than rank 2 during character creation."
+               "A cyborg starts with one rank in {@skill Mechanics||crb}. They obtain this rank before spending experience points, and this skill may not be increased higher than rank 2 during character creation."
             ],
             "choice": false
          },
@@ -8404,7 +8404,7 @@
             {
                "name": "Cyborg",
                "description": [
-                  "Your character begins play with one cybernetic (see page 104) that costs a total of 1,000 credits or less. They do not need to make any check to install this cybernetic, and they do not decrease their strain threshold because of this cybernetic (but will decrease their strain threshold as normal if they get any future cybernetics)."
+                  "Your character begins play with one {@filter gear|cybernetic|source:shadow-of-the-beanstalk=1;type:cybernetic=1} (see page 104) that costs a total of 1,000 credits or less. They do not need to make any check to install this cybernetic, and they do not decrease their strain threshold because of this cybernetic (but will decrease their strain threshold as normal if they get any future cybernetics)."
                ]
             }
          ],
@@ -8448,7 +8448,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "A g-mod starts with one rank in Resilience. They obtain this rank before spending experience points, and this skill may not be increased higher than rank 2 during character creation."
+               "A g-mod starts with one rank in {@skill Resilience||crb}. They obtain this rank before spending experience points, and this skill may not be increased higher than rank 2 during character creation."
             ],
             "choice": false
          },
@@ -8456,13 +8456,13 @@
             {
                "name": "Enhanced Genetic Modifications",
                "description": [
-                  "Once per session when your character uses one of their g-mods to modify a check, you may spend a Story Point to add {@symbols s} equal to your character's ranks in Resilience to the results (in addition to any other affects the g-mod has)."
+                  "Once per session when your character uses one of their g-mods to modify a check, you may spend a Story Point to add {@symbols s} equal to your character's ranks in {@skill Resilience||crb} to the results (in addition to any other affects the g-mod has)."
                ]
             },
             {
                "name": "G-mod",
                "description": [
-                  "Your character begins play with one g-mod (see page 106) that costs a total of 1,000 credits or less. They do not need to make any check to assimilate this g-mod."
+                  "Your character begins play with one {@filter gear|g-mod|source:shadow-of-the-beanstalk=1;type:g-mod=1} (see page 106) that costs a total of 1,000 credits or less. They do not need to make any check to assimilate this g-mod."
                ]
             }
          ],
@@ -8505,7 +8505,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "A Loonie starts with one rank in Coordination. They obtain this rank before spending experience points, and this skill may not be increased higher than rank 2 during character creation."
+               "A Loonie starts with one rank in {@skill Coordination||crb}. They obtain this rank before spending experience points, and this skill may not be increased higher than rank 2 during character creation."
             ],
             "choice": false
          },
@@ -8513,7 +8513,7 @@
             {
                "name": "Zero-G Adept",
                "description": [
-                  "A Loonie does not count zero-gravity environments as difficult terrain."
+                  "A Loonie does not count {@rule gravity|zero-gravity|crb} environments as difficult terrain."
                ]
             },
             {
@@ -11395,7 +11395,7 @@
          "description": [
             "Exosuits are powered exoskeletons wrapped in heavy composite armor and fitted with vehicle-class weapons that turn an individual soldier into a one-person tank squadron. That's how exosuit manufacturers like to describe their products, at any rate. While \"one-person tank squadron\" might be ad-agency hyperbole, exosuits are still exceptionally powerful pieces of battlefield equipment.",
             "While some exosuits are large enough to qualify as small, bipedal vehicles, many are smaller and designed to be armor that is worn, rather than piloted. The exoskeletons are adjustable for fit and are typically composed of myomer synthetic muscle fibers and nanohydraulics wrapped around a buckyweave-reinforced composite frame. Powered by high-output twelve-hour battery packs—themselves tended by a kinetic capture regenerative charging system— the frame increases a wearer's strength and durability. Their composite armor plates can shrug off nearly all small arms fire, and they are fully environmentally sealed.",
-            "Wearing an exosuit increases the wearer's {@characteristic Brawn||crb} by 1 (this bonus also increases the wearer's soak, but it is not included in the soak increase in {@table 2-5: Clothing and Armor}) and the wearer's wound threshold by 4. The suit's sensor suite removes {@dice setback|2} from any {@skill Perception||crb}, {@skill Vigilance||crb}, or combat skill checks caused by darkness or smoke that your character makes. If an exosuit loses power or otherwise ceases to function, its encumbrance value immediately becomes 12 and the wearer loses all the benefits of the sensor suite and the {@characteristic Brawn||crb} increase (including the additional soak from the higher {@characteristic Brawn||crb}). Getting into or out of an unpowered suit takes five minutes without assistance, or roughly two minutes with assistance.",
+            "Wearing an exosuit increases the wearer's {@characteristic Brawn||crb} by 1 (this bonus also increases the wearer's soak, but it is not included in the soak increase in {@table 2-5: Clothing and Armor}) and the wearer's wound threshold by 4. The suit's sensor suite removes {@dice setback|2} from any {@skill Perception||crb}, {@skill Vigilance||crb}, or combat skill checks caused by {@rule concealment (darkness, smoke, and intervening terrain)|darkness or smoke|crb} that your character makes. If an exosuit loses power or otherwise ceases to function, its encumbrance value immediately becomes 12 and the wearer loses all the benefits of the sensor suite and the {@characteristic Brawn||crb} increase (including the additional soak from the higher {@characteristic Brawn||crb}). Getting into or out of an unpowered suit takes five minutes without assistance, or roughly two minutes with assistance.",
             "{@b Models Include:} Heliodyne Sampson Infantry Suit, Weyland Consortium \"Roughneck\" Heavy Labor Exosuit, Argus \"Ranger\" Mk IV Reconnaissance Exo."
          ],
          "modifiers": [
@@ -11649,7 +11649,7 @@
          "class": "clandestine",
          "description": [
             "These bulky, high-tech goggles combine the utility of smartspecs with various vision-enhancing technologies. Used by criminals and special operatives alike, infiltrator goggles are smartgoggles equipped with a passive night-vision system, supported by thermal imaging and (in some models) microband radar emitters.",
-            "While wearing infiltrator goggles, your character removes {@dice setback|2} added to their checks due to darkness, smoke, or other forms of concealment."
+            "While wearing infiltrator goggles, your character removes {@dice setback|2} added to their checks due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness, smoke, or other forms of concealment|crb}."
          ],
          "encumbrance": 1,
          "price": 300,
@@ -12179,7 +12179,7 @@
          "class": "tools",
          "description": [
             "While modern flashlights are more powerful, use less energy, and are made from more advanced materials than older models, their basic function hasn't changed for centuries.",
-            "A flashlight provides light and removes {@dice setback} added to checks due to darkness. It can provide light out to medium range."
+            "A flashlight provides light and removes {@dice setback} added to checks due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness|crb}. It can provide light out to medium range."
          ],
          "encumbrance": 0,
          "price": 10,
@@ -12444,7 +12444,7 @@
          "type": "cybernetic",
          "description": [
             "Fairly common prosthetics, cybereyes are some of the most popular cybernetics obtained for enhancement rather than for overcoming an injury. A cybereye can dramatically improve a character's eyesight, and many cybereyes have night-vision or infrared capability built in as well.",
-            "One or more cybereyes increases your character's ranks in {@skill Perception||crb} by 1 and remove {@dice setback} caused by smoke or darkness on any checks they make. Your character can also display information from their PAD on their cybereyes. Further, they decrease their strain threshold by 1."
+            "One or more cybereyes increases your character's ranks in {@skill Perception||crb} by 1 and remove {@dice setback} caused by {@rule concealment (darkness, smoke, and intervening terrain)|smoke or darkness|crb} on any checks they make. Your character can also display information from their PAD on their cybereyes. Further, they decrease their strain threshold by 1."
          ],
          "price": 500,
          "rarity": 4,
@@ -14400,8 +14400,8 @@
          "page": 95,
          "type": "gear",
          "description": [
-            "Riot shields may seem anachronistic in the modern world, but a wall of heavy polycarb shields is still the best way to contain and suppress an unruly crowd. Modern riot shields used by the NAPD have powerful spotlights built into them (to both illuminate and blind rioters) and a light-amplified, radar-generated display on the inside that lets officers see through smoke and darkness without poking their heads up above the shield.",
-            "Riot shields require one hand to use (meaning your character can only use one-handed Melee weapons and Ranged [Light] weapons while using a riot shield). They increase your character's ranged and melee defense rating by 1. They also can provide light, and the display inside the shield removes {@dice setback|2} added to your character's checks due to smoke or darkness. The spotlight can illuminate out to long range."
+            "Riot shields may seem anachronistic in the modern world, but a wall of heavy polycarb shields is still the best way to contain and suppress an unruly crowd. Modern riot shields used by the NAPD have powerful spotlights built into them (to both illuminate and blind rioters) and a light-amplified, radar-generated display on the inside that lets officers see through {@rule concealment (darkness, smoke, and intervening terrain)|smoke and darkness|crb} without poking their heads up above the shield.",
+            "Riot shields require one hand to use (meaning your character can only use one-handed Melee weapons and Ranged [Light] weapons while using a riot shield). They increase your character's ranged and melee defense rating by 1. They also can provide light, and the display inside the shield removes {@dice setback|2} added to your character's checks due to {@rule concealment (darkness, smoke, and intervening terrain)|smoke or darkness|crb}. The spotlight can illuminate out to long range."
          ]
       },
       {

@@ -18,6 +18,9 @@
                "nemesis"
             ]
          },
+         "hasVariants": {
+            "type": "boolean"
+         },
          "variant": {
             "type": "boolean"
          },
@@ -352,12 +355,7 @@
                "type": "string"
             }
          },
-         "description": {
-            "type": "array",
-            "items": {
-               "type": "string"
-            }
-         },
+         "description": { "$ref": "./varyingDisplay_sub_schema.json" },
          "settings": { "$ref": "./settings_sub_schema.json" },
          "tags": {
             "type": "array",
@@ -375,6 +373,7 @@
       "optional": [
          "page",
          "variant",
+         "hasVariants",
          "description",
          "powerLevels",
          "motivations",

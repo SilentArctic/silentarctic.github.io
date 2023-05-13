@@ -1704,7 +1704,7 @@
          "description": [
             "The Pip-Boy is the ultimate personal computing device available in either the pre-war United States or the postwar Wasteland. Able to assist the wearer with a variety of tasks, the Pip-Boy is a useful electronic tool. It's interface cable can connect to a variety of computers and devices, including the access panels to the main door of any surviving Vaults. Pip-Boys also store a significant amount of data, from topographical maps to recorded transmissions and journal entries. It can also pick up radio signals and play holotapes (including hologames).",
             "A user can turn up the Pip-Boy's brightness, causing the screen to function as an ad-hoc flashlight. Pip-Boys also have programs that help the wearers analyze opponents and assist in targeting weak spots on their bodies.",
-            "A turned-up Pip-Boy provides light, and removes {@dice k|2} added to checks due to darkness. (If it becomes important to determine how far the light reaches, a Pip-Boy provides light out to Short range.) When a character using a Pip-Boy takes the {@rule maneuvers (brief)|Aim|crb} maneuver to target a specific location, they remove {@dice k} from the subsequent combat check."
+            "A turned-up Pip-Boy provides light, and removes {@dice k|2} added to checks due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness|crb}. (If it becomes important to determine how far the light reaches, a Pip-Boy provides light out to Short range.) When a character using a Pip-Boy takes the {@rule maneuvers (brief)|Aim|crb} maneuver to target a specific location, they remove {@dice k} from the subsequent combat check."
          ],
          "encumbrance": 1,
          "price": 1000,
@@ -2279,7 +2279,7 @@
                "type": "list-no-bullet",
                "items": [
                   "{@b Use With:} This attachment can be added to any {@skill Ranged (Light)||crb} or {@skill Ranged (Heavy)||crb} weapon.",
-                  "{@b Modifiers:} Reduce the penalty to {@skill Ranged||crb} combat checks from darkness or concealment by {@dice k|2}.",
+                  "{@b Modifiers:} Reduce the penalty to {@skill Ranged||crb} combat checks from {@rule concealment (darkness, smoke, and intervening terrain)|darkness or concealment|crb} by {@dice k|2}.",
                   "{@b Hard Points Required:} 1"
                ]
             }

@@ -6915,7 +6915,7 @@
          "structured": [
             "This is using magic to create an illusion, or to disguise a character's appearance. The character makes an Arcana skill check. The default difficulty for the check is {@difficulty Easy}. If the check is successful, the character creates an illusion of a creature or object that is silhouette 1 or smaller. The illusion appears within short range of the character. Alternatively, the illusion changes the appearance of the caster or one silhouette 1 (or smaller) target they are engaged with. The illusion cannot obscure the basic size and shape of the target.",
             "Illusions can generate light and sound, but they cannot cause harm or interact with their environment in any way. Illusions can be animated and can move, as long as they remain within the range of the spell. A keen observer can attempt to spot the false nature of the illusion by making an {@difficulty Average|Vigilance} (or {@difficulty Average|Perception} if the observer suspects that their senses may be fooled). Success means the observer recognizes the object's illusory nature.",
-            "Before making a mask check, choose any number of additional effects listed on {@table III.1–1: Mask Additional Effects}. These effects are added to the check."
+            "Before making a mask check, choose any number of additional effects listed on {@table III.1-1: Mask Additional Effects}. These effects are added to the check."
          ],
          "additionalEffects": [
             {
@@ -6997,13 +6997,13 @@
          ],
          "structured": [
             "This is using magic to attempt to predict the future. The character makes an Arcana or Divine skill check, then asks one question about events that will unfold within the next 24 hours. The default difficulty of the check is {@difficulty Average}. If the check is successful, your GM must provide the character with a truthful answer, but that answer could be one that can be interpreted multiple ways or is somewhat enigmatic. Whether the check succeeds or fails, the character may not make another predict check to ask about the same events for the remainder of the session.",
-            "Before making a predict check, choose any number of additional effects listed on {@table III.1–2: Predict Additional Effects}. These effects are added to the check."
+            "Before making a predict check, choose any number of additional effects listed on {@table III.1-2: Predict Additional Effects}. These effects are added to the check."
          ],
          "additionalEffects": [
             {
                "name": "Quicksilver Reflexes",
                "description": [
-                  "Instead of asking a question about events, the character adds {@symbols ss} to the results of any checks they make to determine Initiative during the next structured encounter they participate in."
+                  "Instead of asking a question about events, the character adds {@symbols ss} to the results of any checks they make to {@rule determine Initiative||crb} during the next structured encounter they participate in."
                ],
                "difficultyMod": 0
             },
@@ -7064,7 +7064,7 @@
             "While transformed, the spellcaster adopts the physical appearance of the animal and gains the animal's characteristics, soak, wound threshold, and defense. The spellcaster also gains any of the animal's abilities and equipment (including weapons).",
             "The character retains their own skills, talents, and strain threshold. They drop any gear or clothing they were carrying or wearing when they transformed.",
             "If the character is incapacitated while transformed, they revert back to their normal form. When a character reverts back to their normal form, they heal all wounds suffered while transformed but do not heal any strain or Critical Injuries they suffered while transformed. If they were incapacitated due to exceeding their wound threshold, they are no longer incapacitated.",
-            "Before making a transform check, choose any number of additional effects listed on {@table III.1–3: Transform Additional Effects}, on page 101. These effects are added to the check."
+            "Before making a transform check, choose any number of additional effects listed on {@table III.1-3: Transform Additional Effects}, on page 101. These effects are added to the check."
          ],
          "additionalEffects": [
             {
@@ -7077,7 +7077,7 @@
             {
                "name": "Characteristic Retention",
                "description": [
-                  "When transformed, the character retains their own Intellect and Willpower, rather than the Intellect and Willpower of the creature they transformed into."
+                  "When transformed, the character retains their own {@characteristic Intellect||crb} and {@characteristic Willpower||crb}, rather than the {@characteristic Intellect||crb} and {@characteristic Willpower||crb} of the creature they transformed into."
                ],
                "difficultyMod": 1
             },
@@ -8169,6 +8169,171 @@
                "d100": "96-00",
                "name": "Quietly Deadly",
                "description": "This person seems calm, quiet, and mild mannered—but they do not hesitate to kill anyone who fails them or stands in their way."
+            }
+         ]
+      },
+      {
+         "name": "Table III.1-1: Mask Additional Effects",
+         "page": 100,
+         "columns": [
+            {
+               "header": "Effects",
+               "size": 5
+            },
+            {
+               "header": "Difficulty Mod",
+               "value": "difficultyMod",
+               "size": 2
+            }
+         ],
+         "rows": [
+            {
+               "effects": [
+                  "{@b Blur:} If the spell targets a character, it blurs and obscures their form. Until the spell ends, add {@symbols h} to the results of combat checks targeting the character (this applies even if the attacker realizes the effect is an illusion)."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Mirror Image:} If the spell targets a character, it creates multiple images that move with the target and distract opponents. Until the spell ends, the character may spend {@symbols hhh or d} from any combat check targeting them to cause the attack to harmlessly hit a mirror image rather than the character (this applies even if the attacker realizes the effect is an illusion)."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Additional Illusion:} The spell creates one additional illusion or disguises one additional character. In addition, after casting the spell, you may spend {@symbols aa} to create another additional illusion or disguise another additional character (you may trigger this multiple times, spending {@symbols aa} each time)."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Range:} Increase the range of the spell by one range band. This may be added multiple times, increasing the range by one range band each time."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Size:} Increase the silhouette of the illusion created by one, or disguise the appearance of a target one silhouette larger. This may be added multiple times, increasing the silhouette of the illusion created or target disguised by one each time."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Realism:} Increase the difficulty of checks to determine that the illusion is fake by one. In addition, after casting the spell, you may spend {@symbols aa} to increase the difficulty of checks to determine that the illusion is fake by one (you may trigger this multiple times, spending {@symbols aa} each time). The illusion can also fool additional senses such as smell, taste, or touch."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Terror:} The illusion terrifies those who behold it. When any character who does not know the illusion is fake spots it, they must make a {@difficulty Hard|Discipline}. They suffer 2 strain per {@symbols h} and, if they fail, are unable to approach the illusion. (If you are using the Fear rules from page 243 of the {@title Genesys} Core Rulebook, this can be a {@difficulty Hard|fear})."
+               ],
+               "difficultyMod": "+ {@dice difficulty|2}"
+            },
+            {
+               "effects": [
+                  "{@b Invisibility:} If the spell targets a character, it renders them invisible to sight instead of changing their appearance."
+               ],
+               "difficultyMod": "+ {@dice difficulty|3}"
+            }
+         ]
+      },
+      {
+         "name": "Table III.1-2: Predict Additional Effects",
+         "page": 101,
+         "columns": [
+            {
+               "header": "Effects",
+               "size": 5
+            },
+            {
+               "header": "Difficulty Mod",
+               "value": "difficultyMod",
+               "size": 2
+            }
+         ],
+         "rows": [
+            {
+               "effects": [
+                  "{@b Quicksilver Reflexes:} Instead of asking a question about events, the character adds {@symbols ss} to the results of any checks they make to {@rule determine Initiative||crb} during the next structured encounter they participate in."
+               ],
+               "difficultyMod": "-"
+            },
+            {
+               "effects": [
+                  "{@b Scry:} Instead of asking a question about events, the character may learn the location of one silhouette 0 item within long range. They must know what item they are looking for before they cast the spell, and the spell does not reveal how to get through any obstacles such as locked doors, hidden passages, or traps."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Empowered:} The character may ask a question about events that will unfold within the next month."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Additional Questions:} The character may ask one additional question about events. In addition, after casting the spell, you may spend {@symbols aa} to ask another additional question about events (and may trigger this multiple times, spending {@symbols aa} each time)."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Flash of Perception:} In addition to asking a question, once before the end of the current encounter, the character may add {@symbols s} to the results of one of their checks. In addition, once before the end of the current encounter, the character may add {@symbols f} to the results of a check targeting them. In addition, after the character casts the spell, you may spend {@symbols a} to add {@symbols ss} to the results of one of their checks, and add {@symbols ff} to the results of a check targeting them, instead of this effect's normal benefits."
+               ],
+               "difficultyMod": "+ {@dice difficulty|2}"
+            },
+            {
+               "effects": [
+                  "{@b Cheat Death:} In addition to asking a question, the character forsees a possible doom for themselves in the next 24 hours. Once before the end of the current session, when the character would otherwise be incapacitated or killed, you may spend a Story Point to have them suffer wounds and strain until they reach (but do not exceed) their wound and strain thresholds instead. Their survival should be described narratively, taking into account that they \"saw\" their potential death coming."
+               ],
+               "difficultyMod": "+ {@dice difficulty|2}"
+            }
+         ]
+      },
+      {
+         "name": "Table III.1-3: Transform Additional Effects",
+         "page": 101,
+         "columns": [
+            {
+               "header": "Effects",
+               "size": 5
+            },
+            {
+               "header": "Difficulty Mod",
+               "value": "difficultyMod",
+               "size": 2
+            }
+         ],
+         "rows": [
+            {
+               "effects": [
+                  "{@b Silhouette Increase:} The character may transform into an animal that is one silhouette larger (this may be added multiple times, increasing the silhouette by one each time)."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Characteristic Retention:} When transformed, the character retains their own {@characteristic Intellect||crb} and {@characteristic Willpower||crb}, rather than the {@characteristic Intellect||crb} and {@characteristic Willpower||crb} of the creature they transformed into."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Transform Gear:} When the character is transformed, their worn gear and wielded items change into natural markings on the animal's skin, fur, or scales (but confer no benefit to the character). When the character reverts back to normal, they are wearing and carrying their gear and items."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Dire Form:} When the character transforms, they adopt a dire form of the chosen animal. Increase the damage of the animal's weapons by three, its soak by one, its wound threshold by six, and its silhouette by one."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Curse of the Wild:} Instead of transforming themself, the character may transform one target within short range into a silhouette 0 animal of the character's choice following all of the rules for transformation."
+               ],
+               "difficultyMod": "+ {@dice difficulty|3}"
             }
          ]
       }
@@ -10039,6 +10204,7 @@
       {
          "name": "Motorboat",
          "page": 70,
+         "hasVariants": true,
          "silhouette": 2,
          "maxSpeed": 4,
          "handling": 0,
@@ -10057,7 +10223,17 @@
          "price": 6500,
          "rarity": 4,
          "description": [
-            "The motorboat might be a speedboat, fishing boat, or a shallow water patrol boat (with some light guns)."
+            "The motorboat might be a speedboat, fishing boat, or a shallow water patrol boat (with some light guns).",
+            {
+               "title": "Alternate Variants",
+               "forceTitleLevel": 5,
+               "entries": [
+                  {
+                     "title": "{@vehicle motorboat (patrol boat)|Patrol Boat}",
+                     "entries": []
+                  }
+               ]
+            }
          ],
          "settings": [
             {
@@ -10801,6 +10977,7 @@
       {
          "name": "Helicopter Gunship",
          "page": 72,
+         "hasVariants": true,
          "silhouette": 3,
          "maxSpeed": 3,
          "handling": 3,
@@ -10820,7 +10997,17 @@
          "rarity": 7,
          "restricted": true,
          "description": [
-            "Attack helicopters support troops on the ground with close-in mobile firepower. Some rare variants can even transport soldiers into battle. To make this a transport gunship, reduce the handling by 2 and increase the passenger capacity to 8 (the cost remains unchanged)."
+            "Attack helicopters support troops on the ground with close-in mobile firepower. Some rare variants can even transport soldiers into battle. To make this a transport gunship, reduce the handling by 2 and increase the passenger capacity to 8 (the cost remains unchanged).",
+            {
+               "title": "Alternate Variants",
+               "forceTitleLevel": 5,
+               "entries": [
+                  {
+                     "title": "{@vehicle helicopter gunship (transport)|Transport}",
+                     "entries": []
+                  }
+               ]
+            }
          ],
          "weapons": [
             {

@@ -1096,7 +1096,7 @@
          "abilities": [
             {
                "name": "Drag",
-               "description": "A carnivorous flora can use a maneuver to move a target affected by its thorny vines' Ensnare quality to engaged range."
+               "description": "A carnivorous flora can use a maneuver to move a target affected by its thorny vines' {@quality Ensnare||crb} quality to engaged range."
             },
             "Inconspicuous",
             {
@@ -1106,7 +1106,7 @@
             "Silhouette 2",
             {
                "name": "Unexpected Attack",
-               "description": "A carnivorous flora that has not been yet been identified as a threat uses Stealth to determine initiative."
+               "description": "A carnivorous flora that has not been yet been identified as a threat uses {@skill Stealth||crb} to {@rule determine Initiative||crb}."
             }
          ],
          "weapons": [
@@ -6466,7 +6466,7 @@
             "Multiattack",
             {
                "name": "Elemental Runes",
-               "description": "Each rune golem takes on different traits depending on its animating rune. Select one rune for each individual golem. Fire: add {@symbols ss} to checks the rune golem makes to determine initiative. Ice: upgrade the difficulty of social skill checks targeting the golem once. Lightning: the rune golem may perform a second maneuver without suffering strain. Stone: the rune golem's soak increases to 8 . Other runes can be used at the GM's discretion."
+               "description": "Each rune golem takes on different traits depending on its animating rune. Select one rune for each individual golem. Fire: add {@symbols ss} to checks the rune golem makes to {@rule determine Initiative||crb}. Ice: upgrade the difficulty of social skill checks targeting the golem once. Lightning: the rune golem may perform a second maneuver without suffering strain. Stone: the rune golem's soak increases to 8 . Other runes can be used at the GM's discretion."
             },
             "Silhouette 2"
          ],
@@ -8244,7 +8244,7 @@
             },
             {
                "name": "Eyeless Sight",
-               "description": "Wendigo do not add {@dice setback} to checks due to darkness or concealment, and are immune to abilities or Critical Injuries that affect a creature's sight."
+               "description": "Wendigo do not add {@dice setback} to checks due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness or concealment|crb}, and are immune to abilities or Critical Injuries that affect a creature's sight."
             },
             "Terrifying 3"
          ],
@@ -8960,7 +8960,7 @@
             {
                "name": "Dark Vision",
                "description": [
-                  "When making skill checks, Dunwarr Dwarves remove up to {@dice setback|2} imposed due to darkness."
+                  "When making skill checks, Dunwarr Dwarves remove up to {@dice setback|2} imposed due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness|crb}."
                ]
             },
             {
@@ -10929,7 +10929,7 @@
          "type": "gear",
          "description": [
             "An iron lantern is easier to handle than a torch and can be hung from a belt or shield. Protected inside a cage of metal and sturdy glass, its flame is relatively safe even if the lantern is knocked about. This can prove vital in the darkest caverns that run through the bedrock of Mennara.",
-            "A lit lantern provides light and removes {@dice setback} added to checks due to darkness. (If it becomes important to determine how far the light reaches, a lantern can provide light out to short range.)"
+            "A lit lantern provides light and removes {@dice setback} added to checks due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness|crb}. (If it becomes important to determine how far the light reaches, a lantern can provide light out to short range.)"
          ],
          "encumbrance": 1,
          "price": 50,
@@ -10976,7 +10976,7 @@
          "type": "gear",
          "description": [
             "Wrap the end of a length of wood in cloth, dip it in pitch or tar, and light it. The resulting torch should burn for an hour or so, and is a simple way to light up the darkness.",
-            "A lit torch provides light and removes {@dice setback} added to checks due to darkness. (If it becomes important to determine how far the light reaches, a torch can provide light out to short range.)"
+            "A lit torch provides light and removes {@dice setback} added to checks due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness|crb}. (If it becomes important to determine how far the light reaches, a torch can provide light out to short range.)"
          ],
          "encumbrance": 1,
          "price": 1,

@@ -3031,7 +3031,7 @@
             {
                "name": "Dark Vision",
                "description": [
-                  "When making skill checks, dwarves remove up to {@dice setback|2} imposed due to darkness."
+                  "When making skill checks, dwarves remove up to {@dice setback|2} imposed due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness}."
                ]
             },
             {
@@ -4870,7 +4870,7 @@
          "page": 146,
          "description": [
             "Torches are wooden sticks with oil-soaked cloths wrapped around one end. When lit, they burn for a long time and help illuminate your surroundings.",
-            "A lit torch provides light and removes {@dice setback} added to checks due to darkness. (If it becomes important to determine how far the light reaches, a torch can provide light out to short range.)"
+            "A lit torch provides light and removes {@dice setback} added to checks due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness}. (If it becomes important to determine how far the light reaches, a torch can provide light out to short range.)"
          ],
          "encumbrance": 1,
          "price": 1,
@@ -5338,7 +5338,7 @@
          "page": 156,
          "description": [
             "A simple but ingenious modification of the common lantern, the hooded lantern uses a metal hood and glass lens to focus the lantern's light, making the beam travel farther and also making the light harder to spot when it's not directed squarely at an observer.",
-            "A lit hooded lantern provides light and removes {@dice setback} added to checks due to darkness. (If it becomes important to determine how far the light reaches, a focused hooded lantern's light can reach out to medium range.) In addition, your character can use a hooded lantern and not automatically be spotted at night or in the dark (although they still need to add {@dice setback} to any {@skill Stealth} checks they make, because the light still makes it easier to be noticed)."
+            "A lit hooded lantern provides light and removes {@dice setback} added to checks due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness}. (If it becomes important to determine how far the light reaches, a focused hooded lantern's light can reach out to medium range.) In addition, your character can use a hooded lantern and not automatically be spotted at night or in the dark (although they still need to add {@dice setback} to any {@skill Stealth} checks they make, because the light still makes it easier to be noticed)."
          ],
          "encumbrance": 1,
          "price": 75,
@@ -5667,8 +5667,8 @@
          "type": "gear",
          "page": 162,
          "description": [
-            "These fantastic goggles are based on alien technology. They allow the wielder to see through smoke, fog, and darkness and even enhance their aim.",
-            "While wearing \"Nighteyes,\" your character removes {@dice setback|2} added to their checks due to smoke, darkness, or concealment. When performing the Aim maneuver, they can choose to add automatic {@symbols a} to their check instead of {@dice boost}."
+            "These fantastic goggles are based on alien technology. They allow the wielder to see through {@rule concealment (darkness, smoke, and intervening terrain)|smoke, fog, and darkness} and even enhance their aim.",
+            "While wearing \"Nighteyes,\" your character removes {@dice setback|2} added to their checks due to {@rule concealment (darkness, smoke, and intervening terrain)|smoke, darkness, or concealment}. When performing the {@rule Aim} maneuver, they can choose to add automatic {@symbols a} to their check instead of {@dice boost}."
          ],
          "encumbrance": 1,
          "price": 800,
@@ -6185,7 +6185,7 @@
          "page": 169,
          "description": [
             "These goggles allow the user to see normally in the dark.",
-            "When wearing night vision goggles, your character removes up to {@dice setback|2} added to their checks due to darkness."
+            "When wearing night vision goggles, your character removes up to {@dice setback|2} added to their checks due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness}."
          ],
          "encumbrance": 1,
          "price": 500,
@@ -6601,7 +6601,7 @@
          "type": "cybernetic",
          "page": 177,
          "description": [
-            "Cybernetic eyes provide +1 rank to your character's {@skill Perception} and {@skill Vigilance}, and remove {@dice setback} added to their checks due to darkness. If your character has one or more cybereyes, they decrease their strain threshold by one."
+            "Cybernetic eyes provide +1 rank to your character's {@skill Perception} and {@skill Vigilance}, and remove {@dice setback} added to their checks due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness}. If your character has one or more cybereyes, they decrease their strain threshold by one."
          ],
          "price": 800,
          "rarity": 5,
@@ -7613,7 +7613,7 @@
                                        "title": "Step 2. Assemble the Dice Pool",
                                        "page": 101,
                                        "entries": [
-                                          "The character then assembles the dice pool based on the skill, its characteristic, and any applicable talents or other abilities. Certain conditions, such as the painful effect of a Critical Injury or an environmental effect such as fog or darkness, may also contribute dice to the dice pool. See page 19 for more information on building a dice pool.",
+                                          "The character then assembles the dice pool based on the skill, its characteristic, and any applicable talents or other abilities. Certain conditions, such as the painful effect of a Critical Injury or an environmental effect such as {@rule concealment (darkness, smoke, and intervening terrain)|fog or darkness}, may also contribute dice to the dice pool. See page 19 for more information on building a dice pool.",
                                           "The difficulty of a combat check depends on whether the attack is a ranged attack (using the Ranged skill or one of its derivatives, depending on the setting) or a melee attack (using the Brawl or Melee skill or a setting-dependent derivative). Melee attack difficulties are always {@difficulty Average}. Ranged attack difficulties depend on the distance the target is from the active character, or in other words, the range band the target occupies. {@table I.6-1: Ranged Attack Difficulties} lists difficulties as they relate to different range bands. (See page 105 for more information about {@rule range bands}.) Once the pool is assembled, roll the dice."
                                        ]
                                     },
@@ -7696,6 +7696,82 @@
          ]
       },
       {
+         "name": "Additional Vehicle Actions",
+         "page": 230,
+         "type": "vehicle action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Pilot Only:} No",
+                  "{@b Silhouette:} Any",
+                  "{@b Speed:} Any"
+               ]
+            },
+            "When aboard a vehicle in combat, those who are not piloting or firing weapons may still want to contribute to the encounter. Although the number of options open to them is limited only by a player's creativity, {@table III.2-17: Additional Vehicle Actions} has a list of actions passengers can attempt during encounters. The table lists the actions, the skill required, the check's attendant difficulty, and the results of a success. These actions are all covered by the {@rule perform a skill check} action (on page 101), and are by no means an exhaustive list—and obviously, not all of these actions are appropriate for all vehicles or settings, so you should be sure to use common sense when choosing actions. However, they do serve to provide a range of ideas."
+         ]
+      },
+      {
+         "name": "Aim",
+         "page": 98,
+         "type": "maneuver",
+         "description": [
+            "During combat, a character can use the aim maneuver to steady a weapon or line up a hit before attacking, which grants a bonus to their next combat check. A character only gains the benefit of aiming if they remain in their current position and do not perform any additional maneuvers or actions before their next combat check. Any damage taken that exceeds the character's soak also negates the benefit of aiming.",
+            "Aiming provides the character with one of the following two bonuses:",
+            {
+               "type": "list",
+               "items": [
+                  "Gain {@dice boost} on the next combat check. If the character spends two consecutive maneuvers aiming, they gain {@dice boost|2} on the next combat check.",
+                  "Target a specific item carried by the opponent or a specific part of the target or opponent. This could allow the character to attempt to strike or shoot a weapon from an opponent's hand, for example, or target an opponent's limb to hobble them. If the character spends one maneuver aiming to do this, their next combat check suffers {@dice setback|2}. If they spend two consecutive maneuvers aiming, the combat check suffers {@dice setback} instead."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Assist",
+         "page": 98,
+         "type": "maneuver",
+         "description": [
+            "Whether a character is trying to get a truck engine up and running or is using a first aid kit on a wounded comrade, it never hurts to have a little bit of help. Performing the assist maneuver allows an engaged ally to add {@dice boost} to their next check. Several characters can use the assist maneuver to add more bonus {@dice boost} to the engaged ally's next check. All awarded bonus dice must be used on the assisted character's next turn; otherwise, they are discarded.",
+            "The Game Master should use their own discretion when allowing characters to assist one another. Some actions simply do not benefit from assistance. Likewise, it is up to the GM as to how many characters can realistically assist another character."
+         ]
+      },
+      {
+         "name": "Blanket Barrage",
+         "page": 228,
+         "type": "vehicle action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Pilot Only:} No",
+                  "{@b Silhouette:} 5+",
+                  "{@b Speed:} 0-3"
+               ]
+            },
+            "The gunner uses the ship's weapons to raise a curtain of fire around the ship, protecting it from smaller vehicles. Any smaller vehicle attempting an attack run will must brave a hurricane of heavy weaponry. This action also speeds up combat when your vehicle has lots of guns.",
+            "When performing the Blanket Barrage action, your character makes an {@difficulty Average|Gunnery} and selects all weapons of a single type that share a firing arc. Those weapons count as firing that round. This action requires at least two weapons to use, and it cannot be used if there are not two weapons of a single type that share a firing arc. Until the end of their next turn, all vehicles of silhouette 4 or smaller upgrade the difficulty of any combat checks made against your character's vehicle once, plus one additional time per {@symbols aa} on the check. If their combat check generates {@symbols hh}, they suffer one automatic hit, which deals half the base damage (rounding up) of the type of weapon used in the Blanket Barrage action. If their combat check generates {@symbols d}, they suffer one automatic hit dealing the full base damage instead.",
+            "At your discretion, the Blanket Barrage might not cover all arcs of the vehicle, leaving some areas open."
+         ]
+      },
+      {
+         "name": "Brace for Impact",
+         "page": 227,
+         "type": "vehicle maneuver",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Pilot Only:} Yes",
+                  "{@b Silhouette:} Any",
+                  "{@b Speed:} Any"
+               ]
+            },
+            "Once per round, the pilot may use this maneuver to adjust the vehicle's position to minimize incoming damage. Until the beginning of the pilot's next turn, whenever the vehicle is dealt damage, the pilot may have the vehicle suffer system strain up to its silhouette to reduce the damage it suffers by that amount, to a minimum of 0.",
+            "Additionally, until the beginning of the pilot's next turn, whenever the vehicle suffers a Critical Hit, the pilot may have the vehicle suffer system strain up to its silhouette to reduce the Critical Hit result by ten per point of strain it gains this way, to a minimum of 0. If the result is reduced to 0 this way, the Critical Hit is canceled."
+         ]
+      },
+      {
          "name": "Collisions",
          "type": "vehicle",
          "page": 222,
@@ -7725,12 +7801,41 @@
          ]
       },
       {
+         "name": "Concealing Gear",
+         "page": 85,
+         "type": "gear",
+         "description": [
+            "We assume that your character is going to want to hide items on their person at some point. Maybe they're concealing a weapon, or maybe they want to sneak a valuable item out of a restricted area. In any case, we do have some simple rules for hiding stuff.",
+            "Items with an encumbrance value of 1 or less can be hidden on a person easily. You don't need to make a check for your character to hide the item. Instead, if another character tries to search your character, the searcher makes an {@b opposed {@skill Perception} check vs. your character's {@skill Stealth}}. Add {@dice boost} to the searcher's check for every encumbrance value over 1 that is due to the hidden item. If there are multiple items, use the item with the highest encumbrance value to determine how many {@dice boost} to add.",
+            "In some cases, your character's opponents may not specifically be checking your character for hidden items, but may just be keeping an eye out for anything odd in general (such opponents could include a sentry at a city gate, or a police officer walking the beat). In these cases, the searcher would make an {@b opposed {@skill Vigilance} check vs. {@skill Stealth}} instead of a {@skill Perception} check.",
+            "The same rules can apply to similar situations—such as hiding a rifle (encumbrance value 4) in a dumpster full of trash. In this case, your Game Master should decide what encumbrance value of object can be hidden without being noticed, and add {@dice boost} for every point over that."
+         ]
+      },
+      {
          "name": "Concealment (Darkness, Smoke, and Intervening Terrain)",
          "page": 110,
          "type": "environment",
          "description": [
             "Concealment is a situation that occurs when a character is hard to spot because of environmental effects such as darkness, smoke, tall grass, or mist. Concealment imposes penalties on ranged attacks and sight-based skill checks such as many {@skill Perception} checks. Conversely, it can provide bonuses for checks on other skills, such as Stealth.",
             "The exact bonuses and penalties can be modified by the GM if needed. However, in general, concealment can be divided into levels based on how obscuring the concealment is. See {@table I.6-7: Concealment} for examples of different types of concealment. In each case, the type of concealment adds a number of {@dice setback} equal to the \"Dice Added\" entry to any ranged combat checks, {@skill Vigilance} checks, or {@skill Perception} checks against targets with concealment. Conversely, it adds a number of {@dice boost} equal to the \"Dice Added\" entry to any {@skill Stealth} checks made by a character with concealment. These Boosts or Setbacks may also be added to other skill checks if the GM feels it's appropriate."
+         ]
+      },
+      {
+         "name": "Concentrated Barrage",
+         "page": 228,
+         "type": "vehicle maneuver",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Pilot Only:} No",
+                  "{@b Silhouette:} 5+",
+                  "{@b Speed:} 0-3"
+               ]
+            },
+            "The gunner directs the vehicle's fire to focus on a precise point on the opponent's hull. Focusing fire in this way has the potential to deal significant damage. This action also speeds up combat when your vehicle has lots of guns.",
+            "When performing the Concentrated Barrage action, the character selects all weapons of a single type (such as 24-pounder cannons aboard a seagoing craft, or railguns aboard a starship) that share a firing arc. This action requires at least two weapons to use, and it cannot be used if there are not two weapons of a single type that share a firing arc. Although the character is firing multiple weapons, the character makes a single combat check, as per the rules for the Perform a Combat Check with Vehicle Weapons action. If the attack succeeds, the character may spend {@symbols a} once to add damage equal to the number of weapons involved in the attack to one hit of the attack.",
+            "The Concentrated Barrage action can only be used to target vehicles with a silhouette of 5 or higher."
          ]
       },
       {
@@ -7751,6 +7856,71 @@
          ]
       },
       {
+         "name": "Damage Control",
+         "page": 228,
+         "type": "vehicle action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Pilot Only:} No",
+                  "{@b Silhouette:} Any",
+                  "{@b Speed:} Any"
+               ]
+            },
+            "As a vehicle takes damage, sparks fly and systems begin to fail. The Damage Control action can mitigate this stress. When performing the Damage Control action, choose whether you want your character to repair system strain or hull trauma. Then, make a Mechanics check, with the difficulty determined by {@table III.2-16: Damage Control Difficulty}. If the check is successful, reduce the vehicle's system strain or hull trauma by one per uncanceled {@symbols s}.",
+            "Characters can use the Damage Control action to repair system strain multiple times during an encounter. However, only one Damage Control action can be made to repair hull trauma during an encounter — no matter how many characters are on the vehicle. In both cases, you decide whether your players' characters can use the Damage Control action, depending on the current situation (a fighter pilot probably couldn't climb out of their plane to patch their wing, after all).",
+            "Characters can also use this action to repair Critical Hits the vehicle is suffering from. The difficulty of repairing a Critical Hit is listed in the Severity column of {@table III.2-19: Vehicle Critical Hit Result}, on page 230. Checks to repair Critical Hits can be attempted multiple times, until the Critical Hit is repaired."
+         ]
+      },
+      {
+         "name": "Dangerous Driving",
+         "page": 227,
+         "type": "vehicle action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Pilot Only:} Yes",
+                  "{@b Silhouette:} Any",
+                  "{@b Speed:} 1+"
+               ]
+            },
+            "The pilot attempts to control the vehicle as it takes a sharp turn, tries to coax the vehicle through a series of narrowly placed obstacles, or otherwise performs an improbable feat of operating prowess.",
+            "When performing the Dangerous Driving action, the character makes a {@skill Piloting} check with a difficulty equal to the silhouette of the vehicle. Keep in mind that the current speed of the vehicle can alter the difficulty of such checks — and amplify the consequences of failure!",
+            {
+               "type": "sidebar",
+               "_ref": { "name": "Dangerous Driving in Narrative Encounters" },
+               "entries": []
+            }
+         ]
+      },
+      {
+         "name": "Decelerate",
+         "page": 227,
+         "type": "vehicle maneuver",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Pilot Only:} Yes",
+                  "{@b Silhouette:} Any",
+                  "{@b Current Speed:} 1+"
+               ]
+            },
+            "The pilot may decrease the vehicle's current speed by one or more, to a minimum of 0. The vehicle suffers a number of system strain equal to the amount its speed decreased minus 1, to a minimum of 0."
+         ]
+      },
+      {
+         "name": "Determine Initiative",
+         "page": 96,
+         "type": "combat",
+         "description": [
+            "At the beginning of the first round of combat, all players and the GM need to determine in what order the characters take their turns. Do the soldiers ambush the supply column, or does the hidden sniper get in the first shot? This is referred to as the Initiative order.",
+            "To determine the Initiative order, each player character and NPC makes a {@difficulty Simple|Cool or Vigilance} (for more information on which to use, see the {@sidebar Cool or Vigilance?} sidebar on page 95). Once all Initiative checks have been made, the GM notes the results of each check and ranks them in order from the highest number of {@symbols s} to the lowest. If two checks are tied, the check with more {@symbols a} is ranked higher. If a player character and an NPC are still tied, the player character is ranked higher. This is the Initiative order."
+         ]
+      },
+      {
          "name": "Difficult and Impassable Terrain",
          "page": 110,
          "type": "environment",
@@ -7768,30 +7938,69 @@
          ]
       },
       {
+         "name": "Drop Prone or Stand from Prone",
+         "page": 100,
+         "type": "maneuver",
+         "description": [
+            "Dropping prone and standing from a prone position each requires a maneuver. Dropping prone allows the character to add {@dice setback} to all ranged attacks made against them, although they also must add {@dice boost} to all melee attacks made against them."
+         ]
+      },
+      {
+         "name": "Effects of Current Speed",
+         "page": 221,
+         "type": "vehicle",
+         "description": [
+            "When using vehicles, you should always track their current speed. A vehicle may be operating at any speed from zero to its maximum. Vehicle maneuvers can be used to {@rule accelerate} or {@rule decelerate} (see Vehicle Maneuvers on page 226).",
+            "Additionally, while a vehicle's current speed is 1 or higher, certain other effects apply to it (see {@table III.2-14: Vehicle Speeds in Structured Encounters})."
+         ]
+      },
+      {
          "name": "Effects of Fear",
          "page": 243,
-         "type": "status",
+         "type": "fear",
          "description": [
             "In the list below, we've provided some mechanical effects for failing fear checks (and succeeding on them as well). Of course, you can also add narrative effects to a check, depending on the circumstances.",
-            "Suggested effects for failing or generating {@symbols h or d}:",
             {
                "type": "list",
+               "description": "Suggested effects for failing or generating {@symbols h} or {@symbols t}:",
                "items": [
-                  "{@b Aversion:} The character is unnerved and distracted, and is disoriented for the rest of the encounter. This is a good penalty for simple failure.",
-                  "{@b Adrenaline Rush:} Momentary panic gives the character a rush of adrenalin, but at a cost. The character adds {@dice boost} to their next check, but suffers 3 strain. This a good penalty for success with {@symbols h}.",
-                  "{@b Flee in Terror:} The character has to spend their next turn doing nothing but fleeing the source of the fear check (this includes downgrading their actions to maneuvers to move farther away). This is a good penalty for failure with a small amount of {@symbols h} or a {@symbols d}.",
-                  "{@b Frozen in Terror:} The character is immobilized and staggered during their next turn. This is a good penalty for failure with a lot of {@symbols h or d}."
+                  "{@b Aversion:} The character is unnerved and distracted, and is {@rule disoriented} for the rest of the encounter. This is a good penalty for simple failure.",
+                  "Adrenaline Rush: Momentary panic gives the character a rush of adrenalin, but at a cost. The character adds {@dice boost} to their next check, but suffers 3 strain. This a good penalty for success with {@symbols h}.",
+                  "{@b Flee in Terror:} The character has to spend their next turn doing nothing but fleeing the source of the fear check (this includes downgrading their actions to maneuvers to move farther away). This is a good penalty for failure with a small amount of {@symbols h} or a {@symbols t}.",
+                  "{@b Frozen in Terror:} The character is immobilized and staggered during their next turn. This is a good penalty for failure with a lot of {@symbols h} or {@symbols t}. This may also result in a {@table III.4-2: Traumas and their Effects|mental trauma} (see {@rule sanity})."
                ]
             },
-            "Suggested effects for succeeding or generation {@symbols a or t}:",
             {
                "type": "list",
+               "description": "Suggested effects for succeeding or generating {@symbols a} or {@symbols t}:",
                "items": [
                   "{@b Steady Nerves:} The character keeps their nerve and suffers no ill effects. Obviously, this is a good result for passing their fear check.",
                   "{@b Stand with Me:} The character's steadfast response emboldens their allies. Any allied characters forced to make a fear check from the same source add {@dice boost} to their check. This is a good result for passing a fear check with {@symbols a}.",
-                  "{@b Fearless:} : The character faces the source of fear and finds that it no longer has a hold on them. They automatically pass any further fear checks from that source. This is a good result for succeeding with {@symbols t}, but you should not apply these results if the source is the character's Fear motivation (see page 48)."
+                  "{@b Fearless:} The character faces the source of fear and finds that it no longer has a hold on them. They automatically pass any further fear checks from that source. This is a good result for succeeding with {@symbols t}, but you should not apply these results if the source is the character's Fear motivation (see page 48)."
                ]
             }
+         ]
+      },
+      {
+         "name": "Encumbrance Threshold",
+         "page": 85,
+         "type": "encumbrance",
+         "description": [
+            "All characters have an {@b encumbrance threshold} of 5 plus their {@characteristic Brawn} rating, which limits how much they can carry under normal conditions without penalty. A total encumbrance value over the threshold means the character is \"encumbered,\" and suffers {@dice setback} to all {@characteristic Agility} and {@characteristic Brawn}-based checks for every point of encumbrance over the limit. And of course, this is cumulative with any other {@dice setback} the character may be suffering.",
+            "Further, if a character is encumbered by an amount equal to or greater than their {@characteristic Brawn} rating, they no longer earn a free maneuver each turn. The character can still perform up to two maneuvers, but each maneuver costs 2 strain. With a {@characteristic Brawn} of 2, for example, a character would not get a free maneuver each turn if they're carrying nine or more points of encumbrance."
+         ]
+      },
+      {
+         "name": "Encumbrance Values",
+         "page": 84,
+         "type": "encumbrance",
+         "description": [
+            "Every item of gear listed has an encumbrance value. Most items that can commonly be carried have a value between 0 and 5—from relatively light objects (such as wallets or light clothing) to heavier items (like hunting rifles or tool kits). We discuss the encumbrance value of armor in more detail later, but the one difference is that when your character is wearing armor, its encumbrance goes down. Just imagine wearing a chain-mail shirt. It's pretty heavy, but now imagine carrying it in your hands. That's going to be a lot more cumbersome since you can't distribute the weight across your torso and shoulders, and you don't have your hands free.",
+            "Encumbrance doesn't strictly represent weight: it also represents mass, bulk, and how easy items are to carry. A well-fitting suit of plate mail adds very little encumbrance, while an armful of logs has a high encumbrance. The plate mail may weigh more, but it's designed to be worn and fitted to a person, while a stack of unbound logs is both heavy and awkward to carry.",
+            "Small items, such as candles, most pistols, and knives, have an encumbrance value of 1 or 2. Medium items, such as rifles, a satchel of grenades, or a grappling hook and cord, have an encumbrance value of 3 or 4. Large or heavy items, such as cargo crates, light machine guns, or a heavy toolbox, are valued at 5 or 6.",
+            "If it becomes critical to the story to have more detail, ten loosely carried incidental items have an encumbrance value of 1. If they are stored in an effective manner—such as keys in a pocket or crystals in a pouch—then twenty incidental items have an encumbrance value of 1. If, for some reason, your character is unable to manage their gear in such a way, the GM may increase the items' overall encumbrance value by several points to reflect the difficulty of managing and carrying items by less efficient means.",
+            "When carried, a living being generally has an encumbrance value of 5 plus {@characteristic Brawn}. A typical human has a {@characteristic Brawn} of 2, and therefore a total encumbrance value of 7.",
+            "...Each full suit or discrete piece of armor has a listed encumbrance value. However, armor's {@i full} encumbrance rating only comes into play when a suit or piece of armor is carried instead of worn. When armor is worn, its encumbrance rating is reduced by three, to a minimum of zero."
          ]
       },
       {
@@ -7922,12 +8131,72 @@
          ]
       },
       {
+         "name": "Evade",
+         "page": 227,
+         "type": "vehicle maneuver",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Pilot Only:} Yes",
+                  "{@b Silhouette:} 0-4",
+                  "{@b Current Speed:} 3+"
+               ]
+            },
+            "Once per round, the pilot may perform this maneuver to dodge incoming fire. Until the beginning of the pilot's next turn, upgrade the difficulty of all attacks made against the vehicle and by characters in the vehicle."
+         ]
+      },
+      {
+         "name": "Exchange an Action for a Maneuver",
+         "page": 101,
+         "type": "action",
+         "description": [
+            "A character may exchange their action for an additional maneuver during their turn. They may then perform any maneuver they would be able to perform normally, following all the rules that govern maneuvers. However, they still may not perform more than two maneuvers during their turn, no matter how they gained access to them."
+         ]
+      },
+      {
          "name": "Falling",
          "page": 112,
          "type": "movement",
          "description": [
             "Gravity kills. If a character falls from a height, the GM should determine the distance between the location from which the character fell and their point of impact below, then apply the closest comparable range band. Next, the GM consults {@table I.6-9: Falling Damage} to determine the damage suffered. Damage is reduced by soak; however, the strain suffered is not.",
             "A character can reduce the damage taken from falling by making an {@difficulty Average|Athletics or Coordination}. Each {@symbols s} reduces the damage suffered by one, while each {@symbols a} reduces the strain suffered by one. A {@symbols t} could, at the GM's discretion, reduce the overall distance fallen by one range band as the character grabs onto a handhold or does something else to arrest their fall."
+         ]
+      },
+      {
+         "name": "Fear",
+         "page": 243,
+         "type": "fear",
+         "description": [
+            "Although the circumstances in a horror game may be scary to your players, they should be far more horrifying for your players' characters. (After all, the characters don't have the luxury of knowing that it's all only a game!) To represent this—and also recognize that some characters are braver than others—you can add the fear rules to your game.",
+            "When characters in your game confront something that you feel may be terrifying to them, you can have them make a Discipline skill check. We sometimes call this a {@b fear check}.",
+            "As the GM, you set the difficulty of the check. You can use {@table III.4-1: Fear Guidelines} to help figure out how difficult a check should be and what circumstances might elicit a fear check from your PCs in the first place. Typically, once a character has rolled a fear check for a specific set of circumstances, you shouldn't require them to check again for the same circumstances during the same encounter. Remember that if the circumstances relate to the character's Fear motivation (see page 48), you'll want to add the appropriate penalties to the check!",
+            {
+               "title": "Effects of Fear",
+               "forceTitleLevel": 6,
+               "entries": [
+                  "In the list below, we've provided some mechanical effects for failing fear checks (and succeeding on them as well). Of course, you can also add narrative effects to a check, depending on the circumstances.",
+                  {
+                     "type": "list",
+                     "description": "Suggested effects for failing or generating {@symbols h} or {@symbols t}:",
+                     "items": [
+                        "{@b Aversion:} The character is unnerved and distracted, and is {@rule disoriented} for the rest of the encounter. This is a good penalty for simple failure.",
+                        "Adrenaline Rush: Momentary panic gives the character a rush of adrenalin, but at a cost. The character adds {@dice boost} to their next check, but suffers 3 strain. This a good penalty for success with {@symbols h}.",
+                        "{@b Flee in Terror:} The character has to spend their next turn doing nothing but fleeing the source of the fear check (this includes downgrading their actions to maneuvers to move farther away). This is a good penalty for failure with a small amount of {@symbols h} or a {@symbols t}.",
+                        "{@b Frozen in Terror:} The character is immobilized and staggered during their next turn. This is a good penalty for failure with a lot of {@symbols h} or {@symbols t}. This may also result in a {@table III.4-2: Traumas and their Effects|mental trauma} (see {@rule sanity})."
+                     ]
+                  },
+                  {
+                     "type": "list",
+                     "description": "Suggested effects for succeeding or generating {@symbols a} or {@symbols t}:",
+                     "items": [
+                        "{@b Steady Nerves:} The character keeps their nerve and suffers no ill effects. Obviously, this is a good result for passing their fear check.",
+                        "{@b Stand with Me:} The character's steadfast response emboldens their allies. Any allied characters forced to make a fear check from the same source add {@dice boost} to their check. This is a good result for passing a fear check with {@symbols a}.",
+                        "{@b Fearless:} The character faces the source of fear and finds that it no longer has a hold on them. They automatically pass any further fear checks from that source. This is a good result for succeeding with {@symbols t}, but you should not apply these results if the source is the character's Fear motivation (see page 48)."
+                     ]
+                  }
+               ]
+            }
          ]
       },
       {
@@ -7942,6 +8211,32 @@
          ]
       },
       {
+         "name": "Gain the Advantage",
+         "page": 229,
+         "type": "vehicle action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Pilot Only:} Yes",
+                  "{@b Silhouette:} 1-4",
+                  "{@b Current Speed:} 4+"
+               ]
+            },
+            "This action reflects the frantic give-and-take of a dogfight between small vehicles. It allows a pilot to gain the upper hand against a single enemy vehicle, maneuvering to deny that foe shots while setting up attacks of their own.",
+            "To execute this action, the pilot chooses one enemy vehicle and makes a {@skill Driving} or {@skill Piloting} check, the difficulty of which is determined by the relative speeds of the vehicles involved in the attack (see {@table III.2-18: Speed Advantage Difficulty}). If the pilot succeeds, they gain the advantage. While a pilot has the advantage, upgrade the ability of all combat checks made from the pilot's vehicle against the target vehicle {@b twice}, and upgrade the difficulty of all combat checks made by the target vehicle against the pilot's vehicle {@b twice}.",
+            "Once one pilot gains the advantage, on the following turn, the opponent may attempt to cancel out the advantage by using Gain the Advantage as well. This works as described earlier, but the difficulty of the {@skill Piloting} check is increased by one. After all, it is harder to maneuver to get on an opponent's tail if that opponent is already on your tail!"
+         ]
+      },
+      {
+         "name": "Guarded Stance",
+         "page": 99,
+         "type": "maneuver",
+         "description": [
+            "When a character is confronted by an angry enemy with a weapon, they may be inclined to defend themselves rather than taking an ineffectual swing at their opponent. In such an instance, the character can take a maneuver to assume a guarded stance, which contributes to their defense against melee attacks. A character who performs this maneuver adds {@dice setback} to any combat checks they make until the end of their next turn. However, they also gain melee defense 1 until the end of their next turn."
+         ]
+      },
+      {
          "name": "Gravity",
          "page": 110,
          "type": "environment",
@@ -7951,6 +8246,25 @@
             "Stronger-than-normal gravity adds up to {@dice setback|3} to any {@characteristic Brawn}-based skill checks (except {@skill Resilience} checks) and to {@skill Coordination} skill checks, depending on how strong the gravity is. Weaker-than-normal gravity adds up to {@dice boost|3} to any {@characteristic Brawn}-based skill checks (except {@skill Resilience} checks) and {@skill Coordination} skill checks, depending on how weak the gravity is.",
             "Zero gravity, on the other hand, does not grant any {@dice boost} or {@dice setback} to skill checks, because moving in zero gravity is completely different from moving in a gravity field. Characters can move in three dimensions in zero gravity, but they count all movement as movement through {@rule difficult and impassable terrain|difficult terrain}, due to having to constantly grab handholds, evaluate angles, and so forth.",
             "A character's encumbrance threshold does not change due to different gravity, and items still maintain their usual encumbrance. This is because an item's weight may change, but its size and mass (and therefore its inertia) do not. Those pesky details can prove an unpleasant surprise to inexperienced spacers who attempt to shift something large and heavy while in zero gravity."
+         ]
+      },
+      {
+         "name": "Handling",
+         "page": 220,
+         "type": "vehicle",
+         "description": [
+            "Handling reflects a vehicle's inherent agility and the ways in which it responds to its pilot and crew. Enormous sailing ships might require incredible effort on the part of many crew members to turn, while advanced starships might have automated assistance to help pilots avoid obstacles and maneuver optimally. Factors such as shape, control systems, mass, or just general awkwardness all contribute to handling.",
+            "Mechanically, a vehicle's handling characteristic dictates the number of {@dice boost} or {@dice setback} added to your PC's dice pool when making {@skill Piloting} checks. Pilots add {@dice setback} equal to a vehicle's negative handling value or {@dice boost} equal to a vehicle's positive handling value. See {@table III.2-13: Handling Examples} for types of vehicles and their handling."
+         ]
+      },
+      {
+         "name": "Hull Trauma Threshold",
+         "page": 222,
+         "type": "vehicle",
+         "description": [
+            "Hull trauma threshold is a reflection of a vehicle's sturdiness and resistance to damage. The sturdiness of a ship's hull and mast, the quality of a bicycle's chain and gears, and the resilience of a tank's frame are all represented by hull trauma threshold. Hull trauma generally requires major body work on the vehicle to repair, which can be extremely costly.",
+            "Like the wound threshold of a player character, hull trauma threshold represents the amount of physical damage that a vehicle can suffer before it is rendered inoperable or destroyed. In game terms, when a vehicle exceeds its hull trauma threshold, one of two things happen. If it is occupied only by unimportant characters, such as minion NPCs, it is simply destroyed— crashes and crumples, flips over, or explodes. If it is occupied by plot-relevant characters, such as the PCs or rival/nemesis NPCs, it suffers a Critical Hit (see {@rule Vehicle Critical Hits}, on page 231) and becomes inoperable. Until its hull trauma is reduced to its hull trauma threshold or below, all of its components are compromised (see {@sidebar Vehicle Components}, on page 221).",
+            "Hull trauma threshold is measured in planetary scale (see Planetary Scale versus Personal Scale, on page 224), meaning that one point of hull trauma equals 10 wounds on an individual."
          ]
       },
       {
@@ -7998,6 +8312,22 @@
          ]
       },
       {
+         "name": "Interact with the Environment",
+         "page": 99,
+         "type": "maneuver",
+         "description": [
+            "Often, a single maneuver is enough to interact with the environment around a character. This is a broad category of possible interactions, such as opening a door, ducking behind a wall, pressing a specific button on a control panel, or grabbing a weapon off of the ground. The following are additional specifically designed examples of interacting with the environment:",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Moving a large item.} Flipping over a table, shoving a barrel into a pursuer's path, hefting a crate: each of these takes a maneuver to perform.",
+                  "{@b Opening or closing a door.} Whether an electronic blast door or a simple door with latches and hinges, opening or closing it takes a maneuver.",
+                  "{@b Taking cover.} Ducking behind a door jamb, crouching behind a crate, or peeking around a tree trunk: all of these allow the character to gain ranged defense 1 (some cover can grant a ranged defense higher than 1, if particularly sturdy). It takes a maneuver to take cover, but once in cover, the character keeps the bonus unless the circumstances around them change such that they no longer benefit from cover, or they move out of cover."
+               ]
+            }
+         ]
+      },
+      {
          "name": "Item Maintenance",
          "page": 89,
          "type": "gear",
@@ -8013,6 +8343,45 @@
                "_ref": {
                   "name": "Table I.5-4: Repairing Gear"
                }
+            }
+         ]
+      },
+      {
+         "name": "Lifting and Carrying Excessive Encumbrance",
+         "page": 85,
+         "type": "encumbrance",
+         "description": [
+            "Characters shouldn't typically carry more than their encumbrance threshold. When necessity demands, however, they can do so for a short time (suffering the effects described above).",
+            "If your character needs to lift an object with an encumbrance value greater than their encumbrance threshold, such as an ally who has fallen off a gantry or ledge, they must make an {@skill Athletics} check. The difficulty is {@difficulty Easy} if the object's encumbrance value is one more than your character's encumbrance threshold. You should increase the difficulty by one for every additional point over, up to a maximum additional encumbrance of 4 and difficulty of {@difficulty Daunting}. A character with a {@characteristic Brawn} of 2 and a threshold of 7, for example, tries to lift a rock with an encumbrance value of 10. That's 3 over, so the difficulty is {@difficulty Hard}.",
+            {
+               "type": "example",
+               "title": "EXAMPLE: LIFTING EXCESSIVE ENCUMBRANCE",
+               "entries": [
+                  "Kara and Grace are trying to steal a box of mining explosives as part of the plan for an upcoming heist. Grace, who is trying to run with the box in her arms, has an encumbrance threshold of 7 (5 plus her {@characteristic Brawn} of 2). The box's encumbrance value is 5. Grace is also trying to carry a shovel (3 encumbrance value) and her pistol (2 encumbrance value), so Grace is carrying 3 over her threshold. She loses her free maneuver and adds {@dice setback|3} to all {@characteristic Agility} and {@characteristic Brawn}-based checks she makes. Finally, she needs to make a {@difficulty Hard|Athletics} just to move the crate, and since {@skill Athletics} is {@characteristic Brawn}-based, she's going to be adding those three {@dice setback} to the check."
+               ]
+            },
+            "Additional characters may help, adding their raw {@characteristic Brawn} to the encumbrance threshold of the character trying to lift or carry the object or objects. In the example, a person with a {@characteristic Brawn} of 2 adds +2 to the encumbrance threshold for that specific task.",
+            {
+               "type": "example",
+               "title": "EXAMPLE: HELPING CARRY",
+               "entries": [
+                  "Kara, seeing that her friend Grace can't carry a box of explosives, a shovel, and her handgun, decides to help. She grabs one end of the box, so that now the two of them are carrying it together. Kara has a {@characteristic Brawn} of 3, so she adds 3 to Grace's encumbrance threshold."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Manage Gear",
+         "page": 99,
+         "type": "maneuver",
+         "description": [
+            "Managing items and equipment is accomplished by this maneuver, which can cover the following options:",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Draw, holster, ready, or load a weapon.} This maneuver covers the basic manipulations of most weapons, such as drawing a longsword from its sheath, reloading a laser rifle's energy cells (provided the character has additional ammo at hand—see page 89), or drawing and arming a fragmentation grenade for use.",
+                  "{@b Draw something from storage or put it away.} A character can perform a maneuver to retrieve an item from a pouch, backpack, satchel, bandolier, or some other accessible container. This maneuver can also be used to stow items in a similar fashion."
+               ]
             }
          ]
       },
@@ -8183,6 +8552,14 @@
          ]
       },
       {
+         "name": "Mount or Dismount",
+         "page": 99,
+         "type": "maneuver",
+         "description": [
+            "Across the many settings in {@title Genesys}, characters commonly use beasts of burden to get from place to place. Mounting or dismounting from a domesticated animal, such as a trained horse, requires a maneuver. (Successfully mounting an untrained animal, however, requires an {@difficulty Average|Survival} and thus an action, which could be made harder depending on how ornery the GM feels the animal is.) Similarly, entering a vehicle, sliding into a cockpit, or otherwise taking position to pilot a vehicle, crew a gunnery station, or the like requires a maneuver as well."
+         ]
+      },
+      {
          "name": "Move",
          "page": 100,
          "type": "maneuver",
@@ -8199,6 +8576,31 @@
          ]
       },
       {
+         "name": "Nemesis Extra Activation Rules",
+         "page": 204,
+         "type": "adversary",
+         "description": [
+            "Although nemeses are supposed to be a challenge for an entire player group, it doesn't always work out that way. In practice, when one character faces off against an entire group of characters, the group nearly always wins, and does so quickly. This is because of the group's activation advantage: the extra number of turns they get to take each round because of their greater numbers.",
+            "More turns means more actions, which means more attacks. Even if a nemesis can reliably eliminate a player character every round, they are going to be on the receiving end of three or four additional attacks from the rest of the group. Characters in Genesys, even nemeses, aren't designed to withstand that kind of punishment for more than a couple of rounds.",
+            "To make a lone nemesis into more of a challenge for a group of PCs, you can use the extra activation rule.",
+            {
+               "title": "Extra Activation Rule",
+               "forceTitleLevel": 3,
+               "entries": [
+                  "When rolling for Initiative for a nemesis-level adversary, roll twice, recording both results. These both become NPC Initiative slots.",
+                  "Your nemesis may take two turns during a single round. Any abilities that last \"until the end of their following turn\" last until the end of their first turn on the subsequent round.",
+                  {
+                     "title": "The Effects, both Good and Bad",
+                     "entries": [
+                        "Your nemesis is going to be more of a threat, because they're going to make more attacks and probably incapacitate more of your PCs faster. All of this is great if you're looking to make a nemesis feel like a worthy challenge. However, if you're not careful, the danger level of the encounter could change from \"challenging\" to \"total party kill.\" Some nemeses also have powerful attacks that are balanced by the fact that they can only make one powerful attack per round.",
+                        "We recommend you review the nemesis profile carefully before you use this rule. We also recommend that you only use this with nemeses that confront your PCs alone, as in without other NPC allies to fight alongside them. Finally, you should probably let your players know that you're going to use this rule at the beginning of the encounter, just so they won't feel blindsided."
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      {
          "name": "Painkillers",
          "type": "gear",
          "page": 116,
@@ -8207,6 +8609,24 @@
             "The first painkiller used on a character automatically heals 5 wounds. The second painkiller only heals 4 wounds, the third painkiller heals 3 wounds, and so on. The sixth painkiller has no effect (we say the target is too oversaturated with medicine or healing magic or whatever to benefit from anything else).",
             "Administering a painkiller requires one maneuver, and the character doing the administering must be engaged with the target to treat them. This also means that a character with a free hand can administer a painkiller to themself by spending a maneuver.",
             "Painkillers (in any of their variants) can never heal Critical Injuries."
+         ]
+      },
+      {
+         "name": "Perform a Skill Check",
+         "page": 101,
+         "type": "action",
+         "description": [
+            "The most common actions that most characters take during their turns are actions that require a skill check to resolve. In other words, these are activities for which success is not guaranteed or for which the failure of the task may be important to the ongoing story. For example, for most characters, walking from one place to another does not bring with it any inherent risk of failure. Characters who have no relevant injuries or disabilities are assumed to be able to walking from one location to another. Even if a character could fail, failing would not significantly change the ongoing story. However, trying to cross a chasm on a tightrope to escape pursuit brings an inherent risk of failure (falling and possibly dying), and failing can advance the story (whether or not the character escapes pursuit). Therefore, a {@skill Coordination} check is called for, and if it occurs during an encounter, it requires an action to perform.",
+            "Most skill checks and what they can accomplish are covered in {@b Chapter 3: Skills}. What a character can do with a skill outside of an encounter is the same as what they can do with it inside of an encounter. The only difference is that inside an encounter, they have certain time limits imposed. In fact, the GM can determine that certain activities may require more than one action to perform, if they would normally take a great deal of time. (If the activity is time-consuming enough that it cannot be performed while the encounter continues, the GM may require the character to wait for the encounter to end before attempting the activity.)",
+            "Combat checks, however, are unique enough that they require a separate description."
+         ]
+      },
+      {
+         "name": "Preperation",
+         "page": 100,
+         "type": "maneuver",
+         "description": [
+            "Some actions require additional preparation to perform safely or effectively. The preparation maneuver is generally performed in conjunction with another ability to confer a bonus, offset a penalty, or fulfill a requirement. The individual talents and abilities that utilize the preparation maneuver define its specific effect. It is sometimes abbreviated under the requirements as \"prepare.\""
          ]
       },
       {
@@ -8268,6 +8688,15 @@
                      ]
                   },
                   {
+                     "title": "Strategic Range",
+                     "page": 224,
+                     "entries": [
+                        "Strategic range is a sixth range band that represents distances beyond extreme range. At this range, people cannot see one another with the naked eye, nor can they interact without technological assistance—thus, it is not included in the standard five range bands. However, when you are using a vehicle, especially one with advanced sensors or other magnification technologies, this is the farthest range at which you can interact with targets. Vehicles can generally detect one another at strategic range unless one or both are going out of their way to be stealthy, but they cannot pinpoint infantry at this distance without sensors, spotters, or similar assets.",
+                        "Indirect-fire weapons such as artillery often function at strategic range, as do self-guided weapons like homing missiles and torpedoes. However, most vehicle weapons (such as a fighter jet's machine guns or a sailing ship's cannons) do not function at strategic range, and have ranges of long or extreme instead. As a general rule, we limit most weapons requiring direct line of sight to extreme range.",
+                        "As strategic range is the sixth range band, the difficulty of making ranged combat checks at strategic range is {@difficulty Formidable}."
+                     ]
+                  },
+                  {
                      "type": "sidebar",
                      "_ref": {
                         "name": "Relative Positioning"
@@ -8295,6 +8724,16 @@
                   "{@b Strategic:} You would need a telescope to see your target."
                ]
             }
+         ]
+      },
+      {
+         "name": "Rarity",
+         "page": 82,
+         "type": "gear",
+         "description": [
+            "Some items are naturally more difficult to purchase than others, depending on where your characters find themselves at any given time. Of course, some items are rare no matter where one goes, and likewise, some items are always common and inexpensive.",
+            "Rarity in {@title Genesys} measures how difficult an item can be to find on a scale of 0-10, with 0 being the easiest to track down and 10 being the hardest. However, whether or not an item is available for purchase should never be solely a matter of rolling dice. Instead, your Game Master always has at least partial say as to whether an item is available in a certain location. Nevertheless, for simple items, rarity provides a simple way for your GM to determine whether something is available and to let you easily track items down. We suggest that you make a successful {@skill Negotiation}, {@skill Streetwise}, or {@skill Knowledge} skill check to determine where your character can find an item.",
+            "{@table I.5-1: Rarity} lists rarities, the corresponding check difficulty to find items with those rarities, and examples of items with those rarities. The examples are all modern day examples; if you need to invent rarities for new items in different eras, check out our different example settings starting on page 138. {@table I.5-2: Rarity Modifiers}, on the next page, lists some general modifiers that can be applied to an item's rarity, based on the technological status and general location where your character is looking for the item. We've kept the location descriptions very vague; they could apply to different cities or villages on Earth, or to different planets across a galactic civilization. Modifiers can raise an item's rarity above 10. For rarities higher than 10, the difficulty remains at {@difficulty Formidable}, but your GM may upgrade the difficulty once for every rarity beyond 10."
          ]
       },
       {
@@ -8405,6 +8844,61 @@
          ]
       },
       {
+         "name": "Reposition",
+         "page": 227,
+         "type": "vehicle maneuver",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Pilot Only:} Yes",
+                  "{@b Silhouette:} Any",
+                  "{@b Current Speed:} 1+"
+               ]
+            },
+            "The pilot may move the vehicle up to one range band. This maneuver reflects minor repositioning to avoid obstacles, close or widen distance in a chase, or otherwise shift within the environment in small ways."
+         ]
+      },
+      {
+         "name": "Sanity",
+         "page": 244,
+         "type": "fear",
+         "description": [
+            "Just as fear is an integral part of horror, failure to overcome fear leads to insanity—especially given the types of fearsome threats characters face. These new rules can be used when a character fails a fear check particularly badly, to represent the ongoing effects of {@table III.4-2: Traumas and their Effects|mental trauma} that hinder the ability to act in rational manner. Note that all of the normal effects from fear checks still apply, but are now just the tip of the iceberg as sanity slips away…",
+            "Whenever a PC fails a fear check with {@symbols d} or {@symbols hhhhh}, they also suffer a {@table III.4-2: Traumas and their Effects|mental trauma}. The trauma's severity should be the same as the difficulty of the fear check, although you may select a different trauma or modify the description of the trauma based on the actual fear-causing event. At your discretion, you can also apply a trauma when a character undergoes a particularly stressful encounter that results in them exceeding their strain threshold and falling unconscious. In this case, the exact trauma is up to you, but it should relate in some way to what caused the strain and to the intensity of the encounter. A near-lethal combat encounter, for example, might lead to a Phobia linked to bloodshed. Should a character gain the same trauma as one they already possess, they gain a trauma one severity level higher instead.",
+            "{@symbols t} on a successful fear check can be spent to remove one {@table III.4-2: Traumas and their Effects|mental trauma} that has an associated severity level that is the same as or less than the difficulty of the fear check. (For example, a successful {@difficulty Hard|fear} check with {@symbols t} could be used to remove a single Delusion, Phobia, or Obsession.) With your permission, traumas might also be removed (perhaps temporarily) via other methods such as intense meditation, therapy, medication, or similar means.",
+            "You and the player should determine the specifics concerning the character's trauma based on the encounter that created the trauma, and work this into the character's behavior. After all, these traumas should be as much roleplaying prompts as they are mechanical effects. In addition, while a character suffers from one of these traumas, you can spend {@symbols h and d} from any checks they make to add additional effects to their growing insanity. You can also invent similar effects based off the ones described here."
+         ]
+      },
+      {
+         "name": "Selling and Trading",
+         "page": 82,
+         "type": "gear",
+         "description": [
+            "Although we don't expect your games to constantly involve adventures in commerce, nearly every roleplaying game involves selling items at one point or another (even if your character is just selling items looted from the corpses of their foes).",
+            "When selling an item, your character needs to make a successful {@skill Negotiation} check. Use the difficulty set by the item's rarity (as determined by {@table I.5-1: Rarity}). Your characters can generally sell an item for one-quarter of its cost if the check is successful, increasing that to one-half with {@symbols ss} and to three-quarters with {@symbols sss} or more.",
+            "In some cases, the PCs might wish to engage in trade, buying multiple items at one location and then selling them at another location where they are rarer. We generally advise that you handle this narratively. However, if your GM wishes to use some mechanical guidelines for this process, we've provided some basic rules that cover trading.",
+            "Trade works the same whether with black-market items or with legal items. Selling either type of item follows the rules listed previously with the caveat that trading in legal items requires a {@skill Negotiation} check, while trading in illegal items requires a {@skill Streetwise} check. However, when determining the sell price based on the success of the {@skill Negotiation} or {@skill Streetwise} check, first multiply the cost of the item by the difference between the item's rarity where it was bought and its rarity where it is to be sold, referring to {@table I.5-2: Rarity Modifiers} and {@table I.5-3: Increased Costs When Trading}. Then take the new, increased cost and determine the sell price by the results of the {@skill Negotiation} or {@skill Streetwise} check.",
+            {
+               "type": "sidebar",
+               "_ref": {
+                  "name": "Black-Market Items"
+               },
+               "entries": []
+            },
+            "Of course, these rules do not account for all sorts of details, such as buying in bulk, marketing and advertising, and myriad other factors that may affect prices. This is why the rules for buying, selling, and trading are all modifiable by the GM and subject to their judgement. It is also important to note that these rules only apply when engaging in commercial trade. So, if your group sells a load of guns in a town, then later your character buys one of those guns in that town, they're going to have to pay the usual, listed price for the gun. Don't try to use these guidelines for trading and selling in bulk to cheat the system!",
+            "The final thing to remember is that your GM always has the final say on what can be sold, where it can be sold, and how much it can be sold for. Because this isn't likely to be a major part of the game, we deliberately made a system that is simple and doesn't account for a lot of the variables that would normally matter when trying to sell an item. If your GM wants to stop your characters from selling cell phones to a village without any cell service, or have an arms dealer decide that turning your characters in to the government for a reward is a better deal than what you're offering, they are well within their rights to do so."
+         ]
+      },
+      {
+         "name": "Spend an Action to Activate an Ability",
+         "page": 101,
+         "type": "action",
+         "description": [
+            "Certain abilities and talents require an action to activate. When a character spends an action to activate an ability or talent (even if spending the action does not require a check or any other activity on the character's part), they have used their action for their turn. They may not take a second action unless they specifically have an ability that grants them a second action."
+         ]
+      },
+      {
          "name": "Staggered",
          "page": 114,
          "type": "status",
@@ -8413,11 +8907,33 @@
          ]
       },
       {
+         "name": "Steering",
+         "page": 221,
+         "type": "vehicle",
+         "description": [
+            "Each round, a vehicle moves a certain distance based on its current speed. The pilot's job, in theory, is to control this momentum so as to keep the occupants alive.",
+            "When your character is piloting a vehicle, they must steer the craft. At the beginning or end of their turn each round, you must have the vehicle move a certain number of range bands based on its speed, as detailed in {@table III.2-14: Vehicle Speeds in Structured Encounters}.",
+            "A vehicle generally goes where the pilot wants it to as part of this movement. However, given that player characters are known for attempting to ignore such petty constraints as safety manuals, road signs, and consideration of the laws of physics, you can always require the pilot to perform the {@rule dangerous driving} action (see page 227) to reach their intended destination (if doing is possible). Zigzagging through obstacles, turns harsher than ninety degrees, and anything involving safe embarkation or disembarkation without coming to a full stop should almost certainly require the pilot to use this action. If the pilot fails, you, the GM, determine the final position (and condition) of the vehicle, but at a minimum it should veer off course, and at worst, it might suffer a collision with one or more intervening objects (see {@rule Collisions}, on page 222).",
+            "If a vehicle has more than one pilot, steering only occurs on the turn of the first pilot to act each round. If a vehicle has no pilot who can steer it, it still moves—but it does so at the end of the round, and you determine its location and any objects it might hit along the way."
+         ]
+      },
+      {
          "name": "Suffocation",
          "page": 112,
          "type": "environment",
          "description": [
             "A suffocating character suffers 3 strain each round at the beginning of their turn, until they are no longer suffocating (how to stop suffocating depends entirely on the circumstances that led to the suffocation in the first place, but it usually involves reaching a breathable atmosphere or removing something preventing the character from breathing). Once the character exceeds their strain threshold, they are incapacitated. In addition, at the beginning of each of their subsequent turns, if the character is still suffocating, they suffer one Critical Injury. This continues until the character stops suffocating or dies."
+         ]
+      },
+      {
+         "name": "System Strain Threshold",
+         "page": 223,
+         "type": "vehicle",
+         "description": [
+            "System strain threshold represents a vehicle's ability to function under rigorous use and the point at which it overheats, depletes its power source, or otherwise ceases functioning. A sailing ship's system strain threshold might represent the quality of moving parts like the tiller and ropes, while that of a futuristic battle-suit might represent the state of its cutting-edge reactor.",
+            "Most often, a vehicle suffers system strain due to the actions of its crew, as they push it to (or beyond) its breaking point. Driving a tank over rough ground or sailing a ship through a storm might well cause it system strain, as might pushing the engine of a car beyond its intended limits. You can also spend {@symbols h} on the pilot's checks to inflict system strain on a vehicle, representing the character's haste or carelessness causing stress to the craft.",
+            "Like the strain threshold of a player character, system strain represents the stress that the vehicle can tolerate before it overheats, breaks down, overloads, or generally ceases functioning temporarily. In game terms, when a vehicle exceeds its system strain threshold, the vehicle's speed drops to 0 at the beginning of the following round. Until its system strain is reduced to its system strain threshold or below, its components cease functioning, as described in the {@sidebar Vehicle Components} sidebar, on page 221.",
+            "System strain is measured in {@rule range bands|planetary scale} (see page 224), meaning that one point of system strain equals 10 strain. It is important to note that, unlike personal strain, system strain cannot be recovered by spending {@symbols a}. It can only be restored through actions taken by the crew or slowly over time."
          ]
       },
       {
@@ -8568,7 +9084,7 @@
          "type": "vehicle action",
          "description": [
             "In combat involving vehicles, your character can perform some actions that specifically apply to their vehicle. Some of these actions are labeled as Pilot Only actions. A vehicle may benefit from only one Pilot Only action per round (see Pilot Only Maneuvers and Actions, on page 226). Pilot Only actions are actions that affect the movement of the vehicle itself, which may only move so fast and so far.",
-            "Like vehicle maneuvers, vehicle actions have a current speed requirement that the vehicle has to be traveling at to perform the action. Also remember that any of the actions listed starting on page 101 of Part I–Chapter 6: Combat Encounters can also be performed in combats involving vehicles, within the bounds of common sense.",
+            "Like vehicle maneuvers, vehicle actions have a current speed requirement that the vehicle has to be traveling at to perform the action. Also remember that any of the actions listed starting on page 101 of Part I-Chapter 6: Combat Encounters can also be performed in combats involving vehicles, within the bounds of common sense.",
             {
                "forceTitleLevel": 5,
                "entries": [
@@ -9631,11 +10147,39 @@
          ]
       },
       {
+         "name": "Cinematic Combat",
+         "page": 96,
+         "type": "combat",
+         "description": [
+            "{@title Genesys} strives to capture the pure cinematic thrill found in some of the best action and adventure books, movies, and other media. Combat is frequent and fast-moving, and meant to showcase the talents and abilities of the characters.",
+            "The unique dice system of {@title Genesys} helps fuel the story-driven nature of the game. Even a single attack roll generates enough options (some good, some bad) to give your Game Master sufficient information to make combat far more than just a matter of rolling to hit and rolling to wound. In turn, we strongly encourage you to provide interesting detail before rolling on an attack, in order to give your GM ideas for describing the results. Combat is streamlined so the players do not bog down gameplay with too many tactical decisions; descriptions of their actions and the roll of the dice is sufficient to help visualize the violence."
+         ]
+      },
+      {
+         "name": "Cool or Vigilance?",
+         "page": 95,
+         "type": "combat",
+         "description": [
+            "Two different skills in {@title Genesys} can be used to {@rule determine Initiative}: {@skill Cool} and {@skill Vigilance}. The situation at hand determines which skill should be used in a particular circumstance.",
+            "Characters should determine their Initiative using the {@skill Cool} skill when they are aware and ready for combat (or for whatever situation has resulted in the use of structured gameplay). For example, rolling to see who goes first in a quick-draw gunfight or springing an ambush on an unsuspecting enemy would require {@skill Cool}, as {@skill Cool} represents a character's ability to remain calm, collected, and focused on the task ahead.",
+            "Characters should determine their Initiative using the {@skill Vigilance} skill when combat (or another situation resulting in structured gameplay) begins unexpectedly. Two enemies walking around a corner and running into each other would each use {@skill Vigilance} to {@rule determine Initiative||crb}, for example. Likewise, someone being ambushed would also use {@skill Vigilance} to {@rule determine Initiative} (and if they ended up going earlier in the Initiative order than their ambusher, clearly they were vigilant enough to spot the ambush at the last second).",
+            "It's important to note that different characters may use different skills to {@rule determine Initiative} during the same combat, depending on their differing circumstances. Also, if you and your GM are unsure which of the two skills best applies to a given situation, you should default to using {@skill Vigilance}."
+         ]
+      },
+      {
          "name": "Dangerous Driving in Narrative Encounters",
          "page": 228,
          "type": "vehicle",
          "description": [
             "If a character attempts a particularly difficult or foolhardy trick with a vehicle in narrative encounters, you should have that character make a check as if they were performing the dangerous driving action, determining the speed of the vehicle based on the player's description and the circumstances of the scene."
+         ]
+      },
+      {
+         "name": "Emergency Repairs",
+         "page": 222,
+         "type": "vehicle",
+         "description": [
+            "The pilot or crew of a vehicle with hull trauma that exceeds its hull trauma threshold may attempt emergency repairs by scavenging all available parts from the vehicle and making a {@difficulty Hard|Mechanics}. Success brings the vehicle back to some semblance of life. The vehicle reduces its hull trauma to one point below its hull trauma threshold, but its defenses, hull, navigation, and weapons remain compromised until it receives more time-intensive repairs."
          ]
       },
       {
@@ -9675,6 +10219,14 @@
          ]
       },
       {
+         "name": "Range Bands in Space",
+         "page": 225,
+         "type": "combat",
+         "description": [
+            "Space is really, really big. When we discuss {@rule range bands} on page 105, it doesn't seem like those distances are big enough to really represent the distances in space. However, the beauty of {@rule range bands} is that they're not tied to a specific, measurable distance. So, we recommend that when you use vehicles in space, you scale up the ranges slightly. Engaged may be two spacecraft docked with each other, and short and medium range may be only slightly farther than their equivalents on the ground. But long range and extreme range may represent hundreds of kilometers, while strategic range may represent thousands."
+         ]
+      },
+      {
          "name": "Ranged Attacks and Melee Attacks",
          "page": 103,
          "type": "combat",
@@ -9689,6 +10241,15 @@
          "description": [
             "Because of the narrative, abstract way in which distance is measured, both the players and Game Master must be aware of how positioning relative to two or more targets is measured. Once combat begins, the Game Master tells each player where their character is relative to the opponents. It's then up to the player to track their character's range relative to those opponents as the battle progresses.",
             "For example, during a battle within a huge hangar bay, the PCs are ambushed by four security guards. Two approach from one side and two from the other. The GM indicates that each pair of security guards is in the medium range band with respect to the characters. During their turns, the PCs split up to attack. Two of the PCs move toward one group of guards, getting within short range, and the other group moves to the opposite set of guards. Both groups of characters are now within short range of their respective targets, but at medium range from the other group of targets."
+         ]
+      },
+      {
+         "name": "Reparing Hull Trauma",
+         "page": 222,
+         "type": "vehicle",
+         "description": [
+            "While system strain and the results of some Critical Hits are temporary, hull trauma is more permanent. Repairing hull trauma requires three things: proper facilities, money, and time. Proper facilities have enough tools, light, parts, and workspace to make the repairs to the vehicle.",
+            "We recommend paying 100 to repair 1 hull trauma, but the cost can fluctuate based on your characters' reputation, the scarcity of parts, and other factors at your discretion as GM. A good rule of thumb is that light damage (up to a quarter of a vehicle's total hull trauma threshold) should take an amount of time measured in days, while any damage over that takes weeks or even months to repair."
          ]
       },
       {
@@ -9724,10 +10285,10 @@
             "{@b Brakes:} If a vehicle's brakes are compromised, its pilot cannot perform the decelerate maneuver. The vehicle can still coast to a stop over a long distance, or stop by colliding with something.",
             "{@b Defenses:} If a vehicle's defenses are compromised, reduce its defense to 0.",
             "{@b Hull:} If a vehicle's hull is compromised, its armor becomes 0.",
-            "{@b Navigation:} If a vehicle's navigation is compromised, its handling becomes –3 (unless already lower).",
+            "{@b Navigation:} If a vehicle's navigation is compromised, its handling becomes -3 (unless already lower).",
             "{@b Propulsion:} Propulsion in any form is what moves a vehicle. If a vehicle's propulsion is compromised, its pilot cannot perform the accelerate maneuver, and its current speed drops by one each round, to a minimum of 0.",
-            "{@b Weapons:} Some vehicles are armed with one or more weapons. If a weapon is compromised, it cannot be used (see Item Maintenance, on page 89).",
-            "Repairing components requires a Mechanics check. Often the difficulty is determined by the severity of the Critical Hit; otherwise, it should be {@difficulty Average} or {@difficulty Hard}, at you, the GM's, discretion."
+            "{@b Weapons:} Some vehicles are armed with one or more weapons. If a weapon is compromised, it cannot be used (see {@rule Item Maintenance}, on page 89).",
+            "Repairing components requires a {@skill Mechanics} check. Often the difficulty is determined by the severity of the Critical Hit; otherwise, it should be {@difficulty Average} or {@difficulty Hard}, at you, the GM's, discretion."
          ]
       }
    ],
@@ -9757,6 +10318,22 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -9783,6 +10360,22 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -9807,6 +10400,22 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -9834,6 +10443,22 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -9859,6 +10484,22 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -9890,6 +10531,10 @@
             },
             {
                "name": "weird war"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
             }
          ]
       },
@@ -9914,6 +10559,10 @@
          "settings": [
             {
                "name": "space opera"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -9939,6 +10588,22 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -9968,6 +10633,14 @@
             },
             {
                "name": "space opera"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -9995,6 +10668,22 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -10021,6 +10710,22 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -10046,6 +10751,22 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -10083,6 +10804,14 @@
             },
             {
                "name": "space opera"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -10110,6 +10839,22 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -10138,6 +10883,22 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -10164,6 +10925,18 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -10190,6 +10963,22 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -10228,6 +11017,18 @@
             },
             {
                "name": "steampunk"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -10253,6 +11054,22 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -10283,6 +11100,14 @@
             },
             {
                "name": "steampunk"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
             }
          ]
       },
@@ -10310,6 +11135,22 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -10336,6 +11177,22 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -10364,6 +11221,22 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -10392,6 +11265,22 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -10402,10 +11291,10 @@
          "category": "general",
          "description": [
             "Vigilance represents the ability to be constantly aware of your surroundings, often without consciously making the effort. Characters with ranks in Vigilance are more likely to spot threats in their environment, notice important clues out of the corner of their eye, and catch lies as they're being told.",
-            "You probably noticed from the description that Vigilance, more than most other skills, is a bit of a passive skill. In fact, Vigilance is supposed to be used when your character doesn't expect a threat, isn't looking for a clue, or is otherwise unaware of something important. This is why we use it to determine Initiative in combat when a character is surprised, to see how much that character was paying attention. It also means that when your GM asks you to make a Vigilance check, you may suspect that something is up. Your character, however, shouldn't be suspicious (unless they pass the check!) Vigilance is also one of skills that you use to oppose certain social skill checks (primarily {@skill Deception}) when those checks target your character."
+            "You probably noticed from the description that Vigilance, more than most other skills, is a bit of a passive skill. In fact, Vigilance is supposed to be used when your character doesn't expect a threat, isn't looking for a clue, or is otherwise unaware of something important. This is why we use it to {@rule determine Initiative} in combat when a character is surprised, to see how much that character was paying attention. It also means that when your GM asks you to make a Vigilance check, you may suspect that something is up. Your character, however, shouldn't be suspicious (unless they pass the check!) Vigilance is also one of skills that you use to oppose certain social skill checks (primarily {@skill Deception}) when those checks target your character."
          ],
          "shouldUse": [
-            "Your character just got ambushed, and you are rolling to determine Initiative order. A high Vigilance means your character has a better chance of reacting quickly to the threat.",
+            "Your character just got ambushed, and you are rolling to {@rule determine Initiative} order. A high Vigilance means your character has a better chance of reacting quickly to the threat.",
             "Your character is being lied to; the opponent's {@skill Deception} check is opposed by your character's Vigilance skill.",
             "Your character has a chance to notice important details in their surroundings while not looking for them directly."
          ],
@@ -10417,6 +11306,22 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -10467,6 +11372,22 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -10501,6 +11422,18 @@
             },
             {
                "name": "space opera"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -10522,6 +11455,10 @@
          "settings": [
             {
                "name": "fantasy"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
             }
          ]
       },
@@ -10543,6 +11480,10 @@
          "settings": [
             {
                "name": "fantasy"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
             }
          ]
       },
@@ -10566,6 +11507,14 @@
          "settings": [
             {
                "name": "fantasy"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
             }
          ]
       },
@@ -10601,6 +11550,14 @@
             },
             {
                "name": "space opera"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -10634,6 +11591,14 @@
             },
             {
                "name": "space opera"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -10668,6 +11633,18 @@
             },
             {
                "name": "space opera"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -10714,6 +11691,10 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
             }
          ]
       },
@@ -10760,6 +11741,10 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
             }
          ]
       },
@@ -10801,6 +11786,10 @@
             {
                "name": "all",
                "source": ""
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
             }
          ]
       }
@@ -10829,13 +11818,13 @@
          "structured": [
             "Magic attacks are combat checks, and they follow the normal rules for performing a combat check, on page 101, using the character's magic skill instead of a combat skill. There are some exceptions, however, which we detail here.",
             "When making a magic attack, the character must select one target at short range (but not engaged). The default difficulty of the check is {@difficulty easy}. The attack deals damage equal to the characteristic linked to the skill used to make the attack (so if the character uses Arcana, they would deal damage equal to their Intellect), plus 1 damage per uncanceled {@symbols s}. The attack has no set Critical rating, so you may only inflict a Critical Injury with a {@symbols t}.",
-            "Before making a magic attack check, choose any number of additional effects listed on {@table III.2–5: Magic Attack Additional Effects}. These effects are added to the attack."
+            "Before making a magic attack check, choose any number of additional effects listed on {@table III.2-5: Magic Attack Additional Effects}. These effects are added to the attack."
          ],
          "additionalEffects": [
             {
                "name": "Blast",
                "description": [
-                  "The attack gains the {@quality Blast} quality with a rating equal to your character's ranks in Knowledge."
+                  "The attack gains the {@quality Blast} quality with a rating equal to your character's ranks in {@skill Knowledge}."
                ],
                "difficultyMod": 1
             },
@@ -10849,14 +11838,14 @@
             {
                "name": "Deadly",
                "description": [
-                  "The attack gains a Critical rating of 2. The attack also gains the {@quality Vicious} quality with a rating equal to the character's ranks in Knowledge."
+                  "The attack gains a Critical rating of 2. The attack also gains the {@quality Vicious} quality with a rating equal to the character's ranks in {@skill Knowledge}."
                ],
                "difficultyMod": 1
             },
             {
                "name": "Fire",
                "description": [
-                  "The attack gains the {@quality Burn} quality with a rating equal to your character's ranks in Knowledge."
+                  "The attack gains the {@quality Burn} quality with a rating equal to your character's ranks in {@skill Knowledge}."
                ],
                "difficultyMod": 1
             },
@@ -10870,21 +11859,21 @@
             {
                "name": "Ice",
                "description": [
-                  "The attack gains the {@quality Ensnare} quality with a rating equal to the character's ranks in Knowledge."
+                  "The attack gains the {@quality Ensnare} quality with a rating equal to the character's ranks in {@skill Knowledge}."
                ],
                "difficultyMod": 1
             },
             {
                "name": "Impact",
                "description": [
-                  "The attack gains the {@quality Knockdown} quality. The attack also gains the {@quality Disorient} quality with a rating equal to the character's ranks in Knowledge."
+                  "The attack gains the {@quality Knockdown} quality. The attack also gains the {@quality Disorient} quality with a rating equal to the character's ranks in {@skill Knowledge}."
                ],
                "difficultyMod": 1
             },
             {
                "name": "Lightning",
                "description": [
-                  "The attack gains the {@quality Stun} quality with a rating equal to the character's ranks in Knowledge. The attack also gains the Auto-fire quality. (You must increase the difficulty by one to use the Auto-fire quality as normal.)"
+                  "The attack gains the {@quality Stun} quality with a rating equal to the character's ranks in {@skill Knowledge}. The attack also gains the {@quality Auto-fire} quality. (You must increase the difficulty by one to use the {@quality Auto-fire} quality as normal.)"
                ],
                "difficultyMod": 1
             },
@@ -10912,7 +11901,7 @@
             {
                "name": "Destructive",
                "description": [
-                  "The attack gains the {@quality Sunder} quality. The attack also gains the {@quality Pierce} quality with a rating equal to the character's ranks in Knowledge."
+                  "The attack gains the {@quality Sunder} quality. The attack also gains the {@quality Pierce} quality with a rating equal to the character's ranks in {@skill Knowledge}."
                ],
                "difficultyMod": 2
             },
@@ -10926,7 +11915,7 @@
             {
                "name": "Poisonous",
                "description": [
-                  "If the attack deals damage, the target must immediately make a {@difficulty hard|Resilience} or suffer wounds equal to the character's ranks in Knowledge, and strain equal to the character's ranks in Knowledge. This counts as a poison."
+                  "If the attack deals damage, the target must immediately make a {@difficulty hard|Resilience} or suffer wounds equal to the character's ranks in {@skill Knowledge}, and strain equal to the character's ranks in {@skill Knowledge}. This counts as a poison."
                ],
                "difficultyMod": 2
             }
@@ -10957,7 +11946,7 @@
             {
                "name": "Divine Health (Divine Only)",
                "description": [
-                  "The target increases their wound threshold by a value equal to the character's ranks in Knowledge for the duration of the spell."
+                  "The target increases their wound threshold by a value equal to the character's ranks in {@skill Knowledge} for the duration of the spell."
                ],
                "difficultyMod": 1
             },
@@ -10971,7 +11960,7 @@
             {
                "name": "Primal Fury (Primal Only)",
                "description": [
-                  "The target adds damage equal to the character's ranks in Knowledge to unarmed combat checks, and their Critical rating for unarmed combat checks becomes 3."
+                  "The target adds damage equal to the character's ranks in {@skill Knowledge} to unarmed combat checks, and their Critical rating for unarmed combat checks becomes 3."
                ],
                "difficultyMod": 1
             },
@@ -10985,7 +11974,7 @@
             {
                "name": "Swift",
                "description": [
-                  "Targets affected by the spell ignore the effects of difficult terrain and cannot be immobilized."
+                  "Targets affected by the spell ignore the effects of difficult terrain and cannot be {@rule immobilized}."
                ],
                "difficultyMod": 1
             },
@@ -11037,14 +12026,14 @@
             {
                "name": "Add Defense",
                "description": [
-                  "Each affected target gains ranged and melee defense equal to your ranks in Knowledge."
+                  "Each affected target gains ranged and melee defense equal to your ranks in {@skill Knowledge}."
                ],
                "difficultyMod": 2
             },
             {
                "name": "Empowered",
                "description": [
-                  "The barrier reduces damage equal to the number of uncanceled {@symbols s} instead of the normal effect"
+                  "The barrier reduces damage equal to the number of uncanceled {@symbols s} instead of the normal effect."
                ],
                "difficultyMod": 2
             },
@@ -11178,7 +12167,7 @@
             {
                "name": "Despair (Divine Only)",
                "description": [
-                  "The target's strain and wound thresholds are reduced by an amount equal to the character's ranks in Knowledge. This effect may not be combined with the additional target effect."
+                  "The target's strain and wound thresholds are reduced by an amount equal to the character's ranks in {@skill Knowledge}. This effect may not be combined with the additional target effect."
                ],
                "difficultyMod": 2
             },
@@ -11192,7 +12181,7 @@
             {
                "name": "Paralyzed",
                "description": [
-                  "The target is staggered for the duration of the spell. This affect may not be combined with the additional target effect."
+                  "The target is {@rule staggered} for the duration of the spell. This affect may not be combined with the additional target effect."
                ],
                "difficultyMod": 3
             }
@@ -11213,7 +12202,7 @@
          ],
          "structured": [
             "The ability to nullify magic is a strange and wondrous art that only certain arcane spellcasters possess. The character selects one target within short range that is under the effects of a spell, then makes an Arcana skill check. The default difficulty for the check is {@difficulty hard}. If the check is successful, the effects the target is under immediately end (if the spell affected multiple targets, the other targets remain affected).",
-            "Before making a dispel check, choose any number of additional effects listed on {@table III.2-10:Dispel Additional Effects}. These effects are added to the check."
+            "Before making a dispel check, choose any number of additional effects listed on {@table III.2-10: Dispel Additional Effects}. These effects are added to the check."
          ],
          "additionalEffects": [
             {
@@ -11260,7 +12249,7 @@
                "description": [
                   "The spell affects one additional target within range of the spell. In addition, after casting the spell, you may spend {@symbols a} to affect one additional target within range of the spell (and may trigger this multiple times, spending {@symbols a} each time)."
                ],
-               "difficultyMod": 2
+               "difficultyMod": 1
             },
             {
                "name": "Range",
@@ -11286,7 +12275,7 @@
             {
                "name": "Revive Incapacitated",
                "description": [
-                  "The character may select targets who are incapacitated."
+                  "The character may select targets who are {@rule incapacitated}."
                ],
                "difficultyMod": 2
             },
@@ -11499,7 +12488,7 @@
                ]
             },
             {
-               "modifer": "+0",
+               "modifier": "+0",
                "circumstances": [
                   "Mid-sized metropolitan area",
                   "Civilized location"
@@ -11757,11 +12746,11 @@
          "rows": [
             {
                "scenario": "Engaged with opponent while armed with a one-handed ranged weapon (like a pistol or a throwing knife)",
-               "difficulty": "+1 difficulty (+{@dice difficulty})"
+               "difficulty": "+1 difficulty (+ {@dice difficulty})"
             },
             {
                "scenario": "Engaged with opponent while armed with a two-handed ranged weapon (like a rifle or bow)",
-               "difficulty": "+2 difficulty (+{@dice difficulty|2})"
+               "difficulty": "+2 difficulty (+ {@dice difficulty|2})"
             },
             {
                "scenario": "Engaged with opponent while armed with a a heavy ranged weapon (like a cannon or ballista)",
@@ -12189,11 +13178,11 @@
             },
             {
                "health": "Performing check on self.",
-               "difficulty": "+{@dice difficulty|2}"
+               "difficulty": "+ {@dice difficulty|2}"
             },
             {
                "health": "No equipment.",
-               "difficulty": "+{@dice difficulty}"
+               "difficulty": "+ {@dice difficulty}"
             }
          ]
       },
@@ -12344,15 +13333,15 @@
          "rows": [
             {
                "condition": "The character does not have at least one free hand.",
-               "penalty": "+{@dice setback}"
+               "penalty": "+ {@dice setback}"
             },
             {
                "condition": "The character is gagged, silenced, or otherwise unable to speak.",
-               "penalty": "+{@dice setback|2}"
+               "penalty": "+ {@dice setback|2}"
             },
             {
                "condition": "The character is wearing heavy armor that might hamper their gestures (armor with +2 soak or more), or carrying a shield. This could also include other restrictive outfits, at your discretion.",
-               "penalty": "+{@dice setback}"
+               "penalty": "+ {@dice setback}"
             },
             {
                "condition": "The character is in circumstances that interfere with their ability to concentrate, such as trying to cast while swimming or hanging from a rope, being buffeted by a sandstorm, or casting a spell that doesn't target the person they're fighting in hand-to-hand combat.",
@@ -12410,6 +13399,466 @@
                   "The character completely lose control of their magical energies or draws the ire of their deity, suffering one Critical Injury (at the GM's discretion, this may instead take the form of some of terrible or hilarious misfortune, such as temporarily being turned into a small woodland creature, being struck by lightning on a clear day, swapping bodies with someone else in the encounter for the remainder of the day, or summoning an avatar of divine or infernal wrath).",
                   "If the character is using a magical item, it is completely destroyed."
                ]
+            }
+         ]
+      },
+      {
+         "name": "Table III.2-5: Magic Attack Additional Effects",
+         "page": 215,
+         "columns": [
+            {
+               "header": "Effects",
+               "size": 5
+            },
+            {
+               "header": "Difficulty Mod",
+               "value": "difficultyMod",
+               "size": 2
+            }
+         ],
+         "rows": [
+            {
+               "effects": [
+                  "{@b Blast:} The attack gains the {@quality Blast} quality with a rating equal to your character's ranks in {@skill Knowledge}."
+               ],
+               "difficultyMod": "+ {@dice difficulty}"
+            },
+            {
+               "effects": [
+                  "{@b Close Combat:} May select a target engaged with your character."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Deadly:} The attack gains a Critical rating of 2. The attack also gains the {@quality Vicious} quality with a rating equal to the character's ranks in {@skill Knowledge}."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Fire:} The attack gains the {@quality Burn} quality with a rating equal to your character's ranks in {@skill Knowledge}."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Holy/Unholy (Divine Only):} When dealing damage to a target that the GM determines is the antithesis of the character's faith or deity (such as a priest of a god of life attacking an undead zombie), each {@symbols s} deals +2 damage, instead of +1."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Ice:} The attack gains the {@quality Ensnare} quality with a rating equal to the character's ranks in {@skill Knowledge}."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Impact:} The attack gains the {@quality Knockdown} quality. The attack also gains the {@quality Disorient} quality with a rating equal to the character's ranks in {@skill Knowledge}."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Lightning:} The attack gains the {@quality Stun} quality with a rating equal to the character's ranks in {@skill Knowledge}. The attack also gains the {@quality Auto-fire} quality. (You must increase the difficulty by one to use the {@quality Auto-fire} quality as normal.)"
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Manipulative (Arcana Only):} If the attack hits, you may spend {@symbols a} to move the target up to one range band in any direction."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Non-Lethal (Primal Only):} The attack gains the {@quality Stun Damage} quality."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Range:} Increase the range of the spell by one range band. This may be added multiple times, increasing the range by one range band each time."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Destructive:} The attack gains the {@quality Sunder} quality. The attack also gains the {@quality Pierce} quality with a rating equal to the character's ranks in {@skill Knowledge}."
+               ],
+               "difficultyMod": "+ {@dice difficulty|2}"
+            },
+            {
+               "effects": [
+                  "{@b Empowered:} The attack deals damage equal to twice the characteristic linked to the skill (instead of dealing damage equal to the characteristic). If the attack has the {@quality Blast} quality, it affects all characters within short range, instead of engaged."
+               ],
+               "difficultyMod": "+ {@dice difficulty|2}"
+            },
+            {
+               "effects": [
+                  "{@b Poisonous:} If the attack deals damage, the target must immediately make a {@difficulty hard|Resilience} or suffer wounds equal to the character's ranks in {@skill Knowledge}, and strain equal to the character's ranks in {@skill Knowledge}. This counts as a poison."
+               ],
+               "difficultyMod": "+ {@dice difficulty|2}"
+            }
+         ]
+      },
+      {
+         "name": "Table III.2-6: Augment Additional Effects",
+         "page": 216,
+         "columns": [
+            {
+               "header": "Effects",
+               "size": 5
+            },
+            {
+               "header": "Difficulty Mod",
+               "value": "difficultyMod",
+               "size": 2
+            }
+         ],
+         "rows": [
+            {
+               "effects": [
+                  "{@b Divine Health (Divine Only):} The target increases their wound threshold by a value equal to the character's ranks in {@skill Knowledge} for the duration of the spell."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Haste:} Targets affected by the spell can always perform a second maneuver during their turn without spending strain (they may still only perform two maneuvers a turn)."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Primal Fury (Primal Only):} The target adds damage equal to the character's ranks in {@skill Knowledge} to unarmed combat checks, and their Critical rating for unarmed combat checks becomes 3."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Range:} Increase the range of the spell by one range band. This may be added multiple times, increasing the range by one range band each time."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Swift:} Targets affected by the spell ignore the effects of difficult terrain and cannot be {@rule immobilized}."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Additional Target:} The spell affects one additional target within range of the spell. In addition, after casting the spell, you may spend {@symbols a} to affect one additional target within range of the spell (and may trigger this multiple times, spending {@symbols a} each time)."
+               ],
+               "difficultyMod": "+ {@dice difficulty|2}"
+            }
+         ]
+      },
+      {
+         "name": "Table III.2-7: Barrier Additional Effects",
+         "page": 216,
+         "columns": [
+            {
+               "header": "Effects",
+               "size": 5
+            },
+            {
+               "header": "Difficulty Mod",
+               "value": "difficultyMod",
+               "size": 2
+            }
+         ],
+         "rows": [
+            {
+               "effects": [
+                  "{@b Additional Target:} The spell affects one additional target within range of the spell. In addition, after casting the spell, you may spend {@symbols a} to affect one additional target within range of the spell (and may trigger this multiple times, spending {@symbols a} each time)."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Range:} Increase the range of the spell by one range band. This may be added multiple times, increasing the range by one range band each time."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Add Defense:} Each affected target gains ranged and melee defense equal to your ranks in {@skill Knowledge}."
+               ],
+               "difficultyMod": "+ {@dice difficulty|2}"
+            },
+            {
+               "effects": [
+                  "{@b Empowered:} The barrier reduces damage equal to the number of uncanceled {@symbols s} instead of the normal effect."
+               ],
+               "difficultyMod": "+ {@dice difficulty|2}"
+            },
+            {
+               "effects": [
+                  "{@b Reflection (Arcana Only):} If an opponent makes a magic attack against an affected target and generates {@symbols hhh or d} on the check, after the check is resolved, they suffer a hit dealing damage equal to the total damage of the attack."
+               ],
+               "difficultyMod": "+ {@dice difficulty|2}"
+            },
+            {
+               "effects": [
+                  "{@b Sanctuary (Divine Only):} Opponents the GM determines are the antithesis of the character's faith or deity automatically disengage from affected targets, and may not engage them for the duration of the spell."
+               ],
+               "difficultyMod": "+ {@dice difficulty|2}"
+            }
+         ]
+      },
+      {
+         "name": "Table III.2-8: Conjure Additional Effects",
+         "page": 217,
+         "columns": [
+            {
+               "header": "Effects",
+               "size": 5
+            },
+            {
+               "header": "Difficulty Mod",
+               "value": "difficultyMod",
+               "size": 2
+            }
+         ],
+         "rows": [
+            {
+               "effects": [
+                  "{@b Additional Summon:} The spell summons one additional item, weapon, or creature. In addition, after casting the spell, you may spend {@symbols aa} to summon one additional item, weapon, or creature (and may trigger this multiple times, spending {@symbols aa} each time)."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Medium Summon:} The character may summon a more complicated tool with moving parts, a rival no larger than silhouette 1, or a two-handed melee weapon"
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Range:} Increase the range of the spell (the distance from the character that the summoned item or creature appears) by one range band. This may be added multiple times, increasing the range by one range band each time."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Summon Ally:} The creature the character summons is friendly to them and obeys their commands. The character may spend a maneuver to direct the creature, allowing them to determine its action and maneuver. (If the character summons multiple creatures, the character may spend one maneuver on their turn to direct the turns of all summoned creatures.)"
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Grand Summon:} The character may summon a rival of up to silhouette 3."
+               ],
+               "difficultyMod": "+ {@dice difficulty|2}"
+            }
+         ]
+      },
+      {
+         "name": "Table III.2-9: Curse Additional Effects",
+         "page": 217,
+         "columns": [
+            {
+               "header": "Effects",
+               "size": 5
+            },
+            {
+               "header": "Difficulty Mod",
+               "value": "difficultyMod",
+               "size": 2
+            }
+         ],
+         "rows": [
+            {
+               "name": "Enervate",
+               "effects": [
+                  "If {@b Enervate:} a target suffers strain for any reason, they suffer 1 additional strain."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "name": "Misfortune",
+               "effects": [
+                  "{@b Misfortune:} After the target makes a check, you may change one {@dice setback} to a face displaying a {@symbols h}."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "name": "Range",
+               "effects": [
+                  "{@b Range:} Increase the range of the spell by one range band. This may be added multiple times, increasing the range by one range band each time."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "name": "Additional Target",
+               "effects": [
+                  "{@b Additional Target:} The spell affects one additional target within range of the spell. In addition, after casting the spell, you may spend {@symbols a} to affect one additional target within range of the spell (and may trigger this multiple times, spending {@symbols a} each time)."
+               ],
+               "difficultyMod": "+ {@dice difficulty|2}"
+            },
+            {
+               "name": "Despair (Divine Only)",
+               "effects": [
+                  "{@b Despair (Divine Only):} The target's strain and wound thresholds are reduced by an amount equal to the character's ranks in {@skill Knowledge}. This effect may not be combined with the additional target effect."
+               ],
+               "difficultyMod": "+ {@dice difficulty|2}"
+            },
+            {
+               "name": "Doom (Arcana Only)",
+               "effects": [
+                  "{@b Doom (Arcana Only):} After a target makes a check, you may change any one die in the pool not displaying a {@symbols t} or {@symbols d} to a different face."
+               ],
+               "difficultyMod": "+ {@dice difficulty|2}"
+            },
+            {
+               "name": "Paralyzed",
+               "effects": [
+                  "{@b Paralyzed:} The target is {@rule staggered} for the duration of the spell. This affect may not be combined with the additional target effect."
+               ],
+               "difficultyMod": "+ {@dice difficulty|3}"
+            }
+         ]
+      },
+      {
+         "name": "Table III.2-10: Dispel Additional Effects",
+         "page": 218,
+         "columns": [
+            {
+               "header": "Effects",
+               "size": 5
+            },
+            {
+               "header": "Difficulty Mod",
+               "value": "difficultyMod",
+               "size": 2
+            }
+         ],
+         "rows": [
+            {
+               "effects": [
+                  "{@b Range:} Increase the range of the spell by one range band. This may be added multiple times, increasing the range by one range band each time."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Additional Target:} The spell affects one additional target within range of the spell. In addition, after casting the spell, you may spend {@symbols a} to affect one additional target within range of the spell (and may trigger this multiple times, spending {@symbols a} each time)."
+               ],
+               "difficultyMod": "+ {@dice difficulty|2}"
+            }
+         ]
+      },
+      {
+         "name": "Table III.2-11: Heal Additional Effects",
+         "page": 218,
+         "columns": [
+            {
+               "header": "Effects",
+               "size": 5
+            },
+            {
+               "header": "Difficulty Mod",
+               "value": "difficultyMod",
+               "size": 2
+            }
+         ],
+         "rows": [
+            {
+               "name": "Additional Target",
+               "effects": [
+                  "{@b Additional Target:} The spell affects one additional target within range of the spell. In addition, after casting the spell, you may spend {@symbols a} to affect one additional target within range of the spell (and may trigger this multiple times, spending {@symbols a} each time)."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "name": "Range",
+               "effects": [
+                  "{@b Range:} Increase the range of the spell by one range band. This may be added multiple times, increasing the range by one range band each time."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "name": "Restoration",
+               "effects": [
+                  "{@b Restoration:} Select one ongoing status effect the target is suffering. This status effect immediately ends"
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "name": "Heal Critical",
+               "effects": [
+                  "{@b Heal Critical:} Select one Critical Injury the target is suffering. If the spell is successful, the Critical Injury is also healed."
+               ],
+               "difficultyMod": "+ {@dice difficulty|2}"
+            },
+            {
+               "name": "Revive Incapacitated",
+               "effects": [
+                  "{@b Revive Incapacitated:} The character may select targets who are {@rule incapacitated}."
+               ],
+               "difficultyMod": "+ {@dice difficulty|2}"
+            },
+            {
+               "name": "Resurrection",
+               "effects": [
+                  "{@b Resurrection:} The character may select a target who has died during this encounter. If the check is successful, the target is restored to life, suffering wounds equal to their wound threshold. If the check fails, no characters may attempt to resurrect the target again."
+               ],
+               "difficultyMod": "+ {@dice difficulty|4}"
+            }
+         ]
+      },
+      {
+         "name": "Table III.2-13: Handling Examples",
+         "page": 221,
+         "columns": [
+            {
+               "header": "Handling"
+            },
+            {
+               "header": "Example Vehicles",
+               "value": "examples",
+               "size": 5
+            }
+         ],
+         "rows": [
+            {
+               "handling": "-4",
+               "examples": "Downhill sled, single-thruster rocket, train"
+            },
+            {
+               "handling": "-3",
+               "examples": "Aircraft carrier, dogsled, three-masted heavy frigate, space battleship"
+            },
+            {
+               "handling": "-2",
+               "examples": "Combat walker, heavy tank, passenger plane, sloop"
+            },
+            {
+               "handling": "-1",
+               "examples": "Hang glider, horse-drawn cart, light tank, motorcycle"
+            },
+            {
+               "handling": "0",
+               "examples": "Consumer car, jetpack, motorboat"
+            },
+            {
+               "handling": "+1",
+               "examples": "Bicycle, hovercraft, trained horse"
+            },
+            {
+               "handling": "+2",
+               "examples": "Fancy car, fighter jet"
+            },
+            {
+               "handling": "+3",
+               "examples": "High-performance race car, snowmobile, stunt plane"
+            },
+            {
+               "handling": "+4",
+               "examples": "Neural interface exoskeleton, AI piloting-assisted space superiority fighter"
             }
          ]
       },
@@ -12486,17 +13935,17 @@
                "space": "A relatively unchallenging navigational situation. A broad, loosely packed asteroid field, for example, or a thin, calm nebula."
             },
             {
-               "setback": "+{@dice setback}",
+               "setback": "+ {@dice setback}",
                "ground": "Somewhat trickier terrain. Scattered trees, dense brush, rolling hills, sand dunes, or windy weather.",
                "space": "More challenging but not seriously daunting obstacles. Flying over mountains on a moon, or a thick asteroid field or nebula."
             },
             {
-               "setback": "+{@dice setback|2}",
+               "setback": "+ {@dice setback|2}",
                "ground": "Dangerous terrain. A thick forest, steep and rockcovered hills, or flying during a violent storm.",
                "space": "A dangerous astronomical feature. Flying around a fracturing comet, or navigating a dense and turbulent asteroid field."
             },
             {
-               "setback": "+{@dice setback|3}",
+               "setback": "+ {@dice setback|3}",
                "ground": "Very risky terrain. Sheer cliff faces, deep swamps, or a canyon only just wide enough for the vehicle to fit through are good examples of this.",
                "space": "An extremely dangerous situation, such as approaching gravitational anomalies, flying through asteroid tunnels, or other dangerous and foolhardy pursuits."
             }
@@ -12567,7 +14016,7 @@
             {
                "action": "Copilot",
                "skill": "{@difficulty Average|Driving, Piloting, or Operating}",
-               "result": "The crew member serves as the vehicle's copilot, managing systems and auxiliary equipment to allow the pilot to focus on flying or driving. On a successful check, each uncancelled {@symbols s} downgrades the difficulty of the pilot's next Driving, Piloting, or Operating check once."
+               "result": "The crew member serves as the vehicle's copilot, managing systems and auxiliary equipment to allow the pilot to focus on flying or driving. On a successful check, each uncancelled {@symbols s} downgrades the difficulty of the pilot's next {@skill Driving}, {@skill Piloting}, or {@skill Operating} check once."
             },
             {
                "action": "Jamming",
@@ -12582,7 +14031,7 @@
             {
                "action": "Manual Repairs",
                "skill": "{@difficulty Hard|Athletics}",
-               "result": "In some cases, repairs can be as simple as welding a sturdy metal plate over a damaged system. If the character has the proper tools for the job, they can attempt to use the Damage Control action with Athletics rather than Mechanics. If successful, the character removes one point of hull trauma from the vehicle, plus one additional point for each additional {@symbols ss}. This follows the limitations of the Damage Control action, and thus may only be attempted once per encounter."
+               "result": "In some cases, repairs can be as simple as welding a sturdy metal plate over a damaged system. If the character has the proper tools for the job, they can attempt to use the Damage Control action with {@skill Athletics} rather than {@skill Mechanics}. If successful, the character removes one point of hull trauma from the vehicle, plus one additional point for each additional {@symbols ss}. This follows the limitations of the Damage Control action, and thus may only be attempted once per encounter."
             },
             {
                "action": "Fire Discipline",
@@ -12597,12 +14046,12 @@
             {
                "action": "Hack Enemy's Systems",
                "skill": "{@difficulty Hard|Computers}",
-               "result": "The character uses computers to attempt to disrupt the systems of an enemy vehicle. If successful, the character compromises the defenses of the target vehicle for one round per {@symbols s} (see the Vehicle Components sidebar, on page 221). A {@symbols t} may be spent to compromise one enemy weapon of the character's choice, and {@symbols aa} may be spent to inflict 1 system strain on the target vehicle."
+               "result": "The character uses computers to attempt to disrupt the systems of an enemy vehicle. If successful, the character compromises the defenses of the target vehicle for one round per {@symbols s} (see the {@sidebar Vehicle Components} sidebar, on page 221). A {@symbols t} may be spent to compromise one enemy weapon of the character's choice, and {@symbols aa} may be spent to inflict 1 system strain on the target vehicle."
             },
             {
                "action": "Intercept Projectiles",
                "skill": "{@difficulty Hard|Computers or Gunnery} or {@difficulty Average|Vigilance}",
-               "result": "The character tracks incoming attacks and uses vehicle systems to disrupt guided projectiles such as missiles, or drops flares and chaff at an opportune moment. If the check is successful, any attacks against their vehicle using weapons with the Guided quality upgrade their difficulty once (plus an additional upgrade for every additional {@symbols ss}) until the start of the character's next turn."
+               "result": "The character tracks incoming attacks and uses vehicle systems to disrupt guided projectiles such as missiles, or drops flares and chaff at an opportune moment. If the check is successful, any attacks against their vehicle using weapons with the {@quality Guided} quality upgrade their difficulty once (plus an additional upgrade for every additional {@symbols ss}) until the start of the character's next turn."
             }
          ]
       },
@@ -12671,37 +14120,37 @@
             {
                "roll": "37-54",
                "severity": "{@difficulty Easy}",
-               "result": "{@b Hull Damaged:} The vehicle's hull is compromised (see Vehicle Components on page 221)."
+               "result": "{@b Hull Damaged:} The vehicle's hull is compromised (see {@sidebar Vehicle Components} on page 221)."
             },
             {
                "roll": "55-63",
                "severity": "{@difficulty Average}",
-               "result": "{@b Navigation Damaged:} The vehicle's navigation is compromised (see Vehicle Components, on page 221)."
+               "result": "{@b Navigation Damaged:} The vehicle's navigation is compromised (see {@sidebar Vehicle Components}, on page 221)."
             },
             {
                "roll": "64-72",
                "severity": "{@difficulty Average}",
-               "result": "{@b Propulsion Damaged:} The vehicle's propulsion is compromised (see Vehicle Components, on page 221)."
+               "result": "{@b Propulsion Damaged:} The vehicle's propulsion is compromised (see {@sidebar Vehicle Components}, on page 221)."
             },
             {
                "roll": "73-81",
                "severity": "{@difficulty Average}",
-               "result": "{@b Defenses Damaged:} The vehicle's defenses are compromised (see Vehicle Components, on page 221)."
+               "result": "{@b Defenses Damaged:} The vehicle's defenses are compromised (see {@sidebar Vehicle Components}, on page 221)."
             },
             {
                "roll": "82-108",
                "severity": "{@difficulty Hard}",
-               "result": "{@b Weapons Damaged:} One of the vehicle's weapons of the attacker's choice is compromised (see Vehicle Components, on page 221)."
+               "result": "{@b Weapons Damaged:} One of the vehicle's weapons of the attacker's choice is compromised (see {@sidebar Vehicle Components}, on page 221)."
             },
             {
                "roll": "109-126",
                "severity": "{@difficulty Hard}",
-               "result": "{@b Brakes Damaged:} The vehicle's brakes are compromised (see Vehicle Components, on page 221)."
+               "result": "{@b Brakes Damaged:} The vehicle's brakes are compromised (see {@sidebar Vehicle Components}, on page 221)."
             },
             {
                "roll": "127-138",
                "severity": "{@difficulty Daunting}",
-               "result": "{@b All Systems Down:} All of the vehicle's components are compromised (see Vehicle Components, on page 221)."
+               "result": "{@b All Systems Down:} All of the vehicle's components are compromised (see {@sidebar Vehicle Components}, on page 221)."
             },
             {
                "roll": "139-144",
@@ -12853,6 +14302,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -12880,6 +14345,18 @@
             },
             {
                "name": "space opera"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -12913,6 +14390,14 @@
             },
             {
                "name": "weird war"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
             }
          ]
       },
@@ -12928,6 +14413,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -12943,6 +14444,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -12958,6 +14475,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -12973,6 +14506,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -12982,12 +14531,28 @@
          "activation": "active (action)",
          "ranked": false,
          "description": [
-            "Once per session, your character may use this talent to choose one non-nemesis adversary within medium range and make an opposed {@skill Negotiation} versus {@skill Discipline} check. If successful, the target becomes staggered until the end of their next turn. At your GM's discretion, you may spend {@symbols t} on this check to have the adversary become an ally until the end of the encounter. However, the duration of this may be shortened or extended depending on whether your GM feels your offer is appealing to the adversary and whether your character follows through on their offer!"
+            "Once per session, your character may use this talent to choose one non-nemesis adversary within medium range and make an opposed {@skill Negotiation} versus {@skill Discipline} check. If successful, the target becomes {@rule staggered} until the end of their next turn. At your GM's discretion, you may spend {@symbols t} on this check to have the adversary become an ally until the end of the encounter. However, the duration of this may be shortened or extended depending on whether your GM feels your offer is appealing to the adversary and whether your character follows through on their offer!"
          ],
          "page": 75,
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13015,6 +14580,18 @@
             },
             {
                "name": "space opera"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13030,6 +14607,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13045,6 +14638,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13060,6 +14669,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13084,6 +14709,18 @@
             },
             {
                "name": "science fiction"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13099,6 +14736,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13120,6 +14773,18 @@
             },
             {
                "name": "space opera"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13141,6 +14806,18 @@
             },
             {
                "name": "space opera"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13156,6 +14833,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13177,6 +14870,18 @@
             },
             {
                "name": "space opera"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13192,6 +14897,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13207,6 +14928,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13222,6 +14959,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13237,6 +14990,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13252,6 +15021,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13267,6 +15052,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13303,6 +15104,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13318,6 +15135,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13333,6 +15166,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13360,6 +15209,18 @@
             },
             {
                "name": "space opera"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13387,6 +15248,18 @@
             },
             {
                "name": "space opera"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13414,6 +15287,18 @@
             },
             {
                "name": "space opera"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13429,6 +15314,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13444,6 +15345,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13459,6 +15376,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13474,6 +15407,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13489,6 +15438,18 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13504,6 +15465,18 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13519,6 +15492,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13534,6 +15523,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13549,6 +15554,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13564,6 +15585,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13579,6 +15616,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13594,6 +15647,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13609,6 +15678,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13624,6 +15709,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13639,6 +15740,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13672,6 +15789,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13687,6 +15820,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13702,6 +15851,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13720,6 +15885,14 @@
             },
             {
                "name": "space opera"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
             }
          ]
       },
@@ -13753,6 +15926,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13768,6 +15957,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13783,6 +15988,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13798,6 +16019,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13813,6 +16050,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13828,6 +16081,22 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13843,6 +16112,10 @@
          "settings": [
             {
                "name": "fantasy"
+            },
+            {
+               "name": "Terrinoth",
+               "source": "rot"
             }
          ]
       },
@@ -13852,12 +16125,24 @@
          "activation": "active (incidental, out of turn)",
          "ranked": true,
          "description": [
-            "Your character may suffer a number of strain to use this talent to add an equal number of {@symbols s} to a {@skill Vigilance} or {@skill Cool} check they make to determine Initiative order. The number may not exceed your character's ranks in Rapid Reaction."
+            "Your character may suffer a number of strain to use this talent to add an equal number of {@symbols s} to a {@skill Vigilance} or {@skill Cool} check they make to {@rule determine Initiative} order. The number may not exceed your character's ranks in Rapid Reaction."
          ],
          "page": 74,
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13873,6 +16158,18 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13888,6 +16185,18 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13903,6 +16212,18 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13918,6 +16239,18 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13933,6 +16266,18 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13948,6 +16293,18 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13963,6 +16320,18 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13978,6 +16347,18 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -13993,6 +16374,18 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       },
@@ -14008,6 +16401,18 @@
          "settings": [
             {
                "name": "all"
+            },
+            {
+               "name": "Android",
+               "source": "sotb"
+            },
+            {
+               "name": "Keyforge",
+               "source": "sotc"
+            },
+            {
+               "name": "Twilight Imperium",
+               "source": "eoti"
             }
          ]
       }
