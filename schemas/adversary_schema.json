@@ -273,7 +273,7 @@
                               "name"
                            ],
                            "optional": [
-                              "source0"
+                              "source"
                            ],
                            "additionalProperties": false
                         },
