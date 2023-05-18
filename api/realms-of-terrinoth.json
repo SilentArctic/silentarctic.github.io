@@ -7,7 +7,7 @@
          "abbreviation": "RoT",
          "color": "#A75A0E",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/realms-terrinoth/",
-         "version": "2023.5.4",
+         "version": "2023.5.18",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -9837,7 +9837,7 @@
          ],
          "description": [
             "Nearly everyone in Terrinoth carries a knife at their belt; it is a useful tool for any number of mundane tasks. Daggers, on the other hand, are designed purely for killing. Their thin, razor-sharp blades tend to be perfectly balanced so they can be thrown with the flick of a wrist just as easily as they can slit an unwary throat.",
-            "Your character can stab or slash with a dagger using the profile in {@table 2–5: Melee Weapons} on page 94, or they can throw one using the following profile: (Ranged; Damage +2; Critical 3; Range [Short]; Accurate 1, Limited Ammo 1)."
+            "Your character can stab or slash with a dagger using the profile in {@table 2-5: Melee Weapons} on page 94, or they can throw one using the following profile: (Ranged; Damage +2; Critical 3; Range [Short]; Accurate 1, Limited Ammo 1)."
          ],
          "page": 92
       },
@@ -10036,7 +10036,7 @@
          "description": [
             "Spears are perfect for fighting in tight formation, where soldiers can't swing a sword or axe without hitting one of their fellows. Thus, foot soldiers of the baronies tend to train with spear and shield in the art of forming a defensive wall of thrusting spear tips.",
             "Standard spears are too heavy to be wielded in one hand or thrown. \"Light\" spears (sometimes called javelins) on the other hand can be wielded one-handed and consist of a thick, four-foot-long wooden shaft topped by a heavy iron spearhead. These spears are also light enough to be thrown over short distances; the Orcs of the Broken Plains often use thrown spears to skewer their prey while hunting.",
-            "Your character can thrust or stab with a light spear using the profile in {@table 2–5: Melee Weapons}, or they can throw one using the following profile: (Ranged; Damage +2; Critical 4; Range [Short]; Accurate 1, Limited Ammo 1)."
+            "Your character can thrust or stab with a light spear using the profile in {@table 2-5: Melee Weapons}, or they can throw one using the following profile: (Ranged; Damage +2; Critical 4; Range [Short]; Accurate 1, Limited Ammo 1)."
          ],
          "page": 93
       },
@@ -10064,7 +10064,7 @@
          "description": [
             "Spears are perfect for fighting in tight formation, where soldiers can't swing a sword or axe without hitting one of their fellows. Thus, foot soldiers of the baronies tend to train with spear and shield in the art of forming a defensive wall of thrusting spear tips.",
             "Standard spears are too heavy to be wielded in one hand or thrown. \"Light\" spears (sometimes called javelins) on the other hand can be wielded one-handed and consist of a thick, four-foot-long wooden shaft topped by a heavy iron spearhead. These spears are also light enough to be thrown over short distances; the Orcs of the Broken Plains often use thrown spears to skewer their prey while hunting.",
-            "Your character can thrust or stab with a light spear using the profile in {@table 2–5: Melee Weapons}, or they can throw one using the following profile: (Ranged; Damage +2; Critical 4; Range [Short]; Accurate 1, Limited Ammo 1)."
+            "Your character can thrust or stab with a light spear using the profile in {@table 2-5: Melee Weapons}, or they can throw one using the following profile: (Ranged; Damage +2; Critical 4; Range [Short]; Accurate 1, Limited Ammo 1)."
          ],
          "page": 93
       },

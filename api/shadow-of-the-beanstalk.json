@@ -7,7 +7,7 @@
          "abbreviation": "SotB",
          "color": "#40B3B5",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/shadow-beanstalk/",
-         "version": "2023.5.4",
+         "version": "2023.5.18",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -14426,8 +14426,8 @@
          "type": "character",
          "description": [
             "Most of the drugs found in New Angeles are chemically or psychologically addictive. Some players may not want to roleplay dealing with the side effects of addiction. This is entirely reasonable, especially since people can have traumatic experiences with addiction in real life. So if some players or your GM want to use the rules for addiction, make sure the entire group agrees first!",
-            "If your group is using the alternate rules for addiction, whenever a character uses an addictive drug (which includes every drug in this section except slap-patches) regularly, you or your GM can decide that your character is at risk of becoming addicted (what constitutes \"regular\" use is also up to you and your GM). If your character is at risk of becoming addicted, they must make a {@difficulty Hard|Resilience or Discipline} (depending on whether you and your GM feel the drug is more physiologically or psychologically addictive).",
-            "Once your character is addicted, they must use the drug they are addicted to once a day, or decrease their strain threshold by half until they do so. To end their addiction, your character must go without using the drug they are addicted to for at least one week or more, and may also need to make another Resilience or Discipline check to overcome the addiction."
+            "If your group is using the alternate rules for addiction, whenever a character uses an addictive drug (which includes every drug in this section except {@rule slap-patch|slap-patches}) regularly, you or your GM can decide that your character is at risk of becoming addicted (what constitutes \"regular\" use is also up to you and your GM). If your character is at risk of becoming addicted, they must make a {@difficulty Hard|Resilience or Discipline} (depending on whether you and your GM feel the drug is more physiologically or psychologically addictive).",
+            "Once your character is addicted, they must use the drug they are addicted to once a day, or decrease their strain threshold by half until they do so. To end their addiction, your character must go without using the drug they are addicted to for at least one week or more, and may also need to make another {@skill Resilience||crb} or {@skill Discipline||crb} check to overcome the addiction."
          ]
       },
       {

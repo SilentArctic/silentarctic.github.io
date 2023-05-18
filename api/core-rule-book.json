@@ -7,7 +7,7 @@
          "abbreviation": "CRB",
          "color": "#14C0F1",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/",
-         "version": "2023.5.4",
+         "version": "2023.5.18",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -2870,7 +2870,7 @@
                "name": "space opera"
             }
          ],
-         "page": 18
+         "page": 182
       },
       {
          "name": "Average Human",
@@ -2907,7 +2907,7 @@
          "description": [
             "The average human archetype is our baseline for character creation, and portrays the most customizable example of a person. You should choose this archetype if you prefer to play \"generalist\" characters, who are never going to be terrible at anything. You should also choose this archetype if you have a very specific type of character in mind, since this archetype has the most customization options of the four choices.",
             "The characteristics all start at 2, meaning your character is going to have a hard time increasing any one characteristic to a 4 or 5, but also that your character isn't going to have any characteristic they are truly lacking in. Likewise, the strain and wound thresholds start at the average 10.",
-            "Your character starts with more ranks in skills than anyone else, again playing to the idea of being a generalist. Your archetype ability is also a generalist ability. Effectively, your group gains a Story Point to spend whenever it needs it. And finally, your character starts with the most experience of any of the four archetypes. Just remember, character creation is your only chance to spend XP on characteristics (otherwise, to increase a characteristic you need to purchase the Dedication talent; see page 81). We recommend you spend most of these XP on improving your characteristics, while saving at most 25–35 experience for talents and skills."
+            "Your character starts with more ranks in skills than anyone else, again playing to the idea of being a generalist. Your archetype ability is also a generalist ability. Effectively, your group gains a Story Point to spend whenever it needs it. And finally, your character starts with the most experience of any of the four archetypes. Just remember, character creation is your only chance to spend XP on characteristics (otherwise, to increase a characteristic you need to purchase the Dedication talent; see page 81). We recommend you spend most of these XP on improving your characteristics, while saving at most 25-35 experience for talents and skills."
          ],
          "settings": [
             {
@@ -2915,7 +2915,7 @@
                "source": ""
             }
          ],
-         "page": 3
+         "page": 36
       },
       {
          "name": "Bioroid",
@@ -7657,7 +7657,7 @@
                                        "entries": [
                                           "When a character suffers damage, whether from a rifle or claws, they reduce the damage received by their soak value. If any damage remains after this reduction, they suffer that many wounds. If the net result is zero or negative, the character suffers no wounds; their toughness and natural fortitude, in conjunction with any armor they might be wearing, have saved them from being injured. If the character suffers damage from multiple hits in an attack, they apply their soak value to each hit individually. For more information on damage and wounds, see {@b Wounds, Strain, and States of Health}, on page 112.",
                                           "An attack may also generate a Critical Injury. This may occur because the weapon's Critical rating is triggered, or because the target suffers a number of wounds greater than its wound threshold. More about Critical ratings is explained in {@b Step 4: Resolve Advantage and Triumph}.",
-                                          "When a Critical Injury is inflicted, the attacker rolls percentile dice on {@table I.6–10: Critical Injury Result}, on page 115. The result of the dice roll indicates which Critical Injury is inflicted.",
+                                          "When a Critical Injury is inflicted, the attacker rolls percentile dice on {@table I.6-10: Critical Injury Result}, on page 115. The result of the dice roll indicates which Critical Injury is inflicted.",
                                           "Some weapons and talents modify this Critical Injury roll, potentially making it more or less effective. If an attack generates enough {@symbols a} to trigger more than one Critical Injury, the character makes a single Critical Injury roll, adding +10 to the result for each additional time the Critical rating is triggered."
                                        ]
                                     },
@@ -9159,7 +9159,7 @@
                         },
                         "As a vehicle takes damage, sparks fly and systems begin to fail. The Damage Control action can mitigate this stress. When performing the Damage Control action, choose whether you want your character to repair system strain or hull trauma. Then, make a Mechanics check, with the difficulty determined by {@table III.2-16: Damage Control Difficulty}. If the check is successful, reduce the vehicle's system strain or hull trauma by one per uncanceled {@symbols s}.",
                         "Characters can use the Damage Control action to repair system strain multiple times during an encounter. However, only one Damage Control action can be made to repair hull trauma during an encounter—no matter how many characters are on the vehicle. In both cases, you decide whether your players' characters can use the Damage Control action, depending on the current situation (a fighter pilot probably couldn't climb out of their plane to patch their wing, after all).",
-                        "Characters can also use this action to repair Critical Hits the vehicle is suffering from. The difficulty of repairing a Critical Hit is listed in the Severity column of Table III.2–16: Critical Hit Result, on page 230. Checks to repair Critical Hits can be attempted multiple times, until the Critical Hit is repaired."
+                        "Characters can also use this action to repair Critical Hits the vehicle is suffering from. The difficulty of repairing a Critical Hit is listed in the Severity column of Table III.2-16: Critical Hit Result, on page 230. Checks to repair Critical Hits can be attempted multiple times, until the Critical Hit is repaired."
                      ]
                   },
                   {
@@ -11936,7 +11936,7 @@
          ],
          "narrative": [
             "Augment spells magically enhance characters or objects. Sometimes, the distinction is mostly narrative—it may be purely a matter of description whether a spell imbues a sword with power or improves the reflexes of the character wielding it. Although these effects are often helpful in combat, such spells can be useful in many circumstances, from helping an ally scale a sheer surface to keeping the party's horses galloping past their normal limits.",
-            "When determining the effect of an augment spell, see the Augment action's effects, on pages 215 and 216, for some of the possibilities. Of course, you or your players may want to try something not covered by those effects, such as temporarily repairing a weapon so that you can continue to wield it. In this case, you may set a difficulty by looking at the difficulty to repair the item (see Table I.5–4: Repairing Gear, on page 89). These spells could also be used to improve the effectiveness of gear (perhaps the augmented item adds {@dice boost} to checks related to its use). Augment could even let a character turn invisible or fly, although we recommend a difficulty of at least {@difficulty hard} for this!"
+            "When determining the effect of an augment spell, see the Augment action's effects, on pages 215 and 216, for some of the possibilities. Of course, you or your players may want to try something not covered by those effects, such as temporarily repairing a weapon so that you can continue to wield it. In this case, you may set a difficulty by looking at the difficulty to repair the item (see Table I.5-4: Repairing Gear, on page 89). These spells could also be used to improve the effectiveness of gear (perhaps the augmented item adds {@dice boost} to checks related to its use). Augment could even let a character turn invisible or fly, although we recommend a difficulty of at least {@difficulty hard} for this!"
          ],
          "structured": [
             "This is using magic to enhance people. A character selects one target they are engaged with (which can be themself), then makes a Primal or Divine skill check. The default difficulty of the check is {@difficulty average}. If the check is successful, until the end of your character's next turn, the target increases the ability of any skill checks they make by one (in effect, this means they add {@dice ability} to their checks). A character may not be affected by more than one Augment spell at the same time (so no stacking effects).",
@@ -12237,7 +12237,7 @@
          "narrative": [
             "At its most basic, healing magic can remove damage or strain from a character. The most powerful spells might cure deadly diseases or even raise the dead. Healing magic works much like the Medicine skill, but of course medicine in most fantasy worlds is fairly primitive.",
             "In game terms, healing magic is more difficult than an equivalent Medicine check. However, in exchange for this increased difficulty, healing magic can do things that a skilled doctor cannot. These include healing targets from afar, healing multiple targets at once, and on rare occasions, bringing the deceased back from the dead. Healing magic can also affect targets multiple times per encounter.",
-            "When using healing magic, the additional affects listed in {@table |III.2–11} should cover most of what you want to do in narrative time as well as structured time. For other effects—such as a spell to double the rate of natural healing for a target—you, the GM, can set the difficulty. If you're not sure what difficulty to assign, {@difficulty average} works for any acceleration of natural healing, while anything similar in scope and impact to bringing the dead back to life should be {@difficulty daunting} or even {@difficulty formidable}. Generally, we recommend making resurrection a rare and difficult endeavor, so that death doesn't lose its impact in your game."
+            "When using healing magic, the additional affects listed in {@table |III.2-11} should cover most of what you want to do in narrative time as well as structured time. For other effects—such as a spell to double the rate of natural healing for a target—you, the GM, can set the difficulty. If you're not sure what difficulty to assign, {@difficulty average} works for any acceleration of natural healing, while anything similar in scope and impact to bringing the dead back to life should be {@difficulty daunting} or even {@difficulty formidable}. Generally, we recommend making resurrection a rare and difficult endeavor, so that death doesn't lose its impact in your game."
          ],
          "structured": [
             "Priests and other practitioners of divine magic are often known for their healing abilities. Often, those in touch with nature also possess the capacity to heal wounds and illness. The character can use the Divine or Primal magic skill in place of a Medicine check in order to remove damage or heal Critical Injuries. When making the check, the character selects one target they are engaged with who is not incapacitated. The default difficulty of the check is {@difficulty easy}. Upon success, the character heals 1 wound per uncanceled {@symbols s}, and 1 strain per uncanceled {@symbols a}.",
@@ -13107,7 +13107,7 @@
             {
                "roll": "106-110",
                "severity": "{@difficulty Hard}",
-               "result": "{@b Horrific Injury:} Roll 1d10 to determine which of the target's characteristics is affected: 1–3 for Brawn, 4–6 for Agility, 7 for Intellect, 8 for Cunning, 9 for Presence, 10 for Willpower. Until this Critical Injury is healed, treat that characteristic as one point lower."
+               "result": "{@b Horrific Injury:} Roll 1d10 to determine which of the target's characteristics is affected: 1-3 for Brawn, 4-6 for Agility, 7 for Intellect, 8 for Cunning, 9 for Presence, 10 for Willpower. Until this Critical Injury is healed, treat that characteristic as one point lower."
             },
             {
                "roll": "111-115",
@@ -13127,7 +13127,7 @@
             {
                "roll": "126-130",
                "severity": "{@difficulty Daunting}",
-               "result": "{@b Gruesome Injury:} Roll 1d10 to determine which of the target's characteristics is affected: 1–3 for Brawn, 4–6 for Agility, 7 for Intellect, 8 for Cunning, 9 for Presence, 10 for Willpower. That characteristic is permanently reduced by one, to a minimum of 1."
+               "result": "{@b Gruesome Injury:} Roll 1d10 to determine which of the target's characteristics is affected: 1-3 for Brawn, 4-6 for Agility, 7 for Intellect, 8 for Cunning, 9 for Presence, 10 for Willpower. That characteristic is permanently reduced by one, to a minimum of 1."
             },
             {
                "roll": "131-140",
