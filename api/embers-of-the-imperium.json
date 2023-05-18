@@ -14,7 +14,7 @@
          ],
          "url": "https://www.edge-studio.net/games/embers-of-the-imperium/",
          "releaseDate": "28 April 2023",
-         "version": "2023.5.2"
+         "version": "2023.5.18"
       },
       "defaultItemSettings": [
          {
@@ -9260,6 +9260,112 @@
          ]
       },
       {
+         "name": "Nekro Grindellow",
+         "page": 257,
+         "type": "nemesis",
+         "description": [
+            "Added to the Nekro arsenal after an attack on a Jol-Nar military outpost, Grindellow Impalers incorporate several design elements from the Hylar krillostrat armored suit. Their large, spherical body supports seven long tentacles, six tipped with leafshaped razor blades and one armed with a long-range positron emitter. Impalers serve the Nekro as advanced infiltration and elimination engines. They often lie dormant, waiting for targets to wander into range before suddenly activating and attacking."
+         ],
+         "powerLevels": {
+            "combat": 9,
+            "social": 2,
+            "general": 4
+         },
+         "characteristics": {
+            "brawn": 3,
+            "agility": 3,
+            "intellect": 3,
+            "cunning": 3,
+            "willpower": 4,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 6,
+            "wounds": 20,
+            "strain": 20,
+            "defense": [0, 0]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "ranks": 3,
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Gunnery",
+               "ranks": 3,
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Melee",
+               "ranks": 3,
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Stealth",
+               "ranks": 3,
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "ranks": 3,
+               "characteristic": "willpower",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Multitentacled",
+               "description": "After making a successful combat check, may spend 3 strain to inflict one additional hit with tentacle blade against one other target within short range that is no more difficult to hit than the original target, dealing base damage +1 per 󲊳; may do so up to three times per turn."
+            },
+            "Nekro",
+            "Silhouette 2"
+         ],
+         "talents": [
+            "Overwatch"
+         ],
+         "weapons": [
+            {
+               "name": "Tentacle-mounted positron emitter",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 3,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Tentacle blade",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 2,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Ensnare",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
          "name": "Nekro Pilot AI",
          "page": 257,
          "type": "rival",
@@ -9332,7 +9438,7 @@
          ]
       },
       {
-         "name": "Valefar Assimilation Swarm",
+         "name": "Nekro Valefar Assimilation Swarm",
          "page": 257,
          "type": "rival",
          "powerLevels": {
@@ -9404,6 +9510,1334 @@
          ],
          "description": [
             "Easily the most insidious {@rule Nekro Virus|Nekro} weapon, the Valefar assimilation swarms are often mistaken for insects, but each of these tiny drones carries the Nekro virus. The swarms can infect and disable what they come in contact with, or simply tear it apart with their positron microemitters, and they often serve as a vanguard for a {@rule Nekro Virus|Nekro} assault."
+         ]
+      },
+      {
+         "name": "L1Z1X Enhancer Prodigy",
+         "page": 258,
+         "type": "nemesis",
+         "description": [
+            "Obsessed with their own cybernetic immortality and improving their physical and intellectual capabilities, the L1Z1X enhancers constantly experiment with new cybernetic modifications and implants. While they happily experiment on themselves with new shielding and optics, they prefer the dead and dying for their more…complex tests."
+         ],
+         "powerLevels": {
+            "combat": 5,
+            "social": 3,
+            "general": 7
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 5,
+            "cunning": 3,
+            "willpower": 3,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 15,
+            "strain": 15,
+            "defense": [2, 2]
+         },
+         "skills": [
+            {
+               "name": "Computers",
+               "ranks": 3,
+               "characteristic": "intellect",
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "ranks": 3,
+               "characteristic": "willpower",
+               "source": "crb"
+            },
+            {
+               "name": "Knowledge (Science)",
+               "ranks": 3,
+               "characteristic": "intellect"
+            },
+            {
+               "name": "Leadership",
+               "ranks": 4,
+               "characteristic": "presence",
+               "source": "crb"
+            },
+            {
+               "name": "Mechanics",
+               "ranks": 3,
+               "characteristic": "intellect",
+               "source": "crb"
+            },
+            {
+               "name": "Medicine",
+               "ranks": 3,
+               "characteristic": "intellect",
+               "source": "crb"
+            },
+            {
+               "name": "Melee",
+               "ranks": 2,
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "ranks": 1,
+               "characteristic": "willpower",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Four-Armed",
+               "description": "May perform a second maneuver without suffering strain."
+            },
+            {
+               "name": "Reboot Resurrection",
+               "description": "May make a {@difficulty Hard|Medicine} as an action; if successful, one L1Z1X rival or nemesis within medium range heals 5 wounds plus 1 additional wound per {@symbols s}, or may add one L1Z1X minion to a minion group that has lost at least one minion during the current encounter."
+            }
+         ],
+         "talents": [
+            "Adversary 2",
+            "Coordinated Assault 2"
+         ],
+         "weapons": [
+            {
+               "name": "Integrated laser scalpal",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
+               "damage": 1,
+               "critical": 1,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Inaccurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "L1Z1X Herald",
+         "page": 258,
+         "type": "nemesis",
+         "description": [
+            "The heralds are the public face, wizened and horrifying though it may be, of the recently emerged L1Z1X. Ostensibly they arrive as ambassadors, but in secret they work behind the scenes to soften a world for L1Z1X invasion if need be. They plant seeds of chaos and discord, and they sabotage planetary defenses with dormant viral agents. They also occasionally engage in real diplomatic negotiations."
+         ],
+         "powerLevels": {
+            "combat": 4,
+            "social": 7,
+            "general": 5
+         },
+         "characteristics": {
+            "brawn": 3,
+            "agility": 2,
+            "intellect": 4,
+            "cunning": 3,
+            "willpower": 3,
+            "presence": 4
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 12,
+            "strain": 18,
+            "defense": [1, 1]
+         },
+         "skills": [
+            {
+               "name": "Computers",
+               "ranks": 3,
+               "characteristic": "intellect",
+               "source": "crb"
+            },
+            {
+               "name": "Deception",
+               "ranks": 2,
+               "characteristic": "cunning",
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "ranks": 3,
+               "characteristic": "willpower",
+               "source": "crb"
+            },
+            {
+               "name": "Mechanics",
+               "ranks": 2,
+               "characteristic": "intellect",
+               "source": "crb"
+            },
+            {
+               "name": "Negotiation",
+               "ranks": 4,
+               "characteristic": "presence",
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "ranks": 2,
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "ranks": 3,
+               "characteristic": "willpower",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Discrete Saboteur",
+               "description": "May spend {@symbols t} from a check this character makes to cause one piece of equipment or a vehicle to break and become unusable for the remainder of the encounter."
+            },
+            {
+               "name": "Four-Armed",
+               "description": "May perform a second maneuver without suffering strain."
+            },
+            {
+               "name": "Upsetting Visage",
+               "description": "This character adds {@dice setback|2} to all {@skill Charm||crb} and {@skill Leadership||crb} checks it makes and adds {@dice boost|2} to all {@skill Coercion||crb} checks it makes; if the check inflicts strain, the target suffers 2 additional strain."
+            }
+         ],
+         "talents": [
+            "Adversary 1"
+         ],
+         "weapons": [
+            {
+               "name": "Integrated high-intensity beam emitter",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 3,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "L1Z1X Legionnaire",
+         "page": 258,
+         "type": "minion",
+         "description": [
+            "When Ibna Vel Syd fled Mecatol Rex just before the fall of the Lazax Empire, he brought with him some loyal Lazax warriors who became the cybernetic template for the L1Z1X Legionnaires. These skeletal, four-armed warriors maintain the skill at arms of the ancient Lazax warriors combined with unnatural durability."
+         ],
+         "powerLevels": {
+            "combat": 5,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 4,
+            "agility": 2,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 3,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 5,
+            "wounds": 7,
+            "defense": [1, 1]
+         },
+         "skills": [
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "source": "crb"
+            },
+            {
+               "name": "Melee",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Heavy)",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Resilience",
+               "characteristic": "brawn",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Four-Armed",
+               "description": "May perform a second maneuver without suffering strain."
+            },
+            {
+               "name": "Mindnet",
+               "description": "A group of these characters may remain a single minion group while at up to long range of one another."
+            },
+            {
+               "name": "Nigh-Immortal",
+               "description": "After making a check, may spend {@symbols t} to heal all wounds on one defeated minion from this group (returning it to the group with all wounds healed)."
+            }
+         ],
+         "talents": [],
+         "weapons": [
+            {
+               "name": "High-intensity beam rifle",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
+               "damage": 7,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Pierce",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Integrated legionnarie blade",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 2,
+               "range": "Engaged"
+            }
+         ]
+      },
+      {
+         "name": "L1Z1X Integrated Systems Controller",
+         "page": 259,
+         "type": "minion",
+         "description": [
+            "Integrated systems controllers have the ability to plug themselves into a starship and integrate themselves with the ship's computer systems, taking control of smaller vessels or linking with other systems controllers through the Mindnet to coordinate their actions on larger warships. They serve as crew aboard L1Z1X vessels, where they are equally able to operate guns, fly ships, and repair damage."
+         ],
+         "powerLevels": {
+            "combat": 1,
+            "social": 1,
+            "general": 2
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 3,
+            "intellect": 3,
+            "cunning": 1,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 4,
+            "defense": [0, 0]
+         },
+         "skills": [
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Computers",
+               "characteristic": "intellect",
+               "source": "crb"
+            },
+            {
+               "name": "Driving",
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Gunnery",
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Mechanics",
+               "characteristic": "intellect",
+               "source": "crb"
+            },
+            {
+               "name": "Operating",
+               "characteristic": "intellect",
+               "source": "crb"
+            },
+            {
+               "name": "Piloting",
+               "characteristic": "agility",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Four-Armed",
+               "description": "May perform a second maneuver without suffering strain."
+            },
+            {
+               "name": "Mindnet",
+               "description": "A group of these characters may remain a single minion group while within long range of one another."
+            }
+         ],
+         "talents": [],
+         "gear": [
+            "{@gear Portable toolkit}"
+         ]
+      },
+      {
+         "name": "L1Z1X Eliminator",
+         "page": 259,
+         "type": "rival",
+         "description": [
+            "Eliminators are L1Z1X special forces units capable of holding position outside enemy fortifications. They sometimes remain in place for years awaiting a L1Z1X invasion fleet so they can call in orbital bombardments or eliminate targets with surgical strikes. They are among the best armed and trained warriors among the L1Z1X."
+         ],
+         "powerLevels": {
+            "combat": 8,
+            "social": 2,
+            "general": 3
+         },
+         "characteristics": {
+            "brawn": 4,
+            "agility": 4,
+            "intellect": 2,
+            "cunning": 3,
+            "willpower": 3,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 5,
+            "wounds": 15,
+            "defense": [1, 1]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "ranks": 2,
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Computers",
+               "ranks": 2,
+               "characteristic": "intellect",
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "ranks": 2,
+               "characteristic": "presence",
+               "source": "crb"
+            },
+            {
+               "name": "Mechanics",
+               "ranks": 2,
+               "characteristic": "intellect",
+               "source": "crb"
+            },
+            {
+               "name": "Melee",
+               "ranks": 2,
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Heavy)",
+               "ranks": 2,
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Stealth",
+               "ranks": 2,
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "ranks": 2,
+               "characteristic": "cunning",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Designate Target",
+               "description": "As an action, may make a {@difficulty Hard|Computers} targeting one structure or location within extreme range; if successful, decrease the difficulty of allied starships' attacks against that target by 2, to a minimum of {@difficulty Easy}, until the end of the round."
+            }
+         ],
+         "talents": [
+            "Adversary 1"
+         ],
+         "weapons": [
+            {
+               "name": "Eliminator hight-intensity beam rifle",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
+               "damage": 7,
+               "critical": 3,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Pierce",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ],
+               "details": "Decrease difficulty of all checks made at long and extreme range by 1."
+            },
+            {
+               "name": "Integrated forearm blades",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
+               "damage": 7,
+               "critical": 2,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Linked",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "Target laser",
+            "Integrated {@gear Encryptos|Encrypted} {@gear comm-bead}"
+         ]
+      },
+      {
+         "name": "Vuil'raith Cultist",
+         "page": 260,
+         "type": "minion",
+         "description": [
+            "The galaxy's disaffected and vulnerable congregate secretly in the ebon cracks of great cities and isolated outposts to worship the Vuil'raith. Corrupted by false promises, the cultists unwittingly pave the road to their own eventual destruction. Of course, some of the worst cultists are those who know exactly what their actions will bring about and commit to them all the more eagerly."
+         ],
+         "powerLevels": {
+            "combat": 2,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 2,
+            "cunning": 3,
+            "willpower": 1,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 4,
+            "defense": [1, 1]
+         },
+         "skills": [
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Stealth",
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Death Cult"
+         ],
+         "talents": [],
+         "weapons": [
+            {
+               "name": "Shot pistol",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 4,
+               "range": "Short"
+            }
+         ],
+         "gear": [
+            "Hooded cloak: 1 defense, add {@dice boost} to {@skill Stealth||crb} checks"
+         ]
+      },
+      {
+         "name": "Vuil'raith Cult Leader",
+         "page": 260,
+         "type": "rival",
+         "description": [
+            "The Vuil'raith often strike bargains with forgotten, angry, or disaffected members of society to foment chaos and involve them in the Vuil'raith's twisted machinations. In exchange for power and knowledge, these damaged individuals find other vulnerable people and indoctrinate them to work evil on behalf of their malign patron. Each cult has slightly different trappings and traditions, but all work toward the goals of the Vuil'raith."
+         ],
+         "powerLevels": {
+            "combat": 4,
+            "social": 5,
+            "general": 2
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 4,
+            "willpower": 1,
+            "presence": 4
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 14,
+            "defense": [1, 1]
+         },
+         "skills": [
+            {
+               "name": "Charm",
+               "ranks": 2,
+               "characteristic": "presence",
+               "source": "crb"
+            },
+            {
+               "name": "Deception",
+               "ranks": 3,
+               "characteristic": "cunning",
+               "source": "crb"
+            },
+            {
+               "name": "Knowledge (Lore)",
+               "ranks": 2,
+               "characteristic": "intellect"
+            },
+            {
+               "name": "Melee",
+               "ranks": 2,
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "ranks": 1,
+               "characteristic": "cunning",
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "ranks": 2,
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Stealth",
+               "ranks": 3,
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Streetwise",
+               "ranks": 2,
+               "characteristic": "cunning",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Death Cult",
+            {
+               "name": "Vuil'raith Bargain",
+               "description": "Once per encounter, may spend a Story Point as an out-of-turn incidental to heal up to 6 wounds that this character is suffering."
+            }
+         ],
+         "talents": [
+            "Adversary 1"
+         ],
+         "weapons": [
+            {
+               "name": "Ceremonial shudder blade",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
+               "damage": 4,
+               "critical": 2,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "2 improvised shudder charges",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 3,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 8,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Burn",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Inaccurate",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "Hooded cloak: 1 defense, add {@dice boost} to {@skill Stealth||crb} checks"
+         ]
+      },
+      {
+         "name": "Vuil'raith Cabalist",
+         "page": 260,
+         "type": "nemesis",
+         "description": [
+            "The cabalists are the most powerful of the abominations that live in the flesh-horror dimension of the Vuil'raith. They lead hordes of the lesser Vuil'raith or scheme to become one of the Vuil'raith Cabal. They possess a kind of insight that enables them to see what fears and desires drive their enemies and to manipulate them into becoming allies. Each cabalist has their own motives and drives as well, making them as likely to war with one another as with the rest of the galaxy."
+         ],
+         "powerLevels": {
+            "combat": 11,
+            "social": 10,
+            "general": 7
+         },
+         "characteristics": {
+            "brawn": 4,
+            "agility": 4,
+            "intellect": 4,
+            "cunning": 5,
+            "willpower": 5,
+            "presence": 4
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 25,
+            "strain": 17,
+            "defense": [0, 0]
+         },
+         "skills": [
+            {
+               "name": "Brawl",
+               "ranks": 4,
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Charm",
+               "ranks": 4,
+               "characteristic": "presence",
+               "source": "crb"
+            },
+            {
+               "name": "Coercion",
+               "ranks": 3,
+               "characteristic": "willpower",
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "ranks": 3,
+               "characteristic": "presence",
+               "source": "crb"
+            },
+            {
+               "name": "Deception",
+               "ranks": 4,
+               "characteristic": "cunning",
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "ranks": 3,
+               "characteristic": "willpower",
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "ranks": 4,
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Stealth",
+               "ranks": 5,
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "ranks": 2,
+               "characteristic": "willpower",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Tempting Lies",
+               "description": "As an action, may make an {@b opposed {@skill Deception||crb} versus {@skill Vigilance||crb} check} targeting one opponent within medium range; if successful, target is {@rule immobilized||crb} until they make a successful {@difficulty Daunting|Cool} as an action; may spend {@symbols t} from check to cause target to also suffer 8 strain."
+            },
+            {
+               "name": "Terrifying",
+               "description": "At the start of the encounter, all opponents must make a {@difficulty Daunting|fear|2} as an out-of-turn incidental, as per page 243 of the {@title Genesys} Core Rulebook; if there are multiple sources of fear in the encounter, opponents only make one fear check against the most terrifying enemy."
+            },
+            "Silhouette 2"
+         ],
+         "talents": [
+            "Adversary 3"
+         ],
+         "weapons": [
+            {
+               "name": "Darkfire vomiter",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 2,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Accurate",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Blast",
+                     "ranks": 5,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Spiked and bladed limbs",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 7,
+               "critical": 3,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Linked",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Vuil'raith Devourer Swarm",
+         "page": 261,
+         "type": "rival",
+         "description": [
+            "These small, flying creatures take a variety of forms, resembling bats, birds, or even insect swarms from a distance. However, up close they can envelop a target, tearing flesh from its body until there is nothing left but bones in moments. The always-ravenous devourers also act as spies and forward scouts, relaying enemy locations back to their masters instantaneously through some unexplained link to their alien home dimension."
+         ],
+         "powerLevels": {
+            "combat": 4,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 1,
+            "agility": 3,
+            "intellect": 1,
+            "cunning": 3,
+            "willpower": 1,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 1,
+            "wounds": 38,
+            "defense": [0, 0]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "ranks": 2,
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "ranks": 4,
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "ranks": 2,
+               "characteristic": "cunning",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Devour",
+               "description": "When attacking an {@rule immobilized||crb} or {@rule prone||crb} target, each uncanceled {@symbols s} increases the damage dealt by +2 instead of +1."
+            },
+            "Flyer",
+            "Swarm"
+         ],
+         "talents": [],
+         "weapons": [
+            {
+               "name": "Swarm of Fangs",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 3,
+               "critical": 4,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Ensnare",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Vuil'raith Looming Abomination",
+         "page": 261,
+         "type": "rival",
+         "description": [
+            "Each of these imposing beings has a uniquely fearsome appearance, dominated by a head featuring jagged jaws and extra eyes, atop a powerful form covered in a tough, scaly hide and an unsettling number of arms, tentacles, and other appendages. They flip over mechs and crush armored soldiers with equal ease, sending whoever isn't frozen by fear fleeing in blind panic."
+         ],
+         "powerLevels": {
+            "combat": 8,
+            "social": 4,
+            "general": 2
+         },
+         "characteristics": {
+            "brawn": 5,
+            "agility": 2,
+            "intellect": 2,
+            "cunning": 3,
+            "willpower": 3,
+            "presence": 3
+         },
+         "derived": {
+            "soak": 5,
+            "wounds": 48,
+            "defense": [0, 0]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "ranks": 1,
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "ranks": 3,
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "ranks": 3,
+               "characteristic": "willpower",
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "ranks": 2,
+               "characteristic": "willpower",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Terrifying",
+            {
+               "name": "Vehicle Flip",
+               "description": "As an action, may make a {@difficulty Daunting|Athletics} to target a vehicle of up to silhouette 3; if successful, the vehicle is overturned, cannot move, and suffers a Critical Hit; other effects, such as being unable to fire weapons, may occur at the GM's discretion."
+            },
+            "Silhouette 3"
+         ],
+         "talents": [
+            "Adversary 1"
+         ],
+         "weapons": [
+            {
+               "name": "Battering fist",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 14,
+               "critical": 4,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Concussive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Vuil'raith Nightmare Horde",
+         "page": 261,
+         "type": "minion",
+         "description": [
+            "The Vuil'raith shape flesh to strike terror in their victims. The rank and file of their nightmare armies are gibbering meatshapes of fanged maws, razor-sharp claws, flailing tentacles, and countless glowing eyes, all intended to leave their foes recoiling in horror."
+         ],
+         "powerLevels": {
+            "combat": 3,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 3,
+            "agility": 3,
+            "intellect": 1,
+            "cunning": 3,
+            "willpower": 3,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 8,
+            "defense": [0, 0]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Horde of Nightmares",
+               "description": "If an opponent in the encounter makes a fear check because of an ally of the Nightmare Horde, add {@dice setback} to the check for each Nightmare Horde minion group present in the encounter."
+            }
+         ],
+         "talents": [],
+         "weapons": [
+            {
+               "name": "Blade, tooth, and claw",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 4,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Vuil'raith Terror Beast",
+         "page": 262,
+         "type": "rival",
+         "description": [
+            "Terror beasts are incredibly long, millipede-like creatures that can carry dozens of Vuil’raith invaders on their backs. Their many legs end in sharp points, perfect for skewering enemy troops while they run to deposit their horde where it can sow the most fear."
+         ],
+         "powerLevels": {
+            "combat": 11,
+            "social": 5,
+            "general": 3
+         },
+         "characteristics": {
+            "brawn": 5,
+            "agility": 2,
+            "intellect": 1,
+            "cunning": 3,
+            "willpower": 3,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 5,
+            "wounds": 88,
+            "defense": [0, 0]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "ranks": 2,
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "ranks": 3,
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Coordination",
+               "ranks": 3,
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "ranks": 3,
+               "characteristic": "willpower",
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "ranks": 2,
+               "characteristic": "willpower",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            {
+               "name": "A Hundred Scything Legs",
+               "description": "Whenever the terror beast makes a check (including a combat check), may spend {@symbols a} or {@symbols t} to cause one engaged enemy to suffer a hit from this character's skewer-legs, dealing base damage."
+            },
+            {
+               "name": "Terrifying",
+               "description": "At the start of the encounter, all opponents must make a {@difficulty Formidable|fear} as an out-of-turn incidental, as per page 243 of the {@title Genesys} Core Rulebook; if there are multiple sources of fear in the encounter, opponents only make one fear check against the most terrifying enemy."
+            },
+            "Silhouette 3"
+         ],
+         "talents": [
+            "Adversary 2"
+         ],
+         "weapons": [
+            {
+               "name": "Skewer-legs",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 12,
+               "critical": 2,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Mahact Crimson Legionnaire",
+         "page": 262,
+         "type": "rival",
+         "description": [
+            "Enthralled Creuss warriors, these hulking sentinels wear runecovered armor that glows an ominous crimson instead of the cold blue of most Creuss armor. Each of the Crimson Legionnaires was once a part of the grand armada dispatched to search for Ixth. When they discovered the Mahact tomb, the genesorcerers corrupted them all, many hundreds of thousands of individuals bound to serve in an instant. Now the Mahact use them as an elite praetorian guard, the core of an army that the gene-sorcerers are building to reconquer the galaxy."
+         ],
+         "powerLevels": {
+            "combat": 7,
+            "social": 4,
+            "general": 2
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 1,
+            "willpower": 1,
+            "presence": 3
+         },
+         "derived": {
+            "soak": 5,
+            "wounds": 18,
+            "defense": [2, 2]
+         },
+         "skills": [
+            {
+               "name": "Cool",
+               "ranks": 4,
+               "characteristic": "presence",
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "ranks": 4,
+               "characteristic": "willpower",
+               "source": "crb"
+            },
+            {
+               "name": "Melee",
+               "ranks": 4,
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Heavy)",
+               "ranks": 3,
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "ranks": 2,
+               "characteristic": "willpower",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Legion Fighter",
+               "description": "While engaged with an opponent, may spend a maneuver to add {@symbols ss} to the results of the next melee combat check an ally makes targeting that opponent before the start of this character's next turn."
+            },
+            {
+               "name": "Wormhole Walker",
+               "description": "May spend a Story Point to teleport anywhere within extreme range as a maneuver."
+            }
+         ],
+         "talents": [],
+         "weapons": [
+            {
+               "name": "Disassembler rifle",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 1,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Astral lance",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 4,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Unwieldy",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "Crimson runic armor: 2 defense, +2 soak, +6 would threshold"
          ]
       },
       {
@@ -9479,7 +10913,7 @@
          ]
       },
       {
-         "name": "Cloned Pilot Brain Network",
+         "name": "Mahact Cloned Pilot Brain Network",
          "page": 143,
          "type": "minion",
          "characteristics": {
@@ -14842,6 +16276,24 @@
    ],
    "sidebar": [
       {
+         "name": "FTL Speeds and Travel Distances",
+         "page": 136,
+         "type": "travel",
+         "description": [
+            "Travel in the galaxy, even at superluminal speeds, can take a long time. That's because the galaxy is huge beyond comprehension. Almost no ship has the range to get from one side of the galaxy to the other, but FTL mass-drives still make an interstellar empire a possibility.",
+            "For game purposes, the speed a ship can reach in FTL travel, and the distance it can traverse before needing to refuel (its \"range\"), are kept as a few broad, abstract categories. These should usually be sufficient to keep the game moving. The categories are listed in {@table 3-1: FTL Speeds} and {@table 3-1: FTL Ranges}, along with some examples."
+         ]
+      },
+      {
+         "name": "Knockdown and Vehicles",
+         "page": 138,
+         "type": "vehicle",
+         "description": [
+            "The {@quality Knockdown||crb} quality can be used to affect vehicles. For mechs, this works the same as any character being knocked down. The mech is knocked prone, its speed drops to 0, and it can't move until the pilot performs a move maneuver to get it to stand.",
+            "For other vehicles, being knocked down may represent being rolled, flipped, jammed into terrain where it can't move, or in the case of flying vehicles, knocked into an uncontrollable tailspin. In these cases, the vehicle's speed is reduced to 0 and it can't move until the pilot makes a successful {@difficulty Hard|Piloting or Driving}. If the vehicle flies, the pilot may only have a certain amount of time to get it moving before it crashes into the ground."
+         ]
+      },
+      {
          "name": "Mahact Sleeper Agents and Enslaved Vassals",
          "page": 263,
          "type": "adversary",
@@ -14853,11 +16305,29 @@
          ]
       },
       {
+         "name": "NPC Crews",
+         "page": 138,
+         "type": "vehicle",
+         "description": [
+            "Ships and vehicles need crew to operate, and if they're not being operated by the party, they'll need a crew of NPCs. Various NPC profiles appropriate for crew can be found in Chapter 6. Profiles for military crews can be found in the {@b Soldiers of the Great Civilizations} section starting on page 248, while profiles for vessels of the Great Threats can be found in the {@b Agents of the Great Threats} section starting on page 255."
+         ]
+      },
+      {
          "name": "Restricted (R) Items",
          "page": 123,
          "type": "gear",
          "description": [
             "Some of the items in this book have an \"R\" next to their cost, indicating that they are restricted. Although every society tends to have its own laws about what is illegal and what isn't, some weapons and items are generally considered dangerous or reprehensible enough to be limited to military personnel, or banned entirely. Restricted items tend to be illegal for civilians to possess on most civilized planets. Although the {@rule the keleres of the council|Keleres} are technically exempt from these limitations because of their status as agents of {@rule the Galactic Council}, they can expect some harassment or pushback from local law enforcement or planetary officials if they carry restricted items openly in public. At the very least, it will likely get them noticed."
+         ]
+      },
+      {
+         "name": "Sensor Ranges",
+         "page": 137,
+         "type": "environment",
+         "description": [
+            "Nearly every ship and vehicle has some sort of passive and active sensors, from the simple proximity sensors on a carrum to the massive sweep arrays aboard a dreadnought. For the most part, these sensors serve a narrative purpose, allowing characters to \"see\" in the depths of space out beyond range of their eyes. However, if the GM needs to determine an effective range for sensors, they can use the following guidelines:",
+            "Passive sensors can be used out to strategic range. They have no problem detecting a ship that is not making an effort to hide (such as a ship with its engines running, or one that has its own active sensors going). If, at the GM's discretion, another ship or other object is making some effort to go unnoticed (such as keeping its engines off or using sensor baffles), then the operator must make a {@skill Vigilance||crb} check with a difficulty set by the GM to detect the target.",
+            "Active sensors can be used out to long range. They always require a {@skill Perception||crb} check to use, with a difficulty set by the GM to detect the target depending on how well hidden it is."
          ]
       }
    ],
@@ -15134,6 +16604,136 @@
                   "Although their designs may appear low-tech, {@rule Yssaril Tribes|Yssaril} engineers develop some of the most feared weapons and covert equipment in the galaxy.",
                   "Embracing their ancient heritages, they rely on transmorphic materials and genetically engineered animal products to hide their advancements behind a facade of archaic technology reliance."
                ]
+            }
+         ]
+      },
+      {
+         "name": "Table 3-1: FTL Ranges",
+         "page": 135,
+         "columns": [
+            {
+               "header": "Range"
+            },
+            {
+               "header": "Examples",
+               "size": 5
+            }
+         ],
+         "rows": [
+            {
+               "range": "Short",
+               "examples": "A nearby star system only a few dozen lightyears away. Only able to travel for a day or less at FTL before needing to refuel."
+            },
+            {
+               "range": "Medium",
+               "examples": "Anywhere within the borders of most of the Great Civilizations; a few hundred light-years from a well-established spaceport. Able to travel for weeks at FTL without refueling."
+            },
+            {
+               "range": "Long",
+               "examples": "To {@rule Mecatol Rex} from the edge of the galaxy; thousands of light-years from home. Able to travel for months at FTL without refueling."
+            },
+            {
+               "range": "Extreme",
+               "examples": "From the edge of one spiral arm to another; tens of thousands of light-years or more. Able to travel for over a year at FTL without refueling."
+            }
+         ]
+      },
+      {
+         "name": "Table 3-1: FTL Speeds",
+         "page": 135,
+         "columns": [
+            {
+               "header": "Speed"
+            },
+            {
+               "header": "Examples",
+               "size": 5
+            }
+         ],
+         "rows": [
+            {
+               "speed": "Slow",
+               "examples": "Takes a week to get to a nearby star system, several weeks to cross a single civilizations' territory, months to reach {@rule Mecatol Rex}, and many years to cross the galaxy."
+            },
+            {
+               "speed": "Average",
+               "examples": "Takes a couple of days to reach a nearby star system, a week to go from one end of a single civilization's territory to the other, a month or less to reach {@rule Mecatol Rex}, and six months to a year to cross the galaxy."
+            },
+            {
+               "speed": "Fast",
+               "examples": "Takes less than a day to reach a nearby star system, a couple of days to cross a civilization's territory, a couple of weeks to reach {@rule Mecatol Rex}, and a couple of months to cross the galaxy."
+            },
+            {
+               "speed": "Very Fast",
+               "examples": "Takes a few hours to reach a nearby star system, no more than two days to cross a civilization's territory, a week or so to reach {@rule Mecatol Rex}, and a month or so to cross the galaxy."
+            }
+         ]
+      },
+      {
+         "name": "Table 3-2: Charting a Route Difficulty",
+         "page": 136,
+         "columns": [
+            {
+               "header": "Route"
+            },
+            {
+               "header": "Difficulty"
+            },
+            {
+               "header": "Examples",
+               "size": 2
+            }
+         ],
+         "rows": [
+            {
+               "route": "Safe",
+               "difficulty": "{@dice difficulty|2}",
+               "examples": "A common FTL trade route between two systems within short range of each other (see {@table 3-1: FTL Ranges})."
+            },
+            {
+               "route": "Risky",
+               "difficulty": "{@dice difficulty|3}",
+               "examples": "A destination that is within short distance, but with a badly mapped route that is infrequently traveled; a destination within medium or long range that is along a route on a common travel corridor (see {@table 3-1: FTL Ranges})."
+            },
+            {
+               "route": "Treacherous",
+               "difficulty": "{@dice difficulty|4}",
+               "examples": "Any route through uncharted space, or any route to a destination that is at extreme range (see {@table 3-1: FTL Ranges})."
+            }
+         ]
+      },
+      {
+         "name": "Table 3-3: Stellar Hazard Intensity",
+         "page": 137,
+         "columns": [
+            {
+               "header": "Rating"
+            },
+            {
+               "header": "Difficulty",
+               "size": 3
+            }
+         ],
+         "rows": [
+            {
+               "rating": 1,
+               "difficulty": "{@difficulty Easy}"
+            },
+            {
+               "rating": 2,
+               "difficulty": "{@difficulty Average}"
+            },
+            {
+               "rating": 3,
+               "difficulty": "{@difficulty Hard}"
+            },
+            {
+               "rating": 4,
+               "difficulty": "{@difficulty Daunting}"
+            },
+            {
+               "rating": 5,
+               "difficulty": "{@difficulty Formidable}"
             }
          ]
       }
@@ -17368,7 +18968,7 @@
                   {
                      "title": "{@vehicle interceptor starfighter (Mahact Dominus Strike Drone)|Mahact Dominus Strike Drone}",
                      "entries": [
-                        "Reduce defense to 0; reduce consumables to 2 hours; change price to \"not for sale;\" replace all weapons with disassembler burst cannon (Fire Arc Forward; {@skill Gunnery||crb}; Damage 2; Critical 1; Range [Medium]; {@quality Auto-fire||crb}, {@quality Vicious|Vicious 2|crb}); drone is operated remotely by a linked {@adversary cloned pilot brain network} (treat as a minion with a wound threshold of 4, a rating of 2 in all characteristics, and group skills in {@skill Piloting||crb} and {@skill Gunnery||crb})."
+                        "Reduce defense to 0; reduce consumables to 2 hours; change price to \"not for sale;\" replace all weapons with disassembler burst cannon (Fire Arc Forward; {@skill Gunnery||crb}; Damage 2; Critical 1; Range [Medium]; {@quality Auto-fire||crb}, {@quality Vicious|Vicious 2|crb}); drone is operated remotely by a linked {@adversary Mahact cloned pilot brain network} (treat as a minion with a wound threshold of 4, a rating of 2 in all characteristics, and group skills in {@skill Piloting||crb} and {@skill Gunnery||crb})."
                      ]
                   },
                   {
@@ -17496,7 +19096,7 @@
          "abilities": [
             {
                "name": "Remote Pilot",
-               "description": "Drone is operated remotely by a linked {@adversary cloned pilot brain network}."
+               "description": "Drone is operated remotely by a linked {@adversary Mahact cloned pilot brain network}."
             }
          ],
          "weapons": [
@@ -17532,7 +19132,7 @@
                   {
                      "title": "Mahact Dominus Strike Drone",
                      "entries": [
-                        "Reduce defense to 0; reduce consumables to 2 hours; change price to \"not for sale;\" replace all weapons with disassembler burst cannon (Fire Arc Forward; {@skill Gunnery||crb}; Damage 2; Critical 1; Range [Medium]; {@quality Auto-fire||crb}, {@quality Vicious|Vicious 2|crb}); drone is operated remotely by a linked {@adversary cloned pilot brain network} (treat as a minion with a wound threshold of 4, a rating of 2 in all characteristics, and group skills in {@skill Piloting||crb} and {@skill Gunnery||crb})."
+                        "Reduce defense to 0; reduce consumables to 2 hours; change price to \"not for sale;\" replace all weapons with disassembler burst cannon (Fire Arc Forward; {@skill Gunnery||crb}; Damage 2; Critical 1; Range [Medium]; {@quality Auto-fire||crb}, {@quality Vicious|Vicious 2|crb}); drone is operated remotely by a linked {@adversary Mahact cloned pilot brain network} (treat as a minion with a wound threshold of 4, a rating of 2 in all characteristics, and group skills in {@skill Piloting||crb} and {@skill Gunnery||crb})."
                      ]
                   }
                ]
@@ -21528,7 +23128,7 @@
                   {
                      "title": "{@vehicle cruiser (Nekro Hunter)|Nekro Hunter}",
                      "entries": [
-                        "Increase defense to 3; change complement to 25 {@adversary Nekro Pilot AI|Nekro AI programs}; increase passenger capacity to 100 {@adversary Nekro Attack Drone|assault mechanisms}; change price to \"not for sale\"; replace spinal capital-grade assault cannon with Valefar contagion launcher (Fire Arc All; {@skill Gunnery||crb}; Damage 2; Critical 5; Range [Medium]; {@quality Breach|Breach 4|crb}, {@quality Inaccurate|Inaccurate 1|crb}; may spend {@symbols aa} or {@symbols t} on a successful hit that deals damage to have one {@adversary Valefar assimilation swarm} adversary board the target vessel)."
+                        "Increase defense to 3; change complement to 25 {@adversary Nekro Pilot AI|Nekro AI programs}; increase passenger capacity to 100 {@adversary Nekro Attack Drone|assault mechanisms}; change price to \"not for sale\"; replace spinal capital-grade assault cannon with Valefar contagion launcher (Fire Arc All; {@skill Gunnery||crb}; Damage 2; Critical 5; Range [Medium]; {@quality Breach|Breach 4|crb}, {@quality Inaccurate|Inaccurate 1|crb}; may spend {@symbols aa} or {@symbols t} on a successful hit that deals damage to have one {@adversary Nekro Valefar assimilation swarm} adversary board the target vessel)."
                      ]
                   },
                   {
@@ -21599,7 +23199,7 @@
                      "source": "crb"
                   }
                ],
-               "details": "May spend {@symbols aa} or {@symbols t} on a successful hit that deals damage to have one {@adversary Valefar assimilation swarm} adversary board the target vessel."
+               "details": "May spend {@symbols aa} or {@symbols t} on a successful hit that deals damage to have one {@adversary Nekro Valefar assimilation swarm} adversary board the target vessel."
             },
             {
                "name": "2 port and 2 starboard capital-grade beam turrets",
@@ -21655,7 +23255,7 @@
                   {
                      "title": "Nekro Hunter",
                      "entries": [
-                        "Increase defense to 3; change complement to 25 {@adversary Nekro Pilot AI|Nekro AI programs}; increase passenger capacity to 100 assault mechanisms; change price to \"not for sale\"; replace spinal capital-grade assault cannon with Valefar contagion launcher (Fire Arc All; {@skill Gunnery||crb}; Damage 2; Critical 5; Range [Medium]; {@quality Breach|Breach 4|crb}, {@quality Inaccurate|Inaccurate 1|crb}; may spend {@symbols aa} or {@symbols t} on a successful hit that deals damage to have one {@adversary Valefar assimilation swarm} adversary board the target vessel)."
+                        "Increase defense to 3; change complement to 25 {@adversary Nekro Pilot AI|Nekro AI programs}; increase passenger capacity to 100 assault mechanisms; change price to \"not for sale\"; replace spinal capital-grade assault cannon with Valefar contagion launcher (Fire Arc All; {@skill Gunnery||crb}; Damage 2; Critical 5; Range [Medium]; {@quality Breach|Breach 4|crb}, {@quality Inaccurate|Inaccurate 1|crb}; may spend {@symbols aa} or {@symbols t} on a successful hit that deals damage to have one {@adversary Nekro Valefar assimilation swarm} adversary board the target vessel)."
                      ]
                   }
                ]
