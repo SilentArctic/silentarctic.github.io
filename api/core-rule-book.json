@@ -2947,7 +2947,7 @@
             {
                "name": "Inorganic",
                "description": [
-                  "Since bioroids are inorganic, they do not gain the benefits of healing wounds with painkillers or a Medicine check. Bioroids can heal wounds and strain naturally by resting, as their systems attempt self-repairs. Bioroids can also be \"healed\" by using the Mechanics skill instead of the Medicine skill, but otherwise following the guidelines detailed on page 116."
+                  "Since bioroids are inorganic, they do not gain the benefits of healing wounds with {@gear painkiller|painkillers} or a {@skill Medicine} check. Bioroids can heal wounds and strain naturally by resting, as their systems attempt self-repairs. Bioroids can also be \"healed\" by using the {@skill Mechanics} skill instead of the {@skill Medicine} skill, but otherwise following the guidelines detailed on page 116."
                ]
             }
          ],
@@ -3023,7 +3023,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "Dwarves begin with one rank in Resilience. You still cannot train their Resilience above rank 2 during character creation."
+               "Dwarves begin with one rank in {@skill Resilience}. You still cannot train their {@skill Resilience} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -3069,7 +3069,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "Elves begin with one rank in Perception. You still cannot train their Perception above rank 2 during character creation."
+               "Elves begin with one rank in {@skill Perception}. You still cannot train their {@skill Perception} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -3111,7 +3111,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "Mongrels begin with one rank in Discipline. You still can't train their Discipline above rank 2 during character creation."
+               "Mongrels begin with one rank in {@skill Discipline}. You still can't train their {@skill Discipline} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -3119,7 +3119,7 @@
             {
                "name": "The Beast Within",
                "description": [
-                  "Mongrels generally look just like any other human. However, when your character is incapacitated due to exceeding their strain threshold while in human form, they undergo the following change as an out-of-turn incidental. They heal all strain; increase their Brawn and Agility by one, to a maximum of 5; and reduce their Intellect and Willpower by one to a minimum of 1. They deal +1 damage when making unarmed attacks, and their unarmed attacks have a Crit rating of 3. In addition, their jaws elongate into muzzles, their hair thickens and they grow more all over their bodies, and their eyes become those of a hunting cat or wolf. Your GM should ensure that NPCs react appropriately to this (at the very least, upgrading the difficulty of all social skill checks twice). Your character reverts to human form after eight hours, or if they are incapacitated (by exceeding either their wound threshold or their strain threshold)."
+                  "Mongrels generally look just like any other human. However, when your character is incapacitated due to exceeding their strain threshold while in human form, they undergo the following change as an out-of-turn incidental. They heal all strain; increase their {@characteristic Brawn} and {@characteristic Agility} by one, to a maximum of 5; and reduce their {@characteristic Intellect} and {@characteristic Willpower} by one to a minimum of 1. They deal +1 damage when making unarmed attacks, and their unarmed attacks have a Crit rating of 3. In addition, their jaws elongate into muzzles, their hair thickens and they grow more all over their bodies, and their eyes become those of a hunting cat or wolf. Your GM should ensure that NPCs react appropriately to this (at the very least, upgrading the difficulty of all social skill checks twice). Your character reverts to human form after eight hours, or if they are incapacitated (by exceeding either their wound threshold or their strain threshold)."
                ]
             },
             {
@@ -3161,7 +3161,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "Orcs begin with one rank in Coercion. You still cannot train their Coercion above rank 2 during character creation."
+               "Orcs begin with one rank in {@skill Coercion}. You still cannot train their {@skill Coercion} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -3207,19 +3207,19 @@
             {
                "name": "Mind Reader",
                "description": [
-                  "As an action, a psionic may make an opposed Discipline versus Discipline check targeting one living creature within medium range. If the check succeeds, the psionic knows the target's current thoughts and emotional state. {@symbols aaa} or {@symbols t} may be spent to discover other thoughts or memories, at your GM's discretion."
+                  "As an action, a psionic may make an {@b opposed {@skill Discipline} versus {@skill Discipline} check} targeting one living creature within medium range. If the check succeeds, the psionic knows the target's current thoughts and emotional state. {@symbols aaa} or {@symbols t} may be spent to discover other thoughts or memories, at your GM's discretion."
                ]
             },
             {
                "name": "Mind Shaper",
                "description": [
-                  "As an action, a psionic may make an opposed Discipline versus Vigilance check targeting one living creature within medium range. If the check succeeds, the psionic may cause the target to adopt an emotional state of the psionic's choice for the next minute (or one round of structured time). {@symbols a} or {@symbols t} may be spent to increase the duration by one round (and may be spent multiple times). However, if the check fails or generates {@symbols hhh} or {@symbols d}, the target realizes their emotions are being manipulated."
+                  "As an action, a psionic may make an {@b opposed {@skill Discipline} versus {@skill Vigilance}} check targeting one living creature within medium range. If the check succeeds, the psionic may cause the target to adopt an emotional state of the psionic's choice for the next minute (or one round of structured time). {@symbols a} or {@symbols t} may be spent to increase the duration by one round (and may be spent multiple times). However, if the check fails or generates {@symbols hhh} or {@symbols d}, the target realizes their emotions are being manipulated."
                ]
             },
             {
                "name": "Mind Breaker",
                "description": [
-                  "As an action, a psionic may make an opposed Discipline versus Resilience check targeting one living creature within medium range. If the check succeeds, the psionic causes the target to suffer 1 strain, plus 1 additional strain per {@symbols ss} generated on the check. {@symbols aaa} or {@symbols t} may be spent to cause the target to suffer 1 wound as well."
+                  "As an action, a psionic may make an {@b opposed {@skill Discipline} versus {@skill Resilience}} check targeting one living creature within medium range. If the check succeeds, the psionic causes the target to suffer 1 strain, plus 1 additional strain per {@symbols ss} generated on the check. {@symbols aaa} or {@symbols t} may be spent to cause the target to suffer 1 wound as well."
                ]
             }
          ],
@@ -3253,7 +3253,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "Revenants begin with one rank in Coercion. You still can't train their Coercion above rank 2 during character creation."
+               "Revenants begin with one rank in {@skill Coercion}. You still can't train their {@skill Coercion} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -3261,7 +3261,7 @@
             {
                "name": "Reanimated",
                "description": [
-                  "As reanimated corpses, revenants have several quirks, some beneficial and some detrimental. Your character does not recover wounds through natural rest, but they add {@dice boost|2} to any Medicine checks to heal them (they don't flinch). Your character also cannot be affected by poisons (although they must be wary of insects and carrion feeders trying to make a meal from or to nest on their bodies). As with mongrels, your GM should ensure that NPCs react appropriately if they are aware of your character's condition (at the very least, upgrading the difficulty of your character's social skill checks twice). Also, perfume is a good idea. Lots of perfume."
+                  "As reanimated corpses, revenants have several quirks, some beneficial and some detrimental. Your character does not recover wounds through natural rest, but they add {@dice boost|2} to any {@skill Medicine} checks to heal them (they don't flinch). Your character also cannot be affected by poisons (although they must be wary of insects and carrion feeders trying to make a meal from or to nest on their bodies). As with {@archetype mongrel|mongrels}, your GM should ensure that NPCs react appropriately if they are aware of your character's condition (at the very least, upgrading the difficulty of your character's social skill checks twice). Also, perfume is a good idea. Lots of perfume."
                ]
             },
             {
@@ -3311,19 +3311,19 @@
             {
                "name": "Special Abilities",
                "description": [
-                  "Robots do not need to eat, sleep, or breathe, and are unaffected by toxins and poisons. If you are using the cybernetics rules from the science fiction setting (see page 177), robots do not reduce their strain threshold when they receive cybernetics (the cybernetics can represent upgraded mechanical components instead of true cybernetics)."
+                  "Robots do not need to eat, sleep, or breathe, and are unaffected by toxins and poisons. If you are using the cybernetics rules from the {@setting science fiction} setting (see page 177), robots do not reduce their strain threshold when they receive cybernetics (the cybernetics can represent upgraded mechanical components instead of true cybernetics)."
                ]
             },
             {
                "name": "Networked Intelligence",
                "description": [
-                  "A robot adds automatic {@symbols s} to its Intellect- and Willpower-based checks for each other friendly character of the same species within medium range—to a maximum of {@symbols sss}."
+                  "A robot adds automatic {@symbols s} to its {@characteristic Intellect}- and {@characteristic Willpower}-based checks for each other friendly character of the same species within medium range—to a maximum of {@symbols sss}."
                ]
             },
             {
                "name": "Inorganic",
                "description": [
-                  "Since robots are inorganic, they do not gain the benefits of recovering wounds with painkillers or a Medicine check. Robots can recover wounds and strain naturally by resting, as their systems attempt self-repairs. Robots can also be \"healed\" by using the Mechanics skill instead of the Medicine skill, but otherwise following the guidelines detailed on page 116. A robot also increases its soak by one."
+                  "Since robots are inorganic, they do not gain the benefits of recovering wounds with {@gear painkiller|painkillers} or a {@skill Medicine} check. Robots can recover wounds and strain naturally by resting, as their systems attempt self-repairs. Robots can also be \"healed\" by using the {@skill Mechanics} skill instead of the {@skill Medicine} skill, but otherwise following the guidelines detailed on page 116. A robot also increases its soak by one."
                ]
             }
          ],
@@ -3357,7 +3357,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "An aristocrat starts with one rank in Cool during character creation. They obtain this rank before spending experience points, and may not increase Cool above rank 2 during character creation."
+               "An aristocrat starts with one rank in {@skill Cool} during character creation. They obtain this rank before spending experience points, and may not increase {@skill Cool} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -3402,7 +3402,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "An intellectual starts with one rank in Knowledge during character creation. They obtain this rank before spending experience points, and may not increase Knowledge above rank 2 during character creation."
+               "An intellectual starts with one rank in {@skill Knowledge} during character creation. They obtain this rank before spending experience points, and may not increase {@skill Knowledge} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -3447,7 +3447,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "A laborer starts with one rank in Athletics during character creation. They obtain this rank before spending experience points, and may not increase Athletics above rank 2 during character creation."
+               "A laborer starts with one rank in {@skill Athletics} during character creation. They obtain this rank before spending experience points, and may not increase {@skill Athletics} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -3492,7 +3492,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "vanguard starts with one rank in Knowledge during character creation. You still can't train Knowledge above rank 2 during character creation."
+               "vanguard starts with one rank in {@skill Knowledge} during character creation. You still can't train {@skill Knowledge} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -3500,7 +3500,7 @@
             {
                "name": "Space Is Our Birthright",
                "description": [
-                  "A vanguard adds automatic {@symbols a} to the results of any Astrocartography or Knowledge checks they make."
+                  "A vanguard adds automatic {@symbols a} to the results of any {@skill Astrocartography} or {@skill Knowledge} checks they make."
                ]
             },
             {

@@ -8786,7 +8786,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "Broken Plains Orcs begin with one rank in Coercion. You still cannot train their Coercion above rank 2 during character creation."
+               "Broken Plains Orcs begin with one rank in {@skill Coercion||crb}. You still cannot train their {@skill Coercion||crb} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -8825,7 +8825,7 @@
             "ranksTotal": 2,
             "ranksEach": 1,
             "description": [
-               "Burrow Gnomes begin with one rank in Charm and one rank in Resilience. You still cannot train their Charm or Resilience above rank 2 during character creation."
+               "Burrow Gnomes begin with one rank in {@skill Charm||crb} and one rank in {@skill Resilience||crb}. You still cannot train their {@skill Charm||crb} or {@skill Resilience||crb} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -8868,7 +8868,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "Catfolk begin with one rank in Perception. You still cannot train their Perception above rank 2 during character creation."
+               "Catfolk begin with one rank in {@skill Perception||crb}. You still cannot train their {@skill Perception||crb} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -8912,7 +8912,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "Deep Elves begin with one rank in Discipline. You still cannot train their Discipline above rank 2 during character creation."
+               "Deep Elves begin with one rank in {@skill Discipline||crb}. You still cannot train their {@skill Discipline||crb} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -8920,7 +8920,7 @@
             {
                "name": "Ynfernael Lore",
                "description": [
-                  "Deep Elves gain Knowledge (Forbidden) as a career skill and begin with two ranks in Knowledge (Forbidden). You still cannot train their Knowledge (Forbidden) above rank 2 during character creation."
+                  "Deep Elves gain {@skill Knowledge (Forbidden)} as a career skill and begin with two ranks in {@skill Knowledge (Forbidden)}. You still cannot train their {@skill Knowledge (Forbidden)} above rank 2 during character creation."
                ]
             }
          ],
@@ -8952,7 +8952,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "Dunwarr Dwarves begin with one rank in Resilience. You still cannot train their Resilience above rank 2 during character creation."
+               "Dunwarr Dwarves begin with one rank in {@skill Resilience||crb}. You still cannot train their {@skill Resilience||crb} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -8998,7 +8998,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "Forge Dwarves begin with one rank in Negotiation. You still cannot train their Negotiation above rank 2 during character creation."
+               "Forge Dwarves begin with one rank in {@skill Negotiation||crb}. You still cannot train their {@skill Negotiation||crb} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -9042,7 +9042,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "Free Cities Elves begin with one rank in Streetwise. You still cannot train their Streetwise above rank 2 during character creation."
+               "Free Cities Elves begin with one rank in {@skill Streetwise||crb}. You still cannot train their {@skill Streetwise||crb} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -9079,7 +9079,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "Half-Catfolk begin with one rank in Cool. You still cannot train their Cool above rank 2 during character creation."
+               "Half-Catfolk begin with one rank in {@skill Cool||crb}. You still cannot train their {@skill Cool||crb} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -9087,7 +9087,7 @@
             {
                "name": "Catfolk Ancestry",
                "description": [
-                  "Half-Catfolk choose either the Claws or Fleet of Paw special ability from the Catflolk entry."
+                  "Half-Catfolk choose either the Claws or Fleet of Paw special ability from the {@archetype Catfolk} entry."
                ]
             }
          ],
@@ -9118,7 +9118,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "Highborn Elves begin with one rank in Negotiation. You still cannot train their Negotiation above rank 2 during character creation."
+               "Highborn Elves begin with one rank in {@skill Negotiation||crb}. You still cannot train their {@skill Negotiation||crb} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -9126,7 +9126,7 @@
             {
                "name": "Empyrean Magic",
                "description": [
-                  "Highborn Elves gain Divine as a career skill and begin with one rank in Divine. You still cannot train their Divine above rank 2 during character creation."
+                  "Highborn Elves gain {@skill Divine||crb} as a career skill and begin with one rank in {@skill Divine||crb}. You still cannot train their {@skill Divine||crb} above rank 2 during character creation."
                ]
             }
          ],
@@ -9193,7 +9193,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "Lowborn Elves begin with one rank in Survival. You still cannot train their Survival above rank 2 during character creation."
+               "Lowborn Elves begin with one rank in {@skill Survival||crb}. You still cannot train their {@skill Survival||crb} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -9232,7 +9232,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "Stone-Dweller Orcs begin with one rank in Cool. You still cannot train their Cool above rank 2 during character creation."
+               "Stone-Dweller Orcs begin with one rank in {@skill Cool||crb}. You still cannot train their {@skill Cool||crb} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -9270,7 +9270,7 @@
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "Sunderlands Orcs begin with one rank in Alchemy. You still cannot train their Alchemy above rank 2 during character creation."
+               "Sunderlands Orcs begin with one rank in {@skill Alchemy||crb}. You still cannot train their {@skill Alchemy||crb} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -9309,7 +9309,7 @@
             "ranksTotal": 2,
             "ranksEach": 1,
             "description": [
-               "Wanderer Gnomes begin with one rank in Charm and one rank in Stealth. You still cannot train their Charm or Stealth above rank 2 during character creation."
+               "Wanderer Gnomes begin with one rank in {@skill Charm||crb} and one rank in {@skill Stealth||crb}. You still cannot train their {@skill Charm||crb} or {@skill Stealth||crb} above rank 2 during character creation."
             ],
             "choice": false
          },
