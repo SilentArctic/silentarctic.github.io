@@ -215,6 +215,7 @@
       {
          "name": "Radiation",
          "page": 3,
+         "type": "environment",
          "description": [
             "The wasteland is still reeling from the effects of the world-encompassing nuclear war, even 200 years later. Atomic energy was everywhere; from power plants that lit up the city at night to fusion powered cars and airliners, even down to small fusion batteries that powered handheld devices. The radioactive by-products of the nuclear age litter the Wasteland. Vast sections of the country are still deadly radioactive hot-zones. Vehicles once powered by the atom lie dormant and rusting, causing their fusion powered engines to leak and sometimes explode in mini-atomic blasts. Vast quantities of radioactive waste were improperly disposed of, allowing toxic sludge to seep into nearby ground-water. Lakes, streams, and even the oceans have a small amount of radiation in them; more so if they contain radioactive waste or a submerged and rusting nuclear-powered car. In all cases, anyone living in the Wasteland must constantly contend with the threat of irradiation.",
             {
@@ -259,6 +260,7 @@
       {
          "name": "Power Armor",
          "page": 15,
+         "type": "gear",
          "description": [
             "Representing the apex of mobile military technology, Power Armor can turn a single soldier into a nigh-unstoppable juggernaut. A Power Armor wearing soldier can wield powerful weapons that previously required a fixed position or a vehicle mount to utilize. Wearers are resistant to damage and radiation, can move with swift speed, lift heavy objects, and punch with great force.",
             "Various models of Power Armor have survived into today's wasteland, even some that were used in commercial advertizing; their armored forms covered in Nuka-Cola logos or frosted Sugar Bombs emblems.",
@@ -427,6 +429,7 @@
       {
          "name": "Chems",
          "page": 19,
+         "type": "gear",
          "description": [
             "A slang term for \"drugs\", chem use is prevalent throughout the wasteland for a variety of reasons. Some chems increase the combat effectiveness of the user, a trick that can sometimes mean the difference between life or death. Others use chems for the traditional reasons some turn to drugs, as a way of coping with the harsh reality of wasteland life.",
             "Most chems are powerful narcotics, and can cause the user to become addicted if they use the drugs too often. They carry a host of side-effects, from physical addiction to loss of cognitive function and even overdose. Used sparingly, chems can turn the tide of an encounter and help save the day. Used frequently, chems can lead to addiction, loss of potential, and even death.",
