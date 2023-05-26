@@ -515,6 +515,7 @@
       {
          "name": "Ammunition",
          "page": 9,
+         "type": "gear",
          "description": [
             "In Fallout, if a {@skill Ranged||crb} combat check generates {@symbols hhh or d}, that result may be spent to cause the weapon to run out of ammo."
          ]
@@ -522,6 +523,7 @@
       {
          "name": "Glowing",
          "page": 23,
+         "type": "status",
          "description": [
             "Many creatures in the wasteland have absorbed so much radiation that they actually glow, and exude deadly amounts of radiation around themselves. These dangerous mutations can be identified by their pale hide, sickly green glow, and hideous growths across their body.",
             "Any living creature (except humans and those already immune to radiation) can be made into a \"Glowing\" version by adding the following traits; the creature gains Immunity to {@rule Radiation||Fallout} and increases their Strain and Wound Thresholds by 2. Their attacks gain a {@quality Rad||Fallout} rating equal to their {@characteristic Willpower||crb}.",
