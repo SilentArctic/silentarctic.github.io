@@ -7,7 +7,7 @@
          "abbreviation": "BOOST:1",
          "color": "#30F030",
          "url": "https://www.drivethrurpg.com/product/314884/BOOST-1-Mutation/",
-         "version": "2021.7.20",
+         "version": "2023.5.18",
          "authors": [
             "Genesys RPG Community",
             "Flame112",
@@ -85,23 +85,41 @@
          "weapons": [
             {
                "name": "Lesser Claw",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Ensnare 1",
-                  "Vicious 2"
+                  {
+                     "name": "Ensnare",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Coral Clawncher",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
-                  "Burn 2"
+                  {
+                     "name": "Burn",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -111,7 +129,7 @@
          ]
       },
       {
-         "name": "Killer Vegtables",
+         "name": "Killer Vegetables",
          "page": 4,
          "type": "rival",
          "characteristics": {
@@ -170,23 +188,40 @@
          "weapons": [
             {
                "name": "Slam",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 5,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "knockdown"
+                  {
+                     "name": "knockdown",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Horrible Teeth",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 2",
-                  "Vicious 3"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -264,13 +299,24 @@
          "weapons": [
             {
                "name": "{@gear the claw}",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Ensnare 1",
-                  "Vicious 4"
+                  {
+                     "name": "Ensnare",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -349,7 +395,7 @@
          },
          "damage": "4",
          "critical": 4,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 5,
          "price": 2000,
          "rarity": 8,
@@ -390,7 +436,7 @@
          },
          "damage": "+3",
          "critical": 2,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 0,
          "price": "n/a",
          "rarity": 9,

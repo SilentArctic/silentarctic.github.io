@@ -7,7 +7,7 @@
          "abbreviation": "Fallout",
          "color": "#0e4e0b",
          "url": "https://www.dropbox.com/sh/sy07kxd2n3haz1d/AABkZzrdf0zFleUrUsAKmwbca?dl=0",
-         "version": "2022.11.12",
+         "version": "2023.5.18",
          "authors": [
             "Phil \"DarthGM\" Maiewski"
          ],
@@ -215,6 +215,7 @@
       {
          "name": "Radiation",
          "page": 3,
+         "type": "environment",
          "description": [
             "The wasteland is still reeling from the effects of the world-encompassing nuclear war, even 200 years later. Atomic energy was everywhere; from power plants that lit up the city at night to fusion powered cars and airliners, even down to small fusion batteries that powered handheld devices. The radioactive by-products of the nuclear age litter the Wasteland. Vast sections of the country are still deadly radioactive hot-zones. Vehicles once powered by the atom lie dormant and rusting, causing their fusion powered engines to leak and sometimes explode in mini-atomic blasts. Vast quantities of radioactive waste were improperly disposed of, allowing toxic sludge to seep into nearby ground-water. Lakes, streams, and even the oceans have a small amount of radiation in them; more so if they contain radioactive waste or a submerged and rusting nuclear-powered car. In all cases, anyone living in the Wasteland must constantly contend with the threat of irradiation.",
             {
@@ -259,6 +260,7 @@
       {
          "name": "Power Armor",
          "page": 15,
+         "type": "gear",
          "description": [
             "Representing the apex of mobile military technology, Power Armor can turn a single soldier into a nigh-unstoppable juggernaut. A Power Armor wearing soldier can wield powerful weapons that previously required a fixed position or a vehicle mount to utilize. Wearers are resistant to damage and radiation, can move with swift speed, lift heavy objects, and punch with great force.",
             "Various models of Power Armor have survived into today's wasteland, even some that were used in commercial advertizing; their armored forms covered in Nuka-Cola logos or frosted Sugar Bombs emblems.",
@@ -427,6 +429,7 @@
       {
          "name": "Chems",
          "page": 19,
+         "type": "gear",
          "description": [
             "A slang term for \"drugs\", chem use is prevalent throughout the wasteland for a variety of reasons. Some chems increase the combat effectiveness of the user, a trick that can sometimes mean the difference between life or death. Others use chems for the traditional reasons some turn to drugs, as a way of coping with the harsh reality of wasteland life.",
             "Most chems are powerful narcotics, and can cause the user to become addicted if they use the drugs too often. They carry a host of side-effects, from physical addiction to loss of cognitive function and even overdose. Used sparingly, chems can turn the tide of an encounter and help save the day. Used frequently, chems can lead to addiction, loss of potential, and even death.",
@@ -512,6 +515,7 @@
       {
          "name": "Ammunition",
          "page": 9,
+         "type": "gear",
          "description": [
             "In Fallout, if a {@skill Ranged||crb} combat check generates {@symbols hhh or d}, that result may be spent to cause the weapon to run out of ammo."
          ]
@@ -519,6 +523,7 @@
       {
          "name": "Glowing",
          "page": 23,
+         "type": "status",
          "description": [
             "Many creatures in the wasteland have absorbed so much radiation that they actually glow, and exude deadly amounts of radiation around themselves. These dangerous mutations can be identified by their pale hide, sickly green glow, and hideous growths across their body.",
             "Any living creature (except humans and those already immune to radiation) can be made into a \"Glowing\" version by adding the following traits; the creature gains Immunity to {@rule Radiation||Fallout} and increases their Strain and Wound Thresholds by 2. Their attacks gain a {@quality Rad||Fallout} rating equal to their {@characteristic Willpower||crb}.",
@@ -561,7 +566,7 @@
          },
          "damage": "5",
          "critical": 4,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 1,
          "hardPoints": 3,
          "price": 75,
@@ -593,7 +598,7 @@
          },
          "damage": "5",
          "critical": 4,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 2,
          "hardPoints": 4,
          "price": 225,
@@ -629,7 +634,7 @@
          },
          "damage": "7",
          "critical": 4,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 3,
          "hardPoints": 5,
          "price": 325,
@@ -661,7 +666,7 @@
          },
          "damage": "8",
          "critical": 3,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 4,
          "hardPoints": 2,
          "price": 1000,
@@ -693,7 +698,7 @@
          },
          "damage": "12",
          "critical": 2,
-         "range": "extreme",
+         "range": "Extreme",
          "encumbrance": 5,
          "hardPoints": 3,
          "price": 1875,
@@ -735,7 +740,7 @@
          },
          "damage": "10",
          "critical": 4,
-         "range": "extreme",
+         "range": "Extreme",
          "encumbrance": 6,
          "hardPoints": 2,
          "price": 1375,
@@ -776,7 +781,7 @@
          },
          "damage": "4",
          "critical": 0,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 2,
          "hardPoints": 2,
          "price": 600,
@@ -808,7 +813,7 @@
          },
          "damage": "6",
          "critical": 3,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 2,
          "hardPoints": 2,
          "price": 550,
@@ -840,7 +845,7 @@
          },
          "damage": "10",
          "critical": 2,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 2,
          "hardPoints": 2,
          "price": 1325,
@@ -877,7 +882,7 @@
          },
          "damage": "8",
          "critical": 3,
-         "range": "long",
+         "range": "Long",
          "encumbrance": 4,
          "hardPoints": 3,
          "price": 1000,
@@ -909,7 +914,7 @@
          },
          "damage": "7",
          "critical": 3,
-         "range": "long",
+         "range": "Long",
          "encumbrance": 5,
          "hardPoints": 4,
          "price": 650,
@@ -941,7 +946,7 @@
          },
          "damage": "10",
          "critical": 2,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 4,
          "hardPoints": 3,
          "price": 1625,
@@ -978,7 +983,7 @@
          },
          "damage": "12",
          "critical": 3,
-         "range": "extreme",
+         "range": "Extreme",
          "encumbrance": 6,
          "hardPoints": 3,
          "price": 1825,
@@ -1024,7 +1029,7 @@
          },
          "damage": "6",
          "critical": 3,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 1,
          "hardPoints": 0,
          "price": 100,
@@ -1070,7 +1075,7 @@
          },
          "damage": "8",
          "critical": 4,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 1,
          "hardPoints": 0,
          "price": 150,
@@ -1107,7 +1112,7 @@
          },
          "damage": "15",
          "critical": 3,
-         "range": "extreme",
+         "range": "Extreme",
          "encumbrance": 5,
          "hardPoints": 2,
          "price": 1050,
@@ -1154,7 +1159,7 @@
          },
          "damage": "25",
          "critical": 2,
-         "range": "long",
+         "range": "Long",
          "encumbrance": 6,
          "hardPoints": 2,
          "price": 2775,
@@ -1211,7 +1216,7 @@
          },
          "damage": "+1",
          "critical": 4,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 1,
          "hardPoints": 1,
          "price": 50,
@@ -1242,7 +1247,7 @@
          },
          "damage": "+3",
          "critical": 3,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 3,
          "hardPoints": 1,
          "price": 450,
@@ -1278,7 +1283,7 @@
          },
          "damage": "+2",
          "critical": 4,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 2,
          "hardPoints": 1,
          "price": 75,
@@ -1302,7 +1307,7 @@
          },
          "damage": "+2",
          "critical": 5,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 2,
          "hardPoints": 1,
          "price": 100,
@@ -1333,7 +1338,7 @@
          },
          "damage": "+3",
          "critical": 2,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 2,
          "hardPoints": 2,
          "price": 400,
@@ -1370,7 +1375,7 @@
          },
          "damage": "+4",
          "critical": 4,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 6,
          "hardPoints": 2,
          "price": 225,
@@ -1407,7 +1412,7 @@
          },
          "damage": "5",
          "critical": 2,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 1,
          "hardPoints": 2,
          "price": 700,
@@ -1443,7 +1448,7 @@
          },
          "damage": "6",
          "critical": 2,
-         "range": "long",
+         "range": "Long",
          "encumbrance": 3,
          "hardPoints": 2,
          "price": 1150,
@@ -1704,7 +1709,7 @@
          "description": [
             "The Pip-Boy is the ultimate personal computing device available in either the pre-war United States or the postwar Wasteland. Able to assist the wearer with a variety of tasks, the Pip-Boy is a useful electronic tool. It's interface cable can connect to a variety of computers and devices, including the access panels to the main door of any surviving Vaults. Pip-Boys also store a significant amount of data, from topographical maps to recorded transmissions and journal entries. It can also pick up radio signals and play holotapes (including hologames).",
             "A user can turn up the Pip-Boy's brightness, causing the screen to function as an ad-hoc flashlight. Pip-Boys also have programs that help the wearers analyze opponents and assist in targeting weak spots on their bodies.",
-            "A turned-up Pip-Boy provides light, and removes {@dice k|2} added to checks due to darkness. (If it becomes important to determine how far the light reaches, a Pip-Boy provides light out to Short range.) When a character using a Pip-Boy takes the {@rule maneuvers (brief)|Aim|crb} maneuver to target a specific location, they remove {@dice k} from the subsequent combat check."
+            "A turned-up Pip-Boy provides light, and removes {@dice k|2} added to checks due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness|crb}. (If it becomes important to determine how far the light reaches, a Pip-Boy provides light out to Short range.) When a character using a Pip-Boy takes the {@rule maneuvers (brief)|Aim|crb} maneuver to target a specific location, they remove {@dice k} from the subsequent combat check."
          ],
          "encumbrance": 1,
          "price": 1000,
@@ -2279,7 +2284,7 @@
                "type": "list-no-bullet",
                "items": [
                   "{@b Use With:} This attachment can be added to any {@skill Ranged (Light)||crb} or {@skill Ranged (Heavy)||crb} weapon.",
-                  "{@b Modifiers:} Reduce the penalty to {@skill Ranged||crb} combat checks from darkness or concealment by {@dice k|2}.",
+                  "{@b Modifiers:} Reduce the penalty to {@skill Ranged||crb} combat checks from {@rule concealment (darkness, smoke, and intervening terrain)|darkness or concealment|crb} by {@dice k|2}.",
                   "{@b Hard Points Required:} 1"
                ]
             }
@@ -3204,25 +3209,51 @@
          "weapons": [
             {
                "name": "Bite",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Ensnare 1",
-                  "Pierce 2",
-                  "Vicious 1"
+                  {
+                     "name": "Ensnare",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 3",
-                  "Vicious 2"
+                  {
+                     "name": "Pierce",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3277,10 +3308,13 @@
          "weapons": [
             {
                "name": "Claws and Teeth",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": []
             }
          ],
@@ -3350,12 +3384,19 @@
          "weapons": [
             {
                "name": "Claws and Teeth",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 1"
+                  {
+                     "name": "Pierce",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3426,12 +3467,19 @@
          "weapons": [
             {
                "name": "Claws and Teeth",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 1"
+                  {
+                     "name": "Pierce",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3508,12 +3556,19 @@
          "weapons": [
             {
                "name": "Pincers",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 2"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3566,10 +3621,13 @@
          "weapons": [
             {
                "name": "Bite",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": []
             }
          ],
@@ -3636,13 +3694,23 @@
          "weapons": [
             {
                "name": "Bite",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 2",
-                  "Sunder"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Sunder",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3726,23 +3794,41 @@
          "weapons": [
             {
                "name": "Claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 1"
+                  {
+                     "name": "Pierce",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Poison Stinger",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 2",
-                  "Prepare 1"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Prepare",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3804,20 +3890,30 @@
          "weapons": [
             {
                "name": "Pool Cue",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": []
             },
             {
                "name": "Pipe Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 4,
-               "range": "short",
+               "range": "Short",
                "qualities": [
-                  "Inaccurate 1"
+                  {
+                     "name": "Inaccurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3904,21 +4000,34 @@
          "weapons": [
             {
                "name": "Knife",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": []
             },
             {
                "name": "Pipe Submachine Gun",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 4,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
-                  "Auto-Fire",
-                  "Inaccurate 1"
+                  {
+                     "name": "Auto-Fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Inaccurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3996,22 +4105,36 @@
          "weapons": [
             {
                "name": "Integrated Laser",
-               "skill": "Ranged (light)",
+               "skill": {
+                  "name": "Ranged (light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
-                  "Accurate 1"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Pincer Hands",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 1"
+                  {
+                     "name": "Pierce",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4085,34 +4208,63 @@
          "weapons": [
             {
                "name": "Pincer Claw",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 3,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 1"
+                  {
+                     "name": "Pierce",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Buzz-Saw",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 2",
-                  "Vicious 1"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Internal Flame Thrower",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 2,
-               "range": "short",
+               "range": "Short",
                "qualities": [
-                  "Burn 3",
-                  "Blast 6"
+                  {
+                     "name": "Burn",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Blast",
+                     "ranks": 6,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4188,33 +4340,57 @@
          "weapons": [
             {
                "name": "Minigun",
-               "skill": "Gunnery",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 4,
-               "range": "extreme",
+               "range": "Extreme",
                "qualities": [
-                  "Auto-Fire Only",
-                  "Prepare 1"
-               ]
+                  {
+                     "name": "Auto-Fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Prepare",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ],
+               "details": "This weapon can only be fired with the {@quality Auto-fire||crb} quality activated."
             },
             {
                "name": "Auto-Laser",
-               "skill": "Gunnery",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
-               "range": "long",
+               "range": "Long",
                "qualities": [
-                  "Auto-Fire"
+                  {
+                     "name": "Auto-Fire",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Bomblet Launcher",
-               "skill": "Gunnery",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 4,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
-                  "Blast 6"
+                  {
+                     "name": "Blast",
+                     "ranks": 6,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4294,12 +4470,19 @@
          "weapons": [
             {
                "name": "Pipe Rifle",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 4,
-               "range": "long",
+               "range": "Long",
                "qualities": [
-                  "Inaccurate 1"
+                  {
+                     "name": "Inaccurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4381,23 +4564,41 @@
          "weapons": [
             {
                "name": "Hunting Rifle",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
-               "range": "long",
+               "range": "Long",
                "qualities": [
-                  "Accurate 1",
-                  "Limited Ammo 2"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Nail bat",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 2"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4494,23 +4695,40 @@
          "weapons": [
             {
                "name": "Assault Rifle",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
-               "range": "long",
+               "range": "Long",
                "qualities": [
-                  "Auto-Fire"
+                  {
+                     "name": "Auto-Fire",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Bumber Sword",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 9,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Cumbersome 5",
-                  "Vicious 1"
+                  {
+                     "name": "Cumbersome",
+                     "ranks": 5,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4611,24 +4829,46 @@
          "weapons": [
             {
                "name": "Hydrant Bat",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Cumbersome 6",
-                  "Disorient 2"
+                  {
+                     "name": "Cumbersome",
+                     "ranks": 6,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Disorient",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Boulder",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 4,
-               "range": "short",
+               "range": "Short",
                "qualities": [
-                  "Concussive 1",
-                  "Cumbersome 6"
+                  {
+                     "name": "Concussive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Cumbersome",
+                     "ranks": 6,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4753,22 +4993,38 @@
          "weapons": [
             {
                "name": "Modified Institute Rifle",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 2,
-               "range": "long",
+               "range": "Long",
                "qualities": [
-                  "Accurate 1",
-                  "Auto-Fire",
-                  "Superior"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Auto-Fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Superior",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Security Baton",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": []
             }
          ],
@@ -4866,21 +5122,34 @@
          "weapons": [
             {
                "name": "Institute Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 2,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
-                  "Accurate 1",
-                  "Superior"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Superior",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Security Baton",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": []
             }
          ],
@@ -4977,21 +5246,34 @@
          "weapons": [
             {
                "name": "Institute Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 2,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
-                  "Accurate 1",
-                  "Superior"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Superior",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Security Baton",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": []
             }
          ],
@@ -5092,12 +5374,19 @@
          "weapons": [
             {
                "name": "Pipe Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 4,
-               "range": "short",
+               "range": "Short",
                "qualities": [
-                  "Inaccurate 1"
+                  {
+                     "name": "Inaccurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],

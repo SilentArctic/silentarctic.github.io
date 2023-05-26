@@ -14,7 +14,7 @@
             "Craftidore"
          ],
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/expanded-players-guide/",
-         "version": "2022.11.12",
+         "version": "2023.5.18",
          "releaseDate": "20 September 2019"
       },
       "filters": {
@@ -95,12 +95,19 @@
          "weapons": [
             {
                "name": "Gorgon blade",
-               "skill": "Melee (light)",
+               "skill": {
+                  "name": "Melee (light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Vicious 2"
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -212,13 +219,23 @@
          "weapons": [
             {
                "name": "Lightning and flame",
-               "skill": "Ranged",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 3,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
-                  "Auto-fire",
-                  "Burn 4"
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Burn",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -387,23 +404,39 @@
          "weapons": [
             {
                "name": "Bloody horns",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Concussive 1",
-                  "Knockdown"
+                  {
+                     "name": "Concussive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Vicious axe",
-               "skill": "Melee (Heavy)",
+               "skill": {
+                  "name": "Melee (Heavy)",
+                  "source": "crb"
+               },
                "damage": 9,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Vicious 3"
+                  {
+                     "name": "Vicious 3",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -480,13 +513,23 @@
          "weapons": [
             {
                "name": "Vicious claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 3",
-                  "Vicious 3"
+                  {
+                     "name": "Pierce",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious 3",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -567,12 +610,19 @@
          "weapons": [
             {
                "name": "Claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 1"
+                  {
+                     "name": "Pierce",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -637,23 +687,41 @@
          "weapons": [
             {
                "name": "Pitchfork",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 2"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Thrown torch",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 3,
                "critical": 3,
-               "range": "short",
+               "range": "Short",
                "qualities": [
-                  "Burn 3",
-                  "Limited Ammo 1"
+                  {
+                     "name": "Burn",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -740,13 +808,23 @@
          "weapons": [
             {
                "name": "Huge fists",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Knockdown",
-                  "Vicious 2"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -875,22 +953,35 @@
          "weapons": [
             {
                "name": "Pistol",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 4,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
-                  "Accurate 1"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Monstrous claws and fangs",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Knockdown"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1007,12 +1098,19 @@
          "weapons": [
             {
                "name": "Scalpels",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 3,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 3"
+                  {
+                     "name": "Pierce",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1121,14 +1219,28 @@
          "weapons": [
             {
                "name": "Grasping hands",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Concussive 1",
-                  "Ensnare 1",
-                  "Knockdown"
+                  {
+                     "name": "Concussive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Ensnare",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1261,25 +1373,49 @@
          "weapons": [
             {
                "name": "Fangs",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Ensnare 1",
-                  "Pierce 2",
-                  "Vicious 2"
+                  {
+                     "name": "Ensnare",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Knockdown",
-                  "Vicious 3"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious 3",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1353,23 +1489,40 @@
          "weapons": [
             {
                "name": "Heavy blade",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Zipgun",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 4,
-               "range": "short",
+               "range": "Short",
                "qualities": [
-                  "Inferior",
-                  "Limited Ammo 1"
+                  {
+                     "name": "Inferior",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1463,14 +1616,28 @@
          "weapons": [
             {
                "name": "Old shotgun",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
-               "range": "short",
+               "range": "Short",
                "qualities": [
-                  "Blast 4",
-                  "Knockdown",
-                  "Vicious 2"
+                  {
+                     "name": "Blast",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1548,12 +1715,19 @@
          "weapons": [
             {
                "name": "Filthy claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Vicious 2"
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1654,25 +1828,50 @@
          "weapons": [
             {
                "name": "Huge crushing jaws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Ensnare 2",
-                  "Vicious 2"
+                  {
+                     "name": "Ensnare",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Acid blast",
-               "skill": "Ranged (Heavy)",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 2,
-               "range": "short",
+               "range": "Short",
                "qualities": [
-                  "Burn 2",
-                  "Pierce 4",
-                  "Sunder"
+                  {
+                     "name": "Burn",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Sunder",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1771,23 +1970,40 @@
          "weapons": [
             {
                "name": "Heavy revolver",
-               "skill": "Ranged (Light)",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
-               "range": "medium",
+               "range": "Medium",
                "qualities": [
-                  "Accurate 1",
-                  "Limited Ammo 5"
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 5,
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Aluminum bat wrapped in barbed wire",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Vicious 3"
+                  {
+                     "name": "Vicious 3",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1875,24 +2091,45 @@
          "weapons": [
             {
                "name": "Claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 7,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Concussive 1",
-                  "Knockdown"
+                  {
+                     "name": "Concussive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Bite",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Ensnare 1",
-                  "Pierce 3"
+                  {
+                     "name": "Ensnare",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -1984,12 +2221,18 @@
          "weapons": [
             {
                "name": "Claws and fangs",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 6,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Vicious 3"
+                  {
+                     "name": "Vicious 3",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2063,13 +2306,24 @@
          "weapons": [
             {
                "name": "Horns",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 2",
-                  "Vicious 4"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2156,12 +2410,18 @@
          "weapons": [
             {
                "name": "Bite",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Knockdown"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2244,12 +2504,18 @@
          "weapons": [
             {
                "name": "Tusks and trampling feet",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Knockdown"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2321,12 +2587,19 @@
          "weapons": [
             {
                "name": "Claws and beak",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 3,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2384,13 +2657,23 @@
          "weapons": [
             {
                "name": "Hooves",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 4,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Knockdown",
-                  "Stun 3"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2473,24 +2756,44 @@
          "weapons": [
             {
                "name": "Multiple thrashing tentacles",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 5,
-               "range": "short",
+               "range": "Short",
                "qualities": [
-                  "Ensnare 3",
-                  "Knockdown"
+                  {
+                     "name": "Ensnare",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             },
             {
                "name": "Piercing beak",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 15,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Breach 1",
-                  "Vicious 3"
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious 3",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2569,13 +2872,24 @@
          "weapons": [
             {
                "name": "Powerful jaws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 2,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Ensnare 1",
-                  "Vicious 4"
+                  {
+                     "name": "Ensnare",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2650,12 +2964,19 @@
          "weapons": [
             {
                "name": "Fangs",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 2,
                "critical": 5,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Pierce 2"
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -2726,13 +3047,23 @@
          "weapons": [
             {
                "name": "Bite",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 5,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Knockdown",
-                  "Vicious 1"
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3123,13 +3454,23 @@
          "weapons": [
             {
                "name": "Fists",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 3,
                "critical": 5,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Disorient 1",
-                  "Knockdown"
+                  {
+                     "name": "Disorient",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -3621,13 +3962,23 @@
          "weapons": [
             {
                "name": "Fists",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 3,
                "critical": 5,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Disorient 2",
-                  "Knockdown"
+                  {
+                     "name": "Disorient",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4371,12 +4722,19 @@
          "weapons": [
             {
                "name": "Hatchet or similar tool",
-               "skill": "Melee (light)",
+               "skill": {
+                  "name": "Melee (light)",
+                  "source": "crb"
+               },
                "damage": 4,
                "critical": 3,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Vicious 1"
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4446,13 +4804,23 @@
          "weapons": [
             {
                "name": "Fists",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 3,
                "critical": 5,
-               "range": "engaged",
+               "range": "Engaged",
                "qualities": [
-                  "Disorient 1",
-                  "Knockdown"
+                  {
+                     "name": "Disorient",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
                ]
             }
          ],
@@ -4960,7 +5328,7 @@
          },
          "damage": "+1",
          "critical": 4,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 2,
          "price": "priceless",
          "rarity": 10,
@@ -5005,7 +5373,7 @@
          },
          "damage": "10",
          "critical": 2,
-         "range": "extreme",
+         "range": "Extreme",
          "encumbrance": 4,
          "price": "priceless",
          "rarity": 10,
@@ -5040,7 +5408,7 @@
          },
          "damage": "+5",
          "critical": 2,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 2,
          "price": 0,
          "rarity": 10,
@@ -5080,7 +5448,7 @@
          },
          "damage": "+2",
          "critical": 1,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 1,
          "price": "priceless",
          "rarity": 9,
@@ -5120,7 +5488,7 @@
          },
          "damage": "+8",
          "critical": 4,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 10,
          "price": "priceless",
          "rarity": 10,
@@ -5165,7 +5533,7 @@
          },
          "damage": "10",
          "critical": 4,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 10,
          "price": "priceless",
          "rarity": 10,
@@ -5219,7 +5587,7 @@
          },
          "damage": "+6",
          "critical": 4,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 0,
          "price": "priceless",
          "rarity": 10,
@@ -5267,7 +5635,7 @@
          },
          "damage": "+2",
          "critical": 2,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 2,
          "price": "priceless",
          "rarity": 10,
@@ -5310,7 +5678,7 @@
          },
          "damage": "+2",
          "critical": 2,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 2,
          "price": "priceless",
          "rarity": 7,
@@ -5475,7 +5843,7 @@
          },
          "damage": "+3",
          "critical": 3,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 1,
          "price": 90,
          "rarity": 2,
@@ -5505,7 +5873,7 @@
          },
          "damage": "7",
          "critical": 2,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 3,
          "price": 600,
          "rarity": 2,
@@ -5546,7 +5914,7 @@
          },
          "damage": "+1",
          "critical": 2,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 1,
          "price": 90,
          "rarity": 2,
@@ -5576,7 +5944,7 @@
          },
          "damage": "8",
          "critical": 3,
-         "range": "long",
+         "range": "Long",
          "encumbrance": 3,
          "price": 300,
          "rarity": 3,
@@ -5612,7 +5980,7 @@
          },
          "damage": "6",
          "critical": 2,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 1,
          "price": 50,
          "rarity": 6,
@@ -5657,7 +6025,7 @@
          },
          "damage": "6",
          "critical": 4,
-         "range": "medium",
+         "range": "Medium",
          "encumbrance": 2,
          "price": 350,
          "rarity": 2,
@@ -5687,7 +6055,7 @@
          },
          "damage": "+1",
          "critical": 5,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 1,
          "price": 5,
          "rarity": 0,
@@ -5718,7 +6086,7 @@
          },
          "damage": "0",
          "critical": 0,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 1,
          "price": 800,
          "rarity": 4,
@@ -5819,7 +6187,7 @@
          },
          "damage": "+3",
          "critical": 2,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 2,
          "price": 150,
          "rarity": 3,
@@ -5854,7 +6222,7 @@
          },
          "damage": "+3",
          "critical": 3,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 2,
          "price": 100,
          "rarity": 2,
@@ -5885,7 +6253,7 @@
          },
          "damage": "12",
          "critical": 3,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 2,
          "price": 200,
          "rarity": 4,
@@ -5930,7 +6298,7 @@
          },
          "damage": "+1",
          "critical": 4,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 1,
          "price": 50,
          "rarity": 3,
@@ -5960,7 +6328,7 @@
          },
          "damage": "8",
          "critical": 3,
-         "range": "engaged",
+         "range": "Engaged",
          "encumbrance": 3,
          "price": 250,
          "rarity": 5,
@@ -6005,7 +6373,7 @@
          },
          "damage": "8",
          "critical": 3,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 3,
          "price": 250,
          "rarity": 5,
@@ -6045,7 +6413,7 @@
          },
          "damage": "5",
          "critical": 4,
-         "range": "short",
+         "range": "Short",
          "encumbrance": 1,
          "price": 20,
          "rarity": 2,
@@ -6277,10 +6645,19 @@
    ],
    "sidebar": [
       {
+         "name": "Adjusted Costs",
+         "page": 72,
+         "type": "vehicle",
+         "description": [
+            "Some of these vehicles' prices do not match the actual costs of their real-world equivalents. This is because our pricing system evaluates vehicles across different historical eras with a single metric. However, other prices exceed what they should be based on the price-calculation system. In some cases, we have adjusted prices to account for intangibles such as modern computers or interstellar drives."
+         ]
+      },
+      {
          "name": "Magic Knowledge Skill",
          "page": 99,
+         "type": "magic",
          "description": [
-            "In {@title Genesys}, we assume that your setting may have its own set of expanded knowledge skills (see page 67 of the {@title Genesys} Core Rulebook for more on how Knowledge can be expanded into multiple skills). However, this raises the question of which knowledge skill should be used when casting spells?",
+            "In {@title Genesys}, we assume that your setting may have its own set of expanded knowledge skills (see page 67 of the {@title Genesys} Core Rulebook for more on how {@skill Knowledge||crb} can be expanded into multiple skills). However, this raises the question of which knowledge skill should be used when casting spells?",
             "One option is to create your own knowledge skill or skills, each one linked to a different kind of magic. However, we have also provided a default option: Knowledge (Supernatural), which can represent knowledge of any magical abilities.",
             {
                "title": "Knowledge (Supernatural)",
@@ -6307,6 +6684,26 @@
                   }
                ]
             }
+         ]
+      },
+      {
+         "name": "Optional Rule: Crashing and/or Sinking",
+         "page": 71,
+         "type": "vehicle",
+         "description": [
+            "{@table III.2—19: Vehicle Critical Hit Results||crb}, on page 230 of the Core Rulebook, is designed to be a generic table of severe damage that can affect a vehicle. However, one thing it does not represent is the possibility of crashing or sinking (in the case of aircraft and watercraft, respectively).",
+            "To better represent this threat, we present the following optional rule. When a ship or aircraft suffers a Critical Hit, the attacker may spend an additional {@symbols aaa} or {@symbols t} to inflict a separate unique Crashing/Sinking Critical Hit on the target.",
+            "{@b Crashing/Sinking ({@difficulty hard} Critical Hit):} The vehicle has a major leak in its hull, or its control surfaces are shredded. Roll 1d5; this is the number of rounds the vehicle remains afloat or in the air (not including the current round). If the Critical Hit has not been repaired by the end of the last round, the vehicle sinks or crashes and counts as having been destroyed.",
+            "What happens to the passengers depends on the vehicle in question (and may be modified by you accordingly). In the case of most ships, passengers and crew can swim away from the sinking vessel; as long as they abandon ship before it sinks, they are not lost. In the case of most aircraft, survival depends on how hard the aircraft hits the ground. You may use the falling rules to represent a crash, with the \"height\" of the fall depending on the severity of the crash. PCs could even use {@skill Resilience||crb}, instead of {@skill Athletics||crb} or {@skill Coordination||crb}, to reduce damage.",
+            "However in some cases, (such as a submerged submarine) when the vehicle sinks or crashes, nobody survives."
+         ]
+      },
+      {
+         "name": "Unorthodox Control Skills",
+         "page": 59,
+         "type": "vehicle",
+         "description": [
+            "There are some exceptions to the guidelines laid out for what control skill works with what vehicle. For example, a motorized speedboat that handles like a car could require the {@skill Driving||crb} skill to operate, while even a small sailboat would use {@skill Operating||crb} because of all the information (wind speed, heading, sail area) that goes into making a sailboat travel in the right direction. It's even possible that a bicycle, rowboat, or parachute would be controlled by the {@skill Athletics||crb} or {@skill Coordination||crb} skill, since they rely much more on a person's raw strength or reflexes."
          ]
       }
    ],
@@ -6518,7 +6915,7 @@
          "structured": [
             "This is using magic to create an illusion, or to disguise a character's appearance. The character makes an Arcana skill check. The default difficulty for the check is {@difficulty Easy}. If the check is successful, the character creates an illusion of a creature or object that is silhouette 1 or smaller. The illusion appears within short range of the character. Alternatively, the illusion changes the appearance of the caster or one silhouette 1 (or smaller) target they are engaged with. The illusion cannot obscure the basic size and shape of the target.",
             "Illusions can generate light and sound, but they cannot cause harm or interact with their environment in any way. Illusions can be animated and can move, as long as they remain within the range of the spell. A keen observer can attempt to spot the false nature of the illusion by making an {@difficulty Average|Vigilance} (or {@difficulty Average|Perception} if the observer suspects that their senses may be fooled). Success means the observer recognizes the object's illusory nature.",
-            "Before making a mask check, choose any number of additional effects listed on {@table III.1–1: Mask Additional Effects}. These effects are added to the check."
+            "Before making a mask check, choose any number of additional effects listed on {@table III.1-1: Mask Additional Effects}. These effects are added to the check."
          ],
          "additionalEffects": [
             {
@@ -6600,13 +6997,13 @@
          ],
          "structured": [
             "This is using magic to attempt to predict the future. The character makes an Arcana or Divine skill check, then asks one question about events that will unfold within the next 24 hours. The default difficulty of the check is {@difficulty Average}. If the check is successful, your GM must provide the character with a truthful answer, but that answer could be one that can be interpreted multiple ways or is somewhat enigmatic. Whether the check succeeds or fails, the character may not make another predict check to ask about the same events for the remainder of the session.",
-            "Before making a predict check, choose any number of additional effects listed on {@table III.1–2: Predict Additional Effects}. These effects are added to the check."
+            "Before making a predict check, choose any number of additional effects listed on {@table III.1-2: Predict Additional Effects}. These effects are added to the check."
          ],
          "additionalEffects": [
             {
                "name": "Quicksilver Reflexes",
                "description": [
-                  "Instead of asking a question about events, the character adds {@symbols ss} to the results of any checks they make to determine Initiative during the next structured encounter they participate in."
+                  "Instead of asking a question about events, the character adds {@symbols ss} to the results of any checks they make to {@rule determine Initiative||crb} during the next structured encounter they participate in."
                ],
                "difficultyMod": 0
             },
@@ -6667,7 +7064,7 @@
             "While transformed, the spellcaster adopts the physical appearance of the animal and gains the animal's characteristics, soak, wound threshold, and defense. The spellcaster also gains any of the animal's abilities and equipment (including weapons).",
             "The character retains their own skills, talents, and strain threshold. They drop any gear or clothing they were carrying or wearing when they transformed.",
             "If the character is incapacitated while transformed, they revert back to their normal form. When a character reverts back to their normal form, they heal all wounds suffered while transformed but do not heal any strain or Critical Injuries they suffered while transformed. If they were incapacitated due to exceeding their wound threshold, they are no longer incapacitated.",
-            "Before making a transform check, choose any number of additional effects listed on {@table III.1–3: Transform Additional Effects}, on page 101. These effects are added to the check."
+            "Before making a transform check, choose any number of additional effects listed on {@table III.1-3: Transform Additional Effects}, on page 101. These effects are added to the check."
          ],
          "additionalEffects": [
             {
@@ -6680,7 +7077,7 @@
             {
                "name": "Characteristic Retention",
                "description": [
-                  "When transformed, the character retains their own Intellect and Willpower, rather than the Intellect and Willpower of the creature they transformed into."
+                  "When transformed, the character retains their own {@characteristic Intellect||crb} and {@characteristic Willpower||crb}, rather than the {@characteristic Intellect||crb} and {@characteristic Willpower||crb} of the creature they transformed into."
                ],
                "difficultyMod": 1
             },
@@ -7774,6 +8171,171 @@
                "description": "This person seems calm, quiet, and mild mannered—but they do not hesitate to kill anyone who fails them or stands in their way."
             }
          ]
+      },
+      {
+         "name": "Table III.1-1: Mask Additional Effects",
+         "page": 100,
+         "columns": [
+            {
+               "header": "Effects",
+               "size": 5
+            },
+            {
+               "header": "Difficulty Mod",
+               "value": "difficultyMod",
+               "size": 2
+            }
+         ],
+         "rows": [
+            {
+               "effects": [
+                  "{@b Blur:} If the spell targets a character, it blurs and obscures their form. Until the spell ends, add {@symbols h} to the results of combat checks targeting the character (this applies even if the attacker realizes the effect is an illusion)."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Mirror Image:} If the spell targets a character, it creates multiple images that move with the target and distract opponents. Until the spell ends, the character may spend {@symbols hhh or d} from any combat check targeting them to cause the attack to harmlessly hit a mirror image rather than the character (this applies even if the attacker realizes the effect is an illusion)."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Additional Illusion:} The spell creates one additional illusion or disguises one additional character. In addition, after casting the spell, you may spend {@symbols aa} to create another additional illusion or disguise another additional character (you may trigger this multiple times, spending {@symbols aa} each time)."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Range:} Increase the range of the spell by one range band. This may be added multiple times, increasing the range by one range band each time."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Size:} Increase the silhouette of the illusion created by one, or disguise the appearance of a target one silhouette larger. This may be added multiple times, increasing the silhouette of the illusion created or target disguised by one each time."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Realism:} Increase the difficulty of checks to determine that the illusion is fake by one. In addition, after casting the spell, you may spend {@symbols aa} to increase the difficulty of checks to determine that the illusion is fake by one (you may trigger this multiple times, spending {@symbols aa} each time). The illusion can also fool additional senses such as smell, taste, or touch."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Terror:} The illusion terrifies those who behold it. When any character who does not know the illusion is fake spots it, they must make a {@difficulty Hard|Discipline}. They suffer 2 strain per {@symbols h} and, if they fail, are unable to approach the illusion. (If you are using the Fear rules from page 243 of the {@title Genesys} Core Rulebook, this can be a {@difficulty Hard|fear})."
+               ],
+               "difficultyMod": "+ {@dice difficulty|2}"
+            },
+            {
+               "effects": [
+                  "{@b Invisibility:} If the spell targets a character, it renders them invisible to sight instead of changing their appearance."
+               ],
+               "difficultyMod": "+ {@dice difficulty|3}"
+            }
+         ]
+      },
+      {
+         "name": "Table III.1-2: Predict Additional Effects",
+         "page": 101,
+         "columns": [
+            {
+               "header": "Effects",
+               "size": 5
+            },
+            {
+               "header": "Difficulty Mod",
+               "value": "difficultyMod",
+               "size": 2
+            }
+         ],
+         "rows": [
+            {
+               "effects": [
+                  "{@b Quicksilver Reflexes:} Instead of asking a question about events, the character adds {@symbols ss} to the results of any checks they make to {@rule determine Initiative||crb} during the next structured encounter they participate in."
+               ],
+               "difficultyMod": "-"
+            },
+            {
+               "effects": [
+                  "{@b Scry:} Instead of asking a question about events, the character may learn the location of one silhouette 0 item within long range. They must know what item they are looking for before they cast the spell, and the spell does not reveal how to get through any obstacles such as locked doors, hidden passages, or traps."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Empowered:} The character may ask a question about events that will unfold within the next month."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Additional Questions:} The character may ask one additional question about events. In addition, after casting the spell, you may spend {@symbols aa} to ask another additional question about events (and may trigger this multiple times, spending {@symbols aa} each time)."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Flash of Perception:} In addition to asking a question, once before the end of the current encounter, the character may add {@symbols s} to the results of one of their checks. In addition, once before the end of the current encounter, the character may add {@symbols f} to the results of a check targeting them. In addition, after the character casts the spell, you may spend {@symbols a} to add {@symbols ss} to the results of one of their checks, and add {@symbols ff} to the results of a check targeting them, instead of this effect's normal benefits."
+               ],
+               "difficultyMod": "+ {@dice difficulty|2}"
+            },
+            {
+               "effects": [
+                  "{@b Cheat Death:} In addition to asking a question, the character forsees a possible doom for themselves in the next 24 hours. Once before the end of the current session, when the character would otherwise be incapacitated or killed, you may spend a Story Point to have them suffer wounds and strain until they reach (but do not exceed) their wound and strain thresholds instead. Their survival should be described narratively, taking into account that they \"saw\" their potential death coming."
+               ],
+               "difficultyMod": "+ {@dice difficulty|2}"
+            }
+         ]
+      },
+      {
+         "name": "Table III.1-3: Transform Additional Effects",
+         "page": 101,
+         "columns": [
+            {
+               "header": "Effects",
+               "size": 5
+            },
+            {
+               "header": "Difficulty Mod",
+               "value": "difficultyMod",
+               "size": 2
+            }
+         ],
+         "rows": [
+            {
+               "effects": [
+                  "{@b Silhouette Increase:} The character may transform into an animal that is one silhouette larger (this may be added multiple times, increasing the silhouette by one each time)."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Characteristic Retention:} When transformed, the character retains their own {@characteristic Intellect||crb} and {@characteristic Willpower||crb}, rather than the {@characteristic Intellect||crb} and {@characteristic Willpower||crb} of the creature they transformed into."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Transform Gear:} When the character is transformed, their worn gear and wielded items change into natural markings on the animal's skin, fur, or scales (but confer no benefit to the character). When the character reverts back to normal, they are wearing and carrying their gear and items."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Dire Form:} When the character transforms, they adopt a dire form of the chosen animal. Increase the damage of the animal's weapons by three, its soak by one, its wound threshold by six, and its silhouette by one."
+               ],
+               "difficultyMod": "+ {@dice difficulty|1}"
+            },
+            {
+               "effects": [
+                  "{@b Curse of the Wild:} Instead of transforming themself, the character may transform one target within short range into a silhouette 0 animal of the character's choice following all of the rules for transformation."
+               ],
+               "difficultyMod": "+ {@dice difficulty|3}"
+            }
+         ]
       }
    ],
    "talent": [
@@ -8079,6 +8641,2912 @@
          "settings": [
             {
                "name": "all"
+            }
+         ]
+      }
+   ],
+   "vehicle": [
+      {
+         "name": "Chariot",
+         "page": 63,
+         "silhouette": 2,
+         "maxSpeed": 2,
+         "handling": -1,
+         "defense": 0,
+         "armor": 0,
+         "htt": 3,
+         "sst": 2,
+         "controlSkill": {
+            "name": "Riding",
+            "source": "crb"
+         },
+         "complement": "1 driver",
+         "passengers": "1",
+         "consumables": "None",
+         "encumbranceCapacity": 8,
+         "price": 650,
+         "rarity": 2,
+         "description": [
+            "Chariots are two-wheeled vehicles drawn by two or four horses, used in ancient cultures as transportation for the nobility and for warfare and racing. Despite depictions in popular cinema, most war chariots served as mobile archery platforms for nobles, not as bladecovered battering rams. The chariot uses {@skill Riding||crb} as its control skill, but you can use {@skill Driving||crb} if you prefer (see {@sidebar Unorthodox Control Skills} on page 59)."
+         ],
+         "settings": [
+            {
+               "name": "age of myth"
+            },
+            {
+               "name": "fantasy",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Coach",
+         "page": 63,
+         "silhouette": 2,
+         "maxSpeed": 2,
+         "handling": -1,
+         "defense": 0,
+         "armor": 0,
+         "htt": 4,
+         "sst": 4,
+         "controlSkill": {
+            "name": "Riding",
+            "source": "crb"
+         },
+         "complement": "1 driver, 1 guard",
+         "passengers": "6",
+         "consumables": "None",
+         "encumbranceCapacity": 8,
+         "price": 1100,
+         "rarity": 3,
+         "description": [
+            "Coaches are covered, four-wheeled vehicles pulled by a team of two or more horses. Unlike wagons, coaches are designed for speed and transporting passengers. Coaches could range from the carriages of nobles to frontier stagecoaches. The coach uses {@skill Riding||crb} as its control skill, but you can use {@skill Driving||crb} if you prefer (see {@sidebar Unorthodox Control Skills} on page 59). You could also use this profile to represent a wagon by dropping the max speed to 1, reducing passenger capacity to 0, increasing encumbrance capacity to 60, and decreasing the price to 300."
+         ],
+         "settings": [
+            {
+               "name": "age of myth"
+            },
+            {
+               "name": "fantasy",
+               "source": "crb"
+            },
+            {
+               "name": "steampunk",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Motocycle",
+         "page": 63,
+         "silhouette": 1,
+         "maxSpeed": 4,
+         "handling": 1,
+         "defense": 0,
+         "armor": 0,
+         "htt": 2,
+         "sst": 3,
+         "controlSkill": {
+            "name": "Driving",
+            "source": "crb"
+         },
+         "complement": "1 driver",
+         "passengers": "0 (1 uncomforably)",
+         "consumables": "5 hours",
+         "encumbranceCapacity": 4,
+         "price": 3255,
+         "rarity": 4,
+         "description": [
+            "The motorcycle has been around since the earliest steampowered bicycles in the mid-1800s. The modern version is small, maneuverable, and fuel efficient, having seen civilian and military use for centuries. This profile can represent a Jet Ski in a modern setting, or if you change the control skill to {@skill Piloting||crb}, it can represent a hover bike (or hopperbike) in a science fiction setting."
+         ],
+         "settings": [
+            {
+               "name": "steampunk",
+               "source": "crb"
+            },
+            {
+               "name": "weird war",
+               "source": "crb"
+            },
+            {
+               "name": "modern day",
+               "source": "crb"
+            },
+            {
+               "name": "science fiction",
+               "source": "crb"
+            },
+            {
+               "name": "space opera",
+               "source": "crb"
+            },
+            {
+               "name": "post apocalypse"
+            }
+         ]
+      },
+      {
+         "name": "Sports Car",
+         "page": 64,
+         "silhouette": 2,
+         "maxSpeed": 4,
+         "handling": 2,
+         "defense": 0,
+         "armor": 0,
+         "htt": 3,
+         "sst": 5,
+         "controlSkill": {
+            "name": "Driving",
+            "source": "crb"
+         },
+         "complement": "1 driver",
+         "passengers": "1",
+         "consumables": "3 hours",
+         "encumbranceCapacity": 12,
+         "price": 8000,
+         "rarity": 5,
+         "description": [
+            "Often painted bright, attention-grabbing red, sports cars provide superior speed and handling at the expense of durability, safety, and passenger and cargo space."
+         ],
+         "settings": [
+            {
+               "name": "steampunk",
+               "source": "crb"
+            },
+            {
+               "name": "weird war",
+               "source": "crb"
+            },
+            {
+               "name": "modern day",
+               "source": "crb"
+            },
+            {
+               "name": "science fiction",
+               "source": "crb"
+            },
+            {
+               "name": "space opera",
+               "source": "crb"
+            },
+            {
+               "name": "post apocalypse"
+            }
+         ]
+      },
+      {
+         "name": "Bus",
+         "page": 64,
+         "silhouette": 3,
+         "maxSpeed": 3,
+         "handling": -2,
+         "defense": 0,
+         "armor": 0,
+         "htt": 8,
+         "sst": 6,
+         "controlSkill": {
+            "name": "Driving",
+            "source": "crb"
+         },
+         "complement": "1 driver",
+         "passengers": "48",
+         "consumables": "6 hours",
+         "encumbranceCapacity": 10,
+         "price": 2500,
+         "rarity": 4,
+         "description": [
+            "From ferrying children to forming the backbone of local public transit, the bus is a metropolitan people mover."
+         ],
+         "settings": [
+            {
+               "name": "steampunk",
+               "source": "crb"
+            },
+            {
+               "name": "weird war",
+               "source": "crb"
+            },
+            {
+               "name": "modern day",
+               "source": "crb"
+            },
+            {
+               "name": "science fiction",
+               "source": "crb"
+            },
+            {
+               "name": "space opera",
+               "source": "crb"
+            },
+            {
+               "name": "post apocalypse"
+            }
+         ]
+      },
+      {
+         "name": "Truck",
+         "page": 64,
+         "silhouette": 3,
+         "maxSpeed": 3,
+         "handling": -2,
+         "defense": 0,
+         "armor": 0,
+         "htt": 10,
+         "sst": 10,
+         "controlSkill": {
+            "name": "Driving",
+            "source": "crb"
+         },
+         "complement": "1 driver",
+         "passengers": "2",
+         "consumables": "1 day",
+         "encumbranceCapacity": 125,
+         "price": 8100,
+         "rarity": 4,
+         "description": [
+            "Trucks are larger vehicles that haul loads of goods and supplies. This truck is midsized; it may need a higher encumbrance capacity to represent a semitruck."
+         ],
+         "settings": [
+            {
+               "name": "modern day",
+               "source": "crb"
+            },
+            {
+               "name": "science fiction",
+               "source": "crb"
+            },
+            {
+               "name": "space opera",
+               "source": "crb"
+            },
+            {
+               "name": "post apocalypse"
+            }
+         ]
+      },
+      {
+         "name": "Locomotive",
+         "page": 64,
+         "silhouette": 3,
+         "maxSpeed": 3,
+         "handling": -3,
+         "defense": 0,
+         "armor": 1,
+         "htt": 12,
+         "sst": 21,
+         "controlSkill": {
+            "name": "Operating",
+            "source": "crb"
+         },
+         "complement": "1 conductor, 1 engineer, 2 spotters",
+         "passengers": "None",
+         "consumables": "1 day",
+         "encumbranceCapacity": 20,
+         "price": 50000,
+         "rarity": 7,
+         "description": [
+            "This profile might represent a classic steam engine; a more modern diesel, electric, or maglev train; or even a more futuristic design. Regardless, trains run on a prelaid track, and require certain crew members to activate track switches to manage their route.",
+            {
+               "title": "Train Cars",
+               "forceTitleLevel": 6,
+               "entries": [
+                  "A locomotive usually hauls a number of train cars. Each car has the same hull trauma threshold, silhouette, defense, and armor as the locomotive and must be targeted individually. Passenger train cars can carry 100 people, while cargo train cars have an encumbrance capacity of 200. Each costs 5,000 currency"
+               ]
+            }
+         ],
+         "settings": [
+            {
+               "name": "steampunk",
+               "source": "crb"
+            },
+            {
+               "name": "weird war",
+               "source": "crb"
+            },
+            {
+               "name": "modern day",
+               "source": "crb"
+            },
+            {
+               "name": "science fiction",
+               "source": "crb"
+            },
+            {
+               "name": "space opera",
+               "source": "crb"
+            },
+            {
+               "name": "post apocalypse"
+            }
+         ]
+      },
+      {
+         "name": "Wasteland Buggy",
+         "page": 64,
+         "silhouette": 2,
+         "maxSpeed": 4,
+         "handling": 1,
+         "defense": 1,
+         "armor": 0,
+         "htt": 9,
+         "sst": 9,
+         "controlSkill": {
+            "name": "Driving",
+            "source": "crb"
+         },
+         "complement": "1 driver, 1 gunner",
+         "passengers": "2",
+         "consumables": "2 days",
+         "encumbranceCapacity": 15,
+         "price": 12100,
+         "rarity": 8,
+         "abilities": [
+            {
+               "name": "Vulnerable",
+               "description": "All successful combat checks targeting the wasteland buggy add {@symbols aa} to the results."
+            },
+            {
+               "name": "Spikey Bits",
+               "description": "When the wasteland buggy is involved in a {@rule collisions|collision|crb} (see page 222 of the Genesys Core Rulebook) all other vehicles and characters involved in the collision add +30 to the results of any Critical Hit or Critical Injury they suffer."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Scrap-shooter cannon",
+               "fireArc": "Forward, Left, and Right",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 1,
+               "critical": 4,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Inaccurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "1 grill-mounted light machine gun",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 10,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Inaccurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Personal Scale",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "description": [
+            "In the wastelands of some post-apocalyptic settings, gangs of marauders have salvaged vehicles into rickety engines of destruction. Although these could take nearly any form, we have included an example built from the chassis of a pre-apocalypse automobile and heavily modified with weapons and a supercharged engine."
+         ],
+         "settings": [
+            {
+               "name": "post apocalypse"
+            }
+         ]
+      },
+      {
+         "name": "Wasteland Nomad Rig",
+         "page": 65,
+         "silhouette": 3,
+         "maxSpeed": 3,
+         "handling": -1,
+         "defense": 0,
+         "armor": 1,
+         "htt": 15,
+         "sst": 12,
+         "controlSkill": {
+            "name": "Driving",
+            "source": "crb"
+         },
+         "complement": "1 driver, 2 gunners, 1 mechanic",
+         "passengers": "10",
+         "consumables": "2 weeks",
+         "encumbranceCapacity": 100,
+         "price": 20800,
+         "rarity": 7,
+         "abilities": [
+            {
+               "name": "Resilient",
+               "description": "When the wasteland nomad rig suffers a Critical Hit and your character is operating it, you may spend a Story Point to roll a second result and choose the result you prefer."
+            },
+            {
+               "name": "Spikey Bits",
+               "description": "When the wasteland buggy is involved in a {@rule collisions|collision|crb} (see page 222 of the Genesys Core Rulebook) all other vehicles and characters involved in the collision add +30 to the results of any Critical Hit or Critical Injury they suffer."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "1 harpoon launcher",
+               "fireArc": "Rear, Left, and Right",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 1,
+               "critical": 2,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Ensnare",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ],
+               "details": "If target is silhouette 3 or less, gunner may spend {@symbols aa} or {@symbols t} from combat checks made with this weapon to move target one range band closer to the wasteland nomad rig."
+            },
+            {
+               "name": "1 spike-shooter turret",
+               "fireArc": "Forward, Left, and Right",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 2,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Personal Scale",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "description": [
+            "Nomadic inhabitants of post-apocalyptic settings may roam the wastelands in salvaged semitrucks retrofitted into heavily armored rigs. These can also take nearly any form; this is a typical example."
+         ],
+         "settings": [
+            {
+               "name": "post apocalypse"
+            }
+         ]
+      },
+      {
+         "name": "Armored Personnel Carrier",
+         "page": 65,
+         "silhouette": 3,
+         "maxSpeed": 3,
+         "handling": -2,
+         "defense": 0,
+         "armor": 2,
+         "htt": 16,
+         "sst": 15,
+         "controlSkill": {
+            "name": "Driving",
+            "source": "crb"
+         },
+         "complement": "1 driver, 1 gunner",
+         "passengers": "10",
+         "consumables": "6 hours",
+         "encumbranceCapacity": 30,
+         "price": 16000,
+         "rarity": 5,
+         "restricted": true,
+         "description": [
+            "The APC is an armored (and usually armed) military vehicle designed to transport soldiers on the battlefield without getting them killed. Some APCs have been equipped to the point that they are almost miniature tanks, but the APC here represents a basic version."
+         ],
+         "abilities": [
+            {
+               "name": "All-Terrain",
+               "description": "When making a {@skill Driving||crb} check to direct this vehicle, your character may remove {@dice setback|2} added to the check due to terrain."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "1 heavy machine gun",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 12,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Personal Scale",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "settings": [
+            {
+               "name": "weird war",
+               "source": "crb"
+            },
+            {
+               "name": "modern day",
+               "source": "crb"
+            },
+            {
+               "name": "science fiction",
+               "source": "crb"
+            },
+            {
+               "name": "space opera",
+               "source": "crb"
+            },
+            {
+               "name": "post apocalypse"
+            }
+         ]
+      },
+      {
+         "name": "Tank",
+         "page": 66,
+         "silhouette": 3,
+         "maxSpeed": 2,
+         "handling": -2,
+         "defense": 0,
+         "armor": 2,
+         "htt": 18,
+         "sst": 14,
+         "controlSkill": {
+            "name": "Driving",
+            "source": "crb"
+         },
+         "complement": "1 driver, 2 gunners, 1 commander",
+         "passengers": "None",
+         "consumables": "6 hours",
+         "encumbranceCapacity": 5,
+         "price": 25000,
+         "rarity": 6,
+         "restricted": true,
+         "description": [
+            "The armored tank rose to prominence in World War I, riding a pair of rugged treads capable of overcoming most obstacles. Its heavy armor makes the tank immune to most small-arms fire. It carries a main cannon capable of destroying armored vehicles and bunkers, as well as some defensive anti-personnel weaponry to keep enemy soldiers away"
+         ],
+         "abilities": [
+            {
+               "name": "All-Terrain",
+               "description": "When making a {@skill Driving||crb} check to direct this vehicle, your character may remove {@dice setback|2} added to the check due to terrain."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Main tank gun",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 3,
+               "critical": 3,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Pintle-mounted heavy machine gun",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 12,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Personal Scale",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Coaxial light machine gun",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 10,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Personal Scale",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "settings": [
+            {
+               "name": "weird war",
+               "source": "crb"
+            },
+            {
+               "name": "modern day",
+               "source": "crb"
+            },
+            {
+               "name": "science fiction",
+               "source": "crb"
+            },
+            {
+               "name": "space opera",
+               "source": "crb"
+            },
+            {
+               "name": "post apocalypse"
+            }
+         ]
+      },
+      {
+         "name": "Tactical Strider",
+         "page": 66,
+         "silhouette": 2,
+         "maxSpeed": 2,
+         "handling": 0,
+         "defense": 1,
+         "armor": 1,
+         "htt": 12,
+         "sst": 12,
+         "controlSkill": {
+            "name": "Driving",
+            "source": "crb"
+         },
+         "complement": "1 driver",
+         "passengers": "None",
+         "consumables": "3 days",
+         "encumbranceCapacity": 5,
+         "price": 40000,
+         "rarity": 6,
+         "restricted": true,
+         "description": [
+            "The tactical strider is a medium-sized (six-meter-tall) pilotable humanoid mech. This profile could represent anything from a steam- and clockwork-powered walker, to a cumbersome military strider invented with weird science, to a powered suit neurally linked to the pilot. We've given ours a heavy rifle and a rocket pod."
+         ],
+         "abilities": [
+            {
+               "name": "All-Terrain",
+               "description": "When making a {@skill Driving||crb} check to direct this vehicle, your character may remove {@dice setback|2} added to the check due to terrain."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Armored strider fist",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 1,
+               "critical": 4,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Concussive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Shoulder-mounted rocket pod",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 2,
+               "critical": 4,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "ranks": 0,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Anti-strider rifle",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 1,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "settings": [
+            {
+               "name": "steampunk",
+               "source": "crb"
+            },
+            {
+               "name": "weird war",
+               "source": "crb"
+            },
+            {
+               "name": "science fiction",
+               "source": "crb"
+            },
+            {
+               "name": "space opera",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Mecha",
+         "page": 66,
+         "silhouette": 4,
+         "maxSpeed": 2,
+         "handling": -1,
+         "defense": 2,
+         "armor": 3,
+         "htt": 30,
+         "sst": 25,
+         "controlSkill": {
+            "name": "Driving",
+            "source": "crb"
+         },
+         "complement": "1 driver",
+         "passengers": "None",
+         "consumables": "3 days",
+         "encumbranceCapacity": 5,
+         "price": 52000,
+         "rarity": 7,
+         "restricted": true,
+         "description": [
+            "Mechas are thirty-meter-tall humanoid vehicles that resemble gigantic power-armored soldiers. While most rely on a single pilot to operate via manual controls or AI assist, others use some form of neural interface technology, enabling pilots to treat the vehicle as an extension of their own body. They often wield scaled-up versions of personal weapons: huge swords, shields the size of rooftops, and rifles that look like heavy artillery pieces."
+         ],
+         "abilities": [
+            {
+               "name": "All-Terrain",
+               "description": "When making a {@skill Driving||crb} check to direct this vehicle, your character may remove {@dice setback|2} added to the check due to terrain."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Mech-fist",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 3,
+               "critical": 5,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Concussive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Hullbreaker sword",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
+               "damage": 4,
+               "critical": 2,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Prepare",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Giga Cannon",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 4,
+               "critical": 3,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Breach",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "settings": [
+            {
+               "name": "space opera",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Third-Rate Ship of the Line",
+         "page": 67,
+         "silhouette": 5,
+         "maxSpeed": 2,
+         "handling": -3,
+         "defense": 0,
+         "armor": 3,
+         "htt": 80,
+         "sst": 60,
+         "controlSkill": {
+            "name": "Operating",
+            "source": "crb"
+         },
+         "complement": "500-700 crew",
+         "passengers": "25",
+         "consumables": "6 monhts",
+         "encumbranceCapacity": 200,
+         "price": 1158000,
+         "rarity": 7,
+         "restricted": true,
+         "description": [
+            "Just under seventy meters long, third-rate ships of the line spread their guns across three decks. These sailing vessels were considered the premiere combat vessels of their day, balancing armament with maneuverability"
+         ],
+         "weapons": [
+            {
+               "name": "14 port and 14 starboard 36-pounder cannons",
+               "fireArc": "Port or Starboard",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 2,
+               "range": "Long"
+            },
+            {
+               "name": "15 port and 15 starboard 24-pounder cannons",
+               "fireArc": "Port or Starboard",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 3,
+               "range": "Long"
+            },
+            {
+               "name": "7 port and 7 starboard 9-pounder cannons",
+               "fireArc": "Port or Starboard",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 4,
+               "critical": 5,
+               "range": "Medium"
+            }
+         ],
+         "settings": [
+            {
+               "name": "fantasy",
+               "source": "crb"
+            },
+            {
+               "name": "steampunk",
+               "source": "crb"
+            },
+            {
+               "name": "monsterworld"
+            }
+         ]
+      },
+      {
+         "name": "Longship",
+         "page": 67,
+         "silhouette": 3,
+         "maxSpeed": 2,
+         "handling": -1,
+         "defense": 0,
+         "armor": 0,
+         "htt": 18,
+         "sst": 16,
+         "controlSkill": {
+            "name": "Operating",
+            "source": "crb"
+         },
+         "complement": "40 crew",
+         "passengers": "10",
+         "consumables": "1 day",
+         "encumbranceCapacity": 50,
+         "price": 5400,
+         "rarity": 5,
+         "description": [
+            "Infamously employed by Norse raiders, the longship is an iconic fifteen- to thirty-meter-long thin wooden ship with a single square sail. Offense is limited to the bows, slings, and spears of the warriors aboard."
+         ],
+         "settings": [
+            {
+               "name": "age of myth"
+            },
+            {
+               "name": "fantasy",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Trireme/Galley",
+         "page": 68,
+         "silhouette": 4,
+         "maxSpeed": 2,
+         "handling": -2,
+         "defense": 0,
+         "armor": 1,
+         "htt": 30,
+         "sst": 20,
+         "controlSkill": {
+            "name": "Operating",
+            "source": "crb"
+         },
+         "complement": "200 crew",
+         "passengers": "30 soldiers",
+         "consumables": "2 weeks",
+         "encumbranceCapacity": "None",
+         "price": 24000,
+         "rarity": 6,
+         "description": [
+            "The warships of antiquity, these vessels feature a large square sail and over a hundred oars. Soldiers on the top deck can launch projectiles and lead boarding actions. However, their main weapon is their fearsome ram."
+         ],
+         "abilities": [
+            {
+               "name": "Ram",
+               "description": "When the trireme or galley deliberately collides with another ship (see {@rule collisions||crb} page 222 of the Genesys Core Rulebook), the other ship suffers 8 damage to its hull trauma threshold and adds +40 to the Critical Hit result it suffers. The trireme or galley reduces the results of the Critical Hit it suffers by -20."
+            }
+         ],
+         "settings": [
+            {
+               "name": "age of myth"
+            },
+            {
+               "name": "fantasy",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Small Cargo Freighter",
+         "page": 68,
+         "silhouette": 5,
+         "maxSpeed": 2,
+         "handling": -3,
+         "defense": 0,
+         "armor": 1,
+         "htt": 60,
+         "sst": 40,
+         "controlSkill": {
+            "name": "Operating",
+            "source": "crb"
+         },
+         "complement": "15 crew",
+         "passengers": "40",
+         "consumables": "2 months",
+         "encumbranceCapacity": 4000,
+         "price": 1000000,
+         "rarity": 7,
+         "description": [
+            "Typically between sixty and ninety meters long, small freighters hire out independently to move cargo and passengers. This ship might be a river steamboat, an ocean cargo vessel, or a convoy ship in the midst of a war."
+         ],
+         "settings": [
+            {
+               "name": "steampunk",
+               "source": "crb"
+            },
+            {
+               "name": "weird war",
+               "source": "crb"
+            },
+            {
+               "name": "modern day",
+               "source": "crb"
+            },
+            {
+               "name": "monsterworld"
+            },
+            {
+               "name": "post apocalypse"
+            }
+         ]
+      },
+      {
+         "name": "World War II-Era Destroyer",
+         "page": 68,
+         "silhouette": 5,
+         "maxSpeed": 4,
+         "handling": -1,
+         "defense": 0,
+         "armor": 4,
+         "htt": 75,
+         "sst": 60,
+         "controlSkill": {
+            "name": "Operating",
+            "source": "crb"
+         },
+         "complement": "300 crew",
+         "passengers": "50",
+         "consumables": "2 monhts",
+         "encumbranceCapacity": 125,
+         "price": 380000,
+         "rarity": 7,
+         "restricted": true,
+         "description": [
+            "Nearly one hundred and twenty-five meters long, destroyers target enemy ships with five-inch guns, launch torpedoes at larger warships, and also hunt submarines."
+         ],
+         "weapons": [
+            {
+               "name": "2 forward and 2 aft 5-inch gun turrets",
+               "fireArc": "(Forward, Port, and Starboard) or (Aft, Port, and Starboard)",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 7,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "8 40mm anti-air guns",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 1,
+               "critical": 4,
+               "range": "Medium"
+            },
+            {
+               "name": "1 port and 1 starboard torpedo tube launcher",
+               "fireArc": "Port and Starboard",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 10,
+               "critical": 2,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 5,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ],
+               "details": "When making an attack with this weapon, spend an action to determine the dice pool, but do not make the check. Then, at the end of the round, make the combat check as an out-of-turn incidental. If the target is no longer in range or could not be hit by the attack for some other reason, the check fails."
+            }
+         ],
+         "settings": [
+            {
+               "name": "steampunk",
+               "source": "crb"
+            },
+            {
+               "name": "weird war",
+               "source": "crb"
+            },
+            {
+               "name": "modern day",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "World War II-Era Battleship",
+         "page": 69,
+         "silhouette": 7,
+         "maxSpeed": 4,
+         "handling": -4,
+         "defense": 0,
+         "armor": 7,
+         "htt": 120,
+         "sst": 90,
+         "controlSkill": {
+            "name": "Operating",
+            "source": "crb"
+         },
+         "complement": "1,800 crew",
+         "passengers": "200",
+         "consumables": "3 months",
+         "encumbranceCapacity": 400,
+         "price": 90000000,
+         "rarity": 9,
+         "restricted": true,
+         "description": [
+            "For years, the ultimate weapon of the world's navies was the battleship, a massive ship carrying the largest cannons ever deployed at sea. They were a symbol of national pride as well as hideously expensive."
+         ],
+         "abilities": [
+            {
+               "name": "Massive",
+               "description": "When making an attack targeting this vehicle, the Critical rating of any weapons used count as 2 higher."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "2 forward and 1 aft 16-inch gun turrets",
+               "fireArc": "(Forward, Port, and Starboard) or (Port, Starboard, and Aft)",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 15,
+               "critical": 3,
+               "range": "Strategic",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 5,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Breach",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "10 port and 10 starboard 5-inch gun turrets",
+               "fireArc": "Starboard or Port",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 7,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "20 forward, 20 aft, and 20 starboard 40mm anti-air guns",
+               "fireArc": "Port or Starboard or Fore or Aft",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 1,
+               "critical": 4,
+               "range": "Medium"
+            }
+         ],
+         "settings": [
+            {
+               "name": "steampunk",
+               "source": "crb"
+            },
+            {
+               "name": "weird war",
+               "source": "crb"
+            },
+            {
+               "name": "modern day",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Submarine",
+         "page": 69,
+         "silhouette": 5,
+         "maxSpeed": 2,
+         "handling": -2,
+         "defense": 0,
+         "armor": 3,
+         "htt": 60,
+         "sst": 40,
+         "controlSkill": {
+            "name": "Operating",
+            "source": "crb"
+         },
+         "complement": "120 crew",
+         "passengers": "10",
+         "consumables": "3 months",
+         "encumbranceCapacity": 60,
+         "price": 300000,
+         "rarity": 7,
+         "restricted": true,
+         "description": [
+            "From their concealed position under water, submarines can launch surprise attacks, gather intelligence, or infiltrate special forces units. This example uses guided torpedoes; if you want a military submarine from before the 1950s, remove the {@quality Guided||crb} item quality from the torpedo tube launchers, reduce the hull trauma threshold by ten, and change the crew compliment to 50 (reduce price by 40,000 as well)."
+         ],
+         "weapons": [
+            {
+               "name": "4 forward torpedo tube launchers",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 9,
+               "critical": 1,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Guided",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ],
+               "details": "When making an attack with this weapon, spend an action to determine the dice pool, but do not make the check. Then at the end of the round, make the combat check as an out-of-turn incidental. If the target is no longer in range or could not be hit by the attack for some other reason, the check fails."
+            }
+         ],
+         "settings": [
+            {
+               "name": "steampunk",
+               "source": "crb"
+            },
+            {
+               "name": "weird war",
+               "source": "crb"
+            },
+            {
+               "name": "modern day",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Modern Frigate",
+         "page": 69,
+         "silhouette": 5,
+         "maxSpeed": 4,
+         "handling": -1,
+         "defense": 2,
+         "armor": 3,
+         "htt": 75,
+         "sst": 65,
+         "controlSkill": {
+            "name": "Operating",
+            "source": "crb"
+         },
+         "complement": "250 crew",
+         "passengers": "25",
+         "consumables": "2 months",
+         "encumbranceCapacity": "150 (plus 1 {@vehicle civilian helicopter|helicopter})",
+         "price": 400000,
+         "rarity": 7,
+         "restricted": true,
+         "description": [
+            "Modern frigates escort larger ships and hunt submarines. They tend to have less armor, but they possess other defenses such as jamming systems, chaff rockets, and defensive weapons (represented by the ship's high defense rating)."
+         ],
+         "weapons": [
+            {
+               "name": "1 port and 1 starboard dual torpedo tube launcher",
+               "fireArc": "(Forward and Starboard) or (Forward and Port)",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 9,
+               "critical": 1,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Guided",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ],
+               "details": "When making an attack with this weapon, spend an action to determine the dice pool, but do not make the check. Then at the end of the round, make the combat check as an out-of-turn incidental. If the target is no longer in range or could not be hit by the attack for some other reason, the check fails."
+            },
+            {
+               "name": "5-inch gun turret",
+               "fireArc": "Forward, Port, and Starboard",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 7,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "1 anti-ship missile pod",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 12,
+               "critical": 3,
+               "range": "Strategic",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Breach",
+                     "ranks": 5,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Guided",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 8,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "1 CWIS mount",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 1,
+               "critical": 5,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Accurate",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "settings": [
+            {
+               "name": "modern day",
+               "source": "crb"
+            },
+            {
+               "name": "science fiction",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Motorboat",
+         "page": 70,
+         "hasVariants": true,
+         "silhouette": 2,
+         "maxSpeed": 4,
+         "handling": 0,
+         "defense": 0,
+         "armor": 0,
+         "htt": 7,
+         "sst": 5,
+         "controlSkill": {
+            "name": "Driving",
+            "source": "crb"
+         },
+         "complement": "1 driver",
+         "passengers": "6",
+         "consumables": "12 hours",
+         "encumbranceCapacity": "10 (40 in lieu of passengers)",
+         "price": 6500,
+         "rarity": 4,
+         "description": [
+            "The motorboat might be a speedboat, fishing boat, or a shallow water patrol boat (with some light guns).",
+            {
+               "title": "Alternate Variants",
+               "forceTitleLevel": 5,
+               "entries": [
+                  {
+                     "title": "{@vehicle motorboat (patrol boat)|Patrol Boat}",
+                     "entries": []
+                  }
+               ]
+            }
+         ],
+         "settings": [
+            {
+               "name": "steampunk",
+               "source": "crb"
+            },
+            {
+               "name": "weird war",
+               "source": "crb"
+            },
+            {
+               "name": "modern day",
+               "source": "crb"
+            },
+            {
+               "name": "science fiction",
+               "source": "crb"
+            },
+            {
+               "name": "space opera",
+               "source": "crb"
+            },
+            {
+               "name": "post apocalypse"
+            }
+         ]
+      },
+      {
+         "name": "Motorboat (Patrol Boat)",
+         "page": 70,
+         "variant": true,
+         "silhouette": 2,
+         "maxSpeed": 4,
+         "handling": 0,
+         "defense": 0,
+         "armor": 0,
+         "htt": 7,
+         "sst": 5,
+         "controlSkill": {
+            "name": "Driving",
+            "source": "crb"
+         },
+         "complement": "1 driver",
+         "passengers": "6",
+         "consumables": "12 hours",
+         "encumbranceCapacity": "10 (40 in lieu of passengers)",
+         "price": 9250,
+         "rarity": 4,
+         "description": [
+            "The motorboat might be a speedboat, fishing boat, or a shallow water patrol boat (with some light guns)."
+         ],
+         "weapons": [
+            {
+               "name": "1 light machine gun",
+               "fireArc": "Forward, Port, and Starboard",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 10,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Personal Scale",
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "1 grenade launcher",
+               "fireArc": "Forward, Port, and Starboard",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 4,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 6,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Personal Scale",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "settings": [
+            {
+               "name": "steampunk",
+               "source": "crb"
+            },
+            {
+               "name": "weird war",
+               "source": "crb"
+            },
+            {
+               "name": "modern day",
+               "source": "crb"
+            },
+            {
+               "name": "science fiction",
+               "source": "crb"
+            },
+            {
+               "name": "space opera",
+               "source": "crb"
+            },
+            {
+               "name": "post apocalypse"
+            }
+         ]
+      },
+      {
+         "name": "Guided Missile Cruiser",
+         "page": 70,
+         "silhouette": 6,
+         "maxSpeed": 3,
+         "handling": -2,
+         "defense": 3,
+         "armor": 3,
+         "htt": 90,
+         "sst": 70,
+         "controlSkill": {
+            "name": "Operating",
+            "source": "crb"
+         },
+         "complement": "350 crew",
+         "passengers": "25",
+         "consumables": "3 months",
+         "encumbranceCapacity": "160 (plus 2 {@vehicle civilian helicopter|helicopters})",
+         "price": 1850000,
+         "rarity": 7,
+         "restricted": true,
+         "description": [
+            "Modern cruisers take advantage of advanced radar equipment and anti-air missiles to protect whole fleets."
+         ],
+         "abilities": [
+            {
+               "name": "Massive",
+               "description": "When making an attack targeting this vehicle, the Critical rating of any weapons used counts as 2 higher."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "1 anti-air missile system",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 3,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Guided",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "1 forward and 1 aft 5-inch gun turret",
+               "fireArc": "(Forward, Port, and Starboard) or (Aft, Port, and Starboard)",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 7,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "1 strategic missile system",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 15,
+               "critical": 2,
+               "range": "Strategic",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 5,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Breach",
+                     "ranks": 5,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Guided",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 6,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "2 CWIS mounts",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 1,
+               "critical": 5,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Accurate",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "settings": [
+            {
+               "name": "modern day",
+               "source": "crb"
+            },
+            {
+               "name": "science fiction",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Armored War Zeppelin",
+         "page": 70,
+         "silhouette": 6,
+         "maxSpeed": 3,
+         "handling": -2,
+         "defense": 0,
+         "armor": 2,
+         "htt": 50,
+         "sst": 35,
+         "controlSkill": {
+            "name": "Operating",
+            "source": "crb"
+         },
+         "complement": "100 crew",
+         "passengers": "50",
+         "consumables": "3 weeks",
+         "encumbranceCapacity": 100,
+         "price": 925000,
+         "rarity": 6,
+         "restricted": true,
+         "description": [
+            "In some settings, zeppelins or other dirigibles have become the preeminent airborne vehicles. This is our take on a fanciful \"war zeppelin,\" which sports turretmounted cannons and armored plates while still being \"lighter than air.\" This type of vehicle would probably replace sea-going warships in the setting it's used in."
+         ],
+         "abilities": [
+            {
+               "name": "Massive",
+               "description": "When making an attack targeting this vehicle, the Critical rating of any weapons used counts as 2 higher."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "1 forward and 1 aft twin 25-pound gun turret",
+               "fireArc": "Forward, Port, and Starboard",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "2 port and 2 starboard 6-pounder defensive gun turrets",
+               "fireArc": "Port or Starboard",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 2,
+               "critical": 4,
+               "range": "Long"
+            },
+            {
+               "name": "1 forward, 1 port, 1 starboard, and 1 aft defensive maxim gun",
+               "fireArc": "Forward, Port, Starboard, or Aft",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 4,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Inaccurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Personal Scale",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "settings": [
+            {
+               "name": "steampunk",
+               "source": "crb"
+            },
+            {
+               "name": "weird war",
+               "source": "crb"
+            },
+            {
+               "name": "monsterworld"
+            }
+         ]
+      },
+      {
+         "name": "Transport Zeppelin",
+         "page": 70,
+         "silhouette": 5,
+         "maxSpeed": 2,
+         "handling": -2,
+         "defense": 0,
+         "armor": 1,
+         "htt": 35,
+         "sst": 25,
+         "controlSkill": {
+            "name": "Operating",
+            "source": "crb"
+         },
+         "complement": "20 crew",
+         "passengers": "40",
+         "consumables": "6 months",
+         "encumbranceCapacity": 600,
+         "price": 40000,
+         "rarity": 5,
+         "description": [
+            "This is our take on a steampunk setting's rigid airship that has been designed to transport cargo and passengers or is outfitted for exploration (hence the small armaments). It is somewhat fanciful, since it manages to be armored while still being an airship."
+         ],
+         "weapons": [
+            {
+               "name": "1 forward 6-pounder defensive gun turret",
+               "fireArc": "Forward, Port, and Starboard",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 2,
+               "critical": 4,
+               "range": "Long"
+            },
+            {
+               "name": "1 port, and 1 starboard defensive maxim gun",
+               "fireArc": "Port or Starboard",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 4,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Inaccurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Personal Scale",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "settings": [
+            {
+               "name": "steampunk",
+               "source": "crb"
+            },
+            {
+               "name": "weird war",
+               "source": "crb"
+            },
+            {
+               "name": "monsterworld"
+            }
+         ]
+      },
+      {
+         "name": "Cargo Plane",
+         "page": 71,
+         "silhouette": 3,
+         "maxSpeed": 4,
+         "handling": -1,
+         "defense": 0,
+         "armor": 0,
+         "htt": 16,
+         "sst": 12,
+         "controlSkill": {
+            "name": "Piloting",
+            "source": "crb"
+         },
+         "complement": "1 pilot, 1 copilot",
+         "passengers": "4",
+         "consumables": "1 day",
+         "encumbranceCapacity": "120 (or 30 passengers)",
+         "price": 11750,
+         "rarity": 5,
+         "description": [
+            "The cargo plane is a workhorse of air travel and logistics. Militaries use cargo planes to air-drop supplies, transport vehicles, and troops, and plenty of individuals use cargo planes to ship their goods around the globe."
+         ],
+         "settings": [
+            {
+               "name": "weird war",
+               "source": "crb"
+            },
+            {
+               "name": "modern day",
+               "source": "crb"
+            },
+            {
+               "name": "science fiction",
+               "source": "crb"
+            },
+            {
+               "name": "post apocalypse"
+            }
+         ]
+      },
+      {
+         "name": "World War II-Era Fighter Plane",
+         "page": 71,
+         "silhouette": 2,
+         "maxSpeed": 5,
+         "handling": 2,
+         "defense": 0,
+         "armor": 0,
+         "htt": 8,
+         "sst": 8,
+         "controlSkill": {
+            "name": "Piloting",
+            "source": "crb"
+         },
+         "complement": "1 pilot",
+         "passengers": "None",
+         "consumables": "6 hours",
+         "encumbranceCapacity": 4,
+         "price": 40000,
+         "rarity": 4,
+         "restricted": true,
+         "description": [
+            "This is a prop-driven fighter aircraft from the 1940s designed to shoot down other fighter planes, escort heavy bombers, and attack ground targets. Fighters in this era typically had multiple machine guns (our fighter treats all of its guns as a single weapon system)."
+         ],
+         "weapons": [
+            {
+               "name": "Multiple wing-mounted heavy machine guns",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 12,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Accurate",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Personal Scale",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Ground-attack rocket",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 4,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Inaccurate",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "settings": [
+            {
+               "name": "weird war",
+               "source": "crb"
+            },
+            {
+               "name": "modern day",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "World War II-Era Heavy Bomber",
+         "page": 72,
+         "silhouette": 3,
+         "maxSpeed": 4,
+         "handling": -1,
+         "defense": 0,
+         "armor": 0,
+         "htt": 20,
+         "sst": 16,
+         "controlSkill": {
+            "name": "Piloting",
+            "source": "crb"
+         },
+         "complement": "1 pilot, 1 copilot, 1 navigator, 1 bombardier/gunner, 1 radio operator/gunner, 2 gunners",
+         "passengers": "2",
+         "consumables": "12 hours",
+         "encumbranceCapacity": 30,
+         "price": 80000,
+         "rarity": 5,
+         "restricted": true,
+         "description": [
+            "In World War II, heavy bombers were well equipped with defensive machine guns to drive off attacking fighters and could carry heavy payloads of explosives."
+         ],
+         "abilities": [
+            {
+               "name": "Bombing Run",
+               "description": "The bombardier may pick a point on the ground beneath the bomber, then spend an action and perform a {@difficulty hard|Gunnery}. If the check is successful, all characters and vehicles within medium range of that point suffer a hit dealing 15 damage, plus 1 damage per {@symbols s}. The gunner may spend {@symbols a} or {@symbols t} to inflict a Critical Hit or Critical Injury on one vehicle or character affected by the bombing run, and may do so multiple times, selecting a different character or vehicle each time. At your GM's discretion, the bombing run may also destroy structures, shatter the landscape, or do other damage. Once this vehicle has made a bombing run, it cannot do so again until it has returned to base and has been reloaded with bombs."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Nose-mounted heavy machine guns",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 12,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Accurate",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Personal Scale",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Tail-mounted heavy machine gun",
+               "fireArc": "Aft",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 12,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Personal Scale",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Two twin heavy machine gun turrets",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 10,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Accurate",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Personal Scale",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "settings": [
+            {
+               "name": "weird war",
+               "source": "crb"
+            },
+            {
+               "name": "modern day",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Civilian Helicopter",
+         "page": 72,
+         "silhouette": 2,
+         "maxSpeed": 3,
+         "handling": 3,
+         "defense": 0,
+         "armor": 0,
+         "htt": 7,
+         "sst": 5,
+         "controlSkill": {
+            "name": "Piloting",
+            "source": "crb"
+         },
+         "complement": "1 pilot, 1 copilot",
+         "passengers": "4",
+         "consumables": "1 day",
+         "encumbranceCapacity": 20,
+         "price": 20000,
+         "rarity": 6,
+         "description": [
+            "Civilian helicopters transport VIPs, local news reporters, and police officers around cities."
+         ],
+         "settings": [
+            {
+               "name": "modern day",
+               "source": "crb"
+            },
+            {
+               "name": "science fiction",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Helicopter Gunship",
+         "page": 72,
+         "hasVariants": true,
+         "silhouette": 3,
+         "maxSpeed": 3,
+         "handling": 3,
+         "defense": 0,
+         "armor": 1,
+         "htt": 8,
+         "sst": 8,
+         "controlSkill": {
+            "name": "Piloting",
+            "source": "crb"
+         },
+         "complement": "2 crew",
+         "passengers": "None",
+         "consumables": "1 day",
+         "encumbranceCapacity": "None",
+         "price": 127000,
+         "rarity": 7,
+         "restricted": true,
+         "description": [
+            "Attack helicopters support troops on the ground with close-in mobile firepower. Some rare variants can even transport soldiers into battle. To make this a transport gunship, reduce the handling by 2 and increase the passenger capacity to 8 (the cost remains unchanged).",
+            {
+               "title": "Alternate Variants",
+               "forceTitleLevel": 5,
+               "entries": [
+                  {
+                     "title": "{@vehicle helicopter gunship (transport)|Transport}",
+                     "entries": []
+                  }
+               ]
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Anti-tank missiles",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 3,
+               "critical": 3,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Breach",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Anti-personnel rocket pods",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 12,
+               "critical": 4,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 12,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 8,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Personal Scale",
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Chain gun",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 1,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "settings": [
+            {
+               "name": "steampunk",
+               "source": "crb"
+            },
+            {
+               "name": "weird war",
+               "source": "crb"
+            },
+            {
+               "name": "modern day",
+               "source": "crb"
+            },
+            {
+               "name": "science fiction",
+               "source": "crb"
+            },
+            {
+               "name": "space opera",
+               "source": "crb"
+            },
+            {
+               "name": "monsterworld"
+            },
+            {
+               "name": "post apocalypse"
+            }
+         ]
+      },
+      {
+         "name": "Helicopter Gunship (Transport)",
+         "page": 72,
+         "variant": true,
+         "silhouette": 3,
+         "maxSpeed": 3,
+         "handling": 1,
+         "defense": 0,
+         "armor": 1,
+         "htt": 8,
+         "sst": 8,
+         "controlSkill": {
+            "name": "Piloting",
+            "source": "crb"
+         },
+         "complement": "2 crew",
+         "passengers": "8",
+         "consumables": "1 day",
+         "encumbranceCapacity": "None",
+         "price": 127000,
+         "rarity": 7,
+         "restricted": true,
+         "description": [
+            "Attack helicopters support troops on the ground with close-in mobile firepower. Some rare variants can even transport soldiers into battle. To make this a transport gunship, reduce the handling by 2 and increase the passenger capacity to 8 (the cost remains unchanged)."
+         ],
+         "weapons": [
+            {
+               "name": "Anti-tank missiles",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 3,
+               "critical": 3,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Breach",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Anti-personnel rocket pods",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 12,
+               "critical": 4,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 12,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 8,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Personal Scale",
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Chain gun",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 1,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "settings": [
+            {
+               "name": "steampunk",
+               "source": "crb"
+            },
+            {
+               "name": "weird war",
+               "source": "crb"
+            },
+            {
+               "name": "modern day",
+               "source": "crb"
+            },
+            {
+               "name": "science fiction",
+               "source": "crb"
+            },
+            {
+               "name": "space opera",
+               "source": "crb"
+            },
+            {
+               "name": "monsterworld"
+            },
+            {
+               "name": "post apocalypse"
+            }
+         ]
+      },
+      {
+         "name": "Orbital Shuttle",
+         "page": 73,
+         "silhouette": 3,
+         "maxSpeed": 4,
+         "handling": -2,
+         "defense": 1,
+         "armor": 1,
+         "htt": 15,
+         "sst": 15,
+         "controlSkill": {
+            "name": "Piloting",
+            "source": "crb"
+         },
+         "complement": "1 pilot, 1 copilot",
+         "passengers": "12",
+         "consumables": "3 days",
+         "encumbranceCapacity": "80 (160 without passengers)",
+         "price": 25000,
+         "rarity": 4,
+         "description": [
+            "Ground-to-orbit shuttles are essential to reach dedicated starships in space. Shuttles must be aerodynamic and armored or shielded for reentry."
+         ],
+         "settings": [
+            {
+               "name": "science fiction",
+               "source": "crb"
+            },
+            {
+               "name": "space opera",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Interstellar Freighter",
+         "page": 73,
+         "silhouette": 5,
+         "maxSpeed": 3,
+         "handling": -2,
+         "defense": 2,
+         "armor": 2,
+         "htt": 40,
+         "sst": 20,
+         "controlSkill": {
+            "name": "Operating",
+            "source": "crb"
+         },
+         "complement": "5 crew",
+         "passengers": "5",
+         "consumables": "3 months",
+         "encumbranceCapacity": 600,
+         "price": 75000,
+         "rarity": 5,
+         "description": [
+            "For every military starship, there are a thousand freighters transporting goods. Our take on the space freighter is similar to a small oceangoing freighter, with a small crew, large cargo holds, and limited maneuverability"
+         ],
+         "weapons": [
+            {
+               "name": "Defensive laser projector",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 4,
+               "critical": 5,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Accurate",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "settings": [
+            {
+               "name": "science fiction",
+               "source": "crb"
+            },
+            {
+               "name": "space opera",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Space Cruiser",
+         "page": 73,
+         "silhouette": 6,
+         "maxSpeed": 3,
+         "handling": -2,
+         "defense": 4,
+         "armor": 6,
+         "htt": 65,
+         "sst": 40,
+         "controlSkill": {
+            "name": "Operating",
+            "source": "crb"
+         },
+         "complement": "175 crew",
+         "passengers": "40",
+         "consumables": "9 months",
+         "encumbranceCapacity": "200 (plus 2 {@vehicle orbital shuttle|shuttles})",
+         "price": 4200000,
+         "rarity": 7,
+         "restricted": true,
+         "description": [
+            "Intended for more futuristic settings, our take on the space cruiser might serve as a frontline combatant, enforce blockades, secure logistical routes, raid enemy supply lines, or conduct customs patrols."
+         ],
+         "abilities": [
+            {
+               "name": "Massive",
+               "description": "When making an attack targeting this vehicle, the Critical rating of any weapons used counts as 2 higher."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Spinal \"shipbreaker\" railgun",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 12,
+               "critical": 2,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "2 fusion missile launch tubes",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 15,
+               "critical": 3,
+               "range": "Strategic",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 10,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Guided",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ],
+               "details": "When the {@quality Blast||crb} quality is triggered, all vehicles within medium range suffer a hit."
+            },
+            {
+               "name": "10 heavy laster projectors",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 4,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Accurate",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ],
+               "details": "These weapons are scattered across the hull of the vessel, so only two may be fired at any one target."
+            }
+         ],
+         "settings": [
+            {
+               "name": "science fiction",
+               "source": "crb"
+            },
+            {
+               "name": "space opera",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Long-Range exploration cruiser",
+         "page": 73,
+         "silhouette": 6,
+         "maxSpeed": 3,
+         "handling": -3,
+         "defense": 3,
+         "armor": 4,
+         "htt": 90,
+         "sst": 60,
+         "controlSkill": {
+            "name": "Operating",
+            "source": "crb"
+         },
+         "complement": "660 crew",
+         "passengers": "314",
+         "consumables": "3 years",
+         "encumbranceCapacity": "500 (plus 3 ground-to-orbit {@vehicle orbital shuttle|shuttlecraft})",
+         "price": 2400000,
+         "rarity": 8,
+         "description": [
+            "Humanity's efforts to explore the stars—to investigate, map, and study alien planets and life forms—ultimately rely on large, deep-space exploration vessels. Given their long-term mission, these spacecraft carry scientists, family members, and even pets. Such ships are perfect as settings for an entire campaign."
+         ],
+         "abilities": [
+            {
+               "name": "Massive",
+               "description": "When making an attack targeting this vehicle, the Critical rating of any weapons used counts as 2 higher."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "2 ship-hunter missile launch tubes",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 1,
+               "range": "Strategic",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Guided",
+                     "ranks": 5,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "4 heavy laster projectors",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 4,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Accurate",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "settings": [
+            {
+               "name": "science fiction",
+               "source": "crb"
+            },
+            {
+               "name": "space opera",
+               "source": "crb"
             }
          ]
       }

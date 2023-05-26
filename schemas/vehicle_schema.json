@@ -13,6 +13,9 @@
          "variant": {
             "type": "boolean"
          },
+         "hasVariants": {
+            "type": "boolean"
+         },
          "imageUrl": {
             "type": "string"
          },
@@ -106,13 +109,75 @@
                   },
                   "description": {
                      "type": "string"
+                  },
+                  "fireArc": {
+                     "type": "string"
+                  },
+                  "skill": {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
+                        },
+                        "source": {
+                           "type": "string"
+                        }
+                     },
+                     "required": [
+                        "name"
+                     ],
+                     "additionalProperties": false
+                  },
+                  "damage": {
+                     "type": "integer"
+                  },
+                  "critical": {
+                     "type": "integer"
+                  },
+                  "range": {
+                     "type": "string",
+                     "enum": ["Engaged", "Short", "Medium", "Long", "Extreme", "Strategic"]
+                  },
+                  "qualities": {
+                     "type": "array",
+                     "items": {
+                        "type": "object",
+                        "properties": {
+                           "name": {
+                              "type": "string"
+                           },
+                           "ranks": {
+                              "type": "integer"
+                           },
+                           "source": {
+                              "type": "string"
+                           }
+                        },
+                        "required": [
+                           "name"
+                        ],
+                        "optional": [
+                           "value",
+                           "source"
+                        ],
+                        "additionalProperties": false
+                     }
+                  },
+                  "details": {
+                     "type": "string"
                   }
                },
                "required": [
                   "name"
                ],
                "optional": [
-                  "description"
+                  "description",
+                  "skill",
+                  "damage",
+                  "critical",
+                  "range",
+                  "qualities",
+                  "details"
                ],
                "additionalProperties": false
             }
@@ -160,6 +225,7 @@
       "optional": [
          "page",
          "variant",
+         "hasVariants",
          "imageUrl",
          "passengers",
          "weapons",

@@ -10,10 +10,14 @@
          "page": {
             "type": "integer"
          },
+         "type": {
+            "type": "string"
+         },
          "description": { "$ref": "./varyingDisplay_sub_schema.json" }
       },
       "required": [
          "name",
+         "type",
          "description"
       ],
       "optional": [
