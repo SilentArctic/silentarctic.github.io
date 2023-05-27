@@ -15,6 +15,22 @@
       "releaseDate": "30 November 2017",
       "originType": "core"
    },
+   "embers-of-the-imperium.json": {
+      "json": "embers-of-the-imperium",
+      "full": "Twilight Imperium: Embers of the Imperium",
+      "abbreviation": "EotI",
+      "color": "#EF3F22",
+      "authors": [
+         "EDGE Studio"
+      ],
+      "convertedBy": [
+         "SilentArctic"
+      ],
+      "url": "https://www.edge-studio.net/games/embers-of-the-imperium/",
+      "releaseDate": "28 April 2023",
+      "version": "2023.5.28",
+      "originType": "core"
+   },
    "expanded-players-guide.json": {
       "json": "expanded-players-guide",
       "full": "Expanded Player's Guide",
