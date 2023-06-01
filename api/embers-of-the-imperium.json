@@ -14,7 +14,7 @@
          ],
          "url": "https://www.edge-studio.net/games/embers-of-the-imperium/",
          "releaseDate": "28 April 2023",
-         "version": "2023.5.28"
+         "version": "2023.6.01"
       },
       "defaultItemSettings": [
          {
@@ -20128,7 +20128,7 @@
          },
          "complement": "1 pilot and 1 navigator/engineer",
          "passengers": "2",
-         "consumables": "2 monts",
+         "consumables": "2 months",
          "encumbranceCapacity": 35,
          "ftlRange": "Long",
          "ftlSpeed": "very fast",
