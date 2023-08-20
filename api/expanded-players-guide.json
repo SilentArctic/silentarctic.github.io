@@ -6643,6 +6643,17 @@
          ]
       }
    ],
+   "rule": [
+      {
+         "name": "Magic Knowledge Skill",
+         "page": 99,
+         "type": "character",
+         "description": [
+            "In Genesys, we assume that your setting may have its own set of expanded knowledge skills (see page 67 of the Genesys Core Rulebook for more on how {@skill Knowledge||crb} can be expanded into multiple skills). However, this raises the question of which knowledge skill should be used when casting spells?",
+            "One option is to create your own knowledge skill or skills, each one linked to a different kind of magic. However, we have also provided a default option: {@skill Knowledge (Supernatural)}, which can represent knowledge of any magical abilities."
+         ]
+      }
+   ],
    "sidebar": [
       {
          "name": "Adjusted Costs",
