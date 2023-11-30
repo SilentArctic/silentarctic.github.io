@@ -7,7 +7,7 @@
          "abbreviation": "CRB",
          "color": "#14C0F1",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/",
-         "version": "2023.5.27",
+         "version": "2023.11.30",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -7251,6 +7251,86 @@
             {
                "name": "space opera"
             }
+         ]
+      },
+      {
+         "name": "Druidic Circlet",
+         "type": "implement",
+         "page": 219,
+         "damage": "+0",
+         "encumbrance": 0,
+         "price": 750,
+         "rarity": 5,
+         "description": [
+            "Druidic circlets could be simple bands of entwined metal, elaborate headdresses of antlers, or even crowns of ivy. They help those using primal magic commune with the natural world.",
+            "When the user casts the Conjure spell to summon a living creature, adding the Summon Ally effect does not increase its difficulty. In addition, the creature remains summoned until the end of the encounter without your character having to use the concentrate maneuver."
+         ]
+      },
+      {
+         "name": "Holy Icon",
+         "type": "implement",
+         "page": 219,
+         "damage": "+0",
+         "encumbrance": 0,
+         "price": 250,
+         "rarity": 4,
+         "description": [
+            "Holy icons are items that represent your character's faith and help them focus that faith to cast spells. These are generally religious symbols of some sort, perhaps necklaces, rings, emblems, or medallions. But they just as easily can simply represent your character's beliefs.",
+            "Holy icons enable divine spellcasters to perform unique miracles. When they are casting a spell, adding any Divine Only effects increase the spell's difficulty one less than they would normally. In addition, the number of wounds healed by heal spells cast by the user increases by two.."
+         ]
+      },
+      {
+         "name": "Magic Orb",
+         "type": "implement",
+         "page": 219,
+         "damage": "+3",
+         "encumbrance": 1,
+         "price": 1000,
+         "rarity": 6,
+         "description": [
+            "These can be orbs of glass, gems, or other semitransparent minerals, and are generally small enough to be carried.",
+            "Magic orbs help augment the user's ability to affect more targets with their spells. When the user casts a spell, adding the Additional Target and Additional Summon effects do not increase its difficulty. In addition, attack spells cast by the user increase their base damage by three."
+         ]
+      },
+      {
+         "name": "Magic Ring",
+         "type": "implement",
+         "page": 219,
+         "damage": "+2",
+         "encumbrance": 0,
+         "price": 10000,
+         "rarity": 8,
+         "description": [
+            "Magic rings are items of great power and danger in most fantasy settings. We decided to stick with that theme, so our rings are items of great power and peril.",
+            "When a character obtains a magic ring, you, the GM, choose one type of magic skill, then select three effects that can be added to spells cast by that skill. Two of the effects can normally only increase the difficulty of the spell by one; the third can normally only increase the difficulty of the spell by two. When the user casts a spell, adding these effects do not increase the spell's difficulty. However, when using a magic ring, you must always upgrade the difficulty of any spells you cast once, and {@symbols dd} cannot be spent to destroy the ring. In addition, attack spells cast by the user increase their base damage by two.",
+            "An example of this might be a ring of protection, which allows your character to add the Range, Additional Target, and Reflection effects to a {@spell Barrier} spell without increasing the difficulty."
+         ]
+      },
+      {
+         "name": "Magic Staff",
+         "type": "implement",
+         "page": 219,
+         "damage": "+4",
+         "encumbrance": 2,
+         "price": 400,
+         "rarity": 3,
+         "description": [
+            "Magical staffs have long been a staple of magic in a variety of settings. Used by wizards, druids, and shamans, these can look like ornate, rune-encrusted rods of brass and obsidian, simple wooden staffs, or pretty much anything else.",
+            "Magical staffs almost universally augment the user's ability to cast spells at range. When they are casting a spell, adding the first Range effect added to the spell does not increase the spell's difficulty. In addition, attack spells cast by the user increase their base damage by four."
+         ]
+      },
+      {
+         "name": "Magic Wand",
+         "type": "implement",
+         "page": 219,
+         "damage": "+3",
+         "encumbrance": 1,
+         "price": 400,
+         "rarity": 5,
+         "description": [
+            "Magical wands are as much a tradition of magic as staffs. Usually small sticks about the size and shape of a conductor's baton, they can be constructed from just about anything and worked with any number of designs.",
+            "Magic wands help augment the user's ability to cast spells in a very specific way. When a character makes or obtains the wand, you, the GM, determine one effect that the wand lets users add to any appropriate spell without increasing the spell's difficulty. The effect chosen must be one that, without a wand, only increases difficulty by one. In addition, attack spells cast by the user increase their base damage by three.",
+            "For example, your character could have a wand of fire, which lets them add the Fire effect to any magic attack actions they perform. They could also have a wand of enervation, which lets them add the Enervate effect to any curse actions they perform. However, they cannot have a wand of grand summoning, because the Grand Summon effect increases the difficulty of the spell by two, not one."
          ]
       }
    ],
