@@ -10944,6 +10944,320 @@
          "description": [
             "This adversary is mentioned in the {@vehicle Interceptor Starfighter (Mahact Dominus Strike Drone)|Mahact Dominus Strike Drone} vehicle, but was not published with a statblock of its own."
          ]
+      },
+      {
+         "name": "Nekro Injector Hull Crawler",
+         "page": 277,
+         "type": "rival",
+         "powerLevels": {
+            "combat": 6,
+            "social": 2,
+            "general": 4
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 2,
+            "cunning": 3,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 6,
+            "wounds": 30,
+            "defense": [1, 1]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "ranks": 3,
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "ranks": 3,
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "ranks": 2,
+               "characteristic": "willpower",
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            "Adversary 1"
+         ],
+         "abilities": [
+            {
+               "name": "Electromagnetic Feet",
+               "description": "Can move normally in zero-gravity."
+            },
+            {
+               "name": "Nekro",
+               "description": "Does not need to breathe, eat, or drink and can survive in vacuum; immune to poisons and toxins."
+            },
+            "Silhouette 2"
+         ],
+         "weapons": [
+            {
+               "name": "Nekro Shredder Claws",
+               "skill": "Brawl",
+               "damage": 10,
+               "critical": 3,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Pierce",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Nekro Injector Hull Framework",
+         "page": 278,
+         "type": "nemesis",
+         "powerLevels": {
+            "combat": 12,
+            "social": 3,
+            "general": 2
+         },
+         "characteristics": {
+            "brawn": 6,
+            "agility": 2,
+            "intellect": 2,
+            "cunning": 3,
+            "willpower": 3,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 10,
+            "wounds": 50,
+            "strain": 25,
+            "defense": [1, 1]
+         },
+         "skills": [
+            {
+               "name": "Computers",
+               "ranks": 2,
+               "characteristic": "intellect",
+               "source": "crb"
+            },
+            {
+               "name": "Gunnery",
+               "ranks": 2,
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Operating",
+               "ranks": 2,
+               "characteristic": "intellect",
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "ranks": 2,
+               "characteristic": "willpower",
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            "Adversary 2"
+         ],
+         "abilities": [
+            {
+               "name": "Nekro",
+               "description": "Does not need to breathe, eat, or drink and can survive in vacuum; immune to poisons and toxins."
+            },
+            "Silhouette 3"
+         ],
+         "weapons": [
+            {
+               "name": "Nekro Turret",
+               "skill": "Gunnery",
+               "damage": 8,
+               "critical": 4,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Pierce",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Engine Blast",
+               "skill": "Gunnery",
+               "damage": 18,
+               "critical": 2,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Burn",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Jol-Nar I-24e Automated Anti-Infantry Turret",
+         "page": 281,
+         "type": "nemesis",
+         "powerLevels": {
+            "combat": 11,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 5,
+            "agility": 4,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 1,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 7,
+            "wounds": 25,
+            "strain": 15,
+            "defense": [1, 1]
+         },
+         "skills": [
+            {
+               "name": "Gunnery",
+               "ranks": 2,
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "ranks": 2,
+               "characteristic": "willpower",
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            "Adversary 1"
+         ],
+         "abilities": [
+            "Silhouette 2"
+         ],
+         "weapons": [
+            {
+               "name": "Light beam cannon",
+               "skill": "Gunnery",
+               "damage": 9,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Pierce",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Hylar Researcher",
+         "page": 283,
+         "type": "minion",
+         "powerLevels": {
+            "combat": 2,
+            "social": 1,
+            "general": 3
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 3,
+            "cunning": 2,
+            "willpower": 1,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 5,
+            "defense": []
+         },
+         "skills": [
+            {
+               "name": "Computers",
+               "characteristic": "intellect",
+               "source": "crb"
+            },
+            {
+               "name": "Knowledge (Science)",
+               "characteristic": "intellect"
+            },
+            {
+               "name": "Mechanics",
+               "characteristic": "intellect",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Applied Education",
+               "description": "Once per encounter, may add {@symbols aa} to any skill check."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "High-energy test capacitor",
+               "skill": "Melee",
+               "damage": 8,
+               "critical": 4,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Burn",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "Hazard-resistant environmental suit: +1 soak",
+            "Facility security key",
+            "Portable toolkit"
+         ]
       }
    ],
    "archetype": [
@@ -16794,7 +17108,7 @@
          "page": 50,
          "tier": 1,
          "activation": "passive",
-         "ranked": "false",
+         "ranked": false,
          "description": [
             "Your character does not count zero-gravity environments as {@rule difficult and impassable terrain|difficult terrain|crb}. When your character is exposed to {@rule vacuum||crb} without protective gear, they may hold their breath for a number of rounds equal to twice their {@characteristic Brawn||crb} and only suffer 2 wounds for each round they are exposed to {@rule vacuum||crb}."
          ]
@@ -17189,7 +17503,7 @@
          "page": 54,
          "tier": 3,
          "activation": "active (incidental)",
-         "ranked": "false",
+         "ranked": false,
          "description": [
             "When your character makes a {@skill Gunnery||crb} check, they may suffer 3 strain to use this talent to reduce the number of {@symbols a} needed to activate any of their weapon's item qualities by 1, to a minimum of 1, until the end of the turn."
          ]
