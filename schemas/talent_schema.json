@@ -1,77 +1,82 @@
 {
    "$id": "https://silentarctic.github.io/schemas/talent_schema.json",
+   "title": "talent",
    "type": "array",
-   "items": [
-      {
-         "type": "object",
-         "properties": {
-            "name": {
-               "type": "string"
-            },
-            "imageUrl": {
-               "type": "string"
-            },
-            "page": {
-               "type": "integer"
-            },
-            "prerequisites": {
-               "oneOf": [
-                  {
-                     "type": "boolean"
-                  },
-                  {
-                     "type": "array",
-                     "items": {
-                        "type": "string"
-                     }
-                  }
-               ]
-            },
-            "tier": {
-               "type": "integer",
-               "enum": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5
-               ]
-            },
-            "activation": {
-               "type": "string",
-               "enum": [
-                  "passive",
-                  "active (incidental, out of turn)",
-                  "active (incidental)",
-                  "active (maneuver)",
-                  "active (action)"
-               ]
-            },
-            "ranked": {
-               "type": "boolean"
-            },
-            "description": {
-               "type": "array",
-               "items": {
-                  "type": "string"
-               }
-            },
-            "settings": { "$ref": "settings_sub_schema.json" }
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string",
+            "description": "Talent name."
          },
-         "required": [
-            "name",
-            "tier",
-            "activation",
-            "ranked",
-            "description"
-         ],
-         "optional": [
-            "imageUrl",
-            "page",
-            "prerequisites",
-            "settings"
-         ],
-         "additionalProperties": false
-      }
-   ]
+         "page": {
+            "type": "integer",
+            "description": "Page on which the talent is found."
+         },
+         "imageUrl": {
+            "type": "string",
+            "description": "URL of associated image."
+         },
+         "prerequisites": {
+            "oneOf": [
+               {
+                  "type": "boolean",
+                  "builder_label": "boolean",
+                  "description": "If the talent has any prerequisites."
+               },
+               {
+                  "type": "array",
+                  "builder_label": "array",
+                  "description": "This list of strings can be used for custom prereq filtering. Matching items must be added to {@code _meta.filters.talentPrereqs}.",
+                  "items": {
+                     "type": "string"
+                  }
+               }
+            ],
+            "description": "Boolean: if the talent has any prerequisites. Array: this list of strings can be used for custom prereq filtering. Matching items must be added to {@code _meta.filters.talentPrereqs}."
+         },
+         "tier": {
+            "type": "integer",
+            "enum": [
+               1,
+               2,
+               3,
+               4,
+               5
+            ],
+            "description": "Talent tier. Any number between 1 and 5, inclusive."
+         },
+         "activation": {
+            "type": "string",
+            "enum": [
+               "passive",
+               "active (incidental, out of turn)",
+               "active (incidental)",
+               "active (maneuver)",
+               "active (action)"
+            ],
+            "description": "Talent activation timing. One of {@code passive}, {@code active (incidental, out of turn)}, {@code active (incidental)}, {@code active (maneuver)}, or {@code active (action)}."
+         },
+         "ranked": {
+            "type": "boolean",
+            "description": "If the talent is ranked or not."
+         },
+         "description": { "$ref": "varyingDisplay_sub_schema.json" },
+         "settings": { "$ref": "settings_sub_schema.json" }
+      },
+      "required": [
+         "name",
+         "tier",
+         "activation",
+         "ranked",
+         "description"
+      ],
+      "optional": [
+         "imageUrl",
+         "page",
+         "prerequisites",
+         "settings"
+      ],
+      "additionalProperties": false
+   }
 }

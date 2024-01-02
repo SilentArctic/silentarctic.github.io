@@ -22,7 +22,7 @@
                "imageUrl": {
                   "type": "string"
                },
-               "description": { "$ref": "./varyingDisplay_sub_schema.json" },
+               "description": { "$ref": "varyingDisplay_sub_schema.json" },
                "skill": {
                   "type": "object",
                   "properties": {
@@ -137,7 +137,7 @@
                      "additionalProperties": false
                   }
                },
-               "settings": { "$ref": "./settings_sub_schema.json" }
+               "settings": { "$ref": "settings_sub_schema.json" }
             },
             "required": [
                "name",
@@ -271,7 +271,7 @@
                      "additionalProperties": false
                   }
                },
-               "settings": { "$ref": "./settings_sub_schema.json" }
+               "settings": { "$ref": "settings_sub_schema.json" }
             },
             "required": [
                "name",
@@ -315,7 +315,7 @@
                "imageUrl": {
                   "type": "string"
                },
-               "description": { "$ref": "./varyingDisplay_sub_schema.json" },
+               "description": { "$ref": "varyingDisplay_sub_schema.json" },
                "encumbrance": {
                   "type": ["integer", "string"]
                },
@@ -389,7 +389,7 @@
                      "additionalProperties": false
                   }
                },
-               "settings": { "$ref": "./settings_sub_schema.json" }
+               "settings": { "$ref": "settings_sub_schema.json" }
             },
             "required": [
                "name",
@@ -481,7 +481,7 @@
                      "additionalProperties": false
                   }
                },
-               "settings": { "$ref": "./settings_sub_schema.json" }
+               "settings": { "$ref": "settings_sub_schema.json" }
             },
             "required": [
                "name",
@@ -568,7 +568,7 @@
                      "additionalProperties": false
                   }
                },
-               "settings": { "$ref": "./settings_sub_schema.json" }
+               "settings": { "$ref": "settings_sub_schema.json" }
             },
             "required": [
                "name",
@@ -607,7 +607,7 @@
                "imageUrl": {
                   "type": "string"
                },
-               "description": { "$ref": "./varyingDisplay_sub_schema.json" },
+               "description": { "$ref": "varyingDisplay_sub_schema.json" },
                "hardPoints": {
                   "type": "number"
                },
@@ -672,7 +672,7 @@
                      "additionalProperties": false
                   }
                },
-               "settings": { "$ref": "./settings_sub_schema.json" }
+               "settings": { "$ref": "settings_sub_schema.json" }
             },
             "required": [
                "name",

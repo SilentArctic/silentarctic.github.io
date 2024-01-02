@@ -70,6 +70,8 @@
                },
                "defense": {
                   "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2,
                   "items": {
                      "type": "integer"
                   }
@@ -91,10 +93,10 @@
                "combat": {
                   "type": "integer"
                },
-               "general": {
+               "social": {
                   "type": "integer"
                },
-               "social": {
+               "general": {
                   "type": "integer"
                }
             },
@@ -355,8 +357,8 @@
                "type": "string"
             }
          },
-         "description": { "$ref": "./varyingDisplay_sub_schema.json" },
-         "settings": { "$ref": "./settings_sub_schema.json" },
+         "description": { "$ref": "varyingDisplay_sub_schema.json" },
+         "settings": { "$ref": "settings_sub_schema.json" },
          "tags": {
             "type": "array",
             "items": {
@@ -368,6 +370,7 @@
          "name",
          "type",
          "characteristics",
+         "derived",
          "skills"
       ],
       "optional": [

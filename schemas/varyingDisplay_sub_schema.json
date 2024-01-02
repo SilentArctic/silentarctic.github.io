@@ -4,11 +4,14 @@
    "items": {
       "oneOf": [
          {
-            "type": "string"
+            "type": "string",
+            "builder_label": "text",
+            "description": "Text description."
          },
 
          {
             "type": "object",
+            "builder_label": "special text",
             "properties": {
                "type": {
                   "type": "string",
@@ -24,7 +27,9 @@
                   "type": "string"
                },
                "forceTitleLevel": {
-                  "type": "integer"
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 6
                },
                "page": {
                   "type": "integer"
@@ -68,6 +73,7 @@
 
          {
             "type": "object",
+            "builder_label": "notice",
             "properties": {
                "type": {
                   "type": "string",
@@ -101,6 +107,7 @@
 
          {
             "type": "object",
+            "builder_label": "quote",
             "properties": {
                "type": {
                   "type": "string",
@@ -128,6 +135,7 @@
 
          {
             "type": "object",
+            "builder_label": "list",
             "properties": {
                "type": {
                   "type": "string",
@@ -159,6 +167,7 @@
 
          {
             "type": "object",
+            "builder_label": "table",
             "properties": {
                "type": {
                   "type": "string",
@@ -247,6 +256,7 @@
 
          {
             "type": "object",
+            "builder_label": "grid",
             "properties": {
                "type": {
                   "type": "string",
@@ -267,6 +277,7 @@
 
          {
             "type": "object",
+            "builder_label": "image",
             "properties": {
                "type": {
                   "type": "string",
@@ -284,6 +295,7 @@
 
          {
             "type": "object",
+            "builder_label": "rule",
             "properties": {
                "type": {
                   "type": "string",

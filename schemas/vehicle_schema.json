@@ -203,8 +203,8 @@
                "additionalProperties": false
             }
          },
-         "description": { "$ref": "./varyingDisplay_sub_schema.json" },
-         "settings": { "$ref": "./settings_sub_schema.json" }
+         "description": { "$ref": "varyingDisplay_sub_schema.json" },
+         "settings": { "$ref": "settings_sub_schema.json" }
       },
       "required": [
          "name",

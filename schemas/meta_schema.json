@@ -1,51 +1,64 @@
 {
    "$id": "https://silentarctic.github.io/schemas/meta_schema.json",
+   "title": "_meta",
    "type": "object",
    "properties": {
       "source": {
          "type": "object",
+         "description": "Source meta data used for tracking and creating items correctly.",
          "properties": {
             "json": {
-               "type": "string"
+               "type": "string",
+               "description": "kebab-case title of your homebrew. This is used to differentiate your data from everything else and {@b must be unique}."
             },
             "full": {
-               "type": "string"
+               "type": "string",
+               "description": "The full name of your homebrew, with correct casing."
             },
             "abbreviation": {
-               "type": "string"
-            },
-            "language": {
-               "type": "string"
-            },
-            "color": {
-               "type": "string"
-            },
-            "url": {
-               "type": "string"
+               "type": "string",
+               "description": "The abbreviated name of your homebrew, used in reference tags and shown as the source. Use colons to separate title/subtitle. {@b Underscore characters are reserved for translation files.}"
             },
             "version": {
-               "type": "string"
+               "type": "string",
+               "description": "Version of your homebrew. You can use an actual versioning system, but I suggest using the most recent date it was updated."
             },
             "authors": {
                "type": "array",
+               "description": "List of authors.",
                "items": {
                   "type": "string"
                }
             },
+            "language": {
+               "type": "string",
+               "description": "The collection's language, spelled out. Defaults to English."
+            },
+            "color": {
+               "type": "string",
+               "description": "The hex-color of the abbreviation when displayed in tables and headers. Please make sure the color is readable in all color schemes. Defaults to black/white based on theme."
+            },
+            "url": {
+               "type": "string",
+               "description": "Web address of your homebrew. Can link to drivethrurpg, or any other website at which your product is located."
+            },
             "convertedBy": {
                "type": "array",
                "items": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "List of people who converted the collection from PDF/etc to GenesysRef JSON format."
                }
             },
             "translatedBy": {
                "type": "array",
                "items": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "List of people who translated the collection from a different language. Do not use this field if the source material was itself a translation."
                }
             },
             "releaseDate": {
-               "type": "string"
+               "type": "string",
+               "description": "Source release date. Please use the format: D Month YYYY (28 April 2023)."
             }
          },
          "required": [
@@ -63,35 +76,45 @@
          ],
          "additionalProperties": false
       },
+      "defaultItemSettings": {
+         "$ref": "settings_sub_schema.json",
+         "description": "Default settings for every item. Can be overridden by the item's optional \"settings\" property. If your collection has a mixture of different settings such as the EPG, leave this as an empty array."
+      },
       "filters": {
          "type": "object",
+         "description": "Custom filter properties.",
          "properties": {
             "settings": {
                "type": "array",
+               "description": "Unique settings used in this collection.",
                "items": {
                   "type": "string"
                }
             },
             "magicSkills": {
                "type": "array",
+               "description": "Unique magic skills used in this collection.",
                "items": {
                   "type": "string"
                }
             },
             "optionFeatureType": {
                "type": "array",
+               "description": "Unique option feature types used in this collection. Strings must be lowercase to filter properly.",
                "items": {
                   "type": "string"
                }
             },
             "optionFeatureClass": {
                "type": "array",
+               "description": "Unique option feature classes used in this collection. Strings must be lowercase to filter properly.",
                "items": {
                   "type": "string"
                }
             },
             "talentPrereqs": {
                "type": "array",
+               "description": "Unique filters for talent prerequisites.",
                "items": {
                   "type": "string"
                }
@@ -104,14 +127,14 @@
             "optionFeatureClass"
          ],
          "additionalProperties": false
-      },
-      "defaultItemSettings": { "$ref": "settings_sub_schema.json" }
+      }
    },
    "required": [
       "source",
       "defaultItemSettings"
    ],
    "optional": [
+      "installed",
       "filters"
    ],
    "additionalProperties": false

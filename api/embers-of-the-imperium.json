@@ -16794,7 +16794,7 @@
          "page": 50,
          "tier": 1,
          "activation": "passive",
-         "ranked": "false",
+         "ranked": false,
          "description": [
             "Your character does not count zero-gravity environments as {@rule difficult and impassable terrain|difficult terrain|crb}. When your character is exposed to {@rule vacuum||crb} without protective gear, they may hold their breath for a number of rounds equal to twice their {@characteristic Brawn||crb} and only suffer 2 wounds for each round they are exposed to {@rule vacuum||crb}."
          ]
@@ -17189,7 +17189,7 @@
          "page": 54,
          "tier": 3,
          "activation": "active (incidental)",
-         "ranked": "false",
+         "ranked": false,
          "description": [
             "When your character makes a {@skill Gunnery||crb} check, they may suffer 3 strain to use this talent to reduce the number of {@symbols a} needed to activate any of their weapon's item qualities by 1, to a minimum of 1, until the end of the turn."
          ]
