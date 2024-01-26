@@ -4,7 +4,8 @@
    "description": "Collection database for GenesysRef.",
    "main": "index.js",
    "scripts": {
-      "test": "jest __tests__/collectionSchema.test.js"
+      "test": "jest __tests__/collectionSchema.test.js",
+      "sync": "git checkout dev && git pull && git checkout master && git pull && git checkout dev && git merge --no-ff master"
    },
    "repository": {
       "type": "git",
