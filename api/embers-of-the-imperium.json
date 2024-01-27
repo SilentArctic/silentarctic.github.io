@@ -14,7 +14,7 @@
          ],
          "url": "https://www.edge-studio.net/games/embers-of-the-imperium/",
          "releaseDate": "28 April 2023",
-         "version": "2024.1.02"
+         "version": "2024.1.26"
       },
       "defaultItemSettings": [
          {
@@ -17788,7 +17788,7 @@
          "activation": "active (incidental, out of turn)",
          "ranked": false,
          "description": [
-            "Once per round when an opponent attacks an ally who is within long range of your character, you may spend one Story Point and {@symbols h or {@symbols d} to have your character use this talent to automatically hit the opponent with a ranged weapon your character is wielding, if the opponent is within the weapon's range. The hit deals the weapon's base damage plus additional damage equal to your character's ranks in the skill used to wield the weapon."
+            "Once per round when an opponent attacks an ally who is within long range of your character, you may spend one Story Point and {@symbols h} or {@symbols d} to have your character use this talent to automatically hit the opponent with a ranged weapon your character is wielding, if the opponent is within the weapon's range. The hit deals the weapon's base damage plus additional damage equal to your character's ranks in the skill used to wield the weapon."
          ]
       },
       {
