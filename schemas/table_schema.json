@@ -28,7 +28,7 @@
                      "type": "string"
                   },
                   "size": {
-                     "type": "number"
+                     "type": "integer"
                   }
                },
                "required": [

@@ -5,10 +5,12 @@
       "type": "object",
       "properties": {
          "name": {
-            "type": "string"
+            "type": "string",
+            "description": "Adversary name."
          },
          "page": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Page on which the adversary is found."
          },
          "type": {
             "type": "string",
@@ -16,36 +18,52 @@
                "minion",
                "rival",
                "nemesis"
-            ]
+            ],
+            "description": "Type of adversary. One of {@code minion}, {@code rival}, {@code nemesis}."
          },
          "hasVariants": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "If the adversary has variant adversaries."
          },
          "variant": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "If the adversary is a variant of another adversary."
          },
          "characteristics": {
             "type": "object",
             "properties": {
                "brawn": {
-                  "type": "integer"
+                  "type": "integer",
+                  "minimum": 0,
+                  "description": "Adversary's brawn."
                },
                "agility": {
-                  "type": "integer"
+                  "type": "integer",
+                  "minimum": 0,
+                  "description": "Adversary's agility."
                },
                "intellect": {
-                  "type": "integer"
+                  "type": "integer",
+                  "minimum": 0,
+                  "description": "Adversary's intellect."
                },
                "cunning": {
-                  "type": "integer"
+                  "type": "integer",
+                  "minimum": 0,
+                  "description": "Adversary's cunning."
                },
                "willpower": {
-                  "type": "integer"
+                  "type": "integer",
+                  "minimum": 0,
+                  "description": "Adversary's willpower."
                },
                "presence": {
-                  "type": "integer"
+                  "type": "integer",
+                  "minimum": 0,
+                  "description": "Adversary's presence."
                }
             },
+            "description": "Adversary characteristics",
             "required": [
                "brawn",
                "agility",
@@ -58,15 +76,22 @@
          },
          "derived": {
             "type": "object",
+            "description": "Attributes calculated based on other sources. Insert base values here.",
             "properties": {
                "soak": {
-                  "type": "integer"
+                  "type": "integer",
+                  "minimum": 0,
+                  "description": "Adversary's soak."
                },
                "wounds": {
-                  "type": "integer"
+                  "type": "integer",
+                  "minimum": 1,
+                  "description": "Adversary's wound threshold."
                },
                "strain": {
-                  "type": "integer"
+                  "type": "integer",
+                  "minimum": 1,
+                  "description": "Adversary's strain threshold. Omit for minions and rivals."
                },
                "defense": {
                   "type": "array",
@@ -74,7 +99,8 @@
                   "maxItems": 2,
                   "items": {
                      "type": "integer"
-                  }
+                  },
+                  "description": "Array of two integers. First value is melee defense, second value is ranged defense."
                }
             },
             "required": [
@@ -89,15 +115,19 @@
          },
          "powerLevels": {
             "type": "object",
+            "description": "Adversary's power levels (see EPG pg. 84).",
             "properties": {
                "combat": {
-                  "type": "integer"
+                  "type": "integer",
+                  "description": "Adversary's combat value."
                },
                "social": {
-                  "type": "integer"
+                  "type": "integer",
+                  "description": "Adversary's social value."
                },
                "general": {
-                  "type": "integer"
+                  "type": "integer",
+                  "description": "Adversary's general value."
                }
             },
             "required": [
@@ -109,14 +139,17 @@
          },
          "skills": {
             "type": "array",
+            "description": "List of adversary's skills.",
             "items": {
                "type": "object",
                "properties": {
                   "name": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Skill name."
                   },
                   "characteristic": {
                      "type": "string",
+                     "description": "Characteristic tied to the skill.",
                      "enum": [
                         "brawn",
                         "agility",
@@ -127,10 +160,14 @@
                      ]
                   },
                   "ranks": {
-                     "type": "integer"
+                     "type": "integer",
+                     "minimum": 0,
+                     "maximum": 5,
+                     "description": "Skill ranks, omit for minions."
                   },
                   "source": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Source of the skill (if not in this collection)."
                   }
                },
                "required": [
@@ -146,14 +183,17 @@
          },
          "motivations": {
             "type": "array",
+            "description": "List of adversary's motivations, if any.",
             "items": {
                "type": "object",
                "properties": {
                   "name": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Motivation name"
                   },
                   "description": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Motivation details."
                   }
                },
                "required": [
@@ -165,33 +205,49 @@
          },
          "talents": {
             "type": "array",
+            "description": "List of adversary's talents.",
             "items": {
-               "type": ["object", "string"],
-               "properties": {
-                  "name": {
-                     "type": "string"
+               "oneOf": [
+                  {
+                     "type": "string",
+                     "builder_label": "string",
+                     "description": "Talent name."
                   },
-                  "description": {
-                     "type": "string"
+                  {
+                     "type": "object",
+                     "builder_label": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string",
+                           "description": "Talent name."
+                        },
+                        "description": {
+                           "type": "string",
+                           "description": "Talent description."
+                        }
+                     },
+                     "required": [
+                        "name",
+                        "description"
+                     ],
+                     "additionalProperties": false
                   }
-               },
-               "required": [
-                  "name",
-                  "description"
-               ],
-               "additionalProperties": false
+               ]
             }
          },
          "abilities": {
             "type": "array",
+            "description": "Adversary's abilities.",
             "items": {
                "type": ["object", "string"],
                "properties": {
                   "name": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Ability name."
                   },
                   "description": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Ability details."
                   }
                },
                "required": [
@@ -203,17 +259,21 @@
          },
          "spells": {
             "type": "object",
+            "description": "List of adversary's spells, if any.",
             "properties": {
                "skills": {
                   "type": "array",
+                  "description": "List of magic skills the adversary can use.",
                   "items": {
                      "type": "object",
                      "properties": {
                         "name": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Skill name."
                         },
                         "source": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Skill source (if not in this collection)."
                         }
                      },
                      "required": [
@@ -227,14 +287,17 @@
                },
                "spells": {
                   "type": "array",
+                  "description": "List of spells the adversary frequently uses.",
                   "items": {
                      "type": "object",
                      "properties": {
                         "name": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Spell name."
                         },
                         "description": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Spell details."
                         }
                      },
                      "required": [
@@ -253,45 +316,43 @@
          },
          "weapons": {
             "type": "array",
+            "description": "List of adversary's weapons, if any.",
             "items": {
                "type": "object",
                "properties": {
                   "name": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Weapon name."
                   },
                   "skill": {
-                     "oneOf": [
-                        {
-                           "type": "object",
-                           "properties": {
-                              "name": {
-                                 "type": "string"
-                              },
-                              "source": {
-                                 "type": "string"
-                              }
-                           },
-                           "required": [
-                              "name"
-                           ],
-                           "optional": [
-                              "source"
-                           ],
-                           "additionalProperties": false
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
                         },
-                        {
+                        "source": {
                            "type": "string"
                         }
-                     ]
+                     },
+                     "required": [
+                        "name"
+                     ],
+                     "optional": [
+                        "source"
+                     ],
+                     "additionalProperties": false
                   },
                   "damage": {
-                     "type": "integer"
+                     "type": "integer",
+                     "description": "Weapon damage value."
                   },
                   "critical": {
-                     "type": "integer"
+                     "type": "integer",
+                     "description": "Weapon crit value."
                   },
                   "range": {
                      "type": "string",
+                     "description": "Weapon range. One of {@code Engaged}, {@code Short}, {@code Medium}, {@code Long}, {@code Extreme}, {@code Strategic}",
                      "enum": [
                         "Engaged",
                         "Short",
@@ -303,38 +364,37 @@
                   },
                   "qualities": {
                      "type": "array",
+                     "description": "List of the weapon's qualities.",
                      "items": {
-                        "oneOf": [
-                           {
-                              "type": "object",
-                              "properties": {
-                                 "name": {
-                                    "type": "string"
-                                 },
-                                 "ranks": {
-                                    "type": "integer"
-                                 },
-                                 "source": {
-                                    "type": "string"
-                                 }
-                              },
-                              "required": [
-                                 "name"
-                              ],
-                              "optional": [
-                                 "ranks",
-                                 "source"
-                              ],
-                              "additionalProperties": false
+                        "type": "object",
+                        "builder_label": "object",
+                        "properties": {
+                           "name": {
+                              "type": "string",
+                              "description": "Quality name."
                            },
-                           {
-                              "type": "string"
+                           "ranks": {
+                              "type": "integer",
+                              "description": "Quality ranks (if necessary)."
+                           },
+                           "source": {
+                              "type": "string",
+                              "description": "Quality source (if not in this collection)."
                            }
-                        ]
+                        },
+                        "required": [
+                           "name"
+                        ],
+                        "optional": [
+                           "ranks",
+                           "source"
+                        ],
+                        "additionalProperties": false
                      }
                   },
                   "details": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Extra weapon details."
                   }
                },
                "required": [
@@ -353,6 +413,7 @@
          },
          "gear": {
             "type": "array",
+            "description": "List of adversary's gear.",
             "items": {
                "type": "string"
             }

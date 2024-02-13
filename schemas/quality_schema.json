@@ -1,39 +1,43 @@
 {
    "$id": "https://silentarctic.github.io/schemas/quality_schema.json",
    "type": "array",
-   "items": [
-      {
-         "type": "object",
-         "properties": {
-            "name": {
-               "type": "string"
-            },
-            "page": {
-               "type": "integer"
-            },
-            "activation": {
-               "type": "string",
-               "enum": [
-                  "active",
-                  "passive"
-               ]
-            },
-            "itemTypes": {
-               "type": "string",
-               "enum": ["weapon", "armor", "any"]
-            },
-            "description": { "$ref": "varyingDisplay_sub_schema.json" }
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string",
+            "description": "Quality name."
          },
-         "required": [
-            "name",
-            "activation",
-            "itemTypes",
-            "description"
-         ],
-         "optional": [
-            "page"
-         ],
-         "additionalProperties": false
-      }
-   ]
+         "page": {
+            "type": "integer",
+            "description": "Page on which the quality is found."
+         },
+         "activation": {
+            "type": "string",
+            "enum": [
+               "active",
+               "passive"
+            ],
+            "description": "If the quality needs to be manually activated by spending {@symbols a}+."
+         },
+         "itemType": {
+            "type": "string",
+            "enum": ["weapon", "armor", "any"],
+            "description": "Items that can have the quality."
+         },
+         "description": { "$ref": "varyingDisplay_sub_schema.json" },
+         "settings": { "$ref": "settings_sub_schema.json" }
+      },
+      "required": [
+         "name",
+         "activation",
+         "itemType",
+         "description"
+      ],
+      "optional": [
+         "page",
+         "settings"
+      ],
+      "additionalProperties": false
+   }
 }

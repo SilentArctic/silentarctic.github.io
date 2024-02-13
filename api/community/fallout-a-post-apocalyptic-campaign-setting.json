@@ -536,7 +536,7 @@
          "name": "Rad",
          "page": 8,
          "activation": "active",
-         "itemTypes": "any",
+         "itemType": "any",
          "description": [
             "When Rad is triggered, the target's {@rule Radiation|Radiation Level|fallout} increases by an amount equal to the weapon's Rad rating. When a character's {@rule Radiation|Radiation Level|fallout} is increased by the Rad item quality, they do not make a {@skill Resilience} check to try and mitigate the increase, but any Rad resistance they have is still applied.",
             "While wearing armor with this quality, reduce the {@rule Radiation|Radiation|Fallout} damage from all radioactive sources by an amount equal to the armor's Rad rating."
@@ -546,7 +546,7 @@
          "name": "Auto-Fire Only",
          "page": 10,
          "activation": "active",
-         "itemTypes": "weapon",
+         "itemType": "weapon",
          "description": [
             "Like {@quality Auto-Fire||crb}, but it must always be used."
          ]

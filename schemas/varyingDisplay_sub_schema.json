@@ -12,9 +12,11 @@
          {
             "type": "object",
             "builder_label": "special text",
+            "description": "Text description with extra stylizing options.",
             "properties": {
                "type": {
                   "type": "string",
+                  "description": "Display type.",
                   "enum": [
                      "text",
                      "sidebar",
@@ -24,28 +26,35 @@
                   ]
                },
                "title": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "Title of the container."
                },
                "forceTitleLevel": {
                   "type": "integer",
                   "minimum": 0,
-                  "maximum": 6
+                  "maximum": 6,
+                  "description": "Only applicable to text containers. Forces the title to the style for the given depth. Nested containers will also have their title levels increased."
                },
                "page": {
-                  "type": "integer"
+                  "type": "integer",
+                  "description": "Page number on which the title can be found."
                },
                "hasModal": {
-                  "type": "boolean"
+                  "type": "boolean",
+                  "description": "If the container should pop out into a modal. You will most likely never need this."
                },
                "entries": { "$ref": "varyingDisplay_sub_schema.json" },
                "_ref": {
                   "type": "object",
+                  "description": "Populate the container a pre-existing reference. Note: the reference must have a matching \"type\".",
                   "properties": {
                      "name": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "Reference name."
                      },
                      "source": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "Reference source (if not in the collection.)."
                      }
                   },
                   "required": [
@@ -74,10 +83,12 @@
          {
             "type": "object",
             "builder_label": "notice",
+            "description": "Notice display. Wraps text in a bright container to grab the reader's attention.",
             "properties": {
                "type": {
                   "type": "string",
-                  "enum": ["notice"]
+                  "enum": ["notice"],
+                  "description": "Display type."
                },
                "variant": {
                   "type": "string",
@@ -86,10 +97,12 @@
                      "success",
                      "warn",
                      "error"
-                  ]
+                  ],
+                  "description": "Notice variant."
                },
                "entries": {
                   "type": "array",
+                  "description": "Notice content.",
                   "items": {
                      "type": "string"
                   }
@@ -108,19 +121,23 @@
          {
             "type": "object",
             "builder_label": "quote",
+            "description": "Quote display. Stylizes a quote and attributes the author.",
             "properties": {
                "type": {
                   "type": "string",
-                  "enum": ["quote"]
+                  "enum": ["quote"],
+                  "description": "Display type."
                },
                "entries": {
                   "type": "array",
+                  "description": "Quote text.",
                   "items": {
                      "type": "string"
                   }
                },
                "by": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "Author attribution."
                }
             },
             "required": [
@@ -136,19 +153,24 @@
          {
             "type": "object",
             "builder_label": "list",
+            "description": "Display's a (bulleted or not) list of items.",
             "properties": {
                "type": {
                   "type": "string",
-                  "enum": ["list", "list-no-bullet"]
+                  "enum": ["list", "list-no-bullet"],
+                  "description": "Display type."
                },
                "title": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "List title."
                },
                "description": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "List description."
                },
                "items": {
                   "type": "array",
+                  "description": "Items to appear in the list.",
                   "list": {
                      "type": "string"
                   }
@@ -168,33 +190,42 @@
          {
             "type": "object",
             "builder_label": "table",
+            "description": "Displays a table.",
             "properties": {
                "type": {
                   "type": "string",
-                  "enum": ["table"]
+                  "enum": ["table"],
+                  "description": "Display type."
                },
                "title": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "Table title."
                },
                "subtitle": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "Table subtitle."
                },
                "foot": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "Table footer."
                },
                "columns": {
                   "type": "array",
+                  "description": "List of table columns.",
                   "items": {
                      "type": "object",
                      "properties": {
                         "header": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Column header."
                         },
                         "value": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Row property to display. Can be omitted if the header matches a row property (case-insensitive)."
                         },
                         "size": {
-                           "type": "number"
+                           "type": "integer",
+                           "description": "Column width, relative to all columns. Defaults to 1."
                         }
                      },
                      "required": [
@@ -209,11 +240,13 @@
                },
                "rows": {
                   "type": "array",
+                  "description": "Table rows.",
                   "items": {
                      "type": "object",
                      "properties": {
                         "subtitle": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Subtitle label for dividing sections."
                         }
                      },
                      "optional": [
@@ -223,12 +256,15 @@
                },
                "_ref": {
                   "type": "object",
+                  "description": "Reference to another table",
                   "properties": {
                      "name": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "Table name."
                      },
                      "source": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "Table source (if not in this collection)."
                      }
                   },
                   "required": [
@@ -257,15 +293,22 @@
          {
             "type": "object",
             "builder_label": "grid",
+            "description": "Creates a grid for formatting content.",
             "properties": {
                "type": {
                   "type": "string",
-                  "enum": ["grid"]
+                  "enum": ["grid"],
+                  "description": "Display type."
                },
                "columns": {
-                  "type": "integer"
+                  "type": "integer",
+                  "minimum": 1,
+                  "description": "Number of columns."
                },
-               "entries": { "$ref": "varyingDisplay_sub_schema.json" }
+               "entries": {
+                  "$ref": "varyingDisplay_sub_schema.json",
+                  "description": "Grid content."
+               }
             },
             "required": [
                "type",
@@ -278,37 +321,57 @@
          {
             "type": "object",
             "builder_label": "image",
+            "description": "Image display.",
             "properties": {
                "type": {
                   "type": "string",
-                  "enum": ["image"]
+                  "enum": ["image"],
+                  "description": "Display type."
                },
                "imageUrl": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "Image url."
+               },
+               "height": {
+                  "type": "string",
+                  "description": "Image max height in {@code px}, {@code %}, or any other css size value."
+               },
+               "width": {
+                  "type": "string",
+                  "description": "Image max width in {@code px}, {@code %}, or any other css size value."
                }
             },
             "required": [
                "type",
                "imageUrl"
-            ]
+            ],
+            "optional": [
+               "height",
+               "width"
+            ],
+            "additionalProperties": false
          },
 
          {
             "type": "object",
             "builder_label": "rule",
+            "description": "Displays an existing rule.",
             "properties": {
                "type": {
                   "type": "string",
-                  "enum": ["rule"]
+                  "enum": ["rule"],
+                  "description": "Display type."
                },
                "_ref": {
                   "type": "object",
                   "properties": {
                      "name": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "Rule name."
                      },
                      "source": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "Rule source (if not this collection)."
                      }
                   },
                   "required": [
@@ -320,7 +383,8 @@
                   "additionalProperties": false
                },
                "description": {
-                  "type": "array"
+                  "type": "array",
+                  "description": "Additional rule details."
                }
             },
             "required": [

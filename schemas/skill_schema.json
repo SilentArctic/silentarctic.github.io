@@ -1,95 +1,87 @@
 {
    "$id": "https://silentarctic.github.io/schemas/skill_schema.json",
    "type": "array",
-   "items": [
-      {
-         "type": "object",
-         "properties": {
-            "name": {
-               "type": "string"
-            },
-            "page": {
-               "type": "integer"
-            },
-            "imageUrl": {
-               "type": "string"
-            },
-            "characteristic": {
-               "type": "string"
-            },
-            "category": {
-               "type": "string",
-               "enum": [
-                  "general",
-                  "knowledge",
-                  "combat",
-                  "magic",
-                  "social",
-                  "other"
-               ]
-            },
-            "description": {
-               "type": "array",
-               "items": [
-                  {
-                     "type": "string"
-                  }
-               ]
-            },
-            "shouldUse": {
-               "type": "array",
-               "items": [
-                  {
-                     "type": "string"
-                  }
-               ]
-            },
-            "shouldNotUse": {
-               "type": "array",
-               "items": [
-                  {
-                     "type": "string"
-                  }
-               ]
-            },
-            "spells": {
-               "type": "array",
-               "items": {
-                  "type": "object",
-                  "properties": {
-                     "name": {
-                        "type": "string"
-                     },
-                     "source": {
-                        "type": "string"
-                     }
-                  },
-                  "required": [
-                     "name"
-                  ],
-                  "optional": [
-                     "source"
-                  ],
-                  "additionalProperties": false
-               }
-            },
-            "settings": { "$ref": "settings_sub_schema.json" }
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string"
          },
-         "required": [
-            "name",
-            "characteristic",
-            "category",
-            "description",
-            "shouldUse",
-            "shouldNotUse"
-         ],
-         "optional": [
-            "imageUrl",
-            "page",
-            "spells",
-            "settings"
-         ],
-         "additionalProperties": false
-      }
-   ]
+         "page": {
+            "type": "integer"
+         },
+         "imageUrl": {
+            "type": "string"
+         },
+         "characteristic": {
+            "type": "string"
+         },
+         "category": {
+            "type": "string",
+            "enum": [
+               "general",
+               "knowledge",
+               "combat",
+               "magic",
+               "social",
+               "other"
+            ]
+         },
+         "description": {
+            "type": "array",
+            "items": {
+               "type": "string"
+            }
+         },
+         "shouldUse": {
+            "type": "array",
+            "items": {
+               "type": "string"
+            }
+         },
+         "shouldNotUse": {
+            "type": "array",
+            "items": {
+               "type": "string"
+            }
+         },
+         "spells": {
+            "type": "array",
+            "items": {
+               "type": "object",
+               "properties": {
+                  "name": {
+                     "type": "string"
+                  },
+                  "source": {
+                     "type": "string"
+                  }
+               },
+               "required": [
+                  "name"
+               ],
+               "optional": [
+                  "source"
+               ],
+               "additionalProperties": false
+            }
+         },
+         "settings": { "$ref": "settings_sub_schema.json" }
+      },
+      "required": [
+         "name",
+         "characteristic",
+         "category",
+         "description",
+         "shouldUse",
+         "shouldNotUse"
+      ],
+      "optional": [
+         "imageUrl",
+         "page",
+         "spells",
+         "settings"
+      ],
+      "additionalProperties": false
+   }
 }
