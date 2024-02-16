@@ -304,7 +304,7 @@
                },
                "type": {
                   "type": "string",
-                  "enum": ["gear", "treasure", "alchemy", "artifact"]
+                  "enum": ["gear", "treasure", "alchemy", "artifact", "magic", "mount"]
                },
                "class": {
                   "type": "string"

@@ -7,7 +7,7 @@
          "abbreviation": "CRB",
          "color": "#14C0F1",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/",
-         "version": "2023.11.30",
+         "version": "2024.2.16",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -7331,6 +7331,531 @@
             "Magical wands are as much a tradition of magic as staffs. Usually small sticks about the size and shape of a conductor's baton, they can be constructed from just about anything and worked with any number of designs.",
             "Magic wands help augment the user's ability to cast spells in a very specific way. When a character makes or obtains the wand, you, the GM, determine one effect that the wand lets users add to any appropriate spell without increasing the spell's difficulty. The effect chosen must be one that, without a wand, only increases difficulty by one. In addition, attack spells cast by the user increase their base damage by three.",
             "For example, your character could have a wand of fire, which lets them add the Fire effect to any magic attack actions they perform. They could also have a wand of enervation, which lets them add the Enervate effect to any curse actions they perform. However, they cannot have a wand of grand summoning, because the Grand Summon effect increases the difficulty of the spell by two, not one."
+         ]
+      },
+      {
+         "name": "Balanced Hilt",
+         "page": 207,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "This attachment represents modifying a melee weapon's balance (particularly around the hilt or haft) to make it easier to control. This kind of attachment makes sense for any setting (even futuristic combat knives can benefit from being finely weighted or balanced).",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any weapons that use the {@skill Melee (Light)} skill and to one-handed weapons that use the {@skill Melee} skill.",
+                  "{@b Modifiers:} The weapon gains the {@quality Accurate|Accurate 1} quality, or increases any existing {@quality Accurate} quality by 1. (If the weapon has the {@quality Inaccurate} quality, it reduces that quality's rating by 1 to a minimum of 0, instead.)",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "hardPoints": 3,
+         "price": 1000,
+         "rarity": 6
+      },
+      {
+         "name": "Bipod Mount",
+         "page": 207,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "A bipod (a folding, two-legged stand) can be attached to the barrel of a firearm. The legs stabilize the firearm and take up some of its weight. This kind of attachment makes sense for the {@setting weird war}, {@setting modern day}, {@setting science fiction}, and {@setting space opera} settings.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any {@skill Ranged (Heavy)} or {@skill Gunnery} weapon.",
+                  "{@b Modifiers}: If the user spends one {@rule preperation|preparation maneuver} to deploy the bipod, the weapon's {@quality Cumbersome} or {@quality Unwieldy} qualities are reduced by 2, to a minimum of 0, and the weapon's encumbrance is reduced by 2, to a minimum of 0, while the user fires from a crouched or prone position (or can brace the bipod against something solid).",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "hardPoints": 1,
+         "price": 250,
+         "rarity": 2
+      },
+      {
+         "name": "Duelist Cross Guard",
+         "page": 207,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "This attachment represents modifying the cross guard of a sword to better catch and lock the blade of an opponent. This kind of attachment makes sense for the {@setting fantasy} setting, but could make sense for any setting where dueling with swords is common.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any sword, whether one-handed or two-handed.",
+                  "{@b Modifiers:} When an opponent resolves a melee combat check against the wielder, if the check generated at least one uncanceled {@symbols h}, the wielder may suffer 1 strain as an out-of-turn incidental to add {@symbols hh} to the results.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "hardPoints": 1,
+         "price": 800,
+         "rarity": 5
+      },
+      {
+         "name": "Extended Barrel",
+         "page": 207,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "This attachment extends the barrel (or makes similar modifications) to make the weapon fire farther. This kind of attachment makes sense for the {@setting weird war}, {@setting modern day}, {@setting science fiction}, and {@setting space opera} settings.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any {@skill Ranged (Light)}, {@skill Ranged (Heavy)}, or {@skill Gunnery} weapons (you may exclude weapons such as grenades, or weapons that fire self-propelled ammo such as missile launchers).",
+                  "{@b Modifiers:} The weapon's range increases by one range band, to a maximum of extreme range. The weapon gains the {@quality Cumbersome|Cumbersome 2} quality, or increases its existing {@quality Cumbersome} quality by 2.",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ],
+         "hardPoints": 2,
+         "price": 1000,
+         "rarity": 4
+      },
+      {
+         "name": "Hair Trigger",
+         "page": 207,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "A \"hair trigger\" represents a modification that allows the user to fire a weapon very quickly, although this can be at the expense of accuracy. This kind of attachment makes sense for the {@setting weird war}, {@setting modern day}, {@setting science fiction}, and {@setting space opera} settings.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any pistol.",
+                  "{@b Modifiers:} When the user makes the first combat check with this weapon in an encounter, add {@symbols sh} to the results.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "hardPoints": 1,
+         "price": 150,
+         "rarity": 3
+      },
+      {
+         "name": "Razor Edge",
+         "page": 208,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "This attachment represents sharpening a blade to a razor edge, then reinforcing or treating that edge so that it can withstand repeated blows. This kind of attachment makes sense for any setting.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any close combat weapon that has a blade.",
+                  "{@b Modifiers:} The weapon gains the {@quality Pierce|Pierce 2} quality, or increases any existing {@quality Pierce} quality by 1. The weapon also decreases its Crit rating by 1, to a minimum of 1.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "hardPoints": 1,
+         "price": 1250,
+         "rarity": 6
+      },
+      {
+         "name": "Recurve Limbs",
+         "page": 208,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": 300,
+         "rarity": 4,
+         "description": [
+            "Making the limbs of a bow or crossbow curve away from the wielder increases the penetrating power of the bow's shots, even if it also makes the bow larger and more difficult to wield. This kind of attachment makes sense for {@setting fantasy} settings.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any bow or crossbow.",
+                  "{@b Modifiers:} The weapon gains the {@quality Pierce|Pierce 2} quality, or increases any existing {@quality Pierce} quality by 1. The weapon also gains the {@quality Unwieldy|Unwieldy 2} quality, or increases any existing {@quality Unwieldy} quality by 1.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Serrated Edge",
+         "page": 208,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": 75,
+         "rarity": 2,
+         "description": [
+            "Adding jagged sawteeth to a bladed weapon means the wounds it makes are particularly brutal and damaging. This kind of attachment makes sense for any setting.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any close combat weapon that has a blade.",
+                  "{@b Modifiers:} The weapon gains the {@quality Vicious|Vicious 1} quality, or increases any existing {@quality Vicious} quality by 1.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Superior Weapon Customization",
+         "page": 208,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": 750,
+         "rarity": 7,
+         "description": [
+            "This simply represents the weapon being modified by a master craftsman to be better than other examples of its type. This kind of attachment makes sense for any setting.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any weapon.",
+                  "{@b Modifiers:} The weapon gains the {@quality Superior} quality.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Telescopic Sight",
+         "page": 208,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": 200,
+         "rarity": 3,
+         "description": [
+            "A telescopic sight magnifies a target, allowing the user to shoot targets that they could normally barely be able to see (futuristic versions may use special enhanced optics, rather than simple lenses). This kind of attachment makes sense for the {@setting weird war}, {@setting modern day}, {@setting science fiction}, and {@setting space opera} settings.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} : This attachment can be applied to any ranged weapon that could logically benefit from the addition of a telescopic sight.",
+                  "{@b Modifiers:} The user reduces the difficulty of ranged combat checks made with this weapon at long and extreme range by 1.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Tripod Mount",
+         "page": 208,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 2,
+         "price": 400,
+         "rarity": 3,
+         "description": [
+            "Like a bipod, the tripod mount is a set of three folding legs that deploy from the center of the weapon to provide a stable stand to fire from. This kind of attachment makes sense for the {@setting weird war}, {@setting modern day}, {@setting science fiction}, and {@setting space opera} settings.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any {@skill Ranged (Heavy)} or {@skill Gunnery} weapon with an encumbrance of 4 or more.",
+                  "{@b Modifiers:} If the user spends two {@rule preparation|preparation maneuvers} to deploy the tripod, the weapon's {@skill Cumbersome} or {@skill Unwieldy} qualities are reduced by 3, to a minimum of 0, and the weapon's encumbrance is reduced by 4, to a minimum of 0. The weapon may not be moved (except to pivot on the tripod mount) once it has been set up. The user must spend two {@rule preparation|preparation maneuvers} to take the tripod down."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Under-Barrel Flamethrower",
+         "page": 208,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 2,
+         "price": 3000,
+         "rarity": 6,
+         "description": [
+            "Modern firearms sometimes have secondary weapons attached under the barrel, allowing the wielder to effectively carry two weapons in one. This kind of attachment makes sense for the {@setting modern day}, {@setting science fiction}, and {@setting space opera} settings.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any rifle-sized {@skill Ranged (Heavy)} weapons.",
+                  "{@b Modifiers:} The weapon can fire using the associated secondary profile.",
+                  "{@b Hard Points Required:} 2,"
+               ]
+            },
+            {
+               "title": "Flamethrower Stats",
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Skill"
+                  },
+                  {
+                     "header": "Dam",
+                     "value": "damage"
+                  },
+                  {
+                     "header": "Crit"
+                  },
+                  {
+                     "header": "Range"
+                  },
+                  {
+                     "header": "Special"
+                  }
+               ],
+               "rows": [{
+                  "skill": "{@skill Ranged (Heavy)}",
+                  "damage": "10",
+                  "crit": 2,
+                  "range": "Short",
+                  "special": "{@quality Blast|Blast 6}, {@quality Burn|Burn 4}, {@quality Limited Ammo|Limited Ammo 2}"
+               }]
+            }
+         ]
+      },
+      {
+         "name": "Under-Barrel Grenade Launcher",
+         "page": 208,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 2,
+         "price": 1500,
+         "rarity": 5,
+         "description": [
+            "Modern firearms sometimes have secondary weapons attached under the barrel, allowing the wielder to effectively carry two weapons in one. This kind of attachment makes sense for the {@setting modern day}, {@setting science fiction}, and {@setting space opera} settings.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any rifle-sized {@skill Ranged (Heavy)} weapons.",
+                  "{@b Modifiers:} The weapon can fire using the associated secondary profile.",
+                  "{@b Hard Points Required:} 2,"
+               ]
+            },
+            {
+               "title": "Grenade Launcher Stats",
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Skill"
+                  },
+                  {
+                     "header": "Dam",
+                     "value": "damage"
+                  },
+                  {
+                     "header": "Crit"
+                  },
+                  {
+                     "header": "Range"
+                  },
+                  {
+                     "header": "Special"
+                  }
+               ],
+               "rows": [{
+                  "skill": "{@skill Ranged (Heavy)}",
+                  "damage": "8",
+                  "crit": 4,
+                  "range": "Medium",
+                  "special": "{@quality Blast|Blast 6}, {@quality Limited Ammo|Limited Ammo 1}"
+               }]
+            }
+         ]
+      },
+      {
+         "name": "Under-Barrel Shotgun",
+         "page": 208,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 2,
+         "price": 1000,
+         "rarity": 4,
+         "description": [
+            "Modern firearms sometimes have secondary weapons attached under the barrel, allowing the wielder to effectively carry two weapons in one. This kind of attachment makes sense for the {@setting modern day}, {@setting science fiction}, and {@setting space opera} settings.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any rifle-sized {@skill Ranged (Heavy)} weapons.",
+                  "{@b Modifiers:} The weapon can fire using the associated secondary profile.",
+                  "{@b Hard Points Required:} 2,"
+               ]
+            },
+            {
+               "title": "Shotgun Stats",
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Skill"
+                  },
+                  {
+                     "header": "Dam",
+                     "value": "damage"
+                  },
+                  {
+                     "header": "Crit"
+                  },
+                  {
+                     "header": "Range"
+                  },
+                  {
+                     "header": "Special"
+                  }
+               ],
+               "rows": [{
+                  "skill": "{@skill Ranged (Heavy)}",
+                  "damage": "8",
+                  "crit": 3,
+                  "range": "Short",
+                  "special": "{@quality Blast|Blast 5}, {@quality Knockdown}"
+               }]
+            }
+         ]
+      },
+      {
+         "name": "Weapon Sling",
+         "page": 209,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": 25,
+         "rarity": 1,
+         "description": [
+            "A sling helps a user carry a particularly heavy weapon by taking up part of the weight. This kind of attachment makes sense for any setting.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any {@skill Ranged (Heavy)} weapon or ranged weapons that require two hands to wield.",
+                  "{@b Modifiers:} The weapon decreases its encumbrance by 2.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Weighted Head",
+         "page": 209,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": 250,
+         "rarity": 2,
+         "description": [
+            "Adding extra weight to the head of a blunt weapon lets the wielder strike with greater impact and do more damage. This kind of attachment makes sense in any setting.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any close combat weapon that deals bludgeoning or crushing damage (not one with a cutting edge).",
+                  "{@b Modifiers:} The weapon increases its damage by 2. The weapon gains the {@quality Cumbersome|Cumbersome 2} quality, or increases its existing {@quality Cumbersome} quality by 1.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Deflective Plating",
+         "page": 209,
+         "type": "attachment",
+         "class": "armor",
+         "hardPoints": 1,
+         "price": 450,
+         "rarity": 4,
+         "description": [
+            "This attachment applies angled plates or mildly reflective surfaces to help deflect incoming ranged attacks. This kind of attachment makes sense in {@setting fantasy}, {@setting science fiction}, and {@setting space opera} settings (in the past, armor might be designed to deflect arrows or throwing knives, while in the future, it could reflect lasers or energy blasts).",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any armor.",
+                  "{@b Modifiers:} Wearer increases their ranged defense by 1.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Enhanced Lifting Servos",
+         "page": 209,
+         "type": "attachment",
+         "class": "armor",
+         "hardPoints": 2,
+         "price": 1500,
+         "rarity": 5,
+         "description": [
+            "Futuristic servos (or other, similar devices) can be worked into suits of hard carapace armor to make them powered and let the user lift and carry far more than they could normally. This kind of attachment makes sense in {@setting science fiction} and {@setting space opera} settings.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any armor composed of a hardened carapace.",
+                  "{@b Modifiers:} When wearing this armor, the user increases their encumbrance threshold by 5. The user reduces the rating of the {@quality Cumbersome} quality of any carried weapons by 1, to a minimum of 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Intimidating Visage",
+         "page": 209,
+         "type": "attachment",
+         "class": "armor",
+         "hardPoints": 0,
+         "price": 125,
+         "rarity": 3,
+         "description": [
+            "Warriors from many cultures paint their armor or add imposing face masks to intimidate opponents. This kind of attachment makes sense in all settings.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any armor.",
+                  "{@b Modifiers:} When wearing this armor, the user adds {@symbols s} to {@skill Coercion} checks they make, and automatic {@symbols f} to {@skill Charm} checks they make.",
+                  "{@b Hard Points Required:} 0."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Rare Metals",
+         "page": 209,
+         "type": "attachment",
+         "class": "armor",
+         "hardPoints": 2,
+         "price": 1000,
+         "rarity": 8,
+         "description": [
+            "Many fantasy settings feature rare, nearly magical metals that can be used to create superior armor. This kind of attachment makes sense in {@setting fantasy} settings.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to chain or plate armor.",
+                  "{@b Modifiers:} The armor reduces its encumbrance by 2, and it adds one fewer {@dice setback} to {@skill Stealth} checks.",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Reinforced Plating",
+         "page": 209,
+         "type": "attachment",
+         "class": "armor",
+         "hardPoints": 2,
+         "price": 8000,
+         "rarity": 7,
+         "description": [
+            "This attachment represents adding extra layers of armor or using stronger materials to reinforce the armor. This kind of attachment makes sense in any setting.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any armor that uses hardened plates for protection.",
+                  "{@b Modifiers:} The armor gains the {@quality Reinforced} quality. The armor also increases its encoumbrance by 1.",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Vacuum Sealed",
+         "page": 209,
+         "type": "attachment",
+         "class": "armor",
+         "hardPoints": 1,
+         "price": 600,
+         "rarity": 4,
+         "description": [
+            "This attachment equips the armor with breathing gear and seals it against vacuum. This kind of attachment makes sense in the {@setting science fiction} and {@setting space opera} settings.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any armor.",
+                  "{@b Modifiers:} While wearing this armor, the user may ignore the effects of vacuum or poionous atmospheric environments for up to one hour.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
          ]
       }
    ],

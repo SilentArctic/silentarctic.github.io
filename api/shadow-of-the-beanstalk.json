@@ -7,7 +7,7 @@
          "abbreviation": "SotB",
          "color": "#40B3B5",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/shadow-beanstalk/",
-         "version": "2023.8.20",
+         "version": "2024.2.13",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -4110,6 +4110,7 @@
       },
       {
          "name": "Megacorp Exec",
+         "page": 226,
          "type": "nemesis",
          "characteristics": {
             "brawn": 2,
@@ -4191,7 +4192,13 @@
          ],
          "weapons": [],
          "gear": [
-            "Expensive suit with built-in PAD, credstick with unlmited funds, teacup giraffe, personal assistant"
+            "Expensive suit with built-in PAD",
+            "Credstick with unlmited funds",
+            "Teacup giraffe",
+            "Personal assistant"
+         ],
+         "description": [
+            "Execs live a romanticized lifestyle in the highest floors of elite arcology buildings, where they enjoy the absolute highest standard of living the planets have to offer. However, boardroom competition is fierce, and it can sometimes even be lethal. To survive the cutthroat environment, executives have to be tough and ruthless, as comfortable managing teams of prisec mercenaries as they are negotiating multibillion-credit deals."
          ],
          "tags": [
             "source:SotB",
@@ -8276,7 +8283,7 @@
          },
          "wt": 11,
          "st": 8,
-         "xp": 100,
+         "xp": 170,
          "skills": {
             "skills": [],
             "ranksTotal": 0,
@@ -13103,6 +13110,512 @@
                "source": "crb"
             }
          ]
+      },
+      {
+         "name": "Ballistic Plates",
+         "page": 109,
+         "type": "attachment",
+         "class": "armor",
+         "hardPoints": 1,
+         "price": 0,
+         "rarity": 0,
+         "description": [
+            "Ballistic armor plates are a popular after-market add on for mercenaries and members of the NAPD SWAT Team. The plascrete plates may be heavy, but they help deflect shots and blows, and absorb damage from direct hits.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} Argus BallisTec Defensive Plates.",
+                  "{@b Use With:} This attachment can be applied to any combat armor.",
+                  "{@b Modifiers:} The wearer increases their ranged defense by 1. The armor also increases its encumbrance by 1.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Ballistic Plates",
+         "page": 109,
+         "type": "attachment",
+         "class": "armor",
+         "hardPoints": 1,
+         "price": 350,
+         "rarity": 4,
+         "description": [
+            "Ballistic armor plates are a popular after-market add on for mercenaries and members of the NAPD SWAT Team. The plascrete plates may be heavy, but they help deflect shots and blows, and absorb damage from direct hits.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} Argus BallisTec Defensive Plates.",
+                  "{@b Use With:} This attachment can be applied to any combat armor.",
+                  "{@b Modifiers:} The wearer increases their ranged defense by 1. The armor also increases its encumbrance by 1.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Buckyweave Enhancement",
+         "page": 109,
+         "type": "attachment",
+         "class": "armor",
+         "hardPoints": 2,
+         "price": 9000,
+         "rarity": 7,
+         "description": [
+            "Buckyweave enhancement reinforces an armor suit with a fantastically expensive, quad-layer buckyweave fabric to drastically increase its protective qualities.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} Argus BallisTec Armor Reinforcement.",
+                  "{@b Use With:} This attachment can be applied to any armor.",
+                  "{@b Modifiers:} The armor gains the {@quality Reinforced||crb} item quality.",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Enhanced Optics Suite",
+         "page": 109,
+         "type": "attachment",
+         "class": "armor",
+         "hardPoints": 1,
+         "price": 1200,
+         "rarity": 6,
+         "description": [
+            "This attachment builds numerous optical enhancements into the helmet of the wearer's armor. Most of the common suites include passive night vision, thermal imaging, digital zoom, vid recording, and polarized filters. Advanced models can even include ultrasound or radar imaging systems.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} Zech Optics Full-Spectrum Optical Suite.",
+                  "{@b Use With:} This attachment can be applied to any armor that includes a helmet.",
+                  "{@b Modifiers:} Removes {@dice setback|2} added to your character's checks due to smoke or darkness.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Intimidating Paint Job",
+         "page": 109,
+         "type": "attachment",
+         "class": "armor",
+         "hardPoints": 0,
+         "price": 90,
+         "rarity": 2,
+         "description": [
+            "While the blank faceplate of an exosuit or carapace helmet can be disconcerting, it's still not as frightening as a good old fashioned skull or demonic face spray painted or holographically projected over the plasteel or cloth.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} Custom work only.",
+                  "{@b Use With:} This attachment can be applied to any armor.",
+                  "{@b Modifiers:} When wearing this armor, your character adds {@symbols s} to {@skill Coercion||crb} checks they make, and {@symbols f} to {@skill Charm||crb} checks they make.",
+                  "{@b Hard Points Required:} 0."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Jump Jets",
+         "page": 110,
+         "type": "attachment",
+         "class": "armor",
+         "hardPoints": 2,
+         "price": 555,
+         "rarity": 5,
+         "description": [
+            "Maneuvering jets are a necessity in microgravity environments, but short range \"jump jets\" also let users fly briefly (and deploy from high altitude combat drops) while on Earth.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} Argus Icarus System.",
+                  "{@b Use With:} This attachment can be applied to any armor with a rigid external carapace.",
+                  "{@b Modifiers:} When wearing this armor, once per encounter your character may activate the jump jets as an incidental. Until the end of your character's next turn, they may {@side flying|fly|crb} and do not suffer damage from falling.",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Street Wear",
+         "page": 110,
+         "type": "attachment",
+         "class": "armor",
+         "hardPoints": 0,
+         "price": 125,
+         "rarity": 2,
+         "description": [
+            "While some armor is unmistakably military in appearance, other armor can be tailored to look indistinguishable from street clothing with the right flare and cut.While some armor is unmistakably military in appearance, other armor can be tailored to look indistinguishable from street clothing with the right flare and cut.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} Custom work only.",
+                  "{@b Use With:} This attachment can be applied to {@gear optical camouflage}, {@gear environmental hardsuit}, and {@gear light body armor}.",
+                  "{@b Modifiers:} This armor looks like normal clothing. Anyone searching your character adds {@dice setback|2} to {@skill Perception||crb} checks to notice that they are wearing armor.",
+                  "{@b Hard Points Required:} 0."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Strength-Enhancing System",
+         "page": 110,
+         "type": "attachment",
+         "class": "armor",
+         "hardPoints": 2,
+         "price": 2000,
+         "rarity": 5,
+         "description": [
+            "Strength-enhancing systems use exosuit technology to turn any hardsuit into a makeshift suit of powered armor. Using polyfiber muscle clusters and microhydraulics, an SES allows the user to lift and carry more mass than usual for longer distances and periods of time.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} Weyland AMX Power Assist System, HHI “Brawler” Heavy Power Support System.",
+                  "{@b Use With:} This attachment can be applied to any armor with a rigid external carapace.",
+                  "{@b Modifiers:} When wearing this armor, your character increases their encumbrance threshold by 5, and adds {@symbols s} to any {@characteristic Brawn||crb}-based checks they make.",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Vacuum Sealed",
+         "page": 110,
+         "type": "attachment",
+         "class": "armor",
+         "hardPoints": 1,
+         "price": 500,
+         "rarity": 4,
+         "description": [
+            "By changing out the underlying unisuit and installing joint seals and special coatings, a full body armored suit can be made impervious to almost any hostile environment. When buttoned up, a vacuum-sealed suit protects the wearer from nuclear, biological, and chemical agents; intense heat; bitter cold; and even the vacuum of space.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} HHI High Altitude Air System.",
+                  "{@b Use With:} This attachment can be applied to any armor that covers the entire body and includes a helmet.",
+                  "{@b Modifiers:} While wearing this armor, your character may ignore the effects of vacuum and other hazardous environments for up to two hours.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Ammo Counter",
+         "page": 110,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": 200,
+         "rarity": 3,
+         "description": [
+            "One of the simplest smart systems available, an ammo counter displays in a shooter's cybereye - or in a pair of smartgoggles or an HUD - a weapon's maximum and current number of shots. Thus avoiding that unexpected \"beep\" or \"click\" of an empty mag.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} Strelet Arms \"Countdown,\" Skorpios LAG-4 Ammunition Tracker.",
+                  "{@b Use With:} This attachment can be applied to any {@sidebar What's a Smart Weapon?|smart} ranged weapon.",
+                  "{@b Modifiers:} While your character is using this weapon, your GM cannot spend {@symbols h or d} to cause it to run out of ammo.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Balanced Hilt",
+         "page": 110,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": 1000,
+         "rarity": 6,
+         "description": [
+            "Good balance is one of the most important features of a melee weapon. Using a variety of ultra-lightweight materials, a talented technician can create a weapon that is light and easy to wield.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} Custom work only.",
+                  "{@b Use With:} This attachment can be applied to any one-handed weapons that use the {@skill Melee||crb} skill.",
+                  "{@b Modifiers:} The weapon gains the {@quality Accurate|Accurate 1|crb} item quality or increases its existing {@quality Accurate||crb} rating by 1. (If the weapon has the {@quality Inaccurate||crb} item quality, it reduces that quality's rating by 1, to a minimum of 0, instead.)",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Ballistic Targeting Display",
+         "page": 110,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 3,
+         "price": 500,
+         "rarity": 5,
+         "description": [
+            "A favorite of sharpshooters and sport hunters, a BTD smart system improves a weapon's long-range performance. This system combines a number of subsystems such as a rangefinder, digital optical enhancement, a long-range laser sight, and even a weather satellite uplink to provide real-time ballistic data. It connects to a cybereye, HUD, or smartgoggles and displays range to target, windage, bullet drop, and other data important to long-range shooting.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} Cantor Model 1 Marksman Smart System, Argus LA994 Ballistic Targeting Array.",
+                  "{@b Use With:} This attachment can be applied to any {@sidebar What's a Smart Weapon?|smart} {@skill Ranged (Heavy)||crb} or {@skill Gunnery||crb} weapon.",
+                  "{@b Modifiers:} The user reduces the difficulty of ranged combat checks made with this weapon at ranges greater than medium by 2, to a minimum of {@difficulty Average}. This bonus cannot be combined with any other bonus from a different scope or sight.",
+                  "{@b Hard Points Required:} 3."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Bipod Mount",
+         "page": 111,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": 250,
+         "rarity": 2,
+         "description": [
+            "Bipods are simple, two-legged stands used to stabilize weapons and make them easier to operate. Although decidedly low-tech in comparison to modern weapon attachments, bipods are still incredibly popular in spite of (or perhaps because of) their simplicity.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} Strelet Arms General Purpose Bipod.",
+                  "{@b Use With:} This attachment can be applied to any {@skill Ranged (Heavy)||crb} or {@skill Gunnery||crb} weapon.",
+                  "{@b Modifiers:} If your character spends one preparation maneuver to deploy the bipod, the weapon's {@quality Cumbersome||crb} or {@quality Unwieldy||crb} qualities are reduced by 2, to a minimum of 0, and the weapon's encumbrance is reduced by 2, to a minimum of 0, while your character fires from a crouched or prone position (or can brace the bipod against something solid).",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "BMI-Linked Trigger",
+         "page": 111,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": 120,
+         "rarity": 2,
+         "description": [
+            "BMI-equipped runners are fond of saying that there's nothing faster than the speed of thought. Some mercenaries and pistols for hire apply this literally, getting a BMI linked to the firing mechanism of their weapon. Being able to fire a pistol with a mental command is faster than pulling the trigger, but it takes training to avoid doing so with a stray thought.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:}  Cantor Mind-Lightning Link.",
+                  "{@b Use With:} This attachment can be applied to any {@sidebar What's a Smart Weapon?|smart} ranged weapon.",
+                  "{@b Modifiers:} Your character must have a {@gear Brain Machine Interface|BMI}, {@gear skulljack}, or {@gear spinal modem} installed to benefit from this attachment. When your character makes the first combat check with this weapon in an encounter, add {@symbols sh} to the results. Your character can also use mental commands to fire this weapon even if they are not holding it, as long as the weapon is within long range.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Enhanced Weight",
+         "page": 111,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": 250,
+         "rarity": 2,
+         "description": [
+            "Although trends tend towards lighter weapons, some benefit from a bit more heft. Custom armorers can replace striking surfaces with denser materials that are just as durable, allowing them to strike with more impact.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} Custom work only.",
+                  "{@b Use With:} This attachment can be applied to any close combat weapon that deals bludgeoning or crushing damage (not one with a cutting edge).",
+                  "{@b Modifiers:} : The weapon increases its damage by 2. The weapon gains the {@quality Cumbersome|Cumbersome 2|crb} quality, or increases its existing {@quality Cumbersome||crb} quality by 1.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Recoil Compensators",
+         "page": 111,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": 350,
+         "rarity": 4,
+         "description": [
+            "By using smartlinked gyrostabilizers and gas vents, recoil compensators make weapons more accurate and easier to handle. While recoil compensators are typically added to automatic weapons or high-accuracy, long-range rifles, nearly any slugthrower can benefit from this system.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} : Strelet Arms GR19 Gas Venting System, Cantor Sta-Bil Recoil Compensators.",
+                  "{@b Use With:} This attachment can be applied to any {@sidebar What's a Smart Weapon?|smart} slugthrower weapon.",
+                  "{@b Modifiers:} The weapon decreases its {@quality Inaccurate||crb} item quality by 1, to a minimum of 0.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Shortened Barrel",
+         "page": 111,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": 180,
+         "rarity": 3,
+         "description": [
+            "While any weapon's barrel can be shortened with proper application of hacksaw, plasma cutter, or file, most professionals purchase purpose-built barrels to replace the standard items that came with their weapons. Weapons with shortened barrels enable a quicker draw, at the cost of range.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} Strelet Arms Korotka-1 Barrel, Argus SBSM Reduced Length Barrel.",
+                  "{@b Use With:} This attachment can be applied to any {@skill Ranged (Light)||crb} weapon.",
+                  "{@b Modifiers:} Your character may draw this weapon as an incidental rather than as a maneuver. The range of this weapon changes to short.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Superior Weapon Customization",
+         "page": 111,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": 750,
+         "rarity": 7,
+         "description": [
+            "No matter how well put together it is, a mass-market weapon is still made for the masses. This attachment tweaks a weapon to an individual's specifications, making it an extension of the user rather than a run-of-the-mill weapon.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} Custom work only.",
+                  "{@b Use With:} This attachment can be applied to any weapon.",
+                  "{@b Modifiers:} This weapon gains the {@quality Superior||crb} item quality.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Target-Selection System",
+         "page": 112,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 2,
+         "price": 1225,
+         "rarity": 7,
+         "restricted": true,
+         "description": [
+            "Target-selection systems are smart systems that are designed to greatly reduce the likelihood of friendly fire. The system consists of an integrated Identify Friend or Foe (IFF) system that identifies allies through a variety of biometric and visual sensors. The system takes a moment to scan its surroundings and the participants in a combat, but once it does so, it refuses to allow its weapon to fire when the shot could hit a friendly.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} Scorpios AEGIS IFF System, Argus HoldFire Target Filtering System.",
+                  "{@b Use With:} This attachment can be applied to any {@sidebar What's a Smart Weapon?|smart} ranged weapon.",
+                  "{@b Modifiers:} Your character may spend a maneuver during an encounter to activate the target-selection system. If they do, for the remainder of the encounter, your GM cannot spend {@symbols d} from their combat checks to cause the attack to hit an ally engaged with their original target.",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Targeting Reticle",
+         "page": 112,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": 800,
+         "rarity": 5,
+         "description": [
+            "This simple smart system displays a small targeting reticle in a character's cybereye, HUD, or smartgoggles. This feature increases a shooter's accuracy, although it cannot be combined with any other sighting system and is only moderately useful at longer ranges.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} Strelet SureShot Targeting Scope, HHI Shrike-1 Holo-Reticle.",
+                  "{@b Use With:} This attachment can be applied to any {@sidebar What's a Smart Weapon?|smart} ranged weapon.",
+                  "{@b Modifiers:} The weapon gains the {@quality Accurate|Accurate 1|crb} item quality or increases its existing {@quality Accurate||crb} rating by 1. (If the weapon has the {@quality Inaccurate||crb} item quality, it reduces that quality's rating by 1, to a minimum of 0, instead.) This bonus cannot be combined with any other bonus from a different scope or sight.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Telescopic Sight",
+         "page": 112,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": 200,
+         "rarity": 3,
+         "description": [
+            "The telescopic optical sight is one of the easiest and most common modifications made to weapons. Cheaper than a smart system, the tried-and-true optical sight has not changed much in the centuries since its invention. Modern materials and construction techniques have increased its fit and finish and reduced its fragility, but at the end of the day, an optical sight still uses finely crafted lenses held in a tube that magnify a shooter's target.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} Zech Optics Triumph Z6 Riflescope, Cantor Model 9 Marksman Scope.",
+                  "{@b Use With:} This attachment can be applied to any ranged weapon that could logically benefit from the application of a telescopic sight.",
+                  "{@b Modifiers:} The user reduces the difficulty of ranged combat checks made with this weapon at long and extreme range by 1.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Torso Combat Harness",
+         "page": 112,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 3,
+         "price": 1175,
+         "rarity": 5,
+         "restricted": true,
+         "description": [
+            "Torso combat harnesses allow users to stabilize heavy weapons by supporting some of the weight with their own body. They consist of a harness worn by the user and attached to the weapon via a powered and articulated \"arm.\" The whole arrangement is incredibly unwieldy for untrained users, but it lets someone carry a laser cannon while not wearing an exosuit.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} HHI PowerLift Harness.",
+                  "{@b Use With:} This attachment can be applied to any smart ranged weapon.",
+                  "{@b Modifiers:} As long as the harness is attached to your character, the weapon's {@quality Cumbersome||crb} qualities are reduced by 4 to a minimum of 0, and the weapon's encumbrance is reduced by 2, to a minimum of 0. The weapon gains the {@quality Unwieldy|Unwieldy 2|crb} quality, or increases any existing {@quality Unwieldy||crb} quality by 1.",
+                  "{@b Hard Points Required:} 3."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Weapon Lockout",
+         "page": 112,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": 145,
+         "rarity": 3,
+         "description": [
+            "When installed in a smart-capable weapon, a lockout prevents anyone but the weapon's owner from using it. Most lockouts use a sophisticated combination of biometrics and palm-print sensors integrated into the grip.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} Skorpios Mk I Print Lock, Jinteki GeneLocker Weapon Security System.",
+                  "{@b Use With:} This attachment can be applied to any {@sidebar What's a Smart Weapon?|smart} weapon.",
+                  "{@b Modifiers:} This weapon cannot be fired except by its designated user. Unlocking and reprogramming a stolen or otherwise \"acquired\" weapon with an active lockout requires your character to make a {@difficulty Daunting|Computers (Hacking)}. Your GM may spend {@symbols hhh or d} from this check to permanently disable the locked weapon, rendering it useless.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Weapon Sling",
+         "page": 112,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": 25,
+         "rarity": 1,
+         "description": [
+            "A sling helps a user carry a weapon by taking up part of the weight. This particular attachment has changed little over the centuries, although the styles and prints popular in New Angeles do favor bold hexagonal patterns.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Models Include:} Urban Adventures Multipurpose Sling, Strelet Arms S3.",
+                  "{@b Use With:} This attachment can be applied to any {@skill Ranged (Heavy)||crb} weapon.",
+                  "{@b Modifiers:} The weapon decreases its encumbrance by 2.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
       }
    ],
    "optionFeature": [
@@ -14355,21 +14868,73 @@
                "source": "crb"
             }
          ]
-      },
+      }
+   ],
+   "rule": [
       {
-         "name": "Ballistic Plates",
-         "page": 109,
-         "type": "attachment",
-         "class": "armor",
+         "name": "The Favor Economy",
+         "page": 80,
+         "type": "character",
          "description": [
-            "Ballistic armor plates are a popular after-market add on for mercenaries and members of the NAPD SWAT Team. The plascrete plates may be heavy, but they help deflect shots and blows, and absorb damage from direct hits.",
             {
-               "type": "list",
-               "items": [
-                  "{@b Models Include:} Argus BallisTec Defensive Plates.",
-                  "{@b Use With:} This attachment can be applied to any combat armor.",
-                  "{@b Modifiers:} The wearer increases their ranged defense by 1. The armor also increases its encumbrance by 1.",
-                  "{@b Hard Points Required:} 1."
+               "entries": [
+                  "While New Angeles officially runs on the Titan Transnational Credit (a digital currency backed by the worlds' largest and most powerful banking corporation), once you get below plaza level you quickly find that favors are every bit as valuable as a credstick. Surviving daily life in the undercity is as much about who you owe as who you know, and who owes you in return.",
+                  "For many {@i disenfrancistos}, daily life revolves around the informal and infernally complex web of debts, promises, and IOUs that's generally referred to as the favor economy. Trading favors allows people to get what they need to survive when money is tight, and to stay off the grid and out of Titan Transnational's transaction records. It can also be a lot more humane than deducting a price from a credstick. If a paroled runner is starving today, a friendly bodega owner can give them some staples to see them through to payday. In exchange, that runner might reprogram their cash register with a new suite of home-programmed security software to prevent casual robberies. Not only does the starving neighbor get food, they can also \"sell\" skills they're no longer allowed to monetize. In exchange, the bodega owner gets work done that would cost them thousands of credits if they went through Small Business Protection Programs Inc.",
+                  {
+                     "title": "Favor Economy Mechanics",
+                     "entries": [
+                        "The favor economy is, at its core, an exchange economy. The core game mechanic of this economy is that a character can exchange a favor for a favor of equal value with another character (as long as both characters are willing to make the trade).",
+                        "In our system, favors fall into three categories: small favors, regular favors, and big favors.",
+                        {
+                           "type": "list",
+                           "items": [
+                              "{@b Small favors} are the kinds of favors that don't take too much effort or too many resources. Watching someone's pets for an afternoon, giving someone a ride in your hopper, or loaning someone tools are all small favors. Chances are that characters owe and are owed plenty of small favors in their lives.",
+                              "{@b Regular favors} are more serious: the kinds of things that represent a substantial effort on someone's part or that may even put someone in danger. Lending someone your vehicle for a couple of days, loaning them a thousand credits, or saving them from being beaten up in a bar fight are all examples of regular favors. Characters are likely going to remember the regular favors they owe and are owed, and they often owe or are owed one or two regular favors.",
+                              "{@b Big favors} are just that: big. These are the kinds of favors that people remember years or even decades later, and they are always going to feel comfortable cashing in on them, no matter how long it's been. Protecting someone's family, loaning a hopper to someone who engages in a violent chase with the police, or saving someone's life are all examples of big favors. A character may or may not owe or be owed any big favors."
+                           ]
+                        },
+                        "The types of favors one character could trade with another are nearly endless. So, instead of trying to list them all, we came up with a table of reasonable examples. {@table 2-1: Example Favors} provides a general list of favors. These examples can help you figure out whether any favor you invent is a small favor, a favor, or a big favor.",
+                        "Also, keep in mind that each of the faction write-ups (starting on page 54) comes with its own list of favors. These are favors that only that faction could provide, or at least ones that it would be especially good at providing. Sometimes these lists may clash with the examples found here. For instance, killing someone usually falls into the category of a big favor. But if you're dealing with a street gang (and depending on who the target is), it may not consider killing someone to be such a big deal.",
+                        {
+                           "title": "Exchanging Favors",
+                           "page": 80,
+                           "entries": [
+                              "Exchanging a favor for a favor is simple, and it generally doesn't require a check. It's simply a matter of saying “if you do this thing for me, I'll do this equivalent thing for you.” However, sometimes your character may want to exchange a favor for a bigger favor or a smaller favor. In those cases, your character is going to need to make a check.",
+                              {
+                                 "title": "Exchanging a Bigger Favor for a Smaller Favor (Stringing Them Along)",
+                                 "page": 81,
+                                 "entries": [
+                                    "Let's say your character is owed a big favor, and they want to ask someone for a smaller favor in return. Normally, that wouldn't require a check, and the target would be more than happy to exchange something of theirs of lesser value for something of yours of greater value. However, your character may want to extract the smaller favor and then say, \"but you still owe me!\"",
+                                    "In that case, your character must make an opposed {@skill Coercion||crb} versus {@skill Discipline||crb} check against the target. If your character succeeds, the target continues owing your character the same original favor after this smaller favor has been resolved.",
+                                    "If you fail, the target considers the favor repaid once they perform the original smaller favor. They perform the favor requested and no longer owe the character."
+                                 ]
+                              },
+                              {
+                                 "title": "Exchanging a Smaller Favor for a Bigger Favor (Trading Up)",
+                                 "page": 81,
+                                 "entries": [
+                                    "Now let's say your character is owed a favor, and they ask for a favor of greater value than the favor they are owed. This always requires a check, since your character is trying to get someone to give them something more valuable for something less valuable.",
+                                    "In this case, your character must make an opposed {@skill Charm||crb} versus {@skill Cool||crb} check against the target. If they succeed, the target agrees to give them the \"better\" favor in exchange. If they fail, the target refuses, but still owes your character a favor of the original value."
+                                 ]
+                              },
+                              {
+                                 "title": "Failing with Threat or Despair",
+                                 "page": 81,
+                                 "entries": [
+                                    "If your character attempts to make an unequal exchange of favors and fails the check, your GM may spend {@symbols hhhh or d} to have your character also anger the target. Not only does your character fail to achieve the unequal exchange, but the target also decides that they no longer owe your character anything!"
+                                 ]
+                              },
+                              {
+                                 "type": "sidebar",
+                                 "entries": [],
+                                 "_ref": {
+                                    "name": "Smaller Than Small"
+                                 }
+                              }
+                           ]
+                        }
+                     ]
+                  }
                ]
             }
          ]
@@ -14450,6 +15015,16 @@
          ]
       },
       {
+         "name": "Smaller Than Small",
+         "page": 81,
+         "type": "character",
+         "description": [
+            "Beyond a certain point, we don't bother tracking favors in our system. While buying someone a cup of coffee or loaning them credits for a tube-lev day pass is technically doing them a favor, the values are so minuscule that realistically, most people are going to forget about it within a few hours.",
+            "Thus, we encourage GMs to skip tracking favors that are especially inconsequential. More than anything, it's going to save everyone at the table from tracking a lot of minor favors that probably won't make the game more interesting or advance the plot.",
+            "However, some players may want to keep track of every favor they owe and are owed, no matter how small. If you are one of those players, feel free to keep a detailed list of favors. Still, in Shadow of the Beanstalk (just like in real life), people can get irritated about always being asked to pay back every cup of coffee or ride to the office. If a favor seems especially minor, your GM can add {@dice setback} to any checks made to exchange the favor and can also add {@dice setback} to subsequent skill checks your character makes when dealing with that individual."
+         ]
+      },
+      {
          "name": "Trace Information",
          "page": 131,
          "type": "hacking",
@@ -14483,6 +15058,14 @@
          "description": [
             "Just like gear, weapons, and armor, programs and systems can become damaged. As it does with equipment, damage causes programs and systems to become harder to use, and if they're too heavily damaged, they can't be used at all. See {@table I.5-4: Repairing Gear||crb}, on page 89 of the {@title Genesys} Core Rulebook; all the same penalties apply. Also, if a system is damaged, the penalty applies to all checks made within the system (this includes attempts to override ice, as well as checks to trace or lock out users).",
             "However, repairing damaged programs and systems works a bit differently than the way it is explained in the {@rule Item Maintenance||crb} section on page 89 of the {@title Genesys} Core Rulebook. The difficulty of the check remains the same, but the character should use the {@skill Computers (Sysops)} skill, not the {@skill Mechanics||crb} skill."
+         ]
+      },
+      {
+         "name": "What's a Smart Weapon?",
+         "page": 111,
+         "type": "gear",
+         "description": [
+            "A smart weapon is any weapon that includes an integrated microcomputer and a wireless (or sometimes wired) link that lets the weapon communicate with a linked piece of gear. For practical purposes, we assume that all ranged weapons found in New Angeles are smart weapons unless your GM decides otherwise. Non-smart weapons may be antiques, particularly cheap, or even built to be \"dumb\" to avoid being traced or hacked. There is no difference between the capabilities of a dumb and a smart weapon, save that a smart weapon can have some attachments that a dumb weapon cannot."
          ]
       }
    ],
@@ -14635,6 +15218,57 @@
       }
    ],
    "table": [
+      {
+         "name": "Table 2-1: Example Favors",
+         "page": 90,
+         "columns": [
+            {
+               "header": "Favor Size",
+               "value": "favor",
+               "size": 1
+            },
+            {
+               "header": "Examples",
+               "size": 3
+            }
+         ],
+         "rows": [
+            {
+               "favor": "Small",
+               "examples": [
+                  "Watch someone's pets or dependents for a day.",
+                  "Give someone an item worth 100 credits or less.",
+                  "Loan someone a vehicle for a couple of hours.",
+                  "Give someone a ride to a location in New Angeles.",
+                  "Help someone clean up an apartment.",
+                  "Loan someone tools to do some work."
+               ]
+            },
+            {
+               "favor": "Regular",
+               "examples": [
+                  "Watch someone's pets or dependents for several days to a week.",
+                  "Give someone an item worth 1,000 credits or less.",
+                  "Loan someone a vehicle for a few days.",
+                  "Give someone a ride to a location in North or South America.",
+                  "Loan someone a legal weapon.",
+                  "Save someone from a bar fight."
+               ]
+            },
+            {
+               "favor": "Big",
+               "examples": [
+                  "Watch someone's dependents and agree to defend them against real danger.",
+                  "Give someone an item worth over 1,000 credits.",
+                  "Loan someone a vehicle while knowing it may never be returned or that it may be destroyed.",
+                  "Give someone a ride to anywhere on Earth.",
+                  "Loan someone an illegal weapon.",
+                  "Save someone's life.",
+                  "Kill a person for someone else.."
+               ]
+            }
+         ]
+      },
       {
          "name": "Table 2-5: Clothing and Armor",
          "page": 95,
