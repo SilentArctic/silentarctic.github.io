@@ -7,7 +7,7 @@
          "abbreviation": "RoT",
          "color": "#A75A0E",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/realms-terrinoth/",
-         "version": "2023.5.27",
+         "version": "2024.2.13",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -23,8 +23,9 @@
          ],
          "optionFeatureType": [
             "craftmanship",
+            "heroic ability",
             "material",
-            "heroic ability"
+            "service"
          ],
          "optionFeatureClass": [
             "implement material",
@@ -9837,7 +9838,36 @@
          ],
          "description": [
             "Nearly everyone in Terrinoth carries a knife at their belt; it is a useful tool for any number of mundane tasks. Daggers, on the other hand, are designed purely for killing. Their thin, razor-sharp blades tend to be perfectly balanced so they can be thrown with the flick of a wrist just as easily as they can slit an unwary throat.",
-            "Your character can stab or slash with a dagger using the profile in {@table 2-5: Melee Weapons} on page 94, or they can throw one using the following profile: (Ranged; Damage +2; Critical 3; Range [Short]; Accurate 1, Limited Ammo 1)."
+            "Your character can stab or slash with a dagger using the profile in {@table 2-5: Melee Weapons} on page 94, or they can throw one using the following profile:",
+            {
+               "title": "Thrown Stats",
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Skill"
+                  },
+                  {
+                     "header": "Dam",
+                     "value": "damage"
+                  },
+                  {
+                     "header": "Crit"
+                  },
+                  {
+                     "header": "Range"
+                  },
+                  {
+                     "header": "Special"
+                  }
+               ],
+               "rows": [{
+                  "skill": "{@skill Ranged||crb}",
+                  "damage": "+2",
+                  "crit": 3,
+                  "range": "Short",
+                  "special": "{@quality Accurate|Accurate 1|crb}, {@quality Limited Ammo|Limited Ammo 1|crb}"
+               }]
+            }
          ],
          "page": 92
       },
@@ -10036,7 +10066,36 @@
          "description": [
             "Spears are perfect for fighting in tight formation, where soldiers can't swing a sword or axe without hitting one of their fellows. Thus, foot soldiers of the baronies tend to train with spear and shield in the art of forming a defensive wall of thrusting spear tips.",
             "Standard spears are too heavy to be wielded in one hand or thrown. \"Light\" spears (sometimes called javelins) on the other hand can be wielded one-handed and consist of a thick, four-foot-long wooden shaft topped by a heavy iron spearhead. These spears are also light enough to be thrown over short distances; the Orcs of the Broken Plains often use thrown spears to skewer their prey while hunting.",
-            "Your character can thrust or stab with a light spear using the profile in {@table 2-5: Melee Weapons}, or they can throw one using the following profile: (Ranged; Damage +2; Critical 4; Range [Short]; Accurate 1, Limited Ammo 1)."
+            "Your character can thrust or stab with a light spear using the profile in {@table 2-5: Melee Weapons}, or they can throw one using the following profile:.",
+            {
+               "title": "Thrown Stats",
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Skill"
+                  },
+                  {
+                     "header": "Dam",
+                     "value": "damage"
+                  },
+                  {
+                     "header": "Crit"
+                  },
+                  {
+                     "header": "Range"
+                  },
+                  {
+                     "header": "Special"
+                  }
+               ],
+               "rows": [{
+                  "skill": "{@skill Ranged||crb}",
+                  "damage": "+2",
+                  "crit": 4,
+                  "range": "Short",
+                  "special": "{@quality Accurate|Accurate 1|crb}, {@quality Limited Ammo|Limited Ammo 1|crb}"
+               }]
+            }
          ],
          "page": 93
       },
@@ -10064,7 +10123,36 @@
          "description": [
             "Spears are perfect for fighting in tight formation, where soldiers can't swing a sword or axe without hitting one of their fellows. Thus, foot soldiers of the baronies tend to train with spear and shield in the art of forming a defensive wall of thrusting spear tips.",
             "Standard spears are too heavy to be wielded in one hand or thrown. \"Light\" spears (sometimes called javelins) on the other hand can be wielded one-handed and consist of a thick, four-foot-long wooden shaft topped by a heavy iron spearhead. These spears are also light enough to be thrown over short distances; the Orcs of the Broken Plains often use thrown spears to skewer their prey while hunting.",
-            "Your character can thrust or stab with a light spear using the profile in {@table 2-5: Melee Weapons}, or they can throw one using the following profile: (Ranged; Damage +2; Critical 4; Range [Short]; Accurate 1, Limited Ammo 1)."
+            "Your character can thrust or stab with a light spear using the profile in {@table 2-5: Melee Weapons}, or they can throw one using the following profile:",
+            {
+               "title": "Thrown Stats",
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Skill"
+                  },
+                  {
+                     "header": "Dam",
+                     "value": "damage"
+                  },
+                  {
+                     "header": "Crit"
+                  },
+                  {
+                     "header": "Range"
+                  },
+                  {
+                     "header": "Special"
+                  }
+               ],
+               "rows": [{
+                  "skill": "{@skill Ranged||crb}",
+                  "damage": "+2",
+                  "crit": 4,
+                  "range": "Short",
+                  "special": "{@quality Accurate|Accurate 1|crb}, {@quality Limited Ammo|Limited Ammo 1|crb}"
+               }]
+            }
          ],
          "page": 93
       },
@@ -10616,6 +10704,8 @@
             }
          ],
          "description": [
+            "The rangers of the Dunwarr Mountains are fond of saying that the only thing better than an axe is an axe you can throw at someone. No amount of balancing a hand axe for throwing can make it a truly accurate weapon, but if it hits, it is likely to do some serious damage.",
+            "Your character can hurl a throwing axe at their foe using the profile in {@table 2-6: Ranged Weapons} on page 95, or they can wield one using the following profile:",
             {
                "title": "Melee Stats",
                "type": "table",
@@ -10634,20 +10724,6 @@
                      "header": "Range"
                   },
                   {
-                     "header": "Encum",
-                     "value": "encumbrance"
-                  },
-                  {
-                     "header": "HP",
-                     "value": "hardPoints"
-                  },
-                  {
-                     "header": "Price"
-                  },
-                  {
-                     "header": "Rarity"
-                  },
-                  {
                      "header": "Special"
                   }
                ],
@@ -10657,16 +10733,10 @@
                      "damage": "+2",
                      "crit": 3,
                      "range": "Engaged",
-                     "encumbrance": 1,
-                     "hardPoints": 1,
-                     "price": 50,
-                     "rarity": 1,
                      "special": "{@quality Inaccurate|Inaccurate 1|crb}, {@quality Vicious|Vicious 1|crb}"
                   }
                ]
-            },
-            "The rangers of the Dunwarr Mountains are fond of saying that the only thing better than an axe is an axe you can throw at someone. No amount of balancing a hand axe for throwing can make it a truly accurate weapon, but if it hits, it is likely to do some serious damage.",
-            "Your character can hurl a throwing axe at their foe using the profile in {@table 2-6: Ranged Weapons} on page 95, or they can wield one using the following profile: ({@skill Melee (Light)||crb}; Damage +2; Critical 3; Range [Engaged]; {@quality Inaccurate|Inaccurate 1|crb}, {@quality Vicious|Vicious 1|crb})."
+            }
          ],
          "page": 95
       },
@@ -11107,6 +11177,786 @@
             "While the scholars of Greyhaven University continuously and vigorously disagree as to whether bards are actual users of magic or are a bunch of charlatans, the truth is that most bards are probably a mixture of both. Their use of magic—such as it is—is likely entirely instinctive and affected greatly by the bard's charisma. What this means is that bards do not craft magical implements as other spellcasters do, but over time, they tend to infuse the instruments they play with some small measure of power.",
             "Some instruments have even been passed from bard to bard and, over generations, have become magical relics in their own right. Of course, a great many more instruments get passed off as magical relics when their owners need to make up the money lost in an ill-advised night of carousing.",
             "When your character casts a spell using the Verse skill while using a musical instrument, adding the Additional Target effect does not increase its difficulty"
+         ]
+      },
+      {
+         "name": "Barding",
+         "page": 104,
+         "type": "mount",
+         "encumbrance": 5,
+         "price": 900,
+         "rarity": 4,
+         "description": [
+            "Barding is metal armor or similar protection for a horse or other mount. The destriers ridden by the knights of the baronies tend to sport steel plates reinforced with patches of chain, while the fierce Leonx of the Latari wear the same leathers as their riders. Generally, only war mounts can tolerate the weight and discomfort of barding.",
+            "Barding counts as armor for a mount and provides defense 1 and soak 2."
+         ]
+      },
+      {
+         "name": "Saddlebags",
+         "page": 105,
+         "type": "mount",
+         "encumbrance": -4,
+         "price": 75,
+         "rarity": 3,
+         "description": [
+            "Just as the mounts of Mennara come in a variety of forms, so do the saddlebags. Saddlebags allow creatures to carry more gear and traveling supplies then usual, and thus provide their riders a wider range of operation.",
+            "Saddlebags increase a mount's encumbrance threshold by four."
+         ]
+      },
+      {
+         "name": "Acid Flask",
+         "page": 102,
+         "type": "alchemy",
+         "encumbrance": 0,
+         "price": 200,
+         "rarity": 6,
+         "description": [
+            "Alchemists often use acids to etch metals or break down components into their constituent parts. These acids are usually strong enough to also serve as dangerous - albeit dangerously indiscriminate - weapons.",
+            "As an action, your character can throw an acid flask at a point within short range, where it releases a cloud of acidic mist large enough to encompass a single character and other characters engaged with the target. The cloud is a corrosive atmosphere with a rating of 4 (see {@rule Fire, Acid, and Corrosive Atmospheres||crb} on page 111 of the {@title Genesys Core Rulebook}). The cloud remains for the duration of the encounter, unless the GM determines that circumstances (such as an outdoor location or a strong draft) cause it to dissipate faster."
+         ]
+      },
+      {
+         "name": "Bottled Courage",
+         "page": 102,
+         "type": "alchemy",
+         "encumbrance": 1,
+         "price": 25,
+         "rarity": 5,
+         "description": [
+            "Bottled courage is usually nothing more than a stiff measure of alcohol mixed with a concoction of stimulating herbs and mushrooms. The imbiber becomes heedless of danger and immune to sights and experiences that might otherwise leave them traumatized.",
+            "When your character uses bottled courage, they upgrade {@skill Discipline||crb} checks made to resist fear and {@skill Coercion||crb} once until the end of the scene or encounter."
+         ]
+      },
+      {
+         "name": "Health Elixir",
+         "page": 102,
+         "type": "alchemy",
+         "encumbrance": 0,
+         "price": 25,
+         "rarity": 3,
+         "description": [
+            "Health elixirs are the most common potions created by apothecaries. They imbue the taker with feelings of warmth and nourishment and are used to ward off illness. They do not actually heal injuries, although they can help comfort and stabilize an injured individual.",
+            "A health elixir is a {@gear painkiller||crb}, as described on page 116 of the {@title Genesys Core Rulebook}."
+         ]
+      },
+      {
+         "name": "Immunity Elixir",
+         "page": 102,
+         "type": "alchemy",
+         "encumbrance": 1,
+         "price": 100,
+         "rarity": 4,
+         "description": [
+            "Immunity elixirs are concocted to act as antidotes to a wide variety of common poisons and diseases. Once a person has imbibed an immunity elixir, they will not as easily succumb to the disease or poison it is designed to counteract for a short period of time thereafter.",
+            "Using an immunity elixir immediately nullifies any mundane poisons or toxins currently afflicting your character (some magical or otherwise extraordinary poisons might not be affected, at the GM's discretion). In addition, for the rest of the encounter or scene, your character upgrades {@skill Resilience||crb} checks made to resist poisons and toxins twice."
+         ]
+      },
+      {
+         "name": "Invisibility Potion",
+         "page": 102,
+         "type": "alchemy",
+         "encumbrance": 1,
+         "price": 1000,
+         "rarity": 9,
+         "description": [
+            "Potions such as the fabled invisibility potion blur the line between the scientific craft of the alchemist and true magic. In this case, the ingredients (razor-sharp strands of silk from shadowlurker spiders, the crystalline herb avathian, and a puff of elemental air) are certainly magical, even if the process of combining them is not. In any case, consuming the potion renders the user completely invisible to the unaided eye.",
+            "When your character imbibes an invisibility potion they become invisible for 3 rounds. During this time, your character cannot be seen and casts no reflection or shadow. They produce noise, smells, and so on as usual, and they have a physical presence. An invisible character may also be detected through magical means. An invisible character benefits from concealment worth +4 dice (see the {@rule Concealment (Darkness, Smoke, and Intervening Terrain)|Concealment|crb} section on page 110 of the {@title Genesys Core Rulebook})."
+         ]
+      },
+      {
+         "name": "Poison",
+         "page": 102,
+         "type": "alchemy",
+         "encumbrance": 0,
+         "price": 200,
+         "rarity": 5,
+         "description": [
+            "Every culture in Mennara has its own poisons, ranging from abundant botanical extracts to refined alchemical potions. Most are easy to use, if not easy to obtain.",
+            "Your character can apply poison to a target's food or drink, in which case the target suffers the effects when they ingest it. Poison can also be applied to smokebombs or other items at your GM's discretion. As a maneuver, it can also be applied to a weapon with a sharp point or edge, such as a dagger or arrow, that can induce the poison into the target's bloodstream. If applied to a weapon, the first successful hit that deals at least one wound causes the target to suffer the effects of the poison. Once the poison has affected one target, it is depleted and another dose must be applied.",
+            "Characters affected by poison or within a poison cloud must make a {@difficulty Hard|Resilience} as an out-of-turn incidental or suffer 4 wounds (not reduced by soak) plus 1 strain per {@symbols h}. You or your GM can spend {@symbols d} on the check to inflict a Critical Injury or to force the target to repeat the check at the beginning of their next turn, as the poison continues to wrack their body."
+         ]
+      },
+      {
+         "name": "Power Potion",
+         "page": 103,
+         "type": "alchemy",
+         "encumbrance": 1,
+         "price": 250,
+         "rarity": 6,
+         "description": [
+            "Power potions are similar to speed potions (see page 104), save that they increase upper body and core strength in particular. Those who imbibe power potions are better able to strike and block blows. Feats of strength, such as hefting weights and shifting objects, are also facilitated through the use of a power potion.",
+            "When your character uses a power potion they increase their {@characteristics Brawn||crb} by 1. This effect lasts until the end of the encounter or scene. If your character's {@characteristics Brawn||crb} is already 5, they instead add {@dice boost|2} to all checks using {@characteristics Brawn||crb}. When the potion wears off, your character suffers 6 strain."
+         ]
+      },
+      {
+         "name": "Protective Tonic",
+         "page": 103,
+         "type": "alchemy",
+         "encumbrance": 1,
+         "price": 125,
+         "rarity": 6,
+         "description": [
+            "Protective tonics imbue the drinker with reserves of physical and psychological resilience. They do this through mildly soporific effects that deaden pain and increase feelings of well-being. They also have an effect on the body, shrinking the capillaries near the skin's surface to reduce bruising and bleeding, and speeding the clotting process.",
+            "When your character imbibes a protective tonic they gain +1 soak for your character's next three turns."
+         ]
+      },
+      {
+         "name": "Regeneration Elixir",
+         "page": 103,
+         "type": "alchemy",
+         "encumbrance": 1,
+         "price": 50,
+         "rarity": 4,
+         "description": [
+            "Regeneration elixirs help heal injuries. They take the form of a drink to be taken orally or a poultice to be applied to the wounded area. The elixir causes torn flesh to knit back together and broken bones to fuse. Even internal wounds can be cured by regeneration elixirs.",
+            "When your character uses a regeneration elixir they make a {@difficulty simple|Resilience}, healing 1 wound for each {@symbols s} and 1 strain for each {@symbols a}. You may spend {@symbols t} to repeat the check at the start of your character's next turn, as the elixir continues to accelerate their healing."
+         ]
+      },
+      {
+         "name": "Smokebomb Vial",
+         "page": 103,
+         "type": "alchemy",
+         "encumbrance": 0,
+         "price": 25,
+         "rarity": 4,
+         "description": [
+            "Smokebomb vials contain yet smaller vials that each hold different concoctions. When the vials are broken, typically by flinging the main vial to the floor as hard as possible, the various chemicals mix to produce a cloud of thick, choking fog. The fog is not harmful (unless treated with poison, which must be purchased separately), though it is unpleasant to be caught within and is impossible to see through.",
+            "As a maneuver, a character can throw a smokebomb vial at a point within short range. Upon impact, the vial shatters to create a thick smoke screen large enough to conceal a single character and other characters engaged with the target. The smoke screen provides concealment worth +2 dice (see the {@rule Concealment (Darkness, Smoke, and Intervening Terrain)|Concealment|crb} section on page 110 of the {@title Genesys Core Rulebook})."
+         ]
+      },
+      {
+         "name": "Speed Potion",
+         "page": 104,
+         "type": "alchemy",
+         "encumbrance": 1,
+         "price": 200,
+         "rarity": 7,
+         "description": [
+            "Speed potions affect the muscles of the drinker, especially those used for running and other forms of movement. Once a speed potion is taken, the imbiber is better able to sprint for a short period. Speed potions allow for short and immediate bursts of top performance. Some people have been known to combine stamina elixirs and speed potions for longer periods of high performance. The morning after can only be described as truly nightmarish.",
+            "When your character imbibes a speed potion they gain one additional maneuver during their turn. While under the effects of a speed potion, your character can perform a maximum of three maneuvers in a turn, rather than two. A speed potion lasts for your character's next three turns, after which your character suffers 6 strain."
+         ]
+      },
+      {
+         "name": "Stamina Elixir",
+         "page": 104,
+         "type": "alchemy",
+         "encumbrance": 0,
+         "price": 50,
+         "rarity": 3,
+         "description": [
+            "Stamina elixirs can be taken to provide the patient with a feeling of improved vitality. When a stamina elixir is drunk, the imbiber benefits from increased reserves of energy over a lengthy period. It ought to be mentioned that hangovers from stamina elixirs can be particularly dire.",
+            "When your character uses a stamina elixir they immediately heal 5 strain. Each subsequent elixir used in the same day heals 1 less strain, so that the sixth elixir (and further) has no effect. After one day, the lingering effects of the stamina elixir wear off, and your character may again use a stamina elixir to full effect."
+         ]
+      },
+      {
+         "name": "Explosive Missile",
+         "page": 106,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": 1250,
+         "rarity": 7,
+         "description": [
+            "Whether through means of runic inscription on the weapon or by alchemical agents applied to each arrow or bolt, a weapon with this attachment launches projectiles that explode on impact.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} Any {@skill Ranged||crb} weapon.",
+                  "{@b Modifiers:} The weapon gains the {@quality Blast|Blast 5|crb} item quality.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Rune of Blades",
+         "page": 106,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": "n/a",
+         "rarity": 10,
+         "description": [
+            "A rune of blades is almost always found with a specially made sword or knife. It is a simple and effective runebound shard that increases the potency of a bladed weapon by magically honing the edge. Like sunburst runes, runes of blades are in high demand among members of the military and can be commandeered from private individuals for war efforts and related campaigns. Some Dragonkin and other intelligent creatures have made use of the runes to retain the sharpness of their claws, though wooden edges and points are not affected by the runes.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any bladed weapon.",
+                  "{@b Modifiers:} When this weapon inflicts a Critical Injury, it inflicts the Bleeding Out Critical Injury instead of one determined through rolling for the result.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Runic Flame",
+         "page": 106,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": 2000,
+         "rarity": 8,
+         "description": [
+            "The runic flame is designed to be used in conjunction with a close combat weapon. Swords with apertures in the pommel or the guard for such runic attachments are not uncommon in the armories of wealthy members of the military.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any melee weapon.",
+                  "{@b Modifiers:} The weapon gains the {@b Burn|Burn 1|crb} item quality.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Runic Frost",
+         "page": 107,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": 1750,
+         "rarity": 8,
+         "description": [
+            "This runic inscription coats the weapon with icy chill that saps strength from those it strikes.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any melee weapon.",
+                  "{@b Modifiers:} The weapon gains the {@quality Ensnare|Ensnare 1|crb} item quality.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Runic Thunder",
+         "page": 107,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 2,
+         "price": 2000,
+         "rarity": 8,
+         "description": [
+            "When its weapon strikes a foe, this rune carving flashes white like a bolt of lightning. The deafening boom of thunder comes a half-second later, staggering the foe with concussive force.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any weapon.",
+                  "{@b Modifiers:} The weapon gains the {@quality Concussive|Concussive 1|crb} item quality.",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Rune of Severing",
+         "page": 107,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 2,
+         "price": "n/a",
+         "rarity": 10,
+         "description": [
+            "A sword or knife with this rune inscription unerringly seeks out a foe's vitals for a killing blow. When an enemy falls gasping to the floor, the rune glows faintly with a deep crimson hue.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any bladed melee weapon.",
+                  "{@b Modifiers:} The weapon gains the {@quality Vicious|Vicious 5|crb} item quality.",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Ynfernael Corruption",
+         "page": 107,
+         "type": "attachment",
+         "class": "weapon",
+         "hardPoints": 1,
+         "price": "n/a",
+         "rarity": 8,
+         "description": [
+            "Pacts with dark powers may confer baleful powers unto otherwise mundane weaponry. Ynfernael daemons can infuse nearly any weapon with a measure of their unnatural strength… for a price.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any weapon.",
+                  "{@b Modifiers:} The weapon increases its base damage by 2; whenever your character suffers strain while wielding or wearing this weapon, they increase the strain suffered by 1.",
+                  "{@b Hard Points Required: 1.}"
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Gilded",
+         "page": 107,
+         "type": "attachment",
+         "class": "armor",
+         "hardPoints": 0,
+         "price": 450,
+         "rarity": 4,
+         "description": [
+            "Though it serves no practical purpose, many nobles like to adorn their armor with gold leaf. It certainly makes the wearer seem impressive, but acts as a lure for every bandit within eyesight.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any armor.",
+                  "{@b Modifiers:} While wearing this armor, your character adds {@dice boost} to {@skill Charm||crb}, {@skill Negotiation||crb}, and {@skill Leadership||crb} checks.",
+                  "{@b Hard Points Required:} 0."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Ironbound Rune",
+         "page": 108,
+         "type": "attachment",
+         "class": "armor",
+         "hardPoints": 2,
+         "price": "n/a",
+         "rarity": 10,
+         "description": [
+            "Ironbound runebound shards are highly desirable for military efforts. These shards work only with metal armor, though, and have no effect on padded armor made from leather or textiles.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any metal armor.",
+                  "{@b Modifiers:} The armor increases its defense by 1 and soak by 1.",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Spikes",
+         "page": 108,
+         "type": "attachment",
+         "class": "armor",
+         "hardPoints": 2,
+         "price": 600,
+         "rarity": 4,
+         "description": [
+            "Particularly unscrupulous warriors sometimes add sharp spikes or barbs to their armor, especially to gauntlets, vambraces, and pauldrons. In the press of a melee, they can use a shoulder check or a wild swing to slash or even impale an opponent.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to plate armor.",
+                  "{@b Modifiers:} If your character is targeted by a melee combat check while wearing this armor, you may spend {@symbols hhh or d} to cause the attacker to suffer 3 wounds.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Twilight Rune",
+         "page": 108,
+         "type": "attachment",
+         "class": "armor",
+         "hardPoints": 1,
+         "price": "n/a",
+         "rarity": 10,
+         "description": [
+            "Armor with this rune always seems to be tucked into a dark corner, along with its wearer, even when worn in the brightest sunlight. In actual darkness, the wearer becomes a akin to a wraith, able to slip past the most alert sentries.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any armor.",
+                  "{@b Modifiers:} While wearing this armor your character adds {@dice boost|2} to {@skill Stealth||crb} checks they make and gains +2 ranged defense.",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Bloodscript Ring",
+         "page": 108,
+         "type": "gear",
+         "class": "magic",
+         "encumbrance": 0,
+         "price": "n/a",
+         "rarity": 9,
+         "description": [
+            "Although the priests of Pollox deny any involvement, they are said to have smithed the Bloodscript Rings during the chaos following Timmorran Lokander's death. Rumor has it that the priesthood was concerned about wizards' vulnerability at that time and crafted items to protect them. The rings are made of a dark precious-metal alloy. On their inside edges are a series of complex sigils and wards scribed in crimson lettering. The rings are said to fill those who would harm the wearer with a sense of unnerving dread when magic is worked; even the wearer themself feels an internal weariness within.",
+            "When your character casts a spell while wearing a Bloodscript Ring, all other characters within short range must immediately make a {fear} check as an out-of-turn incidental. The difficulty of the check is equal to your character's ranks in {@skill Knowledge (Forbidden)}. While wearing a bloodscript ring, your character reduces their strain threshold by one."
+         ]
+      },
+      {
+         "name": "Cloak of Mists",
+         "page": 108,
+         "type": "gear",
+         "class": "magic",
+         "encumbrance": 1,
+         "price": "n/a",
+         "rarity": 10,
+         "description": [
+            "An enveloping black cloak with a stole of white feathers, this mysterious artifact is a source of much controversy amongst Terrinoth's wizards. They claim it employs Ynfernael energies, could be used for all manner of criminal mischief, and that thus it ought to be destroyed. The cloak is enchanted in such a way that the wearer can dissipate into a cloud of mist for a time. However, the magic has a vampiric quality, and the longer a wearer makes use of the cloak's power, the weaker they become.",
+            "While wearing the Cloak of Mists, as an out-of-turn incidental after suffering any amount of damage, your character can spend one Story Point and choose to suffer any amount of strain up to the amount of damage suffered but not exceeding their strain threshold. They then reduce their damage total by the amount of strain suffered. The Cloak of Mists' encumbrance is 0 when worn."
+         ]
+      },
+      {
+         "name": "Dead Man's Compass",
+         "page": 109,
+         "type": "gear",
+         "class": "magic",
+         "encumbrance": 0,
+         "price": "n/a",
+         "rarity": 10,
+         "description": [
+            "This artifact is rumored to be the work of necromancers, though its origins are unknown, and arcanists have been known to use it. Set within a gilded frame is a glass dome, beneath which swirls a dark, viscous liquid. The bones of a Human hand float upon the liquid. They are bleached white, save for the final joint of the first finger, which is dyed scarlet. Should someone succeed in activating the device, they may ask it to indicate a desired destination, or where something or someone may be found. The bones will then slowly form a hand that points in the right direction.",
+            "When your character makes a Knowledge (Geography), Perception, or Vigilance check to chart a course, find a location, avoid becoming lost, or otherwise navigate, they may choose to use the Dead Man's Compass as an incidental after rolling the check but before determining the results; your character suffers a number of wounds and adds an equal number of 󲊳 to the check. If these wounds cause the character to exceed their wound threshold, add +50 to the resulting Critical Injury roll."
+         ]
+      },
+      {
+         "name": "Deepwood Longbow",
+         "page": 109,
+         "type": "weapon",
+         "class": "magic",
+         "skill": {
+            "name": "Ranged",
+            "source": "crb"
+         },
+         "damage": "8",
+         "critical": 2,
+         "range": "Extreme",
+         "encumbrance": 4,
+         "price": "n/a",
+         "rarity": 6,
+         "special": [
+            {
+               "name": "Accurate",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Cumbersome",
+               "value": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Superior",
+               "source": "crb"
+            },
+            {
+               "name": "Unwieldy",
+               "value": 3,
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "The longbows of the Latari Deepwood Archers are of little use to an amateur archer, for they take a great deal of strength and skill to use. However, in the hands of a strong and experienced archer, they are deadly weapons indeed. Their range and hitting power is greater than that of mundane bows, and their construction is so solid that warping and breaking is unheard of.",
+            "While in a natural, open-air environment above ground, the Deepwood Longbow gains the {@quality Accurate|Accurate 3|crb} item quality."
+         ]
+      },
+      {
+         "name": "Elven Boots",
+         "page": 109,
+         "type": "gear",
+         "class": "magic",
+         "encumbrance": 1,
+         "price": "n/a",
+         "rarity": 6,
+         "description": [
+            "Whether due to enchantments cast upon them during their construction or merely because of the superlative skill of Elven cobblers, these boots are renowned for providing their wearers with surefootedness, superior ankle support, and extreme comfort. An adventurer wearing Elven Boots will find themselves able to hike tirelessly through difficult terrain and outpace companions in mundane footwear.",
+            "While wearing Elven Boots your character reduces the number of maneuvers required to change range bands by one, to a minimum of 1. Elven boots have an encumbrance of 0 when worn."
+         ]
+      },
+      {
+         "name": "Gauntlets of Power",
+         "page": 109,
+         "type": "gear",
+         "class": "magic",
+         "encumbrance": 1,
+         "price": "n/a",
+         "rarity": 8,
+         "description": [
+            "These magical gauntlets resemble mundane armored gauntlets save for the fact that they are forged from thick slabs of black iron rather than thin sheets of bright steel. The origin of such gauntlets is unknown, though the brutal aesthetics suggest Orcish work. There is a practical frugality to the enchantment cast on the gauntlets. They store energy from the blows that strike them, and then release it when striking back. An adventurer in melee combat is able to inflict stunning blows with the gauntlets.",
+            "When worn, Gauntlets of Power add {@symbols sa} to all {@characteristic Brawn||crb}-based skill checks your character makes. Gauntlets of Power have an encumbrance of 0 when worn."
+         ]
+      },
+      {
+         "name": "Horn of Courage",
+         "page": 109,
+         "type": "gear",
+         "class": "magic",
+         "encumbrance": 1,
+         "price": "n/a",
+         "rarity": 7,
+         "description": [
+            "Horns play an important role in the mythology of the Weik, for they state that the gods themselves blow war horns when preparing for battle. This horn, made from a cracked, ancient cattle horn and banded with bright silver, is rumored to have been made by priests of Nordros, and certainly attests to their myths. When an adventurer blows the horn, their allies are filled with encouragement and inspiration.",
+            "As an out-of-turn incidental, your character may blow the Horn of Courage; until the end of the following round, your character and their allies within medium range reduce the difficulty of {@rule fear} checks by one, to a minimum of {@difficulty simple}. Obviously, the horn is very loud; under most circumstances, it can be easily heard by all characters and creatures out to extreme range, and likely farther."
+         ]
+      },
+      {
+         "name": "Mace of Kellos",
+         "page": 109,
+         "type": "weapon",
+         "class": "magic",
+         "skill": {
+            "name": "Melee (Light)",
+            "source": "crb"
+         },
+         "damage": "+4",
+         "critical": 3,
+         "range": "Engaged",
+         "encumbrance": 2,
+         "price": "n/a",
+         "rarity": 10,
+         "special": [
+            {
+               "name": "Burn",
+               "value": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Reinforced",
+               "source": "crb"
+            },
+            {
+               "name": "Superior",
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "Priests of Kellos once ordered the forging of a flanged mace. They performed a series of warlike rituals on the weapon and imbued it with the spirit of their god’s wrathful aspect. When the mace is hefted in anger, the head of the weapon bursts into flames that scorch the foe.",
+            "The Mace of Kellos is a magic implement as per page 218 of the {@title Genesys Core Rulebook}, and allows your character to use it to cast spells using the {@skill Divine||crb} skill. When casting a spell using the Mace of Kellos, your character adds {@dice boost|2} to the check. In addition, when the spellcaster casts an {@spell Attack||crb} spell, adding the Fire, Close Combat, and Holy effects do not increase its difficulty."
+         ]
+      },
+      {
+         "name": "Prismatic Staff",
+         "page": 109,
+         "type": "weapon",
+         "class": "magic",
+         "skill": {
+            "name": "Melee (Heavy)",
+            "source": "crb"
+         },
+         "damage": "+2",
+         "critical": 4,
+         "range": "Engaged",
+         "encumbrance": 2,
+         "price": "n/a",
+         "rarity": 8,
+         "special": [
+            {
+               "name": "Defensive",
+               "value": 1,
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "Prismatic Staffs were crafted by the students of Timmorran under his guidance. Their purpose was to provide the wizards with badges of office as well as a degree of personal protection. They are impressive artifacts: long shafts of silver topped with crystal orbs that display a shifting kaleidoscope of rainbow colors. A bewildering lightshow can be projected from the orbs, the intensity of which dazzles unwary opponents.",
+            "A Prismatic Staff is a magic implement, as described on page 218 of the {@title Genesys Core Rulebook}. When your character casts a spell while using a Prismatic Staff, the first Range effect added to the spell does not increase the spell's difficulty. In addition, {@spell Attack||crb} spells cast by your character increase their base damage by three and gain the Disorient and Concussive 2 item qualities."
+         ]
+      },
+      {
+         "name": "Serpent Dagger",
+         "page": 109,
+         "type": "weapon",
+         "class": "magic",
+         "skill": {
+            "name": "Melee (Light)",
+            "source": "crb"
+         },
+         "damage": "+2",
+         "critical": 2,
+         "range": "Engaged",
+         "encumbrance": 1,
+         "price": "n/a",
+         "rarity": 8,
+         "special": [
+            {
+               "name": "Pierce",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Reinforced",
+               "source": "crb"
+            },
+            {
+               "name": "Superior",
+               "source": "crb"
+            },
+            {
+               "name": "Unwieldy",
+               "value": 4,
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "This dagger has a sweeping blade and a hilt formed in the shape of a striking viper. Bold adventurers recovered it from the Labyrinth of Ruin, but scholars imagine that its origin was in Al-Kalim or even the Ru. Through sorcerous means, the blade constantly sweats a deadly poison, so that a mere scratch can lead to a painful death.",
+            "If your character successfully hits a target with the Serpent Dagger you may spend {@symbols a} to poison the target, who must immediately make a {@difficulty Daunting|Resilience} as an out-of-turn incidental or suffer 8 wounds and 8 strain. You can spend {@symbols hhh or d} on the target's check to force the target to repeat the check at the beginning of their next turn, as the poison continues to work itself through their blood."
+         ]
+      },
+      {
+         "name": "Shadow Bracers",
+         "page": 109,
+         "type": "gear",
+         "class": "magic",
+         "encumbrance": 0,
+         "price": "n/a",
+         "rarity": 10,
+         "description": [
+            "These black bracers are embossed with curved fluting and polished with an iridescent lacquer. They steadily emit a fine black mist that is odorless and safe to breathe but capable of obscuring vision. In combat, the unnatural mist given off by the bracers envelops the wearer, obscuring them and making them harder to hit. The effect of the bracers is unnerving, and leaves opponents with a sense of doom.",
+            "While wearing Shadow Bracers your character benefits from concealment worth +2 dice (see the {@rule Concealment (Darkness, Smoke, and Intervening Terrain)|Concealment|crb} section on page 110 of the {@title Genesys Core Rulebook}). In addition, your character's melee attacks gain the {@quality Disorient|Disorient 3|crb} item quality."
+         ]
+      },
+      {
+         "name": "Shield of Light",
+         "page": 109,
+         "type": "weapon",
+         "class": "magic",
+         "skill": {
+            "name": "Melee (Light)",
+            "source": "crb"
+         },
+         "damage": "+0",
+         "critical": 6,
+         "range": "Engaged",
+         "encumbrance": 2,
+         "price": "n/a",
+         "rarity": 9,
+         "special": [
+            {
+               "name": "Defensive",
+               "value": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Deflection",
+               "value": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Inaccurate",
+               "value": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Reinforced",
+               "source": "crb"
+            },
+            {
+               "name": "Knockdown",
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "The Shield of Light is a blessed item that is holy to the priesthood of Kellos. It is a large heater shield decorated with a bold sunburst design in red and gold. When it is wielded in battle, rays of golden light stream from the boss that become impossibly brilliant when struck.",
+            "While wielding the Shield of Light, if your character suffers a hit from a melee combat check, after the attack is resolved you may spend {@symbols hh or d} from the attacker's check to inflict the Blinded Critical Injury result on the attacker."
+         ]
+      },
+      {
+         "name": "Soulbound Sword",
+         "page": 109,
+         "type": "weapon",
+         "class": "magic",
+         "skill": {
+            "name": "Melee (Heavy)",
+            "source": "crb"
+         },
+         "damage": "+6",
+         "critical": 2,
+         "range": "Engaged",
+         "encumbrance": 3,
+         "price": "n/a",
+         "rarity": 10,
+         "special": [
+            {
+               "name": "Defensive",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Pierce",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Reinforced",
+               "source": "crb"
+            },
+            {
+               "name": "Superior",
+               "source": "crb"
+            },
+            {
+               "name": "Unwieldy",
+               "value": 3,
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "Necromancers can bind the spirits of fearsome warriors within cursed blades. These soulbound swords have a sinister appearance, with morbid detailing such as skull-shaped pommels and guards made from carved bone. The black blades are slightly iridescent, and if an observer watches closely, they may be able to discern the shifting ghost trapped within. Bearers of these swords are said to benefit from some of the skill of the warrior spirit they carry, and the blades' merest touch often proves fatal. The grim reputation and appearance of Soulbound Swords also serves to inspire dread in their bearers' foes.",
+            "While wielding or wearing a Soulbound Sword your character reduces their strain threshold by two. As an incidental, while wielding a Soulbound Sword your character can allow it to assist them; they make an immediate {@difficulty Hard|fear}, and all engaged characters make an identical {@rule fear||crb} check as an out-of-turn incidental. Assuming your character doesn't drop the sword in terror, they count as having four ranks in {@skill Melee (Heavy)||crb} for attacks using the Soulbound Sword for the duration of the encounter. If your character already has four ranks or more in {@skill Melee (Heavy)||crb}, they instead add {@dice boost|2} to attacks using the sword.",
+            "If your character fails the {@rule fear||crb} check with {@symbols d}, the spirit within the blade possesses them entirely for the rest of the encounter, or longer at your GM's discretion. Your and your GM should work together to determine your character’s actions while possessed."
+         ]
+      },
+      {
+         "name": "Staff of Light",
+         "page": 109,
+         "type": "weapon",
+         "skill": {
+            "name": "Melee (Heavy)",
+            "source": "crb"
+         },
+         "damage": "+2",
+         "critical": 4,
+         "range": "Engaged",
+         "encumbrance": 0,
+         "price": "n/a",
+         "rarity": 9,
+         "special": [
+            {
+               "name": "Defensive",
+               "value": 2,
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "Priests of Pollux developed Staffs of Light as an alternative to the messy business of using torches and lamps for illumination. They are short and sturdy lengths of twisted wrought iron topped with a pearlescent jewel that glows with intense white light when a word of command is spoken. Usually the staffs are simply used in place of torches, but adventurers have been known to brandish these magical staffs at foes in order to dazzle them. Those with true magical skills, though, can use them for even greater tasks.",
+            "A Staff of Light provides illumination out to short range. It is also a magic implement, as described on page 218 of the {@title Genesys Core Rulebook}, While using the Staff of Light as their implement, your character can use the {@skill Arcana||crb} skill to cast {@spell Heal||crb} spells. In addition, while your character casts a spell adding the {@quality Blast||crb} effect does not increase the spell's difficulty. {@spell Attack||crb} spells cast by your character increase their base damage by five."
+         ]
+      },
+      {
+         "name": "Truelight Lantern",
+         "page": 110,
+         "type": "gear",
+         "class": "magic",
+         "encumbrance": 1,
+         "price": "n/a",
+         "rarity": 8,
+         "description": [
+            "The Truelight Lanterns are wrought by the magic of the Latari Elves. They look more like large, multifaceted jewels than the glass-and-iron lanterns associated with craftspeople of the Free Cities. When activated, the lantern gives off a soft green glow that somehow illuminates the surrounding area as effectively as a flaming torch. The light cast by the lantern also pierces illusions, allowing the bearer to see things like magically concealed doors and traps.",
+            "A Truelight Lantern provides illumination out to short range. Within the area of illumination, all characters upgrade their {@skill Perception||crb} checks to notice concealed doors, illusions, hidden objects, and similar details twice."
+         ]
+      },
+      {
+         "name": "Warding Talisman",
+         "page": 110,
+         "type": "gear",
+         "class": "magic",
+         "encumbrance": 0,
+         "price": "n/a",
+         "rarity": 6,
+         "description": [
+            "Warding Talismans have a form and appearance similar to beautifully crafted silver ailettes: small badges in the shape of shields worn on the upper chest or shoulder. They don't offer much physical protection, but they carry enchantments that can cause an opponent's strike to falter or go awry.",
+            "While wearing a Warding Talisman, your character increases their defense by one."
+         ]
+      },
+      {
+         "name": "Winged Boots",
+         "page": 110,
+         "type": "gear",
+         "class": "magic",
+         "encumbrance": 1,
+         "price": "n/a",
+         "rarity": 9,
+         "description": [
+            "The Priesthood of Pollux sponsors all manner of magical research into artifacts that might allow their wearer to fly. Winged Boots are an example of such endeavors, but even so, they do not enable soaring flight. An adventurer equipped with winged boots can hover a few dozen yards above the ground or use the boots to safely slow a descent from a height.",
+            "While wearing Winged Boots your character can fly (see the {@sidebar Flying||crb} sidebar on page 100 of the {@title Genesys Core Rulebook}). Your character does not need to use a maneuver in order to remain aloft (the boots do all the work and allow the wearer to hover in place) but cannot go above medium range from the ground.",
+            "Winged boots have an encumbrance of 0 when worn. When not worn, Winged Boots have a tendency to spring upwards and fly away on their own."
          ]
       }
    ],
@@ -11563,6 +12413,228 @@
             "{@b Cost:} 1 Ability Point",
             "Your character only needs to spend one Story Point to activate the ability. You can only purchase this upgrade once."
          ]
+      },
+      {
+         "name": "Ale",
+         "page": 105,
+         "type": "service",
+         "description": [
+            "The brewers of the southern baronies insist that they craft as fine an ale from sun-kissed wheat and barley as any Dwarf could ever manage. The Dwarves of Forge and Dunwarr don't deign to argue this; they just pour a mug of their own beer and suggest the brewers see for themselves which is better.",
+            {
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Price"
+                  },
+                  {
+                     "header": "Rarity"
+                  }
+               ],
+               "rows": [
+                  { "subtitle": "Flagon" },
+                  {
+                     "price": 1,
+                     "rarity": 0
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Lodgings",
+         "page": 105,
+         "type": "service",
+         "desription": [
+            "Only the very desperate press on once darkness falls, and for most the setting sun brings thoughts of where to rest for the night. Travelers can find such lodgings even in the Borderlands, ranging from proper establishments to tavern rooms to rough tents behind a building. Stables for riding beasts are an assumed part of the deal unless unusual or dangerous animals are involved.",
+            {
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Price"
+                  },
+                  {
+                     "header": "Rarity"
+                  }
+               ],
+               "rows": [
+                  { "subtitle": "Common Room (1 night)" },
+                  {
+                     "price": 1,
+                     "rarity": 0
+                  },
+                  { "subtitle": "Private Room (1 night)" },
+                  {
+                     "price": 5,
+                     "rarity": 1
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Meals",
+         "page": 105,
+         "type": "service",
+         "description": [
+            "For many adventurers, the thought of a proper meal not involving trail rations may be all that keeps them going during a long ride. Several small villages strewn between the Free Cities host well-kept secrets concerning the culinary delights to be found within, and those in the know ensure they stay that way lest any widespread success spoil things.",
+            {
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Price"
+                  },
+                  {
+                     "header": "Rarity"
+                  }
+               ],
+               "rows": [
+                  { "subtitle": "Meal (Tavern)" },
+                  {
+                     "price": 2,
+                     "rarity": 0
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Porters and Torchbearers",
+         "page": 105,
+         "type": "service",
+         "description": [
+            "Able-bodied helpers can be essential in many questing adventures, especially in carrying extra supplies across rough terrain, or aiding in establishing camps in the wilderness. Sometimes just a few extra people to offer additional light for nighttime travel can ensure a group doesn't become yet another \"but they never returned\" tavern tale.",
+            {
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Price"
+                  },
+                  {
+                     "header": "Rarity"
+                  }
+               ],
+               "rows": [
+                  { "subtitle": "Porter (per day)" },
+                  {
+                     "price": 1,
+                     "rarity": 1
+                  },
+                  { "subtitle": "Torchbearer (per day)" },
+                  {
+                     "price": 1,
+                     "rarity": 1
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Travel Arrangements",
+         "page": 105,
+         "type": "service",
+         "description": [
+            "Adventurers traveling in groups often rely on hired wagons, especially when they are extracting weighty treasures from some forgotten ruin. Boats can also be arranged for passage throughout Terrinoth's rivers, though this becomes more treacherous the farther one goes into unexplored regions.",
+            {
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Price"
+                  },
+                  {
+                     "header": "Rarity"
+                  }
+               ],
+               "rows": [
+                  { "subtitle": "Riverboat (1 day)" },
+                  {
+                     "price": 5,
+                     "rarity": 2
+                  },
+                  { "subtitle": "Wagon (1 day)" },
+                  {
+                     "price": 2,
+                     "rarity": 1
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Wine",
+         "page": 105,
+         "type": "service",
+         "description": [
+            "The Latari Elves claim to craft the finest wines in all the world. Though this is likely true for Terrinoth, the title of finest vintner may actually go to Al Aluaham Najad, whose vineyards are in the Sunderlands. The wines these vineyards produce are said to have such potency that they glow faintly in the light of the moon, and are highly valued when bottles make their way to the baronies.",
+            {
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Price"
+                  },
+                  {
+                     "header": "Rarity"
+                  }
+               ],
+               "rows": [
+                  { "subtitle": "Bottle" },
+                  {
+                     "price": 2,
+                     "rarity": 1
+                  }
+               ]
+            }
+         ]
+      }
+   ],
+   "rule": [
+      {
+         "name": "Alchemy",
+         "page": 113,
+         "type": "gear",
+         "description": [
+            "Characters can use the Alchemy skill to prepare elixirs, poisons, salves, unguents, and other concoctions, including those listed on page 102 to 104. For simplicity, these various concoctions are referred to as potions. Preparing a potion follows the normal rules for crafting, with the exceptions noted in this section.",
+            "The process of brewing a potion takes one hour, plus a number of hours equal to the rarity of the potion. If the check is successful, the character creates enough of the potion for a single dose or application. The player and GM may spend dice symbols for additional effects, as per the examples in {@table 2-17: Spending Advantage, Triumph, Threat, and Despair on Alchemy Checks} (see page 114).",
+            "Normally, an alchemist's lab or kit (see page 100) is required in order to prepare a potion. In some cases, your GM might allow a character to make a check at an increased difficulty to prepare certain concoctions without access to the proper tools. Likewise, your character needs access to suitable ingredients (see page 114).",
+            {
+               "title": "Other Potions and Elixirs",
+               "forceTitleLevel": 2,
+               "page": 114,
+               "entries": [
+                  "Your character is not restricted to those potions listed on page 102 to 104. If you wish to craft a new potion, talk to your GM about your idea and work with them to determine the potion's effects. The potions in this book are a good guideline for the kinds of effects a potion might have, as well as an appropriate rarity (and therefore crafting difficulty). Your GM has the final say on the effects of the potion and the difficulty of the check to prepare it.",
+                  "Most poisons should function similarly to the basic {@gear poison} on page 102, requiring the target to make a Resilience check, with the result of the check determining the severity of the poison's effects. For instance, a poison intended to render the target unconscious might function just like the basic poison, except that it inflicts strain instead of wounds if the target fails their check."
+               ]
+            },
+            {
+               "title": "Alchemy Ingredients",
+               "forceTitleLevel": 2,
+               "page": 114,
+               "entries": [
+                  "Before your character can brew a potion or prepare another alchemical concoction, they must, of course, have suitable ingredients. For most potions, your character can either simply purchase the ingredients, or gather them personally.",
+                  "As a guideline, the ingredients for a potion cost half the price of the final product, with a rarity half that of the desired potion or elixir (rounded up). Of course, things aren't always so simple, and your GM may determine that certain key ingredients are not available for purchase, and require your character to track them down by other means. This is particularly appropriate for rare and fantastical potions, such as {@gear invisibility potion|invisibility potions}.",
+                  "Most ingredients, whether available for purchase or not, can be gathered in the wilderness. To gather the necessary ingredients for a potion, your character (or perhaps an ally) must travel to an appropriate location and spend some time - probably at least the better part of a day - finding and obtaining the ingredients. The character makes a {@skill Survival||crb} check, with a difficulty equal to half the rarity of the potion, rounded up. If the check is successful, the character gathers enough ingredients to prepare one batch of the potion.",
+                  "Rare or singular ingredients, or those that by necessity are dangerous to acquire, may require more than a single {@skill Survival||crb} check to obtain. The acquisition of such components could become the basis of an encounter or even an entire adventure."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Crafting",
+         "page": 112,
+         "type": "gear",
+         "description": [
+            "Characters may craft almost anything, from swords and crossbows to ships and clockwork devices, given sufficient time, resources, and skill. Although fletching, blacksmithing, and tannery are very different trades, for simplicity, most crafting uses the Mechanics skill. The use of Alchemy to create potions is a kind of crafting, but is distinct enough for its own skill and so it has additional rules on page 113. Regardless of the skill used, we also call a skill check to craft an item a crafting check.",
+            "All crafting follows the same basic guidelines, although the process your character undertakes within the narrative of the game may vary greatly. Of course, your GM might modify these rules based on the situation and the specific item, and might impose additional requirements.",
+            {
+               "title": "The Crafting Process",
+               "forceTitleLevel": 2,
+               "entries": [
+                  "To craft an item, your character must have appropriate tools and components. For instance, to craft a sword, your character must have access to a forge, smiths' tools, and a supply of iron or steel. Typically, the cost of raw materials to craft an item is equal to half of the cost of the item. These materials are consumed in the process, whether the crafting check succeeds or fails. Tools can generally be used multiple times before wearing out, but are often quite expensive.",
+                  "The process of crafting an item takes one day, plus a number of days equal to the rarity of the item. This does not include any time spent gathering tools or supplies. Your GM may decide that some items take significantly more or less time, depending on the nature of the item and its construction.",
+                  "To undertake the actual process crafting the item, your character makes a {@skill Mechanics||crb} check with a difficulty based on the rarity of the item; to determine the number of {@dice difficulty} in the pool, divide the rarity of the item by 2 and round up. For instance, a {@skill Mechanics||crb} check to craft a steel sword (rarity 2) is {@difficulty Easy}. Your GM might further modify this difficulty or add {@dice boost} or {@dice setback} to represent the particular circumstances.",
+                  "If the crafting check is successful, your character creates the item. Additionally, you and the GM may spend dice symbols for additional effects, as shown in {@table 2-16: Spending Advantage, Triumph, Threat, and Despair on Crafting Checks}. Of course, these effects are only examples, and you and the GM might come up with additional results."
+               ]
+            }
+         ]
       }
    ],
    "setting": [
@@ -11582,6 +12654,24 @@
          "description": [
             "While all Heroic Abilities have an important narrative impact, some abilities have a stronger or entirely narrative effect. While it's simple to resolve the use of abilities that directly interact with the mechanics of the game, primary ability effects like Foretelling and Connected can leave a lot up to the GM. As the GM, you should resolve these abilities in much the same way as any other activity the PCs undertake that doesn't call for a skill check, or any other question the players might ask about the setting.",
             "While these effects do place certain restrictions on your response, they also allow plenty of freedom to resolve the use of an ability in the way that works best for your game and campaign. The favor a PC gains by using Connected or the knowledge they gain through All the Facts provide opportunities for you to keep the action on track by providing the PCs with the information or opportunity they need to progress the adventure. However you choose to resolve the ability, just make sure the player gains the benefit they expect from their chosen ability and that it has a suitably heroic impact on the game!"
+         ]
+      },
+      {
+         "name": "GM Guidance: Crafting Magic Items",
+         "page": 112,
+         "type": "gear",
+         "description": [
+            "The creation of a magical item is beyond all but the most powerful practitioners of magic. Each magic item is as unique as the undertaking to create it. It is because of this unique nature that detailed rules for the creation of magic items are not included in this book. However, in certain rare cases, it may be possible for a Player Character to enchant a magic item.",
+            "As the GM, you decide if it's possible for a character to create a particular magic item. Before the character can enchant an item, they must either craft or purchase a suitable item with the {@quality Superior||crb} quality - only the most masterfully crafted items have the potential to hold the magic required. The process of enchanting a magic item follows the normal guidelines for crafting, with you determining what additional tools and components are required, as well as the time needed and the magic skill to use for the crafting check - not all magic skills are appropriate for all magic items, just as they can't be used for all magic actions. We suggest a minimum difficulty of {@difficulty Hard} for even the most trifling magic item, with {@difficulty Formidable} appropriate for most.",
+            "If the check is successful, the item gains the intended magical abilities. Of course, you and the player can spend {@symbols a, t, h} and {@symbols d} for additional effects."
+         ]
+      },
+      {
+         "name": "Roughing It",
+         "page": 113,
+         "type": "",
+         "description": [
+            "Your Game Master may allow characters to use the {@skill Survival||crb} skill to craft certain simple items, such as crude spears and traps. This follows the normal rules for crafting, but such items are not made to last, and generally wear out quickly. The GM may spend {@symbols d} on any check involving an item crafted using {@skill Survival||crb} to cause the item to break and become unusable."
          ]
       }
    ],
@@ -11887,6 +12977,173 @@
             {
                "d10": "10",
                "origin": "Roll again, ignoring duplicates of this result, and apply both origins."
+            }
+         ]
+      },
+      {
+         "name": "Table 2-16: Spending Advantage, Triumph, Threat, and Despair on Crafting Checks",
+         "page": 113,
+         "columns": [
+            {
+               "header": "Cost",
+               "size": 1
+            },
+            {
+               "header": "Effect",
+               "size": 5
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols a or t}",
+               "effect": [
+                  "Reduce the time to craft the item by one day, to a minimum of one. (You may select this option multiple times.)",
+                  "Your character adds {@dice boost} to their next check using the same skill."
+               ]
+            },
+            {
+               "cost": "{@symbols aa or t}",
+               "effect": [
+                  "Your character saves enough materials to reduce the cost of the next similar item they craft by half.",
+                  "Decrease the item's encumbrance by one, to a minimum of 0.",
+                  "If the item has the {@quality Limited Ammo|Limited Ammo 1|crb} quality or is otherwise limited to a single use, craft one additional identical item. (You may select this option multiple times.)"
+               ]
+            },
+            {
+               "cost": "{@symbols aaa or t}",
+               "effect": [
+                  "Increase the item's hard points by one.",
+                  "Reduce the difficulty of future checks to craft the item by one (to a minimum of {@difficulty Simple}."
+               ]
+            },
+            {
+               "cost": "{@symbols t}",
+               "effect": [
+                  "The item gains the {@quality Superior||crb} quality.",
+                  "Increase the value of one numerical benefit of the item by one or increase the rating of one quality the item possesses by one, excluding damage, critical rating, soak, and defense (e.g., the extra encumbrance capacity a backpack adds).",
+                  "Increase the narrative benefit of the item, or add a new narrative effect, as approved by your GM."
+               ]
+            },
+            {
+               "cost": "{@symbols tt}",
+               "effect": [
+                  "The item gains one other item quality, subject to your GM's approval. (You may only select this option once.)"
+               ]
+            },
+            {
+               "cost": "{@symbols h or d}",
+               "effect": [
+                  "Increase the time to craft the item by one day. (You may select this option multiple times.)",
+                  "Add {@dice setback} to the next crafting check the character makes."
+               ]
+            },
+            {
+               "cost": "{@symbols hh or d}",
+               "effect": [
+                  "Increase the item's encumbrance by one.",
+                  "Your character must purchase additional materials worth half of the original component cost."
+               ]
+            },
+            {
+               "cost": "{@symbols hhh or d}",
+               "effect": [
+                  "If the item is a weapon, it gains the Inaccurate 1 quality.",
+                  "Decrease the item's hard points by one, to a minimum of 0.",
+                  "Your character's tools are ruined in the process and must be replaced."
+               ]
+            },
+            {
+               "cost": "{@symbols d}",
+               "effect": [
+                  "The item gains the {@quality Inferior||crb} quality",
+                  "Whenever the item is damaged, it is damaged one additional step."
+               ]
+            },
+            {
+               "cost": "{@symbols dd}",
+               "effect": [
+                  "There is a terrible accident, and your character suffers a Critical Injury or, at the GM's discretion, some related narrative event can occur of equal distress (your character's anvil explodes, the smithy catches on fire, poison gases spread into village, etc.)."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Table 2-17: Spending Advantage, Triumph, Threat, and Despair on Alchemy Checks",
+         "page": 114,
+         "columns": [
+            {
+               "header": "Cost",
+               "size": 1
+            },
+            {
+               "header": "Effect",
+               "size": 5
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols a or t}",
+               "effect": [
+                  "A character who uses the potion heals 1 strain or 1 wound (as determined by your character) in addition to its normal effects.",
+                  "Your character adds {@dice boost} to their next {@skill Alchemy||crb} check."
+               ]
+            },
+            {
+               "cost": "{@symbols aa or t}",
+               "effect": [
+                  "Your character prepares one additional dose of the potion. (You may select this option multiple times.)",
+                  "Reduce the time to prepare the potion by half."
+               ]
+            },
+            {
+               "cost": "{@symbols aaa or t}",
+               "effect": [
+                  "Your character has enough ingredients left to craft another batch of the potion.",
+                  "Increase the duration of the potion's effects by one round (if applicable)."
+               ]
+            },
+            {
+               "cost": "{@symbols t}",
+               "effect": [
+                  "Upgrade the difficulty of checks to resist the poison's effects once (poison only.)",
+                  "The potion is more effective than normal, as determined by your GM, when a character uses the potion."
+               ]
+            },
+            {
+               "cost": "{@symbols tt}",
+               "effect": "Choose one other potion of lower rarity and add its effects to this potion."
+            },
+            {
+               "cost": "{@symbols h or d}",
+               "effect": [
+                  "If the potion is beneficial, a character suffers 2 strain after using the potion and benefiting from its effects.",
+                  "The potion (or poison) has a strong smell that adds {@dice boost} to all checks made to detect its presence, including in food or drink."
+               ]
+            },
+            {
+               "cost": "{@symbols hh or d}",
+               "effect": [
+                  "When used, the potion doesn't take effect for one minute, or one round in structured time.",
+                  "Your character must purchase additional ingredients worth half of the original component cost."
+               ]
+            },
+            {
+               "cost": "{@symbols hhh or d}",
+               "effect": [
+                  "If the potion is beneficial, a character suffers 1 wound after using the potion and benefiting from its effects.",
+                  "Reduce the duration of the potion's effects by one round, to a minimum of one round (if applicable). If the effects would last until the end of the encounter, they last for two rounds instead."
+               ]
+            },
+            {
+               "cost": "{@symbols d}",
+               "effect": [
+                  "A character who uses the potion is {@rule disoriented||crb} for two rounds.",
+                  "A character who uses the potion must succeed on an {@difficulty Average|Resilience}; if they fail, their body rejects the potion and it doesn't take effect."
+               ]
+            },
+            {
+               "cost": "{@symbols dd}",
+               "effect": "If the potion is beneficial, the user also suffers the effects of {@gear poison} (see page 102) after resolving the normal effects of the potion."
             }
          ]
       }
