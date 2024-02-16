@@ -14,7 +14,7 @@
          ],
          "url": "https://www.edge-studio.net/games/embers-of-the-imperium/",
          "releaseDate": "28 April 2023",
-         "version": "2024.1.26"
+         "version": "2024.2.13"
       },
       "defaultItemSettings": [
          {
@@ -65,12 +65,6 @@
             "Xxcha Kingdom",
             "Yin Brotherhood",
             "Yssaril Tribes"
-         ],
-         "optionFeatureType": [
-            "attachment"
-         ],
-         "optionFeatureClass": [
-            "armor"
          ]
       }
    },
@@ -15006,6 +15000,7 @@
          "name": "Circlet of the Void",
          "page": 131,
          "type": "artifact",
+         "class": "tools",
          "description": [
             "This platinum headband holds nine luminescent jeweled disks arrayed equidistantly around the edge. The jewels are crystalline datarecorders with cerebral interface pads that rest against the wearer's head. The wearer can determine their exact location in the galaxy just by looking at the stars in the sky or around their ship. Circlets of the Void were originally given to Imperial sailing masters; over the millennia, the knowledge of how to build them has been lost, but a few of these relics may still be found in the possession of wealthy (or lucky) ship captains.",
             "A character making an {@skill Astrocartography||crb} check upgrades their ability three times while wearing a Circlet of the Void. This bonus may also be applied to any {@skill Knowledge||crb} checks related to astrocartography or stellar geography they make."
@@ -15018,6 +15013,7 @@
          "name": "Dominus Orb",
          "page": 131,
          "type": "artifact",
+         "class": "tools",
          "description": [
             "This large ivory orb glows a faint lambent yellow and is mounted at the end of a heavy rod with three razor-edged armatures. The Dominus Orb is an ancient relic from the time of the {@rule Mahact Gene-Sorcerers|Mahact} kings. It was taken by the Lazax when they defeated the {@rule Mahact Gene-Sorcerers|Mahact}, and they used it in their conquests of other empires. Since the sacking of {@rule Mecatol Rex}, the orb has appeared among various empires as the focus of tales of massive battles. Generals and marshals who have wielded it have been able to spur their forces to victory over seemingly insurmountable odds, the legends say. When the bearer hoists the Dominus Orb aloft, its armatures retract and the orb ascends several meters above the bearer.",
             "A character in possession of the Dominus Orb may deploy it as a maneuver. All other living beings within long range heal all strain they are currently suffering, and they ignore the effects of all Critical Injuries on any skill checks they make until the end of the encounter. (The beings still suffer the Critical Injuries; they just ignore their effects.) Additionally, for the remainder of the encounter, whenever the orb's wielder issues a command, anyone affected by the orb must succeed on a {@difficulty Daunting|Discipline} or obey the order unquestioningly.",
@@ -15032,26 +15028,21 @@
          "name": "Immortal Cuirass of the Imperial Guard",
          "page": 132,
          "type": "artifact",
+         "class": "armor",
          "description": [
             {
                "type": "table",
                "columns": [
                   { "header": "Defense" },
                   { "header": "Soak" },
-                  { "header": "Encum", "value": "encumbrance" },
                   { "header": "HP", "value": "hardPoints" },
-                  { "header": "price" },
-                  { "header": "rarity" },
                   { "header": "special" }
                ],
                "rows": [
                   {
                      "defense": 1,
                      "soak": "+2",
-                     "encumbrance": 3,
                      "hardPoints": 0,
-                     "price": 9000000,
-                     "rarity": 9,
                      "special": "{@quality Reinforced||crb}"
                   }
                ]
@@ -15067,6 +15058,7 @@
          "name": "The Obsidian",
          "page": 132,
          "type": "artifact",
+         "class": "weapon",
          "description": [
             {
                "type": "table",
@@ -15075,10 +15067,7 @@
                   { "header": "Dam", "value": "damage" },
                   { "header": "Crit" },
                   { "header": "Range" },
-                  { "header": "Encum", "value": "encumbrance" },
                   { "header": "HP", "value": "hardPoints" },
-                  { "header": "Price" },
-                  { "header": "Rarity" },
                   { "header": "Special" }
                ],
                "rows": [
@@ -15087,10 +15076,7 @@
                      "damage": "+8",
                      "crit": 2,
                      "range": "Engaged",
-                     "encumbrance": 4,
                      "hadPoints": 0,
-                     "price": 50000000,
-                     "rarity": 10,
                      "special": "{@quality Accurate|Accurate 2|crb}, {@quality Cumbersome|Cumbersome 3|crb}, {@quality Sunder||crb}, {@quality Vicious|Vicious 3|crb}"
                   }
                ]
@@ -15108,6 +15094,7 @@
          "name": "Prophet's Tears",
          "page": 132,
          "type": "artifact",
+         "class": "tools",
          "description": [
             "Nearly a century ago, a Hylar Questor cruiser located a world on the edge of the galactic spiral that its crew named Zembasi. Believing the world to be uninhabited, the Hylar were amazed to find an intact building with a stasis vault containing millions of small vials of semiopaque fluids. These vials contained genetic data as well as microbial creatures.",
             "Upon further examination, the scientists discovered that these vials were the genetic matrix of an advanced species that had gone extinct a millennia before. The microbial creatures can bond the matrix to another living host, granting the host access to some of the deceased being's memories. The Hylar believe that the extinct Zembasi civilization had a method of preserving their most brilliant minds so that future generations could bond with and learn from their ancestors.",
@@ -15122,6 +15109,7 @@
          "name": "Reaper",
          "page": 133,
          "type": "artifact",
+         "class": "weapon",
          "description": [
             {
                "type": "table",
@@ -15130,10 +15118,7 @@
                   { "header": "Dam", "value": "damage" },
                   { "header": "Crit" },
                   { "header": "Range" },
-                  { "header": "Encum", "value": "encumbrance" },
                   { "header": "HP", "value": "hardPoints" },
-                  { "header": "Price" },
-                  { "header": "Rarity" },
                   { "header": "Special" }
                ],
                "rows": [
@@ -15142,10 +15127,7 @@
                      "damage": "5",
                      "crit": 1,
                      "range": "Long",
-                     "encumbrance": 2,
                      "hadPoints": 0,
-                     "price": 5000000,
-                     "rarity": 8,
                      "special": "{@quality Accurate|Accurate 1|crb}, {@quality Defensive|Defensive 1|crb}, {@quality Pierce|Pierce 5|crb}, {@quality Vicious|Vicious 3|crb}"
                   }
                ]
@@ -15162,6 +15144,7 @@
          "name": "Shard of the Throne",
          "page": 133,
          "type": "artifact",
+         "class": "tools",
          "description": [
             "When {@rule Mecatol Rex} was attacked, the {@rule Federation of Sol|Federation of Sol's} bombs destroyed much of the imperial palace. As ground troops combed through the rubble, one squad found the Throne of the Lazax Emperor, damaged yet intact. The ancient seat of power and symbol of Lazax might and authority had somehow survived the direct hit that destroyed much of the palace. The soldiers took several pieces of the throne's precious-metal form as souvenirs. Over the centuries, pieces of the throne have been passed down from one generation to the next, sold on the black market, or stolen.",
             "The Shards of the Throne serve as tangible reminders that the mightiest of empires can be brought low by the will of the people. That same will can carry a being from pauper to king, if they can gather an army to carry them there. Possession of a shard of the Throne of Emperors is seen as a symbol of status in high society, and as a badge of might among military forces. Some believe that no one can truly claim the Throne of Emperors unless they possess all of the shards and restore the throne to its former glory.",
@@ -16118,25 +16101,7 @@
          ]
       }
    ],
-   "optionFeature": [
-      {
-         "name": "Antigrav Rig",
-         "page": 129,
-         "type": "attachment",
-         "class": "armor",
-         "description": [
-            "An antigrav rig allows its wearer to defy gravity in minor yet useful ways. While not powerful enough to provide the wearer with true flight, it allows them to leap great distances and slows their descent when they fall from a great height.",
-            {
-               "type": "list",
-               "items": [
-                  "{@b Use with:} This attachment can be applied to any {@filter gear|armor|type:armor=1;source:embers-of-the-imperium=1}.",
-                  "{@b Modifiers:} When wearing this armor, as a maneuver, your character may move to any point within short range, even vertically. Once per encounter, the antigrav rig can be activated to allow your character to leap to any point within medium range as a maneuver, or activated as an out-ofturn incidental to reduce your character's falling distance by two range bands.",
-                  "{@b Hard Points Required:} 3."
-               ]
-            }
-         ]
-      }
-   ],
+   "optionFeature": [],
    "rule": [
       {
          "name": "[0.0.0.] \"Null\"",
@@ -16577,6 +16542,172 @@
          "description": [
             "See page 102 of {@title Twilight Imperium: Embers of the Imperium} for more information on the Yssaril Tribes."
          ]
+      },
+      {
+         "name": "Agendas",
+         "page": 62,
+         "type": "agenda",
+         "description": [
+            {
+               "forceTitleLevel": 3,
+               "entries": [
+                  "Though the Keleres carry out missions on behalf of the Galactic Council and the galaxy as a whole, they have their own goals and missions they wish to achieve as well. Agendas are personal missions that, though they may also be in service to a political faction or dynasty, deepen the story of each individual player character and introduce drama, conflict, and dilemmas to the campaign. Agendas combine rules, roleplaying, and storytelling in a way that empowers players to advance the narrative alongside their GM.",
+                  "While the story moves forward in interesting and unexpected ways, characters earn experience and resources to reward their participation in their own agendas. These rewards not only benefit the individual characters whose agenda advanced but also the other characters who may have had to sacrifice some of their own time and resources to help their ally move forward.",
+                  {
+                     "title": "Elements of an Agenda",
+                     "page": 62,
+                     "entries": [
+                        "Agendas in Twilight Imperium reflect certain mechanical and story elements. The key elements of each agenda are as follows:",
+                        {
+                           "type": "list",
+                           "items": [
+                              "An agenda is a long-term goal that requires much work and effort on the part of characters to achieve.",
+                              "An agenda must be story-driven and centered around one of the player characters, not centered around the main plot of the campaign.",
+                              "Advancing a character's agenda must involve some risk and chance of failure but also a chance for reward.",
+                              "Advancing a character's agenda must, at times, force them to make decisions that put other characters or goals at risk.",
+                              "Each agenda has a series of benchmarks that must be accomplished before the agenda can be completed. The number of benchmarks and how they can be completed depends on the agenda and the character."
+                           ]
+                        },
+                        "Whether you are using an agenda listed in {@table 1-3: Embers of the Imperium Agendas}, adopting one of the agendas specific to the various Great Civilizations, or creating your own, it is important to include all of these elements."
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Selecting an Agenda",
+         "page": 62,
+         "type": "agenda",
+         "description": [
+            "At character creation, select an agenda for your character by either rolling for or selecting an option in {@table 1-3: Embers of the Imperium Agendas}. In addition, each of the Great Civilizations also has unique agendas you may select for your character. Each option has a name, short description, and example benchmarks. When selecting an agenda, simply write its name in the space provided on your character sheet, and work with your GM to determine the details of the agenda for your character.",
+            "For example, your character may have Knowledge as an agenda. Knowledge could mean anything from ingratiating oneself with an enemy faction to understand it, to gaining access to a well-guarded repository of knowledge on behalf of the Great Civilization you serve. Whatever the case, every agenda should be both epic and personal to the character who selects it and in line with that character's personality and allegiance.",
+            {
+               "type": "sidebar",
+               "entries": [],
+               "_ref": {
+                  "name": "Example: Agendas in Play"
+               }
+            },
+            {
+               "title": "Public or Secret Agendas",
+               "page": 62,
+               "forceTitleLevel": 4,
+               "entries": [
+                  "The agenda of each character should be hidden from each other character. However, whether agendas are hidden from the other {@i players} is up to your group.",
+                  "If your group prefers, the agenda of each character can be hidden, known only to the controlling player and GM until it is revealed over the course of the game. This can create more realistic scheming and infighting among the group, but the whole group should be careful not to let this get out of hand and engender ill feelings between players if one character ends up betraying another.",
+                  "The second option is to have the agendas be public knowledge among the players, but to have everyone play their character as if they don't know the other members' agendas. If your group members are good at compartmentalizing metaknowledge and like to collaboratively create tense and dramatic situations for their characters, this option may be the better choice."
+               ]
+            },
+            {
+               "type": "sidebar",
+               "entries": [],
+               "_ref": {
+                  "name": "Agendas and Your Campaign"
+               }
+            }
+         ]
+      },
+      {
+         "name": "Advancing Agendas",
+         "page": 64,
+         "type": "agenda",
+         "description": [
+            "As a game progresses, your character has multiple chances to advance and eventually complete their agenda. They do this by accomplishing benchmarks. Once a certain number of benchmarks have been completed, you and your GM devise a side mission for your character to undertake to resolve their agenda. If they resolve their agenda successfully, they receive a reward.",
+            {
+               "entries": [
+                  {
+                     "title": "Benchmarks",
+                     "entries": [
+                        "Every agenda has a set number of benchmarks that must be completed for it to have a chance of being resolved. What these benchmarks are will largely be up to you, with some help from your GM.",
+                        "During game sessions, you may notice an opportunity within the ongoing story that you think is an appropriate benchmark for your character's agenda. This does not have to be something the GM has specifically written into their story, and it may involve you inventing some additional story elements that can be woven into the ongoing narrative.",
+                        "If you notice one of these opportunities, then once per session you can (publicly or privately) propose to the GM that this opportunity may be a good benchmark for your character's agenda. If your GM agrees, then your character can take the opportunity, engaging in whatever actions are necessary to accomplish it successfully.",
+                        "However, sometimes an opportunity could derail the ongoing story or otherwise work against your GM's plans. Your GM always has the final say on whether an opportunity can become a benchmark for your character's agenda. However, if they reject your proposal, they must move a Story Point from the GM pool to the player pool (as long as there is a Story Point in the GM pool to move).",
+                        {
+                           "title": "Number of Benchmarks in an Agenda",
+                           "entries": [
+                              "All character agendas have a set number of benchmarks to be completed. However, you can increase the number of benchmarks your character needs to complete in order to give your character additional gear or starting experience.",
+                              "{@b Each agenda must have a minimum of four completed benchmarks before it can potentially be resolved.} If your character fails to complete a benchmark, this does not count against them. They must just find another opportunity to complete a benchmark later in the campaign.",
+                              "However, when you create your character, you can increase the number of benchmarks they must accomplish in exchange for gaining benefits during character creation. You can choose one of the following options:",
+                              {
+                                 "type": "list",
+                                 "items": [
+                                    "You can give your character an additional 10 starting experience. If you do so, increase the number of required benchmarks by 1.",
+                                    "You can give your character an additional 1,000 aurei to spend on starting gear. If you do so, increase the number of required benchmarks by 1.",
+                                    "You can give your character an additional 10 starting experience and 500 aurei to spend on starting gear. If you do so, increase the number of required benchmarks by 2."
+                                 ]
+                              },
+                              {
+                                 "title": "Side Missions and Completing Agendas",
+                                 "page": 64,
+                                 "entries": [
+                                    "Once your character has completed the necessary number of benchmarks, you should consult with your GM about a side mission for your character that, if completed successfully, resolves their agenda once and for all.",
+                                    "The side mission depends on what your character's agenda is. For someone with a personal agenda, like Revenge, the mission may involve finally tracking down a hated foe and defeating them. An agenda of Resourcefulness may see your character taking saved money to pay off a sibling's ransom, or needing to seek out a questionable money launderer to exchange aurei for untraceable assets that can let them start a new life of luxury.",
+                                    "Some agendas, especially those involving greater themes such as liberty, supporting a particular faction, or working to advance the mission of the Keleres, may not be “completed” just because your character finishes their side mission successfully. In these cases, the side mission can represent your character doing what they feel they need to do to promote their chosen cause. An agenda supporting one of the Great Civilizations may take the form of “one last job” that, if accomplished, gives that particular galactic power some crucial edge in the ongoing conflict for the Imperial Throne. Alternatively, defeating a Nekro assassin's attempt to poison the Galactic Council may not stop the Nekro from making attempts in the future, but it certainly can be enough for your character to feel like they've done their part.",
+                                    "It's up to your GM whether the side mission just involves your character or the whole group. However, we do recommend getting the whole group involved, even if your character has to awkwardly reveal their agenda after a long campaign. Most of the time, it's a lot more fun!"
+                                 ]
+                              },
+                              {
+                                 "title": "Rewarding Agenda Completion",
+                                 "page": 65,
+                                 "entries": [
+                                    "When your character successfully completes an agenda, they earn a reward. Some elements of the reward may be narrative: saving a sibling, supporting a cause, or finding absolution for past misdeeds. Others may be material, such as command of a warship, discovery of an ancient and valuable artifact, or simply acquisition of a huge amount of aurei in untraceable accounts.",
+                                    "Your GM determines the reward, although you can certainly suggest possibilities to them. The following are some baseline rewards, and your GM can invent something else if they like.",
+                                    {
+                                       "type": "list",
+                                       "items": [
+                                          "{@b 75 XP:} This is a good reward to pair with a narrative agenda reward. Your character grows and improves in the course of accomplishing their goals.",
+                                          "{@b 250,000 aurei:} Money may not buy happiness, but it can certainly buy a lot of luxuries for your character.",
+                                          "{@b An artifact:} See pages 131 to 133 for a list of potential relics that could make interesting rewards.",
+                                          "{@b An FTL-capable starship your character can operate:} Whether a tramp freighter, a sleek starfighter, or a fast courier vessel, an FTL-capable ship gives them the freedom to go where they want.",
+                                          "{@b Command of a warship, and a detached duty assignment:} Your character gets to captain a warship such as a destroyer or cruiser. Its power is at their disposal, and they have been given the authority to use it during their own adventures.",
+                                          "{@b A position of authority:} A governorship of a small colony, a high-level position in a powerful organization, or the chance to become one of the Tribunii in the Keleres—each offers a character the chance to wield great influence, or even to retire from adventuring if they like."
+                                       ]
+                                    },
+                                    "In addition, whenever a character completes their agenda successfully, all other characters in the group earn an additional 15 XP (in addition to whatever they normally earn for regular gameplay). This represents the experience the other characters earn from working to help their fellow Keleres complete their agenda (or from working to hinder it). It also offers a reward to the players for allowing the campaign to be briefly sidetracked.",
+                                    {
+                                       "type": "sidebar",
+                                       "entries": [],
+                                       "_ref": {
+                                          "name": "Example: Benchmarks in Play"
+                                       }
+                                    }
+                                 ]
+                              },
+                              {
+                                 "title": "Next Steps",
+                                 "page": 65,
+                                 "entries": [
+                                    "Once your character has completed their agenda, you and your GM need to decide what happens to them next. In most cases, your character may continue in the campaign without an agenda. The default gameplay experience assumes each character will only have a single agenda over the course of a campaign.",
+                                    "However, your GM may decide to work with you to give your character a new agenda. This is especially appropriate in longer campaigns, and once everyone has had a chance to complete their own agenda.",
+                                    "Finally, in some cases you and your GM may decide the completion of an agenda is a chance to retire a character and make a new one. Your old character may even become a prominent NPC for the group, either a valuable ally or a dangerous enemy, depending on what their agenda was."
+                                 ]
+                              }
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Factions and Allegiance",
+         "page": 65,
+         "type": "character",
+         "description": [
+            "An integral aspect of making a character in {@title Embers of the Imperium} is deciding on your relationship to the Great Civilizations. But for the few independent worlds in the galaxy, most worlds belong to one or another of the Great Civilizations. These systems drift through the void, not in well-defined territories but rather in diffuse confederations, intermingling and without clear borders. In whatever part of the galaxy your character was raised, there is likely some representation from each of the Great Civilizations.",
+            "When selecting an allegiance to one of the Great Civilizations for your character, think of how that civilization shapes the character's ideals, goals, and fears. Each Great Civilization has something at stake in the future of galactic civilization: something to gain and something to lose. Each civilization relates to the others in a unique way as well. Understanding these relationships and specifying how your character reflects them (or doesn't) makes the setting and your character more realistic. Read the description of the Great Civilizations later in this chapter, and keep these factors in mind as you write your story.",
+            {
+               "title": "Inventing your own Allegiance",
+               "page": 65,
+               "forceTitleLevel": 3,
+               "entries": [
+                  "While your allegiance may help you pick your character's agenda, allegiance is primarily a roleplaying prompt. You don't have to select one of the following factions for your allegiance and can instead invent your own. This could be to a criminal organization, a mercantile conglomerate, your character's extended family, or even the Keleres."
+               ]
+            },
+            "{@filter rule|Factions in Embers of the Imperium|source:embers-of-the-imperium=1;category:great civilization=1}"
+         ]
       }
    ],
    "setting": [
@@ -16589,6 +16720,44 @@
       }
    ],
    "sidebar": [
+      {
+         "name": "Example: Agendas in Play",
+         "page": 62,
+         "type": "agenda",
+         "description": [
+            {
+               "type": "example",
+               "entries": [
+                  "A cohort of Keleres may have uncovered a plot by the Barony of Letnev to undermine the Galactic Council and take territory from the Federation of Sol. The three Keleres—Ccroagok, Alina Vorn, and Alexi—are all working to stop the Barony's plot, but each also has their own goal. Ccroagok seeks forgiveness for the transgressions of his youth, Alina Vorn wants to pursue a seat on the Galactic Council herself, and Alexi sends blackmail payments to ensure that evidence of a crime his brother committed aren't leaked by a crime syndicate. Though none of these agendas are exclusive to stopping the Barony, they can still force the group to make difficult decisions.",
+                  "Over the course of the game, Alina networks with potential allies and forges political alliances, while Ccroagok performs missions for the family he attacked seventeen years prior as a way of atoning. However, Alexi makes the difficult decision to stick to exposing the Barony rather than obtaining money to make his blackmail payments. In the end, the syndicate reveals the criminal information and his brother is arrested, but he successfully halts a war that could have seen hundreds of thousands dead."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Agendas and Your Campaign",
+         "page": 64,
+         "type": "agenda",
+         "description": [
+            "Agendas add complexity to the larger story of an Embers of the Imperium game. However, they also contribute a sense of realism, integrating each character into the setting. Keeping this in mind, it's important to think about how you plan for each agenda to develop in the campaign plot.",
+            "Agendas can use NPCs as side antagonists, incorporate a character's goals into the greater story, or give the player characters a short adventure outside of the main plot.",
+            "You can use agendas to help plan your sessions by focusing on one PC's agenda one session, another's the next, and so on. Not every session need be devoted to an agenda, however; nor do all sessions that focus on an agenda need to ignore the main plot."
+         ]
+      },
+      {
+         "name": "Example: Benchmarks in Play",
+         "page": 65,
+         "type": "agenda",
+         "description": [
+            {
+               "type": "example",
+               "entries": [
+                  "During a stealth mission on a trade station orbiting Jord, Alina Vorn is sneaking through the offices of the Federation of Sol's Naval Intelligence division. Her player, Rex, thinks that if Alina can break into one of the computer terminals, she may be able to get information on her political rivals that could increase her chances of being appointed to the Galactic Council. Rex proposes this as a benchmark to his GM, Lex.",
+                  "Lex considers the proposal and agrees, but warns Rex that if Alina tries to break into the terminal,it could set off alarms and hinder her chances of completing the stealth mission. Rex decides that Alina is happy to take that chance, and she accesses the terminal. She successfully retrieves information about a rival taking bribes, which means she has accomplished a benchmark. However, she also sets off an alarm, and the authorities dispatch guards to hunt down Alina and her fellow Keleres."
+               ]
+            }
+         ]
+      },
       {
          "name": "FTL Speeds and Travel Distances",
          "page": 136,
@@ -16708,6 +16877,89 @@
       }
    ],
    "table": [
+      {
+         "name": "Table 1-3: Embers of the Imperium Agendas",
+         "page": 63,
+         "columns": [
+            {
+               "header": "d100"
+            },
+            {
+               "header": "Agenda Type",
+               "value": "type",
+               "size": 5
+            },
+            {
+               "header": "Example Benchmarks",
+               "value": "benchmarks",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "d100": "01-14",
+               "type": "{@b Ascension:} Among the political, social, and military hierarchies of the galaxy, Keleres operatives have much to gain if recognized for meritorious behavior and if they cultivate important connections. A Keleres operative with the Ascension agenda seeks to climb through the ranks of one of these hierarchies and make a name for themself, if not within their allegiance, then in the galaxy as a whole.",
+               "benchmarks": [
+                  "Receive a promotion to a higher rank or office.",
+                  "Sabotage the career of a rival to ensure they don't get in your way.",
+                  "Receive recognition or an award for performing your duties well."
+               ]
+            },
+            {
+               "d100": "15-28",
+               "type": "{@b Revenge:} The galaxy is a dynamo of contentious relationships between individuals, groups they have allegiance to, and other factions. It is no wonder, then, that Keleres operatives are often caught up in events beyond their control and fall victim to the machinations of others. Keleres operatives with the Revenge agenda seek to strike back at an individual or organization that wronged them in the past.",
+               "benchmarks": [
+                  "Identify a weakness that your enemy possesses.",
+                  "Turn a member of the enemy organization so that they are secretly working for you.",
+                  "Convince others to help you in your quest for revenge."
+               ]
+            },
+            {
+               "d100": "29-42",
+               "type": "{@b Knowledge:} The galaxy is a vast and dangerous place with many secrets. Secret societies, government plots, and lost artifacts lie beneath the dermis of the galaxy, waiting to be uncovered. Keleres operatives with the Knowledge agenda are hungry to uncover rare, dangerous, and empowering secrets.",
+               "benchmarks": [
+                  "Learn a valuable piece of information nobody else has.",
+                  "Discover a lost artifact and ensure you can keep it for yourself.",
+                  "Conduct a dangerous experiment on the artifact."
+               ]
+            },
+            {
+               "d100": "43-56",
+               "type": "{@b Absolution:} Many a galactic citizen faces difficult choices or transitions to a new way of life as the wisdom of age replaces the folly of youth. Keleres operatives with the Absolution agenda committed a wrong in the past that they now wish to atone for. The process of atonement is a long and difficult path toward expiating what cannot be undone.",
+               "benchmarks": [
+                  "Locate the person or organization you wronged in the past, and learn as much as you can about them.",
+                  "Provide a service (such as helping accomplish a goal, sending money, or offering unrequested aid) to the person or organization you owe amends to.",
+                  "Take concrete steps to improve your life and be a better person."
+               ]
+            },
+            {
+               "d100": "57-70",
+               "type": "{@b Liberty:} Slavery, oppression, and the effects of changing sovereignty flourish among the worlds of the galaxy—and with these things come nascent revolution. Keleres operatives with the Liberty agenda stop at nothing to neutralize the tyranny holding them down.",
+               "benchmarks": [
+                  "Free someone who is enthralled or enslaved.",
+                  "Identify an organization that participates in upholding or enforcing slavery or servitude.",
+                  "Take an action that harms the organization's ability to continue its oppression."
+               ]
+            },
+            {
+               "d100": "71-84",
+               "type": "{@b Devotion:} As the Great Civilizations struggle with one another, their peoples become enamored of the meaning and history behind the power they fight for. Though the Keleres is nominally an intragalactic organization, those among its ranks rarely forget where they came from. A Keleres operative with the Devotion agenda is firmly rooted in their family, nation, or allegiance in a way that sets them apart from others. They strive to make a name not for themself but to advance the history of the greater faction they are a part of.",
+               "benchmarks": [
+                  "Learn valuable information and send it to your superiors in the faction you are loyal to.",
+                  "Perform a task you think will help your faction further its goals.",
+                  "Sabotage a mission that would have aided another faction, particularly one that is working in opposition to your faction."
+               ]
+            },
+            {
+               "d100": "85-00",
+               "type": "{@b Resourcefulness:} A sibling sends money home to keep her brother off the streets; a soldier saves his income so that he may escape the poverty that plagued his family for generations; a spouse slowly gathers funds to pay off a ransom. Keleres operatives with the Resourcefulness agenda have some need or debt that not only keeps them from living a comfortable life but helps determine the actions they take. Their resourcefulness is less a talent or a blessing than a necessity in the face of the galaxy's many hardships.",
+               "benchmarks": [
+                  "Send or save a large payment of 1,000 aurei or more.",
+                  "Identify a means by which you can end this agenda rather than continuing to pay. This means could be something like freeing a ransomed family member, finding a job for a troubled sibling, or performing one last massive job in order to get enough money for retirement."
+               ]
+            }
+         ]
+      },
       {
          "name": "Table 2-1: Culteral Manufacturing Differences",
          "page": 106,
