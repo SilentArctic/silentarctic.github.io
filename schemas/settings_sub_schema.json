@@ -11,7 +11,7 @@
          },
          "source": {
             "type": "string",
-            "description": "Setting source, referencing the source's {@code _meta.source.abbreviation} field."
+            "description": "Setting source, referencing the source's {@code _meta.source.abbreviation} field. Leave blank to reference the current collection."
          }
       },
       "required": [

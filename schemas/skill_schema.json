@@ -5,16 +5,20 @@
       "type": "object",
       "properties": {
          "name": {
-            "type": "string"
+            "type": "string",
+            "description": "Skill name."
          },
          "page": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Page on which the skill is found."
          },
          "imageUrl": {
-            "type": "string"
+            "type": "string",
+            "description": "URL for skill image."
          },
          "characteristic": {
-            "type": "string"
+            "type": "string",
+            "description": "Characteristic (generally) linked to the skill."
          },
          "category": {
             "type": "string",
@@ -25,36 +29,43 @@
                "magic",
                "social",
                "other"
-            ]
+            ],
+            "description": "Skill category."
          },
          "description": {
             "type": "array",
             "items": {
                "type": "string"
-            }
+            },
+            "description": "Skill details."
          },
          "shouldUse": {
             "type": "array",
             "items": {
                "type": "string"
-            }
+            },
+            "description": "Suggested reasons to use the skill."
          },
          "shouldNotUse": {
             "type": "array",
             "items": {
                "type": "string"
-            }
+            },
+            "description": "Examples of when {@i not} to use the skill."
          },
          "spells": {
             "type": "array",
+            "description": "Spells which can be used with the skill.",
             "items": {
                "type": "object",
                "properties": {
                   "name": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Spell name."
                   },
                   "source": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Spell source (if not in this collection)."
                   }
                },
                "required": [
