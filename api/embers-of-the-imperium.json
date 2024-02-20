@@ -14,7 +14,7 @@
          ],
          "url": "https://www.edge-studio.net/games/embers-of-the-imperium/",
          "releaseDate": "28 April 2023",
-         "version": "2024.2.17"
+         "version": "2024.2.20"
       },
       "defaultItemSettings": [
          {
@@ -14710,7 +14710,7 @@
          "class": "electronics",
          "description": [
             "Most individuals own a savant, a small and powerful personal computer that can be held in one hand, worn on a limb, or even worn as a piece of jewelry and activated with voice commands or a neural link. The device serves as a computational system, a link to whatever informational network is present at a particular location, and a communications device.",
-            "If your character has a savant, when making a Knowledge check, they add {@dice boost} to the result.",
+            "If your character has a savant, when making a Knowledge check, they add {@symbols s} to the result.",
             "This item may be modified with {@table 2-1: Cultural Manufacturing Differences}."
          ],
          "encumbrance": 1,
