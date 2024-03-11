@@ -14,7 +14,7 @@
          ],
          "url": "https://www.edge-studio.net/games/embers-of-the-imperium/",
          "releaseDate": "28 April 2023",
-         "version": "2024.2.20"
+         "version": "2024.3.10"
       },
       "defaultItemSettings": [
          {
@@ -19900,7 +19900,7 @@
                      ]
                   },
                   {
-                     "title": "{@vehicle escort fighter (Sol F5 Hurrican Mk5)|Sol F5 Hurrican Mk5}",
+                     "title": "{@vehicle escort fighter (Sol F5 Hurricane Mk5)|Sol F5 Hurricane Mk5}",
                      "entries": [
                         "Change FTL range/speed to medium/slow; increase price to 48,000 aurei; replace beam cannon with twin light assault cannon (Fire Arc Forward; {@skill Gunnery||crb}; Damage 3; Critical 4; Range [Medium]; {@quality Accurate|Accurate 1|crb}, {@quality Auto-fire||crb}); replace anti-ship missiles and seeker missiles with lightning mass driver warhead system (Fire Arc Forward; {@skill Gunnery||crb}; Damage 6; Critical 4; Range [Medium]; {@quality Linked|Linked 5|crb}; after firing, this weapon runs out of ammo and must be reloaded at a base or {@vehicle carrier})."
                      ]
@@ -20041,7 +20041,7 @@
          ]
       },
       {
-         "name": "Escort Fighter (Sol F5 Hurrican Mk5)",
+         "name": "Escort Fighter (Sol F5 Hurricane Mk5)",
          "page": 144,
          "variant": true,
          "silhouette": 3,
