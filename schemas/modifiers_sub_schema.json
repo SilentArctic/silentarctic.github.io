@@ -1,0 +1,396 @@
+{
+   "$id": "https://silentarctic.github.io/schemas/modifiers_sub_schema.json",
+   "type": "object",
+   "properties": {
+      "skills": {
+         "type": "array",
+         "items": {
+            "type": "object",
+            "properties": {
+               "name": {
+                  "type": "string",
+                  "description": "Skill name to modify."
+               },
+               "source": {
+                  "type": "string",
+                  "description": "Skill source."
+               },
+               "career": {
+                  "type": "boolean",
+                  "description": "If the skill is made into a career skill."
+               },
+               "ranks": {
+                  "type": "number",
+                  "minimum": 1,
+                  "maximum": 5,
+                  "description": "Number of free ranks given to the skill."
+               }
+            },
+            "required": [
+               "name",
+               "ranks"
+            ],
+            "optional": [
+               "source",
+               "career"
+            ],
+            "additionalProperties": false
+         }
+      },
+
+      "characteristics": {
+         "type": "object",
+         "properties": {
+            "brawn": {
+               "type": "number"
+            },
+            "agility": {
+               "type": "number"
+            },
+            "intellect": {
+               "type": "number"
+            },
+            "cunning": {
+               "type": "number"
+            },
+            "willpower": {
+               "type": "number"
+            },
+            "presence": {
+               "type": "number"
+            },
+            "exceedFive": {
+               "type": "boolean"
+            }
+         },
+         "optional": [
+            "brawn",
+            "agility",
+            "intellect",
+            "cunning",
+            "willpower",
+            "presence",
+            "exceedFive"
+         ],
+         "additionalProperties": false
+      },
+
+      "stats": {
+         "type": "object",
+         "properties": {
+            "soak": {
+               "type": "number",
+               "description": "Modifier to base soak."
+            },
+            "wt": {
+               "type": "number",
+               "description": "Modifier to base wound threshold."
+            },
+            "st": {
+               "type": "number",
+               "description": "Modifier to base strain threshold."
+            },
+            "et": {
+               "type": "number",
+               "description": "Modifier to base encumbrance threshold."
+            },
+            "mDefense": {
+               "type": "number",
+               "description": "Modifier to base melee defense."
+            },
+            "rDefense": {
+               "type": "number",
+               "description": "Modifier to base ranged defense."
+            }
+         },
+         "optional": [
+            "soak",
+            "wt",
+            "st",
+            "et",
+            "mDefense",
+            "rDefense"
+         ],
+         "additionalProperties": false
+      },
+
+      "roll": {
+         "type": "array",
+         "items": {
+            "type": "object",
+            "properties": {
+               "choice": {
+                  "type": "boolean",
+                  "description": "If the effect can be toggled, or if it's always on."
+               },
+               "skills": {
+                  "type": "array",
+                  "items": {
+                     "type": "string"
+                  },
+                  "description": "Skills the mod can be applied to. Omit for all skills."
+               },
+               "skillTypes": {
+                  "type": "array",
+                  "items": {
+                     "type": "string",
+                     "enum": [
+                        "general",
+                        "combat",
+                        "social",
+                        "magic",
+                        "knowledge"
+                     ]
+                  }
+               },
+               "dice": {
+                  "type": "array",
+                  "items": {
+                     "type": "object",
+                     "properties": {
+                        "quantity": {
+                           "type": "number",
+                           "description": "Amount of dice to add/remove."
+                        },
+                        "upgrade": {
+                           "type": "boolean",
+                           "description": "If the ability/difficulty dice should be upgraded, or if any type of dice should be added."
+                        },
+                        "name": {
+                           "type": "string",
+                           "enum": [
+                              "proficiency",
+                              "ability",
+                              "boost",
+                              "challenge",
+                              "difficulty",
+                              "setback"
+                           ],
+                           "description": "Type of dice to add/remove."
+                        }
+                     },
+                     "required": [
+                        "name",
+                        "quantity"
+                     ],
+                     "optional": [
+                        "upgrade"
+                     ],
+                     "additionalProperties": false
+                  }
+               },
+               "symbols": {
+                  "type": "array",
+                  "items": {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string",
+                           "enum": [
+                              "t",
+                              "s",
+                              "a",
+                              "d",
+                              "f",
+                              "h"
+                           ],
+                           "description": "Type of symbol to add/remove."
+                        },
+                        "quantity": {
+                           "type": "number",
+                           "description": "Number of symbols to add/remove."
+                        }
+                     },
+                     "required": [
+                        "name",
+                        "quantity"
+                     ],
+                     "additionalProperties": false
+                  }
+               },
+               "damage": {
+                  "type": "number",
+                  "description": "Damage added to the attack."
+               },
+               "setCritical": {
+                  "type": "number",
+                  "description": "Overrides default weapon critical rating."
+               },
+               "qualities": {
+                  "description": "Qualities added to weapon.",
+                  "type": "array",
+                  "items": {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
+                        },
+                        "value": {
+                           "type": "number"
+                        },
+                        "source": {
+                           "type": "string"
+                        }
+                     },
+                     "required": [
+                        "name"
+                     ],
+                     "optional": [
+                        "value",
+                        "source"
+                     ],
+                     "additionalProperties": false
+                  }
+               },
+               "description": {
+                  "type": "string",
+                  "description": "Details to display in the roll dialogue."
+               },
+               "cost": {
+                  "type": "object",
+                  "description": "Cost to add modifier to roll.",
+                  "properties": {
+                     "strain": {
+                        "type": "number"
+                     },
+                     "wounds": {
+                        "type": "number"
+                     },
+                     "money": {
+                        "type": "number"
+                     }
+                  },
+                  "optional": [
+                     "strain",
+                     "wounds",
+                     "money"
+                  ],
+                  "additionalProperties": false
+               }
+            },
+            "required": [
+               "description"
+            ],
+            "optional": [
+               "choice",
+               "skills",
+               "skillTypes",
+               "dice",
+               "symbols",
+               "damage",
+               "setCritical",
+               "qualities"
+            ],
+            "additionalProperties": false
+         }
+      },
+
+      "equipment": {
+         "type": "object",
+         "properties": {
+            "weapon": {
+               "type": "array",
+               "items": {
+                  "type": "object",
+                  "properties": {
+                     "name": {
+                        "type": "string",
+                        "description": "Weapon name."
+                     },
+                     "skill": {
+                        "type": "object",
+                        "properties": {
+                           "name": {
+                              "type": "string",
+                              "description": "Skill name."
+                           },
+                           "source": {
+                              "type": "string",
+                              "description": "Skill source."
+                           }
+                        },
+                        "required": [
+                           "name"
+                        ],
+                        "optional": [
+                           "source"
+                        ],
+                        "additionalProperties": false
+                     },
+                     "damage": {
+                        "type": "string",
+                        "description": "Weapon base damage."
+                     },
+                     "critical": {
+                        "type": "number",
+                        "description": "Weapon critical cost."
+                     },
+                     "range": {
+                        "type": "string",
+                        "enum": [
+                           "Engaged",
+                           "Short",
+                           "Medium",
+                           "Long",
+                           "Extreme",
+                           "Strategic"
+                        ],
+                        "description": "Weapon range."
+                     },
+                     "special": {
+                        "type": "array",
+                        "items": {
+                           "type": "object",
+                           "properties": {
+                              "name": {
+                                 "type": "string",
+                                 "description": "Quality name."
+                              },
+                              "source": {
+                                 "type": "string",
+                                 "description": "Quality source."
+                              },
+                              "ranks": {
+                                 "type": "number",
+                                 "description": "Quality ranks."
+                              }
+                           },
+                           "required": [
+                              "name"
+                           ],
+                           "optional": [
+                              "source",
+                              "ranks"
+                           ],
+                           "additionalProperties": false
+                        }
+                     }
+                  },
+                  "required": [
+                     "name",
+                     "skill",
+                     "damage",
+                     "critical",
+                     "range"
+                  ],
+                  "optional": [
+                     "special"
+                  ],
+                  "additionalProperties": false
+               }
+            }
+         },
+         "optional": [
+            "weapon"
+         ],
+         "additionalProperties": false
+      }
+   },
+   "optional": [
+      "skills",
+      "stats",
+      "roll",
+      "equipment"
+   ],
+   "additionalProperties": false
+}

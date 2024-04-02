@@ -7,7 +7,7 @@
          "abbreviation": "RoT",
          "color": "#A75A0E",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/realms-terrinoth/",
-         "version": "2024.2.13",
+         "version": "2024.3.20",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -8782,7 +8782,11 @@
          "xp": 100,
          "skills": {
             "skills": [
-               "coercion"
+               {
+                  "name": "Coercion",
+                  "source": "crb",
+                  "ranks": 1
+               }
             ],
             "ranksTotal": 1,
             "ranksEach": 1,
@@ -8802,6 +8806,22 @@
          "description": [
             "The Orcs who hunt the Broken Plains are among the most powerful, ferocious beings in the world. They live the hard, lean life of nomads, following the great herds of elk, boars, and moose from one side of the Broken Plains to the other, forging a society that is equally influenced by their spirit-based magic, brutal war axes, and fearsome throwing spears."
          ],
+         "modifiers": {
+            "roll": [{
+               "choice": true,
+               "skills": [
+                  "melee",
+                  "melee (light)",
+                  "melee (heavy)"
+               ],
+               "dice": [{
+                  "name": "setback",
+                  "quantity": 1
+               }],
+               "damage": 2,
+               "description": "{@b [Archetype] Battle Rage:} Choose to add {@dice setback} to the roll and +2 damage to one hit."
+            }]
+         },
          "page": 67
       },
       {
@@ -8820,8 +8840,16 @@
          "xp": 90,
          "skills": {
             "skills": [
-               "charm",
-               "resilience"
+               {
+                  "name": "Charm",
+                  "source": "crb",
+                  "ranks": 1
+               },
+               {
+                  "name": "Resilience",
+                  "source": "crb",
+                  "ranks": 1
+               }
             ],
             "ranksTotal": 2,
             "ranksEach": 1,
@@ -8832,7 +8860,7 @@
          },
          "abilities": [
             {
-               "name": "small",
+               "name": "Small",
                "description": [
                   "Gnomes are silhouette 0."
                ]
@@ -8847,6 +8875,19 @@
          "description": [
             "Burrow Gnomes are those who have mostly abandoned interactions with the other races. When they do leave their comfortable homes, it is typically for trade, alliance building, espionage, or, of course, the lure of adventure."
          ],
+         "modifiers": {
+            "roll": [{
+               "choice": true,
+               "skillTypes": [
+                  "combat"
+               ],
+               "dice": [{
+                  "name": "boost",
+                  "quantity": 1
+               }],
+               "description": "{@b [Archetype] Militia Training:} Add {@dice boost} to combat checks against characters with a larger silhouette."
+            }]
+         },
          "page": 69
       },
       {
@@ -8864,7 +8905,11 @@
          "xp": 90,
          "skills": {
             "skills": [
-               "perception"
+               {
+                  "name": "Perception",
+                  "source": "crb",
+                  "ranks": 1
+               }
             ],
             "ranksTotal": 1,
             "ranksEach": 1,
@@ -8890,6 +8935,25 @@
          "description": [
             "Given their animalistic appearance, straightforward culture, and soft-spoken nature, it is easy for the other races to see the Catfolk as lesser beings. They are surprisingly quick-witted and incredibly cunning, although most are happy to \"play primitive\" if it gains them an advantage while bartering or fighting."
          ],
+         "modifiers": {
+            "equipment": {
+               "weapon": [{
+                  "name": "Claws",
+                  "skill": {
+                     "name": "Brawl",
+                     "source": "crb"
+                  },
+                  "damage": "+1",
+                  "critical": 3,
+                  "range": "Engaged",
+                  "special": [{
+                     "name": "Vicious",
+                     "value": 1,
+                     "souce": "crb"
+                  }]
+               }]
+            }
+         },
          "page": 68
       },
       {
@@ -8908,7 +8972,11 @@
          "xp": 90,
          "skills": {
             "skills": [
-               "discipline"
+               {
+                  "name": "Discipline",
+                  "source": "crb",
+                  "ranks": 1
+               }
             ],
             "ranksTotal": 1,
             "ranksEach": 1,
@@ -8930,6 +8998,15 @@
             "Those who survived the War of the Shadow Tear—the darkness that enveloped Mennara long before the mortal races came into being—have spent their long lives trying to atone by hunting Ynfernael creatures wherever they are found. The Deep Elves have an almost singular focus in this crusade and will stop at nothing to purge the Ynfernael from the world, as well as purge their still-fallen counterparts, the Daewyl Elves.",
             "However, there are those who feel that this drive is leading their clan down a dangerous path, as their search for a strategic advantage finds them ever more willing to embrace any power that may help them in their quest. This means that many Elves, including some among the Deep Elves themselves, are watching things unfold with a wary eye, guarding diligently against the day when the rest of the Elves might again be forced to wage war against their cousins."
          ],
+         "modifiers": {
+            "skills": [
+               {
+                  "name": "Knowledge (Forbidden)",
+                  "career": true,
+                  "ranks": 2
+               }
+            ]
+         },
          "page": 63
       },
       {
@@ -8948,7 +9025,11 @@
          "xp": 90,
          "skills": {
             "skills": [
-               "resilience"
+               {
+                  "name": "Resilience",
+                  "source": "crb",
+                  "ranks": 1
+               }
             ],
             "ranksTotal": 1,
             "ranksEach": 1,
@@ -8976,6 +9057,16 @@
             "Those histories also recount with bitterness and frustration how the dragons chased the Dwarves from their home in Molten Heath and followed them all the way into the caves beneath the Dunwarr Mountains. They recount, with absolute accuracy, how the dragons tried to eradicate the Dwarves from the face of the Mennara.",
             "The Dunwarr Dwarves see that history as their birthright. They believe that Dwarven society is among the most noble in the world, and that they deserve the respect and deference they once commanded. Their loftiest goal is to retake the Molten Heath and force the dragons who occupy their lands to accept their right to live there once and for all."
          ],
+         "modifiers": {
+            "roll": [{
+               "choice": true,
+               "dice": [{
+                  "name": "setback",
+                  "quality": -2
+               }],
+               "description": "{@b [Archetype] Darkvision:} Remove up to {@dice setback|2} imposed due to darkness."
+            }]
+         },
          "page": 64
       },
       {
@@ -8994,7 +9085,11 @@
          "xp": 90,
          "skills": {
             "skills": [
-               "negotiation"
+               {
+                  "name": "Negotiation",
+                  "source": "crb",
+                  "ranks": 1
+               }
             ],
             "ranksTotal": 1,
             "ranksEach": 1,
@@ -9037,9 +9132,11 @@
          "st": 10,
          "xp": 90,
          "skills": {
-            "skills": [
-               "streetwise"
-            ],
+            "skills": [{
+               "name": "Streetwise",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -9058,6 +9155,12 @@
          "description": [
             "Although there are many ways for Elves to escape the rigid caste system of their society, it is the Free Cities Elves who do it the most brazenly. Those who refer to themselves as Free Cities Elves, a voluntary colloquialism, are Elves who have forsaken their tribe or were born to Elves who did. They have chosen to live alongside the short-lived races as urbanites and are most commonly found in cities such as Dawnsmoor and Tamalir. Those calling themselves Free Cities Elves can also include Elves whose bloodline has mingled with that of Humans."
          ],
+         "modifiers": {
+            "stats": {
+               "mDefense": 1,
+               "rDefense": 1
+            }
+         },
          "page": 63
       },
       {
@@ -9074,9 +9177,11 @@
          "st": 9,
          "xp": 100,
          "skills": {
-            "skills": [
-               "cool"
-            ],
+            "skills": [{
+               "name": "Cool",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -9096,6 +9201,25 @@
             "Though village-dwelling Catfolk predominantly keep to themselves, those exiled into the world must find their place among the other races. This often leads to love, marriage, and offspring.",
             "Half-Catfolk most often retain the reflexes, senses, and coordination of their Catfolk parent, but commonly gain the aesthetics of their other parent's species. Many Half-Catfolk appear as heavily furred Humans with cat-like ears and clawed fingers, though there are nearly limitless variations. While most of the nearby societies accept such beings for what they are, full-blooded Catfolk see them as the byproducts of unworthy exiles. Thus, Half-Catfolk are often shunned and ridiculed by their pure-blooded cousins."
          ],
+         "modifiers": {
+            "equipment": {
+               "weapon": [{
+                  "name": "Claws",
+                  "skill": {
+                     "name": "Brawl",
+                     "source": "crb"
+                  },
+                  "damage": "+1",
+                  "critical": 3,
+                  "range": "Engaged",
+                  "special": [{
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "souce": "crb"
+                  }]
+               }]
+            }
+         },
          "page": 68
       },
       {
@@ -9113,9 +9237,11 @@
          "st": 10,
          "xp": 90,
          "skills": {
-            "skills": [
-               "negotiation"
-            ],
+            "skills": [{
+               "name": "Negotiation",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -9134,6 +9260,16 @@
          "description": [
             "The Highborn Elves are those only slightly removed from the most ancient bloodlines, those original Elves who dwelled in the Empyrean. As a result, these Elves have the strongest natural connection to Latariana's Door, and many have devoted their lives to deepening that connection and ascending Latariana's Stair to earn redemption. The Daughters of the Empyrean and the Darnati Warriors are most often drawn from this caste, and their proximity to the court at Caelcira necessitates a basic knowledge of etiquette and diplomacy. Beyond the Latari, the highborn of the other Elven tribes occupy similar positions of prestige."
          ],
+         "modifiers": {
+            "skills": [
+               {
+                  "name": "Divine",
+                  "source": "crb",
+                  "career": true,
+                  "ranks": 1
+               }
+            ]
+         },
          "page": 63
       },
       {
@@ -9150,15 +9286,13 @@
          "st": 10,
          "xp": 110,
          "skills": {
-            "skills": [
-               "any two non-career"
-            ],
+            "skills": [],
             "ranksTotal": 2,
             "ranksEach": 1,
             "description": [
                "Humans begin with one rank in each of two different non-career skills. You still cannot train these skills above rank 2 during character creation."
             ],
-            "choice": true
+            "choice": ["non-career"]
          },
          "abilities": [
             {
@@ -9188,9 +9322,11 @@
          "st": 10,
          "xp": 90,
          "skills": {
-            "skills": [
-               "survival"
-            ],
+            "skills": [{
+               "name": "Survival",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -9210,6 +9346,12 @@
             "The Elves were not always at one with nature, but after their fall from grace, many found a new, deepened connection with the wilds. As successive generations were born and raised in Mennara, they felt an even greater calling to the world around them rather than the lofty heavens of their distant ancestors. They resolved to live in harmony with their new home and become its greatest protectors.",
             "It is from these Elves that the bulk of the Latari armies are drawn. Among the lowborn Elves are the famed Deepwood Archers, unrivaled in lethality with their extraordinary longbows, and the Leonx Riders and their fearsome feline mounts. Among the other Elven tribes, the lowborn occupy similarly martial or practical roles, and many leave Elven society entirely for a life of purpose and adventure experiencing the world."
          ],
+         "modifiers": {
+            "stats": {
+               "mDefense": 1,
+               "rDefense": 1
+            }
+         },
          "page": 60
       },
       {
@@ -9227,9 +9369,11 @@
          "st": 8,
          "xp": 100,
          "skills": {
-            "skills": [
-               "cool"
-            ],
+            "skills": [{
+               "name": "Cool",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -9248,6 +9392,31 @@
          "description": [
             "Though Orcs are generally as intellectually and socially capable as any other being in Mennara, their immense size and incredible strength gives them some highly unusual advantages. While there is no inherent need for them to make a living using those assets, most find it too tempting a lure to resist. As such, Stone-Dweller Orcs often find themselves living lives of adventure as mercenaries, soldiers, constables, or crooks."
          ],
+         "modifiers": {
+            "roll": [
+               {
+                  "choice": true,
+                  "skillTypes": [
+                     "social"
+                  ],
+                  "dice": [{
+                     "name": "setback",
+                     "quantity": 2
+                  }],
+                  "description": "{@b [Archetype] Hot Tempered:} After exceeding half of your strain threshold, add {@dice setback|2} to social checks."
+               },
+               {
+                  "choice": true,
+                  "skills": [
+                     "melee",
+                     "melee (light)",
+                     "melee (heavy)"
+                  ],
+                  "damage": 1,
+                  "description": "{@b [Archetype] Hot Tempered:} After exceeding half of your strain threshold, add 1 damage to one hit of all melee attacks."
+               }
+            ]
+         },
          "page": 67
       },
       {
@@ -9265,9 +9434,11 @@
          "st": 8,
          "xp": 100,
          "skills": {
-            "skills": [
-               "alchemy"
-            ],
+            "skills": [{
+               "name": "Alchemy",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -9286,6 +9457,19 @@
          "description": [
             "The mysterious Orcs of the Sunderlands eschew both nomadic and city life, instead living in small, secretive villages. This has the effect of helping to preserve Orc culture and heritage and to advance their race in step with the rest of the world. Within these villages, which dot the great deserts of Al-Kalim, the Sunderlands Orcs study magic and medicine with equal diligence. Such are their skills at potion making that the alchemical contents within their signature black glass flasks are renowned throughout Mennara."
          ],
+         "modifiers": {
+            "roll": [{
+               "choice": true,
+               "skillTypes": [
+                  "combat"
+               ],
+               "dice": [{
+                  "name": "boost",
+                  "quantity": 1
+               }],
+               "description": "{@b [Archetype] Tenacious:} After hitting a target, add {@dice boost} to all combat checks against the same character this encounter."
+            }]
+         },
          "page": 67
       },
       {
@@ -9304,8 +9488,16 @@
          "xp": 90,
          "skills": {
             "skills": [
-               "charm",
-               "stealth"
+               {
+                  "name": "Charm",
+                  "source": "crb",
+                  "ranks": 1
+               },
+               {
+                  "name": "Stealth",
+                  "source": "crb",
+                  "ranks": 1
+               }
             ],
             "ranksTotal": 2,
             "ranksEach": 1,
@@ -9316,7 +9508,7 @@
          },
          "abilities": [
             {
-               "name": "small",
+               "name": "Small",
                "description": [
                   "Gnomes are silhouette 0."
                ]
@@ -9380,10 +9572,22 @@
                "Players with a Disciple character may choose to start with the following gear instead of spending currency during {@b Step 7} of character creation:"
             ],
             "gear": [
-               "A {@gear mace||rot}",
+               "A {@gear mace}",
                "A {@gear holy icon} {@i or} {@gear shield} and {@gear leather armor}",
-               "A {@gear lantern} and 2 {@gear herbs of healing||rot} or traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, 3 {@gear torches}, and a {@gear waterskin}",
+               "A {@gear lantern} and 2 {@gear herbs of healing} or traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, {@gear torches (3)}, and a {@gear waterskin (empty)|waterskin}",
                "1d100 silver coins"
+            ],
+            "selections": [
+               { "name": "mace" },
+               [
+                  [{ "name": "holy icon" }],
+                  [{ "name": "shield" }, { "name": "leather armor" }]
+               ],
+               [
+                  [{ "name": "lantern" }, { "name": "herbs of healing", "quantity": 2 }],
+                  [{ "name": "backpack" }, { "name": "bedroll" }, { "name": "rope" }, { "name": "flint and steel" }, { "name": "torches (3)", "source": "crb" }, { "name": "waterskin (empty)" }]
+               ],
+               { "name": "1d100 silver coins", "money": true, "formula": "1d100" }
             ]
          },
          "page": 70
@@ -9433,11 +9637,21 @@
                "Players with an Envoy character may choose to start with the following gear instead of spending currency during {@b Step 7} of character creation:"
             ],
             "gear": [
-               "A {@gear dagger||rot}",
+               "A {@gear dagger}",
                "A {@gear sword} {@i or} a {@gear musical instrument}",
-               "A {@gear fine cloak} {@i or} traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, 3 {@gear torches}, and a {@gear waterskin}",
+               "A {@gear fine cloak} {@i or} traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, {@gear torches (3)}, and a {@gear waterskin (empty)|waterskin}",
                "{@gear Padded armor}",
                "200 + 1d100 silver coins"
+            ],
+            "selections": [
+               { "name": "dagger" },
+               [[{ "name": "sword" }], [{ "name": "musical instrument" }]],
+               [
+                  [{ "name": "fine cloak" }],
+                  [{ "name": "backpack" }, { "name": "bedroll" }, { "name": "rope" }, { "name": "flint and steel" }, { "name": "torches (3)", "source": "crb" }, { "name": "waterskin (empty)" }]
+               ],
+               { "name": "padded armor" },
+               { "name": "200 + 1d100 silver coins", "money": true, "formula": "200 + 1d100" }
             ]
          },
          "page": 70
@@ -9838,7 +10052,7 @@
          ],
          "description": [
             "Nearly everyone in Terrinoth carries a knife at their belt; it is a useful tool for any number of mundane tasks. Daggers, on the other hand, are designed purely for killing. Their thin, razor-sharp blades tend to be perfectly balanced so they can be thrown with the flick of a wrist just as easily as they can slit an unwary throat.",
-            "Your character can stab or slash with a dagger using the profile in {@table 2-5: Melee Weapons} on page 94, or they can throw one using the following profile:",
+            "Your character can stab or slash with a dagger using the profile in {@table 2-5: Melee Weapons} on page 94, or they can throw one using the following profile: (Ranged; Damage +2; Critical 3; Range [Short]; Accurate 1, Limited Ammo 1).",
             {
                "title": "Thrown Stats",
                "type": "table",
@@ -10066,7 +10280,7 @@
          "description": [
             "Spears are perfect for fighting in tight formation, where soldiers can't swing a sword or axe without hitting one of their fellows. Thus, foot soldiers of the baronies tend to train with spear and shield in the art of forming a defensive wall of thrusting spear tips.",
             "Standard spears are too heavy to be wielded in one hand or thrown. \"Light\" spears (sometimes called javelins) on the other hand can be wielded one-handed and consist of a thick, four-foot-long wooden shaft topped by a heavy iron spearhead. These spears are also light enough to be thrown over short distances; the Orcs of the Broken Plains often use thrown spears to skewer their prey while hunting.",
-            "Your character can thrust or stab with a light spear using the profile in {@table 2-5: Melee Weapons}, or they can throw one using the following profile:.",
+            "Your character can thrust or stab with a light spear using the profile in {@table 2-5: Melee Weapons}, or they can throw one using the following profile: (Ranged; Damage +2; Critical 4; Range [Short]; Accurate 1, Limited Ammo 1).",
             {
                "title": "Thrown Stats",
                "type": "table",
@@ -10705,7 +10919,7 @@
          ],
          "description": [
             "The rangers of the Dunwarr Mountains are fond of saying that the only thing better than an axe is an axe you can throw at someone. No amount of balancing a hand axe for throwing can make it a truly accurate weapon, but if it hits, it is likely to do some serious damage.",
-            "Your character can hurl a throwing axe at their foe using the profile in {@table 2-6: Ranged Weapons} on page 95, or they can wield one using the following profile:",
+            "Your character can hurl a throwing axe at their foe using the profile in {@table 2-6: Ranged Weapons} on page 95, or they can wield one using the following profile: (Melee (Light); Damage +2; Critical 3; Range [Engaged]; Inaccurate 1, Vicious 1).",
             {
                "title": "Melee Stats",
                "type": "table",
@@ -10957,6 +11171,20 @@
          "encumbrance": 1,
          "price": 90,
          "rarity": 4,
+         "modifiers": {
+            "roll": [{
+               "skills": [
+                  "charm",
+                  "deception",
+                  "leadership"
+               ],
+               "dice": [{
+                  "name": "setback",
+                  "quantity": -1
+               }],
+               "description": "{@b Fine Cloak:} Remove {@dice setback} from Charm, Deception, and Leadership checks."
+            }]
+         },
          "page": 100
       },
       {

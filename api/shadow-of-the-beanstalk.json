@@ -12429,13 +12429,11 @@
          "price": 1000,
          "rarity": 5,
          "page": 104,
-         "modifiers": [
-            {
-               "name": "Strain Threshold",
-               "type": "derived",
-               "value": -1
+         "modifiers": {
+            "stats": {
+               "st": -1
             }
-         ],
+         },
          "settings": [
             {
                "name": "Android"
@@ -12456,18 +12454,16 @@
          "price": 500,
          "rarity": 4,
          "page": 104,
-         "modifiers": [
-            {
-               "name": "Perception",
-               "type": "skill",
-               "value": "1 Free Rank"
+         "modifiers": {
+            "stats": {
+               "st": -1
             },
-            {
-               "name": "Strain Threshold",
-               "type": "derived",
-               "value": -1
-            }
-         ],
+            "skills": [{
+               "name": "perception",
+               "source": "crb",
+               "ranks": 1
+            }]
+         },
          "settings": [
             {
                "name": "Android"
@@ -12483,23 +12479,19 @@
          "type": "cybernetic",
          "description": [
             "Cyberlimbs are high-tech prosthetics designed to replace an individual's missing organic limbs. Available in a variety of styles and qualities—from low-cost, hard-plastic military surplus arms to the lifelike creations used by top athletes and racers to replace limbs lost in accidents—they are a very common cybernetic enhancement. As with many implants that began as medical devices, cyberlimbs are currently seeing a rise in use for increasing the performance of human bodies.",
-            "A cyberlimb increases your character's {@charactieristic Brawn||crb} or {@characteristic Agility||crb} rating—your choice when your character obtains the limb—by 1. If a character has one or more cybernetic arms, they decrease their strain threshold by 1, and if they have one or more cybernetic legs, they decrease their strain threshold by 1."
+            "A cyberlimb increases your character's {@characteristic Brawn||crb} or {@characteristic Agility||crb} rating—your choice when your character obtains the limb—by 1. If a character has one or more cybernetic arms, they decrease their strain threshold by 1, and if they have one or more cybernetic legs, they decrease their strain threshold by 1."
          ],
          "price": 2000,
          "rarity": 4,
          "page": 104,
-         "modifiers": [
-            {
-               "name": "Agility",
-               "type": "characteristic",
-               "value": "1 Free Rank"
+         "modifiers": {
+            "stats": {
+               "st": -1
             },
-            {
-               "name": "Strain Threshold",
-               "type": "derived",
-               "value": -1
+            "characteristics": {
+               "agility": 1
             }
-         ],
+         },
          "settings": [
             {
                "name": "Android"
@@ -12515,23 +12507,19 @@
          "type": "cybernetic",
          "description": [
             "Cyberlimbs are high-tech prosthetics designed to replace an individual's missing organic limbs. Available in a variety of styles and qualities—from low-cost, hard-plastic military surplus arms to the lifelike creations used by top athletes and racers to replace limbs lost in accidents—they are a very common cybernetic enhancement. As with many implants that began as medical devices, cyberlimbs are currently seeing a rise in use for increasing the performance of human bodies.",
-            "A cyberlimb increases your character's {@charactieristic Brawn||crb} or {@characteristic Agility||crb} rating—your choice when your character obtains the limb—by 1. If a character has one or more cybernetic arms, they decrease their strain threshold by 1, and if they have one or more cybernetic legs, they decrease their strain threshold by 1."
+            "A cyberlimb increases your character's {@characteristic Brawn||crb} or {@characteristic Agility||crb} rating—your choice when your character obtains the limb—by 1. If a character has one or more cybernetic arms, they decrease their strain threshold by 1, and if they have one or more cybernetic legs, they decrease their strain threshold by 1."
          ],
          "price": 2000,
          "rarity": 4,
          "page": 104,
-         "modifiers": [
-            {
-               "name": "Brawn",
-               "type": "characteristic",
-               "value": 1
+         "modifiers": {
+            "stats": {
+               "st": -1
             },
-            {
-               "name": "Strain Threshold",
-               "type": "derived",
-               "value": -1
+            "characteristics": {
+               "brawn": 1
             }
-         ],
+         },
          "settings": [
             {
                "name": "Android"
@@ -12552,18 +12540,12 @@
          "price": 500,
          "rarity": 5,
          "page": 105,
-         "modifiers": [
-            {
-               "name": "Wound Threshold",
-               "type": "derived",
-               "value": 2
-            },
-            {
-               "name": "Strain Threshold",
-               "type": "derived",
-               "value": -1
+         "modifiers": {
+            "stats": {
+               "wt": 2,
+               "st": -1
             }
-         ],
+         },
          "settings": [
             {
                "name": "Android"
@@ -12584,18 +12566,16 @@
          "price": 500,
          "rarity": 5,
          "page": 105,
-         "modifiers": [
-            {
-               "name": "Athletics",
-               "type": "skill",
-               "value": "1 Free Rank"
+         "modifiers": {
+            "stats": {
+               "st": -1
             },
-            {
-               "name": "Strain Threshold",
-               "type": "derived",
-               "value": -1
-            }
-         ],
+            "skills": [{
+               "name": "athletics",
+               "source": "crb",
+               "ranks": 1
+            }]
+         },
          "settings": [
             {
                "name": "Android"
@@ -12616,18 +12596,16 @@
          "price": 500,
          "rarity": 5,
          "page": 105,
-         "modifiers": [
-            {
-               "name": "Resilience",
-               "type": "skill",
-               "value": "1 Free Rank"
+         "modifiers": {
+            "stats": {
+               "st": -1
             },
-            {
-               "name": "Strain Threshold",
-               "type": "derived",
-               "value": -1
-            }
-         ],
+            "skills": [{
+               "name": "resilience",
+               "source": "crb",
+               "ranks": 1
+            }]
+         },
          "settings": [
             {
                "name": "Android"
@@ -12648,18 +12626,24 @@
          "price": 500,
          "rarity": 4,
          "page": 105,
-         "modifiers": [
-            {
-               "name": "Vigilance",
-               "type": "skill",
-               "value": "1 Free Rank"
+         "modifiers": {
+            "stats": {
+               "st": -1
             },
-            {
-               "name": "Strain Threshold",
-               "type": "derived",
-               "value": -1
-            }
-         ],
+            "skills": [{
+               "name": "vigilance",
+               "source": "crb",
+               "ranks": 1
+            }],
+            "roll": [{
+               "choice": true,
+               "description": "{@b [Cybernetic] Enhanced Hearing:} remove {@dice setback} caused by loud noises.",
+               "dice": [{
+                  "name": "setback",
+                  "quantity": -1
+               }]
+            }]
+         },
          "settings": [
             {
                "name": "Android"
@@ -12680,23 +12664,23 @@
          "price": 800,
          "rarity": 5,
          "page": 105,
-         "modifiers": [
-            {
-               "name": "Coordination",
-               "type": "skill",
-               "value": "1 Free Rank"
+         "modifiers": {
+            "stats": {
+               "st": -1
             },
-            {
-               "name": "Vigilance",
-               "type": "skill",
-               "value": "1 Free Rank"
-            },
-            {
-               "name": "Strain Threshold",
-               "type": "derived",
-               "value": -1
-            }
-         ],
+            "skills": [
+               {
+                  "name": "coordination",
+                  "source": "crb",
+                  "ranks": 1
+               },
+               {
+                  "name": "vigilance",
+                  "source": "crb",
+                  "ranks": 1
+               }
+            ]
+         },
          "settings": [
             {
                "name": "Android"
@@ -12717,18 +12701,14 @@
          "price": 0,
          "rarity": 0,
          "page": 105,
-         "modifiers": [
-            {
-               "name": "Willpower",
-               "type": "characteristic",
-               "value": 1
+         "modifiers": {
+            "stats": {
+               "st": -1
             },
-            {
-               "name": "Strain Threshold",
-               "type": "derived",
-               "value": -1
+            "characteristics": {
+               "willpower": 1
             }
-         ],
+         },
          "settings": [
             {
                "name": "Android"
@@ -12751,28 +12731,25 @@
          "price": 1250,
          "rarity": 5,
          "page": 105,
-         "modifiers": [
-            {
-               "name": "Knowledge (Society)",
-               "type": "skill",
-               "value": "1 Free Rank"
+         "modifiers": {
+            "stats": {
+               "st": -1
             },
-            {
-               "name": "Knowledge (Science)",
-               "type": "skill",
-               "value": "1 Free Rank"
-            },
-            {
-               "name": "Knowledge (The Net)",
-               "type": "skill",
-               "value": "1 Free Rank"
-            },
-            {
-               "name": "Strain Threshold",
-               "type": "derived",
-               "value": -1
-            }
-         ],
+            "skills": [
+               {
+                  "name": "knowledge (society)",
+                  "ranks": 1
+               },
+               {
+                  "name": "knowledge (science)",
+                  "ranks": 1
+               },
+               {
+                  "name": "knowledge (the net)",
+                  "ranks": 1
+               }
+            ]
+         },
          "settings": [
             {
                "name": "Android"
@@ -12795,28 +12772,25 @@
          "restricted": true,
          "rarity": 5,
          "page": 106,
-         "modifiers": [
-            {
-               "name": "Knowledge (Society)",
-               "type": "skill",
-               "value": "1 Free Rank"
+         "modifiers": {
+            "stats": {
+               "st": -1
             },
-            {
-               "name": "Knowledge (Science)",
-               "type": "skill",
-               "value": "1 Free Rank"
-            },
-            {
-               "name": "Knowledge (The Net)",
-               "type": "skill",
-               "value": "1 Free Rank"
-            },
-            {
-               "name": "Strain Threshold",
-               "type": "derived",
-               "value": -1
-            }
-         ],
+            "skills": [
+               {
+                  "name": "knowledge (society)",
+                  "ranks": 1
+               },
+               {
+                  "name": "knowledge (science)",
+                  "ranks": 1
+               },
+               {
+                  "name": "knowledge (the net)",
+                  "ranks": 1
+               }
+            ]
+         },
          "settings": [
             {
                "name": "Android"
@@ -12837,13 +12811,11 @@
          "price": 400,
          "rarity": 6,
          "page": 106,
-         "modifiers": [
-            {
-               "name": "Strain Threshold",
-               "type": "derived",
-               "value": -1
+         "modifiers": {
+            "stats": {
+               "st": -1
             }
-         ],
+         },
          "settings": [
             {
                "name": "Android"
@@ -12864,18 +12836,12 @@
          "price": 1000,
          "rarity": 5,
          "page": 106,
-         "modifiers": [
-            {
-               "name": "Soak",
-               "type": "derived",
-               "value": 1
-            },
-            {
-               "name": "Strain Threshold",
-               "type": "derived",
-               "value": -1
+         "modifiers": {
+            "stats": {
+               "st": -1,
+               "soak": 1
             }
-         ],
+         },
          "settings": [
             {
                "name": "Android"
@@ -12896,6 +12862,20 @@
          "price": 1000,
          "rarity": 5,
          "page": 106,
+         "modifiers": {
+            "roll": [{
+               "choice": true,
+               "skills": [
+                  "brawl"
+               ],
+               "damage": 1,
+               "setCritical": 3,
+               "description": "{@b [G-Mod] Cat Claws:} Suffer 1 strain. Brawl attacks have +1 damage and set crit rating to 3.",
+               "cost": {
+                  "strain": 1
+               }
+            }]
+         },
          "settings": [
             {
                "name": "Android"
@@ -12916,6 +12896,20 @@
          "price": 400,
          "rarity": 6,
          "page": 106,
+         "modifiers": {
+            "roll": [{
+               "choice": true,
+               "description": "{@b [G-Mod] Chameleon Skin:} Suffer 1 strain. Add {@symbols s} to stealth checks.",
+               "skills": ["stealth"],
+               "symbols": [{
+                  "name": "s",
+                  "quantity": 1
+               }],
+               "cost": {
+                  "strain": 1
+               }
+            }]
+         },
          "settings": [
             {
                "name": "Android"
@@ -12936,6 +12930,22 @@
          "price": 500,
          "rarity": 5,
          "page": 107,
+         "modifiers": {
+            "roll": [{
+               "choice": true,
+               "skills": [
+                  "resilience"
+               ],
+               "symbols": [{
+                  "name": "s",
+                  "quantity": 1
+               }],
+               "description": "{@b [G-Mod] Enhanced Healing:} Suffer 1 strain. Add {@symbols s} to Resilience checks made to recover from Critical Injuries.",
+               "cost": {
+                  "strain": 1
+               }
+            }]
+         },
          "settings": [
             {
                "name": "Android"
@@ -12958,6 +12968,23 @@
          "price": 1500,
          "rarity": 6,
          "page": 107,
+         "modifiers": {
+            "roll": [{
+               "choice": true,
+               "skills": [
+                  "coordination",
+                  "ranged (light)"
+               ],
+               "symbols": [{
+                  "name": "s",
+                  "quantity": 1
+               }],
+               "description": "{@b [G-Mod] Enhanced Muscles (Coordination):} Suffer 1 strain. Add {@symbols s} to Coordination, or Ranged (Light) checks.",
+               "cost": {
+                  "strain": 1
+               }
+            }]
+         },
          "settings": [
             {
                "name": "Android"
@@ -12980,6 +13007,24 @@
          "price": 1000,
          "rarity": 6,
          "page": 107,
+         "modifiers": {
+            "roll": [{
+               "choice": true,
+               "skills": [
+                  "athletics",
+                  "brawl",
+                  "melee"
+               ],
+               "symbols": [{
+                  "name": "s",
+                  "quantity": 1
+               }],
+               "description": "{@b [G-Mod] Enhanced Muscles (Strength):} Suffer 1 strain. Add {@symbols s} to Athletics, Brawl, or Melee checks.",
+               "cost": {
+                  "strain": 1
+               }
+            }]
+         },
          "settings": [
             {
                "name": "Android"
@@ -13000,6 +13045,22 @@
          "price": 500,
          "rarity": 6,
          "page": 107,
+         "modifiers": {
+            "roll": [{
+               "choice": true,
+               "skills": [
+                  "survival"
+               ],
+               "symbols": [{
+                  "name": "s",
+                  "quantity": 1
+               }],
+               "description": "{@b [G-Mod] Enhanced Olfactory Receptors:} Suffer 1 strain. Add {@symbols s} to Survival checks.",
+               "cost": {
+                  "strain": 1
+               }
+            }]
+         },
          "settings": [
             {
                "name": "Android"
@@ -13040,6 +13101,23 @@
          "price": 800,
          "rarity": 5,
          "page": 108,
+         "modifiers": {
+            "roll": [{
+               "choice": true,
+               "skills": [
+                  "charm",
+                  "leadership"
+               ],
+               "symbols": [{
+                  "name": "s",
+                  "quantity": 1
+               }],
+               "description": "{@b [G-Mod] Geno-Sculpted Physique:} Suffer 1 strain. Add {@symbols s} to Charm or Leadership checks.",
+               "cost": {
+                  "strain": 1
+               }
+            }]
+         },
          "settings": [
             {
                "name": "Android"
@@ -13060,6 +13138,43 @@
          "price": 800,
          "rarity": 6,
          "page": 108,
+         "modifiers": {
+            "roll": [
+               {
+                  "choice": true,
+                  "skills": [
+                     "vigilance",
+                     "perception"
+                  ],
+                  "symbols": [{
+                     "name": "s",
+                     "quantity": 1
+                  }],
+                  "description": "{@b [G-Mod] Nighteyes:} Suffer 1 strain. Add {@symbols s} to Perception and Vigilance checks in the dark.",
+                  "cost": {
+                     "strain": 1
+                  }
+               },
+               {
+                  "choice": true,
+                  "skills": [
+                     "vigilance",
+                     "perception"
+                  ],
+                  "symbols": [
+                     {
+                        "name": "s",
+                        "quantity": 1
+                     },
+                     {
+                        "name": "h",
+                        "quantity": 1
+                     }
+                  ],
+                  "description": "{@b [G-Mod] Nighteyes:} Add {@symbols sh} to Perception and Vigilance checks in bright conditions."
+               }
+            ]
+         },
          "settings": [
             {
                "name": "Android"
@@ -13081,6 +13196,42 @@
          "price": 600,
          "rarity": 6,
          "page": 108,
+         "modifiers": {
+            "roll": [
+               {
+                  "skills": [
+                     "brawl"
+                  ],
+                  "description": "{@b [G-Mod] Tooth Buds:} Add +2 damage and Vicious 1 to unarmed Brawl checks.",
+                  "damage": 2,
+                  "qualities": [{
+                     "name": "Vicious",
+                     "value": 1,
+                     "source": "crb"
+                  }]
+               },
+               {
+                  "skills": [
+                     "coercion"
+                  ],
+                  "dice": [{
+                     "name": "boost",
+                     "quantity": 1
+                  }],
+                  "description": "{@b [G-Mod] Tooth Buds:} Add {@dice boost} to Coercion checks."
+               },
+               {
+                  "skills": [
+                     "charm"
+                  ],
+                  "dice": [{
+                     "name": "setback",
+                     "quantity": 1
+                  }],
+                  "description": "{@b [G-Mod] Tooth Buds:} Add {@dice setback} to Charm checks."
+               }
+            ]
+         },
          "settings": [
             {
                "name": "Android"
@@ -13101,6 +13252,22 @@
          "price": 400,
          "rarity": 6,
          "page": 108,
+         "modifiers": {
+            "roll": [{
+               "choice": true,
+               "skills": [
+                  "resilience"
+               ],
+               "cost": {
+                  "strain": 1
+               },
+               "description": "{@b [G-Mod] Toxin Filters:} Suffer 1 strain. Add {@symbols s} to Resilience checks to resist poisons, toxins, or addiction.",
+               "symbols": [{
+                  "name": "s",
+                  "quantity": 1
+               }]
+            }]
+         },
          "settings": [
             {
                "name": "Android"

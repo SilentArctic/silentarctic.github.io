@@ -140,7 +140,54 @@
                      }
                   },
                   "choice": {
-                     "type": "boolean"
+                     "type": "array",
+                     "items": {
+                        "oneOf": [
+                           {
+                              "type": "string",
+                              "enum": [
+                                 "any",
+                                 "non-career",
+                                 "general",
+                                 "combat",
+                                 "social",
+                                 "knowledge",
+                                 "magic"
+                              ],
+                              "description": "Can choose any skill within the given category."
+                           },
+
+                           {
+                              "type": "array",
+                              "items": {
+                                 "type": "object",
+                                 "properties": {
+                                    "name": {
+                                       "type": "string",
+                                       "description": "Skill name."
+                                    },
+                                    "source": {
+                                       "type": "string",
+                                       "description": "Skill source."
+                                    },
+                                    "ranks": {
+                                       "type": "number",
+                                       "description": "Skill ranks (default 1).",
+                                       "default": 1
+                                    }
+                                 },
+                                 "required": [
+                                    "name"
+                                 ],
+                                 "optional": [
+                                    "source",
+                                    "ranks"
+                                 ],
+                                 "additionalProperties": false
+                              }
+                           }
+                        ]
+                     }
                   }
                },
                "required": [

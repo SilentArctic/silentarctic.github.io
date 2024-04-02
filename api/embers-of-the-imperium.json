@@ -14,7 +14,7 @@
          ],
          "url": "https://www.edge-studio.net/games/embers-of-the-imperium/",
          "releaseDate": "28 April 2023",
-         "version": "2024.3.10"
+         "version": "2024.3.19"
       },
       "defaultItemSettings": [
          {
@@ -15008,7 +15008,34 @@
          ],
          "encumbrance": 1,
          "price": 3000000,
-         "rarity": 9
+         "rarity": 9,
+         "modifiers": {
+            "roll": [
+               {
+                  "skills": [
+                     "astrocartography"
+                  ],
+                  "dice": [{
+                     "name": "ability",
+                     "quantity": 3,
+                     "upgrade": true
+                  }],
+                  "description": "{@b Circle of the Void:} Upgrade Astrocartography (or stellar-related knowledge) three times."
+               },
+               {
+                  "choice": true,
+                  "skillTypes": [
+                     "knowledge"
+                  ],
+                  "dice": [{
+                     "name": "ability",
+                     "quantity": 3,
+                     "upgrade": true
+                  }],
+                  "description": "{@b Circle of the Void:} Upgrade Astrocartography (or stellar-related knowledge) three times."
+               }
+            ]
+         }
       },
       {
          "name": "Dominus Orb",
@@ -15051,6 +15078,13 @@
             "The Immortal Cuirasses are segmented breastplates used by the elite Imperial Guard of the Lazax Empire. Several have survived through the ages, and they are prized by warriors across the galaxy. Sensors within an Immortal Cuirass adjust the armor's plates to fit the wearer, and embedded energy collectors administer a burst of healing radiation to restore the wearer's vitality. Their only true weakness is that, as they were designed for a species with four arms, most wearers must tolerate two additional large openings along the sides of their chest.",
             "Once per session while wearing an Immortal Cuirass of the Imperial Guard, your character may heal up to 10 strain and 10 wounds as an incidental. Your character may perform this incidental even if they are incapacitated."
          ],
+         "soak": "+2",
+         "defense": 1,
+         "hardPoints": 0,
+         "special": [{
+            "name": "Reinforced",
+            "source": "crb"
+         }],
          "encumbrance": 3,
          "price": 9000000,
          "rarity": 9
@@ -15077,7 +15111,7 @@
                      "damage": "+8",
                      "crit": 2,
                      "range": "Engaged",
-                     "hadPoints": 0,
+                     "hardPoints": 0,
                      "special": "{@quality Accurate|Accurate 2|crb}, {@quality Cumbersome|Cumbersome 3|crb}, {@quality Sunder||crb}, {@quality Vicious|Vicious 3|crb}"
                   }
                ]
@@ -15086,6 +15120,35 @@
             "Within the blade is an artificial sentience that can communicate with the blade's possessor. This sentience has witnessed and catalogued thousands of battles and can provide guidance to the wielder. The advice proves valuable, but the blade's end goal is always to corrupt the wielder's thoughts to an unthinking desire for destruction and conquest.",
             "While within short range of the Obsidian, a character is {@rule disoriented||crb}. While wielding the Obsidian, your character cannot be {@rule disoriented||crb}. Your character also adds {@symbols sa} to all {@skill Leadership||crb} checks and {@skill Knowledge||crb} checks they make while wielding the Obsidian. The GM may spend {@sybmols d} from any skill checks your character makes while wielding the Obsidian to have the Obsidian's whispers distract your character, adding {@dice setback|2} to all skill checks they make for the remainder of the encounter. Other narrative effects could cause your character's motivations to change to ones based on conquest, domination, or superiority.",
             "This weapon requires two hands to wield."
+         ],
+         "skill": {
+            "name": "Melee",
+            "source": "crb"
+         },
+         "damage": "+8",
+         "critical": 2,
+         "range": "Engaged",
+         "hardPoints": 0,
+         "special": [
+            {
+               "name": "Accurate",
+               "value": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Cumbersome",
+               "value": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Sunder",
+               "source": "crb"
+            },
+            {
+               "name": "Vicious",
+               "value": 3,
+               "source": "crb"
+            }
          ],
          "encumbrance": 4,
          "price": 50000000,
@@ -15104,7 +15167,13 @@
          ],
          "encumbrance": 0,
          "price": 2000000,
-         "rarity": 8
+         "rarity": 8,
+         "modifiers": {
+            "characteristics": {
+               "intellect": 1,
+               "exceedFive": true
+            }
+         }
       },
       {
          "name": "Reaper",
@@ -15128,7 +15197,7 @@
                      "damage": "5",
                      "crit": 1,
                      "range": "Long",
-                     "hadPoints": 0,
+                     "hardPoints": 0,
                      "special": "{@quality Accurate|Accurate 1|crb}, {@quality Defensive|Defensive 1|crb}, {@quality Pierce|Pierce 5|crb}, {@quality Vicious|Vicious 3|crb}"
                   }
                ]
@@ -15136,6 +15205,36 @@
             "These firearms were developed long ago by the Mahact kings for use by their deadliest sharpshooters. Reapers have a long barrel with a slightly angled handgrip. When one is drawn, a metallic sleeve unfurls from the grip and tightly encases the shooter's hand and forearm. This stabilizes the shooter's aim and provides a small amount of protection in close-quarters combat.",
             "The Reaper draws bioelectric energy from the shooter and uses an ill-understood process to focus it into a relatively lowpowered beam that nevertheless causes fearsome injuries in living targets. Shooters must be careful of this ability, as Reapers have no limiters on the amount of energy that they drain. There are a dozen known Reapers currently circulating throughout the galaxy, sometimes passing to a new owner after the previous wielder killed themself from overuse.",
             "{@symbols d} may not be spent to cause a Reaper to run out of ammo. When your character uses a Reaper to make a {@skill Ranged (Light)||crb} check, they suffer 3 strain. If your character exceeds their strain threshold while wielding a Reaper, they suffer a Critical Injury and add +30 to the result."
+         ],
+         "skill": {
+            "name": "Ranged (Light)",
+            "source": "crb"
+         },
+         "damage": "5",
+         "critical": 1,
+         "range": "Long",
+         "hardPoints": 0,
+         "special": [
+            {
+               "name": "Accurate",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Defensive",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Pierce",
+               "value": 5,
+               "source": "crb"
+            },
+            {
+               "name": "Vicious",
+               "value": 3,
+               "source": "crb"
+            }
          ],
          "encumbrance": 2,
          "price": 5000000,
