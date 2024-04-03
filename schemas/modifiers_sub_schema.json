@@ -384,6 +384,35 @@
             "weapon"
          ],
          "additionalProperties": false
+      },
+
+      "effects": {
+         "type": "array",
+         "items": {
+            "type": "object",
+            "properties": {
+               "type": {
+                  "type": "string",
+                  "enum": [
+                     "active",
+                     "passive"
+                  ]
+               },
+               "defaultEnabled": {
+                  "type": "boolean",
+                  "description": "If type === active, determine if enabled by default."
+               },
+               "modifiers": { "$ref": "./modifiers_sub_schema.json" }
+            },
+            "required": [
+               "type",
+               "modifiers"
+            ],
+            "optional": [
+               "defaultEnabled"
+            ],
+            "additionalProperties": false
+         }
       }
    },
    "optional": [

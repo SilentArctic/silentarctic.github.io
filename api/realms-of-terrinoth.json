@@ -7,7 +7,7 @@
          "abbreviation": "RoT",
          "color": "#A75A0E",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/realms-terrinoth/",
-         "version": "2024.3.20",
+         "version": "2024.4.2",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -9585,7 +9585,7 @@
                ],
                [
                   [{ "name": "lantern" }, { "name": "herbs of healing", "quantity": 2 }],
-                  [{ "name": "backpack" }, { "name": "bedroll" }, { "name": "rope" }, { "name": "flint and steel" }, { "name": "torches (3)", "source": "crb" }, { "name": "waterskin (empty)" }]
+                  [{ "name": "backpack" }, { "name": "bedroll" }, { "name": "rope" }, { "name": "flint and steel" }, { "name": "torches (3)" }, { "name": "waterskin (empty)" }]
                ],
                { "name": "1d100 silver coins", "money": true, "formula": "1d100" }
             ]
@@ -9645,10 +9645,13 @@
             ],
             "selections": [
                { "name": "dagger" },
-               [[{ "name": "sword" }], [{ "name": "musical instrument" }]],
+               [
+                  [{ "name": "sword" }],
+                  [{ "name": "musical instrument" }]
+               ],
                [
                   [{ "name": "fine cloak" }],
-                  [{ "name": "backpack" }, { "name": "bedroll" }, { "name": "rope" }, { "name": "flint and steel" }, { "name": "torches (3)", "source": "crb" }, { "name": "waterskin (empty)" }]
+                  [{ "name": "backpack" }, { "name": "bedroll" }, { "name": "rope" }, { "name": "flint and steel" }, { "name": "torches (3)" }, { "name": "waterskin (empty)" }]
                ],
                { "name": "padded armor" },
                { "name": "200 + 1d100 silver coins", "money": true, "formula": "200 + 1d100" }
@@ -9703,6 +9706,21 @@
                "A {@gear dagger} {@i or} {@gear sling}",
                "{@gear Heavy robes} {@i or} 1 {@gear stamina elixir||rot}",
                "1d100 silver coins"
+            ],
+            "selections": [
+               [
+                  [{ "name": "magic staff" }],
+                  [{ "name": "magic wand" }]
+               ],
+               [
+                  [{ "name": "dagger" }],
+                  [{ "name": "sling" }]
+               ],
+               [
+                  [{ "name": "Heavy robes" }],
+                  [{ "name": "stamina elixir" }]
+               ],
+               { "name": "1d100 silver coins", "money": true, "formula": "1d100" }
             ]
          },
          "page": 70
@@ -9753,8 +9771,19 @@
             ],
             "gear": [
                "A {@gear staff} {@i or} a {@gear greataxe} and {@gear leather armor}",
-               "An {@gear apothecary's kit||rot} {@i or} traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, 3 {@gear torches}, and a {@gear waterskin}",
+               "An {@gear apothecary's kit} {@i or} traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, 3 {@gear torches}, and a {@gear waterskin}",
                "1d100 silver coins"
+            ],
+            "selections": [
+               [
+                  [{ "name": "staff" }],
+                  [{ "name": "greataxe" }, { "name": "leather armor" }]
+               ],
+               [
+                  [{ "name": "apothecary's kit" }],
+                  [{ "name": "backpack" }, { "name": "bedroll" }, { "name": "rope" }, { "name": "flint and steel" }, { "name": "torches (3)" }, { "name": "waterskin (empty)" }]
+               ],
+               { "name": "1d100 silver coins", "money": true, "formula": "1d100" }
             ]
          },
          "page": 71
@@ -9802,10 +9831,26 @@
             ],
             "gear": [
                "A {@gear dagger}",
-               "An {@gear alchemists' kit} {@i or} a {@gear sword}",
-               "A {@gear lantern} {@i or} {@gear healing herbs}",
+               "An {@gear alchemist's kit} {@i or} a {@gear sword}",
+               "A {@gear lantern} {@i or} {@gear herbs of healing|healing herbs}",
                "A {@gear fine cloak} {@i or} traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, 3 {@gear torches}, and a {@gear waterskin}",
                "1d100 silver coins"
+            ],
+            "selections": [
+               { "name": "dagger" },
+               [
+                  [{ "name": "alchemist's kit" }],
+                  [{ "name": "sword" }]
+               ],
+               [
+                  [{ "name": "lantern" }],
+                  [{ "name": "herbs of healing" }]
+               ],
+               [
+                  [{ "name": "fine cloak" }],
+                  [{ "name": "backpack" }, { "name": "bedroll" }, { "name": "rope" }, { "name": "flint and steel" }, { "name": "torches (3)" }, { "name": "waterskin (empty)" }]
+               ],
+               { "name": "1d100 silver coins", "money": true, "formula": "1d100" }
             ]
          },
          "page": 72
@@ -9861,6 +9906,22 @@
                "A {@gear fine cloak} {@i or} {@gear thieves' tools}",
                "Traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, 3 {@gear torches}, and a {@gear waterskin}",
                "1d100 silver coins"
+            ],
+            "selections": [
+               [
+                  [{ "name": "dagger" }],
+                  [{ "name": "cestus" }]
+               ],
+               [
+                  [{ "name": "sword" }, { "name": "dagger" }],
+                  [{ "name": "bow" }]
+               ],
+               [
+                  [{ "name": "fine cloak" }],
+                  [{ "name": "thieves' tools" }]
+               ],
+               [{ "name": "backpack" }, { "name": "bedroll" }, { "name": "rope" }, { "name": "flint and steel" }, { "name": "torches (3)" }, { "name": "waterskin (empty)" }],
+               { "name": "1d100 silver coins", "money": true, "formula": "1d100" }
             ]
          },
          "page": 72
@@ -9910,11 +9971,28 @@
             ],
             "gear": [
                "A {@gear bow} {@i or} a {@gear light spear} and {@gear leather armor}",
-               "A {@gear dagger} {@i or} 2 {@gear healing elixirs}",
+               "A {@gear dagger} {@i or} 2 {@gear health elixir|healing elixirs}",
                "{@gear Leather armor}",
                "{@gear Herbs of healing} and {@gear climbing gear} {@i or} {@gear winter clothing}",
                "Traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, 3 {@gear torches}, and a {@gear waterskin}",
                "1d100 silver coins"
+            ],
+            "selections": [
+               [
+                  [{ "name": "bow" }],
+                  [{ "name": "light spear" }]
+               ],
+               [
+                  [{ "name": "dagger" }],
+                  [{ "name": "health elixir", "quantity": 2 }]
+               ],
+               { "name": "leather armor" },
+               [
+                  [{ "name": "herbs of healing" }, { "name": "climbing gear" }],
+                  [{ "name": "winter clothing" }]
+               ],
+               [{ "name": "backpack" }, { "name": "bedroll" }, { "name": "rope" }, { "name": "flint and steel" }, { "name": "torches (3)" }, { "name": "waterskin (empty)" }],
+               { "name": "1d100 silver coins", "money": true, "formula": "1d100" }
             ]
          },
          "page": 73
@@ -9968,9 +10046,20 @@
             "gear": [
                "A {@gear sword} and {@gear shield} {@i or} an {@gear axe} and {@gear shield} {@i or} a {@gear halberd}",
                "{@gear Leather armor}",
-               "2 {@gear healing elixirs}",
+               "2 {@gear health elixir|healing elixirs}",
                "Traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, 3 {@gear torches}, and a {@gear waterskin}",
                "1d100 silver coins"
+            ],
+            "selections": [
+               [
+                  [{ "name": "sword" }, { "name": "shield" }],
+                  [{ "name": "axe" }, { "name": "shield" }],
+                  [{ "name": "halberd" }]
+               ],
+               { "name": "leather armor" },
+               { "name": "health elixir", "quantity": 2 },
+               [{ "name": "backpack" }, { "name": "bedroll" }, { "name": "rope" }, { "name": "flint and steel" }, { "name": "torches (3)" }, { "name": "waterskin (empty)" }],
+               { "name": "1d100 silver coins", "money": true, "formula": "1d100" }
             ]
          },
          "page": 70

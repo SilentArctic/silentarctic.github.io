@@ -147,12 +147,19 @@
                               "type": "string",
                               "enum": [
                                  "any",
+                                 "career",
                                  "non-career",
                                  "general",
                                  "combat",
                                  "social",
                                  "knowledge",
-                                 "magic"
+                                 "magic",
+                                 "brawn",
+                                 "agility",
+                                 "intellect",
+                                 "cunning",
+                                 "willpower",
+                                 "presence"
                               ],
                               "description": "Can choose any skill within the given category."
                            },

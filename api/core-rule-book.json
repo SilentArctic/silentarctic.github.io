@@ -7,7 +7,7 @@
          "abbreviation": "CRB",
          "color": "#14C0F1",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/",
-         "version": "2024.2.16",
+         "version": "2024.4.2",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -2842,17 +2842,26 @@
          "st": 8,
          "xp": 80,
          "skills": {
-            "skills": [
-               "athletics",
-               "coordination",
-               "resilience"
-            ],
+            "skills": [],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
                "An animalistic alien starts with one rank in {@skill Athletics}, {@skill Coordination}, or {@skill Resilience} during character creation. You still can't train their skills above rank 2 during character creation."
             ],
-            "choice": true
+            "choice": [
+               {
+                  "name": "Athletics",
+                  "ranks": 1
+               },
+               {
+                  "name": "Coordination",
+                  "ranks": 1
+               },
+               {
+                  "name": "Resilience",
+                  "ranks": 1
+               }
+            ]
          },
          "abilities": [
             {
@@ -2865,6 +2874,19 @@
          "description": [
             "Space opera settings often have alien species that are derivative of some terrestrial species. Fiction abounds with catlike aliens, turtle-like aliens, reptilian aliens, and so forth. Traditionally, these species are stronger, faster, or tougher than humans, and they share some traits with the nonsapient Terran species they mimic. Our animalistic alien species is stronger and faster than most average humans, but trades this for fewer starting XP. The physical appearance of this species is, of course, up to you."
          ],
+         "modifiers": {
+            "roll": [{
+               "skills": [
+                  "brawl"
+               ],
+               "damage": 2,
+               "qualities": [{
+                  "name": "vicious",
+                  "value": 1
+               }],
+               "description": "{@b [Archetype] Natural Weapons: +2 damage and add Vicious 1 to Brawl attacks.}"
+            }]
+         },
          "settings": [
             {
                "name": "space opera"
@@ -2886,15 +2908,13 @@
          "st": 10,
          "xp": 110,
          "skills": {
-            "skills": [
-               "any two non-career"
-            ],
+            "skills": [],
             "ranksTotal": 2,
             "ranksEach": 1,
             "description": [
                "An average human starts with one rank in each of two different non-career skills at character creation. They obtain this rank before spending experience points, and these skills may not be increased higher than rank 2 during character creation."
             ],
-            "choice": true
+            "choice": ["non-career"]
          },
          "abilities": [
             {
@@ -2975,15 +2995,13 @@
          "st": 10,
          "xp": 80,
          "skills": {
-            "skills": [
-               "two skills"
-            ],
+            "skills": [],
             "ranksTotal": 4,
             "ranksEach": 2,
             "description": [
                "You may select two skills when creating a clone character. Your clone character starts play with two ranks in each of these skills. You still can't train their skills above rank 2 during character creation."
             ],
-            "choice": true
+            "choice": ["any"]
          },
          "abilities": [
             {
@@ -2996,6 +3014,19 @@
          "description": [
             "This profile is of a human clone. We assume this is a corporation-produced clone that has been tailored for a certain job (otherwise, if this were an unmodified clone, you could simply use the average human profile on page 36). Like bioroids, clones have customization options to represent their \"designed\" nature, but in their case, we did this by giving a clone focused skill options, but less experience. The \"A Face in the Crowd\" rule represents a clone blending into an urban setting (after all, they look exactly like a bunch of other clones), but may have to deal with anti-clone bias."
          ],
+         "modifiers": {
+            "roll": [{
+               "choice": true,
+               "skillTypes": [
+                  "social"
+               ],
+               "dice": [{
+                  "name": "setback",
+                  "quantity": 1
+               }],
+               "description": "{@b [Archetype] A Face in a Crowd:} Add {@dice setback} to social checks against characters who don't know you."
+            }]
+         },
          "settings": [
             {
                "name": "science fiction"
@@ -3017,9 +3048,10 @@
          "st": 10,
          "xp": 90,
          "skills": {
-            "skills": [
-               "resilience"
-            ],
+            "skills": [{
+               "name": "Resilience",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -3042,6 +3074,16 @@
             }
          ],
          "description": [],
+         "modifiers": {
+            "roll": [{
+               "choice": true,
+               "dice": [{
+                  "name": "setback",
+                  "quality": -2
+               }],
+               "description": "{@b [Archetype] Darkvision:} Remove up to {@dice setback|2} imposed due to darkness."
+            }]
+         },
          "settings": [
             {
                "name": "fantasy"
@@ -3063,9 +3105,10 @@
          "st": 10,
          "xp": 90,
          "skills": {
-            "skills": [
-               "perception"
-            ],
+            "skills": [{
+               "name": "Perception",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -3084,6 +3127,12 @@
          "description": [
             "Whether tall or short, with pointy or really pointy ears, most elves are known for their grace, longevity, and connection to the natural world. This profile is based on that common conception of an elf, with high Agility (and an innate defense) but a lower wound threshold."
          ],
+         "modifiers": {
+            "stats": {
+               "mDefense": 1,
+               "rDefense": 1
+            }
+         },
          "settings": [
             {
                "name": "fantasy"
@@ -3105,9 +3154,10 @@
          "st": 8,
          "xp": 100,
          "skills": {
-            "skills": [
-               "discipline"
-            ],
+            "skills": [{
+               "name": "Discipline",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -3139,6 +3189,28 @@
                "name": "steampunk"
             }
          ],
+         "modifiers": {
+            "effects": [{
+               "type": "active",
+               "defaultEnabled": false,
+               "modifiers": {
+                  "characteristics": {
+                     "brawn": 1,
+                     "agility": 1,
+                     "intellect": -1,
+                     "willpower": -1
+                  },
+                  "roll": [{
+                     "choice": true,
+                     "skills": [
+                        "brawl"
+                     ],
+                     "damage": 1,
+                     "description": "{@b [archetype] The Beast Within:} +1 damage to unarmed strikes."
+                  }]
+               }
+            }]
+         },
          "page": 15
       },
       {
@@ -3155,9 +3227,10 @@
          "st": 8,
          "xp": 100,
          "skills": {
-            "skills": [
-               "coercion"
-            ],
+            "skills": [{
+               "name": "Coercion",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -3181,6 +3254,22 @@
                "name": "fantasy"
             }
          ],
+         "modifiers": {
+            "roll": [{
+               "choice": true,
+               "skills": [
+                  "melee",
+                  "melee (light)",
+                  "melee (heavy)"
+               ],
+               "dice": [{
+                  "name": "setback",
+                  "quantity": 1
+               }],
+               "damage": 2,
+               "description": "{@b [Archetype] Battle Rage:} Choose to add {@dice setback} to the roll and +2 damage to one hit."
+            }]
+         },
          "page": 14
       },
       {
@@ -3247,9 +3336,10 @@
          "st": 9,
          "xp": 100,
          "skills": {
-            "skills": [
-               "coercion"
-            ],
+            "skills": [{
+               "name": "Coercion",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -3281,6 +3371,29 @@
                "name": "steampunk"
             }
          ],
+         "modifiers": {
+            "roll": [
+               {
+                  "choice": true,
+                  "skills": [
+                     "medicine"
+                  ],
+                  "dice": [{
+                     "name": "boost",
+                     "quantity": 2
+                  }],
+                  "description": "{@b [archetype] Reanimated:} Add {@dice boost|2} to medicine checks to heal themselves."
+               },
+               {
+                  "choice": true,
+                  "dice": [{
+                     "name": "setback",
+                     "quantity": 2
+                  }],
+                  "description": "{@b [archetype] Dead Nerves:} Remove up to {@dice setback|2} due to fatigue or injuries (including Critical Injuries)."
+               }
+            ]
+         },
          "page": 15
       },
       {
@@ -3297,15 +3410,13 @@
          "st": 10,
          "xp": 175,
          "skills": {
-            "skills": [
-               "one rank in six of the eight career skills (instead of the usual four)"
-            ],
-            "ranksTotal": 6,
+            "skills": [],
+            "ranksTotal": 2,
             "ranksEach": 1,
             "description": [
                "After selecting their career, your robot character may train one rank in six of the eight career skills (instead of the usual four)."
             ],
-            "choice": true
+            "choice": ["career"]
          },
          "abilities": [
             {
@@ -3335,6 +3446,43 @@
                "name": "space opera"
             }
          ],
+         "modifiers": {
+            "roll": [
+               {
+                  "choice": true,
+                  "skillTypes": [
+                     "intellect",
+                     "willpower"
+                  ],
+                  "symbols": [{
+                     "name": "s"
+                  }],
+                  "description": "{@b [archetype] Networked Intelligence 1:} Add {@symbols s} to Intellect and Willpower checks if a friendly Robot is within Medium range."
+               },
+               {
+                  "choice": true,
+                  "skillTypes": [
+                     "intellect",
+                     "willpower"
+                  ],
+                  "symbols": [{
+                     "name": "ss"
+                  }],
+                  "description": "{@b [archetype] Networked Intelligence 1:} Add {@symbols ss} to Intellect and Willpower checks if 2 friendly Robots are within Medium range."
+               },
+               {
+                  "choice": true,
+                  "skillTypes": [
+                     "intellect",
+                     "willpower"
+                  ],
+                  "symbols": [{
+                     "name": "sss"
+                  }],
+                  "description": "{@b [archetype] Networked Intelligence 1:} Add {@symbols sss} to Intellect and Willpower checks if three friendly Robots are within Medium range."
+               }
+            ]
+         },
          "page": 183
       },
       {
@@ -3351,9 +3499,10 @@
          "st": 10,
          "xp": 100,
          "skills": {
-            "skills": [
-               "cool"
-            ],
+            "skills": [{
+               "name": "Cool",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -3396,9 +3545,10 @@
          "st": 12,
          "xp": 100,
          "skills": {
-            "skills": [
-               "knowledge"
-            ],
+            "skills": [{
+               "name": "Knowledge",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -3441,9 +3591,10 @@
          "st": 8,
          "xp": 100,
          "skills": {
-            "skills": [
-               "athletics"
-            ],
+            "skills": [{
+               "name": "Athletics",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -3486,15 +3637,13 @@
          "st": 9,
          "xp": 100,
          "skills": {
-            "skills": [
-               "knowledge"
-            ],
+            "skills": [],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "vanguard starts with one rank in {@skill Knowledge} during character creation. You still can't train {@skill Knowledge} above rank 2 during character creation."
+               "A vanguard starts with one rank in {@skill Knowledge} during character creation. You still can't train {@skill Knowledge} above rank 2 during character creation."
             ],
-            "choice": false
+            "choice": ["knowledge"]
          },
          "abilities": [
             {
@@ -3518,6 +3667,20 @@
                "name": "space opera"
             }
          ],
+         "modifiers": {
+            "roll": [{
+               "skills": [
+                  "astrocartography"
+               ],
+               "skillTypes": [
+                  "knowledge"
+               ],
+               "symbols": [{
+                  "name": "a"
+               }],
+               "description": "{@b [archetype] Space Is Our Birthright:} Add {@symbols a} to astrocartography and knowledge checks."
+            }]
+         },
          "page": 183
       }
    ],
