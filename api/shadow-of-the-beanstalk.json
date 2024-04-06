@@ -7,7 +7,7 @@
          "abbreviation": "SotB",
          "color": "#40B3B5",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/shadow-beanstalk/",
-         "version": "2024.2.13",
+         "version": "2024.4.6",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -15803,7 +15803,7 @@
          "activation": "passive",
          "ranked": false,
          "description": [
-            "When your character selects this talent they choose one icebreaker or piece of ice that they own. If they choose an icebreaker, whenever they use that icebreaker to override ice, they at {@symbols a} to the results. If they choose a piece of ice, whenever someone else attempts to override it, they add {@symbols h} to the results."
+            "When your character selects this talent they choose one icebreaker or piece of ice that they own. If they choose an icebreaker, whenever they use that icebreaker to override ice, they add {@symbols a} to the results. If they choose a piece of ice, whenever someone else attempts to override it, they add {@symbols h} to the results."
          ],
          "page": 44,
          "settings": [
