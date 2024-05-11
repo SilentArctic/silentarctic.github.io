@@ -12637,7 +12637,8 @@
             }],
             "roll": [{
                "choice": true,
-               "description": "{@b [Cybernetic] Enhanced Hearing:} remove {@dice setback} caused by loud noises.",
+               "name": "Enhanced Hearing",
+               "description": "Remove {@dice setback} caused by loud noises.",
                "dice": [{
                   "name": "setback",
                   "quantity": -1
@@ -12865,12 +12866,13 @@
          "modifiers": {
             "roll": [{
                "choice": true,
+               "name": "Cat Claws",
                "skills": [
                   "brawl"
                ],
                "damage": 1,
                "setCritical": 3,
-               "description": "{@b [G-Mod] Cat Claws:} Suffer 1 strain. Brawl attacks have +1 damage and set crit rating to 3.",
+               "description": "Suffer 1 strain. Brawl attacks have +1 damage and set crit rating to 3.",
                "cost": {
                   "strain": 1
                }
@@ -12899,7 +12901,8 @@
          "modifiers": {
             "roll": [{
                "choice": true,
-               "description": "{@b [G-Mod] Chameleon Skin:} Suffer 1 strain. Add {@symbols s} to stealth checks.",
+               "name": "Chameleon Skin",
+               "description": "Suffer 1 strain. Add {@symbols s} to stealth checks.",
                "skills": ["stealth"],
                "symbols": [{
                   "name": "s",
@@ -12933,6 +12936,7 @@
          "modifiers": {
             "roll": [{
                "choice": true,
+               "name": "Enhanced Healing",
                "skills": [
                   "resilience"
                ],
@@ -12940,7 +12944,7 @@
                   "name": "s",
                   "quantity": 1
                }],
-               "description": "{@b [G-Mod] Enhanced Healing:} Suffer 1 strain. Add {@symbols s} to Resilience checks made to recover from Critical Injuries.",
+               "description": "Suffer 1 strain. Add {@symbols s} to Resilience checks made to recover from Critical Injuries.",
                "cost": {
                   "strain": 1
                }
@@ -12971,6 +12975,7 @@
          "modifiers": {
             "roll": [{
                "choice": true,
+               "name": "Enhanced Muscles (Coordination)",
                "skills": [
                   "coordination",
                   "ranged (light)"
@@ -12979,7 +12984,7 @@
                   "name": "s",
                   "quantity": 1
                }],
-               "description": "{@b [G-Mod] Enhanced Muscles (Coordination):} Suffer 1 strain. Add {@symbols s} to Coordination, or Ranged (Light) checks.",
+               "description": "Suffer 1 strain. Add {@symbols s} to Coordination, or Ranged (Light) checks.",
                "cost": {
                   "strain": 1
                }
@@ -13010,6 +13015,7 @@
          "modifiers": {
             "roll": [{
                "choice": true,
+               "name": "Enhanced Muscles (Strength)",
                "skills": [
                   "athletics",
                   "brawl",
@@ -13019,7 +13025,7 @@
                   "name": "s",
                   "quantity": 1
                }],
-               "description": "{@b [G-Mod] Enhanced Muscles (Strength):} Suffer 1 strain. Add {@symbols s} to Athletics, Brawl, or Melee checks.",
+               "description": "Suffer 1 strain. Add {@symbols s} to Athletics, Brawl, or Melee checks.",
                "cost": {
                   "strain": 1
                }
@@ -13048,6 +13054,7 @@
          "modifiers": {
             "roll": [{
                "choice": true,
+               "name": "Enhanced Olfactory Receptors",
                "skills": [
                   "survival"
                ],
@@ -13055,7 +13062,7 @@
                   "name": "s",
                   "quantity": 1
                }],
-               "description": "{@b [G-Mod] Enhanced Olfactory Receptors:} Suffer 1 strain. Add {@symbols s} to Survival checks.",
+               "description": "Suffer 1 strain. Add {@symbols s} to Survival checks.",
                "cost": {
                   "strain": 1
                }
@@ -13104,6 +13111,7 @@
          "modifiers": {
             "roll": [{
                "choice": true,
+               "name": "Geno-Sculpted Physique",
                "skills": [
                   "charm",
                   "leadership"
@@ -13112,7 +13120,7 @@
                   "name": "s",
                   "quantity": 1
                }],
-               "description": "{@b [G-Mod] Geno-Sculpted Physique:} Suffer 1 strain. Add {@symbols s} to Charm or Leadership checks.",
+               "description": "Suffer 1 strain. Add {@symbols s} to Charm or Leadership checks.",
                "cost": {
                   "strain": 1
                }
@@ -13255,13 +13263,14 @@
          "modifiers": {
             "roll": [{
                "choice": true,
+               "name": "Toxin Filters",
                "skills": [
                   "resilience"
                ],
                "cost": {
                   "strain": 1
                },
-               "description": "{@b [G-Mod] Toxin Filters:} Suffer 1 strain. Add {@symbols s} to Resilience checks to resist poisons, toxins, or addiction.",
+               "description": "Suffer 1 strain. Add {@symbols s} to Resilience checks to resist poisons, toxins, or addiction.",
                "symbols": [{
                   "name": "s",
                   "quantity": 1

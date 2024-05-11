@@ -8809,6 +8809,7 @@
          "modifiers": {
             "roll": [{
                "choice": true,
+               "name": "Battle Rage",
                "skills": [
                   "melee",
                   "melee (light)",
@@ -8819,7 +8820,7 @@
                   "quantity": 1
                }],
                "damage": 2,
-               "description": "{@b [Archetype] Battle Rage:} Choose to add {@dice setback} to the roll and +2 damage to one hit."
+               "description": "Choose to add {@dice setback} to the roll and +2 damage to one hit."
             }]
          },
          "page": 67
@@ -8878,6 +8879,7 @@
          "modifiers": {
             "roll": [{
                "choice": true,
+               "name": "Militia Training",
                "skillTypes": [
                   "combat"
                ],
@@ -8885,7 +8887,7 @@
                   "name": "boost",
                   "quantity": 1
                }],
-               "description": "{@b [Archetype] Militia Training:} Add {@dice boost} to combat checks against characters with a larger silhouette."
+               "description": "Add {@dice boost} to combat checks against characters with a larger silhouette."
             }]
          },
          "page": 69
@@ -9060,11 +9062,12 @@
          "modifiers": {
             "roll": [{
                "choice": true,
+               "name": "Darkvision",
                "dice": [{
                   "name": "setback",
-                  "quality": -2
+                  "quantity": -2
                }],
-               "description": "{@b [Archetype] Darkvision:} Remove up to {@dice setback|2} imposed due to darkness."
+               "description": "Remove up to {@dice setback|2} imposed due to darkness."
             }]
          },
          "page": 64
@@ -9403,7 +9406,7 @@
                      "name": "setback",
                      "quantity": 2
                   }],
-                  "description": "{@b [Archetype] Hot Tempered:} After exceeding half of your strain threshold, add {@dice setback|2} to social checks."
+                  "description": "{@b Hot Tempered:} After exceeding half of your strain threshold, add {@dice setback|2} to social checks."
                },
                {
                   "choice": true,
@@ -9413,7 +9416,7 @@
                      "melee (heavy)"
                   ],
                   "damage": 1,
-                  "description": "{@b [Archetype] Hot Tempered:} After exceeding half of your strain threshold, add 1 damage to one hit of all melee attacks."
+                  "description": "{@b Hot Tempered:} After exceeding half of your strain threshold, add 1 damage to one hit of all melee attacks."
                }
             ]
          },
@@ -9460,6 +9463,7 @@
          "modifiers": {
             "roll": [{
                "choice": true,
+               "name": "Tenacious",
                "skillTypes": [
                   "combat"
                ],
@@ -9467,7 +9471,7 @@
                   "name": "boost",
                   "quantity": 1
                }],
-               "description": "{@b [Archetype] Tenacious:} After hitting a target, add {@dice boost} to all combat checks against the same character this encounter."
+               "description": "After hitting a target, add {@dice boost} to all combat checks against the same character this encounter."
             }]
          },
          "page": 67
@@ -11262,6 +11266,7 @@
          "rarity": 4,
          "modifiers": {
             "roll": [{
+               "name": "Fine Cloak",
                "skills": [
                   "charm",
                   "deception",
@@ -11271,7 +11276,7 @@
                   "name": "setback",
                   "quantity": -1
                }],
-               "description": "{@b Fine Cloak:} Remove {@dice setback} from Charm, Deception, and Leadership checks."
+               "description": "Remove {@dice setback} from Charm, Deception, and Leadership checks."
             }]
          },
          "page": 100

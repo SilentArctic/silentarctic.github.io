@@ -123,6 +123,9 @@
                   "type": "boolean",
                   "description": "If the effect can be toggled, or if it's always on."
                },
+               "name": {
+                  "type": "string"
+               },
                "skills": {
                   "type": "array",
                   "items": {
@@ -269,6 +272,7 @@
                }
             },
             "required": [
+               "name",
                "description"
             ],
             "optional": [

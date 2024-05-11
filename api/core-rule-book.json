@@ -2876,6 +2876,7 @@
          ],
          "modifiers": {
             "roll": [{
+               "name": "Natural Weapons",
                "skills": [
                   "brawl"
                ],
@@ -2884,7 +2885,7 @@
                   "name": "vicious",
                   "value": 1
                }],
-               "description": "{@b [Archetype] Natural Weapons: +2 damage and add Vicious 1 to Brawl attacks.}"
+               "description": "+2 damage and add Vicious 1 to Brawl attacks."
             }]
          },
          "settings": [
@@ -3017,6 +3018,7 @@
          "modifiers": {
             "roll": [{
                "choice": true,
+               "name": "A Face in a Crowd",
                "skillTypes": [
                   "social"
                ],
@@ -3024,7 +3026,7 @@
                   "name": "setback",
                   "quantity": 1
                }],
-               "description": "{@b [Archetype] A Face in a Crowd:} Add {@dice setback} to social checks against characters who don't know you."
+               "description": "Add {@dice setback} to social checks against characters who don't know you."
             }]
          },
          "settings": [
@@ -3077,11 +3079,12 @@
          "modifiers": {
             "roll": [{
                "choice": true,
+               "name": "Darkvision",
                "dice": [{
                   "name": "setback",
                   "quality": -2
                }],
-               "description": "{@b [Archetype] Darkvision:} Remove up to {@dice setback|2} imposed due to darkness."
+               "description": "Remove up to {@dice setback|2} imposed due to darkness."
             }]
          },
          "settings": [
@@ -3202,11 +3205,12 @@
                   },
                   "roll": [{
                      "choice": true,
+                     "name": "The Beast Within",
                      "skills": [
                         "brawl"
                      ],
                      "damage": 1,
-                     "description": "{@b [archetype] The Beast Within:} +1 damage to unarmed strikes."
+                     "description": "+1 damage to unarmed strikes."
                   }]
                }
             }]
@@ -3257,6 +3261,7 @@
          "modifiers": {
             "roll": [{
                "choice": true,
+               "name": "Battle Rage",
                "skills": [
                   "melee",
                   "melee (light)",
@@ -3267,7 +3272,7 @@
                   "quantity": 1
                }],
                "damage": 2,
-               "description": "{@b [Archetype] Battle Rage:} Choose to add {@dice setback} to the roll and +2 damage to one hit."
+               "description": "Choose to add {@dice setback} to the roll and +2 damage to one hit."
             }]
          },
          "page": 14
@@ -3382,7 +3387,7 @@
                      "name": "boost",
                      "quantity": 2
                   }],
-                  "description": "{@b [archetype] Reanimated:} Add {@dice boost|2} to medicine checks to heal themselves."
+                  "description": "{@b Reanimated:} Add {@dice boost|2} to medicine checks to heal themselves."
                },
                {
                   "choice": true,
@@ -3390,7 +3395,7 @@
                      "name": "setback",
                      "quantity": 2
                   }],
-                  "description": "{@b [archetype] Dead Nerves:} Remove up to {@dice setback|2} due to fatigue or injuries (including Critical Injuries)."
+                  "description": "{@b Dead Nerves:} Remove up to {@dice setback|2} due to fatigue or injuries (including Critical Injuries)."
                }
             ]
          },
@@ -3457,7 +3462,7 @@
                   "symbols": [{
                      "name": "s"
                   }],
-                  "description": "{@b [archetype] Networked Intelligence 1:} Add {@symbols s} to Intellect and Willpower checks if a friendly Robot is within Medium range."
+                  "description": "{@b Networked Intelligence 1:} Add {@symbols s} to Intellect and Willpower checks if a friendly Robot is within Medium range."
                },
                {
                   "choice": true,
@@ -3468,7 +3473,7 @@
                   "symbols": [{
                      "name": "ss"
                   }],
-                  "description": "{@b [archetype] Networked Intelligence 1:} Add {@symbols ss} to Intellect and Willpower checks if 2 friendly Robots are within Medium range."
+                  "description": "{@b Networked Intelligence 1:} Add {@symbols ss} to Intellect and Willpower checks if 2 friendly Robots are within Medium range."
                },
                {
                   "choice": true,
@@ -3479,7 +3484,7 @@
                   "symbols": [{
                      "name": "sss"
                   }],
-                  "description": "{@b [archetype] Networked Intelligence 1:} Add {@symbols sss} to Intellect and Willpower checks if three friendly Robots are within Medium range."
+                  "description": "{@b Networked Intelligence 1:} Add {@symbols sss} to Intellect and Willpower checks if three friendly Robots are within Medium range."
                }
             ]
          },
@@ -3669,6 +3674,7 @@
          ],
          "modifiers": {
             "roll": [{
+               "name": "Space is Our Birthright",
                "skills": [
                   "astrocartography"
                ],
@@ -3678,7 +3684,7 @@
                "symbols": [{
                   "name": "a"
                }],
-               "description": "{@b [archetype] Space Is Our Birthright:} Add {@symbols a} to astrocartography and knowledge checks."
+               "description": "Add {@symbols a} to astrocartography and knowledge checks."
             }]
          },
          "page": 183
