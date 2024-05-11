@@ -14,7 +14,7 @@
          ],
          "url": "https://www.edge-studio.net/games/embers-of-the-imperium/",
          "releaseDate": "28 April 2023",
-         "version": "2024.3.10"
+         "version": "2024.5.11"
       },
       "defaultItemSettings": [
          {
@@ -15977,7 +15977,7 @@
          "rarity": 7
       },
       {
-         "name": "Shockshin Lattice",
+         "name": "Shockskin Lattice",
          "page": 131,
          "type": "attachment",
          "class": "armor",

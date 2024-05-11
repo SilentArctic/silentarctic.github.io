@@ -7,7 +7,7 @@
          "abbreviation": "CRB",
          "color": "#14C0F1",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/",
-         "version": "2024.2.16",
+         "version": "2024.5.11",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -8567,12 +8567,12 @@
             "In the list below, we've provided some mechanical effects for failing fear checks (and succeeding on them as well). Of course, you can also add narrative effects to a check, depending on the circumstances.",
             {
                "type": "list",
-               "description": "Suggested effects for failing or generating {@symbols h} or {@symbols t}:",
+               "description": "Suggested effects for failing or generating {@symbols h} or {@symbols d}:",
                "items": [
                   "{@b Aversion:} The character is unnerved and distracted, and is {@rule disoriented} for the rest of the encounter. This is a good penalty for simple failure.",
                   "Adrenaline Rush: Momentary panic gives the character a rush of adrenalin, but at a cost. The character adds {@dice boost} to their next check, but suffers 3 strain. This a good penalty for success with {@symbols h}.",
-                  "{@b Flee in Terror:} The character has to spend their next turn doing nothing but fleeing the source of the fear check (this includes downgrading their actions to maneuvers to move farther away). This is a good penalty for failure with a small amount of {@symbols h} or a {@symbols t}.",
-                  "{@b Frozen in Terror:} The character is immobilized and staggered during their next turn. This is a good penalty for failure with a lot of {@symbols h} or {@symbols t}. This may also result in a {@table III.4-2: Traumas and their Effects|mental trauma} (see {@rule sanity})."
+                  "{@b Flee in Terror:} The character has to spend their next turn doing nothing but fleeing the source of the fear check (this includes downgrading their actions to maneuvers to move farther away). This is a good penalty for failure with a small amount of {@symbols h} or a {@symbols d}.",
+                  "{@b Frozen in Terror:} The character is immobilized and staggered during their next turn. This is a good penalty for failure with a lot of {@symbols h} or {@symbols d}. This may also result in a {@table III.4-2: Traumas and their Effects|mental trauma} (see {@rule sanity})."
                ]
             },
             {
