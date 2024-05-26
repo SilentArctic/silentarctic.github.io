@@ -14,7 +14,7 @@
          ],
          "url": "https://www.edge-studio.net/games/embers-of-the-imperium/",
          "releaseDate": "28 April 2023",
-         "version": "2024.5.11"
+         "version": "2024.5.25"
       },
       "defaultItemSettings": [
          {
@@ -5708,7 +5708,7 @@
          "variant": true,
          "description": [
             "Rank-and-file troops require leadership in the field, whether from a grizzled sergeant or from a fresh-faced junior officer. This profile represents a character who might lead an entire platoon, a squad, or even just an elite fire team into battle. It can also represent a tank commander, starship bridge officer, or fighter squadron leader if it replaces the {@gear beam rifle} with a {@gear beam pistol}.",
-            "The centurions command the Tekklar Elite, an implacable force of strong-willed soldiers who endure some of the most extreme combat training in the galaxy. Swarm pilots—most of whom were born with wings—support the fleet and ground troops with Kess’or Fury escort fighters and Valkyrie mechs.",
+            "The centurions command the Tekklar Elite, an implacable force of strong-willed soldiers who endure some of the most extreme combat training in the galaxy. Swarm pilots—most of whom were born with wings—support the fleet and ground troops with Kess'or Fury escort fighters and Valkyrie mechs.",
             "Increase {@characteristic Brawn||crb} by 1; increase {@characteristic Agility||crb} by 1; gain two ranks in {@skill Melee||crb}; gain a {@gear N'orr tarsus glaive} (Melee; Damage 8; Critical 3; Range [Short]; Cumbersome 3, Vicious 3). Increase combat rating to 7."
          ],
          "powerLevels": {
@@ -5840,7 +5840,7 @@
          "variant": true,
          "description": [
             "Rank-and-file troops require leadership in the field, whether from a grizzled sergeant or from a fresh-faced junior officer. This profile represents a character who might lead an entire platoon, a squad, or even just an elite fire team into battle. It can also represent a tank commander, starship bridge officer, or fighter squadron leader if it replaces the {@gear beam rifle} with a {@gear beam pistol}.",
-            "The Proctors lead the Hylar military forces, well aware of the scientific principles and stress tolerances of the equipment carried by each soldier under their command. The Hylar have some of the most advanced technology in the galaxy, which they use to buttress their soldiers’ rather pedestrian fighting skills.",
+            "The Proctors lead the Hylar military forces, well aware of the scientific principles and stress tolerances of the equipment carried by each soldier under their command. The Hylar have some of the most advanced technology in the galaxy, which they use to buttress their soldiers' rather pedestrian fighting skills.",
             "No change."
          ],
          "powerLevels": {
@@ -5944,7 +5944,7 @@
          "variant": true,
          "description": [
             "Rank-and-file troops require leadership in the field, whether from a grizzled sergeant or from a fresh-faced junior officer. This profile represents a character who might lead an entire platoon, a squad, or even just an elite fire team into battle. It can also represent a tank commander, starship bridge officer, or fighter squadron leader if it replaces the {@gear beam rifle} with a {@gear beam pistol}.",
-            "The legates of Winnu’s Annexus Guard believe Mecatol Rex is theirs by right, and they have been working their forces into a righteous fervor to take it back. The legates oversee entire armies, determining battlefield strategy while leaving small unit tactics to their primuls, who each command a centurios of one hundred well-drilled soldiers. It falls on the primuls to make sure each soldier knows the price of failure for their emperor and themselves.",
+            "The legates of Winnu's Annexus Guard believe Mecatol Rex is theirs by right, and they have been working their forces into a righteous fervor to take it back. The legates oversee entire armies, determining battlefield strategy while leaving small unit tactics to their primuls, who each command a centurios of one hundred well-drilled soldiers. It falls on the primuls to make sure each soldier knows the price of failure for their emperor and themselves.",
             "No change."
          ],
          "powerLevels": {
@@ -10635,7 +10635,7 @@
          "page": 262,
          "type": "rival",
          "description": [
-            "Terror beasts are incredibly long, millipede-like creatures that can carry dozens of Vuil’raith invaders on their backs. Their many legs end in sharp points, perfect for skewering enemy troops while they run to deposit their horde where it can sow the most fear."
+            "Terror beasts are incredibly long, millipede-like creatures that can carry dozens of Vuil'raith invaders on their backs. Their many legs end in sharp points, perfect for skewering enemy troops while they run to deposit their horde where it can sow the most fear."
          ],
          "powerLevels": {
             "combat": 11,
@@ -12217,7 +12217,7 @@
          ],
          "description": [
             "Although traditionally \"captain\" is a military rank, the Captains of the Keleres are anyone with the skill and charisma to take command of a cohort. Officially, cohort leaders are appointed by senior members of the Keleres, or sometimes by the Tribunii themselves. However, like so many Keleres officials, cohort leaders are often chosen on an ad hoc basis. Some teams elect their own, or perhaps a well-liked Captain decides to put their own cohort together. Regardless, Captains tend to wield significant authority and autonomy, but these are almost entirely dependent on the support of their cohort.",
-            "Of course, many Captains were military officers before they were transferred to the Keleres. In fact, a number were officers aboard naval vessels or even commanded starships of their own. Former military officers tend to fall into two groups: junior officers sent by their faction because they were considered “expendable,” and senior commanders whose actions so offended or disgraced their service or a superior officer that they were exiled to the Keleres as punishment.",
+            "Of course, many Captains were military officers before they were transferred to the Keleres. In fact, a number were officers aboard naval vessels or even commanded starships of their own. Former military officers tend to fall into two groups: junior officers sent by their faction because they were considered \"expendable,\" and senior commanders whose actions so offended or disgraced their service or a superior officer that they were exiled to the Keleres as punishment.",
             "There are also a few Captains who learned their skills in civilian life. Captaining a freighter or courier vessel still requires a flair for command and a penchant for quick and decisive action, both of which serve a Keleres Captain well. Civilians are less likely to end up in the Keleres, but some of the Great Civilizations do pay their citizens to join or sponsor them rather than sending valuable military personnel. Some civilians even volunteer, either because they believe in the duties of the Keleres or because, through bad luck or their own incompetence, they have nowhere else to go.",
             "A Captain counts the following skills as career skills: {@skill Astrocartography||crb}, {@skill Coercion||crb}, {@skill Discipline||crb}, {@skill Gunnery||crb}, {@skill Knowledge (Science)}, {@skill Leadership||crb}, {@skill Operating||crb}, and {@skill Piloting||crb}. Before spending experience during character creation, a Captain may choose four of their career skills and gain one rank in each of them."
          ],
@@ -16644,7 +16644,7 @@
                                  "entries": [
                                     "Once your character has completed the necessary number of benchmarks, you should consult with your GM about a side mission for your character that, if completed successfully, resolves their agenda once and for all.",
                                     "The side mission depends on what your character's agenda is. For someone with a personal agenda, like Revenge, the mission may involve finally tracking down a hated foe and defeating them. An agenda of Resourcefulness may see your character taking saved money to pay off a sibling's ransom, or needing to seek out a questionable money launderer to exchange aurei for untraceable assets that can let them start a new life of luxury.",
-                                    "Some agendas, especially those involving greater themes such as liberty, supporting a particular faction, or working to advance the mission of the Keleres, may not be “completed” just because your character finishes their side mission successfully. In these cases, the side mission can represent your character doing what they feel they need to do to promote their chosen cause. An agenda supporting one of the Great Civilizations may take the form of “one last job” that, if accomplished, gives that particular galactic power some crucial edge in the ongoing conflict for the Imperial Throne. Alternatively, defeating a Nekro assassin's attempt to poison the Galactic Council may not stop the Nekro from making attempts in the future, but it certainly can be enough for your character to feel like they've done their part.",
+                                    "Some agendas, especially those involving greater themes such as liberty, supporting a particular faction, or working to advance the mission of the Keleres, may not be \"completed\" just because your character finishes their side mission successfully. In these cases, the side mission can represent your character doing what they feel they need to do to promote their chosen cause. An agenda supporting one of the Great Civilizations may take the form of \"one last job\" that, if accomplished, gives that particular galactic power some crucial edge in the ongoing conflict for the Imperial Throne. Alternatively, defeating a Nekro assassin's attempt to poison the Galactic Council may not stop the Nekro from making attempts in the future, but it certainly can be enough for your character to feel like they've done their part.",
                                     "It's up to your GM whether the side mission just involves your character or the whole group. However, we do recommend getting the whole group involved, even if your character has to awkwardly reveal their agenda after a long campaign. Most of the time, it's a lot more fun!"
                                  ]
                               },
@@ -16709,7 +16709,43 @@
             },
             "{@filter rule|Factions in Embers of the Imperium|source:embers-of-the-imperium=1;category:great civilization=1}"
          ]
-      }
+      },
+      {
+         "name": "Pay",
+         "page": 268,
+         "type": "gear",
+         "description": [
+             "As members of a government organization, the Keleres do get compensation for their work. This amount is kept deliberately low, to reinforce the core game concept that the Keleres are underpaid and underappreciated. However, how low this amount is depends on just how desperate you want to keep your players' characters",
+             "We have three suggested amounts, each paid four times per Mecatol year. This means that you can choose to track time in your game to make payments, or issue them at the end of a campaign arc (which, depending on travel times, you can claim has taken roughly three months).",
+             {
+                 "type": "list",
+                 "items": [
+                     "{@b 500 aurei:} This amount is set almost comically low to encourage players to have their characters engage in all sorts of graft, corruption, and side deals. Without bending the law, PCs will have a hard time affording more than basic weapons and equipment or will be totally reliant on what the quartermasters give them.",
+                     "{@b 1,000 aurei:} This is an \"average\" amount that means your PCs will be able to upgrade their equipment after each adventure, but won't be able to obtain heavy weapons or rare items without scrimping and saving. The PCs won't need to engage in illicit activities, but there may be some temptation to do so.",
+                     "{@b 2,500 aurei:} This payment level is appropriate if you want your group to be well-paid and not worrying about money. With this amount, the only things that will be out of reach after a couple of sessions are starships and vehicles. However, you will want to give your PCs corresponding challenges to match their powerful gear."
+                 ]
+             },
+             "This payment system assumes that your PCs' cost of living expenses are being maintained by the Keleres. They are given rooms in the Keleres HQ, receive meals from the mess hall, and have any basic medical care covered by the infirmary.",
+             {
+                 "title": "The Keleres Armory and Issued Supplies",
+                 "forceTitleLevel": 3,
+                 "entries": [
+                     "This payment system also does not account for gear the Keleres may receive from the official supply depots and base armory to accomplish their missions. The Winnaran Custodians responsible for supplies are notoriously stingy with the meager resources allocated to the Keleres, but a cohort can still expect some support, especially if they are friends with one of the quartermasters.",
+                     "Your players are likely to think of asking for items from the armory, and if they don't, you can suggest this as an option. The important thing is for them to use the armory to obtain basic supplies, and not try to argue that each of them needs a personal beam cannon and force field for every mission. To help with this, we have some guidelines for what your group can request from the armory.",
+                     {
+                         "type": "list",
+                         "items": [
+                             "Requests should only happen before an authorized mission. Quartermasters are likely to deny any random requests out of hand.",
+                             "The cohort makes requests as a group. Before a mission, the cohort may request a number of items with a combined value of no greater than 500 aurei. No item can have a rarity greater than 3.",
+                             "Any items that aren't single use or consumable (such as grenades, z-tabs, extra ammunition, or dermal sealers) need to be returned to the armory at the end of the mission. Failure to return items should result in the quartermasters significantly limiting the next request the group makes or denying it entirely."
+                         ]
+                     },
+                     "The important thing to remember is that the Winnaran quartermasters have wide discretion in what requests they honor and what requests they don't. Although it may not seem fair, cohorts that make friends with a quartermaster have a much better chance of getting greater requests met. Conversely, those who anger a quartermaster are likely to see their requests denied entirely",
+                     "Some of this can be handled through roleplaying. If you feel like your group has successfully gotten on a quartermaster's good side, you can increase the amount of gear they're allowed to requisition, up to 1,000 aurei. The other option is if a PC wants to obtain an item that is either rarer or more expensive than the normal requisition rules allow. In this case, you can have the PC make a {@skill Charm||crb} or {@skill Negotiation||crb} check with a difficulty determined by {@table I.5-1: Rarity||crb} on page 82 of the Core Rulebook to see if they can convince the quartermaster to let them requisition the item. Of course, it is ultimately up to you whether the armory has the item in stock. Don't feel that you have to give your group a sliver missile launcher just because they rolled well!"
+                 ]
+             }
+         ]
+     }
    ],
    "setting": [
       {
@@ -17100,7 +17136,7 @@
                ],
                "aesthetics": [
                   "Almost all devices are powered, usually containing a small, green, glowing microbattery or reactor.",
-                  "Items tend to evince a “brute-force” approach to design, often being overpowered but fragile."
+                  "Items tend to evince a \"brute-force\" approach to design, often being overpowered but fragile."
                ]
             },
             {
