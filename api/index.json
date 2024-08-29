@@ -48,6 +48,22 @@
       "releaseDate": "20 September 2019",
       "originType": "core"
    },
+   "inspection-tour.json": {
+      "json": "twilight-imperium-inspection-tour",
+      "full": "Twilight Imperium: Inspection Tour",
+      "abbreviation": "EotI:IT",
+      "color": "#EF3F22",
+      "authors": [
+         "EDGE Studio"
+      ],
+      "convertedBy": [
+         "mr4nd3rsn"
+      ],
+      "url": "https://www.edge-studio.net/shares/twilight-imperium/",
+      "releaseDate": "20 March 2024",
+      "version": "2024.8.29",
+      "originType": "core"
+   },
    "realms-of-terrinoth.json": {
       "json": "realms-of-terrinoth",
       "full": "Realms of Terrinoth",
@@ -83,7 +99,7 @@
       "abbreviation": "SotB",
       "color": "#40B3B5",
       "url": "https://www.fantasyflightgames.com/en/products/genesys/products/shadow-beanstalk/",
-      "version": "2024.4.6",
+      "version": "2024.8.29",
       "authors": [
          "Fantasy Flight Games"
       ],
