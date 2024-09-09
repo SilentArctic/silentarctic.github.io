@@ -1,0 +1,1553 @@
+{
+   "$schema": "https://silentarctic.github.io/schemas/schema.json",
+   "_meta": {
+      "source": {
+         "json": "twilight-imperium-inspection-tour",
+         "full": "Twilight Imperium: Inspection Tour",
+         "abbreviation": "EotI:IT",
+         "color": "#EF3F22",
+         "authors": [
+            "EDGE Studio"
+         ],
+         "convertedBy": [
+            "mr4nd3rsn"
+         ],
+         "url": "https://www.edge-studio.net/shares/twilight-imperium/",
+         "releaseDate": "20 March 2024",
+         "version": "2024.8.29",
+         "module": true
+      },
+      "defaultItemSettings": [
+         {
+            "name": "Twilight Imperium"
+         },
+         {
+            "name": "space opera",
+            "source": "crb"
+         }
+      ],
+      "filters": {
+         "settings": [
+            "Twilight Imperium"
+         ]
+      }
+   },
+   "book": [
+      {
+         "name": "Twilight Imperium: Inspection Tour",
+         "releaseYear": 2024,
+         "chapters": [],
+         "coverImageUrl": "https://i.imgur.com/HExblhe.png",
+         "credits": {
+            "EDGE STUDIO": [
+               "___________"
+            ],
+            "Expansion Design and Development": [
+               "Sam Gregor-Stewart"
+            ],
+            "Proofreading": [
+               "Leah Hawthorne"
+            ],
+            "Roleplaying Games Manager": [
+               "Sam Gregor-Stewart"
+            ],
+            "Layout and Graphic Design": [
+               "Paco Dana"
+            ],
+            "Cover Art": [
+               "Önder Kilavuz"
+            ],
+            "Interior Art": [
+               "Marko Fiedler, Alex Kim, Önder Kilavuz and Antonio Maínez"
+            ],
+            "Art Direction": [
+               "Antonio Maínez"
+            ],
+            "Development Managers": [
+               "Curro Marín and Luis E. Sánchez"
+            ],
+            "Editorial Manager": [
+               "Croc"
+            ],
+            "Studio Coordinator": [
+               "Stéphane Bogard"
+            ],
+            "Head of Studio": [
+               "Michael Croitoriu"
+            ],
+            "FANTASY FLIGHT GAMES": [
+               "_____________________"
+            ],
+            "Creative Director of Story and Setting": [
+               "Katrina Ostrander"
+            ],
+            "Twilight Imperium Story Review": [
+               "Dane Beltrami, Daniel Lovat Clark, James Kniffen, and Maxine Juniper Newman"
+            ],
+            "": [
+               "{@i Twilight Imperium setting created by Christian T. Petersen.}",
+               "--------",
+               "{@i Special thanks to all players and game masters who ran this adventure for the first time at Gen Con 2023.}"
+            ]
+         }
+      }
+   ],
+   "adventure": [
+      {
+         "name": "Inspection Tour",
+         "chapters": [
+            {
+               "title": "Inspection Tour",
+               "entries": [
+                  {
+                     "type": "image",
+                     "imageUrl": "https://i.imgur.com/HExblhe.png"
+                  },
+                  "This single-session adventure serves as a prequel for the adventure book {@title War for the Throne}. In {@i Inspection Tour}, the players take on the role of various inspectors and soldiers dispatched by the Winnaran Custodians and Xxcha military to check on a remote outpost. Unfortunately, this outpost will soon be infested by the mechanical horrors of the Nekro Virus, plunging the PCs into a nightmare that most of them won't survive. ",
+                  "This adventure is designed to work with the premade NPCs provided. Since most or all of the PCs die by the end, players may not want to make their own characters for it. However, it can be adjusted to work with different PCs as long as you, the GM, review the adventure and make any appropriate adjustments beforehand. ",
+                  "Note that this adventure contains spoilers for {@title War for the Throne}.",
+                  {
+                     "type": "sidebar",
+                     "title": "Warning: Lethal Adventure",
+                     "entries": [
+                        "This adventure is written to be intentionally dangerous for the PCs. In fact, in the events that precede {@title War for the Throne} the entire complement of Ccrysus Station is killed. The station is then transformed by the Nekro Virus into a tomb of mechanical horrors that a Keleres strike team (the PCs from the next adventure) comes to investigate in {@title War for the Throne}.",
+                        "This means that by default, all the PCs die by the end of the adventure. As you will see, there are some ways for a couple of PCs to survive, but those are the exceptions rather than the default. Make sure your players understand that this will be a deadly adventure before they start playing."
+                     ]
+                  },
+                  {
+                     "title": "Background",
+                     "entries": [
+                        "In the first act of {@title War for the Throne}, the PCs journey to a remote observation outpost, Ccrysus Station, deep in the galactic core. ",
+                        {
+                           "type": "sidebar",
+                           "title": "Warning: PvP Possibilities",
+                           "entries": [
+                              "Some of the premade characters have been built with agendas that are designed to be antagonistic towards other PCs. Before beginning the adventure, ask your group how comfortable they are with potential player versus player (PvP) possibilities. If anyone in the group is uncomfortable with the idea, then ask the players to ignore any PC agenda that would bring them in conflict with other PCs. (Of course, if the players are comfortable with potential PvP, asking them about it is a great way to plant some seeds of distrust concerning their fellow players!)",
+                              "Also, when the players are choosing which PC they want to use, {@b don't let them flip the character sheets over until after they've picked characters}. This ensures the agendas and motivations remain secret."
+                           ]
+                        },
+                        "The deep space outpost was built by the Xxcha Kingdom's military but funded in part by the Winnaran Custodians of Mecatol Rex. Ccrysus Station and four companion outposts were built between the Mahact homeworld of Ixth and the Gul system (where Mecatol Rex is located). The stations' purpose was to serve as an early-warning tripwire in case the Mahact dispatch a fleet to the ancient throneworld. Conveniently, their location in the galactic core also covers a prime invasion route for other Great Civilizations to attack Mecatol Rex (meaning the stations could also serve as forward bases if the Xxcha want to launch their own invasion of the throneworld someday).",
+                        "The PCs are part of an inspection tour sponsored by the Xxcha Kingdom and Winnaran Custodians. These stations are by necessity far outside the normal space lanes, and months can go by between supply boats. Both organizations want to make sure the stations are running well and, just as importantly, their aurei are being spent wisely. Ccrysus Station is the first station the PCs visit. Unfortunately, for many of them it will be the last. "
+                     ]
+                  },
+                  {
+                     "title": "Overview",
+                     "entries": [
+                        "As the PCs travel to Ccrysus Station, they receive a transmission from the station's commander, Captain Ssoro. The station's highly advanced gravitic sensors have picked up the signature from a superluminal drive as it decelerates to subluminal speeds only a few light years away. Clearly this is some sort of starship, and its course leads back to Mecatol Rex. However, no ships are expected and the station hasn't received any incoming messages.",
+                        "The PCs happen to be much closer to the drive signature than the station, and Ssoro asks them to check out the drive signature and report back. The PCs track the drive signature to a dead star system containing a neutron star and the shattered husks of its former planets. Here, among the debris fields, they find a autonomous interstellar probe, roughly a quarter of the size of their ship. The technology is far too advanced to have been developed by any of the Great Civilizations, and the fact that it was coming from Mecatol Rex seems even more suspicious. So, the PCs bring the probe to Ccrysus Station.",
+                        "Once the probe is taken to Ccrysus Station, the PCs and station crew begin to attempt to disassemble it. The probe is very tough and Captain Ssoro wants to proceed cautiously. However, they do manage to access the probe's internal databanks. Within they find files encrypted with a high level Galactic Council cypher. The PCs can't decrypt the cypher, but they can recognize its credentials and determine that this is something important.",
+                        "At the same time, Captain Ssoro extrapolates the course of the probe from Mecatol Rex and plots its intended destination. The probe was headed for system 57629BXR-79y67, another unremarkable star system even deeper in the galactic core. When Ssoro's long range gravitic detectors sweep the system, they start to pick up the deceleration of massive vessels from superluminal velocities down to subluminal speeds within the system. Although the distance is too far to get precise readings on the ships, they are certainly coming from Mahact space.",
+                        {
+                           "title": "A Terrifying Turn",
+                           "entries": [
+                              "Even as the station picks up these signals, the real threat is lurking in its computer systems. Hidden inside the probe's databanks were dormant fragments of the Nekro Virus. Downloading the information without specific key codes awakens the virus fragments, which begin multiplying and then dominating the station's computers. Before the station's crew realize the threat, the Nekro Virus has already begun to take control of certain mechanical systems, including the auto-assemblers in the machine bays. With these, the Nekro begins churning out numerous murderous drones of various types. ",
+                              "The first the PCs learn about this is when they try and get a status update from the station's chief programmer, Trrelsh Nix, but can't find her. Eventually they find her body, and then they get ambushed by Nekro drones. The discovery spurs attacks throughout the station. ",
+                              "The PCs try to fight their way to their ship, only to discover that it's already being disassembled by drones and turned into an ambush site. Some of the PCs may not survive this encounter, and they soon find out that the station's shuttles have suffered the same fate.",
+                              "The PCs retreat to the bridge, fighting off more drones. When they get there, they have a chance to confer with Ssoro and decide on their next move. At this point, the adventure splits off in several directions. The PCs can launch a last-ditch assault on the reactor core of the station in hopes of taking down the Nekro or blowing up the station (which they will not survive). They can attempt to preserve the data from the probe and the following scans by sequestering it in protected databases, in hopes that a rescue party might find it before the station was destroyed. And finally, they can try to survive by boarding some of the lifeboats, in hope that they are picked up before their life support runs out."
+                           ]
+                        },
+                        {
+                           "title": "The End?",
+                           "entries": [
+                              "The adventure's end expects that the PCs will die. Survival is something that the PCs can attempt, but it's not likely. Therefore, it's important the PCs have a chance to accomplish something meaningful before they die",
+                              "The adventure is written with this in mind. In addition to the basic accomplishments that the adventure provides, some PCs have their own personal agendas that they can perform. Notably, none of the agendas or accomplishments require survival. ",
+                              "However, some players may not enjoy having their characters die at the end of the adventure. If some of your players don't want to see their characters die, you can either guide them towards the escape pods (see page 23), or rewrite the end of the adventure to let them grab one of the shuttles from the hanger bay. It's still going to leave them stranded in deep space, but that's better than the alternative! "
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "title": "The Monitoring Station's Purpose",
+                     "entries": [
+                        "Ccrysus Station and the other monitoring stations are suspended in deep interstellar space between Mecatol Rex and the galactic core (known as the Great Heart of the Galaxy). Officially, their purpose is to watch the approaches to Mecatol Rex from the direction of the galactic core. Most trade routes around Mecatol Rex pass near many inhabited star systems, making a sneak attack on the former Imperial capital nearly impossible. Near the core, however, the inhabited worlds thin out; the increased background radiation makes this region of space hostile to most forms of life. A determined battlefleet could take a detour through the core regions in order to launch a surprise attack on Mecatol Rex.",
+                        "Their unofficial purpose is more specific. Five years ago, the Mahact Gene-Sorcerers returned to the galaxy when they hurled their homeworld of Ixth from outside the galaxy into the galactic core. The Mahact ruled the galaxy nearly 30,000 years ago as a group of megalomaniacal and thoroughly evil tyrants. Upon their return, they made it clear they hadn't changed, and expected the various Great Civilizations to immediately submit to their renewed rule. ",
+                        "Needless to say, that didn't happen, and so far the Mahact have acted cautiously. However, Mecatol Rex was one of their bastions before it was the Imperial capital, and they certainly recognize its symbolic value. The Winnarans (and the rest of the Galactic Council) fears at least one of the gene-sorcerers will soon launch an assault on the throneworld. They don't want to alarm the public, but the Mahact were the real impetus to build the monitoring stations.",
+                        {
+                           "title": "How They Work",
+                           "entries": [
+                              "Each of the outposts is a {@i Sccutum}-class monitoring station; a large, rounded disk. Airlocks, docking bays, and escape pod launchers dot the edges, while a vast forest of antenna protrude vertically from the center. The stations are unarmed; their sole purpose is to scan the depths of space with their extremely powerful gravitic sensors. Due to their reliance on instantaneous gravitic propagation, these sensors can provide \"real-time\" observations of locations up to one hundred light years away",
+                              "Admittedly the resolution on these sensors is very poor, only allowing for the tracking of significant gravitational forces (such as those generated by stars and planets). However, a starship's acceleration and deceleration from superluminal speeds do create a unique signal that can be tracked. Individual ships can be tracked up to ten light years away, but the signals created by a large ships and fleets traveling at superluminal velocities can be detected at much further distances.",
+                              "Although gravitic sensors are a known technology, the sensors aboard the stations are far more powerful and sensitive than most. They are proprietary technology of the Xxcha Kingdom, and a demonstration of their commitment to the joint program.",
+                              {
+                                 "title": "Contact With Mecatol Rex",
+                                 "forceTitleLevel": 5,
+                                 "entries": [
+                                    "Unfortunately, even the best superlumninal communication devices can only send messages over a dozen light years or so, and at distances over a few light years the signals would be limited to very simple messages. So the Xxcha Kingdom set up their stations in a wide circular formation. In the center of the formation is a stealthed message buoy that is barely within communication distance of each station. The stations broadcast regular signals that can be picked up by the buoy. These signals are limited to \"all clear,\" \"request visit,\" and \"alert!\"",
+                                    "Every two days, an ultra-fast courier vessel arrives from Mecatol Rex and downloads the messages from the buoy. Although this means it could be days (including travel times back to Metacol Rex) before a response can be organized to an \"alert\" message, the entire process is stretching interstellar communications technology to its limits. Frankly, it is the best the Kingdom and Winnaran Custodians could manage."
+                                 ]
+                              },
+                              {
+                                 "title": "Additional Station Details",
+                                 "forceTitleLevel": 5,
+                                 "entries": [
+                                    "Each station has a crew of 25. These are mostly Xxcha, but include a few Winnaran Custodians. Staff include a small security detail, maintenance personnel, the sensor operators, and other staff.",
+                                    "{@i Sccutum}-class stations are heavily armored but have no in-built weapons. Their best defense is not being noticed in the first place. If they come under attack, the crew is expected to send an alert signal, then evacuate to the station's shuttles or escape pods and hope a friendly fleet arrives in time to rescue them."
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "type": "sidebar",
+                           "title": "Not Whom They Seem",
+                           "entries": [
+                              "The premade characters for this adventure are not all who they appear to be. Certain characters may have secret agendas or even different allegiances that put them at odds with the rest of the group. Here is a quick overview.",
+                              {
+                                 "type": "list",
+                                 "items": [
+                                    "{@b Johann MacGhille:} This Human mechanic does have an allegiance to the Xxcha Kingdom. However, his colleagues may not know that he's a retired member of the Federation SpecOps forces, and that his skills extend far beyond repairing machines. ",
+                                    "{@b Sraghra:} Although she is pretending to be a sellspear (the Hacan Emirates have a long tradition of hiring and exporting mercenary contingents) hired to protect Mmoorgin Kkul, this Hacan is actually a covert infiltrator dispatched by the Grallargh Emirate to steal blueprints of the highly advanced gravitic sensor tech used in the watch stations. ",
+                                    "{@b Kelsa Iq Daraq:} Although she pretends to be a Winnaran Custodian, she is actually Kelsa Kelsorin, a Winnu agent (the same species, but from a separate and highly militant culture). Kelsa's mission is to ensure the destruction of as many watch stations as possible so the Winnu can invade Mecatol Rex. ",
+                                    "{@b Mmoorin Kkul:} Uniquely amongst the group, Mmoorgin is exactly who she purports to be; a representative of the Xxcha Kingdom who wants to make sure the station is secure and operational.",
+                                    "{@b Ggsellic Tol:} Ggsellic is the other Xxcha representative, and uncommonly among the Xxcha, is a bona-fide war hero. His agenda (to earn glory for himself) is not a secret, but it is uncommon and even distasteful in Xxcha society",
+                                    "{@b Sik'Til:} The N'orr claims to be a simple bodyguard hired by the Winnaran Custodians to escort Kelsa Iq Daraq. In actuality, they are an agent for the Keleres sent to ensure the station is operating correctly. Sik'Til and Kelsa do not know each other's real identities, but the two are actually in opposition to each other."
+                                 ]
+                              }
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Encounter 1: Strange Signal",
+               "entries": [
+                  "For the purposes of running this in a single session, the adventure begins en media res with the following read-aloud text.",
+                  {
+                     "type": "read-aloud",
+                     "entries": [
+                        "It was supposed to be an easy mission.",
+                        "Months ago the Winnaran Custodians, guardians of the former imperial capital planet of Mecatol Rex, and the powerful Xxcha Kingdom entered into an agreement. To protect the capital from invasion by one of the other Great Civilizations of the galaxy, the Xxcha would build and staff a series of watch stations deep in the galactic core. This would protect against a surprise attack from a normally deserted corner of the galaxy. That it would also give the Kingdom a powerful set of bases from which it could support its own military campaigns was understood by both parties and tactfully ignored.",
+                        "As part of this venture, it was agreed that contingents of agents from both factions would be dispatched on inspection tours of the watch stations. So far two tours have occurred without incident. As representatives of the Winnaran Custodians and Xxcha Kingdom, you make up the third. "
+                     ]
+                  },
+                  "The players are all representatives of the Winnaran Custodians or Xxcha Kingdom; either high-ranking officials or those officials' aides, bodyguards, and technical specialists. They have been dispatched from Mecatol Rex aboard a small courier vessel to inspect the five deep space monitoring stations built by the Xxcha Kingdom. Their first stop is Ccrysus Station",
+                  {
+                     "title": "Getting the Players Up to Speed",
+                     "entries": [
+                        "The PCs are traveling to Ccrysus Station aboard the {@i Kesalli Mokor}, a retrofitted scout vessel owned by the Winnaran Custodians. The ship is simple enough to be crewed by the PCs, and no other crew members are present.",
+                        "Once the players have gotten a chance to review their characters, introduce themselves to one another, and ask a few questions about the setting and current events, you can read aloud or paraphrase the following:",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "You are only a few hours out from Ccrysus Station when your superluminal comms chime. You scan the incoming message and see it is a voice-only burst transmission from Captain Ssoro, the commander of Ccrysus Station. You access the message, and Ssoro's gravelly voice fills the bridge. \"Custodian ship Kesalli Mokor, we see you on our screens. Be advised, twenty minutes ago we detected a superluminal starship deceleration into System 82733YTM-32y08.\"",
+                              "Static overwhelms his words for a moment, and you check your map. That system is less than a light-year from your current position. You could reach it with only a small detour",
+                              "The static clears. \"…trajectory confirms it came from Mecatol Rex, but you're the only ship from the throneworld that's supposed to be out this way. I'm requesting you investigate on your way to Ccrysus, as our shuttles will take hours to get there. Ssoro out.\""
+                           ]
+                        },
+                        "The PCs must decide if they will investigate this strange signature. If they choose not to, Ssoro angrily sends one of his own shuttles, finds the probe, and brings it back to the station. Proceed to {@genesysref /adventure/inspection%20tour_into?chapter=2|Encounter 2}, but alter Ssoro's attitude towards the PCs to be more antagonistic. "
+                     ]
+                  },
+                  {
+                     "title": "Arrival in System 82733YTM-32y08",
+                     "forceTitleLevel": 2,
+                     "entries": [
+                        "If the PCs decide to investigate the signal, detouring to visit System 82733YTM-32y08 (often shortened to \"33Yetem\") is a simple task that requires no check. In less than an hour, their ship hits the limits of the system's gravity well and begins to decelerate back to subluminal velocities. Read aloud or paraphrase the following:",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "As soon as you drop back to subluminal speeds, the Kesalli Mokor's sensors start screaming. The star at the heart of the system is a pulsar, a neutron star spinning at incredible speeds and releasing constant bursts of radiation. Your ship's armor and screens can protect you from the lethal pulses of X-rays, but you wouldn't want to stay here long.",
+                              "Ahead of you stretches a vast accretion disk; dust and rock shards spinning rapidly around the pulsar. With a sinking feeling you check your passive sensors, hoping that the starship you've come to find is outside the disk. No such luck. If it's in system, it's hidden in that maelstrom before you."
+                           ]
+                        },
+                        "The probe has decelerated into the system to recharge its mass-drive, and is currently hiding in the accretion disk. Luckily, it's still detectable if the PCs use their ship's active scanners.",
+                        "The PCs can scan the accretion disk by making an {@difficulty Average|Perception or Computers}. Success means the spot the probe. Success with {@symbols a} means they spot the probe while it's still at the edges of the accretion disk, making it easier to reach (see Reaching the Probe). Success with {@symbols h} means they don't spot the probe until it's deeper within the disk, and thus harder to reach.",
+                        "If the PCs fail, they must use this ship's computer to run a full sensor sweep of the entire system. This takes an hour. At the end of this time, the sensors find the probe automatically. However, it is deep inside the accretion disk and near the pulsar, and is very hard to reach.",
+                        {
+                           "title": "Reaching the Probe",
+                           "entries": [
+                              "As the PCs proceed into the accretion disk, read aloud or paraphrase the following:",
+                              {
+                                 "type": "read-aloud",
+                                 "entries": [
+                                    "Carefully you ease the Kesalli Mokor into an orbit that matches, as best you can, the whirling orbital velocity of the disk. Then you cautiously dip beneath the roiling surface into the clouds of dust and debris.",
+                                    "The radiation alarms quiet, but immediately your magen defense grid flares with the impacts of countless dust particles, and the ship shudders as something larger glances off the grid. Your sensor ranges are knocked back to only a few million kilometers, but you can still see the fading echo of the target ship dead ahead."
+                                 ]
+                              },
+                              "Steering the {@i Kesalli Mokor} to reach the probe requires an {@b Average (}{@dice difficulty|2}{@dice setback|2}{@b ) Operating Check}. The {@dice setback} are added to the check due to the hazardous environment of the accretion disk. This can be modified by the results of the previous check.",
+                              {
+                                 "type": "list",
+                                 "items": [
+                                    "If the PCs succeeded with {@symbols a}: {@b Easy (}{@dice difficulty}{@dice setback|2}{@b )}",
+                                    "If the PCs succeeded with {@symbols h}: {@b Hard (}{@dice difficulty|3}{@dice setback|2}{@b )}",
+                                    "If the PCs failed and had to use the ship's computer: {@b Hard (}{@dice difficulty|3|2}{@dice setback|2}{@b )}"
+                                 ]
+                              },
+                              "No matter the results, the PCs reach the probe. However, their check determines how much fuel they use up doing so, and how much damage they suffer along the way.",
+                              "If the PCs succeed, or they succeed with {@symbols a}, then they fly through the disk quickly and carefully, avoiding the worst of the debris and even using the strong gravity to get an extra boost of speed. They reach the probe without incident.",
+                              "If the PCs succeed with {@symbols h}, they reach the probe after a long and agonizing flight. {@symbols h} or {@symbols hh} means they use up some or most of their fuel. {@symbols hhh} or more means they use up most of their fuel, and the ship suffers 5 system strain as the magen defense grid nearly overloads from impacts.",
+                              "If the PCs fail (or if they succeed with {@symbols d}), they reach the probe after using most of their fuel. However, just as they are closing in, a particularly large shard of rock slams through their grid and hits the hull, damaging their engines. The ship suffers 5 hull trauma. Worse, although the ship's engines seem fine, they fail completely after the PCs reach Ccrysus Station. Fixing them will take days.",
+                              {
+                                 "title": "Securing the Probe",
+                                 "forceTitleLevel": 5,
+                                 "entries": [
+                                    "Luckily, once the PCs reach the probe, actually capturing it is relatively easy. You can read aloud the following to narrate the scene, or modify the narration to match your players' choices",
+                                    {
+                                       "type": "read-aloud",
+                                       "entries": [
+                                          "Slowly, the target comes into view, drawing close enough to be studied with the naked eye. It's small, less than a quarter the size of your vessel; a long, ovoid shape with raised armor plates on the nose and a cluster of what are clearly drive tubes built into the stern. ",
+                                          "Your hails go unanswered, and the ship doesn't seem to respond to your presence at all. What's more, it's clearly not anything built by any of the factions on Mecatol Rex (unless it's the fruits of some secret project).",
+                                          "You calculate its course and realize it's on a slingshot orbit, building up momentum to escape the pulsar and continue its journey into interstellar space. The object is small enough to capture with your ship's docking grapple, but you'll have to act now"
+                                       ]
+                                    },
+                                    "As long as the PCs decide to capture the probe, the process goes off without a problem. The {@i Kesalli Mokor} moves to within a few meters, then activates its magnetic grapple field that securely locks the probe to their ship. At that point, they can accelerate out of the accretion disk and into clear space before completing their journey to Ccrysus."
+                                 ]
+                              }
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Encounter 2: Arrival and Downtime",
+               "entries": [
+                  {
+                     "type": "image",
+                     "imageUrl": "https://uc0a2f153bb1a25d974793d95d7a.previews.dropboxusercontent.com/p/thumb/ACbcYa6VKa7dAABOokdZf8vyyWIP9BQ3iAV1ugcXmum4xtNZ0kIrz4sXJ5qiZ-4KB2kCWcvDN9m-z7p_eU3iu0xPk6kRYOKBMvkqRTth0q44P4PGDI2Et9pnqGv1pY0Ige9Ni70vnosY4PknhQlM2j-YvjjUlgV-l3qF6LwehUQuxyiQTc7RxGfkHn0YiSYFksxc1P5ot_IzygAyNswWDKJLEA8axVqjQCH7vjtREXGIkNXKggFYPIkR47d2LqkUJCLf03FlymKGpWt69KlWFp66gN18I-SPhQtrfVe8WqOiKx592xMfIUxqgU_r5WgFovJsOmhfLurnr_nXGlTPCYAHItVtw1IFojbZJpctVa22LmGr955oTMCThKtQtNz8BMB-jsPX1ok5fmuJ77l8FacMfWzDrkg0dlgLfs0j9oIKyPNSpDqfl_tc5qWt0XB7BrK9aN9CHyw2dNITfiC6WGdl/p.jpeg"
+                  },
+                  "The second encounter begins with the PCs arriving at Ccrysus Station. They greet Captain Ssoro, Chief Programmer Trrelsh Nix, and Chief Engineer Kkarogh, and then are given a brief overview of the station. They then have several hours to themselves while Kkarogh begins looking at their ship and Trrelsh begins to inspect the probe.",
+                  "As the {@i Kesalli Mokor} decelerates from superluminal velocities and approaches the station, you can read aloud or paraphrase the following:",
+                  {
+                     "type": "read-aloud",
+                     "entries": [
+                        "In the galactic core, space is not black. Stars shine from all directions, so thick they seem to wrap you in a curtain of multi-colored light. The ever-present glow illuminates the massive, shield-shaped structure ahead of you, a circular disk with a thick center that curves gently to the thinner edges. The only angular features are the forest of antenna probes that jut from the center of the structure, and the open docking bay built along the rim",
+                        "Your comms crackle, and a gravelly Xxcha voice cuts in. \"Council ship Kesalli Mokor, this is Ccrysus Station. Transmit confirmation cyphers and then proceed to lateral docking gate 1."
+                     ]
+                  },
+                  "The PCs have the proper confirmation cyphers, and once they offer them a guide beacon appears on their scanners. The Kesalli Mokor is too large to fit in the docking bay, and instead needs to affix itself to one of the exterior docking gates. This is a simple task and can be accomplished without a check.",
+                  {
+                     "title": "Welcoming Committee",
+                     "entries": [
+                        "As the PCs dock their vessel and come aboard, they are greeted by the three senior members of the station's 25-person complement. Read aloud or paraphrase the following:",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "As you step through the docking gate and into the antechamber, a no-frills room with bare bulkheads and a rack of space suits fixed into their docks. The cramped space is further filled by three hulking Xxcha in the uniforms of their kingdom's military. The foremost places his hand to his plastron in greeting. ",
+                              "\"Welcome, representatives of the Council and our wise King,\" he rumbles. \"I am Captain Ssoro.\" He gestures to Xxcha on his left whose uniform has less ornamentation and sleek exocarapace has several shoulder-mounted dataspike appendages. \"This is our head programmer, Lieutenant Trrelsh Nix, and this,\" he gestures to the Xxcha on his right, who wears a bulky, strength-enhancing exocarapace, \"is our engineer, Chief Kkarogh.\" "
+                           ]
+                        },
+                        "Captain Ssoro leads the PCs down several corridors to the bridge of the station. As they walk, he is happy to answer any questions they may ask. Some examples and potential answers are provided here.",
+                        {
+                           "title": "How big is the station and its crew?",
+                           "entries": [
+                              "{@i \"Ccrysus Station is a standard} Sccutum{@i -class deep space monitoring outpost. It's over 250 meters in diameter, but a lot of that is machinery. We make do with a crew of 25, though most of us pull double duty. Lieutenant Trrelsh is also my second in command, for example, and Chief Kkarogh is the head of station security.\"}",
+                              "At this, Kkarogh chuckles. {@i \"Also, the only member of the security team.\"}",
+                              "If Commander Ggsellic is one of the PCs, Captain Ssoro gives him a level look and adds, {@i \"Not that I expect you to be familiar with one of these stations, commander, given your…active career so far.\"} Everyone can pick up a strong hint of disapproval in his voice."
+                           ]
+                        },
+                        {
+                           "title": "That's a small crew for a big station?",
+                           "entries": [
+                              "{@i \"The small number lets us cut down on consumables and last longer out here without resupply. We use plenty of drones and familiars to help keep up with maintenance and repair; all slaved to the central computer, of course. No autonomous robotics.\"}"
+                           ]
+                        },
+                        {
+                           "title": "Is the station armed?",
+                           "entries": [
+                              "{@i \"No, we have some potent defense screens, but no weapons. Our best defense is not being seen in the first place…space is big, and our main sensors are all passive. But if someone attacks, our only recourse is to flee via our two shuttles and try and stay away from the enemy long enough for a rescue force to show up.\"} Captain Ssoro glances sideways at Kkarogh. {@i \"Unless the chief wants to lean out of the docking gate and take some potshots with his rifle.\"}",
+                              "Kkarogh throws up his hands in mock protest. {@i \"That was one time! You'd rather I practice sharpshooting in the docking bay?\"} All three Xxcha give a gravelly chuckle."
+                           ]
+                        },
+                        {
+                           "title": "What do you think that probe is?",
+                           "entries": [
+                              "Lieutenant Trrelsh speaks up. {@i \"We won't know until I have a chance to inspect it further. However, you said it was uncrewed? That seems impossible; I've never heard a of superluminal ship so small, and I can't imagine how it would navigate autonomously.\"}",
+                              "Kkarogh interjects, {@i \"The drives alone must be an engineering marvel.}"
+                           ]
+                        },
+                        {
+                           "type": "sidebar",
+                           "title": "Military Rank and Authority",
+                           "entries": [
+                              "During the course of the adventure, it may become important to the PCs to determine who has authority over whom, especially when it comes to the station's crew. First and foremost, the station is operated by the Xxcha Kingdom's military, which means it is working in partnership with the Winnarian Custodians and Galactic Council, but not subservient to them. The only PC with rank in the Kingdom's military is Commander Ggsellic, and Captain Ssoro outranks him.",
+                              "However, as representatives of the Galactic Council and Xxcha Kingdom (and the latter means the PCs operate under the mandate of the Xxcha king), the PCs wield considerable soft power. Captain Ssoro cannot simply order them around, and instead is prepared to cautiously deal with them as equals."
+                           ]
+                        },
+                        {
+                           "title": "You said it was coming from Mecatol Rex?",
+                           "entries": [
+                              "{@i \"Well, the Gur system, technically, but Mecatol Rex is the only planet of note in the system. But now that we have a look at it…\" Ssoro shakes his head. \"This isn't something that belongs to the Custodians, the Xxcha, or anyone else who has business on the throneworld. It's very concerning.\"}"
+                           ]
+                        },
+                        {
+                           "title": "Do we know where it was going?",
+                           "entries": [
+                              "{@i \"Not with certainty, but we're assuming the probe was on a straight-line course to its destination. So we're in the midst of extrapolating out its continuing course and seeing what it would intersect. The calculations should be done within an hour. Maybe we'll get lucky.\"}"
+                           ]
+                        },
+                        {
+                           "title": "Is it safe to inspect the probe?",
+                           "entries": [
+                              "Lieutenant Trrelsh waves her hand dismissively. {@i \"I'm entirely confident. We can leave it outside and I'll rig up a remote access link to my lab. To be safe, I'll isolate my savant and systems from the rest of the station before accessing.\"}"
+                           ]
+                        },
+                        {
+                           "title": "What should we do in the meantime?",
+                           "entries": [
+                              "Captain Ssoro gestures, and a map of the station appears on a wall display. {@i \"You are here to inspect the station, and I have ordered my staff to accommodate you. You'll pardon me for not escorting you or assigning one of the crew to do so, but I need all hands looking into this probe. I will inform you when I have learned more.\"} Stretching tall and throwing a sharp chest salute in the Xxcha fashion, he turns and walks away                                         with Lieutenant Trrelsh and Kkarogh."
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "title": "Time to Advance Agendas",
+                     "entries": [
+                        "At this point the PCs have some time to themselves. What they do with this time is up to them. They can begin inspecting Ccrysus Station (as per their mandate), or they can take the time to slip away and attempt to advance their own agendas.",
+                        "This should not be a lengthy portion of the encounter. Give everyone a chance to attempt one task (some options are described here), then whether they succeed or fail, advance the story to the next encounter. The PCs don't need to succeed at this tasks to advance the story, although it may be helpful to them later.",
+                        {
+                           "title": "Inspecting the Station",
+                           "entries": [
+                              "The PCs may decide to inspect the station. Doing so requires a skill check that varies depending on what the PCs are inspecting. Here are some examples, along with potential benefits that may be useful later."
+                           ]
+                        },
+                        {
+                           "type": "sidebar",
+                           "title": "Status of the Keslli Mokor",
+                           "entries": [
+                              "Another issue may be the status of the {@i Kesalli Mokor}. Depending on the PCs' performance in the first encounter, their ship's superluminal drive may be damaged. This can prove to be a powerful motivator in the later part of the adventure, and also may keep PCs like Sraghra or Kelsa Iq Daraq from doing something reckless. ",
+                              "If the PCs want to repair their damaged ship, Kkarogh assures them he will get it repaired within the next 24 hours."
+                           ]
+                        },
+                        {
+                           "type": "list",
+                           "items": [
+                              "{@b Station's Mechanical Systems (Easy [{@dice difficulty}] Mechanics check):} If the PC is successful, they find that Ccrysus Station is well maintained and functioning as expected. If the PC generates {@symbols aaa or t}, they also obtain the manual override codes for the station's hatchway locks from a helpful crewmember. ",
+                              "{@b Crew Morale and Disposition (Easy [{@dice difficulty}] Leadership or Charm check):} If the PC is successful, they find the crew is bored but dutiful. Commander Gsellic also finds several crewmembers who know of his military exploits and respect his forceful and aggressive nature. If the PC generates {@symbols aaa or t}, they learn that to stave off boredom, most of the crew practice with the station's collection of small arms stored in the security station.",
+                              "{@b Results of Sensors (Easy [{@dice difficulty}] Computers check):} If the PC is successful, they learn that the only things picked up on sensors of any interest since the last inspection has been a slight increase of superluminal ship signatures coreward of the station. However, these are so far away that nothing definitive can be made out, and they may be signal artifacts or gravitic interference from the Great Heart of the Galaxy (the supermassive black hole in the galaxy's center). If the PC generates {@symbols aaa or t}, they learn that there is one stellar object near the station; a rogue planetoid roughly a 1,000 km diameter a few AU away. There's nothing interesting about the planetoid (it's a frozen iceball), but the station was placed in its vicinity so that the crew would have somewhere to flee to in the shuttles or escape pods if the station was attacked."
+                           ]
+                        },
+                        {
+                           "title": "Advancing Agendas",
+                           "entries": [
+                              "The PCs could also spend this time advancing their agendas, especially if those agendas are something other than ensuring the station is functioning smoothly. Here are some possibilities.",
+                              {
+                                 "type": "list",
+                                 "items": [
+                                    "{@ Steal Station Blueprints (Average [{@dice difficulty|2}] Computers check):} This is likely something Sraghra wants to accomplish, and can be performed from any computer terminal on the station. Success does not obtain the station blueprints or sensor schematics. Instead, it reveals that those blueprints are on a subsystem only accessible from the station's bridge.",
+                                    "{@b Sabotage the Station (Average [{@dice difficulty|2}] Skulduggery or Stealth check):} There are several ways Kelsa Iq Daraq can sabotage the station. She can try and break into the main reactor room and plant her explosive charge on the station's reactor using Skulduggery, or use Stealth to sneak into the station's communications station and sabotage its superluminal comms. If she tries to destabilize the reactor, you can have Captain Ssoro call the PCs to the bridge just before she sets the bomb."
+                                 ]
+                              }
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Encounter 3: Sensor Results",
+               "entries": [
+                  "Roughly two hours after the PCs arrive, and after they've had a chance to pursue their agendas, Captain Ssoro summons them to the bridge. Once they arrive, read aloud or paraphrase the following.",
+                  {
+                     "type": "read-aloud",
+                     "entries": [
+                        "The bridge of Ccrysus Station is surprisingly cramped for such a large space station. One end of the oblong compartment is occupied by a bank of computer consoles and holoprojectors, while the other is dominated by the captain's post. Ssoro stands from his command chair as you enter, and gestures for you to follow him. ",
+                        "You duck through a short passageway and into another, larger compartment. This space is filled with a massive holographic display that currently seems to be showing all of the stars within a few hundred light years. Ssoro gestures to the map. \"I think we've found something interesting,\" he rumbles. As you look closer, you see three crimson lights around one of the glowing stars."
+                     ]
+                  },
+                  "Captain Ssoro explains that for the past two hours, he has been plotting the extrapolated course of the probe, then scanning every star within range of the station's gravitic sensors that lay on that intersection course. In doing so, he found the gravitic signatures of starships decelerating from superluminal velocity in one particular star system, 57629BXR-79y67. Ssoro's team has been able to assemble some additional information since spotting the drive signatures.",
+                  {
+                     "type": "list",
+                     "items": [
+                        "{@b Location:} 57629BXR-79y67 (nicknamed \"29Bexer\") is a minor star system 104 light years deeper into the galactic core. It has never been visited, but the station's gravitics and long-range telescopes have determined it's an unremarkable red dwarf star surrounded several small rocky worlds and a substantial asteroid field. None of the planets show any signs of life, or even a noticeable atmosphere, and the star system was deemed uninhabitable. ",
+                        "{@b Gravitic Traces:} Captain Ssoro and his crew got lucky. The star system is far out of range of standard gravitic sensors, but Ccrysus Station has highly classified and ultrapowerful gravitic detectors developed by the Xxcha Kingdom. When they focused those sensors on 29Bexer, they picked up the \"gravity bow waves\" given off by large starships as they travel at superluminal speeds. They further determined that at least two capital ships were in the midst of decelerating into the system. In the time since the first detection, they have spotted one additional capital ship and two escort craft beginning to decelerate into 29Bexer.",
+                        "{@b Identity:} These \"bow waves\" are unique to the size and engine design of a particular ship. Ssoro's team is running the signatures through the station's catalog to see if they can get a match on any existing starships."
+                     ]
+                  },
+                  {
+                     "title": "Identity Confirmed",
+                     "entries": [
+                        "As Ssoro finishes explaining this information to the PCs (and the PCs have a chance to ask any questions they may have), one of the consoles placed in the side of the room lets out a quiet chiming. A Xxcha technician steps over to the console display and studies it for a moment. If the PCs are watching, they see her gray-green mottled skin turn decidedly grayer (a sign of shock in Xxcha). She looks at Ssoro. {@i \"Captain…the analysis is complete. Sending it to your savant now.\"}",
+                        "Ssoro studies his savant (a handheld computer tablet) for a moment. Then read aloud or paraphrase the following:",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "Captain Ssoro looks at you, and you can see a grim set to his beaked mouth. \"It appears there is a match in our catalog. Just one previous example of the same drive signature, but it's enough. The bow waves are a 98% match for Mahact vessels.\"",
+                              "For a moment he says nothing else, then he turns back towards the passageway leading to the bridge. \"I need to prepare a signal to the relay buoy. Mecatol Rex should hear about this. We don't know what the Mahact are doing out there, but they're far outside their controlled territory. And we need to figure out what that probe was doing, especially if it's Mahact.\"",
+                              "Ssoro taps his savant. \"Lieutenant Trrelsh! Update on the probe analysis, please!\" There is no response, and he taps again, more angrily. \"Trrelsh! Report!\"",
+                              "Trrelsh doesn't respond, and Ssoro looks at you. \"Can you see what the lieutenant is up to?"
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Encounter 4: Maximum Overdrive",
+               "entries": [
+                  "Lieutenant Trrelsh set up her laboratory in the station's maintenance bay. The PCs can access it through the corridors around the engineering bay (the engineering bay is off-limits to normal traffic). ",
+                  "Unbeknownst to the PCs, when Lieutenant Trrelsh accessed the probe's database, she triggered the dormant Nekro Virus fragment lurking within. The virus could not infiltrate the station because she was keeping the access isolated to her personal savant. Unfortunately, Trrelsh's savant was built into her exocarapace. When the Nekro Virus awoke, it hid in the systems of Trrelsh's suit until it devised a means to kill her and access the station systems.",
+                  {
+                     "title": "A Grisly Scene",
+                     "entries": [
+                        "The PCs arrive roughly ten minutes after Trrelsh is murdered. Read aloud or paraphrase the following:",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "You open the hatch to the maintenance bay and step through. The bay is mostly dark and the various machines are powered down. However, one corner of the bay is brightly lit, and you can see Lieutenant Trrelsh hunched over a computer terminal, her back to you."
+                           ]
+                        },
+                        "Of course, Trrelsh does not respond to the PCs if they call her name or approach. When they approach the body, read the following:",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "You circle around Lieutenant Trrelsh to find a grisly scene. One of the Xxcha's dataspike probes has been plunged through her auditory membrane and into her skull. You see her hands still resting on the savant display of her exocarapace and an expression of shock and horror on her face."
+                           ]
+                        },
+                        "If the PCs inspect the body by making an {@difficulty Average|Perception}, they notice several things if they succeed. First, Trrelsh's savant is still active. If the PCs look at the savant, they can see that some large encrypted files were downloaded from the probe and Trrelsh was analyzing them. Second, one of Trrelsh's other dataspike probes is plugged into the computer terminal's interface port.",
+                        "If the PCs generate {@symbols a} on the check, remind them that Trrelsh had planned on keeping the files isolated from Ccrysus's computer systems. If they generate {@symbols aaa or t}, they notice that the thin layers of lubricants on both dataspike appendages are completely undisturbed, devoid of any fingerprints or marks from gloves or hands. It's almost like the dataspikes moved on their own…",
+                        {
+                           "title": "Machines Attack (Combat Encounter)",
+                           "entries": [
+                              "At this point, the Nekro Virus attacks the PCs, using the various machines present in the maintenance bay. The PCs should use Vigilance to determine their initiative order, but they can add {@dice boost} to their check if they noticed that the dataspikes had not been manipulated by another person.",
+                              "There are {@b three heavy manipulator arms} and {@b one laser cutting arm} in the maintenance bay. Each is attached to a grid track on the ceiling, allowing them to move anywhere in the bay. However, they cannot leave the bay.",
+                              {
+                                 "title": "Possessed Manipulaor Arm (Rival)",
+                                 "forceTitleLevel": 5,
+                                 "entries": [
+                                    "This hulking piece of machinery is strong enough to lift several tons. It makes for a crude but effective bludgeoning weapon.",
+                                    "{@adversary Possessed Manipulator Arm}"
+                                 ]
+                              },
+                              {
+                                 "title": "Possessed Laser Cutting Arm (Rival)",
+                                 "forceTitleLevel": 5,
+                                 "entries": [
+                                    "This less bulky manipulator arm is tipped with a high energy laser. Used for everything from welding to cutting hull plate, it can prove to be a lethal weapon.",
+                                    "{@adversary Possessed Laser Cutting Arm}"
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "type": "sidebar",
+                           "title": "The Datafiles",
+                           "entries": [
+                              "If the PCs downloaded the datafile that Trrelsh found on the probe, they can stop to study it at any point during the rest of the adventure.",
+                              "Upon first review, the file is both quite large and heavily encrypted. Trrelsh was trying to decrypt it, but was unable to do so. None of the PCs can decrypt the file either. However, if they try and study the encrypted file to learn more, success on an {@difficulty Easy|Computers} reveals that the file had a \"trap\" built into it. When Trrelsh tried to crack its encryption the trap downloaded some sort of virus into her savant. ",
+                              "Any PC may make an {@difficulty Average|Knowledge (Lore) or (Science)} to analyze the virus. Success reveals it appears to be unlike any known computer language, and seems highly adaptable. {@symbols a} reveals that the virus is no longer present in the encrypted file, and {@symbols aaa or t} reveals that it shares similar digital patterns to one of the Great Threats; the infamous Nekro Virus. (Of course, the PCs may draw this conclusion on their own.)",
+                              "All of the PCs know that the Nekro Virus as a mysterious and terrifying threat; some sort of artificial intelligence that has been responsible for several horrible and bloody attacks on remote worlds in the galactic rim."
+                           ]
+                        },
+                        "One of the manipulator arms is engaged with Lieutenant Trrelsh's corpse (and thus, engaged with any PCs who were inspecting her body). The other two are in the center of the maintenance bay, at short range from the body. The laser cutting arm is at medium range from the body on the other side of the maintenance bay. ",
+                        "Each manipulator arm attempts to grab and bludgeon a different PC. The laser cutting arm, however, takes the last NPC initiative slot and attacks any PC who has been immobilized by one of the manipulator arms. The arms also try to keep the PCs from fleeing the maintenance bay.",
+                        "Although the easiest way to deal with the manipulator arms is to destroy them, the PCs may come up with other ways to eliminate the threat. Two options are trying to physically cut power to the maintenance bay (a {@b Hard [{@dice difficulty|3}] Mechanics check}) or override the computer systems controlling the arms (a {@b Hard [{@dice difficulty|3}{@dice setback|2}] Computers check} with the {@dice setback} added due to the Nekro virus presence). Success may shut down all of the systems, while failure with {@symbols a} may slow them and give the PCs time to escape.",
+                        "Any PC within short range of Trrelsh's body can spend {@symbols aa} from a check to quickly download the datafile onto their own savant (if they have one). Alternatively, they can spend a maneuver to download it deliberately if they want to. The encounter ends once all of the arms have been destroyed, or the PCs have escaped the maintenance bay."
+                     ]
+                  },
+                  {
+                     "title": "Taking Stock",
+                     "entries": [
+                        "After resolving the maintenance bay encounter, the PCs have a chance to pause and assess the situation. If the PCs try and use their comms to call Captain Ssoro, all they hear is hissing static. Johann MacGhille and Ggsellic Tol can both immediately recognize this as broad-spectrum jamming without making a check. Anyone else can make an {@difficulty Easy|Knowledge (Science)} to recognize what it is.",
+                        "After the PCs have had a minute or two to collect themselves, the lights in the hallway (and throughout the station) suddenly shut off. After a moment, the dim amber glow of emergency lighting kicks on. The lights cannot be turned back on.",
+                        {
+                           "type": "sidebar",
+                           "title": "What Sik'Til Knows",
+                           "entries": [
+                              "As an undercover Keleres agent, Sik'Til knows more about the datafile than the rest of the PCs. First, they just have to look at the encryption to realize that it is an advanced cypher used by the Galactic Council and the Keleres to transfer highly sensitive information. Sik'Til does not have the key to the cypher, but they can recognize that this is some sort of top secret file that has been stolen from the Galactic Council or Keleres. If the PCs realize that the virus is the Nekro Virus, Sik'Til remembers one other detail. They are aware that the Winnaran Custodians have a secret laboratory studying the Nekro Virus in the wastelands of Mecatol Rex. If someone stole this top secret datafile, they may have also stolen the Nekro Virus to use as a trap.",
+                              "A final note: Kelsa Iq Daraq ne Kelsa Kelsorin is not aware of this Custodian secret lab. Her ignorance may provide a clue to Sik'Til that she is not who she claims to be."
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Encounter 5: To the Bridge!",
+               "entries": [
+                  "The obvious next move for the PCs is to get back to the bridge and speak to Captain Ssoro. As they head down the halls, have the lead PC make an {@difficulty Average|Vigilance}. Success means they hear pounding from one of the hatchways leading to the living quarter sections of the station.",
+                  "If the PCs stop at the hatch, they hear muffled shouting. They can't make out any words through the thick hatch, but it sounds like someone is hitting the hatch with fists or a tool, trying to get in. The voice sounds like a Xxcha. ",
+                  "If the PCs try to open the hatch, they find it locked. Opening the lock requires a {@difficulty Daunting|Computers} or {@difficulty Hard|Skulduggery}. If they fail, the pounding suddenly stops and the PCs hear a blood curdling scream, then silence. If the PCs succeed, the hatch slides open and a terrified Xxcha crewmember stumbles into the hallway, screaming to seal the hatch behind him. He is covered in blood, and although he has a nasty gash on one arm, most is clearly not his own.",
+                  "Once the PCs seal the hatch, the crewmember (Able Spacer Krall) explains that one of the heavy lifter drones from the storage bay next to this section of living quarters barged in and started killing people. At least two of the crew are dead, maybe more.",
+                  "If the PCs want to attack the drone, they can enter the living quarters (although Krall emphatically begs them not to). They find a scene of utter devastation. Read aloud or paraphrase the following:",
+                  {
+                     "type": "read-aloud",
+                     "entries": [
+                        "Showers of sparks erupt from ruptured bulkheads, and fires flicker in smashed computer consoles. The comfortable furniture of the lounge space has been smashed and ripped to scraps",
+                        "The far wall is lined in sleeping pods; most of which have been pried open, and a few of which have been crushed like an used beverage container. Blood leaks out of one of the crushed pods, and you see two mangled Xxcha bodies lying on the floor. There is no sign of their assailant anywhere."
+                     ]
+                  },
+                  "The heavy lifter drone has vanished deeper into the station.",
+                  {
+                     "title": "The Bridge",
+                     "entries": [
+                        "Once the PCs reach the bridge, read aloud or paraphrase the following:",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "The hatchway slides open, and the bright beams of several light beacons blind you. After a moment the beams dip, and Captain Ssoro snaps, \"Get in here.\"",
+                              "You enter the darkened bridge and find the captain standing with Kkarogh and four other crewmembers who you remember being on duty when you left. Ssoro and Kkarogh have drawn sidearms, but none of the other crew are armed.",
+                              "\"What in Tau's blessed memory is going on?\" Ssoro growls. \"The internal comms and lights both went down, and half the internal hatches have sealed. Are we under attack?\""
+                           ]
+                        },
+                        "The PCs can explain what seems to be going on (to the best of their knowledge, at least). If they haven't already, this is also a chance to analyze the datafile they may have taken from Trrelsh's savant (see {@genesysref /adventure/inspection%20tour_into?chapter=4#the-datafiles|The Datafiles} sidebar). ",
+                        "For his part, Ssoro explains that they were just powering up the superluminal communications system when the system suddenly seemed to scramble and shut down. They thought it was a glitch, but a few minutes later, the lights and comms went out. Kkarogh had been in the data archives next to the bridge and came there after trying to access the engineering bay without success. They were trying to open the hatches to the deep space sensor monitoring bay to free the crewmember trapped in there when the PCs arrived.",
+                        {
+                           "title": "Next Moves",
+                           "entries": [
+                              "While Ssoro and the PCs talk, Kkarogh returns to trying to open the hatches to the monitoring bay. He finally succeeds, and the trapped Xxcha technician stumbles out, looking very relieved.",
+                              "With access to the monitoring bay restored, the PCs and Ssoro can check on the status of the deep space sensors. Amazingly, the sensors are all still functioning. A cursory inspection reveals that there are no other ships within 50 light years of the station. Ssoro is adamant that Ccrysus Station's sensors could even defeat most infiltration technology at close range, so this is not an attack from outside (assuming the PCs felt that was still a possibility).",
+                              "The sensors also reveal another disturbing detail. When the lights and comms went out on the station, so did the gravitic mooring tether keeping the probe in place. The probe immediately powered up its drive and accelerated away. At this point, it is already well clear of the station and about to reach superluminal velocity. Unsurprisingly, it seems to be headed straight for 29Bexer.",
+                              "At this point, the PCs need to decide what they want to do next. The following are the most actions the PCs are most likely to pursue, and Captain Ssoro's opinions on them.",
+                              {
+                                 "title": "Pursue the Probe",
+                                 "forceTitleLevel": 5,
+                                 "entries": [
+                                    "This is only an option if the PCs' ship wasn't damaged previously, as neither of the station's shuttles are fast enough to catch the probe and Kkarogh hasn't had time to repair their ship. Ssoro is skeptical that the {@i Kesalli Mokor} is fast enough, but he acknowledges that they should try and intercept the probe. However, he feels warning Mecatol Rex about the situation is more important, so he insists that if the PCs can't catch the probe quickly, they break off pursuit and head for Mecatol Rex instead."
+                                 ]
+                              },
+                              {
+                                 "title": "Return to Mecatol Rex with the Information",
+                                 "forceTitleLevel": 5,
+                                 "entries": [
+                                    "Again, this is only an option if the {@i Kesalli Mokor} didn't get damaged earlier. Captain Ssoro thinks this is the wisest option. If the PCs pursue this, he says that he and his crew will try and get Ccrysus Station under control. If they can't, they'll use the shuttles to evacuate to the nearby rogue planetoid and wait for the PCs to come back with help (the {@i Kesalli Mokor} is not nearly big enough for everyone on Ccrysus Station)."
+                                 ]
+                              },
+                              {
+                                 "title": "Get the Superluminal Comms System Working",
+                                 "forceTitleLevel": 5,
+                                 "entries": [
+                                    "Ssoro is also for this plan, although Kkarogh is skeptical that it can be done. The entire system has been shut down, so if anyone attempting to repair it is going to need to get spacesuits, make their way to the nearest emergency access airlock, then walk over the outer hull to the actual comms array and gain access to the system."
+                                 ]
+                              },
+                              {
+                                 "title": "Get to Security and Retake Ccrysus Station",
+                                 "forceTitleLevel": 5,
+                                 "entries": [
+                                    "Most of the crew on Ccrysus are unarmed. However, Kkarogh has a stock of small arms in the security station next to the secondary airlock. He is in favor of retrieving the weapons, gathering the remaining crew, and retaking Ccrysus Station by force (while also purging Nekro Virus out of the computer systems)",
+                                    "Ssoro doesn't think this is a smart move, as Kkarogh is basically suggesting they fight the station. However, if the PCs like the idea, he agrees. After all, assembling the crew means they won't get picked off one by one, and Ssoro cares about his crew's safety."
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "title": "The Next Course of Action",
+                           "entries": [
+                              "At this point, the adventure expands into several potential courses of action. The PCs will not be able to pursue all of them, so the remainder of the adventure discusses each in turn. Many of these actions will fail (as happens in any good horror scenario), and the PCs may try other options in turn. It is up to you as to which options remain reasonable as the adventure plays out, and which ones are no longer possible.",
+                              "After these actions are discussed, there are several possible \"endgame\" encounters that the PCs may pursue as they realize how serious their situation is. Any one of these encounters can wrap up the adventure, and are detailed in {@genesysref /adventure/inspection%20tour_into?chapter=9|Encounter 7}."
+                           ]
+                        },
+                        {
+                           "title": "PC Death",
+                           "entries": [
+                              "At this point, the encounters also become much more lethal. Many can have one or more PCs die, and some may prove to be the end of the entire party. The endgame encounters specifically kill off most or all of the PCs. ",
+                              "Remember, this adventure is written assuming the PCs die. The main goal of the adventure is for the PCs to get the warning about the probe and the massing Mahact to Mecatol Rex. If they die in the process, then they have still succeeded in helping save the galaxy from Mahact domination. (There are also ways to use this adventure as the prologue for the upcoming {@title War for the Throne} adventure.)",
+                              "All of the PCs also have agendas they want to accomplish, and not all of these require the PC to survive. So the PCs can still \"successfully\" complete the adventure if they accomplish their agenda. ",
+                              "One final note; since this is a single adventure, having the PCs die off can be expected (especially when using the pregenerated PCs). However, it may not be as fun if a PC dies off with an hour or two left in the session. ",
+                              "If possible, you should escalate the lethality of encounters during the last hour of the game session. However, if a PC dies early, you have another option. If the player wants to keep playing, you can give them control of some of the adversaries in the next encounter, and let them fight their former comrades!"
+                           ]
+                        },
+                        {
+                           "title": "Player Versus Player",
+                           "entries": [
+                              "This adventure also assumes the various PCs may turn against each other during the final act of the adventure. This is especially true when using the premade characters, as some of their agendas are designed to put the PCs at odds.",
+                              "One of your jobs as GM is to make sure any PvP situations remain fully the realm of player characters, and don't end up creating hard feelings for the players themselves. If the group seems fine with some PC conflict, that's all well and good. However, if players seem uncomfortable or frustrated, you should pause the action and ask if everyone's enjoying themselves. Conflicts between PCs can be resolved by you narratively if need be, or you can adjust the final encounters so that certain agendas can no longer be accomplished. For example, Sraghra may realize that trying to escape with blueprints of Ccrysus Station's sensors is impossible and decide to help her colleagues. Or Kelsa Iq Daraq may decide that Ccrysus Station is clearly doomed, meaning her duty is already complete. ",
+                              "In short, as GM you should work to make sure that there's only as much infighting amongst the PCs as everyone in the group is comfortable with. "
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Encounter 6A: Get to Our Ship!",
+               "entries": [
+                  "Whether the PCs want to pursue the probe or bring news back to Mecatol Rex, their first step is to reach the {@i Kesalli Mokor}. As they make their way through the corridors, they hear shouts and screams echoing through the ducts and passageways. They may also stumble across bloodstains or deep gouges in the walls. The fighting between the Nekro Virus and the crew is still ongoing. However, they reach the ship without being ambushed.",
+                  "If you want (and you have time in your session), the PCs can encounter a couple crewmembers as they head for the secondary airlock. This is especially true if they proceed through the living quarters next to the bridge. The PCs can have these crewmembers (Able Spacer Grallor Tor and Ensign Zzori) come with them, or head back to the bridge to join Captain Ssoro.",
+                  "Once the PCs reach the secondary airlock, they find their ship still docked. The airlock doors respond to their commands and open, and they can board the Kesalli Mokor without difficulty. At this point, read aloud or paraphrase the following:",
+                  {
+                     "type": "read-aloud",
+                     "entries": [
+                        "The last of you boards the Kesalli Mokor and slaps the docking release. With a muffled boom, the ship detaches from the airlock and begins to drift away. Some of you head into the main crew area next to the airlock, while the rest of you move to the short passageway that leads to the ship's bridge.",
+                        "You hit the hatch release to enter the bridge. Then, moments too late, you remember that you didn't leave the bridge hatch closed.",
+                        "A massive metal fist slams through the opening hatch and knocks you off your feet. You see the hulking bipedal form of a heavy labor drone staring at you with glowing red photoreceptors and catch a glimpse of the sparking and burning control panels behind it before it charges you."
+                     ]
+                  },
+                  "The {@b heavy lifter drone} snuck aboard the {@i Kesalli Mokor} before the PCs arrived, and was hard at work destroying the ship's controls when they boarded. Now, it is going to do its best to kill them. ",
+                  {
+                     "title": "Boarding Action (Combat Encounter)",
+                     "forceTitleLevel": 2,
+                     "entries": [
+                        "The encounter takes place mainly in the passageway from the crew area leading to the bridge, and in the crew area. The crew area is at short range from the hatch leading to the bridge, and the passageway is only wide enough for two PCs.",
+                        "The crew area is larger, one end is medium range from the other, and it is laid out in a roughly oval shape. The main part of the crew area has several chairs, a table, and counters that can be used for cover, along with a small food preparation station. In the rear of the crew area is a hatch leading to a storage locker, another hatch leading to bathroom facilities, and a third hatch leading to the berths behind the main crew area. ",
+                        "Any PCs who were in the passageway when the encounter began start prone.",
+                        "If the labor drone suffers an {@difficulty Average} {@b Critical Injury} or suffers wounds equal to more than half of its wound threshold, it changes tactics. It charges the airlock door in the crew area and attempts to break through it with a {@difficulty Hard|Athletics}. If it succeeds, it rips open the inner airlock door, then punches a hole in the outer airlock door as part of the same action. ",
+                        "If this occurs, air empties out of the main crew area over the remainder of the current round. Emergency locks engage on the hatch leading to the crew berths; the hatch cannot be opened without destroying it (or until atmosphere has been restored in the main crew area). ",
+                        "The PCs have the remainder of the current round to protect themselves from vacuum. If a PC is wearing a spacesuit, they are fine. If they have a suit available, they can spend a maneuver pulling out the suit from where it's stowed and make an {@difficulty Average|Coordination} as an action to don it. If they fail, they can try during subsequent rounds, success with {@symbols hhh} means they finish putting it on at the start of their next turn (after they've suffered the effects of vacuum).",
+                        "Finally, the hatches to the storage room or bathroom are both airtight. However, there is only room for one PC in each space.",
+                        {
+                           "title": "Heavy Lifter Drone (Rival)",
+                           "forceTitleLevel": 5,
+                           "entries": [
+                              "This hulking bipedal drone is designed to carry tons of cargo from one location to another. Unfortunately, its bulk and significant strength can be lethal if something were to override its safety protocols",
+                              "{@adversary Heavy Lifter Drone}"
+                           ]
+                        },
+                        {
+                           "title": "Vacuum's Effects",
+                           "forceTitleLevel": 5,
+                           "entries": [
+                              "Any PC who is exposed to vacuum without protective gear can hold their breath for a number of rounds equal to their Brawn. Once this number has been reached, they begin to suffocate: they suffer 3 strain at the start of their turn. If they exceed their strain threshold, they are incapacitated, and in subsequent turns, if they are still suffocating, they suffer one Critical Injury. ",
+                              "Additionally, while exposed to vacuum without protective gear, a PC suffers 3 wounds at the start of their turn. When they exceed their wound threshold, they are incapacitated and suffer a Critical Injury as normal. During subsequent rounds if they are still exposed to vacuum, they suffer an additional Critical Injury at the start of each of their turns.",
+                              "Note that the wounds from vacuum begin immediately, even while a character is holding their breath. Also note the Critical Injuries are cumulative. However, if you want to speed up the process for any character who has exceeded their wound and strain thresholds, you can just roll one Critical Injury at the start of their turn, adding +10 to the result instead of rolling the second Critical Injury. In either case, the character is likely to die quickly."
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "title": "Returning to the Station",
+                     "entries": [
+                        "Even if the PCs defeat the heavy lifter drone, they still need to get back to the station. The hole in the outer airlock door can be patched with emergency hull patches found in the main crew area plus an {@difficulty Easy|Mechanics}. However, the actual airlock is useless with the inner door ripped off. Additionally, the {@i Kesalli Mokor} is dead in space with all of its controls destroyed.",
+                        "The most reasonable solution is re-pressurize the main crew area, get everyone into space suits, then blow the outer airlock door and use the suit maneuvering jets to travel the short range gap to the station airlock. Anyone without a spacesuit will have to hold their breath and be dragged along, but they are only exposed to vacuum for one round."
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Encounter 6B: Grab Some Guns!",
+               "entries": [
+                  "If the PCs want to get to the security station and obtain more weapons to arm the crew, Kkarogh leads them to the security station. As noted in Encounter 6A, if you want (and you have time in your session), the PCs can encounter a couple crewmembers as they head for the secondary airlock. This is especially true if they proceed through the living quarters next to the bridge. The PCs can have these crewmembers (Able Spacer Grallor Tor and Ensign Zzori) come with them, or head back to the bridge to join Captain Ssoro.",
+                  "Once the PCs reach the security station, Kkarogh suggests some of them stay outside the station to provide cover while others come in with him to grab weapons. For any of the PCs who come into the security station, read aloud or paraphrase the following:",
+                  {
+                     "type": "read-aloud",
+                     "entries": [
+                        "You duck into the security station, a bare room with a single desk and chair, a bank of monitors and observation cameras, and a closet-sized cell in the far corner. Opposite the cell (which is currently being used to store data-crystal boxes) is a floor-to-ceiling arms locker. ",
+                        "Kkarogh throws open the locker to reveal a rack of 15 {@gear blazer rifle|blazer|eoti} and {@gear beam rifle|beam rifles|eoti} secured in charging ports. For a moment you hear the angry whine of overloading systems and see red warning lights blinking across the charging ports and the weapons' power cells. Then the entire locker explodes in a brilliant white flash."
+                     ]
+                  },
+                  "The Nekro Virus overloaded the power cells of the weapons through their charging ports, then pushed them to explode just before Kkarogh opened the locker. The blast kills Kkarogh instantly.",
+                  "Any PC in the security station with Kkarogh must make a {@difficulty Hard|Vigilance or Coordination|1}. If they fail, they suffer a hit dealing 14 damage. Any {@symbols h} from the check should be spent to inflict 2 strain per {@symbols h}. A {@symbols d} should be spent to have the PC suffer a Critical Injury.",
+                  {
+                     "type": "sidebar",
+                     "title": "Why Not Both?",
+                     "entries": [
+                        "Given that the security station is next to the secondary airlock where their ship is docked, the PCs may decide to go for their ship while helping Kkarogh get weapons for the crew. In this case, once they reach the airlock Kkarogh tells them to get to their ship while he goes for the weapons. In this case, play through the events of Encounter 6A. If the PCs make it back to the station, they find the aftermath of the explosion and Kkarogh (and anyone he brought with him to help carry the weapons) dead."
+                     ]
+                  },
+                  "Most of the weapons are destroyed in the blast. However, if any of the PCs search the remains of the station before leaving, they may make an {@difficulty Average|Perception}. Success means they find two scorched but usable {@gear collapsible blade|collapsible blades|eoti}. ",
+                  "If they get at least {@symbols sss} they also find a box of five {@gear infantry grenade|infantry grenades|eoti} stored in the cell. Miraculously, they didn't explode. {@symbols aa or t} can be spent to find a {@gear medicum||eoti} (use the {@skill Medicine||crb} skill to treat injuries without penalty) or a couple of {@gear dermal sealer|dermal sealers|eoti} (painkillers)."
+               ]
+            },
+            {
+               "title": "Encounter 6C: Call for Help",
+               "entries": [
+                  "If the PCs decide to repair the superluminal comms array, they need to access the outside of the station. The easiest way to reach the comms array is through an emergency airlock installed in the engineering bay",
+                  "The hatch to the engineering bay is locked, but Captain Ssoro or Kkarogh can provide the access code. If they are unavailable, the only way to open the hatch is with a {@difficulty Hard|Computers} or {@difficulty Daunting|Skulduggery}.",
+                  "The engineering bay is a vast circular space. A catwalk runs around the sides of the chamber, and in the center the reactor sits above a deep pit of glowing green energy capacitor banks. The emergency airlock is accessed through a tubular hatch in a recessed bay to the right of the main entrance.",
+                  "There are two spacesuits in a locker next to the airlock hatch. The airlock is only large enough for one person to fit in at a time. Once a person steps in, the airlock depressurizes and the artificial gravitics shut off, then the ceiling hatch opens and a person can climb out weightless. (Remember, zero-gee environments are {@rule Difficult and Impassable Terrain|difficult terrain|crb}.)",
+                  "The PCs who leave the station find themselves on the smooth expanse of the outer hull. The superluminal comms array is just within medium range of the airlock, a jutting shard of silvery metal reflecting the muted glow of starlight.",
+                  {
+                     "title": "Repairing the Comms Array",
+                     "entries": [
+                        "The comms array isn't exactly broken. The Nekro Virus simply cut access to the array from within Ccrysus Station. However, it did not have the ability to destroy the array outright. What the PCs must do is pry open the exterior paneling, physically cut the array's connections to the rest of the station, and then connect it to a savant and trigger it to send the distress signal. The relay buoy is too far away for the signal to be anything but a simple \"alert,\" but that should summon agents from the Council (or even the Keleres) to check it out.",
+                        {
+                           "title": "Opening the Exterior",
+                           "entries": [
+                              "Prying open the exterior panels requires an {@difficulty Easy|Mechanics} if the PCs have a tool kit, or an {@difficulty Average|Athletics} if they do not. The PCs can try again if they fail, but too many failed attempts may bring further trouble (see {@b Optional Endgame Scenario}).",
+                              "{@symbols hhh} from the check should be spent to increase the difficulty of subsequent checks once, as damage done to the panels makes accessing the interior more difficult."
+                           ]
+                        },
+                        {
+                           "title": "Cut the Array's Connection",
+                           "entries": [
+                              "Once the panels are removed, the PCs can see the main cable trunk connecting the array to the rest of the station. Unfortunately, the data cables are wound tightly around the power cable. Cutting the data cables without nicking the power cable could be tricky.",
+                              "Cutting the cables requires an {@difficulty Average|Mechanics|1}. {@symbols d} on the check means the PC performing the check nicks the power cable and gets a nasty shock dealing 5 strain and a Critical Injury. However, a failed check can be reattempted."
+                           ]
+                        },
+                        {
+                           "title": "Jury Rig the Array",
+                           "entries": [
+                              "Once the PCs have physically cut the data connection, they can plug their savant into the array and jury-rig it to send the alert signal. This requires an {@difficulty Easy|Computers}. As before, failed attempts can be reattempted, but the PCs may be working with limited time. "
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "title": "Optional Endgame Scenario",
+                     "entries": [
+                        "If the session is running out of time, Encounter 6C can be a great place to end the adventure. As the PCs attempt to send the signal, the Nekro Virus attacks them by sabotaging the station's reactor and sending waves of repurposed drones to slay them. The PCs must finish sending the message before being buried under a swarm of robotic foes. ",
+                        "If you want to choose this option, as soon as the PCs all enter the engineering bay, the hatch slides shut behind them and locks. Read aloud or paraphrase the following:",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "As the last of you step into the glowing green cavernous expanse of the engineering bay, you hear the hatchway slam shut behind you. Dull thuds echo in your surroundings as massive bolts lock into place. ",
+                              "For a moment, all is quiet. Then you hear an insistent beeping coming from a panel next to the door. The panel has a small screen, on which you see three red words flashing over and over. \"Reactor leak detected.\""
+                           ]
+                        },
+                        "The Nekro Virus has triggered a leak in the station's reactor. This isn't enough to cause the reactor to go critical, but it's certainly enough to cause the engineering bay to flood with lethal radiation.",
+                        "Any PC can make an {@difficulty Easy|Knowledge (Science)} or {@difficulty Average|Mechanics} to know that the leak could be anywhere in the reactor and none of the PCs are equipped to seal it. Once they realize this, you can shift the encounter into a structured encounter."
+                     ]
+                  },
+                  {
+                     "title": "Can't Stop the Signal (Combat Encounter)",
+                     "entries": [
+                        "While a PC is in the engineering bay, at the start of their turn they suffer 1 wound. Opening the hatches into the station while there is a reactor leak is extremely difficult. The hatches are too tough to cut through and the bolts make the hatches impossible to \"pick\" through mechanical means. Only a successful {@difficulty Formidable|Computers} will open the hatches.",
+                        "The airlock, however, remains unlocked (there's no danger to the rest of the station if people enter or exit into space). The guidelines for putting on one of the two spacesuits next to the airlock are covered in Encounter 6A. Entering the airlock requires a maneuver, it takes an action to cycle it, and a third maneuver to exit the airlock. ",
+                        "Once the PCs have exited the airlock, they can proceed to activating repairing the comms relay as described previously. However, as soon as the last PC exits the airlock, the Nekro Virus realizes that its trap has failed. It decides to finish off the PCs. Read aloud or paraphrase the following:",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "As you approach the comms array, you see movement from the corner of your helmet. You turn and pause. It appears as if the hull near the shuttle bay is somehow…rippling. Then you realize what you're seeing.",
+                              "Boiling from the bay entrance like a tide of angry insects come what has to be every familiar, probe, and drone in the station. You make out multi-limbed robotic assistants, beetle-shaped reactor drones, and even flying hull repair probes. Many seem to have been crudely modified with sharp shards of metal or needle pincers. All of their optical receptors glow a deep and ominous red. And all are headed towards you."
+                           ]
+                        },
+                        "{@b Two smaller familiar swarms} and {@b a minion group of three hull repair probes} enter the encounter at long range from the PCs. At this point, their primary goal is to kill the PCs, starting with the closest. The swarms charge straight at the nearest PC, moving as quickly as possible. The hull repair probes hang back, using their electromagnetic tether launchers as ranged weapons. If a PC gets attacked by a swarm, one of the repair probes may swoop in to stab them with its laser cutter",
+                        "At the beginning of each subsequent round, a {@b single smaller familiar swarm} or {@b another minion group of three hull repair probes} (your choice) exit the shuttle bay and join the assault. The waves continue to arrive until all of the PCs are dead or they successfully repair the beacon. At that point, unless the PCs have some brilliant plan to escape, you can narrate their heroic demise at the hands of the Nekro drones.",
+                        {
+                           "title": "Smaller Familiar Swarm (Rival)",
+                           "forceTitleLevel": 5,
+                           "entries": [
+                              "This mass of small and normally helpful robots now moves with a single-minded purpose, and the machines' useful tools and diagnostic probes now appear positively sinister.",
+                              "{@adversary Smaller Familiar Swarm}"
+                           ]
+                        },
+                        {
+                           "title": "Hull Repair Probe (Minion)",
+                           "forceTitleLevel": 5,
+                           "entries": [
+                              "These small drones are equipped with welding plasma torches to weld or open damaged hull plates and electromagnetic tethers for retrieving drifting debris and tools. Both make for dangerous weapons if the probes' safety programming is overridden.",
+                              "{@adversary Hull Repair Probe}"
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Encounter 7: Endgame",
+               "entries": [
+                  "If the PCs attempt (successfully or not) to get the word of the probe and massing Mahact fleet out, and then manage to return to Ccrysus Station's bridge, they find that the situation has grown much worse since they first left. Read aloud or paraphrase the following:",
+                  {
+                     "type": "read-aloud",
+                     "entries": [
+                        "The open hatch to the bridge bears several massive gouges and scrapes, and inside looks even worse. Two crewmembers lie bleeding on the deck, and you can see three other bodies hurriedly stacked in a corner. Ssoro lowers his pistol as he recognizes you, and a couple other uninjured crewmembers relax their grip on Sarween gamma presses and universal pry-bars",
+                        "\"I didn't expect to see you back,\" Ssoro growls. \"We've been under attack off and on for the past 15 minutes; swarms of drones and familiars have been rushing us. Were you successful?\""
+                     ]
+                  },
+                  "Once the PCs have explained the results of their prior activities, Ssoro goes over their current situation. Unfortunately, most of the crew are either dead or missing. There are ten crewmembers with him on the bridge, two of them badly injured, and he has the only gun. Retaking the station is clearly out of the question. ",
+                  "Ssoro also wants to ensure the data taken from the probe is preserved. There is a copy in the station's computers, but he doesn't trust it to be preserved on a computer system infected with the Nekro Virus. This leaves three options for preserving the data:",
+                  {
+                     "type": "list",
+                     "items": [
+                        "{@b Self-Destruct Bay:} Beneath the bridge is a small, heavily sealed compartment. It does not exist on any schematics and has no link to the rest of the station's computers. What it does have is a direct link to a set of scuttling charges placed around the station's reactor. To keep the station's valuable tech from falling into enemy hands, the self-destruct sequence can be triggered. However, the bay is also heavily armored. The data could be stored on the small computer in the bay, or simply saved in a data crystal or savant and physically stored there",
+                        "{@b Shuttle:} If someone could reach the shuttles, they could take the shuttle and data to the nearby rogue planetoid and wait there for rescue to arrive.",
+                        "{@b Escape Pods:} As a last resort, a data crystal or savant could be placed in one of the single-occupant escape pods and jettisoned, in hope that the rescue may spot the escape pod, retrieve it, and find the data. (Someone could also get in the escape pod with the data, although there is no guarantee rescue will arrive before the pod's limited life support runs out.)"
+                     ]
+                  },
+                  {
+                     "title": "Self-Destruct",
+                     "forceTitleLevel": 2,
+                     "entries": [
+                        "Needless to say, the PCs may also suggest blowing up the station to destroy the Nekro Virus, using the station's self-de-struct system. Captain Ssoro was already considering the same plan.",
+                        "If the PCs decide to evacuate, Captain Ssoro and Ensign Zzori announce they will stay behind and activate the self-destruct (which can be set on a timer). Ssoro says he'll give the PCs and remaining crew as much time as possible. Then when the bridge is in danger of being overrun, he'll set the timer for 10 minutes and the two of them will flee to the nearest escape pods and evacuate.",
+                        "Unfortunately, Ssoro and Zzori fail. Thirty minutes after the PCs leave the bridge, the two of them are preparing to activate the self-destruct when a swarm of familiars sneak through the ventilation ducts. They ambush both Xxcha and kill them before they can activate the self-destruct. This leaves Ccrysus Station derelict but intact for upcoming adventures (see {@genesysref /adventure/inspection%20tour_into?chapter=10|Denouement}).",
+                        {
+                           "title": "Final Sacrifice",
+                           "entries": [
+                              "Alternatively, some or all of the PCs may decide that the only way to defeat the Nekro Virus is to destroy the station themselves. This may mean that they have to give up trying to get the information to potential rescuers, but that is the PCs' choice to make.",
+                              "Ssoro is willing to go along with this if suggested. He and the PCs open the hatch (hidden in the deck plating in the floor) and he and one PC descend into a cramped compartment. There he inputs a complex code into the compartment's sole computer terminal, then flips up the protective covering on two actual physical switches on either end of the compartment. At his signal, he and the PC both flip the switches at once. This activates the instantaneous self-destruct. It's the only way the station can be destroyed in the adventure, and more information on that resolution can be found in the {@genesysref /adventure/inspection%20tour_into?chapter=10|Denouement} section"
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "title": "Evacuation Attempt",
+                     "entries": [
+                        "The PCs' only option for evacuation are the two shuttles in the hanger bay, or the escape pod launchers positioned around the edge of the station. Each shuttle can hold 12 passengers and 1 pilot, while each pod launcher has four single-occupant escape pods.",
+                        {
+                           "type": "sidebar",
+                           "title": "Quick Resolution",
+                           "entries": [
+                              "If you are reaching the end of your allotted time for this adventure, the remainder can be handled narratively (especially if the PCs decide to split up). Ssoro and most of the remaining crew can either choose a different option than the PCs (either a different means of escape, or going down with the station), or they can flee with the PCs. In either case, you can have most or all of them killed by the Nekro Virus to help emphasize the lethality of the situation. ",
+                              "As for the fates of the PCs, that should be left up to the players based on how antagonistic their characters have been to one another or how much one or another is trying to resolve a secret agenda. Both of the escape options are designed to encourage tough choices (basically, there isn't room for everyone to escape). This can turn into one or more PCs making a heroic sacrifice so their fellows can flee, or one or more PCs betraying their comrades at the last second to escape. If the latter, you can resolve the success of the betrayal with a single opposed skill check, with the skills depending on the circumstances. Some examples include",
+                              {
+                                 "type": "list",
+                                 "items": [
+                                    "{@b Opposed Coordination versus Vigilance check} if one PC tries to dive into an escape pod and launch before another notices what they are doing.",
+                                    "{@b Opposed Athletics versus Resilience check} if one PC tries to throw another into a swarm of murderous robots to buy time to flee.",
+                                    "{@b Opposed combat check versus combat check} if two PCs are in a standoff before each goes for their weapon to kill the other."
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "title": "Shuttle Bay",
+                           "entries": [
+                              "If some or all of the PCs try to escape via the shuttles, when they reach the shuttle bay, they find that one of the shuttles has been heavily damaged. The paneling to its engines is exposed and sparks are erupting from a mangled interior. The other shuttle appears untouched.",
+                              "Unfortunately, that only leaves a single shuttle to evacuate in. If the PCs brought the surviving crew with them (and assuming Ssoro and Zzori stayed behind), that means there are 9 crew plus the PCs who need to fit into the shuttle. It is very likely that there isn't enough room for everyone. Even worse, the two badly wounded Xxcha crew can't be strapped into the shuttle's seats but have to be laid on the floor. They will take up three spaces between the two of them.",
+                              "One round after entering the bay, {@b one smaller familiar swarm} erupts from the damaged shuttle at short range from any characters at the second shuttle. They attack the closest target.",
+                              "At the top of the second round of combat, {@b one modified heavy lifter drone} emerges from whatever passageway to the shuttle bay the PCs did not take. The PCs can quickly see that this drone has been crudely but efficiently enhanced to be a more lethal killer. It seems to move more agilely, it has extra armor plates welded to its torso, and one of its fists has been replaced with a spinning vortex of blades. An industrial laser on a pintle mount has been attached to one shoulder. Behind the drone is a {@b second smaller familiar swarm}, and all PCs can clearly here the movement of additional drones in the passageways.",
+                              "In every subsequent round, either {@b one smaller familiar swarm} or {@b one minion group of four hull repair drones} enters the bay from a location of your choosing and attacks. The players should be able to tell that this is an impossible fight. If the shuttle is able to take off and escape, any remaining characters in the bay are narratively killed by the drones in a suitably heroic fashion.",
+                              {
+                                 "title": "Modified Heavy Lifter Drone (Nemesis)",
+                                 "forceTitleLevel": 5,
+                                 "entries": [
+                                    "The heavy lifter has been modified by the Nekro Virus using the maintenance bay. The modifications are crude but effective, turning the brute machine into a lethal killer.",
+                                    "{@adversary Modified Heavy Lifter Drone}"
+                                 ]
+                              },
+                              {
+                                 "title": "Smaller Familiar Swarm (Rival)",
+                                 "forceTitleLevel": 5,
+                                 "entries": [
+                                    "This mass of small and normally helpful robots now moves with a single-minded purpose, and the machines' useful tools and diagnostic probes now appear positively sinister.",
+                                    "{@adversary Smaller Familiar Swarm}"
+                                 ]
+                              },
+                              {
+                                 "title": "Hull Repair Probe (Minion)",
+                                 "forceTitleLevel": 5,
+                                 "entries": [
+                                    "These small drones are equipped with welding plasma torches to weld or open damaged hull plates and electromagnetic tethers for retrieving drifting debris and tools. Both make for dangerous weapons if the probes' safety programming is overridden.",
+                                    "{@adversary Hull Repair Probe}"
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "title": "Escape Pods",
+                           "entries": [
+                              "The escape pods are the other option for leaving the station. On the plus side, they're easy to access and scattered around the station in groups of four. However, they have limited life support compared to the shuttles. A person can survive in their cramped confines for two days. That can be extended to a week, but the passenger would have to take the emergency somna pills in each pod's tiny supply locker. These pills are designed to introduce a deep hibernation state in a wide range of species. However, because they're so universal they have a chance of causing very unpleasant side effects, including death. Nobody takes them unless there's no other chance of rescue",
+                              "Each bay of escape pods is arrayed equal-distant around the edge of the station, accessed by cramped passageways from the station's main passageways. If there are more than four PCs, they will have to split up to reach enough escape pods. ",
+                              "The bays are likewise cramped spaces with the pods at short range from each other and the entry passageway. When the PCs reach the bay (or bays) select one of the bays. In this bay, the second pod they open has {@b a smaller familiar swarm} inside, where it has been busy wrecking the pod. If the PCs act quickly and reseal the pod, they can avoid being attacked. Otherwise, they have to fight or flee the swarm in very close quarters.",
+                              "Once the PCs reach the escape pod bays, the {@b modified heavy lifter drone} from the {@b Shuttle Bay} encounter arrives in the passageways outside. It cannot fit through the narrow access-way that leads to the pods, but it starts pacing around outside, trying to tear away enough of the bulkheads to force its way in. The goal is to create a situation where the PCs may have to choose who escapes and who does not.",
+                              "(Note, if your group isn't interested in sacrifices and tough choices you can have all of the escape pods be intact when they arrive.)",
+                              "As with the previous option for escape, once all of the available escape pods have been launched, you or your players can narrate an appropriately heroic end for any remaining characters."
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Denouement",
+               "entries": [
+                  "The end of the adventure changes depending on the choices the PCs took. However, there are several broad endings that can be covered here. Each has a section of read-aloud text for you to use or adapt as needed. ",
+                  "If the PCs all died:",
+                  {
+                     "type": "read-aloud",
+                     "entries": [
+                        "The last shots and screams die away, leaving Ccrysus Station dark, damaged, and seemingly deserted. Over the next week, the space station continues to deteriorate. Atmosphere vents seemingly at random, parts drift away, and more systems go off-line as the Nekro Virus continues its mysterious work. ",
+                        "Eventually, a small sleek vessel decelerates from superluminal speeds close to the station. In the twinkling starlight, one can just make out the sword and galaxy insignia on its hull. ",
+                        "The comms crackle in the deserted station. \"Ccrysus Station, Ccrysus Station. This is Keleres starship {@i Amberlight}. Please respond, over.\" The message repeats twice more, but nothing responds. Then, as the {@i Amberlight} begins to approach the docking hatch, something long, black, and metallic stirs in the shadowy corners of the bridge. "
+                     ]
+                  },
+                  "If at least some of the PCs escaped via shuttle:",
+                  {
+                     "type": "read-aloud",
+                     "entries": [
+                        "The shuttle just manages to reach the rogue planetoid before the engines run out of fuel. Using the attitude thrusters, you manage to \"land.\" However, the shuttles are too small even for airlocks, so you find yourselves trapped in a rapidly chilling metal box on a dark and icy rock. The dwindling power from the storage cells means the atmospherics process less and less air, and soon ice has crawled up every surface. The only benefit of the cold is that it numbs the smell of so many people.",
+                        "Then, a week later, you're handing around the last pouch of water when the comms crackle. \"Ccrysus Station, Ccrysus Station. This is the Keleres starship Amberlight. Is anyone receiving? Please respond, over.\""
+                     ]
+                  },
+                  "Finally, if at least some of the PCs escaped via escape pod:",
+                  {
+                     "type": "read-aloud",
+                     "entries": [
+                        "You spent a full 24 hours in the coffin-sized escape pod, unable to move by more than inches, hoping against hope that someone would arrive and rescue you. On the second day, you had to make the bitter choice to risk taking the somna pills. Better to drift off into a deep sleep and never wake up (or be poisoned by the meds) than spend your last hours going insane in a metal can, you figure as you swallow the pills. Then, a few minutes later…blackness.",
+                        "The next thing you know, someone is prying your eyes open. A light stabs daggers into your skull. \"Got a live one here!\" someone shouts. \"Get the automedicum and two doses of remedia, right now! Their vitals are dropping fast!\"",
+                        "Then, the voice speaks in your ear. \"Don't worry,\" they say. \"You're all right. We've got you.\""
+                     ]
+                  },
+                  {
+                     "title": "Linking to War for the Throne",
+                     "entries": [
+                        "As stated previously, this adventure is intented to serve as a prologue for the campaign in {@title War for the Throne}. Of course, since the PCs have agency in the adventure, what they do may affect how the first act of {@title War for the Throne} plays out.",
+                        "Any results from this adventure can be accommodated when running {@title War for the Throne}, but some may require more adjustment than others. The following sections describe first what the \"default\" results are (this is what happens to Ccrysus Station if nobody plays through {@title Inspection Tour}), then how some different results may modify the larger campaign. More than one of these different results may apply, depending on the actions of the PCs in {@title Inspection Tour}.",
+                        "To avoid confusion, the PCs in {@title War for the Throne} (who are likely to be different people than the PCs in {@title Inspection Tour}) are referred to as the Keleres PCs.",
+                        {
+                           "title": "The Default Results",
+                           "entries": [
+                              "The {@title War for the Throne} campaign assumes that no inspection tour is sent out to Ccrysus Station. Instead, the station intercepts the Mahact probe using one of its shuttles and hauls it back. They manage to download the data from the probe and in doing so, release the Nekro Virus on the station. The station is unable to send out a distress signal and unable to self-destruct or evacuate before everyone is killed.",
+                              "In this version, the Keleres PCs arrive on the station unsure what is going on. They explore the station, find the datafiles from the probe, then fight off waves of Nekro Virus drones before escaping."
+                           ]
+                        },
+                        {
+                           "title": "The PCs Send Out an Alert",
+                           "entries": [
+                              "If the PCs managed to send an alarm to the relay buoy, this changes the tone of the first part of {@title War for the Throne}, but not the core content. ",
+                              "Since the alert signal contains no specific information, the Keleres and Winnaran Custodians still need to send someone to investigate. This means the Keleres PCs are still dispatched from Mecatol Rex, but are warned to approach cautiously and be very careful. They should be given additional heavy weapons and equipment from the quartermasters if they ask for it, and they can even be issued a more powerful ship than the {@i Amberlight}. Since one reason Ccrysus Station may have sent an alert is because it was attacked by an enemy fleet, the Winnaran Custodians are willing to loan the Keleres one of their six corvettes (see page 155 of {@title Embers of the Imperium}) for the investigation.",
+                              {
+                                 "title": "Agent Missing",
+                                 "forceTitleLevel": 5,
+                                 "entries": [
+                                    "If your players used the premade player character Sik'Til, then the Keleres know that one of their own was on the inspection tour. They inform the Keleres PCs of Sik'Til's true identity, and ask them to learn what happened to the N'orr operative."
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "title": "Some of the PCs or Crew Survive",
+                           "entries": [
+                              "If some of the PCs or crew of Ccrysus Station survive, then then the Keleres PCs have a chance to rescue them when they arrive. Any use of sensor systems by the Keleres PCs reveals the presence of escape pods or shuttles without making a check (the pods and shuttles have distress beacons that trigger automatically when scanned by a friendly vessel).",
+                              "What happens next depends on whether the PCs managed to get the datafiles onto an escape pod or shuttle. If they did, the Keleres PCs can reconstruct the events of what happened from the survivors, and realize they have the needed information on the datafiles (especially if the PCs downloaded the sensor readings from 29Bexar concerning the Mahact fleet as well). They do not need to go explore the derelict station and fight the evolving Nekro Virus. However, since your players already played through {@title Inspection Tour}, they may be fine skipping this part of the adventure.",
+                              "If, however, the PCs did not manage to save the datafiles or the sensor readings, then the Keleres PCs will still have to go into Ccrysus Station to retrieve them. The PCs may know they should expect a fight, but otherwise the adventure can be run as described in {@title War for the Throne}.",
+                              {
+                                 "title": "Surviving PC Motives",
+                                 "forceTitleLevel": 5,
+                                 "entries": [
+                                    "Some of the PCs from this adventure have ulterior motives, which your players would know about (even if the Keleres PCs do not). This gives you a chance to add some tension to rescuing the surviving PCs. However, it can also give your players a chance to ensure a PC who betrayed the group gets their comeuppance. You should give the Keleres PCs the opportunity to discover a previous PC's ulterior motives so this becomes a possibility."
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "title": "The PCs Managed to Destroy Ccrysus Station",
+                           "entries": [
+                              "If the PCs manage to activate the self-destruct on Ccrysus Station but preserved the datafiles, then the first part of {@title War for the Throne} simply involves rescuing the survivors and returning to Mecatol Rex with the information.",
+                              "If the PCs destroyed the station but failed to preserve the data, then you do need to ensure the Keleres PCs recover the datafiles so that the {@title War for the Throne} campaign doesn't derail. In this case, when the Keleres PCs arrive on site, they find a debris field where the station used to be. However, parts of the station did survive, including the armored compartment where the self-destruct controls were located. The Keleres will have to locate the compartment among the wreckage (perhaps by tracking its weak power readings) and get it open to find the computer terminal inside, which happens to have a copy of the data. ",
+                              "If you want, you can even have the debris field haunted by a few surviving Nekro monstrosities, using the profiles found here and in {@title War for the Throne}!"
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ],
+   "adversary": [
+      {
+         "name": "Possessed Manipulator Arm",
+         "page": 12,
+         "type": "rival",
+         "description": [
+            "This hulking piece of machinery is strong enough to lift several tons. It makes for a crude but effective bludgeoning weapon."
+         ],
+         "powerLevels": {
+            "combat": 5,
+            "social": 1,
+            "general": 2
+         },
+         "characteristics": {
+            "brawn": 5,
+            "agility": 1,
+            "intellect": 3,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 6,
+            "wounds": 10,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "talents": [],
+         "abilities": [
+            {
+               "name": "Grab",
+               "description": "May spend {@symbols aa or t} from a failed combat check to immobilize one other character engaged with the original target until the start of this manipulator arm's next turn."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Heavy manipulator arm",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 9,
+               "critical": 4,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Inaccurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Ensnare",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Possessed Laser Cutting Arm",
+         "page": 12,
+         "type": "rival",
+         "description": [
+            "This less bulky manipulator arm is tipped with a high energy laser. Used for everything from welding to cutting hull plate, it can prove to be a lethal weapon."
+         ],
+         "powerLevels": {
+            "combat": 4,
+            "social": 1,
+            "general": 2
+         },
+         "characteristics": {
+            "brawn": 3,
+            "agility": 2,
+            "intellect": 3,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 10,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "ranks": 4,
+               "source": "crb"
+            }
+         ],
+         "talents": [],
+         "abilities": [],
+         "weapons": [
+            {
+               "name": "Laser cutter",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 2,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Heavy Lifter Drone",
+         "page": 17,
+         "type": "rival",
+         "description": [
+            "This hulking bipedal drone is designed to carry tons of cargo from one location to another. Unfortunately, its bulk and significant strength can be lethal if something were to override its safety protocols"
+         ],
+         "powerLevels": {
+            "combat": 7,
+            "social": 1,
+            "general": 2
+         },
+         "characteristics": {
+            "brawn": 4,
+            "agility": 2,
+            "intellect": 3,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 7,
+            "wounds": 25,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "talents": [],
+         "abilities": [
+            {
+               "name": "Berserker",
+               "description": "May spend a maneuver to use this talent. Until the end of its next turn the heavy lifter drone adds {@symbols saa} to all combat checks it makes, but opponents add {@symbols s} to any combat checks targeting the lifter drone. At the end of its next turn, the lifter drone suffers 3 strain."
+            },
+            {
+               "name": "Trample",
+               "description": "Once per encounter may use this talent to make a {@difficulty Hard|Brawl}. If successful, the lifter drone moves anywhere within short range, and all characters in its path suffer one hit dealing 10 damage and are knocked prone"
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Heavy lifting appendages",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 10,
+               "critical": 4,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            ""
+         ]
+      },
+      {
+         "name": "Smaller Familiar Swarm",
+         "page": 20,
+         "type": "rival",
+         "description": [
+            "This mass of small and normally helpful robots now moves with a single-minded purpose, and the machines' useful tools and diagnostic probes now appear positively sinister."
+         ],
+         "powerLevels": {
+            "combat": 4,
+            "social": 1,
+            "general": 2
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 3,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 30,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "motivations": [
+            {
+               "name": "Desire",
+               "description": ""
+            },
+            {
+               "name": "Fear",
+               "description": ""
+            },
+            {
+               "name": "Strength",
+               "description": ""
+            },
+            {
+               "name": "Flaw",
+               "description": ""
+            }
+         ],
+         "talents": [],
+         "abilities": [
+            {
+               "name": "Enveloping",
+               "description": "Enemies must spend two maneuvers to disengage from the smaller familiar swarm."
+            },
+            {
+               "name": "Swarm",
+               "description": "(halve the damage dealt to the swarm before applying soak, unless the weapon has the Blast or Burn quality (regardless of whether the quality is activated)."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Probes, needles, claws, and cutting instruments",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 2,
+               "critical": 3,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ],
+               "details": "Each {@symbols s} from a successful combat check adds +2 damage instead of +1."
+            }
+         ]
+      },
+      {
+         "name": "Hull Repair Probe",
+         "page": 20,
+         "type": "minion",
+         "description": [
+            "These small drones are equipped with welding plasma torches to weld or open damaged hull plates and electromagnetic tethers for retrieving drifting debris and tools. Both make for dangerous weapons if the probes' safety programming is overridden."
+         ],
+         "powerLevels": {
+            "combat": 5,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 4,
+            "intellect": 3,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 5,
+            "defense": [
+               0,
+               1
+            ]
+         },
+         "skills": [
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Coordination",
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Heavy)",
+               "characteristic": "agility",
+               "source": "crb"
+            }
+         ],
+         "talents": [],
+         "abilities": [
+            {
+               "name": "Multi-angle targeting protocols",
+               "description": "If at least two minions remain in this group, performing the aim maneuver adds {@symbols ss} to combat check results instead of adding {@dice boost} to the pool."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Electromagnetic tether launcher",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 4,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Ensnare",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Welding plasma torch",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 10,
+               "critical": 2,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Burn",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Modified Heavy Lifter Drone",
+         "page": 22,
+         "type": "nemesis",
+         "description": [
+            "The heavy lifter has been modified by the Nekro Virus using the maintenance bay. The modifications are crude but effective, turning the brute machine into a lethal killer."
+         ],
+         "powerLevels": {
+            "combat": 11,
+            "social": 2,
+            "general": 2
+         },
+         "characteristics": {
+            "brawn": 4,
+            "agility": 2,
+            "intellect": 3,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 8,
+            "wounds": 25,
+            "strain": 15,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            "Adversary 1"
+         ],
+         "abilities": [
+            {
+               "name": "Berserker",
+               "description": "May spend a maneuver to use this talent. Until the end of its next turn the heavy lifter drone adds {@symbols saa} to all combat checks it makes, but opponents add {@symbols s} to any combat checks targeting the lifter drone. At the end of its next turn, the lifter drone suffers 3 strain."
+            },
+            {
+               "name": "Elite Nemesis",
+               "description": "(The modified heavy lifter drone generates two initiative slots, and takes two turns every combat round. Its second turn must always occupy the last available NPC initiative slot in the round."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Bladed appendages",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 10,
+               "critical": 2,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Industrial laser",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Accurate",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}
