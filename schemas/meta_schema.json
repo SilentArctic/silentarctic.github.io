@@ -63,7 +63,8 @@
             "color",
             "url",
             "convertedBy",
-            "releaseDate"
+            "releaseDate",
+            "module"
          ],
          "additionalProperties": false
       },
