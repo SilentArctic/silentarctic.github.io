@@ -13179,27 +13179,6 @@
          "type": "attachment",
          "class": "armor",
          "hardPoints": 1,
-         "price": 0,
-         "rarity": 0,
-         "description": [
-            "Ballistic armor plates are a popular after-market add on for mercenaries and members of the NAPD SWAT Team. The plascrete plates may be heavy, but they help deflect shots and blows, and absorb damage from direct hits.",
-            {
-               "type": "list",
-               "items": [
-                  "{@b Models Include:} Argus BallisTec Defensive Plates.",
-                  "{@b Use With:} This attachment can be applied to any combat armor.",
-                  "{@b Modifiers:} The wearer increases their ranged defense by 1. The armor also increases its encumbrance by 1.",
-                  "{@b Hard Points Required:} 1."
-               ]
-            }
-         ]
-      },
-      {
-         "name": "Ballistic Plates",
-         "page": 109,
-         "type": "attachment",
-         "class": "armor",
-         "hardPoints": 1,
          "price": 350,
          "rarity": 4,
          "description": [

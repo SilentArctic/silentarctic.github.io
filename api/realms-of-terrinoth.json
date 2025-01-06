@@ -4652,7 +4652,7 @@
             },
             {
                "name": "Melee (Light)",
-               "characteristic": "agility",
+               "characteristic": "brawn",
                "source": "crb"
             }
          ],
