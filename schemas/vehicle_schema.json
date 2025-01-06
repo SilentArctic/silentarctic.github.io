@@ -126,6 +126,9 @@
                      "required": [
                         "name"
                      ],
+                     "optional": [
+                        "source"
+                     ],
                      "additionalProperties": false
                   },
                   "damage": {

@@ -183,12 +183,7 @@
                "imageUrl": {
                   "type": "string"
                },
-               "description": {
-                  "type": "array",
-                  "items": {
-                     "type": "string"
-                  }
-               },
+               "description": { "$ref": "./varyingDisplay_sub_schema.json" },
                "defense": {
                   "type": "integer"
                },

@@ -28,14 +28,7 @@
                   "other"
                ]
             },
-            "description": {
-               "type": "array",
-               "items": [
-                  {
-                     "type": "string"
-                  }
-               ]
-            },
+            "description": { "$ref": "./varyingDisplay_sub_schema.json" },
             "shouldUse": {
                "type": "array",
                "items": [

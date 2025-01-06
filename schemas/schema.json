@@ -9,6 +9,7 @@
       "adventure": { "$ref": "adventure_schema.json" },
       "adversary": { "$ref": "adversary_schema.json" },
       "archetype": { "$ref": "archetype_schema.json" },
+      "archetypeAbility": { "$ref": "archetype_ability_schema.json" },
       "book": { "$ref": "book_schema.json" },
       "career": { "$ref": "career_schema.json" },
       "characteristic": { "$ref": "characteristic_schema.json" },
