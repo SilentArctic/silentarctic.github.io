@@ -7,7 +7,7 @@
          "abbreviation": "RoT",
          "color": "#A75A0E",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/realms-terrinoth/",
-         "version": "2024.12.8",
+         "version": "2024.12.26",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -9332,6 +9332,110 @@
             "Some Gnomes get a taste of the outside world during their year with the militia and set out to \"scratch their itchy feet.\" Whether on their own or in a small band, Wanderer Gnomes are a common sight throughout all of Mennara."
          ],
          "page": 69
+      }
+   ],
+   "archetypeAbility": [
+      {
+         "name": "Battle Rage",
+         "description": [
+            "When making a melee attack, a Broken Plains Orc can choose to add {@dice setback} to the check to add +2 to the damage dealt by one hit of that attack."
+         ]
+      },
+      {
+         "name": "Catfolk Ancestry",
+         "description": [
+            "Half-Catfolk choose either the {@archetypeAbility Claws} or {@archetypeAbility Fleet of Paw} special ability from the {@archetype Catfolk} entry."
+         ]
+      },
+      {
+         "name": "Claws",
+         "description": [
+            "Catfolk possess sharp, retractable claws and may choose to attack with the following weapon profile: (Brawl; Damage +1; Critical 3; Range [Engaged]; Vicious 1)."
+         ]
+      },
+      {
+         "name": "Dark Vision",
+         "description": [
+            "When making skill checks, Dunwarr Dwarves remove up to {@dice setback|2} imposed due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness|crb}."
+         ]
+      },
+      {
+         "name": "Empyrean Magic",
+         "description": [
+            "Highborn Elves gain {@skill Divine||crb} as a career skill and begin with one rank in {@skill Divine||crb}. You still cannot train their {@skill Divine||crb} above rank 2 during character creation."
+         ]
+      },
+      {
+         "name": "Fleet of Paw",
+         "description": [
+            "Catfolk can perform a second maneuver to move without suffering strain. They still cannot exceed the limitation of two maneuvers in a turn."
+         ]
+      },
+      {
+         "name": "Hot Tempered",
+         "description": [
+            "While a Stone-Dweller Orc's strain exceeds half of their strain threshold, they add {@dice setback|2} to all social skill checks and add 1 to the damage of one hit of each melee attack they make."
+         ]
+      },
+      {
+         "name": "Militia Training",
+         "description": [
+            "Burrow Gnomes add {@dice boost} to all combat checks that target characters who have a larger silhouette than they do."
+         ]
+      },
+      {
+         "name": "Nimble (Free Cities)",
+         "description": [
+            "Free Cities Elves have a melee and ranged defense of 1."
+         ]
+      },
+      {
+         "name": "Nimble (Lowborn)",
+         "description": [
+            "Lowborn Elves have a melee and ranged defense of 1."
+         ]
+      },
+      {
+         "name": "Ready for Adventure",
+         "description": [
+            "Once per session as an out-of-turn incidental, a Human may move one Story Point from the Game Master's pool to the players' pool."
+         ]
+      },
+      {
+         "name": "Small",
+         "description": [
+            "Gnomes are silhouette 0."
+         ]
+      },
+      {
+         "name": "Stubborn",
+         "description": [
+            "Forge Dwarves add {@dice setback} to social skill checks targeting them."
+         ]
+      },
+      {
+         "name": "Tenacious",
+         "description": [
+            "After a Sunderlands Orc hits a character with a successful combat check, they add {@dice boost} to combat checks targeting the same character until the end of the encounter."
+         ]
+      },
+      {
+         "name": "Tough as Nails",
+         "description": [
+            "Once per session, a Dwarf may spend a Story Point as an out-of-turn incidental immediately after suffering a Critical Injury and determining the result. If they do so, they count the result rolled as \"01.\""
+         ]
+      },
+      {
+         "name": "Tricksy",
+         "description": [
+            "Once per encounter during their turn, a Wanderer Gnome may use this ability and spend a Story Point to produce a previously undocumented small item (encumbrance 1 or less) with a rarity no greater than 4 from a pocket, bag, pouch, nearby windowsill, passing cart, or other convenient location—even if there is no logical explanation for the item's presence. This item cannot be a weapon unless the weapon has the Limited Ammo 1 quality."
+         ]
+      },
+      {
+         "name": "Ynfernael Lore",
+         "description": [
+            "Deep Elves gain {@skill Knowledge (Forbidden)} as a career skill and begin with two ranks in {@skill Knowledge (Forbidden)}. You still cannot train their {@skill Knowledge (Forbidden)} above rank 2 during character creation."
+         ]
       }
    ],
    "career": [

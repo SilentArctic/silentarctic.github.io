@@ -7,7 +7,7 @@
          "abbreviation": "CRB",
          "color": "#14C0F1",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/",
-         "version": "2024.5.11",
+         "version": "2024.12.26",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -3519,6 +3519,152 @@
             }
          ],
          "page": 183
+      }
+   ],
+   "archetypeAbility": [
+      {
+         "name": "A Face in a Crowd",
+         "description": [
+            "Characters add {@dice setback} to any checks they make to pick a clone out in a crowd. Clones also add {@dice setback} to social skill checks they make when interacting with people who don't know the specific clone."
+         ]
+      },
+      {
+         "name": "Battle Rage",
+         "description": [
+            "When making a melee attack, an orc can choose to add {@dice setback} to the check to add +2 to the damage dealt by one hit of that attack."
+         ]
+      },
+      {
+         "name": "Brilliant!",
+         "description": [
+            "Once per session, your character may spend a Story Point as an incidental. If they do so, during the next check they make during that turn, you count their ranks in the skill being used as equal to their Intellect."
+         ]
+      },
+      {
+         "name": "Dark Vision",
+         "description": [
+            "When making skill checks, dwarves remove up to {@dice setback|2} imposed due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness}."
+         ]
+      },
+      {
+         "name": "Dead Nerves",
+         "description": [
+            "Your character removes {@dice setback|2} added to any checks they make due to fatigue or injuries (including Critical Injuries)."
+         ]
+      },
+      {
+         "name": "Forceful Personality",
+         "description": [
+            "Once per session, your character may spend a Story Point as an incidental. If they do so, during the next skill check they make during that turn, your character doubles the strain they inflict or the strain they heal (you choose before making the check)."
+         ]
+      },
+      {
+         "name": "High Tech Baubles",
+         "description": [
+            "A vanguard starts the game with an additional 500 credits' worth of starting gear (this is in addition to their normal starting gear allowance)."
+         ]
+      },
+      {
+         "name": "Inorganic (Bioroid)",
+         "description": [
+            "Since bioroids are inorganic, they do not gain the benefits of healing wounds with {@gear painkiller|painkillers} or a {@skill Medicine} check. Bioroids can heal wounds and strain naturally by resting, as their systems attempt self-repairs. Bioroids can also be \"healed\" by using the {@skill Mechanics} skill instead of the {@skill Medicine} skill, but otherwise following the guidelines detailed on page 116."
+         ]
+      },
+      {
+         "name": "Inorganic (Robot)",
+         "description": [
+            "Since robots are inorganic, they do not gain the benefits of recovering wounds with {@gear painkiller|painkillers} or a {@skill Medicine} check. Robots can recover wounds and strain naturally by resting, as their systems attempt self-repairs. Robots can also be \"healed\" by using the {@skill Mechanics} skill instead of the {@skill Medicine} skill, but otherwise following the guidelines detailed on page 116. A robot also increases its soak by one."
+         ]
+      },
+      {
+         "name": "Mind Breaker",
+         "description": [
+            "As an action, a psionic may make an {@b opposed {@skill Discipline} versus {@skill Resilience}} check targeting one living creature within medium range. If the check succeeds, the psionic causes the target to suffer 1 strain, plus 1 additional strain per {@symbols ss} generated on the check. {@symbols aaa} or {@symbols t} may be spent to cause the target to suffer 1 wound as well."
+         ]
+      },
+      {
+         "name": "Mind Reader",
+         "description": [
+            "As an action, a psionic may make an {@b opposed {@skill Discipline} versus {@skill Discipline} check} targeting one living creature within medium range. If the check succeeds, the psionic knows the target's current thoughts and emotional state. {@symbols aaa} or {@symbols t} may be spent to discover other thoughts or memories, at your GM's discretion."
+         ]
+      },
+      {
+         "name": "Mind Shaper",
+         "description": [
+            "As an action, a psionic may make an {@b opposed {@skill Discipline} versus {@skill Vigilance}} check targeting one living creature within medium range. If the check succeeds, the psionic may cause the target to adopt an emotional state of the psionic's choice for the next minute (or one round of structured time). {@symbols a} or {@symbols t} may be spent to increase the duration by one round (and may be spent multiple times). However, if the check fails or generates {@symbols hhh} or {@symbols d}, the target realizes their emotions are being manipulated."
+         ]
+      },
+      {
+         "name": "Natural Weapons",
+         "description": [
+            "An animalistic alien adds +2 damage to any Brawl combat checks they make. Their Brawl combat checks also gain the Vicious 1 quality or increase an existing Vicious quality by one."
+         ]
+      },
+      {
+         "name": "Networked Intelligence",
+         "description": [
+            "A robot adds automatic {@symbols s} to its {@characteristic Intellect}- and {@characteristic Willpower}-based checks for each other friendly character of the same species within medium range—to a maximum of {@symbols sss}."
+         ]
+      },
+      {
+         "name": "Nimble",
+         "description": [
+            "Elf characters have a melee and ranged defense of 1."
+         ]
+      },
+      {
+         "name": "Ready for Anything",
+         "description": [
+            "Once per session as an out-of-turn incidental, you may move one Story Point from the Game Master's pool to the players' pool."
+         ]
+      },
+      {
+         "name": "Reanimated",
+         "description": [
+            "As reanimated corpses, revenants have several quirks, some beneficial and some detrimental. Your character does not recover wounds through natural rest, but they add {@dice boost|2} to any {@skill Medicine} checks to heal them (they don't flinch). Your character also cannot be affected by poisons (although they must be wary of insects and carrion feeders trying to make a meal from or to nest on their bodies). As with {@archetype mongrel|mongrels}, your GM should ensure that NPCs react appropriately if they are aware of your character's condition (at the very least, upgrading the difficulty of your character's social skill checks twice). Also, perfume is a good idea. Lots of perfume."
+         ]
+      },
+      {
+         "name": "Space Is Our Birthright",
+         "description": [
+            "A vanguard adds automatic {@symbols a} to the results of any {@skill Astrocartography} or {@skill Knowledge} checks they make."
+         ]
+      },
+      {
+         "name": "Special Abilities (Bioroid)",
+         "description": [
+            "Bioroids do not need to eat, sleep, or breathe, and are unaffected by toxins and poisons. Bioroids do not reduce their strain threshold when they receive cybernetics (in the case of bioroids, the cybernetics can represent upgraded mechanical components instead of true cybernetics)."
+         ]
+      },
+      {
+         "name": "Special Abilities (Robot)",
+         "description": [
+            "Robots do not need to eat, sleep, or breathe, and are unaffected by toxins and poisons. If you are using the cybernetics rules from the {@setting science fiction} setting (see page 177), robots do not reduce their strain threshold when they receive cybernetics (the cybernetics can represent upgraded mechanical components instead of true cybernetics)."
+         ]
+      },
+      {
+         "name": "The Beast Within",
+         "description": [
+            "Mongrels generally look just like any other human. However, when your character is incapacitated due to exceeding their strain threshold while in human form, they undergo the following change as an out-of-turn incidental. They heal all strain; increase their {@characteristic Brawn} and {@characteristic Agility} by one, to a maximum of 5; and reduce their {@characteristic Intellect} and {@characteristic Willpower} by one to a minimum of 1. They deal +1 damage when making unarmed attacks, and their unarmed attacks have a Crit rating of 3. In addition, their jaws elongate into muzzles, their hair thickens and they grow more all over their bodies, and their eyes become those of a hunting cat or wolf. Your GM should ensure that NPCs react appropriately to this (at the very least, upgrading the difficulty of all social skill checks twice). Your character reverts to human form after eight hours, or if they are incapacitated (by exceeding either their wound threshold or their strain threshold)."
+         ]
+      },
+      {
+         "name": "The Human Spirit",
+         "description": [
+            "Once per session, your character may make a {@difficulty hard|Discipline} as an out-of-turn incidental. If they succeed, they may either trigger The Beast Within or avoid triggering it when they exceed their strain threshold."
+         ]
+      },
+      {
+         "name": "Tough as Nails (Dwarf)",
+         "description": [
+            "Once per session, a dwarf character may spend a Story Point as an out-of-turn incidental immediately after suffering a Critical Injury and determining the result. If they do so, they count the result rolled as \"01.\""
+         ]
+      },
+      {
+         "name": "Tough as Nails (Laborer)",
+         "description": [
+            "Once per session, your character may spend a Story Point as an out-of-turn incidental immediately after suffering a Critical Injury and determining the result. If they do so, they count the result rolled as \"01.\""
+         ]
       }
    ],
    "book": [],

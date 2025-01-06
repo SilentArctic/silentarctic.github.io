@@ -1,0 +1,14 @@
+{
+   "$id": "https://silentarctic.github.io/schemas/archetype_ability_schema.json",
+   "type": "array",
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string",
+            "description": "Ability name."
+         },
+         "description": { "$ref": "varyingDisplay_sub_schema.json" }
+      }
+   }
+}

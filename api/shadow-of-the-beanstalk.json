@@ -7,7 +7,7 @@
          "abbreviation": "SotB",
          "color": "#40B3B5",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/shadow-beanstalk/",
-         "version": "2024.10.20",
+         "version": "2024.12.26",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -8598,6 +8598,68 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ]
+      }
+   ],
+   "archetypeAbility": [
+      {
+         "name": "Adjusted to Cybernetics",
+         "description": [
+            "Once per session as an out-of-turn incidental, you may spend a Story Point to have your character heal strain equal to their number of cybernetics."
+         ]
+      },
+      {
+         "name": "Cyborg",
+         "description": [
+            "Your character begins play with one {@filter gear|cybernetic|source:shadow-of-the-beanstalk=1;type:cybernetic=1} (see page 104) that costs a total of 1,000 credits or less. They do not need to make any check to install this cybernetic, and they do not decrease their strain threshold because of this cybernetic (but will decrease their strain threshold as normal if they get any future cybernetics)."
+         ]
+      },
+      {
+         "name": "Enhanced Genetic Modifications",
+         "description": [
+            "Once per session when your character uses one of their g-mods to modify a check, you may spend a Story Point to add {@symbols s} equal to your character's ranks in {@skill Resilience||crb} to the results (in addition to any other affects the g-mod has)."
+         ]
+      },
+      {
+         "name": "G-mod",
+         "description": [
+            "Your character begins play with one {@filter gear|g-mod|source:shadow-of-the-beanstalk=1;type:g-mod=1} (see page 106) that costs a total of 1,000 credits or less. They do not need to make any check to assimilate this g-mod."
+         ]
+      },
+      {
+         "name": "Inorganic",
+         "description": [
+            "Since bioroids are inorganic, they do not gain the benefits of healing wounds with {@gear slap-patch|slap patches} ({@rule painkillers||crb}) or a {@skill Medicine||crb} check. Bioroids can heal wounds and strain naturally by resting, as their systems attempt self-repairs. Bioroids can also be \"healed\" by using the {@skill Mechanics||crb} skill instead of the {@skill Medicine||crb} skill, but otherwise following the rules in the Medical Care section on page 116 of the {@title Genesys} Core Rulebook."
+         ]
+      },
+      {
+         "name": "Ready for Anything",
+         "description": [
+            "Once per session as an out-of-turn incidental, you may move one Story Point from the Game Master's pool to the players' pool."
+         ]
+      },
+      {
+         "name": "Resourceful",
+         "description": [
+            "Once per session after making a skill check, you may spend a Story Point to have your character reroll up to two dice in the pool."
+         ]
+      },
+      {
+         "name": "Special Abilities (Bioroid)",
+         "description": [
+            "Bioroids do not need to eat, sleep, or breathe, and they are unaffected by toxins and poisons. They do not reduce their strain threshold when they receive cybernetics (cybernetics represent upgraded mechanical components instead of true cybernetics)."
+         ]
+      },
+      {
+         "name": "Underestimated",
+         "description": [
+            "When making an opposed check, clones add {@symbols a} to the results."
+         ]
+      },
+      {
+         "name": "Zero-G Adept",
+         "description": [
+            "A Loonie does not count {@rule gravity|zero-gravity|crb} environments as difficult terrain."
          ]
       }
    ],

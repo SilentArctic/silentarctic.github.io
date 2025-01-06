@@ -14,7 +14,7 @@
             "Craftidore"
          ],
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/expanded-players-guide/",
-         "version": "2024.6.15",
+         "version": "2024.12.26",
          "releaseDate": "20 September 2019"
       },
       "filters": {
@@ -5313,6 +5313,108 @@
             {
                "name": "post apocalypse"
             }
+         ]
+      }
+   ],
+   "archetypeAbility": [
+      {
+         "name": "Always Prepared",
+         "description": [
+            "When a survivor makes a check to heal strain at the end of an encounter, they heal 1 additional strain."
+         ]
+      },
+      {
+         "name": "Beast Form",
+         "description": [
+            "When the cursed shifter transforms into Beast Form, they heal all strain they are currently suffering, increase their {@characteristic brawn||crb} and {@characteristic agility||crb} by one to a maximum of 5, and reduce their {@characteristic intellect||crb} and {@characteristic willpower||crb} by one to a minimum of 1. Their unarmed attacks deal +3 damage and have a Critical rating of 2. All opponents must halve the damage dealt to a cursed shifter in Beast Form before applying soak, unless the weapon is made of silver or uses silver ammunition. Finally, the cursed shifter must make a {@difficulty hard|discipline} as an out-of-turn incidental when they transform. If they succeed, they may act normally, but if they fail, they give in to their animal instincts and must attack anyone around them with frenzied savagery (you should discuss the specifics of how they act with your GM, and it is up to your GM if they can make another attempt to regain control)."
+         ]
+      },
+      {
+         "name": "Blood Call",
+         "description": [
+            "A dhampir has fangs and can use them as a weapon with the following profile (Brawl; Damage +0; Critical 2; Range [Engaged]; {@quality ensnare|Ensnare 1|crb}, {@quality pierce|Pierce 2|crb}, {@quality vicious|Vicious 2|crb}). When a dhampir inflicts wounds with their fangs (or narratively drinks blood), you may spend a Story Point to have them heal 4 strain and 4 wounds. However, if a dhampir kills a person with their fangs, the dhampir becomes a vampire, maintaining their profile but becoming an evil spawn of darkness (what this means for your character is up to your GM)."
+         ]
+      },
+      {
+         "name": "Bite of the Wolf",
+         "description": [
+            "When a cursed shifter in their Beast Form makes an unarmed attack and inflicts a Critical Injury result of 51 or higher on a human PC or nemesis human NPC (your GM determines what counts as human), the human gains the Bite of the Wolf, Curse of the Beast, and Beast Form abilities. You may spend one Story Point after your cursed shifter character inflicts a Critical Injury to prevent this from happening."
+         ]
+      },
+      {
+         "name": "Curse of the Beast",
+         "description": [
+            "While cursed shifters normally are human, when the full moon rises, they transform into a monstrous wolf or great cat (whether they can see the moon or not). The cursed shifter changes into their Beast Form as an out-of-turn incidental. This transformation lasts until the following dawn or until the cursed shifter is incapacitated due to exceeding their wound threshold."
+         ]
+      },
+      {
+         "name": "Just a Scratch",
+         "description": [
+            "When making a check to recover strain at the end of an encounter, a mutant may use {@skill resilience||crb} instead of {@skill discipline||crb} or {@skill cool||crb}. In addition, a mutant may spend {@symbols aa} from that check to heal 1 wound (and they may do so multiple times)."
+         ]
+      },
+      {
+         "name": "Know Its Weakness",
+         "description": [
+            "Once per session, you may spend a Story Point to have your loremaster character increase the damage dealt by all allies' combat checks by the loremaster's ranks in {@skill knowledge (supernatural)} until the end of the loremaster's next turn."
+         ]
+      },
+      {
+         "name": "Mutation",
+         "description": [
+            "Before spending starting experience, choose one of the following abilities for your mutant character:",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Flyer:} Your mutant character can fly. See page 100 of the {@title Genesys} Core Rulebook for details on flying.",
+                  "{@b Amphibious:} Your mutant character can breathe underwater and move through water without penalty.",
+                  "{@b Scaly Hide:} Increase your mutant character's soak by +1.",
+                  "{@b Multiple Limbs:} Your mutant character gains an additional free maneuver per turn. They still may not perform more than two maneuvers during their turn.",
+                  "{@b Natural Weapons:} Your mutant character's unarmed attacks have their damage increased by +2 and have a Critical rating of 3."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Remember This?",
+         "description": [
+            "A sleeper adds {@symbols a} to the results of any checks they make to identify, use, or repair pre-apocalypse items, equipment, or media (including combat checks)."
+         ]
+      },
+      {
+         "name": "Strike True",
+         "description": [
+            "Once per session, when a fearless slayer inflicts a Critical Injury, you may spend one Story Point to roll two separate results and choose which result to apply."
+         ]
+      },
+      {
+         "name": "Sunlight Sensitivity",
+         "description": [
+            "While a dhampir is exposed to direct sunlight, they reduce their wound and strain thresholds by 4."
+         ]
+      },
+      {
+         "name": "Supernatural Suspicion",
+         "description": [
+            "Once per session after this character makes a magic skill check, you may spend a Story Point to reroll one or more dice of your choice in the pool. After doing so, all NPCs in the current encounter gain an adversion of this character and their supernatural nature as a Fear facet of their Motivation"
+         ]
+      },
+      {
+         "name": "Too Clever by Half",
+         "description": [
+            "Once per session before your character makes a skill check with {@dice boost} in the dice pool, you may spend a Story Point to double the number of {@dice boost} currently in the dice pool. If your character fails the check, they suffer 6 strain in addition to any other penalties."
+         ]
+      },
+      {
+         "name": "Tragic Fate",
+         "description": [
+            "When preparing the Story pools at the beginning of the game session, add one Story Point to the GM pool instead of the player pool."
+         ]
+      },
+      {
+         "name": "Vulnerable Heart",
+         "description": [
+            "When a dhampir suffers a Critical Injury from a weapon made of wood, such as a stake or crossbow bolt, add 40 to the Critical Injury result."
          ]
       }
    ],
