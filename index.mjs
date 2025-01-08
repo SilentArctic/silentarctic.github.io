@@ -1,5 +1,5 @@
-import core from './api/index.json' assert { type: 'json' };
-import community from './api/community/index.json' assert { type: 'json' };
+import core from './api/index.json' with { type: 'json' };
+import community from './api/community/index.json' with { type: 'json' };
 
 function createLink(file, selector) {
    const dir = selector === 'core' ? '' : 'community/';
