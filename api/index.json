@@ -5,7 +5,7 @@
       "abbreviation": "CRB",
       "color": "#14C0F1",
       "url": "https://www.fantasyflightgames.com/en/products/genesys/",
-      "version": "2024.12.26",
+      "version": "2025.1.16",
       "authors": [
          "Fantasy Flight Games"
       ],
@@ -28,7 +28,7 @@
       ],
       "url": "https://www.edge-studio.net/games/embers-of-the-imperium/",
       "releaseDate": "28 April 2023",
-      "version": "2024.12.26",
+      "version": "2025.1.16",
       "originType": "core"
    },
    "expanded-players-guide.json": {
@@ -44,7 +44,7 @@
          "Craftidore"
       ],
       "url": "https://www.fantasyflightgames.com/en/products/genesys/products/expanded-players-guide/",
-      "version": "2024.12.26",
+      "version": "2025.1.16",
       "releaseDate": "20 September 2019",
       "originType": "core"
    },
@@ -54,7 +54,7 @@
       "abbreviation": "RoT",
       "color": "#A75A0E",
       "url": "https://www.fantasyflightgames.com/en/products/genesys/products/realms-terrinoth/",
-      "version": "2025.1.14",
+      "version": "2025.1.16",
       "authors": [
          "Fantasy Flight Games"
       ],
@@ -67,7 +67,7 @@
       "abbreviation": "SotC",
       "color": "#FAC619",
       "url": "https://www.fantasyflightgames.com/en/products/genesys/products/secrets-crucible/",
-      "version": "2024.12.26",
+      "version": "2025.1.16",
       "authors": [
          "Fantasy Flight Games"
       ],
@@ -83,7 +83,7 @@
       "abbreviation": "SotB",
       "color": "#40B3B5",
       "url": "https://www.fantasyflightgames.com/en/products/genesys/products/shadow-beanstalk/",
-      "version": "2024.12.26",
+      "version": "2025.1.16",
       "authors": [
          "Fantasy Flight Games"
       ],
@@ -106,7 +106,7 @@
       ],
       "url": "https://www.edge-studio.net/shares/twilight-imperium/",
       "releaseDate": "20 March 2024",
-      "version": "2024.8.29",
+      "version": "2025.1.16",
       "module": true,
       "originType": "core"
    }
