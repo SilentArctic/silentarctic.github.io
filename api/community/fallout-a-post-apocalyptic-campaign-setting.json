@@ -4904,6 +4904,12 @@
             {
                "name": "Enduring 2",
                "source": "crb"
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Forced Evoloutionary Virus",
+               "description": "Reduce the Encumbrance and {@quality Cumbersome||crb} value of all wielded weapons by 1, Immune to damage from {@rule Radiation||fallout}."
             },
             {
                "name": "Knockdown",
@@ -4912,12 +4918,6 @@
             {
                "name": "Strong Arm",
                "description": "May spend a maneuver to increase the range of thrown objects by 2 range bands."
-            }
-         ],
-         "abilities": [
-            {
-               "name": "Forced Evoloutionary Virus",
-               "description": "Reduce the Encumbrance and {@quality Cumbersome||crb} value of all wielded weapons by 1, Immune to damage from {@rule Radiation||fallout}."
             },
             "Silhouette 2",
             "Terrifying 3"
