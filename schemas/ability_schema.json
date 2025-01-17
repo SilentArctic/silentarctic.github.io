@@ -1,5 +1,5 @@
 {
-   "$id": "https://silentarctic.github.io/schemas/archetype_ability_schema.json",
+   "$id": "https://silentarctic.github.io/schemas/ability_schema.json",
    "type": "array",
    "items": {
       "type": "object",
