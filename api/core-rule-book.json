@@ -1981,10 +1981,7 @@
             }
          ],
          "talents": [
-            {
-               "name": "Natural",
-               "description": "Once per session, use this talent to reroll any one  Negotiation or Skulduggery check."
-            }
+            "Natural"
          ],
          "abilities": [
             {
@@ -2194,10 +2191,7 @@
          ],
          "talents": [
             "Adversary 2",
-            {
-               "name": "Natural",
-               "description": "Once per session, use this talent to reroll any one Skulduggery or Stealth check."
-            }
+            "Natural"
          ],
          "abilities": [
             {
