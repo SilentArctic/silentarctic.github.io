@@ -1,5 +1,5 @@
 {
-   "$schema": "../../schemas/schema.json",
+   "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
          "json": "fallout-a-post-apocalyptic-campaign-setting",
@@ -7,7 +7,7 @@
          "abbreviation": "Fallout",
          "color": "#0e4e0b",
          "url": "https://www.dropbox.com/sh/sy07kxd2n3haz1d/AABkZzrdf0zFleUrUsAKmwbca?dl=0",
-         "version": "2023.5.27",
+         "version": "2025.1.16",
          "authors": [
             "Phil \"DarthGM\" Maiewski"
          ],
@@ -54,12 +54,7 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Rad Resistance",
-               "description": [
-                  "Ghouls take no damage from {@rule Radiation||fallout} damage sources. Once per session when exposed to a source of {@rule Radiation||fallout} damage, a ghoul character may spend a Story Point to heal a number of wounds  equal to the rating of the {@rule Radiation||fallout} source."
-               ]
-            }
+            "Rad Resistance"
          ],
          "description": [
             "Ghouls are decrepit, rotting, zombie-like mutant humans. They succumbed to their condition through prolonged exposure to intense radiation. The physical effects of this radiation sickness are extreme; decayed skin and in some cases ligaments, as well as patchy or total hair loss. Paradoxically, ghoul also have greatly extended life spans; some ghouls who are alive today grew up in Pre-War times. After ghoulification, additional exposure to radiation does not harm, and can even sometimes heal, a ghoul."
@@ -97,18 +92,8 @@
             "choice": true
          },
          "abilities": [
-            {
-               "name": "Special Abilities",
-               "description": [
-                  "Robots do not need to eat, sleep, or breathe, and are unaffected by toxins and poisons. If you are using the {@rule Cybernetics||crb} rules from the {@setting science fiction||crb} setting (see page 177 CRB), robots do not reduce their Strain Threshold when they receive {@rule Cybernetics||crb} (the {@rule Cybernetics||crb} can represent upgraded mechanical components instead of true {@rule Cybernetics||crb})."
-               ]
-            },
-            {
-               "name": "Inorganic",
-               "description": [
-                  "Since robots are inorganic, they do not gain the benefits of recovering wounds with {@gear painkiller|Painkillers|crb} or a {@skill Medicine||crb} check. Robots can recover wounds and strain naturally by resting, as their systems attempt self-repairs. Robots can also be \"healed\" by using the {@skill Mechanics||crb} skill instead of the {@skill Medicine||crb} skill, but otherwise following the guidelines detailed on page 116 (CRB). A robot also increases its Soak by 2."
-               ]
-            }
+            "Special Abilities",
+            "Inorganic"
          ],
          "description": [
             "Robots in the wasteland come in a variety of shapes and sizes. Their capabilities are determined by their original purpose of construction; the hovering Mr. Handy came with a trio of spindly arms that have pincer hands, buzzsaws, or even small flame projectors. Meanwhile the Protectron series of robots were used in fire and rescue, police and security, and even construction. Other robots were specifically built with warfare in mind, and possess a lethal variety of weapons bonded directly to their metal frames."
@@ -142,12 +127,7 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Forced Evolutionary Virus",
-               "description": [
-                  "Super Mutants reduce the Encumbrance and {@quality Cumbersome||crb} value of all wielded weapons by 1. Super Mutants are also immune to damage from {@rule Radiation||Fallout}."
-               ]
-            }
+            "Forced Evolutionary Virus"
          ],
          "description": [
             "Super Mutants are produced when a normal human is infected with a genetic-altering compound called Forced Evolutionary Virus, or \"FEV\". Exposure to the compound irrevocably changes the human on a genetic level and alters their physical form. They are taller, bulkier, and stronger than normal humans. Their skin coloration changes in hue to a shade of grey, green, or yellow. Constitution and strength are greatly enhanced, and the mutant becomes immune to radiation and disease. While the process renders the Super-Mutant sterile, the constant regeneration of cells makes Super Mutants effectively immortal. The mental effects of exposure to FEV are varied; many Super-Mutants lose much of their cognitive abilities. Those that retain their higher reasoning and mental prowess are valuable allies or exceptionally dangerous opponents."
@@ -185,18 +165,8 @@
             "choice": true
          },
          "abilities": [
-            {
-               "name": "Synthetic Human",
-               "description": [
-                  "Synths are immune to disease and receive {@dice b} to any {@skill Resilience||crb} checks to resist {@rule environmental effects (brief)|Environmental Effects|crb}."
-               ]
-            },
-            {
-               "name": "Neurological Implant",
-               "description": [
-                  "Gen 3 synths have an implant in their brains that can be exploited by anyone who knows the specific synth's override code. Anyone who knows the synth's code can use it to render the synth inactive by speaking the code phrase (usually a series of letters and numbers)."
-               ]
-            }
+            "Synthetic Human",
+            "Neurological Implant"
          ],
          "description": [
             "The pinnacle of the Institute's Synth technology, Gen 3 Synths lack the metal structure and plastic, rubberized skin of the Generation 1 and 2 synths. These synths are nearly completely indistinguishable from humans, being made from lab-grown bones, muscles, and organs. They bleed like humans, breathe like humans, and have independent thoughts and feelings like humans. The only difference is a neural-implant embedded within the brain of the synth that allows them to be programmed and manipulated by the Institute staff by voice command.",
@@ -208,6 +178,81 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ]
+      }
+   ],
+   "archetypeAbility": [
+      {
+         "name": "Forced Evolutionary Virus",
+         "description": [
+            "Super Mutants reduce the Encumbrance and {@quality Cumbersome||crb} value of all wielded weapons by 1. Super Mutants are also immune to damage from {@rule Radiation||Fallout}."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "stat modifier",
+            "defensive"
+         ]
+      },
+      {
+         "name": "Inorganic",
+         "description": [
+            "Since robots are inorganic, they do not gain the benefits of recovering wounds with {@gear painkiller|Painkillers|crb} or a {@skill Medicine||crb} check. Robots can recover wounds and strain naturally by resting, as their systems attempt self-repairs. Robots can also be \"healed\" by using the {@skill Mechanics||crb} skill instead of the {@skill Medicine||crb} skill, but otherwise following the guidelines detailed on page 116 (CRB). A robot also increases its Soak by 2."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "recovery"
+         ]
+      },
+      {
+         "name": "Neurological Implant",
+         "description": [
+            "Gen 3 synths have an implant in their brains that can be exploited by anyone who knows the specific synth's override code. Anyone who knows the synth's code can use it to render the synth inactive by speaking the code phrase (usually a series of letters and numbers)."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "weakness"
+         ]
+      },
+      {
+         "name": "Rad Resistance",
+         "description": [
+            "Ghouls take no damage from {@rule Radiation||fallout} damage sources. Once per session when exposed to a source of {@rule Radiation||fallout} damage, a ghoul character may spend a Story Point to heal a number of wounds  equal to the rating of the {@rule Radiation||fallout} source."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "active",
+            "incidental",
+            "session",
+            "story point cost",
+            "defensive",
+            "recovery"
+         ]
+      },
+      {
+         "name": "Special Abilities",
+         "description": [
+            "Robots do not need to eat, sleep, or breathe, and are unaffected by toxins and poisons. If you are using the {@rule Cybernetics||crb} rules from the {@setting science fiction||crb} setting (see page 177 CRB), robots do not reduce their Strain Threshold when they receive {@rule Cybernetics||crb} (the {@rule Cybernetics||crb} can represent upgraded mechanical components instead of true {@rule Cybernetics||crb})."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "stat modifier"
+         ]
+      },
+      {
+         "name": "Synthetic Human",
+         "description": [
+            "Synths are immune to disease and receive {@dice b} to any {@skill Resilience||crb} checks to resist {@rule environmental effects (brief)|Environmental Effects|crb}."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier",
+            "defensive"
          ]
       }
    ],
@@ -3191,8 +3236,14 @@
             }
          ],
          "talents": [
-            "Adversary 1",
-            "Durable 2"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
+            {
+               "name": "Durable 2",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -3376,7 +3427,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Immune to Radiation"
@@ -3459,7 +3513,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary $1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Immune to Radiation"
@@ -3542,12 +3599,15 @@
          ],
          "talents": [
             {
+               "name": "Parry 2",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            {
                "name": "Knack for It",
                "description": "Remove {@dice k|2} from {@skill Stealth||crb} checks."
             },
-            "Parry 2"
-         ],
-         "abilities": [
             {
                "name": "Tough Shell",
                "description": "An attacker may take the {@rule maneuvers (brief)|Aim|crb} maneuver to target the face of the Mirelurk; on a success the Mirelurk's Soak is reduced by 5 for one hit of that combat check)"
@@ -3779,7 +3839,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary $1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -3994,7 +4057,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary $1",
+               "source": "crb"
+            }
          ],
          "abilities": [],
          "weapons": [
@@ -4090,7 +4156,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary $1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -4190,10 +4259,6 @@
             }
          ],
          "talents": [
-            {
-               "name": "Uncanny Senses",
-               "description": "Add {@dice b} to {@skill Perception||crb} and {@skill Vigilance||crb} checks."
-            }
          ],
          "abilities": [
             {
@@ -4203,6 +4268,10 @@
             {
                "name": "Hover-Jet",
                "description": "Ignore {@rule environmental effects (brief)|Difficult Terrain|crb}."
+            },
+            {
+               "name": "Uncanny Senses",
+               "description": "Add {@dice b} to {@skill Perception||crb} and {@skill Vigilance||crb} checks."
             }
          ],
          "weapons": [
@@ -4321,7 +4390,10 @@
             }
          ],
          "talents": [
-            "Adversary 2"
+            {
+               "name": "Adversary $1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -4464,7 +4536,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary $1",
+               "source": "crb"
+            }
          ],
          "abilities": [],
          "weapons": [
@@ -4553,7 +4628,10 @@
             }
          ],
          "talents": [
-            "Durable 1"
+            {
+               "name": "Durable 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -4682,9 +4760,18 @@
             }
          ],
          "talents": [
-            "Adversary 1",
-            "Defensive",
-            "Durable 2"
+            {
+               "name": "Adversary $1",
+               "source": "crb"
+            },
+            {
+               "name": "Defensive",
+               "source": "crb"
+            },
+            {
+               "name": "Durable 2",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -4806,9 +4893,18 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "Durable 3",
-            "Enduring 2",
+            {
+               "name": "Adversary $1",
+               "source": "crb"
+            },
+            {
+               "name": "Durable 3",
+               "source": "crb"
+            },
+            {
+               "name": "Enduring 2",
+               "source": "crb"
+            },
             {
                "name": "Knockdown",
                "description": "May spend {@symbols t} on combat checks to knock a target prone."
@@ -4976,7 +5072,10 @@
             }
          ],
          "talents": [
-            "Adversary 3",
+            {
+               "name": "Adversary $1",
+               "source": "crb"
+            },
             "Commando",
             "Gunslinger 3"
          ],
@@ -5111,7 +5210,10 @@
             }
          ],
          "talents": [
-            "Durable 1"
+            {
+               "name": "Durable 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -5235,7 +5337,10 @@
             }
          ],
          "talents": [
-            "Durable 1"
+            {
+               "name": "Durable 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -5462,12 +5567,12 @@
             }
          ],
          "talents": [
+         ],
+         "abilities": [
             {
                "name": "Knack for It",
                "description": "Remove {@dice k|2} from {@skill Computers||crb}, {@skill Knowledge||crb}, and {@skill Mechanics||crb} checks."
-            }
-         ],
-         "abilities": [
+            },
             {
                "name": "Synth Protection",
                "description": "Can transfer any hit  in combat to an allied synth at engaged range."

@@ -1,0 +1,79 @@
+{
+   "$id": "https://silentarctic.github.io/schemas/archetype_ability_schema.json",
+   "type": "array",
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string",
+            "description": "Ability name."
+         },
+         "description": {
+            "$ref": "varyingDisplay_sub_schema.json",
+            "description": "Ability details"
+         },
+         "tags": {
+            "type": "array",
+            "items": {
+               "type": "string",
+               "enum": [
+                  "combat",
+                  "social",
+                  "general",
+                  "passive",
+                  "active",
+                  "action",
+                  "maneuver",
+                  "incidental",
+                  "incidental (out of turn)",
+                  "session",
+                  "encounter",
+                  "movement",
+                  "Æmber",
+                  "animal companion",
+                  "beasts",
+                  "character creation modifier",
+                  "critical injury",
+                  "crowd control",
+                  "defensive",
+                  "factions",
+                  "fear",
+                  "free maneuver",
+                  "gear",
+                  "hacking",
+                  "initiative",
+                  "item quality",
+                  "leader",
+                  "magic",
+                  "motivation",
+                  "movement",
+                  "narrative",
+                  "offensive",
+                  "opposed",
+                  "recovery",
+                  "results modifier",
+                  "results spend",
+                  "skill",
+                  "skill check modifier",
+                  "stat modifier",
+                  "status effect",
+                  "story point cost",
+                  "support",
+                  "unique spell",
+                  "vehicles",
+                  "weakness"
+               ]
+            },
+            "description": "Applicable tags for filtering."
+         }
+      },
+      "required": [
+         "name",
+         "description"
+      ],
+      "optional": [
+         "tags"
+      ],
+      "additionalProperties": false
+   }
+}

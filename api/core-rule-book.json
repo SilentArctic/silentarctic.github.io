@@ -1,5 +1,5 @@
 {
-   "$schema": "../schemas/schema.json",
+   "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
          "json": "core-rule-book",
@@ -7,7 +7,7 @@
          "abbreviation": "CRB",
          "color": "#14C0F1",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/",
-         "version": "2024.12.26",
+         "version": "2025.1.16",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -2855,12 +2855,7 @@
             "choice": true
          },
          "abilities": [
-            {
-               "name": "Natural Weapons",
-               "description": [
-                  "An animalistic alien adds +2 damage to any Brawl combat checks they make. Their Brawl combat checks also gain the Vicious 1 quality or increase an existing Vicious quality by one."
-               ]
-            }
+            "Natural Weapons"
          ],
          "description": [
             "Space opera settings often have alien species that are derivative of some terrestrial species. Fiction abounds with catlike aliens, turtle-like aliens, reptilian aliens, and so forth. Traditionally, these species are stronger, faster, or tougher than humans, and they share some traits with the nonsapient Terran species they mimic. Our animalistic alien species is stronger and faster than most average humans, but trades this for fewer starting XP. The physical appearance of this species is, of course, up to you."
@@ -2897,12 +2892,7 @@
             "choice": true
          },
          "abilities": [
-            {
-               "name": "Ready for Anything",
-               "description": [
-                  "Once per session as an out-of-turn incidental, you may move one Story Point from the Game Master's pool to the players' pool."
-               ]
-            }
+            "Ready for Anything"
          ],
          "description": [
             "The average human archetype is our baseline for character creation, and portrays the most customizable example of a person. You should choose this archetype if you prefer to play \"generalist\" characters, who are never going to be terrible at anything. You should also choose this archetype if you have a very specific type of character in mind, since this archetype has the most customization options of the four choices.",
@@ -2938,18 +2928,8 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Special Abilities",
-               "description": [
-                  "Bioroids do not need to eat, sleep, or breathe, and are unaffected by toxins and poisons. Bioroids do not reduce their strain threshold when they receive cybernetics (in the case of bioroids, the cybernetics can represent upgraded mechanical components instead of true cybernetics)."
-               ]
-            },
-            {
-               "name": "Inorganic",
-               "description": [
-                  "Since bioroids are inorganic, they do not gain the benefits of healing wounds with {@gear painkiller|painkillers} or a {@skill Medicine} check. Bioroids can heal wounds and strain naturally by resting, as their systems attempt self-repairs. Bioroids can also be \"healed\" by using the {@skill Mechanics} skill instead of the {@skill Medicine} skill, but otherwise following the guidelines detailed on page 116."
-               ]
-            }
+            "Special Abilities (Bioroid)",
+            "Inorganic (Bioroid)"
          ],
          "description": [
             "This profile works for just about any humanoid robot with human-level intelligence and a certain degree of free will. Because robots are built to meet certain specifications, we gave the bioroid low starting characteristics but a lot of experience. That way, you can customize your characteristics and skills to represent any of the different \"models\" of bioroid."
@@ -2986,12 +2966,7 @@
             "choice": true
          },
          "abilities": [
-            {
-               "name": "A Face in a Crowd",
-               "description": [
-                  "Characters add {@dice setback} to any checks they make to pick a clone out in a crowd. Clones also add {@dice setback} to social skill checks they make when interacting with people who don't know the specific clone."
-               ]
-            }
+            "A Face in a Crowd"
          ],
          "description": [
             "This profile is of a human clone. We assume this is a corporation-produced clone that has been tailored for a certain job (otherwise, if this were an unmodified clone, you could simply use the average human profile on page 36). Like bioroids, clones have customization options to represent their \"designed\" nature, but in their case, we did this by giving a clone focused skill options, but less experience. The \"A Face in the Crowd\" rule represents a clone blending into an urban setting (after all, they look exactly like a bunch of other clones), but may have to deal with anti-clone bias."
@@ -3028,18 +3003,8 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Dark Vision",
-               "description": [
-                  "When making skill checks, dwarves remove up to {@dice setback|2} imposed due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness}."
-               ]
-            },
-            {
-               "name": "Tough as Nails",
-               "description": [
-                  "Once per session, a dwarf character may spend a Story Point as an out-of-turn incidental immediately after suffering a Critical Injury and determining the result. If they do so, they count the result rolled as \"01.\""
-               ]
-            }
+            "Dark Vision",
+            "Tough as Nails (Dwarf)"
          ],
          "description": [],
          "settings": [
@@ -3074,12 +3039,7 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Nimble",
-               "description": [
-                  "Elf characters have a melee and ranged defense of 1."
-               ]
-            }
+            "Nimble"
          ],
          "description": [
             "Whether tall or short, with pointy or really pointy ears, most elves are known for their grace, longevity, and connection to the natural world. This profile is based on that common conception of an elf, with high Agility (and an innate defense) but a lower wound threshold."
@@ -3116,18 +3076,8 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "The Beast Within",
-               "description": [
-                  "Mongrels generally look just like any other human. However, when your character is incapacitated due to exceeding their strain threshold while in human form, they undergo the following change as an out-of-turn incidental. They heal all strain; increase their {@characteristic Brawn} and {@characteristic Agility} by one, to a maximum of 5; and reduce their {@characteristic Intellect} and {@characteristic Willpower} by one to a minimum of 1. They deal +1 damage when making unarmed attacks, and their unarmed attacks have a Crit rating of 3. In addition, their jaws elongate into muzzles, their hair thickens and they grow more all over their bodies, and their eyes become those of a hunting cat or wolf. Your GM should ensure that NPCs react appropriately to this (at the very least, upgrading the difficulty of all social skill checks twice). Your character reverts to human form after eight hours, or if they are incapacitated (by exceeding either their wound threshold or their strain threshold)."
-               ]
-            },
-            {
-               "name": "The Human Spirit",
-               "description": [
-                  "Once per session, your character may make a {@difficulty hard|Discipline} as an out-of-turn incidental. If they succeed, they may either trigger The Beast Within or avoid triggering it when they exceed their strain threshold."
-               ]
-            }
+            "The Beast Within",
+            "The Human Spirit"
          ],
          "description": [
             "The so-called mongrels are products of science run amok. In Sovereigns of Steam these poor creations were once human, but they had the misfortune of becoming the experimental fodder of some mad reject from the Royal Society. This depraved scientist used them to test a certain alchemical elixir that unlocks their inner bestial nature, turning them into a monstrous hybrid of human and animal. After a time, the elixir can wear off, returning these poor individuals to their human form. However, the dark secret is that once the elixir enters the blood, it works irrevocable changes on the imbiber's biology. Thus, the change can return at any time.",
@@ -3166,12 +3116,7 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Battle Rage",
-               "description": [
-                  "When making a melee attack, an orc can choose to add {@dice setback} to the check to add +2 to the damage dealt by one hit of that attack."
-               ]
-            }
+            "Battle Rage"
          ],
          "description": [
             "In many fantasy worlds, orcs are inherently evil or violent. But PCs are known for defying expectation, and this profile could also easily represent a half-orc who lives among civilized society. Your setting may also have orcs who are not evil or violent by default, making this a reasonable character choice. As you might expect, this orc is strong and tough, but not the friendliest character."
@@ -3204,24 +3149,9 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Mind Reader",
-               "description": [
-                  "As an action, a psionic may make an {@b opposed {@skill Discipline} versus {@skill Discipline} check} targeting one living creature within medium range. If the check succeeds, the psionic knows the target's current thoughts and emotional state. {@symbols aaa} or {@symbols t} may be spent to discover other thoughts or memories, at your GM's discretion."
-               ]
-            },
-            {
-               "name": "Mind Shaper",
-               "description": [
-                  "As an action, a psionic may make an {@b opposed {@skill Discipline} versus {@skill Vigilance}} check targeting one living creature within medium range. If the check succeeds, the psionic may cause the target to adopt an emotional state of the psionic's choice for the next minute (or one round of structured time). {@symbols a} or {@symbols t} may be spent to increase the duration by one round (and may be spent multiple times). However, if the check fails or generates {@symbols hhh} or {@symbols d}, the target realizes their emotions are being manipulated."
-               ]
-            },
-            {
-               "name": "Mind Breaker",
-               "description": [
-                  "As an action, a psionic may make an {@b opposed {@skill Discipline} versus {@skill Resilience}} check targeting one living creature within medium range. If the check succeeds, the psionic causes the target to suffer 1 strain, plus 1 additional strain per {@symbols ss} generated on the check. {@symbols aaa} or {@symbols t} may be spent to cause the target to suffer 1 wound as well."
-               ]
-            }
+            "Mind Reader",
+            "Mind Shaper",
+            "Mind Breaker"
          ],
          "description": [
             "Psionic or psychic aliens are a perennial favorite in science fiction. We made our psionic alien with a formidable Willpower and Intellect, with the tradeoff of being extremely physically weak. However, what your character gets in return are three unique abilities allowing them to read minds, manipulate emotions, and even harm opponents with a thought. What a psionic alien looks like is up to you. Traditionally, they tend to be physically frail—withered bodies with oversized heads, or spindly creatures with fragile limbs and etherial grace."
@@ -3258,18 +3188,8 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Reanimated",
-               "description": [
-                  "As reanimated corpses, revenants have several quirks, some beneficial and some detrimental. Your character does not recover wounds through natural rest, but they add {@dice boost|2} to any {@skill Medicine} checks to heal them (they don't flinch). Your character also cannot be affected by poisons (although they must be wary of insects and carrion feeders trying to make a meal from or to nest on their bodies). As with {@archetype mongrel|mongrels}, your GM should ensure that NPCs react appropriately if they are aware of your character's condition (at the very least, upgrading the difficulty of your character's social skill checks twice). Also, perfume is a good idea. Lots of perfume."
-               ]
-            },
-            {
-               "name": "Dead Nerves",
-               "description": [
-                  "Your character removes {@dice setback|2} added to any checks they make due to fatigue or injuries (including Critical Injuries)."
-               ]
-            }
+            "Reanimated",
+            "Dead Nerves"
          ],
          "description": [
             "Revenants are human corpses brought back to a semblance of life through strange and horrible medical techniques, a galvanic volt providing the final spark to induce animation. Like mongrels, this is a very popular type of character for steampunk settings.",
@@ -3308,24 +3228,9 @@
             "choice": true
          },
          "abilities": [
-            {
-               "name": "Special Abilities",
-               "description": [
-                  "Robots do not need to eat, sleep, or breathe, and are unaffected by toxins and poisons. If you are using the cybernetics rules from the {@setting science fiction} setting (see page 177), robots do not reduce their strain threshold when they receive cybernetics (the cybernetics can represent upgraded mechanical components instead of true cybernetics)."
-               ]
-            },
-            {
-               "name": "Networked Intelligence",
-               "description": [
-                  "A robot adds automatic {@symbols s} to its {@characteristic Intellect}- and {@characteristic Willpower}-based checks for each other friendly character of the same species within medium range—to a maximum of {@symbols sss}."
-               ]
-            },
-            {
-               "name": "Inorganic",
-               "description": [
-                  "Since robots are inorganic, they do not gain the benefits of recovering wounds with {@gear painkiller|painkillers} or a {@skill Medicine} check. Robots can recover wounds and strain naturally by resting, as their systems attempt self-repairs. Robots can also be \"healed\" by using the {@skill Mechanics} skill instead of the {@skill Medicine} skill, but otherwise following the guidelines detailed on page 116. A robot also increases its soak by one."
-               ]
-            }
+            "Special Abilities (Robot)",
+            "Networked Intelligence",
+            "Inorganic"
          ],
          "description": [
             "Robots in a space opera can be found in all shapes and sizes. It could be roughly humanoid but built from nearly impervious alloys; a giant, crab-like tank; or a featureless, hovering sphere. Due to the diversity of options for a robot character, we took an approach similar to that for the bioroid on page 174, starting with low characteristics but a lot of XP."
@@ -3362,12 +3267,7 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Forceful Personality",
-               "description": [
-                  "Once per session, your character may spend a Story Point as an incidental. If they do so, during the next skill check they make during that turn, your character doubles the strain they inflict or the strain they heal (you choose before making the check)."
-               ]
-            }
+            "Forceful Personality"
          ],
          "description": [
             "The aristocrat archetype represents any character who has the gift of a silver tongue. This could be a noble of some sort, a politician, a bard, or even a salesperson or merchant. You should use this archetype if you want to build a character who fits one of these molds. You should also choose this archetype if your character is good at communicating.",
@@ -3407,12 +3307,7 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Brilliant!",
-               "description": [
-                  "Once per session, your character may spend a Story Point as an incidental. If they do so, during the next check they make during that turn, you count their ranks in the skill being used as equal to their Intellect."
-               ]
-            }
+            "Brilliant!"
          ],
          "description": [
             "The intellectual archetype represents a character who has a background grounded in some sort of intellectual pursuit. This pursuit could be science, medicine, teaching, or even magic. You should choose this archetype if you want to make a character who focuses on one of those intellectual pursuits. You should also choose this archetype if your character comes from a highly educated background.",
@@ -3452,12 +3347,7 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Tough as Nails",
-               "description": [
-                  "Once per session, your character may spend a Story Point as an out-of-turn incidental immediately after suffering a Critical Injury and determining the result. If they do so, they count the result rolled as \"01.\""
-               ]
-            }
+            "Tough as Nails (Laborer)"
          ],
          "description": [
             "The laborer archetype represents a character who has a background in some form of manual labor, and who is generally strong and tough. You should choose this archetype if you're planning on making a character who focuses on fighting, especially fighting in melee combat. You should also choose this archetype if your character has a background of manual labor and hard work.",
@@ -3497,18 +3387,8 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Space Is Our Birthright",
-               "description": [
-                  "A vanguard adds automatic {@symbols a} to the results of any {@skill Astrocartography} or {@skill Knowledge} checks they make."
-               ]
-            },
-            {
-               "name": "High Tech Baubles",
-               "description": [
-                  "A vanguard starts the game with an additional 500 credits' worth of starting gear (this is in addition to their normal starting gear allowance)."
-               ]
-            }
+            "Space Is Our Birthright",
+            "High Tech Baubles"
          ],
          "description": [
             "Our vanguard species is an alien race that is humanity's superior in the galaxy. These aliens are more advanced scientifically, culturally, and even artistically than us poor, primitive humans—which inevitably makes it all the more satisfying when the human protagonist of a story accomplishes something they thought impossible."
@@ -3526,144 +3406,295 @@
          "name": "A Face in a Crowd",
          "description": [
             "Characters add {@dice setback} to any checks they make to pick a clone out in a crowd. Clones also add {@dice setback} to social skill checks they make when interacting with people who don't know the specific clone."
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "skill check modifier"
          ]
       },
       {
          "name": "Battle Rage",
          "description": [
             "When making a melee attack, an orc can choose to add {@dice setback} to the check to add +2 to the damage dealt by one hit of that attack."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental",
+            "offensive"
          ]
       },
       {
          "name": "Brilliant!",
          "description": [
             "Once per session, your character may spend a Story Point as an incidental. If they do so, during the next check they make during that turn, you count their ranks in the skill being used as equal to their Intellect."
+         ],
+         "tags": [
+            "general",
+            "session",
+            "story point cost",
+            "incidental",
+            "skill check modifier"
          ]
       },
       {
          "name": "Dark Vision",
          "description": [
             "When making skill checks, dwarves remove up to {@dice setback|2} imposed due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness}."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier"
          ]
       },
       {
          "name": "Dead Nerves",
          "description": [
             "Your character removes {@dice setback|2} added to any checks they make due to fatigue or injuries (including Critical Injuries)."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier"
          ]
       },
       {
          "name": "Forceful Personality",
          "description": [
             "Once per session, your character may spend a Story Point as an incidental. If they do so, during the next skill check they make during that turn, your character doubles the strain they inflict or the strain they heal (you choose before making the check)."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "story point cost",
+            "session",
+            "skill check modifier",
+            "recovery",
+            "offensive",
+            "defensive"
          ]
       },
       {
          "name": "High Tech Baubles",
          "description": [
             "A vanguard starts the game with an additional 500 credits' worth of starting gear (this is in addition to their normal starting gear allowance)."
+         ],
+         "tags": [
+            "general",
+            "character creation modifier"
          ]
       },
       {
          "name": "Inorganic (Bioroid)",
          "description": [
             "Since bioroids are inorganic, they do not gain the benefits of healing wounds with {@gear painkiller|painkillers} or a {@skill Medicine} check. Bioroids can heal wounds and strain naturally by resting, as their systems attempt self-repairs. Bioroids can also be \"healed\" by using the {@skill Mechanics} skill instead of the {@skill Medicine} skill, but otherwise following the guidelines detailed on page 116."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "recovery"
          ]
       },
       {
          "name": "Inorganic (Robot)",
          "description": [
             "Since robots are inorganic, they do not gain the benefits of recovering wounds with {@gear painkiller|painkillers} or a {@skill Medicine} check. Robots can recover wounds and strain naturally by resting, as their systems attempt self-repairs. Robots can also be \"healed\" by using the {@skill Mechanics} skill instead of the {@skill Medicine} skill, but otherwise following the guidelines detailed on page 116. A robot also increases its soak by one."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "recovery"
          ]
       },
       {
          "name": "Mind Breaker",
          "description": [
             "As an action, a psionic may make an {@b opposed {@skill Discipline} versus {@skill Resilience}} check targeting one living creature within medium range. If the check succeeds, the psionic causes the target to suffer 1 strain, plus 1 additional strain per {@symbols ss} generated on the check. {@symbols aaa} or {@symbols t} may be spent to cause the target to suffer 1 wound as well."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "action",
+            "opposed",
+            "offensive",
+            "results spend"
          ]
       },
       {
          "name": "Mind Reader",
          "description": [
             "As an action, a psionic may make an {@b opposed {@skill Discipline} versus {@skill Discipline} check} targeting one living creature within medium range. If the check succeeds, the psionic knows the target's current thoughts and emotional state. {@symbols aaa} or {@symbols t} may be spent to discover other thoughts or memories, at your GM's discretion."
+         ],
+         "tags": [
+            "social",
+            "active",
+            "action",
+            "opposed",
+            "motivation",
+            "results spend"
          ]
       },
       {
          "name": "Mind Shaper",
          "description": [
             "As an action, a psionic may make an {@b opposed {@skill Discipline} versus {@skill Vigilance}} check targeting one living creature within medium range. If the check succeeds, the psionic may cause the target to adopt an emotional state of the psionic's choice for the next minute (or one round of structured time). {@symbols a} or {@symbols t} may be spent to increase the duration by one round (and may be spent multiple times). However, if the check fails or generates {@symbols hhh} or {@symbols d}, the target realizes their emotions are being manipulated."
+         ],
+         "tags": [
+            "social",
+            "active",
+            "action",
+            "opposed",
+            "offensive",
+            "results spend"
          ]
       },
       {
          "name": "Natural Weapons",
          "description": [
-            "An animalistic alien adds +2 damage to any Brawl combat checks they make. Their Brawl combat checks also gain the Vicious 1 quality or increase an existing Vicious quality by one."
+            "An animalistic alien adds +2 damage to any {@skill Brawl} combat checks they make. Their {@skill Brawl} combat checks also gain the {@quality vicious|Vicious 1} quality or increase an existing {@quality Vicious} quality by one."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "stat modifier",
+            "offensive",
+            "item quality"
          ]
       },
       {
          "name": "Networked Intelligence",
          "description": [
             "A robot adds automatic {@symbols s} to its {@characteristic Intellect}- and {@characteristic Willpower}-based checks for each other friendly character of the same species within medium range—to a maximum of {@symbols sss}."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "support",
+            "skill check modifier"
          ]
       },
       {
          "name": "Nimble",
          "description": [
             "Elf characters have a melee and ranged defense of 1."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "defensive",
+            "stat modifier"
          ]
       },
       {
          "name": "Ready for Anything",
          "description": [
             "Once per session as an out-of-turn incidental, you may move one Story Point from the Game Master's pool to the players' pool."
+         ],
+         "tags": [
+            "general",
+            "session",
+            "active",
+            "incidental (out of turn)",
+            "support"
          ]
       },
       {
          "name": "Reanimated",
          "description": [
             "As reanimated corpses, revenants have several quirks, some beneficial and some detrimental. Your character does not recover wounds through natural rest, but they add {@dice boost|2} to any {@skill Medicine} checks to heal them (they don't flinch). Your character also cannot be affected by poisons (although they must be wary of insects and carrion feeders trying to make a meal from or to nest on their bodies). As with {@archetype mongrel|mongrels}, your GM should ensure that NPCs react appropriately if they are aware of your character's condition (at the very least, upgrading the difficulty of your character's social skill checks twice). Also, perfume is a good idea. Lots of perfume."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "narrative",
+            "skill check modifier"
          ]
       },
       {
          "name": "Space Is Our Birthright",
          "description": [
             "A vanguard adds automatic {@symbols a} to the results of any {@skill Astrocartography} or {@skill Knowledge} checks they make."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "results modifier"
          ]
       },
       {
          "name": "Special Abilities (Bioroid)",
          "description": [
             "Bioroids do not need to eat, sleep, or breathe, and are unaffected by toxins and poisons. Bioroids do not reduce their strain threshold when they receive cybernetics (in the case of bioroids, the cybernetics can represent upgraded mechanical components instead of true cybernetics)."
+         ],
+         "tags": [
+            "general",
+            "passive"
          ]
       },
       {
          "name": "Special Abilities (Robot)",
          "description": [
             "Robots do not need to eat, sleep, or breathe, and are unaffected by toxins and poisons. If you are using the cybernetics rules from the {@setting science fiction} setting (see page 177), robots do not reduce their strain threshold when they receive cybernetics (the cybernetics can represent upgraded mechanical components instead of true cybernetics)."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "stat modifier"
          ]
       },
       {
          "name": "The Beast Within",
          "description": [
             "Mongrels generally look just like any other human. However, when your character is incapacitated due to exceeding their strain threshold while in human form, they undergo the following change as an out-of-turn incidental. They heal all strain; increase their {@characteristic Brawn} and {@characteristic Agility} by one, to a maximum of 5; and reduce their {@characteristic Intellect} and {@characteristic Willpower} by one to a minimum of 1. They deal +1 damage when making unarmed attacks, and their unarmed attacks have a Crit rating of 3. In addition, their jaws elongate into muzzles, their hair thickens and they grow more all over their bodies, and their eyes become those of a hunting cat or wolf. Your GM should ensure that NPCs react appropriately to this (at the very least, upgrading the difficulty of all social skill checks twice). Your character reverts to human form after eight hours, or if they are incapacitated (by exceeding either their wound threshold or their strain threshold)."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental (out of turn)",
+            "skill check modifier",
+            "narrative",
+            "offensive"
          ]
       },
       {
          "name": "The Human Spirit",
          "description": [
             "Once per session, your character may make a {@difficulty hard|Discipline} as an out-of-turn incidental. If they succeed, they may either trigger The Beast Within or avoid triggering it when they exceed their strain threshold."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental (out of turn)",
+            "session"
          ]
       },
       {
          "name": "Tough as Nails (Dwarf)",
          "description": [
             "Once per session, a dwarf character may spend a Story Point as an out-of-turn incidental immediately after suffering a Critical Injury and determining the result. If they do so, they count the result rolled as \"01.\""
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental (out of turn)",
+            "story point cost",
+            "critical injury"
          ]
       },
       {
          "name": "Tough as Nails (Laborer)",
          "description": [
             "Once per session, your character may spend a Story Point as an out-of-turn incidental immediately after suffering a Critical Injury and determining the result. If they do so, they count the result rolled as \"01.\""
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental (out of turn)",
+            "story point cost",
+            "critical injury"
          ]
       }
    ],
@@ -13256,7 +13287,7 @@
                "modifier": "+2",
                "circumstances": [
                   "Frontier location",
-                  "Laws prohibiting ownership (modifer only applies to certain items, such as military weaponry or aircraft)"
+                  "Laws prohibiting ownership (modifier only applies to certain items, such as military weaponry or aircraft)"
                ]
             },
             {

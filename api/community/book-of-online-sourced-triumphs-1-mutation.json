@@ -1,5 +1,5 @@
 {
-   "$schema": "../../schemas/schema.json",
+   "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
          "json": "book-of-online-sourced-triumphs-1-mutation",
@@ -7,7 +7,7 @@
          "abbreviation": "BOOST:1",
          "color": "#30F030",
          "url": "https://www.drivethrurpg.com/product/314884/BOOST-1-Mutation/",
-         "version": "2023.5.27",
+         "version": "2025.1.16",
          "authors": [
             "Genesys RPG Community",
             "Flame112",
@@ -70,7 +70,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -168,7 +171,7 @@
          "talents": [
             {
                "name": "Lucky Strike",
-               "description": " Brawn"
+               "source": "crb"
             }
          ],
          "abilities": [
@@ -284,7 +287,10 @@
             }
          ],
          "talents": [
-            "Adversary 2"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -354,26 +360,34 @@
             "choice": true
          },
          "abilities": [
-            {
-               "name": "Super Mutations",
-               "description": [
-                  "A Super Mutant may spend a maneuver to choose one of the following mutations. This character gains the benefit of that mutation until they take a maneuver to choose a different mutation or until they exceed their Strain threshold. Each time this character uses this maneuver, they reduce their strain threshold by 1 until the end of the current encounter (Or until the end of the next encounter if they use this maneuver outside of structured gameplay).",
-                  {
-                     "type": "list",
-                     "items": [
-                        "{@b Wings:} Your Super Mutant character can fly. See page 100 of the {@title Genesys} Core Rulebook for details on flying",
-                        "{@b Amphibious:} Your Super Mutant character can breathe underwater and move through water without penalty.",
-                        "{@b Scaly Hide:} Increase your Super Mutant character's soak by +1.",
-                        "{@b Natural Weapons:} Your Super Mutant character's unarmed attacks have their damage increased by +2 and have a Critical rating of 3.",
-                        "{@b Pheremones:} The Super Mutant adds {@dice boost} to all Social checks they make against characters The Super Mutant adds {@dice boost} to all Social checks they make against characters within short range. Additionally, a character within short range adds {@dice setback} to all Social checks that target the Super Mutant."
-                     ]
-                  }
-               ]
-            }
+            "Super Mutations"
          ],
          "description": [
             "A Super Mutant is a person that has undergone an extreme and particular form of mutation, changing their genetic make-up. While they usually appear like a normal person, they have the ability to mutate different parts of their body. This includes instantaneously growing gills, wings, claws, scales or even manipulating their body chemistry. But these mutations are limited, only able to manifest one at a time. And they take a toll on the Super Mutant, sapping them of strength with each mutation.",
             "{@b Author:} Caleb \"Cptn_Smitty\" Smith"
+         ]
+      }
+   ],
+   "archetypeAbility": [
+      {
+         "name": "Super Mutations",
+         "description": [
+            "A Super Mutant may spend a maneuver to choose one of the following mutations. This character gains the benefit of that mutation until they take a maneuver to choose a different mutation or until they exceed their Strain threshold. Each time this character uses this maneuver, they reduce their strain threshold by 1 until the end of the current encounter (Or until the end of the next encounter if they use this maneuver outside of structured gameplay).",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Wings:} Your Super Mutant character can fly. See page 100 of the {@title Genesys} Core Rulebook for details on flying",
+                  "{@b Amphibious:} Your Super Mutant character can breathe underwater and move through water without penalty.",
+                  "{@b Scaly Hide:} Increase your Super Mutant character's soak by +1.",
+                  "{@b Natural Weapons:} Your Super Mutant character's unarmed attacks have their damage increased by +2 and have a Critical rating of 3.",
+                  "{@b Pheremones:} The Super Mutant adds {@dice boost} to all Social checks they make against characters The Super Mutant adds {@dice boost} to all Social checks they make against characters within short range. Additionally, a character within short range adds {@dice setback} to all Social checks that target the Super Mutant."
+               ]
+            }
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "character creation modifier"
          ]
       }
    ],

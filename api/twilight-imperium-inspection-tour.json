@@ -14,7 +14,7 @@
          ],
          "url": "https://www.edge-studio.net/shares/twilight-imperium/",
          "releaseDate": "20 March 2024",
-         "version": "2024.8.29",
+         "version": "2025.1.16",
          "module": true
       },
       "defaultItemSettings": [
@@ -1496,7 +1496,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {

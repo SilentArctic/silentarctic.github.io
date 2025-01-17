@@ -164,20 +164,28 @@
          "talents": {
             "type": "array",
             "items": {
-               "type": ["object", "string"],
-               "properties": {
-                  "name": {
+               "oneOf": [
+                  {
                      "type": "string"
                   },
-                  "description": {
-                     "type": "string"
+
+                  {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
+                        },
+                        "source": {
+                           "type": "string"
+                        }
+                     },
+                     "required": [
+                        "name",
+                        "source"
+                     ],
+                     "additionalProperties": false
                   }
-               },
-               "required": [
-                  "name",
-                  "description"
-               ],
-               "additionalProperties": false
+               ]
             }
          },
          "abilities": {
