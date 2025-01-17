@@ -1,5 +1,5 @@
 {
-   "$schema": "../schemas/schema.json",
+   "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
          "json": "expanded-players-guide",
@@ -14,7 +14,7 @@
             "Craftidore"
          ],
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/expanded-players-guide/",
-         "version": "2024.12.26",
+         "version": "2025.1.16",
          "releaseDate": "20 September 2019"
       },
       "filters": {
@@ -308,7 +308,10 @@
             }
          ],
          "talents": [
-            "Can't We Talk about This?"
+            {
+               "name": "Can't We Talk about This?",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -393,7 +396,10 @@
             }
          ],
          "talents": [
-            "Bullrush"
+            {
+               "name": "Bullrush",
+               "source": "rot"
+            }
          ],
          "abilities": [
             {
@@ -2297,7 +2303,10 @@
             }
          ],
          "talents": [
-            "Bullrush"
+            {
+               "name": "Bullrush",
+               "source": "rot"
+            }
          ],
          "abilities": [
             "Encumbrance Capacity 18",
@@ -3141,7 +3150,10 @@
             }
          ],
          "talents": [
-            "Second Wind 3"
+            {
+               "name": "Second Wind 3",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -3305,7 +3317,10 @@
             }
          ],
          "talents": [
-            "Surgeon 2"
+            {
+               "name": "Surgeon 2",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -3556,9 +3571,18 @@
             }
          ],
          "talents": [
-            "Adversary 1",
-            "Clever Retort",
-            "Ruinous Repartee"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
+            {
+               "name": "Clever Retort",
+               "source": "crb"
+            },
+            {
+               "name": "Ruinous Repartee",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -3630,7 +3654,10 @@
             }
          ],
          "talents": [
-            "Inspiring Rhetoric (Improved)"
+            {
+               "name": "Inspiring Rhetoric (Improved)",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Corporate Oversight"
@@ -3776,8 +3803,14 @@
             }
          ],
          "talents": [
-            "Indomitable",
-            "Second Wind 3"
+            {
+               "name": "Indomitable",
+               "source": "crb"
+            },
+            {
+               "name": "Second Wind 3",
+               "source": "crb"
+            }
          ],
          "abilities": [],
          "weapons": [],
@@ -3850,7 +3883,10 @@
             }
          ],
          "talents": [
-            "Hamstring Shot"
+            {
+               "name": "Hamstring Shot",
+               "source": "crb"
+            }
          ],
          "abilities": [],
          "weapons": [],
@@ -3951,7 +3987,10 @@
             }
          ],
          "talents": [
-            "Animal Companion"
+            {
+               "name": "Animal Companion",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -4063,8 +4102,14 @@
             }
          ],
          "talents": [
-            "Barrel Roll",
-            "Defensive Driving 2"
+            {
+               "name": "Barrel Roll",
+               "source": "crb"
+            },
+            {
+               "name": "Defensive Driving 2",
+               "source": "crb"
+            }
          ],
          "abilities": [],
          "weapons": [],
@@ -4141,7 +4186,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -4226,9 +4274,12 @@
          "talents": [
             {
                "name": "Body Guard 2",
-               "description": "As a maneuver, may suffer up to 2 strain to upgrade the difficulty of all combat checks targeting one ally engaged with this character a number of times equal to the strain suffered."
+               "source": "rot"
             },
-            "Rapid Reaction 2"
+            {
+               "name": "Rapid Reaction 2",
+               "source": "crb"
+            }
          ],
          "abilities": [],
          "weapons": [],
@@ -4317,8 +4368,14 @@
             }
          ],
          "talents": [
-            "Adversary 1",
-            "Field Commander"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
+            {
+               "name": "Field Commander",
+               "source": "crb"
+            }
          ],
          "abilities": [],
          "weapons": [],
@@ -4396,8 +4453,14 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "Coordinated Assault 4"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
+            {
+               "name": "Coordinated Assault 4",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -4540,8 +4603,14 @@
             }
          ],
          "talents": [
-            "Combat Medicine 2",
-            "Painkiller Specialization 2"
+            {
+               "name": "Combat Medicine 2",
+               "source": "crb"
+            },
+            {
+               "name": "Painkiller Specialization 2",
+               "source": "crb"
+            }
          ],
          "abilities": [],
          "weapons": [],
@@ -4627,9 +4696,18 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "Hamstring Shot",
-            "Heightened Awareness"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
+            {
+               "name": "Hamstring Shot",
+               "source": "crb"
+            },
+            {
+               "name": "Heightened Awareness",
+               "source": "crb"
+            }
          ],
          "abilities": [],
          "weapons": [],
@@ -4870,12 +4948,7 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Tragic Fate",
-               "description": [
-                  "When preparing the Story pools at the beginning of the game session, add one Story Point to the GM pool instead of the player pool."
-               ]
-            }
+            "Tragic Fate"
          ],
          "description": [
             "This character might have been born of a union between a mortal and a god, or perhaps they are the child of gods stolen at birth and robbed of their divine majesty."
@@ -4914,12 +4987,7 @@
             "choice": true
          },
          "abilities": [
-            {
-               "name": "Supernatural Suspicion",
-               "description": [
-                  "Once per session after this character makes a magic skill check, you may spend a Story Point to reroll one or more dice of your choice in the pool. After doing so, all NPCs in the current encounter gain an adversion of this character and their supernatural nature as a Fear facet of their Motivation"
-               ]
-            }
+            "Supernatural Suspicion"
          ],
          "description": [
             "In many mythologies, a person is born a magic user; magic is not a skill that can be learned or taught. This archetype plays into this concept, and should only be used if the game is using the magic alternative rules starting on page 210 of the {@title Genesys} Core Rulebook. It also plays with the idea that magic is something that is feared in most mythologies."
@@ -4959,12 +5027,7 @@
             "choice": true
          },
          "abilities": [
-            {
-               "name": "Too Clever by Half",
-               "description": [
-                  "Once per session before your character makes a skill check with {@dice boost} in the dice pool, you may spend a Story Point to double the number of {@dice boost} currently in the dice pool. If your character fails the check, they suffer 6 strain in addition to any other penalties."
-               ]
-            }
+            "Too Clever by Half"
          ],
          "description": [
             "Without powers from birth, native magic, or even particular strength at arms, some mortals are still able to rise to greatness through their brainpower."
@@ -5001,24 +5064,9 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Curse of the Beast",
-               "description": [
-                  "While cursed shifters normally are human, when the full moon rises, they transform into a monstrous wolf or great cat (whether they can see the moon or not). The cursed shifter changes into their Beast Form as an out-of-turn incidental. This transformation lasts until the following dawn or until the cursed shifter is incapacitated due to exceeding their wound threshold."
-               ]
-            },
-            {
-               "name": "Beast Form",
-               "description": [
-                  "When the cursed shifter transforms into Beast Form, they heal all strain they are currently suffering, increase their {@characteristic brawn||crb} and {@characteristic agility||crb} by one to a maximum of 5, and reduce their {@characteristic intellect||crb} and {@characteristic willpower||crb} by one to a minimum of 1. Their unarmed attacks deal +3 damage and have a Critical rating of 2. All opponents must halve the damage dealt to a cursed shifter in Beast Form before applying soak, unless the weapon is made of silver or uses silver ammunition. Finally, the cursed shifter must make a {@difficulty hard|discipline} as an out-of-turn incidental when they transform. If they succeed, they may act normally, but if they fail, they give in to their animal instincts and must attack anyone around them with frenzied savagery (you should discuss the specifics of how they act with your GM, and it is up to your GM if they can make another attempt to regain control)."
-               ]
-            },
-            {
-               "name": "Bite of the Wolf",
-               "description": [
-                  "When a cursed shifter in their Beast Form makes an unarmed attack and inflicts a Critical Injury result of 51 or higher on a human PC or nemesis human NPC (your GM determines what counts as human), the human gains the Bite of the Wolf, Curse of the Beast, and Beast Form abilities. You may spend one Story Point after your cursed shifter character inflicts a Critical Injury to prevent this from happening."
-               ]
-            }
+            "Curse of the Beast",
+            "Beast Form",
+            "Bite of the Wolf"
          ],
          "description": [
             "The curse could have come from a family legacy or a bite from a feral monster, but the result is the same: an individual who transforms into a beast when the moon is full. Some search for a cure, while others embrace their feral nature. A few seek to use their terrible curse to battle others like themselves, knowing it is better to fall that way than let the call of the beast consume their soul."
@@ -5055,24 +5103,9 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Blood Call",
-               "description": [
-                  "A dhampir has fangs and can use them as a weapon with the following profile (Brawl; Damage +0; Critical 2; Range [Engaged]; {@quality ensnare|Ensnare 1|crb}, {@quality pierce|Pierce 2|crb}, {@quality vicious|Vicious 2|crb}). When a dhampir inflicts wounds with their fangs (or narratively drinks blood), you may spend a Story Point to have them heal 4 strain and 4 wounds. However, if a dhampir kills a person with their fangs, the dhampir becomes a vampire, maintaining their profile but becoming an evil spawn of darkness (what this means for your character is up to your GM)."
-               ]
-            },
-            {
-               "name": "Sunlight Sensitivity",
-               "description": [
-                  "While a dhampir is exposed to direct sunlight, they reduce their wound and strain thresholds by 4."
-               ]
-            },
-            {
-               "name": "Vulnerable Heart",
-               "description": [
-                  "When a dhampir suffers a Critical Injury from a weapon made of wood, such as a stake or crossbow bolt, add 40 to the Critical Injury result."
-               ]
-            }
+            "Blood Call",
+            "Sunlight Sensitivity",
+            "Vulnerable Heart"
          ],
          "description": [
             "The dhampir, or half vampire, can either be the child of a union between a vampire and a living person or a human who has not yet fully succumbed to the thirst for blood. Dhampirs inherit some of the strengths (and weaknesses) of their vampire progenitors"
@@ -5113,12 +5146,7 @@
             "choice": true
          },
          "abilities": [
-            {
-               "name": "Strike True",
-               "description": [
-                  "Once per session, when a fearless slayer inflicts a Critical Injury, you may spend one Story Point to roll two separate results and choose which result to apply."
-               ]
-            }
+            "Strike True"
          ],
          "description": [
             "Those who stalk the monsters of the night can be terrifying individuals themselves. Consumed with vengeance, they attack with all the fury of the creatures they hunt. One day, they will also fall, but not before they end the existence of as many of their hated foes as possible."
@@ -5156,12 +5184,7 @@
             "choice": true
          },
          "abilities": [
-            {
-               "name": "Know Its Weakness",
-               "description": [
-                  "Once per session, you may spend a Story Point to have your loremaster character increase the damage dealt by all allies' combat checks by the loremaster's ranks in {@skill knowledge (supernatural)} until the end of the loremaster's next turn."
-               ]
-            }
+            "Know Its Weakness"
          ],
          "description": [
             "Even in a modern age, there is power to be gleaned from ancient knowledge. Loremasters know the importance of crosses, silver, and other items against the supernatural, and often take the lead in defeating monsters."
@@ -5198,28 +5221,8 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Just a Scratch",
-               "description": [
-                  "When making a check to recover strain at the end of an encounter, a mutant may use {@skill resilience||crb} instead of {@skill discipline||crb} or {@skill cool||crb}. In addition, a mutant may spend {@symbols aa} from that check to heal 1 wound (and they may do so multiple times)."
-               ]
-            },
-            {
-               "name": "Mutation",
-               "description": [
-                  "Before spending starting experience, choose one of the following abilities for your mutant character:",
-                  {
-                     "type": "list",
-                     "items": [
-                        "{@b Flyer:} Your mutant character can fly. See page 100 of the {@title Genesys} Core Rulebook for details on flying.",
-                        "{@b Amphibious:} Your mutant character can breathe underwater and move through water without penalty.",
-                        "{@b Scaly Hide:} Increase your mutant character's soak by +1.",
-                        "{@b Multiple Limbs:} Your mutant character gains an additional free maneuver per turn. They still may not perform more than two maneuvers during their turn.",
-                        "{@b Natural Weapons:} Your mutant character's unarmed attacks have their damage increased by +2 and have a Critical rating of 3."
-                     ]
-                  }
-               ]
-            }
+            "Just a Scratch",
+            "Mutation"
          ],
          "description": [
             "The mutant presented here is a basic brute. Since mutation is so fickle, we've given the mutant low starting characteristics and a fair amount of experience. Using this basic template, players can customize their mutant to their heart's content to make the perfect character."
@@ -5257,12 +5260,7 @@
             "choice": true
          },
          "abilities": [
-            {
-               "name": "Remember This?",
-               "description": [
-                  "A sleeper adds {@symbols a} to the results of any checks they make to identify, use, or repair pre-apocalypse items, equipment, or media (including combat checks)."
-               ]
-            }
+            "Remember This?"
          ],
          "description": [
             "Sleepers are the near-perfect remnants of the humanity that existed before the apocalypse. Perhaps they were sealed in underground shelters, or they have just been thawed out of cyrosleep. Sleepers are unique thanks to their lack of mutations and general good health."
@@ -5299,12 +5297,7 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Always Prepared",
-               "description": [
-                  "When a survivor makes a check to heal strain at the end of an encounter, they heal 1 additional strain."
-               ]
-            }
+            "Always Prepared"
          ],
          "description": [
             "Most of the people one finds in the post apocalypse are survivors, average people who through luck and skill have managed to ride out the calamity that destroyed civilization. Now they're trying to master the most valuable skill in this new era: staying alive."
@@ -5321,42 +5314,117 @@
          "name": "Always Prepared",
          "description": [
             "When a survivor makes a check to heal strain at the end of an encounter, they heal 1 additional strain."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "recovery"
          ]
       },
       {
          "name": "Beast Form",
          "description": [
             "When the cursed shifter transforms into Beast Form, they heal all strain they are currently suffering, increase their {@characteristic brawn||crb} and {@characteristic agility||crb} by one to a maximum of 5, and reduce their {@characteristic intellect||crb} and {@characteristic willpower||crb} by one to a minimum of 1. Their unarmed attacks deal +3 damage and have a Critical rating of 2. All opponents must halve the damage dealt to a cursed shifter in Beast Form before applying soak, unless the weapon is made of silver or uses silver ammunition. Finally, the cursed shifter must make a {@difficulty hard|discipline} as an out-of-turn incidental when they transform. If they succeed, they may act normally, but if they fail, they give in to their animal instincts and must attack anyone around them with frenzied savagery (you should discuss the specifics of how they act with your GM, and it is up to your GM if they can make another attempt to regain control)."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental (out of turn)",
+            "skill check modifier"
          ]
       },
       {
          "name": "Blood Call",
          "description": [
-            "A dhampir has fangs and can use them as a weapon with the following profile (Brawl; Damage +0; Critical 2; Range [Engaged]; {@quality ensnare|Ensnare 1|crb}, {@quality pierce|Pierce 2|crb}, {@quality vicious|Vicious 2|crb}). When a dhampir inflicts wounds with their fangs (or narratively drinks blood), you may spend a Story Point to have them heal 4 strain and 4 wounds. However, if a dhampir kills a person with their fangs, the dhampir becomes a vampire, maintaining their profile but becoming an evil spawn of darkness (what this means for your character is up to your GM)."
+            "A dhampir has fangs and can use them as a weapon with the following profile (Brawl; Damage +0; Critical 2; Range [Engaged]; {@quality ensnare|Ensnare 1|crb}, {@quality pierce|Pierce 2|crb}, {@quality vicious|Vicious 2|crb}). When a dhampir inflicts wounds with their fangs (or narratively drinks blood), you may spend a Story Point to have them heal 4 strain and 4 wounds. However, if a dhampir kills a person with their fangs, the dhampir becomes a vampire, maintaining their profile but becoming an evil spawn of darkness (what this means for your character is up to your GM).",
+
+            {
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Skill"
+                  },
+                  {
+                     "header": "Damage"
+                  },
+                  {
+                     "header": "Critical"
+                  },
+                  {
+                     "header": "Range"
+                  },
+                  {
+                     "header": "Special"
+                  }
+               ],
+               "rows": [{
+                  "skill": "{@skill Brawl||crb}",
+                  "damage": "+0",
+                  "critical": 2,
+                  "range": "Engaged",
+                  "special": "{@quality ensnare|Ensnare 1|crb}, {@quality pierce|Pierce 2|crb}, {@quality vicious|Vicious 2|crb}"
+               }]
+            }
+         ],
+         "tags": [
+            "combat",
+            "social",
+            "passive",
+            "active",
+            "incidental",
+            "offensive",
+            "story point cost"
          ]
       },
       {
          "name": "Bite of the Wolf",
          "description": [
             "When a cursed shifter in their Beast Form makes an unarmed attack and inflicts a Critical Injury result of 51 or higher on a human PC or nemesis human NPC (your GM determines what counts as human), the human gains the Bite of the Wolf, Curse of the Beast, and Beast Form abilities. You may spend one Story Point after your cursed shifter character inflicts a Critical Injury to prevent this from happening."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "story point cost",
+            "critical injury"
          ]
       },
       {
          "name": "Curse of the Beast",
          "description": [
             "While cursed shifters normally are human, when the full moon rises, they transform into a monstrous wolf or great cat (whether they can see the moon or not). The cursed shifter changes into their Beast Form as an out-of-turn incidental. This transformation lasts until the following dawn or until the cursed shifter is incapacitated due to exceeding their wound threshold."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental (out of turn)"
          ]
       },
       {
          "name": "Just a Scratch",
          "description": [
             "When making a check to recover strain at the end of an encounter, a mutant may use {@skill resilience||crb} instead of {@skill discipline||crb} or {@skill cool||crb}. In addition, a mutant may spend {@symbols aa} from that check to heal 1 wound (and they may do so multiple times)."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier",
+            "results spend",
+            "recovery"
          ]
       },
       {
          "name": "Know Its Weakness",
          "description": [
             "Once per session, you may spend a Story Point to have your loremaster character increase the damage dealt by all allies' combat checks by the loremaster's ranks in {@skill knowledge (supernatural)} until the end of the loremaster's next turn."
+         ],
+         "tags": [
+            "combat",
+            "session",
+            "story point cost",
+            "active",
+            "incidental",
+            "support",
+            "offensive"
          ]
       },
       {
@@ -5373,48 +5441,101 @@
                   "{@b Natural Weapons:} Your mutant character's unarmed attacks have their damage increased by +2 and have a Critical rating of 3."
                ]
             }
+         ],
+         "tags": [
+            "general",
+            "combat",
+            "character creation modifier",
+            "free maneuver",
+            "offensive",
+            "stat modifier"
          ]
       },
       {
          "name": "Remember This?",
          "description": [
             "A sleeper adds {@symbols a} to the results of any checks they make to identify, use, or repair pre-apocalypse items, equipment, or media (including combat checks)."
+         ],
+         "tags": [
+            "general",
+            "results modifier"
          ]
       },
       {
          "name": "Strike True",
          "description": [
             "Once per session, when a fearless slayer inflicts a Critical Injury, you may spend one Story Point to roll two separate results and choose which result to apply."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental",
+            "session",
+            "story point cost",
+            "critical injury",
+            "offensive"
          ]
       },
       {
          "name": "Sunlight Sensitivity",
          "description": [
             "While a dhampir is exposed to direct sunlight, they reduce their wound and strain thresholds by 4."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "weakness"
          ]
       },
       {
          "name": "Supernatural Suspicion",
          "description": [
-            "Once per session after this character makes a magic skill check, you may spend a Story Point to reroll one or more dice of your choice in the pool. After doing so, all NPCs in the current encounter gain an adversion of this character and their supernatural nature as a Fear facet of their Motivation"
+            "Once per session after this character makes a magic skill check, you may spend a Story Point to reroll one or more dice of your choice in the pool. After doing so, all NPCs in the current encounter gain an aversion of this character and their supernatural nature as a Fear facet of their Motivation"
+         ],
+         "tags": [
+            "social",
+            "active",
+            "incidental",
+            "session",
+            "story point cost",
+            "magic",
+            "motivation"
          ]
       },
       {
          "name": "Too Clever by Half",
          "description": [
             "Once per session before your character makes a skill check with {@dice boost} in the dice pool, you may spend a Story Point to double the number of {@dice boost} currently in the dice pool. If your character fails the check, they suffer 6 strain in addition to any other penalties."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "session",
+            "story point cost",
+            "skill check modifier"
          ]
       },
       {
          "name": "Tragic Fate",
          "description": [
             "When preparing the Story pools at the beginning of the game session, add one Story Point to the GM pool instead of the player pool."
+         ],
+         "tags": [
+            "general",
+            "session"
          ]
       },
       {
          "name": "Vulnerable Heart",
          "description": [
             "When a dhampir suffers a Critical Injury from a weapon made of wood, such as a stake or crossbow bolt, add 40 to the Critical Injury result."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "critical injury",
+            "weakness"
          ]
       }
    ],
@@ -5515,7 +5636,7 @@
          "critical": 2,
          "range": "Engaged",
          "encumbrance": 2,
-         "price": 0,
+         "price": "priceless",
          "rarity": 10,
          "special": [
             {

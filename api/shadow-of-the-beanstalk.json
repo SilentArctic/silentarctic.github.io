@@ -1,5 +1,5 @@
 {
-   "$schema": "../schemas/schema.json",
+   "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
          "json": "shadow-of-the-beanstalk",
@@ -7,7 +7,7 @@
          "abbreviation": "SotB",
          "color": "#40B3B5",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/shadow-beanstalk/",
-         "version": "2024.12.26",
+         "version": "2025.1.16",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -160,7 +160,7 @@
          "talents": [
             {
                "name": "Natural",
-               "description": "Once per session, may reroll any one Charm or Cool check"
+               "source": "crb"
             }
          ],
          "abilities": [
@@ -252,7 +252,10 @@
             }
          ],
          "talents": [
-            "Distinctive Style"
+            {
+               "name": "Distinctive Style",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -395,8 +398,14 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "Grenadier"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
+            {
+               "name": "Grenadier",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Mechanical",
@@ -585,10 +594,13 @@
             }
          ],
          "talents": [
-            "Adversary 1",
+            {
+               "name": "Adversary 1",
+               "source": "Crb"
+            },
             {
                "name": "Natural",
-               "description": "Once per session, may reroll any one Coercion or Negotiation check"
+               "source": "crb"
             }
          ],
          "abilities": [
@@ -780,7 +792,10 @@
             }
          ],
          "talents": [
-            "Adversary 2",
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
             "Probing Question"
          ],
          "abilities": [
@@ -999,8 +1014,11 @@
             }
          ],
          "talents": [
-            "Clever Retort",
-            "Customer Service"
+            {
+               "name": "Clever Retort",
+               "source": "crb"
+            },
+            "Customer Service Experience"
          ],
          "abilities": [
             {
@@ -1465,8 +1483,14 @@
             }
          ],
          "talents": [
-            "Adversary 1",
-            "Distinctive Style"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
+            {
+               "name": "Distinctive Style",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -1692,8 +1716,14 @@
             }
          ],
          "talents": [
-            "Adversary 1",
-            "Hamstring Shot"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
+            {
+               "name": "Hamstring Shot",
+               "source": "crb"
+            }
          ],
          "abilities": [],
          "weapons": [
@@ -1803,7 +1833,10 @@
             }
          ],
          "talents": [
-            "Berserk"
+            {
+               "name": "Berserk",
+               "source": "crb"
+            }
          ],
          "abilities": [],
          "weapons": [
@@ -2238,7 +2271,10 @@
             }
          ],
          "talents": [
-            "Adversary 2",
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
             "Drone Master"
          ],
          "abilities": [
@@ -2352,7 +2388,10 @@
             }
          ],
          "talents": [
-            "Clever Retort"
+            {
+               "name": "Clever Retort",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Leading Question"
@@ -2451,7 +2490,10 @@
             }
          ],
          "talents": [
-            "Adversary 2",
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
             "Good Cop 2"
          ],
          "abilities": [
@@ -2679,8 +2721,14 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "Indomitable"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
+            {
+               "name": "Indomitable",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -2967,7 +3015,10 @@
             }
          ],
          "talents": [
-            "Scathing Tirade"
+            {
+               "name": "Scathing Tirade",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -3333,11 +3384,20 @@
             }
          ],
          "talents": [
-            "Adversary 1",
-            "Determined Hunter",
-            "Defensive Sysops (Improved)"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
+            {
+               "name": "Defensive Sysops (Improved)",
+               "source": "crb"
+            }
          ],
          "abilities": [
+            {
+               "name": "Determined Hunter",
+               "description": "After successfully tracing another character during a Network Encounter, gain one additional trace."
+            },
             {
                "name": "Personalized Icebreaker Suit",
                "description": "Always considered to have a strength 4 icebreaker that can affect barriers, sentries, and code gates. If break ice action fails, may spend {@symbols aaaa} or {@symbols t} to not suffer any effects of failing to break ice."
@@ -3460,7 +3520,10 @@
             }
          ],
          "talents": [
-            "Adversary 1",
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
             "Determined Driver",
             "Offensive Driving"
          ],
@@ -3550,7 +3613,10 @@
             }
          ],
          "talents": [
-            "Clever Retort"
+            {
+               "name": "Clever Retort",
+               "source": "crb"
+            }
          ],
          "abilities": [],
          "weapons": [],
@@ -3646,9 +3712,15 @@
             }
          ],
          "talents": [
-            "Adversary 1",
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
             "Probing Question",
-            "Ruinous Repartee"
+            {
+               "name": "Ruinous Repartee",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -3730,7 +3802,10 @@
             }
          ],
          "talents": [
-            "Inspiring Rhetoric"
+            {
+               "name": "Inspiring Rhetoric",
+               "source": "crb"
+            }
          ],
          "abilities": [],
          "weapons": [
@@ -4033,7 +4108,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -4180,8 +4258,14 @@
             }
          ],
          "talents": [
-            "Adversary 1",
-            "Proper Upbringing 2"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
+            {
+               "name": "Proper Upbringing 2",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Let's Make a Deal",
@@ -4289,9 +4373,18 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "Quick Draw",
-            "Rapid Reaction 2"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
+            {
+               "name": "Quick Draw",
+               "source": "crb"
+            },
+            {
+               "name": "Rapid Reaction 2",
+               "source": "crb"
+            }
          ],
          "abilities": [],
          "weapons": [
@@ -4446,7 +4539,8 @@
             }
          ],
          "talents": [
-            "Good and Bad Cop"
+            "Good Cop",
+            "Bad Cop"
          ],
          "abilities": [
             "Lawful Authority"
@@ -5124,8 +5218,14 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "Forgot to Count?"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
+            {
+               "name": "Forgot to Count?",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Tactical Direction",
@@ -5243,7 +5343,10 @@
             }
          ],
          "talents": [
-            "Adversary 1",
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
             "Street Fighter"
          ],
          "abilities": [],
@@ -5500,7 +5603,7 @@
             "Burn Through",
             {
                "name": "Natural",
-               "description": "Once per session may reroll one Computers (Hacking) or Knowledge (The Net) check."
+               "source": "crb"
             }
          ],
          "abilities": [],
@@ -5691,7 +5794,10 @@
             }
          ],
          "talents": [
-            "Adversary 2",
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
             "Takedown"
          ],
          "abilities": [
@@ -6134,7 +6240,10 @@
             }
          ],
          "talents": [
-            "Swift"
+            {
+               "name": "Swift",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Bioroid"
@@ -6316,7 +6425,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Apparent Precognition",
@@ -6643,7 +6755,10 @@
             }
          ],
          "talents": [
-            "Swift"
+            {
+               "name": "Swift",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -6979,7 +7094,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Charismatic Menace"
@@ -7108,7 +7226,10 @@
             }
          ],
          "talents": [
-            "Surgeon 3"
+            {
+               "name": "Surgeon 3",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -7672,9 +7793,18 @@
             }
          ],
          "talents": [
-            "Adversary 1",
-            "Clever Retort",
-            "Counteroffer"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
+            {
+               "name": "Clever Retort",
+               "source": "crb"
+            },
+            {
+               "name": "Counteroffer",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -7947,10 +8077,13 @@
             }
          ],
          "talents": [
-            "Daring Aviator 2",
+            {
+               "name": "Daring Aviator 2",
+               "source": "crb"
+            },
             {
                "name": "Natural",
-               "description": "Once per session, may reroll one Athletics or Coordination check."
+               "source": "crb"
             }
          ],
          "abilities": [],
@@ -8093,10 +8226,16 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "Archaic Arms Master"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            }
          ],
          "abilities": [
+            {
+               "name": "Archaic Arms Master",
+               "description": "While armed with a Melee weapon, may make an {@difficulty Average|melee} to force one engaged target to drop one weapon or move one range band in any direction."
+            },
             {
                "name": "Quiet Code",
                "description": "When making a Computer (Hacking) check, {@symbols h} may not be spent to alert other users to the assassin's presence."
@@ -8239,7 +8378,10 @@
             }
          ],
          "talents": [
-            "Proper Upbringing 2"
+            {
+               "name": "Proper Upbringing 2",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -8292,18 +8434,8 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Special Abilities",
-               "description": [
-                  "Bioroids do not need to eat, sleep, or breathe, and they are unaffected by toxins and poisons. They do not reduce their strain threshold when they receive cybernetics (cybernetics represent upgraded mechanical components instead of true cybernetics)."
-               ]
-            },
-            {
-               "name": "Inorganic",
-               "description": [
-                  "Since bioroids are inorganic, they do not gain the benefits of healing wounds with {@gear slap-patch|slap patches} ({@rule painkillers||crb}) or a {@skill Medicine||crb} check. Bioroids can heal wounds and strain naturally by resting, as their systems attempt self-repairs. Bioroids can also be \"healed\" by using the {@skill Mechanics||crb} skill instead of the {@skill Medicine||crb} skill, but otherwise following the rules in the Medical Care section on page 116 of the {@title Genesys} Core Rulebook."
-               ]
-            }
+            "Special Abilities (Bioroid)",
+            "Inorganic"
          ],
          "description": [
             "Bioroids are fully artificial creations, with all the attendant benefits and disadvantages. Their strength and durability are second to none, and bioroids also don't sleep, eat, or breathe, allowing them to go places and undertake tasks normal humans and even clones cannot. On the other hand, bioroids are not viewed as people, but rather property. Likewise, bioroids find it difficult to become accepted in some places, their artificial appearance conjuring fear or hatred in certain groups.",
@@ -8350,12 +8482,7 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Underestimated",
-               "description": [
-                  "When making an opposed check, clones add {@symbols a} to the results."
-               ]
-            }
+            "Underestimated"
          ],
          "description": [
             "With their pleasing appearance and functional biology, clones fill the roles that in ages past were populated by slaves, migrants, and second-class citizens, without any of the moral implications that come from subjecting humans to such a place in society.",
@@ -8402,18 +8529,8 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Adjusted to Cybernetics",
-               "description": [
-                  "Once per session as an out-of-turn incidental, you may spend a Story Point to have your character heal strain equal to their number of cybernetics."
-               ]
-            },
-            {
-               "name": "Cyborg",
-               "description": [
-                  "Your character begins play with one {@filter gear|cybernetic|source:shadow-of-the-beanstalk=1;type:cybernetic=1} (see page 104) that costs a total of 1,000 credits or less. They do not need to make any check to install this cybernetic, and they do not decrease their strain threshold because of this cybernetic (but will decrease their strain threshold as normal if they get any future cybernetics)."
-               ]
-            }
+            "Adjusted to Cybernetics",
+            "Cyborg"
          ],
          "description": [
             "The first cyborgs appeared in the late twentieth century, as artificial hearts and electronic, motorized prosthetic limbs began to restore and repair damaged human bodies. However these protocybernetics served only medical functions, replacing their damaged or missing organic counterparts. All this started to change decades ago, when companies began to develop cybernetics that could enhance, not just restore, a body's functionality. Just as these technologies were starting to appear, the Lunar Insurrection began.",
@@ -8460,18 +8577,8 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Enhanced Genetic Modifications",
-               "description": [
-                  "Once per session when your character uses one of their g-mods to modify a check, you may spend a Story Point to add {@symbols s} equal to your character's ranks in {@skill Resilience||crb} to the results (in addition to any other affects the g-mod has)."
-               ]
-            },
-            {
-               "name": "G-mod",
-               "description": [
-                  "Your character begins play with one {@filter gear|g-mod|source:shadow-of-the-beanstalk=1;type:g-mod=1} (see page 106) that costs a total of 1,000 credits or less. They do not need to make any check to assimilate this g-mod."
-               ]
-            }
+            "Enhanced Genetic Modifications",
+            "G-mod"
          ],
          "description": [
             "If cyborgs are a melding of person and machine, then g-mods are the complete changing of that person into something new. While some individuals may have their genes subtly altered, g-mods modify their DNA in profound and radical ways, changing their appearance, their intellect, and sometimes the core functions of their bodies. To date, g-modding is the closest humankind has come to true transhumanism, with some arguing that the most modified g-mods are no longer entirely Homo sapiens.",
@@ -8517,18 +8624,8 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Zero-G Adept",
-               "description": [
-                  "A Loonie does not count {@rule gravity|zero-gravity|crb} environments as difficult terrain."
-               ]
-            },
-            {
-               "name": "Resourceful",
-               "description": [
-                  "Once per session after making a skill check, you may spend a Story Point to have your character reroll up to two dice in the pool."
-               ]
-            }
+            "Zero-G Adept",
+            "Resourceful"
          ],
          "description": [
             "Those born on the Moon consider themselves a people apart—and why not? They are, after all, members of the first generations that have grown up free from the loving embrace of planet Earth. More than just having a natural affinity for low gravity, slightly longer limbs, and less muscle and bone density, Loonies are different because they no longer see Earth as home. This has fostered a fierce independent streak in most Loonies, many of whom see themselves as a minority in the thrall of Earth-bound megacorps or far-off governments. A particular sticking point is that Heinlein, the largest settlement on Luna, is simply the twelfth district of New Angeles, a city almost four hundred thousand kilometers away. It is sentiments like this that sparked the Worlds War, and though Earth might consider it part of the past, many Loonies have long memories.",
@@ -8574,12 +8671,7 @@
             "choice": true
          },
          "abilities": [
-            {
-               "name": "Ready for Anything",
-               "description": [
-                  "Once per session as an out-of-turn incidental, you may move one Story Point from the Game Master's pool to the players' pool."
-               ]
-            }
+            "Ready for Anything"
          ],
          "description": [
             "Most humans in New Angeles are pretty normal—at least from a biological point of view. While bioroids and clones work in all levels of industry, the first generations of people born on other worlds have grown up and had kids of their own, and though science allows people to rebuild their bodies as they see fit, \"naturals\" still make up the vast majority of humanity. At their core, naturals resemble their ancestors going back a few thousand years, even if they do carry a PAD, have a fit-chip implant, or sport a biolumin tattoo. The wealthiest naturals may benefit from some minor genetic modifications that weed out hereditary diseases, but most naturals have the same genetic baseline template as their grandparents and great-grandparents.",
@@ -8606,60 +8698,118 @@
          "name": "Adjusted to Cybernetics",
          "description": [
             "Once per session as an out-of-turn incidental, you may spend a Story Point to have your character heal strain equal to their number of cybernetics."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental (out of turn)",
+            "session",
+            "story point cost",
+            "recovery"
          ]
       },
       {
          "name": "Cyborg",
          "description": [
             "Your character begins play with one {@filter gear|cybernetic|source:shadow-of-the-beanstalk=1;type:cybernetic=1} (see page 104) that costs a total of 1,000 credits or less. They do not need to make any check to install this cybernetic, and they do not decrease their strain threshold because of this cybernetic (but will decrease their strain threshold as normal if they get any future cybernetics)."
+         ],
+         "tags": [
+            "general",
+            "character creation modifier",
+            "stat modifier"
          ]
       },
       {
          "name": "Enhanced Genetic Modifications",
          "description": [
             "Once per session when your character uses one of their g-mods to modify a check, you may spend a Story Point to add {@symbols s} equal to your character's ranks in {@skill Resilience||crb} to the results (in addition to any other affects the g-mod has)."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "story point cost",
+            "results modifier"
          ]
       },
       {
          "name": "G-mod",
          "description": [
             "Your character begins play with one {@filter gear|g-mod|source:shadow-of-the-beanstalk=1;type:g-mod=1} (see page 106) that costs a total of 1,000 credits or less. They do not need to make any check to assimilate this g-mod."
+         ],
+         "tags": [
+            "general",
+            "character creation modifier"
          ]
       },
       {
          "name": "Inorganic",
          "description": [
             "Since bioroids are inorganic, they do not gain the benefits of healing wounds with {@gear slap-patch|slap patches} ({@rule painkillers||crb}) or a {@skill Medicine||crb} check. Bioroids can heal wounds and strain naturally by resting, as their systems attempt self-repairs. Bioroids can also be \"healed\" by using the {@skill Mechanics||crb} skill instead of the {@skill Medicine||crb} skill, but otherwise following the rules in the Medical Care section on page 116 of the {@title Genesys} Core Rulebook."
+         ],
+         "tags": [
+            "general",
+            "recovery"
          ]
       },
       {
          "name": "Ready for Anything",
          "description": [
             "Once per session as an out-of-turn incidental, you may move one Story Point from the Game Master's pool to the players' pool."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "session",
+            "incidental (out of turn)",
+            "support"
          ]
       },
       {
          "name": "Resourceful",
          "description": [
             "Once per session after making a skill check, you may spend a Story Point to have your character reroll up to two dice in the pool."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "session",
+            "story point cost",
+            "skill check modifier"
          ]
       },
       {
          "name": "Special Abilities (Bioroid)",
          "description": [
             "Bioroids do not need to eat, sleep, or breathe, and they are unaffected by toxins and poisons. They do not reduce their strain threshold when they receive cybernetics (cybernetics represent upgraded mechanical components instead of true cybernetics)."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "stat modifier"
          ]
       },
       {
          "name": "Underestimated",
          "description": [
             "When making an opposed check, clones add {@symbols a} to the results."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "results modifier",
+            "opposed"
          ]
       },
       {
          "name": "Zero-G Adept",
          "description": [
             "A Loonie does not count {@rule gravity|zero-gravity|crb} environments as difficult terrain."
+         ],
+         "tags": [
+            "general",
+            "passive"
          ]
       }
    ],
@@ -9653,7 +9803,6 @@
          "encumbrance": 3,
          "hardPoints": 2,
          "price": 825,
-         "restricted": false,
          "rarity": 7,
          "special": [
             {
@@ -9748,7 +9897,6 @@
          "encumbrance": 1,
          "hardPoints": 3,
          "price": 345,
-         "restricted": false,
          "rarity": 3,
          "special": [
             {
@@ -9791,7 +9939,6 @@
          "encumbrance": 1,
          "hardPoints": 1,
          "price": 100,
-         "restricted": false,
          "rarity": 2,
          "description": [
             "Lightweight, easy to use, and often disposable, light pistols are perhaps the most common firearm in the world. While their small-caliber rounds and underwhelming ballistics make them poor weapons, they're still popular with criminals and on the Moon, since they can be produced by 3-D printers and their low-velocity rounds rarely puncture domes. Some NAPD officers carry a light pistol as a drop gun they can place on dead suspects after a questionable shooting.",
@@ -9823,7 +9970,6 @@
          "encumbrance": 1,
          "hardPoints": 2,
          "price": 300,
-         "restricted": false,
          "rarity": 2,
          "description": [
             "Pistols are the go-to weapons for law enforcement, military, self-defense, and general criminal activity. They come in a breathtaking array of calibers, styles, actions, and configurations and range from snub-nosed belly guns used by back-alley killers to the high-tech sidearms carried by NAPD officers. Pistols have respectable range, stopping power, and are widely available. Pistols are often equipped with smart links, either from the factory or through enduser modification, which increases their utility. All this makes them a very attractive choice for someone looking for a versatile and reliable carry weapon",
@@ -9854,7 +10000,6 @@
          "encumbrance": 4,
          "hardPoints": 3,
          "price": 875,
-         "restricted": false,
          "rarity": 4,
          "special": [
             {
@@ -9893,7 +10038,6 @@
          "encumbrance": 3,
          "hardPoints": 2,
          "price": 900,
-         "restricted": false,
          "rarity": 4,
          "special": [
             {
@@ -9977,7 +10121,6 @@
          "encumbrance": 2,
          "hardPoints": 1,
          "price": 500,
-         "restricted": false,
          "rarity": 5,
          "special": [
             {
@@ -10072,7 +10215,6 @@
          "encumbrance": 1,
          "hardPoints": 2,
          "price": 450,
-         "restricted": false,
          "rarity": 4,
          "special": [
             {
@@ -10165,7 +10307,6 @@
          "encumbrance": 1,
          "hardPoints": 2,
          "price": 650,
-         "restricted": false,
          "rarity": 8,
          "special": [
             {
@@ -10251,7 +10392,6 @@
          "encumbrance": 1,
          "hardPoints": 2,
          "price": 375,
-         "restricted": false,
          "rarity": 2,
          "special": [
             {
@@ -10684,7 +10824,6 @@
          "encumbrance": 1,
          "hardPoints": 0,
          "price": 50,
-         "restricted": false,
          "rarity": 5,
          "special": [
             {
@@ -10782,7 +10921,6 @@
          "encumbrance": 1,
          "hardPoints": 0,
          "price": 70,
-         "restricted": false,
          "rarity": 4,
          "special": [
             {
@@ -10834,7 +10972,6 @@
          "encumbrance": 1,
          "hardPoints": 1,
          "price": 40,
-         "restricted": false,
          "rarity": 1,
          "special": [
             {
@@ -10910,7 +11047,6 @@
          "encumbrance": 0,
          "hardPoints": 0,
          "price": 70,
-         "restricted": false,
          "rarity": 3,
          "special": [
             {
@@ -11002,7 +11138,6 @@
          "encumbrance": 3,
          "hardPoints": 2,
          "price": 600,
-         "restricted": false,
          "rarity": 10,
          "special": [
             {
@@ -11054,7 +11189,6 @@
          "encumbrance": 1,
          "hardPoints": 1,
          "price": 225,
-         "restricted": false,
          "rarity": 3,
          "special": [
             {
@@ -11091,7 +11225,6 @@
          "encumbrance": 5,
          "hardPoints": 3,
          "price": 725,
-         "restricted": false,
          "rarity": 5,
          "special": [
             {
@@ -11144,7 +11277,6 @@
          "encumbrance": 4,
          "hardPoints": 4,
          "price": 200,
-         "restricted": false,
          "rarity": 2,
          "special": [
             {
@@ -11186,7 +11318,6 @@
          "encumbrance": 1,
          "hardPoints": 2,
          "price": 125,
-         "restricted": false,
          "rarity": 2,
          "special": [
             {
@@ -11227,7 +11358,6 @@
          "encumbrance": 1,
          "hardPoints": 1,
          "price": 200,
-         "restricted": false,
          "rarity": 3,
          "special": [
             {
@@ -11268,7 +11398,6 @@
          "encumbrance": 4,
          "hardPoints": 1,
          "price": 850,
-         "restricted": false,
          "rarity": 4,
          "special": [
             {
@@ -11317,7 +11446,6 @@
          "encumbrance": 1,
          "hardPoints": 1,
          "price": 50,
-         "restricted": false,
          "rarity": 1,
          "description": [
             "Durable clothing is exactly what it sounds like: sturdy, wellcrafted articles of clothing that provide a bit of protection and can stand up to the wear and tear of modern life. These typical, workaday outfits worn by the majority of New Angelinos range from synthleather jackets and denim jeans to sturdy mechanics' coveralls and military surplus jumpsuits. While they won't stop a bullet or turn a monoblade, a suit of durable clothing is definitely better than nothing.",
@@ -11343,7 +11471,6 @@
          "encumbrance": 1,
          "hardPoints": 2,
          "price": 320,
-         "restricted": false,
          "rarity": 4,
          "description": [
             "Visible body armor isn't exactly what most people wear while strolling down the slidewalks of New Angeles. Well-heeled New Angelinos who are looking for a bit of protection often wear stylish clothing reinforced with a concealed layer of buckyweave and energy-dispersion fiber mesh to provide basic protection from small arms and light energy weapons. Just about any type of clothing can be tailored with this reinforcing layer, and quite a few shops are willing to discreetly add it to the clothes they already sell—for a substantial fee.",
@@ -11370,7 +11497,6 @@
          "encumbrance": 4,
          "hardPoints": 2,
          "price": 260,
-         "restricted": false,
          "rarity": 4,
          "description": [
             "Produced by a number of manufacturers, environmental hardsuits allow individuals to work in extremely hazardous conditions in relative safety. While they come in a variety of designs, most hardsuits share a common suite of features.",
@@ -11432,7 +11558,6 @@
          "encumbrance": 2,
          "hardPoints": 1,
          "price": 500,
-         "restricted": false,
          "rarity": 5,
          "description": [
             "Light body armor is a catchall term for a collection of armored vests, flak jackets, and other lightweight, noncarapace, nonmilitary armor. It provides basic protection to the torso and often to forearms and shins, and it is typically paired with a simple, open-faced helmet to protect the head.",
@@ -11555,7 +11680,6 @@
          "encumbrance": 3,
          "hardPoints": 2,
          "price": 550,
-         "restricted": false,
          "rarity": 5,
          "description": [
             "The NAPD is the single largest purchaser of riot armor in New Angeles, prisec outfits being a respectable second, as both deal with anarchist protests and Human First riots. Built to survive the wear and tear of modern law enforcement, a suit of riot armor typically starts with a heavyduty service uniform similar to those worn by military personnel and PMC operatives. A set of protective plates— torso clamshell, shoulders, forearms, and shin protectors— made of ballistic gel and flexible polycarbonates is then worn over the uniform, providing protection for sensitive or easily damaged parts of the body. Most suits also include an integrated gas mask and helmet speakers.",
@@ -12776,8 +12900,8 @@
             "Neuro-regulators are fantastically complex devices that wire microelectronic circuits directly into the brain. Although the devices were originally designed to treat a variety of mental illnesses, some people found that if they were adjusted in particular ways, they increased mental focus and eliminated \"troublesome\" human emotions such as fear. Of course, this could also make the individuals come across as creepy and emotionless.",
             "Neuro-regulators increase your character's {@characteristic Willpower||crb} by 1 and decrease their strain threshold by 1. Your character may also lose the good sense to flee from dangerous situations and, at your GM's discretion, your character may suffer {@dice setback} to social skill checks for seeming a bit robotic."
          ],
-         "price": 0,
-         "rarity": 0,
+         "price": 1500,
+         "rarity": 6,
          "page": 105,
          "modifiers": [
             {

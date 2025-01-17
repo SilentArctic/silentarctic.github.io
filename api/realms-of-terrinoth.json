@@ -1,5 +1,5 @@
 {
-   "$schema": "../schemas/schema.json",
+   "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
          "json": "realms-of-terrinoth",
@@ -7,7 +7,7 @@
          "abbreviation": "RoT",
          "color": "#A75A0E",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/realms-terrinoth/",
-         "version": "2025.1.14",
+         "version": "2025.1.16",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -132,8 +132,14 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "Swift"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
+            {
+               "name": "Swift",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Improved Sweep",
@@ -311,7 +317,10 @@
             }
          ],
          "talents": [
-            "Adversary 1",
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
             "Backstab",
             "Precision"
          ],
@@ -466,8 +475,14 @@
             }
          ],
          "talents": [
-            "Adversary 1",
-            "Swift"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
+            {
+               "name": "Swift",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -561,7 +576,10 @@
             }
          ],
          "talents": [
-            "Swift"
+            {
+               "name": "Swift",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Maul",
@@ -1001,7 +1019,10 @@
             }
          ],
          "talents": [
-            "Adversary 1",
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
             "Dark Insight"
          ],
          "abilities": [
@@ -1224,9 +1245,18 @@
             }
          ],
          "talents": [
-            "Adversary 1",
-            "Parry 3",
-            "Parry (Improved)"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
+            {
+               "name": "Parry 3",
+               "source": "crb"
+            },
+            {
+               "name": "Parry (Improved)",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -1352,7 +1382,10 @@
             }
          ],
          "talents": [
-            "Dual Wielder"
+            {
+               "name": "Dual Wielder",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -1556,7 +1589,10 @@
             }
          ],
          "talents": [
-            "Durable 2"
+            {
+               "name": "Durable 2",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Creature of the Aenlong",
@@ -1722,8 +1758,14 @@
             }
          ],
          "talents": [
-            "Adversary 3",
-            "Ruinous Repartee"
+            {
+               "name": "Adversary 3",
+               "source": "crb"
+            },
+            {
+               "name": "Ruinous Repartee",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Flyer",
@@ -1853,7 +1895,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -2152,7 +2197,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -2315,8 +2363,14 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "Swift"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
+            {
+               "name": "Swift",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Flyer",
@@ -2542,7 +2596,10 @@
             }
          ],
          "talents": [
-            "Swift"
+            {
+               "name": "Swift",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Terrifying 3"
@@ -2649,7 +2706,10 @@
             }
          ],
          "talents": [
-            "Dodge 2"
+            {
+               "name": "Dodge 2",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Carrying Capacity 12",
@@ -2729,7 +2789,10 @@
             }
          ],
          "talents": [
-            "Adversary 2"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Improved Sweep",
@@ -2808,7 +2871,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -3218,7 +3284,10 @@
             }
          ],
          "talents": [
-            "Adversary 1",
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
             "Dark Insight"
          ],
          "abilities": [
@@ -3336,7 +3405,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [],
          "spells": {
@@ -3536,7 +3608,10 @@
             }
          ],
          "talents": [
-            "Swift"
+            {
+               "name": "Swift",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -3672,8 +3747,14 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "Swift"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
+            {
+               "name": "Swift",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Flyer",
@@ -4314,7 +4395,10 @@
             }
          ],
          "talents": [
-            "Swift"
+            {
+               "name": "Swift",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Maul"
@@ -4539,7 +4623,10 @@
             }
          ],
          "talents": [
-            "Adversary 2",
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
             "Dark Insight"
          ],
          "abilities": [
@@ -5071,7 +5158,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Amphibious",
@@ -5479,7 +5569,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -5590,7 +5683,10 @@
             }
          ],
          "talents": [
-            "Adversary 1",
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
             "Chill of Nordros",
             "Necromancy"
          ],
@@ -5829,7 +5925,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Silhouette 0"
@@ -5930,7 +6029,10 @@
             }
          ],
          "talents": [
-            "Quick Draw"
+            {
+               "name": "Quick Draw",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -6040,7 +6142,10 @@
             }
          ],
          "talents": [
-            "Second Wind 5"
+            {
+               "name": "Second Wind 5",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -6127,7 +6232,10 @@
             }
          ],
          "talents": [
-            "Quick Draw"
+            {
+               "name": "Quick Draw",
+               "source": "crb"
+            }
          ],
          "abilities": [],
          "weapons": [
@@ -6461,7 +6569,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Multiattack",
@@ -6838,7 +6949,10 @@
             }
          ],
          "talents": [
-            "Swift"
+            {
+               "name": "Swift",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -6957,8 +7071,14 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "Swift"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
+            {
+               "name": "Swift",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -7152,7 +7272,10 @@
             }
          ],
          "talents": [
-            "Swift"
+            {
+               "name": "Swift",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Silhouette 3",
@@ -7406,7 +7529,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -7502,10 +7628,22 @@
             }
          ],
          "talents": [
-            "Adversary 1",
-            "Duelist",
-            "Parry 3",
-            "Parry (Improved)"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
+            {
+               "name": "Duelist",
+               "source": "crb"
+            },
+            {
+               "name": "Parry 3",
+               "source": "crb"
+            },
+            {
+               "name": "Parry (Improved)",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -7820,7 +7958,10 @@
             }
          ],
          "talents": [
-            "Quick Strike 2"
+            {
+               "name": "Quick Strike 2",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Creature of the Aenlong",
@@ -8236,7 +8377,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -8347,7 +8491,10 @@
             }
          ],
          "talents": [
-            "Adversary 1",
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
             "Dark Insight"
          ],
          "abilities": [
@@ -8574,7 +8721,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Amphibious",
@@ -8701,7 +8851,10 @@
             }
          ],
          "talents": [
-            "Swift"
+            {
+               "name": "Swift",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Flyer",
@@ -8792,12 +8945,7 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Battle Rage",
-               "description": [
-                  "When making a melee attack, a Broken Plains Orc can choose to add {@dice setback} to the check to add +2 to the damage dealt by one hit of that attack."
-               ]
-            }
+            "Battle Rage"
          ],
          "description": [
             "The Orcs who hunt the Broken Plains are among the most powerful, ferocious beings in the world. They live the hard, lean life of nomads, following the great herds of elk, boars, and moose from one side of the Broken Plains to the other, forging a society that is equally influenced by their spirit-based magic, brutal war axes, and fearsome throwing spears."
@@ -8831,18 +8979,8 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "small",
-               "description": [
-                  "Gnomes are silhouette 0."
-               ]
-            },
-            {
-               "name": "Militia Training",
-               "description": [
-                  "Burrow Gnomes add {@dice boost} to all combat checks that target characters who have a larger silhouette than they do."
-               ]
-            }
+            "Small",
+            "Militia Training"
          ],
          "description": [
             "Burrow Gnomes are those who have mostly abandoned interactions with the other races. When they do leave their comfortable homes, it is typically for trade, alliance building, espionage, or, of course, the lure of adventure."
@@ -8874,18 +9012,8 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Claws",
-               "description": [
-                  "Catfolk possess sharp, retractable claws and may choose to attack with the following weapon profile: (Brawl; Damage +1; Critical 3; Range [Engaged]; Vicious 1)."
-               ]
-            },
-            {
-               "name": "Fleet of Paw",
-               "description": [
-                  "Catfolk can perform a second maneuver to move without suffering strain. They still cannot exceed the limitation of two maneuvers in a turn."
-               ]
-            }
+            "Claws",
+            "Fleet of Paw"
          ],
          "description": [
             "Given their animalistic appearance, straightforward culture, and soft-spoken nature, it is easy for the other races to see the Catfolk as lesser beings. They are surprisingly quick-witted and incredibly cunning, although most are happy to \"play primitive\" if it gains them an advantage while bartering or fighting."
@@ -8918,12 +9046,7 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Ynfernael Lore",
-               "description": [
-                  "Deep Elves gain {@skill Knowledge (Forbidden)} as a career skill and begin with two ranks in {@skill Knowledge (Forbidden)}. You still cannot train their {@skill Knowledge (Forbidden)} above rank 2 during character creation."
-               ]
-            }
+            "Ynfernael Lore"
          ],
          "description": [
             "All Elves feel the pain and loss of falling from the Empyrean to dwell among the younger races, and many are striving to ascend again. However, the Tribe of the Deep Elves feels an additional, far more ignoble shame: they fell not once but twice, the second time to Malcorne's corruption.",
@@ -8958,18 +9081,8 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Dark Vision",
-               "description": [
-                  "When making skill checks, Dunwarr Dwarves remove up to {@dice setback|2} imposed due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness|crb}."
-               ]
-            },
-            {
-               "name": "Tough as Nails",
-               "description": [
-                  "Once per session, a Dwarf may spend a Story Point as an out-of-turn incidental immediately after suffering a Critical Injury and determining the result. If they do so, they count the result rolled as \"01.\""
-               ]
-            }
+            "Dark Vision",
+            "Tough as Nails"
          ],
          "description": [
             "Dunwarr is the oldest of all the Dwarven kingdoms. The Dwarves who hail from beneath the Dunwarr Mountains see their lineage as predating almost every other culture on the planet. According to their histories, they watched the Humans first gather in rudimentary villages, saw the Orcs first trade for steel to tip their sharpened sticks, and even witnessed the Elves settling into their land of the Aymhelin.",
@@ -9004,18 +9117,8 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Stubborn",
-               "description": [
-                  "Forge Dwarves add {@dice setback} to social skill checks targeting them."
-               ]
-            },
-            {
-               "name": "Tough as Nails",
-               "description": [
-                  "Once per session, a Dwarf may spend a Story Point as an out-of-turn incidental immediately after suffering a Critical Injury and determining the result. If they do so, they count the result rolled as \"01.\""
-               ]
-            }
+            "Stubborn",
+            "Tough as Nails"
          ],
          "description": [
             "Not all Dwarves feel that their destiny belongs underground. Like their ancestors of old, some of them wish to spread out under the sky, an aspiration they can largely achieve in Terrinoth. These Forge Dwarves have made their homes in Free Cities and baronial settlements across the Land of Steel, using their distinctive craftsmanship to create their own fate. They wheel and deal alongside other races, content to make their home away from the shadows and fire of the Molten Heath."
@@ -9048,12 +9151,7 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Nimble",
-               "description": [
-                  "Free Cities Elves have a melee and ranged defense of 1."
-               ]
-            }
+            "Nimble (Free Cities)"
          ],
          "description": [
             "Although there are many ways for Elves to escape the rigid caste system of their society, it is the Free Cities Elves who do it the most brazenly. Those who refer to themselves as Free Cities Elves, a voluntary colloquialism, are Elves who have forsaken their tribe or were born to Elves who did. They have chosen to live alongside the short-lived races as urbanites and are most commonly found in cities such as Dawnsmoor and Tamalir. Those calling themselves Free Cities Elves can also include Elves whose bloodline has mingled with that of Humans."
@@ -9085,12 +9183,7 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Catfolk Ancestry",
-               "description": [
-                  "Half-Catfolk choose either the Claws or Fleet of Paw special ability from the {@archetype Catfolk} entry."
-               ]
-            }
+            "Catfolk Ancestry"
          ],
          "description": [
             "Though village-dwelling Catfolk predominantly keep to themselves, those exiled into the world must find their place among the other races. This often leads to love, marriage, and offspring.",
@@ -9124,12 +9217,7 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Empyrean Magic",
-               "description": [
-                  "Highborn Elves gain {@skill Divine||crb} as a career skill and begin with one rank in {@skill Divine||crb}. You still cannot train their {@skill Divine||crb} above rank 2 during character creation."
-               ]
-            }
+            "Empyrean Magic"
          ],
          "description": [
             "The Highborn Elves are those only slightly removed from the most ancient bloodlines, those original Elves who dwelled in the Empyrean. As a result, these Elves have the strongest natural connection to Latariana's Door, and many have devoted their lives to deepening that connection and ascending Latariana's Stair to earn redemption. The Daughters of the Empyrean and the Darnati Warriors are most often drawn from this caste, and their proximity to the court at Caelcira necessitates a basic knowledge of etiquette and diplomacy. Beyond the Latari, the highborn of the other Elven tribes occupy similar positions of prestige."
@@ -9161,12 +9249,7 @@
             "choice": true
          },
          "abilities": [
-            {
-               "name": "Ready for Adventure",
-               "description": [
-                  "Once per session as an out-of-turn incidental, a Human may move one Story Point from the Game Master's pool to the players' pool."
-               ]
-            }
+            "Ready for Adventure"
          ],
          "description": [
             "Once per session as an out-of-turn incidental, a Human may move one Humanity, short-lived and disadvantaged in many ways by nature, has nonetheless proven to be one of the most resilient and diverse races in Mennara. What Humans, a curious lot, lack in natural gifts of the sort bestowed on other races they make up for in their willingness to learn, their determination, and their sheer adaptability. Humans have weathered cataclysms beyond compare, and today it is largely by their strength of will and arms that the world is kept safe."
@@ -9199,12 +9282,7 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Nimble",
-               "description": [
-                  "Lowborn Elves have a melee and ranged defense of 1."
-               ]
-            }
+            "Nimble (Lowborn)"
          ],
          "description": [
             "The Elves were not always at one with nature, but after their fall from grace, many found a new, deepened connection with the wilds. As successive generations were born and raised in Mennara, they felt an even greater calling to the world around them rather than the lofty heavens of their distant ancestors. They resolved to live in harmony with their new home and become its greatest protectors.",
@@ -9238,12 +9316,7 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Hot Tempered",
-               "description": [
-                  "While a Stone-Dweller Orc's strain exceeds half of their strain threshold, they add {@dice setback|2} to all social skill checks and add 1 to the damage of one hit of each melee attack they make."
-               ]
-            }
+            "Hot Tempered"
          ],
          "description": [
             "Though Orcs are generally as intellectually and socially capable as any other being in Mennara, their immense size and incredible strength gives them some highly unusual advantages. While there is no inherent need for them to make a living using those assets, most find it too tempting a lure to resist. As such, Stone-Dweller Orcs often find themselves living lives of adventure as mercenaries, soldiers, constables, or crooks."
@@ -9276,12 +9349,7 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Tenacious",
-               "description": [
-                  "After a Sunderlands Orc hits a character with a successful combat check, they add {@dice boost} to combat checks targeting the same character until the end of the encounter."
-               ]
-            }
+            "Tenacious"
          ],
          "description": [
             "The mysterious Orcs of the Sunderlands eschew both nomadic and city life, instead living in small, secretive villages. This has the effect of helping to preserve Orc culture and heritage and to advance their race in step with the rest of the world. Within these villages, which dot the great deserts of Al-Kalim, the Sunderlands Orcs study magic and medicine with equal diligence. Such are their skills at potion making that the alchemical contents within their signature black glass flasks are renowned throughout Mennara."
@@ -9315,18 +9383,8 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "small",
-               "description": [
-                  "Gnomes are silhouette 0."
-               ]
-            },
-            {
-               "name": "Tricksy",
-               "description": [
-                  "Once per encounter during their turn, a Wanderer Gnome may use this ability and spend a Story Point to produce a previously undocumented small item (encumbrance 1 or less) with a rarity no greater than 4 from a pocket, bag, pouch, nearby windowsill, passing cart, or other convenient location—even if there is no logical explanation for the item's presence. This item cannot be a weapon unless the weapon has the Limited Ammo 1 quality."
-               ]
-            }
+            "Small",
+            "Tricksy"
          ],
          "description": [
             "Some Gnomes get a taste of the outside world during their year with the militia and set out to \"scratch their itchy feet.\" Whether on their own or in a small band, Wanderer Gnomes are a common sight throughout all of Mennara."
@@ -9339,102 +9397,227 @@
          "name": "Battle Rage",
          "description": [
             "When making a melee attack, a Broken Plains Orc can choose to add {@dice setback} to the check to add +2 to the damage dealt by one hit of that attack."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental",
+            "offensive",
+            "skill check modifier"
          ]
       },
       {
          "name": "Catfolk Ancestry",
          "description": [
             "Half-Catfolk choose either the {@archetypeAbility Claws} or {@archetypeAbility Fleet of Paw} special ability from the {@archetype Catfolk} entry."
+         ],
+         "tags": [
+            "general",
+            "character creation modifier"
          ]
       },
       {
          "name": "Claws",
          "description": [
-            "Catfolk possess sharp, retractable claws and may choose to attack with the following weapon profile: (Brawl; Damage +1; Critical 3; Range [Engaged]; Vicious 1)."
+            "Catfolk possess sharp, retractable claws and may choose to attack with the following weapon profile: (Brawl; Damage +1; Critical 3; Range [Engaged]; Vicious 1).",
+            {
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Skill"
+                  },
+                  {
+                     "header": "Damage"
+                  },
+                  {
+                     "header": "Critical"
+                  },
+                  {
+                     "header": "Range"
+                  },
+                  {
+                     "header": "Special"
+                  }
+               ],
+               "rows": [{
+                  "skill": "{@skill Brawl||crb}",
+                  "damage": "+1",
+                  "critical": 3,
+                  "range": "Engaged",
+                  "special": "{@quality vicious|Vicious 1|crb}"
+               }]
+            }
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "offensive"
          ]
       },
       {
          "name": "Dark Vision",
          "description": [
             "When making skill checks, Dunwarr Dwarves remove up to {@dice setback|2} imposed due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness|crb}."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier"
          ]
       },
       {
          "name": "Empyrean Magic",
          "description": [
             "Highborn Elves gain {@skill Divine||crb} as a career skill and begin with one rank in {@skill Divine||crb}. You still cannot train their {@skill Divine||crb} above rank 2 during character creation."
+         ],
+         "tags": [
+            "general",
+            "skill",
+            "magic"
          ]
       },
       {
          "name": "Fleet of Paw",
          "description": [
             "Catfolk can perform a second maneuver to move without suffering strain. They still cannot exceed the limitation of two maneuvers in a turn."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "free maneuver"
          ]
       },
       {
          "name": "Hot Tempered",
          "description": [
             "While a Stone-Dweller Orc's strain exceeds half of their strain threshold, they add {@dice setback|2} to all social skill checks and add 1 to the damage of one hit of each melee attack they make."
+         ],
+         "tags": [
+            "combat",
+            "social",
+            "passive",
+            "skill check modifier",
+            "offensive"
          ]
       },
       {
          "name": "Militia Training",
          "description": [
             "Burrow Gnomes add {@dice boost} to all combat checks that target characters who have a larger silhouette than they do."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "skill check modifier",
+            "offensive"
          ]
       },
       {
          "name": "Nimble (Free Cities)",
          "description": [
             "Free Cities Elves have a melee and ranged defense of 1."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "stat modifier",
+            "defensive"
          ]
       },
       {
          "name": "Nimble (Lowborn)",
          "description": [
             "Lowborn Elves have a melee and ranged defense of 1."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "stat modifier",
+            "defensive"
          ]
       },
       {
          "name": "Ready for Adventure",
          "description": [
             "Once per session as an out-of-turn incidental, a Human may move one Story Point from the Game Master's pool to the players' pool."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental (out of turn)",
+            "session",
+            "support"
          ]
       },
       {
          "name": "Small",
          "description": [
             "Gnomes are silhouette 0."
+         ],
+         "tags": [
+            "general",
+            "stat modifier"
          ]
       },
       {
          "name": "Stubborn",
          "description": [
             "Forge Dwarves add {@dice setback} to social skill checks targeting them."
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "skill check modifier",
+            "defensive"
          ]
       },
       {
          "name": "Tenacious",
          "description": [
             "After a Sunderlands Orc hits a character with a successful combat check, they add {@dice boost} to combat checks targeting the same character until the end of the encounter."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "skill check modifier",
+            "offensive"
          ]
       },
       {
          "name": "Tough as Nails",
          "description": [
             "Once per session, a Dwarf may spend a Story Point as an out-of-turn incidental immediately after suffering a Critical Injury and determining the result. If they do so, they count the result rolled as \"01.\""
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental (out of turn)",
+            "story point cost",
+            "critical injury"
          ]
       },
       {
          "name": "Tricksy",
          "description": [
             "Once per encounter during their turn, a Wanderer Gnome may use this ability and spend a Story Point to produce a previously undocumented small item (encumbrance 1 or less) with a rarity no greater than 4 from a pocket, bag, pouch, nearby windowsill, passing cart, or other convenient location—even if there is no logical explanation for the item's presence. This item cannot be a weapon unless the weapon has the Limited Ammo 1 quality."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "encounter",
+            "story point cost"
          ]
       },
       {
          "name": "Ynfernael Lore",
          "description": [
             "Deep Elves gain {@skill Knowledge (Forbidden)} as a career skill and begin with two ranks in {@skill Knowledge (Forbidden)}. You still cannot train their {@skill Knowledge (Forbidden)} above rank 2 during character creation."
+         ],
+         "tags": [
+            "general",
+            "character creation modifier",
+            "skill"
          ]
       }
    ],

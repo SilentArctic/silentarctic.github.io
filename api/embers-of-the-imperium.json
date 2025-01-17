@@ -1,5 +1,5 @@
 {
-   "$schema": "../schemas/schema.json",
+   "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
          "json": "embers-of-the-imperium",
@@ -14,7 +14,7 @@
          ],
          "url": "https://www.edge-studio.net/games/embers-of-the-imperium/",
          "releaseDate": "28 April 2023",
-         "version": "2024.12.26"
+         "version": "2025.1.16"
       },
       "defaultItemSettings": [
          {
@@ -45,7 +45,6 @@
             "Winnu",
             "Xxcha",
             "Yssaril",
-
             "Argent Flight",
             "Barony of Letnev",
             "Clan of Saar",
@@ -92,7 +91,10 @@
          "derived": {
             "soak": 2,
             "wounds": 5,
-            "defense": [1, 0]
+            "defense": [
+               1,
+               0
+            ]
          },
          "skills": [
             {
@@ -197,7 +199,10 @@
          "derived": {
             "soak": 1,
             "wounds": 4,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -265,7 +270,10 @@
          "derived": {
             "soak": 2,
             "wounds": 8,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -317,7 +325,10 @@
             }
          ],
          "talents": [
-            "Clever Retort"
+            {
+               "name": "Clever Retort",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -371,7 +382,10 @@
          "derived": {
             "soak": 3,
             "wounds": 12,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -457,7 +471,10 @@
          "derived": {
             "soak": 3,
             "wounds": 5,
-            "defense": [1, 0]
+            "defense": [
+               1,
+               0
+            ]
          },
          "skills": [
             {
@@ -531,7 +548,10 @@
             "soak": 2,
             "wounds": 12,
             "strain": 12,
-            "defense": [3, 3]
+            "defense": [
+               3,
+               3
+            ]
          },
          "skills": [
             {
@@ -581,7 +601,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -634,7 +657,10 @@
             "soak": 3,
             "wounds": 15,
             "strain": 11,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -687,7 +713,10 @@
             }
          ],
          "talents": [
-            "Inspiring Rhetoric (Improved)"
+            {
+               "name": "Inspiring Rhetoric (Improved)",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -732,7 +761,10 @@
          "derived": {
             "soak": 1,
             "wounds": 10,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -778,7 +810,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -828,7 +863,10 @@
             "soak": 4,
             "wounds": 14,
             "strain": 17,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -892,7 +930,10 @@
             }
          ],
          "talents": [
-            "Adversary 1",
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
             "Ccrysusian Methodology"
          ],
          "weapons": [
@@ -939,7 +980,10 @@
             "soak": 14,
             "wounds": 55,
             "strain": 18,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -997,7 +1041,10 @@
             "Silhouette 4"
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -1065,7 +1112,10 @@
          "derived": {
             "soak": 3,
             "wounds": 17,
-            "defense": [3, 3]
+            "defense": [
+               3,
+               3
+            ]
          },
          "skills": [
             {
@@ -1115,7 +1165,10 @@
             }
          ],
          "talents": [
-            "Precision Strike"
+            {
+               "name": "Precision Strike",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -1168,7 +1221,10 @@
          "derived": {
             "soak": 6,
             "wounds": 18,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -1248,7 +1304,10 @@
          "derived": {
             "soak": 2,
             "wounds": 4,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -1321,7 +1380,10 @@
          "derived": {
             "soak": 2,
             "wounds": 12,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -1389,7 +1451,10 @@
             "soak": 20,
             "wounds": 72,
             "strain": 30,
-            "defense": [2, 2]
+            "defense": [
+               2,
+               2
+            ]
          },
          "skills": [
             {
@@ -1534,7 +1599,10 @@
             "soak": 3,
             "wounds": 20,
             "strain": 15,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -1605,7 +1673,10 @@
             "Flyer"
          ],
          "talents": [
-            "Adversary 2"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -1644,7 +1715,10 @@
          "derived": {
             "soak": 5,
             "wounds": 18,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -1712,7 +1786,10 @@
          "derived": {
             "soak": 6,
             "wounds": 17,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -1765,7 +1842,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -1818,7 +1898,10 @@
             "soak": 2,
             "wounds": 12,
             "strain": 14,
-            "defense": [2, 2]
+            "defense": [
+               2,
+               2
+            ]
          },
          "skills": [
             {
@@ -1875,7 +1958,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -1925,7 +2011,10 @@
          "derived": {
             "soak": 1,
             "wounds": 30,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -2003,7 +2092,10 @@
          "derived": {
             "soak": 5,
             "wounds": 15,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -2072,7 +2164,10 @@
          "derived": {
             "soak": 7,
             "wounds": 25,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -2194,7 +2289,10 @@
             "soak": 4,
             "wounds": 18,
             "strain": 15,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -2269,8 +2367,14 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "Scathing Tirade"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
+            {
+               "name": "Scathing Tirade",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -2345,7 +2449,10 @@
          "derived": {
             "soak": 4,
             "wounds": 14,
-            "defense": [2, 1]
+            "defense": [
+               2,
+               1
+            ]
          },
          "skills": [
             {
@@ -2392,7 +2499,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -2456,7 +2566,10 @@
          "derived": {
             "soak": 3,
             "wounds": 13,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -2504,7 +2617,10 @@
          ],
          "talents": [
             "Data Miner",
-            "How Convenient!"
+            {
+               "name": "How Convenient!",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -2553,7 +2669,10 @@
          "derived": {
             "soak": 2,
             "wounds": 8,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -2599,7 +2718,10 @@
             }
          ],
          "talents": [
-            "Clever Retort"
+            {
+               "name": "Clever Retort",
+               "source": "crb"
+            }
          ],
          "gear": [
             "Fancy clothing",
@@ -2631,7 +2753,10 @@
             "soak": 3,
             "wounds": 18,
             "strain": 14,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -2702,9 +2827,18 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "How Convenient!",
-            "Lucky Strike"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
+            {
+               "name": "How Convenient!",
+               "source": "crb"
+            },
+            {
+               "name": "Lucky Strike",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -2784,7 +2918,10 @@
          "derived": {
             "soak": 3,
             "wounds": 5,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -2892,7 +3029,10 @@
          "derived": {
             "soak": 3,
             "wounds": 5,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -2978,7 +3118,10 @@
             "soak": 3,
             "wounds": 15,
             "strain": 15,
-            "defense": [3, 2]
+            "defense": [
+               3,
+               2
+            ]
          },
          "skills": [
             {
@@ -3031,7 +3174,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -3106,7 +3252,10 @@
          "derived": {
             "soak": 3,
             "wounds": 12,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -3167,7 +3316,10 @@
          "abilities": [],
          "talents": [
             "Fly Quiet",
-            "Quick Draw",
+            {
+               "name": "Quick Draw",
+               "source": "crb"
+            },
             "Solo Flight"
          ],
          "weapons": [
@@ -3221,7 +3373,10 @@
          "derived": {
             "soak": 1,
             "wounds": 10,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -3351,7 +3506,10 @@
          "derived": {
             "soak": 3,
             "wounds": 8,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -3382,7 +3540,10 @@
          ],
          "abilities": [],
          "talents": [
-            "Let's Ride"
+            {
+               "name": "Let's Ride",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -3426,7 +3587,10 @@
          "derived": {
             "soak": 3,
             "wounds": 8,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -3457,8 +3621,14 @@
          ],
          "abilities": [],
          "talents": [
-            "Let's Ride",
-            "Knack for It"
+            {
+               "name": "Let's Ride",
+               "source": "crb"
+            },
+            {
+               "name": "Knack for It",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -3502,7 +3672,10 @@
          "derived": {
             "soak": 3,
             "wounds": 8,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -3538,7 +3711,10 @@
             }
          ],
          "talents": [
-            "Let's Ride"
+            {
+               "name": "Let's Ride",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -3582,7 +3758,10 @@
          "derived": {
             "soak": 3,
             "wounds": 8,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -3613,7 +3792,10 @@
          ],
          "abilities": [],
          "talents": [
-            "Let's Ride",
+            {
+               "name": "Let's Ride",
+               "source": "crb"
+            },
             "Skilled Mechanic 2"
          ],
          "weapons": [
@@ -3658,7 +3840,10 @@
          "derived": {
             "soak": 3,
             "wounds": 8,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -3689,7 +3874,10 @@
          ],
          "abilities": [],
          "talents": [
-            "Let's Ride",
+            {
+               "name": "Let's Ride",
+               "source": "crb"
+            },
             "Overheat"
          ],
          "weapons": [
@@ -3734,7 +3922,10 @@
          "derived": {
             "soak": 3,
             "wounds": 8,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -3765,7 +3956,10 @@
          ],
          "abilities": [],
          "talents": [
-            "Let's Ride"
+            {
+               "name": "Let's Ride",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -3809,7 +4003,10 @@
          "derived": {
             "soak": 3,
             "wounds": 8,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -3840,7 +4037,10 @@
          ],
          "abilities": [],
          "talents": [
-            "Let's Ride"
+            {
+               "name": "Let's Ride",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -3884,7 +4084,10 @@
          "derived": {
             "soak": 3,
             "wounds": 8,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -3915,8 +4118,14 @@
          ],
          "abilities": [],
          "talents": [
-            "Let's Ride",
-            "Daring Aviator 1"
+            {
+               "name": "Let's Ride",
+               "source": "crb"
+            },
+            {
+               "name": "Daring Aviator 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -3960,7 +4169,10 @@
          "derived": {
             "soak": 3,
             "wounds": 8,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -3991,7 +4203,10 @@
          ],
          "abilities": [],
          "talents": [
-            "Let's Ride"
+            {
+               "name": "Let's Ride",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -4035,7 +4250,10 @@
          "derived": {
             "soak": 3,
             "wounds": 10,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -4071,7 +4289,10 @@
             }
          ],
          "talents": [
-            "Let's Ride"
+            {
+               "name": "Let's Ride",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -4115,7 +4336,10 @@
          "derived": {
             "soak": 3,
             "wounds": 8,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -4151,7 +4375,10 @@
             }
          ],
          "talents": [
-            "Let's Ride"
+            {
+               "name": "Let's Ride",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -4195,7 +4422,10 @@
          "derived": {
             "soak": 3,
             "wounds": 8,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -4226,7 +4456,10 @@
          ],
          "abilities": [],
          "talents": [
-            "Let's Ride"
+            {
+               "name": "Let's Ride",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -4270,7 +4503,10 @@
          "derived": {
             "soak": 3,
             "wounds": 8,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -4306,7 +4542,10 @@
             }
          ],
          "talents": [
-            "Let's Ride"
+            {
+               "name": "Let's Ride",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -4350,7 +4589,10 @@
          "derived": {
             "soak": 3,
             "wounds": 8,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -4381,7 +4623,10 @@
          ],
          "abilities": [],
          "talents": [
-            "Let's Ride"
+            {
+               "name": "Let's Ride",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -4425,7 +4670,10 @@
          "derived": {
             "soak": 3,
             "wounds": 8,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -4456,7 +4704,10 @@
          ],
          "abilities": [],
          "talents": [
-            "Let's Ride"
+            {
+               "name": "Let's Ride",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -4500,7 +4751,10 @@
          "derived": {
             "soak": 3,
             "wounds": 8,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -4533,7 +4787,10 @@
             "Silhouette 0"
          ],
          "talents": [
-            "Let's Ride"
+            {
+               "name": "Let's Ride",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -4595,7 +4852,10 @@
          "derived": {
             "soak": 5,
             "wounds": 12,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -4648,7 +4908,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -4699,7 +4962,10 @@
          "derived": {
             "soak": 5,
             "wounds": 16,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -4756,7 +5022,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -4807,7 +5076,10 @@
          "derived": {
             "soak": 5,
             "wounds": 12,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -4868,7 +5140,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -4919,7 +5194,10 @@
          "derived": {
             "soak": 5,
             "wounds": 12,
-            "defense": [1, 0]
+            "defense": [
+               1,
+               0
+            ]
          },
          "skills": [
             {
@@ -4978,7 +5256,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -5051,7 +5332,10 @@
          "derived": {
             "soak": 5,
             "wounds": 12,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -5108,7 +5392,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -5159,7 +5446,10 @@
          "derived": {
             "soak": 5,
             "wounds": 12,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -5216,7 +5506,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -5267,7 +5560,10 @@
          "derived": {
             "soak": 5,
             "wounds": 12,
-            "defense": [1, 0]
+            "defense": [
+               1,
+               0
+            ]
          },
          "skills": [
             {
@@ -5332,8 +5628,14 @@
             }
          ],
          "talents": [
-            "Adversary 1",
-            "Counteroffer"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
+            {
+               "name": "Counteroffer",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -5404,7 +5706,10 @@
          "derived": {
             "soak": 5,
             "wounds": 12,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -5457,8 +5762,14 @@
             }
          ],
          "talents": [
-            "Adversary 1",
-            "Coordinated Assault 3"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
+            {
+               "name": "Coordinated Assault 3",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -5509,7 +5820,10 @@
          "derived": {
             "soak": 5,
             "wounds": 12,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -5562,7 +5876,10 @@
             }
          ],
          "talents": [
-            "Adversary 1",
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
             "Gunslinger Diplomacy"
          ],
          "weapons": [
@@ -5619,7 +5936,10 @@
          "derived": {
             "soak": 5,
             "wounds": 12,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -5676,7 +5996,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -5727,7 +6050,10 @@
          "derived": {
             "soak": 5,
             "wounds": 12,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -5786,7 +6112,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -5859,7 +6188,10 @@
          "derived": {
             "soak": 5,
             "wounds": 12,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -5912,7 +6244,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -5963,7 +6298,10 @@
          "derived": {
             "soak": 5,
             "wounds": 12,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -6016,7 +6354,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -6067,7 +6408,10 @@
          "derived": {
             "soak": 6,
             "wounds": 12,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -6126,7 +6470,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -6177,7 +6524,10 @@
          "derived": {
             "soak": 5,
             "wounds": 12,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -6240,7 +6590,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -6291,7 +6644,10 @@
          "derived": {
             "soak": 5,
             "wounds": 12,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -6351,7 +6707,10 @@
             "Silhouette 0"
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -6420,7 +6779,10 @@
          "derived": {
             "soak": 4,
             "wounds": 5,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -6527,7 +6889,10 @@
          "derived": {
             "soak": 4,
             "wounds": 5,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -6649,7 +7014,10 @@
          "derived": {
             "soak": 4,
             "wounds": 5,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -6756,7 +7124,10 @@
          "derived": {
             "soak": 4,
             "wounds": 5,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -6862,7 +7233,10 @@
          "derived": {
             "soak": 5,
             "wounds": 5,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -6969,7 +7343,10 @@
          "derived": {
             "soak": 4,
             "wounds": 5,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -7000,7 +7377,10 @@
          ],
          "abilities": [],
          "talents": [
-            "Swift"
+            {
+               "name": "Swift",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -7078,7 +7458,10 @@
          "derived": {
             "soak": 4,
             "wounds": 5,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -7185,7 +7568,10 @@
          "derived": {
             "soak": 4,
             "wounds": 5,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -7297,7 +7683,10 @@
          "derived": {
             "soak": 4,
             "wounds": 5,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -7328,7 +7717,10 @@
          ],
          "abilities": [],
          "talents": [
-            "Quick Strike 1"
+            {
+               "name": "Quick Strike 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -7406,7 +7798,10 @@
          "derived": {
             "soak": 4,
             "wounds": 7,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -7518,7 +7913,10 @@
          "derived": {
             "soak": 4,
             "wounds": 5,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -7657,7 +8055,10 @@
          "derived": {
             "soak": 4,
             "wounds": 7,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -7769,7 +8170,10 @@
          "derived": {
             "soak": 4,
             "wounds": 5,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -7881,7 +8285,10 @@
          "derived": {
             "soak": 5,
             "wounds": 5,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -7988,7 +8395,10 @@
          "derived": {
             "soak": 4,
             "wounds": 5,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -8095,7 +8505,10 @@
          "derived": {
             "soak": 4,
             "wounds": 5,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -8206,7 +8619,10 @@
          "derived": {
             "soak": 3,
             "wounds": 10,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -8259,8 +8675,14 @@
             }
          ],
          "talents": [
-            "Barrel Roll",
-            "Eagle Eyes"
+            {
+               "name": "Barrel Roll",
+               "source": "crb"
+            },
+            {
+               "name": "Eagle Eyes",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -8321,7 +8743,10 @@
             "soak": 3,
             "wounds": 12,
             "strain": 12,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -8368,7 +8793,10 @@
             }
          ],
          "talents": [
-            "Lucky Strike"
+            {
+               "name": "Lucky Strike",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -8439,7 +8867,10 @@
             "soak": 8,
             "wounds": 20,
             "strain": 15,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -8478,8 +8909,14 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "Swift"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
+            {
+               "name": "Swift",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -8524,7 +8961,10 @@
          "derived": {
             "soak": 8,
             "wounds": 18,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -8651,7 +9091,10 @@
             "soak": 2,
             "wounds": 15,
             "strain": 15,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -8703,7 +9146,10 @@
             }
          ],
          "talents": [
-            "Adversary 1",
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
             "Combat Command"
          ],
          "weapons": [
@@ -8746,7 +9192,10 @@
          "derived": {
             "soak": 5,
             "wounds": 8,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -8852,7 +9301,10 @@
          "derived": {
             "soak": 7,
             "wounds": 20,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -8887,7 +9339,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Terrifying",
@@ -8976,7 +9431,10 @@
          "derived": {
             "soak": 4,
             "wounds": 10,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -9091,7 +9549,10 @@
          "derived": {
             "soak": 2,
             "wounds": 3,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -9166,7 +9627,10 @@
          "derived": {
             "soak": 10,
             "wounds": 30,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -9204,7 +9668,10 @@
             "Silhouette 3"
          ],
          "talents": [
-            "Indomitable"
+            {
+               "name": "Indomitable",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -9277,7 +9744,10 @@
             "soak": 6,
             "wounds": 20,
             "strain": 20,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -9379,7 +9849,10 @@
          "derived": {
             "soak": 0,
             "wounds": 10,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -9451,7 +9924,10 @@
          "derived": {
             "soak": 1,
             "wounds": 30,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -9530,7 +10006,10 @@
             "soak": 3,
             "wounds": 15,
             "strain": 15,
-            "defense": [2, 2]
+            "defense": [
+               2,
+               2
+            ]
          },
          "skills": [
             {
@@ -9592,8 +10071,14 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "Coordinated Assault 2"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
+            {
+               "name": "Coordinated Assault 2",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -9644,7 +10129,10 @@
             "soak": 4,
             "wounds": 12,
             "strain": 18,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -9705,7 +10193,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -9755,7 +10246,10 @@
          "derived": {
             "soak": 5,
             "wounds": 7,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -9852,7 +10346,10 @@
          "derived": {
             "soak": 3,
             "wounds": 4,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -9929,7 +10426,10 @@
          "derived": {
             "soak": 5,
             "wounds": 15,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -9988,7 +10488,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -10065,7 +10568,10 @@
          "derived": {
             "soak": 2,
             "wounds": 4,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -10127,7 +10633,10 @@
          "derived": {
             "soak": 2,
             "wounds": 14,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -10186,7 +10695,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -10272,7 +10784,10 @@
             "soak": 4,
             "wounds": 25,
             "strain": 17,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -10342,7 +10857,10 @@
             "Silhouette 2"
          ],
          "talents": [
-            "Adversary 3"
+            {
+               "name": "Adversary 3",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -10414,7 +10932,10 @@
          "derived": {
             "soak": 1,
             "wounds": 38,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -10498,7 +11019,10 @@
          "derived": {
             "soak": 5,
             "wounds": 48,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -10535,7 +11059,10 @@
             "Silhouette 3"
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -10584,7 +11111,10 @@
          "derived": {
             "soak": 3,
             "wounds": 8,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -10653,7 +11183,10 @@
          "derived": {
             "soak": 5,
             "wounds": 88,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -10699,7 +11232,10 @@
             "Silhouette 3"
          ],
          "talents": [
-            "Adversary 2"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            }
          ],
          "weapons": [
             {
@@ -10744,7 +11280,10 @@
          "derived": {
             "soak": 5,
             "wounds": 18,
-            "defense": [2, 2]
+            "defense": [
+               2,
+               2
+            ]
          },
          "skills": [
             {
@@ -10858,7 +11397,10 @@
          "derived": {
             "soak": 2,
             "wounds": 5,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -10932,7 +11474,10 @@
          ],
          "derived": {
             "wounds": 4,
-            "defense": [0, 0],
+            "defense": [
+               0,
+               0
+            ],
             "soak": 0
          },
          "description": [
@@ -10959,7 +11504,10 @@
          "derived": {
             "soak": 6,
             "wounds": 30,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -10982,7 +11530,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -11038,7 +11589,10 @@
             "soak": 10,
             "wounds": 50,
             "strain": 25,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -11067,7 +11621,10 @@
             }
          ],
          "talents": [
-            "Adversary 2"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            }
          ],
          "abilities": [
             {
@@ -11143,7 +11700,10 @@
             "soak": 7,
             "wounds": 25,
             "strain": 15,
-            "defense": [1, 1]
+            "defense": [
+               1,
+               1
+            ]
          },
          "skills": [
             {
@@ -11160,7 +11720,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Silhouette 2"
@@ -11281,24 +11844,9 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Incorporeal",
-               "description": [
-                  "Your character lacks corporeal presence. When wearing sealed armor or an environmental suit, your character acts as normal. However, when not wearing armor, when your character makes {@characteristic Brawn||crb}- or {@characteristic Agility||crb}-based checks, increase the difficulty by 2. When a corporeal character makes a {@characteristic Brawn||crb}- or {@characteristic Agility||crb}-based check targeting your character, increase the difficulty by 2. Your character increases their soak by their {@characteristic Willpower||crb} (in addition to their {@characteristic Brawn||crb}). Your character can move through most mundane types of difficult and impassable terrain without penalty but cannot stop inside solid surfaces. Outside of the Shaleri anomaly or their home dimension, your character suffers 1 strain at the end of each of their turns. If this causes them to exceed their strain threshold, they suffer one Critical Injury at the end of each of their turns as well, until they are able to return to a habitable environment. In addition, your character does not need to eat, breathe, or sleep and is immune to poisons and toxins."
-               ]
-            },
-            {
-               "name": "Insubstantial Form",
-               "description": [
-                  "Creuss do not gain the benefits of healing wounds with {@gear dermal sealer|dermal sealers} ({@rule painkillers||crb}) or {@skill Medicine||crb} checks. Creuss do heal wounds and strain naturally by resting. In addition, when they make a check to heal strain at the end of an encounter, they may spend {@symbols a} to heal 1 wound (and may spend multiple {@symbols a} to do so), and they may spend {@symbols a} equal to a Critical Injury's severity (or {@symbols t}) to heal a Critical Injury."
-               ]
-            },
-            {
-               "name": "Ethereal Awareness",
-               "description": [
-                  "Once per session as an out-of-turn incidental, you may spend a Story Point to have your character become aware of everything that is currently within long range of your character (this includes concealed enemies, hidden passageways, and what is behind sealed doors)."
-               ]
-            },
+            "Incorporeal",
+            "Insubstantial Form",
+            "Ethereal Awareness",
             {
                "description": [
                   "Your character starts the game with a {@gear sealed environmental suit} (see page 117)."
@@ -11352,12 +11900,7 @@
             ]
          },
          "abilities": [
-            {
-               "name": "Mind Reader",
-               "description": [
-                  "As an action, your character may make an {@b opposed {@skill Discipline||crb} versus {@skill Discipline||crb} check} targeting one living creature within medium range. If successful, your character knows the target's current thoughts and emotional state. {@symbols aaa} or {@symbols t} may be spent to discover other thoughts or memories, at your GM's discretion."
-               ]
-            }
+            "Mind Reader"
          ],
          "description": [
             "The serpentine Druaa would be simply one more species in a galaxy full of sentient life if it weren't for their singular gift: they appear to be the only species in the galaxy with a highly advanced form of telepathy. Scientists are unsure how this ability works, and the Druaa are notably loath to allow other species to investigate it. But they have spent centuries refining their technology to enhance their innate abilities, so it is likely they possess a deep understanding that they'll never share with others.",
@@ -11406,24 +11949,9 @@
             ]
          },
          "abilities": [
-            {
-               "name": "Integral Combustion",
-               "description": [
-                  "When a non-Gashlai is engaged with a Gashlai, they are exposed to a fire with a rating of 5 (see page 111 of the Core Rulebook). Gashlai do not suffer damage from weapons with the {@quality Burn||crb} item quality (whether or not the quality is activated). When a Gashlai who is not wearing a sealed environmental suit is present in any environment that does not have temperatures between 400 and 2,000 degrees Celsius, they suffer 1 strain at the end of each of their turns. If this causes them to exceed their strain threshold, they suffer one Critical Injury at the end of each of their turns as well, until they are able to return to a habitable environment."
-               ]
-            },
-            {
-               "name": "Ember Suit",
-               "description": [
-                  "Your character starts the game with a {@gear sealed environmental suit} (see page 117). While your character is wearing the suit, engaged non-Gashlai are not exposed to a fire with a rating of 5."
-               ]
-            },
-            {
-               "name": "Focused Heat",
-               "description": [
-                  "While your character is wielding a {@filter gear|Melee or Brawl weapon|source:embers-of-the-imperium=1;type:weapon=1;skill:brawl=1,melee=1} (including their unarmed attacks), that weapon gains the {@quality Burn|Burn 2|crb} item quality if it did not already have the {@quality Burn||crb} item quality. When making a combat check with a {@filter gear|Melee or Brawl weapon|source:embers-of-the-imperium=1;type:weapon=1;skill:brawl=1,melee=1}, your character may suffer 3 strain to trigger the {@quality Burn||crb} quality without spending {@symbols a}."
-               ]
-            }
+            "Integral Combustion",
+            "Ember Suit",
+            "Focused Heat"
          ],
          "description": [
             "Even in a galaxy of oddities and mysteries, the Gashlai are unique. Each is a raging inferno, an organism constantly enveloped in a roiling blanket of flame and heat. Unlike most living beings, the Gashlai conceive their children by creating an embryo in a \"cocoon\" that somehow draws energy from its surroundings and converts it into mass. When a Gashlai is birthed from their cocoon, their squat, bulky body erupts into flame as that mass begins to return to energy. This process continues for the rest of their very long life, until the last of their body is consumed, the flames gutter out, and the Gashlai dies.",
@@ -11472,12 +12000,7 @@
             ]
          },
          "abilities": [
-            {
-               "name": "Savvy Negotiator",
-               "description": [
-                  "Once per session when your character is targeted by a social skill check and is dealt strain, you may spend a Story Point as an out-of-turn incidental to reduce the strain suffered by their {@characteristic Cunning||crb} rating and inflict strain on the character who targeted them equal to their {@characteristic Cunning||crb} rating."
-               ]
-            }
+            "Savvy Negotiator"
          ],
          "description": [
             "The Hacan are an ancient species, well established in the galaxy. Hailing from the hot and dry planets of the tri-system of {@rule Kenara System|Kenara}, the trading clans of the Hacan long ago established themselves among the galaxy's dominant economic powerhouses. Even in the depths of the Twilight Wars and the grim times that followed, some intrepid Hacan traders still plied the spacelanes, and now the Emirates are poised to regain their titles as the masters of commerce once again.",
@@ -11526,18 +12049,8 @@
             ]
          },
          "abilities": [
-            {
-               "name": "Endurance Predator",
-               "description": [
-                  "When a Human makes a check to heal strain at the end of an encounter, they heal 1 additional strain."
-               ]
-            },
-            {
-               "name": "Adaptable",
-               "description": [
-                  "Once per session when your character makes a skill check, you may spend a Story Point to use any skill with the check (the check still uses the original characteristic)."
-               ]
-            }
+            "Endurance Predator",
+            "Adaptable"
          ],
          "description": [
             "Humans are a relatively young species on the cosmic scale, but in the years since their species discovered the mass-drive, they have spread out across the galaxy at a dizzying rate. In doing so, the species has proven itself impressively adaptable, able to merge more or less seamlessly into any number of foreign cultures. Even on {@rule Jord}, its ancestral home, Humanity is amazingly diverse in form and attitude. Many xenobiologists agree that this genetic and mental adaptability has contributed greatly to their survival as a species.",
@@ -11587,24 +12100,9 @@
             ]
          },
          "abilities": [
-            {
-               "name": "Vast Intellect",
-               "description": [
-                  "Once per session, you may spend a Story Point as an incidental before your character makes a skill check to count their ranks in the skill being used as equal to their {@characteristic Intellect||crb}."
-               ]
-            },
-            {
-               "name": "Aquatic",
-               "description": [
-                  "Your character can breathe underwater and never suffers movement penalties for traveling through water."
-               ]
-            },
-            {
-               "name": "Species Variants",
-               "description": [
-                  "Your character can start the game either as an air-breathing Hylar or as a water-breathing Hylar. If they start the game as an air-breathing Hylar, they can also function normally in all oxygen atmospheres. If they start the game as a water-breathing Hylar, they gain 5 additional starting XP. However, if exposed to the air, they follow the rules for drowning (see page 111 of the Core Rulebook). They also start the game with a {@gear sealed environmental suit} (see page 117)."
-               ]
-            }
+            "Vast Intellect",
+            "Aquatic",
+            "Species Variants"
          ],
          "description": [
             "The Hylar are actually a collection of closely related subspecies hailing from the twin oceanic worlds of {@rule Jol and Nar}. All of the Hylar variants are distinctly aquatic, but they range from subspecies that can breathe air and survive out of the water for weeks at a time to Hylar who only possess gills and cannot live unless they are continuously submerged. Still, each of the subspecies has similar physical characteristics: an oversized head with bulbous eyes; slick, smooth skin; and thin, flexible limbs ending in finned appendages.",
@@ -11653,12 +12151,7 @@
             ]
          },
          "abilities": [
-            {
-               "name": "Unmatched Arrogance",
-               "description": [
-                  "When a Letnev makes a {@skill Leadership||crb} or {@skill Coercion||crb} check, they add {@symbols s} to the results. When a Letnev makes a {@skill Charm||crb} or {@skill Negotiation||crb} check, they add {@symbols h} to the results."
-               ]
-            }
+            "Unmatched Arrogance"
          ],
          "description": [
             "A stereotypically proud, aggressive, and arrogant people, the Letnev are mammalian humanoids who bear a passing resemblance to {@archetype Human|Humans}, though neither species likes to admit it. The principle physiological differences are the Letnev's skin tones (ranging from pale blue to light gray), their hair color (often a cold blue-white, or inky blue-black), and their aversion to intense or bright light. This last may be because of their evolution in the caverns deep below the surface of their sunless homeworld of {@rule Arc Prime and Wren Terra|Arc Prime}.",
@@ -11707,12 +12200,7 @@
             ]
          },
          "abilities": [
-            {
-               "name": "Rugged Biology",
-               "description": [
-                  "Once per session, you may spend a Story Point to have your character heal one Critical Injury with a severity of {@difficulty easy} or {@difficulty average} that they are currently suffering as an incidental."
-               ]
-            }
+            "Rugged Biology"
          ],
          "description": [
             "The N'orr are an insectoid species from the barren desert world of {@rule Quinarra and Tren'lak|Quinarra}. As with the {@archetype Hylar}, their subspecies exhibit a vast range of differences in morphology, from bipedal, beetle-headed physiques roughly the size of a {@archetype Human} to hulking, four-legged variants with wedge-shaped heads, long arms, and a dozen small eyes. Although their appearances vary wildly, all N'orr share the same basic DNA structure, to the point that some biologists have claimed these differences are no stranger than the varied hair or skin colors of {@archetype Human|Humans}.",
@@ -11757,8 +12245,14 @@
                "presence": 1
             }
          ],
-         "wt": [4, 10],
-         "st": [10, 6],
+         "wt": [
+            4,
+            10
+         ],
+         "st": [
+            10,
+            6
+         ],
          "xp": 70,
          "skills": {
             "skills": [
@@ -11773,42 +12267,12 @@
             ]
          },
          "abilities": [
-            {
-               "name": "Symbiotic Partnership",
-               "description": [
-                  "A Naaz-Rokha is a single player character with two independent sets of characteristics and derived attributes. The Naaz and the Rokha operate as independent beings who share the same skills and talents. During the Naaz-Rokha's turn, as long as neither the Naaz nor the Rokha is incapacitated and they are within short range of each other, the Naaz-Rokha may perform one additional free maneuver without suffering strain (they may still only perform two maneuvers each turn)."
-               ]
-            },
-            {
-               "name": "Symbiotic Operation",
-               "description": [
-                  "When your character performs an action, choose whether the Naaz or the Rokha is performing the action; use that being's relevant characteristics, and use the appropriate skill from the shared skill list. When your character is targeted by an attack, skill check, or effect, as long as the Naaz and the Rokha are within short range of each other, choose which one is the target. In specific circumstances in which it may not make sense for you to choose which member of the pair acts or is targeted, your GM can make the decision instead."
-               ]
-            },
-            {
-               "name": "Character Death",
-               "description": [
-                  "When the Naaz or the Rokha is killed, you may choose to retire your character (with the living member of the pair retiring from adventuring and going into mourning) or continue playing with only one member of the pair (but in this case, you cannot add a 'new' member to replace the dead one)."
-               ]
-            },
-            {
-               "name": "Symbiotic Advancements",
-               "description": [
-                  "Your character has a single skill list and single talent list. Skills and talents are purchased for your character as normal. When your character increases a characteristic or a derived attribute, choose whether that increase applies to the Naaz profile or the Rokha profile."
-               ]
-            },
-            {
-               "name": "Need a Lift?",
-               "description": [
-                  "A Naaz is silhouette 0. A Rokha is silhouette 1."
-               ]
-            },
-            {
-               "name": "Harness",
-               "description": [
-                  "All Rokha in a partnership wear a harness that allows their Naaz to ride on their shoulders. The harness is equipment with an encumbrance value of 0, and while the Naaz is riding on the Rokha's shoulders, they may move with the Rokha without spending a maneuver"
-               ]
-            }
+            "Symbiotic Partnership",
+            "Symbiotic Operation",
+            "Character Death",
+            "Symbiotic Advancements",
+            "Need a Lift?",
+            "Harness"
          ],
          "description": [
             "The Naaz-Rokha are a bit of a galactic oddity: two completely unrelated species who, through deliberate effort, have formed a fully cooperative symbiotic union. Biologically, the two could not be more different. The Naaz are small, four-armed mammalians with pink skin, large ears, and red eyes, and an almost instinctive grasp of technology. The Rokha, on the other hand, are black-furred felids who are very distant genetic relatives of the {@archetype Hacan}, though the two species diverged long ago. After the Naaz and Rokha unified to seek independence and a free homeworld together, the union they created went far beyond a broadly political one.",
@@ -11858,12 +12322,7 @@
             ]
          },
          "abilities": [
-            {
-               "name": "Resourceful",
-               "description": [
-                  "Once per session, you may spend a Story Point to have your character repair one item they are engaged with as an incidental (fixing all damage and restoring it to full functionality) or have your character inflict major damage on one item they are engaged with as an incidental (see page 89 of the Core Rulebook for more information)."
-               ]
-            }
+            "Resourceful"
          ],
          "description": [
             "Without a world to call their own for thousands of years, the Saar have been a nomadic people throughout history. Only recently have they made the great {@rule Jorun Asteroid Field} a home base and established themselves as members of a new Great Civilization.",
@@ -11912,12 +12371,7 @@
             ]
          },
          "abilities": [
-            {
-               "name": "Avian Agility",
-               "description": [
-                  "Once per session when making a skill check that uses your character's {@characteristic Agility||crb} characteristic, you may spend a Story Point to add {@symbols ssaa} to the results."
-               ]
-            }
+            "Avian Agility"
          ],
          "description": [
             "A collection of closely related avian subspecies, the Shikrai inhabit a scattered clutch of worlds trailing the Ordinian nebula. They prefer arid and windswept planets, and although their original homeworlds are galactic curiosities (see {@rule Atharal Gas Torus} on page 177), they can thrive on any planet that does not have excessive gravity.",
@@ -11968,18 +12422,8 @@
             ]
          },
          "abilities": [
-            {
-               "name": "Titanic",
-               "description": [
-                  "A Titan is silhouette 2 and increases their encumbrance threshold by 4."
-               ]
-            },
-            {
-               "name": "Biomechanical",
-               "description": [
-                  "A Titan does not need to breathe and can survive in {@rule vacuum||crb} without protection. They do need to sleep and consume moderate amounts of silicates and other minerals to survive"
-               ]
-            }
+            "Titanic",
+            "Biomechanical"
          ],
          "description": [
             "Though the Titans may appear to be massive automata, they are in fact living biomechanical beings. Made by the ancient {@rule Mahact Gene-Sorcerers|Mahact} to be the perfect servants, they have since evolved into an independent species who bear no loyalty to their creators. Instead, most of the Titans have gathered on their homeworld of {@rule Elysium} to construct their own society.",
@@ -12031,12 +12475,7 @@
             ]
          },
          "abilities": [
-            {
-               "name": "Righteous",
-               "description": [
-                  "Once per session when your character is targeted by a skill check (this includes combat checks and social skill checks), you may spend a Story Point to add {@symbols fff} to the results."
-               ]
-            }
+            "Righteous"
          ],
          "description": [
             "The Winnu are one species with two distinctly separate cultures. The first are the Winnaran Custodians, citizens of Mecatol Rex and guardians of the throneworld until the day when a new emperor arises. The second are the Winnu of their ancestral homeworld. The Winnaran Custodians tend to be a studious, dutiful lot, with a dour demeanor bred from millennia of caring for a shattered world. Their Winnu cousins could not be more different.",
@@ -12088,12 +12527,7 @@
             ]
          },
          "abilities": [
-            {
-               "name": "Extremely Tough",
-               "description": [
-                  "Once per session after your character is hit by an attack, you may spend a Story Point to double their soak while resolving the damage dealt by that attack. Their soak is doubled before being reduced by item qualities such as {@quality Breach||crb} or {@quality Pierce||crb}."
-               ]
-            }
+            "Extremely Tough"
          ],
          "description": [
             "The reptilian Xxcha have a reputation as peaceful philosophers. Though many of them are, this ignores their equal strength as warriors and leaders. While the Xxcha were once a truly peaceful faction, the invasion and eventual scouring of one of their two homeworlds, {@rule Archon Ren and Archon Tau|Archon Tau}, taught them to never let down their guard. Now, the {@rule Xxcha Kingdom} believes in peace backed by strength, as do many individual Xxcha.",
@@ -12142,18 +12576,8 @@
             ]
          },
          "abilities": [
-            {
-               "name": "Diminutive",
-               "description": [
-                  "A Yssaril is silhouette 0."
-               ]
-            },
-            {
-               "name": "Chameleonic",
-               "description": [
-                  "Once per session, you may spend a Story Point to add {@symbols ss} to the results of a {@skill Stealth||crb} check your character makes, or to add {@symbols ff} to the results of a {@skill Vigilance||crb} or {@skill Perception||crb} check another character makes to detect your character."
-               ]
-            }
+            "Diminutive",
+            "Chameleonic"
          ],
          "description": [
             "Long ago, many civilizations dismissed the Yssaril as a \"primitive\" people ripe for exploitation. That was before they fought the Lazax Empire to a bloody stalemate, eventually forcing it to withdraw from the Yssaril homeworld of {@rule Retillion and Shalloq|Retillion}—and before the Yssaril began to use their talents for infiltration and covert operations to play against the Great Civilizations and earn their own spot on {@rule the Galactic Council}. Now the Yssaril are citizens of the galaxy, but many still remember their historical mistreatment at the hands of others.",
@@ -12183,174 +12607,355 @@
          "name": "Adaptable",
          "description": [
             "Once per session when your character makes a skill check, you may spend a Story Point to use any skill with the check (the check still uses the original characteristic)."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "session",
+            "story point cost",
+            "skill check modifier"
          ]
       },
       {
          "name": "Aquatic",
          "description": [
             "Your character can breathe underwater and never suffers movement penalties for traveling through water."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "movement"
          ]
       },
       {
          "name": "Avian Agility",
          "description": [
             "Once per session when making a skill check that uses your character's {@characteristic Agility||crb} characteristic, you may spend a Story Point to add {@symbols ssaa} to the results."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "story point cost",
+            "session",
+            "results modifier"
          ]
       },
       {
          "name": "Biomechanical",
          "description": [
             "A Titan does not need to breathe and can survive in {@rule vacuum||crb} without protection. They do need to sleep and consume moderate amounts of silicates and other minerals to survive"
+         ],
+         "tags": [
+            "general",
+            "passive"
          ]
       },
       {
          "name": "Chameleonic",
          "description": [
             "Once per session, you may spend a Story Point to add {@symbols ss} to the results of a {@skill Stealth||crb} check your character makes, or to add {@symbols ff} to the results of a {@skill Vigilance||crb} or {@skill Perception||crb} check another character makes to detect your character."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "session",
+            "story point cost",
+            "results modifier"
          ]
       },
       {
          "name": "Character Death",
          "description": [
             "When the Naaz or the Rokha is killed, you may choose to retire your character (with the living member of the pair retiring from adventuring and going into mourning) or continue playing with only one member of the pair (but in this case, you cannot add a 'new' member to replace the dead one)."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "narrative"
          ]
       },
       {
          "name": "Diminutive",
          "description": [
             "A Yssaril is silhouette 0."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "stat modifier"
          ]
       },
       {
          "name": "Ember Suit",
          "description": [
             "Your character starts the game with a {@gear sealed environmental suit} (see page 117). While your character is wearing the suit, engaged non-Gashlai are not exposed to a fire with a rating of 5."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "character creation modifier"
          ]
       },
       {
          "name": "Endurance Predator",
          "description": [
             "When a Human makes a check to heal strain at the end of an encounter, they heal 1 additional strain."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "recovery"
          ]
       },
       {
          "name": "Ethereal Awareness",
          "description": [
             "Once per session as an out-of-turn incidental, you may spend a Story Point to have your character become aware of everything that is currently within long range of your character (this includes concealed enemies, hidden passageways, and what is behind sealed doors)."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental (out of turn)",
+            "session",
+            "story point cost",
+            "support"
          ]
       },
       {
          "name": "Extremely Tough",
          "description": [
             "Once per session after your character is hit by an attack, you may spend a Story Point to double their soak while resolving the damage dealt by that attack. Their soak is doubled before being reduced by item qualities such as {@quality Breach||crb} or {@quality Pierce||crb}."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental (out of turn)",
+            "session",
+            "story point cost",
+            "stat modifier"
          ]
       },
       {
          "name": "Focused Heat",
          "description": [
             "While your character is wielding a {@filter gear|Melee or Brawl weapon|source:embers-of-the-imperium=1;type:weapon=1;skill:brawl=1,melee=1} (including their unarmed attacks), that weapon gains the {@quality Burn|Burn 2|crb} item quality if it did not already have the {@quality Burn||crb} item quality. When making a combat check with a {@filter gear|Melee or Brawl weapon|source:embers-of-the-imperium=1;type:weapon=1;skill:brawl=1,melee=1}, your character may suffer 3 strain to trigger the {@quality Burn||crb} quality without spending {@symbols a}."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "active",
+            "incidental",
+            "skill check modifier",
+            "offensive"
          ]
       },
       {
          "name": "Harness",
          "description": [
             "All Rokha in a partnership wear a harness that allows their Naaz to ride on their shoulders. The harness is equipment with an encumbrance value of 0, and while the Naaz is riding on the Rokha's shoulders, they may move with the Rokha without spending a maneuver"
+         ],
+         "tags": [
+            "general",
+            "passive"
          ]
       },
       {
          "name": "Incorporeal",
          "description": [
             "Your character lacks corporeal presence. When wearing sealed armor or an environmental suit, your character acts as normal. However, when not wearing armor, when your character makes {@characteristic Brawn||crb}- or {@characteristic Agility||crb}-based checks, increase the difficulty by 2. When a corporeal character makes a {@characteristic Brawn||crb}- or {@characteristic Agility||crb}-based check targeting your character, increase the difficulty by 2. Your character increases their soak by their {@characteristic Willpower||crb} (in addition to their {@characteristic Brawn||crb}). Your character can move through most mundane types of difficult and impassable terrain without penalty but cannot stop inside solid surfaces. Outside of the Shaleri anomaly or their home dimension, your character suffers 1 strain at the end of each of their turns. If this causes them to exceed their strain threshold, they suffer one Critical Injury at the end of each of their turns as well, until they are able to return to a habitable environment. In addition, your character does not need to eat, breathe, or sleep and is immune to poisons and toxins."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier"
          ]
       },
       {
          "name": "Insubstantial Form",
          "description": [
             "Creuss do not gain the benefits of healing wounds with {@gear dermal sealer|dermal sealers} ({@rule painkillers||crb}) or {@skill Medicine||crb} checks. Creuss do heal wounds and strain naturally by resting. In addition, when they make a check to heal strain at the end of an encounter, they may spend {@symbols a} to heal 1 wound (and may spend multiple {@symbols a} to do so), and they may spend {@symbols a} equal to a Critical Injury's severity (or {@symbols t}) to heal a Critical Injury."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier",
+            "recovery",
+            "results spend"
          ]
       },
       {
          "name": "Integral Combustion",
          "description": [
             "When a non-Gashlai is engaged with a Gashlai, they are exposed to a fire with a rating of 5 (see page 111 of the Core Rulebook). Gashlai do not suffer damage from weapons with the {@quality Burn||crb} item quality (whether or not the quality is activated). When a Gashlai who is not wearing a sealed environmental suit is present in any environment that does not have temperatures between 400 and 2,000 degrees Celsius, they suffer 1 strain at the end of each of their turns. If this causes them to exceed their strain threshold, they suffer one Critical Injury at the end of each of their turns as well, until they are able to return to a habitable environment."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "offensive",
+            "defensive"
          ]
       },
       {
          "name": "Mind Reader",
          "description": [
             "As an action, your character may make an {@b opposed {@skill Discipline||crb} versus {@skill Discipline||crb} check} targeting one living creature within medium range. If successful, your character knows the target's current thoughts and emotional state. {@symbols aaa} or {@symbols t} may be spent to discover other thoughts or memories, at your GM's discretion."
+         ],
+         "tags": [
+            "social",
+            "active",
+            "action",
+            "opposed",
+            "results spend",
+            "narrative"
          ]
       },
       {
          "name": "Need a Lift?",
          "description": [
             "A Naaz is silhouette 0. A Rokha is silhouette 1."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "stat modifier"
          ]
       },
       {
          "name": "Resourceful",
          "description": [
             "Once per session, you may spend a Story Point to have your character repair one item they are engaged with as an incidental (fixing all damage and restoring it to full functionality) or have your character inflict major damage on one item they are engaged with as an incidental (see page 89 of the Core Rulebook for more information)."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "session",
+            "incidental",
+            "story point cost",
+            "support"
          ]
       },
       {
          "name": "Righteous",
          "description": [
             "Once per session when your character is targeted by a skill check (this includes combat checks and social skill checks), you may spend a Story Point to add {@symbols fff} to the results."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental (out of turn)",
+            "session",
+            "story point cost",
+            "results modifier"
          ]
       },
       {
          "name": "Rugged Biology",
          "description": [
             "Once per session, you may spend a Story Point to have your character heal one Critical Injury with a severity of {@difficulty easy} or {@difficulty average} that they are currently suffering as an incidental."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "story point cost",
+            "session",
+            "recovery"
          ]
       },
       {
          "name": "Savvy Negotiator",
          "description": [
             "Once per session when your character is targeted by a social skill check and is dealt strain, you may spend a Story Point as an out-of-turn incidental to reduce the strain suffered by their {@characteristic Cunning||crb} rating and inflict strain on the character who targeted them equal to their {@characteristic Cunning||crb} rating."
+         ],
+         "tags": [
+            "social",
+            "active",
+            "incidental (out of turn)",
+            "session",
+            "story point cost",
+            "recovery",
+            "offensive"
          ]
       },
       {
          "name": "Species Variants",
          "description": [
             "Your character can start the game either as an air-breathing Hylar or as a water-breathing Hylar. If they start the game as an air-breathing Hylar, they can also function normally in all oxygen atmospheres. If they start the game as a water-breathing Hylar, they gain 5 additional starting XP. However, if exposed to the air, they follow the rules for drowning (see page 111 of the Core Rulebook). They also start the game with a {@gear sealed environmental suit} (see page 117)."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "character creation modifier"
          ]
       },
       {
          "name": "Symbiotic Advancements",
          "description": [
             "Your character has a single skill list and single talent list. Skills and talents are purchased for your character as normal. When your character increases a characteristic or a derived attribute, choose whether that increase applies to the Naaz profile or the Rokha profile."
+         ],
+         "tags": [
+            "general",
+            "passive"
          ]
       },
       {
          "name": "Symbiotic Operation",
          "description": [
             "When your character performs an action, choose whether the Naaz or the Rokha is performing the action; use that being's relevant characteristics, and use the appropriate skill from the shared skill list. When your character is targeted by an attack, skill check, or effect, as long as the Naaz and the Rokha are within short range of each other, choose which one is the target. In specific circumstances in which it may not make sense for you to choose which member of the pair acts or is targeted, your GM can make the decision instead."
+         ],
+         "tags": [
+            "general",
+            "passive"
          ]
       },
       {
          "name": "Symbiotic Partnership",
          "description": [
             "A Naaz-Rokha is a single player character with two independent sets of characteristics and derived attributes. The Naaz and the Rokha operate as independent beings who share the same skills and talents. During the Naaz-Rokha's turn, as long as neither the Naaz nor the Rokha is incapacitated and they are within short range of each other, the Naaz-Rokha may perform one additional free maneuver without suffering strain (they may still only perform two maneuvers each turn)."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "free maneuver"
          ]
       },
       {
          "name": "Titanic",
          "description": [
             "A Titan is silhouette 2 and increases their encumbrance threshold by 4."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "stat modifier"
          ]
       },
       {
          "name": "Unmatched Arrogance",
          "description": [
             "When a Letnev makes a {@skill Leadership||crb} or {@skill Coercion||crb} check, they add {@symbols s} to the results. When a Letnev makes a {@skill Charm||crb} or {@skill Negotiation||crb} check, they add {@symbols h} to the results."
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "results modifier"
          ]
       },
       {
          "name": "Vast Intellect",
          "description": [
             "Once per session, you may spend a Story Point as an incidental before your character makes a skill check to count their ranks in the skill being used as equal to their {@characteristic Intellect||crb}."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "session",
+            "story point cost",
+            "skill check modifier"
          ]
       }
    ],
@@ -14267,17 +14872,19 @@
                      "header": "Special"
                   }
                ],
-               "rows": [{
-                  "skill": "{@skill Ranged (Heavy)||crb}",
-                  "damage": "7",
-                  "crit": 3,
-                  "range": "Medium",
-                  "encumbrance": "-",
-                  "hardPoints": "-",
-                  "price": 880,
-                  "rarity": "-",
-                  "special": "{@quality Superior||crb}"
-               }]
+               "rows": [
+                  {
+                     "skill": "{@skill Ranged (Heavy)||crb}",
+                     "damage": "7",
+                     "crit": 3,
+                     "range": "Medium",
+                     "encumbrance": "-",
+                     "hardPoints": "-",
+                     "price": 880,
+                     "rarity": "-",
+                     "special": "{@quality Superior||crb}"
+                  }
+               ]
             },
             "A noble weapon of a bygone age, the Hacan dune spear is a long gyro-spear that has a highly sophisticated electromagnetic tube built into the shaft, allowing it to be used as a powerful ranged weapon. The gyros in the butt and haft help keep what would otherwise be an unwieldy weapon perfectly balanced for thrusting, stabbing, and shooting. The dune spear was only used by some of the {@archetype Hacan} trading clans, but as the {@archetype Hacan} spread across the galaxy, the iconic weapon came to be associated with the {@archetype Hacan} people as a whole.",
             "Traditionally, a {@archetype Hacan} was expected to craft their own dune spear and learn the complex arts of ferrocasting and electromagnetic smithing in the process; however, few {@archetype Hacan} today still remember these ancient arts. Most dune spears still in existence are centuries old, finely constructed with folded terridium alloys and decorated with polished ivory finishes and ruby inlays. But a few crafters still make dune spears and even teach the craft to those eager to learn.",
@@ -15210,10 +15817,19 @@
             {
                "type": "table",
                "columns": [
-                  { "header": "Defense" },
-                  { "header": "Soak" },
-                  { "header": "HP", "value": "hardPoints" },
-                  { "header": "special" }
+                  {
+                     "header": "Defense"
+                  },
+                  {
+                     "header": "Soak"
+                  },
+                  {
+                     "header": "HP",
+                     "value": "hardPoints"
+                  },
+                  {
+                     "header": "special"
+                  }
                ],
                "rows": [
                   {
@@ -15240,12 +15856,26 @@
             {
                "type": "table",
                "columns": [
-                  { "header": "Skill" },
-                  { "header": "Dam", "value": "damage" },
-                  { "header": "Crit" },
-                  { "header": "Range" },
-                  { "header": "HP", "value": "hardPoints" },
-                  { "header": "Special" }
+                  {
+                     "header": "Skill"
+                  },
+                  {
+                     "header": "Dam",
+                     "value": "damage"
+                  },
+                  {
+                     "header": "Crit"
+                  },
+                  {
+                     "header": "Range"
+                  },
+                  {
+                     "header": "HP",
+                     "value": "hardPoints"
+                  },
+                  {
+                     "header": "Special"
+                  }
                ],
                "rows": [
                   {
@@ -15291,12 +15921,26 @@
             {
                "type": "table",
                "columns": [
-                  { "header": "Skill" },
-                  { "header": "Dam", "value": "damage" },
-                  { "header": "Crit" },
-                  { "header": "Range" },
-                  { "header": "HP", "value": "hardPoints" },
-                  { "header": "Special" }
+                  {
+                     "header": "Skill"
+                  },
+                  {
+                     "header": "Dam",
+                     "value": "damage"
+                  },
+                  {
+                     "header": "Crit"
+                  },
+                  {
+                     "header": "Range"
+                  },
+                  {
+                     "header": "HP",
+                     "value": "hardPoints"
+                  },
+                  {
+                     "header": "Special"
+                  }
                ],
                "rows": [
                   {
@@ -16221,7 +16865,7 @@
          ],
          "encumbrance": 0,
          "price": 0,
-         "rarity": 0,
+         "rarity": null,
          "skill": {
             "name": "Ranged (Heavy)",
             "source": "crb"
@@ -16252,7 +16896,7 @@
          ],
          "encumbrance": 0,
          "price": 0,
-         "rarity": 0,
+         "rarity": null,
          "skill": {
             "name": "Brawl",
             "source": "crb"
@@ -16891,37 +17535,37 @@
          "page": 268,
          "type": "gear",
          "description": [
-             "As members of a government organization, the Keleres do get compensation for their work. This amount is kept deliberately low, to reinforce the core game concept that the Keleres are underpaid and underappreciated. However, how low this amount is depends on just how desperate you want to keep your players' characters",
-             "We have three suggested amounts, each paid four times per Mecatol year. This means that you can choose to track time in your game to make payments, or issue them at the end of a campaign arc (which, depending on travel times, you can claim has taken roughly three months).",
-             {
-                 "type": "list",
-                 "items": [
-                     "{@b 500 aurei:} This amount is set almost comically low to encourage players to have their characters engage in all sorts of graft, corruption, and side deals. Without bending the law, PCs will have a hard time affording more than basic weapons and equipment or will be totally reliant on what the quartermasters give them.",
-                     "{@b 1,000 aurei:} This is an \"average\" amount that means your PCs will be able to upgrade their equipment after each adventure, but won't be able to obtain heavy weapons or rare items without scrimping and saving. The PCs won't need to engage in illicit activities, but there may be some temptation to do so.",
-                     "{@b 2,500 aurei:} This payment level is appropriate if you want your group to be well-paid and not worrying about money. With this amount, the only things that will be out of reach after a couple of sessions are starships and vehicles. However, you will want to give your PCs corresponding challenges to match their powerful gear."
-                 ]
-             },
-             "This payment system assumes that your PCs' cost of living expenses are being maintained by the Keleres. They are given rooms in the Keleres HQ, receive meals from the mess hall, and have any basic medical care covered by the infirmary.",
-             {
-                 "title": "The Keleres Armory and Issued Supplies",
-                 "forceTitleLevel": 3,
-                 "entries": [
-                     "This payment system also does not account for gear the Keleres may receive from the official supply depots and base armory to accomplish their missions. The Winnaran Custodians responsible for supplies are notoriously stingy with the meager resources allocated to the Keleres, but a cohort can still expect some support, especially if they are friends with one of the quartermasters.",
-                     "Your players are likely to think of asking for items from the armory, and if they don't, you can suggest this as an option. The important thing is for them to use the armory to obtain basic supplies, and not try to argue that each of them needs a personal beam cannon and force field for every mission. To help with this, we have some guidelines for what your group can request from the armory.",
-                     {
-                         "type": "list",
-                         "items": [
-                             "Requests should only happen before an authorized mission. Quartermasters are likely to deny any random requests out of hand.",
-                             "The cohort makes requests as a group. Before a mission, the cohort may request a number of items with a combined value of no greater than 500 aurei. No item can have a rarity greater than 3.",
-                             "Any items that aren't single use or consumable (such as grenades, z-tabs, extra ammunition, or dermal sealers) need to be returned to the armory at the end of the mission. Failure to return items should result in the quartermasters significantly limiting the next request the group makes or denying it entirely."
-                         ]
-                     },
-                     "The important thing to remember is that the Winnaran quartermasters have wide discretion in what requests they honor and what requests they don't. Although it may not seem fair, cohorts that make friends with a quartermaster have a much better chance of getting greater requests met. Conversely, those who anger a quartermaster are likely to see their requests denied entirely",
-                     "Some of this can be handled through roleplaying. If you feel like your group has successfully gotten on a quartermaster's good side, you can increase the amount of gear they're allowed to requisition, up to 1,000 aurei. The other option is if a PC wants to obtain an item that is either rarer or more expensive than the normal requisition rules allow. In this case, you can have the PC make a {@skill Charm||crb} or {@skill Negotiation||crb} check with a difficulty determined by {@table I.5-1: Rarity||crb} on page 82 of the Core Rulebook to see if they can convince the quartermaster to let them requisition the item. Of course, it is ultimately up to you whether the armory has the item in stock. Don't feel that you have to give your group a sliver missile launcher just because they rolled well!"
-                 ]
-             }
+            "As members of a government organization, the Keleres do get compensation for their work. This amount is kept deliberately low, to reinforce the core game concept that the Keleres are underpaid and underappreciated. However, how low this amount is depends on just how desperate you want to keep your players' characters",
+            "We have three suggested amounts, each paid four times per Mecatol year. This means that you can choose to track time in your game to make payments, or issue them at the end of a campaign arc (which, depending on travel times, you can claim has taken roughly three months).",
+            {
+               "type": "list",
+               "items": [
+                  "{@b 500 aurei:} This amount is set almost comically low to encourage players to have their characters engage in all sorts of graft, corruption, and side deals. Without bending the law, PCs will have a hard time affording more than basic weapons and equipment or will be totally reliant on what the quartermasters give them.",
+                  "{@b 1,000 aurei:} This is an \"average\" amount that means your PCs will be able to upgrade their equipment after each adventure, but won't be able to obtain heavy weapons or rare items without scrimping and saving. The PCs won't need to engage in illicit activities, but there may be some temptation to do so.",
+                  "{@b 2,500 aurei:} This payment level is appropriate if you want your group to be well-paid and not worrying about money. With this amount, the only things that will be out of reach after a couple of sessions are starships and vehicles. However, you will want to give your PCs corresponding challenges to match their powerful gear."
+               ]
+            },
+            "This payment system assumes that your PCs' cost of living expenses are being maintained by the Keleres. They are given rooms in the Keleres HQ, receive meals from the mess hall, and have any basic medical care covered by the infirmary.",
+            {
+               "title": "The Keleres Armory and Issued Supplies",
+               "forceTitleLevel": 3,
+               "entries": [
+                  "This payment system also does not account for gear the Keleres may receive from the official supply depots and base armory to accomplish their missions. The Winnaran Custodians responsible for supplies are notoriously stingy with the meager resources allocated to the Keleres, but a cohort can still expect some support, especially if they are friends with one of the quartermasters.",
+                  "Your players are likely to think of asking for items from the armory, and if they don't, you can suggest this as an option. The important thing is for them to use the armory to obtain basic supplies, and not try to argue that each of them needs a personal beam cannon and force field for every mission. To help with this, we have some guidelines for what your group can request from the armory.",
+                  {
+                     "type": "list",
+                     "items": [
+                        "Requests should only happen before an authorized mission. Quartermasters are likely to deny any random requests out of hand.",
+                        "The cohort makes requests as a group. Before a mission, the cohort may request a number of items with a combined value of no greater than 500 aurei. No item can have a rarity greater than 3.",
+                        "Any items that aren't single use or consumable (such as grenades, z-tabs, extra ammunition, or dermal sealers) need to be returned to the armory at the end of the mission. Failure to return items should result in the quartermasters significantly limiting the next request the group makes or denying it entirely."
+                     ]
+                  },
+                  "The important thing to remember is that the Winnaran quartermasters have wide discretion in what requests they honor and what requests they don't. Although it may not seem fair, cohorts that make friends with a quartermaster have a much better chance of getting greater requests met. Conversely, those who anger a quartermaster are likely to see their requests denied entirely",
+                  "Some of this can be handled through roleplaying. If you feel like your group has successfully gotten on a quartermaster's good side, you can increase the amount of gear they're allowed to requisition, up to 1,000 aurei. The other option is if a PC wants to obtain an item that is either rarer or more expensive than the normal requisition rules allow. In this case, you can have the PC make a {@skill Charm||crb} or {@skill Negotiation||crb} check with a difficulty determined by {@table I.5-1: Rarity||crb} on page 82 of the Core Rulebook to see if they can convince the quartermaster to let them requisition the item. Of course, it is ultimately up to you whether the armory has the item in stock. Don't feel that you have to give your group a sliver missile launcher just because they rolled well!"
+               ]
+            }
          ]
-     }
+      }
    ],
    "setting": [
       {

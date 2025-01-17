@@ -82,7 +82,7 @@
                   "type": "boolean"
                },
                "rarity": {
-                  "type": "integer"
+                  "type": ["integer", "null"]
                },
                "special": {
                   "type": "array",
