@@ -1,5 +1,5 @@
 {
-   "$schema": "../schemas/schema.json",
+   "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
          "json": "embers-of-the-imperium",
@@ -11140,6 +11140,42 @@
                "critical": 4,
                "range": "Engaged"
             }
+         ]
+      },
+      {
+         "name": "Mahact Cloned Pilot Brain Network",
+         "page": 143,
+         "type": "minion",
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 2
+         },
+         "skills": [
+            {
+               "name": "Piloting",
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Gunnery",
+               "characteristic": "agility",
+               "source": "crb"
+            }
+         ],
+         "derived": {
+            "wounds": 4,
+            "defense": [
+               0,
+               0
+            ],
+            "soak": 0
+         },
+         "description": [
+            "This adversary is mentioned in the {@vehicle Interceptor Starfighter (Mahact Dominus Strike Drone)|Mahact Dominus Strike Drone} vehicle, but was not published with a statblock of its own."
          ]
       },
       {
