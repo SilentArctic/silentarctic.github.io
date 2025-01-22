@@ -1,5 +1,5 @@
 {
-   "$schema": "https://silentarctic.github.io/schemas/schema.json",
+   "$schema": "../schemas/schema.json",
    "_meta": {
       "source": {
          "json": "twilight-imperium-inspection-tour",
@@ -14,7 +14,7 @@
          ],
          "url": "https://www.edge-studio.net/shares/twilight-imperium/",
          "releaseDate": "20 March 2024",
-         "version": "2025.1.16",
+         "version": "2025.1.20",
          "module": true
       },
       "defaultItemSettings": [
@@ -1050,10 +1050,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Grab",
-               "description": "May spend {@symbols aa or t} from a failed combat check to immobilize one other character engaged with the original target until the start of this manipulator arm's next turn."
-            }
+            "Grab"
          ],
          "weapons": [
             {
@@ -1203,14 +1200,8 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Berserker",
-               "description": "May spend a maneuver to use this talent. Until the end of its next turn the heavy lifter drone adds {@symbols saa} to all combat checks it makes, but opponents add {@symbols s} to any combat checks targeting the lifter drone. At the end of its next turn, the lifter drone suffers 3 strain."
-            },
-            {
-               "name": "Trample",
-               "description": "Once per encounter may use this talent to make a {@difficulty Hard|Brawl}. If successful, the lifter drone moves anywhere within short range, and all characters in its path suffer one hit dealing 10 damage and are knocked prone"
-            }
+            "Berserker",
+            "Trample"
          ],
          "weapons": [
             {
@@ -1312,14 +1303,8 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Enveloping",
-               "description": "Enemies must spend two maneuvers to disengage from the smaller familiar swarm."
-            },
-            {
-               "name": "Swarm",
-               "description": "(halve the damage dealt to the swarm before applying soak, unless the weapon has the Blast or Burn quality (regardless of whether the quality is activated)."
-            }
+            "Enveloping",
+            "Swarm"
          ],
          "weapons": [
             {
@@ -1389,10 +1374,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Multi-angle targeting protocols",
-               "description": "If at least two minions remain in this group, performing the aim maneuver adds {@symbols ss} to combat check results instead of adding {@dice boost} to the pool."
-            }
+            "Multi-angle targeting protocols"
          ],
          "weapons": [
             {
@@ -1502,14 +1484,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Berserker",
-               "description": "May spend a maneuver to use this talent. Until the end of its next turn the heavy lifter drone adds {@symbols saa} to all combat checks it makes, but opponents add {@symbols s} to any combat checks targeting the lifter drone. At the end of its next turn, the lifter drone suffers 3 strain."
-            },
-            {
-               "name": "Elite Nemesis",
-               "description": "(The modified heavy lifter drone generates two initiative slots, and takes two turns every combat round. Its second turn must always occupy the last available NPC initiative slot in the round."
-            }
+            "Berserker",
+            "Elite Nemesis"
          ],
          "weapons": [
             {
@@ -1550,6 +1526,79 @@
                   }
                ]
             }
+         ]
+      }
+   ],
+   "adversaryAbility": [
+      {
+         "name": "Berserker",
+         "description": [
+            "May spend a maneuver to use this talent. Until the end of its next turn this character adds {@symbols saa} to all combat checks it makes, but opponents add {@symbols s} to any combat checks targeting this character. At the end of its next turn, this character suffers 3 strain."
+         ],
+         "tags": [
+            "active",
+            "maneuver",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Elite Nemesis",
+         "description": [
+            "This character generates two initiative slots, and takes two turns every combat round. Its second turn must always occupy the last available NPC initiative slot in the round."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "initiative"
+         ]
+      },
+      {
+         "name": "Enveloping",
+         "description": [
+            "Enemies must spend two maneuvers to disengage from this character."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "movement"
+         ]
+      },
+      {
+         "name": "Grab",
+         "description": [
+            "May spend {@symbols aa or t} from a failed combat check to {@rule immobilize||crb} one other character engaged with the original target until the start of this character's next turn."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental",
+            "results spend",
+            "status effect"
+         ]
+      },
+      {
+         "name": "Multi-angle targeting protocols",
+         "description": [
+            "If at least two minions remain in this group, performing the {@rule aim||crb} maneuver adds {@symbols ss} to combat check results instead of adding {@dice boost} to the pool."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Trample",
+         "description": [
+            "Once per encounter may use this talent to make a {@difficulty Hard|Brawl}. If successful, this character moves anywhere within short range, and all characters in its path suffer one hit dealing 10 damage and are knocked prone."
+         ],
+         "tags": [
+            "encounter",
+            "combat",
+            "active",
+            "action",
+            "movement",
+            "offensive"
          ]
       }
    ]

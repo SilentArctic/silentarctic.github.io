@@ -1,5 +1,5 @@
 {
-   "$schema": "https://silentarctic.github.io/schemas/schema.json",
+   "$schema": "../schemas/schema.json",
    "_meta": {
       "source": {
          "json": "shadow-of-the-beanstalk",
@@ -7,7 +7,7 @@
          "abbreviation": "SotB",
          "color": "#40B3B5",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/shadow-beanstalk/",
-         "version": "2025.1.16",
+         "version": "2025.1.20",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -258,10 +258,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Burn It Down",
-               "description": "This character adds {@symbols aa} to the results of checks they make targeting authority figures."
-            }
+            "Burn It Down"
          ],
          "weapons": [
             {
@@ -409,10 +406,7 @@
          ],
          "abilities": [
             "Mechanical",
-            {
-               "name": "Enhanced Auto-Bracing",
-               "description": "Using the Auto-fire quality does not increase the difficulty of combat checks; each time the Ares triggers and additional hit, it suffers 1 strain."
-            }
+            "Enhanced Auto-Bracing"
          ],
          "weapons": [
             {
@@ -604,10 +598,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Full Weight of the Law",
-               "description": "When making a Coercion check to inflict strain during a social encounter, inflict 2 additional strain."
-            }
+            "Full Weight of the Law"
          ],
          "weapons": [
             {
@@ -686,10 +677,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Early Warning",
-               "description": "Adds {@dice boost} to its operator's checks to {@rule determine Initiative||crb}."
-            },
+            "Early Warning",
             "Flyer",
             "Construct",
             "Silhouette 0",
@@ -801,10 +789,7 @@
          "abilities": [
             "Apparent Precognition",
             "Psychic",
-            {
-               "name": "Nisei Line",
-               "description": "As an action, may make a :hard: Discipline check targeting one character within medium range. If successful, this character learns the target's Strength, Flaw, Fear, and Desire motivations and all current goals (in addition to other information at the GM's discretion)."
-            }
+            "Nisei Line"
          ],
          "weapons": [
             {
@@ -903,10 +888,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Community Volunteer",
-               "description": "May use Knowledge (Society) instead of Charm, Coercion, Or negotiation during social interactions with undercity residents."
-            }
+            "Community Volunteer"
          ],
          "weapons": [
             {
@@ -1021,10 +1003,7 @@
             "Customer Service Experience"
          ],
          "abilities": [
-            {
-               "name": "Threat of Ban",
-               "description": "While in club owner's establishment, may spend {@symbols h} from checks targeting club owner to have character making the check suffer 2 strain instead of 1"
-            }
+            "Threat of Ban"
          ],
          "weapons": [
             {
@@ -1104,10 +1083,7 @@
          "talents": [],
          "abilities": [
             "Flyer",
-            {
-               "name": "Focus Fire",
-               "description": "When making a combat check, add {@symbols a} to the results for every other character in the minion group."
-            },
+            "Focus Fire",
             "Construct",
             "Silhouette 0",
             "Telepresence"
@@ -1210,10 +1186,7 @@
          "talents": [],
          "abilities": [
             "Bioroid",
-            {
-               "name": "Office Drone",
-               "description": "When this character makes a social skill check, they add {@symbols ah} to the result."
-            }
+            "Office Drone"
          ],
          "weapons": [],
          "gear": [
@@ -1379,10 +1352,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Reinforce",
-               "description": "As a maneuver, may increase the strength of one active piece of ice by 1 until the end of the corporate sysop's next turn."
-            }
+            "Reinforce"
          ],
          "weapons": [],
          "gear": [
@@ -1493,10 +1463,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Direct Access",
-               "description": "When jacking in from within the same building as the target server, automatically succeeds when making an access system check."
-            }
+            "Direct Access"
          ],
          "weapons": [
             {
@@ -1585,15 +1552,9 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Cybereyes",
-               "description": "May see in infrared and may remove up to {@dice setback|2} added to this character's check due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness|crb}."
-            },
+            "Cybereyes",
             "Silhouette 0",
-            {
-               "name": "Takedown",
-               "description": "As an action, may make an :average: Athletics check targeting one engaged opponent; if successful, target is knocked prone, suffers 4 strain, and may not stand from prone during their next turn."
-            }
+            "Takedown"
          ],
          "weapons": [
             {
@@ -2278,10 +2239,7 @@
             "Drone Master"
          ],
          "abilities": [
-            {
-               "name": "Pit Trap Programs",
-               "description": "May make an opposed Computers (Hacking) versus Computers (Sysops) check targeting another user on a system; if successful, that user is staggered for one round per {@symbols s}."
-            }
+            "Pit Trap Programs"
          ],
          "weapons": [
             {
@@ -2498,10 +2456,7 @@
          ],
          "abilities": [
             "Bioroid",
-            {
-               "name": "Non-Lethal Apprehension",
-               "description": "Only needs to spend {@symbols a} to trigger Disorient, Knockdown, and Stun qualities."
-            }
+            "Non-Lethal Apprehension"
          ],
          "weapons": [
             {
@@ -2613,10 +2568,7 @@
             "Body Guard 1"
          ],
          "abilities": [
-            {
-               "name": "Enhanced Strength",
-               "description": "May suffer 1 strain to add {@symbols s} to Athletics or Brawl checks."
-            }
+            "Enhanced Strength"
          ],
          "weapons": [
             {
@@ -2731,10 +2683,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Bone-Chilling Roar",
-               "description": "Once per encounter, may suffer 3 strain and spend a maneuver to force all other character within long range (or within earshot) to make a :daunting: Discipline check as an out-of-turn incidental. If they fail, they must use their maneuver to move farther away; if they fail with {@symbols h}, they must also downgrade their action to an additional maneuver to move even farther away. If you're using the fear rules found on page 243 of the Genesys Core Rulebook, this can be a fear check instead."
-            }
+            "Bone-Chilling Roar"
          ],
          "weapons": [
             {
@@ -2838,14 +2787,8 @@
          "talents": [],
          "abilities": [
             "Construct",
-            {
-               "name": "Impressively Flexible",
-               "description": "May spend a Story Point to gain access to a formerly secure room or other location through a previously unnoticed vent shaft, slightly open window, or similar entry point."
-            },
-            {
-               "name": "Catlike",
-               "description": "May make a maneuver to move normally up and down vertical surfaces, across ropes, and over otherwise impassable structures."
-            },
+            "Impressively Flexible",
+            "Catlike",
             "Silhouette 0"
          ],
          "weapons": [
@@ -3021,10 +2964,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Rile Them Up",
-               "description": "Once per encounter, may make an :average: Charm check targeting a group of bystanders or other neutral NPCs at medium range; if the check is successful, one of the bystanders (plus one per additional {@symbols s}) becomes a Human First Extremist; these NPCs form a single minion group and join the ongoing encounter. These NPCs may have been regular people convinced by the rep or they may have been members of Human First all along."
-            }
+            "Rile Them Up"
          ],
          "weapons": [],
          "gear": [
@@ -3247,10 +3187,7 @@
          "talents": [],
          "abilities": [
             "Swarm",
-            {
-               "name": "They're All Over Me!",
-               "description": "Enemies who start their turn engaged with this character lose their free maneuver."
-            }
+            "They're All Over Me!"
          ],
          "weapons": [
             {
@@ -3394,14 +3331,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Determined Hunter",
-               "description": "After successfully tracing another character during a Network Encounter, gain one additional trace."
-            },
-            {
-               "name": "Personalized Icebreaker Suit",
-               "description": "Always considered to have a strength 4 icebreaker that can affect barriers, sentries, and code gates. If break ice action fails, may spend {@symbols aaaa} or {@symbols t} to not suffer any effects of failing to break ice."
-            }
+            "Determined Hunter",
+            "Personalized Icebreaker Suit"
          ],
          "weapons": [
             {
@@ -3528,10 +3459,7 @@
             "Offensive Driving"
          ],
          "abilities": [
-            {
-               "name": "Max Throttle",
-               "description": "When piloting or driving a vehicle, its max speed is increased by 1"
-            }
+            "Max Throttle"
          ],
          "weapons": [],
          "gear": [
@@ -3723,10 +3651,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Famous",
-               "description": "Once per encounter, may spend a Story Point to force one opponent with earshot to make a :hard: Discipline check as an out-of-turn incidental. If they fail they must fulfill one of this character's requests, such as let them past a checkpoint, stop attacking them, etc."
-            }
+            "Famous"
          ],
          "weapons": [],
          "gear": [
@@ -4114,10 +4039,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Lunar Off-Roading",
-               "description": "Add {@dice boost|2} to any Driving or Survival checks made on the lunar surface."
-            }
+            "Lunar Off-Roading"
          ],
          "weapons": [
             {
@@ -4269,10 +4191,7 @@
          ],
          "abilities": [
             "Let's Make a Deal",
-            {
-               "name": "Ominous Reputation",
-               "description": "When an opponent targets this character with a check, the opponent suffers 2 strain."
-            }
+            "Ominous Reputation"
          ],
          "weapons": [],
          "gear": [
@@ -4833,10 +4752,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Disperse!",
-               "description": "Once per encounter, as an action, may force all non-NAPD characters within medium range to make an :average: Discipline check as an out-of-turn incidental; those who fail must spend their next turn moving away from this character or minion group and attempting to leave the encounter if possible."
-            }
+            "Disperse!"
          ],
          "weapons": [
             {
@@ -5229,10 +5145,7 @@
          ],
          "abilities": [
             "Tactical Direction",
-            {
-               "name": "You Thought You Were Out...",
-               "description": "When making a Coercion check to maintain a favor after calling it in, the check is an :average: Coercion check instead of an opposed check."
-            }
+            "You Thought You Were Out..."
          ],
          "weapons": [
             {
@@ -5801,10 +5714,7 @@
             "Takedown"
          ],
          "abilities": [
-            {
-               "name": "And Stay Down",
-               "description": "When making a Brawl or Melee combat check targeting a prone opponent, add {@symbols saa} to the results."
-            }
+            "And Stay Down"
          ],
          "weapons": [
             {
@@ -5927,10 +5837,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Red Tape",
-               "description": "During social encounters, may spend {@symbols hhh} generated by an opponent to discover (or invent) a legal violation that requires a fine, fee, or additional authorization form that the opponent must complete before accomplishing their goals."
-            }
+            "Red Tape (Narrative)"
          ],
          "weapons": [],
          "gear": [
@@ -6019,10 +5926,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "In the Know",
-               "description": "Whenever this character learns a Motivation of another character in the encounter, this character may have that character suffer 2 strain and may heal 2 strain."
-            },
+            "In the Know",
             "Leading Question"
          ],
          "weapons": [],
@@ -6102,10 +6006,7 @@
             "Applied Research 1"
          ],
          "abilities": [
-            {
-               "name": "Research Team Member",
-               "description": "When providing skill assistance, may reroll up to two of the dice in the pool before resolving the check."
-            }
+            "Research Team Member"
          ],
          "weapons": [],
          "gear": [
@@ -6332,10 +6233,7 @@
             "Haughty Demeanor"
          ],
          "abilities": [
-            {
-               "name": "Shrewd Negotiator",
-               "description": "When making an opposed Negotiation or Streetwise check to purchase or sell and item may suffer 2 strain to add {@symbols s} to the results."
-            },
+            "Shrewd Negotiator",
             "Let's Make a Deal"
          ],
          "weapons": [],
@@ -6433,10 +6331,7 @@
          "abilities": [
             "Apparent Precognition",
             "Psychic",
-            {
-               "name": "Broken Nisei Conditioning",
-               "description": "When inflicting a Critical Injury or Critical Hit, roll twice and choose the more severe result."
-            }
+            "Broken Nisei Conditioning"
          ],
          "weapons": [
             {
@@ -6559,10 +6454,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Uncomfortable Inspection",
-               "description": "When searching a character or their possessions, that character suffers 2 strain."
-            }
+            "Uncomfortable Inspection"
          ],
          "weapons": [
             {
@@ -6651,10 +6543,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Too Clever",
-               "description": "When interacting with this character, characters may spend {@symbols a} to recover 2 strain, and GMs may spend {@symbols h} to inflict 2 strain."
-            },
+            "Too Clever",
             "Bioroid"
          ],
          "weapons": [],
@@ -6761,10 +6650,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Catlike Agility",
-               "description": "Once per turn, may spend a Story Point to move to any location within short range as an incidental, including locations that are vertically distant or have no easy access route."
-            }
+            "Catlike Agility"
          ],
          "weapons": [
             {
@@ -6868,14 +6754,8 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Values Enforcer",
-               "description": "When making any social skill or combat check targeting an opponent of the church, add {@symbols sh} to the result."
-            },
-            {
-               "name": "Templar Cybernetic Implant",
-               "description": "Once per encounter as a maneuver, may make a :simple: Discipline check to heal 1 wound per {@symbols s}."
-            }
+            "Values Enforcer",
+            "Templar Cybernetic Implant"
          ],
          "weapons": [
             {
@@ -7232,10 +7112,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Questionable Hygiene",
-               "description": "When making a Medicine check, must spend {@symbols hhh} or {@symbols d} to decrease the target's strain and wound threshold by 2 each until the end of the current session."
-            }
+            "Questionable Hygiene"
          ],
          "weapons": [
             {
@@ -7349,10 +7226,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "High-Altitude Drop",
-               "description": "When falling any distance, may make an :easy: Discipline check as an incidental; on a success, this character does not suffer any damage from falling and lands on their feet."
-            }
+            "High-Altitude Drop"
          ],
          "weapons": [
             {
@@ -7614,14 +7488,8 @@
             "Net Warrior"
          ],
          "abilities": [
-            {
-               "name": "Sniffer Programs",
-               "description": "Add {@dice setback|2} to any opponent's checks made on a system the SYNC Globalsec agent has control of."
-            },
-            {
-               "name": "Swordbreaker Programs",
-               "description": "May make a :hard: Computers (Sysops) check targeting one opponent on the system to damage one of their active icebreakers one step, plus one additional step per {@symbols a}."
-            }
+            "Sniffer Programs",
+            "Swordbreaker Programs"
          ],
          "weapons": [],
          "gear": [
@@ -7673,14 +7541,8 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Too Cute",
-               "description": "When any character makes a check to recover strain while engaged with this character, they recover 2 additional strain."
-            },
-            {
-               "name": "Way Too Cute",
-               "description": "When an opponent targets this character with a combat check, they suffer 4 strain."
-            },
+            "Too Cute",
+            "Way Too Cute",
             "Silhouette 0"
          ],
          "weapons": [
@@ -7807,14 +7669,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Golden Goose",
-               "description": "Opponents must make a :hard: Discipline check as an action and succeed before being able to make combat checks targeting this character."
-            },
-            {
-               "name": "Tinkerer",
-               "description": "With access to any sort of tools or parts, may make an :average: Mechanics check. If successful, creates an item with rarity equal to the number of {@symbols s}."
-            }
+            "Golden Goose",
+            "Tinkerer"
          ],
          "weapons": [],
          "gear": [
@@ -7891,10 +7747,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Edutainment",
-               "description": "When assisting with or making a combine Knowledge check add {@dice boost} to the check (information added typically comes in the form of a song)."
-            },
+            "Edutainment",
             "Construct"
          ],
          "weapons": [],
@@ -8232,18 +8085,9 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Archaic Arms Master",
-               "description": "While armed with a Melee weapon, may make an {@difficulty Average|melee} to force one engaged target to drop one weapon or move one range band in any direction."
-            },
-            {
-               "name": "Quiet Code",
-               "description": "When making a Computer (Hacking) check, {@symbols h} may not be spent to alert other users to the assassin's presence."
-            },
-            {
-               "name": "Subtle Death",
-               "description": "When making a Brawl check, may spend {@symbols aa} or {@symbols t} to apply a dose of contact poison to the target; the target must immediately make a :hard: Resilience check as an incidental; if they fail, they suffer 5 wounds plus 1 wound per {@symbols h}; {@symbols d} means they must make the check again at the start of their next turn, as the poison remains in their system."
-            }
+            "Archaic Arms Master",
+            "Quiet Code",
+            "Subtle Death"
          ],
          "weapons": [
             {
@@ -8384,10 +8228,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "I'll Tell My Parents!",
-               "description": "When this character inflicts strain using a social skill check, they inflict 2 additional strain."
-            }
+            "I'll Tell My Parents!"
          ],
          "weapons": [],
          "gear": [
@@ -8409,6 +8250,758 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ]
+      }
+   ],
+   "adversaryAbility": [
+      {
+         "name": "And Stay Down",
+         "description": [
+            "When making a {@skill Brawl||crb} or {@skill Melee||crb} combat check targeting a {@rule prone||crb} opponent, add {@symbols saa} to the results."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "results spend",
+            "status effect"
+         ]
+      },
+      {
+         "name": "Apparent Precognition",
+         "description": [
+            "Once per encounter when making a combat check, may use {@skill Discipline||crb} and {@skill Willpower||crb} instead of the normal skill and characteristic."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental",
+            "encounter",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Archaic Arms Master",
+         "description": [
+            "While armed with a Melee weapon, may make an {@difficulty Average|melee} to force one engaged target to drop one weapon or move one range band in any direction."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "action",
+            "movement",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Bioroid",
+         "description": [
+            "Does not need to breathe, eat, or drink; can survive in vacuum and underwater; is immune to poisons and toxins; and cannot knowingly endanger humans."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "resistance"
+         ]
+      },
+      {
+         "name": "Bone-Chilling Roar",
+         "description": [
+            "Once per encounter, may suffer 3 strain and spend a maneuver to force all other characters within long range (or within earshot) to make a {@difficulty Daunting|Discipline} as an out-of-turn incidental. If they fail, they must use their maneuver to move farther away; if they fail with {@symbols h}, they must also downgrade their action to an additional maneuver to move even farther away. If you're using the {@rule fear||crb} rules found on page 243 of the {@title Genesys} Core Rulebook, this can be a fear check instead."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "maneuver",
+            "results spend",
+            "fear"
+         ]
+      },
+      {
+         "name": "Broken Nisei Conditioning",
+         "description": [
+            "When inflicting a Critical Injury or Critical Hit, roll twice and choose the more severe result."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "critical injury"
+         ]
+      },
+      {
+         "name": "Burn It Down",
+         "description": [
+            "This character adds {@symbols aa} to the results of checks they make targeting authority figures."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Catlike",
+         "description": [
+            "May make a maneuver to move normally up and down vertical surfaces, across ropes, and over otherwise impassable structures."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "maneuver",
+            "movement"
+         ]
+      },
+      {
+         "name": "Catlike Agility",
+         "description": [
+            "Once per turn, may spend a Story Point to move to any location within short range as an incidental, including locations that are vertically distant or have no easy access route."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "movement",
+            "story point cost"
+         ]
+      },
+      {
+         "name": "Charismatic Menace",
+         "description": [
+            "Allies within short range add {@symbols a} to checks they make; opponents within short range add {@symbols h} to checks they make."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "leader",
+            "defensive",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Community Volunteer",
+         "description": [
+            "May use {@skill Knowledge (Society)} instead of {@skill Charm||crb}, {@skill Coercion||crb}, Or {@skill Negotiation||crb} during social interactions with undercity residents."
+         ],
+         "tags": [
+            "social",
+            "active",
+            "incidental",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Cybereyes",
+         "description": [
+            "May see in infrared and may remove up to {@dice setback|2} added to this character's check due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness|crb}."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Determined Hunter",
+         "description": [
+            "After successfully tracing another character during a Network Encounter, gain one additional trace."
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "passive"
+         ]
+      },
+      {
+         "name": "Direct Access",
+         "description": [
+            "When jacking in from within the same building as the target server, automatically succeeds when making an access system check."
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "passive"
+         ]
+      },
+      {
+         "name": "Disperse!",
+         "description": [
+            "Once per encounter, as an action, may force all non-NAPD characters within medium range to make an {@difficulty Average|Discipline} as an out-of-turn incidental; those who fail must spend their next turn moving away from this character or minion group and attempting to leave the encounter if possible."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "action",
+            "encounter",
+            "movement"
+         ]
+      },
+      {
+         "name": "Early Warning",
+         "description": [
+            "Adds {@dice boost} to its operator's checks to {@rule determine Initiative||crb}."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "initiative",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Edutainment",
+         "description": [
+            "When assisting with or making a combined Knowledge check add {@dice boost} to the check (information added typically comes in the form of a song)."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Enhanced Auto-Bracing",
+         "description": [
+            "Using the {@quality Auto-fire||crb} quality does not increase the difficulty of combat checks; each time this character triggers an additional hit, it suffers 1 strain."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "skill check modifier",
+            "item quality"
+         ]
+      },
+      {
+         "name": "Enhanced Strength",
+         "description": [
+            "May suffer 1 strain to add {@symbols s} to {@skill Athletics||crb} or {@skill Brawl||crb} checks."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Famous",
+         "description": [
+            "Once per encounter, may spend a Story Point to force one opponent with earshot to make a {@difficulty Hard|Discipline} as an out-of-turn incidental. If they fail they must fulfill one of this character's requests, such as let them past a checkpoint, stop attacking them, etc."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "action",
+            "story point cost",
+            "encounter"
+         ]
+      },
+      {
+         "name": "Focus Fire",
+         "description": [
+            "When making a combat check, add {@symbols a} to the results for every other character in the minion group."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "results modifier",
+            "leader",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Full Weight of the Law",
+         "description": [
+            "When making a {@skill Coercion||crb} check to inflict strain during a social encounter, inflict 2 additional strain."
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Golden Goose",
+         "description": [
+            "Opponents must make a {@difficulty Hard|Discipline} as an action and succeed before being able to make combat checks targeting this character."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "defensive"
+         ]
+      },
+      {
+         "name": "High-Altitude Drop",
+         "description": [
+            "When falling any distance, may make an {@difficulty Easy|Discipline} as an incidental; on a success, this character does not suffer any damage from falling and lands on their feet."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "movement"
+         ]
+      },
+      {
+         "name": "I'll Tell My Parents!",
+         "description": [
+            "When this character inflicts strain using a social skill check, they inflict 2 additional strain."
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Impressively Flexible",
+         "description": [
+            "May spend a Story Point to gain access to a formerly secure room or other location through a previously unnoticed vent shaft, slightly open window, or similar entry point."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "story point cost"
+         ]
+      },
+      {
+         "name": "In the Know",
+         "description": [
+            "Whenever this character learns a Motivation of another character in the encounter, this character may have that character suffer 2 strain and may heal 2 strain."
+         ],
+         "tags": [
+            "social",
+            "active",
+            "incidental",
+            "motivation",
+            "recovery",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Lawful Authority",
+         "description": [
+            "Add {@symbols s} to the results of any social skill checks made when interacting with residents of New Angeles."
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Leading Question",
+         "description": [
+            "Once per encounter, may spend a Story Point to learn one Motivation of any one other character in the encounter."
+         ],
+         "tags": [
+            "social",
+            "active",
+            "incidental",
+            "encounter",
+            "motivation",
+            "story point cost"
+         ]
+      },
+      {
+         "name": "Lunar Off-Roading",
+         "description": [
+            "Add {@dice boost|2} to any {@skill Driving||crb} or {@skill Survival||crb} checks made on the lunar surface."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier",
+            "vehicles"
+         ]
+      },
+      {
+         "name": "Max Throttle",
+         "description": [
+            "When piloting or driving a vehicle, its max speed is increased by 1"
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "vehicles",
+            "movement"
+         ]
+      },
+      {
+         "name": "Mechanical",
+         "description": [
+            "Does not need to breathe, eat, or drink, and can survive in vacuum and underwater; is immune to poisons and toxins."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "resistance"
+         ]
+      },
+      {
+         "name": "Mob Mentality",
+         "description": [
+            "Add {@dice boost} to all checks this character makes if part of a group of three or more minions."
+         ],
+         "tags": [
+            "general",
+            "support",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Nisei Line",
+         "description": [
+            "As an action, may make a {@difficulty Hard|Discipline} targeting one character within medium range. If successful, this character learns the target's Strength, Flaw, Fear, and Desire motivations and all current goals (in addition to other information at the GM's discretion)."
+         ],
+         "tags": [
+            "social",
+            "active",
+            "action",
+            "motivation"
+         ]
+      },
+      {
+         "name": "Non-Lethal Apprehension",
+         "description": [
+            "Only needs to spend {@symbols a} to trigger {@quality Disorient||crb}, {@quality Knockdown||crb}, and {@quality Stun||crb} qualities."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "results spend",
+            "item quality"
+         ]
+      },
+      {
+         "name": "Office Drone",
+         "description": [
+            "When this character makes a social skill check, they add {@symbols ah} to the result."
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Ominous Reputation",
+         "description": [
+            "When an opponent targets this character with a check, the opponent suffers 2 strain."
+         ],
+         "tags": [
+            "combat",
+            "social",
+            "passive",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Personalized Icebreaker Suit",
+         "description": [
+            "Always considered to have a strength 4 icebreaker that can affect barriers, sentries, and code gates. If break ice action fails, may spend {@symbols aaaa} or {@symbols t} to not suffer any effects of failing to break ice."
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "passive",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Pit Trap Programs",
+         "description": [
+            "May make an {@b opposed {@skill Computers (Hacking)} versus {@skill Computers (Sysops)} check} targeting another user on a system; if successful, that user is {@rule staggered||crb} for one round per {@symbols s}."
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "opposed",
+            "offensive",
+            "status effect"
+         ]
+      },
+      {
+         "name": "Psychic",
+         "description": [
+            "As a maneuver may make and {@difficulty Average|Vigilance} to learn the surface thoughts of all other characters in medium range."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "maneuver",
+            "narrative"
+         ]
+      },
+      {
+         "name": "Questionable Hygiene",
+         "description": [
+            "When making a {@skill Medicine||crb} check, must spend {@symbols hhh} or {@symbols d} to decrease the target's strain and wound threshold by 2 each until the end of the current session."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Quiet Code",
+         "description": [
+            "When making a {@skill Computer (Hacking)} check, {@symbols h} may not be spent to alert other users to this character's presence."
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "passive",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Red Tape (Narrative)",
+         "description": [
+            "During social encounters, may spend {@symbols hhh} generated by an opponent to discover (or invent) a legal violation that requires a fine, fee, or additional authorization form that the opponent must complete before accomplishing their goals."
+         ],
+         "tags": [
+            "social",
+            "active",
+            "incidental (out of turn)",
+            "results spend",
+            "narrative"
+         ]
+      },
+      {
+         "name": "Reinforce",
+         "description": [
+            "As a maneuver, may increase the strength of one active piece of ice by 1 until the end of the corporate sysop's next turn."
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "active",
+            "maneuver",
+            "defensive"
+         ]
+      },
+      {
+         "name": "Research Team Member",
+         "description": [
+            "When providing skill assistance, may reroll up to two of the dice in the pool before resolving the check."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "support"
+         ]
+      },
+      {
+         "name": "Rile Them Up",
+         "description": [
+            "Once per encounter, may make an {@difficulty Average|Charm} targeting a group of bystanders or other neutral NPCs at medium range; if the check is successful, one of the bystanders (plus one per additional {@symbols s}) becomes a {@adversary Human First Extremist}; these NPCs form a single minion group and join the ongoing encounter. These NPCs may have been regular people convinced by the rep or they may have been members of Human First all along."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "action",
+            "encounter",
+            "results spend",
+            "leader"
+         ]
+      },
+      {
+         "name": "Shrewd Negotiator",
+         "description": [
+            "When making an {@b opposed {@skill Negotiation||crb} or {@skill Streetwise||crb} check} to purchase or sell and item may suffer 2 strain to add {@symbols s} to the results."
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Sniffer Programs",
+         "description": [
+            "Add {@dice setback|2} to any opponent's checks made on a system the SYNC Globalsec agent has control of."
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "defensive",
+            "passive"
+         ]
+      },
+      {
+         "name": "Subtle Death",
+         "description": [
+            "When making a {@skill Brawl||crb} check, may spend {@symbols aa} or {@symbols t} to apply a dose of contact poison to the target; the target must immediately make a {@difficulty Hard|Resilience} as an incidental; if they fail, they suffer 5 wounds plus 1 wound per {@symbols h}; {@symbols d} means they must make the check again at the start of their next turn, as the poison remains in their system."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Swordbreaker Programs",
+         "description": [
+            "May make a {@difficulty Hard|Computers (Sysops)} targeting one opponent on the system to damage one of their active icebreakers one step, plus one additional step per {@symbols a}."
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "results spend",
+            "active",
+            "action",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Takedown",
+         "description": [
+            "As an action, may make an {@difficulty Average|Athletics} targeting one engaged opponent; if successful, target is knocked prone, suffers 4 strain, and may not stand from prone during their next turn."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "action",
+            "status effect",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Templar Cybernetic Implant",
+         "description": [
+            "Once per encounter as a maneuver, may make a {@difficulty Simple|Discipline} to heal 1 wound per {@symbols s}."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "maneuver",
+            "recovery"
+         ]
+      },
+      {
+         "name": "They're All Over Me!",
+         "description": [
+            "Enemies who start their turn engaged with this character lose their free maneuver."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "free maneuver"
+         ]
+      },
+      {
+         "name": "Threat of Ban",
+         "description": [
+            "While in club owner's establishment, may spend {@symbols h} from checks targeting club owner to have character making the check suffer 2 strain instead of 1"
+         ],
+         "tags": [
+            "combat",
+            "social",
+            "passive",
+            "defensive",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Threatening",
+         "description": [
+            "When providing assistance on another character's {@skill Coercion||crb} checks, add {@symbols s} to results for each minion in the group beyond the first."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "support",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Tinkerer",
+         "description": [
+            "With access to any sort of tools or parts, may make an {@difficulty Average|Mechanics}. If successful, creates an item with rarity equal to the number of {@symbols s}."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "action",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Too Clever",
+         "description": [
+            "When interacting with this character, characters may spend {@symbols a} to recover 2 strain, and GMs may spend {@symbols h} to inflict 2 strain."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "offensive",
+            "recovery",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Too Cute",
+         "description": [
+            "When any character makes a check to recover strain while engaged with this character, they recover 2 additional strain."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "support",
+            "recovery"
+         ]
+      },
+      {
+         "name": "Uncomfortable Inspection",
+         "description": [
+            "When searching a character or their possessions, that character suffers 2 strain."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "defensive"
+         ]
+      },
+      {
+         "name": "Values Enforcer",
+         "description": [
+            "When making any social skill or combat check targeting an opponent of the church, add {@symbols sh} to the result."
+         ],
+         "tags": [
+            "combat",
+            "social",
+            "passive",
+            "defensive",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Way Too Cute",
+         "description": [
+            "When an opponent targets this character with a combat check, they suffer 4 strain."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "defensive"
+         ]
+      },
+      {
+         "name": "You Thought You Were Out...",
+         "description": [
+            "When making a {@skill Coercion||crb} check to maintain a favor after calling it in, the check is an {@difficulty Average|Coercion} instead of an opposed check."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier",
+            "opposed",
+            "factions"
          ]
       }
    ],

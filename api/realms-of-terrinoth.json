@@ -1,5 +1,5 @@
 {
-   "$schema": "https://silentarctic.github.io/schemas/schema.json",
+   "$schema": "../schemas/schema.json",
    "_meta": {
       "source": {
          "json": "realms-of-terrinoth",
@@ -7,7 +7,7 @@
          "abbreviation": "RoT",
          "color": "#A75A0E",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/realms-terrinoth/",
-         "version": "2025.1.16",
+         "version": "2025.1.20",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -142,7 +142,7 @@
             }
          ],
          "abilities": [
-            "Improved Sweep",
+            "Claw Sweep",
             "Flyer",
             "Silhouette 4",
             "Terrifying 4"
@@ -325,18 +325,9 @@
             "Precision"
          ],
          "abilities": [
-            {
-               "name": "Lightning Draw",
-               "description": "May draw or sheathe a dagger or similar small weapon as an incidental; there is no limit to how many weapons an assassin can ready this way per turn."
-            },
-            {
-               "name": "Poisoner",
-               "description": "As an incidental, may apply poison to all weapons. A character wounded by a poisoned weapon must make a {@difficulty Hard|Resilience} as an out-of-turn incidental or suffer 4 additional wounds, and must check again on their next turn if the check generates {@symbols d}."
-            },
-            {
-               "name": "Vanish",
-               "description": "After performing a check, may spend {@symbols aa} or {@symbols t} to hide from all other characters in the encounter."
-            }
+            "Lightning Draw",
+            "Poisoner",
+            "Vanish"
          ],
          "weapons": [
             {
@@ -485,10 +476,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Cage of Roots",
-               "description": "Once per round after a character moves within medium range of the Aymhelin Scion, the Aymhelin Scion may perform an out-of-turn incidental to immobilize that character for the remainder of the encounter. As an action an immobilized character can attempt a {@difficulty Hard|Athletics} on their turn to no longer be immobilized."
-            },
+            "Cage of Roots",
             "Silhouette 2"
          ],
          "weapons": [
@@ -817,10 +805,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Bestial Rage",
-               "description": "A beastman or beastman minion group that has taken damage reduces the Critical rating of its attacks to 1."
-            }
+            "Bestial Rage"
          ],
          "weapons": [
             {
@@ -929,14 +914,8 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Bone Spurs",
-               "description": "A berserker who is targeted by a melee combat check may spend {@symbols hhh} or {@symbols d} to cause the attacker to suffer 3 wounds."
-            },
-            {
-               "name": "A Good Death",
-               "description": "As an incidental, at the start of its turn a minion group of berserkers that is engaged with an enemy may remove a member of its group as a casualty to add +6 damage to the minion group's attack in that turn."
-            }
+            "Bone Spurs 3",
+            "A Good Death"
          ],
          "weapons": [
             {
@@ -1026,18 +1005,9 @@
             "Dark Insight"
          ],
          "abilities": [
-            {
-               "name": "Telepathic Bond",
-               "description": "A bloodsister can perform an incidental once per round to add {@dice boost} to the next check made by all other Uthuk Y'llan in the encounter."
-            },
-            {
-               "name": "Telepathic Domination",
-               "description": "A bloodsister or nightseer may attempt to telepathically dominate a foe once per encounter as an action, making an opposed Coercion vs. Discipline check targeting one character in short range; if successful, the target is immobilized for 1 round per {@symbols s}, and the bloodsister may spend {@symbols t} to stagger the target for 1 round."
-            },
-            {
-               "name": "Dreamwalker",
-               "description": "Once per session, a nightseer can spend a Story Point to either re-roll the dice pool after making a check, or to force a PC to re-roll the dice pool after the PC makes a check."
-            }
+            "Telepathic Bond",
+            "Telepathic Domination",
+            "Dreamwalker"
          ],
          "spells": {
             "skills": [
@@ -1116,20 +1086,11 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Drag",
-               "description": "A carnivorous flora can use a maneuver to move a target affected by its thorny vines' {@quality Ensnare||crb} quality to engaged range."
-            },
+            "Drag",
             "Inconspicuous",
-            {
-               "name": "Rooted",
-               "description": "A carnivorous flora cannot perform maneuvers to move."
-            },
+            "Rooted",
             "Silhouette 2",
-            {
-               "name": "Unexpected Attack",
-               "description": "A carnivorous flora that has not been yet been identified as a threat uses {@skill Stealth||crb} to {@rule determine Initiative||crb}."
-            }
+            "Unexpected Attack"
          ],
          "weapons": [
             {
@@ -1259,10 +1220,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Mounted Charge",
-               "description": "A mounted death knight adds {@dice boost|2} to its first melee attack after performing a maneuver to engage the target in the same turn."
-            },
+            "Mounted Charge",
             "Terrifying 4",
             "Undead"
          ],
@@ -1388,10 +1346,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Shadow Training",
-               "description": "Enemies add {@dice setback} to magic checks targeting a Deep Elf"
-            }
+            "Shadow Training"
          ],
          "weapons": [
             {
@@ -1475,10 +1430,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Point Blank Shot",
-               "description": "When making a Ranged combat check targeting an opponent the Deepwood Archer is engaged with, increase the difficulty once (instead of twice)."
-            }
+            "Point Blank Shot"
          ],
          "weapons": [
             {
@@ -1596,10 +1548,7 @@
          ],
          "abilities": [
             "Creature of the Aenlong",
-            {
-               "name": "Stonewalker",
-               "description": "A Dimora moves normally through difficult or impassable terrain of stone, soil, or similar materials."
-            },
+            "Stonewalker",
             "Terrifying 2"
          ],
          "spells": {
@@ -1769,10 +1718,7 @@
          ],
          "abilities": [
             "Flyer",
-            {
-               "name": "Shapeshifter",
-               "description": "Once per round as an incidental, a Djinn may increase or decrease its silhouette by 1 and change its appearance to that of any character or creature of its current silhouette."
-            }
+            "Shapeshifter"
          ],
          "spells": {
             "skills": [
@@ -1901,10 +1847,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Draconic Heritage",
-               "description": "Dragon hybrids reduce the damage they take from fire and similar sources by 3"
-            },
+            "Draconic Heritage",
             "Flyer"
          ],
          "weapons": [
@@ -2037,14 +1980,8 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Ancestral Gaze",
-               "description": "While within short range of a Dwarf Ancestral Specter, living Dwarves add {@symbols s} to their combat checks and {@symbols t} if the opponent is a dragon."
-            },
-            {
-               "name": "Ghostly",
-               "description": "Dwarf Ancestral Specters ignore the effects of terrain and darkness."
-            },
+            "Ancestral Gaze",
+            "Ghostly (Dwarf Ancestral Specter)",
             "Terrifying 3",
             "Undead"
          ],
@@ -2122,10 +2059,7 @@
          "talents": [],
          "abilities": [
             "Darkvision",
-            {
-               "name": "Guild Member",
-               "description": "When performing a check related to their specific guild, Dwarf Guilders upgrade the ability of the check twice."
-            }
+            "Guild Member"
          ],
          "weapons": [],
          "gear": [
@@ -2203,10 +2137,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Dauntless",
-               "description": "Dwarven Dragon Hunters upgrade the ability of Discipline checks they make to resist fear or intimidation once."
-            },
+            "Dauntless",
             "Darkvision"
          ],
          "weapons": [
@@ -2374,8 +2305,8 @@
          ],
          "abilities": [
             "Flyer",
+            "Claw Sweep",
             "Silhouette 4",
-            "Improved Sweep",
             "Terrifying 4"
          ],
          "weapons": [
@@ -2490,18 +2421,9 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Bloodthirst",
-               "description": "When a ferrox inflicts wounds with its fangs, it heals an equal number of wounds."
-            },
-            {
-               "name": "Glider",
-               "description": "Ferrox can fly, but cannot increase their altitude while doing so; see page 100 of the Genesys Core Rulebook."
-            },
-            {
-               "name": "Savage",
-               "description": "A ferrox increases the damage of its attacks by 2 when targeting an immobilized foe."
-            }
+            "Bloodthirst",
+            "Glider",
+            "Savage"
          ],
          "weapons": [
             {
@@ -2712,12 +2634,9 @@
             }
          ],
          "abilities": [
-            "Carrying Capacity 12",
+            "Encumbrance Capacity 12",
             "Silhouette 2",
-            {
-               "name": "Flyer",
-               "description": "(can fly; see the {@sidebar Flying||crb} sidebar on page 100 of the {@title Genesys} Core Rulebook)"
-            }
+            "Flyer"
          ],
          "weapons": [
             {
@@ -2795,7 +2714,7 @@
             }
          ],
          "abilities": [
-            "Improved Sweep",
+            "Claw Sweep",
             "Silhouette 3"
          ],
          "weapons": [
@@ -2877,10 +2796,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Giant Stomp!",
-               "description": "Brawl attacks that giants make have a Critical rating of 3, and if they inflict Critical Injuries +40 is added to the resulting Critical Injury result."
-            },
+            "Giant Stomp!",
             "Silhouette 3",
             "Terrifying 3"
          ],
@@ -2968,10 +2884,7 @@
          "talents": [],
          "abilities": [
             "Silhouette 3",
-            {
-               "name": "Swallow",
-               "description": "May make an opposed Brawl check to swallow an engaged target. If the check is successful, swallowed characters are immobilized and suffer 6 damage at the start of each round but can escape if the snake is killed or by making a successful {@difficulty Hard|Athletics}."
-            }
+            "Swallow"
          ],
          "weapons": [
             {
@@ -3085,10 +2998,7 @@
             "Encouraging Song"
          ],
          "abilities": [
-            {
-               "name": "Haunting melodies",
-               "description": "Gnome minstrels may spend {@symbols a} in a successful Charm check to inflict 1 strain on their target, and may do this multiple times."
-            },
+            "Haunting melodies",
             "Silhouette 0"
          ],
          "spells": {
@@ -3182,10 +3092,7 @@
          "talents": [],
          "abilities": [
             "Darkvision",
-            {
-               "name": "Opportunistic",
-               "description": "Goblins inflict 1 additional damage with successful melee attacks on prone or immobilized targets."
-            }
+            "Opportunistic"
          ],
          "weapons": [
             {
@@ -3292,10 +3199,7 @@
          ],
          "abilities": [
             "Darkvision",
-            {
-               "name": "Spiteful Curse",
-               "description": "Add {@dice boost|2} to magic actions that target a character who has previously inflicted wounds on the goblin witcher during this encounter."
-            }
+            "Spiteful Curse"
          ],
          "spells": {
             "skills": [
@@ -3503,14 +3407,8 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Bone Spurs",
-               "description": "A grotesque may spend {@symbols hhh} or {@symbols d} on a melee combat check targeting them to inflict 6 damage on the attacker."
-            },
-            {
-               "name": "Killing Frenzy",
-               "description": "A grotesque adds {@dice boost|2} to all melee combat checks, but attackers add {@dice boost} to all combat checks targeting the grotesque."
-            }
+            "Bone Spurs 6",
+            "Killing Frenzy"
          ],
          "weapons": [
             {
@@ -3614,10 +3512,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Tail Catapult",
-               "description": "When engaged with a Gurak Tol that the Orc outrider is bonded with, the Orc outrider may use the steed to perform a Ranged attack with the following profile: Ranged; Damage 8; Critical 4; Range (Medium); Concussive 1, Inaccurate 1, Knockdown"
-            }
+            "Tail Catapult"
          ],
          "weapons": [
             {
@@ -3758,10 +3653,7 @@
          ],
          "abilities": [
             "Flyer",
-            {
-               "name": "Camouflaged Scales",
-               "description": "An ice wyrm adds {@dice boost|2} to Stealth checks in icy or snowy surroundings."
-            },
+            "Camouflaged Scales (Icy)",
             "Silhouette 4"
          ],
          "weapons": [
@@ -3872,10 +3764,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Ice Madness",
-               "description": "Upgrade the difficulty of social skill checks targeting an ice-blood warrior once."
-            }
+            "Ice Madness"
          ],
          "weapons": [
             {
@@ -3981,18 +3870,9 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Graven Wards",
-               "description": "Increase the difficulty of all spells that target an ironbound twice."
-            },
-            {
-               "name": "Strength of Iron",
-               "description": "An ironbound can wield a Melee (Heavy) weapon in one hand."
-            },
-            {
-               "name": "Watchful",
-               "description": "Ironbound add {@dice boost|2} to Perception and Vigilance checks to detect the use or effects of Magic skills."
-            }
+            "Graven Wards",
+            "Strength of Iron",
+            "Watchful"
          ],
          "weapons": [
             {
@@ -4117,10 +3997,7 @@
          "talents": [],
          "abilities": [
             "Darkvision",
-            {
-               "name": "Tunnel Fighter",
-               "description": "Add {@dice boost|2} to combat checks Kennsir Dwarves make in enclosed spaces."
-            }
+            "Tunnel Fighter"
          ],
          "weapons": [
             {
@@ -4197,10 +4074,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Not Another!",
-               "description": "In an encounter with any number of kobolds, the GM may spend {@symbols hh} from any check made by a PC to add one kobold to an existing minion group, or spend {@symbols d} to add a new minion group of three kobolds to the encounter."
-            },
+            "Not Another!",
             "Silhouette 0"
          ],
          "weapons": [
@@ -4500,10 +4374,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Leonx Bond",
-               "description": "When a Leonx Rider directs its mount, the mount may perform an action and a maneuver and is not limited to using its maneuvers to move."
-            }
+            "Leonx Bond"
          ],
          "weapons": [
             {
@@ -4630,23 +4501,11 @@
             "Dark Insight"
          ],
          "abilities": [
-            {
-               "name": "Blood Call",
-               "description": "When a Lord of Bilehall damages a target using their fangs or a magic attack, they heal wounds equal to the wounds inflicted."
-            },
-            {
-               "name": "Sunlight Sensitivity",
-               "description": "While exposed to sunlight, a Lord of Bilehall reduces all their characteristics by 2 and halves their Wound Threshold and Strain Threshold."
-            },
+            "Blood Call",
+            "Sunlight Sensitivity",
             "Terrifying 4",
-            {
-               "name": "Undead",
-               "description": "Does not need to breathe, eat, or drink (except blood), and can survive underwater; immune to poisons and toxins."
-            },
-            {
-               "name": "Vampiric Magic",
-               "description": "A Lord of Bilehall reduces the difficulty of all magic skill checks one step."
-            }
+            "Undead (Vampire)",
+            "Vampiric Magic"
          ],
          "spells": {
             "skills": [
@@ -4745,10 +4604,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Sea Legs",
-               "description": "A Lorimor marine does not add {@dice setback} to checks due to unstable footing on a ship or boat, or in a similar environment."
-            }
+            "Sea Legs"
          ],
          "weapons": [
             {
@@ -4839,10 +4695,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Fatalistic Ferocity",
-               "description": "A lost knight adds {@symbols s}{@symbols h} to any combat checks they make."
-            }
+            "Fatalistic Ferocity"
          ],
          "weapons": [
             {
@@ -5056,10 +4909,7 @@
          "abilities": [
             "Flyer",
             "Silhouette 2",
-            {
-               "name": "Poisonous Stinger",
-               "description": "A character wounded by a manticore's tail stinger must make a {@difficulty Hard|Resilience} as an out-of-turn incidental or suffer 4 additional wounds, and must check again on their next turn if the check generates {@symbols d}."
-            }
+            "Poisonous Stinger"
          ],
          "weapons": [
             {
@@ -5165,10 +5015,7 @@
          ],
          "abilities": [
             "Amphibious",
-            {
-               "name": "Monstrous Limbs",
-               "description": "A merriod does not increase the difficulty of combined checks to attack with its claws, tentacles, and jaws, and may spend {@symbols aa} or {@symbols t} to hit with each additional weapon."
-            },
+            "Monstrous Limbs",
             "Multiattack",
             "Silhouette 2",
             "Terrifying 3"
@@ -5575,14 +5422,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Hypnotic Gaze",
-               "description": "A naga priestess may make an opposed Charm vs. Discipline check as an action targeting one character within short range. If successful, the target is immobilized for 1 round per {@symbols s}, and the naga may spend {@symbols t} to stagger the target for 1 round."
-            },
-            {
-               "name": "Opportunistic Predator",
-               "description": "When making a combat check targeting an immobilized character, the naga deals +2 damage per {@symbols s} instead of +1"
-            }
+            "Hypnotic Gaze",
+            "Opportunistic Predator"
          ],
          "weapons": [
             {
@@ -6035,10 +5876,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Brutal Training",
-               "description": "When an Orc outrider directs its mount, the mount may perform an action and a maneuver and is not limited to using its maneuvers to move"
-            }
+            "Brutal Training"
          ],
          "weapons": [
             {
@@ -6148,10 +5986,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Spiritual Focus",
-               "description": "A spiritspeaker adds {@dice boost} to Primal checks they make for each Orc ally within short range."
-            }
+            "Spiritual Focus"
          ],
          "spells": {
             "skills": [
@@ -6429,10 +6264,7 @@
          "talents": [],
          "abilities": [
             "Undead",
-            {
-               "name": "Undying",
-               "description": "May spend {@symbols hhh} from any check made by a PC to return one previously defeated Reanimate to an existing minion group, removing damage from the group accordingly. Spend {@symbols d} to return two Reanimates to a minion group."
-            }
+            "Undying"
          ],
          "weapons": [
             {
@@ -6504,7 +6336,7 @@
             }
          ],
          "abilities": [
-            "Carrying Capacity 12",
+            "Encumbrance Capacity 12",
             "Silhouette 2"
          ],
          "gear": [
@@ -6576,10 +6408,7 @@
          ],
          "abilities": [
             "Multiattack",
-            {
-               "name": "Elemental Runes",
-               "description": "Each rune golem takes on different traits depending on its animating rune. Select one rune for each individual golem. Fire: add {@symbols ss} to checks the rune golem makes to {@rule determine Initiative||crb}. Ice: upgrade the difficulty of social skill checks targeting the golem once. Lightning: the rune golem may perform a second maneuver without suffering strain. Stone: the rune golem's soak increases to 8 . Other runes can be used at the GM's discretion."
-            },
+            "Elemental Runes",
             "Silhouette 2"
          ],
          "weapons": [
@@ -6695,10 +6524,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Flameborn",
-               "description": "A salamander does not suffer damage from natural heat or flame, and doubles its soak for purposes of reducing damage from magical fire."
-            }
+            "Flameborn"
          ],
          "weapons": [
             {
@@ -6779,10 +6605,7 @@
          "abilities": [
             "Silhouette 2",
             "Swarm",
-            {
-               "name": "Venomous",
-               "description": "enemies who are wounded by a scorpion swarm must make a {@difficulty Hard|Resilience} as an out-ofturn incidental or suffer 4 additional wounds, and must check again on their next turn if the check generates {@symbols d}."
-            }
+            "Venomous"
          ],
          "weapons": [
             {
@@ -6955,10 +6778,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Pounce",
-               "description": "May spend {@symbols aa} from an initiative check to perform a free maneuver before the first round of combat."
-            }
+            "Pounce (Initiative)"
          ],
          "weapons": [
             {
@@ -7081,10 +6901,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Prideful Roar",
-               "description": "As a maneuver, a Pridelord can unleash a prideful roar. All other Singhara in the encounter remove {@dice setback} from checks until the end of the Pridelord's next turn. In addition, enemies within medium range of the Pridelord must make an {@difficulty Average|fear} as per page 243 of the GENESYS Core Rulebook."
-            }
+            "Prideful Roar"
          ],
          "weapons": [
             {
@@ -7185,15 +7002,9 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Deadly Distraction",
-               "description": "A siren decreases the difficulty of combat checks it makes that target a character immobilized or staggered by its Irresistible Song by one."
-            },
+            "Deadly Distraction",
             "Flyer",
-            {
-               "name": "Irresistible Song",
-               "description": "As an action, a siren may make an {@difficulty Average|Charm}. If the check is successful, all characters within long range who can hear the siren's song suffer 1 strain per {@symbols s}. The siren may spend {@symbols aa} to immobilize one affected character until the end of the following round, and spend {@symbols t} to stagger one affected character until the end of the following round. While a character is staggered by Irresistible Song must spend all of their maneuvers to move closer to the siren."
-            }
+            "Irresistible Song"
          ],
          "weapons": [
             {
@@ -7279,15 +7090,9 @@
          ],
          "abilities": [
             "Silhouette 3",
-            {
-               "name": "Spine-tow",
-               "description": "A spined thresher can use a maneuver to move a target affected by its tail's Ensnare quality up to one range band."
-            },
+            "Spine-tow",
             "Terrifying 3",
-            {
-               "name": "Too Many Mouths",
-               "description": "A spined thresher can make a combined check to attack with any number of its weapons, and only needs to spend {@symbols a} to hit with each additional weapon."
-            }
+            "Too Many Mouths"
          ],
          "weapons": [
             {
@@ -7427,14 +7232,8 @@
             "Whirlwind"
          ],
          "abilities": [
-            {
-               "name": "King of the Goblins!",
-               "description": "Upgrade the difficulty of combat checks targeting Splig once for each minion group of goblins within short range of him. If the check fails, one individual minion is defeated."
-            },
-            {
-               "name": "Lucky Escape",
-               "description": "When Splig would be defeated due to exceeding his wound threshold or strain threshold, or for any reason, he may spend 1 Story Point to instead escape in a suitably fortunate and cowardly fashion. All other goblins in the encounter are immediately defeated."
-            }
+            "King of the Goblins!",
+            "Lucky Escape"
          ],
          "weapons": [
             {
@@ -7535,10 +7334,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Elemental Mastery",
-               "description": "The first effect that a storm sorceress adds to a spell does not increase the difficulty of the Arcana check."
-            }
+            "Elemental Mastery"
          ],
          "spells": {
             "skills": [
@@ -7646,10 +7442,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Show Off",
-               "description": "A sword poet may choose to inflict stun damage when resolving a successful melee combat check or using the Improved Parry ability."
-            }
+            "Show Off"
          ],
          "weapons": [
             {
@@ -7746,10 +7539,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Certain You Want To Do This?",
-               "description": "When targeting a Guildmaster with a check, a character suffers 1 strain."
-            }
+            "Certain You Want To Do This?"
          ],
          "weapons": [
             {
@@ -8084,10 +7874,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Tailored Poison",
-               "description": "Once per encounter before making a Ranged check, as a maneuver a viper legion archer can apply a tailored poison to an arrow; if the check succeeds, the attack inflicts additional damage equal to the target's highest characteristic and gains the Disorient 3 quality."
-            }
+            "Tailored Poison"
          ],
          "weapons": [
             {
@@ -8246,10 +8033,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Aggressive Fighter",
-               "description": "Weik warriors add {@symbols a} to combined checks they make to attack with two melee weapons."
-            }
+            "Aggressive Fighter"
          ],
          "weapons": [
             {
@@ -8383,14 +8167,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Blood Frenzy",
-               "description": "While at least one opponent in an encounter is suffering a Critical Injury, a Wendigo increases the base damage of its attacks by 2"
-            },
-            {
-               "name": "Eyeless Sight",
-               "description": "Wendigo do not add {@dice setback} to checks due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness or concealment|crb}, and are immune to abilities or Critical Injuries that affect a creature's sight."
-            },
+            "Blood Frenzy",
+            "Eyeless Sight",
             "Terrifying 3"
          ],
          "weapons": [
@@ -8498,14 +8276,8 @@
             "Dark Insight"
          ],
          "abilities": [
-            {
-               "name": "Telepathic Coordination",
-               "description": "A witch or warlock can perform a maneuver to add {@dice boost} to the next check made by all other Uthuk Y'llan in the encounter."
-            },
-            {
-               "name": "Sacrifice",
-               "description": "After inflicting wounds on a living creature (whether an enemy or ally), a witch or warlock adds {@dice boost} to their next magic skill check; after killing a living creature, a witch or warlock instead upgrades the ability of their next magic skill check once."
-            }
+            "Telepathic Coordination",
+            "Sacrifice"
          ],
          "spells": {
             "skills": [
@@ -8915,6 +8687,961 @@
             "Combat CR:8",
             "Social CR:2",
             "General CR:3"
+         ]
+      }
+   ],
+   "adversaryAbility": [
+      {
+         "name": "A Good Death",
+         "description": [
+            "As an incidental, at the start of its turn a minion group of this character that is engaged with an enemy may remove a member of its group as a casualty to add +6 damage to the minion group's attack in that turn."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Aggressive Fighter",
+         "description": [
+            "This character adds {@symbols a} to combined checks they make to attack with two melee weapons."
+         ],
+         "tags": [
+            "combat",
+            "results modifier",
+            "passive"
+         ]
+      },
+      {
+         "name": "Amorphous",
+         "description": [
+            "As an incidental, may increase or decrease its silhouette by 1."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "stat modifier"
+         ]
+      },
+      {
+         "name": "Ancestral Gaze",
+         "description": [
+            "While within short range of a Dwarf Ancestral Specter, living Dwarves add {@symbols s} to their combat checks and {@symbols t} if the opponent is a dragon."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "results modifier",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Blood Frenzy",
+         "description": [
+            "While at least one opponent in an encounter is suffering a Critical Injury, this character increases the base damage of its attacks by 2."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "offensive",
+            "critical injury"
+         ]
+      },
+      {
+         "name": "Bloodthirst",
+         "description": [
+            "When this character inflicts wounds with its fangs, it heals an equal number of wounds."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "recovery"
+         ]
+      },
+      {
+         "name": "Bone Spurs",
+         "description": [
+            "This character may spend {@symbols hhh} or {@symbols d} on a melee combat check targeting them to inflict damage on the attacker equal to its ranks in Bone Spurs."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental (out of turn)",
+            "results spend",
+            "defensive"
+         ]
+      },
+      {
+         "name": "Brutal Training",
+         "description": [
+            "When an this character directs its mount, the mount may perform an action and a maneuver and is not limited to using its maneuvers to move."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "animal companion"
+         ]
+      },
+      {
+         "name": "Cage of Roots",
+         "description": [
+            "Once per round after a character moves within medium range of this character, this character may perform an out-of-turn incidental to {@rule immobilized|immobilize|crb} that character for the remainder of the encounter. As an action an {@rule immobilized||crb} character can attempt a {@difficulty Hard|Athletics} on their turn to no longer be {@rule immobilized||crb}."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental (out of turn)",
+            "status effect"
+         ]
+      },
+      {
+         "name": "Camouflaged Scales (Icy)",
+         "description": [
+            "This character adds {@dice boost|2} to {@skill Stealth||crb} checks in icy or snowy surroundings."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Certain You Want To Do This?",
+         "description": [
+            "When targeting this character with a check, that character suffers 1 strain."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "defensive"
+         ]
+      },
+      {
+         "name": "Claw Sweep",
+         "description": [
+            "The creature may spend {@symbols a} from a {@skill Brawl||crb} check to hit an additional engaged opponent that would be no more difficult to attack than the original target, dealing base damage +1 damage per {@symbols s}."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental",
+            "results spend",
+            "crowd control"
+         ]
+      },
+      {
+         "name": "Creature of the Aenlong",
+         "description": [
+            "This creature reduces the difficulty of {@skill Arcana||crb} checks by one, to a minimum of {@difficulty Easy}, and the base damage of their {@spell Attack||crb} spells is increased by three."
+         ],
+         "tags": [
+            "magic",
+            "passive"
+         ]
+      },
+      {
+         "name": "Darkvision",
+         "description": [
+            "When making skill checks, remove up to {@dice setback|2} due to darkness."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Dauntless",
+         "description": [
+            "This character upgrades the ability of {@skill Discipline||crb} checks they make to resist {@rule fear||crb} or intimidation once."
+         ],
+         "tags": [
+            "general",
+            "defensive",
+            "passive",
+            "fear"
+         ]
+      },
+      {
+         "name": "Deadly Distraction",
+         "description": [
+            "This character decreases the difficulty of combat checks it makes that target a character {@rule immobilized||crb} or {@rule staggered||crb} by its {@adversaryAbility Irresistible Song} by one."
+         ],
+         "tags": [
+            "combat",
+            "passive"
+         ]
+      },
+      {
+         "name": "Draconic Heritage",
+         "description": [
+            "This character reduces the damage they take from fire and similar sources by 3."
+         ],
+         "tags": [
+            "general",
+            "resistance",
+            "passive"
+         ]
+      },
+      {
+         "name": "Drag",
+         "description": [
+            "This character can use a maneuver to move a target affected by its thorny vines' {@quality Ensnare||crb} quality to engaged range."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "maneuver",
+            "item quality"
+         ]
+      },
+      {
+         "name": "Dreamwalker",
+         "description": [
+            "Once per session, this character can spend a Story Point to either re-roll the dice pool after making a check, or to force a PC to re-roll the dice pool after the PC makes a check."
+         ],
+         "tags": [
+            "general",
+            "story point cost",
+            "session",
+            "active",
+            "incidental (out of turn)",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Elemental Mastery",
+         "description": [
+            "The first effect that this character adds to a spell does not increase the difficulty of the {@skill Arcana||crb} check."
+         ],
+         "tags": [
+            "magic",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Elemental Runes",
+         "description": [
+            "Each of these characters takes on different traits depending on its animating rune. Select one rune for each individual golem.",
+            {
+               "type": "list",
+               "items": [
+                  "Fire: add {@symbols ss} to checks the rune golem makes to {@rule determine Initiative||crb}.",
+                  "Ice: upgrade the difficulty of social skill checks targeting the golem once.",
+                  "Lightning: the rune golem may perform a second maneuver without suffering strain.",
+                  "Stone: the rune golem's soak increases to 8 . Other runes can be used at the GM's discretion."
+               ]
+            }
+         ],
+         "tags": [
+            "general",
+            "social",
+            "customization option",
+            "passive",
+            "free maneuver",
+            "initiative"
+         ]
+      },
+      {
+         "name": "Eyeless Sight",
+         "description": [
+            "This character does not add {@dice setback} to checks due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness or concealment|crb}, and are immune to abilities or Critical Injuries that affect a creature's sight."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier",
+            "critical injury"
+         ]
+      },
+      {
+         "name": "Fatalistic Ferocity",
+         "description": [
+            "This character adds {@symbols sh} to any combat checks they make."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Flameborn",
+         "description": [
+            "This character does not suffer damage from natural heat or flame, and doubles its soak for purposes of reducing damage from magical fire."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "resistance",
+            "defensive"
+         ]
+      },
+      {
+         "name": "Ghostly (Dwarf Ancestral Specter)",
+         "description": [
+            "Dwarf Ancestral Specters ignore the effects of terrain and darkness."
+         ],
+         "tags": [
+            "general",
+            "skill check modifier",
+            "movement"
+         ]
+      },
+      {
+         "name": "Giant Stomp!",
+         "description": [
+            "{@skill Brawl||crb} attacks that this character makes have a Critical rating of 3, and if they inflict Critical Injuries +40 is added to the resulting Critical Injury result."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "critical injury"
+         ]
+      },
+      {
+         "name": "Glider",
+         "description": [
+            "This character can {@sidebar Flying|fly|crb}, but cannot increase their altitude while doing so; see page 100 of the {@title Genesys} Core Rulebook."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "movement"
+         ]
+      },
+      {
+         "name": "Graven Wards",
+         "description": [
+            "Increase the difficulty of all spells that target this character twice."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Guild Member",
+         "description": [
+            "When performing a check related to their specific guild, this character upgrades the ability of the check twice."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier",
+            "factions"
+         ]
+      },
+      {
+         "name": "Haunting melodies",
+         "description": [
+            "This character may spend {@symbols a} in a successful {@skill Charm||crb} check to inflict 1 strain on their target, and may do this multiple times."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Hypnotic Gaze",
+         "description": [
+            "This character may make an {@b opposed {@skill Charm||crb} vs. {@skill Discipline||crb} check} as an action targeting one character within short range. If successful, the target is {@rule immobilized||crb} for 1 round per {@symbols s}, and this character may spend {@symbols t} to {@rule staggered|stagger|crb} the target for 1 round."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "action",
+            "status effect",
+            "results spend",
+            "opposed"
+         ]
+      },
+      {
+         "name": "Ice Madness",
+         "description": [
+            "Upgrade the difficulty of social skill checks targeting this character once."
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "defensive"
+         ]
+      },
+      {
+         "name": "Inconspicuous",
+         "description": [
+            "When in it's natural element or habitat, this creature appears indistinguishable from the environment; a character can make a {@difficulty Hard|Perception or Vigilance} to identify it."
+         ],
+         "tags": [
+            "general",
+            "passive"
+         ]
+      },
+      {
+         "name": "Irresistible Song",
+         "description": [
+            "As an action, this character may make an {@difficulty Average|Charm}. If the check is successful, all characters within long range who can hear this character's song suffer 1 strain per {@symbols s}. This character may spend {@symbols aa} to {@rule immobilized|immobilize|crb} one affected character until the end of the following round, and spend {@symbols t} to {@rule staggered|stagger|crb} one affected character until the end of the following round. While a character is {@rule staggered||crb} by Irresistible Song, they must spend all of their maneuvers to move closer to this character."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "action",
+            "results spend",
+            "status effect"
+         ]
+      },
+      {
+         "name": "Killing Frenzy",
+         "description": [
+            "This character adds {@dice boost|2} to all {@skill Melee||crb} combat checks, but attackers add {@dice boost} to all combat checks targeting this character."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "offensive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "King of the Goblins!",
+         "description": [
+            "Upgrade the difficulty of combat checks targeting this character once for each minion group of goblins within short range of them. If the check fails, one individual minion is defeated."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "defensive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Leonx Bond",
+         "description": [
+            "When a Leonx Rider directs its mount, the mount may perform an action and a maneuver and is not limited to using its maneuvers to move."
+         ],
+         "tags": [
+            "general",
+            "animal companion"
+         ]
+      },
+      {
+         "name": "Lightning Draw",
+         "description": [
+            "May draw or sheathe a dagger or similar small weapon as an incidental; there is no limit to how many weapons this character can ready this way per turn."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental"
+         ]
+      },
+      {
+         "name": "Lucky Escape",
+         "description": [
+            "When this character would be defeated due to exceeding their wound threshold or strain threshold, or for any reason, they may spend 1 Story Point to instead escape in a suitably fortunate and cowardly fashion. All other adversaries in the encounter are immediately defeated."
+         ],
+         "tags": [
+            "combat",
+            "social",
+            "story point cost",
+            "defensive"
+         ]
+      },
+      {
+         "name": "Maul",
+         "description": [
+            "Add {@dice boost|2} to {@skill Brawl||crb} checks against {@rule prone||crb} or {@rule immobilized||crb} targets."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "skill check modifier",
+            "status effect"
+         ]
+      },
+      {
+         "name": "Monstrous Limbs",
+         "description": [
+            "This character does not increase the difficulty of combined checks to attack with its claws, tentacles, and jaws, and may spend {@symbols aa} or {@symbols t} to hit with each additional weapon."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "results spend",
+            "offensive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Mounted Charge",
+         "description": [
+            "This character adds {@dice boost|2} to its first melee attack after performing a maneuver to engage the target in the same turn."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Multiattack",
+         "description": [
+            "Does not need to increase the difficulty of combined combat checks to attack with two weapons."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "offensive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Not Another!",
+         "description": [
+            "In an encounter with any number of this character type, the GM may spend {@symbols hh} from any check made by a PC to add one adversary to an existing minion group, or spend {@symbols d} to add a new minion group of three individuals to the encounter."
+         ],
+         "tags": [
+            "general",
+            "story point cost",
+            "support"
+         ]
+      },
+      {
+         "name": "Opportunistic",
+         "description": [
+            "This character inflicts 1 additional damage with successful melee attacks on {@rule prone||crb} or {@rule immobilized||crb} targets."
+         ],
+         "tags": [
+            "combat",
+            "offensive",
+            "passive",
+            "status effect"
+         ]
+      },
+      {
+         "name": "Opportunistic Predator",
+         "description": [
+            "When making a combat check targeting an {@rule immobilized||crb} character, this character deals +2 damage per {@symbols s} instead of +1"
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "results spend",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Point Blank Shot",
+         "description": [
+            "When making a {@skill Ranged||crb} combat check targeting an opponent the this character is engaged with, increase the difficulty once (instead of twice)."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Poisoner",
+         "description": [
+            "As an incidental, may apply poison to all weapons. A character wounded by a poisoned weapon must make a {@difficulty Hard|Resilience} as an out-of-turn incidental or suffer 4 additional wounds, and must check again on their next turn if the check generates {@symbols d}."
+         ],
+         "tags": [
+            "combat",
+            "results spend",
+            "active",
+            "incidental"
+         ]
+      },
+      {
+         "name": "Poisonous Stinger",
+         "description": [
+            "A character wounded by a this character's tail stinger must make a {@difficulty Hard|Resilience} as an out-of-turn incidental or suffer 4 additional wounds, and must check again on their next turn if the check generates {@symbols d}."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Pounce (Initiative)",
+         "description": [
+            "May spend {@symbols aa} from an {@rule determine initiative|initiative|crb} check to perform a free maneuver before the first round of combat."
+         ],
+         "tags": [
+            "combat",
+            "initiative",
+            "free maneuver",
+            "passive"
+         ]
+      },
+      {
+         "name": "Prideful Roar",
+         "description": [
+            "As a maneuver, a Pridelord can unleash a prideful roar. All other Singhara in the encounter remove {@dice setback} from checks until the end of the Pridelord's next turn. In addition, enemies within medium range of the Pridelord must make an {@difficulty Average|fear} as per page 243 of the {@title Genesys} Core Rulebook."
+         ],
+         "tags": [
+            "general",
+            "leader",
+            "fear",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Rooted",
+         "description": [
+            "This character cannot perform maneuvers to move."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "movement"
+         ]
+      },
+      {
+         "name": "Sacrifice",
+         "description": [
+            "After inflicting wounds on a living creature (whether an enemy or ally), this character adds {@dice boost} to their next magic skill check; after killing a living creature, this character instead upgrades the ability of their next magic skill check once."
+         ],
+         "tags": [
+            "combat",
+            "magic",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Savage",
+         "description": [
+            "This character increases the damage of its attacks by 2 when targeting an {@rule immobilized||crb} foe."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "status effect"
+         ]
+      },
+      {
+         "name": "Sea Legs",
+         "description": [
+            "This character does not add {@dice setback} to checks due to unstable footing on a ship or boat, or in a similar environment."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Shadow Training",
+         "description": [
+            "Enemies add {@dice setback} to magic checks targeting this character."
+         ],
+         "tags": [
+            "magic",
+            "passive",
+            "skill check modifier",
+            "defensive"
+         ]
+      },
+      {
+         "name": "Shapeshifter",
+         "description": [
+            "Once per round as an incidental, this character may increase or decrease its silhouette by 1 and change its appearance to that of any character or creature of its current silhouette."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "stat modifier"
+         ]
+      },
+      {
+         "name": "Show Off",
+         "description": [
+            "This character may choose to inflict {@quality stun damage||crb} when resolving a successful melee combat check or using the {@talent Parry (Improved)||crb} talent."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Spine-tow",
+         "description": [
+            "This character can use a maneuver to move a target affected by its tail's {@quality Ensnare||crb} quality up to one range band."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "maneuver",
+            "item quality",
+            "movement"
+         ]
+      },
+      {
+         "name": "Spiritual Focus",
+         "description": [
+            "This character adds {@dice boost} to {@skill Primal||crb} checks they make for each Orc ally within short range."
+         ],
+         "tags": [
+            "general",
+            "magic",
+            "passive",
+            "support",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Spiteful Curse",
+         "description": [
+            "Add {@dice boost|2} to magic actions that target a character who has previously inflicted wounds on this character during this encounter."
+         ],
+         "tags": [
+            "magic",
+            "passive",
+            "skill check modifier",
+            "defensive"
+         ]
+      },
+      {
+         "name": "Stonewalker",
+         "description": [
+            "This character moves normally through difficult or impassable terrain of stone, soil, or similar materials."
+         ],
+         "tags": [
+            "general",
+            "movement",
+            "passive"
+         ]
+      },
+      {
+         "name": "Strength of Iron",
+         "description": [
+            "This character can wield a {@skill Melee (Heavy)||crb} weapon in one hand."
+         ],
+         "tags": [
+            "general",
+            "passive"
+         ]
+      },
+      {
+         "name": "Swallow",
+         "description": [
+            "May make an {@b opposed {@skill Brawl||crb} check} to swallow an engaged target. If the check is successful, swallowed characters are {@rule immobilized||crb} and suffer 6 damage at the start of each round but can escape if this character is killed or by making a successful {@difficulty Hard|Athletics}."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "action",
+            "opposed",
+            "status effect"
+         ]
+      },
+      {
+         "name": "Tail Catapult",
+         "description": [
+            "When engaged with a Gurak Tol that the Orc outrider is bonded with, the Orc outrider may use the steed to perform a {@skill Ranged||crb} attack with the following profile: {@skill Ranged||crb}; Damage 8; Critical 4; Range (Medium); Concussive 1, Inaccurate 1, Knockdown.",
+            {
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Skill"
+                  },
+                  {
+                     "header": "Damage"
+                  },
+                  {
+                     "header": "Critical"
+                  },
+                  {
+                     "header": "Range"
+                  },
+                  {
+                     "header": "Special"
+                  }
+               ],
+               "rows": [{
+                  "skill": "{@skill Ranged||crb}",
+                  "damage": "8",
+                  "critical": 4,
+                  "range": "Medium",
+                  "special": "{@quality Concussive|Concussive 1|crb}, {@quality Inaccurate|Inaccurate 1|crb}, {@quality Knockdown||crb}"
+               }]
+            }
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "action",
+            "animal companion"
+         ]
+      },
+      {
+         "name": "Tailored Poison",
+         "description": [
+            "Once per encounter before making a {@skill Ranged||crb} check, as a maneuver this character can apply a tailored poison to an arrow; if the check succeeds, the attack inflicts additional damage equal to the target's highest characteristic and gains the {@quality Disorient|Disorient 3|crb} quality."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "maneuver",
+            "offensive",
+            "item quality"
+         ]
+      },
+      {
+         "name": "Telepathic Bond",
+         "description": [
+            "A bloodsister can perform an incidental once per round to add {@dice boost} to the next check made by all other Uthuk Y'llan in the encounter."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "support",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Telepathic Coordination",
+         "description": [
+            "A witch or warlock can perform a maneuver to add {@dice boost} to the next check made by all other Uthuk Y'llan in the encounter."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "maneuver",
+            "support",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Telepathic Domination",
+         "description": [
+            "This character may attempt to telepathically dominate a foe once per encounter as an action, making an {@b opposed {@skill Coercion||crb} vs. {@skill Discipline||crb} check} targeting one character in short range; if successful, the target is {@rule immobilized||crb} for 1 round per {@symbols s}, and this character may spend {@symbols t} to {@rule staggered|stagger|crb} the target for 1 round."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "action",
+            "opposed",
+            "results spend",
+            "status effect"
+         ]
+      },
+      {
+         "name": "Too Many Mouths",
+         "description": [
+            "This character can make a combined check to attack with any number of its weapons, and only needs to spend {@symbols a} to hit with each additional weapon."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "results spend",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Tunnel Fighter",
+         "description": [
+            "Add {@dice boost|2} to combat checks this character makes in enclosed spaces."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Undead (Vampire)",
+         "description": [
+            "Does not need to breathe, eat, or drink (except blood), and can survive underwater; immune to poisons and toxins."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "resistance"
+         ]
+      },
+      {
+         "name": "Undying",
+         "description": [
+            "May spend {@symbols hhh} from any check made by a PC to return one of these previously defeated characters to an existing minion group, removing damage from the group accordingly. Spend {@symbols d} to return two individuals to a minion group."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "results spend",
+            "recovery"
+         ]
+      },
+      {
+         "name": "Unexpected Attack",
+         "description": [
+            "If this character has not been yet been identified as a threat, they use {@skill Stealth||crb} to {@rule determine Initiative||crb}."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "initiative"
+         ]
+      },
+      {
+         "name": "Vampiric Magic",
+         "description": [
+            "This character reduces the difficulty of all magic skill checks one step."
+         ],
+         "tags": [
+            "magic",
+            "passive",
+            "defensive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Vanish",
+         "description": [
+            "After performing a check, may spend {@symbols aa} or {@symbols t} to hide from all other characters in the encounter."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental (out of turn)",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Venomous",
+         "description": [
+            "Enemies who are wounded by this character must make a {@difficulty Hard|Resilience} as an out-of-turn incidental or suffer 4 additional wounds, and must check again on their next turn if the check generates {@symbols d}."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "offensive",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Watchful",
+         "description": [
+            "This character adds {@dice boost|2} to {@skill Perception||crb} and {@skill Vigilance||crb} checks to detect the use or effects of Magic skills."
+         ],
+         "tags": [
+            "magic",
+            "passive",
+            "support"
          ]
       }
    ],
@@ -9452,17 +10179,6 @@
             "combat",
             "passive",
             "offensive"
-         ]
-      },
-      {
-         "name": "Dark Vision",
-         "description": [
-            "When making skill checks, Dunwarr Dwarves remove up to {@dice setback|2} imposed due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness|crb}."
-         ],
-         "tags": [
-            "general",
-            "passive",
-            "skill check modifier"
          ]
       },
       {

@@ -1,5 +1,5 @@
 {
-   "$schema": "https://silentarctic.github.io/schemas/schema.json",
+   "$schema": "../../schemas/schema.json",
    "_meta": {
       "source": {
          "json": "book-of-online-sourced-triumphs-1-mutation",
@@ -7,7 +7,7 @@
          "abbreviation": "BOOST:1",
          "color": "#30F030",
          "url": "https://www.drivethrurpg.com/product/314884/BOOST-1-Mutation/",
-         "version": "2025.1.16",
+         "version": "2025.1.20",
          "authors": [
             "Genesys RPG Community",
             "Flame112",
@@ -76,14 +76,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Aquatic",
-               "description": "This adversary may breath underwater and never suffers movement penalties for traveling through water."
-            },
-            {
-               "name": "Blood Frenzy",
-               "description": "While at least one opponent in an encounter is suffering a Critical Injury, this adversary increases the base damage of its attacks by 2."
-            }
+            "Aquatic",
+            "Blood Frenzy"
          ],
          "weapons": [
             {
@@ -175,18 +169,9 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Terrifying",
-               "description": "At the start of the encounter, all of its opponents must make a {@difficulty hard|fear} as an out-of-turn incidental, as per page 243 of the {@title Genesys} Core Rulebook. If there are multiple sources of fear in the encounter, the opponents only make one fear check against the most terrifying enemy."
-            },
-            {
-               "name": "Sticky",
-               "description": "When wound threshold exceeded, they explode, throwing their sticky vegetables innards on to all characters that are engaged. Any non-giant vegetable characters are immobilized for one round."
-            },
-            {
-               "name": "Attack of Opportunity",
-               "description": "Add {@dice boost|2} to combat check against immobilized targets"
-            }
+            "Terrifying 3",
+            "Sticky",
+            "Attack of Opportunity"
          ],
          "weapons": [
             {
@@ -293,14 +278,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Claw Sweep",
-               "description": "May spend {@symbols a} from a Brawl check to hit an additional engaged opponent that would be no more difficult to attack than the original target, dealing base damage +1 damage per {@symbols s}."
-            },
-            {
-               "name": "Clawmander",
-               "description": "May spend a maneuver to direct all allied characters in the current encounter; each may immediately perform a free maneuver or add {@symbols s} to the results of their next check."
-            }
+            "Claw Sweep",
+            "Clawmander"
          ],
          "weapons": [
             {
@@ -329,6 +308,43 @@
          "description": [
             "With his hefty bulk, seven feet of height, and enormous Claw, the reigning King Claw is an imposing figure despite his age. Aside from The Claw, he appears to be a normal human, wearing a crown of woven coral and a slick-looking scale mail made from hardened seaweed. When he slew the old King Claw and stole The Claw so many decades ago, he dreamed only of conquest and power, but over the years his bloodlust has mellowed and he now seeks to carve out a more permanent place in the world where he and his Clawbberers can live in peace.",
             "{@b Author:} Flame112"
+         ]
+      }
+   ],
+   "adversaryAbility": [
+      {
+         "name": "Attack of Opportunity",
+         "description": [
+            "Add {@dice boost|2} to combat check against {@rule immobilized||crb} targets."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Clawmander",
+         "description": [
+            "May spend a maneuver to direct all allied characters in the current encounter; each may immediately perform a free maneuver or add {@symbols s} to the results of their next check."
+         ],
+         "tags": [
+            "active",
+            "maneuver",
+            "leader",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Sticky",
+         "description": [
+            "When this character's wound threshold is exceeded, they explode, throwing their sticky vegetable innards on to all characters that are engaged. Any non-giant vegetable characters are {@rule immobilized||crb} for one round."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "defensive",
+            "status effect"
          ]
       }
    ],

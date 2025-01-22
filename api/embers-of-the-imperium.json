@@ -1,5 +1,5 @@
 {
-   "$schema": "https://silentarctic.github.io/schemas/schema.json",
+   "$schema": "../schemas/schema.json",
    "_meta": {
       "source": {
          "json": "embers-of-the-imperium",
@@ -14,7 +14,7 @@
          ],
          "url": "https://www.edge-studio.net/games/embers-of-the-imperium/",
          "releaseDate": "28 April 2023",
-         "version": "2025.1.16"
+         "version": "2025.1.20"
       },
       "defaultItemSettings": [
          {
@@ -222,10 +222,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Desperate Plea",
-               "description": "May make an {@b opposed {@skill Charm||crb} versus {@skill Cool||crb} check} targeting one character within medium range as an action; if successful, the target must spend their next action to ensure that this character is okay."
-            }
+            "Desperate Plea"
          ],
          "talents": [],
          "weapons": [
@@ -319,10 +316,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "One More Thing...",
-               "description": "When targeted by a {@skill Negotiation||crb} check, may spend {@symbols hh} to force the other party to include an item worth at least 100 aurei in the deal; this item may be visibly in their possession or something they must acquire to close the deal."
-            }
+            "One More Thing..."
          ],
          "talents": [
             {
@@ -413,10 +407,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Ionic Discharge",
-               "description": "After making a successful melee attack, may spend {@symbols aa} to reduce all damage dealt to 0 and cause one piece of equipment the target is holding to cease functioning for the rest of the encounter."
-            }
+            "Ionic Discharge"
          ],
          "talents": [],
          "weapons": [
@@ -494,10 +485,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "This Ain't Mecatol Rex",
-               "description": "Add {@dice setback to social skill checks targeting this minion group for each {@rule the keleres of the council|Keleres}-affiliated character within short range."
-            }
+            "This Ain't Mecatol Rex"
          ],
          "talents": [],
          "weapons": [
@@ -591,14 +579,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Ad Hominem Attack",
-               "description": "After making a social skill check, may spend {@symbols aa} or {@symbols t} to recover 4 strain."
-            },
-            {
-               "name": "Hyperbolic Eloquence",
-               "description": "Once per encounter, may make an {@difficulty Average|Deception} targeting one character as an action; if successful, target adds {@symbols fh} to the results of their next social skill check; may spend {@symbols aa} to affect an additional target or {@symbols t} to cause all targets to add {@symbols ff} instead of {@symbols f}."
-            }
+            "Ad Hominem Attack",
+            "Hyperbolic Eloquence"
          ],
          "talents": [
             {
@@ -707,10 +689,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Master Manipulator",
-               "description": "If the Veiled Brood agent knows a character's Desire or Fear Motivation, they downgrade the difficulty of all {@skill Deception||crb} and {@skill Leadership||crb} checks targeting the character twice."
-            }
+            "Master Manipulator"
          ],
          "talents": [
             {
@@ -804,10 +783,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Scholarly Guidance",
-               "description": "Once per encounter, may spend an action to reduce the difficulty of another character's next non-combat check by 2."
-            }
+            "Scholarly Guidance"
          ],
          "talents": [
             {
@@ -924,10 +900,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Building to a Point",
-               "description": "May spend {@symbols aaa} to add {@symbols t} to the results of the Xxcha Elder's next social check during this encounter."
-            }
+            "Building to a Point"
          ],
          "talents": [
             {
@@ -1030,14 +1003,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Fling Aside",
-               "description": "As a maneuver, may make an {@b opposed {@skill Coordination||crb} versus {@skill Coordination||crb} check} targeting one engaged silhouette 1 or 0 character; if successful, fling the target up to long range in a direction of the Letani behemoth's choosing; on the target's next turn, it suffers the effects of falling from short range [see page 112 of the Genesys Core Rulebook]."
-            },
-            {
-               "name": "Symphonic Node",
-               "description": "May suffer 2 strain to add {@symbols sa} to the results of all checks made by {@rule Arborec} within extreme range until the Letani Behemoth's next turn."
-            },
+            "Fling Aside",
+            "Symphonic Node",
             "Silhouette 4"
          ],
          "talents": [
@@ -1155,14 +1122,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Infuriating Enigma",
-               "description": "Characters making a social skill check targeting the Creuss riftwalker suffer 2 strain per {@symbols h}."
-            },
-            {
-               "name": "Wormhole Walker",
-               "description": "May spend one Story Point to teleport anywhere within extreme range as a maneuver."
-            }
+            "Infuriating Enigma",
+            "Wormhole Walker"
          ],
          "talents": [
             {
@@ -1253,10 +1214,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Burrower",
-               "description": "May move through solid ground as if it were difficult terrain, leaving a tunnel behind it."
-            },
+            "Burrower",
             "Terrifying 2",
             "Silhouette 2"
          ],
@@ -1327,10 +1285,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Scent Tracking",
-               "description": "Add {@symbols ss} to the results of {@skill Perception||crb}, {@skill Survival||crb}, or {@skill Vigilance||crb} checks the Daartar hound makes to track or spot a character or to {@rule determine Initiative||crb}."
-            }
+            "Scent Tracking"
          ],
          "talents": [],
          "weapons": [
@@ -1423,10 +1378,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Regenerative Balm",
-               "description": "As an action, may apply a balm to one engaged character, allowing the target to make an {@difficulty Average|Resilience} check as an out-of-turn incidental; for each {@symbols s}, the target heals one Critical Injury; if successful, the target also heals 2 wounds at the start of each of their turns for the remainder of the encounter."
-            }
+            "Regenerative Balm"
          ],
          "talents": []
       },
@@ -1520,10 +1472,7 @@
             "Shepherding Command"
          ],
          "abilities": [
-            {
-               "name": "Swat",
-               "description": "After making a successful combat check with its fists against a target of silhouette 2 or smaller, may spend {@symbols aaa} or {@symbols t} to fling the target up to medium range in a direction of the elder Titan's choosing; on the target's next turn, it suffers the effects of falling from short range [see page 112 of the {@title Genesys} Core Rulebook])."
-            },
+            "Swat",
             "Silhouette 4"
          ],
          "weapons": [
@@ -1658,18 +1607,9 @@
             }
          ],
          "abilities": [
-            {
-               "name": "EM Flood",
-               "description": "May make a {@difficulty Hard|Discipline} as an action; if successful, all characters with a communications device within long range suffer 2 strain per {@symbols s}; may spend {@symbols aa} or {@symbols t} to {@rule staggered|stagger|crb} one affected character for one round."
-            },
-            {
-               "name": "Radiowave Communications",
-               "description": "Can emit radio waves to communicate via any device capable of detecting them."
-            },
-            {
-               "name": "Spaceworthy",
-               "description": "Can survive in the vacuum of space without a space suit."
-            },
+            "EM Flood",
+            "Radiowave Communications",
+            "Spaceworthy",
             "Flyer"
          ],
          "talents": [
@@ -1736,10 +1676,7 @@
          ],
          "abilities": [
             "Amphibious",
-            {
-               "name": "Webbing",
-               "description": "May spend {@symbols hh} or {@symbols d} to cause a target making a check within medium range to become {@rule immobilized||crb} until the end of the encounter; may spend a maneuver to move an {@rule immobilized||crb} target one range band closer to this character; targets may escape webbing with a successful {@difficulty Hard|Coordination} as an action."
-            },
+            "Webbing",
             "Silhouette 2"
          ],
          "talents": [],
@@ -1836,10 +1773,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "You Can All Burn",
-               "description": "Once per encounter, may suffer 3 wounds as an action to force all characters within short range to make a {@difficulty Hard|Coordination} as an out-of-turn incidental; they suffer 8 wounds if they fail, and they suffer one Critical Injury per {@symbols hhh} or {@symbols d}."
-            }
+            "You Can All Burn"
          ],
          "talents": [
             {
@@ -1948,14 +1882,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Exploit Animosity",
-               "description": "Once per round, may spend a Story Point before another character performs a combat check or social skill check; the character must select a target of the Naalu exploiter's choice for their check or suffer 5 strain."
-            },
-            {
-               "name": "Influencer",
-               "description": "Once per encounter as an action, may make an {@b opposed {@skill Discipline||crb} versus {@skill Discipline||crb} check} targeting a character within medium range; if successful, the target must reveal their Fear, Flaw, or Desire publicly (GM's choice) and suffers 1 strain per {@symbols a}."
-            }
+            "Exploit Animosity",
+            "Influencer"
          ],
          "talents": [
             {
@@ -2037,10 +1965,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Biochemical Toxin",
-               "description": "When a character makes a check while engaged with a pituis, may spend {@symbols hhh} or {@symbols d} to cause the character to suffer the Bleeding Out Critical Injury."
-            }
+            "Biochemical Toxin"
          ],
          "talents": [],
          "weapons": [
@@ -2115,10 +2040,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Engine Trouble",
-               "description": "While within short range of a starship, may make an {@difficulty Average|Coordination} as an action; if successful, the worm (or minion group) attaches to the engine housing and inflicts a Critical Hit on the starship, adding +10 per {@symbols a} to the result."
-            }
+            "Engine Trouble"
          ],
          "talents": [],
          "weapons": [
@@ -2213,10 +2135,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Expert Instruction",
-               "description": "When performing the assist maneuver, may upgrade the ability of the check once instead of adding {@dice boost}."
-            },
+            "Expert Instruction",
             "Silhouette 2"
          ],
          "talents": [],
@@ -2357,14 +2276,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Charismatic Menace",
-               "description": "Allies within short range add {@symbols a} to checks they make; opponents within short range add {@symbols h} to checks they make."
-            },
-            {
-               "name": "Send a Message",
-               "description": "When this character incapacitates an enemy, may suffer 2 strain to force all opponents within medium range to make a {@difficulty Hard|fear} (see page 243 of the {@title Genesys} Core Rulebook)."
-            }
+            "Charismatic Menace",
+            "Send a Message"
          ],
          "talents": [
             {
@@ -2493,10 +2406,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Momentum",
-               "description": "If the sell-spear performed a move maneuver, they add +3 to the damage of one hit of any successful {@skill Brawl||crb} or {@skill Melee||crb} checks they make during the same turn."
-            }
+            "Momentum"
          ],
          "talents": [
             {
@@ -2610,10 +2520,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Compromise Security",
-               "description": "Once per encounter, may make a {@difficulty Hard|Computers} to take control of a security system (such as a sealed door, alarm system, or automated weapon) as an action for the remainder of the encounter, and may spend {@symbols t} to immediately use this system as an incidental."
-            }
+            "Compromise Security"
          ],
          "talents": [
             "Data Miner",
@@ -2712,10 +2619,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Forged Documents",
-               "description": "Once per encounter, may produce forged documents as a maneuver to add {@symbols ss} to the results of any {@skill Deception||crb} check."
-            }
+            "Forged Documents"
          ],
          "talents": [
             {
@@ -2821,10 +2725,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Butterfly Effect",
-               "description": "May spend {@symbols hh} from an opponent's check and suffer 2 strain to add {@symbols d} to the results of the next check made by an opponent."
-            }
+            "Butterfly Effect"
          ],
          "talents": [
             {
@@ -2956,10 +2857,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Pirate Loyalty",
-               "description": "If this group has two or more minions, and they generate {@symbols hh} or {@symbols d} during a check, the minion group splits into two minion groups, roughly in half (generating a new NPC Initiative slot if needed)."
-            }
+            "Pirate Loyalty"
          ],
          "talents": [],
          "weapons": [
@@ -3057,10 +2955,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Many Hands Make Light the Load",
-               "description": "While providing assistance on a {@skill Mechanics||crb} check to repair a vehicle, increase the hull trauma or system strain repaired by 2; if the check is to repair a Critical Hit, reduce the difficulty of the check by 1, to a minimum of {@difficulty Easy}; this is in addition to the other benefits of assistance."
-            }
+            "Many Hands Make Light the Load"
          ],
          "talents": [
             "Expert Scrapper"
@@ -3168,10 +3063,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Into Shadow",
-               "description": "After making any check, may spend {@symbols aa} or {@symbols t} to hide in shadows or cover within short range as a maneuver; shadow assassin does not reveal themself until they make a combat check (or perform another action that would reasonably cause them to be spotted), but they can be revealed if another character spends an action to make a successful {@b opposed {@skill Perception||crb} or {@skill Vigilance||crb} versus {@skill Stealth||crb} check}."
-            }
+            "Into Shadow"
          ],
          "talents": [
             {
@@ -3423,10 +3315,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Chameleonic",
-               "description": "May spend a Story Point to add {@symbols ss} to the results of any {@skill Stealth||crb} check this character makes or to add {@symbols ff} to the results of a {@skill Vigilance||crb} or {@skill Perception||crb} check another character makes to detect this character."
-            },
+            "Chameleonic",
             "Silhouette 0"
          ],
          "talents": [
@@ -3705,10 +3594,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Superior Firepower",
-               "description": "Add {@dice boost|2} to all {@skill Gunnery||crb} checks made by this character."
-            }
+            "Superior Firepower"
          ],
          "talents": [
             {
@@ -4283,10 +4169,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Symbiotic Coordination",
-               "description": "May always perform one additional free maneuver without suffering strain."
-            }
+            "Symbiotic Coordination"
          ],
          "talents": [
             {
@@ -4369,10 +4252,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Rotating Formation",
-               "description": "While a vehicle piloted by this character is within short range of any other allied vehicles, increase its defense by 2."
-            }
+            "Rotating Formation"
          ],
          "talents": [
             {
@@ -4536,10 +4416,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Fear of Failure",
-               "description": "When an allied character or allied vehicle within medium range is incapacitated or destroyed, this character suffers 1 strain and adds {@dice boost} to checks they make until the end of the next round."
-            }
+            "Fear of Failure"
          ],
          "talents": [
             {
@@ -4902,10 +4779,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Tactical Direction",
-               "description": "May spend a maneuver to direct one friendly minion group within medium range; that group may immediately perform a maneuver as an out-of-turn incidental or add {@dice boost} to the next check it makes."
-            }
+            "Tactical Direction"
          ],
          "talents": [
             {
@@ -5012,14 +4886,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Tactical Direction",
-               "description": "May spend a maneuver to direct one friendly minion group within medium range; that group may immediately perform a maneuver as an out-of-turn incidental or add {@dice boost} to the next check it makes."
-            },
-            {
-               "name": "Symbiotic Coordination",
-               "description": "May always perform one additional free maneuver without suffering strain."
-            }
+            "Tactical Direction",
+            "Symbiotic Coordination"
          ],
          "talents": [
             {
@@ -5126,18 +4994,9 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Tactical Direction",
-               "description": "May spend a maneuver to direct one friendly minion group within medium range; that group may immediately perform a maneuver as an out-of-turn incidental or add {@dice boost} to the next check it makes."
-            },
-            {
-               "name": "Wingpack Flyer",
-               "description": "Can fly via wingpack; see the {@sidebar Flying||crb} sidebar on page 100 of the {@title Genesys} Core Rulebook."
-            },
-            {
-               "name": "Many Feathers, One Wing",
-               "description": "Shikrai characters within long range of the field commander who assist on another Shikrai's check (see {@rule Assist||crb} on page 98 of the {@title Genesys} Core Rulebook) add an additional {@dice boost} to the check."
-            }
+            "Tactical Direction",
+            "Wingpack Flyer",
+            "Many Feathers, One Wing"
          ],
          "talents": [
             {
@@ -5250,10 +5109,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Tactical Direction",
-               "description": "May spend a maneuver to direct one friendly minion group within medium range; that group may immediately perform a maneuver as an out-of-turn incidental or add {@dice boost} to the next check it makes."
-            }
+            "Tactical Direction"
          ],
          "talents": [
             {
@@ -5382,14 +5238,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Tactical Direction",
-               "description": "May spend a maneuver to direct one friendly minion group within medium range; that group may immediately perform a maneuver as an out-of-turn incidental or add {@dice boost} to the next check it makes."
-            },
-            {
-               "name": "Elder Howl",
-               "description": "Once per session, may spend an action to force all opponents within long range to make an {@difficulty Easy|fear}; increase the difficulty of this check by 1 for each other Saar minion group, rival, or nemesis in the current encounter, to a maximum of {@difficulty Daunting}."
-            }
+            "Tactical Direction",
+            "Elder Howl"
          ],
          "talents": [
             {
@@ -5496,14 +5346,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Tactical Direction",
-               "description": "May spend a maneuver to direct one friendly minion group within medium range; that group may immediately perform a maneuver as an out-of-turn incidental or add {@dice boost} to the next check it makes."
-            },
-            {
-               "name": "Spark of Fury",
-               "description": "Once per encounter, may make an {@difficulty Average|Leadership}; if successful, all allies in the current encounter automatically succeed when making fear checks and add {@dice boost} to any {@skill Discipline||crb} checks they make."
-            }
+            "Tactical Direction",
+            "Spark of Fury"
          ],
          "talents": [
             {
@@ -5622,10 +5466,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Tactical Direction",
-               "description": "May spend a maneuver to direct one friendly minion group within medium range; that group may immediately perform a maneuver as an out-of-turn incidental or add {@dice boost} to the next check it makes."
-            }
+            "Tactical Direction"
          ],
          "talents": [
             {
@@ -5756,10 +5597,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Tactical Direction",
-               "description": "May spend a maneuver to direct one friendly minion group within medium range; that group may immediately perform a maneuver as an out-of-turn incidental or add {@dice boost} to the next check it makes."
-            }
+            "Tactical Direction"
          ],
          "talents": [
             {
@@ -5870,10 +5708,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Tactical Direction",
-               "description": "May spend a maneuver to direct one friendly minion group within medium range; that group may immediately perform a maneuver as an out-of-turn incidental or add {@dice boost} to the next check it makes."
-            }
+            "Tactical Direction"
          ],
          "talents": [
             {
@@ -5986,14 +5821,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Tactical Direction",
-               "description": "May spend a maneuver to direct one friendly minion group within medium range; that group may immediately perform a maneuver as an out-of-turn incidental or add {@dice boost} to the next check it makes."
-            },
-            {
-               "name": "Speed of Thought",
-               "description": "Add {@symbols ss} to all checks this character and any allies within medium range make to determine Initiative."
-            }
+            "Tactical Direction",
+            "Speed of Thought"
          ],
          "talents": [
             {
@@ -6106,10 +5935,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Tactical Direction",
-               "description": "May spend a maneuver to direct one friendly minion group within medium range; that group may immediately perform a maneuver as an out-of-turn incidental or add {@dice boost} to the next check it makes."
-            }
+            "Tactical Direction"
          ],
          "talents": [
             {
@@ -6238,10 +6064,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Tactical Direction",
-               "description": "May spend a maneuver to direct one friendly minion group within medium range; that group may immediately perform a maneuver as an out-of-turn incidental or add {@dice boost} to the next check it makes."
-            }
+            "Tactical Direction"
          ],
          "talents": [
             {
@@ -6348,10 +6171,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Tactical Direction",
-               "description": "May spend a maneuver to direct one friendly minion group within medium range; that group may immediately perform a maneuver as an out-of-turn incidental or add {@dice boost} to the next check it makes."
-            }
+            "Tactical Direction"
          ],
          "talents": [
             {
@@ -6464,10 +6284,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Tactical Direction",
-               "description": "May spend a maneuver to direct one friendly minion group within medium range; that group may immediately perform a maneuver as an out-of-turn incidental or add {@dice boost} to the next check it makes."
-            }
+            "Tactical Direction"
          ],
          "talents": [
             {
@@ -6580,14 +6397,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Tactical Direction",
-               "description": "May spend a maneuver to direct one friendly minion group within medium range; that group may immediately perform a maneuver as an out-of-turn incidental or add {@dice boost} to the next check it makes."
-            },
-            {
-               "name": "Fevered Abandon",
-               "description": "All Yin Brotherhood characters within medium range add {@symbols sa} to combat checks they make; all opponents add {@symbols s} to all combat checks targeting a Yin Brotherhood character within medium range."
-            }
+            "Tactical Direction",
+            "Fevered Abandon"
          ],
          "talents": [
             {
@@ -6700,10 +6511,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Tactical Direction",
-               "description": "May spend a maneuver to direct one friendly minion group within medium range; that group may immediately perform a maneuver as an out-of-turn incidental or add {@dice boost} to the next check it makes."
-            },
+            "Tactical Direction",
             "Silhouette 0"
          ],
          "talents": [
@@ -6922,10 +6730,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Wingpack Flyer",
-               "description": "Can fly via wingpack; see the {@sidebar Flying||crb} sidebar on page 100 of the {@title Genesys} Core Rulebook."
-            }
+            "Wingpack Flyer"
          ],
          "talents": [],
          "weapons": [
@@ -7831,10 +7636,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Symbiotic Coordination",
-               "description": "May always perform one additional free maneuver without suffering strain."
-            }
+            "Symbiotic Coordination"
          ],
          "talents": [],
          "weapons": [
@@ -7951,10 +7753,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Fighting Horde",
-               "description": "When this character attacks an opponent engaged with an ally, remove {@dice setback|2} from the pool."
-            }
+            "Fighting Horde"
          ],
          "talents": [],
          "weapons": [
@@ -8088,10 +7887,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Computer-Assisted Targeting",
-               "description": "After using the aim maneuver and making a ranged attack, add {@symbols s} to the results instead of adding {@dice boost} to the pool."
-            }
+            "Computer-Assisted Targeting"
          ],
          "talents": [],
          "weapons": [
@@ -8203,10 +7999,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Fear of Failure",
-               "description": "When an allied character or allied vehicle within medium range is incapacitated or destroyed, this character suffers 1 strain and adds {@dice boost} to checks they make until the end of the next round."
-            }
+            "Fear of Failure"
          ],
          "talents": [],
          "weapons": [
@@ -8669,10 +8462,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Avian Agility",
-               "description": "Once per session after making a skill check that uses this character's {@characteristic Agility||crb}, may spend a Story Point to add {@symbols ssaa} to the results."
-            }
+            "Avian Agility"
          ],
          "talents": [
             {
@@ -8787,10 +8577,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Telepathic Dogfighter",
-               "description": "While piloting a starship of silhouette 4 or less that is targeted by an attack from an organic opponent, may suffer 4 strain to add {@symbols ffff} to the results."
-            }
+            "Telepathic Dogfighter"
          ],
          "talents": [
             {
@@ -8899,14 +8686,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Grab and Toss",
-               "description": "After making a failed combat check, may spend {@symbols aaa} or {@symbols t} to choose one silhouette 1 or 0 character within short range and move them up to one range band in any direction; the character is knocked {@rule prone||crb} and suffers 4 strain."
-            },
-            {
-               "name": "Multitentacled",
-               "description": "After making a successful combat check, may spend 3 strain to inflict one additional hit with tentacle spike against one other target within short range that is no more difficult to hit than the original target, dealing base damage +1 per {@symbols s}; may do so up to three times per turn."
-            }
+            "Grab and Toss",
+            "Multitentacled"
          ],
          "talents": [
             {
@@ -9140,10 +8921,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Supporting Tactics",
-               "description": "As an action, may choose a single allied warship within strategic range and make a {@difficulty Hard|Leadership}; if successful, all opponents may not target other ships with combat checks if they could target the selected allied warship instead."
-            }
+            "Supporting Tactics"
          ],
          "talents": [
             {
@@ -9345,11 +9123,8 @@
             }
          ],
          "abilities": [
-            "Terrifying",
-            {
-               "name": "Fighting Horde",
-               "description": "On combat checks against an opponent engaged with an ally, remove {@dice setback|2} from the pool."
-            }
+            "Terrifying 3",
+            "Fighting Horde"
          ],
          "weapons": [
             {
@@ -9659,12 +9434,9 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Can Opener",
-               "description": "May select an engaged vehicle and make a {@difficulty Hard|Athletics}; if successful, a silhouette 0 hole is opened in the vehicle's hull and it suffers a Hull Damaged Critical Hit."
-            },
+            "Can Opener",
             "Nekro",
-            "Terrifying",
+            "Terrifying 4",
             "Silhouette 3"
          ],
          "talents": [
@@ -9782,10 +9554,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Multitentacled",
-               "description": "After making a successful combat check, may spend 3 strain to inflict one additional hit with tentacle blade against one other target within short range that is no more difficult to hit than the original target, dealing base damage +1 per 󲊳; may do so up to three times per turn."
-            },
+            "Multitentacled",
             "Nekro",
             "Silhouette 2"
          ],
@@ -9894,10 +9663,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Bodiless",
-               "description": "Does not need to breathe, eat, or drink and cannot survive outside of a Nekro vehicle; immune to poisons and toxins; cannot suffer damage from attacks but is destroyed if strain causes it to exceed its wound threshold."
-            }
+            "Bodiless"
          ],
          "weapons": [],
          "description": [
@@ -9954,10 +9720,7 @@
             "Flyer",
             "Nekro",
             "Swarm",
-            {
-               "name": "Viral Infection",
-               "description": "may spend {@symbols hhh} or {@symbols d} from an engaged opponent's check to disable one piece of electronic equipment that opponent is carrying; treat as having suffered major damage [see page 89 of the Genesys Core Rulebook]."
-            }
+            "Viral Infection"
          ],
          "weapons": [
             {
@@ -10061,14 +9824,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Four-Armed",
-               "description": "May perform a second maneuver without suffering strain."
-            },
-            {
-               "name": "Reboot Resurrection",
-               "description": "May make a {@difficulty Hard|Medicine} as an action; if successful, one L1Z1X rival or nemesis within medium range heals 5 wounds plus 1 additional wound per {@symbols s}, or may add one L1Z1X minion to a minion group that has lost at least one minion during the current encounter."
-            }
+            "Four-Armed",
+            "Reboot Resurrection"
          ],
          "talents": [
             {
@@ -10179,18 +9936,9 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Discrete Saboteur",
-               "description": "May spend {@symbols t} from a check this character makes to cause one piece of equipment or a vehicle to break and become unusable for the remainder of the encounter."
-            },
-            {
-               "name": "Four-Armed",
-               "description": "May perform a second maneuver without suffering strain."
-            },
-            {
-               "name": "Upsetting Visage",
-               "description": "This character adds {@dice setback|2} to all {@skill Charm||crb} and {@skill Leadership||crb} checks it makes and adds {@dice boost|2} to all {@skill Coercion||crb} checks it makes; if the check inflicts strain, the target suffers 2 additional strain."
-            }
+            "Discrete Saboteur",
+            "Four-Armed",
+            "Upsetting Visage"
          ],
          "talents": [
             {
@@ -10274,18 +10022,9 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Four-Armed",
-               "description": "May perform a second maneuver without suffering strain."
-            },
-            {
-               "name": "Mindnet",
-               "description": "A group of these characters may remain a single minion group while at up to long range of one another."
-            },
-            {
-               "name": "Nigh-Immortal",
-               "description": "After making a check, may spend {@symbols t} to heal all wounds on one defeated minion from this group (returning it to the group with all wounds healed)."
-            }
+            "Four-Armed",
+            "Mindnet",
+            "Nigh-Immortal"
          ],
          "talents": [],
          "weapons": [
@@ -10389,14 +10128,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Four-Armed",
-               "description": "May perform a second maneuver without suffering strain."
-            },
-            {
-               "name": "Mindnet",
-               "description": "A group of these characters may remain a single minion group while within long range of one another."
-            }
+            "Four-Armed",
+            "Mindnet"
          ],
          "talents": [],
          "gear": [
@@ -10482,10 +10215,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Designate Target",
-               "description": "As an action, may make a {@difficulty Hard|Computers} targeting one structure or location within extreme range; if successful, decrease the difficulty of allied starships' attacks against that target by 2, to a minimum of {@difficulty Easy}, until the end of the round."
-            }
+            "Designate Target"
          ],
          "talents": [
             {
@@ -10689,10 +10419,7 @@
          ],
          "abilities": [
             "Death Cult",
-            {
-               "name": "Vuil'raith Bargain",
-               "description": "Once per encounter, may spend a Story Point as an out-of-turn incidental to heal up to 6 wounds that this character is suffering."
-            }
+            "Vuil'raith Bargain"
          ],
          "talents": [
             {
@@ -10846,14 +10573,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Tempting Lies",
-               "description": "As an action, may make an {@b opposed {@skill Deception||crb} versus {@skill Vigilance||crb} check} targeting one opponent within medium range; if successful, target is {@rule immobilized||crb} until they make a successful {@difficulty Daunting|Cool} as an action; may spend {@symbols t} from check to cause target to also suffer 8 strain."
-            },
-            {
-               "name": "Terrifying",
-               "description": "At the start of the encounter, all opponents must make a {@difficulty Daunting|fear|2} as an out-of-turn incidental, as per page 243 of the {@title Genesys} Core Rulebook; if there are multiple sources of fear in the encounter, opponents only make one fear check against the most terrifying enemy."
-            },
+            "Tempting Lies",
+            "Terrifying Appearance Improved",
             "Silhouette 2"
          ],
          "talents": [
@@ -10958,10 +10679,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Devour",
-               "description": "When attacking an {@rule immobilized||crb} or {@rule prone||crb} target, each uncanceled {@symbols s} increases the damage dealt by +2 instead of +1."
-            },
+            "Devour",
             "Flyer",
             "Swarm"
          ],
@@ -11051,11 +10769,8 @@
             }
          ],
          "abilities": [
-            "Terrifying",
-            {
-               "name": "Vehicle Flip",
-               "description": "As an action, may make a {@difficulty Daunting|Athletics} to target a vehicle of up to silhouette 3; if successful, the vehicle is overturned, cannot move, and suffers a Critical Hit; other effects, such as being unable to fire weapons, may occur at the GM's discretion."
-            },
+            "Terrifying 3",
+            "Vehicle Flip",
             "Silhouette 3"
          ],
          "talents": [
@@ -11134,10 +10849,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Horde of Nightmares",
-               "description": "If an opponent in the encounter makes a fear check because of an ally of the Nightmare Horde, add {@dice setback} to the check for each Nightmare Horde minion group present in the encounter."
-            }
+            "Horde of Nightmares"
          ],
          "talents": [],
          "weapons": [
@@ -11221,14 +10933,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "A Hundred Scything Legs",
-               "description": "Whenever the terror beast makes a check (including a combat check), may spend {@symbols a} or {@symbols t} to cause one engaged enemy to suffer a hit from this character's skewer-legs, dealing base damage."
-            },
-            {
-               "name": "Terrifying",
-               "description": "At the start of the encounter, all opponents must make a {@difficulty Formidable|fear} as an out-of-turn incidental, as per page 243 of the {@title Genesys} Core Rulebook; if there are multiple sources of fear in the encounter, opponents only make one fear check against the most terrifying enemy."
-            },
+            "A Hundred Scything Legs",
+            "Terrifying 5",
             "Silhouette 3"
          ],
          "talents": [
@@ -11318,14 +11024,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Legion Fighter",
-               "description": "While engaged with an opponent, may spend a maneuver to add {@symbols ss} to the results of the next melee combat check an ally makes targeting that opponent before the start of this character's next turn."
-            },
-            {
-               "name": "Wormhole Walker",
-               "description": "May spend a Story Point to teleport anywhere within extreme range as a maneuver."
-            }
+            "Legion Fighter",
+            "Wormhole Walker"
          ],
          "talents": [],
          "weapons": [
@@ -11425,14 +11125,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Blank",
-               "description": "May not be targeted by or suffer strain form social skill checks."
-            },
-            {
-               "name": "Genetic Payload",
-               "description": "Once per encounter as an action, may make an {@b opposed {@skill Brawl||crb} versus {@skill Coordination||crb} check} targeting one engaged nonmechanical opponent; if successful, the target must make a {@difficulty Hard|Resilience} at the end of the current encounter; if they fail, they suffer 2 wounds and must make the check again every five minutes until they succeed or they exceed their wound threshold, at which point the target becomes a Mahact thrall clone [if they are a PC, they are effectively dead at this point]; this effect may also be ended with a successful {@difficulty Daunting|Medicine}."
-            }
+            "Blank",
+            "Genetic Payload"
          ],
          "talents": [],
          "weapons": [
@@ -11446,42 +11140,6 @@
                "critical": 4,
                "range": "Engaged"
             }
-         ]
-      },
-      {
-         "name": "Mahact Cloned Pilot Brain Network",
-         "page": 143,
-         "type": "minion",
-         "characteristics": {
-            "brawn": 2,
-            "agility": 2,
-            "intellect": 2,
-            "cunning": 2,
-            "willpower": 2,
-            "presence": 2
-         },
-         "skills": [
-            {
-               "name": "Piloting",
-               "characteristic": "agility",
-               "source": "crb"
-            },
-            {
-               "name": "Gunnery",
-               "characteristic": "agility",
-               "source": "crb"
-            }
-         ],
-         "derived": {
-            "wounds": 4,
-            "defense": [
-               0,
-               0
-            ],
-            "soak": 0
-         },
-         "description": [
-            "This adversary is mentioned in the {@vehicle Interceptor Starfighter (Mahact Dominus Strike Drone)|Mahact Dominus Strike Drone} vehicle, but was not published with a statblock of its own."
          ]
       },
       {
@@ -11536,14 +11194,8 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Electromagnetic Feet",
-               "description": "Can move normally in zero-gravity."
-            },
-            {
-               "name": "Nekro",
-               "description": "Does not need to breathe, eat, or drink and can survive in vacuum; immune to poisons and toxins."
-            },
+            "Electromagnetic Feet",
+            "Nekro",
             "Silhouette 2"
          ],
          "weapons": [
@@ -11627,10 +11279,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Nekro",
-               "description": "Does not need to breathe, eat, or drink and can survive in vacuum; immune to poisons and toxins."
-            },
+            "Nekro",
             "Silhouette 3"
          ],
          "weapons": [
@@ -11784,10 +11433,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Applied Education",
-               "description": "Once per encounter, may add {@symbols aa} to any skill check."
-            }
+            "Applied Education"
          ],
          "weapons": [
             {
@@ -11814,6 +11460,937 @@
             "Hazard-resistant environmental suit: +1 soak",
             "Facility security key",
             "Portable toolkit"
+         ]
+      }
+   ],
+   "adversaryAbility": [
+      {
+         "name": "A Hundred Scything Legs",
+         "description": [
+            "Whenever this character makes a check (including a combat check), may spend {@symbols a} or {@symbols t} to cause one engaged enemy to suffer a hit from this character's skewer-legs, dealing base damage."
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "offensive",
+            "results spend",
+            "active",
+            "incidental",
+            "crowd control"
+         ]
+      },
+      {
+         "name": "Ad Hominem Attack",
+         "description": [
+            "After making a social skill check, may spend {@symbols aa} or {@symbols t} to recover 4 strain."
+         ],
+         "tags": [
+            "social",
+            "results spend",
+            "recovery",
+            "active",
+            "incidental"
+         ]
+      },
+      {
+         "name": "Applied Education",
+         "description": [
+            "Once per encounter, may add {@symbols aa} to any skill check."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "encounter",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Avian Agility",
+         "description": [
+            "Once per session after making a skill check that uses this character's {@characteristic Agility||crb}, may spend a Story Point to add {@symbols ssaa} to the results."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "skill check modifier",
+            "story point cost",
+            "session"
+         ]
+      },
+      {
+         "name": "Biochemical Toxin",
+         "description": [
+            "When a character makes a check while engaged with this character, may spend {@symbols hhh} or {@symbols d} to cause the character to suffer the Bleeding Out Critical Injury."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "defensive",
+            "critical injury",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Blank",
+         "description": [
+            "May not be targeted by or suffer strain form social skill checks."
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "defensive"
+         ]
+      },
+      {
+         "name": "Bodiless",
+         "description": [
+            "Does not need to breathe, eat, or drink and cannot survive outside of a Nekro vehicle; immune to poisons and toxins; cannot suffer damage from attacks but is destroyed if strain causes it to exceed its wound threshold."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "resistance"
+         ]
+      },
+      {
+         "name": "Building to a Point",
+         "description": [
+            "May spend {@symbols aaa} to add {@symbols t} to the results of this character's next social check during this encounter."
+         ],
+         "tags": [
+            "social",
+            "active",
+            "incidental",
+            "results spend",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Burrower",
+         "description": [
+            "May move through solid ground as if it were difficult terrain, leaving a tunnel behind it."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "movement"
+         ]
+      },
+      {
+         "name": "Butterfly Effect",
+         "description": [
+            "May spend {@symbols hh} from an opponent's check and suffer 2 strain to add {@symbols d} to the results of the next check made by an opponent."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "results spend",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Can Opener",
+         "description": [
+            "May select an engaged vehicle and make a {@difficulty Hard|Athletics}; if successful, a silhouette 0 hole is opened in the vehicle's hull and it suffers a Hull Damaged Critical Hit."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "action",
+            "critical injury",
+            "vehicles"
+         ]
+      },
+      {
+         "name": "Chameleonic",
+         "description": [
+            "May spend a Story Point to add {@symbols ss} to the results of any {@skill Stealth||crb} check this character makes or to add {@symbols ff} to the results of a {@skill Vigilance||crb} or {@skill Perception||crb} check another character makes to detect this character."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "story point cost",
+            "skill check modifier",
+            "defensive"
+         ]
+      },
+      {
+         "name": "Compromise Security",
+         "description": [
+            "Once per encounter, may make a {@difficulty Hard|Computers} to take control of a security system (such as a sealed door, alarm system, or automated weapon) as an action for the remainder of the encounter, and may spend {@symbols t} to immediately use this system as an incidental."
+         ],
+         "tags": [
+            "encounter",
+            "general",
+            "active",
+            "action",
+            "incidental",
+            "narrative",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Computer-Assisted Targeting",
+         "description": [
+            "After using the aim maneuver and making a ranged attack, add {@symbols s} to the results instead of adding {@dice boost} to the pool."
+         ],
+         "tags": [
+            "combat",
+            "results modifier",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Death Cult",
+         "description": [
+            "This character automatically passes {@rule fear||crb} checks and reduces any strain it suffers by 3, to a minimum of 1."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "defensive",
+            "fear"
+         ]
+      },
+      {
+         "name": "Designate Target",
+         "description": [
+            "As an action, may make a {@difficulty Hard|Computers} targeting one structure or location within extreme range; if successful, decrease the difficulty of allied starships' attacks against that target by 2, to a minimum of {@difficulty Easy}, until the end of the round."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "action",
+            "leader",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Desperate Plea",
+         "description": [
+            "May make an {@b opposed {@skill Charm||crb} versus {@skill Cool||crb} check} targeting one character within medium range as an action; if successful, the target must spend their next action to ensure that this character is okay."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "action",
+            "opposed"
+         ]
+      },
+      {
+         "name": "Devour",
+         "description": [
+            "When attacking an {@rule immobilized||crb} or {@rule prone||crb} target, each uncanceled {@symbols s} increases the damage dealt by +2 instead of +1."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "status effect",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Discrete Saboteur",
+         "description": [
+            "May spend {@symbols t} from a check this character makes to cause one piece of equipment or a vehicle to break and become unusable for the remainder of the encounter."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "results spend",
+            "offensive",
+            "gear"
+         ]
+      },
+      {
+         "name": "EM Flood",
+         "description": [
+            "May make a {@difficulty Hard|Discipline} as an action; if successful, all characters with a communications device within long range suffer 2 strain per {@symbols s}; may spend {@symbols aa} or {@symbols t} to {@rule staggered|stagger|crb} one affected character for one round."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "action",
+            "results spend",
+            "status effect",
+            "offensive",
+            "crowd control"
+         ]
+      },
+      {
+         "name": "Elder Howl",
+         "description": [
+            "Once per session, may spend an action to force all opponents within long range to make an {@difficulty Easy|fear}; increase the difficulty of this check by 1 for each other minion group, rival, or nemesis of this character's same type in the current encounter, to a maximum of {@difficulty Daunting}."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "action",
+            "fear",
+            "support",
+            "crowd control"
+         ]
+      },
+      {
+         "name": "Electromagnetic Feet",
+         "description": [
+            "Can move normally in zero-gravity."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "movement"
+         ]
+      },
+      {
+         "name": "Engine Trouble",
+         "description": [
+            "While within short range of a starship, may make an {@difficulty Average|Coordination} as an action; if successful, this character (or minion group) attaches to the engine housing and inflicts a Critical Hit on the starship, adding +10 per {@symbols a} to the result."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "action",
+            "critical injury",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Expert Instruction",
+         "description": [
+            "When performing the assist maneuver, may upgrade the ability of the check once instead of adding {@dice boost}."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "skill check modifier",
+            "support"
+         ]
+      },
+      {
+         "name": "Exploit Animosity",
+         "description": [
+            "Once per round, may spend a Story Point before another character performs a combat check or social skill check; the character must select a target of this character's choice for their check or suffer 5 strain."
+         ],
+         "tags": [
+            "combat",
+            "social",
+            "active",
+            "incidental",
+            "story point cost"
+         ]
+      },
+      {
+         "name": "Fear of Failure",
+         "description": [
+            "When an allied character or allied vehicle within medium range is incapacitated or destroyed, this character suffers 1 strain and adds {@dice boost} to checks they make until the end of the next round."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Fevered Abandon",
+         "description": [
+            "All characters of this same type within medium range add {@symbols sa} to combat checks they make; all opponents add {@symbols s} to all combat checks targeting a character of this same type within medium range."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "support",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Fighting Horde",
+         "description": [
+            "When this character attacks an opponent engaged with an ally, remove {@dice setback|2} from the pool."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "skill check modifier",
+            "offensive",
+            "support"
+         ]
+      },
+      {
+         "name": "Fling Aside",
+         "description": [
+            "As a maneuver, may make an {@b opposed {@skill Coordination||crb} versus {@skill Coordination||crb} check} targeting one engaged silhouette 1 or 0 character; if successful, fling the target up to long range in a direction of this character's choosing; on the target's next turn, it suffers the effects of {@rule falling||crb} from short range (see page 112 of the {@title Genesys} Core Rulebook)."
+         ],
+         "tags": [
+            "active",
+            "maneuver",
+            "opposed",
+            "movement"
+         ]
+      },
+      {
+         "name": "Forged Documents",
+         "description": [
+            "Once per encounter, may produce forged documents as a maneuver to add {@symbols ss} to the results of any {@skill Deception||crb} check."
+         ],
+         "tags": [
+            "active",
+            "maneuver",
+            "social",
+            "results modifier",
+            "encounter"
+         ]
+      },
+      {
+         "name": "Four-Armed",
+         "description": [
+            "May perform a second maneuver without suffering strain."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "free maneuver"
+         ]
+      },
+      {
+         "name": "Genetic Payload",
+         "description": [
+            "Once per encounter as an action, may make an {@b opposed {@skill Brawl||crb} versus {@skill Coordination||crb} check} targeting one engaged nonmechanical opponent; if successful, the target must make a {@difficulty Hard|Resilience} at the end of the current encounter; if they fail, they suffer 2 wounds and must make the check again every five minutes until they succeed or they exceed their wound threshold, at which point the target becomes a {@adversary Mahact thrall clone||eoti} (if they are a PC, they are effectively dead at this point); this effect may also be ended with a successful {@difficulty Daunting|Medicine}."
+         ],
+         "tags": [
+            "encounter",
+            "active",
+            "action",
+            "general"
+         ]
+      },
+      {
+         "name": "Grab and Toss",
+         "description": [
+            "After making a failed combat check, may spend {@symbols aaa} or {@symbols t} to choose one silhouette 1 or 0 character within short range and move them up to one range band in any direction; the character is knocked {@rule prone||crb} and suffers 4 strain."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental",
+            "results spend",
+            "movement",
+            "status effect"
+         ]
+      },
+      {
+         "name": "Horde of Nightmares",
+         "description": [
+            "If an opponent in the encounter makes a fear check because of an ally of this character, add {@dice setback} to the check for each minion group that shares a type with this character that is present in the encounter."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "support",
+            "fear",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Hyperbolic Eloquence",
+         "description": [
+            "Once per encounter, may make an {@difficulty Average|Deception} targeting one character as an action; if successful, target adds {@symbols fh} to the results of their next social skill check; may spend {@symbols aa} to affect an additional target or {@symbols t} to cause all targets to add {@symbols ff} instead of {@symbols f}."
+         ],
+         "tags": [
+            "encounter",
+            "active",
+            "action",
+            "results modifier",
+            "social",
+            "results spend",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Influencer",
+         "description": [
+            "Once per encounter as an action, may make an {@b opposed {@skill Discipline||crb} versus {@skill Discipline||crb} check} targeting a character within medium range; if successful, the target must reveal their Fear, Flaw, or Desire publicly (GM's choice) and suffers 1 strain per {@symbols a}."
+         ],
+         "tags": [
+            "encounter",
+            "active",
+            "action",
+            "opposed",
+            "motivation",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Infuriating Enigma",
+         "description": [
+            "Characters making a social skill check targeting this character suffer 2 strain per {@symbols h}."
+         ],
+         "tags": [
+            "social",
+            "results spend",
+            "defensive",
+            "passive"
+         ]
+      },
+      {
+         "name": "Into Shadow",
+         "description": [
+            "After making any check, may spend {@symbols aa} or {@symbols t} to hide in shadows or cover within short range as a maneuver; this character does not reveal themself until they make a combat check (or perform another action that would reasonably cause them to be spotted), but they can be revealed if another character spends an action to make a successful {@b opposed {@skill Perception||crb} or {@skill Vigilance||crb} versus {@skill Stealth||crb} check}."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "maneuver",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Ionic Discharge",
+         "description": [
+            "After making a successful {@skill melee||crb} attack, may spend {@symbols aa} to reduce all damage dealt to 0 and cause one piece of equipment the target is holding to cease functioning for the rest of the encounter."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental",
+            "offensive",
+            "gear"
+         ]
+      },
+      {
+         "name": "Legion Fighter",
+         "description": [
+            "While engaged with an opponent, may spend a maneuver to add {@symbols ss} to the results of the next {@skill melee||crb} combat check an ally makes targeting that opponent before the start of this character's next turn."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "maneuver",
+            "results spend",
+            "support"
+         ]
+      },
+      {
+         "name": "Many Feathers, One Wing",
+         "description": [
+            "Shikrai characters within long range of this character who assisted on another Shikrai's check (see {@rule Assist||crb} on page 98 of the {@title Genesys} Core Rulebook) add an additional {@dice boost} to the check."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "leader",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Master Manipulator",
+         "description": [
+            "If this character knows a character's Desire or Fear Motivation, they downgrade the difficulty of all {@skill Deception||crb} and {@skill Leadership||crb} checks targeting the character twice."
+         ],
+         "tags": [
+            "social",
+            "motivation",
+            "passive",
+            "skill check modifier",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Mindnet",
+         "description": [
+            "A group of these characters may remain a single minion group while at up to long range of one another."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "support"
+         ]
+      },
+      {
+         "name": "Nekro",
+         "description": [
+            "Does not need to breathe, eat, or drink and can survive in vacuum; immune to poisons and toxins."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "resistance"
+         ]
+      },
+      {
+         "name": "Nigh-Immortal",
+         "description": [
+            "After making a check, may spend {@symbols t} to heal all wounds on one defeated minion from this group (returning it to the group with all wounds healed)."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "results spend",
+            "recovery",
+            "support"
+         ]
+      },
+      {
+         "name": "One More Thing...",
+         "description": [
+            "When targeted by a {@skill Negotiation||crb} check, may spend {@symbols hh} to force the other party to include an item worth at least 100 aurei in the deal; this item may be visibly in their possession or something they must acquire to close the deal."
+         ],
+         "tags": [
+            "social",
+            "active",
+            "incidental",
+            "results spend",
+            "gear"
+         ]
+      },
+      {
+         "name": "Pirate Loyalty",
+         "description": [
+            "If this group has two or more minions, and they generate {@symbols hh} or {@symbols d} during a check, the minion group splits into two minion groups, roughly in half (generating a new NPC Initiative slot if needed)."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Radiowave Communications",
+         "description": [
+            "Can emit radio waves to communicate via any device capable of detecting them."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "narrative"
+         ]
+      },
+      {
+         "name": "Reboot Resurrection",
+         "description": [
+            "May make a {@difficulty Hard|Medicine} as an action; if successful, one L1Z1X rival or nemesis within medium range heals 5 wounds plus 1 additional wound per {@symbols s}, or may add one L1Z1X minion to a minion group that has lost at least one minion during the current encounter."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "action",
+            "recovery",
+            "support",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Regenerative Balm",
+         "description": [
+            "As an action, may apply a balm to one engaged character, allowing the target to make an {@difficulty Average|Resilience} check as an out-of-turn incidental; for each {@symbols s}, the target heals one Critical Injury; if successful, the target also heals 2 wounds at the start of each of their turns for the remainder of the encounter."
+         ],
+         "tags": [
+            "active",
+            "action",
+            "recovery",
+            "critical injury",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Rotating Formation",
+         "description": [
+            "While a vehicle piloted by this character is within short range of any other allied vehicles, increase its defense by 2."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "support",
+            "defensive"
+         ]
+      },
+      {
+         "name": "Scent Tracking",
+         "description": [
+            "Add {@symbols ss} to the results of {@skill Perception||crb}, {@skill Survival||crb}, or {@skill Vigilance||crb} checks this character makes to track or spot a character or to {@rule determine Initiative||crb}."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "results modifier",
+            "initiative"
+         ]
+      },
+      {
+         "name": "Scholarly Guidance",
+         "description": [
+            "Once per encounter, may spend an action to reduce the difficulty of another character's next non-combat check by 2."
+         ],
+         "tags": [
+            "encounter",
+            "active",
+            "action",
+            "skill check modifier",
+            "support"
+         ]
+      },
+      {
+         "name": "Send a Message",
+         "description": [
+            "When this character incapacitates an enemy, may suffer 2 strain to force all opponents within medium range to make a {@difficulty Hard|fear} (see {@rule fear||crb}, page 243 of the {@title Genesys} Core Rulebook)."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental",
+            "fear"
+         ]
+      },
+      {
+         "name": "Spaceworthy",
+         "description": [
+            "Can survive in the vacuum of space without a space suit."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "resistance"
+         ]
+      },
+      {
+         "name": "Spark of Fury",
+         "description": [
+            "Once per encounter, may make an {@difficulty Average|Leadership}; if successful, all allies in the current encounter automatically succeed when making {@rule fear||crb} checks and add {@dice boost} to any {@skill Discipline||crb} checks they make."
+         ],
+         "tags": [
+            "encounter",
+            "active",
+            "action",
+            "leader",
+            "fear",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Speed of Thought",
+         "description": [
+            "Add {@symbols ss} to all checks this character and any allies within medium range make to {@rule determine Initiative||crb}."
+         ],
+         "tags": [
+            "combat",
+            "initiative",
+            "results modifier",
+            "leader",
+            "passive"
+         ]
+      },
+      {
+         "name": "Superior Firepower",
+         "description": [
+            "Add {@dice boost|2} to all {@skill Gunnery||crb} checks made by this character."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Supporting Tactics",
+         "description": [
+            "As an action, may choose a single allied warship within strategic range and make a {@difficulty Hard|Leadership}; if successful, all opponents may not target other ships with combat checks if they could target the selected allied warship instead."
+         ],
+         "tags": [
+            "active",
+            "action",
+            "leader",
+            "defensive"
+         ]
+      },
+      {
+         "name": "Swat",
+         "description": [
+            "After making a successful combat check with its fists against a target of silhouette 2 or smaller, may spend {@symbols aaa} or {@symbols t} to fling the target up to medium range in a direction of this character's choosing; on the target's next turn, it suffers the effects of {@rule falling||crb} from short range (see page 112 of the {@title Genesys} Core Rulebook))."
+         ],
+         "tags": [
+            "combat",
+            "results spend",
+            "active",
+            "incidental",
+            "movement"
+         ]
+      },
+      {
+         "name": "Symbiotic Coordination",
+         "description": [
+            "May always perform one additional free maneuver without suffering strain."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "free maneuver"
+         ]
+      },
+      {
+         "name": "Symphonic Node",
+         "description": [
+            "May suffer 2 strain to add {@symbols sa} to the results of all checks made by {@rule Arborec} within extreme range until this character's next turn."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "leader"
+         ]
+      },
+      {
+         "name": "Telepathic Dogfighter",
+         "description": [
+            "While piloting a starship of silhouette 4 or less that is targeted by an attack from an organic opponent, may suffer 4 strain to add {@symbols ffff} to the results."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental",
+            "results modifier",
+            "defensive"
+         ]
+      },
+      {
+         "name": "Tempting Lies",
+         "description": [
+            "As an action, may make an {@b opposed {@skill Deception||crb} versus {@skill Vigilance||crb} check} targeting one opponent within medium range; if successful, target is {@rule immobilized||crb} until they make a successful {@difficulty Daunting|Cool} as an action; may spend {@symbols t} from check to cause target to also suffer 8 strain."
+         ],
+         "tags": [
+            "social",
+            "active",
+            "action",
+            "opposed",
+            "status effect",
+            "results spend"
+         ]
+      },
+      {
+         "name": "This Ain't Mecatol Rex",
+         "description": [
+            "Add {@dice setback} to social skill checks targeting this minion group for each {@rule the keleres of the council|Keleres}-affiliated character within short range."
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "skill check modifier",
+            "defensive",
+            "factions"
+         ]
+      },
+      {
+         "name": "Upsetting Visage",
+         "description": [
+            "This character adds {@dice setback|2} to all {@skill Charm||crb} and {@skill Leadership||crb} checks it makes and adds {@dice boost|2} to all {@skill Coercion||crb} checks it makes; if the check inflicts strain, the target suffers 2 additional strain."
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "skill check modifier",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Vehicle Flip",
+         "description": [
+            "As an action, may make a {@difficulty Daunting|Athletics} to target a vehicle of up to silhouette 3; if successful, the vehicle is overturned, cannot move, and suffers a Critical Hit; other effects, such as being unable to fire weapons, may occur at the GM's discretion."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "action",
+            "vehicles",
+            "critical injury",
+            "status effect"
+         ]
+      },
+      {
+         "name": "Viral Infection",
+         "description": [
+            "May spend {@symbols hhh} or {@symbols d} from an engaged opponent's check to disable one piece of electronic equipment that opponent is carrying; treat as having suffered {@rule item maintenance|major damage|crb} (see page 89 of the Genesys Core Rulebook)."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental (out of turn)",
+            "results spend",
+            "offensive",
+            "gear"
+         ]
+      },
+      {
+         "name": "Vuil'raith Bargain",
+         "description": [
+            "Once per encounter, may spend a Story Point as an out-of-turn incidental to heal up to 6 wounds that this character is suffering."
+         ],
+         "tags": [
+            "encounter",
+            "story point cost",
+            "active",
+            "incidental (out of turn)",
+            "recovery"
+         ]
+      },
+      {
+         "name": "Webbing",
+         "description": [
+            "May spend {@symbols hh} or {@symbols d} to cause a target making a check within medium range to become {@rule immobilized||crb} until the end of the encounter; may spend a maneuver to move an {@rule immobilized||crb} target one range band closer to this character; targets may escape webbing with a successful {@difficulty Hard|Coordination} as an action."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental (out of turn)",
+            "results spend",
+            "status effect",
+            "maneuver",
+            "movement",
+            "crowd control"
+         ]
+      },
+      {
+         "name": "Wingpack Flyer",
+         "description": [
+            "Can fly via wingpack; see the {@sidebar Flying||crb} sidebar on page 100 of the {@title Genesys} Core Rulebook."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "movement"
+         ]
+      },
+      {
+         "name": "Wormhole Walker",
+         "description": [
+            "May spend one Story Point to teleport anywhere within extreme range as a maneuver."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "maneuver",
+            "story point cost",
+            "movement"
+         ]
+      },
+      {
+         "name": "You Can All Burn",
+         "description": [
+            "Once per encounter, may suffer 3 wounds as an action to force all characters within short range to make a {@difficulty Hard|Coordination} as an out-of-turn incidental; they suffer 8 wounds if they fail, and they suffer one Critical Injury per {@symbols hhh} or {@symbols d}."
+         ],
+         "tags": [
+            "encounter",
+            "active",
+            "action",
+            "critical injury",
+            "results spend",
+            "offensive",
+            "crowd control"
          ]
       }
    ],
