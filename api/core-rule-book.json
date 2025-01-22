@@ -7,7 +7,7 @@
          "abbreviation": "CRB",
          "color": "#14C0F1",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/",
-         "version": "2025.1.16",
+         "version": "2025.1.20",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -101,10 +101,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Skitter",
-               "description": "Can move across walls, ceilings, and giant spider webs without penalty."
-            }
+            "Skitter"
          ],
          "weapons": [
             {
@@ -325,10 +322,7 @@
          "talents": [],
          "abilities": [
             "Flyer",
-            {
-               "name": "Swoop Attack",
-               "description": "After making a Brawl combat check, can move from engaged to short range of the target as an incidental."
-            }
+            "Swoop Attack"
          ],
          "weapons": [
             {
@@ -440,14 +434,8 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Regeneration",
-               "description": "At the beginning of its turn, this creature automatically heals 3 wounds."
-            },
-            {
-               "name": "Sweep Attack",
-               "description": "May spend {@symbols t} on a successful melee combat check to inflict one hit dealing the weapon's base damage on everyone (except the ogre!) engaged with the target."
-            }
+            "Regeneration",
+            "Sweep Attack"
          ],
          "weapons": [
             {
@@ -645,10 +633,7 @@
          "talents": [],
          "abilities": [
             "Construct",
-            {
-               "name": "Clockwork Fragility",
-               "description": "If the automaton suffers a Critical Injury, add +20 to the result."
-            }
+            "Clockwork Fragility"
          ],
          "weapons": [
             {
@@ -765,10 +750,7 @@
             "Ruinous Repartee"
          ],
          "abilities": [
-            {
-               "name": "For the Colony!",
-               "description": "Once per round when targeted by a combat check, may choose one ally within short range, and the attack then targets that character instead of the colonial governor."
-            }
+            "For the Colony!"
          ],
          "weapons": [
             {
@@ -897,10 +879,7 @@
             "Eagle Eyes"
          ],
          "abilities": [
-            {
-               "name": "Honor and Grit",
-               "description": "When a Royal Marine exceeds their wound threshold, they can immediately attempt a {@difficulty Hard|Discipline} as an out-of-turn incidental, healing 1 wound per {@symbols s}; if this reduces their current wounds below their wound threshold, the Marine gets back on their feet to continue fighting."
-            }
+            "Honor and Grit"
          ],
          "weapons": [
             {
@@ -1126,10 +1105,7 @@
          "talents": [],
          "abilities": [
             "Swarm",
-            {
-               "name": "Consuming Swarm",
-               "description": "May spend a maneuver to make an opposed Coordination versus Coordination check targeting one engaged opponent to immobilize that opponent until the end of its next turn. At the start of its next turn, the opponent suffers 3 wounds, and the swarm heals 3 wounds."
-            },
+            "Consuming Swarm",
             "Silhouette 2"
          ],
          "weapons": [
@@ -1225,10 +1201,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Strength In Numbers",
-               "description": "Adds {@dice boost} to combat checks when there are at least two other friendly nemeses, rivals, or minion groups engaged in the encounter. Add {@dice setback} to combat checks when there are no other friendly nemeses, rivals, or minion groups engaged in the encounter."
-            }
+            "Strength In Numbers"
          ],
          "weapons": [
             {
@@ -1365,18 +1338,9 @@
             "Adversary 2"
          ],
          "abilities": [
-            {
-               "name": "I Know What You're Thinking",
-               "description": "When targeting an opponent with a social skill check, downgrade the difficulty a number of times equal to the number of {@dice challenge} in the pool (effectively replacing all {@dice challenge} with {@dice difficulty}). When targeted by a social skill check, downgrade the ability of the check a number of times equal to the number of {@dice proficiency} in the pool (effectively replacing all {@dice proficiency} with {@dice ability})."
-            },
-            {
-               "name": "Mind Bleed",
-               "description": "As an action, may make an opposed Discipline vs. Discipline check against one living target within medium range. If successful, the target suffers 2 wounds and 2 strain per {@symbols s}, and the telepath may spend {@symbols aaa}{@symbols a} or {@symbols t} to inflict a Critical Injury."
-            },
-            {
-               "name": "Dominate",
-               "description": "Once per encounter, as an action, may make an opposed Discipline versus Discipline check against one living target within medium range. If successful, during the target's next turn, the telepath dictates what actions and maneuvers they perform. GMs should avoid actions that lead to unavoidable character death, however, such as jumping off towering cliffs or shooting oneself in the head, since that's just not fun."
-            }
+            "I Know What You're Thinking",
+            "Mind Bleed",
+            "Dominate"
          ],
          "weapons": [],
          "gear": [
@@ -1448,10 +1412,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Apex Predator",
-               "description": "At the start of their first turn in the encounter, all opponents must make a {@difficulty Hard|Discipline} as an out-of-turn incidental. If they fail, they are immobilized until the start of their next turn. If they fail with {@symbols h}, they are staggered until the start of their next turn instead. If you're using the fear rules (see page 243), this counts as a fear check, and other effects may apply as well."
-            }
+            "Apex Predator"
          ],
          "weapons": [
             {
@@ -1573,10 +1534,7 @@
             "Scathing Tirade"
          ],
          "abilities": [
-            {
-               "name": "Rise, My Minions!",
-               "description": "Once per session, may make a {@difficulty Hard|Mechanics or Medicine} (depending on the type of minions the arcane scientist has); for each uncanceled {@symbols s}, one incapacitated minion within medium range heals all wounds and rejoins the encounter; it may act in the current round."
-            }
+            "Rise, My Minions!"
          ],
          "weapons": [
             {
@@ -1774,14 +1732,8 @@
             "Adversary 1"
          ],
          "abilities": [
-            {
-               "name": "Arcane Weakness",
-               "description": "Silver, blessed, or holy weapons and ammunition count their Crit rating as 1 when used against this character."
-            },
-            {
-               "name": "Unholy Animation",
-               "description": "When hit by a combat check, spend {@symbols d} to ignore all damage from the attack."
-            }
+            "Arcane Weakness",
+            "Unholy Animation"
          ],
          "weapons": [
             {
@@ -1883,10 +1835,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Bestial Rage",
-               "description": "A beastman or beastman minion group that has taken damage reduces the Critical rating of its attacks to 1"
-            }
+            "Bestial Rage"
          ],
          "weapons": [
             {
@@ -1981,12 +1930,12 @@
             }
          ],
          "talents": [
-            "Natural"
          ],
          "abilities": [
+            "Local Politics",
             {
-               "name": "Local Politics",
-               "description": "Once per session, may choose one character operating in their area of influence (community, precinct, or county, for example); until the end of the session, the target must upgrade the difficulty of any social skill checks they make to interact with inhabitants of this area once."
+               "name": "Natural",
+               "description": "Once per session, use this talent to reroll any one {@skill Negotiation} or {@skill Skulduggery} check."
             }
          ],
          "weapons": [],
@@ -2190,13 +2139,13 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "Natural"
+            "Adversary 2"
          ],
          "abilities": [
+            "One Step Ahead",
             {
-               "name": "One Step Ahead",
-               "description": "Once per round, after an opponent performs an action or maneuver, may spend one Story Point to perform an action or a maneuver as an out-of-turn incidental."
+               "name": "Natural",
+               "description": "Once per session, use this talent to reroll any one {@skill Skulduggery} or {@skill Stealth} check."
             }
          ],
          "weapons": [
@@ -2303,10 +2252,7 @@
             "Scathing Tirade (Improved)"
          ],
          "abilities": [
-            {
-               "name": "Good at Needling",
-               "description": "If this character knows an opponent's Flaw Motivation, when this character inflicts strain on the opponent, the opponent suffers 4 additional strain."
-            }
+            "Good at Needling"
          ],
          "weapons": [],
          "gear": [
@@ -2796,9 +2742,7 @@
             "Defensive Sysops",
             "Distinctive Style"
          ],
-         "abilities": [
-            "None"
-         ],
+         "abilities": [],
          "weapons": [],
          "gear": [
             "Custom computer terminal, energy drinks"
@@ -2818,6 +2762,349 @@
             "Combat CR:1",
             "Social CR:2",
             "General CR:4"
+         ]
+      }
+   ],
+   "adversaryAbility": [
+      {
+         "name": "Apex Predator",
+         "description": [
+            "At the start of their first turn in the encounter, all opponents must make a {@difficulty Hard|Discipline} as an out-of-turn incidental. If they fail, they are {@rule immobilized||crb} until the start of their next turn. If they fail with {@symbols h}, they are {@rule staggered||crb} until the start of their next turn instead. If you're using the fear rules (see page 243), this counts as a fear check, and other effects may apply as well."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental (out of turn)",
+            "status effect",
+            "results spend",
+            "fear"
+         ]
+      },
+      {
+         "name": "Arcane Weakness",
+         "description": [
+            "Silver, blessed, or holy weapons and ammunition count their Crit rating as 1 when used against this character."
+         ],
+         "tags": [
+            "general",
+            "weakness",
+            "passive"
+         ]
+      },
+      {
+         "name": "Bestial Rage",
+         "description": [
+            "Once this character or minion group has taken damage, it reduces the Critical rating of its attacks to 1."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "offensive",
+            "critical injury"
+         ]
+      },
+      {
+         "name": "Clockwork Fragility",
+         "description": [
+            "If this character suffers a Critical Injury, add +20 to the result."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "weakness",
+            "critical injury"
+         ]
+      },
+      {
+         "name": "Construct",
+         "description": [
+            "Does not need to breathe, eat, or drink, and can survive in vacuum and underwater; immune to poisons and toxins."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "resistance"
+         ]
+      },
+      {
+         "name": "Consuming Swarm",
+         "description": [
+            "May spend a maneuver to make an {@b opposed {@skill Coordination||crb} versus {@skill Coordination||crb} check} targeting one engaged opponent to {@rule immobilized|immobilize|crb} that opponent until the end of its next turn. At the start of its next turn, the opponent suffers 3 wounds, and the swarm heals 3 wounds."
+         ],
+         "tags": [
+            "combat",
+            "offensive",
+            "status effect",
+            "recovery",
+            "opposed",
+            "active",
+            "maneuver"
+         ]
+      },
+      {
+         "name": "Dominate",
+         "description": [
+            "Once per encounter, as an action, may make an {@b opposed {@skill Discipline||crb} versus {@skill Discipline||crb} check} against one living target within medium range. If successful, during the target's next turn, this character dictates what actions and maneuvers they perform. GMs should avoid actions that lead to unavoidable character death, however, such as jumping off towering cliffs or shooting oneself in the head, since that's just not fun."
+         ],
+         "tags": [
+            "general",
+            "encounter",
+            "active",
+            "action",
+            "offensive",
+            "opposed"
+         ]
+      },
+      {
+         "name": "Flyer",
+         "description": [
+            "This creature can fly; see the {@sidebar Flying||crb} sidebar on page 100 of the {@title Genesys} Core Rulebook."
+         ],
+         "tags": [
+            "general",
+            "movement",
+            "passive"
+         ]
+      },
+      {
+         "name": "For the Colony!",
+         "description": [
+            "Once per round when targeted by a combat check, may choose one ally within short range, and the attack then targets that character instead of this character."
+         ],
+         "tags": [
+            "combat",
+            "defensive",
+            "passive"
+         ]
+      },
+      {
+         "name": "Good at Needling",
+         "description": [
+            "If this character knows an opponent's Flaw Motivation, when this character inflicts strain on the opponent, the opponent suffers 4 additional strain."
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "motivation",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Honor and Grit",
+         "description": [
+            "When this character exceeds their wound threshold, they can immediately attempt a {@difficulty Hard|Discipline} as an out-of-turn incidental, healing 1 wound per {@symbols s}; if this reduces their current wounds below their wound threshold, this character gets back on their feet to continue fighting."
+         ],
+         "tags": [
+            "general",
+            "defensive",
+            "active",
+            "incidental",
+            "results spend"
+         ]
+      },
+      {
+         "name": "I Know What You're Thinking",
+         "description": [
+            "When targeting an opponent with a social skill check, downgrade the difficulty a number of times equal to the number of {@dice challenge} in the pool (effectively replacing all {@dice challenge} with {@dice difficulty}). When targeted by a social skill check, downgrade the ability of the check a number of times equal to the number of {@dice proficiency} in the pool (effectively replacing all {@dice proficiency} with {@dice ability})."
+         ],
+         "tags": [
+            "social",
+            "defensive",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Local Politics",
+         "description": [
+            "Once per session, may choose one character operating in their area of influence (community, precinct, or county, for example); until the end of the session, the target must upgrade the difficulty of any social skill checks they make to interact with inhabitants of this area once."
+         ],
+         "tags": [
+            "social",
+            "session",
+            "active",
+            "incidental",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Mind Bleed",
+         "description": [
+            "As an action, may make an {@b opposed {@skill Discipline||crb} vs. {@skill Discipline||crb} check} against one living target within medium range. If successful, the target suffers 2 wounds and 2 strain per {@symbols s}, and this character may spend {@symbols aaa}{@symbols a} or {@symbols t} to inflict a Critical Injury."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "action",
+            "offensive",
+            "results spend",
+            "critical injury"
+         ]
+      },
+      {
+         "name": "One Step Ahead",
+         "description": [
+            "Once per round, after an opponent performs an action or maneuver, may spend one Story Point to perform an action or a maneuver as an out-of-turn incidental."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental (out of turn)",
+            "story point cost",
+            "free maneuver"
+         ]
+      },
+      {
+         "name": "Regeneration",
+         "description": [
+            "At the beginning of its turn, this creature automatically heals 3 wounds."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "recovery"
+         ]
+      },
+      {
+         "name": "Rise, My Minions!",
+         "description": [
+            "Once per session, may make a {@difficulty Hard|Mechanics or Medicine} (depending on the type of minions this character has); for each uncanceled {@symbols s}, one incapacitated minion within medium range heals all wounds and rejoins the encounter; it may act in the current round."
+         ],
+         "tags": [
+            "combat",
+            "session",
+            "active",
+            "action",
+            "results spend",
+            "recovery"
+         ]
+      },
+      {
+         "name": "Silhouette",
+         "description": [
+            "The difficulty of an attack made against a character 2 or more silhouettes larger than the attacker is decreased by 1. The difficulty of an attack made against a character 2 or more silhouettes smaller than the attacker is increased by 1."
+         ],
+         "tags": [
+            "general",
+            "combat",
+            "passive",
+            "offensive",
+            "defensive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Skitter",
+         "description": [
+            "Can move across walls, ceilings, and giant spider webs without penalty."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "movement"
+         ]
+      },
+      {
+         "name": "Strength In Numbers",
+         "description": [
+            "Adds {@dice boost} to combat checks when there are at least two other friendly nemeses, rivals, or minion groups engaged in the encounter. Add {@dice setback} to combat checks when there are no other friendly nemeses, rivals, or minion groups engaged in the encounter."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "support",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Swarm",
+         "description": [
+            "Halve the damage dealt to the swarm before applying soak, unless the weapon has the {@quality Blast||crb} or {@quality Burn||crb} quality (regardless of whether the quality is activated)."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "weakness",
+            "resistance",
+            "item quality"
+         ]
+      },
+      {
+         "name": "Sweep Attack",
+         "description": [
+            "May spend {@symbols t} on a successful melee combat check to inflict one hit dealing the weapon's base damage on everyone (except this character!) engaged with the target."
+         ],
+         "tags": [
+            "combat",
+            "results spend",
+            "active",
+            "incidental",
+            "offensive",
+            "crowd control"
+         ]
+      },
+      {
+         "name": "Swoop Attack",
+         "description": [
+            "After making a {@skill Brawl||crb} combat check, can move from engaged to short range of the target as an incidental."
+         ],
+         "tags": [
+            "combat",
+            "action",
+            "incidental",
+            "free maneuver",
+            "defensive"
+         ]
+      },
+      {
+         "name": "Tactical Direction",
+         "description": [
+            "May spend a maneuver to direct one friendly minion group within medium range; that group may immediately perform a maneuver as an out-of-turn incidental or add {@dice boost} to the next check it makes."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "maneuver",
+            "skill check modifier",
+            "leader",
+            "support",
+            "free maneuver"
+         ]
+      },
+      {
+         "name": "Telepresence",
+         "description": [
+            "Can operate independently, or can be controlled directly by an operator via wireless link; if being controlled, this character counts as having ranks in any skill equal to the controller's ranks in that skill."
+         ],
+         "tags": [
+            "general",
+            "animal companion",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Terrifying",
+         "description": [
+            "Upon first sight, an individual must make a {@rule fear||crb} check with a difficulty equal to the adversary's ranks in Terrifying."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "fear",
+            "crowd control"
+         ]
+      },
+      {
+         "name": "Unholy Animation",
+         "description": [
+            "When hit by a combat check, spend {@symbols d} to ignore all damage from the attack."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "results spend",
+            "defensive"
          ]
       }
    ],
@@ -3435,7 +3722,7 @@
       {
          "name": "Dark Vision",
          "description": [
-            "When making skill checks, dwarves remove up to {@dice setback|2} imposed due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness}."
+            "When making skill checks, this character removes up to {@dice setback|2} imposed due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness}."
          ],
          "tags": [
             "general",
@@ -7762,13 +8049,15 @@
                      "header": "Special"
                   }
                ],
-               "rows": [{
-                  "skill": "{@skill Ranged (Heavy)}",
-                  "damage": "10",
-                  "crit": 2,
-                  "range": "Short",
-                  "special": "{@quality Blast|Blast 6}, {@quality Burn|Burn 4}, {@quality Limited Ammo|Limited Ammo 2}"
-               }]
+               "rows": [
+                  {
+                     "skill": "{@skill Ranged (Heavy)}",
+                     "damage": "10",
+                     "crit": 2,
+                     "range": "Short",
+                     "special": "{@quality Blast|Blast 6}, {@quality Burn|Burn 4}, {@quality Limited Ammo|Limited Ammo 2}"
+                  }
+               ]
             }
          ]
       },
@@ -7811,13 +8100,15 @@
                      "header": "Special"
                   }
                ],
-               "rows": [{
-                  "skill": "{@skill Ranged (Heavy)}",
-                  "damage": "8",
-                  "crit": 4,
-                  "range": "Medium",
-                  "special": "{@quality Blast|Blast 6}, {@quality Limited Ammo|Limited Ammo 1}"
-               }]
+               "rows": [
+                  {
+                     "skill": "{@skill Ranged (Heavy)}",
+                     "damage": "8",
+                     "crit": 4,
+                     "range": "Medium",
+                     "special": "{@quality Blast|Blast 6}, {@quality Limited Ammo|Limited Ammo 1}"
+                  }
+               ]
             }
          ]
       },
@@ -7860,13 +8151,15 @@
                      "header": "Special"
                   }
                ],
-               "rows": [{
-                  "skill": "{@skill Ranged (Heavy)}",
-                  "damage": "8",
-                  "crit": 3,
-                  "range": "Short",
-                  "special": "{@quality Blast|Blast 5}, {@quality Knockdown}"
-               }]
+               "rows": [
+                  {
+                     "skill": "{@skill Ranged (Heavy)}",
+                     "damage": "8",
+                     "crit": 3,
+                     "range": "Short",
+                     "special": "{@quality Blast|Blast 5}, {@quality Knockdown}"
+                  }
+               ]
             }
          ]
       },
@@ -8666,7 +8959,9 @@
             "When performing the Dangerous Driving action, the character makes a {@skill Piloting} check with a difficulty equal to the silhouette of the vehicle. Keep in mind that the current speed of the vehicle can alter the difficulty of such checks — and amplify the consequences of failure!",
             {
                "type": "sidebar",
-               "_ref": { "name": "Dangerous Driving in Narrative Encounters" },
+               "_ref": {
+                  "name": "Dangerous Driving in Narrative Encounters"
+               },
                "entries": []
             }
          ]

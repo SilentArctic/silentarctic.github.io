@@ -14,7 +14,7 @@
             "Craftidore"
          ],
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/expanded-players-guide/",
-         "version": "2025.1.16",
+         "version": "2025.1.20",
          "releaseDate": "20 September 2019"
       },
       "filters": {
@@ -87,10 +87,7 @@
          ],
          "abilities": [
             "Terrifying 4",
-            {
-               "name": "Petrifying Gaze",
-               "description": "As an action, may make an opposed Cool versus Coordination check targeting one character within medium range to immobilize the target until the end of this character's next turn, plus one additional turn for each {@symbols ss}; may spend {@symbols aaa} to stagger target until the end of this character's next turn and may spend {@symbols t} to turn target to stone"
-            }
+            "Petrifying Gaze"
          ],
          "weapons": [
             {
@@ -201,20 +198,17 @@
             }
          ],
          "talents": [
-            "Adversary 2"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Flyer",
             "Ghostly",
             "Spirit",
-            {
-               "name": "Spells (Arcana)",
-               "description": "This character may choose any magic action allowed for by the Divine skill, and may select additional spell effects, as normal. The spell they use most often is the following unique spell."
-            },
-            {
-               "name": "Spells: Eye of the Jinn",
-               "description": "This character chooses one target within medium range and makes an {@difficulty Average|Divine}; if the check is successful, until the end of this character's next turn, after the target makes a check, this character may choose one type of die in the pool and reroll all of the dice of that type; can sustain the effects of this spell by performing a concentrate maneuver"
-            }
+            "Spells (Arcana)",
+            "Spells: Eye of the Jinn"
          ],
          "weapons": [
             {
@@ -314,18 +308,9 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Moonlit Glamor",
-               "description": "During the night, this character's presence is 5 instead of 1"
-            },
-            {
-               "name": "Spells (Primal)",
-               "description": "This character may choose any magic action allowed for by the Primal skill, and may select additional spell effects, as normal. The spell they use most often is the following unique spell."
-            },
-            {
-               "name": "Spells: Endless Dance",
-               "description": "This character chooses one target within short range and makes an {@difficulty Average|Primal}; upon success, the target is immobilized, suffers 1 strain and 1 wound at the start of their turn, and adds {@dice setback|2} to all checks they make; on their turn, the target may make a {@difficulty Daunting|Discipline or Resilience} check to end these effects; can sustain the effects of this spell by performing the concentrate maneuver"
-            }
+            "Moonlit Glamor",
+            "Spells (Primal)",
+            "Spells: Endless Dance"
          ],
          "gear": [
             "Piles of leaves or twine that appear to be valuable"
@@ -402,10 +387,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Gore",
-               "description": "After making a successful combat check using its vicious axe, this character may spend {@symbols aa} or {@symbols t} to inflict one hit with its bloody horns on the target or another target this character is engaged with, dealing base damage +1 damage per {@symbols s}"
-            }
+            "Gore"
          ],
          "weapons": [
             {
@@ -511,10 +493,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Siren's Song",
-               "description": "This character may make an opposed Charm versus Discipline check targeting one character within long range; if successful, the target must spend all of its available maneuvers [including spending an action to gain a second maneuver or suffering strain] to move into engaged range, and the target may not make combat checks targeting this character until after this character makes a combat check targeting them"
-            }
+            "Siren's Song"
          ],
          "weapons": [
             {
@@ -608,10 +587,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Evolutionary Niche",
-               "description": "Before using this character, choose one of the following abilities: Arthropod: Has a thick exoskeleton and adds +2 to its soak value, Aquatic: Never treats water as difficult terrain and can breathe underwater, Arboreal: Treats vertical surfaces and forested areas as normal terrain, or Avian: May fly, as per page 100 of the Genesys Core Rulebook."
-            }
+            "Evolutionary Niche"
          ],
          "weapons": [
             {
@@ -685,10 +661,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Flames of Fury",
-               "description": "Increase the damage of a thrown torch by +1 for each additional minion in this minion group, to a maximum of +7"
-            }
+            "Flames of Fury"
          ],
          "weapons": [
             {
@@ -798,18 +771,15 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Terrifying 3",
-            {
-               "name": "Unnatural Resilience",
-               "description": "After suffering a Critical Injury, may spend one Story Point to reduce the Critical Injury result by -50; if this reduces the Critical Injury result to less than 01, the failed experiment does not suffer a Critical Injury."
-            },
-            {
-               "name": "We Belong Dead",
-               "description": "Characters targeting this character with a social skill check suffer 3 strain."
-            }
+            "Unnatural Resilience",
+            "We Belong Dead"
          ],
          "weapons": [
             {
@@ -940,21 +910,15 @@
             }
          ],
          "talents": [
-            "Adversary 2"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            }
          ],
          "abilities": [
-            {
-               "name": "Bite of the Wolf",
-               "description": "When a feral lycanthrope in their animal form makes an unarmed attack and inflicts a Critical Injury result of 51 or higher on a human PC or human nemesis NPC [your GM has final say on what counts as human], the character gains the Bite of the Wolf and Call of the Moon abilities [if the target is a PC, use the abilities listed in the cursed shifter archetype found on page 20 instead])."
-            },
-            {
-               "name": "Call of the Moon",
-               "description": "When the full moon rises, this character transforms into a monstrous wolf or giant hunting cat as an out-of-turn incidental; they heal all strain they are currently suffering, increase their Brawn and Agility by one to a maximum of 5, and reduce their Intellect and Willpower by one to a minimum of 1; all opponents must halve the damage dealt to this character while transformed before applying soak, unless their weapon is made of silver or uses silver ammunition; the transformation lasts until the following dawn or until this character is incapacitated due to exceeding their wound threshold."
-            },
-            {
-               "name": "Heart of Darkness",
-               "description": "Once per session, spend a Story Point to have this character transform, no matter the circumstances; the transformation lasts until the following dawn."
-            }
+            "Bite of the Wolf",
+            "Call of the Moon",
+            "Heart of Darkness"
          ],
          "weapons": [
             {
@@ -1085,21 +1049,15 @@
             }
          ],
          "talents": [
-            "Adversary 2"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            }
          ],
          "abilities": [
-            {
-               "name": "Arterial Strike",
-               "description": "When this character inflicts a Critical Injury with a Melee combat check, spend a Story Point to inflict the Bleeding Out Critical Injury in-stead of rolling a result."
-            },
-            {
-               "name": "Master of the Lightning",
-               "description": "Once per encounter, may make a {@difficulty Hard|Knowledge (Science)} as an action; if successful, one target within long range suffers 10 damage to their strain threshold (+1 damage per {@symbols s}) and a Critical Injury; may spend {@symbols aa} or {@symbols t} to inflict the same damage and a Critical Injury on an additional target within long range."
-            },
-            {
-               "name": "They Dare Call Me Mad?",
-               "description": "Characters targeting this character with a social skill check suffer 2 strain)."
-            }
+            "Arterial Strike",
+            "Master of the Lightning",
+            "They Dare Call Me Mad?"
          ],
          "weapons": [
             {
@@ -1210,17 +1168,14 @@
             }
          ],
          "talents": [
-            "Adversary 3"
+            {
+               "name": "Adversary 3",
+               "source": "crb"
+            }
          ],
          "abilities": [
-            {
-               "name": "Magical Reanimation",
-               "description": "Does not need to breathe, eat, or drink; immune to poisons and toxins"
-            },
-            {
-               "name": "Vulnerable to Fire",
-               "description": "Hits from fire or a weapon with the Burn item quality ignore this character's soak."
-            }
+            "Magical Reanimation",
+            "Vulnerable to Fire"
          ],
          "weapons": [
             {
@@ -1356,25 +1311,16 @@
             }
          ],
          "talents": [
-            "Adversary 3"
+            {
+               "name": "Adversary 3",
+               "source": "crb"
+            }
          ],
          "abilities": [
-            {
-               "name": "Blood Call",
-               "description": "When this character inflicts wounds on a target using their fangs, they heal 4 strain and 4 wounds."
-            },
-            {
-               "name": "Sunlight Sensitivity",
-               "description": "While exposed to direct sunlight, this character halves their strain threshold and wound threshold."
-            },
-            {
-               "name": "Undead",
-               "description": "Does not need to breathe, eat, or drink [except blood], can survive underwater, and is immune to poisons and toxins."
-            },
-            {
-               "name": "Vulnerable Heart",
-               "description": "When this character suffers a Critical Injury from a weapon made of wood, such as a stake or crossbow bolt, they add +40 to the Critical Injury result."
-            }
+            "Blood Call",
+            "Sunlight Sensitivity",
+            "Undead",
+            "Vulnerable Heart"
          ],
          "weapons": [
             {
@@ -1614,10 +1560,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Jack of All Trades",
-               "description": "Once per session, may spend a Story Point to increase ranks in one skill by two for the remainder of the encounter."
-            }
+            "Jack of All Trades"
          ],
          "weapons": [
             {
@@ -1713,10 +1656,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Radioactive",
-               "description": "At the end of an encounter in which a target was hit by a combat check from this character, that target must make a {@difficulty Hard|Resilience} or suffer one level of radiation (See A Certain Glow, EPG page 29)."
-            }
+            "Radioactive"
          ],
          "weapons": [
             {
@@ -1821,14 +1761,8 @@
          "talents": [],
          "abilities": [
             "Amphibious",
-            {
-               "name": "Death Roll",
-               "description": "When this character makes a successful Brawl combat check against an immobilized target, it may inflict a Critical Injury without spending {@symbols a} or {@symbols t}; it may still spend {@symbols aaa} or {@symbols t} to add +10 to the results."
-            },
-            {
-               "name": "Eight-legged",
-               "description": "Cannot be knocked prone or immobilized."
-            },
+            "Death Roll",
+            "Eight-legged",
             "Silhouette 2"
          ],
          "weapons": [
@@ -1961,17 +1895,14 @@
             }
          ],
          "talents": [
-            "Adversary 2"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            }
          ],
          "abilities": [
-            {
-               "name": "Might Makes Right",
-               "description": "After this character inflicts a Critical Injury, decrease the difficulty of all Coercion and Leadership checks they make by one, to a minimum of {@difficulty Easy}, until the end of the encounter; this ability may be triggered multiple times)."
-            },
-            {
-               "name": "…And I'm Always Right",
-               "description": "May make a {@difficulty Hard|Leadership}; if successful, allies within medium range may perform a second maneuver during their turn without suffering strain; this character may spend {@symbols a} to increase the damage of affected allies' attacks by an amount equal to the {@symbols a} spent; both of these effects last until the end of this character's next turn."
-            }
+            "Might Makes Right",
+            "…And I'm Always Right"
          ],
          "weapons": [
             {
@@ -2089,7 +2020,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Silhouette 2"
@@ -2215,14 +2149,8 @@
             "Swift"
          ],
          "abilities": [
-            {
-               "name": "Ambush Predator",
-               "description": "When attacking a target that has not yet acted during the current encounter, this creature adds {@dice boost|2} to its combat checks."
-            },
-            {
-               "name": "Pounce",
-               "description": "Once per turn, while at short range this creature may perform a move maneuver to engage a target as an incidental."
-            }
+            "Ambush Predator",
+            "Pounce"
          ],
          "weapons": [
             {
@@ -2410,10 +2338,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Pack Fighter",
-               "description": "If this creature makes a successful combat check, the next ally making a combat check against the same target during the same round adds {@symbols aa} to the results."
-            },
+            "Pack Fighter",
             "Silhouette 0"
          ],
          "weapons": [
@@ -2505,10 +2430,7 @@
          "abilities": [
             "Encumbrance Capacity 30",
             "Silhouette 3",
-            {
-               "name": "Toss",
-               "description": "After making a combat check, this creature may spend {@symbols t} to move the target up to short range, inflict 4 strain, and knock the target prone."
-            }
+            "Toss"
          ],
          "weapons": [
             {
@@ -2748,18 +2670,15 @@
             }
          ],
          "talents": [
-            "Adversary 2"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Amphibious",
-            {
-               "name": "Crush",
-               "description": "While engaged with a vehicle, this creature may make a {@difficulty Hard|Athletics} as an action; if the check is successful, the vehicle suffers a Critical Hit and may not move during the following round."
-            },
-            {
-               "name": "Multitentacled",
-               "description": "After making a successful combat check, this creature may spend 3 strain to inflict one additional hit with its thrashing tentacles against one other target within short range that is no more difficult to hit than original target, dealing base damage +1 per {@symbols s}; it may do so up to three times."
-            },
+            "Crush",
+            "Multitentacled",
             "Silhouette 5"
          ],
          "weapons": [
@@ -2873,10 +2792,13 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
-            "Aquatic Creature"
+            "Aquatic"
          ],
          "weapons": [
             {
@@ -2964,10 +2886,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Neurotoxin",
-               "description": "If this creature inflicts wounds with a combat check, the target must make a {@difficulty Hard|Resilience}; upon failure, the target suffers 5 wounds, plus 1 strain per {@symbols h}; {@symbols d} means the target must make another Resilience check at the same difficulty at the start of their next turn or suffer the same effects."
-            },
+            "Neurotoxin",
             "Silhouette 0"
          ],
          "weapons": [
@@ -3047,10 +2966,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Pack Tactics",
-               "description": "When this creature's minion group consists of at least two minions and is engaged with a target, they can spend a maneuver to prevent the target from disengaging from the minion group until the end of their next turn and to add {@symbols aa} to their next combat check against that target."
-            },
+            "Pack Tactics",
             "Silhouette 0"
          ],
          "weapons": [
@@ -3156,10 +3072,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Take a Breath",
-               "description": "Once per encounter, may suffer 2 strain as an out-of-turn incidental during an ally's turn; the ally loses a maneuver and either heals 6 strain or may reroll a fear check they just failed."
-            }
+            "Take a Breath"
          ],
          "weapons": [],
          "gear": [],
@@ -3236,10 +3149,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Let Me Get You Something",
-               "description": "Once per encounter, this character may give another character 100 currency to downgrade the difficulty of the next social check they make targeting that character."
-            }
+            "Let Me Get You Something"
          ],
          "weapons": [],
          "gear": [
@@ -3323,10 +3233,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Time to Heal",
-               "description": "If this character is caring for a character who is benefiting from natural rest, the resting character heals 2 wounds each night and decreases the difficulty of any Resilience checks they make to heal Critical Injuries by 1, to a minimum of {@difficulty Easy}."
-            }
+            "Time to Heal"
          ],
          "weapons": [],
          "gear": [
@@ -3405,10 +3312,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Many Hands Make Light the Load",
-               "description": "If this character provides assistance when another character makes a Mechanics check to repair a vehicle, increase the hull trauma or system strain repaired by 2; if the check is being made to repair a Critical Hit, reduce the difficulty of the check by 1, to a minimum of {@difficulty Easy}; this is in addition to the other benefits of assistance."
-            }
+            "Many Hands Make Light the Load"
          ],
          "weapons": [],
          "gear": [
@@ -3585,10 +3489,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Let's Make a Deal",
-               "description": "If this character knows an opponent's Desire Motivation, when this character inflicts strain on the opponent, the opponent suffers 4 additional strain."
-            }
+            "Let's Make a Deal"
          ],
          "weapons": [],
          "gear": [
@@ -3721,10 +3622,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Red Tape",
-               "description": "Once per encounter, as an action, make an opposed Knowledge versus Cool check targeting one character in the encounter; if successful, the target increases the difficulty of all social skill checks they make by two, to a maximum of {@difficulty Formidable}, until the end of the encounter."
-            }
+            "Red Tape"
          ],
          "weapons": [],
          "gear": [
@@ -3993,10 +3891,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Been There, Done That",
-               "description": "When providing assistance, this character adds {@symbols s}{@symbols a} to the results in-stead of {@dice boost})"
-            }
+            "Been There, Done That"
          ],
          "weapons": [
             {
@@ -4192,10 +4087,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Momentum",
-               "description": "If this character performed a move maneuver, they add 3 to the damage of one hit of any successful Brawl or Melee combat checks they make during the same turn."
-            }
+            "Momentum"
          ],
          "weapons": [],
          "gear": [],
@@ -4463,10 +4355,7 @@
             }
          ],
          "abilities": [
-            {
-               "name": "Strategic Coordination",
-               "description": "Once per encounter, may make a {@difficulty Daunting|Leadership}; if successful, until the end of the encounter, all allies in the encounter may perform an additional move maneuver on their turn without downgrading their action or suffering strain—but they still may only perform two maneuvers during their turn."
-            }
+            "Strategic Coordination"
          ],
          "weapons": [],
          "gear": [
@@ -4791,14 +4680,8 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Destroy Terrain",
-               "description": "When engaged with a silhouette 2 or smaller terrain feature that is providing cover or obstructs movement—such as a section of fence, foxhole, door, or sandbagged emplacement—this character may spend an action and make a {@difficulty Hard|Mechanics}; if the check succeeds the terrain feature is destroyed and no longer provides cover or obstructs movement."
-            },
-            {
-               "name": "Flush Target",
-               "description": "After making a combat check targeting a character in cover, may spend {@symbols aa} or {@symbols t} to force the character to immediately move out of cover as an out-of-turn incidental."
-            }
+            "Destroy Terrain",
+            "Flush Target"
          ],
          "weapons": [
             {
@@ -4918,6 +4801,688 @@
             "Combat CR:1",
             "Social CR:1",
             "General CR:1"
+         ]
+      }
+   ],
+   "adversaryAbility": [
+      {
+         "name": "Ambush Predator",
+         "description": [
+            "When attacking a target that has not yet acted during the current encounter, this creature adds {@dice boost|2} to its combat checks."
+         ],
+         "tags": [
+            "passive",
+            "combat",
+            "offensive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Amphibious",
+         "description": [
+            "This creature may breathe underwater and never suffers movement penalties for traveling through water."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "movement"
+         ]
+      },
+      {
+         "name": "Arterial Strike",
+         "description": [
+            "When this character inflicts a Critical Injury with a {@skill Melee||crb} combat check, spend a Story Point to inflict the Bleeding Out Critical Injury instead of rolling a result."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "offensive",
+            "story point cost",
+            "critical injury"
+         ]
+      },
+      {
+         "name": "Aquatic",
+         "description": [
+            "This creature suffers no penalties for moving through water and can breathe underwater, but cannot move or survive on land."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "movement"
+         ]
+      },
+      {
+         "name": "Been There, Done That",
+         "description": [
+            "When providing assistance, this character adds {@symbols sa} to the results instead of {@dice boost})."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "support",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Bite of the Wolf",
+         "description": [
+            "When this character in their animal form makes an unarmed attack and inflicts a Critical Injury result of 51 or higher on a human PC or human nemesis NPC (your GM has final say on what counts as human), the character gains the Bite of the Wolf and {@adversaryAbility Call of the Moon} abilities (if the target is a PC, use the abilities listed in the {@archetype cursed shifter} archetype found on page 20 instead)."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "offensive",
+            "critical injury"
+         ]
+      },
+      {
+         "name": "Blood Call",
+         "description": [
+            "When this character damages a target using their fangs or a magic attack, they heal wounds equal to the wounds inflicted."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "offensive",
+            "recovery"
+         ]
+      },
+      {
+         "name": "Call of the Moon",
+         "description": [
+            "When the full moon rises, this character transforms into a monstrous wolf or giant hunting cat as an out-of-turn incidental; they heal all strain they are currently suffering, increase their {@characteristic Brawn||crb} and {@characteristic Agility||crb} by one to a maximum of 5, and reduce their {@characteristic Intellect||crb} and {@characteristic Willpower||crb} by one to a minimum of 1; all opponents must halve the damage dealt to this character while transformed before applying soak, unless their weapon is made of silver or uses silver ammunition; the transformation lasts until the following dawn or until this character is incapacitated due to exceeding their wound threshold."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "stat modifier",
+            "resistance"
+         ]
+      },
+      {
+         "name": "Corporate Oversight",
+         "description": [
+            "When performing the assist maneuver, add {@symbols shh} to the result instead of adding {@dice boost}."
+         ],
+         "tags": [
+            "general",
+            "support",
+            "results modifier",
+            "passive"
+         ]
+      },
+      {
+         "name": "Crush",
+         "description": [
+            "While engaged with a vehicle, this creature may make a {@difficulty Hard|Athletics} as an action; if the check is successful, the vehicle suffers a Critical Hit and may not move during the following round."
+         ],
+         "tags": [
+            "combat",
+            "offensive",
+            "vehicles",
+            "action",
+            "active"
+         ]
+      },
+      {
+         "name": "Death Roll",
+         "description": [
+            "When this character makes a successful {@skill Brawl||crb} combat check against an {@rule immobilized||crb} target, it may inflict a Critical Injury without spending {@symbols a} or {@symbols t}; it may still spend {@symbols aaa} or {@symbols t} to add +10 to the results."
+         ],
+         "tags": [
+            "combat",
+            "offensive",
+            "results spend",
+            "status effect",
+            "active",
+            "incidental"
+         ]
+      },
+      {
+         "name": "Destroy Terrain",
+         "description": [
+            "When engaged with a silhouette 2 or smaller terrain feature that is providing cover or obstructs movement—such as a section of fence, foxhole, door, or sandbagged emplacement—this character may spend an action and make a {@difficulty Hard|Mechanics}; if the check succeeds the terrain feature is destroyed and no longer provides cover or obstructs movement."
+         ],
+         "tags": [
+            "general",
+            "support",
+            "action",
+            "active"
+         ]
+      },
+      {
+         "name": "Eight-legged",
+         "description": [
+            "Cannot be knocked {@rule prone||crb} or {@rule immobilized||crb}."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "status effect"
+         ]
+      },
+      {
+         "name": "Evolutionary Niche",
+         "description": [
+            "Before using this character, choose one of the following abilities:",
+            {
+               "type": "list",
+               "items": [
+                  "Arthropod: Has a thick exoskeleton and adds +2 to its soak value.",
+                  "Aquatic: Never treats water as difficult terrain and can breathe underwater.",
+                  "Arboreal: Treats vertical surfaces and forested areas as normal terrain.",
+                  "Avian: May {@sidebar Flying||crb}, as per page 100 of the {@title Genesys} Core Rulebook."
+               ]
+            }
+         ],
+         "tags": [
+            "general",
+            "customization option",
+            "passive"
+         ]
+      },
+      {
+         "name": "Flames of Fury",
+         "description": [
+            "Increase the damage of a thrown torch by +1 for each additional minion in this minion group, to a maximum of +7."
+         ],
+         "tags": [
+            "combat",
+            "offensive",
+            "passive"
+         ]
+      },
+      {
+         "name": "Flush Target",
+         "description": [
+            "After making a combat check targeting a character in cover, may spend {@symbols aa} or {@symbols t} to force the character to immediately move out of cover as an out-of-turn incidental."
+         ],
+         "tags": [
+            "combat",
+            "support",
+            "results spend",
+            "movement",
+            "active",
+            "incidental (out of turn)"
+         ]
+      },
+      {
+         "name": "Ghostly",
+         "description": [
+            "This creature may move over or through terrain (including doors and walls) without penalty; halve the damage dealt to this character before applying soak, unless the attack came from a magical source such as a spell or legendary weapon."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "movement",
+            "weakness"
+         ]
+      },
+      {
+         "name": "Gore",
+         "description": [
+            "After making a successful combat check using its vicious axe, this character may spend {@symbols aa} or {@symbols t} to inflict one hit with its bloody horns on the target or another target this character is engaged with, dealing base damage +1 damage per {@symbols s}."
+         ],
+         "tags": [
+            "combat",
+            "results spend",
+            "active",
+            "incidental"
+         ]
+      },
+      {
+         "name": "Heart of Darkness",
+         "description": [
+            "Once per session, spend a Story Point to have this character transform, no matter the circumstances; the transformation lasts until the following dawn."
+         ],
+         "tags": [
+            "active",
+            "incidental (out of turn)",
+            "session",
+            "story point cost"
+         ]
+      },
+      {
+         "name": "Jack of All Trades",
+         "description": [
+            "Once per session, may spend a Story Point to increase ranks in one skill by two for the remainder of the encounter."
+         ],
+         "tags": [
+            "session",
+            "story point cost",
+            "stat modifier",
+            "active",
+            "incidental"
+         ]
+      },
+      {
+         "name": "Let Me Get You Something",
+         "description": [
+            "Once per encounter, this character may give another character 100 currency to downgrade the difficulty of the next social check they make targeting that character."
+         ],
+         "tags": [
+            "social",
+            "active",
+            "incidental",
+            "encounter",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Let's Make a Deal",
+         "description": [
+            "If this character knows an opponent's Desire Motivation, when this character inflicts strain on the opponent, the opponent suffers 4 additional strain."
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "offensive",
+            "motivation"
+         ]
+      },
+      {
+         "name": "Magical Reanimation",
+         "description": [
+            "Does not need to breathe, eat, or drink; immune to poisons and toxins."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "resistance"
+         ]
+      },
+      {
+         "name": "Many Hands Make Light the Load",
+         "description": [
+            "While providing {@rule Assist|assistance|crb} on a {@skill Mechanics||crb} check to repair a vehicle, increase the hull trauma or system strain repaired by 2; if the check is to repair a Critical Hit, reduce the difficulty of the check by 1, to a minimum of {@difficulty Easy}; this is in addition to the other benefits of {@rule Assist|assistance|crb}."
+         ],
+         "tags": [
+            "general",
+            "support",
+            "recovery",
+            "vehicles",
+            "skill check modifier",
+            "passive"
+         ]
+      },
+      {
+         "name": "Master of the Lightning",
+         "description": [
+            "Once per encounter, may make a {@difficulty Hard|Knowledge (Science)} as an action; if successful, one target within long range suffers 10 damage to their strain threshold (+1 damage per {@symbols s}) and a Critical Injury; may spend {@symbols aa} or {@symbols t} to inflict the same damage and a Critical Injury on an additional target within long range."
+         ],
+         "tags": [
+            "combat",
+            "offensive",
+            "encounter",
+            "active",
+            "action",
+            "critical injury"
+         ]
+      },
+      {
+         "name": "Might Makes Right",
+         "description": [
+            "After this character inflicts a Critical Injury, decrease the difficulty of all {@skill Coercion||crb} and {@skill Leadership||crb} checks they make by one, to a minimum of {@difficulty Easy}, until the end of the encounter; this ability may be triggered multiple times."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental",
+            "critical injury",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Momentum",
+         "description": [
+            "If this character performed a move maneuver, they add +3 to the damage of one hit of any successful {@skill Brawl||crb} or {@skill Melee||crb} checks they make during the same turn."
+         ],
+         "tags": [
+            "combat",
+            "offensive",
+            "passive",
+            "movement"
+         ]
+      },
+      {
+         "name": "Moonlit Glamor",
+         "description": [
+            "During the night, this character's presence is 5 instead of 1."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "stat modifier"
+         ]
+      },
+      {
+         "name": "Multitentacled",
+         "description": [
+            "After making a successful combat check, may spend 3 strain to inflict one additional hit with its tentacle weapon against one other target within short range that is no more difficult to hit than original target, dealing base damage +1 per {@symbols s}; it may do so up to three times per turn."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental",
+            "offensive",
+            "crowd control",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Neurotoxin",
+         "description": [
+            "If this creature inflicts wounds with a combat check, the target must make a {@difficulty Hard|Resilience}; upon failure, the target suffers 5 wounds, plus 1 strain per {@symbols h}; {@symbols d} means the target must make another {@skill Resilience||crb} check at the same difficulty at the start of their next turn or suffer the same effects."
+         ],
+         "tags": [
+            "combat",
+            "offensive",
+            "results spend",
+            "passive"
+         ]
+      },
+      {
+         "name": "Pack Fighter",
+         "description": [
+            "If this creature makes a successful combat check, the next ally making a combat check against the same target during the same round adds {@symbols aa} to the results."
+         ],
+         "tags": [
+            "combat",
+            "support",
+            "passive",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Pack Tactics",
+         "description": [
+            "When this creature's minion group consists of at least two minions and is engaged with a target, they can spend a maneuver to prevent the target from disengaging from the minion group until the end of their next turn and to add {@symbols aa} to their next combat check against that target."
+         ],
+         "tags": [
+            "combat",
+            "offensive",
+            "action",
+            "maneuver",
+            "results modifier",
+            "support"
+         ]
+      },
+      {
+         "name": "Petrifying Gaze",
+         "description": [
+            "As an action, may make an {@b opposed {@skill Cool||crb} versus {@skill Coordination||crb} check} targeting one character within medium range to {@rule immobilized|immobilize|crb} the target until the end of this character's next turn, plus one additional turn for each {@symbols ss}; may spend {@symbols aaa} to {@rule staggered|stagger|crb} target until the end of this character's next turn and may spend {@symbols t} to turn target to stone."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "action",
+            "opposed",
+            "results spend",
+            "status effect",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Pounce",
+         "description": [
+            "Once per turn, while at short range this creature may perform a move maneuver to engage a target as an incidental."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "movement"
+         ]
+      },
+      {
+         "name": "Radioactive",
+         "description": [
+            "At the end of an encounter in which a target was hit by a combat check from this character, that target must make a {@difficulty Hard|Resilience} or suffer one level of radiation (See A Certain Glow, EPG page 29)."
+         ],
+         "tags": [
+            "combat",
+            "offensive",
+            "passive"
+         ]
+      },
+      {
+         "name": "Red Tape",
+         "description": [
+            "Once per encounter, as an action, make an {@b opposed {@skill Knowledge||crb} versus {@skill Cool||crb} check} targeting one character in the encounter; if successful, the target increases the difficulty of all social skill checks they make by two, to a maximum of {@difficulty Formidable}, until the end of the encounter."
+         ],
+         "tags": [
+            "social",
+            "encounter",
+            "active",
+            "action",
+            "opposed",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Siren's Song",
+         "description": [
+            "This character may make an {@b opposed {@skill Charm||crb} versus {@skill Discipline||crb} check} targeting one character within long range; if successful, the target must spend all of its available maneuvers (including spending an action to gain a second maneuver or suffering strain) to move into engaged range, and the target may not make combat checks targeting this character until after this character makes a combat check targeting them."
+         ],
+         "tags": [
+            "combat",
+            "opposed",
+            "movement",
+            "action",
+            "active",
+            "support"
+         ]
+      },
+      {
+         "name": "Spells (Arcana)",
+         "description": [
+            "This character may choose any magic action allowed for by the {@skill Divine||crb} skill, and may select additional spell effects, as normal. The spell they use most often is the following unique spell."
+         ],
+         "tags": [
+            "general",
+            "magic",
+            "passive",
+            "customization option"
+         ]
+      },
+      {
+         "name": "Spells (Primal)",
+         "description": [
+            "This character may choose any magic action allowed for by the {@skill Primal||crb} skill, and may select additional spell effects, as normal. The spell they use most often is the following unique spell."
+         ],
+         "tags": [
+            "general",
+            "magic",
+            "passive",
+            "customization option"
+         ]
+      },
+      {
+         "name": "Spells: Endless Dance",
+         "description": [
+            "This character chooses one target within short range and makes an {@difficulty Average|Primal}; upon success, the target is {@rule immobilized||crb}, suffers 1 strain and 1 wound at the start of their turn, and adds {@dice setback|2} to all checks they make; on their turn, the target may make a {@difficulty Daunting|Discipline or Resilience} check to end these effects; can sustain the effects of this spell by performing the concentrate maneuver."
+         ],
+         "tags": [
+            "combat",
+            "offensive",
+            "magic",
+            "skill check modifier",
+            "active",
+            "action",
+            "unique spell"
+         ]
+      },
+      {
+         "name": "Spells: Eye of the Jinn",
+         "description": [
+            "This character chooses one target within medium range and makes an {@difficulty Average|Divine}; if the check is successful, until the end of this character's next turn, after the target makes a check, this character may choose one type of die in the pool and reroll all of the dice of that type; can sustain the effects of this spell by performing a concentrate maneuver."
+         ],
+         "tags": [
+            "general",
+            "support",
+            "active",
+            "action",
+            "magic",
+            "unique spell",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Spirit",
+         "description": [
+            "Does not need to breathe, eat, or drink, and can survive underwater; immune to poisons and toxins."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "resistance"
+         ]
+      },
+      {
+         "name": "Strategic Coordination",
+         "description": [
+            "Once per encounter, may make a {@difficulty Daunting|Leadership}; if successful, until the end of the encounter, all allies in the encounter may perform an additional move maneuver on their turn without downgrading their action or suffering strain but they still may only perform two maneuvers during their turn."
+         ],
+         "tags": [
+            "general",
+            "encounter",
+            "active",
+            "action",
+            "support",
+            "movement",
+            "free maneuver",
+            "leader"
+         ]
+      },
+      {
+         "name": "Sunlight Sensitivity",
+         "description": [
+            "While exposed to direct sunlight, this character reduces all of their characteristics by 2 and halves their Wound Threshold and Strain Threshold."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "weakness"
+         ]
+      },
+      {
+         "name": "Take a Breath",
+         "description": [
+            "Once per encounter, may suffer 2 strain as an out-of-turn incidental during an ally's turn; the ally loses a maneuver and either heals 6 strain or may reroll a fear check they just failed."
+         ],
+         "tags": [
+            "encounter",
+            "active",
+            "incidental (out of turn)",
+            "recovery"
+         ]
+      },
+      {
+         "name": "They Dare Call Me Mad?",
+         "description": [
+            "Characters targeting this character with a social skill check suffer 2 strain."
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "defensive"
+         ]
+      },
+      {
+         "name": "Time to Heal",
+         "description": [
+            "If this character is caring for a character who is benefiting from natural rest, the resting character heals 2 wounds each night and decreases the difficulty of any {@skill Resilience||crb} checks they make to heal Critical Injuries by 1, to a minimum of {@difficulty Easy}."
+         ],
+         "tags": [
+            "general",
+            "recovery",
+            "skill check modifier",
+            "critical injury"
+         ]
+      },
+      {
+         "name": "Toss",
+         "description": [
+            "After making a combat check, this creature may spend {@symbols t} to move the target up to short range, inflict 4 strain, and knock the target {@rule prone||crb}."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Undead",
+         "description": [
+            "Does not need to breathe, eat, or drink (except blood), can survive underwater, and is immune to poisons and toxins."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "resistance"
+         ]
+      },
+      {
+         "name": "Unnatural Resilience",
+         "description": [
+            "After suffering a Critical Injury, may spend one Story Point to reduce the Critical Injury result by -50; if this reduces the Critical Injury result to less than 01, the failed experiment does not suffer a Critical Injury."
+         ],
+         "tags": [
+            "general",
+            "defensive",
+            "active",
+            "incidental (out of turn)",
+            "recovery",
+            "critical injury"
+         ]
+      },
+      {
+         "name": "Vulnerable Heart",
+         "description": [
+            "When this character suffers a Critical Injury from a weapon made of wood, such as a stake or crossbow bolt, they add +40 to the Critical Injury result."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "weakness"
+         ]
+      },
+      {
+         "name": "Vulnerable to Fire",
+         "description": [
+            "Hits from fire or a weapon with the {@quality Burn||crb} item quality ignore this character's soak."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "weakness",
+            "item quality"
+         ]
+      },
+      {
+         "name": "We Belong Dead",
+         "description": [
+            "Characters targeting this character with a social skill check suffer 3 strain."
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "defensive"
+         ]
+      },
+      {
+         "name": "…And I'm Always Right",
+         "description": [
+            "May make a {@difficulty Hard|Leadership}; if successful, allies within medium range may perform a second maneuver during their turn without suffering strain; this character may spend {@symbols a} to increase the damage of affected allies' attacks by an amount equal to the {@symbols a} spent; both of these effects last until the end of this character's next turn."
+         ],
+         "tags": [
+            "combat",
+            "results spend",
+            "support",
+            "free maneuver",
+            "leader"
          ]
       }
    ],
@@ -5337,7 +5902,6 @@
          "name": "Blood Call",
          "description": [
             "A dhampir has fangs and can use them as a weapon with the following profile (Brawl; Damage +0; Critical 2; Range [Engaged]; {@quality ensnare|Ensnare 1|crb}, {@quality pierce|Pierce 2|crb}, {@quality vicious|Vicious 2|crb}). When a dhampir inflicts wounds with their fangs (or narratively drinks blood), you may spend a Story Point to have them heal 4 strain and 4 wounds. However, if a dhampir kills a person with their fangs, the dhampir becomes a vampire, maintaining their profile but becoming an evil spawn of darkness (what this means for your character is up to your GM).",
-
             {
                "type": "table",
                "columns": [
@@ -5357,13 +5921,15 @@
                      "header": "Special"
                   }
                ],
-               "rows": [{
-                  "skill": "{@skill Brawl||crb}",
-                  "damage": "+0",
-                  "critical": 2,
-                  "range": "Engaged",
-                  "special": "{@quality ensnare|Ensnare 1|crb}, {@quality pierce|Pierce 2|crb}, {@quality vicious|Vicious 2|crb}"
-               }]
+               "rows": [
+                  {
+                     "skill": "{@skill Brawl||crb}",
+                     "damage": "+0",
+                     "critical": 2,
+                     "range": "Engaged",
+                     "special": "{@quality ensnare|Ensnare 1|crb}, {@quality pierce|Pierce 2|crb}, {@quality vicious|Vicious 2|crb}"
+                  }
+               ]
             }
          ],
          "tags": [
@@ -6304,7 +6870,7 @@
          "page": 23,
          "description": [
             "There was no need for devices to mimic the effects of full daylight until the discovery that it is repugnant to those who haunt the night. Though sunlight grenades are difficult to create, these inventions have proven deadly to some things that science cannot explain.",
-            "When a sunlight grenade explodes, until the end of the current round, it acts as direct sunlight on all characters within medium range. Characters in cover who have the {@archetype dhampir|Sunlight Sensitivity} ability suffer 3 wounds and 6 strain instead of the ability's normal effects."
+            "When a sunlight grenade explodes, until the end of the current round, it acts as direct sunlight on all characters within medium range. Characters in cover who have the {@archetypeAbility Sunlight Sensitivity} ability suffer 3 wounds and 6 strain instead of the ability's normal effects."
          ],
          "skill": {
             "name": "ranged (light)",

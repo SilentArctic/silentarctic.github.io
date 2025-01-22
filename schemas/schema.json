@@ -8,6 +8,7 @@
       "_meta": { "$ref": "meta_schema.json" },
       "adventure": { "$ref": "adventure_schema.json" },
       "adversary": { "$ref": "adversary_schema.json" },
+      "adversaryAbility": { "$ref": "ability_schema.json" },
       "archetype": { "$ref": "archetype_schema.json" },
       "archetypeAbility": { "$ref": "ability_schema.json" },
       "book": { "$ref": "book_schema.json" },
@@ -34,7 +35,9 @@
    "optional": [
       "adventure",
       "adversary",
+      "adversaryAbility",
       "archetype",
+      "archetypeAbility",
       "book",
       "career",
       "characteristic",
