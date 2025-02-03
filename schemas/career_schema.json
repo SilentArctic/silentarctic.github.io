@@ -6,10 +6,12 @@
          "type": "object",
          "properties": {
             "name": {
-               "type": "string"
+               "type": "string",
+               "description": "Career name."
             },
             "page": {
-               "type": "integer"
+               "type": "integer",
+               "description": "Career page number."
             },
             "skills": {
                "type": "array",
@@ -18,10 +20,12 @@
                      "type": "object",
                      "properties": {
                         "name": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Skill name."
                         },
                         "source": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Skill source (if not in same collection)."
                         }
                      },
                      "required": [
@@ -32,7 +36,8 @@
                      ],
                      "additionalProperties": false
                   }
-               ]
+               ],
+               "description": "List of career skills."
             },
             "description": {
                "type": "array",
@@ -40,7 +45,8 @@
                   {
                      "type": "string"
                   }
-               ]
+               ],
+               "description": "Career fluff information."
             },
             "startingGear": {
                "type": "object",
@@ -51,7 +57,8 @@
                         {
                            "type": "string"
                         }
-                     ]
+                     ],
+                     "description": "Fluff introducing starting gear."
                   },
                   "gear": {
                      "type": "array",
@@ -59,9 +66,11 @@
                         {
                            "type": "string"
                         }
-                     ]
+                     ],
+                     "description": "List of starting gear."
                   }
                },
+               "description": "Suggested starting gear.",
                "required": [
                   "description",
                   "gear"
@@ -77,7 +86,8 @@
                         {
                            "type": "string"
                         }
-                     ]
+                     ],
+                     "description": "Introduction to suggested talents."
                   },
                   "talents": {
                      "type": "array",
@@ -86,7 +96,10 @@
                            "type": "object",
                            "properties": {
                               "tier": {
-                                 "type": "integer"
+                                 "type": "integer",
+                                 "min": 1,
+                                 "max": 5,
+                                 "description": "Talent tier."
                               },
                               "name": {
                                  "type": "string"
@@ -107,6 +120,7 @@
                      ]
                   }
                },
+               "description": "Suggested starting talents.",
                "required": [
                   "description",
                   "talents"

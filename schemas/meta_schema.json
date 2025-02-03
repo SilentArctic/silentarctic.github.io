@@ -4,48 +4,60 @@
    "properties": {
       "source": {
          "type": "object",
+         "description": "Source meta-data used for tracking and creating items correctly.",
          "properties": {
+            "version": {
+               "type": "string",
+               "description": "Version of your homebrew. You can use an actual versioning system, but I suggest using the most recent date it was updated in format \"YYYY.MM.DD\"."
+            },
             "json": {
-               "type": "string"
+               "type": "string",
+               "description": "kebab-case title of your homebrew. This is used to differentiate your data from everything else and {@b must be unique}."
             },
             "full": {
-               "type": "string"
+               "type": "string",
+               "description": "The full name of your homebrew, with correct casing."
             },
             "abbreviation": {
-               "type": "string"
+               "type": "string",
+               "description": "The abbreviated name of your homebrew, used in reference tags and shown as the source. Use colons to separate title/subtitle. {@b Underscore characters are reserved for translation files.}"
             },
             "language": {
-               "type": "string"
+               "type": "string",
+               "description": "The collection's language, spelled out. Defaults to English."
             },
             "color": {
-               "type": "string"
+               "type": "string",
+               "description": "The hex-color of the abbreviation when displayed in tables and headers. Please make sure the color is readable in all color schemes. Defaults to black/white based on theme."
             },
             "url": {
-               "type": "string"
-            },
-            "version": {
-               "type": "string"
+               "type": "string",
+               "description": "Web address of your homebrew. Can link to drivethrurpg, or any other website at which your product is located."
             },
             "authors": {
                "type": "array",
                "items": {
                   "type": "string"
-               }
+               },
+               "description": "List of authors."
             },
             "convertedBy": {
                "type": "array",
                "items": {
                   "type": "string"
-               }
+               },
+               "description": "List of people who converted the collection from PDF/etc to GenesysRef JSON format."
             },
             "translatedBy": {
                "type": "array",
                "items": {
                   "type": "string"
-               }
+               },
+               "description": "List of people who translated the collection from a different language. Do not use this field if the source material was itself a translation."
             },
             "releaseDate": {
-               "type": "string"
+               "type": "string",
+               "description": "Source release date. Please use the format: D Month YYYY (28 April 2023)."
             },
             "module": {
                "type": "boolean",
