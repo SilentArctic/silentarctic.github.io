@@ -2,6 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
+         "version": "2025.2.4",
          "json": "expanded-players-guide",
          "full": "Expanded Player's Guide",
          "abbreviation": "EPG",
@@ -14,7 +15,6 @@
             "Craftidore"
          ],
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/expanded-players-guide/",
-         "version": "2025.1.20",
          "releaseDate": "20 September 2019"
       },
       "filters": {
@@ -7705,6 +7705,7 @@
          "page": 99,
          "concentration": true,
          "difficulty": "easy",
+         "range": "Short",
          "skills": [
             {
                "name": "arcana",
@@ -7716,7 +7717,7 @@
             "When you use a Mask spell in a narrative situation, first check out the mechanical rules starting on page 99 and see if the effects you want are listed there. If so, you can use the listed difficulties to figure out how hard it should be to cast the spell. However, remember that the Mask spell only creates illusions; it can merely alter what the eyes see and the ears hear (and maybe what the nose smells). It can't create something physical."
          ],
          "structured": [
-            "This is using magic to create an illusion, or to disguise a character's appearance. The character makes an Arcana skill check. The default difficulty for the check is {@difficulty Easy}. If the check is successful, the character creates an illusion of a creature or object that is silhouette 1 or smaller. The illusion appears within short range of the character. Alternatively, the illusion changes the appearance of the caster or one silhouette 1 (or smaller) target they are engaged with. The illusion cannot obscure the basic size and shape of the target.",
+            "This is using magic to create an illusion, or to disguise a character's appearance. The character makes an {@skill Arcana||crb} skill check. The default difficulty for the check is {@difficulty Easy}. If the check is successful, the character creates an illusion of a creature or object that is silhouette 1 or smaller. The illusion appears within short range of the character. Alternatively, the illusion changes the appearance of the caster or one silhouette 1 (or smaller) target they are engaged with. The illusion cannot obscure the basic size and shape of the target.",
             "Illusions can generate light and sound, but they cannot cause harm or interact with their environment in any way. Illusions can be animated and can move, as long as they remain within the range of the spell. A keen observer can attempt to spot the false nature of the illusion by making an {@difficulty Average|Vigilance} (or {@difficulty Average|Perception} if the observer suspects that their senses may be fooled). Success means the observer recognizes the object's illusory nature.",
             "Before making a mask check, choose any number of additional effects listed on {@table III.1-1: Mask Additional Effects}. These effects are added to the check."
          ],
@@ -7784,6 +7785,7 @@
          "page": 101,
          "concentration": false,
          "difficulty": "average",
+         "range": "Self",
          "skills": [
             {
                "name": "arcana",
@@ -7799,7 +7801,7 @@
             "When your character uses a Predict spell narratively, its difficulty usually depends on how far into the future they want to look. If it's within the next day or so, then you can start with a difficulty of {@difficulty Average}. Looking a month ahead may increase the difficulty to {@difficulty Hard}, a year may be {@difficulty Daunting}, and anything beyond that may be {@difficulty Formidable}. A significant number of {@symbols h} or a {@symbols d} may make a prophecy especially inscrutable or vague."
          ],
          "structured": [
-            "This is using magic to attempt to predict the future. The character makes an Arcana or Divine skill check, then asks one question about events that will unfold within the next 24 hours. The default difficulty of the check is {@difficulty Average}. If the check is successful, your GM must provide the character with a truthful answer, but that answer could be one that can be interpreted multiple ways or is somewhat enigmatic. Whether the check succeeds or fails, the character may not make another predict check to ask about the same events for the remainder of the session.",
+            "This is using magic to attempt to predict the future. The character makes an {@skill Arcana||crb} or {@skill Divine||crb} skill check, then asks one question about events that will unfold within the next 24 hours. The default difficulty of the check is {@difficulty Average}. If the check is successful, your GM must provide the character with a truthful answer, but that answer could be one that can be interpreted multiple ways or is somewhat enigmatic. Whether the check succeeds or fails, the character may not make another predict check to ask about the same events for the remainder of the session.",
             "Before making a predict check, choose any number of additional effects listed on {@table III.1-2: Predict Additional Effects}. These effects are added to the check."
          ],
          "additionalEffects": [
@@ -7852,6 +7854,7 @@
          "page": 101,
          "concentration": true,
          "difficulty": "average",
+         "range": "Self",
          "skills": [
             {
                "name": "primal",
@@ -7863,7 +7866,7 @@
             "When using Transform narratively, you should base the difficulty on the size of the animal your character is attempting to become. The default difficulty for using this spell in a narrative encounter is {@difficulty Average} if your character wants to transform into a silhouette 0 creature. Increase the difficulty of the check by one for each silhouette larger your character wants to transform into. You could also increase the difficulty by one if your character needs to remain transformed for a great length of time."
          ],
          "structured": [
-            "This is using magic to tap into primal forces and shift into the form of a wild creature. The character makes a Primal skill check. The default difficulty of the check is {@difficulty Average}. If the check is successful, until the end of the spellcaster's next turn, the character transforms into a silhouette 0 animal. The animal must be a natural creature, and is subject to GM approval. Some options can be found starting on page 86.",
+            "This is using magic to tap into primal forces and shift into the form of a wild creature. The character makes a {@skill Primal||crb} skill check. The default difficulty of the check is {@difficulty Average}. If the check is successful, until the end of the spellcaster's next turn, the character transforms into a silhouette 0 animal. The animal must be a natural creature, and is subject to GM approval. Some options can be found starting on page 86.",
             "While transformed, the spellcaster adopts the physical appearance of the animal and gains the animal's characteristics, soak, wound threshold, and defense. The spellcaster also gains any of the animal's abilities and equipment (including weapons).",
             "The character retains their own skills, talents, and strain threshold. They drop any gear or clothing they were carrying or wearing when they transformed.",
             "If the character is incapacitated while transformed, they revert back to their normal form. When a character reverts back to their normal form, they heal all wounds suffered while transformed but do not heal any strain or Critical Injuries they suffered while transformed. If they were incapacitated due to exceeding their wound threshold, they are no longer incapacitated.",

@@ -23,7 +23,7 @@
             },
             "range": {
                "type": "string",
-               "enum": ["Engaged", "Short", "Medium", "Long", "Extreme", "Strategic"]
+               "enum": ["Self", "Engaged", "Short", "Medium", "Long", "Extreme", "Strategic"]
             },
             "skills": {
                "type": "array",
