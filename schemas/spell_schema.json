@@ -105,7 +105,6 @@
             "name",
             "concentration",
             "difficulty",
-            "range",
             "skills",
             "narrative",
             "structured",
@@ -113,6 +112,7 @@
          ],
          "optional": [
             "page",
+            "range",
             "imageUrl"
          ],
          "additionalProperties": false
