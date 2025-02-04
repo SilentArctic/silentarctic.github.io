@@ -1,11 +1,11 @@
 {
    "core-rule-book.json": {
+      "version": "2025.2.4",
       "json": "core-rule-book",
       "full": "Genesys Core Rulebook",
       "abbreviation": "CRB",
       "color": "#14C0F1",
       "url": "https://www.fantasyflightgames.com/en/products/genesys/",
-      "version": "2025.1.20",
       "authors": [
          "Fantasy Flight Games"
       ],
@@ -32,6 +32,7 @@
       "originType": "core"
    },
    "expanded-players-guide.json": {
+      "version": "2025.2.4",
       "json": "expanded-players-guide",
       "full": "Expanded Player's Guide",
       "abbreviation": "EPG",
@@ -44,17 +45,16 @@
          "Craftidore"
       ],
       "url": "https://www.fantasyflightgames.com/en/products/genesys/products/expanded-players-guide/",
-      "version": "2025.1.20",
       "releaseDate": "20 September 2019",
       "originType": "core"
    },
    "realms-of-terrinoth.json": {
+      "version": "2025.2.4",
       "json": "realms-of-terrinoth",
       "full": "Realms of Terrinoth",
       "abbreviation": "RoT",
       "color": "#A75A0E",
       "url": "https://www.fantasyflightgames.com/en/products/genesys/products/realms-terrinoth/",
-      "version": "2025.1.20",
       "authors": [
          "Fantasy Flight Games"
       ],

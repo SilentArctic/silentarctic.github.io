@@ -21,6 +21,10 @@
                "type": "string",
                "enum": ["simple", "easy", "average", "hard", "daunting", "formidable"]
             },
+            "range": {
+               "type": "string",
+               "enum": ["Self", "Engaged", "Short", "Medium", "Long", "Extreme", "Strategic"]
+            },
             "skills": {
                "type": "array",
                "items": [
@@ -79,12 +83,18 @@
                         },
                         "difficultyMod": {
                            "type": "integer"
+                        },
+                        "difficultyUpgrade": {
+                           "type": "integer"
                         }
                      },
                      "required": [
                         "name",
                         "description",
                         "difficultyMod"
+                     ],
+                     "optional": [
+                        "difficultyUpgrade"
                      ],
                      "additionalProperties": false
                   }
@@ -95,6 +105,7 @@
             "name",
             "concentration",
             "difficulty",
+            "range",
             "skills",
             "narrative",
             "structured",
