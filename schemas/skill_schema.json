@@ -6,36 +6,45 @@
          "type": "object",
          "properties": {
             "name": {
-               "type": "string"
+               "type": "string",
+               "description": "Skill name."
             },
             "page": {
-               "type": "integer"
+               "type": "integer",
+               "description": "Page number on which the skill is found."
             },
             "imageUrl": {
-               "type": "string"
+               "type": "string",
+               "description": "Url to a related image."
             },
             "characteristic": {
-               "type": "string"
+               "type": "string",
+               "description": "Characteristic linked to the skill."
             },
             "category": {
                "type": "string",
                "enum": [
                   "general",
-                  "knowledge",
                   "combat",
-                  "magic",
                   "social",
+                  "knowledge",
+                  "magic",
                   "other"
-               ]
+               ],
+               "description": "Category of the skill. One of \"general\", \"combat\", \"social\", \"knowledge\", \"magic\", \"other\"."
             },
-            "description": { "$ref": "./varyingDisplay_sub_schema.json" },
+            "description": {
+               "$ref": "./varyingDisplay_sub_schema.json",
+               "description": "Skill information. Each array item will be its own paragraph. Also accepts varying displays."
+            },
             "shouldUse": {
                "type": "array",
                "items": [
                   {
                      "type": "string"
                   }
-               ]
+               ],
+               "description": "Suggested reasons to use the skill."
             },
             "shouldNotUse": {
                "type": "array",
@@ -43,7 +52,8 @@
                   {
                      "type": "string"
                   }
-               ]
+               ],
+               "description": "Suggested reasons to not use the skill."
             },
             "spells": {
                "type": "array",
@@ -51,10 +61,12 @@
                   "type": "object",
                   "properties": {
                      "name": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "Spell name."
                      },
                      "source": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "Spell source abbreviation (omit if the spell is part of this collection)."
                      }
                   },
                   "required": [
@@ -64,7 +76,8 @@
                      "source"
                   ],
                   "additionalProperties": false
-               }
+               },
+               "description": "List of spells that use this skill."
             },
             "settings": { "$ref": "./settings_sub_schema.json" }
          },
