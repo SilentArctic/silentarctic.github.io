@@ -1,6 +1,6 @@
 {
    "core-rule-book.json": {
-      "version": "2025.2.4",
+      "version": "2025.2.15",
       "json": "core-rule-book",
       "full": "Genesys Core Rulebook",
       "abbreviation": "CRB",
@@ -32,7 +32,7 @@
       "originType": "core"
    },
    "expanded-players-guide.json": {
-      "version": "2025.2.4",
+      "version": "2025.2.26",
       "json": "expanded-players-guide",
       "full": "Expanded Player's Guide",
       "abbreviation": "EPG",
@@ -62,12 +62,12 @@
       "originType": "core"
    },
    "secrets-of-the-crucible.json": {
+      "version": "2025.2.15",
       "json": "secrets-of-the-crucible",
       "full": "Keyforge: Secrets of the Crucible",
       "abbreviation": "SotC",
       "color": "#FAC619",
       "url": "https://www.fantasyflightgames.com/en/products/genesys/products/secrets-crucible/",
-      "version": "2025.1.22",
       "authors": [
          "Fantasy Flight Games"
       ],
@@ -78,12 +78,12 @@
       "originType": "core"
    },
    "shadow-of-the-beanstalk.json": {
+      "version": "2025.2.15",
       "json": "shadow-of-the-beanstalk",
       "full": "Android: Shadow of the Beanstalk",
       "abbreviation": "SotB",
       "color": "#40B3B5",
       "url": "https://www.fantasyflightgames.com/en/products/genesys/products/shadow-beanstalk/",
-      "version": "2025.1.20",
       "authors": [
          "Fantasy Flight Games"
       ],

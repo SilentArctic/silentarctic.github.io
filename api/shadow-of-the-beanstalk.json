@@ -2,12 +2,12 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
+         "version": "2025.2.15",
          "json": "shadow-of-the-beanstalk",
          "full": "Android: Shadow of the Beanstalk",
          "abbreviation": "SotB",
          "color": "#40B3B5",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/shadow-beanstalk/",
-         "version": "2025.1.20",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -47,6 +47,7 @@
    "adversary": [
       {
          "name": "Adam Industrial Labor Bioroid",
+         "page": 236,
          "type": "minion",
          "characteristics": {
             "brawn": 4,
@@ -82,6 +83,9 @@
          ],
          "weapons": [],
          "gear": [],
+         "description": [
+            "The Adam line was the first large-market bioroid success. Adam units perform hard physical labor with the kind of strength, speed, and precision only a machine can achieve. While Jinteki's Henry-model clones have begun to bite into the Adam market, Adams are still commonplace in Quinde factories and on construction sites across New Angeles."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -102,6 +106,7 @@
       },
       {
          "name": "Adonis and Eve Pleasure Bioroid",
+         "page": 236,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -170,6 +175,9 @@
          "gear": [
             "Fuzzy restraints"
          ],
+         "description": [
+            "Pleasure bioroids are an attempt by Haas-Bioroid to move their products into the entertainment markets. Unlike most bioroids, Adonis, Eve, and to a certain extent, the cheaper Kevin- and Lisa-models, are built to appear as human as possible. Many nightclubs and other high-end social spaces employ luxury-model Adonis or Eve units to “entertain” their customers, while in seedier areas of New Angeles, pleasure bioroids sate humanity's basest instincts."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -190,6 +198,7 @@
       },
       {
          "name": "Anarch Troublemaker",
+         "page": 237,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -309,6 +318,9 @@
          "gear": [
             "Skulljack, Portable Terminal with Crypsis (SotB p. 137)-protected by Hadrian's Wall (SotB p. 133)"
          ],
+         "description": [
+            "Not everyone believes in following the rules or being part of society. Anarchs take this a step further, hoping to get the rest of the worlds to join in on the chaos. They expose the rich and powerful, working to show everyone else how powerless they really are and how none of their rules matter. Anarchs are known for large-scale pranks, like hacking major broadcasts to transmit obviously forged images of officials committing sexually explicit acts, and the like."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -329,9 +341,11 @@
       },
       {
          "name": "Ares Combat Bioroid",
+         "page": 239,
          "type": "nemesis",
          "description": [
-            "Choose either the Integrated Rotary Cannon or the Integrated Heavy Gauss Rifle"
+            "Ares is a secret Haas-Bioroid project designed to test the viability of combat bioroids (as well as a flagrant violation of international law). Almost equal to an infantry platoon, the Ares is effectively immune to small-arms fire and is also flame, radiation, and blast resistant. It has integrated 360-degree radar, infrared, and low-light sensors that constantly monitor the battlefield, and it has a variety of integrated threat-response options. Overpowered servos allow units to carry the heaviest anti-personnel and anti-armor weaponry, often Gauss rifles, missile launchers, or heavy machine guns.",
+            "Choose either the Integrated Rotary Cannon or the Integrated Heavy Gauss Rifle."
          ],
          "characteristics": {
             "brawn": 5,
@@ -520,6 +534,7 @@
       },
       {
          "name": "Assistant District Attorney",
+         "page": 228,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -626,6 +641,9 @@
          "gear": [
             "Legal PAD, expensive suit"
          ],
+         "description": [
+            "When the NAPD makes an arrest, district attorneys keep the criminals behind bars as long as possible. DAs are public figures who have made long lists of enemies, and they often find themselves on various orgcrime hit lists. DAs don't last long unless they accept NAPD protection, invest heavily in self-defense training, or succumb to corruption."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -646,6 +664,7 @@
       },
       {
          "name": "Camdrone",
+         "page": 233,
          "type": "minion",
          "characteristics": {
             "brawn": 1,
@@ -685,6 +704,9 @@
          ],
          "weapons": [],
          "gear": [],
+         "description": [
+            "Most camdrones are simple disks built around one or more electromagnetic hoverfoil rotors and studded with cameras. Everyone from the NAPD and the military to private citizens uses drones for reconnaissance and entertainment."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -842,6 +864,7 @@
       },
       {
          "name": "Civic Brigadier",
+         "page": 218,
          "type": "minion",
          "characteristics": {
             "brawn": 3,
@@ -872,8 +895,7 @@
             },
             {
                "name": "Knowledge (Society)",
-               "characteristic": "intellect",
-               "source": "crb"
+               "characteristic": "intellect"
             },
             {
                "name": "Mechanics",
@@ -889,6 +911,9 @@
          "talents": [],
          "abilities": [
             "Community Volunteer"
+         ],
+         "description": [
+            "While the citizens of New Angeles live in a corporate-run world dominated by pursuit of profit, some still seek to improve life for the downtrodden. Civic brigadiers join volunteer organizations to install and maintain essential services, such as water and power, in the undercity or to build greenspaces, schools, and community centers."
          ],
          "weapons": [
             {
@@ -933,6 +958,7 @@
       },
       {
          "name": "Club Owner",
+         "page": 219,
          "type": "nemesis",
          "characteristics": {
             "brawn": 2,
@@ -1005,6 +1031,9 @@
          "abilities": [
             "Threat of Ban"
          ],
+         "description": [
+            "At and just below the plaza level, nightclubs, bars, and {@i discotecas} are where a lot of secret meetings and clandestine business dealings occur. This makes many club owners de facto power players in the undercity, whether they directly involve themselves in these illegal goings-on or not."
+         ],
          "weapons": [
             {
                "name": "Stun Baton",
@@ -1050,7 +1079,8 @@
          ]
       },
       {
-         "name": "Combat Drone (SotB)",
+         "name": "Combat Drone",
+         "page": 233,
          "type": "minion",
          "characteristics": {
             "brawn": 1,
@@ -1108,6 +1138,9 @@
             }
          ],
          "gear": [],
+         "description": [
+            "Combat drones usually deploy defensively to watch an infantry unit's flanks or forward as scouts. Though not well armed or armored, they are agile and more disposable than a human soldier, and in groups they can be lethal."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -1128,6 +1161,7 @@
       },
       {
          "name": "Corporate Bioroids",
+         "page": 236,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -1192,6 +1226,9 @@
          "gear": [
             "Corporate PAD"
          ],
+         "description": [
+            "Designed for basic corporate and office work, corporate bioroids handle many customer-service, customer-support, and first-tier sales calls, as well as jobs juggling data work and preparing reports. Unfortunately, when early adopters tried to flood departments with the initial \"Janice\" line, employees and customers found them unsettling in their sameness. The Janice line now has a number of related models, including Brad finance units, Sally overseers, and Greg customer-service units. What HB neglects to mention is all of these units are just Janice bioroids with cosmetic differences."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -1212,6 +1249,7 @@
       },
       {
          "name": "Corporate Manager",
+         "page": 224,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -1281,6 +1319,9 @@
          "gear": [
             "Smartsuit, PAD"
          ],
+         "description": [
+            "Corporate mission statements and ideologies vary from corporation to corporation, and it is the job of the middle manager to ensure the prevailing corporate philosophy trickles down to the workers and androids within their purview. Many middle managers worship upper management and executives with an almost religious reverence in their struggle to get ahead, which sometimes makes them oblivious to simple realities obvious to those underneath them. Thus, their personal attention on an underling's project can often be as hurtful as it is helpful."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -1301,6 +1342,7 @@
       },
       {
          "name": "Corporate Sysop",
+         "page": 225,
          "type": "rival",
          "characteristics": {
             "brawn": 1,
@@ -1358,6 +1400,9 @@
          "gear": [
             "PAD, corporate ID, snacks"
          ],
+         "description": [
+            "To protect themselves from all manner of Netcrime, corporations hire sysops (system operators) to oversee and maintain their security programs. Most sysops can react to an intrusion and work to lock out a runner, while the best sysops can track the intrusion back to its source and initiate some sort of retaliation."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -1378,6 +1423,7 @@
       },
       {
          "name": "Criminal Runner",
+         "page": 221,
          "type": "nemesis",
          "characteristics": {
             "brawn": 2,
@@ -1487,6 +1533,9 @@
             "Skulljack, fake IDs.",
             "Portable Rig with Femme Fatale (SotB p. 137) and Corroder (SotB p. 136)-protected by Shinobi (SotB p. 135)"
          ],
+         "description": [
+            "Criminal runners come in all types: some are cocky upstarts taking on jobs out of their league, while others are cold professionals saving up for retirement. But for each of them, at the end of the day it's all about the paycheck."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -1507,6 +1556,7 @@
       },
       {
          "name": "Cyberdog",
+         "page": 226,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -1576,6 +1626,9 @@
             }
          ],
          "gear": [],
+         "description": [
+            "As more and more people have modified themselves with cybernetics, they have taken to enhancing their best friends as well. Dogs can receive cybernetics once they're fully grown, and most breeds adapt to them surprisingly well."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -1596,6 +1649,7 @@
       },
       {
          "name": "Cybermod Bounty Hunter",
+         "page": 230,
          "type": "nemesis",
          "characteristics": {
             "brawn": 3,
@@ -1734,6 +1788,9 @@
             "Concealed Buckyweave Clothing: 1 defense, +1 soak.",
             "Sub-dermal armor, enhanced reflexes, cybernetic lungs, 2 snap locks, PAD full of warrants"
          ],
+         "description": [
+            "The NAPD has one of the largest urban jurisdictions in the worlds, and it is hopelessly unable to field enough officers to cover it. Bounty hunters pick up the slack, serving summonses and warrants and taking fugitives off the streets, especially in the undercity. Relentless trackers and fierce combatants, bounty hunters tend to favor concealed or cybernetic armaments that allow them to approach their targets without alerting them."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -1753,7 +1810,82 @@
          ]
       },
       {
+         "name": "Desai Tutor Clone",
+         "page": 235,
+         "type": "nemesis",
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 4,
+            "cunning": 2,
+            "willpower": 3,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 12,
+            "strain": 16,
+            "defense": [0, 0]
+         },
+         "skills": [
+            {
+               "name": "Charm",
+               "characteristic": "presence",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Coordination",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Knowledge (Science)",
+               "characteristic": "intellect",
+               "ranks": 3
+            },
+            {
+               "name": "Knowledge (Society)",
+               "characteristic": "intellect",
+               "ranks": 3
+            },
+            {
+               "name": "Leadership",
+               "characteristic": "presence",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Medicine",
+               "characteristic": "intellect",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            "Adversary 1"
+         ],
+         "abilities": [
+            "Expert Instruction"
+         ],
+         "gear": [
+            "Bonsai tree",
+            "Instructor's holodisplay with full suite of lessons"
+         ],
+         "description": [
+            "The Desai line of tutor clones are high-end models designed for the children of the ultrawealthy. Desais are capable of teaching almost anything, from conceptual mathematics to late-twentieth-century literature, and from biology to Tai Chi. Their calm, authoritative demeanor means most parents feel comfortable leaving their kids in these clones' care. However, Jinteki has found that their powerful intellect has resulted in a higher number of Desais \"going rogue.\""
+         ]
+      },
+      {
          "name": "Diesel Bro",
+         "page": 219,
          "type": "minion",
          "characteristics": {
             "brawn": 3,
@@ -1800,6 +1932,9 @@
             }
          ],
          "abilities": [],
+         "description": [
+            "A segment of youth culture in New Angeles is preoccupied with sports and adrenaline. Generally male, the \"diesel bro\" is obsessed with \"traditional\" displays of machismo. This includes a great deal of high-risk and sometimes violent behavior. Rarely career criminals or streetbangers, most diesel bros are just angry kids hopped up on way too much energy drink. Still, violence often erupts after a mob of bros runs into someone wearing the wrong team colors."
+         ],
          "weapons": [
             {
                "name": "Baseball bat",
@@ -1842,6 +1977,7 @@
       },
       {
          "name": "Disenfrancisto",
+         "page": 219,
          "type": "minion",
          "characteristics": {
             "brawn": 2,
@@ -1903,6 +2039,9 @@
          "gear": [
             "Backpack of personal goods"
          ],
+         "description": [
+            "{@i Disenfrancistos} live off the grid in New Angeles' undercity, and are everyone from homeless panhandlers to those who choose to live a life away from the corporate controlled world that exists above plaza level. Many {@i disenfrancistos} tend to get by on odd jobs, scavenge the undercity for valuable finds, and sleep in disused transit tunnels, clone barracks, bioroid warehouses, and other squats."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -1923,6 +2062,7 @@
       },
       {
          "name": "Disenfrancisto Survivalist",
+         "page": 220,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -2033,6 +2173,9 @@
          "gear": [
             "Backpack full of supplies, medical kit, rope, flashlight"
          ],
+         "description": [
+            "While many live off the grid in poor conditions, others choose the life. Convinced that all mainstream media is a scam to encourage citizens to be \"good little consumers,\" the off-gridder {@i disenfrancisto} believes that only they understand how to live free. They have almost no Net presence, living throughout the undercity and in unique independent communities like Manta's Sunken City."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -2053,6 +2196,7 @@
       },
       {
          "name": "EMS First Responder",
+         "page": 228,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -2137,6 +2281,9 @@
          "gear": [
             "Medkit, medical scanner PAD, 2 slap-patches"
          ],
+         "description": [
+            "First responders typically work for the city or for a private hospital, operating out of medevac hoppers to transport the ill and injured to better facilities while providing on-scene or in-transit emergency medical care. Responding to emergencies in the undercity can be difficult and even dangerous work, due to both the natural hazards of crumbling buildings and deteriorating bridges and the risk of violence from gangs and locals. Many EMS techs carry Gandhi guns so that they can protect themselves without killing anyone."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -2157,6 +2304,7 @@
       },
       {
          "name": "EWS Raider",
+         "page": 230,
          "type": "nemesis",
          "characteristics": {
             "brawn": 3,
@@ -2270,6 +2418,9 @@
             "Up to four drones of various types",
             "Encrypted suit rig with BMI with Corroder (SotB p. 136) and Crypsis (SotB p 137)-protected by Archer (SotB p. 134) and Ice Wall (SotB p. 134)"
          ],
+         "description": [
+            "The Electronic Warfare Service is the United States' cyber warfare division, and the Raiders are elite operatives who embed on the front lines to provide drone air support and Network security, degrade enemy networks, and generally dominate the cyber battlefield. Raiders are some of the most dangerous militarized computer operatives around, and a veteran of the EWS has no problem finding work in the world of corporate espionage."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -2290,6 +2441,7 @@
       },
       {
          "name": "Field Anchor",
+         "page": 225,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -2358,6 +2510,9 @@
          "gear": [
             "Light 'Bulletproof' Undervest: +1 soak",
             "Camdrone, PAD, satellite uplink system, cheap and stain-resistant suit"
+         ],
+         "description": [
+            "A majority of New Angelinos get their news from anchors working for one of NBN's programming lineups. NBN field anchors embed with the NAPD during undercity sweeps, stand on Manta Beach during hurricane threats, and report from virtually any location that might have even a tangential connection to a story in an effort to give viewers a sense of conditions on the ground. The older and wiser ones simulate doing all these things via digital manipulation, trusting that most viewers can't tell the difference."
          ],
          "tags": [
             "source:SotB",
@@ -2509,6 +2664,7 @@
       },
       {
          "name": "G-Mod Bodyguard",
+         "page": 231,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -2620,6 +2776,9 @@
             "Sunglasses with HUD",
             "1 slap-patch"
          ],
+         "description": [
+            "The wealthy often retain a security detail, which is as much a status symbol as anything. They may request that their bodyguards dress in classy outfits, and even coordinate their appearance. G-modded bodyguards are the elite members of the private security world; they are strong and fast, but they also tend to look good and really fill out their subtly armored designer suits. Prisec corporations often keep them on retainer for their most valued (and wealthiest) clientele"
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -2640,6 +2799,7 @@
       },
       {
          "name": "G-Modstrocity",
+         "page": 227,
          "type": "nemesis",
          "characteristics": {
             "brawn": 5,
@@ -2709,6 +2869,9 @@
             }
          ],
          "gear": [],
+         "description": [
+            "The citizens of BosWash like to brag about their giant mutant crocodiles in the sewers, but in truth, every major metropolis has its share of monstrous creatures. So-called \"g-modstrocities\" likely started out as a lab experiment gone terribly wrong. Now a potent blend of dozens of genomes, they roam the depths of the undercity, avoiding Animal Control sweeps and preying on anyone unlucky enough to get in their way."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -2729,6 +2892,7 @@
       },
       {
          "name": "Hellion",
+         "page": 240,
          "type": "rival",
          "characteristics": {
             "brawn": 1,
@@ -2815,6 +2979,9 @@
             }
          ],
          "gear": [],
+         "description": [
+            "While there is no official proof that hellions exist, they are an open secret among some circles of Netcriminals. No one is certain if these small, cat-shaped robotic constructs are drones. However, some {@i disenfrancistos} have claimed to see hellions chasing hyperrats or spending hours batting at holographic signs, which suggests an autonomous (and animalistic) operating system. Other criminals have come back to supposedly safe crash pads to find their gear and possessions shredded, chewed on, and thoroughly trashed, and spotted a catlike creature with glowing red eyes ducking out a window or ventilation shaft. An unlucky few have even been found dead and savagely mauled in similar crash pads."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -2834,7 +3001,53 @@
          ]
       },
       {
+         "name": "Henry Labor Clone",
+         "page": 235,
+         "type": "minion",
+         "characteristics": {
+            "brawn": 4,
+            "agility": 2,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 1,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 5,
+            "wounds": 7,
+            "defense": [0, 0]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Mechanics",
+               "characteristic": "intellect",
+               "source": "crb"
+            },
+            {
+               "name": "Resilience",
+               "characteristic": "brawn",
+               "source": "crb"
+            }
+         ],
+         "talents": [],
+         "abilities": [
+            "Air Filter Implant"
+         ],
+         "gear": [
+            "{@gear Durable clothing}"
+         ],
+         "description": [
+            "Henry clones are designed to work long hours under punishing conditions. They mine He-3 on the lunar surface for Melange Mining and labor in many of Quinde's factories. Their bodies are stronger than those of any human in history, and their psyches have been adjusted to feel completely mentally fulfilled by a hard day's labor."
+         ]
+      },
+      {
          "name": "Human First Extremist",
+         "page": 237,
          "type": "minion",
          "characteristics": {
             "brawn": 2,
@@ -2894,6 +3107,9 @@
          "gear": [
             "Durable clothing: +1 soak"
          ],
+         "description": [
+            "Human First is a radicalized group of anti-android activists. Best identified by their sledgehammers, most Human First members are working-class people who've lost their jobs to androids. They destroy clones and bioroids from time to time, though NAPD treats their crimes as property damage."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -2914,6 +3130,7 @@
       },
       {
          "name": "Humanity Labor Rep",
+         "page": 237,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -2970,6 +3187,9 @@
          "gear": [
             "PAD"
          ],
+         "description": [
+            "Humanity Labor seeks to preserve human employment in a world where android labor is taking over. Humanity Labor reps tirelessly meet with corporate and government leaders, appear in news feeds, and plan and attend protests and marches (often alongside members of the radical Human First movement, though they deny any overt association)."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -2990,9 +3210,11 @@
       },
       {
          "name": "Hunter-Killer Drone",
+         "page": 234,
          "type": "rival",
          "description": [
-            "May be armed with either a Micro-missile pod, or Armor-piercing Missiles"
+            "The next level of combat drones, hunter-killer drones are used as heavy support platforms for infantry platoons or placed under the control of elite Electronic Warfare Service operatives. Their bulky chassis have enough lift to haul around some truly heavy artillery, and their software is sophisticated enough to make them dangerous on their own (requiring only a kill authorization from their operator).",
+            "May be armed with either a Micro-missile pod, or Armor-piercing Missiles."
          ],
          "characteristics": {
             "brawn": 2,
@@ -3135,6 +3357,7 @@
       },
       {
          "name": "Hyperrat Swarm",
+         "page": 227,
          "type": "rival",
          "characteristics": {
             "brawn": 1,
@@ -3214,6 +3437,9 @@
             }
          ],
          "gear": [],
+         "description": [
+            "The undercity is awash with illegal waste dumps from factories, labs, drug dens, and illicit pharmaceutical cooperatives, combined with the sewage of half a billion people. This cocktail pushes the vermin population into an accelerated evolutionary cycle to survive, and two-kilo sewer rats with the disposition of a wolverine are one of the undisputed successes of this genetic arms race. When they swarm, they can strip a full-grown human down to bones in minutes."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -3485,6 +3711,7 @@
       },
       {
          "name": "Liberty Society Rep",
+         "page": 238,
          "type": "rival",
          "characteristics": {
             "brawn": 1,
@@ -3550,6 +3777,9 @@
          "weapons": [],
          "gear": [
             "Legal PAD"
+         ],
+         "description": [
+            "The Liberty Society is an advocacy group seeking to provide clones with human rights. Its members work tirelessly with the Simulant Abolitionist Movement to find test cases they can bring to court, and they meet with liaisons from Jinteki, government organizations, and news outlets to advocate for clone rights."
          ],
          "tags": [
             "source:SotB",
@@ -3677,6 +3907,7 @@
       },
       {
          "name": "Loonie Revolutionary",
+         "page": 238,
          "type": "rival",
          "characteristics": {
             "brawn": 1,
@@ -3759,6 +3990,9 @@
          "gear": [
             "Armored Space Suit: +2 soak"
          ],
+         "description": [
+            "Despite what City Hall claims, the Lunar Insurrection still looms large in the minds of Heinlein's citizenry. Many Loonies bear an asteroid-sized grudge against Earth for the lives lost during the War and the brutal crackdowns that followed. Groups of former insurrectionists and revolutionaries still gather in out-of-the-way places like the Docklands, plotting raids and acts of violence against Heinlein’s administration and the corporations that dominate lunar life."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -3779,6 +4013,7 @@
       },
       {
          "name": "Los Scorpiones Cascares",
+         "page": 222,
          "type": "minion",
          "characteristics": {
             "brawn": 3,
@@ -3868,6 +4103,9 @@
          "gear": [
             "Aviator glasses"
          ],
+         "description": [
+            "Los Scorpiones controls much of the illicit drug trade in New Angeles with the help of their cascares, or enforcers. Under the leadership of Lívia Teixeira and Miguel Moreno, the cascares have become a team of brutal and bloodthirsty enforcers who eagerly get their hands dirty engaging in human trafficking, gunrunning, and organ grinding."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -3888,6 +4126,7 @@
       },
       {
          "name": "Maintenance Drone",
+         "page": 234,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -3945,6 +4184,9 @@
          "gear": [
             "Integrated construction and repair tools"
          ],
+         "description": [
+            "Boxy, spider-legged maintenance drones roam New Angeles in swarms, picking up trash, cleaning streets, and repairing infrastructure. Maintenance drones are not designed to be teleoperated. Instead, they operate independently while under the general guidance of Public Works' operations AI. This means there are significant limits to what a maintenance drone can do, even when hacked by a young, bored runner."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -3965,6 +4207,7 @@
       },
       {
          "name": "Melange Overseer",
+         "page": 225,
          "type": "rival",
          "characteristics": {
             "brawn": 4,
@@ -4090,6 +4333,9 @@
             "Reinforced Mining Space Suit: +2 soak",
             "Lunar megarover, PAD"
          ],
+         "description": [
+            "Melange Mining relies on Henry clones to perform the hard, dangerous work of lunar helium-3 extraction. This means their overseers have plenty of time to serve as Melange's unofficial enforcers, bullying the locals and rival He-3 operations, and contributing to the megacorp's unsavory reputation. While Melange Mining personnel live in Heinlein, they rotate down-Stalk for at least six months' gravity leave after every year of work. The clones, of course, remain behind."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -4196,8 +4442,8 @@
          "weapons": [],
          "gear": [
             "Expensive suit with built-in PAD",
-            "Credstick with unlmited funds",
-            "Teacup giraffe",
+            "Credstick with unlimited funds",
+            "{@adversary Teacup giraffe}",
             "Personal assistant"
          ],
          "description": [
@@ -4223,6 +4469,7 @@
       },
       {
          "name": "Mercenary Vet",
+         "page": 231,
          "type": "nemesis",
          "characteristics": {
             "brawn": 4,
@@ -4376,6 +4623,9 @@
          "gear": [
             "Light Body Armor: +2 soak"
          ],
+         "description": [
+            "Major conflicts like the Lunar Insurrection and the Martian Colony Wars, as well as the ceaseless skirmishes in their aftermath, have created a generation of war veterans. While at any other point in history, these grizzled warriors would be past their prime, g-mods and cybernetics let them bring nearly two decades of combat experience to a body more capable than ever. Many contract out to elite private military contractors for high-risk, high-reward special combat operations, often to pay off their augmentations."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -4395,7 +4645,53 @@
          ]
       },
       {
+         "name": "Molloy Server Clone",
+         "page": 235,
+         "type": "minion",
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 2,
+            "cunning": 1,
+            "willpower": 1,
+            "presence": 3
+         },
+         "derived": {
+            "soak": 1,
+            "wounds": 5,
+            "defense": [0, 0]
+         },
+         "skills": [
+            {
+               "name": "Charm",
+               "characteristic": "presence",
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "source": "crb"
+            },
+            {
+               "name": "Resilience",
+               "characteristic": "brawn",
+               "source": "crb"
+            }
+         ],
+         "talents": [],
+         "abilities": [
+            "Comfort Food"
+         ],
+         "gear": [
+            "Order PAD"
+         ],
+         "description": [
+            "Mother Molloy's is an Irish-themed gastropub that was among the first to adopt clone staffing. Both genders of Molloy units appear vaguely Irish, and they present a cheerful, smiling face to whoever walks in the door."
+         ]
+      },
+      {
          "name": "NAPD Detective",
+         "page": 229,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -4480,6 +4776,9 @@
          "gear": [
             "2 snap locks, pocket flask, NAPD PAD"
          ],
+         "description": [
+            "There are thousands of detectives in the NAPD spread across several divisions,. The greatest numbers of detectives belong to Homicide Division, the Personal Abuse and Modification Division's Vice Unit, and the Gang Unit. Some detectives also moonlight as private eyes."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -4500,6 +4799,7 @@
       },
       {
          "name": "NAPD Hachi-Inu K8 Unit",
+         "page": 229,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -4575,6 +4875,9 @@
             }
          ],
          "gear": [],
+         "description": [
+            "Jinteki's blue-furred police dogs are a recent acquisition for the NAPD. They are fast, hyperintelligent units capable of sniffing out drugs, bombs, and fugitives much more effectively than their K9 counterparts, with flexible tails they can communicate with via a specialized sign language. Their bite secretes a paralyzing venom."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -4595,6 +4898,7 @@
       },
       {
          "name": "NAPD Patrol Officer",
+         "page": 229,
          "type": "minion",
          "characteristics": {
             "brawn": 2,
@@ -4686,6 +4990,9 @@
             "Reinforced Uniform: +1 soak.",
             "NAPD PAD, 4 snap locks"
          ],
+         "description": [
+            "NAPD hoppers patrol beats regularly for visibility, but the camdrones and seccams monitored by a station AI are what generally trigger a police response. NAPD patrol officers spend most of their time clearing away streetbangers and disenfrancistos and securing crime scenes."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -4706,6 +5013,7 @@
       },
       {
          "name": "NAPD Riot Police",
+         "page": 229,
          "type": "minion",
          "characteristics": {
             "brawn": 4,
@@ -4817,6 +5125,9 @@
             "Riot Armor: +2 soak.",
             "Smoke grenades, 4 snap locks"
          ],
+         "description": [
+            "When protests or demonstrations get out of hand, the NAPD sends in its big guns: specialized riot-control units equipped with fully powered armor. Most of these units' equipment is sourced from Huang Heavy Industries. In the wake of the Clone Riots, this now includes a high-tech suit of padded power-assist armor with a powered gauntlet. The NAPD riot shield features a spotlight and built-in transparent PAD display window."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -4837,6 +5148,7 @@
       },
       {
          "name": "NAPD SWAT",
+         "page": 230,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -4962,6 +5274,9 @@
          "gear": [
             "Body Armor: +2 soak"
          ],
+         "description": [
+            "The best, most combat-capable officers in the NAPD undergo rigorous tactical training to become members of the Emergency Services Unit (more commonly known as the SWAT team). SWAT gets called in when regular patrol officers are overmatched, to handle hostage situations and barricaded shooters, and to serve high-risk search or arrest warrants."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -4981,7 +5296,129 @@
          ]
       },
       {
+         "name": "Omoi Security Clone",
+         "page": 235,
+         "type": "rival",
+         "characteristics": {
+            "brawn": 3,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 1,
+            "willpower": 1,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 12,
+            "defense": [0, 0]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Driving",
+               "characteristic": "agility",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "talents": [],
+         "abilities": [],
+         "weapons": [
+            {
+               "name": "Synap Pistol",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 6,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Disoriant",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Palm Stunner",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 5,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Disorient",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "description": [
+            "The Omoi is a new clone line, marketed as a replacement for human security guards. Although Omois are conditioned to avoid human injury and equipped with stun weaponry, they still are uncomfortably close to the line of \"androids fighting humans.\" So far, this line has only seen limited release, and mostly at Jinteki facilities."
+         ]
+      },
+      {
          "name": "Opticon Foundation Watchdog",
+         "page": 238,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -5045,6 +5482,9 @@
          "gear": [
             "Discrete monocam, camdrone, fake idents, encrypted PAD"
          ],
+         "description": [
+            "While a number of watchdog organizations currently work to combat corporate and government overreach, the Opticon Foundation is among the most successful. It listens to and protects the identities of whistleblowers, victims, and runners in an effort to build court cases and news stories to keep corporations in check. Some even go undercover to catch corporate directors and executives making damaging statements."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -5065,6 +5505,7 @@
       },
       {
          "name": "Orgcrime Lieutenant",
+         "page": 222,
          "type": "nemesis",
          "characteristics": {
             "brawn": 2,
@@ -5174,6 +5615,9 @@
          "gear": [
             "Gold chains, nice suit"
          ],
+         "description": [
+            "Whether Tri-Maf, yakuza, 14K, or Los Scorpiones, all orgcrime outfits have their mid-level lieutenants. Lieutenants typically either manage a single location, where they engage in multiple criminal activities, or a single operation that spans multiple locations. Lieutenants answer to a boss, and they often have numerous muscle and some heavies under their command."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -5194,6 +5638,7 @@
       },
       {
          "name": "Orgcrime Heavy",
+         "page": 222,
          "type": "rival",
          "characteristics": {
             "brawn": 4,
@@ -5322,6 +5767,9 @@
             "Light Armor Vest: +2 soak.",
             "Oversized suit with hidden holsters"
          ],
+         "description": [
+            "Most orgcrime outfits tend to have a number of heavily armed and well-trained enforcers. While the muscle in an organization runs most of the day-to-day criminal enterprises, the heavies take over in situations where violence and armed combat are expected. When they're not shooting up buildings and busting heads, heavies tend to work as bodyguards for orgcrime bosses."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -5342,6 +5790,7 @@
       },
       {
          "name": "Orgcrime Muscle",
+         "page": 222,
          "type": "minion",
          "characteristics": {
             "brawn": 2,
@@ -5424,6 +5873,9 @@
          "gear": [
             "Cheap Padded Suit: +1 soak"
          ],
+         "description": [
+            "All orgcrime syndicates fill their lower ranks with cheap, tough, and somewhat disposable muscle. The job of these enforcers is to stand around and look dangerous, and back up their bosses in a fight."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -5444,6 +5896,7 @@
       },
       {
          "name": "Principled Runner",
+         "page": 223,
          "type": "nemesis",
          "characteristics": {
             "brawn": 2,
@@ -5553,6 +6006,9 @@
             "BMI.",
             "Big rig with Athena (SotB p. 136) and Yog.0 (SotB p. 138)- protected by Hawk's Eye (SotB p. 134) and Fire Wall (SotB p. 133)"
          ],
+         "description": [
+            "Principled runners want to make the world a better place, and they run in service to an ideal. They seek to expose government and corporate corruption, often leaking private data to the press or spreading it all across the Net. Principled runners see themselves as sentinels keeping an eye on those with great power to ensure they are using that power responsibly."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -5573,6 +6029,7 @@
       },
       {
          "name": "Private Military Contractor",
+         "page": 232,
          "type": "minion",
          "characteristics": {
             "brawn": 3,
@@ -5629,6 +6086,9 @@
          ],
          "gear": [
             "Plasteel carapace: 1 defense, +2 soak"
+         ],
+         "description": [
+            "While there are plenty of prisec corporations out there, Globalsec is one of the largest and the best example of a militaristic PMC. It can run nearly any sort of military operation, from invasion to counterinsurgency ops, and its people provide security and escort duties, as well as handle troubleshooting operations. Globalsec contractors (usually) behave professionally, are well equipped, and are backed up by a corporation that has its own (albeit small) air force and navy."
          ],
          "tags": [
             "source:SotB",
@@ -5780,6 +6240,7 @@
       },
       {
          "name": "Regulator",
+         "page": 230,
          "type": "rival",
          "characteristics": {
             "brawn": 1,
@@ -5843,6 +6304,9 @@
          "gear": [
             "Inspection PAD"
          ],
+         "description": [
+            "City Hall has a small army of regulators who inspect all manner of locations, practices, and operations. These bureaucrats are convinced that most arcologies would fall into the undercity without their constant vigilance against corporate corner cutting. That said, many are open to being financially incentivized to overlook minor offenses."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -5863,6 +6327,7 @@
       },
       {
          "name": "Reporter",
+         "page": 220,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -5933,6 +6398,9 @@
          "gear": [
             "PAD, camdrone, monocam, press credentials"
          ],
+         "description": [
+            "In a megapolis as polarized as New Angeles, there is never a shortage of salacious scandal, corruption, or murder to write about. Referred to as \"news-nosies,\" reporters spend their days tracking down stories, often in the less-than-safe undercity."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -5953,6 +6421,7 @@
       },
       {
          "name": "Researcher",
+         "page": 220,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -6012,6 +6481,9 @@
          "gear": [
             "Networked PAD, holodisplay, lab coat"
          ],
+         "description": [
+            "Since New Angeles is a city on the cutting edge of research and development, plenty of researchers and scientists work in laboratories across the metropolis. While these labs are usually affiliated with a company, most of the researchers are contractors with uncertain long-term employment. More than a few of them would be happy to do some off-the-books research work for a few credits."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -6032,6 +6504,7 @@
       },
       {
          "name": "Retail Drone",
+         "page": 234,
          "type": "minion",
          "characteristics": {
             "brawn": 2,
@@ -6071,6 +6544,9 @@
          ],
          "weapons": [],
          "gear": [],
+         "description": [
+            "Decades ago, in an effort to cut down on floor labor, most big-box retailers shifted to service and delivery drones to serve customers. Today's small, floating retail drones bear only a passing resemblance to their ancestors. With weak AI, the drones interface with a customer's shopping history to offer dynamic coupons or sales to maximize spending per visit. The drones also deliver goods from store floor to door."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -6091,6 +6567,7 @@
       },
       {
          "name": "Rex Search and Rescue Bioroid",
+         "page": 236,
          "type": "rival",
          "characteristics": {
             "brawn": 5,
@@ -6153,6 +6630,9 @@
          "gear": [
             "Spotlight, climbing gear, O2 tank, medkit, 2 slap patches"
          ],
+         "description": [
+            "Designed to take over high-risk search and rescue missions, the Rex line has submodels that specialize in all manner of extreme-environment rescue. In New Angeles, Rex units ride alongside first responders and are the first inside burning and collapsed structures. Rex units can extract casualties and protect them until help arrives, and the image of a heroic Rex pulling a young child free of a burning building dominates Haas-Bioroid ad campaigns."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -6173,6 +6653,7 @@
       },
       {
          "name": "Ristie Collector",
+         "page": 221,
          "type": "nemesis",
          "characteristics": {
             "brawn": 2,
@@ -6240,6 +6721,9 @@
          "gear": [
             "Heavily encrypted PAD, several credsticks"
          ],
+         "description": [
+            "Many wealthy risties are collectors, often of something rare and expensive. This might include art, ancient artifacts, vehicles, unique old technology or code, even androids or drones. The collector is willing to go to extreme lengths, even resorting to underground markets, to get vital pieces for their collection. Price is no object for a rare find. While the ristie collector may live in a lavish condo-hab or villa, they go wherever the hunt for that crucial next piece of their collection takes them."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -6260,6 +6744,7 @@
       },
       {
          "name": "Rogue Nisei Clone",
+         "page": 240,
          "type": "nemesis",
          "characteristics": {
             "brawn": 2,
@@ -6393,6 +6878,10 @@
             }
          ],
          "gear": [],
+         "description": [
+            "Jinteki's \"Project Nisei\" is a top-secret program that is hard at work designing the perfect clone, according to specifications known only to senior project personnel and Chairman Hiro himself. Some of the rumors surrounding the Nisei project are absurd to the point of humor: Nisei clones are telepathic, Nisei clones are intended to entirely replace the human race, there are Nisei clones who have escaped Jinteki and gone rogue, and so on.",
+            "There is only one known Nisei clone publicly deployed in the general population: Caprice Nisei of the NAPD. If the rest of the Project Nisei clones are like her, they are thoughtful, intelligent, empathetic, possessed of an almost supernatural intuition, and not fond of crowds."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -6413,6 +6902,7 @@
       },
       {
          "name": "SEA Yellow Jacket",
+         "page": 226,
          "type": "minion",
          "characteristics": {
             "brawn": 2,
@@ -6487,6 +6977,9 @@
          "gear": [
             "Security PAD, 2 snap locks"
          ],
+         "description": [
+            "The Space Elevator Authority's first and most visible line of defense are the \"yellow jackets,\" private security personnel in their distinctive garb. Working in teams to perform passenger and cargo security scans for all contraband, yellow jackets tend to have the same jaded demeanors as any other customer-facing security officers."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -6507,6 +7000,7 @@
       },
       {
          "name": "Seth Bioroidista",
+         "page": 237,
          "type": "minion",
          "characteristics": {
             "brawn": 3,
@@ -6532,8 +7026,7 @@
             },
             {
                "name": "Knowledge (Science)",
-               "characteristic": "intellect",
-               "source": "crb"
+               "characteristic": "intellect"
             },
             {
                "name": "Perception",
@@ -6549,6 +7042,9 @@
          "weapons": [],
          "gear": [
             "Order PAD"
+         ],
+         "description": [
+            "Home to the ten-credit triple latte, YucaBean is populated with Seth bioroid baristas. The Seth-model is known for sarcastic, dry wit, often with a bent as dark as the coffee they serve. They also enjoy wordplay with names, misspelling them intentionally in an effort to brighten a customer's day."
          ],
          "tags": [
             "source:SotB",
@@ -6570,6 +7066,7 @@
       },
       {
          "name": "Sneaker Net Courier",
+         "page": 223,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -6683,6 +7180,9 @@
          "gear": [
             "Good running shoes, encrypted datasticks"
          ],
+         "description": [
+            "The only truly secure data never touches the Network, and as a result, some data transfers rely on physical couriers. Members of the so-called \"sneaker net\" transport data on mem chips via hopper, Metro, or even their sneaker-clad feet. A sneaker net courier needs to be fast, alert, and able to defend their package from someone trying to run an intercept."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -6703,6 +7203,7 @@
       },
       {
          "name": "Starlight Templar",
+         "page": 221,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -6785,6 +7286,9 @@
             "Heavy Jacket with Crusade logo: +1 soak.",
             "PAD"
          ],
+         "description": [
+            "The Starlight Crusade is a religious order that utilizes technology to stimulate parts of the brain its members believe to house the soul in order to have religious experiences. Templars are strict adherents to Starlight Crusade tenets. They take it personally when outsiders sully the church's reputation, defending their beliefs with a sometimes violent righteousness."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -6805,6 +7309,7 @@
       },
       {
          "name": "Streetbanger",
+         "page": 223,
          "type": "minion",
          "characteristics": {
             "brawn": 3,
@@ -6886,6 +7391,9 @@
             "Synthleather Jacket: +1 soak",
             "Extensive tattoos and piercings"
          ],
+         "description": [
+            "Street gangs collectively control most of the undercity, though rarely does any control more than a few blocks. Bravado, loyalty, and a skewed sense of honor are their virtues. While some terrify and extort those within their turf, others are the only justice and protection their neighborhood has. Some even hire out as armed guides for reporters and humanitarian workers."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -6906,6 +7414,7 @@
       },
       {
          "name": "Streetbanger Leader",
+         "page": 223,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -7036,6 +7545,9 @@
             "Leather Jacket with Gang Colors: +1 soak",
             "PAD"
          ],
+         "description": [
+            "Street gang leaders have to be stronger, more ruthless, and more capricious then all their subordinates combined. Streetbanger leaders are often prisoners of their own position; the pressure to always be strong enough to deflect or overcome challenges for their gang's leadership makes for a short lifespan. Thus, anyone who's run a gang for more than a few months is a fearsome foe, possessing an aura of palpable menace laced with powerful charisma."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -7056,6 +7568,7 @@
       },
       {
          "name": "Street Doc",
+         "page": 224,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -7146,6 +7659,9 @@
             "4 Slap-patches",
             "Various cybernetics, emergency medkit, portable toolkit"
          ],
+         "description": [
+            "In an age of cybernetics and g-mods, many people seek a shortcut to improved or personalized selves. Since going to a legitimate doctor for an enhancement can cost a lot of money and leave a record trail, some disreputable citizens prefer relying on the work of a street doc. These are once-respectable surgeons who lost their license to practice or med-school dropouts with questionable ethics. Now, they patch up criminals and perform back-alley augmentations on anyone with the credits."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -7166,9 +7682,11 @@
       },
       {
          "name": "SXC Exosuit Pilot",
+         "page": 232,
          "type": "rival",
          "description": [
-            "May choose either a Heavy fletcher or a Laser Cannon"
+            "An exosuit on the loose in a metropolitan area like New Angeles is the kind of threat that keeps police commissioners up at night. While the largest exosuits are basically walking tanks, even the smaller \"person-sized\" suits used by Company A in each SXC battalion can turn a single soldier into a fast, well-armored, and highly lethal threat. They can deploy either as infantry support units or en masse as an armored line, and they can even drop from orbit.",
+            "May choose either a Heavy fletcher or a Laser Cannon."
          ],
          "characteristics": {
             "brawn": 4,
@@ -7323,6 +7841,7 @@
       },
       {
          "name": "SXC Trooper",
+         "page": 232,
          "type": "minion",
          "characteristics": {
             "brawn": 3,
@@ -7414,6 +7933,9 @@
             "Environmentally Sealed Plasteel carapace: 1 defense, +2 soak.",
             "Disposable zero-G maneuvering pack"
          ],
+         "description": [
+            "The question \"Hey, you sexy?\" has led to plenty of misunderstandings and brawls in bars across the worlds, but for members of the Space Expeditionary Force, it's a sure-fire way to spot another vet. Drawn from the ranks of the U.S. Air Force and Marines, SXC troopers train to fight in the most unforgiving conditions imaginable: zero-G and hard vacuum. They are some of the most adaptable and self-reliant soldiers around, operating on battlefields far beyond the reach of any other military branches."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -7434,6 +7956,7 @@
       },
       {
          "name": "SYNC Globalsec Agent",
+         "page": 226,
          "type": "nemesis",
          "characteristics": {
             "brawn": 1,
@@ -7495,6 +8018,9 @@
          "gear": [
             "PAD, BMI, and custom offensive rig with personal icebreakers (Gordian Blade [SotB p. 137], Battering Ram [SotB p. 136], and Garrote [SotB p. 137])"
          ],
+         "description": [
+            "SYNC designed the most important network protocol on the planet: the framework for the Network, which most modern technology relies upon. When the SYNC's sysops encounter irregularities they don't understand, they kick them up to highly paid Globalsec agents whom SYNC keeps on permanent retainer. Globalsec has the tools and experience to investigate glitches, track down skilled runners, and close breaches with extreme prejudice."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -7515,6 +8041,7 @@
       },
       {
          "name": "Teacup Giraffe",
+         "page": 227,
          "type": "minion",
          "characteristics": {
             "brawn": 1,
@@ -7560,6 +8087,9 @@
          "gear": [
             "Gentle doe eyes"
          ],
+         "description": [
+            "Originally designed in the Jinteki concepting labs as a practical joke, the tiny giraffes (and the joke) got out of hand one evening and started wandering the halls of the research facility. Before the staff could round up their wayward animals, one stumbled into the division manager—and her five-year-old daughter. Immediately, the daughter had a new pet and the nervous jokers had a promotion, and six months later, Miranda Rhapsody had an adorable teacup giraffe gifted to her in a purse. Then everyone had six-figure bonuses."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -7579,7 +8109,76 @@
          ]
       },
       {
+         "name": "Tenma Driver Clone",
+         "page": 235,
+         "type": "rival",
+         "characteristics": {
+            "brawn": 2,
+            "agility": 4,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 1,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 8,
+            "defense": [0, 0]
+         },
+         "skills": [
+            {
+               "name": "Driving",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Mechanics",
+               "characteristic": "intellect",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Operating",
+               "characteristic": "intellect",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Piloting",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Knack for It 2",
+               "description": "Remove {@dice setback|2} from any {@skill Driving||crb}, {@skill Operating||crb}, and {@skill Piloting||crb} checks."
+            }
+         ],
+         "gear": [
+            "Cybernetic eye implants."
+         ],
+         "description": [
+            "Serving as drivers and pilots, the Tenma line is one of the most popular lines in Jinteki's catalog. While most vehicles function on autopilot, a Tenma clone can fly a vehicle faster and safer than any pilot program on the market. Many companies utilize them as chauffeurs or high-value couriers."
+         ]
+      },
+      {
          "name": "Thomas Haas",
+         "page": 217,
          "type": "nemesis",
          "characteristics": {
             "brawn": 2,
@@ -7676,6 +8275,9 @@
          "gear": [
             "Nice suit, encrypted PAD"
          ],
+         "description": [
+            "Thomas Haas has a reputation as a rogue pretty boy with a chiseled physique and g-modded looks, but he can also act as a charming and effective PR face for his family's company when goaded. Smarter than he lets on, Thomas has his own private lab in Heinlein for his pet projects, though he doesn't know if his mother, Haas-Bioroid Director Cynthia Haas, knows about it."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -7696,6 +8298,7 @@
       },
       {
          "name": "Toy Drone",
+         "page": 234,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -7752,6 +8355,9 @@
          ],
          "weapons": [],
          "gear": [],
+         "description": [
+            "While cloned pets are all the rage, edu-toys have carved out a small market share. These weak-AI drones nanny and educate infants and toddlers. Most resemble dogs or popular children's entertainment characters, providing a fun early-education experience, often in singsong. Edu-pets have full PAD functionality, with robust parental blocks ensuring only child-friendly content is accessible. This link also generates ads and wish lists of toys, classes, and activities the child gravitates toward on the parents' or guardians' PADs, as well as daily data dumps on the child's activity."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -7772,6 +8378,7 @@
       },
       {
          "name": "Urban Peccary",
+         "page": 228,
          "type": "minion",
          "characteristics": {
             "brawn": 2,
@@ -7830,6 +8437,9 @@
             }
          ],
          "gear": [],
+         "description": [
+            "These small wild hogs are the only pigs originally native to South America, and just like their European cousins, they have proven incredibly resilient and hardy. Herds of peccaries wander the less-developed (or more-abandoned) portions of New Angeles, living on a hearty diet of trash, plant matter, and discarded fast food. Most people dismiss the comical-looking animals as harmless, but in truth, herds can contain dozens of the beasts, and they've entirely lost their fear of humans. If enough peccaries mob someone, their tusks can do some serious damage."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -7850,6 +8460,7 @@
       },
       {
          "name": "Urban Adventurer",
+         "page": 238,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -7972,6 +8583,9 @@
             "Powered Wingsuit: +1 soak, can fly; see the Flying sidebar on page 100 of the Genesys Core Rulebook.",
             "Climbing gear, flashlight"
          ],
+         "description": [
+            "Some people look at New Angeles and instead of a city, they see a plascrete and steel landscape full of opportunities for exploration, adventure, and extreme sports. Urban adventurers treat New Angeles like an untamed wilderness, going \"caving\" in abandoned sewers, free climbing starscrapers, and diving off arcologies with wing suits. All of this is highly illegal, contributing to their reputation as troublemaking radicals. It also means that many urban adventurers are happy to participate in other illegal activities for a thrill."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -7992,6 +8606,7 @@
       },
       {
          "name": "Yakuza Assassin",
+         "page": 224,
          "type": "nemesis",
          "characteristics": {
             "brawn": 3,
@@ -8152,6 +8767,10 @@
             "Pocket Rig with One-Shot Icebreakers: Spend a Story Point to add {@symbols sss} to a successful check to break ice.",
             "Climbing gear"
          ],
+         "description": [
+            "When blackmail and bribery fail, an oyabun—leader of the yakuza—can call in one of their syndicate's assassins. These highly trained killers can get into the most heavily guarded structures and eliminate their target without being seen or heard. A yakuza assassin can use subtle poisons to make a death appear accidental, or they can use their katana if the oyabun wants to send an unmistakable message to their foes.",
+            "Their penchant for infiltration means that most yakuza assassins have also learned how to infiltrate computer networks and shut down security systems. Some of the best could even join the ranks of New Angeles' elite runners."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -8172,6 +8791,7 @@
       },
       {
          "name": "Young Ristie",
+         "page": 221,
          "type": "rival",
          "characteristics": {
             "brawn": 1,
@@ -8234,6 +8854,9 @@
          "gear": [
             "High-end wearable PAD"
          ],
+         "description": [
+            "Many risties who live on inherited wealth seek pleasure, which might take any form, including live entertainment, food, unique tailored experiences, and adrenaline rushes. Anyone who navigates the social scene in New Angeles has had to deal with more than a few belligerent (and often intoxicated) young risties looking for fun — or trouble."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -8254,6 +8877,16 @@
       }
    ],
    "adversaryAbility": [
+      {
+         "name": "Air Filter Implant",
+         "description": [
+            "Immune to inhaled poisons and toxins."
+         ],
+         "tags": [
+            "general",
+            "resistance"
+         ]
+      },
       {
          "name": "And Stay Down",
          "description": [
@@ -8377,6 +9010,17 @@
          ]
       },
       {
+         "name": "Comfort Food",
+         "description": [
+            "After eating a meal prepared by this character, a character heals 2 strain."
+         ],
+         "tags": [
+            "general",
+            "support",
+            "recovery"
+         ]
+      },
+      {
          "name": "Community Volunteer",
          "description": [
             "May use {@skill Knowledge (Society)} instead of {@skill Charm||crb}, {@skill Coercion||crb}, Or {@skill Negotiation||crb} during social interactions with undercity residents."
@@ -8479,6 +9123,18 @@
             "active",
             "incidental",
             "skill check modifier"
+         ]
+      },
+      {
+         "name": "Expert Instruction",
+         "description": [
+            "When this character performs the assist maneuver, upgrade the ability of the check once instead of adding {@dice boost}."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier",
+            "support"
          ]
       },
       {
@@ -8773,7 +9429,7 @@
       {
          "name": "Reinforce",
          "description": [
-            "As a maneuver, may increase the strength of one active piece of ice by 1 until the end of the corporate sysop's next turn."
+            "As a maneuver, may increase the strength of one active piece of ice by 1 until the end of this characters's next turn."
          ],
          "tags": [
             "general",
@@ -15717,6 +16373,25 @@
             "As far as rules go, your character cannot start the game with any restricted items, although they may purchase them later. In addition, since these items are illegal, they are black-market items. Buying or selling them requires a {@skill Streetwise||crb} check, as explained in the {@sidebar Black-Market Items||crb} sidebar, on page 83 of the {@title Genesys} Core Rulebook.",
             "In this setting, restricted items are generally the kind of things that will get your character in legal trouble for owning. This doesn't mean your character can't own them. It just means that people in some locations are going to be suspicious or scared if your character is brandishing a restricted item openly. Your character may be barred from entering some locations if they have a restricted item on their person. And if a cop spots them, they're probably going to be arrested or, at the very least, detained. That means if your character wants to have a restricted item, they're going to have to be careful about who sees it!"
          ]
+      },
+      {
+         "name": "Drone Operations",
+         "page": 233,
+         "description": [
+            "Drones are not \"smart\" enough to operate on their own unless they are following a specific set of predetermined instructions or are working within the parameters of a simple daily routine. This works fine for delivery drones and New Angeles street sweepers, but the drones used by military forces need to be run by skilled operators to be of any great use.",
+            "Anyone with a communications link and the right setup can control a drone. This requires the character to spend their action and maneuver to allow the drone to perform an action and maneuver. Characters may have talents and abilities that modify this (for example, most drones have the {@adversaryAbility Telepresence} ability, which makes them better when directed by an operator).",
+            "If a drone is not being directed by an operator, it can still function in a limited manner. The exact limits of what it can do are up to you, the GM, but generally, you should have it follow a simple (and literal) set of instructions. {@adversary Camdrone|Camdrones} told to scan crowds for certain faces will sit in one spot and study everyone who passes by, for example. The one thing a drone can't do autonomously is kill someone. Ethical considerations mean that drones are hardwired not to fire on a living target unless an active controller gives them kill authority."
+         ],
+         "type": "Adversary"
+      },
+      {
+         "name": "Haas-Bioroid Loss Prevention Agent",
+         "page": 231,
+         "description": [
+            "Haas-Bioroid's Android Loss Prevention Program (HALPP) officially doesn't exist, because bioroids never run away or disobey their programming. Unofficially, it has a massive staff and works around the clock to hunt down \"malfunctioning\" bioroids before the public hears about them.",
+            "A loss prevention agent can be represented with the cybermod bounty hunter profile and adding this ability: Shutdown Authorization (as an action, may make an {@difficulty Average| Computers (Hacking)} to {@rule staggered|stagger|crb} and {@rule immobilized|immobilize|crb} one bioroid within short range for the remainder of the encounter; if the target is a PC bioroid, the check becomes an {@b opposed {@skill Computers (Hacking)} versus {@skill Discipline||crb} check}."
+         ],
+         "type": "Adversary"
       },
       {
          "name": "Riot Shields",
