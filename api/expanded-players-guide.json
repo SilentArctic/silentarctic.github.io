@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.2.4",
+         "version": "2025.2.26",
          "json": "expanded-players-guide",
          "full": "Expanded Player's Guide",
          "abbreviation": "EPG",
@@ -35,6 +35,7 @@
    "adversary": [
       {
          "name": "Gorgon (Greek)",
+         "page": 15,
          "type": "nemesis",
          "description": [
             "The gorgons appear as ageless women with snakes in place of hair, their skin gray-green and cracked. Already dangerous, they are also wrapped in such sacred majesty that any mortal who looks on one turns to stone."
@@ -126,6 +127,7 @@
       },
       {
          "name": "Jinn (Arabian)",
+         "page": 15,
          "type": "nemesis",
          "description": [
             "Beings of smokeless fire, jinn are spirits in Arabian myth. They often appear as an upper torso or disembodied head dissolving into colored fumes below the belt or neck. Jinn are nearly immune to conventional weapons, and they can wield dangerous magics."
@@ -254,6 +256,7 @@
       },
       {
          "name": "Korrigan (Breton)",
+         "page": 15,
          "type": "nemesis",
          "description": [
             "In the dark, korrigan are ethereal, dancing around fountains and at crossroads. They delight in luring travelers into their dance, until their victims die of exhaustion. In daylight, their true shape is revealed: hunched and withered humanoids with red eyes and tangled white hair."
@@ -333,6 +336,7 @@
       },
       {
          "name": "Minotaur (Greek)",
+         "page": 16,
          "type": "nemesis",
          "description": [
             "The minotaur is a monstrous abomination who is half-man, half bull. The original minotaur lived in a labyrinth on Crete, eating all who were exiled into the maze. Though this monster was slain by Theseus, who knows if others lurk in the lightless corners of the earth?"
@@ -446,6 +450,7 @@
       },
       {
          "name": "Siren (Greek)",
+         "page": 16,
          "type": "rival",
          "description": [
             "These beings look like captivating women perched on rocks and treacherous shores, singing with great (and supernatural) skill to lure sailors to their deaths."
@@ -536,7 +541,11 @@
       },
       {
          "name": "Ancestral Throwback",
+         "page": 25,
          "type": "rival",
+         "description": [
+            "The ancestral throwback is a humanoid who followed a very different evolutionary path from {@i homo sapiens}. They may have grown armor, wings, or gills and fins, and they may even have their own culture and society in a far corner of the Earth."
+         ],
          "characteristics": {
             "brawn": 3,
             "agility": 3,
@@ -625,7 +634,11 @@
       },
       {
          "name": "Angry Villager",
+         "page": 25,
          "type": "minion",
+         "description": [
+            "Enraged locals are a common trope in the monsterworld setting. These are average people who have been pushed to violence after being plagued by horrors. Appropriately, they are only dangerous in large numbers."
+         ],
          "characteristics": {
             "brawn": 2,
             "agility": 2,
@@ -721,7 +734,11 @@
       },
       {
          "name": "Failed Experiment",
+         "page": 25,
          "type": "rival",
+         "description": [
+            "Where a mad scientist operates, their failed experiments soon accumulate. These monsters may take the form of misshapen humans built from parts of cadavers, primates, or even large arthropods. Our failed experiment is a big brute, and could represent a large animal or a reanimated humanoid."
+         ],
          "characteristics": {
             "brawn": 4,
             "agility": 2,
@@ -823,7 +840,11 @@
       },
       {
          "name": "Feral Lycanthrope",
+         "page": 25,
          "type": "nemesis",
+         "description": [
+            "While many shapeshifters would give anything to escape their curse, there are those who have renounced normal humanity for what they see as an elevated existence at the top of the food chain. Having transformed so often, they have claws deadlier than those of true wolves and even may have learned how to shift at will."
+         ],
          "characteristics": {
             "brawn": 3,
             "agility": 4,
@@ -974,7 +995,11 @@
       },
       {
          "name": "Mad Scientist",
+         "page": 26,
          "type": "nemesis",
+         "description": [
+            "In this era of scientific revolution, some people are so brilliant and driven that they ignore ethics in their quest to claim the mysteries of nature for themselves. This drives many of them away from respected centers of learning to remote locations where they can conduct prohibited experiments away from worried eyes of loved ones and the prying eyes of the law. This mad scientist is a brilliant doctor and engineer, both of which make them a surprisingly vicious combatant."
+         ],
          "characteristics": {
             "brawn": 2,
             "agility": 2,
@@ -1099,7 +1124,11 @@
       },
       {
          "name": "Mummy",
+         "page": 27,
          "type": "nemesis",
+         "description": [
+            "Explorations of ancient temples and stone monuments have unearthed great historical discoveries, but they have also brought forth monsters best left undisturbed. Buried alive untold centuries ago, they slowly but inexorably emerge to extract revenge on the descendants of those who entombed them."
+         ],
          "characteristics": {
             "brawn": 5,
             "agility": 2,
@@ -1224,7 +1253,11 @@
       },
       {
          "name": "Vampire",
+         "page": 27,
          "type": "nemesis",
+         "description": [
+            "Vampires are terrors that lurk in the night, seeking out the blood they require to continue their eternal life. In most folktales, vampires create more of their kind by drinking the blood of hapless humans, which kills the humans but later causes them to rise again. Anyone a vampire kills should be fair game to be brought back later as another vampire."
+         ],
          "characteristics": {
             "brawn": 4,
             "agility": 4,
@@ -1390,7 +1423,11 @@
       },
       {
          "name": "Apocalyptic Raider",
+         "page": 37,
          "type": "minion",
+         "description": [
+            "This profile represents the common ruffians found throughout a post-apocalyptic wasteland. They could be motorcycle-mounted marauders, drug-addled gangers, or the shock troops of a wasteland warlord."
+         ],
          "characteristics": {
             "brawn": 3,
             "agility": 2,
@@ -1497,7 +1534,11 @@
       },
       {
          "name": "Freeholder",
+         "page": 37,
          "type": "rival",
+         "description": [
+            "A freeholder is the leader of a small community who fills its numerous leadership roles. Many are mayor, doctor, judge, jury, executioner, and undertaker all in one."
+         ],
          "characteristics": {
             "brawn": 2,
             "agility": 2,
@@ -1610,7 +1651,11 @@
       },
       {
          "name": "Irradiated Mutant",
+         "page": 37,
          "type": "minion",
+         "description": [
+            "Irradiated mutants are humans who were exposed to what should have been lethal radiation. Instead of killing them, the radiation turned them into near-mindless feral creatures who live only to destroy. The radiation that infuses them is as much a threat as their dirty claws."
+         ],
          "characteristics": {
             "brawn": 3,
             "agility": 2,
@@ -1696,7 +1741,11 @@
       },
       {
          "name": "Rad-Gator",
+         "page": 38,
          "type": "nemesis",
+         "description": [
+            "In the aftermath of a nuclear war, even the animals could be warped by radiation into strange and terrifying new forms. Our \"rad-gator\" could have started out as any reptile or amphibian, before mutating into an eight-legged, acid-spitting monster"
+         ],
          "characteristics": {
             "brawn": 5,
             "agility": 2,
@@ -1832,7 +1881,11 @@
       },
       {
          "name": "Warlord",
+         "page": 38,
          "type": "nemesis",
+         "description": [
+            "Warlords are brutal tyrants who, along with packs of raiders and other undesirables, carve out little kingdoms for themselves in the wasteland. While their troops might be degenerate savages, warlords are often extremely dangerous and cunning opponents who should not be underestimated."
+         ],
          "characteristics": {
             "brawn": 4,
             "agility": 2,
@@ -1964,7 +2017,11 @@
       },
       {
          "name": "Bear",
+         "page": 86,
          "type": "rival",
+         "description": [
+            "Bears tend to be strong, surprisingly fast, and very tough. This profile best represents the particularly large and ferocious specimens of bear, such as the grizzly, Kodiak, and polar bears."
+         ],
          "characteristics": {
             "brawn": 4,
             "agility": 2,
@@ -2090,7 +2147,11 @@
       },
       {
          "name": "Big Cat",
+         "page": 86,
          "type": "rival",
+         "description": [
+            "Lions, tigers, pumas, jaguars, and leopards stalk the tall grasses of expansive plains, thick forests, and other wilderness regions. Big cats hunt their prey by silently closing the distance before pouncing, pinning their victim, and going for the jugular."
+         ],
          "characteristics": {
             "brawn": 3,
             "agility": 4,
@@ -2187,7 +2248,11 @@
       },
       {
          "name": "Bull",
+         "page": 86,
          "type": "rival",
+         "description": [
+            "Bulls often get used as draft animals on farms. Although usually peaceful, a provoked bull can charge and gore enemies with its horns."
+         ],
          "characteristics": {
             "brawn": 4,
             "agility": 2,
@@ -2281,7 +2346,11 @@
       },
       {
          "name": "Dog",
+         "page": 87,
          "type": "rival",
+         "description": [
+            "Humanity has had domesticated dogs for thousands of years. This profile represents a medium or large dog who's ready to be a faithful companion and join some lucky individual on adventures."
+         ],
          "characteristics": {
             "brawn": 2,
             "agility": 3,
@@ -2376,7 +2445,11 @@
       },
       {
          "name": "Elephant",
+         "page": 87,
          "type": "nemesis",
+         "description": [
+            "Elephants have prehensile trunks, large tusks, and a gentle nature. They roam forests and savannas in herds, defending their young from attack. While often friendly, and even domesticated as mounts by some cultures, wild elephants are not something one should mess with."
+         ],
          "characteristics": {
             "brawn": 5,
             "agility": 1,
@@ -2467,7 +2540,11 @@
       },
       {
          "name": "Falcon",
+         "page": 87,
          "type": "rival",
+         "description": [
+            "Falcons are swift and vicious birds of prey. However, they are often domesticated as pets or aids in hunting. This profile could also be used to represent a hawk, eagle, or owl."
+         ],
          "characteristics": {
             "brawn": 1,
             "agility": 3,
@@ -2551,7 +2628,11 @@
       },
       {
          "name": "Horse",
+         "page": 87,
          "type": "minion",
+         "description": [
+            "One of the most common domesticated mounts, horses are bred for racing, farm work, everyday transportation, and even combat. Sometimes stubborn, horses are generally docile creatures, though riders risk getting thrown, kicked, or trampled."
+         ],
          "characteristics": {
             "brawn": 4,
             "agility": 3,
@@ -2625,7 +2706,11 @@
       },
       {
          "name": "Kraken",
+         "page": 87,
          "type": "nemesis",
+         "description": [
+            "Octopi and squid rarely get much larger than a human, but rumors abound of larger specimens. Allegedly, the giant creatures lurk in the ocean, wielding multiple long, suckered tentacles that are able to crush ships and terrorize their crews. This profile is of a truly immense specimen, able to consume a large ship."
+         ],
          "characteristics": {
             "brawn": 6,
             "agility": 3,
@@ -2742,7 +2827,11 @@
       },
       {
          "name": "Shark",
+         "page": 88,
          "type": "rival",
+         "description": [
+            "The ocean's apex predators, larger sharks have jaws wide enough to swallow a person, and their razor-sharp teeth can easily bite someone in half."
+         ],
          "characteristics": {
             "brawn": 3,
             "agility": 3,
@@ -2841,7 +2930,11 @@
       },
       {
          "name": "Venomous Snake",
+         "page": 88,
          "type": "rival",
+         "description": [
+            "Venomous snakes hunt small game, and their poisonous bite is effective at deterring predators as well. Their venom can cause a variety of severe effects, including death."
+         ],
          "characteristics": {
             "brawn": 1,
             "agility": 2,
@@ -2925,7 +3018,11 @@
       },
       {
          "name": "Wolf",
+         "page": 88,
          "type": "minion",
+         "description": [
+            "Wolves are territorial pack hunters common to forests, plains, and tundra. While a single wolf poses little threat to a well-prepared human, the real danger is when the pack isolates a single target."
+         ],
          "characteristics": {
             "brawn": 2,
             "agility": 3,
@@ -3009,7 +3106,11 @@
       },
       {
          "name": "Advisor",
+         "page": 89,
          "type": "nemesis",
+         "description": [
+            "An advisor might be a therapist, priest, or a wise political advisor. They are more defensive socially than offensive, which means a group will have to work hard to overcome them in a social encounter."
+         ],
          "characteristics": {
             "brawn": 2,
             "agility": 1,
@@ -3092,7 +3193,11 @@
       },
       {
          "name": "Blueblood",
+         "page": 89,
          "type": "rival",
+         "description": [
+            "Bluebloods are a society's wealthy people of leisure. Money affords them great power to indulge in their assorted proclivities and solve many problems."
+         ],
          "characteristics": {
             "brawn": 1,
             "agility": 2,
@@ -3171,7 +3276,11 @@
       },
       {
          "name": "Healer",
+         "page": 89,
          "type": "rival",
+         "description": [
+            "A healer treats ailments and injuries alike, either traveling to visit their patients or working within a medical facility. They might be an educated doctor, a veterinarian, or just really into holistic remedies."
+         ],
          "characteristics": {
             "brawn": 1,
             "agility": 2,
@@ -3255,7 +3364,11 @@
       },
       {
          "name": "Fixer",
+         "page": 89,
          "type": "rival",
+         "description": [
+            "When things break, a fixer repairs them. They might mend everything from simple carts to high-tech gadgets and vehicles. To make this character usable in a pre-modern setting, remove the {@skill Computers||crb} skill."
+         ],
          "characteristics": {
             "brawn": 3,
             "agility": 3,
@@ -3334,7 +3447,11 @@
       },
       {
          "name": "Laborer",
+         "page": 89,
          "type": "minion",
+         "description": [
+            "Laborers perform physical work in fields, warehouses, factories, and elsewhere. They often work in teams to handle complex tasks. After a hard day's work they relax in a tavern, sometimes getting into fights."
+         ],
          "characteristics": {
             "brawn": 3,
             "agility": 2,
@@ -3412,7 +3529,11 @@
       },
       {
          "name": "Leader",
+         "page": 90,
          "type": "nemesis",
+         "description": [
+            "A leader might be a duly elected politician, protest organizer, CEO, religious leader, or other influential public figure. Their position grants great influence, which they wield against their foes to great effect."
+         ],
          "characteristics": {
             "brawn": 2,
             "agility": 2,
@@ -3511,7 +3632,11 @@
       },
       {
          "name": "Manager",
+         "page": 90,
          "type": "rival",
+         "description": [
+            "A manager leads workers at a job site or office, arguably improving efficiency and morale. They could be nearly any nonmilitary team leader."
+         ],
          "characteristics": {
             "brawn": 2,
             "agility": 2,
@@ -3581,7 +3706,12 @@
       },
       {
          "name": "Paper Pusher",
+         "page": 90,
          "type": "minion",
+         "description": [
+            "A paper pusher might be a data entry clerk, scribe, accountant, or programmer, or fill nearly any position performed in a cubicle or its setting equivalent.",
+            "For some settings, you may need to remove the {@skill Computers||crb} skill from this profile."
+         ],
          "characteristics": {
             "brawn": 1,
             "agility": 1,
@@ -3644,7 +3774,11 @@
       },
       {
          "name": "Seller",
+         "page": 90,
          "type": "nemesis",
+         "description": [
+            "A seller talks fast and counts profits. They might be a merchant, a car salesman, or even someone collecting for charity. The important thing is that the seller wants your money, and they can convince you to part with it."
+         ],
          "characteristics": {
             "brawn": 2,
             "agility": 1,
@@ -3731,7 +3865,11 @@
       },
       {
          "name": "Tracker",
+         "page": 91,
          "type": "rival",
+         "description": [
+            "A tracker can discern the obscure signs left behind by humans and creatures to follow them over rugged terrain. To convert the tracker from a wilderness guide to an urban debt collector or detective, swap out {@skill Athletics||crb} for {@skill Computers||crb}, and {@skill Survival||crb} for {@skill Streetwise||crb}."
+         ],
          "characteristics": {
             "brawn": 2,
             "agility": 3,
@@ -3805,7 +3943,11 @@
       },
       {
          "name": "Wanderer",
+         "page": 91,
          "type": "rival",
+         "description": [
+            "The wanderer never stays in one place for long, and doesn't seem to have a home. They happily, or perhaps quietly, roam from place to place doing odd jobs. They often have a traveling companion in the form of a stray animal, or possibly even a small drone or robot (two creatures that would serve in this role would be the {@adversary dog} and {@adversary falcon} on page 87)."
+         ],
          "characteristics": {
             "brawn": 3,
             "agility": 3,
@@ -3935,7 +4077,11 @@
       },
       {
          "name": "Ace",
+         "page": 91,
          "type": "rival",
+         "description": [
+            "Traditionally, any pilot who downs five enemy aircraft is an ace. Aces can push vehicles beyond normal tolerances to make maneuvers no one else can. In the age of myth, fantasy, and monsterworld settings, replace the {@skill Piloting||crb} skill with the {@skill Riding||crb} skill. In the post apocalypse setting, replace the {@skill Piloting||crb} skill with the {@skill Driving||crb} skill."
+         ],
          "characteristics": {
             "brawn": 2,
             "agility": 4,
@@ -4025,7 +4171,11 @@
       },
       {
          "name": "Attacker",
+         "page": 91,
          "type": "rival",
+         "description": [
+            "This highly trained combatant favors aggressive, frontal assaults, winning engagements by employing overwhelming force. An attacker might be an ax-wielding berserker, charging soldier brandishing a bayonet, or SWAT team member who is first into the breach."
+         ],
          "characteristics": {
             "brawn": 4,
             "agility": 2,
@@ -4107,7 +4257,20 @@
       },
       {
          "name": "Defender",
+         "page": 92,
          "type": "nemesis",
+         "description": [
+            "Defenders guard the walls at castles and bases, act as bodyguards, and control gates and checkpoints. They might be security guards at banks, businesses, or residential high-rises. Any combatant whose primary job is to guard a location should use this profile, and they could range from armored paladins and knights to modern bodyguards.",
+            {
+               "type": "sidebar",
+               "title": "Knights with Swords",
+               "entries": [
+                  "The defender profile can be used to represent a knight, but traditionally knights (in most of their regional variants) fight with swords or other bladed weapons. If you want to create a knight, besides the proper equipment array, we recommend adding the following talent to the profile:",
+                  "{@talent Parry||crb}.",
+                  "If you add this to the profile, increase the combat power level to 6."
+               ]
+            }
+         ],
          "characteristics": {
             "brawn": 4,
             "agility": 3,
@@ -4192,7 +4355,11 @@
       },
       {
          "name": "Field Leader",
+         "page": 92,
          "type": "rival",
+         "description": [
+            "The field leader is proficient in tactical direction and movement. They lead their forces from the front, deploying units to ensure success. A field leader might be a gruff squad leader or an inspirational cavalry officer. For the age of myth and fantasy settings (and possibly the steampunk and monsterworld settings), you should replace the {@skill Driving||crb} skill with the {@skill Riding||crb} skill."
+         ],
          "characteristics": {
             "brawn": 3,
             "agility": 3,
@@ -4288,7 +4455,11 @@
       },
       {
          "name": "General",
+         "page": 92,
          "type": "nemesis",
+         "description": [
+            "A general is a master of strategic warfare. They use formations and force multipliers to break the morale and spirit of their enemies. A general could be any leader in charge of a faction's troops in battle."
+         ],
          "characteristics": {
             "brawn": 2,
             "agility": 2,
@@ -4377,7 +4548,11 @@
       },
       {
          "name": "Gunner",
+         "page": 92,
          "type": "minion",
+         "description": [
+            "Gunners operate large-scale weapons, from ballistae and catapults to missile launchers and laser cannons. They might work aboard a vehicle or operate a weapon emplacement. If used in older settings, switch their {@skill Gunnery||crb} skill for the {@skill Ranged||crb} skill."
+         ],
          "characteristics": {
             "brawn": 2,
             "agility": 3,
@@ -4436,7 +4611,11 @@
       },
       {
          "name": "Medic",
+         "page": 93,
          "type": "rival",
+         "description": [
+            "The medic's primary task is to keep their allies alive and fighting. This often limits them to first aid and administering painkillers, or dragging the seriously wounded to safety where surgeons can address their injuries."
+         ],
          "characteristics": {
             "brawn": 2,
             "agility": 2,
@@ -4523,7 +4702,11 @@
       },
       {
          "name": "Ranger",
+         "page": 93,
          "type": "rival",
+         "description": [
+            "Rangers, scouts, and snipers operate independently or in small teams, identifying enemy locations, performing reconnaissance, and taking out enemy scouts. Rangers are adept at avoiding detection, and might be medieval rangers, modern recon scouts, or even snipers."
+         ],
          "characteristics": {
             "brawn": 3,
             "agility": 4,
@@ -4617,7 +4800,11 @@
       },
       {
          "name": "Sapper",
+         "page": 93,
          "type": "rival",
+         "description": [
+            "Combat engineers destroy enemy defenses and clear out fortified positions. They might accomplish this through the use of shovels and sledgehammers, or advanced tools and explosives."
+         ],
          "characteristics": {
             "brawn": 2,
             "agility": 3,
@@ -4719,7 +4906,11 @@
       },
       {
          "name": "Warrior",
+         "page": 93,
          "type": "minion",
+         "description": [
+            "Warriors are infantry fighters that could trained in close-quarters combat or ranged fighting. Depending on the equipment and the setting, warriors might represent a phalanx of Spartans, a horde of barbarians, squads of rifle infantry, or a line of archers."
+         ],
          "characteristics": {
             "brawn": 3,
             "agility": 2,

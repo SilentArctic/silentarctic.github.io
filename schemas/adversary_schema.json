@@ -376,6 +376,7 @@
          "name",
          "type",
          "characteristics",
+         "derived",
          "skills"
       ],
       "optional": [

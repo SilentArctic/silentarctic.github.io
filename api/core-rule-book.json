@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.2.4",
+         "version": "2025.2.15",
          "json": "core-rule-book",
          "full": "Genesys Core Rulebook",
          "abbreviation": "CRB",
@@ -40,6 +40,7 @@
    "adversary": [
       {
          "name": "Bane Spider",
+         "page": 147,
          "type": "rival",
          "description": [
             "Giant spiders are a mainstay of the fantasy genre. As horrifying as any huge arachnid, bane spiders have the added ability to spit globs of acidic venom. This venom, which bane spiders can also inject with their fangs, conveniently allows them to start digesting their prey before even closing to striking range.",
@@ -188,6 +189,7 @@
       },
       {
          "name": "Skeleton",
+         "page": 146,
          "type": "minion",
          "characteristics": {
             "brawn": 2,
@@ -276,6 +278,7 @@
       },
       {
          "name": "Razorwing",
+         "page": 147,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -383,8 +386,8 @@
       },
       {
          "name": "Ogre",
-         "type": "nemesis",
          "page": 147,
+         "type": "nemesis",
          "description": [
             "These huge brutes lair in ancient ruins and caves, eating whatever poor creatures they can get their massive hands on. We've included the ogre as a powerful monster able to challenge even experienced characters on its own. However, if you're looking to make the ogre less challenging, remove Regeneration from its abilities."
          ],
@@ -492,6 +495,7 @@
       },
       {
          "name": "Airship Pirate",
+         "page": 157,
          "type": "minion",
          "characteristics": {
             "brawn": 2,
@@ -583,6 +587,7 @@
       },
       {
          "name": "Clockwork Animal Automaton",
+         "page": 157,
          "type": "rival",
          "description": [
             "Clockwork automata tend to be powered by coilsprings, their actions dictated by a complicated series of wax cylinders. Any kind of actual sentience, of course, is impossible, but certain animal behaviors can be worked into their clockwork minds.",
@@ -677,6 +682,7 @@
       },
       {
          "name": "Colonial Governor",
+         "page": 157,
          "type": "nemesis",
          "characteristics": {
             "brawn": 2,
@@ -820,6 +826,7 @@
       },
       {
          "name": "Royal Marine",
+         "page": 157,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -932,6 +939,7 @@
       },
       {
          "name": "Alien Warlord",
+         "page": 188,
          "type": "nemesis",
          "description": [
             "This is a sapient individual from some alien species. While most of this species may be peace-loving or honorable, this character has decided to conquer a significant portion of the galaxy by force. When you describe this individual, keep in mind that the profile represents a big, tough, charismatic leader. If you don't want to invent your own foot soldiers, you can use the space pirates as their warriors, and maybe the xenomorph horror as some sort of awful, awful pet!"
@@ -1068,6 +1076,7 @@
       },
       {
          "name": "Nano-Swarm",
+         "page": 188,
          "type": "rival",
          "description": [
             "Nanites as presented in fiction are a popular (and terrifying) danger in space opera settings. They appear as buzzing clouds or even amorphous blobs of micro-machines, swarming across the ground and breaking down anything in their path to turn into more nanites."
@@ -1146,6 +1155,7 @@
       },
       {
          "name": "Space Pirate",
+         "page": 187,
          "type": "minion",
          "description": [
             "Space pirates are a staple in many space operas. They resemble their high-seas cousins of story: swaggering, uncultured rogues with a taste for plunder and mayhem.",
@@ -1281,6 +1291,7 @@
       },
       {
          "name": "Telepath",
+         "page": 188,
          "type": "nemesis",
          "description": [
             "Throughout the galaxy, some of the alien species your characters encounter are going to have strange and terrible abilities. How this particular creature possesses the powers of telepathy is unknown, but it seems to be able to control and dominate minds."
@@ -1364,6 +1375,7 @@
       },
       {
          "name": "Xenomorph Horror",
+         "page": 187,
          "type": "rival",
          "description": [
             "On the countless planets in the galaxy, your characters are likely to encounter all manner of alien beasts. This specimen is some breed of alpha-predator on its homeworld. We've left the physical description vague, so you can use it as some saurian carnivore, tentacled lurker, or aquatic devil-fish."
@@ -1799,6 +1811,7 @@
       },
       {
          "name": "Beastman",
+         "page": 147,
          "type": "minion",
          "characteristics": {
             "brawn": 3,
@@ -1874,6 +1887,7 @@
       },
       {
          "name": "Corrupt Official",
+         "page": 169,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -1963,6 +1977,7 @@
       },
       {
          "name": "Gang Leader",
+         "page": 134,
          "type": "rival",
          "description": [
             "Your groups of street toughs can be led by the gang leader, another go-to opponent who fits into all settings. The gang leader is a tough individual who runs smalltime criminal operations with an iron fist. This can be a good opponent for a group to face off with at the climax of their first or second session, especially if the gang leader is backed up by a minion group of street toughs."
@@ -2064,6 +2079,7 @@
       },
       {
          "name": "Intelligence Agent",
+         "page": 169,
          "type": "nemesis",
          "characteristics": {
             "brawn": 3,
@@ -2183,6 +2199,7 @@
       },
       {
          "name": "Local Official",
+         "page": 134,
          "type": "nemesis",
          "description": [
             "This generic local official could be the mayor of a small town, the councilmember representing a borough, or any other government official low-ranking enough to encounter your players' characters but powerful enough to be a problem. The local official is primarily a threat in social encounters, not combat encounters, so use them accordingly (or accept that they'll be a pretty minor threat in a fight)."
@@ -2276,6 +2293,7 @@
       },
       {
          "name": "Militia",
+         "page": 169,
          "type": "minion",
          "characteristics": {
             "brawn": 2,
@@ -2353,6 +2371,7 @@
       },
       {
          "name": "Street Tough",
+         "page": 134,
          "type": "minion",
          "description": [
             "The street tough is one of the go-to villains of any setting. These belligerent petty criminals are a reasonable first opponent for your PCs to beat up without your having to worry that they may kill the group by accident. If you're worried they may be too tough, however, have them use their studded gloves and deal damage to your PCs' strain threshold."
@@ -2445,6 +2464,7 @@
       },
       {
          "name": "Combat Drone",
+         "page": 178,
          "type": "rival",
          "characteristics": {
             "brawn": 1,
@@ -2542,6 +2562,7 @@
       },
       {
          "name": "Exosuit Trooper",
+         "page": 178,
          "type": "rival",
          "characteristics": {
             "brawn": 4,
@@ -2693,6 +2714,7 @@
       },
       {
          "name": "Hacker",
+         "page": 178,
          "type": "nemesis",
          "characteristics": {
             "brawn": 1,
