@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.2.15",
+         "version": "2025.3.8",
          "json": "core-rule-book",
          "full": "Genesys Core Rulebook",
          "abbreviation": "CRB",
@@ -14484,7 +14484,7 @@
                "cost": "{@symbols hhh or d}",
                "options": [
                   "The spell is slightly more powerful than expected. One character of the GM's choice is targeted or otherwise affected by the spell as well.",
-                  "All other spellcasters and creatures attuned to magical energies within a day's travel."
+                  "All other spellcasters and creatures attuned to magical energies within a day's travel become aware of the character (and depending on their disposition, may also be very interested in finding them and doing them harm)."
                ]
             },
             {
