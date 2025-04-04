@@ -49,7 +49,7 @@
       "originType": "core"
    },
    "realms-of-terrinoth.json": {
-      "version": "2025.2.4",
+      "version": "2025.4.4",
       "json": "realms-of-terrinoth",
       "full": "Realms of Terrinoth",
       "abbreviation": "RoT",
@@ -62,7 +62,7 @@
       "originType": "core"
    },
    "secrets-of-the-crucible.json": {
-      "version": "2025.2.15",
+      "version": "2025.4.4",
       "json": "secrets-of-the-crucible",
       "full": "Keyforge: Secrets of the Crucible",
       "abbreviation": "SotC",
