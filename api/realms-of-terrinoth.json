@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.4.4",
+         "version": "2025.6.3",
          "json": "realms-of-terrinoth",
          "full": "Realms of Terrinoth",
          "abbreviation": "RoT",
@@ -4780,7 +4780,7 @@
          ],
          "talents": [],
          "abilities": [
-            "Multiattack"
+            "Four-armed (Dolochs)"
          ],
          "weapons": [
             {
@@ -5016,7 +5016,6 @@
          "abilities": [
             "Amphibious",
             "Monstrous Limbs",
-            "Multiattack",
             "Silhouette 2",
             "Terrifying 3"
          ],
@@ -6407,7 +6406,7 @@
             }
          ],
          "abilities": [
-            "Multiattack",
+            "Four-armed (Massive Swords)",
             "Elemental Runes",
             "Silhouette 2"
          ],
@@ -8926,14 +8925,14 @@
       {
          "name": "Elemental Runes",
          "description": [
-            "Each of these characters takes on different traits depending on its animating rune. Select one rune for each individual golem.",
+            "Each of these characters takes on different traits depending on its animating rune. Select one rune for each individual character:",
             {
                "type": "list",
                "items": [
-                  "Fire: add {@symbols ss} to checks the rune golem makes to {@rule determine Initiative||crb}.",
-                  "Ice: upgrade the difficulty of social skill checks targeting the golem once.",
-                  "Lightning: the rune golem may perform a second maneuver without suffering strain.",
-                  "Stone: the rune golem's soak increases to 8 . Other runes can be used at the GM's discretion."
+                  "{@b Fire:} add {@symbols ss} to checks this character makes to {@rule determine Initiative||crb}.",
+                  "{@b Ice:} upgrade the difficulty of social skill checks targeting this character once.",
+                  "{@b Lightning:} this character may perform a second maneuver without suffering strain.",
+                  "{@b Stone:} this character's soak increases to 8 . Other runes can be used at the GM's discretion."
                ]
             }
          ],
@@ -8979,6 +8978,30 @@
             "passive",
             "resistance",
             "defensive"
+         ]
+      },
+      {
+         "name": "Four-armed (Dolochs)",
+         "description": [
+            "Does not increase difficulty of combined checks to attack with both its dolochs and fists."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "offensive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Four-armed (Massive Swords)",
+         "description": [
+            "May make a combined combat check with its massive swords and stone fists without increasing the difficulty."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "offensive",
+            "skill check modifier"
          ]
       },
       {
@@ -9186,18 +9209,6 @@
          "tags": [
             "combat",
             "passive",
-            "skill check modifier"
-         ]
-      },
-      {
-         "name": "Multiattack",
-         "description": [
-            "Does not need to increase the difficulty of combined combat checks to attack with two weapons."
-         ],
-         "tags": [
-            "combat",
-            "passive",
-            "offensive",
             "skill check modifier"
          ]
       },
