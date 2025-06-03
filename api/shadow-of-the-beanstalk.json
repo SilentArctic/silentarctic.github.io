@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.2.15",
+         "version": "2025.6.3",
          "json": "shadow-of-the-beanstalk",
          "full": "Android: Shadow of the Beanstalk",
          "abbreviation": "SotB",
@@ -10109,7 +10109,7 @@
                "A {@gear stun gun} {@i or} a {@gear monoblade}",
                "{@gear Concealed buckyweave} {@i or} {@gear durable clothing} and a {@gear PAD}",
                "An {@gear emergency medkit} {@i or} {@gear smartspecs}",
-               "2 {@gear slap-patches} and a {@gear portable comlink}",
+               "2 {@gear slap-patch|slap-patches} and a {@gear personal comlink}",
                "100 + 1d100 credits"
             ]
          },
