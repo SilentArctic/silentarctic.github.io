@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.3.8",
+         "version": "2025.6.11",
          "json": "core-rule-book",
          "full": "Genesys Core Rulebook",
          "abbreviation": "CRB",
@@ -437,7 +437,7 @@
          ],
          "talents": [],
          "abilities": [
-            "Regeneration",
+            "Regeneration 3",
             "Sweep Attack"
          ],
          "weapons": [
@@ -2979,7 +2979,7 @@
       {
          "name": "Regeneration",
          "description": [
-            "At the beginning of its turn, this creature automatically heals 3 wounds."
+            "At the beginning of its turn, this creature automatically heals wounds equal to its ranks in Regeneration."
          ],
          "tags": [
             "general",

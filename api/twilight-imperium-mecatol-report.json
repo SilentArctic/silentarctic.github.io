@@ -1,0 +1,1046 @@
+{
+   "$schema": "https://silentarctic.github.io/schemas/schema.json",
+   "_meta": {
+      "source": {
+         "version": "2025.6.11",
+         "json": "twilight-imperium-mecatol-report",
+         "full": "Twilight Imperium: Mecatol Report",
+         "abbreviation": "EotI:MR",
+         "color": "#EF3F22",
+         "authors": [
+            "EDGE Studio"
+         ],
+         "convertedBy": [
+            "SilentArctic"
+         ],
+         "url": "https://images-cdn.fantasyflightgames.com/filer_public/f6/be/f6be8343-a4fc-47e4-a722-efe3e01fc5d9/ti_codex_4_rules.pdf",
+         "releaseDate": "11 June 2025",
+         "module": true
+      },
+      "defaultItemSettings": [
+         {
+            "name": "Twilight Imperium"
+         },
+         {
+            "name": "space opera",
+            "source": "crb"
+         }
+      ],
+      "filters": {
+         "settings": [
+            "Twilight Imperium"
+         ]
+      }
+   },
+   "adventure": [
+      {
+         "name": "Mole Hunt",
+         "chapters": [
+            {
+               "title": "Setting the Scene",
+               "entries": [
+                  "This is a short adventure seed. It contains all the basic information you need to flesh out a single-session adventure of 3-5 hours.",
+                  "Mole Hunt takes place on Mecatol Rex in the Keleres headquarters during Beacon Day, which memorializes the day when the Galactic Council was reconvened and the beacon atop the Council Chambers was relit. The player characters' cohort has been assigned as the duty squad while the rest of the Keleres cohorts on Mecatol Rex are out enjoying the festivities or serving as security. That means their job is to remain in HQ in case of an emergency in a facility being operated by a skeleton staff.",
+                  "The adventure begins when Galeena the Sustainer approaches the PCs and asks them for a favor. The small pack of {@adversary lacertacleptor|lacertacleptors} ('cleptors for short) that they imported to use as pest control has gotten free. Galeena wants them rounded up before the creatures hurt anyone, or before word gets back to one of the Tribunii that they were keeping potentially dangerous animals in their garden.",
+                  {
+                     "forceTitleLevel": 3,
+                     "entries": [
+                        {
+                           "title": "Notable NPCs",
+                           "entries": [
+                              "{@b {@adversary young titan|Galeena the Sustainer|eoti}:} A young Titan, they joined the Keleres at its founding because they believed in the organization's purpose. However, they are also a pacifist, and quickly learned they did not enjoy field work. They have served as a quartermaster for the Keleres for the past three years, and in their spare time are constructing a subterranean garden in the Vault levels. They use the {@adversary Young Titan||eoti} profile found on page 243 of {@title Embers of the Imperium}.",
+                              "{@b {@adversary Keleres Agent|Tersgi Hurgn}:} A young and ambitious air-breathing Hylar from the Universities of Jol-Nar, Tersgi was sent to the Keleres because of his overly-enthusiastic efforts to research proscribed technologies. He has been helping Galeena research the biology of the species they are bringing into their vault garden. He is also eager for something that can form the core of a thesis paper when he returns to his academic studies.",
+                              "{@b {@adversary Keleres Agent|Tosh of the Seventy-Sixth Creche of the Fourteenth Generation}:} The dour and taciturn Brother of Yin was sent to the Keleres as part of the Brotherhood's tithe. His unscarred features mark him out as one of the lesser brothers of his religion. Since arriving, he has spent most of his time serving as a desk agent, researching bioweapons and their effects. He has also been reprimanded for attempting to gather restricted bioengineering research data and send it back to Darien to help the Brotherhood's ongoing genetic research.",
+                              "{@b {@adversary Keleres Agent|Gresh}:} A Saar field agent and pilot, Gresh got sent to the Keleres after a fight with her captain that turned physical. She is militantly pro-Saar, to the point where she harbors resentments against most of the other Great Civilizations. Although this attitude is what started the argument with her captain in the first place, reassignment hasn't dampened her ardor towards her people."
+                           ]
+                        },
+                        {
+                           "title": "Finding the 'Cleptors",
+                           "entries": [
+                              "Finding the {@adversary lacertacleptor|'cleptors} and recapturing them can be run as a skill challenge. If the PCs fail to capture a group of the animals, you can shift it to a combat encounter. Minion groups of four 'cleptors are hiding in the rest of the Garden Vault, the hangar com plex, and the engineering section. The PCs must make {@skill Perception||crb} or {@skill Survival||crb} checks to track them, then {@skill Coordination||crb} or {@skill Survival||crb} checks to trap the animals in carrying crates."
+                           ]
+                        },
+                        {
+                           "title": "Discovering the Break-In",
+                           "entries": [
+                              "When the PCs gather up the {@adversary lacertacleptor|'cleptors} and return them to their enclosure, they find that the lock was cut open. Someone released the tiny lizards on purpose. Further investigation reveals the vault was originally used to store electronic records. Someone accessed those records, then smashed the data-crystals so they couldn't be accessed.",
+                              "The PCs can speak to Galeena, who mentions that three Keleres have been spending a lot of time in their garden lately. All of them are currently present in the headquarters and are potential suspects (see {@b Notable NPCs}). However, the PCs also need to figure out what was so valuable about the data in the first place.",
+                              "A good place to start is the physical archives. A lot of old records got dumped in those archives when the Keleres were founded, so there may be some records of what was in this particular vault. The Keleres will have to convince the head of the archives, Tsoi Iq Matriona (use the {@adversary Winnaran Custodian Scholar||eoti} profile on page 237 of {@title Embers of the Imperium}), to give them access, then make {@skill Knowledge (Lore)||eoti} checks to find the information. Success reveals that the vaults held locations of an experimental bacterial bioweapon called X-66, a much more virulent and unstable predecessor to the current bacterial weapon X-89."
+                           ]
+                        },
+                        {
+                           "title": "Interrogating the Suspects",
+                           "entries": [
+                              "If the PCs report these developments to a senior agent or a Tribunii, they are told to begin the investigation themselves. This leaves them in charge of finding and interrogating each of the three suspects. It is up to you as to which of the three is the culprit; each has their own motivation for trying to obtain the X-66.",
+                              "Interrogations can take the form of social encounters, with the PCs inflicting strain until they are satisfied the target is telling the truth or they break and reveal they are the thief. However, when they discover the thief's identity, the rogue Keleres attempts to escape. They lock down the main and personnel lifts leading to the surface and flee into the abandoned sublevels, killing anyone who gets in their way.",
+                              "The only choice the PCs have is to pursue the culprit into the unexplored sublevels and beyond, into the unknown regions."
+                           ]
+                        },
+                        {
+                           "title": "Unknown Encounters",
+                           "entries": [
+                              "If the PCs follow the culprit into the subterranean maze beneath Mecatol City, they can make a {@skill Knowledge (Lore)||eoti} check to realize they're headed toward a region called the Catacombs of the Primal. They may also deduce that this is the location of the bioweapon stockpile.",
+                              "You can have your PCs make {@skill Survival||crb} checks to track the culprit. At some point, the PCs pass through a large under ground dome. Unfortunately, here the floor has been eaten away by {@sidebar caliga mold} (see page 27), and some of the PCs must work quickly to avoid falling into pits of the stuff. In addition, a pair of {@adversary ereme|eremes} (see page 26) have made their home in the pit. If the PCs make too much noise either falling into the pits or getting back out, they wake from their torpor and attack."
+                           ]
+                        },
+                        {
+                           "title": "Catacombs of the Primal",
+                           "entries": [
+                              "Eventually, the PCs arrive in a series of large caverns where the stone seems exceptionally old. Parts are natural, and parts are carved, but with primitive tools or by hand. They also can perform a {@skill Vigilance||crb} check to discover the remains of a Lazax presence in the caverns. This may include some broken and discarded weapons, and a suit of armor (the {@gear Immortal Cuirass of the Imperial Guard||eoti}, see page 132 of {@title Embers of the Imperium}) with the remains of its wearer still inside. Clearly, the Lazax were down here. Just as clearly, they were not welcome.",
+                              "Eventually, the PCs find the culprit in a cavern next to a sealed biohazard container. This is a large shipping container with an internal atomic-decay power supply that can keep the stasis systems within running for tens of thousands of years or more. The PCs have a chance to confront and even stop the culprit, but during the climax, they are attacked!",
+                              "One of the quasi-mythical {@adversary primal|primals} (see page 29) attacks the PCs. The culprit may use this opportunity to try to steal a sample of the bioweapon and escape, and the PCs must deal with both problems. (However, if the PCs are in danger of losing to the culprit, you can have the primal attack the culprit first and give the PCs a quick chance to recover.)",
+                              "The {@adversary primal} is a hard fight, and clever thinking on the part of the PCs should be encouraged. Perhaps a cave-in could trap it, or they could lead it to the edge of one of the chasms scattered around the chamber. In a worst-case scenario, the PCs could attempt to rupture the biohazard container and escape, leaving the primal to die in a toxic cloud."
+                           ]
+                        },
+                        {
+                           "title": "Denouement",
+                           "entries": [
+                              "At the end of the adventure, the PCs must decide what to do with the X-66 cache. Do they turn it over to their superiors, keep it for their own agendas, or simply destroy it to keep one more superweapon from ruining the galaxy? If they managed to catch the culprit, they also must decide what to do with them.",
+                              "If the PCs plan to do anything but turn the X-66 over to their superiors, the culprit may have become a dangerous loose end.",
+                              {
+                                 "type": "image",
+                                 "imageUrl": "https://i.imgur.com/q4npa9I.jpeg"
+                              }
+                           ]
+                        },
+                        {
+                           "title": "Keleres Agent",
+                           "entries": [
+                              "{@adversary Keleres Agent}"
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ],
+   "adversary": [
+      {
+         "name": "Arborlid",
+         "page": 27,
+         "type": "rival",
+         "powerLevels": {
+            "combat": 4,
+            "social": 1,
+            "general": 3
+         },
+         "characteristics": {
+            "brawn": 1,
+            "agility": 4,
+            "intellect": 1,
+            "cunning": 4,
+            "willpower": 1,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 1,
+            "wounds": 6,
+            "defense": [2, 3]
+         },
+         "skills": [
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Stealth",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Finesse",
+               "source": "rot"
+            },
+            {
+               "name": "Swift",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Silhouette 0",
+            "Pounce"
+         ],
+         "weapons": [{
+            "name": "Six razor-sharp claws",
+            "skill": {
+               "name": "Brawl",
+               "source": "crb"
+            },
+            "damage": 2,
+            "critical": 3,
+            "range": "Engaged",
+            "qualities": [{
+               "name": "Linked",
+               "ranks": 5,
+               "source": "crb"
+            }],
+            "details": "May trigger {@quality Linked||crb} by spending {@symbols a}."
+         }],
+         "description": [
+            "Imported from a world now long-forgotten, these six-limbed felids with a propensity for climbing were once a popular animal companion among the citizenry of Mecatol Rex. Unfortunately, the bombardment resulted in packs of panicked and often injured pets roaming the ruins. But unlike most domesticated species, the arborlid made an impressive adaptation from civilized cityscape to urban warzone.",
+            "Today feral arborlids still stalk the inhabited portions of the city. They are not large, only a couple lanky kilograms of tawny spotted fur, sharp claws and fangs, flicking tail, and bright green eyes. But they are smarter than a Jordian canid and twice as cunning. Arborlids often live in {@sidebar clid trees}, weaving among the thorn leaves and eating the fruit, along with rodents, garbage, and stolen food. They can be friendly, albeit a bit stand-offish, but anyone who threatens them finds out what it's like to deal with six razor-sharp claws."
+         ]
+      },
+      {
+         "name": "Ereme",
+         "page": 26,
+         "type": "rival",
+         "powerLevels": {
+            "combat": 4,
+            "social": 1,
+            "general": 3
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 1,
+            "cunning": 2,
+            "willpower": 1,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 5,
+            "wounds": 12,
+            "defense": [0, 0]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 5,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Berserk",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Silhouette 0",
+            "Hyperactive State"
+         ],
+         "weapons": [{
+            "name": "Strong, blunt jaws",
+            "skill": {
+               "name": "Brawl",
+               "source": "crb"
+            },
+            "damage": 5,
+            "critical": 4,
+            "range": "Engaged",
+            "qualities": [{
+               "name": "Ensnare",
+               "ranks": 1,
+               "source": "crb"
+            }],
+            "details": "During the first two rounds of an encounter, this weapon deals +2 damage."
+         }],
+         "description": [
+            "Very little can live within the Sea of Desolation, but some creatures have survived. Eremes are thought to be descended from the large and docile lizards that sunned themselves in the Imperial water gardens. However, to handle the extremities of their new home, their adaptations are equally extreme.",
+            "Eremes are roughly a meter long, with segmented armored scales that grow particularly thick on their backs. This allows them to roll up into a ball while they sink into a particularly deep torpor. Eremes can remain comatose for months at a time, barely even breathing, until their acute senses of smell and heat register a nearby food source. Then they explode into a frenzy of action; exhausting their caloric reserves to consume whatever may be in range; plant, animal, or sapient being."
+         ]
+      },
+      {
+         "name": "Gangliapode",
+         "page": 27,
+         "type": "minion",
+         "powerLevels": {
+            "combat": 2,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 1,
+            "cunning": 1,
+            "willpower": 1,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 8,
+            "defense": [0, 0]
+         },
+         "skills": [
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Coordination",
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Resilience",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Multitoxin",
+            "Toxic Immunity"
+         ],
+         "weapons": [{
+            "name": "Poisoned Barbs",
+            "skill": {
+               "name": "Brawl",
+               "source": "crb"
+            },
+            "damage": 4,
+            "range": "Engaged",
+            "critical": 4,
+            "qualities": [{
+               "name": "Pierce",
+               "ranks": 2,
+               "source": "crb"
+            }]
+         }],
+         "description": [
+            "Gangliapodes were once a species of Jordian avians. Renowned for their pink feathers and long, thin legs, a breeding flock was given to the Lazax emperor as a gift when the Federation of Sol was inducted into the empire. Somehow, the species managed to survive the fall of Mecatol Rex, though at a steep cost.",
+            "No longer feathered, gangliapode skin is leathery and twisted, as if covered in years of burn scars. Their beaks are thinner and needle-pointed, and the skin on their legs and feet has thickened tremendously. Gangliapodes live primarily around patches of {@sidebar caliga mold}, where their tough legs allow them to stalk through the slime mold without being dissolved or devoured. They pick through the patches for dead and dying creatures and plants to eat. In doing so, they ingest plenty of toxins. Those are channeled to barbs that have evolved on the spurs of their legs, so the gangliapode has a lethal poisoned attack."
+         ]
+      },
+      {
+         "name": "Keleres Agent",
+         "page": 31,
+         "type": "nemesis",
+         "powerLevels": {
+            "combat": 7,
+            "social": 3,
+            "general": 4
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 3,
+            "intellect": 3,
+            "cunning": 3,
+            "willpower": 3,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 14,
+            "strain": 12,
+            "defense": [0, 0]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Coordination",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Skulduggery",
+               "characteristic": "cunning",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 1,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Counterintelligence Training",
+            "One Step Ahead"
+         ],
+         "weapons": [
+            {
+               "name": "Grazer",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 3,
+               "critical": 2,
+               "range": "Medium",
+               "qualities": [{
+                  "name": "Pierce",
+                  "ranks": 5,
+                  "source": "crb"
+               }]
+            },
+            {
+               "name": "Fists and feet",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 4,
+               "critical": 4,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun",
+                     "ranks": 5,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "{@gear Echo Garment|Echo Jacket|eoti} (+1 soak).",
+            "Concealed {@gear shock-pulse detonator}."
+         ],
+         "description": [
+            "This profile can be used to represent all three of the Keleres agents described in the Notable NPC section of the {@adventure Mole Hunt|adventure summary}."
+         ]
+      },
+      {
+         "name": "Lacertacleptor",
+         "page": 28,
+         "type": "minion",
+         "powerLevels": {
+            "combat": 1,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 1,
+            "agility": 2,
+            "intellect": 1,
+            "cunning": 2,
+            "willpower": 1,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 1,
+            "wounds": 3,
+            "defense": [0, 1]
+         },
+         "skills": [
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Coordination",
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Stealth",
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Silhouette 0",
+            "Pack Tactics"
+         ],
+         "weapons": [{
+            "name": "Bite",
+            "skill": {
+               "name": "Brawl",
+               "source": "crb"
+            },
+            "damage": 1,
+            "critical": 3,
+            "range": "Engaged",
+            "qualities": [{
+               "name": "Vicious",
+               "ranks": 1,
+               "source": "crb"
+            }],
+            "details": "When this creature's minion group consists of at least two minions, each additional {@symbols s} deals +2 damage instead of +1."
+         }],
+         "description": [
+            "The Lacertacleptor is not native to Mecatol Rex, nor has it adapted to the deadly environment of the Sea of Desolation. Instead, it is a recent import from the jungle moon of Ceti Omega IV. These small (less than 30 centimeters long) carnivorous reptiles were brought to Mecatol Rex by the Keleres quartermaster Galeena the Sustainer. The Titan's original plan was to populate their subterranean garden with the creatures as part of their plan to make the garden space self-sustaining. However, it turns out that although they are innocuous scavengers when alone, when in a pack 'cleptors become small but vicious hunters.",
+            "Galeena is completely safe from the creatures, but they realize that most of their comrades don't have metallic-silicon flesh. So at the moment, they are keeping the 'cleptors in an isolated holding pen until they can figure out if it's possible to use psycho-surgery or genetic modification to get rid of the pack instinct."
+         ]
+      },
+      {
+         "name": "Primal",
+         "page": 29,
+         "type": "nemesis",
+         "powerLevels": {
+            "combat": 10,
+            "social": 2,
+            "general": 2
+         },
+         "characteristics": {
+            "brawn": 4,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 4,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 5,
+            "wounds": 20,
+            "strain": 12,
+            "defense": [0, 0]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Coordination",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Stealth",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "ranks": 4,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Terrifying 3",
+            "Regeneration 5",
+            "Retaliatory Strike"
+         ],
+         "weapons": [{
+            "name": "Massive, clawed hands",
+            "skill": {
+               "name": "Brawl",
+               "source": "crb"
+            },
+            "damage": 7,
+            "critical": 4,
+            "range": "Engaged",
+            "qualities": [
+               {
+                  "name": "Knockdown",
+                  "source": "crb"
+               },
+               {
+                  "name": "Vicious",
+                  "ranks": 3,
+                  "source": "crb"
+               }
+            ]
+         }],
+         "description": [
+            "Nobody knows what the primals are. In fact, nobody knows if they really exist, or if they are a bedtime fable created to frighten children. The legend of the primals goes back to the earliest days of the Lazax occupation of Mecatol Rex; stories of large, pale, bipedal creatures with two pairs of arms that haunted the lowest levels of the subterranean vaults beneath Mecatol City. Some said they could blend into walls or heal grievous wounds in moments. Any inhabitant of Mecatol City could claim to know a friend of an acquaintance of a relative who had seen a primal, or knew of an imperial experiment to create, tame, or communicate with the things. Regions beneath the city were said to be their domain; the Catacombs of the Primal and Pale Hand Chasm were particularly famous.",
+            "In the millennia since the fall of the Lazax Empire, the tales have only grown. Some say the primals didn't exist before, but do now; monstrous devolved descendants of the ancient Lazax blindly hunting for any species responsible for their people's downfall. Others say they are the original inhabitants of Mecatol Rex, long before it became first an ecumenopolis and then a wasteland. Some even say that the primals are twisted genetic experiments left over from when the gene-sorcerers ruled Mecatol Rex, just waiting for their masters to return.",
+            "{@b GM's Note:} The profile given here is strictly mechanical and does not exclude any of the potential theories as to the Primals' origins. You get to decide what exactly the Primals are if you want to include them in your campaign."
+         ]
+      },
+      {
+         "name": "Ruvar Bird Flock",
+         "page": 26,
+         "type": "rival",
+         "powerLevels": {
+            "combat": 3,
+            "social": 1,
+            "general": 2
+         },
+         "characteristics": {
+            "brawn": 1,
+            "agility": 3,
+            "intellect": 1,
+            "cunning": 2,
+            "willpower": 1,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 1,
+            "wounds": 20,
+            "defense": [1, 1]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Coordination",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Ambush Predator",
+            "Flyer",
+            "Swarm"
+         ],
+         "weapons": [{
+            "name": "Many claws and beaks",
+            "skill": {
+               "name": "Brawl",
+               "source": "crb"
+            },
+            "damage": 2,
+            "critical": 3,
+            "range": "Engaged",
+            "qualities": [
+               {
+                  "name": "Accurate",
+                  "ranks": 1,
+                  "source": "crb"
+               },
+               {
+                  "name": "Vicious",
+                  "ranks": 1,
+                  "source": "crb"
+               }
+            ],
+            "details": "Each additional {@symbols s} deals +2 damage instead of +1."
+         }],
+         "description": [
+            "Ruvar birds once soared across Mecatol Rex, their vast flocks forming beautiful patterns in dawn sky while their gentle coo ing lulled the citizenry into peaceful sleep. Originally intro duced to add animal life to Mecatol City, they adapted well to an urban existence by scavenging food and nesting on the sides of soaring buildings. Ruvar birds were small, weighing less than half a kilogram, and able to fit comfortably into the literal and metaphorical cracks of the city.",
+            "However, after the bombing they became feral and savage things, fighting with the survivors for every scrap of food. Today's ruvar birds are much leaner and more skittish than their ancestors, and much more aggressively omnivorous. Small f locks of the birds roam Mecatol City, roosting on buildings and swarming over fruiting clid trees, garbage piles, and un attended meals. The ones that live on the outskirts of the city or in the Sea of Desolation are more vicious, and tales abound of unwary persons set upon and stripped down to bones by a ravenous flock."
+         ]
+      }
+   ],
+   "adversaryAbility": [
+      {
+         "name": "Counterintelligence Training",
+         "description": [
+            "When an opponent targets this character with a social skill check, they add {@symbols h} to the result. If the check generates {@symbols hhh} or {@symbols d}, this character learns one of the opponent's motivations"
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "defensive",
+            "results modifier",
+            "results spend",
+            "motivation"
+         ]
+      },
+      {
+         "name": "Hyperactive State",
+         "description": [
+            "During the first two rounds of an encounter, this creature gains one additional maneuver during its turn."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "free maneuver"
+         ]
+      },
+      {
+         "name": "Multitoxin",
+         "description": [
+            "If this creature inflicts wounds with a combat check, the target must make a {@difficulty Daunting|Resilience}; upon failure, the target suffers 5 wounds; the target is also {@rule immobilized||crb} for one round per {@symbols h} generated and {@rule staggered||crb} for one round per {@symbols d} generated."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental",
+            "status effect",
+            "offensive"
+         ]
+      },
+      {
+         "name": "One Step Ahead",
+         "description": [
+            "Once per round, after an opponent performs an action or maneuver, this character may spend one Story Point to perform an action or a maneuver as an out-of-turn incidental"
+         ],
+         "tags": [
+            "combat",
+            "social",
+            "incidental (out of turn)",
+            "story point cost",
+            "free maneuver"
+         ]
+      },
+      {
+         "name": "Toxic Immunity",
+         "description": [
+            "This creature is immune to any toxins or poisons."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "defensive"
+         ]
+      }
+   ],
+   "book": [
+      {
+         "name": "The Mecatol Report",
+         "releaseYear": 2025,
+         "chapters": [
+            {
+               "title": "Keleres Headquarters (Formerly Imperial Intelligence Headquarters)",
+               "entries": [
+                  {
+                     "type": "image",
+                     "imageUrl": "https://i.imgur.com/TmKppGJ.png"
+                  },
+                  "The headquarters for the Keleres is actually the repurposed sub-basement levels of the ruined Imperial Intelligence headquarters building on Mecatol Rex. Destroyed during the Sol bombing at the onset of the Twilight Wars, the Imperial Intelligence HQ building was never rebuilt by the Winnaran Custodians (probably because they had no need for facilities built to house a galaxy-spanning spy agency). Instead, the ruins were left as they were. The only thing the Winnarans did was confirm that the sublevel bunkers and basement facilities were not breached by the bombing, then seal them up to ensure that none of Imperial Intelligence's dirty secrets would ever see the light of day.",
+                  "And that's how it stayed, for three thousand years.",
+                  "Eventually, Mecatol Rex would be reconnected with the wider galaxy and the Galactic Council would be reformed. Soon after that, the emergence of the so-called Great Threats would drive the Council to form the Keleres.",
+                  "The Council's new agency would need facilities to operate from, and the Winnarans offered them the land that once held the Imperial Intelligence headquarters. The Custodians claimed it was a symbol of restoration, with the new intelligence apparatus inheriting the mantel of the old. The first Tribunii noted sourly that the ruins were also the least valuable and desirable land in Mecatol City.",
+                  "The Custodians dedicated funding and work crews to clean up the old ruins and build a brand-new headquarters building on the land. Both were hilariously unequal to the task, with current estimates placing the completion date sometime in the next four decades. But in the meantime, the Keleres unsealed the old sublevel complex and moved into the underground facilities. And for the last five years, they've been making them selves at home.",
+                  "However, the Keleres have expanded some areas and sealed up others to try and adapt the space to their needs.",
+                  "The facilities can be divided into six main sections. Beyond these lie the abandoned sublevels that the Keleres have kept sealed off and unoccupied. And beyond that? Any records were lost long ago, but Mecatol Rex's depths are a warren honeycombed with forgotten sewers, transitways, underground arcologies, and natural caverns. Who knows where some of the tunnels may lead?",
+                  {
+                     "title": "Installation Overview",
+                     "entries": [
+                        "The Keleres headquarters is entirely underground. The only parts that are visible from the surface are the massive hatches that lead to the main facility and its subterranean starship hangar. The rest of the dozen square kilometers is covered in wind-blasted ruins and the occasional twisted clid tree. The site is surrounded by dust shields and the tenement towers of the Keldive Slums, and near the edge of Mecatol City and the Sea of Desolation.",
+                        "Beneath the surface, the headquarters facilities stretch down for hundreds of meters, deep into the bedrock of Mecatol Rex. Nearly all of the facilities are repurposed from the existing sublevel complex of the Imperial Intelligence headquarters.",
+                        {
+                           "type": "image",
+                           "imageUrl": "https://i.imgur.com/hvDLeUv.jpeg"
+                        },
+                        {
+                           "type": "image",
+                           "imageUrl": "https://i.imgur.com/yrSXb74.jpeg"
+                        },
+                        {
+                           "title": "Above Ground",
+                           "entries": [
+                              "The only elements of the Keleres HQ visible on the surface are the three entrances to the underground facilities. The largest of these is the four-panel \"cloverleaf\" hatchway that leads to the underground hangar facilities. When fully open, these reveal a shaft large enough to admit a star bomber or inter stellar scout craft.",
+                              "The next largest entrance is the large circular hatchway of the main entrance, set into the ground and accessible by an ill-maintained roadway. The hatch is eight meters across (large enough for a small vehicle) and made of solid duranium. It's actually part of the reinforced foundation of the old Imperial Intelligence building, which is the reason the sublevels survived the Sol bombing so long ago. The hatchway leads to a horizontal lift platform that's large enough for dozens of people or several mid-sized vehicles. Nearby is a small bunker with access to the smaller secondary personnel lift. This is only large enough for ten people, but is faster to use than the larger main lift.",
+                              "These three entrances are the only official ways into the Keleres HQ.",
+                              "There are no guard posts or other facilities on the surface, but the Keleres do maintain a watch on the area using surveillance familiars. Nobody can access the entrances without the proper credentials, and any unauthorized access attempts alert the Keleres staff on standby below, and any Custodian Guard in the nearby city sectors."
+                           ]
+                        },
+                        {
+                           "title": "Living Quarters and Receiving (Red Level)",
+                           "entries": [
+                              "The main entrance lift and the secondary personnel lift both drop down to the living quarters and receiving section of the facility. The Keleres call this \"red level\" due to the color-coded signs.",
+                              "The most prominent part of Red Level is {@b Receiving}, a large, circular space built around the bottom of the main entrance lift shaft. The shaft is surrounded by an open staging area, which is in turn surrounded by a series of storage rooms, security check points, and the facility's main control center. The storage rooms hold supplies brought into the facility from Mecatol City, while the security checkpoints ensure no unauthorized personnel enter the facility proper. The control center is the largest room surrounding Receiving, with large windows overlooking the whole circular space. Here several Keleres staff and Winnaran Custodians remain on duty at all hours, overseeing all of the facilities' day-to-day functions.",
+                              "A corridor large enough to drive a rambler through stretch es off from one side of Receiving. This is the {@b Main Transfer Corridor}, and it runs between Receiving and the subterranean hangar complex. This is the means by which anything unloaded in the hangars can be moved into the facility, and vice versa.",
+                              "Beyond Receiving, the {@b main barracks and commissary facilities} wrap around in ever-widening concentric circles. There are several sets of sleeping quarters, bathing facilities, and food halls, with each \"set\" separate from the others and adapted to a certain type of general species physiology. The largest set is reserved for oxy/nitrogen breathers and has multiple 12-person bunk rooms, lockers, cleaning/hygiene facilities, and a communal mess and kitchen. The next largest has replaced the bunk rooms and cleaning facilities with spaces f looded with fresh and salt water. These are reserved for aquatic species; mostly the Hylar (although some Druaa and Yssaril choose to stay here because it's the closest thing to their own water-rich homes).",
+                              "There are three other living facilities of roughly the same size. The first is a barracks with a cooled ammonia atmosphere that is currently uninhabited, while the second is a hyper-hot barracks space specifically developed for the Gashlai and isolated from the rest of the facility. It even includes heat-locks where the Gashlai can don their Ember Suits before leaving. The final set of living facilities have been gauss-shielded and filled with an energized plasma that mimics the natural environment of the Creuss. However, this was created before the Creuss informed their colleagues that they have no problem remaining in their suits indefinitely. Creuss members still use the barracks spaces, but infrequently.",
+                              "Most of the rank-and-file Keleres agents stay in these barracks spaces, while senior agents and support staff have smaller personal quarters on the lower levels. There is no requirement that an agent live within the headquarters, but given the prices of housing in Mecatol City and the modest living stipends provided to Keleres personnel, the cramped communal barracks often seem preferable to a tenement in the Keldive Slums or Cratered Quarter. Those who can afford to live in one of Mecatol City's nicer neighborhoods are either independently wealthy or making money through other, more...questionable means. In either case, they often think twice before advertising their status.",
+                              "The final noteworthy facility on Red Level is the {@b Situation Briefing Room}. This large, semi-circular chamber is dominated by a U-shaped conference table wrapping around holo-projectors, with additional vid-screens located along the walls capable of showing everything from a masterful illusion of being in a mountaintop meeting space or underwater tropical utopia to the status of military forces across the Gul system. This space is reserved for meetings between Tribunii, members of the Galactic Council, senior agents, and high-level Winnaran Custodian liaisons. Regular field agents almost never enter it."
+                           ]
+                        },
+                        {
+                           "title": "Administration and Support (Yellow Level)",
+                           "entries": [
+                              "Below the living facilities and the receiving levels, corridors and tunnels lead off into a winding labyrinth of administration offices, support facilities, and the personal quarters of senior staff. The {@b staff offices} are a hodgepodge of different ly sized and furnished rooms that were refurbished from the original Intelligence basement facilities (some of which had to be completely rebuilt after thousands of years of disuse). Likewise, the Custodians equipped the facilities with whatev er furnishings they happened to have in storage. This means some of the offices may be bare walls surrounding pressed carbon-plate furniture, while others may be lit by Gashlai plasma-sculptures sitting atop hand-carved Q'waar wood desks.",
+                              "Needless to say, who gets what office is a matter of constant squabbling, favor-trading, threats, and the occasional murder attempt among the Keleres' desk agents.",
+                              "The best offices go to the Tribunii (who would also get the best personal quarters if all three weren't well-off enough to own private residences in Mecatol City). Each of the {@b Tribunii offices} is a multi-room affair with an antechamber, main office, private refresher facility, and genelocked micro-vault. The Tribunii are also able to get their offices decorated to their tastes. Kuuasi Aun Jalatai's space is deliberately minimalist, with furniture constructed from the wood of zero-gee trees and an inconspicuous cabinet to store his decanter of firespice liqueur. However, the walls are covered with holoscreens of the highest quality, which Kuuasi uses to project views of his home in the Atharal Gas Torus. Harka Leeds, on the other hand, outfitted her office with a battered duranium desk and captain's chair from the old flagship of the Leeds and Victoria Corp. The walls are dotted with shelves covered with masterful models of famous ships from the Mentak Navy. Finally, Odlynn Myrr's office has been completely paneled in Q'waar wood and the walls lined with jungle plants. With the constant aroma of smoldering nirskki leaves drifting through the rooms, one could be mistaken for thinking they were on Archon Ren.",
+                              {
+                                 "type": "image",
+                                 "imageUrl": "https://i.imgur.com/KH6SooW.jpeg"
+                              },
+                              "The headquarters' {@b armory} is isolated from the rest of the staff offices by heavy permacore bulkheads, and takes up nearly a fifth of the level. Inside are maintenance workspaces, shelves of gear, ammunition cabinets, and racks for weapons ranging from personal {@gear shudder blade|shudder knives|eoti} to heavy {@gear plasma rifle|plasma rifles|eoti}. In theory, Keleres are supposed to store their weapons in the armory while at headquarters. In practice, most agents either mistrust their fellow Keleres, the armory quartermasters, or both, and keep their favorite personal weapons on their person or tucked away in their quarters.",
+                              "At the heart of the armory one can find the {@b explosive storage bunker} behind blast walls built from dreadnought hull plating. This duranium armor should be able to protect the rest of the headquarters in case of a catastrophic accident, but nobody wants to find out if that's true. Within the bunker are the Keleres' heavy weapons: grenades, demolition charges, {@gear sliver rocket launcher|sliver rocket launchers|eoti}, and some truly terrible weapons like {@gear graviton detonator|graviton explosives|eoti}, {@gear thorite decay bomb|thorite decay charges|eoti}, and micro-atomics."
+                           ]
+                        },
+                        {
+                           "title": "Subterranean Hangar Complex (Blue Level)",
+                           "entries": [
+                              "The base's hangar facility is a massive vertical silo, dropping from its heavy four-panel hatch down over two hundred and fifty meters to the floor of the hangar bay far below. Along the walls are a series of landing platforms for atmospheric fliers, shuttlecraft, and starfighters, all accessible by lifter carriages crawling up and down tracks on the wall. Some of these landing platforms can even be retracted into sub-hangars, allowing the complex to house even more craft.",
+                              "The bottom of the hangar is dominated by vertical launch rails for the facility's largest starships: light freighters, courier vessels, and long-range scout ships. The base of the facility also has multiple silos for storing vessels when not in use and garages for the Keleres' collection of ramblers and other ground vehicles (the lifter carriages can bring these up to the main transfer corridor and allow them to reach the main lift platform if the Keleres need to get them into Mecatol City proper).",
+                              "Tucked into one corner is a small, nondescript enclosure mounted onto additional vertical rails. This is {@b hangar control}, and it can be elevated to oversee the entire hangar facility or lowered to the hangar floor for easy access. Since this oversees the operations of every ship and vehicle in the hangar, access is restricted to authorized agents and Custodian liaisons."
+                           ]
+                        },
+                        {
+                           "title": "Research and Engineering (Green Level)",
+                           "entries": [
+                              "Below the administration and support levels, Keleres headquarters starts to grow smaller. The layout of these levels deviates less and less from the original floor plans of the Imperial Intelligence subbasements, with the Custodians simply doing the minimum work to refit old facilities to fit new needs.",
+                              "These levels are dominated by the {@b engineering and generator facilities}. These facilities used to house the Imperial Intelligence HQ's primary generator. To restore them, all the Custodians had to do was replace the decaying machinery. Small workshops and assembly facilities have been set up in adjoining rooms so that the maintenance staff can keep the systems running. These facilities are kept entirely separate from the various laboratories on this level, except for an extensive plasma ducting system that runs from the main generator.",
+                              "The {@b laboratories} on this level were originally installed by Imperial Intelligence. After three thousand years of being sealed up, they were reopened and (after being thoroughly cleaned down to a molecular level) retrofitted for the Keleres to use. The dozen refurbished laboratory spaces include equipment to conduct all sorts of research, including high-energy physics, chemical analysis, and biological study in a quarantined environment. Here the Keleres can bring back what they find in the field to determine whether it is a threat.",
+                              "The original Imperial Intelligence labs had a similar purpose and, given the cautiously paranoid nature of Lazax intelligence agents, the labs were designed to be isolated from the rest of the facility. This means all labs have substantial security mechanisms built in, including ducting from the main generator. In an emergency, a lab can be flooded with star-hot plasma, destroying everything (and everyone) inside. Even a Gashlai wouldn't be able to withstand a full generator vent for long."
+                           ]
+                        },
+                        {
+                           "title": "Vaults (Teal Level)",
+                           "entries": [
+                              "As one travels beneath the research and engineering levels, the passageways grow colder and damper. Signs of decay and ill-repair such as cracked walls, moldy panels, and broken light fixtures become more and more common. In some places, the hallways are choked with rubble. In others, they are completely impassable.",
+                              "This level is colloquially known as the Vaults. It began as a place for Imperial Intelligence to store all sorts of dirty little secrets accrued after thousands of years of operations. After the bombing, much of it was either sealed behind collapsed passageways or simply forgotten. The Vaults are so deep that they have been built beneath Mecatol Rex's water table, and even as the surface was reduced to a dust-lashed desert some of the vault passages began to slowly flood.",
+                              "When the Custodians began to renovate the Vault levels, they found a maze of cold, dark water, half-collapsed passages, and locked vaults containing who knew what. For the most part, the Custodians and later the Keleres left those vaults sealed up and forgotten. But in a few cases, the Keleres have reactivated some of the vaults to use for their own purposes.",
+                              "The {@b electronic archives} are the most important of these renovated spaces. Within several interconnected storerooms the Keleres have constructed a secure data archive. There are no connections to the rest of the facility; even power is provided by a miniature entropic field tap donated by the Naaz-Rokha Alliance. This means the Keleres archives cannot be hacked or altered by any outside agency, and the Tribunii and Custodian liaisons take the archives' physical security very seriously as well. However, it also means that anyone who wants to access these records must walk all the way to the archives to do so.",
+                              "Near the electronic archives are the Keleres' {@b physical archives}. Originally, these were simply unused and dry storage rooms that the first agents began cramming with physical records; plas-sheet printouts, non-alterable data crystals, and even the occasional books gathered in the field. In the last year, however, Tribunii Myrr has begun to push for the Keleres to make physical backups of all the organization's important records; especially mission after-action reports. These are all micro-etched into sheets of thin-pressed duranium and stored in massive binders.",
+                              "Since this archiving program began, Myrr has restricted access to the physical archives to a handful of senior agents and a single Winnaran Custodian, Tsoi Iq Matriona. Dour and completely lacking a sense of humor, Tsoi is responsible for transcribing and binding the records. Most Keleres realize that the physical archives give them the chance to access information without using their login credentials in the electronic archives. So Tsoi has had to turn away dozens of would-be fact-finders. However, it's rumored that she has a particular love for Lokian salt-shrimp, a delicacy that is incredibly difficult to get on Mecatol Rex. Whether she'd compromise her ethics for a sublime gastronomical experience is an open question.",
+                              "And beyond the Keleres' archives are the rest of the vaults: kilometers of flooded spaces, collapsed passageways, and storage rooms that haven't been opened in millennia. The Keleres have no idea what sits in most of the vaults, and no particular enthusiasm for conducting an assessment. After all, who knows what horrors Imperial Intelligence locked away, just waiting to be unearthed?",
+                              "And lurking secrets of past civilizations are just one of the many dangers facing would-be explorers. Beyond the risk of drowning or being crushed in a surprise cave-in, those exploring the vaults also run the risk of encountering some of Mecatol Rex's remaining wildlife."
+                           ]
+                        },
+                        {
+                           "title": "Abandoned Sublevels (Green Level)",
+                           "entries": [
+                              "Eventually, the vaults blend into the fully abandoned sublevels. These spaces drive home just how old Mecatol Rex really is. The planet has been occupied for tens of thousands of years, and the Lazax were only the most recent empire to claim it as their own. Many of the catacombs predate the construction of the Imperial Intelligence HQ, and some date back to the days when Mecatol Rex was a fortress world of the Mahact. Here some of the lifeforms that make up the remnants of Mecatol Rex's ecosystem - namely {@adversary ereme|eremes}, {@adversary arborlid|arborlids}, and {@sidebar caliga mold} - manage to eke out some semblance of an existence.",
+                              "For the most part, the Keleres have sealed off every entrance to these abandoned places. However, truly making the vaults secure against intrusion is impossible. Instead, they just set up electronic sensors and creature traps around the vault spaces in use, and hope that anyone foolish enough to try to infiltrate Keleres HQ from below ends up being hopelessly lost.",
+                              "There is one entry into these depths that the Keleres have deliberately left open. Behind a mag-locked entryway on the research and engineering levels, a heavy lift platform descends over fifty meters to a badly maintained substation. From here, Custodian teams have cleared an ancient access passageway, laying down ferroplate planking and hanging up strings of long-lasting lights. The passageway ends in a series of disused storage vaults whose walls have partially collapsed, revealing natural and artificial caverns beyond. From here, brave souls can enter the unexplored regions where the Intelligence HQ ends and the rest of Mecatol Rex's undercity begins."
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Mecatol Rex Beastiary",
+               "entries": [
+                  {
+                     "entries": [
+                        "The biome of the Imperial capital had long ago ceased to be natural in any sense. Although the Lazax loved their lush gardens and green spaces—some of which were hundreds of square kilometers across—any semblance of wilderness was a carefully maintained façade. Trees were carefully planted and pruned, meadows were trimmed, and animals chosen for their docile natures and herbivorous diets.",
+                        "This crafted facsimile of an ecosystem was shattered when the Sol fleet first began its bombardment. Forests burned along with buildings, animals died alongside the inhabitants, and all the survivors choked equally under clouds of ash and dust. By the time the shelling stopped, most of the planet was a desolate wasteland.",
+                        "Desolate, but not entirely dead. In the thousands of years since the Twilight Wars, life has continued on Mecatol Rex. However, any semblance of domestication has long since van ished; anything that wants to survive on this barren planet has to fight and kill to do so.",
+                        {
+                           "title": "Triple Biomes",
+                           "entries": [
+                              "After the catastrophic war, Mecatol Rex was reduced to three biomes. The first is the land within the bounds of Mecatol City. Here, massive storm barriers keep the worst of the dust cyclones at bay, and massive aquifers and pumps provide water to a thirsty populace. The animals and plants that grow here tend to be lean, skittish, and resourceful. However, they sur vive on the margins of city life, scavenging refuse and stealing water from leaking civic pipes. They avoid the city's popula tion, rather than competing with it directly.",
+                              {
+                                 "type": "image",
+                                 "imageUrl": "https://i.imgur.com/RQKYXbP.jpeg"
+                              },
+                              "This all changes beyond the city's boundaries. The rest of Mecatol Rex is a vast wasteland called the Sea of Desolation, with dust dunes hundreds of meters high marching between shallow lakes of toxic sludge and the skeletal remains of long-destroyed hab-towers. When precipitation falls from the bruise-colored clouds (which isn't often; the surface of Mecatol Rex is exceedingly dry), it comes as acid rain or filthy yellow snow near the poles.",
+                              "Anything that lives in the Sea of Desolation must be an om nivore. Food is too scarce to ignore any source of nourishment. T his holds true for the plants as well as animals, and makes traveling across the Sea of Desolation even more dangerous than the dust storms and lack of potable water would suggest.",
+                              "The third biome is a blend of the first two; the caverns, basements, sewers, and catacombs that run beneath the plan et's surface. In the Sea of Desolation, much of the artificial underground structures collapsed during the bombardment, or later after thousands of years of incredibly harsh weather. Only a few caves remain, serving as welcome shelter for the animals living in the wastes.",
+                              "Beneath Mecatol City is another matter, however. Here the buildings were protected by defense grids or antiship batteries, and thus the catacombs beneath them remained largely intact. In the thousands of years since, life has infiltrated these sub terranean spaces from the Sea of Desolation and Mecatol City, blending into a unique amalgamation. This is the one place on Mecatol Rex where relatively clean water isn't scarce, as the water table has dropped and the rock above filters out most surface pollutants. Food—either detritus from Mecatol City above or the odd surface dweller who stumbles into this underground world—is more common than in the Sea of Desolation as well. Finally, with no sapient beings to threaten them, the animal life is more aggressive and vicious. Those who descend into the catacombs had better watch their backs and travel armed.",
+                              {
+                                 "type": "image",
+                                 "imageUrl": "https://i.imgur.com/nnqNow2.jpeg"
+                              },
+                              {
+                                 "type": "list",
+                                 "items": [
+                                    "{@adversary Ruvar Bird Flock}",
+                                    "{@adversary Ereme}",
+                                    "{@adversary Arborlid}",
+                                    "{@adversary Gangliapode}",
+                                    "{@adversary Lacertacleptor}",
+                                    "{@adversary Primal}",
+                                    "{@adversary Keleres Agent}",
+                                    "{@sidebar Clid Trees}",
+                                    "{@sidebar Caliga Mold}"
+                                 ]
+                              }
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ],
+   "gear": [
+      {
+         "name": "Shock-Pulse Detonator",
+         "page": 31,
+         "type": "weapon",
+         "skill": {
+            "name": "Ranged (Light)",
+            "source": "crb"
+         },
+         "encumbrance": 1,
+         "price": "n/a",
+         "rarity": 10,
+         "damage": "0",
+         "critical": 0,
+         "range": "Engaged",
+         "special": [{
+            "name": "Limited Ammo",
+            "value": 1,
+            "source": "crb"
+         }],
+         "description": [
+            "All other characters within short range are knocked {@rule prone||crb} and must make a successful {@difficulty Hard|Resilience} or be {@rule disoriented|stunned|crb} until the start of this character's next turn."
+         ]
+      }
+   ],
+   "sidebar": [
+      {
+         "name": "Caliga Mold",
+         "page": 27,
+         "type": "environment",
+         "description": [
+            "The Sea of Desolation is far too dead to support ordinary plants. Instead, the most common non animal life is a type of photosynthesizing slime mold that produces food both through sunlight and by dissolving and digesting otherwise toxic detritus. Certain insects in turn eat the mold, which in turn are eaten by larger animals.",
+            "Normally, patches of caliga mold are so small as to be unnoticeable. However, occasionally spores happen on a nutrient-rich patch of detritus or debris. When this happens, the mold can rapidly expand, eating down through the debris before gathering on solid, inedible ground below. What's left is a deceptively fragile spiderweb of debris that crum bles underfoot, plunging the unwary traveler into a pit full of slime mold. And of course, the mold is perfectly willing to digest injured or trapped animals.",
+            "A character about to step onto a hidden caliga mold pit should make a {@difficulty Hard|Vigilance}. If they fail, they step on the top of the debris which gives way, dropping them into the pit. This follows the rules for a {@rule falling|short-ranged fall|crb} (as described on page 112 of the Genesys Core Rulebook). If they generate {@symbols hhh} or {@symbols d} on the check (whether or not they succeed) one companion chosen at random falls into the pit as well.",
+            "Once in the pit, the environment counts as a {@rule fire, acid, and corrosive atmospheres|rating 4 acid|crb} (see page 111 of the Genesys Core Rulebook). In addition, any checks to climb out of the pit suffer {@dice setback} due to the partially dissolved walls."
+         ]
+      },
+      {
+         "name": "Clid Trees",
+         "page": 26,
+         "type": "environment",
+         "description": [
+            "Once, the gardens of the Imperial Palace and noble manses were filled with the perfume of flowering clid trees, towering deciduous plants with thick, woody trunks and small, sharp leaves. The trees produced beautiful f lowers in seasonal cycles, with each season resulting in a different, brilliant hue to the petals. Flowers gave way to small fruit, with a sweet and sour flesh beneath a thick rind.",
+            "Clid trees survived the bombardment in shield ed areas, and in the years since they slowly spread across the city wherever they could take root. They grew small and stunted, twisted by the poisons in the air and ground, but they also grew deep, penetrating roots that could reach the new, lower water table. Although they cannot survive in the Sea of Desolation, they have be come an important part of the new Mecatol City ecosystem. Their fruit is still edible and provides sustenance for animals and homeless citizens, even if their leaves have further sharpened into deadly barbs.",
+            "Harvesting fruit from a clid tree requires a successful {@difficulty Average|Survival}. Each {@symbols h} generated causes the character making the check to suffer 2 wounds from the sharp leaves. If the check generates {@symbols d}, the character suffers a Critical Injury from a particularly unlucky stab."
+         ]
+      },
+      {
+         "name": "Dangers of the Sea of Desolation",
+         "page": 29,
+         "type": "environment",
+         "description": [
+            "The Sea of Desolation is a barren wasteland, utterly lethal for anyone unprepared to deal with it. Though it is not particularly hot (Mecatol Rex's orbit and the shroud of lingering dust storms keep the planetary temperatures ranging from cool to lethally cold at the poles), dehydration is still the biggest danger. After that, the lingering toxins are a constant concern.",
+            "All of the creatures in this bestiary are immune to these rules.",
+            {
+               "title": "Dehydration",
+               "entries": [
+                  "Characters traveling through the Sea of Desolation cannot heal strain at the end of encounters or through resting unless they are able to have a drink of water each time they heal strain.",
+                  "You do not have to keep track of your party's water supply as long as each character makes a point of carrying water. However, whenever a character's check generates {@symbols hhh} or {@symbols d}, you can spend it to have the character run out of water the next time they have a drink."
+               ]
+            },
+            {
+               "title": "Toxic Atmosphere",
+               "entries": [
+                  "At the end of each full day spent in the Sea of Desolation without an environmental suit or wearing some other form of sealed armor, a character must perform an {@difficulty Average|Resilience}. If they fail, they must reduce their strain and wound threshold by 1, or by 2 if they also generated {@symbols hhh} or {@symbols d}.",
+                  "If their strain and wound threshold is ever reduced to 0, a character dies. However, a week spent outside of the Sea of Desolation or a successful {@difficulty Hard|Medicine} restores a character's strain and wound threshold to normal."
+               ]
+            }
+         ]
+      }
+   ]
+}

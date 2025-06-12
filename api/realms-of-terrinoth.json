@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.6.3",
+         "version": "2025.6.11",
          "json": "realms-of-terrinoth",
          "full": "Realms of Terrinoth",
          "abbreviation": "RoT",
@@ -5643,7 +5643,7 @@
          ],
          "talents": [],
          "abilities": [
-            "Regeneration",
+            "Regeneration 3",
             "Sweep Attack"
          ],
          "weapons": [
