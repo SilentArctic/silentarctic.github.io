@@ -1,6 +1,6 @@
 {
    "core-rule-book.json": {
-      "version": "2025.3.8",
+      "version": "2025.6.11",
       "json": "core-rule-book",
       "full": "Genesys Core Rulebook",
       "abbreviation": "CRB",
@@ -49,7 +49,7 @@
       "originType": "core"
    },
    "realms-of-terrinoth.json": {
-      "version": "2025.6.3",
+      "version": "2025.6.11",
       "json": "realms-of-terrinoth",
       "full": "Realms of Terrinoth",
       "abbreviation": "RoT",
@@ -62,7 +62,7 @@
       "originType": "core"
    },
    "secrets-of-the-crucible.json": {
-      "version": "2025.6.3",
+      "version": "2025.6.11",
       "json": "secrets-of-the-crucible",
       "full": "Keyforge: Secrets of the Crucible",
       "abbreviation": "SotC",
@@ -107,6 +107,23 @@
       "url": "https://www.edge-studio.net/shares/twilight-imperium/",
       "releaseDate": "20 March 2024",
       "version": "2025.1.20",
+      "module": true,
+      "originType": "core"
+   },
+   "twilight-imperium-mecatol-report.json": {
+      "version": "2025.6.11",
+      "json": "twilight-imperium-mecatol-report",
+      "full": "Twilight Imperium: Mecatol Report",
+      "abbreviation": "EotI:MR",
+      "color": "#EF3F22",
+      "authors": [
+         "EDGE Studio"
+      ],
+      "convertedBy": [
+         "SilentArctic"
+      ],
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/f6/be/f6be8343-a4fc-47e4-a722-efe3e01fc5d9/ti_codex_4_rules.pdf",
+      "releaseDate": "11 June 2025",
       "module": true,
       "originType": "core"
    }
