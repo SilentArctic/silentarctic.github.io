@@ -19,9 +19,7 @@
       },
       "required": [
          "name",
-         "description"
-      ],
-      "optional": [
+         "description",
          "tags"
       ],
       "additionalProperties": false

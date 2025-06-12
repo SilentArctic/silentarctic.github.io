@@ -18,6 +18,9 @@
                "nemesis"
             ]
          },
+         "npc": {
+            "type": "boolean"
+         },
          "hasVariants": {
             "type": "boolean"
          },
@@ -381,6 +384,7 @@
       ],
       "optional": [
          "page",
+         "npc",
          "variant",
          "hasVariants",
          "description",
