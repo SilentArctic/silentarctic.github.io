@@ -1,11 +1,11 @@
 {
    "core-rule-book.json": {
+      "version": "2025.6.11",
       "json": "core-rule-book",
       "full": "Genesys Core Rulebook",
       "abbreviation": "CRB",
       "color": "#14C0F1",
       "url": "https://www.fantasyflightgames.com/en/products/genesys/",
-      "version": "2025.1.20",
       "authors": [
          "Fantasy Flight Games"
       ],
@@ -32,6 +32,7 @@
       "originType": "core"
    },
    "expanded-players-guide.json": {
+      "version": "2025.2.26",
       "json": "expanded-players-guide",
       "full": "Expanded Player's Guide",
       "abbreviation": "EPG",
@@ -44,17 +45,16 @@
          "Craftidore"
       ],
       "url": "https://www.fantasyflightgames.com/en/products/genesys/products/expanded-players-guide/",
-      "version": "2025.1.20",
       "releaseDate": "20 September 2019",
       "originType": "core"
    },
    "realms-of-terrinoth.json": {
+      "version": "2025.6.11",
       "json": "realms-of-terrinoth",
       "full": "Realms of Terrinoth",
       "abbreviation": "RoT",
       "color": "#A75A0E",
       "url": "https://www.fantasyflightgames.com/en/products/genesys/products/realms-terrinoth/",
-      "version": "2025.1.20",
       "authors": [
          "Fantasy Flight Games"
       ],
@@ -62,12 +62,12 @@
       "originType": "core"
    },
    "secrets-of-the-crucible.json": {
+      "version": "2025.6.11",
       "json": "secrets-of-the-crucible",
       "full": "Keyforge: Secrets of the Crucible",
       "abbreviation": "SotC",
       "color": "#FAC619",
       "url": "https://www.fantasyflightgames.com/en/products/genesys/products/secrets-crucible/",
-      "version": "2025.1.20",
       "authors": [
          "Fantasy Flight Games"
       ],
@@ -78,12 +78,12 @@
       "originType": "core"
    },
    "shadow-of-the-beanstalk.json": {
+      "version": "2025.6.3",
       "json": "shadow-of-the-beanstalk",
       "full": "Android: Shadow of the Beanstalk",
       "abbreviation": "SotB",
       "color": "#40B3B5",
       "url": "https://www.fantasyflightgames.com/en/products/genesys/products/shadow-beanstalk/",
-      "version": "2025.1.20",
       "authors": [
          "Fantasy Flight Games"
       ],
@@ -107,6 +107,23 @@
       "url": "https://www.edge-studio.net/shares/twilight-imperium/",
       "releaseDate": "20 March 2024",
       "version": "2025.1.20",
+      "module": true,
+      "originType": "core"
+   },
+   "twilight-imperium-mecatol-report.json": {
+      "version": "2025.6.11",
+      "json": "twilight-imperium-mecatol-report",
+      "full": "Twilight Imperium: Mecatol Report",
+      "abbreviation": "EotI:MR",
+      "color": "#EF3F22",
+      "authors": [
+         "EDGE Studio"
+      ],
+      "convertedBy": [
+         "SilentArctic"
+      ],
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/f6/be/f6be8343-a4fc-47e4-a722-efe3e01fc5d9/ti_codex_4_rules.pdf",
+      "releaseDate": "11 June 2025",
       "module": true,
       "originType": "core"
    }

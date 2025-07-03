@@ -512,12 +512,7 @@
                "imageUrl": {
                   "type": "string"
                },
-               "description": {
-                  "type": "array",
-                  "items": {
-                     "type": "string"
-                  }
-               },
+               "description": { "$ref": "./varyingDisplay_sub_schema.json" },
                "damage": {
                   "type": "string"
                },
@@ -536,7 +531,7 @@
                   ]
                },
                "rarity": {
-                  "type": "integer"
+                  "type": ["integer", "null"]
                },
                "special": {
                   "type": "array",

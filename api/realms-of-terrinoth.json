@@ -2,12 +2,12 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
+         "version": "2025.6.11",
          "json": "realms-of-terrinoth",
          "full": "Realms of Terrinoth",
          "abbreviation": "RoT",
          "color": "#A75A0E",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/realms-terrinoth/",
-         "version": "2025.1.20",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -4780,7 +4780,7 @@
          ],
          "talents": [],
          "abilities": [
-            "Multiattack"
+            "Four-armed (Dolochs)"
          ],
          "weapons": [
             {
@@ -5016,7 +5016,6 @@
          "abilities": [
             "Amphibious",
             "Monstrous Limbs",
-            "Multiattack",
             "Silhouette 2",
             "Terrifying 3"
          ],
@@ -5644,7 +5643,7 @@
          ],
          "talents": [],
          "abilities": [
-            "Regeneration",
+            "Regeneration 3",
             "Sweep Attack"
          ],
          "weapons": [
@@ -6407,7 +6406,7 @@
             }
          ],
          "abilities": [
-            "Multiattack",
+            "Four-armed (Massive Swords)",
             "Elemental Runes",
             "Silhouette 2"
          ],
@@ -8926,14 +8925,14 @@
       {
          "name": "Elemental Runes",
          "description": [
-            "Each of these characters takes on different traits depending on its animating rune. Select one rune for each individual golem.",
+            "Each of these characters takes on different traits depending on its animating rune. Select one rune for each individual character:",
             {
                "type": "list",
                "items": [
-                  "Fire: add {@symbols ss} to checks the rune golem makes to {@rule determine Initiative||crb}.",
-                  "Ice: upgrade the difficulty of social skill checks targeting the golem once.",
-                  "Lightning: the rune golem may perform a second maneuver without suffering strain.",
-                  "Stone: the rune golem's soak increases to 8 . Other runes can be used at the GM's discretion."
+                  "{@b Fire:} add {@symbols ss} to checks this character makes to {@rule determine Initiative||crb}.",
+                  "{@b Ice:} upgrade the difficulty of social skill checks targeting this character once.",
+                  "{@b Lightning:} this character may perform a second maneuver without suffering strain.",
+                  "{@b Stone:} this character's soak increases to 8 . Other runes can be used at the GM's discretion."
                ]
             }
          ],
@@ -8979,6 +8978,30 @@
             "passive",
             "resistance",
             "defensive"
+         ]
+      },
+      {
+         "name": "Four-armed (Dolochs)",
+         "description": [
+            "Does not increase difficulty of combined checks to attack with both its dolochs and fists."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "offensive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Four-armed (Massive Swords)",
+         "description": [
+            "May make a combined combat check with its massive swords and stone fists without increasing the difficulty."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "offensive",
+            "skill check modifier"
          ]
       },
       {
@@ -9186,18 +9209,6 @@
          "tags": [
             "combat",
             "passive",
-            "skill check modifier"
-         ]
-      },
-      {
-         "name": "Multiattack",
-         "description": [
-            "Does not need to increase the difficulty of combined combat checks to attack with two weapons."
-         ],
-         "tags": [
-            "combat",
-            "passive",
-            "offensive",
             "skill check modifier"
          ]
       },
@@ -12182,6 +12193,455 @@
          ]
       },
       {
+         "name": "Arcane Bolt Rune",
+         "page": 118,
+         "type": "implement",
+         "encumbrance": 0,
+         "price": "priceless",
+         "rarity": null,
+         "damage": "+4",
+         "description": [
+            "Many different runebound shards produce a powerful blast of magical energy when activated. While these runes vary wildly in the appearance and exact manner of their effect, the results are similar in dealing harm to living targets. Some arcane bolts manifest as diffuse showers of light that deal limited amounts of damage over a wide area. Others are focused beams that deliver all their energy in a powerful lance that makes a mockery of armor.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Activation:} Until the end of your character's turn, the arcane bolt rune counts as a Ranged weapon with the following profile: (Ranged; Damage 8; Critical 3; Range [Medium]; Auto-fire).",
+                  "{@b Implement:} When your character casts an {@spell Attack||crb} spell, the first Range effect added does not increase the check's difficulty. In addition, they must add the Impact effect with no increase in difficulty. {@spell Attack||crb} spells cast by your character increase their base damage by four."
+               ]
+            },
+            {
+               "title": "Arcane Bolt",
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Skill"
+                  },
+                  {
+                     "header": "Dam",
+                     "value": "damage"
+                  },
+                  {
+                     "header": "Crit"
+                  },
+                  {
+                     "header": "Range"
+                  },
+                  {
+                     "header": "Special"
+                  }
+               ],
+               "rows": [{
+                  "skill": "{@skill Ranged||crb}",
+                  "damage": "8",
+                  "crit": 3,
+                  "range": "Medium",
+                  "special": "{@quality Auto-fire||crb}"
+               }]
+            }
+         ]
+      },
+      {
+         "name": "Ice Storm Rune",
+         "page": 118,
+         "type": "implement",
+         "encumbrance": 0,
+         "price": "priceless",
+         "rarity": null,
+         "damage": "+4",
+         "description": [
+            "Ice storm runes can be used to create a localized, but very intense, blizzard. These runes do not require moisture, and they even function in arid environments. A bearer who activates such a rune quickly becomes the epicenter of a swirling vortex of snow-blown wind. This vortex can be directed to move independently of the wielder, and anyone caught within it soon suffers the effects of the freezing cold. As a weapon, this is particularly effective against Dragonkin, many of whom regard the bearers of such runes with fear and hatred.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Activation:} Until the end of your character's turn, the ice storm rune counts as a Ranged weapon with the following profile: (Discipline; Damage 7; Critical 2; Range [Medium]; Blast 4, Ensnare 3).",
+                  "{@b Implement:} When your character casts an {@spell Attack||crb} spell, they must add the Ice and Blast effects with no increase in difficulty. {@spell Attack||crb} spells cast by your character increase their base damage by four."
+               ]
+            },
+            {
+               "title": "Ice Storm",
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Skill"
+                  },
+                  {
+                     "header": "Dam",
+                     "value": "damage"
+                  },
+                  {
+                     "header": "Crit"
+                  },
+                  {
+                     "header": "Range"
+                  },
+                  {
+                     "header": "Special"
+                  }
+               ],
+               "rows": [{
+                  "skill": "{@skill Discipline||crb}",
+                  "damage": "7",
+                  "crit": 2,
+                  "range": "Medium",
+                  "special": "{@quality Blast|Blast 4|crb}, {@quality Ensnare|Ensnare 3|crb}"
+               }]
+            }
+         ]
+      },
+      {
+         "name": "Immolation Rune",
+         "page": 118,
+         "type": "implement",
+         "encumbrance": 0,
+         "price": "priceless",
+         "rarity": null,
+         "damage": "+?",
+         "description": [
+            "Immolation runes are weapons in and of themselves. When one of these shards is activated, a burst of flame projects forward from the rune. These runes have their own source of power, of course, but a user can concentrate some of their own energies into increasing the size and intensity of the flames. This is injurious to the user, but not nearly so much as it is to their target. The burst only lasts for a few seconds, so the shards are useless for illumination, but they are effective for personal protection and starting fires.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Activation:} Until the end of your character's turn, the immolation rune counts as a Ranged weapon with the following profile: (Discipline; Damage 8; Critical 3; Range [Short]; Burn 2).",
+                  "{@b Implement:} When your character casts an {@spell Attack||crb} spell, they must add the Fire and Deadly effects with no increase in difficulty. In addition, after rolling the magic combat check but before applying damage, your character may choose to suffer any number of wounds no greater than half their wound threshold in order to add an equal amount of damage to all hits of the attack."
+               ]
+            },
+            {
+               "title": "Immolate",
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Skill"
+                  },
+                  {
+                     "header": "Dam",
+                     "value": "damage"
+                  },
+                  {
+                     "header": "Crit"
+                  },
+                  {
+                     "header": "Range"
+                  },
+                  {
+                     "header": "Special"
+                  }
+               ],
+               "rows": [{
+                  "skill": "{@skill Discipline||crb}",
+                  "damage": "8",
+                  "crit": 3,
+                  "range": "Short",
+                  "special": "{@quality Burn|Burn 4|crb}"
+               }]
+            }
+         ]
+      },
+      {
+         "name": "Lesser Rune",
+         "page": 119,
+         "type": "implement",
+         "encumbrance": 0,
+         "price": "priceless",
+         "rarity": null,
+         "damage": "+3",
+         "description": [
+            "Some runes are capable of legendary feats of magic. Some are, well, not, and of little interest to anyone but a Runemaster, who is capable of bending their capabilities beyond their design. Though lacking the fame of other runebound shards, these items are still priceless and the subject of many a quest.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Activation:} This rune can be used for a small beneficial effect that varies by rune, such as casting light as a torch, conjuring a small illusionary creature, throwing your voice, or starting small fires as a tinderbox. Your GM chooses the minor effect associated with the rune when the shard is discovered or obtained.",
+                  "{@b Implement:} When your character obtains a lesser rune, the GM determines one effect that the rune lets the character add to any appropriate spell without increasing the spell's difficulty. This effect should ideally be thematically linked to the minor effect determined earlier. The effect the GM chooses should only increase the difficulty of a spell by one. {@spell Attack||crb} spells cast by your character increase their base damage by three."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Lightning Strike Rune",
+         "page": 119,
+         "type": "implement",
+         "encumbrance": 0,
+         "price": "priceless",
+         "rarity": null,
+         "damage": "+5",
+         "description": [
+            "A lightning strike rune is used to call down a bolt of lightning. It is a powerful weapon; most foes struck with a bolt of lightning are either killed outright or stunned senseless. Certain creatures, constructs, and undead beings, though, are resistant to this magic to some degree, as they would be to natural lightning.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Activation:} Until the end of your character's turn, the lightning strike rune counts as a Ranged weapon with the following profile: (Discipline; Damage 8; Critical 3; Range [Long]; Auto-fire, Disorient 3).",
+                  "{@b Activation:} When your character casts an Attack spell, the first Range effect they add does not increase the check's difficulty. In addition, they must add the Lightning effect with no increase in difficulty. {@spell Attack||crb} spells cast by your character increase their base damage by five."
+               ]
+            },
+            {
+               "title": "Lightning Strike",
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Skill"
+                  },
+                  {
+                     "header": "Dam",
+                     "value": "damage"
+                  },
+                  {
+                     "header": "Crit"
+                  },
+                  {
+                     "header": "Range"
+                  },
+                  {
+                     "header": "Special"
+                  }
+               ],
+               "rows": [{
+                  "skill": "{@skill Discipline||crb}",
+                  "damage": "8",
+                  "crit": 3,
+                  "range": "Long",
+                  "special": "{@quality Auto-fire||crb}, {@quality Disorient|Disorient 3|crb}"
+               }]
+            }
+         ]
+      },
+      {
+         "name": "Rune of Collection",
+         "page": 119,
+         "type": "implement",
+         "encumbrance": 0,
+         "price": "priceless",
+         "rarity": null,
+         "damage": "+0",
+         "description": [
+            "While runebound shards operate in such a simple fashion that they can be used by those without magical training, some can only be used properly by practicing wizards. Runes of collection act as fonts of magical power by slowly drawing upon the ambient magic of the Verto Magica. These shards each provide a safe and reliable well of magic, although their capacity is limited and wizards who rely on them may falter when the shard is lost.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Activation:} The runebound shard glows slightly with untapped power, but nothing seems to happen.",
+                  "{@b Implement:} When casting any spell, your character reduces the difficulty of the check by one. In addition, your character suffers 1 less strain when casting a spell."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Rune of Fate",
+         "page": 119,
+         "type": "implement",
+         "encumbrance": 0,
+         "price": "priceless",
+         "rarity": null,
+         "damage": "+0",
+         "description": [
+            "Among the most subtle of runebound shards, the rune of fate directs the powerful magic held within the shard to influence the very skein of destiny. Even an untrained user who clutches the shard in their hand finds the luck of themselves and their allies improving in subtle but undeniable ways. A Runemaster can coax myriad effects forth from the shard, consigning their enemies to fumble their weapons or helping allies to fortuitously slip their blades through impossibly narrow chinks in the foe's armor.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Activation:} As an action, your character may activate this runebound shard to move one Story Point from the player pool to the GM pool; add {@symbols d} to the next check that targets your character.",
+                  "{@b Implement:} When your character casts an {@spell Augment||crb} or {@spell Curse||crb} spell, you may add the Additional Target effect with no increase in difficulty. In addition, when your character casts a {@spell Curse||crb} spell you must add the Doom effect with no increase in difficulty."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Rune of Misery",
+         "page": 120,
+         "type": "implement",
+         "encumbrance": 0,
+         "price": "priceless",
+         "rarity": null,
+         "damage": "+0",
+         "description": [
+            "This runebound shard imparts painful afflictions upon the target, rarely enough to seriously injure but more than enough to weaken. Elite bounty hunters in the Free Cities fight viciously for them, as such shards can allow them to take in their quarries with less chance of bothersome bloodshed.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Activation:} As an action, the bearer suffers 3 strain and selects one target within short range. The target becomes {@rule disoriented||crb} for three rounds. While the target is {@rule disoriented||crb} due to the rune of misery, the bearer may spend {@symbols hh} generated on any check the target makes to inflict 1 wound on the target.",
+                  "{@b Implement:} When casting a {@spell Curse||crb} spell, your character reduces the difficulty of the skill check by two. In addition, your GM can spend {@symbols hh} on the check to inflict 1 wound on your character."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Soulstone Rune",
+         "page": 120,
+         "type": "implement",
+         "encumbrance": 0,
+         "price": "priceless",
+         "rarity": null,
+         "damage": "+0",
+         "description": [
+            "A soulstone rune is an object of dread, for it has within it the power to leech away life-energies. A bearer of such a shard soon acquires a dark reputation, though Lord Roland of Kell is still remembered for his brave use of one in the Dragon Wars. When the shard is active, the bearer can focus their will on a visible target. That foe grows increasingly weak, while any aches and injuries suffered by the bearer are assuaged. These runes work too gradually to make for effective weapons, but in time, a bearer could even be brought from near death to full wellness, at the likely cost of the life of their chosen target.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Activation:} When your character activates a soulstone rune, it affects all other characters (including allies) within short range. Affected targets must each make an {@difficulty Average|Discipline} as an out-of-turn incidental. If they fail the check, they suffer 3 strain and become {@rule staggered||crb} for one round. The bearer then heals 1 wound they are currently suffering for each target that failed the check. At the GM's discretion, minions affected by this runebound shard are simply defeated.",
+                  "{@b Implement:} When your character casts a {@spell Curse||crb} spell, in addition to the spell's normal effects, it also inflicts a number of wounds equal to your character's ranks in {@skill Knowledge (Forbidden)} on all affected targets. Additionally, your character heals 1 wound each time a target under the effects of the {@spell Curse||crb} suffers wounds (including when the {@spell Curse||crb} is cast)."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Stasis Rune",
+         "page": 120,
+         "type": "implement",
+         "encumbrance": 0,
+         "price": "priceless",
+         "rarity": null,
+         "damage": "+0",
+         "description": [
+            "A character who activates a stasis rune focuses on a single target. For a brief period, the target feels as if they are frozen in time and space. Even if left unassailed, the target finds the experience of catching up with time highly upsetting in the short term.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Activation:} As an action, your character suffers 2 strain and chooses one character within short range. That character is {@rule staggered||crb} and {@rule immobilized||crb} until the end of their next turn.",
+                  "{@b Implement:} When your character casts a {@spell Curse||crb} spell, they must add the Paralyzed effect with no increase in difficulty."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Sunburst Rune",
+         "page": 121,
+         "type": "implement",
+         "encumbrance": 0,
+         "price": "priceless",
+         "rarity": null,
+         "damage": "+0",
+         "description": [
+            "When activated, a sunburst rune emits a powerful burst of intense light that disorients the foe and inflicts scorching-hot wounds.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Activation:} Until the end of your character's turn, the sunburst rune counts as a Ranged weapon with the following profile: (Ranged; Damage 4; Critical 1; Range [Medium]; Breach 1).",
+                  "{@b Implement:} When your character casts an {@spell Attack||crb} spell, they must add the Holy effect with no increase in difficulty and gains the {@quality Breach|Breach 1|crb} quality. This is an exception to the normal restriction limiting Holy to spells using the {@skill Divine||crb} skill."
+               ]
+            },
+            {
+               "title": "Sunburst",
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Skill"
+                  },
+                  {
+                     "header": "Dam",
+                     "value": "damage"
+                  },
+                  {
+                     "header": "Crit"
+                  },
+                  {
+                     "header": "Range"
+                  },
+                  {
+                     "header": "Special"
+                  }
+               ],
+               "rows": [{
+                  "skill": "{@skill Ranged||crb}",
+                  "damage": "4",
+                  "crit": 1,
+                  "range": "Medium",
+                  "special": "{@quality Breach|Breach 1|crb}"
+               }]
+            }
+         ]
+      },
+      {
+         "name": "Teleportation Rune",
+         "page": 121,
+         "type": "implement",
+         "encumbrance": 0,
+         "price": "priceless",
+         "rarity": null,
+         "damage": "+0",
+         "description": [
+            "A user of one of these shards can teleport either themself or a small object they concentrate on a short distance. It is safest to teleport to a location within line of sight; while users may have the ability to teleport through walls, if they materialize in the same space as a solid object, it can lead to terrible injury. Teleportation runes especially rare to find as they are highly sought after by all manner of assassin, criminal, and adventurer.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Activation:} As an action, the user can teleport themself or a single silhouette 0 item in their possession to any location within extreme range that they can currently see. Alternatively, the user may attempt to teleport to a location they have previously experienced in person, but this requires a successful {@difficulty Average|Vigilance}. The GM should modify the check based on the circumstances, including how long it has been since the character visited the target location, the length of time spent there, and so on. The GM may spend {@symbols d} or multiple {@symbols h} to have the character end up far from their intended location, inside a monster's lair, or in an even worse situation.",
+                  "{@b Implement:} When your character casts any spell, the first three Range effects added to it do not increase its difficulty."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Terror Rune",
+         "page": 121,
+         "type": "implement",
+         "encumbrance": 0,
+         "price": "priceless",
+         "rarity": null,
+         "damage": "+0",
+         "description": [
+            "None can fathom why the dragons crafted terror runes, given their own innate baleful nature. Some Greyhaven scholars wonder if they know more of the Ynfernael and its growing threat to Mennara, or if there are creatures beyond the Molten Heath that are to dragons as dragons are to mortal beings and thus needed a way to ignore their fearsome effects. Adventurers fortunate enough to possess these runes, though, find them invaluable when exploring the dark catacombs within the Mistlands or facing down the creatures of the Ru.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Activation:} While possessing a terror runebound shard, your character can ignore the effects of {@rule fear||crb}, as per page 243 of the {@title Genesys} Core Rulebook.",
+                  "{@b Implement:} When your character is casting a spell, any friendly affected targets are immune to the effects of {@rule fear||crb} for the spell's duration. Any enemy affected targets must immediately make a {@difficulty Daunting|fear} as an out-of turn-incidental."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Vision Rune",
+         "page": 121,
+         "type": "implement",
+         "encumbrance": 0,
+         "price": "priceless",
+         "rarity": null,
+         "damage": "+0",
+         "description": [
+            "A vision rune allow a character to expand their eyesight to extraordinary lengths. They can see over the horizon and even through sealed containers or behind walls, abilities any thief or spy would pay anything to do. Wizards can also use them to hurl spells at hidden foes or in darkness, and have allowed the sightless Jenti the Just to recover from unhealable injuries and become a famed sorcerer in the Lorimor Imperial Court.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Activation:} As an action, a character can make an {@difficulty Average|Perception} to cast their gaze upon a land anywhere within three day's travel as if they were standing there themselves, or to see through a solid object within medium range as if the intervening material was as clear as glass.",
+                  "{@b Implement:} When casting a spell, your character can choose any target in range, even if they cannot see it (such as if the target was in darkness or behind a wall)."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Wanderer's Stone (Rune)",
+         "page": 121,
+         "type": "implement",
+         "encumbrance": 0,
+         "price": "priceless",
+         "rarity": null,
+         "damage": "+0",
+         "description": [
+            "Wanderer's stones are worn on the chest and direct an emanation of healing energy to the heart and lungs. While this energy is too subtle to help heal injuries or disease, it does effectively stave off the effects of fatigue. Characters who bear one of these shards are able to walk, run, swim, row, fly, and fight with significantly improved stamina. Often, instead of using their shards themselves, bearers attach them to the harness of a mount or draft animal in their possession",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Activation:} Once per encounter, as an action your character can use a wanderer's stone to heal 5 strain.",
+                  "{@b Implement:} When your character casts an {@spell Augment||crb} spell, they may add the Haste and Swift effects with no increase in difficulty."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Ynfernael Rune",
+         "page": 121,
+         "type": "implement",
+         "encumbrance": 0,
+         "price": "priceless",
+         "rarity": null,
+         "damage": "+3",
+         "description": [
+            "Unlike most runebound shards, Ynfernael runes were not carved by the Dragonlords of the Third Darkness. Instead, Ynfernael runes are shards that have been captured and corrupted through the malicious actions of those who seek the regard of demons. An Ynfernael rune has one purpose: to inflict pain on others. The bearer of an Ynfernael rune must spill some of their own blood to activate the shard, but once they have done so, the unholy power unleashed ensures their foes will spill an even greater amount.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Activation:} As an action, your character can activate the Ynfernael rune, choosing to suffer a number of wounds not exceeding their wound threshold. For each wound suffered this way, all characters within short range suffer 1 wound.",
+                  "{@b Implement:} When casting an {@spell Attack||crb} spell, your character must add the Empowered and Deadly effects with no increase in difficulty. When the spell's effects are resolved, the spellcaster suffers 1 wound. If the magic check fails, the spellcaster suffers an additional 4 wounds. {@spell Attack||crb} spells cast by your character increase their base damage by three."
+               ]
+            }
+         ]
+      },
+      {
          "name": "Barding",
          "page": 104,
          "type": "mount",
@@ -12404,7 +12864,7 @@
                "type": "list",
                "items": [
                   "{@b Use With:} This attachment can be applied to any melee weapon.",
-                  "{@b Modifiers:} The weapon gains the {@b Burn|Burn 1|crb} item quality.",
+                  "{@b Modifiers:} The weapon gains the {@quality Burn|Burn 1|crb} item quality.",
                   "{@b Hard Points Required:} 1."
                ]
             }
@@ -12606,7 +13066,7 @@
          "rarity": 10,
          "description": [
             "This artifact is rumored to be the work of necromancers, though its origins are unknown, and arcanists have been known to use it. Set within a gilded frame is a glass dome, beneath which swirls a dark, viscous liquid. The bones of a Human hand float upon the liquid. They are bleached white, save for the final joint of the first finger, which is dyed scarlet. Should someone succeed in activating the device, they may ask it to indicate a desired destination, or where something or someone may be found. The bones will then slowly form a hand that points in the right direction.",
-            "When your character makes a Knowledge (Geography), Perception, or Vigilance check to chart a course, find a location, avoid becoming lost, or otherwise navigate, they may choose to use the Dead Man's Compass as an incidental after rolling the check but before determining the results; your character suffers a number of wounds and adds an equal number of 󲊳 to the check. If these wounds cause the character to exceed their wound threshold, add +50 to the resulting Critical Injury roll."
+            "When your character makes a Knowledge (Geography), Perception, or Vigilance check to chart a course, find a location, avoid becoming lost, or otherwise navigate, they may choose to use the Dead Man's Compass as an incidental after rolling the check but before determining the results; your character suffers a number of wounds and adds an equal number of {@symbols s} to the check. If these wounds cause the character to exceed their wound threshold, add +50 to the resulting Critical Injury roll."
          ]
       },
       {

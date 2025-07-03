@@ -2,12 +2,12 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
+         "version": "2025.6.11",
          "json": "core-rule-book",
          "full": "Genesys Core Rulebook",
          "abbreviation": "CRB",
          "color": "#14C0F1",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/",
-         "version": "2025.1.20",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -40,6 +40,7 @@
    "adversary": [
       {
          "name": "Bane Spider",
+         "page": 147,
          "type": "rival",
          "description": [
             "Giant spiders are a mainstay of the fantasy genre. As horrifying as any huge arachnid, bane spiders have the added ability to spit globs of acidic venom. This venom, which bane spiders can also inject with their fangs, conveniently allows them to start digesting their prey before even closing to striking range.",
@@ -188,6 +189,7 @@
       },
       {
          "name": "Skeleton",
+         "page": 146,
          "type": "minion",
          "characteristics": {
             "brawn": 2,
@@ -276,6 +278,7 @@
       },
       {
          "name": "Razorwing",
+         "page": 147,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -383,8 +386,8 @@
       },
       {
          "name": "Ogre",
-         "type": "nemesis",
          "page": 147,
+         "type": "nemesis",
          "description": [
             "These huge brutes lair in ancient ruins and caves, eating whatever poor creatures they can get their massive hands on. We've included the ogre as a powerful monster able to challenge even experienced characters on its own. However, if you're looking to make the ogre less challenging, remove Regeneration from its abilities."
          ],
@@ -434,7 +437,7 @@
          ],
          "talents": [],
          "abilities": [
-            "Regeneration",
+            "Regeneration 3",
             "Sweep Attack"
          ],
          "weapons": [
@@ -492,6 +495,7 @@
       },
       {
          "name": "Airship Pirate",
+         "page": 157,
          "type": "minion",
          "characteristics": {
             "brawn": 2,
@@ -583,6 +587,7 @@
       },
       {
          "name": "Clockwork Animal Automaton",
+         "page": 157,
          "type": "rival",
          "description": [
             "Clockwork automata tend to be powered by coilsprings, their actions dictated by a complicated series of wax cylinders. Any kind of actual sentience, of course, is impossible, but certain animal behaviors can be worked into their clockwork minds.",
@@ -677,6 +682,7 @@
       },
       {
          "name": "Colonial Governor",
+         "page": 157,
          "type": "nemesis",
          "characteristics": {
             "brawn": 2,
@@ -820,6 +826,7 @@
       },
       {
          "name": "Royal Marine",
+         "page": 157,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -932,6 +939,7 @@
       },
       {
          "name": "Alien Warlord",
+         "page": 188,
          "type": "nemesis",
          "description": [
             "This is a sapient individual from some alien species. While most of this species may be peace-loving or honorable, this character has decided to conquer a significant portion of the galaxy by force. When you describe this individual, keep in mind that the profile represents a big, tough, charismatic leader. If you don't want to invent your own foot soldiers, you can use the space pirates as their warriors, and maybe the xenomorph horror as some sort of awful, awful pet!"
@@ -1068,6 +1076,7 @@
       },
       {
          "name": "Nano-Swarm",
+         "page": 188,
          "type": "rival",
          "description": [
             "Nanites as presented in fiction are a popular (and terrifying) danger in space opera settings. They appear as buzzing clouds or even amorphous blobs of micro-machines, swarming across the ground and breaking down anything in their path to turn into more nanites."
@@ -1146,6 +1155,7 @@
       },
       {
          "name": "Space Pirate",
+         "page": 187,
          "type": "minion",
          "description": [
             "Space pirates are a staple in many space operas. They resemble their high-seas cousins of story: swaggering, uncultured rogues with a taste for plunder and mayhem.",
@@ -1281,6 +1291,7 @@
       },
       {
          "name": "Telepath",
+         "page": 188,
          "type": "nemesis",
          "description": [
             "Throughout the galaxy, some of the alien species your characters encounter are going to have strange and terrible abilities. How this particular creature possesses the powers of telepathy is unknown, but it seems to be able to control and dominate minds."
@@ -1364,6 +1375,7 @@
       },
       {
          "name": "Xenomorph Horror",
+         "page": 187,
          "type": "rival",
          "description": [
             "On the countless planets in the galaxy, your characters are likely to encounter all manner of alien beasts. This specimen is some breed of alpha-predator on its homeworld. We've left the physical description vague, so you can use it as some saurian carnivore, tentacled lurker, or aquatic devil-fish."
@@ -1799,6 +1811,7 @@
       },
       {
          "name": "Beastman",
+         "page": 147,
          "type": "minion",
          "characteristics": {
             "brawn": 3,
@@ -1874,6 +1887,7 @@
       },
       {
          "name": "Corrupt Official",
+         "page": 169,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -1963,6 +1977,7 @@
       },
       {
          "name": "Gang Leader",
+         "page": 134,
          "type": "rival",
          "description": [
             "Your groups of street toughs can be led by the gang leader, another go-to opponent who fits into all settings. The gang leader is a tough individual who runs smalltime criminal operations with an iron fist. This can be a good opponent for a group to face off with at the climax of their first or second session, especially if the gang leader is backed up by a minion group of street toughs."
@@ -2064,6 +2079,7 @@
       },
       {
          "name": "Intelligence Agent",
+         "page": 169,
          "type": "nemesis",
          "characteristics": {
             "brawn": 3,
@@ -2183,6 +2199,7 @@
       },
       {
          "name": "Local Official",
+         "page": 134,
          "type": "nemesis",
          "description": [
             "This generic local official could be the mayor of a small town, the councilmember representing a borough, or any other government official low-ranking enough to encounter your players' characters but powerful enough to be a problem. The local official is primarily a threat in social encounters, not combat encounters, so use them accordingly (or accept that they'll be a pretty minor threat in a fight)."
@@ -2276,6 +2293,7 @@
       },
       {
          "name": "Militia",
+         "page": 169,
          "type": "minion",
          "characteristics": {
             "brawn": 2,
@@ -2353,6 +2371,7 @@
       },
       {
          "name": "Street Tough",
+         "page": 134,
          "type": "minion",
          "description": [
             "The street tough is one of the go-to villains of any setting. These belligerent petty criminals are a reasonable first opponent for your PCs to beat up without your having to worry that they may kill the group by accident. If you're worried they may be too tough, however, have them use their studded gloves and deal damage to your PCs' strain threshold."
@@ -2445,6 +2464,7 @@
       },
       {
          "name": "Combat Drone",
+         "page": 178,
          "type": "rival",
          "characteristics": {
             "brawn": 1,
@@ -2542,6 +2562,7 @@
       },
       {
          "name": "Exosuit Trooper",
+         "page": 178,
          "type": "rival",
          "characteristics": {
             "brawn": 4,
@@ -2693,6 +2714,7 @@
       },
       {
          "name": "Hacker",
+         "page": 178,
          "type": "nemesis",
          "characteristics": {
             "brawn": 1,
@@ -2957,7 +2979,7 @@
       {
          "name": "Regeneration",
          "description": [
-            "At the beginning of its turn, this creature automatically heals 3 wounds."
+            "At the beginning of its turn, this creature automatically heals wounds equal to its ranks in Regeneration."
          ],
          "tags": [
             "general",
@@ -12871,6 +12893,7 @@
          "page": 215,
          "concentration": false,
          "difficulty": "easy",
+         "range": "Short",
          "skills": [
             {
                "name": "arcana"
@@ -12997,6 +13020,7 @@
          "page": 215,
          "concentration": true,
          "difficulty": "average",
+         "range": "Engaged",
          "skills": [
             {
                "name": "divine"
@@ -13010,7 +13034,7 @@
             "When determining the effect of an augment spell, see the Augment action's effects, on pages 215 and 216, for some of the possibilities. Of course, you or your players may want to try something not covered by those effects, such as temporarily repairing a weapon so that you can continue to wield it. In this case, you may set a difficulty by looking at the difficulty to repair the item (see Table I.5-4: Repairing Gear, on page 89). These spells could also be used to improve the effectiveness of gear (perhaps the augmented item adds {@dice boost} to checks related to its use). Augment could even let a character turn invisible or fly, although we recommend a difficulty of at least {@difficulty hard} for this!"
          ],
          "structured": [
-            "This is using magic to enhance people. A character selects one target they are engaged with (which can be themself), then makes a Primal or Divine skill check. The default difficulty of the check is {@difficulty average}. If the check is successful, until the end of your character's next turn, the target increases the ability of any skill checks they make by one (in effect, this means they add {@dice ability} to their checks). A character may not be affected by more than one Augment spell at the same time (so no stacking effects).",
+            "This is using magic to enhance people. A character selects one target they are engaged with (which can be themself), then makes a {@skill Primal} or {@skill Divine} skill check. The default difficulty of the check is {@difficulty average}. If the check is successful, until the end of your character's next turn, the target increases the ability of any skill checks they make by one (in effect, this means they add {@dice ability} to their checks). A character may not be affected by more than one Augment spell at the same time (so no stacking effects).",
             "Before making an augment check, choose any number of additional effects listed on {@table III.2-6: Augment Additional Effects}. These effects are added to the check."
          ],
          "additionalEffects": [
@@ -13063,6 +13087,7 @@
          "page": 216,
          "concentration": true,
          "difficulty": "easy",
+         "range": "Engaged",
          "skills": [
             {
                "name": "arcana"
@@ -13076,7 +13101,7 @@
             "Barrier magics let the spellcaster protect themself from adverse conditions of all types. Your character may create a bubble under the ocean so they can travel underwater, a barrier that shields them from flames as they walk through a burning building, or even a barrier that deflects an onrushing avalanche. When using a Barrier spell in narrative situations like these, first define what you want the barrier to do (protect a character from heat or cold, create a bubble of air, deflect snow in an avalanche). Then, use the base difficulty for the check as defined on page 216, and follow the additional effects rules if the character wants to affect other targets."
          ],
          "structured": [
-            "Both arcane and divine spellcasters have the power to create barriers of magical energy to protect themselves and their allies. The character selects one target they are engaged with (which can be themself), then makes an Arcana or Divine skill check. The default difficulty of the check is {@difficulty easy}. If the check is successful, until the end of the character's next turn, reduce the damage of all hits the target suffers by one, and further reduce it by one for every uncanceled {@symbols ss} beyond the first.",
+            "Both arcane and divine spellcasters have the power to create barriers of magical energy to protect themselves and their allies. The character selects one target they are engaged with (which can be themself), then makes an {@skill Arcana} or {@skill Divine} skill check. The default difficulty of the check is {@difficulty easy}. If the check is successful, until the end of the character's next turn, reduce the damage of all hits the target suffers by one, and further reduce it by one for every uncanceled {@symbols ss} beyond the first.",
             "Before making a Barrier check, choose any number of additional effects listed on {@table III.2-7: Barrier Additional Effects}. These effects are added to the check."
          ],
          "additionalEffects": [
@@ -13129,6 +13154,7 @@
          "page": 216,
          "concentration": true,
          "difficulty": "easy",
+         "range": "Engaged",
          "skills": [
             {
                "name": "arcana"
@@ -13142,7 +13168,7 @@
             "Conjure's structured encounter rules, on page 216, are fairly good guidance for using Conjure in narrative encounters. However, we admit that the Conjure action is one of the most loosely defined rule sets because of the sheer number of items or creatures you could summon or create. When using Conjure to summon or create something in a narrative encounter, what you need to determine is the size or complexity of the conjuration. How elaborate the spell gets can be a matter of common sense for you and your players. Summoning a glowing sword and fighting with it seems reasonable, but summoning a cannon does not (especially if the cannon doesn't exist in your setting!) Likewise, summoning a door to bar a portal or brush and brambles to make an area difficult terrain is within the scope of a spell, but summoning a canyon filled with molten lava is not!"
          ],
          "structured": [
-            "This action represents the ability of a spellcaster to animate objects or create items (or even allies) out of thin air and the aether. The character makes an Arcana or Primal skill check. The default difficulty for the check is {@difficulty easy}. If the check is successful, the character summons a simple tool with no moving parts (such as a shovel or pickax), a one-handed melee weapon with no moving parts (such as a sword or knife), or a minion no bigger than silhouette 1 (such as an animal, magical creature, elemental spirit, or even undead monstrosity). These appear engaged with the character. The summoned minion or item remains present until the end of the character's next turn.",
+            "This action represents the ability of a spellcaster to animate objects or create items (or even allies) out of thin air and the aether. The character makes an {@skill Arcana} or {@skill Primal} skill check. The default difficulty for the check is {@difficulty easy}. If the check is successful, the character summons a simple tool with no moving parts (such as a shovel or pickax), a one-handed melee weapon with no moving parts (such as a sword or knife), or a minion no bigger than silhouette 1 (such as an animal, magical creature, elemental spirit, or even undead monstrosity). These appear engaged with the character. The summoned minion or item remains present until the end of the character's next turn.",
             "If the character summons a creature, the creature behaves in the best approximation of its natural instincts (as determined by the GM). It is not controlled by the character, and may even be hostile to them. In a structured encounter, it takes its turn immediately after the character.",
             "Before making a conjure check, choose any number of additional effects listed on {@table III.2-8: Conjure Additional Effects}. These effects are added to the check."
          ],
@@ -13189,6 +13215,7 @@
          "page": 217,
          "concentration": true,
          "difficulty": "average",
+         "range": "Short",
          "skills": [
             {
                "name": "arcana"
@@ -13203,7 +13230,7 @@
             "Of course, there are some truly terrible curses: blindness, disease, madness, or being turned into a toad. These checks should almost always be opposed (either by the target's Discipline or Resilience, depending on whether the curse affects the mind or the body). You can pull effects from the {@table I.6-10: Critical Injury Result} on page 115, the fear and sanity rules on page 243 and 244, or use similar inspiration when figuring out what the curse does."
          ],
          "structured": [
-            "This action represents the combat use of curse magic. Your character selects one target within short range, then makes an Arcana or Divine skill check. The default difficulty of the check is {@difficulty average}. If it is successful, until the end of the character's next turn, the target decreases the ability of any skill checks they make by one (in effect, this means they remove one {@dice ability} from their checks).",
+            "This action represents the combat use of curse magic. Your character selects one target within short range, then makes an {@skill Arcana} or {@skill Divine} skill check. The default difficulty of the check is {@difficulty average}. If it is successful, until the end of the character's next turn, the target decreases the ability of any skill checks they make by one (in effect, this means they remove one {@dice ability} from their checks).",
             "Before making the curse check, choose any number of additional effects listed on {@table III.2-9: Curse Additional Effects}. These effects are added to the check."
          ],
          "additionalEffects": [
@@ -13263,6 +13290,7 @@
          "page": 217,
          "concentration": false,
          "difficulty": "hard",
+         "range": "Short",
          "skills": [
             {
                "name": "arcana"
@@ -13272,7 +13300,7 @@
             "We've made dispelling an opponent's magics the province of Arcana magic—primarily to balance out healing being limited to the Divine and Primal skills. (You may decide to ignore this limitation in your own setting, but just remember, we did it for balance reasons.) Dispelling should work the same in structured encounters and in narrative encounters, so just use the rules on page 217 if a character wants to dispel something narratively."
          ],
          "structured": [
-            "The ability to nullify magic is a strange and wondrous art that only certain arcane spellcasters possess. The character selects one target within short range that is under the effects of a spell, then makes an Arcana skill check. The default difficulty for the check is {@difficulty hard}. If the check is successful, the effects the target is under immediately end (if the spell affected multiple targets, the other targets remain affected).",
+            "The ability to nullify magic is a strange and wondrous art that only certain arcane spellcasters possess. The character selects one target within short range that is under the effects of a spell, then makes an {@skill Arcana} skill check. The default difficulty for the check is {@difficulty hard}. If the check is successful, the effects the target is under immediately end (if the spell affected multiple targets, the other targets remain affected).",
             "Before making a dispel check, choose any number of additional effects listed on {@table III.2-10: Dispel Additional Effects}. These effects are added to the check."
          ],
          "additionalEffects": [
@@ -13297,6 +13325,7 @@
          "page": 217,
          "concentration": false,
          "difficulty": "easy",
+         "range": "Enaged",
          "skills": [
             {
                "name": "divine"
@@ -13311,7 +13340,7 @@
             "When using healing magic, the additional affects listed in {@table |III.2-11} should cover most of what you want to do in narrative time as well as structured time. For other effects—such as a spell to double the rate of natural healing for a target—you, the GM, can set the difficulty. If you're not sure what difficulty to assign, {@difficulty average} works for any acceleration of natural healing, while anything similar in scope and impact to bringing the dead back to life should be {@difficulty daunting} or even {@difficulty formidable}. Generally, we recommend making resurrection a rare and difficult endeavor, so that death doesn't lose its impact in your game."
          ],
          "structured": [
-            "Priests and other practitioners of divine magic are often known for their healing abilities. Often, those in touch with nature also possess the capacity to heal wounds and illness. The character can use the Divine or Primal magic skill in place of a Medicine check in order to remove damage or heal Critical Injuries. When making the check, the character selects one target they are engaged with who is not incapacitated. The default difficulty of the check is {@difficulty easy}. Upon success, the character heals 1 wound per uncanceled {@symbols s}, and 1 strain per uncanceled {@symbols a}.",
+            "Priests and other practitioners of divine magic are often known for their healing abilities. Often, those in touch with nature also possess the capacity to heal wounds and illness. The character can use the {@skill Divine} or {@skill Primal} magic skill in place of a {@skill Medicine} check in order to remove damage or heal Critical Injuries. When making the check, the character selects one target they are engaged with who is not incapacitated. The default difficulty of the check is {@difficulty easy}. Upon success, the character heals 1 wound per uncanceled {@symbols s}, and 1 strain per uncanceled {@symbols a}.",
             "Before making a heal check, choose any number of additional effects listed on {@table III.2-11: Heal Additional Effects}. These effects are added to the check."
          ],
          "additionalEffects": [
@@ -13364,6 +13393,7 @@
          "page": 214,
          "concentration": false,
          "difficulty": "easy",
+         "range": "",
          "skills": [
             {
                "name": "arcana"
@@ -14454,7 +14484,7 @@
                "cost": "{@symbols hhh or d}",
                "options": [
                   "The spell is slightly more powerful than expected. One character of the GM's choice is targeted or otherwise affected by the spell as well.",
-                  "All other spellcasters and creatures attuned to magical energies within a day's travel."
+                  "All other spellcasters and creatures attuned to magical energies within a day's travel become aware of the character (and depending on their disposition, may also be very interested in finding them and doing them harm)."
                ]
             },
             {
