@@ -599,7 +599,7 @@
                },
                "description": { "$ref": "./varyingDisplay_sub_schema.json" },
                "hardPoints": {
-                  "type": "number"
+                  "type": "integer"
                },
                "price": {
                   "oneOf": [

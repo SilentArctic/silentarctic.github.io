@@ -8350,7 +8350,7 @@
          "name": "Accurate",
          "page": 86,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "Accurate weapons are easier to aim or wield, whether through design or technology. For each level of this quality, the attacker adds {@dice boost} to their combat checks while using this weapon."
          ]
@@ -8359,7 +8359,7 @@
          "name": "Auto-Fire",
          "page": 86,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "A weapon with Auto-fire can be set to shoot in rapid succession and potentially spray an area with bolts, flechettes, slugs, or other types of projectiles. The advantage in using Auto-fire is that it has the chance to hit multiple targets or to hit a single target multiple times.",
             "As attacking with a weapon on Auto-fire is generally less accurate, the attacker must increase the difficulty of the combat check by {@dice difficulty}. The user may choose not to use the Auto-fire quality on a weapon; in this case, they cannot trigger the quality but also do not suffer the aforementioned penalty.",
@@ -8372,7 +8372,7 @@
          "name": "Blast",
          "page": 86,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "The weapon has a large spread, an explosive blast, or a similar area of effect, like a detonated grenade or a warhead fired from a missile launcher. If the attack is successful and Blast activates, each character (friend or foe) engaged with the original target suffers a hit dealing damage equal to the Blast quality's rating, plus damage equal to the total {@symbols s} scored on the check.",
             "In a relatively small and enclosed area, the Game Master might decide that everyone in the room suffers damage.",
@@ -8383,7 +8383,7 @@
          "name": "Breach",
          "page": 87,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "Weapons with Breach burn through the toughest armor; they are often heavy weapons or weapons mounted on some sort of vehicle.",
             "Hits from weapons with the Breach quality ignore one point of vehicle armor for every rating of Breach (meaning they also ignore 10 soak for every rating of Breach)."
@@ -8393,7 +8393,7 @@
          "name": "Burn",
          "page": 87,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "Weapons with Burn inflict damage over time. When Burn is triggered, one target hit by the attack continues to suffer the weapon's base damage each round for a number of rounds equal to the weapon's Burn rating. Apply damage at the start of each of the target's turns. If multiple targets suffer hits from a weapon with Burn, the quality may be triggered multiple times, affecting a different target each time.",
             "A victim might be able to stop the damage by performing an action to roll around and make a Coordination check. The difficulty is {@difficulty average} on hard surfaces such as the floor of a building, or an {@difficulty easy} on grass or soft ground. Jumping into a body of water stops the damage immediately. Both situations assume the flame is from actual combustion rather than a chemical reaction. With the latter, there is usually little the victim can do."
@@ -8403,7 +8403,7 @@
          "name": "Concussive",
          "page": 87,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "The weapon's attack can leave the target shell-shocked from mighty blows or punishing shock waves, unable to perform any but the most basic actions. When Concussive is triggered, one target hit by the attack is staggered (see page 114) for a number of rounds equal to the weapon's Concussive rating. A staggered target cannot perform actions. If multiple targets suffer hits from a weapon with Concussive, the quality may be triggered multiple times, affecting a different target each time."
          ]
@@ -8412,7 +8412,7 @@
          "name": "Cumbersome",
          "page": 87,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "A Cumbersome weapon is large, unwieldy, awkward, or heavy. To wield a Cumbersome weapon properly, the character needs a Brawn characteristic equal to or greater than the weapon's Cumbersome rating. For each point of Brawn by which the character is deficient, they must increase the difficulty of all checks made while using the weapon by one."
          ]
@@ -8421,7 +8421,7 @@
          "name": "Defensive",
          "page": 87,
          "activation": "passive",
-         "itemTypes": "any",
+         "gearType": "any",
          "description": [
             "An item with the Defensive quality increases the user's melee defense by its Defensive rating."
          ]
@@ -8430,7 +8430,7 @@
          "name": "Deflection",
          "page": 87,
          "activation": "passive",
-         "itemTypes": "any",
+         "gearType": "any",
          "description": [
             "An item with the Deflection quality increases the user's ranged defense by its Deflection rating."
          ]
@@ -8439,7 +8439,7 @@
          "name": "Disorient",
          "page": 87,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "A weapon with Disorient can daze an opponent. When Disorient is triggered, one target hit by the attack is disoriented (see page 114) for a number of rounds equal to the weapon's Disorient rating. A disoriented target adds {@dice setback} to all skill checks they perform. If multiple targets suffer hits from a weapon with Disorient, the quality may be triggered multiple times, affecting a different target each time."
          ]
@@ -8448,7 +8448,7 @@
          "name": "Ensnare",
          "page": 87,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "A weapon with Ensnare binds a foe and restricts their movements. When Ensnare is triggered, one target hit by the attack becomes {@rule immobilized} (see page 114) for a number of rounds equal to the weapon's Ensnare rating. An {@rule immobilized} target cannot perform maneuvers. If multiple targets suffer hits from a weapon with Ensnare, the quality may be triggered multiple times, affecting a different target each time.",
             "An Ensnared target may perform an action to attempt a {@difficulty hard} Athletics check on their turn to break free from the effect."
@@ -8458,7 +8458,7 @@
          "name": "Guided",
          "page": 87,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "A weapon with the Guided quality can track opponents. The Guided quality can only be triggered if an attack misses. If Guided is triggered, the controlling character may make a combat check at the end of the round as an out-of-turn incidental. The difficulty of this combat check is {@difficulty average}; instead of building the ability of the pool normally, add {@dice ability} equal to the weapon's Guided rating. If the check is successful, the weapon strikes the target, and the attack is resolved normally.",
             "Guided requires {@symbols aaa} to activate, unless otherwise specified in the weapon's description. The Guided quality can activate on any subsequent combat check it makes, representing the projectile continuing to track the target."
@@ -8468,7 +8468,7 @@
          "name": "Inaccurate",
          "page": 87,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "Inaccurate weapons are less likely to be accurate or precise. When making an attack with an Inaccurate weapon, add {@dice setback} to the check equal to the Inaccurate rating."
          ]
@@ -8477,7 +8477,7 @@
          "name": "Inferior",
          "page": 88,
          "activation": "passive",
-         "itemTypes": "any",
+         "gearType": "any",
          "description": [
             "An Inferior item is a lackluster example of its kind, representing shoddy and poor craftsmanship. An Inferior item generates automatic {@symbols h} on all checks related to its use."
          ]
@@ -8486,7 +8486,7 @@
          "name": "Knockdown",
          "page": 88,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "When Knockdown is triggered, one target hit by the attack is knocked prone. If multiple targets suffer hits from a weapon with Knockdown, the quality may be triggered multiple times, affecting a different target each time.",
             "Unless specified otherwise, Knockdown requires {@symbols aa} to trigger, plus one additional {@symbols a} per silhouette of the target beyond 1."
@@ -8496,7 +8496,7 @@
          "name": "Limited Ammo",
          "page": 88,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "Some weapons fire particularly large or complex projectiles that cost lots of money. Other weapons are expendable weapons like grenades that, once used, are destroyed. A weapon with the Limited Ammo quality may be used to make a number of attacks equal to its Limited Ammo rating before it must be reloaded with a maneuver. In addition, each shot expends one of a limited number of rounds of ammo; more ammo must be purchased or obtained before anyone fires the weapon again. This also applies to grenades and other \"one-use\" weapons that have the Limited Ammo 1 quality (here, your character is not \"reloading\" the grenade, but drawing another to use—mechanically, they are equivalent)."
          ]
@@ -8505,7 +8505,7 @@
          "name": "Linked",
          "page": 88,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "Some weapons are designed to fire together at the same target (turrets housing multiple guns are a good example of this). When a character fires a linked weapon, on a successful attack, the weapon deals one hit. The wielder may spend {@symbols aa} to gain an additional hit, and may do so a number of times equal to the weapon's Linked rating. Additional hits from the Linked weapon may only be applied against the original target. Each hit deals the weapon's base damage plus damage equal to the {@symbols s} scored on the check."
          ]
@@ -8514,7 +8514,7 @@
          "name": "Pierce",
          "page": 88,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "Any hits from this weapon ignore a number of points point of soak equal to the weapon's Pierce rating. If the weapon has more ranks of Pierce than the target's total soak, it completely ignores the target's soak. For example, Pierce 3 against a soak of 2 ignores two points of soak, but the extra point of Pierce has no further effect."
          ]
@@ -8523,7 +8523,7 @@
          "name": "Prepare",
          "page": 88,
          "activation": "passive",
-         "itemTypes": "any",
+         "gearType": "any",
          "description": [
             "Items with this quality require time to set up before being used. The user must perform a number of preparation maneuvers equal to the item's Prepare rating before using the item (if the item is a weapon, \"using\" it would be making attacks with the weapon). At your GM's discretion, moving with the item, being knocked prone with the item, or other disruptions may require the user to perform the preparation maneuvers again before using the item."
          ]
@@ -8532,7 +8532,7 @@
          "name": "Reinforced",
          "page": 88,
          "activation": "passive",
-         "itemTypes": "any",
+         "gearType": "any",
          "description": [
             "Weapons or items with the Reinforced quality are immune to the {@quality Sunder} quality. Armor with the Reinforced quality make the wearer's soak immune to the {@quality Pierce} and {@quality Breach} qualities"
          ]
@@ -8541,7 +8541,7 @@
          "name": "Slow-Firing",
          "page": 88,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "Slow-Firing weapons tend to deal incredible damage, but need time to recharge or cool down between shots. A weapon's Slow-Firing rating dictates the number of rounds that must pass before the weapon can be fired again after attacking. For example, a heavy laser cannon with Slow-Firing 2 must wait two rounds after being fired before it can be fired again."
          ]
@@ -8550,7 +8550,7 @@
          "name": "Stun",
          "page": 88,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "A weapon with Stun can deal strain to the target. When the Stun quality is activated, it inflicts strain equal to the weapon's Stun rating. Since this is strain, and not strain {@i damage}, it is not reduced by the target's soak."
          ]
@@ -8559,7 +8559,7 @@
          "name": "Stun Damage",
          "page": 88,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "A weapon with this quality can only deal strain damage (damage applied to the target's strain threshold). Because this is strain {@i damage}, not strain, it is still reduced by a target's soak."
          ]
@@ -8568,7 +8568,7 @@
          "name": "Sunder",
          "page": 88,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "When activating Sunder, the attacker chooses one item openly wielded by the target (such as a weapon, shield, or item on a belt). That item is damaged one step: to minor if undamaged, from minor to moderate, or from moderate to major. If an item already suffering major damage is the target of a successful Sunder, it is destroyed.",
             "Sunder requires {@symbols a} to activate, and may be activated even if the attack is unsuccessful. Sunder may be activated multiple times in the same attack, but each activation must be applied to the same item, potentially taking it from undamaged to destroyed in a single attack."
@@ -8578,7 +8578,7 @@
          "name": "Superior",
          "page": 88,
          "activation": "passive",
-         "itemTypes": "any",
+         "gearType": "any",
          "description": [
             "A Superior item is a sterling example of its kind, representing masterful craftsmanship. A Superior item generates automatic {@symbols a} on all checks related to its use."
          ]
@@ -8587,7 +8587,7 @@
          "name": "Tractor",
          "page": 89,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "Instead of firing searing beams of laser fire or crackling ion discharges, this weapon fires relatively harmless electromagnetic beams that ensnare ships and hold them fast in space. Tractor beams, like all weapons, are fired at their target using the appropriate skill check with all suitable modifiers. Once the weapon hits its target, the target may not move unless its pilot makes a successful Piloting check with a difficulty equal to the tractor beam's rating. If the target is an individual character, the character is immobilized while the beam is active.",
             "(Weapons with the Tractor quality are only going to show up in {@setting science fiction|sci-fi} settings, and probably only the more fanciful sci-fi settings! However, they are such a staple in those settings that we included the quality here.)"
@@ -8597,7 +8597,7 @@
          "name": "Unwieldy",
          "page": 89,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "An Unwieldy weapon is a weapon that can be particularly awkward to use for those without impressive dexterity and hand-eye coordination. To wield an Unwieldy weapon properly, the character needs an Agility characteristic equal to or greater than the weapon's Unwieldy rating. For each point of Agility by which the character is deficient, they must increase the difficulty of all checks made while using the weapon by one."
          ]
@@ -8606,7 +8606,7 @@
          "name": "Vicious",
          "page": 89,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "When an attack with this weapon results in a Critical Injury or Hit, the character adds ten times the Vicious rating to the Critical roll. With Vicious 3, for example, you would add +30 to the resulting Critical Injury or Hit result."
          ]
@@ -8615,7 +8615,7 @@
          "name": "Personal Scale",
          "page": 225,
          "activation": "passive",
-         "itemTypes": "vehicle",
+         "gearType": "vehicle",
          "description": [
             "This quality exists only for vehicle weapons. We use this quality when we want to put small-scale weapons on a vehicle, such as the machine guns on the side of a combat helicopter, or a grenade launcher on an APC.",
             "The quality has the following rule: {@b this vehicle weapon's entire profile uses personal scale instead of planetary scale.}"

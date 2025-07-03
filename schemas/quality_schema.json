@@ -18,16 +18,16 @@
                   "passive"
                ]
             },
-            "itemTypes": {
+            "gearType": {
                "type": "string",
-               "enum": ["weapon", "armor", "any"]
+               "enum": ["weapon", "armor", "vehicle", "any"]
             },
             "description": { "$ref": "varyingDisplay_sub_schema.json" }
          },
          "required": [
             "name",
             "activation",
-            "itemTypes",
+            "gearType",
             "description"
          ],
          "optional": [
