@@ -34,6 +34,10 @@
                "type": "string",
                "description": "Web address of your homebrew. Can link to drivethrurpg, or any other website at which your product is located."
             },
+            "releaseDate": {
+               "type": "string",
+               "description": "Source release date. Please use the format: D Month YYYY (28 April 2023)."
+            },
             "authors": {
                "type": "array",
                "items": {
@@ -54,10 +58,6 @@
                   "type": "string"
                },
                "description": "List of people who translated the collection from a different language. Do not use this field if the source material was itself a translation."
-            },
-            "releaseDate": {
-               "type": "string",
-               "description": "Source release date. Please use the format: D Month YYYY (28 April 2023)."
             },
             "module": {
                "type": "boolean",

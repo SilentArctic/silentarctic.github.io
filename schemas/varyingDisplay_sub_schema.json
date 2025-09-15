@@ -4,10 +4,12 @@
    "items": {
       "oneOf": [
          {
+            "title": "String",
             "type": "string"
          },
 
          {
+            "title": "Advanced Text",
             "type": "object",
             "properties": {
                "type": {
@@ -67,6 +69,7 @@
          },
 
          {
+            "title": "Notice",
             "type": "object",
             "properties": {
                "type": {
@@ -100,6 +103,7 @@
          },
 
          {
+            "title": "Quote",
             "type": "object",
             "properties": {
                "type": {
@@ -127,6 +131,7 @@
          },
 
          {
+            "title": "List",
             "type": "object",
             "properties": {
                "type": {
@@ -158,6 +163,7 @@
          },
 
          {
+            "title": "Table",
             "type": "object",
             "properties": {
                "type": {
@@ -246,6 +252,7 @@
          },
 
          {
+            "title": "Grid",
             "type": "object",
             "properties": {
                "type": {
@@ -266,6 +273,7 @@
          },
 
          {
+            "title": "Image",
             "type": "object",
             "properties": {
                "type": {
@@ -283,6 +291,7 @@
          },
 
          {
+            "title": "Rule",
             "type": "object",
             "properties": {
                "type": {
@@ -308,7 +317,10 @@
                   "additionalProperties": false
                },
                "description": {
-                  "type": "array"
+                  "type": "array",
+                  "items": {
+                     "type": "string"
+                  }
                }
             },
             "required": [

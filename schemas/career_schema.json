@@ -1,34 +1,103 @@
 {
    "$id": "https://silentarctic.github.io/schemas/career_schema.json",
    "type": "array",
-   "items": [
-      {
-         "type": "object",
-         "properties": {
-            "name": {
-               "type": "string",
-               "description": "Career name."
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string",
+            "description": "Career name."
+         },
+         "page": {
+            "type": "integer",
+            "description": "Career page number."
+         },
+         "skills": {
+            "type": "array",
+            "items": {
+               "type": "object",
+               "properties": {
+                  "name": {
+                     "type": "string",
+                     "description": "Skill name."
+                  },
+                  "source": {
+                     "type": "string",
+                     "description": "Skill source (if not in same collection)."
+                  }
+               },
+               "required": [
+                  "name"
+               ],
+               "optional": [
+                  "source"
+               ],
+               "additionalProperties": false
             },
-            "page": {
-               "type": "integer",
-               "description": "Career page number."
+            "description": "List of career skills."
+         },
+         "description": {
+            "type": "array",
+            "items": {
+               "type": "string"
             },
-            "skills": {
-               "type": "array",
-               "items": [
-                  {
+            "description": "Career fluff information."
+         },
+         "startingGear": {
+            "type": "object",
+            "properties": {
+               "description": {
+                  "type": "array",
+                  "items": {
+                     "type": "string"
+                  },
+                  "description": "Fluff introducing starting gear."
+               },
+               "gear": {
+                  "type": "array",
+                  "items": {
+                     "type": "string"
+                  },
+                  "description": "List of starting gear."
+               }
+            },
+            "description": "Suggested starting gear.",
+            "required": [
+               "description",
+               "gear"
+            ],
+            "additionalProperties": false
+         },
+         "usefulTalents": {
+            "type": "object",
+            "properties": {
+               "description": {
+                  "type": "array",
+                  "items": {
+                     "type": "string"
+                  },
+                  "description": "Introduction to suggested talents."
+               },
+               "talents": {
+                  "type": "array",
+                  "items": {
                      "type": "object",
                      "properties": {
+                        "tier": {
+                           "type": "integer",
+                           "min": 1,
+                           "max": 5,
+                           "description": "Talent tier."
+                        },
                         "name": {
-                           "type": "string",
-                           "description": "Skill name."
+                           "type": "string"
                         },
                         "source": {
-                           "type": "string",
-                           "description": "Skill source (if not in same collection)."
+                           "type": "string"
                         }
                      },
                      "required": [
+                        "tier",
                         "name"
                      ],
                      "optional": [
@@ -36,111 +105,30 @@
                      ],
                      "additionalProperties": false
                   }
-               ],
-               "description": "List of career skills."
+               }
             },
-            "description": {
-               "type": "array",
-               "items": [
-                  {
-                     "type": "string"
-                  }
-               ],
-               "description": "Career fluff information."
-            },
-            "startingGear": {
-               "type": "object",
-               "properties": {
-                  "description": {
-                     "type": "array",
-                     "items": [
-                        {
-                           "type": "string"
-                        }
-                     ],
-                     "description": "Fluff introducing starting gear."
-                  },
-                  "gear": {
-                     "type": "array",
-                     "items": [
-                        {
-                           "type": "string"
-                        }
-                     ],
-                     "description": "List of starting gear."
-                  }
-               },
-               "description": "Suggested starting gear.",
-               "required": [
-                  "description",
-                  "gear"
-               ],
-               "additionalProperties": false
-            },
-            "usefulTalents": {
-               "type": "object",
-               "properties": {
-                  "description": {
-                     "type": "array",
-                     "items": [
-                        {
-                           "type": "string"
-                        }
-                     ],
-                     "description": "Introduction to suggested talents."
-                  },
-                  "talents": {
-                     "type": "array",
-                     "items": [
-                        {
-                           "type": "object",
-                           "properties": {
-                              "tier": {
-                                 "type": "integer",
-                                 "min": 1,
-                                 "max": 5,
-                                 "description": "Talent tier."
-                              },
-                              "name": {
-                                 "type": "string"
-                              },
-                              "source": {
-                                 "type": "string"
-                              }
-                           },
-                           "required": [
-                              "tier",
-                              "name"
-                           ],
-                           "optional": [
-                              "source"
-                           ],
-                           "additionalProperties": false
-                        }
-                     ]
-                  }
-               },
-               "description": "Suggested starting talents.",
-               "required": [
-                  "description",
-                  "talents"
-               ],
-               "additionalProperties": false
-            },
-            "settings": { "$ref": "./settings_sub_schema.json" }
+            "description": "Suggested starting talents.",
+            "required": [
+               "description",
+               "talents"
+            ],
+            "additionalProperties": false
          },
-         "required": [
-            "name",
-            "skills",
-            "description"
-         ],
-         "optional": [
-            "startingGear",
-            "usefulTalents",
-            "page",
-            "settings"
-         ],
-         "additionalProperties": false
-      }
-   ]
+         "settings": {
+            "$ref": "./settings_sub_schema.json"
+         }
+      },
+      "required": [
+         "name",
+         "skills",
+         "description"
+      ],
+      "optional": [
+         "startingGear",
+         "usefulTalents",
+         "page",
+         "settings"
+      ],
+      "additionalProperties": false
+   }
 }

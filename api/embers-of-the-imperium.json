@@ -11237,7 +11237,10 @@
          "weapons": [
             {
                "name": "Nekro Shredder Claws",
-               "skill": "Brawl",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
                "damage": 10,
                "critical": 3,
                "range": "Engaged",
@@ -11321,7 +11324,10 @@
          "weapons": [
             {
                "name": "Nekro Turret",
-               "skill": "Gunnery",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 4,
                "range": "Long",
@@ -11335,7 +11341,10 @@
             },
             {
                "name": "Engine Blast",
-               "skill": "Gunnery",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
                "damage": 18,
                "critical": 2,
                "range": "Short",
@@ -11416,7 +11425,10 @@
          "weapons": [
             {
                "name": "Light beam cannon",
-               "skill": "Gunnery",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
                "damage": 9,
                "critical": 3,
                "range": "Long",
@@ -11474,7 +11486,10 @@
          "weapons": [
             {
                "name": "High-energy test capacitor",
-               "skill": "Melee",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
                "damage": 8,
                "critical": 4,
                "range": "Engaged",

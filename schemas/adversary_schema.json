@@ -75,7 +75,8 @@
                   "type": "array",
                   "items": {
                      "type": "integer"
-                  }
+                  },
+                  "maxItems": 2
                }
             },
             "required": [
@@ -169,10 +170,11 @@
             "items": {
                "oneOf": [
                   {
+                     "title": "Internal Talent",
                      "type": "string"
                   },
-
                   {
+                     "title": "External Talent",
                      "type": "object",
                      "properties": {
                         "name": {
@@ -194,20 +196,30 @@
          "abilities": {
             "type": "array",
             "items": {
-               "type": ["object", "string"],
-               "properties": {
-                  "name": {
+               "oneOf": [
+                  {
+                     "title": "Internal Ability",
                      "type": "string"
                   },
-                  "description": {
-                     "type": "string"
+
+                  {
+                     "title": "External Ability",
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
+                        },
+                        "description": {
+                           "type": "string"
+                        }
+                     },
+                     "required": [
+                        "name",
+                        "description"
+                     ],
+                     "additionalProperties": false
                   }
-               },
-               "required": [
-                  "name",
-                  "description"
-               ],
-               "additionalProperties": false
+               ]
             }
          },
          "spells": {
@@ -269,29 +281,22 @@
                      "type": "string"
                   },
                   "skill": {
-                     "oneOf": [
-                        {
-                           "type": "object",
-                           "properties": {
-                              "name": {
-                                 "type": "string"
-                              },
-                              "source": {
-                                 "type": "string"
-                              }
-                           },
-                           "required": [
-                              "name"
-                           ],
-                           "optional": [
-                              "source"
-                           ],
-                           "additionalProperties": false
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
                         },
-                        {
+                        "source": {
                            "type": "string"
                         }
-                     ]
+                     },
+                     "required": [
+                        "name"
+                     ],
+                     "optional": [
+                        "source"
+                     ],
+                     "additionalProperties": false
                   },
                   "damage": {
                      "type": "integer"
@@ -313,33 +318,26 @@
                   "qualities": {
                      "type": "array",
                      "items": {
-                        "oneOf": [
-                           {
-                              "type": "object",
-                              "properties": {
-                                 "name": {
-                                    "type": "string"
-                                 },
-                                 "ranks": {
-                                    "type": "integer"
-                                 },
-                                 "source": {
-                                    "type": "string"
-                                 }
-                              },
-                              "required": [
-                                 "name"
-                              ],
-                              "optional": [
-                                 "ranks",
-                                 "source"
-                              ],
-                              "additionalProperties": false
+                        "type": "object",
+                        "properties": {
+                           "name": {
+                              "type": "string"
                            },
-                           {
+                           "ranks": {
+                              "type": "integer"
+                           },
+                           "source": {
                               "type": "string"
                            }
-                        ]
+                        },
+                        "required": [
+                           "name"
+                        ],
+                        "optional": [
+                           "ranks",
+                           "source"
+                        ],
+                        "additionalProperties": false
                      }
                   },
                   "details": {
@@ -366,8 +364,12 @@
                "type": "string"
             }
          },
-         "description": { "$ref": "./varyingDisplay_sub_schema.json" },
-         "settings": { "$ref": "./settings_sub_schema.json" },
+         "description": {
+            "$ref": "./varyingDisplay_sub_schema.json"
+         },
+         "settings": {
+            "$ref": "./settings_sub_schema.json"
+         },
          "tags": {
             "type": "array",
             "items": {

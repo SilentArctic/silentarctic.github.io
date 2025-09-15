@@ -1,24 +1,22 @@
 {
    "$id": "https://silentarctic.github.io/schemas/settings_sub_schema.json",
    "type": "array",
-   "items": [
-      {
-         "type": "object",
-         "properties": {
-            "name": {
-               "type": "string"
-            },
-            "source": {
-               "type": "string"
-            }
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string"
          },
-         "required": [
-            "name"
-         ],
-         "optional": [
-            "source"
-         ],
-         "additionalProperties": false
-      }
-   ]
+         "source": {
+            "type": "string"
+         }
+      },
+      "required": [
+         "name"
+      ],
+      "optional": [
+         "source"
+      ],
+      "additionalProperties": false
+   }
 }
