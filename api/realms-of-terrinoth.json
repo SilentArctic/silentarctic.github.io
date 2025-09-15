@@ -10394,9 +10394,9 @@
                "Players with a Disciple character may choose to start with the following gear instead of spending currency during {@b Step 7} of character creation:"
             ],
             "gear": [
-               "A {@gear mace||rot}",
+               "A {@gear mace}",
                "A {@gear holy icon} {@i or} {@gear shield} and {@gear leather armor}",
-               "A {@gear lantern} and 2 {@gear herbs of healing||rot} or traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, 3 {@gear torches}, and a {@gear waterskin}",
+               "A {@gear lantern} and 2 {@gear herbs of healing} or traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, {@gear torches (3)|3 torches}, and a {@gear waterskin (empty)|waterskin}",
                "1d100 silver coins"
             ]
          },
@@ -10447,9 +10447,9 @@
                "Players with an Envoy character may choose to start with the following gear instead of spending currency during {@b Step 7} of character creation:"
             ],
             "gear": [
-               "A {@gear dagger||rot}",
+               "A {@gear dagger}",
                "A {@gear sword} {@i or} a {@gear musical instrument}",
-               "A {@gear fine cloak} {@i or} traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, 3 {@gear torches}, and a {@gear waterskin}",
+               "A {@gear fine cloak} {@i or} traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, {@gear torches (3)|3 torches}, and a {@gear waterskin (empty)|waterskin}",
                "{@gear Padded armor}",
                "200 + 1d100 silver coins"
             ]
@@ -10501,7 +10501,7 @@
             "gear": [
                "A {@gear magic staff} {@i or} {@gear magic wand}",
                "A {@gear dagger} {@i or} {@gear sling}",
-               "{@gear Heavy robes} {@i or} 1 {@gear stamina elixir||rot}",
+               "{@gear Heavy robes} {@i or} 1 {@gear stamina elixir}",
                "1d100 silver coins"
             ]
          },
@@ -10553,7 +10553,7 @@
             ],
             "gear": [
                "A {@gear staff} {@i or} a {@gear greataxe} and {@gear leather armor}",
-               "An {@gear apothecary's kit||rot} {@i or} traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, 3 {@gear torches}, and a {@gear waterskin}",
+               "An {@gear apothecary's kit||rot} {@i or} traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, {@gear torches (3)|3 torches}, and a {@gear waterskin (empty)|waterskin}",
                "1d100 silver coins"
             ]
          },
@@ -10604,7 +10604,7 @@
                "A {@gear dagger}",
                "An {@gear alchemists' kit} {@i or} a {@gear sword}",
                "A {@gear lantern} {@i or} {@gear healing herbs}",
-               "A {@gear fine cloak} {@i or} traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, 3 {@gear torches}, and a {@gear waterskin}",
+               "A {@gear fine cloak} {@i or} traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, {@gear torches (3)|3 torches}, and a {@gear waterskin (empty)|waterskin}",
                "1d100 silver coins"
             ]
          },
@@ -10659,7 +10659,7 @@
                "A {@gear dagger} {@i or} a {@gear cestus}",
                "A {@gear sword} and {@gear dagger} {@i or} a {@gear bow}",
                "A {@gear fine cloak} {@i or} {@gear thieves' tools}",
-               "Traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, 3 {@gear torches}, and a {@gear waterskin}",
+               "Traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, {@gear torches (3)|3 torches}, and a {@gear waterskin (empty)|waterskin}",
                "1d100 silver coins"
             ]
          },
@@ -10710,10 +10710,10 @@
             ],
             "gear": [
                "A {@gear bow} {@i or} a {@gear light spear} and {@gear leather armor}",
-               "A {@gear dagger} {@i or} 2 {@gear healing elixirs}",
+               "A {@gear dagger} {@i or} 2 {@gear healing elixir|healing elixirs}",
                "{@gear Leather armor}",
                "{@gear Herbs of healing} and {@gear climbing gear} {@i or} {@gear winter clothing}",
-               "Traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, 3 {@gear torches}, and a {@gear waterskin}",
+               "Traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, {@gear torches (3)|3 torches}, and a {@gear waterskin (empty)|waterskin}",
                "1d100 silver coins"
             ]
          },
@@ -10768,8 +10768,8 @@
             "gear": [
                "A {@gear sword} and {@gear shield} {@i or} an {@gear axe} and {@gear shield} {@i or} a {@gear halberd}",
                "{@gear Leather armor}",
-               "2 {@gear healing elixirs}",
-               "Traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, 3 {@gear torches}, and a {@gear waterskin}",
+               "2 {@gear healing elixir|healing elixirs}",
+               "Traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, {@gear torches (3)|3 torches}, and a {@gear waterskin (empty)|waterskin}",
                "1d100 silver coins"
             ]
          },
