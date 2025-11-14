@@ -1,19 +1,52 @@
 {
    "$id": "https://silentarctic.github.io/schemas/archetype_schema.json",
    "type": "array",
-   "items": [
-      {
-         "type": "object",
-         "properties": {
-            "name": {
-               "type": "string"
-            },
-            "nickname": {
-               "type": "string"
-            },
-            "characteristics": {
-               "oneOf": [
-                  {
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string"
+         },
+         "nickname": {
+            "type": "string"
+         },
+         "characteristics": {
+            "oneOf": [
+               {
+                  "type": "object",
+                  "properties": {
+                     "brawn": {
+                        "type": "integer"
+                     },
+                     "agility": {
+                        "type": "integer"
+                     },
+                     "intellect": {
+                        "type": "integer"
+                     },
+                     "cunning": {
+                        "type": "integer"
+                     },
+                     "willpower": {
+                        "type": "integer"
+                     },
+                     "presence": {
+                        "type": "integer"
+                     }
+                  },
+                  "required": [
+                     "brawn",
+                     "agility",
+                     "intellect",
+                     "cunning",
+                     "willpower",
+                     "presence"
+                  ],
+                  "additionalProperties": false
+               },
+               {
+                  "type": "array",
+                  "items": {
                      "type": "object",
                      "properties": {
                         "brawn": {
@@ -44,183 +77,150 @@
                         "presence"
                      ],
                      "additionalProperties": false
-                  },
-
-                  {
-                     "type": "array",
-                     "items": {
-                        "type": "object",
-                        "properties": {
-                           "brawn": {
-                              "type": "integer"
-                           },
-                           "agility": {
-                              "type": "integer"
-                           },
-                           "intellect": {
-                              "type": "integer"
-                           },
-                           "cunning": {
-                              "type": "integer"
-                           },
-                           "willpower": {
-                              "type": "integer"
-                           },
-                           "presence": {
-                              "type": "integer"
-                           }
-                        },
-                        "required": [
-                           "brawn",
-                           "agility",
-                           "intellect",
-                           "cunning",
-                           "willpower",
-                           "presence"
-                        ],
-                        "additionalProperties": false
-                     }
                   }
-               ]
-            },
-            "page": {
-               "type": "integer"
-            },
-            "imageUrl": {
-               "type": "string"
-            },
-            "wt": {
-               "oneOf": [
-                  {
+               }
+            ]
+         },
+         "page": {
+            "type": "integer"
+         },
+         "imageUrl": {
+            "type": "string"
+         },
+         "wt": {
+            "oneOf": [
+               {
+                  "type": "integer"
+               },
+               {
+                  "type": "array",
+                  "items": {
                      "type": "integer"
-                  },
-                  {
-                     "type": "array",
-                     "items": {
-                        "type": "integer"
-                     }
                   }
-               ]
-            },
-            "st": {
-               "oneOf": [
-                  {
+               }
+            ]
+         },
+         "st": {
+            "oneOf": [
+               {
+                  "type": "integer"
+               },
+               {
+                  "type": "array",
+                  "items": {
                      "type": "integer"
-                  },
-                  {
-                     "type": "array",
-                     "items": {
-                        "type": "integer"
-                     }
                   }
-               ]
-            },
-            "xp": {
-               "type": "integer"
-            },
-            "skills": {
-               "type": "object",
-               "properties": {
-                  "skills": {
-                     "type": "array",
-                     "items": {
-                        "type": "string"
-                     }
-                  },
-                  "ranksTotal": {
-                     "type": "integer"
-                  },
-                  "ranksEach": {
-                     "type": "integer"
-                  },
-                  "description": {
-                     "type": "array",
-                     "items": {
-                        "type": "string"
-                     }
-                  },
-                  "choice": {
-                     "type": "boolean"
+               }
+            ]
+         },
+         "xp": {
+            "type": "integer"
+         },
+         "skills": {
+            "type": "object",
+            "properties": {
+               "skills": {
+                  "type": "array",
+                  "items": {
+                     "type": "string"
                   }
                },
-               "required": [
-                  "skills",
-                  "ranksTotal",
-                  "ranksEach",
-                  "description",
-                  "choice"
-               ],
-               "additionalProperties": false
+               "ranksTotal": {
+                  "type": "integer"
+               },
+               "ranksEach": {
+                  "type": "integer"
+               },
+               "description": {
+                  "type": "array",
+                  "items": {
+                     "type": "string"
+                  }
+               },
+               "choice": {
+                  "type": "boolean"
+               }
             },
-            "abilities": {
-               "type": "array",
-               "items": {
-                  "oneOf": [
-                     { "type": "string" },
-
-                     {
-                        "type": "object",
-                        "properties": {
-                           "description": {
-                              "type": "array",
-                              "items": {
-                                 "type": "string"
-                              }
+            "required": [
+               "skills",
+               "ranksTotal",
+               "ranksEach",
+               "description",
+               "choice"
+            ],
+            "additionalProperties": false
+         },
+         "abilities": {
+            "type": "array",
+            "items": {
+               "oneOf": [
+                  {
+                     "type": "string"
+                  },
+                  {
+                     "type": "object",
+                     "properties": {
+                        "description": {
+                           "type": "array",
+                           "items": {
+                              "type": "string"
                            }
                         }
                      }
-                  ]
-               }
-            },
-            "description": {
-               "type": "array",
-               "items": {
-                  "type": "string"
-               }
-            },
-            "why": {
-               "type": "array",
-               "items": {
-                  "type": "string"
-               }
-            },
-            "names": {
-               "type": "object",
-               "properties": {
-                  "description": {
-                     "type": "array",
-                     "items": {
-                        "type": "string"
-                     }
-                  },
-                  "names": {
-                     "type": "array",
-                     "items": {
-                        "type": "string"
-                     }
+                  }
+               ]
+            }
+         },
+         "description": {
+            "type": "array",
+            "items": {
+               "type": "string"
+            }
+         },
+         "why": {
+            "type": "array",
+            "items": {
+               "type": "string"
+            }
+         },
+         "names": {
+            "type": "object",
+            "properties": {
+               "description": {
+                  "type": "array",
+                  "items": {
+                     "type": "string"
+                  }
+               },
+               "names": {
+                  "type": "array",
+                  "items": {
+                     "type": "string"
                   }
                }
-            },
-            "settings": { "$ref": "./settings_sub_schema.json" }
+            }
          },
-         "required": [
-            "name",
-            "wt",
-            "st",
-            "xp",
-            "skills",
-            "abilities",
-            "description"
-         ],
-         "optional": [
-            "page",
-            "nickname",
-            "imageUrl",
-            "why",
-            "names",
-            "settings"
-         ],
-         "additionalProperties": false
-      }
-   ]
+         "settings": {
+            "$ref": "./settings_sub_schema.json"
+         }
+      },
+      "required": [
+         "name",
+         "wt",
+         "st",
+         "xp",
+         "skills",
+         "abilities",
+         "description"
+      ],
+      "optional": [
+         "page",
+         "nickname",
+         "imageUrl",
+         "why",
+         "names",
+         "settings"
+      ],
+      "additionalProperties": false
+   }
 }

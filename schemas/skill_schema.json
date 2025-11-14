@@ -38,20 +38,16 @@
          },
          "shouldUse": {
             "type": "array",
-            "items": [
-               {
-                  "type": "string"
-               }
-            ],
+            "items": {
+               "type": "string"
+            },
             "description": "Suggested reasons to use the skill."
          },
          "shouldNotUse": {
             "type": "array",
-            "items": [
-               {
-                  "type": "string"
-               }
-            ],
+            "items": {
+               "type": "string"
+            },
             "description": "Suggested reasons to not use the skill."
          },
          "spells": {

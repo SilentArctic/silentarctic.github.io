@@ -8,6 +8,12 @@ function getAuthors(entry) {
    return entry.authors.join(', ');
 }
 
+/**
+ *
+ * @param {string} file - filename
+ * @param {string} selector - core | community
+ * @param {*} data - file data
+ */
 function addRow(file, selector, data) {
    const dir = selector === 'core' ? '' : 'community/';
    const entry = data[file] || {};

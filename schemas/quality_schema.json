@@ -1,39 +1,44 @@
 {
    "$id": "https://silentarctic.github.io/schemas/quality_schema.json",
    "type": "array",
-   "items": [
-      {
-         "type": "object",
-         "properties": {
-            "name": {
-               "type": "string"
-            },
-            "page": {
-               "type": "integer"
-            },
-            "activation": {
-               "type": "string",
-               "enum": [
-                  "active",
-                  "passive"
-               ]
-            },
-            "gearType": {
-               "type": "string",
-               "enum": ["weapon", "armor", "vehicle", "any"]
-            },
-            "description": { "$ref": "varyingDisplay_sub_schema.json" }
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string"
          },
-         "required": [
-            "name",
-            "activation",
-            "gearType",
-            "description"
-         ],
-         "optional": [
-            "page"
-         ],
-         "additionalProperties": false
-      }
-   ]
+         "page": {
+            "type": "integer"
+         },
+         "activation": {
+            "type": "string",
+            "enum": [
+               "active",
+               "passive"
+            ]
+         },
+         "gearType": {
+            "type": "string",
+            "enum": [
+               "any",
+               "armor",
+               "weapon",
+               "vehicle"
+            ]
+         },
+         "description": {
+            "$ref": "varyingDisplay_sub_schema.json"
+         }
+      },
+      "required": [
+         "name",
+         "activation",
+         "gearType",
+         "description"
+      ],
+      "optional": [
+         "page"
+      ],
+      "additionalProperties": false
+   }
 }

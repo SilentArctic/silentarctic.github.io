@@ -1,69 +1,76 @@
 {
    "$id": "https://silentarctic.github.io/schemas/optionFeature_schema.json",
    "type": "array",
-   "items": [
-      {
-         "type": "object",
-         "properties": {
-            "name": {
-               "type": "string"
-            },
-            "page": {
-               "type": "integer"
-            },
-            "type": {
-               "type": "string"
-            },
-            "class": {
-               "type": "string"
-            },
-            "labels": {
-               "type": "array",
-               "items": {
-                  "type": "object",
-                  "properties": {
-                     "name": {
-                        "type": "string"
-                     },
-                     "description": {
-                        "type": ["string", "integer"]
-                     }
-                  },
-                  "required": [
-                     "name",
-                     "description"
-                  ],
-                  "additionalProperties": false
-               }
-            },
-            "description": { "$ref": "varyingDisplay_sub_schema.json" },
-            "info": { "$ref": "varyingDisplay_sub_schema.json" },
-            "summary": {
-               "type": "array",
-               "items": {
-                  "type": "string"
-               }
-            },
-            "meta": {
-               "type": "object"
-            },
-            "settings": { "$ref": "settings_sub_schema.json" }
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string"
          },
-         "required": [
-            "name",
-            "type",
-            "description"
-         ],
-         "optional": [
-            "page",
-            "labels",
-            "info",
-            "summary",
-            "class",
-            "meta",
-            "settings"
-         ],
-         "additionalProperties": false
-      }
-   ]
+         "page": {
+            "type": "integer"
+         },
+         "type": {
+            "type": "string"
+         },
+         "class": {
+            "type": "string"
+         },
+         "labels": {
+            "type": "array",
+            "items": {
+               "type": "object",
+               "properties": {
+                  "name": {
+                     "type": "string"
+                  },
+                  "description": {
+                     "type": [
+                        "string",
+                        "integer"
+                     ]
+                  }
+               },
+               "required": [
+                  "name",
+                  "description"
+               ],
+               "additionalProperties": false
+            }
+         },
+         "description": {
+            "$ref": "varyingDisplay_sub_schema.json"
+         },
+         "info": {
+            "$ref": "varyingDisplay_sub_schema.json"
+         },
+         "summary": {
+            "type": "array",
+            "items": {
+               "type": "string"
+            }
+         },
+         "meta": {
+            "type": "object"
+         },
+         "settings": {
+            "$ref": "settings_sub_schema.json"
+         }
+      },
+      "required": [
+         "name",
+         "type",
+         "description"
+      ],
+      "optional": [
+         "page",
+         "labels",
+         "info",
+         "summary",
+         "class",
+         "meta",
+         "settings"
+      ],
+      "additionalProperties": false
+   }
 }

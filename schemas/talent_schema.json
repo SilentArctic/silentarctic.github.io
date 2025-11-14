@@ -1,81 +1,81 @@
 {
    "$id": "https://silentarctic.github.io/schemas/talent_schema.json",
    "type": "array",
-   "items": [
-      {
-         "type": "object",
-         "properties": {
-            "name": {
-               "type": "string"
-            },
-            "imageUrl": {
-               "type": "string"
-            },
-            "page": {
-               "type": "integer"
-            },
-            "prerequisites": {
-               "oneOf": [
-                  {
-                     "type": "boolean"
-                  },
-                  {
-                     "type": "array",
-                     "items": {
-                        "type": "string"
-                     }
-                  }
-               ]
-            },
-            "tier": {
-               "type": "integer",
-               "enum": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5
-               ]
-            },
-            "activation": {
-               "type": "string",
-               "enum": [
-                  "passive",
-                  "active (incidental, out of turn)",
-                  "active (incidental)",
-                  "active (maneuver)",
-                  "active (action)"
-               ]
-            },
-            "ranked": {
-               "type": "boolean"
-            },
-            "description": {
-               "type": "array",
-               "items": {
-                  "type": "string"
-               }
-            },
-            "tags": {
-               "$ref": "item_tags_sub_schema.json"
-            },
-            "settings": { "$ref": "settings_sub_schema.json" }
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string"
          },
-         "required": [
-            "name",
-            "tier",
-            "activation",
-            "ranked",
-            "description"
-         ],
-         "optional": [
-            "imageUrl",
-            "page",
-            "prerequisites",
-            "settings",
-            "tags"
-         ],
-         "additionalProperties": false
-      }
-   ]
+         "imageUrl": {
+            "type": "string"
+         },
+         "page": {
+            "type": "integer"
+         },
+         "prerequisites": {
+            "oneOf": [
+               {
+                  "type": "boolean"
+               },
+               {
+                  "type": "array",
+                  "items": {
+                     "type": "string"
+                  }
+               }
+            ]
+         },
+         "tier": {
+            "type": "integer",
+            "enum": [
+               1,
+               2,
+               3,
+               4,
+               5
+            ]
+         },
+         "activation": {
+            "type": "string",
+            "enum": [
+               "passive",
+               "active (incidental, out of turn)",
+               "active (incidental)",
+               "active (maneuver)",
+               "active (action)"
+            ]
+         },
+         "ranked": {
+            "type": "boolean"
+         },
+         "description": {
+            "type": "array",
+            "items": {
+               "type": "string"
+            }
+         },
+         "tags": {
+            "$ref": "item_tags_sub_schema.json"
+         },
+         "settings": {
+            "$ref": "settings_sub_schema.json"
+         }
+      },
+      "required": [
+         "name",
+         "tier",
+         "activation",
+         "ranked",
+         "description"
+      ],
+      "optional": [
+         "imageUrl",
+         "page",
+         "prerequisites",
+         "settings",
+         "tags"
+      ],
+      "additionalProperties": false
+   }
 }

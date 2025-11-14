@@ -1,121 +1,134 @@
 {
    "$id": "https://silentarctic.github.io/schemas/spell_schema.json",
    "type": "array",
-   "items": [
-      {
-         "type": "object",
-         "properties": {
-            "name": {
-               "type": "string"
-            },
-            "page": {
-               "type": "integer"
-            },
-            "imageUrl": {
-               "type": "string"
-            },
-            "concentration": {
-               "type": "boolean"
-            },
-            "difficulty": {
-               "type": "string",
-               "enum": ["simple", "easy", "average", "hard", "daunting", "formidable"]
-            },
-            "range": {
-               "type": "string",
-               "enum": ["Self", "Engaged", "Short", "Medium", "Long", "Extreme", "Strategic"]
-            },
-            "skills": {
-               "type": "array",
-               "items": [
-                  {
-                     "type": "object",
-                     "properties": {
-                        "name": {
-                           "type": "string"
-                        },
-                        "source": {
-                           "type": "string"
-                        }
-                     },
-                     "required": [
-                        "name"
-                     ],
-                     "optional": [
-                        "source"
-                     ],
-                     "additionalProperties": false
-                  }
-               ]
-            },
-            "narrative": {
-               "type": "array",
-               "items": [
-                  {
-                     "type": "string"
-                  }
-               ]
-            },
-            "structured": {
-               "type": "array",
-               "items": [
-                  {
-                     "type": "string"
-                  }
-               ]
-            },
-            "additionalEffects": {
-               "type": "array",
-               "items": [
-                  {
-                     "type": "object",
-                     "properties": {
-                        "name": {
-                           "type": "string"
-                        },
-                        "description": {
-                           "type": "array",
-                           "items": [
-                              {
-                                 "type": "string"
-                              }
-                           ]
-                        },
-                        "difficultyMod": {
-                           "type": "integer"
-                        },
-                        "difficultyUpgrade": {
-                           "type": "integer"
-                        }
-                     },
-                     "required": [
-                        "name",
-                        "description",
-                        "difficultyMod"
-                     ],
-                     "optional": [
-                        "difficultyUpgrade"
-                     ],
-                     "additionalProperties": false
-                  }
-               ]
-            }
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string"
          },
-         "required": [
-            "name",
-            "concentration",
-            "difficulty",
-            "skills",
-            "narrative",
-            "structured",
-            "additionalEffects"
-         ],
-         "optional": [
-            "page",
-            "range",
-            "imageUrl"
-         ],
-         "additionalProperties": false
-      }
-   ]
+         "page": {
+            "type": "integer"
+         },
+         "imageUrl": {
+            "type": "string"
+         },
+         "concentration": {
+            "type": "boolean"
+         },
+         "difficulty": {
+            "type": "string",
+            "enum": [
+               "simple",
+               "easy",
+               "average",
+               "hard",
+               "daunting",
+               "formidable"
+            ]
+         },
+         "range": {
+            "type": "string",
+            "enum": [
+               "Self",
+               "Engaged",
+               "Short",
+               "Medium",
+               "Long",
+               "Extreme",
+               "Strategic"
+            ]
+         },
+         "skills": {
+            "type": "array",
+            "items": [
+               {
+                  "type": "object",
+                  "properties": {
+                     "name": {
+                        "type": "string"
+                     },
+                     "source": {
+                        "type": "string"
+                     }
+                  },
+                  "required": [
+                     "name"
+                  ],
+                  "optional": [
+                     "source"
+                  ],
+                  "additionalProperties": false
+               }
+            ]
+         },
+         "narrative": {
+            "type": "array",
+            "items": [
+               {
+                  "type": "string"
+               }
+            ]
+         },
+         "structured": {
+            "type": "array",
+            "items": [
+               {
+                  "type": "string"
+               }
+            ]
+         },
+         "additionalEffects": {
+            "type": "array",
+            "items": [
+               {
+                  "type": "object",
+                  "properties": {
+                     "name": {
+                        "type": "string"
+                     },
+                     "description": {
+                        "type": "array",
+                        "items": [
+                           {
+                              "type": "string"
+                           }
+                        ]
+                     },
+                     "difficultyMod": {
+                        "type": "integer"
+                     },
+                     "difficultyUpgrade": {
+                        "type": "integer"
+                     }
+                  },
+                  "required": [
+                     "name",
+                     "description",
+                     "difficultyMod"
+                  ],
+                  "optional": [
+                     "difficultyUpgrade"
+                  ],
+                  "additionalProperties": false
+               }
+            ]
+         }
+      },
+      "required": [
+         "name",
+         "concentration",
+         "difficulty",
+         "skills",
+         "narrative",
+         "structured",
+         "additionalEffects"
+      ],
+      "optional": [
+         "page",
+         "range",
+         "imageUrl"
+      ],
+      "additionalProperties": false
+   }
 }
