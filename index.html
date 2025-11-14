@@ -5,6 +5,8 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>GenesysRef API</title>
+   <link rel="stylesheet" href="index.css">
+
 </head>
 <body>
    <p>
@@ -20,13 +22,29 @@
       If you would like to use this as an API for Genesys data, please contact SilentArctic through Discord.
    </p>
 
-   <ul id="core-links">
-      <div>Core Modules</div>
-   </ul>
+   <table id="core-table">
+      <caption>Core Modules</caption>
+      <thead>
+         <tr>
+            <th>Module</th>
+            <th>Version</th>
+            <th>Authors</th>
+         </tr>
+      </thead>
+      <tbody id="core-tbody"></tbody>
+   </table>
 
-   <ul id="community-links">
-      <div>Community Modules</div>
-   </ul>
+   <table id="community-table">
+      <caption>Community Modules</caption>
+      <thead>
+         <tr>
+            <th>Module</th>
+            <th>Version</th>
+            <th>Authors</th>
+         </tr>
+      </thead>
+      <tbody id="community-tbody"></tbody>
+   </table>
 
    <script type="module" src="./index.mjs"></script>
 </body>
