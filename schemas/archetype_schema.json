@@ -14,6 +14,7 @@
             "oneOf": [
                {
                   "type": "object",
+                  "title": "Standard",
                   "properties": {
                      "brawn": {
                         "type": "integer"
@@ -46,6 +47,7 @@
                },
                {
                   "type": "array",
+                  "title": "Archetype Pair",
                   "items": {
                      "type": "object",
                      "properties": {
@@ -90,10 +92,12 @@
          "wt": {
             "oneOf": [
                {
-                  "type": "integer"
+                  "type": "integer",
+                  "title": "Standard"
                },
                {
                   "type": "array",
+                  "title": "Archetype Pair",
                   "items": {
                      "type": "integer"
                   }
@@ -103,10 +107,12 @@
          "st": {
             "oneOf": [
                {
-                  "type": "integer"
+                  "type": "integer",
+                  "title": "Standard"
                },
                {
                   "type": "array",
+                  "title": "Archetype Pair",
                   "items": {
                      "type": "integer"
                   }
@@ -155,10 +161,12 @@
             "items": {
                "oneOf": [
                   {
-                     "type": "string"
+                     "type": "string",
+                     "title": "Standard"
                   },
                   {
                      "type": "object",
+                     "title": "Archetype Pair",
                      "properties": {
                         "description": {
                            "type": "array",
@@ -202,6 +210,10 @@
          },
          "settings": {
             "$ref": "./settings_sub_schema.json"
+         },
+         "id": {
+            "type": "string",
+            "description": "Unique item id. You shouldn't have to touch this field."
          }
       },
       "required": [

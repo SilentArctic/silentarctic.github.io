@@ -171,17 +171,20 @@
                "oneOf": [
                   {
                      "title": "Internal Talent",
-                     "type": "string"
+                     "type": "string",
+                     "description": "Name of talent from this collection."
                   },
                   {
                      "title": "External Talent",
                      "type": "object",
                      "properties": {
                         "name": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Name of talent from other collection."
                         },
                         "source": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Talent source."
                         }
                      },
                      "required": [
@@ -375,6 +378,10 @@
             "items": {
                "type": "string"
             }
+         },
+         "id": {
+            "type": "string",
+            "description": "Unique item id. You shouldn't have to touch this field."
          }
       },
       "required": [

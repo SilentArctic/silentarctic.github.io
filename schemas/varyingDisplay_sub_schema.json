@@ -23,7 +23,8 @@
                   ]
                },
                "title": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "Section Title."
                },
                "forceTitleLevel": {
                   "type": "integer"
@@ -34,7 +35,7 @@
                "hasModal": {
                   "type": "boolean"
                },
-               "entries": { "$ref": "varyingDisplay_sub_schema.json" },
+               "entries": { "$ref": "#" },
                "_ref": {
                   "type": "object",
                   "properties": {
@@ -146,7 +147,7 @@
                },
                "items": {
                   "type": "array",
-                  "list": {
+                  "items": {
                      "type": "string"
                   }
                }
@@ -262,7 +263,7 @@
                "columns": {
                   "type": "integer"
                },
-               "entries": { "$ref": "varyingDisplay_sub_schema.json" }
+               "entries": { "$ref": "#" }
             },
             "required": [
                "type",

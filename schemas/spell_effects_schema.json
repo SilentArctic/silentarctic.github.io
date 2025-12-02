@@ -37,6 +37,10 @@
             "items": {
                "type": "string"
             }
+         },
+         "id": {
+            "type": "string",
+            "description": "Unique item id. You shouldn't have to touch this field."
          }
       },
       "required": [

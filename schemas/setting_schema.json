@@ -18,7 +18,11 @@
          },
          "lore": { "$ref": "varyingDisplay_sub_schema.json" },
          "codex": { "$ref": "varyingDisplay_sub_schema.json" },
-         "characterOptions": { "$ref": "varyingDisplay_sub_schema.json" }
+         "characterOptions": { "$ref": "varyingDisplay_sub_schema.json" },
+         "id": {
+            "type": "string",
+            "description": "Unique item id. You shouldn't have to touch this field."
+         }
       },
       "required": [
          "name"

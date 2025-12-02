@@ -53,39 +53,13 @@
             }
          },
          "talents": {
-            "type": "array",
-            "minItems": 5,
-            "maxItems": 5,
-            "items": {
-               "type": "array",
-               "minItems": 4,
-               "maxItems": 4,
-               "items": {
-                  "type": "object",
-                  "properties": {
-                     "name": {
-                        "type": "string"
-                     },
-                     "right": {
-                        "type": "boolean"
-                     },
-                     "down": {
-                        "type": "boolean"
-                     },
-                     "source": {
-                        "type": "string"
-                     }
-                  },
-                  "required": [
-                     "name"
-                  ],
-                  "optional": [
-                     "right",
-                     "down",
-                     "source"
-                  ],
-                  "additionalProperties": false
-               }
+            "type": "object",
+            "properties": {
+               "row1": { "$ref": "specialization_talent_row_sub_schema.json" },
+               "row2": { "$ref": "specialization_talent_row_sub_schema.json" },
+               "row3": { "$ref": "specialization_talent_row_sub_schema.json" },
+               "row4": { "$ref": "specialization_talent_row_sub_schema.json" },
+               "row5": { "$ref": "specialization_talent_row_sub_schema.json" }
             }
          },
          "description": {
@@ -94,7 +68,13 @@
                "type": "string"
             }
          },
-         "settings": { "$ref": "./settings_sub_schema.json" }
+         "settings": {
+            "$ref": "./settings_sub_schema.json"
+         },
+         "id": {
+            "type": "string",
+            "description": "Unique item id. You shouldn't have to touch this field."
+         }
       },
       "required": [
          "name",

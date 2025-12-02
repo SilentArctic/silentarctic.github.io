@@ -44,16 +44,34 @@
          "rows": {
             "type": "array",
             "items": {
-               "type": "object",
-               "properties": {
-                  "subtitle": {
-                     "type": "string"
+               "oneOf": [
+                  {
+                     "type": "object",
+                     "title": "Subtitle",
+                     "properties": {
+                        "subtitle": {
+                           "type": "string"
+                        }
+                     },
+                     "optional": [
+                        "subtitle"
+                     ]
+                  },
+                  {
+                     "type": "object",
+                     "title": "Cell",
+                     "patternProperties": {
+                        "^.*$": {
+                           "type": "string"
+                        }
+                     }
                   }
-               },
-               "optional": [
-                  "subtitle"
                ]
             }
+         },
+         "id": {
+            "type": "string",
+            "description": "Unique item id. You shouldn't have to touch this field."
          }
       },
       "required": [

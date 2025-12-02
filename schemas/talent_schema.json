@@ -16,9 +16,11 @@
          "prerequisites": {
             "oneOf": [
                {
+                  "title": "Yes / No",
                   "type": "boolean"
                },
                {
+                  "title": "Named Prereqs",
                   "type": "array",
                   "items": {
                      "type": "string"
@@ -28,13 +30,8 @@
          },
          "tier": {
             "type": "integer",
-            "enum": [
-               1,
-               2,
-               3,
-               4,
-               5
-            ]
+            "minimum": 1,
+            "maximum": 5
          },
          "activation": {
             "type": "string",
@@ -60,6 +57,10 @@
          },
          "settings": {
             "$ref": "settings_sub_schema.json"
+         },
+         "id": {
+            "type": "string",
+            "description": "Unique item id. You shouldn't have to touch this field."
          }
       },
       "required": [

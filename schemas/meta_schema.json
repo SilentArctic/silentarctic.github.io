@@ -41,21 +41,24 @@
             "authors": {
                "type": "array",
                "items": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "Name of contributing author."
                },
                "description": "List of authors."
             },
             "convertedBy": {
                "type": "array",
                "items": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "Name of converting author."
                },
                "description": "List of people who converted the collection from PDF/etc to GenesysRef JSON format."
             },
             "translatedBy": {
                "type": "array",
                "items": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "Name of translating author."
                },
                "description": "List of people who translated the collection from a different language. Do not use this field if the source material was itself a translation."
             },

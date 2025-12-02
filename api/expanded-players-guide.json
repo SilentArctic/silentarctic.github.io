@@ -7774,7 +7774,118 @@
                "source": "crb"
             }
          ],
-         "talents": [
+         "talents": {
+            "row1": [
+               {
+                  "name": "Let's Ride",
+                  "down": true,
+                  "source": "crb"
+               },
+               {
+                  "name": "Grit",
+                  "down": true,
+                  "source": "crb"
+               },
+               {
+                  "name": "Jump Up",
+                  "down": true,
+                  "source": "crb"
+               },
+               {
+                  "name": "Knack for It",
+                  "down": true,
+                  "source": "crb"
+               }
+            ],
+            "row2": [
+               {
+                  "name": "Daring Aviator",
+                  "down": true,
+                  "source": "crb"
+               },
+               {
+                  "name": "Rapid Reaction",
+                  "right": true,
+                  "source": "crb"
+               },
+               {
+                  "name": "Side Step",
+                  "source": "crb"
+               },
+               {
+                  "name": "Grit",
+                  "down": true,
+                  "source": "crb"
+               }
+            ],
+            "row3": [
+               {
+                  "name": "Full Throttle",
+                  "right": true,
+                  "down": true,
+                  "source": "crb"
+               },
+               {
+                  "name": "Barrel Roll",
+                  "right": true,
+                  "down": true,
+                  "source": "crb"
+               },
+               {
+                  "name": "Daring Aviator",
+                  "right": true,
+                  "down": true,
+                  "source": "crb"
+               },
+               {
+                  "name": "Lucky Strike",
+                  "down": true,
+                  "source": "crb"
+               }
+            ],
+            "row4": [
+               {
+                  "name": "Defensive Driving",
+                  "source": "crb"
+               },
+               {
+                  "name": "Natural",
+                  "down": true,
+                  "source": "crb"
+               },
+               {
+                  "name": "Eagle Eyes",
+                  "right": true,
+                  "source": "crb"
+               },
+               {
+                  "name": "Daring Aviator",
+                  "source": "crb"
+               }
+            ],
+            "row5": [
+               {
+                  "name": "Defensive Driving",
+                  "right": true,
+                  "source": "crb"
+               },
+               {
+                  "name": "Grit",
+                  "right": true,
+                  "source": "crb"
+               },
+               {
+                  "name": "Dedication",
+                  "right": true,
+                  "source": "crb"
+               },
+               {
+                  "name": "Master",
+                  "source": "crb"
+               }
+            ]
+         },
+         "xtalents": [
             [
                {
                   "name": "Let's Ride",

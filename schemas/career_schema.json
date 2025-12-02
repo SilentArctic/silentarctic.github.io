@@ -85,8 +85,8 @@
                      "properties": {
                         "tier": {
                            "type": "integer",
-                           "min": 1,
-                           "max": 5,
+                           "minimum": 1,
+                           "maximum": 5,
                            "description": "Talent tier."
                         },
                         "name": {
@@ -116,6 +116,10 @@
          },
          "settings": {
             "$ref": "./settings_sub_schema.json"
+         },
+         "id": {
+            "type": "string",
+            "description": "Unique item id. You shouldn't have to touch this field."
          }
       },
       "required": [
