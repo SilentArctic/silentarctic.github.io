@@ -1,5 +1,38 @@
 {
    "$id": "https://silentarctic.github.io/schemas/specialization_schema.json",
+   "$defs": {
+      "talentRow": {
+         "type": "array",
+         "minItems": 4,
+         "maxItems": 4,
+         "items": {
+            "type": "object",
+            "properties": {
+               "name": {
+                  "type": "string"
+               },
+               "right": {
+                  "type": "boolean"
+               },
+               "down": {
+                  "type": "boolean"
+               },
+               "source": {
+                  "type": "string"
+               }
+            },
+            "required": [
+               "name"
+            ],
+            "optional": [
+               "right",
+               "down",
+               "source"
+            ],
+            "additionalProperties": false
+         }
+      }
+   },
    "type": "array",
    "items": {
       "type": "object",
@@ -55,11 +88,21 @@
          "talents": {
             "type": "object",
             "properties": {
-               "row1": { "$ref": "specialization_talent_row_sub_schema.json" },
-               "row2": { "$ref": "specialization_talent_row_sub_schema.json" },
-               "row3": { "$ref": "specialization_talent_row_sub_schema.json" },
-               "row4": { "$ref": "specialization_talent_row_sub_schema.json" },
-               "row5": { "$ref": "specialization_talent_row_sub_schema.json" }
+               "row1": {
+                  "$ref": "#/$defs/talentRow"
+               },
+               "row2": {
+                  "$ref": "#/$defs/talentRow"
+               },
+               "row3": {
+                  "$ref": "#/$defs/talentRow"
+               },
+               "row4": {
+                  "$ref": "#/$defs/talentRow"
+               },
+               "row5": {
+                  "$ref": "#/$defs/talentRow"
+               }
             }
          },
          "description": {

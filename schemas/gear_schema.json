@@ -75,7 +75,8 @@
                      "enum": [
                         "characteristic",
                         "skill",
-                        "derived"
+                        "derived",
+                        "own stat"
                      ]
                   },
                   "value": {
@@ -87,8 +88,10 @@
                },
                "required": [
                   "name",
-                  "type",
                   "value"
+               ],
+               "optional": [
+                  "type"
                ],
                "additionalProperties": false
             }
@@ -433,36 +436,13 @@
                         ],
                         "additionalProperties": false
                      }
-                  },
-                  "modifiers": {
-                     "type": "array",
-                     "items": {
-                        "type": "object",
-                        "properties": {
-                           "name": {
-                              "type": "string"
-                           },
-                           "value": {
-                              "type": [
-                                 "string",
-                                 "integer"
-                              ]
-                           }
-                        },
-                        "required": [
-                           "name",
-                           "value"
-                        ],
-                        "additionalProperties": false
-                     }
                   }
                },
                "required": [
                   "hardPoints"
                ],
                "optional": [
-                  "qualities",
-                  "modifiers"
+                  "qualities"
                ]
             }
          }

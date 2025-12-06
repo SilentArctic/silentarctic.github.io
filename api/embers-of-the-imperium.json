@@ -14,7 +14,7 @@
          ],
          "url": "https://www.edge-studio.net/games/embers-of-the-imperium/",
          "releaseDate": "28 April 2023",
-         "version": "2025.1.20"
+         "version": "2025.12.6"
       },
       "defaultItemSettings": [
          {
@@ -12671,7 +12671,7 @@
             ],
             "ranksEach": 1,
             "ranksTotal": 2,
-            "choice": 2,
+            "choice": true,
             "description": [
                "A Human starts with one rank in each of two non-career skills. They obtain this rank before spending experience points, and they may not increase either of those skills above rank 2 during character creation"
             ]
@@ -16639,6 +16639,7 @@
          "modifiers": [
             {
                "name": "encumbrance",
+               "type": "derived",
                "value": 2
             }
          ],
@@ -16744,10 +16745,12 @@
          "modifiers": [
             {
                "name": "encumbrance",
+               "type": "own stat",
                "value": -2
             },
             {
                "name": "damage",
+               "type": "own stat",
                "value": -1
             }
          ],

@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.6.11",
+         "version": "2025.12.7",
          "json": "core-rule-book",
          "full": "Genesys Core Rulebook",
          "abbreviation": "CRB",
@@ -13325,7 +13325,7 @@
          "page": 217,
          "concentration": false,
          "difficulty": "easy",
-         "range": "Enaged",
+         "range": "Engaged",
          "skills": [
             {
                "name": "divine"

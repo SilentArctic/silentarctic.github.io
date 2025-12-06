@@ -35,7 +35,7 @@
                "hasModal": {
                   "type": "boolean"
                },
-               "entries": { "$ref": "#" },
+               "entries": { "$ref": "varyingDisplay_sub_schema.json" },
                "_ref": {
                   "type": "object",
                   "properties": {
@@ -148,7 +148,42 @@
                "items": {
                   "type": "array",
                   "items": {
-                     "type": "string"
+                     "oneOf": [
+                        {
+                           "type": "string"
+                        },
+                        {
+                           "title": "List",
+                           "type": "object",
+                           "properties": {
+                              "type": {
+                                 "type": "string",
+                                 "enum": ["list", "list-no-bullet"]
+                              },
+                              "title": {
+                                 "type": "string"
+                              },
+                              "description": {
+                                 "type": "string"
+                              },
+                              "items": {
+                                 "type": "array",
+                                 "items": {
+                                    "type": "string"
+                                 }
+                              }
+                           },
+                           "required": [
+                              "type",
+                              "items"
+                           ],
+                           "optional": [
+                              "title",
+                              "description"
+                           ],
+                           "additionalProperties": false
+                        }
+                     ]
                   }
                }
             },
@@ -170,6 +205,9 @@
                "type": {
                   "type": "string",
                   "enum": ["table"]
+               },
+               "page": {
+                  "type": "integer"
                },
                "title": {
                   "type": "string"
@@ -263,7 +301,7 @@
                "columns": {
                   "type": "integer"
                },
-               "entries": { "$ref": "#" }
+               "entries": { "$ref": "varyingDisplay_sub_schema.json" }
             },
             "required": [
                "type",

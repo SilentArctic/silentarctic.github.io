@@ -30,6 +30,7 @@
          "range": {
             "type": "string",
             "enum": [
+               "",
                "Self",
                "Engaged",
                "Short",

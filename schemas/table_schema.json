@@ -44,28 +44,15 @@
          "rows": {
             "type": "array",
             "items": {
-               "oneOf": [
-                  {
-                     "type": "object",
-                     "title": "Subtitle",
-                     "properties": {
-                        "subtitle": {
-                           "type": "string"
-                        }
-                     },
-                     "optional": [
-                        "subtitle"
-                     ]
-                  },
-                  {
-                     "type": "object",
-                     "title": "Cell",
-                     "patternProperties": {
-                        "^.*$": {
-                           "type": "string"
-                        }
-                     }
+               "type": "object",
+               "title": "Subtitle",
+               "properties": {
+                  "subtitle": {
+                     "type": "string"
                   }
+               },
+               "optional": [
+                  "subtitle"
                ]
             }
          },

@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.6.11",
+         "version": "2025.12.6",
          "json": "twilight-imperium-mecatol-report",
          "full": "Twilight Imperium: Mecatol Report",
          "abbreviation": "EotI:MR",
@@ -19,7 +19,8 @@
       },
       "defaultItemSettings": [
          {
-            "name": "Twilight Imperium"
+            "name": "Twilight Imperium",
+            "source": "eoti"
          },
          {
             "name": "space opera",

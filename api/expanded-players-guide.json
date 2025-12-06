@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.2.26",
+         "version": "2025.12.6",
          "json": "expanded-players-guide",
          "full": "Expanded Player's Guide",
          "abbreviation": "EPG",
@@ -7885,117 +7885,6 @@
                }
             ]
          },
-         "xtalents": [
-            [
-               {
-                  "name": "Let's Ride",
-                  "down": true,
-                  "source": "crb"
-               },
-               {
-                  "name": "Grit",
-                  "down": true,
-                  "source": "crb"
-               },
-               {
-                  "name": "Jump Up",
-                  "down": true,
-                  "source": "crb"
-               },
-               {
-                  "name": "Knack for It",
-                  "down": true,
-                  "source": "crb"
-               }
-            ],
-            [
-               {
-                  "name": "Daring Aviator",
-                  "down": true,
-                  "source": "crb"
-               },
-               {
-                  "name": "Rapid Reaction",
-                  "right": true,
-                  "source": "crb"
-               },
-               {
-                  "name": "Side Step",
-                  "source": "crb"
-               },
-               {
-                  "name": "Grit",
-                  "down": true,
-                  "source": "crb"
-               }
-            ],
-            [
-               {
-                  "name": "Full Throttle",
-                  "right": true,
-                  "down": true,
-                  "source": "crb"
-               },
-               {
-                  "name": "Barrel Roll",
-                  "right": true,
-                  "down": true,
-                  "source": "crb"
-               },
-               {
-                  "name": "Daring Aviator",
-                  "right": true,
-                  "down": true,
-                  "source": "crb"
-               },
-               {
-                  "name": "Lucky Strike",
-                  "down": true,
-                  "source": "crb"
-               }
-            ],
-            [
-               {
-                  "name": "Defensive Driving",
-                  "source": "crb"
-               },
-               {
-                  "name": "Natural",
-                  "down": true,
-                  "source": "crb"
-               },
-               {
-                  "name": "Eagle Eyes",
-                  "right": true,
-                  "source": "crb"
-               },
-               {
-                  "name": "Daring Aviator",
-                  "source": "crb"
-               }
-            ],
-            [
-               {
-                  "name": "Defensive Driving",
-                  "right": true,
-                  "source": "crb"
-               },
-               {
-                  "name": "Grit",
-                  "right": true,
-                  "source": "crb"
-               },
-               {
-                  "name": "Dedication",
-                  "right": true,
-                  "source": "crb"
-               },
-               {
-                  "name": "Master",
-                  "source": "crb"
-               }
-            ]
-         ],
          "description": [
             "This specialization tree is suitable for steampunk, weird war, modern day, science fiction, and space opera settings, and should be linked to the Fighter Pilot career. The left side of the tree tends to focus on piloting ability and keeping a vehicle intact. The right side is more geared towards taking down enemy vehicles. The isolated middle section of the top two rows reflects that daredevil pilots tend to be dodgy, fast, and have good reflexes, even it doesn't directly help their piloting ability. Appropriately, there are three ranks of Daring Aviator. However, there is no straight line path from Row 1 to Row 5, so all talents on the fifth row ultimately cost a little bit more to achieve than they otherwise might. Dedication and Master are particularly difficult and expensive to purchase. This reflects that the character values risk above mastery and expertise, and has to dedicate themselves to achieve mastery."
          ]

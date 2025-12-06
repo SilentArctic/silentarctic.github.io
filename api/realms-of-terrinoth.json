@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.6.11",
+         "version": "2025.12.6",
          "json": "realms-of-terrinoth",
          "full": "Realms of Terrinoth",
          "abbreviation": "RoT",
@@ -13906,7 +13906,7 @@
          "name": "Lodgings",
          "page": 105,
          "type": "service",
-         "desription": [
+         "description": [
             "Only the very desperate press on once darkness falls, and for most the setting sun brings thoughts of where to rest for the night. Travelers can find such lodgings even in the Borderlands, ranging from proper establishments to tavern rooms to rough tents behind a building. Stables for riding beasts are an assumed part of the deal unless unusual or dangerous animals are involved.",
             {
                "type": "table",
@@ -14271,6 +14271,10 @@
             "Your character wants to fortify their allies in battle with an inspiring song.",
             "Your character wants to demoralize their foe with a scathing limerick, to the point that it physically hampers their abilities.",
             "Your character wants to counteract the baleful spells of a necromancer with a rousing speech."
+         ],
+         "shouldNotUse": [
+            "Your character wants to sing an ordinary song. That would use {@skill Charm||crb}.",
+            "Your character wants to throw a fireball or otherwise physically damage the foe. That would require a differ ent magic skill, such as {@skill Arcana||crb}."
          ],
          "spells": [
             {
