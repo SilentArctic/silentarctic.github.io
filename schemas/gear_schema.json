@@ -82,7 +82,7 @@
                   "type": "boolean"
                },
                "rarity": {
-                  "type": "integer"
+                  "type": ["integer", "null"]
                },
                "special": {
                   "type": "array",
@@ -183,12 +183,7 @@
                "imageUrl": {
                   "type": "string"
                },
-               "description": {
-                  "type": "array",
-                  "items": {
-                     "type": "string"
-                  }
-               },
+               "description": { "$ref": "./varyingDisplay_sub_schema.json" },
                "defense": {
                   "type": "integer"
                },
@@ -463,12 +458,7 @@
                "imageUrl": {
                   "type": "string"
                },
-               "description": {
-                  "type": "array",
-                  "items": {
-                     "type": "string"
-                  }
-               },
+               "description": { "$ref": "./varyingDisplay_sub_schema.json" },
                "damage": {
                   "type": "string"
                },
@@ -487,7 +477,7 @@
                   ]
                },
                "rarity": {
-                  "type": "integer"
+                  "type": ["integer", "null"]
                },
                "special": {
                   "type": "array",

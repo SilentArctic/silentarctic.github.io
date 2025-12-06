@@ -209,49 +209,21 @@
             "abilities": {
                "type": "array",
                "items": {
-                  "type": "object",
-                  "properties": {
-                     "name": {
-                        "type": "string"
-                     },
-                     "description": {
-                        "type": "array",
-                        "items": {
-                           "oneOf": [
-                              {
+                  "oneOf": [
+                     { "type": "string" },
+
+                     {
+                        "type": "object",
+                        "properties": {
+                           "description": {
+                              "type": "array",
+                              "items": {
                                  "type": "string"
-                              },
-                              {
-                                 "type": "object",
-                                 "properties": {
-                                    "type": {
-                                       "type": "string",
-                                       "enum": ["list", "list-no-bullet"]
-                                    },
-                                    "items": {
-                                       "type": "array",
-                                       "items": {
-                                          "type": "string"
-                                       }
-                                    }
-                                 },
-                                 "required": [
-                                    "type",
-                                    "items"
-                                 ],
-                                 "additionalProperties": false
                               }
-                           ]
+                           }
                         }
                      }
-                  },
-                  "required": [
-                     "description"
-                  ],
-                  "optional": [
-                     "name"
-                  ],
-                  "additionalProperties": false
+                  ]
                }
             },
             "description": {

@@ -1,5 +1,5 @@
 {
-   "$schema": "../../schemas/schema.json",
+   "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
          "json": "book-of-online-sourced-triumphs-1-mutation",
@@ -7,7 +7,7 @@
          "abbreviation": "BOOST:1",
          "color": "#30F030",
          "url": "https://www.drivethrurpg.com/product/314884/BOOST-1-Mutation/",
-         "version": "2023.5.27",
+         "version": "2025.1.20",
          "authors": [
             "Genesys RPG Community",
             "Flame112",
@@ -70,17 +70,14 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
-            {
-               "name": "Aquatic",
-               "description": "This adversary may breath underwater and never suffers movement penalties for traveling through water."
-            },
-            {
-               "name": "Blood Frenzy",
-               "description": "While at least one opponent in an encounter is suffering a Critical Injury, this adversary increases the base damage of its attacks by 2."
-            }
+            "Aquatic",
+            "Blood Frenzy"
          ],
          "weapons": [
             {
@@ -168,22 +165,13 @@
          "talents": [
             {
                "name": "Lucky Strike",
-               "description": " Brawn"
+               "source": "crb"
             }
          ],
          "abilities": [
-            {
-               "name": "Terrifying",
-               "description": "At the start of the encounter, all of its opponents must make a {@difficulty hard|fear} as an out-of-turn incidental, as per page 243 of the {@title Genesys} Core Rulebook. If there are multiple sources of fear in the encounter, the opponents only make one fear check against the most terrifying enemy."
-            },
-            {
-               "name": "Sticky",
-               "description": "When wound threshold exceeded, they explode, throwing their sticky vegetables innards on to all characters that are engaged. Any non-giant vegetable characters are immobilized for one round."
-            },
-            {
-               "name": "Attack of Opportunity",
-               "description": "Add {@dice boost|2} to combat check against immobilized targets"
-            }
+            "Terrifying 3",
+            "Sticky",
+            "Attack of Opportunity"
          ],
          "weapons": [
             {
@@ -284,17 +272,14 @@
             }
          ],
          "talents": [
-            "Adversary 2"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            }
          ],
          "abilities": [
-            {
-               "name": "Claw Sweep",
-               "description": "May spend {@symbols a} from a Brawl check to hit an additional engaged opponent that would be no more difficult to attack than the original target, dealing base damage +1 damage per {@symbols s}."
-            },
-            {
-               "name": "Clawmander",
-               "description": "May spend a maneuver to direct all allied characters in the current encounter; each may immediately perform a free maneuver or add {@symbols s} to the results of their next check."
-            }
+            "Claw Sweep",
+            "Clawmander"
          ],
          "weapons": [
             {
@@ -326,6 +311,43 @@
          ]
       }
    ],
+   "adversaryAbility": [
+      {
+         "name": "Attack of Opportunity",
+         "description": [
+            "Add {@dice boost|2} to combat check against {@rule immobilized||crb} targets."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Clawmander",
+         "description": [
+            "May spend a maneuver to direct all allied characters in the current encounter; each may immediately perform a free maneuver or add {@symbols s} to the results of their next check."
+         ],
+         "tags": [
+            "active",
+            "maneuver",
+            "leader",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Sticky",
+         "description": [
+            "When this character's wound threshold is exceeded, they explode, throwing their sticky vegetable innards on to all characters that are engaged. Any non-giant vegetable characters are {@rule immobilized||crb} for one round."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "defensive",
+            "status effect"
+         ]
+      }
+   ],
    "archetype": [
       {
          "name": "Super Mutant",
@@ -354,26 +376,34 @@
             "choice": true
          },
          "abilities": [
-            {
-               "name": "Super Mutations",
-               "description": [
-                  "A Super Mutant may spend a maneuver to choose one of the following mutations. This character gains the benefit of that mutation until they take a maneuver to choose a different mutation or until they exceed their Strain threshold. Each time this character uses this maneuver, they reduce their strain threshold by 1 until the end of the current encounter (Or until the end of the next encounter if they use this maneuver outside of structured gameplay).",
-                  {
-                     "type": "list",
-                     "items": [
-                        "{@b Wings:} Your Super Mutant character can fly. See page 100 of the {@title Genesys} Core Rulebook for details on flying",
-                        "{@b Amphibious:} Your Super Mutant character can breathe underwater and move through water without penalty.",
-                        "{@b Scaly Hide:} Increase your Super Mutant character's soak by +1.",
-                        "{@b Natural Weapons:} Your Super Mutant character's unarmed attacks have their damage increased by +2 and have a Critical rating of 3.",
-                        "{@b Pheremones:} The Super Mutant adds {@dice boost} to all Social checks they make against characters The Super Mutant adds {@dice boost} to all Social checks they make against characters within short range. Additionally, a character within short range adds {@dice setback} to all Social checks that target the Super Mutant."
-                     ]
-                  }
-               ]
-            }
+            "Super Mutations"
          ],
          "description": [
             "A Super Mutant is a person that has undergone an extreme and particular form of mutation, changing their genetic make-up. While they usually appear like a normal person, they have the ability to mutate different parts of their body. This includes instantaneously growing gills, wings, claws, scales or even manipulating their body chemistry. But these mutations are limited, only able to manifest one at a time. And they take a toll on the Super Mutant, sapping them of strength with each mutation.",
             "{@b Author:} Caleb \"Cptn_Smitty\" Smith"
+         ]
+      }
+   ],
+   "archetypeAbility": [
+      {
+         "name": "Super Mutations",
+         "description": [
+            "A Super Mutant may spend a maneuver to choose one of the following mutations. This character gains the benefit of that mutation until they take a maneuver to choose a different mutation or until they exceed their Strain threshold. Each time this character uses this maneuver, they reduce their strain threshold by 1 until the end of the current encounter (Or until the end of the next encounter if they use this maneuver outside of structured gameplay).",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Wings:} Your Super Mutant character can fly. See page 100 of the {@title Genesys} Core Rulebook for details on flying",
+                  "{@b Amphibious:} Your Super Mutant character can breathe underwater and move through water without penalty.",
+                  "{@b Scaly Hide:} Increase your Super Mutant character's soak by +1.",
+                  "{@b Natural Weapons:} Your Super Mutant character's unarmed attacks have their damage increased by +2 and have a Critical rating of 3.",
+                  "{@b Pheremones:} The Super Mutant adds {@dice boost} to all Social checks they make against characters The Super Mutant adds {@dice boost} to all Social checks they make against characters within short range. Additionally, a character within short range adds {@dice setback} to all Social checks that target the Super Mutant."
+               ]
+            }
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "character creation modifier"
          ]
       }
    ],

@@ -1,0 +1,27 @@
+{
+   "$id": "https://silentarctic.github.io/schemas/ability_schema.json",
+   "type": "array",
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string",
+            "description": "Ability name."
+         },
+         "description": {
+            "$ref": "varyingDisplay_sub_schema.json",
+            "description": "Ability details"
+         },
+         "tags": {
+            "$ref": "item_tags_sub_schema.json",
+            "description": "Applicable tags for filtering."
+         }
+      },
+      "required": [
+         "name",
+         "description",
+         "tags"
+      ],
+      "additionalProperties": false
+   }
+}

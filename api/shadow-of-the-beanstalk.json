@@ -1,13 +1,13 @@
 {
-   "$schema": "../schemas/schema.json",
+   "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
+         "version": "2025.6.3",
          "json": "shadow-of-the-beanstalk",
          "full": "Android: Shadow of the Beanstalk",
          "abbreviation": "SotB",
          "color": "#40B3B5",
          "url": "https://www.fantasyflightgames.com/en/products/genesys/products/shadow-beanstalk/",
-         "version": "2024.2.13",
          "authors": [
             "Fantasy Flight Games"
          ],
@@ -47,6 +47,7 @@
    "adversary": [
       {
          "name": "Adam Industrial Labor Bioroid",
+         "page": 236,
          "type": "minion",
          "characteristics": {
             "brawn": 4,
@@ -82,6 +83,9 @@
          ],
          "weapons": [],
          "gear": [],
+         "description": [
+            "The Adam line was the first large-market bioroid success. Adam units perform hard physical labor with the kind of strength, speed, and precision only a machine can achieve. While Jinteki's Henry-model clones have begun to bite into the Adam market, Adams are still commonplace in Quinde factories and on construction sites across New Angeles."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -102,6 +106,7 @@
       },
       {
          "name": "Adonis and Eve Pleasure Bioroid",
+         "page": 236,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -160,7 +165,7 @@
          "talents": [
             {
                "name": "Natural",
-               "description": "Once per session, may reroll any one Charm or Cool check"
+               "source": "crb"
             }
          ],
          "abilities": [
@@ -169,6 +174,9 @@
          "weapons": [],
          "gear": [
             "Fuzzy restraints"
+         ],
+         "description": [
+            "Pleasure bioroids are an attempt by Haas-Bioroid to move their products into the entertainment markets. Unlike most bioroids, Adonis, Eve, and to a certain extent, the cheaper Kevin- and Lisa-models, are built to appear as human as possible. Many nightclubs and other high-end social spaces employ luxury-model Adonis or Eve units to “entertain” their customers, while in seedier areas of New Angeles, pleasure bioroids sate humanity's basest instincts."
          ],
          "tags": [
             "source:SotB",
@@ -190,6 +198,7 @@
       },
       {
          "name": "Anarch Troublemaker",
+         "page": 237,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -252,13 +261,13 @@
             }
          ],
          "talents": [
-            "Distinctive Style"
+            {
+               "name": "Distinctive Style",
+               "source": "crb"
+            }
          ],
          "abilities": [
-            {
-               "name": "Burn It Down",
-               "description": "This character adds {@symbols aa} to the results of checks they make targeting authority figures."
-            }
+            "Burn It Down"
          ],
          "weapons": [
             {
@@ -309,6 +318,9 @@
          "gear": [
             "Skulljack, Portable Terminal with Crypsis (SotB p. 137)-protected by Hadrian's Wall (SotB p. 133)"
          ],
+         "description": [
+            "Not everyone believes in following the rules or being part of society. Anarchs take this a step further, hoping to get the rest of the worlds to join in on the chaos. They expose the rich and powerful, working to show everyone else how powerless they really are and how none of their rules matter. Anarchs are known for large-scale pranks, like hacking major broadcasts to transmit obviously forged images of officials committing sexually explicit acts, and the like."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -329,9 +341,11 @@
       },
       {
          "name": "Ares Combat Bioroid",
+         "page": 239,
          "type": "nemesis",
          "description": [
-            "Choose either the Integrated Rotary Cannon or the Integrated Heavy Gauss Rifle"
+            "Ares is a secret Haas-Bioroid project designed to test the viability of combat bioroids (as well as a flagrant violation of international law). Almost equal to an infantry platoon, the Ares is effectively immune to small-arms fire and is also flame, radiation, and blast resistant. It has integrated 360-degree radar, infrared, and low-light sensors that constantly monitor the battlefield, and it has a variety of integrated threat-response options. Overpowered servos allow units to carry the heaviest anti-personnel and anti-armor weaponry, often Gauss rifles, missile launchers, or heavy machine guns.",
+            "Choose either the Integrated Rotary Cannon or the Integrated Heavy Gauss Rifle."
          ],
          "characteristics": {
             "brawn": 5,
@@ -395,15 +409,18 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "Grenadier"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
+            {
+               "name": "Grenadier",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Mechanical",
-            {
-               "name": "Enhanced Auto-Bracing",
-               "description": "Using the Auto-fire quality does not increase the difficulty of combat checks; each time the Ares triggers and additional hit, it suffers 1 strain."
-            }
+            "Enhanced Auto-Bracing"
          ],
          "weapons": [
             {
@@ -517,6 +534,7 @@
       },
       {
          "name": "Assistant District Attorney",
+         "page": 228,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -585,17 +603,17 @@
             }
          ],
          "talents": [
-            "Adversary 1",
+            {
+               "name": "Adversary 1",
+               "source": "Crb"
+            },
             {
                "name": "Natural",
-               "description": "Once per session, may reroll any one Coercion or Negotiation check"
+               "source": "crb"
             }
          ],
          "abilities": [
-            {
-               "name": "Full Weight of the Law",
-               "description": "When making a Coercion check to inflict strain during a social encounter, inflict 2 additional strain."
-            }
+            "Full Weight of the Law"
          ],
          "weapons": [
             {
@@ -623,6 +641,9 @@
          "gear": [
             "Legal PAD, expensive suit"
          ],
+         "description": [
+            "When the NAPD makes an arrest, district attorneys keep the criminals behind bars as long as possible. DAs are public figures who have made long lists of enemies, and they often find themselves on various orgcrime hit lists. DAs don't last long unless they accept NAPD protection, invest heavily in self-defense training, or succumb to corruption."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -643,6 +664,7 @@
       },
       {
          "name": "Camdrone",
+         "page": 233,
          "type": "minion",
          "characteristics": {
             "brawn": 1,
@@ -674,10 +696,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Early Warning",
-               "description": "Adds {@dice boost} to its operator's checks to {@rule determine Initiative||crb}."
-            },
+            "Early Warning",
             "Flyer",
             "Construct",
             "Silhouette 0",
@@ -685,6 +704,9 @@
          ],
          "weapons": [],
          "gear": [],
+         "description": [
+            "Most camdrones are simple disks built around one or more electromagnetic hoverfoil rotors and studded with cameras. Everyone from the NAPD and the military to private citizens uses drones for reconnaissance and entertainment."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -780,16 +802,16 @@
             }
          ],
          "talents": [
-            "Adversary 2",
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
             "Probing Question"
          ],
          "abilities": [
             "Apparent Precognition",
             "Psychic",
-            {
-               "name": "Nisei Line",
-               "description": "As an action, may make a :hard: Discipline check targeting one character within medium range. If successful, this character learns the target's Strength, Flaw, Fear, and Desire motivations and all current goals (in addition to other information at the GM's discretion)."
-            }
+            "Nisei Line"
          ],
          "weapons": [
             {
@@ -842,6 +864,7 @@
       },
       {
          "name": "Civic Brigadier",
+         "page": 218,
          "type": "minion",
          "characteristics": {
             "brawn": 3,
@@ -872,8 +895,7 @@
             },
             {
                "name": "Knowledge (Society)",
-               "characteristic": "intellect",
-               "source": "crb"
+               "characteristic": "intellect"
             },
             {
                "name": "Mechanics",
@@ -888,10 +910,10 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Community Volunteer",
-               "description": "May use Knowledge (Society) instead of Charm, Coercion, Or negotiation during social interactions with undercity residents."
-            }
+            "Community Volunteer"
+         ],
+         "description": [
+            "While the citizens of New Angeles live in a corporate-run world dominated by pursuit of profit, some still seek to improve life for the downtrodden. Civic brigadiers join volunteer organizations to install and maintain essential services, such as water and power, in the undercity or to build greenspaces, schools, and community centers."
          ],
          "weapons": [
             {
@@ -936,6 +958,7 @@
       },
       {
          "name": "Club Owner",
+         "page": 219,
          "type": "nemesis",
          "characteristics": {
             "brawn": 2,
@@ -999,14 +1022,17 @@
             }
          ],
          "talents": [
-            "Clever Retort",
-            "Customer Service"
+            {
+               "name": "Clever Retort",
+               "source": "crb"
+            },
+            "Customer Service Experience"
          ],
          "abilities": [
-            {
-               "name": "Threat of Ban",
-               "description": "While in club owner's establishment, may spend {@symbols h} from checks targeting club owner to have character making the check suffer 2 strain instead of 1"
-            }
+            "Threat of Ban"
+         ],
+         "description": [
+            "At and just below the plaza level, nightclubs, bars, and {@i discotecas} are where a lot of secret meetings and clandestine business dealings occur. This makes many club owners de facto power players in the undercity, whether they directly involve themselves in these illegal goings-on or not."
          ],
          "weapons": [
             {
@@ -1053,7 +1079,8 @@
          ]
       },
       {
-         "name": "Combat Drone (SotB)",
+         "name": "Combat Drone",
+         "page": 233,
          "type": "minion",
          "characteristics": {
             "brawn": 1,
@@ -1086,10 +1113,7 @@
          "talents": [],
          "abilities": [
             "Flyer",
-            {
-               "name": "Focus Fire",
-               "description": "When making a combat check, add {@symbols a} to the results for every other character in the minion group."
-            },
+            "Focus Fire",
             "Construct",
             "Silhouette 0",
             "Telepresence"
@@ -1114,6 +1138,9 @@
             }
          ],
          "gear": [],
+         "description": [
+            "Combat drones usually deploy defensively to watch an infantry unit's flanks or forward as scouts. Though not well armed or armored, they are agile and more disposable than a human soldier, and in groups they can be lethal."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -1134,6 +1161,7 @@
       },
       {
          "name": "Corporate Bioroids",
+         "page": 236,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -1192,14 +1220,14 @@
          "talents": [],
          "abilities": [
             "Bioroid",
-            {
-               "name": "Office Drone",
-               "description": "When this character makes a social skill check, they add {@symbols ah} to the result."
-            }
+            "Office Drone"
          ],
          "weapons": [],
          "gear": [
             "Corporate PAD"
+         ],
+         "description": [
+            "Designed for basic corporate and office work, corporate bioroids handle many customer-service, customer-support, and first-tier sales calls, as well as jobs juggling data work and preparing reports. Unfortunately, when early adopters tried to flood departments with the initial \"Janice\" line, employees and customers found them unsettling in their sameness. The Janice line now has a number of related models, including Brad finance units, Sally overseers, and Greg customer-service units. What HB neglects to mention is all of these units are just Janice bioroids with cosmetic differences."
          ],
          "tags": [
             "source:SotB",
@@ -1221,6 +1249,7 @@
       },
       {
          "name": "Corporate Manager",
+         "page": 224,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -1290,6 +1319,9 @@
          "gear": [
             "Smartsuit, PAD"
          ],
+         "description": [
+            "Corporate mission statements and ideologies vary from corporation to corporation, and it is the job of the middle manager to ensure the prevailing corporate philosophy trickles down to the workers and androids within their purview. Many middle managers worship upper management and executives with an almost religious reverence in their struggle to get ahead, which sometimes makes them oblivious to simple realities obvious to those underneath them. Thus, their personal attention on an underling's project can often be as hurtful as it is helpful."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -1310,6 +1342,7 @@
       },
       {
          "name": "Corporate Sysop",
+         "page": 225,
          "type": "rival",
          "characteristics": {
             "brawn": 1,
@@ -1361,14 +1394,14 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Reinforce",
-               "description": "As a maneuver, may increase the strength of one active piece of ice by 1 until the end of the corporate sysop's next turn."
-            }
+            "Reinforce"
          ],
          "weapons": [],
          "gear": [
             "PAD, corporate ID, snacks"
+         ],
+         "description": [
+            "To protect themselves from all manner of Netcrime, corporations hire sysops (system operators) to oversee and maintain their security programs. Most sysops can react to an intrusion and work to lock out a runner, while the best sysops can track the intrusion back to its source and initiate some sort of retaliation."
          ],
          "tags": [
             "source:SotB",
@@ -1390,6 +1423,7 @@
       },
       {
          "name": "Criminal Runner",
+         "page": 221,
          "type": "nemesis",
          "characteristics": {
             "brawn": 2,
@@ -1465,14 +1499,17 @@
             }
          ],
          "talents": [
-            "Adversary 1",
-            "Distinctive Style"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
+            {
+               "name": "Distinctive Style",
+               "source": "crb"
+            }
          ],
          "abilities": [
-            {
-               "name": "Direct Access",
-               "description": "When jacking in from within the same building as the target server, automatically succeeds when making an access system check."
-            }
+            "Direct Access"
          ],
          "weapons": [
             {
@@ -1496,6 +1533,9 @@
             "Skulljack, fake IDs.",
             "Portable Rig with Femme Fatale (SotB p. 137) and Corroder (SotB p. 136)-protected by Shinobi (SotB p. 135)"
          ],
+         "description": [
+            "Criminal runners come in all types: some are cocky upstarts taking on jobs out of their league, while others are cold professionals saving up for retirement. But for each of them, at the end of the day it's all about the paycheck."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -1516,6 +1556,7 @@
       },
       {
          "name": "Cyberdog",
+         "page": 226,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -1561,15 +1602,9 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Cybereyes",
-               "description": "May see in infrared and may remove up to {@dice setback|2} added to this character's check due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness|crb}."
-            },
+            "Cybereyes",
             "Silhouette 0",
-            {
-               "name": "Takedown",
-               "description": "As an action, may make an :average: Athletics check targeting one engaged opponent; if successful, target is knocked prone, suffers 4 strain, and may not stand from prone during their next turn."
-            }
+            "Takedown"
          ],
          "weapons": [
             {
@@ -1591,6 +1626,9 @@
             }
          ],
          "gear": [],
+         "description": [
+            "As more and more people have modified themselves with cybernetics, they have taken to enhancing their best friends as well. Dogs can receive cybernetics once they're fully grown, and most breeds adapt to them surprisingly well."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -1611,6 +1649,7 @@
       },
       {
          "name": "Cybermod Bounty Hunter",
+         "page": 230,
          "type": "nemesis",
          "characteristics": {
             "brawn": 3,
@@ -1692,8 +1731,14 @@
             }
          ],
          "talents": [
-            "Adversary 1",
-            "Hamstring Shot"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
+            {
+               "name": "Hamstring Shot",
+               "source": "crb"
+            }
          ],
          "abilities": [],
          "weapons": [
@@ -1743,6 +1788,9 @@
             "Concealed Buckyweave Clothing: 1 defense, +1 soak.",
             "Sub-dermal armor, enhanced reflexes, cybernetic lungs, 2 snap locks, PAD full of warrants"
          ],
+         "description": [
+            "The NAPD has one of the largest urban jurisdictions in the worlds, and it is hopelessly unable to field enough officers to cover it. Bounty hunters pick up the slack, serving summonses and warrants and taking fugitives off the streets, especially in the undercity. Relentless trackers and fierce combatants, bounty hunters tend to favor concealed or cybernetic armaments that allow them to approach their targets without alerting them."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -1762,7 +1810,82 @@
          ]
       },
       {
+         "name": "Desai Tutor Clone",
+         "page": 235,
+         "type": "nemesis",
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 4,
+            "cunning": 2,
+            "willpower": 3,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 12,
+            "strain": 16,
+            "defense": [0, 0]
+         },
+         "skills": [
+            {
+               "name": "Charm",
+               "characteristic": "presence",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Coordination",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Knowledge (Science)",
+               "characteristic": "intellect",
+               "ranks": 3
+            },
+            {
+               "name": "Knowledge (Society)",
+               "characteristic": "intellect",
+               "ranks": 3
+            },
+            {
+               "name": "Leadership",
+               "characteristic": "presence",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Medicine",
+               "characteristic": "intellect",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            "Adversary 1"
+         ],
+         "abilities": [
+            "Expert Instruction"
+         ],
+         "gear": [
+            "Bonsai tree",
+            "Instructor's holodisplay with full suite of lessons"
+         ],
+         "description": [
+            "The Desai line of tutor clones are high-end models designed for the children of the ultrawealthy. Desais are capable of teaching almost anything, from conceptual mathematics to late-twentieth-century literature, and from biology to Tai Chi. Their calm, authoritative demeanor means most parents feel comfortable leaving their kids in these clones' care. However, Jinteki has found that their powerful intellect has resulted in a higher number of Desais \"going rogue.\""
+         ]
+      },
+      {
          "name": "Diesel Bro",
+         "page": 219,
          "type": "minion",
          "characteristics": {
             "brawn": 3,
@@ -1803,9 +1926,15 @@
             }
          ],
          "talents": [
-            "Berserk"
+            {
+               "name": "Berserk",
+               "source": "crb"
+            }
          ],
          "abilities": [],
+         "description": [
+            "A segment of youth culture in New Angeles is preoccupied with sports and adrenaline. Generally male, the \"diesel bro\" is obsessed with \"traditional\" displays of machismo. This includes a great deal of high-risk and sometimes violent behavior. Rarely career criminals or streetbangers, most diesel bros are just angry kids hopped up on way too much energy drink. Still, violence often erupts after a mob of bros runs into someone wearing the wrong team colors."
+         ],
          "weapons": [
             {
                "name": "Baseball bat",
@@ -1848,6 +1977,7 @@
       },
       {
          "name": "Disenfrancisto",
+         "page": 219,
          "type": "minion",
          "characteristics": {
             "brawn": 2,
@@ -1909,6 +2039,9 @@
          "gear": [
             "Backpack of personal goods"
          ],
+         "description": [
+            "{@i Disenfrancistos} live off the grid in New Angeles' undercity, and are everyone from homeless panhandlers to those who choose to live a life away from the corporate controlled world that exists above plaza level. Many {@i disenfrancistos} tend to get by on odd jobs, scavenge the undercity for valuable finds, and sleep in disused transit tunnels, clone barracks, bioroid warehouses, and other squats."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -1929,6 +2062,7 @@
       },
       {
          "name": "Disenfrancisto Survivalist",
+         "page": 220,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -2039,6 +2173,9 @@
          "gear": [
             "Backpack full of supplies, medical kit, rope, flashlight"
          ],
+         "description": [
+            "While many live off the grid in poor conditions, others choose the life. Convinced that all mainstream media is a scam to encourage citizens to be \"good little consumers,\" the off-gridder {@i disenfrancisto} believes that only they understand how to live free. They have almost no Net presence, living throughout the undercity and in unique independent communities like Manta's Sunken City."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -2059,6 +2196,7 @@
       },
       {
          "name": "EMS First Responder",
+         "page": 228,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -2143,6 +2281,9 @@
          "gear": [
             "Medkit, medical scanner PAD, 2 slap-patches"
          ],
+         "description": [
+            "First responders typically work for the city or for a private hospital, operating out of medevac hoppers to transport the ill and injured to better facilities while providing on-scene or in-transit emergency medical care. Responding to emergencies in the undercity can be difficult and even dangerous work, due to both the natural hazards of crumbling buildings and deteriorating bridges and the risk of violence from gangs and locals. Many EMS techs carry Gandhi guns so that they can protect themselves without killing anyone."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -2163,6 +2304,7 @@
       },
       {
          "name": "EWS Raider",
+         "page": 230,
          "type": "nemesis",
          "characteristics": {
             "brawn": 3,
@@ -2238,14 +2380,14 @@
             }
          ],
          "talents": [
-            "Adversary 2",
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
             "Drone Master"
          ],
          "abilities": [
-            {
-               "name": "Pit Trap Programs",
-               "description": "May make an opposed Computers (Hacking) versus Computers (Sysops) check targeting another user on a system; if successful, that user is staggered for one round per {@symbols s}."
-            }
+            "Pit Trap Programs"
          ],
          "weapons": [
             {
@@ -2276,6 +2418,9 @@
             "Up to four drones of various types",
             "Encrypted suit rig with BMI with Corroder (SotB p. 136) and Crypsis (SotB p 137)-protected by Archer (SotB p. 134) and Ice Wall (SotB p. 134)"
          ],
+         "description": [
+            "The Electronic Warfare Service is the United States' cyber warfare division, and the Raiders are elite operatives who embed on the front lines to provide drone air support and Network security, degrade enemy networks, and generally dominate the cyber battlefield. Raiders are some of the most dangerous militarized computer operatives around, and a veteran of the EWS has no problem finding work in the world of corporate espionage."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -2296,6 +2441,7 @@
       },
       {
          "name": "Field Anchor",
+         "page": 225,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -2352,7 +2498,10 @@
             }
          ],
          "talents": [
-            "Clever Retort"
+            {
+               "name": "Clever Retort",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Leading Question"
@@ -2361,6 +2510,9 @@
          "gear": [
             "Light 'Bulletproof' Undervest: +1 soak",
             "Camdrone, PAD, satellite uplink system, cheap and stain-resistant suit"
+         ],
+         "description": [
+            "A majority of New Angelinos get their news from anchors working for one of NBN's programming lineups. NBN field anchors embed with the NAPD during undercity sweeps, stand on Manta Beach during hurricane threats, and report from virtually any location that might have even a tangential connection to a story in an effort to give viewers a sense of conditions on the ground. The older and wiser ones simulate doing all these things via digital manipulation, trusting that most viewers can't tell the difference."
          ],
          "tags": [
             "source:SotB",
@@ -2451,15 +2603,15 @@
             }
          ],
          "talents": [
-            "Adversary 2",
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
             "Good Cop 2"
          ],
          "abilities": [
             "Bioroid",
-            {
-               "name": "Non-Lethal Apprehension",
-               "description": "Only needs to spend {@symbols a} to trigger Disorient, Knockdown, and Stun qualities."
-            }
+            "Non-Lethal Apprehension"
          ],
          "weapons": [
             {
@@ -2512,6 +2664,7 @@
       },
       {
          "name": "G-Mod Bodyguard",
+         "page": 231,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -2571,10 +2724,7 @@
             "Body Guard 1"
          ],
          "abilities": [
-            {
-               "name": "Enhanced Strength",
-               "description": "May suffer 1 strain to add {@symbols s} to Athletics or Brawl checks."
-            }
+            "Enhanced Strength"
          ],
          "weapons": [
             {
@@ -2626,6 +2776,9 @@
             "Sunglasses with HUD",
             "1 slap-patch"
          ],
+         "description": [
+            "The wealthy often retain a security detail, which is as much a status symbol as anything. They may request that their bodyguards dress in classy outfits, and even coordinate their appearance. G-modded bodyguards are the elite members of the private security world; they are strong and fast, but they also tend to look good and really fill out their subtly armored designer suits. Prisec corporations often keep them on retainer for their most valued (and wealthiest) clientele"
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -2646,6 +2799,7 @@
       },
       {
          "name": "G-Modstrocity",
+         "page": 227,
          "type": "nemesis",
          "characteristics": {
             "brawn": 5,
@@ -2679,14 +2833,17 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "Indomitable"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
+            {
+               "name": "Indomitable",
+               "source": "crb"
+            }
          ],
          "abilities": [
-            {
-               "name": "Bone-Chilling Roar",
-               "description": "Once per encounter, may suffer 3 strain and spend a maneuver to force all other character within long range (or within earshot) to make a :daunting: Discipline check as an out-of-turn incidental. If they fail, they must use their maneuver to move farther away; if they fail with {@symbols h}, they must also downgrade their action to an additional maneuver to move even farther away. If you're using the fear rules found on page 243 of the Genesys Core Rulebook, this can be a fear check instead."
-            }
+            "Bone-Chilling Roar"
          ],
          "weapons": [
             {
@@ -2712,6 +2869,9 @@
             }
          ],
          "gear": [],
+         "description": [
+            "The citizens of BosWash like to brag about their giant mutant crocodiles in the sewers, but in truth, every major metropolis has its share of monstrous creatures. So-called \"g-modstrocities\" likely started out as a lab experiment gone terribly wrong. Now a potent blend of dozens of genomes, they roam the depths of the undercity, avoiding Animal Control sweeps and preying on anyone unlucky enough to get in their way."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -2732,6 +2892,7 @@
       },
       {
          "name": "Hellion",
+         "page": 240,
          "type": "rival",
          "characteristics": {
             "brawn": 1,
@@ -2790,14 +2951,8 @@
          "talents": [],
          "abilities": [
             "Construct",
-            {
-               "name": "Impressively Flexible",
-               "description": "May spend a Story Point to gain access to a formerly secure room or other location through a previously unnoticed vent shaft, slightly open window, or similar entry point."
-            },
-            {
-               "name": "Catlike",
-               "description": "May make a maneuver to move normally up and down vertical surfaces, across ropes, and over otherwise impassable structures."
-            },
+            "Impressively Flexible",
+            "Catlike",
             "Silhouette 0"
          ],
          "weapons": [
@@ -2824,6 +2979,9 @@
             }
          ],
          "gear": [],
+         "description": [
+            "While there is no official proof that hellions exist, they are an open secret among some circles of Netcriminals. No one is certain if these small, cat-shaped robotic constructs are drones. However, some {@i disenfrancistos} have claimed to see hellions chasing hyperrats or spending hours batting at holographic signs, which suggests an autonomous (and animalistic) operating system. Other criminals have come back to supposedly safe crash pads to find their gear and possessions shredded, chewed on, and thoroughly trashed, and spotted a catlike creature with glowing red eyes ducking out a window or ventilation shaft. An unlucky few have even been found dead and savagely mauled in similar crash pads."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -2843,7 +3001,53 @@
          ]
       },
       {
+         "name": "Henry Labor Clone",
+         "page": 235,
+         "type": "minion",
+         "characteristics": {
+            "brawn": 4,
+            "agility": 2,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 1,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 5,
+            "wounds": 7,
+            "defense": [0, 0]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Mechanics",
+               "characteristic": "intellect",
+               "source": "crb"
+            },
+            {
+               "name": "Resilience",
+               "characteristic": "brawn",
+               "source": "crb"
+            }
+         ],
+         "talents": [],
+         "abilities": [
+            "Air Filter Implant"
+         ],
+         "gear": [
+            "{@gear Durable clothing}"
+         ],
+         "description": [
+            "Henry clones are designed to work long hours under punishing conditions. They mine He-3 on the lunar surface for Melange Mining and labor in many of Quinde's factories. Their bodies are stronger than those of any human in history, and their psyches have been adjusted to feel completely mentally fulfilled by a hard day's labor."
+         ]
+      },
+      {
          "name": "Human First Extremist",
+         "page": 237,
          "type": "minion",
          "characteristics": {
             "brawn": 2,
@@ -2903,6 +3107,9 @@
          "gear": [
             "Durable clothing: +1 soak"
          ],
+         "description": [
+            "Human First is a radicalized group of anti-android activists. Best identified by their sledgehammers, most Human First members are working-class people who've lost their jobs to androids. They destroy clones and bioroids from time to time, though NAPD treats their crimes as property damage."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -2923,6 +3130,7 @@
       },
       {
          "name": "Humanity Labor Rep",
+         "page": 237,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -2967,17 +3175,20 @@
             }
          ],
          "talents": [
-            "Scathing Tirade"
+            {
+               "name": "Scathing Tirade",
+               "source": "crb"
+            }
          ],
          "abilities": [
-            {
-               "name": "Rile Them Up",
-               "description": "Once per encounter, may make an :average: Charm check targeting a group of bystanders or other neutral NPCs at medium range; if the check is successful, one of the bystanders (plus one per additional {@symbols s}) becomes a Human First Extremist; these NPCs form a single minion group and join the ongoing encounter. These NPCs may have been regular people convinced by the rep or they may have been members of Human First all along."
-            }
+            "Rile Them Up"
          ],
          "weapons": [],
          "gear": [
             "PAD"
+         ],
+         "description": [
+            "Humanity Labor seeks to preserve human employment in a world where android labor is taking over. Humanity Labor reps tirelessly meet with corporate and government leaders, appear in news feeds, and plan and attend protests and marches (often alongside members of the radical Human First movement, though they deny any overt association)."
          ],
          "tags": [
             "source:SotB",
@@ -2999,9 +3210,11 @@
       },
       {
          "name": "Hunter-Killer Drone",
+         "page": 234,
          "type": "rival",
          "description": [
-            "May be armed with either a Micro-missile pod, or Armor-piercing Missiles"
+            "The next level of combat drones, hunter-killer drones are used as heavy support platforms for infantry platoons or placed under the control of elite Electronic Warfare Service operatives. Their bulky chassis have enough lift to haul around some truly heavy artillery, and their software is sophisticated enough to make them dangerous on their own (requiring only a kill authorization from their operator).",
+            "May be armed with either a Micro-missile pod, or Armor-piercing Missiles."
          ],
          "characteristics": {
             "brawn": 2,
@@ -3144,6 +3357,7 @@
       },
       {
          "name": "Hyperrat Swarm",
+         "page": 227,
          "type": "rival",
          "characteristics": {
             "brawn": 1,
@@ -3196,10 +3410,7 @@
          "talents": [],
          "abilities": [
             "Swarm",
-            {
-               "name": "They're All Over Me!",
-               "description": "Enemies who start their turn engaged with this character lose their free maneuver."
-            }
+            "They're All Over Me!"
          ],
          "weapons": [
             {
@@ -3226,6 +3437,9 @@
             }
          ],
          "gear": [],
+         "description": [
+            "The undercity is awash with illegal waste dumps from factories, labs, drug dens, and illicit pharmaceutical cooperatives, combined with the sewage of half a billion people. This cocktail pushes the vermin population into an accelerated evolutionary cycle to survive, and two-kilo sewer rats with the disposition of a wolverine are one of the undisputed successes of this genetic arms race. When they swarm, they can strip a full-grown human down to bones in minutes."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -3333,15 +3547,18 @@
             }
          ],
          "talents": [
-            "Adversary 1",
-            "Determined Hunter",
-            "Defensive Sysops (Improved)"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
+            {
+               "name": "Defensive Sysops (Improved)",
+               "source": "crb"
+            }
          ],
          "abilities": [
-            {
-               "name": "Personalized Icebreaker Suit",
-               "description": "Always considered to have a strength 4 icebreaker that can affect barriers, sentries, and code gates. If break ice action fails, may spend {@symbols aaaa} or {@symbols t} to not suffer any effects of failing to break ice."
-            }
+            "Determined Hunter",
+            "Personalized Icebreaker Suit"
          ],
          "weapons": [
             {
@@ -3460,15 +3677,15 @@
             }
          ],
          "talents": [
-            "Adversary 1",
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
             "Determined Driver",
             "Offensive Driving"
          ],
          "abilities": [
-            {
-               "name": "Max Throttle",
-               "description": "When piloting or driving a vehicle, its max speed is increased by 1"
-            }
+            "Max Throttle"
          ],
          "weapons": [],
          "gear": [
@@ -3494,6 +3711,7 @@
       },
       {
          "name": "Liberty Society Rep",
+         "page": 238,
          "type": "rival",
          "characteristics": {
             "brawn": 1,
@@ -3550,12 +3768,18 @@
             }
          ],
          "talents": [
-            "Clever Retort"
+            {
+               "name": "Clever Retort",
+               "source": "crb"
+            }
          ],
          "abilities": [],
          "weapons": [],
          "gear": [
             "Legal PAD"
+         ],
+         "description": [
+            "The Liberty Society is an advocacy group seeking to provide clones with human rights. Its members work tirelessly with the Simulant Abolitionist Movement to find test cases they can bring to court, and they meet with liaisons from Jinteki, government organizations, and news outlets to advocate for clone rights."
          ],
          "tags": [
             "source:SotB",
@@ -3646,15 +3870,18 @@
             }
          ],
          "talents": [
-            "Adversary 1",
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
             "Probing Question",
-            "Ruinous Repartee"
+            {
+               "name": "Ruinous Repartee",
+               "source": "crb"
+            }
          ],
          "abilities": [
-            {
-               "name": "Famous",
-               "description": "Once per encounter, may spend a Story Point to force one opponent with earshot to make a :hard: Discipline check as an out-of-turn incidental. If they fail they must fulfill one of this character's requests, such as let them past a checkpoint, stop attacking them, etc."
-            }
+            "Famous"
          ],
          "weapons": [],
          "gear": [
@@ -3680,6 +3907,7 @@
       },
       {
          "name": "Loonie Revolutionary",
+         "page": 238,
          "type": "rival",
          "characteristics": {
             "brawn": 1,
@@ -3730,7 +3958,10 @@
             }
          ],
          "talents": [
-            "Inspiring Rhetoric"
+            {
+               "name": "Inspiring Rhetoric",
+               "source": "crb"
+            }
          ],
          "abilities": [],
          "weapons": [
@@ -3759,6 +3990,9 @@
          "gear": [
             "Armored Space Suit: +2 soak"
          ],
+         "description": [
+            "Despite what City Hall claims, the Lunar Insurrection still looms large in the minds of Heinlein's citizenry. Many Loonies bear an asteroid-sized grudge against Earth for the lives lost during the War and the brutal crackdowns that followed. Groups of former insurrectionists and revolutionaries still gather in out-of-the-way places like the Docklands, plotting raids and acts of violence against Heinlein’s administration and the corporations that dominate lunar life."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -3779,6 +4013,7 @@
       },
       {
          "name": "Los Scorpiones Cascares",
+         "page": 222,
          "type": "minion",
          "characteristics": {
             "brawn": 3,
@@ -3868,6 +4103,9 @@
          "gear": [
             "Aviator glasses"
          ],
+         "description": [
+            "Los Scorpiones controls much of the illicit drug trade in New Angeles with the help of their cascares, or enforcers. Under the leadership of Lívia Teixeira and Miguel Moreno, the cascares have become a team of brutal and bloodthirsty enforcers who eagerly get their hands dirty engaging in human trafficking, gunrunning, and organ grinding."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -3888,6 +4126,7 @@
       },
       {
          "name": "Maintenance Drone",
+         "page": 234,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -3945,6 +4184,9 @@
          "gear": [
             "Integrated construction and repair tools"
          ],
+         "description": [
+            "Boxy, spider-legged maintenance drones roam New Angeles in swarms, picking up trash, cleaning streets, and repairing infrastructure. Maintenance drones are not designed to be teleoperated. Instead, they operate independently while under the general guidance of Public Works' operations AI. This means there are significant limits to what a maintenance drone can do, even when hacked by a young, bored runner."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -3965,6 +4207,7 @@
       },
       {
          "name": "Melange Overseer",
+         "page": 225,
          "type": "rival",
          "characteristics": {
             "brawn": 4,
@@ -4033,13 +4276,13 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
-            {
-               "name": "Lunar Off-Roading",
-               "description": "Add {@dice boost|2} to any Driving or Survival checks made on the lunar surface."
-            }
+            "Lunar Off-Roading"
          ],
          "weapons": [
             {
@@ -4089,6 +4332,9 @@
          "gear": [
             "Reinforced Mining Space Suit: +2 soak",
             "Lunar megarover, PAD"
+         ],
+         "description": [
+            "Melange Mining relies on Henry clones to perform the hard, dangerous work of lunar helium-3 extraction. This means their overseers have plenty of time to serve as Melange's unofficial enforcers, bullying the locals and rival He-3 operations, and contributing to the megacorp's unsavory reputation. While Melange Mining personnel live in Heinlein, they rotate down-Stalk for at least six months' gravity leave after every year of work. The clones, of course, remain behind."
          ],
          "tags": [
             "source:SotB",
@@ -4180,21 +4426,24 @@
             }
          ],
          "talents": [
-            "Adversary 1",
-            "Proper Upbringing 2"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
+            {
+               "name": "Proper Upbringing 2",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Let's Make a Deal",
-            {
-               "name": "Ominous Reputation",
-               "description": "When an opponent targets this character with a check, the opponent suffers 2 strain."
-            }
+            "Ominous Reputation"
          ],
          "weapons": [],
          "gear": [
             "Expensive suit with built-in PAD",
-            "Credstick with unlmited funds",
-            "Teacup giraffe",
+            "Credstick with unlimited funds",
+            "{@adversary Teacup giraffe}",
             "Personal assistant"
          ],
          "description": [
@@ -4220,6 +4469,7 @@
       },
       {
          "name": "Mercenary Vet",
+         "page": 231,
          "type": "nemesis",
          "characteristics": {
             "brawn": 4,
@@ -4289,9 +4539,18 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "Quick Draw",
-            "Rapid Reaction 2"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
+            {
+               "name": "Quick Draw",
+               "source": "crb"
+            },
+            {
+               "name": "Rapid Reaction 2",
+               "source": "crb"
+            }
          ],
          "abilities": [],
          "weapons": [
@@ -4364,6 +4623,9 @@
          "gear": [
             "Light Body Armor: +2 soak"
          ],
+         "description": [
+            "Major conflicts like the Lunar Insurrection and the Martian Colony Wars, as well as the ceaseless skirmishes in their aftermath, have created a generation of war veterans. While at any other point in history, these grizzled warriors would be past their prime, g-mods and cybernetics let them bring nearly two decades of combat experience to a body more capable than ever. Many contract out to elite private military contractors for high-risk, high-reward special combat operations, often to pay off their augmentations."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -4383,7 +4645,53 @@
          ]
       },
       {
+         "name": "Molloy Server Clone",
+         "page": 235,
+         "type": "minion",
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 2,
+            "cunning": 1,
+            "willpower": 1,
+            "presence": 3
+         },
+         "derived": {
+            "soak": 1,
+            "wounds": 5,
+            "defense": [0, 0]
+         },
+         "skills": [
+            {
+               "name": "Charm",
+               "characteristic": "presence",
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "source": "crb"
+            },
+            {
+               "name": "Resilience",
+               "characteristic": "brawn",
+               "source": "crb"
+            }
+         ],
+         "talents": [],
+         "abilities": [
+            "Comfort Food"
+         ],
+         "gear": [
+            "Order PAD"
+         ],
+         "description": [
+            "Mother Molloy's is an Irish-themed gastropub that was among the first to adopt clone staffing. Both genders of Molloy units appear vaguely Irish, and they present a cheerful, smiling face to whoever walks in the door."
+         ]
+      },
+      {
          "name": "NAPD Detective",
+         "page": 229,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -4446,7 +4754,8 @@
             }
          ],
          "talents": [
-            "Good and Bad Cop"
+            "Good Cop",
+            "Bad Cop"
          ],
          "abilities": [
             "Lawful Authority"
@@ -4466,6 +4775,9 @@
          ],
          "gear": [
             "2 snap locks, pocket flask, NAPD PAD"
+         ],
+         "description": [
+            "There are thousands of detectives in the NAPD spread across several divisions,. The greatest numbers of detectives belong to Homicide Division, the Personal Abuse and Modification Division's Vice Unit, and the Gang Unit. Some detectives also moonlight as private eyes."
          ],
          "tags": [
             "source:SotB",
@@ -4487,6 +4799,7 @@
       },
       {
          "name": "NAPD Hachi-Inu K8 Unit",
+         "page": 229,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -4562,6 +4875,9 @@
             }
          ],
          "gear": [],
+         "description": [
+            "Jinteki's blue-furred police dogs are a recent acquisition for the NAPD. They are fast, hyperintelligent units capable of sniffing out drugs, bombs, and fugitives much more effectively than their K9 counterparts, with flexible tails they can communicate with via a specialized sign language. Their bite secretes a paralyzing venom."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -4582,6 +4898,7 @@
       },
       {
          "name": "NAPD Patrol Officer",
+         "page": 229,
          "type": "minion",
          "characteristics": {
             "brawn": 2,
@@ -4673,6 +4990,9 @@
             "Reinforced Uniform: +1 soak.",
             "NAPD PAD, 4 snap locks"
          ],
+         "description": [
+            "NAPD hoppers patrol beats regularly for visibility, but the camdrones and seccams monitored by a station AI are what generally trigger a police response. NAPD patrol officers spend most of their time clearing away streetbangers and disenfrancistos and securing crime scenes."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -4693,6 +5013,7 @@
       },
       {
          "name": "NAPD Riot Police",
+         "page": 229,
          "type": "minion",
          "characteristics": {
             "brawn": 4,
@@ -4739,10 +5060,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Disperse!",
-               "description": "Once per encounter, as an action, may force all non-NAPD characters within medium range to make an :average: Discipline check as an out-of-turn incidental; those who fail must spend their next turn moving away from this character or minion group and attempting to leave the encounter if possible."
-            }
+            "Disperse!"
          ],
          "weapons": [
             {
@@ -4807,6 +5125,9 @@
             "Riot Armor: +2 soak.",
             "Smoke grenades, 4 snap locks"
          ],
+         "description": [
+            "When protests or demonstrations get out of hand, the NAPD sends in its big guns: specialized riot-control units equipped with fully powered armor. Most of these units' equipment is sourced from Huang Heavy Industries. In the wake of the Clone Riots, this now includes a high-tech suit of padded power-assist armor with a powered gauntlet. The NAPD riot shield features a spotlight and built-in transparent PAD display window."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -4827,6 +5148,7 @@
       },
       {
          "name": "NAPD SWAT",
+         "page": 230,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -4952,6 +5274,9 @@
          "gear": [
             "Body Armor: +2 soak"
          ],
+         "description": [
+            "The best, most combat-capable officers in the NAPD undergo rigorous tactical training to become members of the Emergency Services Unit (more commonly known as the SWAT team). SWAT gets called in when regular patrol officers are overmatched, to handle hostage situations and barricaded shooters, and to serve high-risk search or arrest warrants."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -4971,7 +5296,129 @@
          ]
       },
       {
+         "name": "Omoi Security Clone",
+         "page": 235,
+         "type": "rival",
+         "characteristics": {
+            "brawn": 3,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 1,
+            "willpower": 1,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 12,
+            "defense": [0, 0]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Driving",
+               "characteristic": "agility",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "talents": [],
+         "abilities": [],
+         "weapons": [
+            {
+               "name": "Synap Pistol",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 6,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Disoriant",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Palm Stunner",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 5,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Disorient",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "description": [
+            "The Omoi is a new clone line, marketed as a replacement for human security guards. Although Omois are conditioned to avoid human injury and equipped with stun weaponry, they still are uncomfortably close to the line of \"androids fighting humans.\" So far, this line has only seen limited release, and mostly at Jinteki facilities."
+         ]
+      },
+      {
          "name": "Opticon Foundation Watchdog",
+         "page": 238,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -5035,6 +5482,9 @@
          "gear": [
             "Discrete monocam, camdrone, fake idents, encrypted PAD"
          ],
+         "description": [
+            "While a number of watchdog organizations currently work to combat corporate and government overreach, the Opticon Foundation is among the most successful. It listens to and protects the identities of whistleblowers, victims, and runners in an effort to build court cases and news stories to keep corporations in check. Some even go undercover to catch corporate directors and executives making damaging statements."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -5055,6 +5505,7 @@
       },
       {
          "name": "Orgcrime Lieutenant",
+         "page": 222,
          "type": "nemesis",
          "characteristics": {
             "brawn": 2,
@@ -5124,15 +5575,18 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "Forgot to Count?"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
+            {
+               "name": "Forgot to Count?",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Tactical Direction",
-            {
-               "name": "You Thought You Were Out...",
-               "description": "When making a Coercion check to maintain a favor after calling it in, the check is an :average: Coercion check instead of an opposed check."
-            }
+            "You Thought You Were Out..."
          ],
          "weapons": [
             {
@@ -5161,6 +5615,9 @@
          "gear": [
             "Gold chains, nice suit"
          ],
+         "description": [
+            "Whether Tri-Maf, yakuza, 14K, or Los Scorpiones, all orgcrime outfits have their mid-level lieutenants. Lieutenants typically either manage a single location, where they engage in multiple criminal activities, or a single operation that spans multiple locations. Lieutenants answer to a boss, and they often have numerous muscle and some heavies under their command."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -5181,6 +5638,7 @@
       },
       {
          "name": "Orgcrime Heavy",
+         "page": 222,
          "type": "rival",
          "characteristics": {
             "brawn": 4,
@@ -5243,7 +5701,10 @@
             }
          ],
          "talents": [
-            "Adversary 1",
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
             "Street Fighter"
          ],
          "abilities": [],
@@ -5306,6 +5767,9 @@
             "Light Armor Vest: +2 soak.",
             "Oversized suit with hidden holsters"
          ],
+         "description": [
+            "Most orgcrime outfits tend to have a number of heavily armed and well-trained enforcers. While the muscle in an organization runs most of the day-to-day criminal enterprises, the heavies take over in situations where violence and armed combat are expected. When they're not shooting up buildings and busting heads, heavies tend to work as bodyguards for orgcrime bosses."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -5326,6 +5790,7 @@
       },
       {
          "name": "Orgcrime Muscle",
+         "page": 222,
          "type": "minion",
          "characteristics": {
             "brawn": 2,
@@ -5408,6 +5873,9 @@
          "gear": [
             "Cheap Padded Suit: +1 soak"
          ],
+         "description": [
+            "All orgcrime syndicates fill their lower ranks with cheap, tough, and somewhat disposable muscle. The job of these enforcers is to stand around and look dangerous, and back up their bosses in a fight."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -5428,6 +5896,7 @@
       },
       {
          "name": "Principled Runner",
+         "page": 223,
          "type": "nemesis",
          "characteristics": {
             "brawn": 2,
@@ -5500,7 +5969,7 @@
             "Burn Through",
             {
                "name": "Natural",
-               "description": "Once per session may reroll one Computers (Hacking) or Knowledge (The Net) check."
+               "source": "crb"
             }
          ],
          "abilities": [],
@@ -5537,6 +6006,9 @@
             "BMI.",
             "Big rig with Athena (SotB p. 136) and Yog.0 (SotB p. 138)- protected by Hawk's Eye (SotB p. 134) and Fire Wall (SotB p. 133)"
          ],
+         "description": [
+            "Principled runners want to make the world a better place, and they run in service to an ideal. They seek to expose government and corporate corruption, often leaking private data to the press or spreading it all across the Net. Principled runners see themselves as sentinels keeping an eye on those with great power to ensure they are using that power responsibly."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -5557,6 +6029,7 @@
       },
       {
          "name": "Private Military Contractor",
+         "page": 232,
          "type": "minion",
          "characteristics": {
             "brawn": 3,
@@ -5613,6 +6086,9 @@
          ],
          "gear": [
             "Plasteel carapace: 1 defense, +2 soak"
+         ],
+         "description": [
+            "While there are plenty of prisec corporations out there, Globalsec is one of the largest and the best example of a militaristic PMC. It can run nearly any sort of military operation, from invasion to counterinsurgency ops, and its people provide security and escort duties, as well as handle troubleshooting operations. Globalsec contractors (usually) behave professionally, are well equipped, and are backed up by a corporation that has its own (albeit small) air force and navy."
          ],
          "tags": [
             "source:SotB",
@@ -5691,14 +6167,14 @@
             }
          ],
          "talents": [
-            "Adversary 2",
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
             "Takedown"
          ],
          "abilities": [
-            {
-               "name": "And Stay Down",
-               "description": "When making a Brawl or Melee combat check targeting a prone opponent, add {@symbols saa} to the results."
-            }
+            "And Stay Down"
          ],
          "weapons": [
             {
@@ -5764,6 +6240,7 @@
       },
       {
          "name": "Regulator",
+         "page": 230,
          "type": "rival",
          "characteristics": {
             "brawn": 1,
@@ -5821,14 +6298,14 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Red Tape",
-               "description": "During social encounters, may spend {@symbols hhh} generated by an opponent to discover (or invent) a legal violation that requires a fine, fee, or additional authorization form that the opponent must complete before accomplishing their goals."
-            }
+            "Red Tape (Narrative)"
          ],
          "weapons": [],
          "gear": [
             "Inspection PAD"
+         ],
+         "description": [
+            "City Hall has a small army of regulators who inspect all manner of locations, practices, and operations. These bureaucrats are convinced that most arcologies would fall into the undercity without their constant vigilance against corporate corner cutting. That said, many are open to being financially incentivized to overlook minor offenses."
          ],
          "tags": [
             "source:SotB",
@@ -5850,6 +6327,7 @@
       },
       {
          "name": "Reporter",
+         "page": 220,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -5913,15 +6391,15 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "In the Know",
-               "description": "Whenever this character learns a Motivation of another character in the encounter, this character may have that character suffer 2 strain and may heal 2 strain."
-            },
+            "In the Know",
             "Leading Question"
          ],
          "weapons": [],
          "gear": [
             "PAD, camdrone, monocam, press credentials"
+         ],
+         "description": [
+            "In a megapolis as polarized as New Angeles, there is never a shortage of salacious scandal, corruption, or murder to write about. Referred to as \"news-nosies,\" reporters spend their days tracking down stories, often in the less-than-safe undercity."
          ],
          "tags": [
             "source:SotB",
@@ -5943,6 +6421,7 @@
       },
       {
          "name": "Researcher",
+         "page": 220,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -5996,14 +6475,14 @@
             "Applied Research 1"
          ],
          "abilities": [
-            {
-               "name": "Research Team Member",
-               "description": "When providing skill assistance, may reroll up to two of the dice in the pool before resolving the check."
-            }
+            "Research Team Member"
          ],
          "weapons": [],
          "gear": [
             "Networked PAD, holodisplay, lab coat"
+         ],
+         "description": [
+            "Since New Angeles is a city on the cutting edge of research and development, plenty of researchers and scientists work in laboratories across the metropolis. While these labs are usually affiliated with a company, most of the researchers are contractors with uncertain long-term employment. More than a few of them would be happy to do some off-the-books research work for a few credits."
          ],
          "tags": [
             "source:SotB",
@@ -6025,6 +6504,7 @@
       },
       {
          "name": "Retail Drone",
+         "page": 234,
          "type": "minion",
          "characteristics": {
             "brawn": 2,
@@ -6064,6 +6544,9 @@
          ],
          "weapons": [],
          "gear": [],
+         "description": [
+            "Decades ago, in an effort to cut down on floor labor, most big-box retailers shifted to service and delivery drones to serve customers. Today's small, floating retail drones bear only a passing resemblance to their ancestors. With weak AI, the drones interface with a customer's shopping history to offer dynamic coupons or sales to maximize spending per visit. The drones also deliver goods from store floor to door."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -6084,6 +6567,7 @@
       },
       {
          "name": "Rex Search and Rescue Bioroid",
+         "page": 236,
          "type": "rival",
          "characteristics": {
             "brawn": 5,
@@ -6134,7 +6618,10 @@
             }
          ],
          "talents": [
-            "Swift"
+            {
+               "name": "Swift",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Bioroid"
@@ -6142,6 +6629,9 @@
          "weapons": [],
          "gear": [
             "Spotlight, climbing gear, O2 tank, medkit, 2 slap patches"
+         ],
+         "description": [
+            "Designed to take over high-risk search and rescue missions, the Rex line has submodels that specialize in all manner of extreme-environment rescue. In New Angeles, Rex units ride alongside first responders and are the first inside burning and collapsed structures. Rex units can extract casualties and protect them until help arrives, and the image of a heroic Rex pulling a young child free of a burning building dominates Haas-Bioroid ad campaigns."
          ],
          "tags": [
             "source:SotB",
@@ -6163,6 +6653,7 @@
       },
       {
          "name": "Ristie Collector",
+         "page": 221,
          "type": "nemesis",
          "characteristics": {
             "brawn": 2,
@@ -6223,15 +6714,15 @@
             "Haughty Demeanor"
          ],
          "abilities": [
-            {
-               "name": "Shrewd Negotiator",
-               "description": "When making an opposed Negotiation or Streetwise check to purchase or sell and item may suffer 2 strain to add {@symbols s} to the results."
-            },
+            "Shrewd Negotiator",
             "Let's Make a Deal"
          ],
          "weapons": [],
          "gear": [
             "Heavily encrypted PAD, several credsticks"
+         ],
+         "description": [
+            "Many wealthy risties are collectors, often of something rare and expensive. This might include art, ancient artifacts, vehicles, unique old technology or code, even androids or drones. The collector is willing to go to extreme lengths, even resorting to underground markets, to get vital pieces for their collection. Price is no object for a rare find. While the ristie collector may live in a lavish condo-hab or villa, they go wherever the hunt for that crucial next piece of their collection takes them."
          ],
          "tags": [
             "source:SotB",
@@ -6253,6 +6744,7 @@
       },
       {
          "name": "Rogue Nisei Clone",
+         "page": 240,
          "type": "nemesis",
          "characteristics": {
             "brawn": 2,
@@ -6316,15 +6808,15 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Apparent Precognition",
             "Psychic",
-            {
-               "name": "Broken Nisei Conditioning",
-               "description": "When inflicting a Critical Injury or Critical Hit, roll twice and choose the more severe result."
-            }
+            "Broken Nisei Conditioning"
          ],
          "weapons": [
             {
@@ -6386,6 +6878,10 @@
             }
          ],
          "gear": [],
+         "description": [
+            "Jinteki's \"Project Nisei\" is a top-secret program that is hard at work designing the perfect clone, according to specifications known only to senior project personnel and Chairman Hiro himself. Some of the rumors surrounding the Nisei project are absurd to the point of humor: Nisei clones are telepathic, Nisei clones are intended to entirely replace the human race, there are Nisei clones who have escaped Jinteki and gone rogue, and so on.",
+            "There is only one known Nisei clone publicly deployed in the general population: Caprice Nisei of the NAPD. If the rest of the Project Nisei clones are like her, they are thoughtful, intelligent, empathetic, possessed of an almost supernatural intuition, and not fond of crowds."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -6406,6 +6902,7 @@
       },
       {
          "name": "SEA Yellow Jacket",
+         "page": 226,
          "type": "minion",
          "characteristics": {
             "brawn": 2,
@@ -6447,10 +6944,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Uncomfortable Inspection",
-               "description": "When searching a character or their possessions, that character suffers 2 strain."
-            }
+            "Uncomfortable Inspection"
          ],
          "weapons": [
             {
@@ -6483,6 +6977,9 @@
          "gear": [
             "Security PAD, 2 snap locks"
          ],
+         "description": [
+            "The Space Elevator Authority's first and most visible line of defense are the \"yellow jackets,\" private security personnel in their distinctive garb. Working in teams to perform passenger and cargo security scans for all contraband, yellow jackets tend to have the same jaded demeanors as any other customer-facing security officers."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -6503,6 +7000,7 @@
       },
       {
          "name": "Seth Bioroidista",
+         "page": 237,
          "type": "minion",
          "characteristics": {
             "brawn": 3,
@@ -6528,8 +7026,7 @@
             },
             {
                "name": "Knowledge (Science)",
-               "characteristic": "intellect",
-               "source": "crb"
+               "characteristic": "intellect"
             },
             {
                "name": "Perception",
@@ -6539,15 +7036,15 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Too Clever",
-               "description": "When interacting with this character, characters may spend {@symbols a} to recover 2 strain, and GMs may spend {@symbols h} to inflict 2 strain."
-            },
+            "Too Clever",
             "Bioroid"
          ],
          "weapons": [],
          "gear": [
             "Order PAD"
+         ],
+         "description": [
+            "Home to the ten-credit triple latte, YucaBean is populated with Seth bioroid baristas. The Seth-model is known for sarcastic, dry wit, often with a bent as dark as the coffee they serve. They also enjoy wordplay with names, misspelling them intentionally in an effort to brighten a customer's day."
          ],
          "tags": [
             "source:SotB",
@@ -6569,6 +7066,7 @@
       },
       {
          "name": "Sneaker Net Courier",
+         "page": 223,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -6643,13 +7141,13 @@
             }
          ],
          "talents": [
-            "Swift"
+            {
+               "name": "Swift",
+               "source": "crb"
+            }
          ],
          "abilities": [
-            {
-               "name": "Catlike Agility",
-               "description": "Once per turn, may spend a Story Point to move to any location within short range as an incidental, including locations that are vertically distant or have no easy access route."
-            }
+            "Catlike Agility"
          ],
          "weapons": [
             {
@@ -6682,6 +7180,9 @@
          "gear": [
             "Good running shoes, encrypted datasticks"
          ],
+         "description": [
+            "The only truly secure data never touches the Network, and as a result, some data transfers rely on physical couriers. Members of the so-called \"sneaker net\" transport data on mem chips via hopper, Metro, or even their sneaker-clad feet. A sneaker net courier needs to be fast, alert, and able to defend their package from someone trying to run an intercept."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -6702,6 +7203,7 @@
       },
       {
          "name": "Starlight Templar",
+         "page": 221,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -6753,14 +7255,8 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Values Enforcer",
-               "description": "When making any social skill or combat check targeting an opponent of the church, add {@symbols sh} to the result."
-            },
-            {
-               "name": "Templar Cybernetic Implant",
-               "description": "Once per encounter as a maneuver, may make a :simple: Discipline check to heal 1 wound per {@symbols s}."
-            }
+            "Values Enforcer",
+            "Templar Cybernetic Implant"
          ],
          "weapons": [
             {
@@ -6790,6 +7286,9 @@
             "Heavy Jacket with Crusade logo: +1 soak.",
             "PAD"
          ],
+         "description": [
+            "The Starlight Crusade is a religious order that utilizes technology to stimulate parts of the brain its members believe to house the soul in order to have religious experiences. Templars are strict adherents to Starlight Crusade tenets. They take it personally when outsiders sully the church's reputation, defending their beliefs with a sometimes violent righteousness."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -6810,6 +7309,7 @@
       },
       {
          "name": "Streetbanger",
+         "page": 223,
          "type": "minion",
          "characteristics": {
             "brawn": 3,
@@ -6891,6 +7391,9 @@
             "Synthleather Jacket: +1 soak",
             "Extensive tattoos and piercings"
          ],
+         "description": [
+            "Street gangs collectively control most of the undercity, though rarely does any control more than a few blocks. Bravado, loyalty, and a skewed sense of honor are their virtues. While some terrify and extort those within their turf, others are the only justice and protection their neighborhood has. Some even hire out as armed guides for reporters and humanitarian workers."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -6911,6 +7414,7 @@
       },
       {
          "name": "Streetbanger Leader",
+         "page": 223,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -6979,7 +7483,10 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
          ],
          "abilities": [
             "Charismatic Menace"
@@ -7038,6 +7545,9 @@
             "Leather Jacket with Gang Colors: +1 soak",
             "PAD"
          ],
+         "description": [
+            "Street gang leaders have to be stronger, more ruthless, and more capricious then all their subordinates combined. Streetbanger leaders are often prisoners of their own position; the pressure to always be strong enough to deflect or overcome challenges for their gang's leadership makes for a short lifespan. Thus, anyone who's run a gang for more than a few months is a fearsome foe, possessing an aura of palpable menace laced with powerful charisma."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -7058,6 +7568,7 @@
       },
       {
          "name": "Street Doc",
+         "page": 224,
          "type": "rival",
          "characteristics": {
             "brawn": 2,
@@ -7108,13 +7619,13 @@
             }
          ],
          "talents": [
-            "Surgeon 3"
+            {
+               "name": "Surgeon 3",
+               "source": "crb"
+            }
          ],
          "abilities": [
-            {
-               "name": "Questionable Hygiene",
-               "description": "When making a Medicine check, must spend {@symbols hhh} or {@symbols d} to decrease the target's strain and wound threshold by 2 each until the end of the current session."
-            }
+            "Questionable Hygiene"
          ],
          "weapons": [
             {
@@ -7148,6 +7659,9 @@
             "4 Slap-patches",
             "Various cybernetics, emergency medkit, portable toolkit"
          ],
+         "description": [
+            "In an age of cybernetics and g-mods, many people seek a shortcut to improved or personalized selves. Since going to a legitimate doctor for an enhancement can cost a lot of money and leave a record trail, some disreputable citizens prefer relying on the work of a street doc. These are once-respectable surgeons who lost their license to practice or med-school dropouts with questionable ethics. Now, they patch up criminals and perform back-alley augmentations on anyone with the credits."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -7168,9 +7682,11 @@
       },
       {
          "name": "SXC Exosuit Pilot",
+         "page": 232,
          "type": "rival",
          "description": [
-            "May choose either a Heavy fletcher or a Laser Cannon"
+            "An exosuit on the loose in a metropolitan area like New Angeles is the kind of threat that keeps police commissioners up at night. While the largest exosuits are basically walking tanks, even the smaller \"person-sized\" suits used by Company A in each SXC battalion can turn a single soldier into a fast, well-armored, and highly lethal threat. They can deploy either as infantry support units or en masse as an armored line, and they can even drop from orbit.",
+            "May choose either a Heavy fletcher or a Laser Cannon."
          ],
          "characteristics": {
             "brawn": 4,
@@ -7228,10 +7744,7 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "High-Altitude Drop",
-               "description": "When falling any distance, may make an :easy: Discipline check as an incidental; on a success, this character does not suffer any damage from falling and lands on their feet."
-            }
+            "High-Altitude Drop"
          ],
          "weapons": [
             {
@@ -7328,6 +7841,7 @@
       },
       {
          "name": "SXC Trooper",
+         "page": 232,
          "type": "minion",
          "characteristics": {
             "brawn": 3,
@@ -7419,6 +7933,9 @@
             "Environmentally Sealed Plasteel carapace: 1 defense, +2 soak.",
             "Disposable zero-G maneuvering pack"
          ],
+         "description": [
+            "The question \"Hey, you sexy?\" has led to plenty of misunderstandings and brawls in bars across the worlds, but for members of the Space Expeditionary Force, it's a sure-fire way to spot another vet. Drawn from the ranks of the U.S. Air Force and Marines, SXC troopers train to fight in the most unforgiving conditions imaginable: zero-G and hard vacuum. They are some of the most adaptable and self-reliant soldiers around, operating on battlefields far beyond the reach of any other military branches."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -7439,6 +7956,7 @@
       },
       {
          "name": "SYNC Globalsec Agent",
+         "page": 226,
          "type": "nemesis",
          "characteristics": {
             "brawn": 1,
@@ -7493,18 +8011,15 @@
             "Net Warrior"
          ],
          "abilities": [
-            {
-               "name": "Sniffer Programs",
-               "description": "Add {@dice setback|2} to any opponent's checks made on a system the SYNC Globalsec agent has control of."
-            },
-            {
-               "name": "Swordbreaker Programs",
-               "description": "May make a :hard: Computers (Sysops) check targeting one opponent on the system to damage one of their active icebreakers one step, plus one additional step per {@symbols a}."
-            }
+            "Sniffer Programs",
+            "Swordbreaker Programs"
          ],
          "weapons": [],
          "gear": [
             "PAD, BMI, and custom offensive rig with personal icebreakers (Gordian Blade [SotB p. 137], Battering Ram [SotB p. 136], and Garrote [SotB p. 137])"
+         ],
+         "description": [
+            "SYNC designed the most important network protocol on the planet: the framework for the Network, which most modern technology relies upon. When the SYNC's sysops encounter irregularities they don't understand, they kick them up to highly paid Globalsec agents whom SYNC keeps on permanent retainer. Globalsec has the tools and experience to investigate glitches, track down skilled runners, and close breaches with extreme prejudice."
          ],
          "tags": [
             "source:SotB",
@@ -7526,6 +8041,7 @@
       },
       {
          "name": "Teacup Giraffe",
+         "page": 227,
          "type": "minion",
          "characteristics": {
             "brawn": 1,
@@ -7552,14 +8068,8 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Too Cute",
-               "description": "When any character makes a check to recover strain while engaged with this character, they recover 2 additional strain."
-            },
-            {
-               "name": "Way Too Cute",
-               "description": "When an opponent targets this character with a combat check, they suffer 4 strain."
-            },
+            "Too Cute",
+            "Way Too Cute",
             "Silhouette 0"
          ],
          "weapons": [
@@ -7576,6 +8086,9 @@
          ],
          "gear": [
             "Gentle doe eyes"
+         ],
+         "description": [
+            "Originally designed in the Jinteki concepting labs as a practical joke, the tiny giraffes (and the joke) got out of hand one evening and started wandering the halls of the research facility. Before the staff could round up their wayward animals, one stumbled into the division manager—and her five-year-old daughter. Immediately, the daughter had a new pet and the nervous jokers had a promotion, and six months later, Miranda Rhapsody had an adorable teacup giraffe gifted to her in a purse. Then everyone had six-figure bonuses."
          ],
          "tags": [
             "source:SotB",
@@ -7596,7 +8109,76 @@
          ]
       },
       {
+         "name": "Tenma Driver Clone",
+         "page": 235,
+         "type": "rival",
+         "characteristics": {
+            "brawn": 2,
+            "agility": 4,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 1,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 8,
+            "defense": [0, 0]
+         },
+         "skills": [
+            {
+               "name": "Driving",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Mechanics",
+               "characteristic": "intellect",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Operating",
+               "characteristic": "intellect",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Piloting",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Knack for It 2",
+               "description": "Remove {@dice setback|2} from any {@skill Driving||crb}, {@skill Operating||crb}, and {@skill Piloting||crb} checks."
+            }
+         ],
+         "gear": [
+            "Cybernetic eye implants."
+         ],
+         "description": [
+            "Serving as drivers and pilots, the Tenma line is one of the most popular lines in Jinteki's catalog. While most vehicles function on autopilot, a Tenma clone can fly a vehicle faster and safer than any pilot program on the market. Many companies utilize them as chauffeurs or high-value couriers."
+         ]
+      },
+      {
          "name": "Thomas Haas",
+         "page": 217,
          "type": "nemesis",
          "characteristics": {
             "brawn": 2,
@@ -7672,23 +8254,29 @@
             }
          ],
          "talents": [
-            "Adversary 1",
-            "Clever Retort",
-            "Counteroffer"
-         ],
-         "abilities": [
             {
-               "name": "Golden Goose",
-               "description": "Opponents must make a :hard: Discipline check as an action and succeed before being able to make combat checks targeting this character."
+               "name": "Adversary 1",
+               "source": "crb"
             },
             {
-               "name": "Tinkerer",
-               "description": "With access to any sort of tools or parts, may make an :average: Mechanics check. If successful, creates an item with rarity equal to the number of {@symbols s}."
+               "name": "Clever Retort",
+               "source": "crb"
+            },
+            {
+               "name": "Counteroffer",
+               "source": "crb"
             }
+         ],
+         "abilities": [
+            "Golden Goose",
+            "Tinkerer"
          ],
          "weapons": [],
          "gear": [
             "Nice suit, encrypted PAD"
+         ],
+         "description": [
+            "Thomas Haas has a reputation as a rogue pretty boy with a chiseled physique and g-modded looks, but he can also act as a charming and effective PR face for his family's company when goaded. Smarter than he lets on, Thomas has his own private lab in Heinlein for his pet projects, though he doesn't know if his mother, Haas-Bioroid Director Cynthia Haas, knows about it."
          ],
          "tags": [
             "source:SotB",
@@ -7710,6 +8298,7 @@
       },
       {
          "name": "Toy Drone",
+         "page": 234,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -7761,14 +8350,14 @@
          ],
          "talents": [],
          "abilities": [
-            {
-               "name": "Edutainment",
-               "description": "When assisting with or making a combine Knowledge check add {@dice boost} to the check (information added typically comes in the form of a song)."
-            },
+            "Edutainment",
             "Construct"
          ],
          "weapons": [],
          "gear": [],
+         "description": [
+            "While cloned pets are all the rage, edu-toys have carved out a small market share. These weak-AI drones nanny and educate infants and toddlers. Most resemble dogs or popular children's entertainment characters, providing a fun early-education experience, often in singsong. Edu-pets have full PAD functionality, with robust parental blocks ensuring only child-friendly content is accessible. This link also generates ads and wish lists of toys, classes, and activities the child gravitates toward on the parents' or guardians' PADs, as well as daily data dumps on the child's activity."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -7789,6 +8378,7 @@
       },
       {
          "name": "Urban Peccary",
+         "page": 228,
          "type": "minion",
          "characteristics": {
             "brawn": 2,
@@ -7847,6 +8437,9 @@
             }
          ],
          "gear": [],
+         "description": [
+            "These small wild hogs are the only pigs originally native to South America, and just like their European cousins, they have proven incredibly resilient and hardy. Herds of peccaries wander the less-developed (or more-abandoned) portions of New Angeles, living on a hearty diet of trash, plant matter, and discarded fast food. Most people dismiss the comical-looking animals as harmless, but in truth, herds can contain dozens of the beasts, and they've entirely lost their fear of humans. If enough peccaries mob someone, their tusks can do some serious damage."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -7867,6 +8460,7 @@
       },
       {
          "name": "Urban Adventurer",
+         "page": 238,
          "type": "rival",
          "characteristics": {
             "brawn": 3,
@@ -7947,10 +8541,13 @@
             }
          ],
          "talents": [
-            "Daring Aviator 2",
+            {
+               "name": "Daring Aviator 2",
+               "source": "crb"
+            },
             {
                "name": "Natural",
-               "description": "Once per session, may reroll one Athletics or Coordination check."
+               "source": "crb"
             }
          ],
          "abilities": [],
@@ -7986,6 +8583,9 @@
             "Powered Wingsuit: +1 soak, can fly; see the Flying sidebar on page 100 of the Genesys Core Rulebook.",
             "Climbing gear, flashlight"
          ],
+         "description": [
+            "Some people look at New Angeles and instead of a city, they see a plascrete and steel landscape full of opportunities for exploration, adventure, and extreme sports. Urban adventurers treat New Angeles like an untamed wilderness, going \"caving\" in abandoned sewers, free climbing starscrapers, and diving off arcologies with wing suits. All of this is highly illegal, contributing to their reputation as troublemaking radicals. It also means that many urban adventurers are happy to participate in other illegal activities for a thrill."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -8006,6 +8606,7 @@
       },
       {
          "name": "Yakuza Assassin",
+         "page": 224,
          "type": "nemesis",
          "characteristics": {
             "brawn": 3,
@@ -8093,18 +8694,15 @@
             }
          ],
          "talents": [
-            "Adversary 2",
-            "Archaic Arms Master"
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            }
          ],
          "abilities": [
-            {
-               "name": "Quiet Code",
-               "description": "When making a Computer (Hacking) check, {@symbols h} may not be spent to alert other users to the assassin's presence."
-            },
-            {
-               "name": "Subtle Death",
-               "description": "When making a Brawl check, may spend {@symbols aa} or {@symbols t} to apply a dose of contact poison to the target; the target must immediately make a :hard: Resilience check as an incidental; if they fail, they suffer 5 wounds plus 1 wound per {@symbols h}; {@symbols d} means they must make the check again at the start of their next turn, as the poison remains in their system."
-            }
+            "Archaic Arms Master",
+            "Quiet Code",
+            "Subtle Death"
          ],
          "weapons": [
             {
@@ -8169,6 +8767,10 @@
             "Pocket Rig with One-Shot Icebreakers: Spend a Story Point to add {@symbols sss} to a successful check to break ice.",
             "Climbing gear"
          ],
+         "description": [
+            "When blackmail and bribery fail, an oyabun—leader of the yakuza—can call in one of their syndicate's assassins. These highly trained killers can get into the most heavily guarded structures and eliminate their target without being seen or heard. A yakuza assassin can use subtle poisons to make a death appear accidental, or they can use their katana if the oyabun wants to send an unmistakable message to their foes.",
+            "Their penchant for infiltration means that most yakuza assassins have also learned how to infiltrate computer networks and shut down security systems. Some of the best could even join the ranks of New Angeles' elite runners."
+         ],
          "tags": [
             "source:SotB",
             "Official",
@@ -8189,6 +8791,7 @@
       },
       {
          "name": "Young Ristie",
+         "page": 221,
          "type": "rival",
          "characteristics": {
             "brawn": 1,
@@ -8239,17 +8842,20 @@
             }
          ],
          "talents": [
-            "Proper Upbringing 2"
+            {
+               "name": "Proper Upbringing 2",
+               "source": "crb"
+            }
          ],
          "abilities": [
-            {
-               "name": "I'll Tell My Parents!",
-               "description": "When this character inflicts strain using a social skill check, they inflict 2 additional strain."
-            }
+            "I'll Tell My Parents!"
          ],
          "weapons": [],
          "gear": [
             "High-end wearable PAD"
+         ],
+         "description": [
+            "Many risties who live on inherited wealth seek pleasure, which might take any form, including live entertainment, food, unique tailored experiences, and adrenaline rushes. Anyone who navigates the social scene in New Angeles has had to deal with more than a few belligerent (and often intoxicated) young risties looking for fun — or trouble."
          ],
          "tags": [
             "source:SotB",
@@ -8267,6 +8873,791 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ]
+      }
+   ],
+   "adversaryAbility": [
+      {
+         "name": "Air Filter Implant",
+         "description": [
+            "Immune to inhaled poisons and toxins."
+         ],
+         "tags": [
+            "general",
+            "resistance"
+         ]
+      },
+      {
+         "name": "And Stay Down",
+         "description": [
+            "When making a {@skill Brawl||crb} or {@skill Melee||crb} combat check targeting a {@rule prone||crb} opponent, add {@symbols saa} to the results."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "results spend",
+            "status effect"
+         ]
+      },
+      {
+         "name": "Apparent Precognition",
+         "description": [
+            "Once per encounter when making a combat check, may use {@skill Discipline||crb} and {@skill Willpower||crb} instead of the normal skill and characteristic."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental",
+            "encounter",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Archaic Arms Master",
+         "description": [
+            "While armed with a Melee weapon, may make an {@difficulty Average|melee} to force one engaged target to drop one weapon or move one range band in any direction."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "action",
+            "movement",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Bioroid",
+         "description": [
+            "Does not need to breathe, eat, or drink; can survive in vacuum and underwater; is immune to poisons and toxins; and cannot knowingly endanger humans."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "resistance"
+         ]
+      },
+      {
+         "name": "Bone-Chilling Roar",
+         "description": [
+            "Once per encounter, may suffer 3 strain and spend a maneuver to force all other characters within long range (or within earshot) to make a {@difficulty Daunting|Discipline} as an out-of-turn incidental. If they fail, they must use their maneuver to move farther away; if they fail with {@symbols h}, they must also downgrade their action to an additional maneuver to move even farther away. If you're using the {@rule fear||crb} rules found on page 243 of the {@title Genesys} Core Rulebook, this can be a fear check instead."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "maneuver",
+            "results spend",
+            "fear"
+         ]
+      },
+      {
+         "name": "Broken Nisei Conditioning",
+         "description": [
+            "When inflicting a Critical Injury or Critical Hit, roll twice and choose the more severe result."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "critical injury"
+         ]
+      },
+      {
+         "name": "Burn It Down",
+         "description": [
+            "This character adds {@symbols aa} to the results of checks they make targeting authority figures."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Catlike",
+         "description": [
+            "May make a maneuver to move normally up and down vertical surfaces, across ropes, and over otherwise impassable structures."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "maneuver",
+            "movement"
+         ]
+      },
+      {
+         "name": "Catlike Agility",
+         "description": [
+            "Once per turn, may spend a Story Point to move to any location within short range as an incidental, including locations that are vertically distant or have no easy access route."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "movement",
+            "story point cost"
+         ]
+      },
+      {
+         "name": "Charismatic Menace",
+         "description": [
+            "Allies within short range add {@symbols a} to checks they make; opponents within short range add {@symbols h} to checks they make."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "leader",
+            "defensive",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Comfort Food",
+         "description": [
+            "After eating a meal prepared by this character, a character heals 2 strain."
+         ],
+         "tags": [
+            "general",
+            "support",
+            "recovery"
+         ]
+      },
+      {
+         "name": "Community Volunteer",
+         "description": [
+            "May use {@skill Knowledge (Society)} instead of {@skill Charm||crb}, {@skill Coercion||crb}, Or {@skill Negotiation||crb} during social interactions with undercity residents."
+         ],
+         "tags": [
+            "social",
+            "active",
+            "incidental",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Cybereyes",
+         "description": [
+            "May see in infrared and may remove up to {@dice setback|2} added to this character's check due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness|crb}."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Determined Hunter",
+         "description": [
+            "After successfully tracing another character during a Network Encounter, gain one additional trace."
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "passive"
+         ]
+      },
+      {
+         "name": "Direct Access",
+         "description": [
+            "When jacking in from within the same building as the target server, automatically succeeds when making an access system check."
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "passive"
+         ]
+      },
+      {
+         "name": "Disperse!",
+         "description": [
+            "Once per encounter, as an action, may force all non-NAPD characters within medium range to make an {@difficulty Average|Discipline} as an out-of-turn incidental; those who fail must spend their next turn moving away from this character or minion group and attempting to leave the encounter if possible."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "action",
+            "encounter",
+            "movement"
+         ]
+      },
+      {
+         "name": "Early Warning",
+         "description": [
+            "Adds {@dice boost} to its operator's checks to {@rule determine Initiative||crb}."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "initiative",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Edutainment",
+         "description": [
+            "When assisting with or making a combined Knowledge check add {@dice boost} to the check (information added typically comes in the form of a song)."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Enhanced Auto-Bracing",
+         "description": [
+            "Using the {@quality Auto-fire||crb} quality does not increase the difficulty of combat checks; each time this character triggers an additional hit, it suffers 1 strain."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "skill check modifier",
+            "item quality"
+         ]
+      },
+      {
+         "name": "Enhanced Strength",
+         "description": [
+            "May suffer 1 strain to add {@symbols s} to {@skill Athletics||crb} or {@skill Brawl||crb} checks."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Expert Instruction",
+         "description": [
+            "When this character performs the assist maneuver, upgrade the ability of the check once instead of adding {@dice boost}."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier",
+            "support"
+         ]
+      },
+      {
+         "name": "Famous",
+         "description": [
+            "Once per encounter, may spend a Story Point to force one opponent with earshot to make a {@difficulty Hard|Discipline} as an out-of-turn incidental. If they fail they must fulfill one of this character's requests, such as let them past a checkpoint, stop attacking them, etc."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "action",
+            "story point cost",
+            "encounter"
+         ]
+      },
+      {
+         "name": "Focus Fire",
+         "description": [
+            "When making a combat check, add {@symbols a} to the results for every other character in the minion group."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "results modifier",
+            "leader",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Full Weight of the Law",
+         "description": [
+            "When making a {@skill Coercion||crb} check to inflict strain during a social encounter, inflict 2 additional strain."
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Golden Goose",
+         "description": [
+            "Opponents must make a {@difficulty Hard|Discipline} as an action and succeed before being able to make combat checks targeting this character."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "defensive"
+         ]
+      },
+      {
+         "name": "High-Altitude Drop",
+         "description": [
+            "When falling any distance, may make an {@difficulty Easy|Discipline} as an incidental; on a success, this character does not suffer any damage from falling and lands on their feet."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "movement"
+         ]
+      },
+      {
+         "name": "I'll Tell My Parents!",
+         "description": [
+            "When this character inflicts strain using a social skill check, they inflict 2 additional strain."
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Impressively Flexible",
+         "description": [
+            "May spend a Story Point to gain access to a formerly secure room or other location through a previously unnoticed vent shaft, slightly open window, or similar entry point."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "story point cost"
+         ]
+      },
+      {
+         "name": "In the Know",
+         "description": [
+            "Whenever this character learns a Motivation of another character in the encounter, this character may have that character suffer 2 strain and may heal 2 strain."
+         ],
+         "tags": [
+            "social",
+            "active",
+            "incidental",
+            "motivation",
+            "recovery",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Lawful Authority",
+         "description": [
+            "Add {@symbols s} to the results of any social skill checks made when interacting with residents of New Angeles."
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Leading Question",
+         "description": [
+            "Once per encounter, may spend a Story Point to learn one Motivation of any one other character in the encounter."
+         ],
+         "tags": [
+            "social",
+            "active",
+            "incidental",
+            "encounter",
+            "motivation",
+            "story point cost"
+         ]
+      },
+      {
+         "name": "Lunar Off-Roading",
+         "description": [
+            "Add {@dice boost|2} to any {@skill Driving||crb} or {@skill Survival||crb} checks made on the lunar surface."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier",
+            "vehicles"
+         ]
+      },
+      {
+         "name": "Max Throttle",
+         "description": [
+            "When piloting or driving a vehicle, its max speed is increased by 1"
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "vehicles",
+            "movement"
+         ]
+      },
+      {
+         "name": "Mechanical",
+         "description": [
+            "Does not need to breathe, eat, or drink, and can survive in vacuum and underwater; is immune to poisons and toxins."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "resistance"
+         ]
+      },
+      {
+         "name": "Mob Mentality",
+         "description": [
+            "Add {@dice boost} to all checks this character makes if part of a group of three or more minions."
+         ],
+         "tags": [
+            "general",
+            "support",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Nisei Line",
+         "description": [
+            "As an action, may make a {@difficulty Hard|Discipline} targeting one character within medium range. If successful, this character learns the target's Strength, Flaw, Fear, and Desire motivations and all current goals (in addition to other information at the GM's discretion)."
+         ],
+         "tags": [
+            "social",
+            "active",
+            "action",
+            "motivation"
+         ]
+      },
+      {
+         "name": "Non-Lethal Apprehension",
+         "description": [
+            "Only needs to spend {@symbols a} to trigger {@quality Disorient||crb}, {@quality Knockdown||crb}, and {@quality Stun||crb} qualities."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "results spend",
+            "item quality"
+         ]
+      },
+      {
+         "name": "Office Drone",
+         "description": [
+            "When this character makes a social skill check, they add {@symbols ah} to the result."
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Ominous Reputation",
+         "description": [
+            "When an opponent targets this character with a check, the opponent suffers 2 strain."
+         ],
+         "tags": [
+            "combat",
+            "social",
+            "passive",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Personalized Icebreaker Suit",
+         "description": [
+            "Always considered to have a strength 4 icebreaker that can affect barriers, sentries, and code gates. If break ice action fails, may spend {@symbols aaaa} or {@symbols t} to not suffer any effects of failing to break ice."
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "passive",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Pit Trap Programs",
+         "description": [
+            "May make an {@b opposed {@skill Computers (Hacking)} versus {@skill Computers (Sysops)} check} targeting another user on a system; if successful, that user is {@rule staggered||crb} for one round per {@symbols s}."
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "opposed",
+            "offensive",
+            "status effect"
+         ]
+      },
+      {
+         "name": "Psychic",
+         "description": [
+            "As a maneuver may make and {@difficulty Average|Vigilance} to learn the surface thoughts of all other characters in medium range."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "maneuver",
+            "narrative"
+         ]
+      },
+      {
+         "name": "Questionable Hygiene",
+         "description": [
+            "When making a {@skill Medicine||crb} check, must spend {@symbols hhh} or {@symbols d} to decrease the target's strain and wound threshold by 2 each until the end of the current session."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Quiet Code",
+         "description": [
+            "When making a {@skill Computer (Hacking)} check, {@symbols h} may not be spent to alert other users to this character's presence."
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "passive",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Red Tape (Narrative)",
+         "description": [
+            "During social encounters, may spend {@symbols hhh} generated by an opponent to discover (or invent) a legal violation that requires a fine, fee, or additional authorization form that the opponent must complete before accomplishing their goals."
+         ],
+         "tags": [
+            "social",
+            "active",
+            "incidental (out of turn)",
+            "results spend",
+            "narrative"
+         ]
+      },
+      {
+         "name": "Reinforce",
+         "description": [
+            "As a maneuver, may increase the strength of one active piece of ice by 1 until the end of this characters's next turn."
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "active",
+            "maneuver",
+            "defensive"
+         ]
+      },
+      {
+         "name": "Research Team Member",
+         "description": [
+            "When providing skill assistance, may reroll up to two of the dice in the pool before resolving the check."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "support"
+         ]
+      },
+      {
+         "name": "Rile Them Up",
+         "description": [
+            "Once per encounter, may make an {@difficulty Average|Charm} targeting a group of bystanders or other neutral NPCs at medium range; if the check is successful, one of the bystanders (plus one per additional {@symbols s}) becomes a {@adversary Human First Extremist}; these NPCs form a single minion group and join the ongoing encounter. These NPCs may have been regular people convinced by the rep or they may have been members of Human First all along."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "action",
+            "encounter",
+            "results spend",
+            "leader"
+         ]
+      },
+      {
+         "name": "Shrewd Negotiator",
+         "description": [
+            "When making an {@b opposed {@skill Negotiation||crb} or {@skill Streetwise||crb} check} to purchase or sell and item may suffer 2 strain to add {@symbols s} to the results."
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Sniffer Programs",
+         "description": [
+            "Add {@dice setback|2} to any opponent's checks made on a system the SYNC Globalsec agent has control of."
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "defensive",
+            "passive"
+         ]
+      },
+      {
+         "name": "Subtle Death",
+         "description": [
+            "When making a {@skill Brawl||crb} check, may spend {@symbols aa} or {@symbols t} to apply a dose of contact poison to the target; the target must immediately make a {@difficulty Hard|Resilience} as an incidental; if they fail, they suffer 5 wounds plus 1 wound per {@symbols h}; {@symbols d} means they must make the check again at the start of their next turn, as the poison remains in their system."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Swordbreaker Programs",
+         "description": [
+            "May make a {@difficulty Hard|Computers (Sysops)} targeting one opponent on the system to damage one of their active icebreakers one step, plus one additional step per {@symbols a}."
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "results spend",
+            "active",
+            "action",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Takedown",
+         "description": [
+            "As an action, may make an {@difficulty Average|Athletics} targeting one engaged opponent; if successful, target is knocked prone, suffers 4 strain, and may not stand from prone during their next turn."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "action",
+            "status effect",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Templar Cybernetic Implant",
+         "description": [
+            "Once per encounter as a maneuver, may make a {@difficulty Simple|Discipline} to heal 1 wound per {@symbols s}."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "maneuver",
+            "recovery"
+         ]
+      },
+      {
+         "name": "They're All Over Me!",
+         "description": [
+            "Enemies who start their turn engaged with this character lose their free maneuver."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "free maneuver"
+         ]
+      },
+      {
+         "name": "Threat of Ban",
+         "description": [
+            "While in club owner's establishment, may spend {@symbols h} from checks targeting club owner to have character making the check suffer 2 strain instead of 1"
+         ],
+         "tags": [
+            "combat",
+            "social",
+            "passive",
+            "defensive",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Threatening",
+         "description": [
+            "When providing assistance on another character's {@skill Coercion||crb} checks, add {@symbols s} to results for each minion in the group beyond the first."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "support",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Tinkerer",
+         "description": [
+            "With access to any sort of tools or parts, may make an {@difficulty Average|Mechanics}. If successful, creates an item with rarity equal to the number of {@symbols s}."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "action",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Too Clever",
+         "description": [
+            "When interacting with this character, characters may spend {@symbols a} to recover 2 strain, and GMs may spend {@symbols h} to inflict 2 strain."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "offensive",
+            "recovery",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Too Cute",
+         "description": [
+            "When any character makes a check to recover strain while engaged with this character, they recover 2 additional strain."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "support",
+            "recovery"
+         ]
+      },
+      {
+         "name": "Uncomfortable Inspection",
+         "description": [
+            "When searching a character or their possessions, that character suffers 2 strain."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "defensive"
+         ]
+      },
+      {
+         "name": "Values Enforcer",
+         "description": [
+            "When making any social skill or combat check targeting an opponent of the church, add {@symbols sh} to the result."
+         ],
+         "tags": [
+            "combat",
+            "social",
+            "passive",
+            "defensive",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Way Too Cute",
+         "description": [
+            "When an opponent targets this character with a combat check, they suffer 4 strain."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "defensive"
+         ]
+      },
+      {
+         "name": "You Thought You Were Out...",
+         "description": [
+            "When making a {@skill Coercion||crb} check to maintain a favor after calling it in, the check is an {@difficulty Average|Coercion} instead of an opposed check."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier",
+            "opposed",
+            "factions"
          ]
       }
    ],
@@ -8292,18 +9683,8 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Special Abilities",
-               "description": [
-                  "Bioroids do not need to eat, sleep, or breathe, and they are unaffected by toxins and poisons. They do not reduce their strain threshold when they receive cybernetics (cybernetics represent upgraded mechanical components instead of true cybernetics)."
-               ]
-            },
-            {
-               "name": "Inorganic",
-               "description": [
-                  "Since bioroids are inorganic, they do not gain the benefits of healing wounds with {@gear slap-patch|slap patches} ({@rule painkillers||crb}) or a {@skill Medicine||crb} check. Bioroids can heal wounds and strain naturally by resting, as their systems attempt self-repairs. Bioroids can also be \"healed\" by using the {@skill Mechanics||crb} skill instead of the {@skill Medicine||crb} skill, but otherwise following the rules in the Medical Care section on page 116 of the {@title Genesys} Core Rulebook."
-               ]
-            }
+            "Special Abilities (Bioroid)",
+            "Inorganic"
          ],
          "description": [
             "Bioroids are fully artificial creations, with all the attendant benefits and disadvantages. Their strength and durability are second to none, and bioroids also don't sleep, eat, or breathe, allowing them to go places and undertake tasks normal humans and even clones cannot. On the other hand, bioroids are not viewed as people, but rather property. Likewise, bioroids find it difficult to become accepted in some places, their artificial appearance conjuring fear or hatred in certain groups.",
@@ -8350,12 +9731,7 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Underestimated",
-               "description": [
-                  "When making an opposed check, clones add {@symbols a} to the results."
-               ]
-            }
+            "Underestimated"
          ],
          "description": [
             "With their pleasing appearance and functional biology, clones fill the roles that in ages past were populated by slaves, migrants, and second-class citizens, without any of the moral implications that come from subjecting humans to such a place in society.",
@@ -8402,18 +9778,8 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Adjusted to Cybernetics",
-               "description": [
-                  "Once per session as an out-of-turn incidental, you may spend a Story Point to have your character heal strain equal to their number of cybernetics."
-               ]
-            },
-            {
-               "name": "Cyborg",
-               "description": [
-                  "Your character begins play with one {@filter gear|cybernetic|source:shadow-of-the-beanstalk=1;type:cybernetic=1} (see page 104) that costs a total of 1,000 credits or less. They do not need to make any check to install this cybernetic, and they do not decrease their strain threshold because of this cybernetic (but will decrease their strain threshold as normal if they get any future cybernetics)."
-               ]
-            }
+            "Adjusted to Cybernetics",
+            "Cyborg"
          ],
          "description": [
             "The first cyborgs appeared in the late twentieth century, as artificial hearts and electronic, motorized prosthetic limbs began to restore and repair damaged human bodies. However these protocybernetics served only medical functions, replacing their damaged or missing organic counterparts. All this started to change decades ago, when companies began to develop cybernetics that could enhance, not just restore, a body's functionality. Just as these technologies were starting to appear, the Lunar Insurrection began.",
@@ -8460,18 +9826,8 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Enhanced Genetic Modifications",
-               "description": [
-                  "Once per session when your character uses one of their g-mods to modify a check, you may spend a Story Point to add {@symbols s} equal to your character's ranks in {@skill Resilience||crb} to the results (in addition to any other affects the g-mod has)."
-               ]
-            },
-            {
-               "name": "G-mod",
-               "description": [
-                  "Your character begins play with one {@filter gear|g-mod|source:shadow-of-the-beanstalk=1;type:g-mod=1} (see page 106) that costs a total of 1,000 credits or less. They do not need to make any check to assimilate this g-mod."
-               ]
-            }
+            "Enhanced Genetic Modifications",
+            "G-mod"
          ],
          "description": [
             "If cyborgs are a melding of person and machine, then g-mods are the complete changing of that person into something new. While some individuals may have their genes subtly altered, g-mods modify their DNA in profound and radical ways, changing their appearance, their intellect, and sometimes the core functions of their bodies. To date, g-modding is the closest humankind has come to true transhumanism, with some arguing that the most modified g-mods are no longer entirely Homo sapiens.",
@@ -8517,18 +9873,8 @@
             "choice": false
          },
          "abilities": [
-            {
-               "name": "Zero-G Adept",
-               "description": [
-                  "A Loonie does not count {@rule gravity|zero-gravity|crb} environments as difficult terrain."
-               ]
-            },
-            {
-               "name": "Resourceful",
-               "description": [
-                  "Once per session after making a skill check, you may spend a Story Point to have your character reroll up to two dice in the pool."
-               ]
-            }
+            "Zero-G Adept",
+            "Resourceful"
          ],
          "description": [
             "Those born on the Moon consider themselves a people apart—and why not? They are, after all, members of the first generations that have grown up free from the loving embrace of planet Earth. More than just having a natural affinity for low gravity, slightly longer limbs, and less muscle and bone density, Loonies are different because they no longer see Earth as home. This has fostered a fierce independent streak in most Loonies, many of whom see themselves as a minority in the thrall of Earth-bound megacorps or far-off governments. A particular sticking point is that Heinlein, the largest settlement on Luna, is simply the twelfth district of New Angeles, a city almost four hundred thousand kilometers away. It is sentiments like this that sparked the Worlds War, and though Earth might consider it part of the past, many Loonies have long memories.",
@@ -8574,12 +9920,7 @@
             "choice": true
          },
          "abilities": [
-            {
-               "name": "Ready for Anything",
-               "description": [
-                  "Once per session as an out-of-turn incidental, you may move one Story Point from the Game Master's pool to the players' pool."
-               ]
-            }
+            "Ready for Anything"
          ],
          "description": [
             "Most humans in New Angeles are pretty normal—at least from a biological point of view. While bioroids and clones work in all levels of industry, the first generations of people born on other worlds have grown up and had kids of their own, and though science allows people to rebuild their bodies as they see fit, \"naturals\" still make up the vast majority of humanity. At their core, naturals resemble their ancestors going back a few thousand years, even if they do carry a PAD, have a fit-chip implant, or sport a biolumin tattoo. The wealthiest naturals may benefit from some minor genetic modifications that weed out hereditary diseases, but most naturals have the same genetic baseline template as their grandparents and great-grandparents.",
@@ -8598,6 +9939,126 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ]
+      }
+   ],
+   "archetypeAbility": [
+      {
+         "name": "Adjusted to Cybernetics",
+         "description": [
+            "Once per session as an out-of-turn incidental, you may spend a Story Point to have your character heal strain equal to their number of cybernetics."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental (out of turn)",
+            "session",
+            "story point cost",
+            "recovery"
+         ]
+      },
+      {
+         "name": "Cyborg",
+         "description": [
+            "Your character begins play with one {@filter gear|cybernetic|source:shadow-of-the-beanstalk=1;type:cybernetic=1} (see page 104) that costs a total of 1,000 credits or less. They do not need to make any check to install this cybernetic, and they do not decrease their strain threshold because of this cybernetic (but will decrease their strain threshold as normal if they get any future cybernetics)."
+         ],
+         "tags": [
+            "general",
+            "character creation modifier",
+            "stat modifier"
+         ]
+      },
+      {
+         "name": "Enhanced Genetic Modifications",
+         "description": [
+            "Once per session when your character uses one of their g-mods to modify a check, you may spend a Story Point to add {@symbols s} equal to your character's ranks in {@skill Resilience||crb} to the results (in addition to any other affects the g-mod has)."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "story point cost",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "G-mod",
+         "description": [
+            "Your character begins play with one {@filter gear|g-mod|source:shadow-of-the-beanstalk=1;type:g-mod=1} (see page 106) that costs a total of 1,000 credits or less. They do not need to make any check to assimilate this g-mod."
+         ],
+         "tags": [
+            "general",
+            "character creation modifier"
+         ]
+      },
+      {
+         "name": "Inorganic",
+         "description": [
+            "Since bioroids are inorganic, they do not gain the benefits of healing wounds with {@gear slap-patch|slap patches} ({@rule painkillers||crb}) or a {@skill Medicine||crb} check. Bioroids can heal wounds and strain naturally by resting, as their systems attempt self-repairs. Bioroids can also be \"healed\" by using the {@skill Mechanics||crb} skill instead of the {@skill Medicine||crb} skill, but otherwise following the rules in the Medical Care section on page 116 of the {@title Genesys} Core Rulebook."
+         ],
+         "tags": [
+            "general",
+            "recovery"
+         ]
+      },
+      {
+         "name": "Ready for Anything",
+         "description": [
+            "Once per session as an out-of-turn incidental, you may move one Story Point from the Game Master's pool to the players' pool."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "session",
+            "incidental (out of turn)",
+            "support"
+         ]
+      },
+      {
+         "name": "Resourceful",
+         "description": [
+            "Once per session after making a skill check, you may spend a Story Point to have your character reroll up to two dice in the pool."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental",
+            "session",
+            "story point cost",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Special Abilities (Bioroid)",
+         "description": [
+            "Bioroids do not need to eat, sleep, or breathe, and they are unaffected by toxins and poisons. They do not reduce their strain threshold when they receive cybernetics (cybernetics represent upgraded mechanical components instead of true cybernetics)."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "stat modifier"
+         ]
+      },
+      {
+         "name": "Underestimated",
+         "description": [
+            "When making an opposed check, clones add {@symbols a} to the results."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "results modifier",
+            "opposed"
+         ]
+      },
+      {
+         "name": "Zero-G Adept",
+         "description": [
+            "A Loonie does not count {@rule gravity|zero-gravity|crb} environments as difficult terrain."
+         ],
+         "tags": [
+            "general",
+            "passive"
          ]
       }
    ],
@@ -8648,7 +10109,7 @@
                "A {@gear stun gun} {@i or} a {@gear monoblade}",
                "{@gear Concealed buckyweave} {@i or} {@gear durable clothing} and a {@gear PAD}",
                "An {@gear emergency medkit} {@i or} {@gear smartspecs}",
-               "2 {@gear slap-patches} and a {@gear portable comlink}",
+               "2 {@gear slap-patch|slap-patches} and a {@gear personal comlink}",
                "100 + 1d100 credits"
             ]
          },
@@ -9591,7 +11052,6 @@
          "encumbrance": 3,
          "hardPoints": 2,
          "price": 825,
-         "restricted": false,
          "rarity": 7,
          "special": [
             {
@@ -9686,7 +11146,6 @@
          "encumbrance": 1,
          "hardPoints": 3,
          "price": 345,
-         "restricted": false,
          "rarity": 3,
          "special": [
             {
@@ -9729,7 +11188,6 @@
          "encumbrance": 1,
          "hardPoints": 1,
          "price": 100,
-         "restricted": false,
          "rarity": 2,
          "description": [
             "Lightweight, easy to use, and often disposable, light pistols are perhaps the most common firearm in the world. While their small-caliber rounds and underwhelming ballistics make them poor weapons, they're still popular with criminals and on the Moon, since they can be produced by 3-D printers and their low-velocity rounds rarely puncture domes. Some NAPD officers carry a light pistol as a drop gun they can place on dead suspects after a questionable shooting.",
@@ -9761,7 +11219,6 @@
          "encumbrance": 1,
          "hardPoints": 2,
          "price": 300,
-         "restricted": false,
          "rarity": 2,
          "description": [
             "Pistols are the go-to weapons for law enforcement, military, self-defense, and general criminal activity. They come in a breathtaking array of calibers, styles, actions, and configurations and range from snub-nosed belly guns used by back-alley killers to the high-tech sidearms carried by NAPD officers. Pistols have respectable range, stopping power, and are widely available. Pistols are often equipped with smart links, either from the factory or through enduser modification, which increases their utility. All this makes them a very attractive choice for someone looking for a versatile and reliable carry weapon",
@@ -9792,7 +11249,6 @@
          "encumbrance": 4,
          "hardPoints": 3,
          "price": 875,
-         "restricted": false,
          "rarity": 4,
          "special": [
             {
@@ -9831,7 +11287,6 @@
          "encumbrance": 3,
          "hardPoints": 2,
          "price": 900,
-         "restricted": false,
          "rarity": 4,
          "special": [
             {
@@ -9915,7 +11370,6 @@
          "encumbrance": 2,
          "hardPoints": 1,
          "price": 500,
-         "restricted": false,
          "rarity": 5,
          "special": [
             {
@@ -10010,7 +11464,6 @@
          "encumbrance": 1,
          "hardPoints": 2,
          "price": 450,
-         "restricted": false,
          "rarity": 4,
          "special": [
             {
@@ -10103,7 +11556,6 @@
          "encumbrance": 1,
          "hardPoints": 2,
          "price": 650,
-         "restricted": false,
          "rarity": 8,
          "special": [
             {
@@ -10189,7 +11641,6 @@
          "encumbrance": 1,
          "hardPoints": 2,
          "price": 375,
-         "restricted": false,
          "rarity": 2,
          "special": [
             {
@@ -10622,7 +12073,6 @@
          "encumbrance": 1,
          "hardPoints": 0,
          "price": 50,
-         "restricted": false,
          "rarity": 5,
          "special": [
             {
@@ -10720,7 +12170,6 @@
          "encumbrance": 1,
          "hardPoints": 0,
          "price": 70,
-         "restricted": false,
          "rarity": 4,
          "special": [
             {
@@ -10772,7 +12221,6 @@
          "encumbrance": 1,
          "hardPoints": 1,
          "price": 40,
-         "restricted": false,
          "rarity": 1,
          "special": [
             {
@@ -10848,7 +12296,6 @@
          "encumbrance": 0,
          "hardPoints": 0,
          "price": 70,
-         "restricted": false,
          "rarity": 3,
          "special": [
             {
@@ -10940,7 +12387,6 @@
          "encumbrance": 3,
          "hardPoints": 2,
          "price": 600,
-         "restricted": false,
          "rarity": 10,
          "special": [
             {
@@ -10992,7 +12438,6 @@
          "encumbrance": 1,
          "hardPoints": 1,
          "price": 225,
-         "restricted": false,
          "rarity": 3,
          "special": [
             {
@@ -11029,7 +12474,6 @@
          "encumbrance": 5,
          "hardPoints": 3,
          "price": 725,
-         "restricted": false,
          "rarity": 5,
          "special": [
             {
@@ -11082,7 +12526,6 @@
          "encumbrance": 4,
          "hardPoints": 4,
          "price": 200,
-         "restricted": false,
          "rarity": 2,
          "special": [
             {
@@ -11124,7 +12567,6 @@
          "encumbrance": 1,
          "hardPoints": 2,
          "price": 125,
-         "restricted": false,
          "rarity": 2,
          "special": [
             {
@@ -11165,7 +12607,6 @@
          "encumbrance": 1,
          "hardPoints": 1,
          "price": 200,
-         "restricted": false,
          "rarity": 3,
          "special": [
             {
@@ -11206,7 +12647,6 @@
          "encumbrance": 4,
          "hardPoints": 1,
          "price": 850,
-         "restricted": false,
          "rarity": 4,
          "special": [
             {
@@ -11255,7 +12695,6 @@
          "encumbrance": 1,
          "hardPoints": 1,
          "price": 50,
-         "restricted": false,
          "rarity": 1,
          "description": [
             "Durable clothing is exactly what it sounds like: sturdy, wellcrafted articles of clothing that provide a bit of protection and can stand up to the wear and tear of modern life. These typical, workaday outfits worn by the majority of New Angelinos range from synthleather jackets and denim jeans to sturdy mechanics' coveralls and military surplus jumpsuits. While they won't stop a bullet or turn a monoblade, a suit of durable clothing is definitely better than nothing.",
@@ -11281,7 +12720,6 @@
          "encumbrance": 1,
          "hardPoints": 2,
          "price": 320,
-         "restricted": false,
          "rarity": 4,
          "description": [
             "Visible body armor isn't exactly what most people wear while strolling down the slidewalks of New Angeles. Well-heeled New Angelinos who are looking for a bit of protection often wear stylish clothing reinforced with a concealed layer of buckyweave and energy-dispersion fiber mesh to provide basic protection from small arms and light energy weapons. Just about any type of clothing can be tailored with this reinforcing layer, and quite a few shops are willing to discreetly add it to the clothes they already sell—for a substantial fee.",
@@ -11308,7 +12746,6 @@
          "encumbrance": 4,
          "hardPoints": 2,
          "price": 260,
-         "restricted": false,
          "rarity": 4,
          "description": [
             "Produced by a number of manufacturers, environmental hardsuits allow individuals to work in extremely hazardous conditions in relative safety. While they come in a variety of designs, most hardsuits share a common suite of features.",
@@ -11370,7 +12807,6 @@
          "encumbrance": 2,
          "hardPoints": 1,
          "price": 500,
-         "restricted": false,
          "rarity": 5,
          "description": [
             "Light body armor is a catchall term for a collection of armored vests, flak jackets, and other lightweight, noncarapace, nonmilitary armor. It provides basic protection to the torso and often to forearms and shins, and it is typically paired with a simple, open-faced helmet to protect the head.",
@@ -11493,7 +12929,6 @@
          "encumbrance": 3,
          "hardPoints": 2,
          "price": 550,
-         "restricted": false,
          "rarity": 5,
          "description": [
             "The NAPD is the single largest purchaser of riot armor in New Angeles, prisec outfits being a respectable second, as both deal with anarchist protests and Human First riots. Built to survive the wear and tear of modern law enforcement, a suit of riot armor typically starts with a heavyduty service uniform similar to those worn by military personnel and PMC operatives. A set of protective plates— torso clamshell, shoulders, forearms, and shin protectors— made of ballistic gel and flexible polycarbonates is then worn over the uniform, providing protection for sensitive or easily damaged parts of the body. Most suits also include an integrated gas mask and helmet speakers.",
@@ -12208,7 +13643,7 @@
          "class": "tools",
          "description": [
             "Investigators not lucky enough to be a part of the NAPD's forensic division (and have access to their comprehensive and state-of-the-art laboratories) need to make do with portable and limited forensic kits. A forensic kit is about the size of a large suitcase. It has storage compartments for small pieces of evidence (including a cold-storage microfreezer), tools for recovering fingerprints and DNA samples, a hand-held magnifier/recorder, a chemical and DNA analyzer, and a combination camera and las-scanner that can holographically record a scene, allowing a PI to take a snapshot of a crime scene and walk through its holographic projection later.",
-            "In addition to the basic recording, analyzing, and evidence-gathering uses, your character adds 󲊴 to Vigilance and Perception checks made while searching a crime scene using a forensic kit."
+            "In addition to the basic recording, analyzing, and evidence-gathering uses, your character adds {@symbols a} to {@skill Vigilance||crb} and {@skill Perception||crb} checks made while searching a crime scene using a forensic kit."
          ],
          "encumbrance": 4,
          "price": 475,
@@ -12699,8 +14134,8 @@
             "Neuro-regulators are fantastically complex devices that wire microelectronic circuits directly into the brain. Although the devices were originally designed to treat a variety of mental illnesses, some people found that if they were adjusted in particular ways, they increased mental focus and eliminated \"troublesome\" human emotions such as fear. Of course, this could also make the individuals come across as creepy and emotionless.",
             "Neuro-regulators increase your character's {@characteristic Willpower||crb} by 1 and decrease their strain threshold by 1. Your character may also lose the good sense to flee from dangerous situations and, at your GM's discretion, your character may suffer {@dice setback} to social skill checks for seeming a bit robotic."
          ],
-         "price": 0,
-         "rarity": 0,
+         "price": 1500,
+         "rarity": 6,
          "page": 105,
          "modifiers": {
             "stats": {
@@ -13284,27 +14719,6 @@
             {
                "name": "science fiction",
                "source": "crb"
-            }
-         ]
-      },
-      {
-         "name": "Ballistic Plates",
-         "page": 109,
-         "type": "attachment",
-         "class": "armor",
-         "hardPoints": 1,
-         "price": 0,
-         "rarity": 0,
-         "description": [
-            "Ballistic armor plates are a popular after-market add on for mercenaries and members of the NAPD SWAT Team. The plascrete plates may be heavy, but they help deflect shots and blows, and absorb damage from direct hits.",
-            {
-               "type": "list",
-               "items": [
-                  "{@b Models Include:} Argus BallisTec Defensive Plates.",
-                  "{@b Use With:} This attachment can be applied to any combat armor.",
-                  "{@b Modifiers:} The wearer increases their ranged defense by 1. The armor also increases its encumbrance by 1.",
-                  "{@b Hard Points Required:} 1."
-               ]
             }
          ]
       },
@@ -15137,6 +16551,25 @@
          ]
       },
       {
+         "name": "Drone Operations",
+         "page": 233,
+         "description": [
+            "Drones are not \"smart\" enough to operate on their own unless they are following a specific set of predetermined instructions or are working within the parameters of a simple daily routine. This works fine for delivery drones and New Angeles street sweepers, but the drones used by military forces need to be run by skilled operators to be of any great use.",
+            "Anyone with a communications link and the right setup can control a drone. This requires the character to spend their action and maneuver to allow the drone to perform an action and maneuver. Characters may have talents and abilities that modify this (for example, most drones have the {@adversaryAbility Telepresence} ability, which makes them better when directed by an operator).",
+            "If a drone is not being directed by an operator, it can still function in a limited manner. The exact limits of what it can do are up to you, the GM, but generally, you should have it follow a simple (and literal) set of instructions. {@adversary Camdrone|Camdrones} told to scan crowds for certain faces will sit in one spot and study everyone who passes by, for example. The one thing a drone can't do autonomously is kill someone. Ethical considerations mean that drones are hardwired not to fire on a living target unless an active controller gives them kill authority."
+         ],
+         "type": "Adversary"
+      },
+      {
+         "name": "Haas-Bioroid Loss Prevention Agent",
+         "page": 231,
+         "description": [
+            "Haas-Bioroid's Android Loss Prevention Program (HALPP) officially doesn't exist, because bioroids never run away or disobey their programming. Unofficially, it has a massive staff and works around the clock to hunt down \"malfunctioning\" bioroids before the public hears about them.",
+            "A loss prevention agent can be represented with the cybermod bounty hunter profile and adding this ability: Shutdown Authorization (as an action, may make an {@difficulty Average| Computers (Hacking)} to {@rule staggered|stagger|crb} and {@rule immobilized|immobilize|crb} one bioroid within short range for the remainder of the encounter; if the target is a PC bioroid, the check becomes an {@b opposed {@skill Computers (Hacking)} versus {@skill Discipline||crb} check}."
+         ],
+         "type": "Adversary"
+      },
+      {
          "name": "Riot Shields",
          "page": 95,
          "type": "gear",
@@ -15979,7 +17412,7 @@
          "activation": "passive",
          "ranked": false,
          "description": [
-            "When your character selects this talent they choose one icebreaker or piece of ice that they own. If they choose an icebreaker, whenever they use that icebreaker to override ice, they at {@symbols a} to the results. If they choose a piece of ice, whenever someone else attempts to override it, they add {@symbols h} to the results."
+            "When your character selects this talent they choose one icebreaker or piece of ice that they own. If they choose an icebreaker, whenever they use that icebreaker to override ice, they add {@symbols a} to the results. If they choose a piece of ice, whenever someone else attempts to override it, they add {@symbols h} to the results."
          ],
          "page": 44,
          "settings": [

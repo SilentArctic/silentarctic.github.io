@@ -18,6 +18,9 @@
                "nemesis"
             ]
          },
+         "npc": {
+            "type": "boolean"
+         },
          "hasVariants": {
             "type": "boolean"
          },
@@ -164,20 +167,28 @@
          "talents": {
             "type": "array",
             "items": {
-               "type": ["object", "string"],
-               "properties": {
-                  "name": {
+               "oneOf": [
+                  {
                      "type": "string"
                   },
-                  "description": {
-                     "type": "string"
+
+                  {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string"
+                        },
+                        "source": {
+                           "type": "string"
+                        }
+                     },
+                     "required": [
+                        "name",
+                        "source"
+                     ],
+                     "additionalProperties": false
                   }
-               },
-               "required": [
-                  "name",
-                  "description"
-               ],
-               "additionalProperties": false
+               ]
             }
          },
          "abilities": {
@@ -368,10 +379,12 @@
          "name",
          "type",
          "characteristics",
+         "derived",
          "skills"
       ],
       "optional": [
          "page",
+         "npc",
          "variant",
          "hasVariants",
          "description",
@@ -379,7 +392,7 @@
          "motivations",
          "talents",
          "abilities",
-         "equipment",
+         "weapons",
          "gear",
          "tags",
          "settings"
