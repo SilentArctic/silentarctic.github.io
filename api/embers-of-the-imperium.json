@@ -16511,7 +16511,7 @@
                      "damage": "+8",
                      "crit": 2,
                      "range": "Engaged",
-                     "hadPoints": 0,
+                     "hardPoints": 0,
                      "special": "{@quality Accurate|Accurate 2|crb}, {@quality Cumbersome|Cumbersome 3|crb}, {@quality Sunder||crb}, {@quality Vicious|Vicious 3|crb}"
                   }
                ]
@@ -16576,7 +16576,7 @@
                      "damage": "5",
                      "crit": 1,
                      "range": "Long",
-                     "hadPoints": 0,
+                     "hardPoints": 0,
                      "special": "{@quality Accurate|Accurate 1|crb}, {@quality Defensive|Defensive 1|crb}, {@quality Pierce|Pierce 5|crb}, {@quality Vicious|Vicious 3|crb}"
                   }
                ]
