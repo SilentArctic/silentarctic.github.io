@@ -209,7 +209,7 @@
             "Flyer",
             "Ghostly",
             "Spirit",
-            "Spells (Arcana)",
+            "Spells (Divine)",
             "Spells: Eye of the Jinn"
          ],
          "weapons": [
@@ -5466,7 +5466,7 @@
          ]
       },
       {
-         "name": "Spells (Arcana)",
+         "name": "Spells (Divine)",
          "description": [
             "This character may choose any magic action allowed for by the {@skill Divine||crb} skill, and may select additional spell effects, as normal. The spell they use most often is the following unique spell."
          ],
@@ -7634,6 +7634,29 @@
          "description": [
             "In Genesys, we assume that your setting may have its own set of expanded knowledge skills (see page 67 of the Genesys Core Rulebook for more on how {@skill Knowledge||crb} can be expanded into multiple skills). However, this raises the question of which knowledge skill should be used when casting spells?",
             "One option is to create your own knowledge skill or skills, each one linked to a different kind of magic. However, we have also provided a default option: {@skill Knowledge (Supernatural)}, which can represent knowledge of any magical abilities."
+         ]
+      }
+   ],
+   "setting": [
+      {
+         "name": "Age of Myth",
+         "page": 7,
+         "summary": [
+            "See {@title Expanded Player's Guide} for more information on the Age of Myth setting."
+         ]
+      },
+      {
+         "name": "Monsterworld",
+         "page": 17,
+         "summary": [
+            "See {@title Expanded Player's Guide} for more information on the Monsterworld setting."
+         ]
+      },
+      {
+         "name": "Post Apocalypse",
+         "page": 28,
+         "summary": [
+            "See {@title Expanded Player's Guide} for more information on the Post Apocalypse setting."
          ]
       }
    ],
