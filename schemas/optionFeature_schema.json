@@ -5,27 +5,34 @@
       "type": "object",
       "properties": {
          "name": {
-            "type": "string"
+            "type": "string",
+            "description": "Name of the option or feature."
          },
          "page": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Page the option/feature is found on."
          },
          "type": {
-            "type": "string"
+            "type": "string",
+            "description": "Primary type of the option/feature. Add this to the content pack's _meta.filters.optionFeatureType array if it is not a standard type."
          },
          "class": {
-            "type": "string"
+            "type": "string",
+            "description": "Secondary type of the option/feature. Add this to the content pack's _meta.filters.optionFeatureClass array if it is not a standard class."
          },
          "labels": {
             "type": "array",
+            "description": "Extra labels. These are placed above the description and persist across the description and info tabs.",
             "items": {
                "type": "object",
                "properties": {
                   "name": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Label name. This will be bolded"
                   },
                   "description": {
-                     "type": ["string", "integer"]
+                     "type": ["string", "integer"],
+                     "description": "Label description."
                   }
                },
                "required": [
@@ -36,19 +43,24 @@
             }
          },
          "description": {
-            "$ref": "varyingDisplay_sub_schema.json"
+            "$ref": "varyingDisplay_sub_schema.json",
+            "description": "Description of the option/feature."
          },
          "info": {
-            "$ref": "varyingDisplay_sub_schema.json"
+            "$ref": "varyingDisplay_sub_schema.json",
+            "description": "Extra information. This is displayed in a secondary tab."
          },
          "summary": {
             "type": "array",
+            "description": "Deprecated. This used to be a short blurb that appeared in the popover.",
             "items": {
-               "type": "string"
+               "type": "string",
+               "description": "Deprecated. Do not add values here."
             }
          },
          "meta": {
-            "type": "object"
+            "type": "object",
+            "description": "Metadata for the option/feature. You likely won't need this."
          },
          "settings": {
             "$ref": "settings_sub_schema.json"

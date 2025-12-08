@@ -5,49 +5,64 @@
       "type": "object",
       "properties": {
          "name": {
-            "type": "string"
+            "type": "string",
+            "description": "Vehicle name."
          },
          "page": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Page the vehicle can be found on."
          },
          "variant": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "If this vehicle is a variant of another vehicle (variants are created as separate entries)."
          },
          "hasVariants": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "If this vehicle has any variants."
          },
          "imageUrl": {
-            "type": "string"
+            "type": "string",
+            "description": "Url to an image of the vehicle."
          },
          "silhouette": {
-            "type": "integer"
+            "type": "integer",
+            "description": "The vehicle's silhouette."
          },
          "maxSpeed": {
-            "type": "integer"
+            "type": "integer",
+            "description": "The vehicle's max speed."
          },
          "handling": {
-            "type": "integer"
+            "type": "integer",
+            "description": "The vehicle's handling."
          },
          "defense": {
-            "type": "integer"
+            "type": "integer",
+            "description": "The vehicle's innate defense."
          },
          "armor": {
-            "type": "integer"
+            "type": "integer",
+            "description": "The vehicle's armor."
          },
          "htt": {
-            "type": "integer"
+            "type": "integer",
+            "description": "The vehicle's hull trauma threshold."
          },
          "sst": {
-            "type": "integer"
+            "type": "integer",
+            "description": "The vehicle's system strain threshold."
          },
          "controlSkill": {
             "type": "object",
+            "description": "Skill used when making control checks.",
             "properties": {
                "name": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "Name of the control skill."
                },
                "source": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "Source of the skill (abbreviation) if not found in this content pack (example: CRB)."
                }
             },
             "required": [
@@ -59,16 +74,20 @@
             "additionalProperties": false
          },
          "complement": {
-            "type": "string"
+            "type": "string",
+            "description": "Number of crew required to operate this vehicle."
          },
          "passengers": {
-            "type": ["string", "integer"]
+            "type": ["string", "integer"],
+            "description": "Number of passengers that can comfortably occupy this vehicle."
          },
          "consumables": {
-            "type": "string"
+            "type": "string",
+            "description": "Amount of consumables (hours, days, weeks, etc) this vehicle holds before needing to restock."
          },
          "encumbranceCapacity": {
-            "type": ["string", "integer"]
+            "type": ["string", "integer"],
+            "description": "Total encumbrance this vehicle can hold."
          },
          "ftlRange": {
             "type": "string",
@@ -78,7 +97,8 @@
                "Medium",
                "Long",
                "Extreme"
-            ]
+            ],
+            "description": "Distance the vehicle can travel at faster-than-light speeds."
          },
          "ftlSpeed": {
             "type": "string",
@@ -88,16 +108,20 @@
                "average",
                "fast",
                "very fast"
-            ]
+            ],
+            "description": "How fast this vehicle can travel at faster-than-light speeds."
          },
          "price": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Cost of the vehicle."
          },
          "rarity": {
-            "type": "integer"
+            "type": "integer",
+            "description": "How rare the vehicle is."
          },
          "restricted": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "If the vehicle is restricted."
          },
          "weapons": {
             "type": "array",
@@ -105,22 +129,27 @@
                "type": "object",
                "properties": {
                   "name": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Weapon name."
                   },
                   "description": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Vehicle description."
                   },
                   "fireArc": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Angle at which the weapon can fire."
                   },
                   "skill": {
                      "type": "object",
                      "properties": {
                         "name": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Skill to use the weapon."
                         },
                         "source": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Source of the skill (abbreviation) if not found in this content pack (example: CRB)."
                         }
                      },
                      "required": [
@@ -132,14 +161,17 @@
                      "additionalProperties": false
                   },
                   "damage": {
-                     "type": "integer"
+                     "type": "integer",
+                     "description": "Weapon damage."
                   },
                   "critical": {
-                     "type": "integer"
+                     "type": "integer",
+                     "description": "Advantages required to trigger a critical hit."
                   },
                   "range": {
                      "type": "string",
-                     "enum": ["Engaged", "Short", "Medium", "Long", "Extreme", "Strategic"]
+                     "enum": ["Engaged", "Short", "Medium", "Long", "Extreme", "Strategic"],
+                     "description": "Weapon's maximum range."
                   },
                   "qualities": {
                      "type": "array",
@@ -147,13 +179,16 @@
                         "type": "object",
                         "properties": {
                            "name": {
-                              "type": "string"
+                              "type": "string",
+                              "description": "Weapon quality name."
                            },
                            "ranks": {
-                              "type": "integer"
+                              "type": "integer",
+                              "description": "Quality ranks."
                            },
                            "source": {
-                              "type": "string"
+                              "type": "string",
+                              "description": "Source of the quality (abbreviation) if not found in this content pack."
                            }
                         },
                         "required": [
@@ -167,7 +202,8 @@
                      }
                   },
                   "details": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Extra weapon details."
                   }
                },
                "required": [
@@ -191,10 +227,12 @@
                "type": "object",
                "properties": {
                   "name": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Vehicle ability name."
                   },
                   "description": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Ability description."
                   }
                },
                "required": [

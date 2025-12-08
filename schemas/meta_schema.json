@@ -89,31 +89,36 @@
             "settings": {
                "type": "array",
                "items": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "New setting to add to filters."
                }
             },
             "magicSkills": {
                "type": "array",
                "items": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "New magic skill to add to filters."
                }
             },
             "optionFeatureType": {
                "type": "array",
                "items": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "New optionFeature type to add to filters."
                }
             },
             "optionFeatureClass": {
                "type": "array",
                "items": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "New optionFeature class to add to filters."
                }
             },
             "talentPrereqs": {
                "type": "array",
                "items": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "New talent prereq to add to filters."
                }
             }
          },

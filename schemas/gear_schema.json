@@ -5,7 +5,8 @@
       "type": "object",
       "properties": {
          "name": {
-            "type": "string"
+            "type": "string",
+            "description": "Gear name."
          },
          "type": {
             "type": "string",
@@ -22,29 +23,36 @@
                "mount",
                "treasure",
                "weapon"
-            ]
+            ],
+            "description": "Type of gear. Different types have different properties available."
          },
          "class": {
-            "type": "string"
+            "type": "string",
+            "description": "Subcategory for the gear. Ex: Military, Energy, etc."
          },
          "page": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Source page the gear can be found on."
          },
          "imageUrl": {
-            "type": "string"
+            "type": "string",
+            "description": "Url to an image of the gear."
          },
          "description": {
             "$ref": "./varyingDisplay_sub_schema.json"
          },
          "price": {
+            "description": "Value of the gear.",
             "oneOf": [
                {
                   "type": "integer",
-                  "title": "Value"
+                  "title": "Value",
+                  "description": "Numerical value of the gear."
                },
                {
                   "type": "string",
                   "title": "Default option",
+                  "description": "Some items can't be valued monetarily. These values provided options to indicate that.",
                   "enum": [
                      "priceless",
                      "n/a",
@@ -54,13 +62,15 @@
             ]
          },
          "restricted": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "If the gear is a restricted item."
          },
          "rarity": {
             "type": [
                "integer",
                "null"
-            ]
+            ],
+            "description": "How rare the gear is."
          },
          "modifiers": {
             "type": "array",
@@ -133,10 +143,12 @@
                      "type": "object",
                      "properties": {
                         "name": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Skill used to attack with the weapon."
                         },
                         "source": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Source of the skill (abbreviation)."
                         }
                      },
                      "required": [
@@ -151,10 +163,12 @@
                      "type": [
                         "string",
                         "integer"
-                     ]
+                     ],
+                     "description": "Base damage of the weapon. Melee weapons likely have a \"+\" prefix to indicate the use's Brawn should be added to the damage."
                   },
                   "critical": {
-                     "type": "integer"
+                     "type": "integer",
+                     "description": "Number of advantages required to trigger a critical hit with the weapon."
                   },
                   "range": {
                      "type": "string",
@@ -165,27 +179,34 @@
                         "Long",
                         "Extreme",
                         "Strategic"
-                     ]
+                     ],
+                     "description": "The weapon's maximum effective range."
                   },
                   "encumbrance": {
-                     "type": "integer"
+                     "type": "integer",
+                     "description": "Encumbrance of the weapon."
                   },
                   "hardPoints": {
-                     "type": "integer"
+                     "type": "integer",
+                     "description": "How many hardpoints the weapon has."
                   },
                   "special": {
                      "type": "array",
+                     "description": "List of weapon qualities",
                      "items": {
                         "type": "object",
                         "properties": {
                            "name": {
-                              "type": "string"
+                              "type": "string",
+                              "description": "Weapon quality name."
                            },
                            "value": {
-                              "type": "integer"
+                              "type": "integer",
+                              "description": "Quality ranks (if any)."
                            },
                            "source": {
-                              "type": "string"
+                              "type": "string",
+                              "description": "Source of the quality (abbreviation) (\"likely CRB\") if not found in this content pack."
                            }
                         },
                         "required": [
@@ -224,30 +245,38 @@
             "then": {
                "properties": {
                   "defense": {
-                     "type": "integer"
+                     "type": "integer",
+                     "description": "Amount of defense provided by the armor."
                   },
                   "soak": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Amount of soak provided by the armor."
                   },
                   "encumbrance": {
-                     "type": "integer"
+                     "type": "integer",
+                     "description": "Encumbrance of the armor."
                   },
                   "hardPoints": {
-                     "type": "integer"
+                     "type": "integer",
+                     "description": "How many hardpoints the armor has."
                   },
                   "special": {
                      "type": "array",
+                     "description": "Armor qualities.",
                      "items": {
                         "type": "object",
                         "properties": {
                            "name": {
-                              "type": "string"
+                              "type": "string",
+                              "description": "Armor quality name."
                            },
                            "value": {
-                              "type": "integer"
+                              "type": "integer",
+                              "description": "Quality ranks (if any)."
                            },
                            "source": {
-                              "type": "string"
+                              "type": "string",
+                              "description": "Source of the quality (abbreviation) (\"likely CRB\") if not found in this content pack."
                            }
                         },
                         "required": [
@@ -293,37 +322,12 @@
                      "type": [
                         "string",
                         "integer"
-                     ]
-                  },
-                  "special": {
-                     "type": "array",
-                     "items": {
-                        "type": "object",
-                        "properties": {
-                           "name": {
-                              "type": "string"
-                           },
-                           "value": {
-                              "type": "integer"
-                           },
-                           "source": {
-                              "type": "string"
-                           }
-                        },
-                        "required": [
-                           "name"
-                        ],
-                        "optional": [
-                           "value",
-                           "source"
-                        ],
-                        "additionalProperties": false
-                     }
+                     ],
+                     "description": "Encumbrance of the gear. Use negative values for items like backpacks that increase encumbrance capacity."
                   }
                },
                "optional": [
-                  "encumbrance",
-                  "special"
+                  "encumbrance"
                ]
             }
          },
@@ -339,8 +343,7 @@
                }
             },
             "then": {
-               "properties": {
-               },
+               "properties": {},
                "required": [],
                "optional": []
             }
@@ -356,43 +359,17 @@
             "then": {
                "properties": {
                   "damage": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Damage added to the Attack spell."
                   },
                   "encumbrance": {
-                     "type": "integer"
-                  },
-                  "special": {
-                     "type": "array",
-                     "items": {
-                        "type": "object",
-                        "properties": {
-                           "name": {
-                              "type": "string"
-                           },
-                           "value": {
-                              "type": "integer"
-                           },
-                           "source": {
-                              "type": "string"
-                           }
-                        },
-                        "required": [
-                           "name"
-                        ],
-                        "optional": [
-                           "value",
-                           "source"
-                        ],
-                        "additionalProperties": false
-                     }
+                     "type": "integer",
+                     "description": "Encumbrance of the implement."
                   }
                },
                "required": [
                   "damage",
                   "encumbrance"
-               ],
-               "optional": [
-                  "special"
                ]
             }
          },
@@ -407,7 +384,8 @@
             "then": {
                "properties": {
                   "hardPoints": {
-                     "type": "integer"
+                     "type": "integer",
+                     "description": "How many hardpoints the attachment requires."
                   },
                   "qualities": {
                      "type": "array",
@@ -415,16 +393,19 @@
                         "type": "object",
                         "properties": {
                            "name": {
-                              "type": "string"
+                              "type": "string",
+                              "description": "Attachment quality name."
                            },
                            "ranks": {
                               "type": [
                                  "string",
                                  "integer"
-                              ]
+                              ],
+                              "description": "Quality ranks (if any)."
                            },
                            "source": {
-                              "type": "string"
+                              "type": "string",
+                              "description": "Source of the quality (abbreviation) (\"likely CRB\") if not found in this content pack."
                            }
                         },
                         "required": [

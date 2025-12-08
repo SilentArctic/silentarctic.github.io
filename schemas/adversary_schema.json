@@ -5,10 +5,12 @@
       "type": "object",
       "properties": {
          "name": {
-            "type": "string"
+            "type": "string",
+            "description": "Adversary name."
          },
          "page": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Page on which this adversary is found in the source document."
          },
          "type": {
             "type": "string",
@@ -16,37 +18,47 @@
                "minion",
                "rival",
                "nemesis"
-            ]
+            ],
+            "description": "Type of this adversary."
          },
          "npc": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "If this adversary is a named NPC."
          },
          "hasVariants": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "If this adversary has any variants (variants are created as separate entries)."
          },
          "variant": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "If this adversary is a variant of an adversary."
          },
          "characteristics": {
             "type": "object",
             "properties": {
                "brawn": {
-                  "type": "integer"
+                  "type": "integer",
+                  "description": "Adversary's brawn."
                },
                "agility": {
-                  "type": "integer"
+                  "type": "integer",
+                  "description": "Adversary's agility."
                },
                "intellect": {
-                  "type": "integer"
+                  "type": "integer",
+                  "description": "Adversary's intellect."
                },
                "cunning": {
-                  "type": "integer"
+                  "type": "integer",
+                  "description": "Adversary's cunning."
                },
                "willpower": {
-                  "type": "integer"
+                  "type": "integer",
+                  "description": "Adversary's willpower."
                },
                "presence": {
-                  "type": "integer"
+                  "type": "integer",
+                  "description": "Adversary's presence."
                }
             },
             "required": [
@@ -63,18 +75,22 @@
             "type": "object",
             "properties": {
                "soak": {
-                  "type": "integer"
+                  "type": "integer",
+                  "description": "Adversary's soak."
                },
                "wounds": {
-                  "type": "integer"
+                  "type": "integer",
+                  "description": "Adversary's wound threshold."
                },
                "strain": {
-                  "type": "integer"
+                  "type": "integer",
+                  "description": "Adversary's strain threshold (only for Nemesis adversaries)."
                },
                "defense": {
                   "type": "array",
                   "items": {
-                     "type": "integer"
+                     "type": "integer",
+                     "description": "Adversary's defense (first is melee, second is ranged)."
                   },
                   "maxItems": 2
                }
@@ -93,13 +109,16 @@
             "type": "object",
             "properties": {
                "combat": {
-                  "type": "integer"
+                  "type": "integer",
+                  "description": "Adversary's approximate combat strength."
                },
                "general": {
-                  "type": "integer"
+                  "type": "integer",
+                  "description": "Adversary's approximate general strength."
                },
                "social": {
-                  "type": "integer"
+                  "type": "integer",
+                  "description": "Adversary's approximate social strength."
                }
             },
             "required": [
@@ -115,10 +134,12 @@
                "type": "object",
                "properties": {
                   "name": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Name of skill."
                   },
                   "characteristic": {
                      "type": "string",
+                     "description": "Characteristic tied to the skill.",
                      "enum": [
                         "brawn",
                         "agility",
@@ -129,10 +150,12 @@
                      ]
                   },
                   "ranks": {
-                     "type": "integer"
+                     "type": "integer",
+                     "description": "Adversary's ranks in the skill (omit for Minions)."
                   },
                   "source": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Source of the skill (abbreviation) if not found in this content pack (example: CRB)."
                   }
                },
                "required": [
@@ -152,10 +175,12 @@
                "type": "object",
                "properties": {
                   "name": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Motivation name."
                   },
                   "description": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Motivation details."
                   }
                },
                "required": [
@@ -184,7 +209,7 @@
                         },
                         "source": {
                            "type": "string",
-                           "description": "Talent source."
+                           "description": "Talent source (abbreviation) (example: CRB)."
                         }
                      },
                      "required": [
@@ -201,19 +226,22 @@
             "items": {
                "oneOf": [
                   {
-                     "title": "Internal Ability",
-                     "type": "string"
+                     "title": "External Ability",
+                     "type": "string",
+                     "description": "Name of ability found in this, or any, content pack's Adversary Abilities."
                   },
 
                   {
-                     "title": "External Ability",
+                     "title": "Private Ability",
                      "type": "object",
                      "properties": {
                         "name": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Name of this ability which is not found in any Adversary Abilities."
                         },
                         "description": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Ability details."
                         }
                      },
                      "required": [
@@ -234,10 +262,12 @@
                      "type": "object",
                      "properties": {
                         "name": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Name of the magic skill this adversary can use."
                         },
                         "source": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Source of the skill (abbreviation) if not found in this content pack (example: CRB)."
                         }
                      },
                      "required": [
@@ -255,10 +285,12 @@
                      "type": "object",
                      "properties": {
                         "name": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Spell name. Consider adding the difficulty here as well (example: {@difficulty Average})."
                         },
                         "description": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Details of the spell."
                         }
                      },
                      "required": [
@@ -281,16 +313,19 @@
                "type": "object",
                "properties": {
                   "name": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Weapon name."
                   },
                   "skill": {
                      "type": "object",
                      "properties": {
                         "name": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Name of skill used with this weapon."
                         },
                         "source": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Source of the skill (abbreviation) if not found in this content pack (example: CRB)."
                         }
                      },
                      "required": [
@@ -302,10 +337,12 @@
                      "additionalProperties": false
                   },
                   "damage": {
-                     "type": "integer"
+                     "type": "integer",
+                     "description": "The weapon's damage."
                   },
                   "critical": {
-                     "type": "integer"
+                     "type": "integer",
+                     "description": "Number of advantage required to trigger a critical hit."
                   },
                   "range": {
                      "type": "string",
@@ -316,7 +353,8 @@
                         "Long",
                         "Extreme",
                         "Strategic"
-                     ]
+                     ],
+                     "description": "The weapon's maximum range."
                   },
                   "qualities": {
                      "type": "array",
@@ -324,13 +362,16 @@
                         "type": "object",
                         "properties": {
                            "name": {
-                              "type": "string"
+                              "type": "string",
+                              "description": "Weapon quality name."
                            },
                            "ranks": {
-                              "type": "integer"
+                              "type": "integer",
+                              "description": "Quality ranks."
                            },
                            "source": {
-                              "type": "string"
+                              "type": "string",
+                              "description": "Source of the quality (abbreviation) if not found in this content pack (example: CRB)."
                            }
                         },
                         "required": [
@@ -364,7 +405,8 @@
          "gear": {
             "type": "array",
             "items": {
-               "type": "string"
+               "type": "string",
+               "description": "Any other gear the adversary possesses. Words after a colon (:) will not be bolded."
             }
          },
          "description": {
@@ -376,7 +418,8 @@
          "tags": {
             "type": "array",
             "items": {
-               "type": "string"
+               "type": "string",
+               "description": "Deprecated. Adversary tags."
             }
          },
          "id": {
