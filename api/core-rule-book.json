@@ -1943,8 +1943,7 @@
                "source": "crb"
             }
          ],
-         "talents": [
-         ],
+         "talents": [],
          "abilities": [
             "Local Politics",
             {
@@ -4762,6 +4761,27 @@
                "name": "all",
                "source": ""
             }
+         ]
+      },
+      {
+         "name": "Unarmed",
+         "page": 109,
+         "type": "weapon",
+         "skill": {
+            "name": "Brawl"
+         },
+         "damage": "+0",
+         "critical": 5,
+         "range": "Engaged",
+         "special": [{
+            "name": "Knockdown"
+         }],
+         "encumbrance": 0,
+         "hardPoints": 0,
+         "price": 0,
+         "rarity": 0,
+         "description": [
+            "When a character makes an unarmed combat check using {@skill Brawl}, the attack has a base damage of their {@characteristic Brawn} rating, a range of engaged, a Critical rating of 5, and the {@quality Knockdown} item quality."
          ]
       },
       {
@@ -8828,6 +8848,17 @@
          ]
       },
       {
+         "name": "Attacking Prone Targets and Attacking While Prone",
+         "page": 108,
+         "type": "combat",
+         "description": [
+            "A character who is knocked down, unconscious, or willingly drops prone is considered {@rule prone}.",
+            "Prone characters are easier to hit with certain combat checks and find it harder to use certain combat skills. A character gains {@dice boost} when attacking a prone target with a {@skill Melee} check (or any other close combat check). A prone character suffers {@dice setback} when making a melee attack from a prone position.",
+            "Prone characters are harder to hit with ranged attacks but suffer no penalties when making ranged attacks. When a character attacks a prone target with a ranged attack, they suffer {@dice setback}.",
+            "Some attacks or weapons may cause a character to become prone. This is indicated in the individual weapon, talent, or creature attack entry. Getting knocked prone may be the result of a failed {@skill Coordination} check or of the activation of a weapon's item quality."
+         ]
+      },
+      {
          "name": "Blanket Barrage",
          "page": 228,
          "type": "vehicle action",
@@ -8935,6 +8966,16 @@
          "type": "environment",
          "description": [
             "When the guns start firing, most characters dive for cover. To keep things simple, being behind some sort of cover — a rock, crate, wall, or vehicle, for example — allows the character to gain a ranged defense of 1 and adds {@dice setback} to certain skill checks, such as Perception. A single {@dice setback} is sufficient for most situations, although the GM may add additional {@dice setback} if the target is particularly well covered, such as if they are within a trench, blockhouse, bunker, or any other prepared position. The same holds true for the increase in ranged defense."
+         ]
+      },
+      {
+         "name": "Critical Injuries",
+         "page": 114,
+         "type": "character",
+         "description": [
+            "A particularly dangerous type of harm is a Critical Injury. A Critical Injury is often the result of an attack during combat, but characters can also suffer one from exceeding their wound threshold or through other means. Each time a character suffers a Critical Injury, the player rolls d100 on {@table I.6-10: Critical Injury Result}, on page 115, to determine the injury's severity rating and effects.",
+            "The short-term effects of some injuries are temporary, and may only disorient or afflict the character for a brief amount of time. Other injuries are more serious and represent some sort of long-term debilitation or impairment. These injuries continue to affect the character until they receive the proper medical treatment to recover from the injury.",
+            "Regardless, a Critical Injury remains with the character until properly healed; even if the short-term effect of the Critical Injury has passed, the status of having a Critical Injury remains. Each Critical Injury a character suffers from adds +10 to any subsequent Critical Injury roll. Essentially, Critical Injury is cumulative, and left untreated, even a number of relatively minor Critical Injuries can lead to devastating results."
          ]
       },
       {
@@ -9240,6 +9281,25 @@
          ]
       },
       {
+         "name": "Exceeding Wound Threshold",
+         "page": 112,
+         "type": "character",
+         "description": [
+            "When a PC suffers wounds greater than their wound threshold, they are knocked out and {@rule incapacitated} until their wounds are reduced so that they no longer exceed their wound threshold (likely through healing). They also immediately suffer one Critical Injury. In some rare and dire circumstances, this could result in the PC's death.",
+            "When non-player characters and creatures suffer wounds greater than their wound threshold, they are defeated (unless they are a high-level opponent such as a nemesis). Being defeated by exceeding their wound threshold usually entails death, but the overall interpretation is up to the GM. The GM can decide that they pass out due to shock, are so injured that they can no longer fight, are knocked unconscious, or suffer any other option that fits the GM's plans for the ongoing narrative. Since non-nemesis NPCs do not track strain separately, but apply strain damage as wounds to their wound threshold, what happens once they are defeated may also depend on whether they were defeated due to strain damage or wound damage.",
+            "When wounds exceed a character's wound threshold, the player should track the number of wounds by which their character has exceeded the threshold, to a maximum of twice the wound threshold. The character must heal wounds until the number of wounds they are suffering is below their wound threshold before the character is no longer incapacitated."
+         ]
+      },
+      {
+         "name": "Exceeding Strain Threshold",
+         "page": 113,
+         "type": "character",
+         "description": [
+            "When a character has suffered strain greater than their strain threshold, they become {@rule incapacitated} until their strain is reduced so that it no longer exceeds their strain threshold. They are likely unconscious, or they may just be so dazed and staggered that they're completely unaware of their surroundings and unable to interact with them.",
+            "When non-player characters and creatures suffer strain, they generally apply the strain directly to their wound threshold (unless they are nemeses and track strain separately)."
+         ]
+      },
+      {
          "name": "Exchange an Action for a Maneuver",
          "page": 101,
          "type": "action",
@@ -9369,6 +9429,15 @@
          ]
       },
       {
+         "name": "Improvised Weapons",
+         "page": 109,
+         "type": "combat",
+         "description": [
+            "Sometimes a character doesn't have a real weapon available and must make do with anything that is on hand. Swinging a broken bottle, heavy tool, large rock, or tree branch at a target are all examples of using an improvised weapon.",
+            "Improvised weapons use the {@skill Melee} skill, and as with all Melee weapons, the attacker adds their {@characteristic Brawn} to the damage dealt. Just like weapons with the {@quality Inferior} quality, improvised weapons generate one automatic {@symbols h} on any check. Improvised weapons deal damage based on their size and general weight, as described in {@table I.6-5: Improvised Weapons}. Any attack roll that results in a {@symbols d} or {@symbols hh} indicates that the improvised weapon breaks and is useless in further rounds of combat. Large improvised weapons require two hands to use if the user is silhouette 1 or smaller."
+         ]
+      },
+      {
          "name": "Incapacitated",
          "page": 113,
          "type": "status",
@@ -9461,6 +9530,25 @@
                   "Kara, seeing that her friend Grace can't carry a box of explosives, a shovel, and her handgun, decides to help. She grabs one end of the box, so that now the two of them are carrying it together. Kara has a {@characteristic Brawn} of 3, so she adds 3 to Grace's encumbrance threshold."
                ]
             }
+         ]
+      },
+      {
+         "name": "Making Ranged Attacks at Engaged Targets",
+         "page": 107,
+         "type": "combat",
+         "description": [
+            "Sometimes, characters may want to attack a target engaged with another character. If the target and the character with whom they are engaged are both enemies of the attacker, the attacker may not worry about whom they might hit. However, if one of the characters is an ally, then things become more dangerous.",
+            "When attacking a target engaged with an ally, the attacker upgrades the difficulty of the check once (for more on upgrading difficulty, see page 22). In addition, if the attacker's check succeeds but generates at least one {@symbols d}, that {@symbols d} is automatically spent to make the attacker hit one of the individuals engaged with the target (of the GM's choice), instead of hitting the target."
+         ]
+      },
+      {
+         "name": "Making Ranged Attacks While Engaged",
+         "page": 107,
+         "type": "combat",
+         "description": [
+            "Sometimes, a character may want to make a ranged attack even though they're locked in hand-to-hand combat with an enemy. Such an action can be risky; a character may find it hard to take the time to line up a shot while an opponent is swinging an axe at them!",
+            "Any opponent engaged with a character when the character makes a ranged attack (no matter who the target is) may add {@dice boost} to their next {@skill Brawl} or {@skill Melee} check against that character. They automatically lose this bonus if they and the character are no longer engaged with each other.",
+            "In addition, the difficulty of some ranged attacks increases while the attacker and an enemy are engaged, and other ranged attacks become impossible. See {@table I.6-4: Ranged Modifiers} for more information. You should note that this chart differentiates based on types of weapons, because in the core rules, there is only one kind of combat skill that lets you attack at range. If your setting has multiple ranged combat skills (such as separate skills for \"light\" and \"heavy\" ranged weapons), then the ranged modifiers can be determined by skill, rather than weapon size. Generally, it should be obvious which of your combat skills match up with which ranged modifiers."
          ]
       },
       {
@@ -9702,6 +9790,67 @@
             "The first painkiller used on a character automatically heals 5 wounds. The second painkiller only heals 4 wounds, the third painkiller heals 3 wounds, and so on. The sixth painkiller has no effect (we say the target is too oversaturated with medicine or healing magic or whatever to benefit from anything else).",
             "Administering a painkiller requires one maneuver, and the character doing the administering must be engaged with the target to treat them. This also means that a character with a free hand can administer a painkiller to themself by spending a maneuver.",
             "Painkillers (in any of their variants) can never heal Critical Injuries."
+         ]
+      },
+      {
+         "name": "Perform a Combat Check",
+         "page": 101,
+         "type": "action",
+         "description": [
+            "A PC makes a combat check when they use a combat skill to attack a target—by firing a gun, throwing a punch, or swinging a sword, for example. This is also referred to as an attack.",
+            "First and foremost, keep in mind that a combat check is a skill check. It follows all of the rules and procedures for making a skill check, including the steps for assem bling the dice pool. However, there are additional steps included in a combat check. All the steps a combat check follows are detailed here.",
+            {
+               "title": "Step 1: Declare an Attack and Select Targets",
+               "forceTitleLevel": 6,
+               "entries": [
+                  "The character chooses to make an attack. They select what skill they use to make the attack and, if the skill requires a weapon to use, which weapon they use. They then declare the target of their attack."
+               ]
+            },
+            {
+               "title": "Step 2: Assemble the Dice Pool",
+               "forceTitleLevel": 6,
+               "entries": [
+                  "The character then assembles the dice pool based on the skill, its characteristic, and any applicable talents or other abilities. Certain conditions, such as the painful effect of a Critical Injury or an environmental effect such as fog or darkness, may also contribute dice to the dice pool. See page 19 for more information on building a dice pool.",
+                  "The difficulty of a combat check depends on whether the attack is a ranged attack (using the {@skill Ranged} skill or one of its derivatives, depending on the setting) or a melee attack (using the {@skill Brawl} or {@skill Melee} skill or a setting-dependent derivative). {@skill Melee} attack difficulties are always {@difficulty Average}. {@skill Ranged} attack difficulties depend on the distance the target is from the active character, or in other words, the range band the target occupies. {@table I.6-1: Ranged Attack Difficulties} lists difficulties as they relate to different range bands. (See page 105 for more information about range bands.) Once the pool is assembled, roll the dice."
+               ]
+            },
+            {
+               "title": "Step 3. Pool Results and Deal Damage",
+               "forceTitleLevel": 6,
+               "entries": [
+                  "Once the player rolls the dice pool for the attack, the player evaluates the results. As with any skill check, the check must generate more {@symbols s} than {@symbols h} to be successful.",
+                  "When making a combat check, if the check is successful, each {@symbols s} adds +1 damage to the attack. If the attack affects multiple targets, the additional damage is added to each target."
+               ]
+            },
+            {
+               "title": "Step 4. Resolve Advantage and Triumph",
+               "forceTitleLevel": 6,
+               "entries": [
+                  "Just as they can be spent in a non-combat skill check, {@symbols a} and {@symbols t} can be spent in a combat check to gain incidental beneficial effects. However, just as the rules governing encounters are somewhat more regimented than the rules governing narrative gameplay, so some of the options governing the spending of {@symbols a} and {@symbols t} are more clearly defined. In encounters, the player controlling the active character determines how the character spends {@symbols a} and {@symbols t}, unless the GM has a specific reason to decide instead.",
+                  "The first and foremost ways to spend {@symbols a} and {@symbols t} in an attack are to activate a Critical Injury or active item quality. As described on page 90, each weapon has a Critical rating that consists of a numeric value. The user can spend that many {@symbols a} to inflict one Critical Injury on the target, in addition to regular effects and damage. Remember, a Critical Injury can only be triggered upon a successful hit that deals damage that exceeds the target's soak value. For more information on Critical Injuries, see page 114.",
+                  "Item qualities are special effects and abilities that apply only when a character is using that particular weapon—the vicious edge of a sword, say, or the automatic fire capability of a heavy machine gun. Item qualities come in two forms: active and passive. Active qualities require the user to spend a certain number of {@symbols a} to trigger them. Generally, this is {@symbols aa}, although some qualities may require more or fewer. Passive qualities always grant their effect. Some qualities may inflict effects on a target that, unless specified otherwise, are always applied in addition to other effects, Critical Injuries, and damage.",
+                  "In addition to always counting as an additional {@symbols s}, {@symbols t} can be spent to activate item qualities as well. A {@symbols t} may be spent to inflict one Critical Injury (no matter what the Critical rating of the weapon is). Alternatively, a {@symbols t} may be spent to activate one item quality, no matter how many {@symbols a} it would normally take to do so.",
+                  "There are other options for spending {@symbols a} and {@symbols t} as well. A list of the most common can be found on {@table I.6-2: Spending Advantage and Triumph in Combat}, on page 104. Keep in mind that these are not intended to be the only options available. As always, players and GMs may invent other ways to spend {@symbols a} and {@symbols t}, depending on the specific circumstances of the encounter. Any option that the players and GM agree upon can be viable."
+               ]
+            },
+            {
+               "title": "Step 5. Resolve Threat and Despair",
+               "forceTitleLevel": 6,
+               "entries": [
+                  "In the same fashion in which the controlling player determines how to spend {@symbols a} and {@symbols t} in their combat check, the GM then determines how to spend any {@symbols h} or {@symbols d} generated in the check. Much as fortune might favor the player, bad luck and circumstance can con spire against them. By default, the GM determines how {@symbols h} or {@symbols d} are spent, although in some cases (such as checks made by NPCs) they may give the players the option to spend these instead.",
+                  "Although many weapon descriptions include options for spending {@symbols a} and {@symbols t}, most do not for {@symbols h} and {@symbols d}; however, this is not always the case. Some particularly volatile or dangerous weapons do have these options, and if they do, the options are detailed in the weapon's description. Specific options for spending {@symbols h} and {@symbols d} in encounters do exist, however, and the most common of these can be found on {@table I.6-3: Spending Threat and Despair in Combat}, on page 104. As with {@symbols a} and {@symbols t}, keep in mind that these are not intended to be the only options available. As always, GMs may invent other ways to spend {@symbols h} and {@symbols d}, depending on the specific circumstances of the encounter, and any option that the players and GM agree on can be viable."
+               ]
+            },
+            {
+               "title": "Step 6. Reduce Damage, Apply to Wound Threshold, and Apply Critical Injuries",
+               "forceTitleLevel": 6,
+               "entries": [
+                  "When a character suffers damage, whether from a rifle or claws, they reduce the damage received by their soak value. If any damage remains after this reduc tion, they suffer that many wounds. If the net result is zero or negative, the character suffers no wounds; their toughness and natural fortitude, in conjunction with any armor they might be wearing, have saved them from being injured. If the character suffers damage from multiple hits in an attack, they apply their soak value to each hit individually. For more information on damage and wounds, see Wounds, Strain, and States of Health, on page 112.",
+                  "An attack may also generate a Critical Injury. This may occur because the weapon's Critical rating is triggered, or because the target suffers a number of wounds greater than its wound threshold. More about Critical ratings is explained in Step 4: Resolve Advantage and Triumph.",
+                  "When a Critical Injury is inflicted, the attacker rolls percentile dice on {@table I.6-10: Critical Injury Result}, on page 115. The result of the dice roll indicates which Critical Injury is inflicted.",
+                  "Some weapons and talents modify this Critical Injury roll, potentially making it more or less effective. If an attack generates enough {@symbols a} to trigger more than one Critical Injury, the character makes a single Critical Injury roll, adding +10 to the result for each additional time the Critical rating is triggered."
+               ]
+            }
          ]
       },
       {
@@ -9984,6 +10133,16 @@
          ]
       },
       {
+         "name": "Size Differences (Silhouettes)",
+         "page": 109,
+         "type": "combat",
+         "description": [
+            "Generally, it's a character's skill that governs their chances of hitting a target. However, some targets are easier to hit than others, usually because of their size. Size, or silhouette, is important in the alternate rules for vehicles (see page 220). However, silhouettes can affect attack difficulties in standard combat as well.",
+            "When a character makes an attack against a target with a silhouette two or more points larger than they are, they decrease the difficulty of the check by one. When a character makes an attack against a target with a silhouette two or more points smaller than they are, they increase the difficulty of the check by one.",
+            "{@table I.6-6: Silhouettes and Characters} has a list of example silhouettes that covers the size of most creatures the PCs may encounter. The most important thing to remember is that most characters are silhouette 1."
+         ]
+      },
+      {
          "name": "Spend an Action to Activate an Ability",
          "page": 101,
          "type": "action",
@@ -10046,6 +10205,30 @@
                   "Other pieces of gear have rules unique to that item described in the item's entry."
                ]
             }
+         ]
+      },
+      {
+         "name": "Two-Weapon Combat",
+         "page": 108,
+         "type": "combat",
+         "description": [
+            "A character may opt to carry a pistol or a one-handed Melee weapon in each hand, increasing their volume of attacks at the expense of accuracy.",
+            "When attacking with two weapons, the charac ter must be using weapons that can each be reason ably held and wielded in one hand. Generally, these weapons are {@skill Ranged (Light)} weapons—such as pistols and grenades—and one-handed {@skill Melee} weapons or {@skill Brawl} weapons. If it's unclear whether or not a weapon can be wielded one-handed, the GM makes the final determination.",
+            "To make the attack, the player performs a combined check. First, the player designates one weapon as the primary weapon. When making the combined check, the character attacks with this weapon. The player then determines which skills and characteristics the character uses when making attacks with the pri mary weapon and which are used with the second ary weapon (the other weapon wielded). Finally, they determine the target.",
+            "To assemble the dice pool for this check, the player compares the skills that would be used to make an attack with each weapon by itself, and then compares the characteristics that would be used to make an attack with each weapon by itself. They then take the skill that they have fewer ranks in, and the characteristic that they have fewer ranks in, and use this skill and char acteristic to assemble their dice pool. It's very possible that the ranks in either the skills or characteristics are equal, in which case they can use either. If both checks would use the same skill or characteristic, they simply use that skill or characteristic.",
+            "They then compare the difficulty of the two combat checks they would make with each of their two weapons to hit their target, and select the check with the higher difficulty. Then, they increase the difficulty of the combat check by one. Finally, they make the check.",
+            "If they succeed, they hit with their primary weapon in the normal manner. They may spend {@symbols aa} or {@symbols t} to hit with their secondary weapon as well. If both weapons hit, they may spend additional {@symbols a} or {@symbols t} to activate item qualities from either weapon. Each hit deals its weapon's base damage plus one point of damage per uncanceled success."
+         ]
+      },
+      {
+         "name": "Unarmed Combat",
+         "page": 108,
+         "type": "combat",
+         "description": [
+            "Although most characters probably feel more comfort able going into a fight with a good gun in their hand, there are times they must rely on their fists, feet, or other appendages.",
+            "Characters fighting unarmed generally use the {@skill Brawl} skill. Unlike other combat skills, the {@skill Brawl} skill is designed to be used independently of any weapon (although some weapons can be used in conjunction with the {@skill Brawl} skill).",
+            "When a character makes an unarmed combat check using {@skill Brawl}, the attack has a base damage of their {@characteristic Brawn} rating, a range of engaged, a Critical rating of 5, and the {@quality Knockdown} item quality. Finally, when making a {@skill Brawl} attack, the attacker can choose to deal damage to the target's strain threshold instead of its wound threshold, still reducing the damage by the target's soak.",
+            "Unlike other weapons, {@filter gear|Brawl weapons|skill:brawl=1} augment this basic attack. {@filter gear|Brawl weapons|skill:brawl=1} can add damage to the attack (as indicated in the {@gear Unarmed|Brawl} profile, on page 67) and may have an improved Critical rating and additional item qualities. When using a {@filter gear|Brawl weapon|skill:brawl=1}, the user can choose to use its Critical rating instead of the standard Brawl Critical rating. They also add any additional item qualities to the qualities already provided by the Brawl attack. If the weapon provides an improved version of an existing quality, the character uses the improved version."
          ]
       },
       {
@@ -11356,6 +11539,14 @@
             "A character is {@b critically injured} if they are currently suffering from any number of Critical Injuries, regardless of how many wounds they may have. Critical Injuries are actual injuries that have some sort of detrimental effect. A character may be critically injured and wounded.",
             "A character is {@b incapacitated} once they have suffered more wounds than their wound threshold or more strain than their strain threshold. Incapacitation means that a character is unconscious and no longer able to act until the number of wounds or strain they are suffering is decreased below their wound or strain threshold.",
             "Since exceeding a character's wound threshold triggers a Critical Injury, it's possible (and often likely!) for an incapacitated character to also be critically injured."
+         ]
+      },
+      {
+         "name": "Strain Damage and Critical Injuries",
+         "page": 114,
+         "type": "character",
+         "description": [
+            "Although not always likely, some attacks that deal strain damage (notably weapons with the {@quality Stun Damage} quality) can also trigger {@rule Critical Injuries}. Although this may seem odd, it actually makes sense. When a player character inflicts a {@rule Critical Injuries|Critical Injury} on an adversary that can be incapacitated by a single {@rule Critical Injuries|Critical Injury} (such as a minion), then the adversary is simply incapacitated by being rendered unconscious. If a PC or nemesis NPC suffers a {@rule Critical Injuries|Critical Injury} from a weapon dealing strain damage, the outcome can be anything from adverse long-term effects from the weapon, to tangential injuries from being stunned (for example, the character could be knocked off balance and take a nasty crack on the skull when they hit the ground). Of course, since these {@rule Critical Injuries} would have to be triggered by the players or GM, both parties can always decide that a {@rule Critical Injuries|Critical Injury} would not make sense in that narrative, and choose not to trigger them."
          ]
       },
       {
@@ -15386,6 +15577,10 @@
                "name": "all",
                "source": ""
             }
+         ],
+         "tags": [
+            "combat",
+            "defense"
          ]
       },
       {
@@ -15393,6 +15588,10 @@
          "tier": 3,
          "activation": "passive",
          "ranked": true,
+         "tags": [
+            "general",
+            "animal companion"
+         ],
          "description": [
             "Your character creates a bond with a single animal approved by your GM. This animal must be silhouette 0 (no larger than a mid-sized dog). The bond persists as long as your character chooses, although at your GM's discretion, the bond may also be broken due to abusive treatment or other extenuating circumstances.",
             "As long as the bond persists, the animal follows your character, and you dictate the animal's overall behavior (although, since the animal is only bonded with the character, not dominated, it may still perform inconvenient actions such as scratching furniture, consuming rations, and marking territory). Once per round in structured encounters, your character may spend one maneuver to direct their animal in performing one action and one maneuver during your character's turn. The animal must be within hearing and visual range of your character (generally medium range) to do this. Otherwise, the animal does not contribute to the encounter. The specifics of its behavior are up to you and your GM.",
@@ -15459,6 +15658,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "vehicles"
          ]
       },
       {
@@ -15474,6 +15677,11 @@
             {
                "name": "weird war"
             }
+         ],
+         "tags": [
+            "general",
+            "combat",
+            "career skills"
          ]
       },
       {
@@ -15500,6 +15708,10 @@
                "name": "Keyforge",
                "source": "sotc"
             }
+         ],
+         "tags": [
+            "combat",
+            "result manipulation"
          ]
       },
       {
@@ -15531,6 +15743,9 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general"
          ]
       },
       {
@@ -15562,6 +15777,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "social",
+            "combat",
+            "defense"
          ]
       },
       {
@@ -15593,6 +15813,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "social",
+            "result manipulation"
          ]
       },
       {
@@ -15624,6 +15848,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "support"
          ]
       },
       {
@@ -15655,6 +15883,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "social",
+            "status effect"
          ]
       },
       {
@@ -15694,6 +15926,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "vehicles"
          ]
       },
       {
@@ -15725,6 +15961,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged"
          ]
       },
       {
@@ -15756,6 +15996,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "characteristics"
          ]
       },
       {
@@ -15787,6 +16031,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "defense"
          ]
       },
       {
@@ -15823,6 +16071,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "vehicles",
+            "defense"
          ]
       },
       {
@@ -15854,6 +16107,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "defense"
          ]
       },
       {
@@ -15887,6 +16144,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "hacking",
+            "defense"
          ]
       },
       {
@@ -15920,6 +16182,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "hacking",
+            "defense"
          ]
       },
       {
@@ -15951,6 +16218,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "recovery"
          ]
       },
       {
@@ -15984,6 +16255,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "hacking"
          ]
       },
       {
@@ -16015,6 +16290,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "defense"
          ]
       },
       {
@@ -16046,6 +16325,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "melee"
          ]
       },
       {
@@ -16077,6 +16360,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "melee",
+            "downside"
          ]
       },
       {
@@ -16108,6 +16396,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "defense",
+            "critical injury"
          ]
       },
       {
@@ -16139,6 +16432,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged"
          ]
       },
       {
@@ -16170,6 +16467,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "defense"
          ]
       },
       {
@@ -16191,6 +16492,10 @@
             {
                "name": "modern day"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged"
          ]
       },
       {
@@ -16222,6 +16527,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "support",
+            "mobility"
          ]
       },
       {
@@ -16253,6 +16563,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "support",
+            "mobility"
          ]
       },
       {
@@ -16284,6 +16599,12 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "skills",
+            "narrative",
+            "mitigation"
          ]
       },
       {
@@ -16323,6 +16644,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged",
+            "defense"
          ]
       },
       {
@@ -16362,6 +16688,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "vehicles",
+            "mobility"
          ]
       },
       {
@@ -16401,6 +16732,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged",
+            "story points"
          ]
       },
       {
@@ -16432,6 +16768,9 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general"
          ]
       },
       {
@@ -16463,6 +16802,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged",
+            "mobility"
          ]
       },
       {
@@ -16494,6 +16838,12 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "support",
+            "skills",
+            "initiative"
          ]
       },
       {
@@ -16525,6 +16875,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "critical injury",
+            "story points"
          ]
       },
       {
@@ -16552,6 +16907,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "narrative"
          ]
       },
       {
@@ -16579,6 +16938,12 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "defense",
+            "story points",
+            "status effect"
          ]
       },
       {
@@ -16610,6 +16975,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "support",
+            "recovery"
          ]
       },
       {
@@ -16641,6 +17011,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "support",
+            "skills"
          ]
       },
       {
@@ -16672,6 +17047,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "support"
          ]
       },
       {
@@ -16703,6 +17082,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "crafting"
          ]
       },
       {
@@ -16734,6 +17117,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "mobility",
+            "status effect"
          ]
       },
       {
@@ -16765,6 +17153,12 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "skills",
+            "narrative",
+            "mitigation"
          ]
       },
       {
@@ -16796,6 +17190,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "money"
          ]
       },
       {
@@ -16827,6 +17225,12 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "animal companion",
+            "vehicles",
+            "mobility"
          ]
       },
       {
@@ -16858,6 +17262,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "story points",
+            "characteristics"
          ]
       },
       {
@@ -16876,6 +17285,10 @@
             {
                "name": "weird war"
             }
+         ],
+         "tags": [
+            "general",
+            "crafting"
          ]
       },
       {
@@ -16907,6 +17320,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "skills",
+            "skill check"
          ]
       },
       {
@@ -16938,6 +17356,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "skills",
+            "result manipulation"
          ]
       },
       {
@@ -16969,6 +17392,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "recovery"
          ]
       },
       {
@@ -16995,6 +17422,12 @@
                "name": "Keyforge",
                "source": "sotc"
             }
+         ],
+         "tags": [
+            "general",
+            "cybernetics",
+            "characteristics",
+            "skill check"
          ]
       },
       {
@@ -17013,6 +17446,10 @@
             {
                "name": "space opera"
             }
+         ],
+         "tags": [
+            "general",
+            "cybernetics"
          ]
       },
       {
@@ -17044,6 +17481,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "recovery"
          ]
       },
       {
@@ -17075,6 +17516,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "defense"
          ]
       },
       {
@@ -17106,6 +17551,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "defense"
          ]
       },
       {
@@ -17137,6 +17586,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "social"
          ]
       },
       {
@@ -17168,6 +17621,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "item quality"
          ]
       },
       {
@@ -17199,6 +17656,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "initiative"
          ]
       },
       {
@@ -17218,6 +17679,11 @@
                "name": "Terrinoth",
                "source": "rot"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged",
+            "item quality"
          ]
       },
       {
@@ -17245,6 +17711,12 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "initiative",
+            "combat",
+            "social"
          ]
       },
       {
@@ -17272,6 +17744,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "social",
+            "combat"
          ]
       },
       {
@@ -17299,6 +17775,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "social",
+            "combat"
          ]
       },
       {
@@ -17326,6 +17806,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "social",
+            "combat"
          ]
       },
       {
@@ -17353,6 +17837,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "social",
+            "combat"
          ]
       },
       {
@@ -17380,6 +17868,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "recovery"
          ]
       },
       {
@@ -17407,6 +17899,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "defense"
          ]
       },
       {
@@ -17434,6 +17930,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "support",
+            "recovery"
          ]
       },
       {
@@ -17461,6 +17962,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "mobility"
          ]
       },
       {
@@ -17488,6 +17993,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "defense"
          ]
       },
       {
@@ -17515,6 +18024,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "defense"
          ]
       }
    ],

@@ -53,7 +53,7 @@
             }
          },
          "tags": {
-            "$ref": "item_tags_sub_schema.json"
+            "$ref": "talent_tags_sub_schema.json"
          },
          "settings": {
             "$ref": "settings_sub_schema.json"
@@ -68,14 +68,14 @@
          "tier",
          "activation",
          "ranked",
-         "description"
+         "description",
+         "tags"
       ],
       "optional": [
          "imageUrl",
          "page",
          "prerequisites",
-         "settings",
-         "tags"
+         "settings"
       ],
       "additionalProperties": false
    }

@@ -18801,6 +18801,10 @@
          "ranked": false,
          "description": [
             "When you take this talent, your character gains {@skill Brawl||crb}, {@skill Ranged (Heavy)||crb}, or {@skill Ranged (Light)||crb} as a career skill."
+         ],
+         "tags": [
+            "combat",
+            "career skills"
          ]
       },
       {
@@ -18811,6 +18815,11 @@
          "ranked": false,
          "description": [
             "When you take this talent, your character gains {@skill Streetwise||crb} or {@skill Knowledge (Culture)} as a career skill. In addition, when using one of these skills to resolve a conflict between members of different species, your character may spend {@symbols aa} to heal 3 strain."
+         ],
+         "tags": [
+            "general",
+            "recovery",
+            "career skills"
          ]
       },
       {
@@ -18821,6 +18830,10 @@
          "ranked": false,
          "description": [
             "Once per session before making a knowledge skill check, your character may use this talent to use the {@skill Computers||crb} skill to make the check instead of a knowledge skill."
+         ],
+         "tags": [
+            "general",
+            "skill swap"
          ]
       },
       {
@@ -18831,6 +18844,12 @@
          "ranked": false,
          "description": [
             "When you take this talent, your character gains {@skill Leadership||crb} or {@skill Negotiation||crb} as a career skill. In addition, when using one of these skills to convince their allies to undertake a particular task in a social encounter, your character may spend {@symbols aa} to heal 3 strain."
+         ],
+         "tags": [
+            "general",
+            "social",
+            "recovery",
+            "career skills"
          ]
       },
       {
@@ -18841,6 +18860,11 @@
          "ranked": false,
          "description": [
             "Once per round while controlling a starship that requires the {@skill Operating||crb} skill to direct, your character may use this talent to increase or decrease its speed by 1, to a minimum of 0 or a maximum of the starship's max speed. The starship suffers 2 system strain."
+         ],
+         "tags": [
+            "general",
+            "vehicles",
+            "mobility"
          ]
       },
       {
@@ -18851,6 +18875,11 @@
          "ranked": false,
          "description": [
             "Your character does not count zero-gravity environments as {@rule difficult and impassable terrain|difficult terrain|crb}. When your character is exposed to {@rule vacuum||crb} without protective gear, they may hold their breath for a number of rounds equal to twice their {@characteristic Brawn||crb} and only suffer 2 wounds for each round they are exposed to {@rule vacuum||crb}."
+         ],
+         "tags": [
+            "general",
+            "characteristics",
+            "narrative"
          ]
       },
       {
@@ -18868,6 +18897,12 @@
          ],
          "description": [
             "{@i Your character must be a {@archetype Gashlai} or a {@archetype N'orr} or have allegiance to the {@rule Yin Brotherhood}, the {@rule Argent Flight}, or the {@rule The Keleres of the Council|Keleres} to benefit from this talent.} Your character rerolls failed fear checks."
+         ],
+         "tags": [
+            "general",
+            "fear",
+            "result manipulation",
+            "allegiance"
          ]
       },
       {
@@ -18878,6 +18913,10 @@
          "ranked": false,
          "description": [
             "Once per round while controlling a vehicle that requires the {@skill Driving||crb} or {@skill Piloting||crb} skill to direct, your character may use this talent to increase or decrease its speed by 1, to a minimum of 0 or a maximum of the vehicle's max speed."
+         ],
+         "tags": [
+            "general",
+            "vehicles"
          ]
       },
       {
@@ -18893,6 +18932,11 @@
          ],
          "description": [
             "{@i Your character must be a {@archetype Winnu} or have allegiance to the {@rule Empyrean} or {@rule The Nomad} to benefit from this talent.} Once per session before making a knowledge skill check or {@skill Astrocartography||crb} check, your character may use this talent to succeed on the check with {@symbols sss}."
+         ],
+         "tags": [
+            "general",
+            "result manipulation",
+            "allegiance"
          ]
       },
       {
@@ -18903,6 +18947,11 @@
          "ranked": false,
          "description": [
             "When you take this talent, your character gains {@skill Skulduggery||crb} or {@skill Deception||crb} as a career skill. In addition, when using one of these skills to obtain wealth (whether by stealing something, lying about the worth of an item, or other duplicitous means), your character may spend {@symbols aa} to heal 3 strain."
+         ],
+         "tags": [
+            "general",
+            "recovery",
+            "career skills"
          ]
       },
       {
@@ -18913,6 +18962,10 @@
          "ranked": false,
          "description": [
             "When you take this talent, your character gains {@skill Perception||crb} or {@skill Stealth||crb} as a career skill. In addition, your character may remove {@dice setback} added to their checks due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness|crb}."
+         ],
+         "tags": [
+            "general",
+            "career skills"
          ]
       },
       {
@@ -18923,6 +18976,11 @@
          "ranked": false,
          "description": [
             "When you take this talent, your character gains {@skill Athletics||crb} or {@skill Coordination||crb} as a career skill. In addition, when making a check using one of these skills in a {@rule gravity|zero-gravity|crb} environment, your character may spend {@symbols aa} to heal 3 strain."
+         ],
+         "tags": [
+            "general",
+            "recovery",
+            "career skills"
          ]
       },
       {
@@ -18933,6 +18991,11 @@
          "ranked": false,
          "description": [
             "When you take this talent, your character gains {@skill Astrocartography||crb} or any one knowledge skill as a career skill. In addition, when making a skill check to navigate to an unknown system or to learn new information, your character may spend {@symbols aa} to heal 3 strain."
+         ],
+         "tags": [
+            "general",
+            "recovery",
+            "career skills"
          ]
       },
       {
@@ -18943,6 +19006,11 @@
          "ranked": true,
          "description": [
             "When your character makes a check to repair hull trauma or system strain, they repair 1 additional hull trauma or system strain per rank of Skilled Mechanic."
+         ],
+         "tags": [
+            "general",
+            "vehicles",
+            "recovery"
          ]
       },
       {
@@ -18953,6 +19021,11 @@
          "ranked": false,
          "description": [
             "When making a social skill check, your character can use this talent to spend {@symbols a} to convey to one other character a simple message that has nothing to do with what your character is actually saying. The means by which you convey this message is up to you and your GM, but could include body language, subtle gestures, double entendres, or references to shared experiences."
+         ],
+         "tags": [
+            "general",
+            "social",
+            "narrative"
          ]
       },
       {
@@ -18963,6 +19036,12 @@
          "ranked": false,
          "description": [
             "When you take this talent, your character gains {@skill Athletics||crb} or {@skill Resilience||crb} as a career skill. In addition, when healing strain after a combat encounter, your character may spend {@symbols aa} to heal 3 strain."
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "recovery",
+            "career skills"
          ]
       },
       {
@@ -18973,6 +19052,12 @@
          "ranked": false,
          "description": [
             "Once per session, your character may use this talent to make an {@difficulty average|cool}. If successful, they may choose one item that has been lost, misplaced, or left behind during a previous encounter and then find the item on their person or in an easily accessible location"
+         ],
+         "tags": [
+            "general",
+            "narrative",
+            "gear",
+            "skill check"
          ]
       },
       {
@@ -18984,6 +19069,11 @@
          "description": [
             "When you purchase this talent for your character, choose one of the following five categories: mammalian, aquatic, insectoid, reptilian, or anomaly (species that do not fit into one of the other categories). When your character makes a social skill check targeting a member of the chosen category, add {@symbols aa} to the results.",
             "Each additional time you purchase this talent for your character, you may choose one additional category."
+         ],
+         "tags": [
+            "social",
+            "result manipulation",
+            "narrative"
          ]
       },
       {
@@ -18995,6 +19085,12 @@
          "description": [
             "Once per encounter, if your character has access to a computer network, they may use this talent to make an {@difficulty average|computers}. If successful, they reduce the difficulty of all further {@skill Computers||crb} and {@skill Skulduggery||crb} checks to use or manipulate the system or linked subsystems (such as electronic locks on doors) by 1 for the remainder of the encounter. If this would reduce a check's difficulty to {@difficulty simple}, the character can choose instead to succeed without making the check.",
             "Any {@symbols d} from this or subsequent checks that involve the system must be spent to alert the system's controllers to your character's intrusion."
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "social",
+            "hacking"
          ]
       },
       {
@@ -19005,6 +19101,11 @@
          "ranked": true,
          "description": [
             "While piloting a starship of silhouette 4 or greater, your character may make a {@difficulty hard|operating} to use this talent. If they succeed, their starship suffers system strain no greater than their ranks in this talent, and until the end of their next turn, whenever their starship is targeted by a combat check, remove {@dice setback} from the dice pool equal to the system strain suffered and add an equal number of {@symbols f} to the results."
+         ],
+         "tags": [
+            "combat",
+            "vehicles",
+            "defense"
          ]
       },
       {
@@ -19015,6 +19116,10 @@
          "ranked": false,
          "description": [
             "When your character uses the aim maneuver to target a specific item carried by an opponent or a specific part of an opponent (see page 99 of the {@title Genesys} Core Rulebook), they do not add any {@dice setback} to the check as a part of performing the maneuver."
+         ],
+         "tags": [
+            "combat",
+            "narrative"
          ]
       },
       {
@@ -19029,6 +19134,11 @@
          ],
          "description": [
             "{@i Your character must be a {@archetype Yssaril} or have allegiance to the {@rule Yssaril Tribes} to benefit from this talent.} When your character makes a {@skill Stealth||crb} check, they may use this talent and spend all {@symbols a} generated by the check to add an equal number of {@symbols a} to the results of the next combat check they make during the current encounter."
+         ],
+         "tags": [
+            "combat",
+            "result manipulation",
+            "allegiance"
          ]
       },
       {
@@ -19039,6 +19149,11 @@
          "ranked": false,
          "description": [
             "While your character is engaged with an enemy, your GM or fellow players may not spend {@symbols d} to cause your character to be hit by an ally's ranged attack."
+         ],
+         "tags": [
+            "combat",
+            "ranged",
+            "narrative"
          ]
       },
       {
@@ -19054,6 +19169,13 @@
          ],
          "description": [
             "{@i Your character must be a {@archetype Human} or {@archetype Winnu} or have allegiance to the {@rule Federation of Sol} or the {@rule Winnu} to benefit from this talent.} Once per session, your character may spend {@symbols aa} or {@symbols t} from any check they make to use this talent to move up to two Story Points from the GM pool to the players' pool."
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "social",
+            "story points",
+            "allegiance"
          ]
       },
       {
@@ -19071,6 +19193,13 @@
          "description": [
             "{@i Your character must be a {@archetype Saar} or have allegiance to the {@rule Mentak Coalition}, the {@rule Clan of Saar}, or {@rule The Nomad} to benefit from this talent.} Once per session when on a populated world, your character may make an {@difficulty easy|streetwise} to use this talent. If they succeed, they obtain one item with a rarity no greater than twice the number of {@symbols s} scored on the check, or they obtain an equivalent service from a pirate or pirate crew.",
             "If the check generates {@symbols h} or {@symbols d}, your character must pay the cost of the item or service within one week of obtaining it."
+         ],
+         "tags": [
+            "general",
+            "social",
+            "gear",
+            "narrative",
+            "allegiance"
          ]
       },
       {
@@ -19081,6 +19210,11 @@
          "ranked": false,
          "description": [
             "If your character is armed, they may use this talent to conspicuously display their weapon and add {@symbols ssh} to the results of the next social skill check they make this turn. This may have additional narrative repercussions at your GM's discretion."
+         ],
+         "tags": [
+            "social",
+            "skills",
+            "result manipulation"
          ]
       },
       {
@@ -19092,6 +19226,12 @@
          "description": [
             "Once per encounter, you may spend a Story Point to have your character use this talent to target another character within hearing range, and tell them to perform a specific task. If your character knows the target's Strength or Desire Motivation, the target may reroll up to three dice of their choice during the next check they make to perform that task during the current encounter.",
             "This talent does not force the target to perform the designated task (it simply benefits them if they do so). In addition, the target becomes less hostile toward your character in the future."
+         ],
+         "tags": [
+            "social",
+            "support",
+            "motivation",
+            "story points"
          ]
       },
       {
@@ -19103,6 +19243,12 @@
          "description": [
             "Once per encounter, you may spend a Story Point to have your character use this talent to target another character within hearing range. If your character knows the target's Flaw or Fear Motivation, the target must spend their next turn performing one action of your character's choice. If this occurs during a narrative encounter, this can be a single discrete task instead.",
             "At your GM's discretion, certain actions or tasks may be too unrealistic for the target to perform (such as harming themself or betraying a beloved family member). In addition, the target becomes more hostile toward your character in the future."
+         ],
+         "tags": [
+            "social",
+            "motivation",
+            "story points",
+            "narrative"
          ]
       },
       {
@@ -19114,6 +19260,11 @@
          "description": [
             "When your character purchases this talent, they increase the number of benchmarks they need to complete their current agenda and any future agendas they choose by 2 (see page 64). When they complete an agenda, they double the received rewards (if the rewards are difficult to quantify, your GM determines what an appropriate increase is).",
             "The rest of the party does not double any XP rewards they receive when your character completes their agenda."
+         ],
+         "tags": [
+            "general",
+            "agenda",
+            "narrative"
          ]
       },
       {
@@ -19130,6 +19281,15 @@
          ],
          "description": [
             "{@i Your character must be a {@archetype Hylar} or {@archetype Gashlai} or have allegiance to the {@rule Embers of Muaat} or the {@rule Universities of Jol-Nar} to benefit from this talent.} When making a check while using a piece of equipment (such as operating a vehicle, searching with a scanner, or attacking with a weapon), your character may use this talent to add {@symbols sa} to the results. If they do so, after the check is resolved, the equipment becomes damaged one step (from undamaged to minor, from minor to moderate, from moderate to major, or from major to destroyed; see page 89 of the Core Rulebook). If the equipment is a part of a vehicle, the vehicle suffers 2 system strain instead."
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "social",
+            "gear",
+            "result manipulation",
+            "vehicles",
+            "allegiance"
          ]
       },
       {
@@ -19140,6 +19300,11 @@
          "ranked": true,
          "description": [
             "When making a {@skill Brawl||crb} or {@skill Melee||crb} combat check, your character may use this talent to remove a number of {@dice boost} from the dice pool no greater than their ranks in Precision Strike and suffer 1 strain per {@dice boost} removed, then add an equal number of {@symbols s} to the results of the check."
+         ],
+         "tags": [
+            "combat",
+            "melee",
+            "result manipulation"
          ]
       },
       {
@@ -19156,6 +19321,12 @@
          ],
          "description": [
             "{@i Your character must be an {@archetype Xxcha} or a {@archetype Titan} or have allegiance to the {@rule Titans of Ul} or the {@rule Xxcha Kingdom} to benefit from this talent.} Once per encounter when an ally within short range is targeted by an attack, your character may reduce the damage dealt by that attack by your character's ranks in {@skill Leadership||crb} before the damage is reduced by soak."
+         ],
+         "tags": [
+            "combat",
+            "support",
+            "defense",
+            "allegiance"
          ]
       },
       {
@@ -19166,6 +19337,11 @@
          "ranked": false,
          "description": [
             "When your character makes a {@skill Melee||crb} check, they use {@characteristic Cunning||crb} instead of {@characteristic Brawn||crb}. If they add their {@characteristic Brawn||crb} rating to a weapon's base damage, they add their {@characteristic Cunning||crb} rating instead."
+         ],
+         "tags": [
+            "combat",
+            "melee",
+            "skill swap"
          ]
       },
       {
@@ -19177,6 +19353,10 @@
          "description": [
             "At the beginning of each game session, your character receives aurei equal to their ranks in Sound Investments times 100.",
             "How your character earns this money is up to you and your GM and could represent actual business investments, an inheritance, a legal or illegal side business, or even bribes or blackmail money. Your GM can also decide that the current events of the adventure may make those funds temporarily unavailable."
+         ],
+         "tags": [
+            "general",
+            "money"
          ]
       },
       {
@@ -19188,6 +19368,10 @@
          "description": [
             "After making a {@skill Ranged (Light)||crb}, {@skill Ranged (Heavy)||crb}, or {@skill Gunnery||crb} check, your character may use this talent to spend {@symbols aaa} or {@symbols t} to add {@symbols a} equal to their ranks in Sustained Fire to the results of all {@skill Ranged (Light)||crb}, {@skill Ranged (Heavy)||crb}, or {@skill Gunnery||crb} checks they make against the same target until the end of the current encounter.",
             "The check does not have to be successful to use this talent."
+         ],
+         "tags": [
+            "combat",
+            "ranged"
          ]
       },
       {
@@ -19199,6 +19383,13 @@
          "description": [
             "{@i Your character must have purchased the {@talent Aethersprite} talent to benefit from this talent.} If your character made a successful check to use the {@talent Aethersprite} talent during the current encounter, you may spend a Story Point to have your character use this talent to make themselves and up to five allies invisible to any electronic sensors for a number of rounds equal to your character's ranks in Computers.",
             "This works on any electronic monitoring or surveillance systems, such as cameras, heat and motion sensors, and even microradar pulses. It also affects any nonsentient drones or robots that are linked with the network affected by {@talent Aethersprite}."
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "social",
+            "hacking",
+            "story points"
          ]
       },
       {
@@ -19210,6 +19401,12 @@
          "description": [
             "Once per session when your character is targeted by a social skill check, they may use this talent to reduce any strain they suffer by an amount equal to their ranks in {@skill Negotiation||crb}, to a minimum amount of strain of 1.",
             "Each additional rank of Ccrysusian Methodology increases the number of times your character can use this talent each session by 1."
+         ],
+         "tags": [
+            "social",
+            "defense",
+            "skills",
+            "mitigation"
          ]
       },
       {
@@ -19226,6 +19423,11 @@
          ],
          "description": [
             "{@i Your character must be a {@archetype Titan} or an {@archetype Xxcha} or have allegiance to the {@rule Titans of Ul} or the {@rule Xxcha Kingdom} to benefit from this talent.} During a combat encounter, your character may choose to take either no maneuvers or no actions during their turn to use this talent. If they do, they reduce all strain suffered to 0 (both voluntary and involuntary) until the start of their next turn and add {@symbols aa} to combat checks they make until the start of their next turn."
+         ],
+         "tags": [
+            "combat",
+            "defense",
+            "allegiance"
          ]
       },
       {
@@ -19236,6 +19438,12 @@
          "ranked": false,
          "description": [
             "When resolving a combined check to attack with two weapons in melee or ranged combat, your character may suffer 3 strain to use this talent to hit with the secondary weapon (instead of spending {@symbols aa})."
+         ],
+         "tags": [
+            "combat",
+            "item quality",
+            "melee",
+            "ranged"
          ]
       },
       {
@@ -19246,6 +19454,12 @@
          "ranked": false,
          "description": [
             "When your character makes a {@skill Gunnery||crb} check, they may suffer 3 strain to use this talent to reduce the number of {@symbols a} needed to activate any of their weapon's item qualities by 1, to a minimum of 1, until the end of the turn."
+         ],
+         "tags": [
+            "combat",
+            "vehicles",
+            "ranged",
+            "item quality"
          ]
       },
       {
@@ -19256,6 +19470,12 @@
          "ranked": false,
          "description": [
             "{@i Your character must be a {@archetype Saar} or have allegiance to the {@rule Clan of Saar} or the {@rule Mentak Coalition} to benefit from this talent.} Once per encounter while engaged with a vehicle, your character can use this talent to make a {@skill Mechanics||crb} check with a difficulty equal to the vehicle's silhouette. The vehicle suffers 1 hull trauma per {@symbols s}, and one Critical Hit per {@symbols aaa} or {@symbols t}."
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "vehicles",
+            "allegiance"
          ]
       },
       {
@@ -19272,6 +19492,11 @@
          ],
          "description": [
             "{@i Your character must be a {@archetype Hacan}, a {@archetype Letnev}, or a {@archetype N'orr} or have allegiance to the {@rule Sardakk N'orr} to benefit from this talent.} Your character adds {@symbols f} to the results of all combat checks targeting them while they are wielding a Melee weapon and engaged with multiple enemies (a single minion group counts as multiple enemies for the purposes of this talent)."
+         ],
+         "tags": [
+            "combat",
+            "melee",
+            "allegiance"
          ]
       },
       {
@@ -19288,6 +19513,12 @@
          "description": [
             "{@i Your character must be a {@archetype Naaz-Rokha} or a {@archetype Hacan} or have allegiance to the {@rule Emirates of Hacan} to benefit from this talent.} Once per session, you may spend a Story Point to reduce the price of one item or service that your character is attempting to purchase by 50% or increase the monetary value of a mission reward by 50%.",
             "The specifics of how your character accomplishes this is up to you and your GM but could include negotiation, calling in favors, or even intimidation."
+         ],
+         "tags": [
+            "general",
+            "money",
+            "story points",
+            "allegiance"
          ]
       },
       {
@@ -19303,6 +19534,12 @@
          "description": [
             "{@i Your character must be a {@archetype Druaa} or have allegiance to the {@rule Naalu Collective} to benefit from this talent.} Once per session, your character may spend a Story Point to use this talent to make an {@b opposed {@skill Discipline||crb} versus {@skill Vigilance||crb} check} targeting one creature within medium range. If successful, your character may cause the target to adopt an emotional state of your character's choice for the remainder of the current encounter (or one hour in narrative gameplay). Your character may spend {@symbols aa} or {@symbols t} to have the target unquestionably believe one piece of information of your character's choice for the remainder of the encounter, even if it is untrue. (Your character may do this multiple times, and they may even do this if the check fails.)",
             "At the end of the current encounter, at your GM's discretion the target may or may not continue to believe any information inserted in their mind, depending on how outlandish it is in the face of reality. However, if the check fails with {@symbols hhh} or {@symbols d}, the target knows that someone attempted to manipulate their mind."
+         ],
+         "tags": [
+            "general",
+            "social",
+            "story points",
+            "allegiance"
          ]
       },
       {
@@ -19319,6 +19556,13 @@
          ],
          "description": [
             "{@i Your character must be a {@archetype N'orr} or a {@archetype Shikrai} or have allegiance to the {@rule Argent Flight} or the {@rule Sardakk N'orr} to benefit from this talent.} When your character would be incapacitated by suffering wounds that exceed their wound threshold, you may spend a Story Point to have your character use this talent to immediately make a combat check with a weapon they are currently wielding."
+         ],
+         "tags": [
+            "combat",
+            "melee",
+            "ranged",
+            "second action",
+            "allegiance"
          ]
       },
       {
@@ -19334,6 +19578,13 @@
          ],
          "description": [
             "{@i Your character must be a {@archetype Letnev} or a {@archetype Winnu} or have allegiance to the {@rule Barony of Letnev} to benefit from this talent.} Once per session when making a skill check not linked to {@characteristic Presence||crb}, your character may use this talent to upgrade the ability of the check a number of times equal to their {@characteristic Presence||crb} rating."
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "social",
+            "characteristics",
+            "allegiance"
          ]
       },
       {
@@ -19349,6 +19600,13 @@
          ],
          "description": [
             "{@i Your character must be a {@archetype Druaa} or {@archetype Shikrai} or have allegiance to the {@rule Argent Flight} to benefit from this talent.} Once per encounter while piloting a vehicle, your character may make a {@difficulty hard|piloting} to use this talent. If successful, your character may change the speed of the vehicle they are piloting to any other speed the vehicle is capable of reaching. Your character can also spend {@symbols aa} from the results to increase the difficulty of combat checks targeting their vehicle by 1 and decrease the difficulty of combat checks made by themself or other occupants of their vehicle by 1 until the start of your character's next turn."
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "vehicles",
+            "mobility",
+            "allegiance"
          ]
       },
       {
@@ -19359,6 +19617,12 @@
          "ranked": false,
          "description": [
             "Before making an {@skill Operating||crb} check, your character may use this talent to increase the difficulty of the check by 1 and use the {@skill Piloting||crb} skill to make the check, instead of the {@skill Operating||crb} skill. In addition, if the vehicle requires multiple pilots, your character may operate the vehicle alone when they use this talent."
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "vehicles",
+            "skill swap"
          ]
       },
       {
@@ -19374,6 +19638,12 @@
          ],
          "description": [
             "{@i Your character must be a {@archetype Human} or {@archetype Yssaril} or have allegiance to the {@rule Federation of Sol} to benefit from this talent.} After your character makes a successful combat check against a target who is unaware of their presence, your character may use this talent to inflict a Critical Injury on the target without spending {@symbols a} or {@symbols t}. Your character may still inflict only one Critical Injury per hit, but they may spend additional {@symbols a} equal to the attack's Critical rating or {@symbols t} to increase the severity of the Critical Injury as normal."
+         ],
+         "tags": [
+            "combat",
+            "ranged",
+            "critical injury",
+            "allegiance"
          ]
       },
       {
@@ -19388,6 +19658,12 @@
          ],
          "description": [
             "{@i Your character must be a {@archetype Hylar} or have allegiance to the {@rule Universities of Jol-Nar} to benefit from this talent.} Once per encounter, your character may use this talent to make a check with a skill that is linked to {@characteristic Intellect||crb} as a maneuver, rather than an action, and add {@symbols s} to the results."
+         ],
+         "tags": [
+            "general",
+            "second action",
+            "allegiance",
+            "skill check"
          ]
       },
       {
@@ -19399,6 +19675,12 @@
          "description": [
             "{@i Your character must have purchased the {@talent Aethersprite} talent to benefit from this talent.} If your character made a successful {@talent Aethersprite} check during the current encounter, your character may use this talent to make a {@difficulty hard|computers}. If they succeed, they falsify a major distraction in the system. The particulars of the distraction are up to you and your GM, but they should be significant enough that any opponents ignore your characters and leave key installations unguarded or unlocked as they work furiously to deal with the distraction or flee for their lives. (Examples might include a major reactor meltdown, an enemy battlefleet entering local space, or poisonous nerve gas being leaked into the facility.)",
             "At your GM's discretion, certain actions that your character undertakes may cause opponents to attempt to deal with them, such as actively attacking an opponent or shouting that your character is the one who initiated the distraction."
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "social",
+            "hacking"
          ]
       },
       {
@@ -19410,6 +19692,11 @@
          "description": [
             "While using a beam weapon with the {@quality Pierce||crb} item quality, your character may use this talent to cause the weapon to lose that quality. If they do, after your character makes a ranged combat check before the end of their turn, they may assign a number of additional hits from their weapon equal to the value of the {@quality Pierce||crb} item quality that the weapon lost. Each hit deals damage equal to the weapon's base damage plus the number of {@symbols s} scored on the check.",
             "Each hit must be assigned to a different target within short range of another target (each minion in a minion group counts as a target for the purposes of this talent)."
+         ],
+         "tags": [
+            "combat",
+            "item quality",
+            "ranged"
          ]
       },
       {
@@ -19421,6 +19708,11 @@
          "description": [
             "When your character makes a check to {@rule determine Initiative||crb} order (as described on page 95 of the {@title Genesys} Core Rulebook), they may make a {@difficulty simple|leadership} instead of using {@skill Cool||crb} or {@skill Vigilance||crb}. If your character does so, they may spend {@symbols t} from the check to add {@symbols s} to the results of all allies' checks made during the first round of the combat encounter.",
             "Your GM may determine that you cannot use this talent if your character is in no logical position to give orders, such as if they have no means of communicating with allies or are working with individuals who have no interest in listening to your character."
+         ],
+         "tags": [
+            "combat",
+            "initiative",
+            "support"
          ]
       },
       {
@@ -19432,6 +19724,14 @@
          "description": [
             "When your character purchases this talent, select three skills that your character has one or no ranks in. Once per session, you may spend a Story Point to have your character use this talent. Until the end of the current encounter, they count as having four ranks in each of the selected skills and one fewer rank in all other skills. They also suffer 1 strain at the beginning of each of their turns. If they are incapacitated, the effects of this talent end.",
             "At your discretion, your character may also undergo some narrative personality shifts, such as not recognizing friends and family, behaving coldly and logically instead of in a friendly and relaxed manner, or constantly muttering a coded phrase under their breath."
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "social",
+            "skills",
+            "story points",
+            "narrative"
          ]
       },
       {
@@ -19442,6 +19742,12 @@
          "ranked": false,
          "description": [
             "Once per encounter while controlling a spaceship, your character may use this talent to make a {@difficulty hard|piloting or operating} (depending on the skill needed to control the vehicle). If the check is successful, the ship vanishes from sensors and cannot be located unless it fires weapons, broadcasts a signal, or performs another activity that reasonably allows others to spot it, or unless an opponent aboard another starship with sensors makes a successful {@b opposed {@skill Computers||crb} versus {@skill Piloting||crb} or {@skill Operating||crb} check} targeting your character"
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "vehicles",
+            "narrative"
          ]
       },
       {
@@ -19455,6 +19761,14 @@
          ],
          "description": [
             "{@i Your character must have allegiance to {@rule The Nomad} to benefit from this talent.} Once per session, after performing an action (and seeing the results of any check made as a part of that action), your character may use this talent to cancel the results of that action and perform a different action instead. (Narratively, the first action did not occur, and your character only performed the second action.)"
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "social",
+            "magic",
+            "result manipulation",
+            "allegiance"
          ]
       },
       {
@@ -19470,6 +19784,13 @@
          "description": [
             "{@i Your character must be a {@archetype Naaz-Rokha} or have allegiance to the {@rule Naaz-Rokha Alliance} to benefit from this talent.} Once per encounter, your character may use this talent to exchange two maneuvers for an action. This allows your character to perform two actions during a single turn.",
             "Your character must have two maneuvers available to exchange to use this talent. This means that unless your character has two free maneuvers during their turn, they must obtain a second maneuver by spending {@symbols aa} or suffering strain."
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "social",
+            "second action",
+            "allegiance"
          ]
       },
       {
@@ -19480,6 +19801,11 @@
          "ranked": false,
          "description": [
             "After making a Melee combat check with a weapon that requires two hands to wield, your character may suffer 3 strain to use this talent to cause one engaged opponent of silhouette 2 or less to become staggered (unable to perform actions) until the end of your character's next turn."
+         ],
+         "tags": [
+            "combat",
+            "melee",
+            "status effect"
          ]
       },
       {
@@ -19491,6 +19817,12 @@
          "description": [
             "Once per session, after your character makes a check, they may use this talent to select one of the following types of results: {@symbols f}, {@symbols h}, or {@symbols d}. If they select {@symbols f}, they then remove all {@symbols f} and add an equal number of {@symbols s} to the results. If they select {@symbols h}, they then remove all {@symbols h} and add an equal number of {@symbols a} to the results. If they select {@symbols d}, they then remove all {@symbols d} and add an equal number of {@symbols t} to the results.",
             "As part of using this talent, you must describe the awe-inspiring way in which your character overcomes any obstacles present in order to perform this feat."
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "social",
+            "result manipulation"
          ]
       },
       {
@@ -19505,6 +19837,11 @@
          "description": [
             "{@i Your character must be a {@archetype Titan} to benefit from this talent.} When you select this talent, choose one of the following weapons: an {@gear integral particle beam} or an {@gear integral grav-field} for one fist. Your character is equipped with the weapon you choose.",
             "Either weapon requires one free hand to use (as it is a part of your character's palm or hand). It cannot be disarmed or damaged, but a Critical Injury that affects your character's arm may cause it to become unusable temporarily or permanently at your GM's discretion."
+         ],
+         "tags": [
+            "combat",
+            "melee",
+            "ranged"
          ]
       },
       {
@@ -19519,6 +19856,15 @@
          ],
          "description": [
             "{@i Your character must be a {@archetype Druaa} or have allegiance to the {@rule Naalu Collective} to benefit from this talent.} Once per session, your character may spend a Story Point to use this talent to make a {@difficulty hard|discipline}. Whether the check succeeds or fails, all living opponents within medium range suffer strain equal to your character's {@characteristic Willpower||crb} rating. For every {@symbols s}, one opponent of your character's choice within medium range suffers a Compromised Critical Injury. Your character may spend {@symbols a} to increase the strain suffered by all opponents by 1 per {@symbols a} spent."
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "social",
+            "magic",
+            "story points",
+            "critical injury",
+            "allegiance"
          ]
       },
       {
@@ -19529,6 +19875,11 @@
          "ranked": false,
          "description": [
             "Once per round when an opponent attacks an ally who is within long range of your character, you may spend one Story Point and {@symbols h} or {@symbols d} to have your character use this talent to automatically hit the opponent with a ranged weapon your character is wielding, if the opponent is within the weapon's range. The hit deals the weapon's base damage plus additional damage equal to your character's ranks in the skill used to wield the weapon."
+         ],
+         "tags": [
+            "combat",
+            "story points",
+            "ranged"
          ]
       },
       {
@@ -19544,6 +19895,12 @@
          "description": [
             "{@i Your character must be a {@archetype Creuss} or have allegiance to the {@rule Ghosts of Creuss} to benefit from this talent.} Once per session, your character may use this talent to instantly teleport to another location that they can see or have previously visited. If the location is within extreme range, they do not have to make a skill check. If the location is beyond extreme range, your character must make a {@difficulty hard|discipline} when they use this talent. They may teleport up to 100 kilometers per {@symbols s}, or spend {@symbols t} to be able to teleport up to 1,000 kilometers per {@symbols s} instead.",
             "If your character teleports 100 kilometers or more, they are staggered for a number of rounds equal to the number of kilometers teleported divided by 10 (rounding up). They may spend {@symbols a} to reduce the number of rounds they are staggered by one per {@symbols a} spent."
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "mobility",
+            "allegiance"
          ]
       },
       {
@@ -19554,6 +19911,11 @@
          "ranked": false,
          "description": [
             "After making a {@skill Piloting||crb} check, your character may spend {@symbols aa} or {@symbols t} from the results to use this talent to make a combat check as a maneuver."
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "vehicles"
          ]
       }
    ],

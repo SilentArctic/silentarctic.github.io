@@ -1825,7 +1825,10 @@
             "soak": 2,
             "wounds": 12,
             "strain": 16,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -3015,7 +3018,10 @@
          "derived": {
             "soak": 5,
             "wounds": 7,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -4659,7 +4665,10 @@
          "derived": {
             "soak": 1,
             "wounds": 5,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -5310,7 +5319,10 @@
          "derived": {
             "soak": 3,
             "wounds": 12,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -8123,7 +8135,10 @@
          "derived": {
             "soak": 2,
             "wounds": 8,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -17075,6 +17090,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "characteristics",
+            "skill swap"
          ]
       },
       {
@@ -17095,6 +17115,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "social",
+            "support"
          ]
       },
       {
@@ -17114,6 +17138,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "recovery"
          ]
       },
       {
@@ -17133,6 +17161,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "item quality"
          ]
       },
       {
@@ -17140,6 +17172,11 @@
          "tier": 3,
          "activation": "active (maneuver)",
          "ranked": true,
+         "tags": [
+            "combat",
+            "support",
+            "defense"
+         ],
          "description": [
             "Once per round, your character may suffer a number of strain no greater than their ranks in Body Guard to use this talent. Choose one ally engaged with your character; until the end of your character's next turn, upgrade the difficulty of all combat checks targeting that ally a number of times equal to the strain suffered."
          ],
@@ -17171,6 +17208,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "second action"
          ]
       },
       {
@@ -17190,6 +17232,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "combat",
+            "hacking"
          ]
       },
       {
@@ -17209,6 +17256,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "recovery"
          ]
       },
       {
@@ -17228,6 +17279,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "social",
+            "favor",
+            "career skills"
          ]
       },
       {
@@ -17247,6 +17304,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "defense"
          ]
       },
       {
@@ -17266,6 +17328,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "narrative"
          ]
       },
       {
@@ -17285,6 +17352,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "social",
+            "result manipulation"
          ]
       },
       {
@@ -17305,6 +17376,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "money"
          ]
       },
       {
@@ -17324,6 +17399,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "vehicles",
+            "recovery"
          ]
       },
       {
@@ -17343,6 +17423,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "favor",
+            "career skills"
          ]
       },
       {
@@ -17362,6 +17447,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "animal companion",
+            "support"
          ]
       },
       {
@@ -17381,6 +17471,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "defense",
+            "story points",
+            "critical injury"
          ]
       },
       {
@@ -17400,6 +17496,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "investigation"
          ]
       },
       {
@@ -17419,6 +17519,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "favor",
+            "career skills"
          ]
       },
       {
@@ -17440,6 +17545,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "hacking"
          ]
       },
       {
@@ -17460,6 +17569,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "social",
+            "support"
          ]
       },
       {
@@ -17479,6 +17592,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "vehicles"
          ]
       },
       {
@@ -17498,6 +17615,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "recovery"
          ]
       },
       {
@@ -17517,6 +17638,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "social",
+            "defense"
          ]
       },
       {
@@ -17536,6 +17661,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged",
+            "item quality"
          ]
       },
       {
@@ -17555,6 +17685,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "melee"
          ]
       },
       {
@@ -17574,6 +17708,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "melee",
+            "item quality"
          ]
       },
       {
@@ -17593,6 +17732,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "social",
+            "defense"
          ]
       },
       {
@@ -17613,6 +17756,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "melee",
+            "mobility",
+            "story points"
          ]
       },
       {
@@ -17633,6 +17782,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "narrative"
          ]
       },
       {
@@ -17652,6 +17805,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "skills"
          ]
       },
       {
@@ -17671,6 +17829,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "combat",
+            "hacking"
          ]
       },
       {
@@ -17690,6 +17853,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "hacking"
          ]
       },
       {
@@ -17709,6 +17876,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "mobility",
+            "story points"
          ]
       },
       {
@@ -17728,6 +17900,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "combat",
+            "vehicles"
          ]
       },
       {
@@ -17748,6 +17925,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "mobility"
          ]
       },
       {
@@ -17767,6 +17948,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "mobility"
          ]
       },
       {
@@ -17786,6 +17971,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "social",
+            "motivation"
          ]
       },
       {
@@ -17805,6 +17994,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "story points"
          ]
       },
       {
@@ -17824,6 +18017,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "social",
+            "support"
          ]
       },
       {
@@ -17843,6 +18040,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "vehicles",
+            "recovery"
          ]
       },
       {
@@ -17862,6 +18064,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "combat",
+            "hacking",
+            "story points"
          ]
       },
       {
@@ -17882,6 +18090,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "narrative",
+            "ranged"
          ]
       },
       {
@@ -17901,6 +18114,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "unarmed",
+            "skills",
+            "status effect"
          ]
       },
       {
@@ -17922,6 +18141,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged",
+            "support",
+            "mobility"
          ]
       },
       {
@@ -17941,6 +18166,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged"
          ]
       },
       {
@@ -17960,6 +18189,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "unarmed",
+            "mobility",
+            "status effect"
          ]
       },
       {
@@ -17979,6 +18214,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "social",
+            "favor",
+            "career skills"
          ]
       },
       {
@@ -17998,6 +18239,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged"
          ]
       },
       {
@@ -18017,6 +18262,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged"
          ]
       },
       {
@@ -18037,6 +18286,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "story points",
+            "narrative"
          ]
       },
       {
@@ -18056,6 +18310,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "story points",
+            "narrative",
+            "social"
          ]
       },
       {
@@ -18075,6 +18335,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "social",
+            "favor",
+            "career skills"
          ]
       },
       {
@@ -18094,6 +18360,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "defense",
+            "story points"
          ]
       },
       {
@@ -18114,6 +18385,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "narrative"
          ]
       },
       {
@@ -18133,6 +18409,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "social",
+            "favor",
+            "career skills"
          ]
       },
       {
@@ -18152,6 +18434,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "social",
+            "favor",
+            "career skills"
          ]
       },
       {
@@ -18172,6 +18460,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "social",
+            "favor",
+            "story points"
          ]
       },
       {
@@ -18191,6 +18485,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "social",
+            "favor",
+            "story points"
          ]
       }
    ],
