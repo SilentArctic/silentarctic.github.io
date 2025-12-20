@@ -5,30 +5,38 @@
       "type": "object",
       "properties": {
          "name": {
-            "type": "string"
+            "type": "string",
+            "description": "Table name."
          },
          "page": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Source page reference."
          },
          "subtitle": {
-            "type": "string"
+            "type": "string",
+            "description": "Subtitle (goes above the table)."
          },
          "foot": {
-            "type": "string"
+            "type": "string",
+            "description": "Alternate subtitle (goes below the table)."
          },
          "columns": {
             "type": "array",
+            "description": "List of column headers for the table.",
             "items": {
                "type": "object",
                "properties": {
                   "header": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Label displayed at the top of the column."
                   },
                   "value": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "This value is mapped to the rows so each value is placed in the correct column. If this value is omitted, the \"header\" value will be used instead (case insensitive)."
                   },
                   "size": {
-                     "type": "integer"
+                     "type": "integer",
+                     "description": "Width of the column. This is calculated as a fraction of the total column sizes. Example: three columns with widths 2, 3, 3. Total is 8, so the first column will be 2/8 (or 1/4) the total width of the table."
                   }
                },
                "required": [
@@ -43,12 +51,15 @@
          },
          "rows": {
             "type": "array",
+            "description": "Rows in the table.",
             "items": {
                "type": "object",
                "title": "Subtitle",
+               "description": "Each row is an object containing key/value pairs. The key must match a column header or value, and the value is an array of strings containing the content of the row.",
                "properties": {
                   "subtitle": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "A subtitle spans the entire width of the table and has a solid background to separate different sections of the table."
                   }
                },
                "optional": [

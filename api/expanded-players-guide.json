@@ -9467,7 +9467,7 @@
          "activation": "passive",
          "ranked": false,
          "description": [
-            "When your character casts a {@spell Conjure||crb} spell using the {@skill Primal||crb} skill, they always add the Summon Ally effect without increasing the difficulty, and they must always summon a living animal (such as those starting on page 86). The animal remains for the duration of the encounter even if your character does not use a concentrate maneuver to maintain the spell. At your GM's discretion, the animal may have already been nearby rather than summoned from thin air. Likewise, at the end of the encounter, the animal may revert back to its natural behavior instead of vanishing."
+            "When your character casts a {@spell Conjure||crb} spell using the {@skill Primal||crb} skill, they always add the Summon Ally effect without increasing the difficulty, and they must always summon a living animal (such as those starting on page 86). The animal remains for the duration of the encounter even if your character does not use a {@rule concentrate|concentrate maneuver|crb} to maintain the spell. At your GM's discretion, the animal may have already been nearby rather than summoned from thin air. Likewise, at the end of the encounter, the animal may revert back to its natural behavior instead of vanishing."
          ],
          "settings": [
             {
@@ -9549,7 +9549,7 @@
          "activation": "active (incidental)",
          "ranked": false,
          "description": [
-            "When your character casts a {@spell transform} spell on themself using the {@skill Primal||crb} skill, you may spend a Story Point to have them use this talent to maintain the effects of the spell until the end of the encounter, without performing concentrate maneuvers."
+            "When your character casts a {@spell transform} spell on themself using the {@skill Primal||crb} skill, you may spend a Story Point to have them use this talent to maintain the effects of the spell until the end of the encounter, without performing {@rule concentrate|concentrate maneuvers|crb}."
          ],
          "settings": [
             {
@@ -9589,7 +9589,7 @@
          "activation": "active (incidental)",
          "ranked": false,
          "description": [
-            "After your character makes a successful {@spell Mask} spell to create an illusion, you may spend a Story Point to have your character use this talent to make the illusion last until the end of the encounter, without performing concentrate maneuvers, and not need to remain within the spell's range after being cast. You may spend two Story Points to make the illusion last until the end of the session instead."
+            "After your character makes a successful {@spell Mask} spell to create an illusion, you may spend a Story Point to have your character use this talent to make the illusion last until the end of the encounter, without performing {@rule concentrate|concentrate maneuvers|crb}, and not need to remain within the spell's range after being cast. You may spend two Story Points to make the illusion last until the end of the session instead."
          ],
          "settings": [
             {

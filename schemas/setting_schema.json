@@ -5,19 +5,28 @@
       "type": "object",
       "properties": {
          "name": {
-            "type": "string"
+            "type": "string",
+            "description": "Setting name."
          },
          "page": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Source page reference."
          },
          "summary": {
             "type": "array",
+            "description": "Setting summary.",
             "items": {
                "type": "string"
             }
          },
-         "lore": { "$ref": "varyingDisplay_sub_schema.json" },
-         "codex": { "$ref": "varyingDisplay_sub_schema.json" },
+         "lore": {
+            "$ref": "varyingDisplay_sub_schema.json",
+            "description": "Detailed setting lore."
+         },
+         "codex": {
+            "$ref": "varyingDisplay_sub_schema.json",
+            "description": "References to important items and figures"
+         },
          "characterOptions": { "$ref": "varyingDisplay_sub_schema.json" },
          "id": {
             "type": "string",

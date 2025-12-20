@@ -3,6 +3,7 @@
    "type": "array",
    "items": {
       "type": "string",
+      "description": "List of tags used for filtering talents.",
       "enum": [
          "agenda",
          "allegiance",

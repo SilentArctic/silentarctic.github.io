@@ -5,19 +5,24 @@
       "type": "object",
       "properties": {
          "name": {
-            "type": "string"
+            "type": "string",
+            "description": "Spell name."
          },
          "page": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Source page reference."
          },
          "imageUrl": {
-            "type": "string"
+            "type": "string",
+            "description": "Url to a related image."
          },
          "concentration": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "If the spell allows the concentration maneuver to sustain its effects to the next round."
          },
          "difficulty": {
             "type": "string",
+            "description": "Base difficulty of the spell. simple/easy/average/hard/daunting/formidable.",
             "enum": [
                "simple",
                "easy",
@@ -29,6 +34,7 @@
          },
          "range": {
             "type": "string",
+            "description": "Maximum default range of the spell. self/engaged/short/medium/long/extreme/strategic.",
             "enum": [
                "",
                "Self",
@@ -42,14 +48,17 @@
          },
          "skills": {
             "type": "array",
+            "description": "List of skills which can be used to cast this spell.",
             "items": {
                "type": "object",
                "properties": {
                   "name": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Skill name."
                   },
                   "source": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Skill source (abbreviation). Example: crb."
                   }
                },
                "required": [
@@ -63,35 +72,45 @@
          },
          "narrative": {
             "type": "array",
+            "description": "Narrative description of the spell.",
             "items": {
-               "type": "string"
+               "type": "string",
+               "description": "Narrative description of the spell."
             }
          },
          "structured": {
             "type": "array",
+            "description": "Structured description of the spell.",
             "items": {
-               "type": "string"
+               "type": "string",
+               "description": "Structured description of the spell."
             }
          },
          "additionalEffects": {
             "type": "array",
+            "description": "List of additional effects that may optionally be added to the spell.",
             "items": {
                "type": "object",
                "properties": {
                   "name": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Effect name."
                   },
                   "description": {
                      "type": "array",
+                     "description": "Effect description.",
                      "items": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "Effect description."
                      }
                   },
                   "difficultyMod": {
-                     "type": "integer"
+                     "type": "integer",
+                     "description": "Difficulty modifier the effect adds to the spell. The value here translates to a number of difficulty dice."
                   },
                   "difficultyUpgrade": {
-                     "type": "integer"
+                     "type": "integer",
+                     "description": "Number of difficulty dice to upgrade when adding this effect."
                   }
                },
                "required": [

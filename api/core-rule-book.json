@@ -7763,7 +7763,7 @@
          "rarity": 5,
          "description": [
             "Druidic circlets could be simple bands of entwined metal, elaborate headdresses of antlers, or even crowns of ivy. They help those using primal magic commune with the natural world.",
-            "When the user casts the Conjure spell to summon a living creature, adding the Summon Ally effect does not increase its difficulty. In addition, the creature remains summoned until the end of the encounter without your character having to use the concentrate maneuver."
+            "When the user casts the Conjure spell to summon a living creature, adding the Summon Ally effect does not increase its difficulty. In addition, the creature remains summoned until the end of the encounter without your character having to use the {@rule concentrate|concentrate maneuver}."
          ]
       },
       {
@@ -8365,6 +8365,68 @@
          ]
       }
    ],
+   "optionFeature": [
+      {
+         "name": "Firewall",
+         "page": 235,
+         "type": "ice",
+         "labels": [
+            {
+               "name": "Program Strength",
+               "description": "3"
+            }
+         ],
+         "description": [
+            "Firewalls are effectively barriers in cyberspace that limit access to certain parts of a server or system. If a user tries to penetrate them and fails, they get bumped back to the main system.",
+            "{@b Effects:} If a character attempts to override this program and fails, they are unable to access the portion of the server the firewall protects (there are no further effects)."
+         ]
+      },
+      {
+         "name": "Sentry",
+         "page": 235,
+         "type": "ice",
+         "labels": [
+            {
+               "name": "Program Strength",
+               "description": "2"
+            }
+         ],
+         "description": [
+            "Sentries don't stop you from accessing restricted parts of a server. However, they spot unauthorized access and attempt to trace the offender.",
+            "{@b Effects:} If a character attempts to override this program and fails, the sysops or other system administrators are immediately notified of the intrusion. In addition, the sentry provides any sysops or system administrators who access the system during the encounter one suc cessful trace against the hacker."
+         ]
+      },
+      {
+         "name": "Gate",
+         "page": 235,
+         "type": "ice",
+         "labels": [
+            {
+               "name": "Program Strength",
+               "description": "2"
+            }
+         ],
+         "description": [
+            "Gates are authentication programs. If a user has the right credentials (or can override the system to make it think they do), they let the user pass. If the user does not, the program automatically boots them from the system.",
+            "{@b Effects:} If a character attempts to override this program and fails, they immediately lose access to the entire system and must perform the {@rule Access System} action again."
+         ]
+      },
+      {
+         "name": "Gate (Pop-up)",
+         "page": 235,
+         "type": "ice",
+         "labels": [
+            {
+               "name": "Program Strength",
+               "description": "1"
+            }
+         ],
+         "description": [
+            "This version of a gate is universally reviled marketing gimmick, not a true security program. It won't stop access to a server, but it is annoying.",
+            "{@b Effects:} If a character attempts to override this program and fails, they suffer 2 strain. They may also feel a fleeting compulsion to buy a new vehicle or invest in a suspect weight-loss plan."
+         ]
+      }
+   ],
    "quality": [
       {
          "name": "Accurate",
@@ -8943,6 +9005,15 @@
          ]
       },
       {
+         "name": "Concentrate",
+         "page": 218,
+         "type": "maneuver",
+         "description": [
+            "Some magical effects might require concentration to sustain. If a magical action (or spell) can benefit from concentration, the action description notes this.",
+            "Spells that can be sustained through concentration last until the end of the character's next turn (as noted in their description). However, if the character performs the concentrate maneuver during that next turn, the spell's effects last until the end of the character's following turn, instead. This can be sustained indefinitely by performing the concentrate maneuver each turn."
+         ]
+      },
+      {
          "name": "Concentrated Barrage",
          "page": 228,
          "type": "vehicle maneuver",
@@ -8958,6 +9029,14 @@
             "The gunner directs the vehicle's fire to focus on a precise point on the opponent's hull. Focusing fire in this way has the potential to deal significant damage. This action also speeds up combat when your vehicle has lots of guns.",
             "When performing the Concentrated Barrage action, the character selects all weapons of a single type (such as 24-pounder cannons aboard a seagoing craft, or railguns aboard a starship) that share a firing arc. This action requires at least two weapons to use, and it cannot be used if there are not two weapons of a single type that share a firing arc. Although the character is firing multiple weapons, the character makes a single combat check, as per the rules for the Perform a Combat Check with Vehicle Weapons action. If the attack succeeds, the character may spend {@symbols a} once to add damage equal to the number of weapons involved in the attack to one hit of the attack.",
             "The Concentrated Barrage action can only be used to target vehicles with a silhouette of 5 or higher."
+         ]
+      },
+      {
+         "name": "Counterspell",
+         "page": 218,
+         "type": "maneuver",
+         "description": [
+            "Most skilled mages or spellcasters can attempt to counter an opponent's spells as they are being cast. If the character performs the counterspell maneuver, all opponents within medium range upgrade the difficulty of checks to cast spells once, until the end of the character's next turn."
          ]
       },
       {
@@ -10560,6 +10639,113 @@
          ]
       },
       {
+         "name": "Access System",
+         "page": 233,
+         "type": "hacking action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Difficulty:} {@skill Computers} check (difficulty varies)",
+                  "{@b Available To:} Hacker"
+               ]
+            },
+            "Once the hacker has a direct link to the system (through a land-line, wireless connection, USB port, or something more futuristic), they need to access the system. This action represents the hacker accessing the system and gaining control over it, so that they can make the system do what they want later.",
+            "As an action, the hacker may make a {@skill Computers} check to gain access to the system. The difficulty of the check is based on the system's basic security and complexity. See {@table III.2-20: System Security} for suggestions on the difficulty of breaking into various types of systems.",
+            "Once a hacker has successfully accessed a system, they can use the enact commands maneuver to do things in the system (what they can do depends on what system they accessed, of course). However, certain parts of a system may be further protected by security programs. The hacker needs to override these security programs before they can access those parts of a system."
+         ]
+      },
+      {
+         "name": "Override Security Program",
+         "page": 233,
+         "type": "hacking action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Difficulty:} {@difficulty Average|Computers}",
+                  "{@b Available To:} Hacker"
+               ]
+            },
+            "Once a hacker has successfully performed the access system action, certain parts of a system may still be protected by security programs. For example, a hacker may gain access to a facility's security camera network and be able to see whatever the security cameras see. However, the part of the system that controls the cameras is protected by a security program, which the hacker must override before they can turn the cameras off.",
+            "Each security program has a strength rating. To override the program, the hacker must make an {@difficulty Average|Computers} and generate a number of {@symbols s} equal to the program's rating. If the hacker fails, something (usually bad) happens, depending on the security program. We provide three example security programs on page 235 to use in your hacking encounters.",
+            "If the hacker succeeds, the program shuts down, and cannot be reactivated until the end of the hacker's next turn. Hackers can spend {@symbols a} or {@symbols t} to keep a program shut down longer, or completely disable it."
+         ]
+      },
+      {
+         "name": "Trace User",
+         "page": 233,
+         "type": "hacking action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Difficulty: Opposed Computers vs Computers check}",
+                  "{@b Available To:} Sysop"
+               ]
+            },
+            "Once the sysops knows that their system is being hacked, they still need to find out where the hack is coming from. The more they know about the origin of the hack, the easier it is to lock the hacker out of their system.",
+            "To find out where the hack is coming from, the sysops needs to trace the hacker by performing the trace user action. The sysops makes {@b opposed {@skill Computers} vs {@skill Computers} check} targeting the hacker. If successful, the sysops narrows down the hacker's location once. This makes it easier to lock the hacker out of the system (see the {@rule Lockout} action), and also provides information about the hacker's real-world location. See the {@sidebar Trace Information} sidebar for what a successful trace provides.",
+            "Besides making it easy for the sysops to lock the hacker out of the system, the sysops can also use this information for other purposes, such as reporting the hacker to the police (or sending a black-ops team to the hacker's house). You can also rule that a sysops needs to perform the trace user action to learn other key details about the hacker, such as how to access the hacker's computer over the Internet. You can even allow a hacker to perform the trace user action to learn the physical location of someone online, such as an enemy sysops or a rival hacker."
+         ]
+      },
+      {
+         "name": "Lockout",
+         "page": 234,
+         "type": "hacking action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Difficulty:} {@difficulty Formidable|Computers}",
+                  "{@b Available To:} Sysop"
+               ]
+            },
+            "Since the sysops has direct control over the system, they can lock any users out of the system. As long as they can find the hacker, they can give them the boot.",
+            "Once the sysops is aware of a hacker's presence, the sysops may make a {@difficulty Formidable|Computers}. If successful, the hacker loses access to the system. At the GM's discretion, they may be able to regain access to the system by performing the {@rule Access System} action again. However, at the very least the difficulty of this action should be increased twice.",
+            "Reduce the difficulty of Lockout once for every successful trace against the hacker, to a minimum of {@difficulty Easy}."
+         ]
+      },
+      {
+         "name": "Enact Command",
+         "page": 234,
+         "type": "hacking maneuver",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Available To:} Hacker, Sysop"
+               ]
+            },
+            "This maneuver is how characters do things within a system after they access it. What they can do with this maneuver could range from looping the footage of specific security cameras in a facility, locking or unlocking electronic security doors, shutting down power to an elevator, resetting a drone's targeting parameters, or downloading a cache of corporate information.",
+            "Enact command should only let a character perform a single command in the system. If what a player wants their character to do is too complex, you can require them to spend two or more Enact Command maneuvers to do it. It doesn't require a check—once characters have bypassed security, the system thinks they're authorized users (or, if the character is a sysop, they actually are authorized users).",
+            "Characters can only perform this maneuver after they have successfully performed the {@rule Access System} action and gained access to the computer system. Also, remember that some parts of a system may be protected behind firewalls, which must be overridden before the character can enact commands that affect that part of the system."
+         ]
+      },
+      {
+         "name": "Activate Programs",
+         "page": 235,
+         "type": "hacking maneuver",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Available To:} Hacker, Sysop"
+               ]
+            },
+            "Characters use this maneuver to activate (or reactivate) security programs, as well as any other programs that help or hinder hacking that you may have created for your setting."
+         ]
+      },
+      {
+         "name": "Preparing Hacking Opposition",
+         "page": 235,
+         "type": "hacking",
+         "description": [
+            "Opposition in hacking encounters generally falls into two categories: the security of the system itself and the protection that any associated characters provide to it. The first is the difficulty to access the system and the existence of any security programs. The difficulty to break into a system can run from {@difficulty Simple} to {@difficulty Formidable}, and examples are provided in {@table III.2-20: System Security} on page 232.",
+            "Preparing NPC opposition for hacking encounters works much like preparing NPCs for any other purpose. If the PCs are unlikely to encounter the sysops in person, you only need the characteristics relevant for the sysops' role in the encounter. Providing the foe's Intellect characteristic and {@skill Computers} skill can often be enough, unless you expect the PCs to later encounter that character in the flesh. Giving the NPC talents like {@talent Defensive Sysops} can help an especially talented enemy stand out."
+         ]
+      },
+      {
          "name": "Water and Swimming",
          "page": 111,
          "type": "environment",
@@ -11482,6 +11668,21 @@
                },
                "columns": [],
                "rows": []
+            }
+         ]
+      },
+      {
+         "name": "Trace Information",
+         "page": 233,
+         "type": "computers",
+         "description": [
+            "A sysop can successfully trace a user up to four times, each time gaining more information about the user. Additional traces don't reveal any additional information or further decrease the difficulty of the lockout action, but you can give the character additional narrative information about their opponent for doing so.",
+            "Successful traces usually occur via the Trace User action, but can also happen by spending {@symbols a} or {@symbols h}, or unsuccessfully attempting to override a sentry security program.",
+            {
+               "type": "table",
+               "columns": [],
+               "rows": [],
+               "_ref": { "name": "Table III.2-21: Trace Information" }
             }
          ]
       },
@@ -15458,6 +15659,158 @@
                "roll": "154+",
                "severity": "-",
                "result": "{@b Vaporized:} The vehicle is completely destroyed, consumed in a large and dramatic fireball. Nothing survives."
+            }
+         ]
+      },
+      {
+         "name": "Table III.2-20: System Security",
+         "page": 232,
+         "columns": [
+            {
+               "header": "Example Systems",
+               "value": "examples",
+               "size": 3
+            },
+            {
+               "header": "Difficulty",
+               "value": "difficulty"
+            }
+         ],
+         "rows": [
+            {
+               "examples": "Unsecured/passcode known",
+               "difficulty": "{@difficulty Simple}"
+            },
+            {
+               "examples": "Public terminal, PAD, personal computer",
+               "difficulty": "{@difficulty Easy}"
+            },
+            {
+               "examples": "Small business server",
+               "difficulty": "{@difficulty Average}"
+            },
+            {
+               "examples": "Government network, corporate server",
+               "difficulty": "{@difficulty Hard}"
+            },
+            {
+               "examples": "Hacker darknet, military server",
+               "difficulty": "{@difficulty Daunting}"
+            },
+            {
+               "examples": "Megacorp core system, intelligence agency server",
+               "difficulty": "{@difficulty Formidable}"
+            }
+         ]
+      },
+      {
+         "name": "Table III.2-21: Trace Information",
+         "page": 233,
+         "columns": [
+            {
+               "header": "Traces",
+               "value": "traces"
+            },
+            {
+               "header": "Results",
+               "value": "result",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "traces": "1",
+               "result": "The sysops learns what country the hacker is currently in (or its geo-political equivalent, depending on the setting). The sysops reduces the difficulty of the lockout action once."
+            },
+            {
+               "traces": "2",
+               "result": "The sysops learns what state, province, or region the hacker is in within that country. The sysops reduces the difficulty of the lockout action twice."
+            },
+            {
+               "traces": "3",
+               "result": "The sysops learns what city or community the hacker is in (or their location within a 10 kilometer radius). The sysops reduces the difficulty of the lockout action three times."
+            },
+            {
+               "traces": "4",
+               "result": "The sysops learns the address or exact location of the hacker. The sysops reduces the difficulty of the lockout action four times."
+            }
+         ]
+      },
+      {
+         "name": "Table III.2-22: Spending Advantage, Triumph, Threat, and Despair in Hacking Encounters",
+         "page": 234,
+         "columns": [
+            {
+               "header": "Symbols",
+               "value": "symbols"
+            },
+            {
+               "header": "Result Options",
+               "value": "result",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "symbols": "{@symbols a or t}",
+               "result": [
+                  "{@b Opportunity Identified}: The character finds a useful system exploit. Add {@dice boost} to the character's next {@skill Computers} check in this system.",
+                  "{@b Thorough Override (Hacker Only)}: If the hacker successfully overrode a security program, it cannot be reactivated for one additional round."
+               ]
+            },
+            {
+               "symbols": "{@symbols aa or t}",
+               "result": [
+                  "{@b Quick Commands}: The character may immediately perform an additional {@rule Enact Command} maneuver as an incidental.",
+                  "{@b Cover Tracks (Hacker Only)}: The hacker hides their presence, adding {@dice setback} to the sysops' next {@rule Trace User} action this encounter.",
+                  "{@b Dynamic Code (Sysops Only)}: The sysops mods the coding on a security program, adding {@dice setback} to all {@rule Override Security Program} checks targeting it."
+               ]
+            },
+            {
+               "symbols": "{@symbols aaa or t}",
+               "result": [
+                  "{@b Trolling}: The character takes a few moments to mock their opponent. Inflict 3 strain on one other user in the system.",
+                  "{@b Permanent Backdoor (Hacker Only)}: The hacker sets up a permanent means of accessing the system without needing to deal with its verification protocols. The difficulty of the {@rule Access System} action becomes {@difficulty Easy} as long as the hacker can access the backdoor.",
+                  "{@b Successful Trace (Sysops Only)}: The sysops successfully traces the hacker once (in addition to the other results of the check)."
+               ]
+            },
+            {
+               "symbols": "{@symbols t}",
+               "result": [
+                  "{@b Hard Shutdown (Hacker Only)}: If the hacker successfully {@rule override security program|overrode a security program}, it is so thoroughly disabled that it cannot be reactivated for the remainder of the encounter.",
+                  "{@b Blurred Sig (Hacker Only)}: The hacker obscures their signature, canceling one successful trace against them.",
+                  "{@b Backup Firewall (Sysops Only)}: The sysops activates their emergency defensive protocols. A system immediately gains an active backup firewall with strength 3, protecting one portion of the server chosen by the sysops.",
+                  "{@b Identified Exploit (Sysops Only)}: The sysops spots a backdoor in the system, removing one permanent backdoor of the sysops' choice."
+               ]
+            },
+            {
+               "symbols": "{@symbols h or d}",
+               "result": [
+                  "{@b Disorganized System}: The user gets lost in a maze of poorly-named sub-folders. Add {@dice setback} to the character's next {@b Computers} check in this system.",
+                  "{@b Online Distractions}: The user gets too focused on the online world. Add {@dice setback|2} to any non-{@b Computers} checks the user makes next turn."
+               ]
+            },
+            {
+               "symbols": "{@symbols hh or d}",
+               "result": [
+                  "{@b Limited Access (Hacker Only)}: The hacker may only perform one {@filter rule|hacking action|category:hacking action=1} or one {@filter rule|hacking maneuver|category:hacking maneuver=1} during their next turn.",
+                  "{@b I Know You! (Hacker Only)}: A sysops on the system recognizes the hacker's style. The next time they successfully use the {@rule Trace User} action, they successfully trace the hacker one additional time.",
+                  "{@b Careless Protocols (Sysops Only)}: Reduce the strength of one active security program (hacker's choice) by one to a minimum of 1."
+               ]
+            },
+            {
+               "symbols": "{@symbols hhh or d}",
+               "result": [
+                  "{@b Major Alert (Hacker Only)}: All users with access to the system become aware of the presence of an intruder on the network.",
+                  "{@b Permanent Backdoor (Sysops Only)}: As the sysops attempts to lock the system down, they leave a portion vulnerable. The hacker gains a means of accessing the system without needing to deal with its verification protocols. The difficulty of the {@rule Access System} action becomes {@difficulty Easy} as long as the hacker can access the backdoor."
+               ]
+            },
+            {
+               "symbols": "{@symbols d}",
+               "result": [
+                  "{@b Successful Trace (Hacker Only)}: Sloppy work allows one sysops on the system to successfully trace the hacker once.",
+                  "{@b Wrong Person (Sysops Only)}: As the sysops traces the hacker, they get one crucial element of the hacker's identity completely wrong. This does not remove a successful trace, but it does mean that they may have the wrong name, apartment number, or exact location of the hacker, which guarantees the hacker avoids any real-world retaliation and probably embarrasses the sysops in front of their superiors."
+               ]
             }
          ]
       },

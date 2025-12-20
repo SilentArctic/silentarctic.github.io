@@ -10,7 +10,7 @@
          },
          "page": {
             "type": "integer",
-            "description": "Page the vehicle can be found on."
+            "description": "Source page reference."
          },
          "variant": {
             "type": "boolean",

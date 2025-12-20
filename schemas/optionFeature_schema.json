@@ -10,7 +10,7 @@
          },
          "page": {
             "type": "integer",
-            "description": "Page the option/feature is found on."
+            "description": "Source page reference."
          },
          "type": {
             "type": "string",

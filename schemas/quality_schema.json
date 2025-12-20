@@ -1,21 +1,25 @@
 {
    "$id": "https://silentarctic.github.io/schemas/quality_schema.json",
+   "description": "Schema for quality entries applied to gear and vehicles.",
    "type": "array",
    "items": {
       "type": "object",
       "properties": {
          "name": {
-            "type": "string"
+            "type": "string",
+            "description": "Quality name."
          },
          "page": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Source page reference."
          },
          "activation": {
             "type": "string",
             "enum": [
                "active",
                "passive"
-            ]
+            ],
+            "description": "Whether the quality must be triggered (active) or is always in effect (passive)."
          },
          "gearType": {
             "type": "string",
@@ -24,7 +28,8 @@
                "armor",
                "weapon",
                "vehicle"
-            ]
+            ],
+            "description": "What gear category the quality can apply to."
          },
          "description": {
             "$ref": "varyingDisplay_sub_schema.json"

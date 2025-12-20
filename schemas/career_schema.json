@@ -10,7 +10,7 @@
          },
          "page": {
             "type": "integer",
-            "description": "Career page number."
+            "description": "Source page reference."
          },
          "skills": {
             "type": "array",

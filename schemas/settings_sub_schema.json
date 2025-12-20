@@ -5,10 +5,12 @@
       "type": "object",
       "properties": {
          "name": {
-            "type": "string"
+            "type": "string",
+            "description": "Setting name."
          },
          "source": {
-            "type": "string"
+            "type": "string",
+            "description": "Setting source (abbreviation). Example: crb."
          }
       },
       "required": [

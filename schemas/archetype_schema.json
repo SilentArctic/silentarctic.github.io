@@ -5,10 +5,12 @@
       "type": "object",
       "properties": {
          "name": {
-            "type": "string"
+            "type": "string",
+            "description": "Archetype or Species name."
          },
          "nickname": {
-            "type": "string"
+            "type": "string",
+            "description": "Optional nickname (ideal for keeping similar archetypes together ie. Dwarf (Dunwarr) and Dwarf (Forge)."
          },
          "characteristics": {
             "oneOf": [
@@ -17,22 +19,28 @@
                   "title": "Standard",
                   "properties": {
                      "brawn": {
-                        "type": "integer"
+                        "type": "integer",
+                        "description": "Starting Brawn."
                      },
                      "agility": {
-                        "type": "integer"
+                        "type": "integer",
+                        "description": "Starting Agility."
                      },
                      "intellect": {
-                        "type": "integer"
+                        "type": "integer",
+                        "description": "Starting Intellect."
                      },
                      "cunning": {
-                        "type": "integer"
+                        "type": "integer",
+                        "description": "Starting Cunning."
                      },
                      "willpower": {
-                        "type": "integer"
+                        "type": "integer",
+                        "description": "Starting Willpower."
                      },
                      "presence": {
-                        "type": "integer"
+                        "type": "integer",
+                        "description": "Starting Presence."
                      }
                   },
                   "required": [
@@ -52,22 +60,28 @@
                      "type": "object",
                      "properties": {
                         "brawn": {
-                           "type": "integer"
+                           "type": "integer",
+                           "description": "Starting Brawn."
                         },
                         "agility": {
-                           "type": "integer"
+                           "type": "integer",
+                           "description": "Starting Agility."
                         },
                         "intellect": {
-                           "type": "integer"
+                           "type": "integer",
+                           "description": "Starting Intellect."
                         },
                         "cunning": {
-                           "type": "integer"
+                           "type": "integer",
+                           "description": "Starting Cunning."
                         },
                         "willpower": {
-                           "type": "integer"
+                           "type": "integer",
+                           "description": "Starting Willpower."
                         },
                         "presence": {
-                           "type": "integer"
+                           "type": "integer",
+                           "description": "Starting Presence."
                         }
                      },
                      "required": [
@@ -84,20 +98,24 @@
             ]
          },
          "page": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Source page reference."
          },
          "imageUrl": {
-            "type": "string"
+            "type": "string",
+            "description": "Url for a related image."
          },
          "wt": {
             "oneOf": [
                {
                   "type": "integer",
-                  "title": "Standard"
+                  "title": "Standard",
+                  "description": "Wound threshold."
                },
                {
                   "type": "array",
                   "title": "Archetype Pair",
+                  "description": "Wound threshold.",
                   "items": {
                      "type": "integer"
                   }
@@ -108,11 +126,13 @@
             "oneOf": [
                {
                   "type": "integer",
-                  "title": "Standard"
+                  "title": "Standard",
+                  "description": "Strain threshold."
                },
                {
                   "type": "array",
                   "title": "Archetype Pair",
+                  "description": "Strain threshold.",
                   "items": {
                      "type": "integer"
                   }
@@ -120,31 +140,38 @@
             ]
          },
          "xp": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Starting XP."
          },
          "skills": {
             "type": "object",
+            "description": "Starting skill ranks.",
             "properties": {
                "skills": {
                   "type": "array",
+                  "description": "Starting skill options.",
                   "items": {
                      "type": "string"
                   }
                },
                "ranksTotal": {
-                  "type": "integer"
+                  "type": "integer",
+                  "description": "Meta field. # of total ranks this archetype starts with."
                },
                "ranksEach": {
-                  "type": "integer"
+                  "type": "integer",
+                  "description": "Meta field. # of ranks each skill receives."
                },
                "description": {
                   "type": "array",
+                  "description": "Text displayed on the archetype. This is *not* derived from the other fields here due to the vast variety of possibilities.",
                   "items": {
                      "type": "string"
                   }
                },
                "choice": {
-                  "type": "boolean"
+                  "type": "boolean",
+                  "description": "If the player has a choice between skills to put starting ranks into."
                }
             },
             "required": [
@@ -158,6 +185,7 @@
          },
          "abilities": {
             "type": "array",
+            "description": "List of unique adversary abilities",
             "items": {
                "oneOf": [
                   {
@@ -181,27 +209,32 @@
          },
          "description": {
             "type": "array",
+            "description": "Adversary description.",
             "items": {
                "type": "string"
             }
          },
          "why": {
             "type": "array",
+            "description": "Reasons why one would choose to play as this archetype.",
             "items": {
                "type": "string"
             }
          },
          "names": {
             "type": "object",
+            "description": "Suggested names for this archetype.",
             "properties": {
                "description": {
                   "type": "array",
+                  "description": "Brief description about this archetype's naming conventions.",
                   "items": {
                      "type": "string"
                   }
                },
                "names": {
                   "type": "array",
+                  "description": "List of suggested names.",
                   "items": {
                      "type": "string"
                   }

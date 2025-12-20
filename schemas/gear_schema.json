@@ -32,7 +32,7 @@
          },
          "page": {
             "type": "integer",
-            "description": "Source page the gear can be found on."
+            "description": "Source page reference."
          },
          "imageUrl": {
             "type": "string",

@@ -10,7 +10,7 @@
          },
          "page": {
             "type": "integer",
-            "description": "Page on which this adversary is found in the source document."
+            "description": "Source page reference."
          },
          "type": {
             "type": "string",

@@ -5,7 +5,8 @@
       "type": "object",
       "properties": {
          "name": {
-            "type": "string"
+            "type": "string",
+            "description": "Adventure name."
          },
          "chapters": { "$ref": "varyingDisplay_sub_schema.json" },
          "settings": { "$ref": "settings_sub_schema.json" },

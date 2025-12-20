@@ -5,16 +5,19 @@
       "type": "object",
       "properties": {
          "name": {
-            "type": "string"
+            "type": "string",
+            "description": "Characteristic name."
          },
          "description": {
             "type": "array",
+            "description": "Characteristic description.",
             "items": {
                "type": "string"
             }
          },
          "page": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Source page reference."
          },
          "id": {
             "type": "string",

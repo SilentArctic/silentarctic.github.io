@@ -10,7 +10,7 @@
          },
          "page": {
             "type": "integer",
-            "description": "Page number on which the skill is found."
+            "description": "Source page reference."
          },
          "imageUrl": {
             "type": "string",

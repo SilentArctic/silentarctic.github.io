@@ -24,4 +24,3 @@ exports.settings_sub_schema = require('./settings_sub_schema.json');
 exports.varyingDisplay_sub_schema = require('./varyingDisplay_sub_schema.json');
 exports.item_tags_sub_schema = require('./item_tags_sub_schema.json');
 exports.talent_tags_sub_schema = require('./talent_tags_sub_schema.json');
-exports.specialization_talent_row_sub_schema = require('./specialization_talent_row_sub_schema');
