@@ -16,6 +16,7 @@
       "originType": "core"
    },
    "embers-of-the-imperium.json": {
+      "version": "2025.12.6",
       "json": "embers-of-the-imperium",
       "full": "Twilight Imperium: Embers of the Imperium",
       "abbreviation": "EotI",
@@ -28,7 +29,6 @@
       ],
       "url": "https://www.edge-studio.net/games/embers-of-the-imperium/",
       "releaseDate": "28 April 2023",
-      "version": "2025.12.6",
       "originType": "core"
    },
    "expanded-players-guide.json": {
@@ -62,7 +62,7 @@
       "originType": "core"
    },
    "secrets-of-the-crucible.json": {
-      "version": "2025.6.11",
+      "version": "2025.12.7",
       "json": "secrets-of-the-crucible",
       "full": "Keyforge: Secrets of the Crucible",
       "abbreviation": "SotC",
@@ -78,7 +78,7 @@
       "originType": "core"
    },
    "shadow-of-the-beanstalk.json": {
-      "version": "2025.6.3",
+      "version": "2025.12.7",
       "json": "shadow-of-the-beanstalk",
       "full": "Android: Shadow of the Beanstalk",
       "abbreviation": "SotB",
@@ -94,6 +94,7 @@
       "originType": "core"
    },
    "twilight-imperium-inspection-tour.json": {
+      "version": "2025.1.20",
       "json": "twilight-imperium-inspection-tour",
       "full": "Twilight Imperium: Inspection Tour",
       "abbreviation": "EotI:IT",
@@ -106,7 +107,6 @@
       ],
       "url": "https://www.edge-studio.net/shares/twilight-imperium/",
       "releaseDate": "20 March 2024",
-      "version": "2025.1.20",
       "module": true,
       "originType": "core"
    },
