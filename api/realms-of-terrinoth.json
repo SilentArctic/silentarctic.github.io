@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.9.14.2",
+         "version": "2025.12.6",
          "json": "realms-of-terrinoth",
          "full": "Realms of Terrinoth",
          "abbreviation": "RoT",
@@ -9481,13 +9481,15 @@
                      "header": "Special"
                   }
                ],
-               "rows": [{
-                  "skill": "{@skill Ranged||crb}",
-                  "damage": "8",
-                  "critical": 4,
-                  "range": "Medium",
-                  "special": "{@quality Concussive|Concussive 1|crb}, {@quality Inaccurate|Inaccurate 1|crb}, {@quality Knockdown||crb}"
-               }]
+               "rows": [
+                  {
+                     "skill": "{@skill Ranged||crb}",
+                     "damage": "8",
+                     "critical": 4,
+                     "range": "Medium",
+                     "special": "{@quality Concussive|Concussive 1|crb}, {@quality Inaccurate|Inaccurate 1|crb}, {@quality Knockdown||crb}"
+                  }
+               ]
             }
          ],
          "tags": [
@@ -10177,13 +10179,15 @@
                      "header": "Special"
                   }
                ],
-               "rows": [{
-                  "skill": "{@skill Brawl||crb}",
-                  "damage": "+1",
-                  "critical": 3,
-                  "range": "Engaged",
-                  "special": "{@quality vicious|Vicious 1|crb}"
-               }]
+               "rows": [
+                  {
+                     "skill": "{@skill Brawl||crb}",
+                     "damage": "+1",
+                     "critical": 3,
+                     "range": "Engaged",
+                     "special": "{@quality vicious|Vicious 1|crb}"
+                  }
+               ]
             }
          ],
          "tags": [
@@ -10279,7 +10283,7 @@
       {
          "name": "Small",
          "description": [
-            "Gnomes are silhouette 0."
+            "This character is silhouette 0."
          ],
          "tags": [
             "general",
@@ -10874,13 +10878,15 @@
                      "header": "Special"
                   }
                ],
-               "rows": [{
-                  "skill": "{@skill Ranged||crb}",
-                  "damage": "+2",
-                  "crit": 3,
-                  "range": "Short",
-                  "special": "{@quality Accurate|Accurate 1|crb}, {@quality Limited Ammo|Limited Ammo 1|crb}"
-               }]
+               "rows": [
+                  {
+                     "skill": "{@skill Ranged||crb}",
+                     "damage": "+2",
+                     "crit": 3,
+                     "range": "Short",
+                     "special": "{@quality Accurate|Accurate 1|crb}, {@quality Limited Ammo|Limited Ammo 1|crb}"
+                  }
+               ]
             }
          ],
          "page": 92
@@ -11102,13 +11108,15 @@
                      "header": "Special"
                   }
                ],
-               "rows": [{
-                  "skill": "{@skill Ranged||crb}",
-                  "damage": "+2",
-                  "crit": 4,
-                  "range": "Short",
-                  "special": "{@quality Accurate|Accurate 1|crb}, {@quality Limited Ammo|Limited Ammo 1|crb}"
-               }]
+               "rows": [
+                  {
+                     "skill": "{@skill Ranged||crb}",
+                     "damage": "+2",
+                     "crit": 4,
+                     "range": "Short",
+                     "special": "{@quality Accurate|Accurate 1|crb}, {@quality Limited Ammo|Limited Ammo 1|crb}"
+                  }
+               ]
             }
          ],
          "page": 93
@@ -11159,13 +11167,15 @@
                      "header": "Special"
                   }
                ],
-               "rows": [{
-                  "skill": "{@skill Ranged||crb}",
-                  "damage": "+2",
-                  "crit": 4,
-                  "range": "Short",
-                  "special": "{@quality Accurate|Accurate 1|crb}, {@quality Limited Ammo|Limited Ammo 1|crb}"
-               }]
+               "rows": [
+                  {
+                     "skill": "{@skill Ranged||crb}",
+                     "damage": "+2",
+                     "crit": 4,
+                     "range": "Short",
+                     "special": "{@quality Accurate|Accurate 1|crb}, {@quality Limited Ammo|Limited Ammo 1|crb}"
+                  }
+               ]
             }
          ],
          "page": 93
@@ -12196,6 +12206,7 @@
          "name": "Arcane Bolt Rune",
          "page": 118,
          "type": "implement",
+         "class": "rune",
          "encumbrance": 0,
          "price": "priceless",
          "rarity": null,
@@ -12230,13 +12241,15 @@
                      "header": "Special"
                   }
                ],
-               "rows": [{
-                  "skill": "{@skill Ranged||crb}",
-                  "damage": "8",
-                  "crit": 3,
-                  "range": "Medium",
-                  "special": "{@quality Auto-fire||crb}"
-               }]
+               "rows": [
+                  {
+                     "skill": "{@skill Ranged||crb}",
+                     "damage": "8",
+                     "crit": 3,
+                     "range": "Medium",
+                     "special": "{@quality Auto-fire||crb}"
+                  }
+               ]
             }
          ]
       },
@@ -12244,6 +12257,7 @@
          "name": "Ice Storm Rune",
          "page": 118,
          "type": "implement",
+         "class": "rune",
          "encumbrance": 0,
          "price": "priceless",
          "rarity": null,
@@ -12278,13 +12292,15 @@
                      "header": "Special"
                   }
                ],
-               "rows": [{
-                  "skill": "{@skill Discipline||crb}",
-                  "damage": "7",
-                  "crit": 2,
-                  "range": "Medium",
-                  "special": "{@quality Blast|Blast 4|crb}, {@quality Ensnare|Ensnare 3|crb}"
-               }]
+               "rows": [
+                  {
+                     "skill": "{@skill Discipline||crb}",
+                     "damage": "7",
+                     "crit": 2,
+                     "range": "Medium",
+                     "special": "{@quality Blast|Blast 4|crb}, {@quality Ensnare|Ensnare 3|crb}"
+                  }
+               ]
             }
          ]
       },
@@ -12292,6 +12308,7 @@
          "name": "Immolation Rune",
          "page": 118,
          "type": "implement",
+         "class": "rune",
          "encumbrance": 0,
          "price": "priceless",
          "rarity": null,
@@ -12326,13 +12343,15 @@
                      "header": "Special"
                   }
                ],
-               "rows": [{
-                  "skill": "{@skill Discipline||crb}",
-                  "damage": "8",
-                  "crit": 3,
-                  "range": "Short",
-                  "special": "{@quality Burn|Burn 4|crb}"
-               }]
+               "rows": [
+                  {
+                     "skill": "{@skill Discipline||crb}",
+                     "damage": "8",
+                     "crit": 3,
+                     "range": "Short",
+                     "special": "{@quality Burn|Burn 4|crb}"
+                  }
+               ]
             }
          ]
       },
@@ -12340,6 +12359,7 @@
          "name": "Lesser Rune",
          "page": 119,
          "type": "implement",
+         "class": "rune",
          "encumbrance": 0,
          "price": "priceless",
          "rarity": null,
@@ -12359,6 +12379,7 @@
          "name": "Lightning Strike Rune",
          "page": 119,
          "type": "implement",
+         "class": "rune",
          "encumbrance": 0,
          "price": "priceless",
          "rarity": null,
@@ -12393,13 +12414,15 @@
                      "header": "Special"
                   }
                ],
-               "rows": [{
-                  "skill": "{@skill Discipline||crb}",
-                  "damage": "8",
-                  "crit": 3,
-                  "range": "Long",
-                  "special": "{@quality Auto-fire||crb}, {@quality Disorient|Disorient 3|crb}"
-               }]
+               "rows": [
+                  {
+                     "skill": "{@skill Discipline||crb}",
+                     "damage": "8",
+                     "crit": 3,
+                     "range": "Long",
+                     "special": "{@quality Auto-fire||crb}, {@quality Disorient|Disorient 3|crb}"
+                  }
+               ]
             }
          ]
       },
@@ -12407,6 +12430,7 @@
          "name": "Rune of Collection",
          "page": 119,
          "type": "implement",
+         "class": "rune",
          "encumbrance": 0,
          "price": "priceless",
          "rarity": null,
@@ -12426,6 +12450,7 @@
          "name": "Rune of Fate",
          "page": 119,
          "type": "implement",
+         "class": "rune",
          "encumbrance": 0,
          "price": "priceless",
          "rarity": null,
@@ -12445,6 +12470,7 @@
          "name": "Rune of Misery",
          "page": 120,
          "type": "implement",
+         "class": "rune",
          "encumbrance": 0,
          "price": "priceless",
          "rarity": null,
@@ -12464,6 +12490,7 @@
          "name": "Soulstone Rune",
          "page": 120,
          "type": "implement",
+         "class": "rune",
          "encumbrance": 0,
          "price": "priceless",
          "rarity": null,
@@ -12483,6 +12510,7 @@
          "name": "Stasis Rune",
          "page": 120,
          "type": "implement",
+         "class": "rune",
          "encumbrance": 0,
          "price": "priceless",
          "rarity": null,
@@ -12502,6 +12530,7 @@
          "name": "Sunburst Rune",
          "page": 121,
          "type": "implement",
+         "class": "rune",
          "encumbrance": 0,
          "price": "priceless",
          "rarity": null,
@@ -12536,13 +12565,15 @@
                      "header": "Special"
                   }
                ],
-               "rows": [{
-                  "skill": "{@skill Ranged||crb}",
-                  "damage": "4",
-                  "crit": 1,
-                  "range": "Medium",
-                  "special": "{@quality Breach|Breach 1|crb}"
-               }]
+               "rows": [
+                  {
+                     "skill": "{@skill Ranged||crb}",
+                     "damage": "4",
+                     "crit": 1,
+                     "range": "Medium",
+                     "special": "{@quality Breach|Breach 1|crb}"
+                  }
+               ]
             }
          ]
       },
@@ -12550,6 +12581,7 @@
          "name": "Teleportation Rune",
          "page": 121,
          "type": "implement",
+         "class": "rune",
          "encumbrance": 0,
          "price": "priceless",
          "rarity": null,
@@ -12569,6 +12601,7 @@
          "name": "Terror Rune",
          "page": 121,
          "type": "implement",
+         "class": "rune",
          "encumbrance": 0,
          "price": "priceless",
          "rarity": null,
@@ -12588,6 +12621,7 @@
          "name": "Vision Rune",
          "page": 121,
          "type": "implement",
+         "class": "rune",
          "encumbrance": 0,
          "price": "priceless",
          "rarity": null,
@@ -12607,6 +12641,7 @@
          "name": "Wanderer's Stone (Rune)",
          "page": 121,
          "type": "implement",
+         "class": "rune",
          "encumbrance": 0,
          "price": "priceless",
          "rarity": null,
@@ -12626,6 +12661,7 @@
          "name": "Ynfernael Rune",
          "page": 121,
          "type": "implement",
+         "class": "rune",
          "encumbrance": 0,
          "price": "priceless",
          "rarity": null,
@@ -13893,7 +13929,9 @@
                   }
                ],
                "rows": [
-                  { "subtitle": "Flagon" },
+                  {
+                     "subtitle": "Flagon"
+                  },
                   {
                      "price": 1,
                      "rarity": 0
@@ -13906,7 +13944,7 @@
          "name": "Lodgings",
          "page": 105,
          "type": "service",
-         "desription": [
+         "description": [
             "Only the very desperate press on once darkness falls, and for most the setting sun brings thoughts of where to rest for the night. Travelers can find such lodgings even in the Borderlands, ranging from proper establishments to tavern rooms to rough tents behind a building. Stables for riding beasts are an assumed part of the deal unless unusual or dangerous animals are involved.",
             {
                "type": "table",
@@ -13919,12 +13957,16 @@
                   }
                ],
                "rows": [
-                  { "subtitle": "Common Room (1 night)" },
+                  {
+                     "subtitle": "Common Room (1 night)"
+                  },
                   {
                      "price": 1,
                      "rarity": 0
                   },
-                  { "subtitle": "Private Room (1 night)" },
+                  {
+                     "subtitle": "Private Room (1 night)"
+                  },
                   {
                      "price": 5,
                      "rarity": 1
@@ -13950,7 +13992,9 @@
                   }
                ],
                "rows": [
-                  { "subtitle": "Meal (Tavern)" },
+                  {
+                     "subtitle": "Meal (Tavern)"
+                  },
                   {
                      "price": 2,
                      "rarity": 0
@@ -13976,12 +14020,16 @@
                   }
                ],
                "rows": [
-                  { "subtitle": "Porter (per day)" },
+                  {
+                     "subtitle": "Porter (per day)"
+                  },
                   {
                      "price": 1,
                      "rarity": 1
                   },
-                  { "subtitle": "Torchbearer (per day)" },
+                  {
+                     "subtitle": "Torchbearer (per day)"
+                  },
                   {
                      "price": 1,
                      "rarity": 1
@@ -14007,12 +14055,16 @@
                   }
                ],
                "rows": [
-                  { "subtitle": "Riverboat (1 day)" },
+                  {
+                     "subtitle": "Riverboat (1 day)"
+                  },
                   {
                      "price": 5,
                      "rarity": 2
                   },
-                  { "subtitle": "Wagon (1 day)" },
+                  {
+                     "subtitle": "Wagon (1 day)"
+                  },
                   {
                      "price": 2,
                      "rarity": 1
@@ -14038,7 +14090,9 @@
                   }
                ],
                "rows": [
-                  { "subtitle": "Bottle" },
+                  {
+                     "subtitle": "Bottle"
+                  },
                   {
                      "price": 2,
                      "rarity": 1
@@ -14271,6 +14325,10 @@
             "Your character wants to fortify their allies in battle with an inspiring song.",
             "Your character wants to demoralize their foe with a scathing limerick, to the point that it physically hampers their abilities.",
             "Your character wants to counteract the baleful spells of a necromancer with a rousing speech."
+         ],
+         "shouldNotUse": [
+            "Your character wants to sing an ordinary song. That would use {@skill Charm||crb}.",
+            "Your character wants to throw a fireball or otherwise physically damage the foe. That would require a differ ent magic skill, such as {@skill Arcana||crb}."
          ],
          "spells": [
             {
@@ -14619,7 +14677,11 @@
          "description": [
             "{@skill Athletics||crb} and {@skill Knowledge (Adventuring)} are now career skills for your character."
          ],
-         "page": 87
+         "page": 87,
+         "tags": [
+            "general",
+            "career skills"
+         ]
       },
       {
          "name": "Apothecary",
@@ -14629,7 +14691,12 @@
          "description": [
             "When a patient under your character's care heals wounds from natural rest, they heal additional wounds equal to twice your character's ranks in Apothecary."
          ],
-         "page": 84
+         "page": 84,
+         "tags": [
+            "general",
+            "support",
+            "recovery"
+         ]
       },
       {
          "name": "Back-to-Back",
@@ -14639,7 +14706,11 @@
          "description": [
             "While engaged with one or more allies, your character and allies they are engaged with add {@dice boost} to combat checks. If one or more allies engaged with your character also have Back-to-Back, the effects are cumulative to a maximum of {@dice boost|2}."
          ],
-         "page": 91
+         "page": 91,
+         "tags": [
+            "combat",
+            "support"
+         ]
       },
       {
          "name": "Backstab",
@@ -14649,7 +14720,12 @@
          "description": [
             "Your character may use this talent to attack an unaware adversary using a Melee (Light) weapon. A Backstab is a melee attack, and follows the normal rules for performing a combat check (see page 101 of the {@title Genesys Core Rulebook}), using the character's {@skill Skulduggery||crb} skill instead of {@skill Melee (Light)||crb}. If the check succeeds, each uncanceled {@symbols s} adds +2 damage (instead of the normal +1)."
          ],
-         "page": 89
+         "page": 89,
+         "tags": [
+            "combat",
+            "melee",
+            "result manipulation"
+         ]
       },
       {
          "name": "Bard",
@@ -14659,7 +14735,12 @@
          "description": [
             "{@skill Knowledge (Lore)} and {@skill Verse} are now career skills for your character."
          ],
-         "page": 87
+         "page": 87,
+         "tags": [
+            "general",
+            "magic",
+            "career skills"
+         ]
       },
       {
          "name": "Battle Casting",
@@ -14669,7 +14750,11 @@
          "description": [
             "Your character does not add {@dice setback} to magic skill checks for wearing heavy armor (armor with +2 soak or higher), using a shield, or not having at least one hand free (see {@table III.2-3: Penalties When Casting Spells||crb}, on page 210 of the {@title Genesys Core Rulebook})."
          ],
-         "page": 90
+         "page": 90,
+         "tags": [
+            "combat",
+            "magic"
+         ]
       },
       {
          "name": "Block",
@@ -14679,7 +14764,11 @@
          "description": [
             "{@i Your character must have purchased the {@talent Parry||crb} talent to benefit from this talent}. While wielding a shield, your character may use the {@talent Parry||crb} talent to reduce damage from ranged attacks as well as melee attacks targeting your character."
          ],
-         "page": 87
+         "page": 87,
+         "tags": [
+            "combat",
+            "defense"
+         ]
       },
       {
          "name": "Blood Sacrifice",
@@ -14689,7 +14778,11 @@
          "description": [
             "{@i Your character must have purchased the {@talent Dark Insight} talent to benefit from this talent}. Before your character makes a magic skill check, they may suffer a number of wounds to use this talent to add an equal number of {@symbols s} to the check. The number cannot exceed your character's ranks in Blood Sacrifice."
          ],
-         "page": 87
+         "page": 87,
+         "tags": [
+            "general",
+            "magic"
+         ]
       },
       {
          "name": "Body Guard",
@@ -14699,7 +14792,12 @@
          "description": [
             "Once per round, your character may suffer a number of strain no greater than their ranks in Body Guard to use this talent. Choose one ally engaged with your character; until the end of your character's next turn, upgrade the difficulty of all combat checks targeting that ally a number of times equal to the strain suffered."
          ],
-         "page": 90
+         "page": 90,
+         "tags": [
+            "combat",
+            "support",
+            "defense"
+         ]
       },
       {
          "name": "Bullrush",
@@ -14709,7 +14807,11 @@
          "description": [
             "When your character makes a {@skill Brawl||crb}, {@skill Melee (Light)||crb}, or {@skill Melee (Heavy)||crb} combat check after using a maneuver to engage a target, you may spend {@symbols aaa} or {@symbols t} to use this talent to knock the target prone and move them up to one range band away from your character."
          ],
-         "page": 84
+         "page": 84,
+         "tags": [
+            "combat",
+            "mobility"
+         ]
       },
       {
          "name": "Bulwark",
@@ -14719,7 +14821,12 @@
          "description": [
             "{@i Your character must have purchased the {@skill Parry||crb} talent to benefit from this talent}. While wielding a weapon with the {@quality Defensive||crb} quality, your character may use {@skill Parry||crb} to reduce the damage of an attack targeting an engaged ally."
          ],
-         "page": 87
+         "page": 87,
+         "tags": [
+            "combat",
+            "defense",
+            "support"
+         ]
       },
       {
          "name": "Cavalier",
@@ -14729,7 +14836,12 @@
          "description": [
             "While riding a mount trained for battle (typically a {@adversary War Mount} [see page 105] or {@adversary Flying Mount} [see page 104]), once per round your character may use this talent to direct the mount to perform an action."
          ],
-         "page": 90
+         "page": 90,
+         "tags": [
+            "general",
+            "support",
+            "animal companion"
+         ]
       },
       {
          "name": "Challenge!",
@@ -14739,7 +14851,10 @@
          "description": [
             "Once per encounter, your character may use this talent to choose a number of adversaries within short range no greater than your character's ranks in Challenge! (a minion group counts as a single adversary for this purpose). Until the encounter ends or your character is incapacitated, these adversaries add {@dice boost} to combat checks targeting your character and {@dice setback|2} to combat checks targeting other characters."
          ],
-         "page": 84
+         "page": 84,
+         "tags": [
+            "combat"
+         ]
       },
       {
          "name": "Chill of Nordros",
@@ -14749,7 +14864,11 @@
          "description": [
             "Your character cannot take this talent if they have taken the {@talent Flames of Kellos} talent. When casting an {@spell Attack||crb} spell, your character may add the Ice effect without increasing the difficulty. Your character can never add the Fire effect."
          ],
-         "page": 88
+         "page": 88,
+         "tags": [
+            "combat",
+            "magic"
+         ]
       },
       {
          "name": "Conduit",
@@ -14759,7 +14878,12 @@
          "description": [
             "Once per encounter, your character may spend a Story Point to perform a magic action as a maneuver."
          ],
-         "page": 91
+         "page": 91,
+         "tags": [
+            "general",
+            "magic",
+            "story points"
+         ]
       },
       {
          "name": "Counterattack",
@@ -14769,7 +14893,10 @@
          "description": [
             "{@i Your character must have purchased the {@talent Parry (Improved)|Improved Parry|crb} talent to benefit from this talent}. When your character uses the {@talent Parry (Improved)|Improved Parry|crb} talent to hit an attacker, they may also activate an item quality of the weapon they used as if they had generated {@symbols aa} on a combat check using that weapon."
          ],
-         "page": 90
+         "page": 90,
+         "tags": [
+            "combat"
+         ]
       },
       {
          "name": "Crushing Blow",
@@ -14779,7 +14906,11 @@
          "description": [
             "Once per session after rolling a melee attack but before resolving the check, your character may suffer 4 strain to use this talent. While resolving the check, the weapon gains the {@quality Breach|Breach 1|crb} and {@quality Knockdown||crb} item qualities, and destroys one item the target is wielding that does not have the {@quality Reinforced||crb} quality."
          ],
-         "page": 91
+         "page": 91,
+         "tags": [
+            "combat",
+            "item quality"
+         ]
       },
       {
          "name": "Dark Insight",
@@ -14789,7 +14920,11 @@
          "description": [
             "When a spell adds a quality to your character's spell with a rating determined by your character's ranks in {@skill Knowledge (Lore)}, your character may use their ranks in {@skill Knowledge (Forbidden)} instead."
          ],
-         "page": 84
+         "page": 84,
+         "tags": [
+            "general",
+            "magic"
+         ]
       },
       {
          "name": "Death Rage",
@@ -14799,7 +14934,11 @@
          "description": [
             "Your character adds +2 damage to melee attacks for each {@table I.6-10: Critical Injury Result|Critical Injury|crb} they are currently suffering. (Your GM may also impose additional penalties on social skill checks your character makes if they are suffering {@table I.6-10: Critical Injury Result|Critical Injury|crb} due to their frenzied behavior.)"
          ],
-         "page": 91
+         "page": 91,
+         "tags": [
+            "combat",
+            "melee"
+         ]
       },
       {
          "name": "Dirty Tricks",
@@ -14809,7 +14948,11 @@
          "description": [
             "After your character inflicts a Critical Injury on an adversary, they may use this talent to upgrade the difficulty of that adversary's next check."
          ],
-         "page": 88
+         "page": 88,
+         "tags": [
+            "combat",
+            "critical injury"
+         ]
       },
       {
          "name": "Dissonance",
@@ -14819,7 +14962,11 @@
          "description": [
             "While wielding a musical instrument, your character may use this talent to make an {@difficulty average|Charm or Verse}. For each {@symbols s} the check generates, one enemy of the player's choosing within medium range suffers 1 wound. For each {@symbols a}, one enemy affected by Dissonance suffers 1 additional wound."
          ],
-         "page": 90
+         "page": 90,
+         "tags": [
+            "combat",
+            "magic"
+         ]
       },
       {
          "name": "Dominion of the Dimora",
@@ -14829,7 +14976,11 @@
          "description": [
             "Your character cannot take this talent if they have taken the {@talent Favor of the Fae} talent. When casting an {@spell Attack||crb} spell, your character may add the Impact effect without increasing the difficulty. Your character can never add the Manipulative effect."
          ],
-         "page": 88
+         "page": 88,
+         "tags": [
+            "combat",
+            "magic"
+         ]
       },
       {
          "name": "Dual Strike",
@@ -14839,7 +14990,11 @@
          "description": [
             "When resolving a combined check to attack with two weapons in a melee combat, your character may suffer 2 strain to use this talent to hit with the secondary weapon (instead of spending {@symbols aa})."
          ],
-         "page": 90
+         "page": 90,
+         "tags": [
+            "combat",
+            "melee"
+         ]
       },
       {
          "name": "Dungeoneer",
@@ -14849,7 +15004,14 @@
          "description": [
             "After your character makes a {@skill Perception||crb}, {@skill Vigilance||crb}, or {@skill Knowledge (Adventuring)} check to notice, identify, or avoid a threat in a cavern, subterranean ruin, or similar location, your character cancels a number of uncanceled {@symbols h} no greater than your character's ranks in Dungeoneer."
          ],
-         "page": 84
+         "page": 84,
+         "tags": [
+            "general",
+            "result manipulation",
+            "narrative",
+            "skills",
+            "mitigation"
+         ]
       },
       {
          "name": "Easy Prey",
@@ -14859,7 +15021,12 @@
          "description": [
             "Your character may suffer 3 strain to use this talent. Until the start of your character's next turn, your character and allies within short range add {@dice boost|2} to combat checks against {@rule immobilized||crb} targets."
          ],
-         "page": 90
+         "page": 90,
+         "tags": [
+            "combat",
+            "support",
+            "status effect"
+         ]
       },
       {
          "name": "Encouraging Song",
@@ -14869,7 +15036,12 @@
          "description": [
             "While equipped with a musical instrument, your character may use this talent to make an {@difficulty average|charm or verse}. For each {@symbols s} the check generates, one ally within medium range adds {@dice boost} to their next skill check. For each {@symbols a}, one ally benefiting from Encouraging Song heals 1 strain."
          ],
-         "page": 88
+         "page": 88,
+         "tags": [
+            "social",
+            "support",
+            "recovery"
+         ]
       },
       {
          "name": "Exploit",
@@ -14879,7 +15051,12 @@
          "description": [
             "When your character makes a combat check with a Ranged or Melee (Light) weapon, they may suffer 2 strain to use this talent to add the {@quality Ensnare||crb} quality to the attack. The rating of the {@quality Ensnare||crb} quality is equal to your character's ranks in Exploit."
          ],
-         "page": 88
+         "page": 88,
+         "tags": [
+            "combat",
+            "status effect",
+            "mobility"
+         ]
       },
       {
          "name": "Favor of the Fae",
@@ -14889,7 +15066,11 @@
          "description": [
             "Your character cannot take this talent if they have taken the {@talent Dominion of the Dimora} talent. When casting an {@spell Attack||crb} spell, your character may add the Manipulative effect without increasing the difficulty. Your character can never add the Impact effect."
          ],
-         "page": 88
+         "page": 88,
+         "tags": [
+            "combat",
+            "magic"
+         ]
       },
       {
          "name": "Finesse",
@@ -14899,7 +15080,11 @@
          "description": [
             "When making a {@skill Brawl||crb} or {@skill Melee (Light)||crb} check, your character may use Agility instead of Brawn."
          ],
-         "page": 84
+         "page": 84,
+         "tags": [
+            "combat",
+            "skill swap"
+         ]
       },
       {
          "name": "Flames of Kellos",
@@ -14909,7 +15094,11 @@
          "description": [
             "Your character cannot take this talent if they have taken the {@talent Chill of Nordros} talent. When casting an {@spell Attack||crb} spell, your character may add the Fire effect without increasing the difficulty. Your character can never add the Ice effect."
          ],
-         "page": 88
+         "page": 88,
+         "tags": [
+            "combat",
+            "magic"
+         ]
       },
       {
          "name": "Flash of Insight",
@@ -14919,7 +15108,12 @@
          "description": [
             "When your character generates {@symbols t} on a knowledge skill check, roll {@dice boost|2} and add the results to the check, in addition to spending the {@symbols t} as usual."
          ],
-         "page": 88
+         "page": 88,
+         "tags": [
+            "general",
+            "skills",
+            "result manipulation"
+         ]
       },
       {
          "name": "Grapple",
@@ -14929,7 +15123,11 @@
          "description": [
             "Your character may suffer 2 strain to use this talent. Until the start of your character's next turn, enemies must spend two maneuvers to disengage from your character."
          ],
-         "page": 88
+         "page": 88,
+         "tags": [
+            "combat",
+            "mobility"
+         ]
       },
       {
          "name": "Heroic Recovery",
@@ -14939,7 +15137,13 @@
          "description": [
             "When your character acquires this talent, choose one characteristic. Once per encounter, you may spend one Story Point to use this talent to have your character heal strain equal to the rating of the chosen characteristic."
          ],
-         "page": 88
+         "page": 88,
+         "tags": [
+            "general",
+            "recovery",
+            "characteristics",
+            "story points"
+         ]
       },
       {
          "name": "Hunter",
@@ -14949,7 +15153,11 @@
          "description": [
             "{@skill Knowledge (Geography)}, {@skill Ranged||crb}, and {@skill Survival||crb} are now career skills for your character."
          ],
-         "page": 88
+         "page": 88,
+         "tags": [
+            "general",
+            "career skills"
+         ]
       },
       {
          "name": "Impaling Strike",
@@ -14959,7 +15167,12 @@
          "description": [
             "When your character inflicts a Critical Injury with a melee weapon, until the end of the target's next turn they may use this talent to {@rule immobilized|immobilize|crb} the target (in addition to the other effects of the Critical Injury)."
          ],
-         "page": 88
+         "page": 88,
+         "tags": [
+            "combat",
+            "melee",
+            "mobility"
+         ]
       },
       {
          "name": "Justice of the Citadel",
@@ -14969,7 +15182,11 @@
          "description": [
             "Once per round on your character's turn, your character may suffer 3 strain to use this talent to add damage equal to their ranks in {@skill Discipline||crb} to one hit of a successful melee attack."
          ],
-         "page": 90
+         "page": 90,
+         "tags": [
+            "combat",
+            "melee"
+         ]
       },
       {
          "name": "Let's Talk This Over",
@@ -14979,7 +15196,11 @@
          "description": [
             "Once per game session, when a combat encounter against one or more sentient beings is about to begin, the character make a {@difficulty daunting|Charm}. If successful, the combat encounter instead becomes a social encounter, with the PCs attempting to convince their opposition to back down, come around to their viewpoint, or accept a compromise. The GM is the final arbiter of how the situation resolves without violence (or how the combat encounter continues if the character's check is unsuccessful)."
          ],
-         "page": 91
+         "page": 91,
+         "tags": [
+            "combat",
+            "social"
+         ]
       },
       {
          "name": "Natural Communion",
@@ -14989,7 +15210,12 @@
          "description": [
             "When your character uses the Conjure magic action, the spell gains the Summon Ally effect without increasing the difficulty. All creatures your character summons must be naturally occurring animals native to the area"
          ],
-         "page": 88
+         "page": 88,
+         "tags": [
+            "magic",
+            "general",
+            "animal companion"
+         ]
       },
       {
          "name": "Painful Blow",
@@ -14999,7 +15225,11 @@
          "description": [
             "When your character makes a combat check, you may voluntarily increase the difficulty by one to use this talent. If the target suffers one or more wounds from the combat check, the target suffers 2 strain each time they perform a maneuver until the end of the encounter."
          ],
-         "page": 84
+         "page": 84,
+         "tags": [
+            "combat",
+            "mobility"
+         ]
       },
       {
          "name": "Potent Concoctions",
@@ -15009,7 +15239,12 @@
          "description": [
             "When your character makes an {@skill Alchemy||crb} check that generates {@symbols t}, roll an additional {@dice proficiency} and add its results to the pool, in addition to spending the {@symbols t} normally. When your character makes an {@skill Alchemy||crb} check that generates {@symbols d}, roll an additional {@dice challenge} and add its results to the pool, in addition to spending the {@symbols d} normally. Each of these effects can occur only once per check."
          ],
-         "page": 90
+         "page": 90,
+         "tags": [
+            "general",
+            "crafting",
+            "magic"
+         ]
       },
       {
          "name": "Precise Archery",
@@ -15019,7 +15254,12 @@
          "description": [
             "When making a {@skill Ranged||crb} combat check targeting a character engaged with one of your character's allies, downgrade the difficulty of the check once (thus negating the penalty for shooting at engaged targets)."
          ],
-         "page": 90
+         "page": 90,
+         "tags": [
+            "combat",
+            "ranged",
+            "support"
+         ]
       },
       {
          "name": "Precision",
@@ -15029,7 +15269,12 @@
          "description": [
             "When making a {@skill Brawl||crb} or {@skill Ranged||crb} check, your character may use Cunning instead of Brawn and Agility."
          ],
-         "page": 84
+         "page": 84,
+         "tags": [
+            "combat",
+            "unarmed",
+            "ranged"
+         ]
       },
       {
          "name": "Pressure Point",
@@ -15039,7 +15284,12 @@
          "description": [
             "When your character makes an unarmed {@skill Brawl||crb} check targeting a living opponent, they may use this talent to deal strain damage instead of wound damage, and inflict additional strain damage equal to their ranks in {@skill Medicine||crb}."
          ],
-         "page": 90
+         "page": 90,
+         "tags": [
+            "combat",
+            "unarmed",
+            "skills"
+         ]
       },
       {
          "name": "Reckless Charge",
@@ -15049,7 +15299,12 @@
          "description": [
             "After using a maneuver to move engage an adversary, your character may suffer 2 strain to use this talent. They then add {@symbols ss}{@symbols hh} to the results of the next {@skill Brawl||crb}, {@skill Melee (Light)||crb}, or {@skill Melee (Heavy)||crb} combat check they make this turn."
          ],
-         "page": 89
+         "page": 89,
+         "tags": [
+            "combat",
+            "melee",
+            "mobility"
+         ]
       },
       {
          "name": "Retribution",
@@ -15059,7 +15314,13 @@
          "description": [
             "Once per round when an adversary attacks an ally within medium range, your character may spend one Story Point to use this talent to automatically hit that enemy once with a weapon your character is wielding, if the enemy is within the weapon's range. The hit deals the weapon's base damage, plus any damage from applicable talents or abilities."
          ],
-         "page": 91
+         "page": 91,
+         "tags": [
+            "combat",
+            "support",
+            "defense",
+            "story points"
+         ]
       },
       {
          "name": "Runic Lore",
@@ -15069,7 +15330,12 @@
          "description": [
             "{@skill Knowledge (Lore)} and {@skill Runes} are now career skills for your character."
          ],
-         "page": 89
+         "page": 89,
+         "tags": [
+            "magic",
+            "general",
+            "career skills"
+         ]
       },
       {
          "name": "Shapeshifter",
@@ -15079,7 +15345,13 @@
          "description": [
             "When your character is incapacitated due to having exceeded their strain threshold while in their normal form, they undergo the following change as an out-of-turn incidental: they heal all strain, increase their Brawn and Agility by one to a maximum of 5 and reduce their Intellect and Willpower by one to a minimum of 1. They deal +1 damage when making unarmed attacks and their unarmed attacks have a Critical rating of 3, but they cannot use magic skills or make ranged attacks. Your GM should ensure that NPCs react appropriately to this (at the very least, upgrading the difficulty of social skill checks twice). Your character reverts to their normal form after eight hours or if they become incapacitated (for instance, by exceeding their wound or strain threshold)."
          ],
-         "page": 84
+         "page": 84,
+         "tags": [
+            "general",
+            "magic",
+            "characteristics",
+            "downside"
+         ]
       },
       {
          "name": "Shapeshifter (Improved)",
@@ -15089,7 +15361,13 @@
          "description": [
             "Once per session, your character may make a {@difficulty hard|Discipline} as an out-of-turn incidental either to trigger {@talent Shapeshifter} or to avoid triggering it when they exceed their strain threshold."
          ],
-         "page": 89
+         "page": 89,
+         "tags": [
+            "general",
+            "characteristics",
+            "magic",
+            "downside"
+         ]
       },
       {
          "name": "Shield Slam",
@@ -15099,7 +15377,11 @@
          "description": [
             "When your character uses a shield to attack a minion or rival, you may spend {@symbols aaaa} or {@symbols t} to stagger the target until the end of the target's next turn."
          ],
-         "page": 84
+         "page": 84,
+         "tags": [
+            "combat",
+            "status effect"
+         ]
       },
       {
          "name": "Shockwave",
@@ -15109,7 +15391,12 @@
          "description": [
             "Your character treats {@skill Melee (Heavy)||crb} weapons as possessing the {@quality Blast||crb} item quality with a rating equal to your character's ranks in {@skill Melee (Heavy)||crb}. Your character does not suffer damage from their weapon's {@quality Blast||crb} quality (but allies do!)."
          ],
-         "page": 90
+         "page": 90,
+         "tags": [
+            "combat",
+            "melee",
+            "item quality"
+         ]
       },
       {
          "name": "Signature Spell",
@@ -15119,7 +15406,11 @@
          "description": [
             "When your character gains this talent, decide on a signature spell for them, consisting of a particular magic action and a specific set of one or more effects. When your character casts their signature spell (consisting of the exact combination of action and effects previously chosen), reduce the difficulty of the check by one."
          ],
-         "page": 89
+         "page": 89,
+         "tags": [
+            "magic",
+            "general"
+         ]
       },
       {
          "name": "Signature Spell (Improved)",
@@ -15129,7 +15420,11 @@
          "description": [
             "{@i Your character must have purchased the {@talent Signature Spell} talent to benefit from this talent}. When your character casts their signature spell, reduce the difficulty of the check by two instead of one."
          ],
-         "page": 91
+         "page": 91,
+         "tags": [
+            "general",
+            "magic"
+         ]
       },
       {
          "name": "Tavern Brawler",
@@ -15139,7 +15434,11 @@
          "description": [
             "Your character adds {@symbols a} to {@skill Brawl||crb} checks and combat checks using improvised weapons."
          ],
-         "page": 87
+         "page": 87,
+         "tags": [
+            "combat",
+            "unarmed"
+         ]
       },
       {
          "name": "Templar",
@@ -15149,7 +15448,12 @@
          "description": [
             "{@skill Divine||crb} is now a career skill for your character. They can only cast one spell using this skill per encounter."
          ],
-         "page": 87
+         "page": 87,
+         "tags": [
+            "general",
+            "magic",
+            "career skills"
+         ]
       },
       {
          "name": "Templar (Improved)",
@@ -15159,7 +15463,12 @@
          "description": [
             "{@i Your character must have purchased the {@talent Templar} talent to benefit from this talent}. When your character casts the single {@skill Divine||crb} spell per encounter granted by the {@talent Templar} talent, they do not add {@dice setback} for wearing heavy armor (armor with +2 soak or higher), using a shield, or not having at least one hand free (see {@table III.2-3: Penalties When Casting Spells||crb}, on page 210 of the Genesys Core Rulebook)."
          ],
-         "page": 89
+         "page": 89,
+         "tags": [
+            "magic",
+            "general",
+            "mitigation"
+         ]
       },
       {
          "name": "Threaten",
@@ -15169,7 +15478,11 @@
          "description": [
             "After an adversary within short range of your character resolves a combat check that deals damage to one of your character's allies, your character may suffer 3 strain to use this talent to inflict a number of strain on the adversary equal to your character's ranks in {@skill Coercion||crb}. The range of this talent increases by one band per rank of Threaten beyond the first."
          ],
-         "page": 89
+         "page": 89,
+         "tags": [
+            "combat",
+            "support"
+         ]
       },
       {
          "name": "Tumble",
@@ -15179,7 +15492,12 @@
          "description": [
             "Once per round on your character's turn, they may suffer 2 strain to disengage from all engaged adversaries."
          ],
-         "page": 87
+         "page": 87,
+         "tags": [
+            "general",
+            "mobility",
+            "combat"
+         ]
       },
       {
          "name": "Unrelenting",
@@ -15189,7 +15507,12 @@
          "description": [
             "Once per round after resolving a successful {@skill Brawl||crb}, {@skill Melee (Light)||crb}, or {@skill Melee (Heavy)||crb} combat check, your character may suffer 4 strain to use this talent to make an additional melee attack as an incidental against the same target. Increase the difficulty of the combat check by one if this attack uses a second weapon, or by two if the attack uses the same weapon."
          ],
-         "page": 91
+         "page": 91,
+         "tags": [
+            "combat",
+            "melee",
+            "unarmed"
+         ]
       },
       {
          "name": "Venom Soaked Blade",
@@ -15199,7 +15522,13 @@
          "description": [
             "When making a {@skill Melee (Light)||crb} combat check using a poisoned weapon, your character treats it as possessing the {@quality Burn|Burn 2|crb} item quality."
          ],
-         "page": 91
+         "page": 91,
+         "tags": [
+            "combat",
+            "status effect",
+            "item quality",
+            "melee"
+         ]
       },
       {
          "name": "Well-Travelled",
@@ -15209,7 +15538,11 @@
          "description": [
             "{@skill Knowledge (Geography)}, {@skill Negotiation||crb}, and {@skill Vigilance||crb} are now career skills for your character."
          ],
-         "page": 89
+         "page": 89,
+         "tags": [
+            "general",
+            "career skills"
+         ]
       },
       {
          "name": "Whirlwind",
@@ -15219,7 +15552,12 @@
          "description": [
             "Your character may suffer 4 strain to use this talent to make a {@skill Brawl||crb}, {@skill Melee (Light)||crb}, or {@skill Melee (Heavy)||crb} attack against the engaged adversary who is hardest to hit (as determined by the GM), increasing the difficulty by one. If the combat check succeeds, each adversary engaged with the character suffers one hit from the attack, that deals base damage plus damage equal to the total {@symbols s} scored on the check."
          ],
-         "page": 91
+         "page": 91,
+         "tags": [
+            "combat",
+            "melee",
+            "unarmed"
+         ]
       },
       {
          "name": "Wraithbane",
@@ -15229,7 +15567,11 @@
          "description": [
             "Your character counts the Critical rating of their weapon as one lower to a minimum of 1 when making an attack targeting an undead adversary."
          ],
-         "page": 89
+         "page": 89,
+         "tags": [
+            "combat",
+            "magic"
+         ]
       },
       {
          "name": "Zealous Fire",
@@ -15239,7 +15581,12 @@
          "description": [
             "Each time your Game Master spends a Story Point, your character heals 2 strain."
          ],
-         "page": 91
+         "page": 91,
+         "tags": [
+            "general",
+            "recovery",
+            "story points"
+         ]
       }
    ]
 }

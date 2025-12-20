@@ -5,25 +5,32 @@
       "type": "object",
       "properties": {
          "name": {
-            "type": "string"
+            "type": "string",
+            "description": "Book title."
          },
          "subtitle": {
-            "type": "string"
+            "type": "string",
+            "description": "Book subtitle."
          },
          "releaseYear": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Book's release year."
          },
          "coverImageUrl": {
-            "type": "string"
+            "type": "string",
+            "description": "Url to a cover image for the book."
          },
          "coverBackgroundUrl": {
-            "type": "string"
+            "type": "string",
+            "description": "Deprecated."
          },
          "backgroundUrl": {
-            "type": "string"
+            "type": "string",
+            "description": "Url for an image to be used as the background for each page."
          },
          "credits": {
             "type": "object",
+            "description": "List of accredited people.",
             "patternProperties": {
                "^[a-zA-Z ]*$": {
                   "type": "array",
@@ -33,7 +40,11 @@
                }
             }
          },
-         "chapters": { "$ref": "varyingDisplay_sub_schema.json" }
+         "chapters": { "$ref": "varyingDisplay_sub_schema.json" },
+         "id": {
+            "type": "string",
+            "description": "Unique item id. You shouldn't have to touch this field."
+         }
       },
       "required": [
          "name",

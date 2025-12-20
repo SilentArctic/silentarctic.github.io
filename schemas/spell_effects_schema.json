@@ -5,24 +5,30 @@
       "type": "object",
       "properties": {
          "spell": {
-            "type": "string"
+            "type": "string",
+            "description": "Name of the spell these effects should be added to/removed from."
          },
          "add": {
             "type": "array",
+            "description": "List of spell effects to add.",
             "items": {
                "type": "object",
                "properties": {
                   "name": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Name of the effect."
                   },
                   "description": {
                      "type": "array",
+                     "description": "List of spell effects to add to the spell. These will be grouped into their own subtable to as not to be confused with \"base\" effects.",
                      "items": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "Effect description to add.."
                      }
                   },
                   "difficultyMod": {
-                     "type": "integer"
+                     "type": "integer",
+                     "description": "Difficulty modifier the effect adds to the spell."
                   }
                },
                "required": [
@@ -34,9 +40,15 @@
          },
          "remove": {
             "type": "array",
+            "description": "List of effects to remove from the spell. These effects will still appear on the table, but will have a note to identify the effect as invalid for the setting.",
             "items": {
-               "type": "string"
+               "type": "string",
+               "description": "Spell effect name to remove."
             }
+         },
+         "id": {
+            "type": "string",
+            "description": "Unique item id. You shouldn't have to touch this field."
          }
       },
       "required": [

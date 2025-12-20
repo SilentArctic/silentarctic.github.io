@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.6.3",
+         "version": "2025.12.7",
          "json": "shadow-of-the-beanstalk",
          "full": "Android: Shadow of the Beanstalk",
          "abbreviation": "SotB",
@@ -1825,7 +1825,10 @@
             "soak": 2,
             "wounds": 12,
             "strain": 16,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -3015,7 +3018,10 @@
          "derived": {
             "soak": 5,
             "wounds": 7,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -4659,7 +4665,10 @@
          "derived": {
             "soak": 1,
             "wounds": 5,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -5310,7 +5319,10 @@
          "derived": {
             "soak": 3,
             "wounds": 12,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -8123,7 +8135,10 @@
          "derived": {
             "soak": 2,
             "wounds": 8,
-            "defense": [0, 0]
+            "defense": [
+               0,
+               0
+            ]
          },
          "skills": [
             {
@@ -16375,6 +16390,26 @@
          ]
       },
       {
+         "name": "Attempt Access (Incidental)",
+         "page": 126,
+         "type": "hacking",
+         "description": [
+            "Attempt access is an incidental that characters perform when they want to access a sub-system within the system. If the character is a runner and a system is protected by ice, they immediately encounter the first piece of ice protecting the sub-system (see page 128). If the sub-system is not protected, the runner has access to that sub-system and may use the enact command maneuver to manipulate that portion of the system.",
+            "Sysops (or anyone who has permission to be in the system) do not encounter ice when performing this incidental."
+         ]
+      },
+      {
+         "name": "Encountering Layers of Ice",
+         "page": 128,
+         "type": "hacking",
+         "description": [
+            "Some particularly secure portions of servers are protected by multiple pieces of ice. If this is the case, your character must encounter each piece of ice one at a time (and your GM should determine which piece is encountered first, second, etc.; mapping out the different \"layers\" of ice that must be broken through).",
+            "However, your character is still limited to only encountering one piece of ice if they can spend an action to attempt to break it. This may mean that your character successfully overrides one piece of ice, but must wait until their next turn to encounter the second piece of ice before they can access the protected portion of the system.",
+            "Remember, overridden ice typically remains deactivated until the end of your character's next turn, meaning that your character can spend two turns breaking through two pieces of ice and usually still perform at least one enact command maneuver involving the protected partition before the firewalls come back up.",
+            "This means that talents that allow your character to perform the break ice action more than once in a single turn are really valuable. It also means that teams of runners can accomplish tasks that single runners cannot, where one runner may break through the ice and let another access that part of the system."
+         ]
+      },
+      {
          "name": "Drone Operations",
          "page": 233,
          "description": [
@@ -16818,6 +16853,152 @@
          ]
       },
       {
+         "name": "Table 3-1: Example Systems and Difficulties",
+         "page": 126,
+         "columns": [
+            {
+               "header": "Example System",
+               "value": "example",
+               "size": 3
+            },
+            {
+               "header": "Difficulty",
+               "value": "difficulty"
+            }
+         ],
+         "rows": [
+            {
+               "example": [
+                  "Tube-lev ticket dispenser",
+                  "Traffic cam",
+                  "Diversity Otter toy",
+                  "Grandparents' FriendNet account"
+               ],
+               "difficulty": "{@difficulty Simple}"
+            },
+            {
+               "example": [
+                  "PAD or personal computer terminal with default security settings",
+                  "Public Network terminal",
+                  "NAPD street seccam",
+                  "New Angeles sewer system lock"
+               ],
+               "difficulty": "{@difficulty Easy}"
+            },
+            {
+               "example": [
+                  "PAD or personal computer with over-the-counter security protocols",
+                  "Residential lock",
+                  "Small-business server",
+                  "Delivery drone control system",
+                  "MegaBuy customer complaints division"
+               ],
+               "difficulty": "{@difficulty Average}"
+            },
+            {
+               "example": [
+                  "Hopper control system",
+                  "MegaBuy corporate servers",
+                  "NAPD servers"
+               ],
+               "difficulty": "{@difficulty Hard}"
+            },
+            {
+               "example": [
+                  "Government servers",
+                  "Megacorp servers"
+               ],
+               "difficulty": "{@difficulty Daunting}"
+            },
+            {
+               "example": [
+                  "Corporate black-site servers",
+                  "Beanstalk control systems"
+               ],
+               "difficulty": "{@difficulty Formidable}"
+         }
+      ]
+   },
+   {
+      "name": "Table 3-2: Spending Advantage, Triumph, Threat, and Despair during Network Encounters",
+      "page": 130,
+      "columns": [
+         {
+            "header": "Symbols",
+            "value": "symbols"
+         },
+         {
+            "header": "Result Options",
+            "value": "result",
+            "size": 4
+         }
+      ],
+      "rows": [
+         {
+            "symbols": "{@symbols a or t}",
+            "result": [
+               "{@b Opportunity Identified}: The character finds a useful system exploit. Add {@dice boost} to the character's next {@skill Computers} check in this system.",
+               "{@b Thorough Override (Runner Only)}: If the runner successfully broke a piece of ice, it cannot be reactivated for one additional round."
+            ]
+         },
+         {
+            "symbols": "{@symbols aa or t}",
+            "result": [
+               "{@b Quick Commands}: The character may immediately perform an additional enact command maneuver as an incidental.",
+               "{@b Cover Tracks (Runner Only)}: The runner hides their presence, adding {@dice setback} to the sysop's next trace user action this encounter.",
+               "{@b Dynamic Code (Sysop Only)}: The sysop modifies the coding on a piece of ice, adding {@dice setback} to all break ice checks targeting it."
+            ]
+         },
+         {
+            "symbols": "{@symbols aaa or t}",
+            "result": [
+               "{@b Trolling}: The character takes a few moments to mock their opponent. Inflict 3 strain on one other user in the system.",
+               "{@b Permanent Back Door (Runner Only)}: The runner sets up a permanent means of accessing the system without needing to deal with its verification protocols. The difficulty of the access system action becomes {@difficulty Easy} as long as the runner can access the back door.",
+               "{@b Successful Trace (Sysop Only)}: The sysop successfully traces the runner once (in addition to the other results of the check)."
+            ]
+         },
+         {
+            "symbols": "{@symbols t}",
+            "result": [
+               "{@b Hard Shutdown (Runner Only)}: If the runner successfully broke a piece of ice, it is so thoroughly disabled that it cannot be reactivated for the remainder of the encounter.",
+               "{@b Blurred Sig (Runner Only)}: The runner obscures their online identity and masks the origins of their signal, canceling one successful trace against them.",
+               "{@b Scouting Ahead (Runner Only)}: The runner learns the type, strength, and rules of one un-encountered piece of ice on the system.",
+               "{@b Backup Ice (Sysop Only)}: The sysop activates their emergency defensive protocols. A system immediately gains an active Ice Wall barrier (see page 134).",
+               "{@b Identified Exploit (Sysop Only)}: The sysop spots a back door in the system, removing one permanent back door of their choice."
+            ]
+         },
+         {
+            "symbols": "{@symbols h}",
+            "result": [
+               "{@b Disorganized System}: The user gets lost in a maze of poorly named sub-folders. Add {@dice setback} to the character's next {@skill Computers} check in this system.",
+               "{@b Online Distractions}: The user gets too focused on the online world. Add {@dice setback|2} to any non-{@skill Computers} checks the user makes next turn."
+            ]
+         },
+         {
+            "symbols": "{@symbols hh or d}",
+            "result": [
+               "{@b Limited Access (Runner Only)}: The runner may only perform one {@filter rule|Network action|category:hacking action=1} or one {@filter rule|Network maneuver|category:hacking maneuver=1} during their next turn.",
+               "{@b I Know You! (Runner Only)}: A sysop on the system recognizes the runner's style. The next time they successfully perform the trace user action, they successfully trace the runner one additional time.",
+               "{@b Careless Protocols (Sysop Only)}: Reduce the strength of one active piece of ice (runner's choice) by 1, to a minimum of 1."
+            ]
+         },
+         {
+            "symbols": "{@symbols hhh or d}",
+            "result": [
+               "{@b Major Alert (Runner Only)}: All users with access to the system become aware of the presence of an intruder on the network.",
+               "{@b Permanent Back Door (Sysop Only)}: As the sysop attempts to lock the system down, they leave a portion vulnerable. The runner gains a means of accessing the system without needing to deal with its verification protocols. The difficulty of the access system action becomes {@difficulty Easy} as long as the runner can access the back door."
+            ]
+         },
+         {
+            "symbols": "{@symbols d}",
+            "result": [
+               "{@b Successful Trace (Runner Only)}: Sloppy work allows one sysop on the system to successfully trace the runner once.",
+               "{@b Wrong Person (Sysop Only)}: As the sysop traces the runner, they get one crucial element of the runner's identity completely wrong. This does not negate a successful trace, but it does mean that they may have the wrong name, apartment number, or exact location of the runner, which guarantees the runner avoids any real-world retaliation and probably embarrasses the sysop in front of their superiors."
+            ]
+         }
+      ]
+   },
+      {
          "name": "Table 3-3: Trace Information",
          "page": 132,
          "columns": [
@@ -17075,6 +17256,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "characteristics",
+            "skill swap"
          ]
       },
       {
@@ -17095,6 +17281,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "social",
+            "support"
          ]
       },
       {
@@ -17114,6 +17304,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "recovery"
          ]
       },
       {
@@ -17133,6 +17327,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "item quality"
          ]
       },
       {
@@ -17140,6 +17338,11 @@
          "tier": 3,
          "activation": "active (maneuver)",
          "ranked": true,
+         "tags": [
+            "combat",
+            "support",
+            "defense"
+         ],
          "description": [
             "Once per round, your character may suffer a number of strain no greater than their ranks in Body Guard to use this talent. Choose one ally engaged with your character; until the end of your character's next turn, upgrade the difficulty of all combat checks targeting that ally a number of times equal to the strain suffered."
          ],
@@ -17171,6 +17374,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "second action"
          ]
       },
       {
@@ -17190,6 +17398,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "combat",
+            "hacking"
          ]
       },
       {
@@ -17209,6 +17422,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "recovery"
          ]
       },
       {
@@ -17228,6 +17445,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "social",
+            "favor",
+            "career skills"
          ]
       },
       {
@@ -17247,6 +17470,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "defense"
          ]
       },
       {
@@ -17266,6 +17494,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "narrative"
          ]
       },
       {
@@ -17285,6 +17518,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "social",
+            "result manipulation"
          ]
       },
       {
@@ -17305,6 +17542,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "money"
          ]
       },
       {
@@ -17324,6 +17565,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "vehicles",
+            "recovery"
          ]
       },
       {
@@ -17343,6 +17589,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "favor",
+            "career skills"
          ]
       },
       {
@@ -17362,6 +17613,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "animal companion",
+            "support"
          ]
       },
       {
@@ -17381,6 +17637,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "defense",
+            "story points",
+            "critical injury"
          ]
       },
       {
@@ -17400,6 +17662,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "investigation"
          ]
       },
       {
@@ -17419,6 +17685,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "favor",
+            "career skills"
          ]
       },
       {
@@ -17440,6 +17711,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "hacking"
          ]
       },
       {
@@ -17460,6 +17735,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "social",
+            "support"
          ]
       },
       {
@@ -17479,6 +17758,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "vehicles"
          ]
       },
       {
@@ -17498,6 +17781,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "recovery"
          ]
       },
       {
@@ -17517,6 +17804,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "social",
+            "defense"
          ]
       },
       {
@@ -17536,6 +17827,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged",
+            "item quality"
          ]
       },
       {
@@ -17555,6 +17851,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "melee"
          ]
       },
       {
@@ -17574,6 +17874,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "melee",
+            "item quality"
          ]
       },
       {
@@ -17593,6 +17898,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "social",
+            "defense"
          ]
       },
       {
@@ -17613,6 +17922,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "melee",
+            "mobility",
+            "story points"
          ]
       },
       {
@@ -17633,6 +17948,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "narrative"
          ]
       },
       {
@@ -17652,6 +17971,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "skills"
          ]
       },
       {
@@ -17671,6 +17995,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "combat",
+            "hacking"
          ]
       },
       {
@@ -17690,6 +18019,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "hacking"
          ]
       },
       {
@@ -17709,6 +18042,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "mobility",
+            "story points"
          ]
       },
       {
@@ -17728,6 +18066,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "combat",
+            "vehicles"
          ]
       },
       {
@@ -17748,6 +18091,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "mobility"
          ]
       },
       {
@@ -17767,6 +18114,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "mobility"
          ]
       },
       {
@@ -17786,6 +18137,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "social",
+            "motivation"
          ]
       },
       {
@@ -17805,6 +18160,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "story points"
          ]
       },
       {
@@ -17824,6 +18183,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "social",
+            "support"
          ]
       },
       {
@@ -17843,6 +18206,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "vehicles",
+            "recovery"
          ]
       },
       {
@@ -17862,6 +18230,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "combat",
+            "hacking",
+            "story points"
          ]
       },
       {
@@ -17882,6 +18256,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "narrative",
+            "ranged"
          ]
       },
       {
@@ -17901,6 +18280,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "unarmed",
+            "skills",
+            "status effect"
          ]
       },
       {
@@ -17922,6 +18307,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged",
+            "support",
+            "mobility"
          ]
       },
       {
@@ -17941,6 +18332,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged"
          ]
       },
       {
@@ -17960,6 +18355,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "unarmed",
+            "mobility",
+            "status effect"
          ]
       },
       {
@@ -17979,6 +18380,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "social",
+            "favor",
+            "career skills"
          ]
       },
       {
@@ -17998,6 +18405,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged"
          ]
       },
       {
@@ -18017,6 +18428,10 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged"
          ]
       },
       {
@@ -18037,6 +18452,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "story points",
+            "narrative"
          ]
       },
       {
@@ -18056,6 +18476,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "story points",
+            "narrative",
+            "social"
          ]
       },
       {
@@ -18075,6 +18501,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "social",
+            "favor",
+            "career skills"
          ]
       },
       {
@@ -18094,6 +18526,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "combat",
+            "defense",
+            "story points"
          ]
       },
       {
@@ -18114,6 +18551,11 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "hacking",
+            "narrative"
          ]
       },
       {
@@ -18133,6 +18575,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "social",
+            "favor",
+            "career skills"
          ]
       },
       {
@@ -18152,6 +18600,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "social",
+            "favor",
+            "career skills"
          ]
       },
       {
@@ -18172,6 +18626,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "social",
+            "favor",
+            "story points"
          ]
       },
       {
@@ -18191,6 +18651,12 @@
                "name": "science fiction",
                "source": "crb"
             }
+         ],
+         "tags": [
+            "general",
+            "social",
+            "favor",
+            "story points"
          ]
       }
    ],

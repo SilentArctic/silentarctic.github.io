@@ -7,7 +7,7 @@
          "abbreviation": "BOOST:1",
          "color": "#30F030",
          "url": "https://www.drivethrurpg.com/product/314884/BOOST-1-Mutation/",
-         "version": "2025.1.20",
+         "version": "2025.12.09",
          "authors": [
             "Genesys RPG Community",
             "Flame112",
@@ -489,7 +489,7 @@
          "name": "Mutagen",
          "page": 3,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "Weapons with mutagen qualities cause horrid temporary mutations in other living beings. When triggered, and at the end of the target's turns, the target suffers 2 strain each round for a number of rounds equal to the weapon's Mutagen rating. Additionally, each time strain is suffered due to the Mutagen quality, the victim's body horribly mutates in some detrimental way.",
             "Roll 1d10 to determine what part of the target's body is affected:",
@@ -570,6 +570,11 @@
          "tier": 1,
          "activation": "passive",
          "ranked": false,
+         "tags": [
+            "general",
+            "characteristics",
+            "result manipulation"
+         ],
          "description": [
             "Your character has acquired a mutation. Choose one characteristic to be your character's Positive Mutation. Any skill checks involving your character's Positive Mutation characteristic add {@dice boost|2}. Choose another characteristic to be your character's Negative Mutation. Any skill checks involving your character's Negative Mutation characteristic add {@dice setback|2}. These {@dice setback} cannot be removed from the pool by any other abilities or talents. You must narratively describe your mutation.",
             "{@b Author:} J. Scott \"DrainSmith\" Zumwalt"
@@ -581,6 +586,11 @@
          "tier": 2,
          "activation": "passive",
          "ranked": false,
+         "tags": [
+            "general",
+            "characteristics",
+            "result manipulation"
+         ],
          "description": [
             "{@i Your character must have purchased the Mutant talent to benefit from this talent.} Skill checks involving your Positive Mutation add {@symbols t} to the results. Skill checks involving your Negative Mutation add {@symbols hh} to the results.",
             "{@b Author:} J. Scott \"DrainSmith\" Zumwalt"
@@ -592,6 +602,10 @@
          "tier": 3,
          "activation": "active (incidental, out of turn)",
          "ranked": true,
+         "tags": [
+            "general",
+            "skills"
+         ],
          "description": [
             "When you purchase this talent for your character, select one other ranked talent your character has purchased, which has a starting Tier no greater than your ranks in Rapid Adaptation. Your character counts their ranks in the selected talent as if they were one higher. Once per encounter, your character may suffer 2 strain in order to change which talent this applies to.",
             "{@b Author:} Flame112"

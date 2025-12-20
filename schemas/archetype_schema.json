@@ -1,38 +1,87 @@
 {
    "$id": "https://silentarctic.github.io/schemas/archetype_schema.json",
    "type": "array",
-   "items": [
-      {
-         "type": "object",
-         "properties": {
-            "name": {
-               "type": "string"
-            },
-            "nickname": {
-               "type": "string"
-            },
-            "characteristics": {
-               "oneOf": [
-                  {
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string",
+            "description": "Archetype or Species name."
+         },
+         "nickname": {
+            "type": "string",
+            "description": "Optional nickname (ideal for keeping similar archetypes together ie. Dwarf (Dunwarr) and Dwarf (Forge)."
+         },
+         "characteristics": {
+            "oneOf": [
+               {
+                  "type": "object",
+                  "title": "Standard",
+                  "properties": {
+                     "brawn": {
+                        "type": "integer",
+                        "description": "Starting Brawn."
+                     },
+                     "agility": {
+                        "type": "integer",
+                        "description": "Starting Agility."
+                     },
+                     "intellect": {
+                        "type": "integer",
+                        "description": "Starting Intellect."
+                     },
+                     "cunning": {
+                        "type": "integer",
+                        "description": "Starting Cunning."
+                     },
+                     "willpower": {
+                        "type": "integer",
+                        "description": "Starting Willpower."
+                     },
+                     "presence": {
+                        "type": "integer",
+                        "description": "Starting Presence."
+                     }
+                  },
+                  "required": [
+                     "brawn",
+                     "agility",
+                     "intellect",
+                     "cunning",
+                     "willpower",
+                     "presence"
+                  ],
+                  "additionalProperties": false
+               },
+               {
+                  "type": "array",
+                  "title": "Archetype Pair",
+                  "items": {
                      "type": "object",
                      "properties": {
                         "brawn": {
-                           "type": "integer"
+                           "type": "integer",
+                           "description": "Starting Brawn."
                         },
                         "agility": {
-                           "type": "integer"
+                           "type": "integer",
+                           "description": "Starting Agility."
                         },
                         "intellect": {
-                           "type": "integer"
+                           "type": "integer",
+                           "description": "Starting Intellect."
                         },
                         "cunning": {
-                           "type": "integer"
+                           "type": "integer",
+                           "description": "Starting Cunning."
                         },
                         "willpower": {
-                           "type": "integer"
+                           "type": "integer",
+                           "description": "Starting Willpower."
                         },
                         "presence": {
-                           "type": "integer"
+                           "type": "integer",
+                           "description": "Starting Presence."
                         }
                      },
                      "required": [
@@ -44,183 +93,179 @@
                         "presence"
                      ],
                      "additionalProperties": false
-                  },
-
-                  {
-                     "type": "array",
-                     "items": {
-                        "type": "object",
-                        "properties": {
-                           "brawn": {
-                              "type": "integer"
-                           },
-                           "agility": {
-                              "type": "integer"
-                           },
-                           "intellect": {
-                              "type": "integer"
-                           },
-                           "cunning": {
-                              "type": "integer"
-                           },
-                           "willpower": {
-                              "type": "integer"
-                           },
-                           "presence": {
-                              "type": "integer"
-                           }
-                        },
-                        "required": [
-                           "brawn",
-                           "agility",
-                           "intellect",
-                           "cunning",
-                           "willpower",
-                           "presence"
-                        ],
-                        "additionalProperties": false
-                     }
                   }
-               ]
-            },
-            "page": {
-               "type": "integer"
-            },
-            "imageUrl": {
-               "type": "string"
-            },
-            "wt": {
-               "oneOf": [
-                  {
+               }
+            ]
+         },
+         "page": {
+            "type": "integer",
+            "description": "Source page reference."
+         },
+         "imageUrl": {
+            "type": "string",
+            "description": "Url for a related image."
+         },
+         "wt": {
+            "oneOf": [
+               {
+                  "type": "integer",
+                  "title": "Standard",
+                  "description": "Wound threshold."
+               },
+               {
+                  "type": "array",
+                  "title": "Archetype Pair",
+                  "description": "Wound threshold.",
+                  "items": {
                      "type": "integer"
-                  },
-                  {
-                     "type": "array",
-                     "items": {
-                        "type": "integer"
-                     }
                   }
-               ]
-            },
-            "st": {
-               "oneOf": [
-                  {
+               }
+            ]
+         },
+         "st": {
+            "oneOf": [
+               {
+                  "type": "integer",
+                  "title": "Standard",
+                  "description": "Strain threshold."
+               },
+               {
+                  "type": "array",
+                  "title": "Archetype Pair",
+                  "description": "Strain threshold.",
+                  "items": {
                      "type": "integer"
-                  },
-                  {
-                     "type": "array",
-                     "items": {
-                        "type": "integer"
-                     }
                   }
-               ]
-            },
-            "xp": {
-               "type": "integer"
-            },
-            "skills": {
-               "type": "object",
-               "properties": {
-                  "skills": {
-                     "type": "array",
-                     "items": {
-                        "type": "string"
-                     }
-                  },
-                  "ranksTotal": {
-                     "type": "integer"
-                  },
-                  "ranksEach": {
-                     "type": "integer"
-                  },
-                  "description": {
-                     "type": "array",
-                     "items": {
-                        "type": "string"
-                     }
-                  },
-                  "choice": {
-                     "type": "boolean"
+               }
+            ]
+         },
+         "xp": {
+            "type": "integer",
+            "description": "Starting XP."
+         },
+         "skills": {
+            "type": "object",
+            "description": "Starting skill ranks.",
+            "properties": {
+               "skills": {
+                  "type": "array",
+                  "description": "Starting skill options.",
+                  "items": {
+                     "type": "string"
                   }
                },
-               "required": [
-                  "skills",
-                  "ranksTotal",
-                  "ranksEach",
-                  "description",
-                  "choice"
-               ],
-               "additionalProperties": false
+               "ranksTotal": {
+                  "type": "integer",
+                  "description": "Meta field. # of total ranks this archetype starts with."
+               },
+               "ranksEach": {
+                  "type": "integer",
+                  "description": "Meta field. # of ranks each skill receives."
+               },
+               "description": {
+                  "type": "array",
+                  "description": "Text displayed on the archetype. This is *not* derived from the other fields here due to the vast variety of possibilities.",
+                  "items": {
+                     "type": "string"
+                  }
+               },
+               "choice": {
+                  "type": "boolean",
+                  "description": "If the player has a choice between skills to put starting ranks into."
+               }
             },
-            "abilities": {
-               "type": "array",
-               "items": {
-                  "oneOf": [
-                     { "type": "string" },
-
-                     {
-                        "type": "object",
-                        "properties": {
-                           "description": {
-                              "type": "array",
-                              "items": {
-                                 "type": "string"
-                              }
+            "required": [
+               "skills",
+               "ranksTotal",
+               "ranksEach",
+               "description",
+               "choice"
+            ],
+            "additionalProperties": false
+         },
+         "abilities": {
+            "type": "array",
+            "description": "List of unique adversary abilities",
+            "items": {
+               "oneOf": [
+                  {
+                     "type": "string",
+                     "title": "Standard"
+                  },
+                  {
+                     "type": "object",
+                     "title": "Archetype Pair",
+                     "properties": {
+                        "description": {
+                           "type": "array",
+                           "items": {
+                              "type": "string"
                            }
                         }
                      }
-                  ]
-               }
-            },
-            "description": {
-               "type": "array",
-               "items": {
-                  "type": "string"
-               }
-            },
-            "why": {
-               "type": "array",
-               "items": {
-                  "type": "string"
-               }
-            },
-            "names": {
-               "type": "object",
-               "properties": {
-                  "description": {
-                     "type": "array",
-                     "items": {
-                        "type": "string"
-                     }
-                  },
-                  "names": {
-                     "type": "array",
-                     "items": {
-                        "type": "string"
-                     }
+                  }
+               ]
+            }
+         },
+         "description": {
+            "type": "array",
+            "description": "Adversary description.",
+            "items": {
+               "type": "string"
+            }
+         },
+         "why": {
+            "type": "array",
+            "description": "Reasons why one would choose to play as this archetype.",
+            "items": {
+               "type": "string"
+            }
+         },
+         "names": {
+            "type": "object",
+            "description": "Suggested names for this archetype.",
+            "properties": {
+               "description": {
+                  "type": "array",
+                  "description": "Brief description about this archetype's naming conventions.",
+                  "items": {
+                     "type": "string"
+                  }
+               },
+               "names": {
+                  "type": "array",
+                  "description": "List of suggested names.",
+                  "items": {
+                     "type": "string"
                   }
                }
-            },
-            "settings": { "$ref": "./settings_sub_schema.json" }
+            }
          },
-         "required": [
-            "name",
-            "wt",
-            "st",
-            "xp",
-            "skills",
-            "abilities",
-            "description"
-         ],
-         "optional": [
-            "page",
-            "nickname",
-            "imageUrl",
-            "why",
-            "names",
-            "settings"
-         ],
-         "additionalProperties": false
-      }
-   ]
+         "settings": {
+            "$ref": "./settings_sub_schema.json"
+         },
+         "id": {
+            "type": "string",
+            "description": "Unique item id. You shouldn't have to touch this field."
+         }
+      },
+      "required": [
+         "name",
+         "wt",
+         "st",
+         "xp",
+         "skills",
+         "abilities",
+         "description"
+      ],
+      "optional": [
+         "page",
+         "nickname",
+         "imageUrl",
+         "why",
+         "names",
+         "settings"
+      ],
+      "additionalProperties": false
+   }
 }

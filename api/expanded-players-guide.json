@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.2.26",
+         "version": "2025.12.6",
          "json": "expanded-players-guide",
          "full": "Expanded Player's Guide",
          "abbreviation": "EPG",
@@ -209,7 +209,7 @@
             "Flyer",
             "Ghostly",
             "Spirit",
-            "Spells (Arcana)",
+            "Spells (Divine)",
             "Spells: Eye of the Jinn"
          ],
          "weapons": [
@@ -5466,7 +5466,7 @@
          ]
       },
       {
-         "name": "Spells (Arcana)",
+         "name": "Spells (Divine)",
          "description": [
             "This character may choose any magic action allowed for by the {@skill Divine||crb} skill, and may select additional spell effects, as normal. The spell they use most often is the following unique spell."
          ],
@@ -7637,6 +7637,29 @@
          ]
       }
    ],
+   "setting": [
+      {
+         "name": "Age of Myth",
+         "page": 7,
+         "summary": [
+            "See {@title Expanded Player's Guide} for more information on the Age of Myth setting."
+         ]
+      },
+      {
+         "name": "Monsterworld",
+         "page": 17,
+         "summary": [
+            "See {@title Expanded Player's Guide} for more information on the Monsterworld setting."
+         ]
+      },
+      {
+         "name": "Post Apocalypse",
+         "page": 28,
+         "summary": [
+            "See {@title Expanded Player's Guide} for more information on the Post Apocalypse setting."
+         ]
+      }
+   ],
    "sidebar": [
       {
          "name": "Adjusted Costs",
@@ -7774,8 +7797,8 @@
                "source": "crb"
             }
          ],
-         "talents": [
-            [
+         "talents": {
+            "row1": [
                {
                   "name": "Let's Ride",
                   "down": true,
@@ -7797,7 +7820,7 @@
                   "source": "crb"
                }
             ],
-            [
+            "row2": [
                {
                   "name": "Daring Aviator",
                   "down": true,
@@ -7818,7 +7841,7 @@
                   "source": "crb"
                }
             ],
-            [
+            "row3": [
                {
                   "name": "Full Throttle",
                   "right": true,
@@ -7843,7 +7866,7 @@
                   "source": "crb"
                }
             ],
-            [
+            "row4": [
                {
                   "name": "Defensive Driving",
                   "source": "crb"
@@ -7863,7 +7886,7 @@
                   "source": "crb"
                }
             ],
-            [
+            "row5": [
                {
                   "name": "Defensive Driving",
                   "right": true,
@@ -7884,7 +7907,7 @@
                   "source": "crb"
                }
             ]
-         ],
+         },
          "description": [
             "This specialization tree is suitable for steampunk, weird war, modern day, science fiction, and space opera settings, and should be linked to the Fighter Pilot career. The left side of the tree tends to focus on piloting ability and keeping a vehicle intact. The right side is more geared towards taking down enemy vehicles. The isolated middle section of the top two rows reflects that daredevil pilots tend to be dodgy, fast, and have good reflexes, even it doesn't directly help their piloting ability. Appropriately, there are three ranks of Daring Aviator. However, there is no straight line path from Row 1 to Row 5, so all talents on the fifth row ultimately cost a little bit more to achieve than they otherwise might. Dedication and Master are particularly difficult and expensive to purchase. This reflects that the character values risk above mastery and expertise, and has to dedicate themselves to achieve mastery."
          ]
@@ -9349,6 +9372,10 @@
             {
                "name": "all"
             }
+         ],
+         "tags": [
+            "general",
+            "magic"
          ]
       },
       {
@@ -9364,6 +9391,10 @@
             {
                "name": "all"
             }
+         ],
+         "tags": [
+            "combat",
+            "magic"
          ]
       },
       {
@@ -9380,6 +9411,11 @@
             {
                "name": "all"
             }
+         ],
+         "tags": [
+            "social",
+            "magic",
+            "narrative"
          ]
       },
       {
@@ -9395,6 +9431,12 @@
             {
                "name": "all"
             }
+         ],
+         "tags": [
+            "general",
+            "magic",
+            "skills",
+            "story points"
          ]
       },
       {
@@ -9411,6 +9453,11 @@
             {
                "name": "all"
             }
+         ],
+         "tags": [
+            "social",
+            "magic",
+            "narrative"
          ]
       },
       {
@@ -9420,12 +9467,17 @@
          "activation": "passive",
          "ranked": false,
          "description": [
-            "When your character casts a {@spell Conjure||crb} spell using the {@skill Primal||crb} skill, they always add the Summon Ally effect without increasing the difficulty, and they must always summon a living animal (such as those starting on page 86). The animal remains for the duration of the encounter even if your character does not use a concentrate maneuver to maintain the spell. At your GM's discretion, the animal may have already been nearby rather than summoned from thin air. Likewise, at the end of the encounter, the animal may revert back to its natural behavior instead of vanishing."
+            "When your character casts a {@spell Conjure||crb} spell using the {@skill Primal||crb} skill, they always add the Summon Ally effect without increasing the difficulty, and they must always summon a living animal (such as those starting on page 86). The animal remains for the duration of the encounter even if your character does not use a {@rule concentrate|concentrate maneuver|crb} to maintain the spell. At your GM's discretion, the animal may have already been nearby rather than summoned from thin air. Likewise, at the end of the encounter, the animal may revert back to its natural behavior instead of vanishing."
          ],
          "settings": [
             {
                "name": "all"
             }
+         ],
+         "tags": [
+            "general",
+            "magic",
+            "animal companion"
          ]
       },
       {
@@ -9441,6 +9493,12 @@
             {
                "name": "all"
             }
+         ],
+         "tags": [
+            "combat",
+            "magic",
+            "defense",
+            "status effect"
          ]
       },
       {
@@ -9457,6 +9515,11 @@
             {
                "name": "all"
             }
+         ],
+         "tags": [
+            "social",
+            "magic",
+            "narrative"
          ]
       },
       {
@@ -9472,6 +9535,11 @@
             {
                "name": "all"
             }
+         ],
+         "tags": [
+            "combat",
+            "magic",
+            "story points"
          ]
       },
       {
@@ -9481,12 +9549,17 @@
          "activation": "active (incidental)",
          "ranked": false,
          "description": [
-            "When your character casts a {@spell transform} spell on themself using the {@skill Primal||crb} skill, you may spend a Story Point to have them use this talent to maintain the effects of the spell until the end of the encounter, without performing concentrate maneuvers."
+            "When your character casts a {@spell transform} spell on themself using the {@skill Primal||crb} skill, you may spend a Story Point to have them use this talent to maintain the effects of the spell until the end of the encounter, without performing {@rule concentrate|concentrate maneuvers|crb}."
          ],
          "settings": [
             {
                "name": "all"
             }
+         ],
+         "tags": [
+            "general",
+            "magic",
+            "story points"
          ]
       },
       {
@@ -9502,6 +9575,11 @@
             {
                "name": "all"
             }
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "magic"
          ]
       },
       {
@@ -9511,12 +9589,17 @@
          "activation": "active (incidental)",
          "ranked": false,
          "description": [
-            "After your character makes a successful {@spell Mask} spell to create an illusion, you may spend a Story Point to have your character use this talent to make the illusion last until the end of the encounter, without performing concentrate maneuvers, and not need to remain within the spell's range after being cast. You may spend two Story Points to make the illusion last until the end of the session instead."
+            "After your character makes a successful {@spell Mask} spell to create an illusion, you may spend a Story Point to have your character use this talent to make the illusion last until the end of the encounter, without performing {@rule concentrate|concentrate maneuvers|crb}, and not need to remain within the spell's range after being cast. You may spend two Story Points to make the illusion last until the end of the session instead."
          ],
          "settings": [
             {
                "name": "all"
             }
+         ],
+         "tags": [
+            "general",
+            "story points",
+            "magic"
          ]
       },
       {
@@ -9532,6 +9615,12 @@
             {
                "name": "all"
             }
+         ],
+         "tags": [
+            "combat",
+            "magic",
+            "support",
+            "defense"
          ]
       },
       {
@@ -9547,6 +9636,11 @@
             {
                "name": "all"
             }
+         ],
+         "tags": [
+            "general",
+            "magic",
+            "mobility"
          ]
       },
       {
@@ -9562,6 +9656,10 @@
             {
                "name": "all"
             }
+         ],
+         "tags": [
+            "general",
+            "magic"
          ]
       },
       {
@@ -9577,6 +9675,10 @@
             {
                "name": "all"
             }
+         ],
+         "tags": [
+            "general",
+            "magic"
          ]
       },
       {
@@ -9592,6 +9694,10 @@
             {
                "name": "all"
             }
+         ],
+         "tags": [
+            "general",
+            "magic"
          ]
       },
       {
@@ -9608,6 +9714,12 @@
             {
                "name": "all"
             }
+         ],
+         "tags": [
+            "general",
+            "support",
+            "magic",
+            "mobility"
          ]
       },
       {
@@ -9623,6 +9735,10 @@
             {
                "name": "all"
             }
+         ],
+         "tags": [
+            "general",
+            "animal companion"
          ]
       },
       {
@@ -9640,6 +9756,12 @@
             {
                "name": "all"
             }
+         ],
+         "tags": [
+            "general",
+            "support",
+            "mobility",
+            "magic"
          ]
       }
    ],

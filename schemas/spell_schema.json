@@ -1,121 +1,148 @@
 {
    "$id": "https://silentarctic.github.io/schemas/spell_schema.json",
    "type": "array",
-   "items": [
-      {
-         "type": "object",
-         "properties": {
-            "name": {
-               "type": "string"
-            },
-            "page": {
-               "type": "integer"
-            },
-            "imageUrl": {
-               "type": "string"
-            },
-            "concentration": {
-               "type": "boolean"
-            },
-            "difficulty": {
-               "type": "string",
-               "enum": ["simple", "easy", "average", "hard", "daunting", "formidable"]
-            },
-            "range": {
-               "type": "string",
-               "enum": ["Self", "Engaged", "Short", "Medium", "Long", "Extreme", "Strategic"]
-            },
-            "skills": {
-               "type": "array",
-               "items": [
-                  {
-                     "type": "object",
-                     "properties": {
-                        "name": {
-                           "type": "string"
-                        },
-                        "source": {
-                           "type": "string"
-                        }
-                     },
-                     "required": [
-                        "name"
-                     ],
-                     "optional": [
-                        "source"
-                     ],
-                     "additionalProperties": false
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string",
+            "description": "Spell name."
+         },
+         "page": {
+            "type": "integer",
+            "description": "Source page reference."
+         },
+         "imageUrl": {
+            "type": "string",
+            "description": "Url to a related image."
+         },
+         "concentration": {
+            "type": "boolean",
+            "description": "If the spell allows the concentration maneuver to sustain its effects to the next round."
+         },
+         "difficulty": {
+            "type": "string",
+            "description": "Base difficulty of the spell. simple/easy/average/hard/daunting/formidable.",
+            "enum": [
+               "simple",
+               "easy",
+               "average",
+               "hard",
+               "daunting",
+               "formidable"
+            ]
+         },
+         "range": {
+            "type": "string",
+            "description": "Maximum default range of the spell. self/engaged/short/medium/long/extreme/strategic.",
+            "enum": [
+               "",
+               "Self",
+               "Engaged",
+               "Short",
+               "Medium",
+               "Long",
+               "Extreme",
+               "Strategic"
+            ]
+         },
+         "skills": {
+            "type": "array",
+            "description": "List of skills which can be used to cast this spell.",
+            "items": {
+               "type": "object",
+               "properties": {
+                  "name": {
+                     "type": "string",
+                     "description": "Skill name."
+                  },
+                  "source": {
+                     "type": "string",
+                     "description": "Skill source (abbreviation). Example: crb."
                   }
-               ]
-            },
-            "narrative": {
-               "type": "array",
-               "items": [
-                  {
-                     "type": "string"
-                  }
-               ]
-            },
-            "structured": {
-               "type": "array",
-               "items": [
-                  {
-                     "type": "string"
-                  }
-               ]
-            },
-            "additionalEffects": {
-               "type": "array",
-               "items": [
-                  {
-                     "type": "object",
-                     "properties": {
-                        "name": {
-                           "type": "string"
-                        },
-                        "description": {
-                           "type": "array",
-                           "items": [
-                              {
-                                 "type": "string"
-                              }
-                           ]
-                        },
-                        "difficultyMod": {
-                           "type": "integer"
-                        },
-                        "difficultyUpgrade": {
-                           "type": "integer"
-                        }
-                     },
-                     "required": [
-                        "name",
-                        "description",
-                        "difficultyMod"
-                     ],
-                     "optional": [
-                        "difficultyUpgrade"
-                     ],
-                     "additionalProperties": false
-                  }
-               ]
+               },
+               "required": [
+                  "name"
+               ],
+               "optional": [
+                  "source"
+               ],
+               "additionalProperties": false
             }
          },
-         "required": [
-            "name",
-            "concentration",
-            "difficulty",
-            "skills",
-            "narrative",
-            "structured",
-            "additionalEffects"
-         ],
-         "optional": [
-            "page",
-            "range",
-            "imageUrl"
-         ],
-         "additionalProperties": false
-      }
-   ]
+         "narrative": {
+            "type": "array",
+            "description": "Narrative description of the spell.",
+            "items": {
+               "type": "string",
+               "description": "Narrative description of the spell."
+            }
+         },
+         "structured": {
+            "type": "array",
+            "description": "Structured description of the spell.",
+            "items": {
+               "type": "string",
+               "description": "Structured description of the spell."
+            }
+         },
+         "additionalEffects": {
+            "type": "array",
+            "description": "List of additional effects that may optionally be added to the spell.",
+            "items": {
+               "type": "object",
+               "properties": {
+                  "name": {
+                     "type": "string",
+                     "description": "Effect name."
+                  },
+                  "description": {
+                     "type": "array",
+                     "description": "Effect description.",
+                     "items": {
+                        "type": "string",
+                        "description": "Effect description."
+                     }
+                  },
+                  "difficultyMod": {
+                     "type": "integer",
+                     "description": "Difficulty modifier the effect adds to the spell. The value here translates to a number of difficulty dice."
+                  },
+                  "difficultyUpgrade": {
+                     "type": "integer",
+                     "description": "Number of difficulty dice to upgrade when adding this effect."
+                  }
+               },
+               "required": [
+                  "name",
+                  "description",
+                  "difficultyMod"
+               ],
+               "optional": [
+                  "difficultyUpgrade"
+               ],
+               "additionalProperties": false
+            }
+         },
+         "id": {
+            "type": "string",
+            "description": "Unique item id. You shouldn't have to touch this field."
+         }
+      },
+      "required": [
+         "name",
+         "concentration",
+         "difficulty",
+         "skills",
+         "narrative",
+         "structured",
+         "additionalEffects"
+      ],
+      "optional": [
+         "page",
+         "range",
+         "imageUrl"
+      ],
+      "additionalProperties": false
+   }
 }

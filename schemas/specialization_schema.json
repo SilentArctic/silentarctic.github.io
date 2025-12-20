@@ -1,26 +1,68 @@
 {
    "$id": "https://silentarctic.github.io/schemas/specialization_schema.json",
+   "$defs": {
+      "talentRow": {
+         "type": "array",
+         "maxItems": 4,
+         "items": {
+            "type": "object",
+            "properties": {
+               "name": {
+                  "type": "string",
+                  "description": "Talent name."
+               },
+               "right": {
+                  "type": "boolean",
+                  "description": "If the talent should connect to the talent to its right."
+               },
+               "down": {
+                  "type": "boolean",
+                  "description": "If the talent should connect to the talent underneath."
+               },
+               "source": {
+                  "type": "string",
+                  "description": "Talent source (abbreviation). Example: crb."
+               }
+            },
+            "required": [
+               "name"
+            ],
+            "optional": [
+               "right",
+               "down",
+               "source"
+            ],
+            "additionalProperties": false
+         }
+      }
+   },
    "type": "array",
    "items": {
       "type": "object",
       "properties": {
          "name": {
-            "type": "string"
+            "type": "string",
+            "description": "Specialization name."
          },
          "page": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Source page reference."
          },
          "imageUrl": {
-            "type": "string"
+            "type": "string",
+            "description": "Url to a related image."
          },
          "career": {
             "type": "object",
+            "description": "Career the specialization is for.",
             "properties": {
                "name": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "Career name."
                },
                "source": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "Career source (abbreviation). Example: crb."
                }
             },
             "required": [
@@ -33,14 +75,17 @@
          },
          "skills": {
             "type": "array",
+            "description": "List of skills for the specialization.",
             "items": {
                "type": "object",
                "properties": {
                   "name": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Skill name."
                   },
                   "source": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "Skill source (abbreviation). Example: crb"
                   }
                },
                "required": [
@@ -53,48 +98,41 @@
             }
          },
          "talents": {
-            "type": "array",
-            "minItems": 5,
-            "maxItems": 5,
-            "items": {
-               "type": "array",
-               "minItems": 4,
-               "maxItems": 4,
-               "items": {
-                  "type": "object",
-                  "properties": {
-                     "name": {
-                        "type": "string"
-                     },
-                     "right": {
-                        "type": "boolean"
-                     },
-                     "down": {
-                        "type": "boolean"
-                     },
-                     "source": {
-                        "type": "string"
-                     }
-                  },
-                  "required": [
-                     "name"
-                  ],
-                  "optional": [
-                     "right",
-                     "down",
-                     "source"
-                  ],
-                  "additionalProperties": false
+            "type": "object",
+            "description": "Set of talents for the specialization. Each row is allowed up to 4 talents",
+            "properties": {
+               "row1": {
+                  "$ref": "#/$defs/talentRow"
+               },
+               "row2": {
+                  "$ref": "#/$defs/talentRow"
+               },
+               "row3": {
+                  "$ref": "#/$defs/talentRow"
+               },
+               "row4": {
+                  "$ref": "#/$defs/talentRow"
+               },
+               "row5": {
+                  "$ref": "#/$defs/talentRow"
                }
             }
          },
          "description": {
             "type": "array",
+            "description": "Specialization description.",
             "items": {
-               "type": "string"
+               "type": "string",
+               "description": "Specialization description."
             }
          },
-         "settings": { "$ref": "./settings_sub_schema.json" }
+         "settings": {
+            "$ref": "./settings_sub_schema.json"
+         },
+         "id": {
+            "type": "string",
+            "description": "Unique item id. You shouldn't have to touch this field."
+         }
       },
       "required": [
          "name",

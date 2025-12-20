@@ -12,7 +12,7 @@ delete collections.index;
 
 /* checks if schema is valid */
 function validateSchema(file) {
-   const ajv = new AJV({ schemas: map(schemas) });
+   const ajv = new AJV({ schemas: map(schemas), allErrors: true });
    const isSchemaValid = ajv.validate(schemas.schema, file);
    return { valid: isSchemaValid, errors: ajv.errors };
 }

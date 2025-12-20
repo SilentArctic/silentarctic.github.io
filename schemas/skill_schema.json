@@ -1,88 +1,101 @@
 {
    "$id": "https://silentarctic.github.io/schemas/skill_schema.json",
    "type": "array",
-   "items": [
-      {
-         "type": "object",
-         "properties": {
-            "name": {
-               "type": "string"
-            },
-            "page": {
-               "type": "integer"
-            },
-            "imageUrl": {
-               "type": "string"
-            },
-            "characteristic": {
-               "type": "string"
-            },
-            "category": {
-               "type": "string",
-               "enum": [
-                  "general",
-                  "knowledge",
-                  "combat",
-                  "magic",
-                  "social",
-                  "other"
-               ]
-            },
-            "description": { "$ref": "./varyingDisplay_sub_schema.json" },
-            "shouldUse": {
-               "type": "array",
-               "items": [
-                  {
-                     "type": "string"
-                  }
-               ]
-            },
-            "shouldNotUse": {
-               "type": "array",
-               "items": [
-                  {
-                     "type": "string"
-                  }
-               ]
-            },
-            "spells": {
-               "type": "array",
-               "items": {
-                  "type": "object",
-                  "properties": {
-                     "name": {
-                        "type": "string"
-                     },
-                     "source": {
-                        "type": "string"
-                     }
-                  },
-                  "required": [
-                     "name"
-                  ],
-                  "optional": [
-                     "source"
-                  ],
-                  "additionalProperties": false
-               }
-            },
-            "settings": { "$ref": "./settings_sub_schema.json" }
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string",
+            "description": "Skill name."
          },
-         "required": [
-            "name",
-            "characteristic",
-            "category",
-            "description",
-            "shouldUse",
-            "shouldNotUse"
-         ],
-         "optional": [
-            "imageUrl",
-            "page",
-            "spells",
-            "settings"
-         ],
-         "additionalProperties": false
-      }
-   ]
+         "page": {
+            "type": "integer",
+            "description": "Source page reference."
+         },
+         "imageUrl": {
+            "type": "string",
+            "description": "Url to a related image."
+         },
+         "characteristic": {
+            "type": "string",
+            "description": "Characteristic linked to the skill."
+         },
+         "category": {
+            "type": "string",
+            "enum": [
+               "general",
+               "combat",
+               "social",
+               "knowledge",
+               "magic",
+               "other"
+            ],
+            "description": "Category of the skill. One of \"general\", \"combat\", \"social\", \"knowledge\", \"magic\", \"other\"."
+         },
+         "description": {
+            "$ref": "./varyingDisplay_sub_schema.json",
+            "description": "Skill information. Each array item will be its own paragraph. Also accepts varying displays."
+         },
+         "shouldUse": {
+            "type": "array",
+            "items": {
+               "type": "string"
+            },
+            "description": "Suggested reasons to use the skill."
+         },
+         "shouldNotUse": {
+            "type": "array",
+            "items": {
+               "type": "string"
+            },
+            "description": "Suggested reasons to not use the skill."
+         },
+         "spells": {
+            "type": "array",
+            "items": {
+               "type": "object",
+               "properties": {
+                  "name": {
+                     "type": "string",
+                     "description": "Spell name."
+                  },
+                  "source": {
+                     "type": "string",
+                     "description": "Spell source abbreviation (omit if the spell is part of this collection)."
+                  }
+               },
+               "required": [
+                  "name"
+               ],
+               "optional": [
+                  "source"
+               ],
+               "additionalProperties": false
+            },
+            "description": "List of spells that use this skill."
+         },
+         "settings": {
+            "$ref": "./settings_sub_schema.json"
+         },
+         "id": {
+            "type": "string",
+            "description": "Unique item id. You shouldn't have to touch this field."
+         }
+      },
+      "required": [
+         "name",
+         "characteristic",
+         "category",
+         "description",
+         "shouldUse",
+         "shouldNotUse"
+      ],
+      "optional": [
+         "imageUrl",
+         "page",
+         "spells",
+         "settings"
+      ],
+      "additionalProperties": false
+   }
 }

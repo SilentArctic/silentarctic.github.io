@@ -5,15 +5,22 @@
       "type": "object",
       "properties": {
          "name": {
-            "type": "string"
+            "type": "string",
+            "description": "Rule name."
          },
          "page": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Source page reference."
          },
          "type": {
-            "type": "string"
+            "type": "string",
+            "description": "Rule category. Rule type properties are computed to create filter options, so it's best to use existing types if possible to improve filtering."
          },
-         "description": { "$ref": "./varyingDisplay_sub_schema.json" }
+         "description": { "$ref": "./varyingDisplay_sub_schema.json" },
+         "id": {
+            "type": "string",
+            "description": "Unique item id. You shouldn't have to touch this field."
+         }
       },
       "required": [
          "name",

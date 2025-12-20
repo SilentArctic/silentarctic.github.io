@@ -1,24 +1,24 @@
 {
    "$id": "https://silentarctic.github.io/schemas/settings_sub_schema.json",
    "type": "array",
-   "items": [
-      {
-         "type": "object",
-         "properties": {
-            "name": {
-               "type": "string"
-            },
-            "source": {
-               "type": "string"
-            }
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string",
+            "description": "Setting name."
          },
-         "required": [
-            "name"
-         ],
-         "optional": [
-            "source"
-         ],
-         "additionalProperties": false
-      }
-   ]
+         "source": {
+            "type": "string",
+            "description": "Setting source (abbreviation). Example: crb."
+         }
+      },
+      "required": [
+         "name"
+      ],
+      "optional": [
+         "source"
+      ],
+      "additionalProperties": false
+   }
 }

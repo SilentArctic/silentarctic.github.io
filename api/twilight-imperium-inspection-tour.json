@@ -2,6 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
+         "version": "2025.1.20",
          "json": "twilight-imperium-inspection-tour",
          "full": "Twilight Imperium: Inspection Tour",
          "abbreviation": "EotI:IT",
@@ -14,7 +15,6 @@
          ],
          "url": "https://www.edge-studio.net/shares/twilight-imperium/",
          "releaseDate": "20 March 2024",
-         "version": "2025.1.20",
          "module": true
       },
       "defaultItemSettings": [

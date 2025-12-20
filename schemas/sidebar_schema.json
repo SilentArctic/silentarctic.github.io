@@ -5,20 +5,31 @@
       "type": "object",
       "properties": {
          "name": {
-            "type": "string"
+            "type": "string",
+            "description": "Sidebar name."
          },
          "page": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Page number on which the sidebar is found."
          },
          "type": {
-            "type": "string"
+            "type": "string",
+            "description": "Sidebar type classification. Used for filtering."
          },
-         "description": { "$ref": "./varyingDisplay_sub_schema.json" },
+         "description": {
+            "$ref": "./varyingDisplay_sub_schema.json",
+            "description": "Sidebar text and other information."
+         },
          "summary": {
             "type": "array",
             "items": {
                "type": ["string", "integer"]
-            }
+            },
+            "description": "Deprecated. Shortened summary that will appear in popovers."
+         },
+         "id": {
+            "type": "string",
+            "description": "Unique item id. You shouldn't have to touch this field."
          }
       },
       "required": [

@@ -1,37 +1,48 @@
 {
    "$id": "https://silentarctic.github.io/schemas/setting_schema.json",
    "type": "array",
-   "items": [
-      {
-         "type": "object",
-         "properties": {
-            "name": {
-               "type": "string"
-            },
-            "page": {
-               "type": "integer"
-            },
-            "summary": {
-               "type": "array",
-               "items": {
-                  "type": "string"
-               }
-            },
-            "lore": { "$ref": "varyingDisplay_sub_schema.json" },
-            "codex": { "$ref": "varyingDisplay_sub_schema.json" },
-            "characterOptions": { "$ref": "varyingDisplay_sub_schema.json" }
+   "items": {
+      "type": "object",
+      "properties": {
+         "name": {
+            "type": "string",
+            "description": "Setting name."
          },
-         "required": [
-            "name"
-         ],
-         "optional": [
-            "page",
-            "summary",
-            "lore",
-            "codex",
-            "characterOptions"
-         ],
-         "additionalProperties": false
-      }
-   ]
+         "page": {
+            "type": "integer",
+            "description": "Source page reference."
+         },
+         "summary": {
+            "type": "array",
+            "description": "Setting summary.",
+            "items": {
+               "type": "string"
+            }
+         },
+         "lore": {
+            "$ref": "varyingDisplay_sub_schema.json",
+            "description": "Detailed setting lore."
+         },
+         "codex": {
+            "$ref": "varyingDisplay_sub_schema.json",
+            "description": "References to important items and figures"
+         },
+         "characterOptions": { "$ref": "varyingDisplay_sub_schema.json" },
+         "id": {
+            "type": "string",
+            "description": "Unique item id. You shouldn't have to touch this field."
+         }
+      },
+      "required": [
+         "name"
+      ],
+      "optional": [
+         "page",
+         "summary",
+         "lore",
+         "codex",
+         "characterOptions"
+      ],
+      "additionalProperties": false
+   }
 }

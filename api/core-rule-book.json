@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.6.11",
+         "version": "2025.12.7",
          "json": "core-rule-book",
          "full": "Genesys Core Rulebook",
          "abbreviation": "CRB",
@@ -1943,8 +1943,7 @@
                "source": "crb"
             }
          ],
-         "talents": [
-         ],
+         "talents": [],
          "abilities": [
             "Local Politics",
             {
@@ -4762,6 +4761,27 @@
                "name": "all",
                "source": ""
             }
+         ]
+      },
+      {
+         "name": "Unarmed",
+         "page": 109,
+         "type": "weapon",
+         "skill": {
+            "name": "Brawl"
+         },
+         "damage": "+0",
+         "critical": 5,
+         "range": "Engaged",
+         "special": [{
+            "name": "Knockdown"
+         }],
+         "encumbrance": 0,
+         "hardPoints": 0,
+         "price": 0,
+         "rarity": 0,
+         "description": [
+            "When a character makes an unarmed combat check using {@skill Brawl}, the attack has a base damage of their {@characteristic Brawn} rating, a range of engaged, a Critical rating of 5, and the {@quality Knockdown} item quality."
          ]
       },
       {
@@ -7743,7 +7763,7 @@
          "rarity": 5,
          "description": [
             "Druidic circlets could be simple bands of entwined metal, elaborate headdresses of antlers, or even crowns of ivy. They help those using primal magic commune with the natural world.",
-            "When the user casts the Conjure spell to summon a living creature, adding the Summon Ally effect does not increase its difficulty. In addition, the creature remains summoned until the end of the encounter without your character having to use the concentrate maneuver."
+            "When the user casts the Conjure spell to summon a living creature, adding the Summon Ally effect does not increase its difficulty. In addition, the creature remains summoned until the end of the encounter without your character having to use the {@rule concentrate|concentrate maneuver}."
          ]
       },
       {
@@ -8345,12 +8365,74 @@
          ]
       }
    ],
+   "optionFeature": [
+      {
+         "name": "Firewall",
+         "page": 235,
+         "type": "ice",
+         "labels": [
+            {
+               "name": "Program Strength",
+               "description": "3"
+            }
+         ],
+         "description": [
+            "Firewalls are effectively barriers in cyberspace that limit access to certain parts of a server or system. If a user tries to penetrate them and fails, they get bumped back to the main system.",
+            "{@b Effects:} If a character attempts to override this program and fails, they are unable to access the portion of the server the firewall protects (there are no further effects)."
+         ]
+      },
+      {
+         "name": "Sentry",
+         "page": 235,
+         "type": "ice",
+         "labels": [
+            {
+               "name": "Program Strength",
+               "description": "2"
+            }
+         ],
+         "description": [
+            "Sentries don't stop you from accessing restricted parts of a server. However, they spot unauthorized access and attempt to trace the offender.",
+            "{@b Effects:} If a character attempts to override this program and fails, the sysops or other system administrators are immediately notified of the intrusion. In addition, the sentry provides any sysops or system administrators who access the system during the encounter one suc cessful trace against the hacker."
+         ]
+      },
+      {
+         "name": "Gate",
+         "page": 235,
+         "type": "ice",
+         "labels": [
+            {
+               "name": "Program Strength",
+               "description": "2"
+            }
+         ],
+         "description": [
+            "Gates are authentication programs. If a user has the right credentials (or can override the system to make it think they do), they let the user pass. If the user does not, the program automatically boots them from the system.",
+            "{@b Effects:} If a character attempts to override this program and fails, they immediately lose access to the entire system and must perform the {@rule Access System} action again."
+         ]
+      },
+      {
+         "name": "Gate (Pop-up)",
+         "page": 235,
+         "type": "ice",
+         "labels": [
+            {
+               "name": "Program Strength",
+               "description": "1"
+            }
+         ],
+         "description": [
+            "This version of a gate is universally reviled marketing gimmick, not a true security program. It won't stop access to a server, but it is annoying.",
+            "{@b Effects:} If a character attempts to override this program and fails, they suffer 2 strain. They may also feel a fleeting compulsion to buy a new vehicle or invest in a suspect weight-loss plan."
+         ]
+      }
+   ],
    "quality": [
       {
          "name": "Accurate",
          "page": 86,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "Accurate weapons are easier to aim or wield, whether through design or technology. For each level of this quality, the attacker adds {@dice boost} to their combat checks while using this weapon."
          ]
@@ -8359,7 +8441,7 @@
          "name": "Auto-Fire",
          "page": 86,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "A weapon with Auto-fire can be set to shoot in rapid succession and potentially spray an area with bolts, flechettes, slugs, or other types of projectiles. The advantage in using Auto-fire is that it has the chance to hit multiple targets or to hit a single target multiple times.",
             "As attacking with a weapon on Auto-fire is generally less accurate, the attacker must increase the difficulty of the combat check by {@dice difficulty}. The user may choose not to use the Auto-fire quality on a weapon; in this case, they cannot trigger the quality but also do not suffer the aforementioned penalty.",
@@ -8372,7 +8454,7 @@
          "name": "Blast",
          "page": 86,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "The weapon has a large spread, an explosive blast, or a similar area of effect, like a detonated grenade or a warhead fired from a missile launcher. If the attack is successful and Blast activates, each character (friend or foe) engaged with the original target suffers a hit dealing damage equal to the Blast quality's rating, plus damage equal to the total {@symbols s} scored on the check.",
             "In a relatively small and enclosed area, the Game Master might decide that everyone in the room suffers damage.",
@@ -8383,7 +8465,7 @@
          "name": "Breach",
          "page": 87,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "Weapons with Breach burn through the toughest armor; they are often heavy weapons or weapons mounted on some sort of vehicle.",
             "Hits from weapons with the Breach quality ignore one point of vehicle armor for every rating of Breach (meaning they also ignore 10 soak for every rating of Breach)."
@@ -8393,7 +8475,7 @@
          "name": "Burn",
          "page": 87,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "Weapons with Burn inflict damage over time. When Burn is triggered, one target hit by the attack continues to suffer the weapon's base damage each round for a number of rounds equal to the weapon's Burn rating. Apply damage at the start of each of the target's turns. If multiple targets suffer hits from a weapon with Burn, the quality may be triggered multiple times, affecting a different target each time.",
             "A victim might be able to stop the damage by performing an action to roll around and make a Coordination check. The difficulty is {@difficulty average} on hard surfaces such as the floor of a building, or an {@difficulty easy} on grass or soft ground. Jumping into a body of water stops the damage immediately. Both situations assume the flame is from actual combustion rather than a chemical reaction. With the latter, there is usually little the victim can do."
@@ -8403,7 +8485,7 @@
          "name": "Concussive",
          "page": 87,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "The weapon's attack can leave the target shell-shocked from mighty blows or punishing shock waves, unable to perform any but the most basic actions. When Concussive is triggered, one target hit by the attack is staggered (see page 114) for a number of rounds equal to the weapon's Concussive rating. A staggered target cannot perform actions. If multiple targets suffer hits from a weapon with Concussive, the quality may be triggered multiple times, affecting a different target each time."
          ]
@@ -8412,7 +8494,7 @@
          "name": "Cumbersome",
          "page": 87,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "A Cumbersome weapon is large, unwieldy, awkward, or heavy. To wield a Cumbersome weapon properly, the character needs a Brawn characteristic equal to or greater than the weapon's Cumbersome rating. For each point of Brawn by which the character is deficient, they must increase the difficulty of all checks made while using the weapon by one."
          ]
@@ -8421,7 +8503,7 @@
          "name": "Defensive",
          "page": 87,
          "activation": "passive",
-         "itemTypes": "any",
+         "gearType": "any",
          "description": [
             "An item with the Defensive quality increases the user's melee defense by its Defensive rating."
          ]
@@ -8430,7 +8512,7 @@
          "name": "Deflection",
          "page": 87,
          "activation": "passive",
-         "itemTypes": "any",
+         "gearType": "any",
          "description": [
             "An item with the Deflection quality increases the user's ranged defense by its Deflection rating."
          ]
@@ -8439,7 +8521,7 @@
          "name": "Disorient",
          "page": 87,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "A weapon with Disorient can daze an opponent. When Disorient is triggered, one target hit by the attack is disoriented (see page 114) for a number of rounds equal to the weapon's Disorient rating. A disoriented target adds {@dice setback} to all skill checks they perform. If multiple targets suffer hits from a weapon with Disorient, the quality may be triggered multiple times, affecting a different target each time."
          ]
@@ -8448,7 +8530,7 @@
          "name": "Ensnare",
          "page": 87,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "A weapon with Ensnare binds a foe and restricts their movements. When Ensnare is triggered, one target hit by the attack becomes {@rule immobilized} (see page 114) for a number of rounds equal to the weapon's Ensnare rating. An {@rule immobilized} target cannot perform maneuvers. If multiple targets suffer hits from a weapon with Ensnare, the quality may be triggered multiple times, affecting a different target each time.",
             "An Ensnared target may perform an action to attempt a {@difficulty hard} Athletics check on their turn to break free from the effect."
@@ -8458,7 +8540,7 @@
          "name": "Guided",
          "page": 87,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "A weapon with the Guided quality can track opponents. The Guided quality can only be triggered if an attack misses. If Guided is triggered, the controlling character may make a combat check at the end of the round as an out-of-turn incidental. The difficulty of this combat check is {@difficulty average}; instead of building the ability of the pool normally, add {@dice ability} equal to the weapon's Guided rating. If the check is successful, the weapon strikes the target, and the attack is resolved normally.",
             "Guided requires {@symbols aaa} to activate, unless otherwise specified in the weapon's description. The Guided quality can activate on any subsequent combat check it makes, representing the projectile continuing to track the target."
@@ -8468,7 +8550,7 @@
          "name": "Inaccurate",
          "page": 87,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "Inaccurate weapons are less likely to be accurate or precise. When making an attack with an Inaccurate weapon, add {@dice setback} to the check equal to the Inaccurate rating."
          ]
@@ -8477,7 +8559,7 @@
          "name": "Inferior",
          "page": 88,
          "activation": "passive",
-         "itemTypes": "any",
+         "gearType": "any",
          "description": [
             "An Inferior item is a lackluster example of its kind, representing shoddy and poor craftsmanship. An Inferior item generates automatic {@symbols h} on all checks related to its use."
          ]
@@ -8486,7 +8568,7 @@
          "name": "Knockdown",
          "page": 88,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "When Knockdown is triggered, one target hit by the attack is knocked prone. If multiple targets suffer hits from a weapon with Knockdown, the quality may be triggered multiple times, affecting a different target each time.",
             "Unless specified otherwise, Knockdown requires {@symbols aa} to trigger, plus one additional {@symbols a} per silhouette of the target beyond 1."
@@ -8496,7 +8578,7 @@
          "name": "Limited Ammo",
          "page": 88,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "Some weapons fire particularly large or complex projectiles that cost lots of money. Other weapons are expendable weapons like grenades that, once used, are destroyed. A weapon with the Limited Ammo quality may be used to make a number of attacks equal to its Limited Ammo rating before it must be reloaded with a maneuver. In addition, each shot expends one of a limited number of rounds of ammo; more ammo must be purchased or obtained before anyone fires the weapon again. This also applies to grenades and other \"one-use\" weapons that have the Limited Ammo 1 quality (here, your character is not \"reloading\" the grenade, but drawing another to use—mechanically, they are equivalent)."
          ]
@@ -8505,7 +8587,7 @@
          "name": "Linked",
          "page": 88,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "Some weapons are designed to fire together at the same target (turrets housing multiple guns are a good example of this). When a character fires a linked weapon, on a successful attack, the weapon deals one hit. The wielder may spend {@symbols aa} to gain an additional hit, and may do so a number of times equal to the weapon's Linked rating. Additional hits from the Linked weapon may only be applied against the original target. Each hit deals the weapon's base damage plus damage equal to the {@symbols s} scored on the check."
          ]
@@ -8514,7 +8596,7 @@
          "name": "Pierce",
          "page": 88,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "Any hits from this weapon ignore a number of points point of soak equal to the weapon's Pierce rating. If the weapon has more ranks of Pierce than the target's total soak, it completely ignores the target's soak. For example, Pierce 3 against a soak of 2 ignores two points of soak, but the extra point of Pierce has no further effect."
          ]
@@ -8523,7 +8605,7 @@
          "name": "Prepare",
          "page": 88,
          "activation": "passive",
-         "itemTypes": "any",
+         "gearType": "any",
          "description": [
             "Items with this quality require time to set up before being used. The user must perform a number of preparation maneuvers equal to the item's Prepare rating before using the item (if the item is a weapon, \"using\" it would be making attacks with the weapon). At your GM's discretion, moving with the item, being knocked prone with the item, or other disruptions may require the user to perform the preparation maneuvers again before using the item."
          ]
@@ -8532,7 +8614,7 @@
          "name": "Reinforced",
          "page": 88,
          "activation": "passive",
-         "itemTypes": "any",
+         "gearType": "any",
          "description": [
             "Weapons or items with the Reinforced quality are immune to the {@quality Sunder} quality. Armor with the Reinforced quality make the wearer's soak immune to the {@quality Pierce} and {@quality Breach} qualities"
          ]
@@ -8541,7 +8623,7 @@
          "name": "Slow-Firing",
          "page": 88,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "Slow-Firing weapons tend to deal incredible damage, but need time to recharge or cool down between shots. A weapon's Slow-Firing rating dictates the number of rounds that must pass before the weapon can be fired again after attacking. For example, a heavy laser cannon with Slow-Firing 2 must wait two rounds after being fired before it can be fired again."
          ]
@@ -8550,7 +8632,7 @@
          "name": "Stun",
          "page": 88,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "A weapon with Stun can deal strain to the target. When the Stun quality is activated, it inflicts strain equal to the weapon's Stun rating. Since this is strain, and not strain {@i damage}, it is not reduced by the target's soak."
          ]
@@ -8559,7 +8641,7 @@
          "name": "Stun Damage",
          "page": 88,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "A weapon with this quality can only deal strain damage (damage applied to the target's strain threshold). Because this is strain {@i damage}, not strain, it is still reduced by a target's soak."
          ]
@@ -8568,7 +8650,7 @@
          "name": "Sunder",
          "page": 88,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "When activating Sunder, the attacker chooses one item openly wielded by the target (such as a weapon, shield, or item on a belt). That item is damaged one step: to minor if undamaged, from minor to moderate, or from moderate to major. If an item already suffering major damage is the target of a successful Sunder, it is destroyed.",
             "Sunder requires {@symbols a} to activate, and may be activated even if the attack is unsuccessful. Sunder may be activated multiple times in the same attack, but each activation must be applied to the same item, potentially taking it from undamaged to destroyed in a single attack."
@@ -8578,7 +8660,7 @@
          "name": "Superior",
          "page": 88,
          "activation": "passive",
-         "itemTypes": "any",
+         "gearType": "any",
          "description": [
             "A Superior item is a sterling example of its kind, representing masterful craftsmanship. A Superior item generates automatic {@symbols a} on all checks related to its use."
          ]
@@ -8587,7 +8669,7 @@
          "name": "Tractor",
          "page": 89,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "Instead of firing searing beams of laser fire or crackling ion discharges, this weapon fires relatively harmless electromagnetic beams that ensnare ships and hold them fast in space. Tractor beams, like all weapons, are fired at their target using the appropriate skill check with all suitable modifiers. Once the weapon hits its target, the target may not move unless its pilot makes a successful Piloting check with a difficulty equal to the tractor beam's rating. If the target is an individual character, the character is immobilized while the beam is active.",
             "(Weapons with the Tractor quality are only going to show up in {@setting science fiction|sci-fi} settings, and probably only the more fanciful sci-fi settings! However, they are such a staple in those settings that we included the quality here.)"
@@ -8597,7 +8679,7 @@
          "name": "Unwieldy",
          "page": 89,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "An Unwieldy weapon is a weapon that can be particularly awkward to use for those without impressive dexterity and hand-eye coordination. To wield an Unwieldy weapon properly, the character needs an Agility characteristic equal to or greater than the weapon's Unwieldy rating. For each point of Agility by which the character is deficient, they must increase the difficulty of all checks made while using the weapon by one."
          ]
@@ -8606,7 +8688,7 @@
          "name": "Vicious",
          "page": 89,
          "activation": "passive",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "When an attack with this weapon results in a Critical Injury or Hit, the character adds ten times the Vicious rating to the Critical roll. With Vicious 3, for example, you would add +30 to the resulting Critical Injury or Hit result."
          ]
@@ -8615,7 +8697,7 @@
          "name": "Personal Scale",
          "page": 225,
          "activation": "passive",
-         "itemTypes": "vehicle",
+         "gearType": "vehicle",
          "description": [
             "This quality exists only for vehicle weapons. We use this quality when we want to put small-scale weapons on a vehicle, such as the machine guns on the side of a combat helicopter, or a grenade launcher on an APC.",
             "The quality has the following rule: {@b this vehicle weapon's entire profile uses personal scale instead of planetary scale.}"
@@ -8828,6 +8910,17 @@
          ]
       },
       {
+         "name": "Attacking Prone Targets and Attacking While Prone",
+         "page": 108,
+         "type": "combat",
+         "description": [
+            "A character who is knocked down, unconscious, or willingly drops prone is considered {@rule prone}.",
+            "Prone characters are easier to hit with certain combat checks and find it harder to use certain combat skills. A character gains {@dice boost} when attacking a prone target with a {@skill Melee} check (or any other close combat check). A prone character suffers {@dice setback} when making a melee attack from a prone position.",
+            "Prone characters are harder to hit with ranged attacks but suffer no penalties when making ranged attacks. When a character attacks a prone target with a ranged attack, they suffer {@dice setback}.",
+            "Some attacks or weapons may cause a character to become prone. This is indicated in the individual weapon, talent, or creature attack entry. Getting knocked prone may be the result of a failed {@skill Coordination} check or of the activation of a weapon's item quality."
+         ]
+      },
+      {
          "name": "Blanket Barrage",
          "page": 228,
          "type": "vehicle action",
@@ -8912,6 +9005,15 @@
          ]
       },
       {
+         "name": "Concentrate",
+         "page": 218,
+         "type": "maneuver",
+         "description": [
+            "Some magical effects might require concentration to sustain. If a magical action (or spell) can benefit from concentration, the action description notes this.",
+            "Spells that can be sustained through concentration last until the end of the character's next turn (as noted in their description). However, if the character performs the concentrate maneuver during that next turn, the spell's effects last until the end of the character's following turn, instead. This can be sustained indefinitely by performing the concentrate maneuver each turn."
+         ]
+      },
+      {
          "name": "Concentrated Barrage",
          "page": 228,
          "type": "vehicle maneuver",
@@ -8930,11 +9032,29 @@
          ]
       },
       {
+         "name": "Counterspell",
+         "page": 218,
+         "type": "maneuver",
+         "description": [
+            "Most skilled mages or spellcasters can attempt to counter an opponent's spells as they are being cast. If the character performs the counterspell maneuver, all opponents within medium range upgrade the difficulty of checks to cast spells once, until the end of the character's next turn."
+         ]
+      },
+      {
          "name": "Cover",
          "page": 110,
          "type": "environment",
          "description": [
             "When the guns start firing, most characters dive for cover. To keep things simple, being behind some sort of cover — a rock, crate, wall, or vehicle, for example — allows the character to gain a ranged defense of 1 and adds {@dice setback} to certain skill checks, such as Perception. A single {@dice setback} is sufficient for most situations, although the GM may add additional {@dice setback} if the target is particularly well covered, such as if they are within a trench, blockhouse, bunker, or any other prepared position. The same holds true for the increase in ranged defense."
+         ]
+      },
+      {
+         "name": "Critical Injuries",
+         "page": 114,
+         "type": "character",
+         "description": [
+            "A particularly dangerous type of harm is a Critical Injury. A Critical Injury is often the result of an attack during combat, but characters can also suffer one from exceeding their wound threshold or through other means. Each time a character suffers a Critical Injury, the player rolls d100 on {@table I.6-10: Critical Injury Result}, on page 115, to determine the injury's severity rating and effects.",
+            "The short-term effects of some injuries are temporary, and may only disorient or afflict the character for a brief amount of time. Other injuries are more serious and represent some sort of long-term debilitation or impairment. These injuries continue to affect the character until they receive the proper medical treatment to recover from the injury.",
+            "Regardless, a Critical Injury remains with the character until properly healed; even if the short-term effect of the Critical Injury has passed, the status of having a Critical Injury remains. Each Critical Injury a character suffers from adds +10 to any subsequent Critical Injury roll. Essentially, Critical Injury is cumulative, and left untreated, even a number of relatively minor Critical Injuries can lead to devastating results."
          ]
       },
       {
@@ -9240,6 +9360,25 @@
          ]
       },
       {
+         "name": "Exceeding Wound Threshold",
+         "page": 112,
+         "type": "character",
+         "description": [
+            "When a PC suffers wounds greater than their wound threshold, they are knocked out and {@rule incapacitated} until their wounds are reduced so that they no longer exceed their wound threshold (likely through healing). They also immediately suffer one Critical Injury. In some rare and dire circumstances, this could result in the PC's death.",
+            "When non-player characters and creatures suffer wounds greater than their wound threshold, they are defeated (unless they are a high-level opponent such as a nemesis). Being defeated by exceeding their wound threshold usually entails death, but the overall interpretation is up to the GM. The GM can decide that they pass out due to shock, are so injured that they can no longer fight, are knocked unconscious, or suffer any other option that fits the GM's plans for the ongoing narrative. Since non-nemesis NPCs do not track strain separately, but apply strain damage as wounds to their wound threshold, what happens once they are defeated may also depend on whether they were defeated due to strain damage or wound damage.",
+            "When wounds exceed a character's wound threshold, the player should track the number of wounds by which their character has exceeded the threshold, to a maximum of twice the wound threshold. The character must heal wounds until the number of wounds they are suffering is below their wound threshold before the character is no longer incapacitated."
+         ]
+      },
+      {
+         "name": "Exceeding Strain Threshold",
+         "page": 113,
+         "type": "character",
+         "description": [
+            "When a character has suffered strain greater than their strain threshold, they become {@rule incapacitated} until their strain is reduced so that it no longer exceeds their strain threshold. They are likely unconscious, or they may just be so dazed and staggered that they're completely unaware of their surroundings and unable to interact with them.",
+            "When non-player characters and creatures suffer strain, they generally apply the strain directly to their wound threshold (unless they are nemeses and track strain separately)."
+         ]
+      },
+      {
          "name": "Exchange an Action for a Maneuver",
          "page": 101,
          "type": "action",
@@ -9369,6 +9508,15 @@
          ]
       },
       {
+         "name": "Improvised Weapons",
+         "page": 109,
+         "type": "combat",
+         "description": [
+            "Sometimes a character doesn't have a real weapon available and must make do with anything that is on hand. Swinging a broken bottle, heavy tool, large rock, or tree branch at a target are all examples of using an improvised weapon.",
+            "Improvised weapons use the {@skill Melee} skill, and as with all Melee weapons, the attacker adds their {@characteristic Brawn} to the damage dealt. Just like weapons with the {@quality Inferior} quality, improvised weapons generate one automatic {@symbols h} on any check. Improvised weapons deal damage based on their size and general weight, as described in {@table I.6-5: Improvised Weapons}. Any attack roll that results in a {@symbols d} or {@symbols hh} indicates that the improvised weapon breaks and is useless in further rounds of combat. Large improvised weapons require two hands to use if the user is silhouette 1 or smaller."
+         ]
+      },
+      {
          "name": "Incapacitated",
          "page": 113,
          "type": "status",
@@ -9461,6 +9609,25 @@
                   "Kara, seeing that her friend Grace can't carry a box of explosives, a shovel, and her handgun, decides to help. She grabs one end of the box, so that now the two of them are carrying it together. Kara has a {@characteristic Brawn} of 3, so she adds 3 to Grace's encumbrance threshold."
                ]
             }
+         ]
+      },
+      {
+         "name": "Making Ranged Attacks at Engaged Targets",
+         "page": 107,
+         "type": "combat",
+         "description": [
+            "Sometimes, characters may want to attack a target engaged with another character. If the target and the character with whom they are engaged are both enemies of the attacker, the attacker may not worry about whom they might hit. However, if one of the characters is an ally, then things become more dangerous.",
+            "When attacking a target engaged with an ally, the attacker upgrades the difficulty of the check once (for more on upgrading difficulty, see page 22). In addition, if the attacker's check succeeds but generates at least one {@symbols d}, that {@symbols d} is automatically spent to make the attacker hit one of the individuals engaged with the target (of the GM's choice), instead of hitting the target."
+         ]
+      },
+      {
+         "name": "Making Ranged Attacks While Engaged",
+         "page": 107,
+         "type": "combat",
+         "description": [
+            "Sometimes, a character may want to make a ranged attack even though they're locked in hand-to-hand combat with an enemy. Such an action can be risky; a character may find it hard to take the time to line up a shot while an opponent is swinging an axe at them!",
+            "Any opponent engaged with a character when the character makes a ranged attack (no matter who the target is) may add {@dice boost} to their next {@skill Brawl} or {@skill Melee} check against that character. They automatically lose this bonus if they and the character are no longer engaged with each other.",
+            "In addition, the difficulty of some ranged attacks increases while the attacker and an enemy are engaged, and other ranged attacks become impossible. See {@table I.6-4: Ranged Modifiers} for more information. You should note that this chart differentiates based on types of weapons, because in the core rules, there is only one kind of combat skill that lets you attack at range. If your setting has multiple ranged combat skills (such as separate skills for \"light\" and \"heavy\" ranged weapons), then the ranged modifiers can be determined by skill, rather than weapon size. Generally, it should be obvious which of your combat skills match up with which ranged modifiers."
          ]
       },
       {
@@ -9702,6 +9869,67 @@
             "The first painkiller used on a character automatically heals 5 wounds. The second painkiller only heals 4 wounds, the third painkiller heals 3 wounds, and so on. The sixth painkiller has no effect (we say the target is too oversaturated with medicine or healing magic or whatever to benefit from anything else).",
             "Administering a painkiller requires one maneuver, and the character doing the administering must be engaged with the target to treat them. This also means that a character with a free hand can administer a painkiller to themself by spending a maneuver.",
             "Painkillers (in any of their variants) can never heal Critical Injuries."
+         ]
+      },
+      {
+         "name": "Perform a Combat Check",
+         "page": 101,
+         "type": "action",
+         "description": [
+            "A PC makes a combat check when they use a combat skill to attack a target—by firing a gun, throwing a punch, or swinging a sword, for example. This is also referred to as an attack.",
+            "First and foremost, keep in mind that a combat check is a skill check. It follows all of the rules and procedures for making a skill check, including the steps for assem bling the dice pool. However, there are additional steps included in a combat check. All the steps a combat check follows are detailed here.",
+            {
+               "title": "Step 1: Declare an Attack and Select Targets",
+               "forceTitleLevel": 6,
+               "entries": [
+                  "The character chooses to make an attack. They select what skill they use to make the attack and, if the skill requires a weapon to use, which weapon they use. They then declare the target of their attack."
+               ]
+            },
+            {
+               "title": "Step 2: Assemble the Dice Pool",
+               "forceTitleLevel": 6,
+               "entries": [
+                  "The character then assembles the dice pool based on the skill, its characteristic, and any applicable talents or other abilities. Certain conditions, such as the painful effect of a Critical Injury or an environmental effect such as fog or darkness, may also contribute dice to the dice pool. See page 19 for more information on building a dice pool.",
+                  "The difficulty of a combat check depends on whether the attack is a ranged attack (using the {@skill Ranged} skill or one of its derivatives, depending on the setting) or a melee attack (using the {@skill Brawl} or {@skill Melee} skill or a setting-dependent derivative). {@skill Melee} attack difficulties are always {@difficulty Average}. {@skill Ranged} attack difficulties depend on the distance the target is from the active character, or in other words, the range band the target occupies. {@table I.6-1: Ranged Attack Difficulties} lists difficulties as they relate to different range bands. (See page 105 for more information about range bands.) Once the pool is assembled, roll the dice."
+               ]
+            },
+            {
+               "title": "Step 3. Pool Results and Deal Damage",
+               "forceTitleLevel": 6,
+               "entries": [
+                  "Once the player rolls the dice pool for the attack, the player evaluates the results. As with any skill check, the check must generate more {@symbols s} than {@symbols h} to be successful.",
+                  "When making a combat check, if the check is successful, each {@symbols s} adds +1 damage to the attack. If the attack affects multiple targets, the additional damage is added to each target."
+               ]
+            },
+            {
+               "title": "Step 4. Resolve Advantage and Triumph",
+               "forceTitleLevel": 6,
+               "entries": [
+                  "Just as they can be spent in a non-combat skill check, {@symbols a} and {@symbols t} can be spent in a combat check to gain incidental beneficial effects. However, just as the rules governing encounters are somewhat more regimented than the rules governing narrative gameplay, so some of the options governing the spending of {@symbols a} and {@symbols t} are more clearly defined. In encounters, the player controlling the active character determines how the character spends {@symbols a} and {@symbols t}, unless the GM has a specific reason to decide instead.",
+                  "The first and foremost ways to spend {@symbols a} and {@symbols t} in an attack are to activate a Critical Injury or active item quality. As described on page 90, each weapon has a Critical rating that consists of a numeric value. The user can spend that many {@symbols a} to inflict one Critical Injury on the target, in addition to regular effects and damage. Remember, a Critical Injury can only be triggered upon a successful hit that deals damage that exceeds the target's soak value. For more information on Critical Injuries, see page 114.",
+                  "Item qualities are special effects and abilities that apply only when a character is using that particular weapon—the vicious edge of a sword, say, or the automatic fire capability of a heavy machine gun. Item qualities come in two forms: active and passive. Active qualities require the user to spend a certain number of {@symbols a} to trigger them. Generally, this is {@symbols aa}, although some qualities may require more or fewer. Passive qualities always grant their effect. Some qualities may inflict effects on a target that, unless specified otherwise, are always applied in addition to other effects, Critical Injuries, and damage.",
+                  "In addition to always counting as an additional {@symbols s}, {@symbols t} can be spent to activate item qualities as well. A {@symbols t} may be spent to inflict one Critical Injury (no matter what the Critical rating of the weapon is). Alternatively, a {@symbols t} may be spent to activate one item quality, no matter how many {@symbols a} it would normally take to do so.",
+                  "There are other options for spending {@symbols a} and {@symbols t} as well. A list of the most common can be found on {@table I.6-2: Spending Advantage and Triumph in Combat}, on page 104. Keep in mind that these are not intended to be the only options available. As always, players and GMs may invent other ways to spend {@symbols a} and {@symbols t}, depending on the specific circumstances of the encounter. Any option that the players and GM agree upon can be viable."
+               ]
+            },
+            {
+               "title": "Step 5. Resolve Threat and Despair",
+               "forceTitleLevel": 6,
+               "entries": [
+                  "In the same fashion in which the controlling player determines how to spend {@symbols a} and {@symbols t} in their combat check, the GM then determines how to spend any {@symbols h} or {@symbols d} generated in the check. Much as fortune might favor the player, bad luck and circumstance can con spire against them. By default, the GM determines how {@symbols h} or {@symbols d} are spent, although in some cases (such as checks made by NPCs) they may give the players the option to spend these instead.",
+                  "Although many weapon descriptions include options for spending {@symbols a} and {@symbols t}, most do not for {@symbols h} and {@symbols d}; however, this is not always the case. Some particularly volatile or dangerous weapons do have these options, and if they do, the options are detailed in the weapon's description. Specific options for spending {@symbols h} and {@symbols d} in encounters do exist, however, and the most common of these can be found on {@table I.6-3: Spending Threat and Despair in Combat}, on page 104. As with {@symbols a} and {@symbols t}, keep in mind that these are not intended to be the only options available. As always, GMs may invent other ways to spend {@symbols h} and {@symbols d}, depending on the specific circumstances of the encounter, and any option that the players and GM agree on can be viable."
+               ]
+            },
+            {
+               "title": "Step 6. Reduce Damage, Apply to Wound Threshold, and Apply Critical Injuries",
+               "forceTitleLevel": 6,
+               "entries": [
+                  "When a character suffers damage, whether from a rifle or claws, they reduce the damage received by their soak value. If any damage remains after this reduc tion, they suffer that many wounds. If the net result is zero or negative, the character suffers no wounds; their toughness and natural fortitude, in conjunction with any armor they might be wearing, have saved them from being injured. If the character suffers damage from multiple hits in an attack, they apply their soak value to each hit individually. For more information on damage and wounds, see Wounds, Strain, and States of Health, on page 112.",
+                  "An attack may also generate a Critical Injury. This may occur because the weapon's Critical rating is triggered, or because the target suffers a number of wounds greater than its wound threshold. More about Critical ratings is explained in Step 4: Resolve Advantage and Triumph.",
+                  "When a Critical Injury is inflicted, the attacker rolls percentile dice on {@table I.6-10: Critical Injury Result}, on page 115. The result of the dice roll indicates which Critical Injury is inflicted.",
+                  "Some weapons and talents modify this Critical Injury roll, potentially making it more or less effective. If an attack generates enough {@symbols a} to trigger more than one Critical Injury, the character makes a single Critical Injury roll, adding +10 to the result for each additional time the Critical rating is triggered."
+               ]
+            }
          ]
       },
       {
@@ -9984,6 +10212,16 @@
          ]
       },
       {
+         "name": "Size Differences (Silhouettes)",
+         "page": 109,
+         "type": "combat",
+         "description": [
+            "Generally, it's a character's skill that governs their chances of hitting a target. However, some targets are easier to hit than others, usually because of their size. Size, or silhouette, is important in the alternate rules for vehicles (see page 220). However, silhouettes can affect attack difficulties in standard combat as well.",
+            "When a character makes an attack against a target with a silhouette two or more points larger than they are, they decrease the difficulty of the check by one. When a character makes an attack against a target with a silhouette two or more points smaller than they are, they increase the difficulty of the check by one.",
+            "{@table I.6-6: Silhouettes and Characters} has a list of example silhouettes that covers the size of most creatures the PCs may encounter. The most important thing to remember is that most characters are silhouette 1."
+         ]
+      },
+      {
          "name": "Spend an Action to Activate an Ability",
          "page": 101,
          "type": "action",
@@ -10046,6 +10284,30 @@
                   "Other pieces of gear have rules unique to that item described in the item's entry."
                ]
             }
+         ]
+      },
+      {
+         "name": "Two-Weapon Combat",
+         "page": 108,
+         "type": "combat",
+         "description": [
+            "A character may opt to carry a pistol or a one-handed Melee weapon in each hand, increasing their volume of attacks at the expense of accuracy.",
+            "When attacking with two weapons, the charac ter must be using weapons that can each be reason ably held and wielded in one hand. Generally, these weapons are {@skill Ranged (Light)} weapons—such as pistols and grenades—and one-handed {@skill Melee} weapons or {@skill Brawl} weapons. If it's unclear whether or not a weapon can be wielded one-handed, the GM makes the final determination.",
+            "To make the attack, the player performs a combined check. First, the player designates one weapon as the primary weapon. When making the combined check, the character attacks with this weapon. The player then determines which skills and characteristics the character uses when making attacks with the pri mary weapon and which are used with the second ary weapon (the other weapon wielded). Finally, they determine the target.",
+            "To assemble the dice pool for this check, the player compares the skills that would be used to make an attack with each weapon by itself, and then compares the characteristics that would be used to make an attack with each weapon by itself. They then take the skill that they have fewer ranks in, and the characteristic that they have fewer ranks in, and use this skill and char acteristic to assemble their dice pool. It's very possible that the ranks in either the skills or characteristics are equal, in which case they can use either. If both checks would use the same skill or characteristic, they simply use that skill or characteristic.",
+            "They then compare the difficulty of the two combat checks they would make with each of their two weapons to hit their target, and select the check with the higher difficulty. Then, they increase the difficulty of the combat check by one. Finally, they make the check.",
+            "If they succeed, they hit with their primary weapon in the normal manner. They may spend {@symbols aa} or {@symbols t} to hit with their secondary weapon as well. If both weapons hit, they may spend additional {@symbols a} or {@symbols t} to activate item qualities from either weapon. Each hit deals its weapon's base damage plus one point of damage per uncanceled success."
+         ]
+      },
+      {
+         "name": "Unarmed Combat",
+         "page": 108,
+         "type": "combat",
+         "description": [
+            "Although most characters probably feel more comfort able going into a fight with a good gun in their hand, there are times they must rely on their fists, feet, or other appendages.",
+            "Characters fighting unarmed generally use the {@skill Brawl} skill. Unlike other combat skills, the {@skill Brawl} skill is designed to be used independently of any weapon (although some weapons can be used in conjunction with the {@skill Brawl} skill).",
+            "When a character makes an unarmed combat check using {@skill Brawl}, the attack has a base damage of their {@characteristic Brawn} rating, a range of engaged, a Critical rating of 5, and the {@quality Knockdown} item quality. Finally, when making a {@skill Brawl} attack, the attacker can choose to deal damage to the target's strain threshold instead of its wound threshold, still reducing the damage by the target's soak.",
+            "Unlike other weapons, {@filter gear|Brawl weapons|skill:brawl=1} augment this basic attack. {@filter gear|Brawl weapons|skill:brawl=1} can add damage to the attack (as indicated in the {@gear Unarmed|Brawl} profile, on page 67) and may have an improved Critical rating and additional item qualities. When using a {@filter gear|Brawl weapon|skill:brawl=1}, the user can choose to use its Critical rating instead of the standard Brawl Critical rating. They also add any additional item qualities to the qualities already provided by the Brawl attack. If the weapon provides an improved version of an existing quality, the character uses the improved version."
          ]
       },
       {
@@ -10374,6 +10636,113 @@
             "When an attack generates a Critical Hit, the attacker rolls on {@table III.2-19: Vehicle Critical Hit Result}, on the previous page, and the target suffers the listed effects. Critical Hits are divided into four severity levels, which dictate the difficulty of the check required to repair the Critical Hit, as listed in the table. These difficulties can be further modified at your discretion.",
             "Once a vehicle suffers a Critical Hit, it counts as suffering that Critical Hit until it is repaired. This status counts even if the effects of the Critical Hit only last a single round. While a vehicle is suffering a Critical Hit, any additional Critical Hits generated against it add +10 to the roll on {@table III.2-19: Vehicle Critical Hit Result} per existing Critical Hit.",
             "Remember that an attack must inflict damage for the attacker to activate a Critical Hit. Because vehicles operate on the planetary scale for damage, a hit from a personal scale weapon must inflict at least 10 damage (1 damage on planetary scale) after reductions for armor for the attacker to be able to inflict a Critical Hit."
+         ]
+      },
+      {
+         "name": "Access System",
+         "page": 233,
+         "type": "hacking action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Difficulty:} {@skill Computers} check (difficulty varies)",
+                  "{@b Available To:} Hacker"
+               ]
+            },
+            "Once the hacker has a direct link to the system (through a land-line, wireless connection, USB port, or something more futuristic), they need to access the system. This action represents the hacker accessing the system and gaining control over it, so that they can make the system do what they want later.",
+            "As an action, the hacker may make a {@skill Computers} check to gain access to the system. The difficulty of the check is based on the system's basic security and complexity. See {@table III.2-20: System Security} for suggestions on the difficulty of breaking into various types of systems.",
+            "Once a hacker has successfully accessed a system, they can use the enact commands maneuver to do things in the system (what they can do depends on what system they accessed, of course). However, certain parts of a system may be further protected by security programs. The hacker needs to override these security programs before they can access those parts of a system."
+         ]
+      },
+      {
+         "name": "Override Security Program",
+         "page": 233,
+         "type": "hacking action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Difficulty:} {@difficulty Average|Computers}",
+                  "{@b Available To:} Hacker"
+               ]
+            },
+            "Once a hacker has successfully performed the access system action, certain parts of a system may still be protected by security programs. For example, a hacker may gain access to a facility's security camera network and be able to see whatever the security cameras see. However, the part of the system that controls the cameras is protected by a security program, which the hacker must override before they can turn the cameras off.",
+            "Each security program has a strength rating. To override the program, the hacker must make an {@difficulty Average|Computers} and generate a number of {@symbols s} equal to the program's rating. If the hacker fails, something (usually bad) happens, depending on the security program. We provide three example security programs on page 235 to use in your hacking encounters.",
+            "If the hacker succeeds, the program shuts down, and cannot be reactivated until the end of the hacker's next turn. Hackers can spend {@symbols a} or {@symbols t} to keep a program shut down longer, or completely disable it."
+         ]
+      },
+      {
+         "name": "Trace User",
+         "page": 233,
+         "type": "hacking action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Difficulty: Opposed Computers vs Computers check}",
+                  "{@b Available To:} Sysop"
+               ]
+            },
+            "Once the sysops knows that their system is being hacked, they still need to find out where the hack is coming from. The more they know about the origin of the hack, the easier it is to lock the hacker out of their system.",
+            "To find out where the hack is coming from, the sysops needs to trace the hacker by performing the trace user action. The sysops makes {@b opposed {@skill Computers} vs {@skill Computers} check} targeting the hacker. If successful, the sysops narrows down the hacker's location once. This makes it easier to lock the hacker out of the system (see the {@rule Lockout} action), and also provides information about the hacker's real-world location. See the {@sidebar Trace Information} sidebar for what a successful trace provides.",
+            "Besides making it easy for the sysops to lock the hacker out of the system, the sysops can also use this information for other purposes, such as reporting the hacker to the police (or sending a black-ops team to the hacker's house). You can also rule that a sysops needs to perform the trace user action to learn other key details about the hacker, such as how to access the hacker's computer over the Internet. You can even allow a hacker to perform the trace user action to learn the physical location of someone online, such as an enemy sysops or a rival hacker."
+         ]
+      },
+      {
+         "name": "Lockout",
+         "page": 234,
+         "type": "hacking action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Difficulty:} {@difficulty Formidable|Computers}",
+                  "{@b Available To:} Sysop"
+               ]
+            },
+            "Since the sysops has direct control over the system, they can lock any users out of the system. As long as they can find the hacker, they can give them the boot.",
+            "Once the sysops is aware of a hacker's presence, the sysops may make a {@difficulty Formidable|Computers}. If successful, the hacker loses access to the system. At the GM's discretion, they may be able to regain access to the system by performing the {@rule Access System} action again. However, at the very least the difficulty of this action should be increased twice.",
+            "Reduce the difficulty of Lockout once for every successful trace against the hacker, to a minimum of {@difficulty Easy}."
+         ]
+      },
+      {
+         "name": "Enact Command",
+         "page": 234,
+         "type": "hacking maneuver",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Available To:} Hacker, Sysop"
+               ]
+            },
+            "This maneuver is how characters do things within a system after they access it. What they can do with this maneuver could range from looping the footage of specific security cameras in a facility, locking or unlocking electronic security doors, shutting down power to an elevator, resetting a drone's targeting parameters, or downloading a cache of corporate information.",
+            "Enact command should only let a character perform a single command in the system. If what a player wants their character to do is too complex, you can require them to spend two or more Enact Command maneuvers to do it. It doesn't require a check—once characters have bypassed security, the system thinks they're authorized users (or, if the character is a sysop, they actually are authorized users).",
+            "Characters can only perform this maneuver after they have successfully performed the {@rule Access System} action and gained access to the computer system. Also, remember that some parts of a system may be protected behind firewalls, which must be overridden before the character can enact commands that affect that part of the system."
+         ]
+      },
+      {
+         "name": "Activate Programs",
+         "page": 235,
+         "type": "hacking maneuver",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Available To:} Hacker, Sysop"
+               ]
+            },
+            "Characters use this maneuver to activate (or reactivate) security programs, as well as any other programs that help or hinder hacking that you may have created for your setting."
+         ]
+      },
+      {
+         "name": "Preparing Hacking Opposition",
+         "page": 235,
+         "type": "hacking",
+         "description": [
+            "Opposition in hacking encounters generally falls into two categories: the security of the system itself and the protection that any associated characters provide to it. The first is the difficulty to access the system and the existence of any security programs. The difficulty to break into a system can run from {@difficulty Simple} to {@difficulty Formidable}, and examples are provided in {@table III.2-20: System Security} on page 232.",
+            "Preparing NPC opposition for hacking encounters works much like preparing NPCs for any other purpose. If the PCs are unlikely to encounter the sysops in person, you only need the characteristics relevant for the sysops' role in the encounter. Providing the foe's Intellect characteristic and {@skill Computers} skill can often be enough, unless you expect the PCs to later encounter that character in the flesh. Giving the NPC talents like {@talent Defensive Sysops} can help an especially talented enemy stand out."
          ]
       },
       {
@@ -11303,6 +11672,21 @@
          ]
       },
       {
+         "name": "Trace Information",
+         "page": 233,
+         "type": "computers",
+         "description": [
+            "A sysop can successfully trace a user up to four times, each time gaining more information about the user. Additional traces don't reveal any additional information or further decrease the difficulty of the lockout action, but you can give the character additional narrative information about their opponent for doing so.",
+            "Successful traces usually occur via the Trace User action, but can also happen by spending {@symbols a} or {@symbols h}, or unsuccessfully attempting to override a sentry security program.",
+            {
+               "type": "table",
+               "columns": [],
+               "rows": [],
+               "_ref": { "name": "Table III.2-21: Trace Information" }
+            }
+         ]
+      },
+      {
          "name": "Other Skills in Combat",
          "page": 103,
          "type": "combat",
@@ -11356,6 +11740,14 @@
             "A character is {@b critically injured} if they are currently suffering from any number of Critical Injuries, regardless of how many wounds they may have. Critical Injuries are actual injuries that have some sort of detrimental effect. A character may be critically injured and wounded.",
             "A character is {@b incapacitated} once they have suffered more wounds than their wound threshold or more strain than their strain threshold. Incapacitation means that a character is unconscious and no longer able to act until the number of wounds or strain they are suffering is decreased below their wound or strain threshold.",
             "Since exceeding a character's wound threshold triggers a Critical Injury, it's possible (and often likely!) for an incapacitated character to also be critically injured."
+         ]
+      },
+      {
+         "name": "Strain Damage and Critical Injuries",
+         "page": 114,
+         "type": "character",
+         "description": [
+            "Although not always likely, some attacks that deal strain damage (notably weapons with the {@quality Stun Damage} quality) can also trigger {@rule Critical Injuries}. Although this may seem odd, it actually makes sense. When a player character inflicts a {@rule Critical Injuries|Critical Injury} on an adversary that can be incapacitated by a single {@rule Critical Injuries|Critical Injury} (such as a minion), then the adversary is simply incapacitated by being rendered unconscious. If a PC or nemesis NPC suffers a {@rule Critical Injuries|Critical Injury} from a weapon dealing strain damage, the outcome can be anything from adverse long-term effects from the weapon, to tangential injuries from being stunned (for example, the character could be knocked off balance and take a nasty crack on the skull when they hit the ground). Of course, since these {@rule Critical Injuries} would have to be triggered by the players or GM, both parties can always decide that a {@rule Critical Injuries|Critical Injury} would not make sense in that narrative, and choose not to trigger them."
          ]
       },
       {
@@ -13325,7 +13717,7 @@
          "page": 217,
          "concentration": false,
          "difficulty": "easy",
-         "range": "Enaged",
+         "range": "Engaged",
          "skills": [
             {
                "name": "divine"
@@ -15271,6 +15663,158 @@
          ]
       },
       {
+         "name": "Table III.2-20: System Security",
+         "page": 232,
+         "columns": [
+            {
+               "header": "Example Systems",
+               "value": "examples",
+               "size": 3
+            },
+            {
+               "header": "Difficulty",
+               "value": "difficulty"
+            }
+         ],
+         "rows": [
+            {
+               "examples": "Unsecured/passcode known",
+               "difficulty": "{@difficulty Simple}"
+            },
+            {
+               "examples": "Public terminal, PAD, personal computer",
+               "difficulty": "{@difficulty Easy}"
+            },
+            {
+               "examples": "Small business server",
+               "difficulty": "{@difficulty Average}"
+            },
+            {
+               "examples": "Government network, corporate server",
+               "difficulty": "{@difficulty Hard}"
+            },
+            {
+               "examples": "Hacker darknet, military server",
+               "difficulty": "{@difficulty Daunting}"
+            },
+            {
+               "examples": "Megacorp core system, intelligence agency server",
+               "difficulty": "{@difficulty Formidable}"
+            }
+         ]
+      },
+      {
+         "name": "Table III.2-21: Trace Information",
+         "page": 233,
+         "columns": [
+            {
+               "header": "Traces",
+               "value": "traces"
+            },
+            {
+               "header": "Results",
+               "value": "result",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "traces": "1",
+               "result": "The sysops learns what country the hacker is currently in (or its geo-political equivalent, depending on the setting). The sysops reduces the difficulty of the lockout action once."
+            },
+            {
+               "traces": "2",
+               "result": "The sysops learns what state, province, or region the hacker is in within that country. The sysops reduces the difficulty of the lockout action twice."
+            },
+            {
+               "traces": "3",
+               "result": "The sysops learns what city or community the hacker is in (or their location within a 10 kilometer radius). The sysops reduces the difficulty of the lockout action three times."
+            },
+            {
+               "traces": "4",
+               "result": "The sysops learns the address or exact location of the hacker. The sysops reduces the difficulty of the lockout action four times."
+            }
+         ]
+      },
+      {
+         "name": "Table III.2-22: Spending Advantage, Triumph, Threat, and Despair in Hacking Encounters",
+         "page": 234,
+         "columns": [
+            {
+               "header": "Symbols",
+               "value": "symbols"
+            },
+            {
+               "header": "Result Options",
+               "value": "result",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "symbols": "{@symbols a or t}",
+               "result": [
+                  "{@b Opportunity Identified}: The character finds a useful system exploit. Add {@dice boost} to the character's next {@skill Computers} check in this system.",
+                  "{@b Thorough Override (Hacker Only)}: If the hacker successfully overrode a security program, it cannot be reactivated for one additional round."
+               ]
+            },
+            {
+               "symbols": "{@symbols aa or t}",
+               "result": [
+                  "{@b Quick Commands}: The character may immediately perform an additional {@rule Enact Command} maneuver as an incidental.",
+                  "{@b Cover Tracks (Hacker Only)}: The hacker hides their presence, adding {@dice setback} to the sysops' next {@rule Trace User} action this encounter.",
+                  "{@b Dynamic Code (Sysops Only)}: The sysops mods the coding on a security program, adding {@dice setback} to all {@rule Override Security Program} checks targeting it."
+               ]
+            },
+            {
+               "symbols": "{@symbols aaa or t}",
+               "result": [
+                  "{@b Trolling}: The character takes a few moments to mock their opponent. Inflict 3 strain on one other user in the system.",
+                  "{@b Permanent Backdoor (Hacker Only)}: The hacker sets up a permanent means of accessing the system without needing to deal with its verification protocols. The difficulty of the {@rule Access System} action becomes {@difficulty Easy} as long as the hacker can access the backdoor.",
+                  "{@b Successful Trace (Sysops Only)}: The sysops successfully traces the hacker once (in addition to the other results of the check)."
+               ]
+            },
+            {
+               "symbols": "{@symbols t}",
+               "result": [
+                  "{@b Hard Shutdown (Hacker Only)}: If the hacker successfully {@rule override security program|overrode a security program}, it is so thoroughly disabled that it cannot be reactivated for the remainder of the encounter.",
+                  "{@b Blurred Sig (Hacker Only)}: The hacker obscures their signature, canceling one successful trace against them.",
+                  "{@b Backup Firewall (Sysops Only)}: The sysops activates their emergency defensive protocols. A system immediately gains an active backup firewall with strength 3, protecting one portion of the server chosen by the sysops.",
+                  "{@b Identified Exploit (Sysops Only)}: The sysops spots a backdoor in the system, removing one permanent backdoor of the sysops' choice."
+               ]
+            },
+            {
+               "symbols": "{@symbols h or d}",
+               "result": [
+                  "{@b Disorganized System}: The user gets lost in a maze of poorly-named sub-folders. Add {@dice setback} to the character's next {@b Computers} check in this system.",
+                  "{@b Online Distractions}: The user gets too focused on the online world. Add {@dice setback|2} to any non-{@b Computers} checks the user makes next turn."
+               ]
+            },
+            {
+               "symbols": "{@symbols hh or d}",
+               "result": [
+                  "{@b Limited Access (Hacker Only)}: The hacker may only perform one {@filter rule|hacking action|category:hacking action=1} or one {@filter rule|hacking maneuver|category:hacking maneuver=1} during their next turn.",
+                  "{@b I Know You! (Hacker Only)}: A sysops on the system recognizes the hacker's style. The next time they successfully use the {@rule Trace User} action, they successfully trace the hacker one additional time.",
+                  "{@b Careless Protocols (Sysops Only)}: Reduce the strength of one active security program (hacker's choice) by one to a minimum of 1."
+               ]
+            },
+            {
+               "symbols": "{@symbols hhh or d}",
+               "result": [
+                  "{@b Major Alert (Hacker Only)}: All users with access to the system become aware of the presence of an intruder on the network.",
+                  "{@b Permanent Backdoor (Sysops Only)}: As the sysops attempts to lock the system down, they leave a portion vulnerable. The hacker gains a means of accessing the system without needing to deal with its verification protocols. The difficulty of the {@rule Access System} action becomes {@difficulty Easy} as long as the hacker can access the backdoor."
+               ]
+            },
+            {
+               "symbols": "{@symbols d}",
+               "result": [
+                  "{@b Successful Trace (Hacker Only)}: Sloppy work allows one sysops on the system to successfully trace the hacker once.",
+                  "{@b Wrong Person (Sysops Only)}: As the sysops traces the hacker, they get one crucial element of the hacker's identity completely wrong. This does not remove a successful trace, but it does mean that they may have the wrong name, apartment number, or exact location of the hacker, which guarantees the hacker avoids any real-world retaliation and probably embarrasses the sysops in front of their superiors."
+               ]
+            }
+         ]
+      },
+      {
          "name": "Table III.4-1: Fear Guidelines",
          "page": 243,
          "columns": [
@@ -15386,6 +15930,10 @@
                "name": "all",
                "source": ""
             }
+         ],
+         "tags": [
+            "combat",
+            "defense"
          ]
       },
       {
@@ -15393,6 +15941,10 @@
          "tier": 3,
          "activation": "passive",
          "ranked": true,
+         "tags": [
+            "general",
+            "animal companion"
+         ],
          "description": [
             "Your character creates a bond with a single animal approved by your GM. This animal must be silhouette 0 (no larger than a mid-sized dog). The bond persists as long as your character chooses, although at your GM's discretion, the bond may also be broken due to abusive treatment or other extenuating circumstances.",
             "As long as the bond persists, the animal follows your character, and you dictate the animal's overall behavior (although, since the animal is only bonded with the character, not dominated, it may still perform inconvenient actions such as scratching furniture, consuming rations, and marking territory). Once per round in structured encounters, your character may spend one maneuver to direct their animal in performing one action and one maneuver during your character's turn. The animal must be within hearing and visual range of your character (generally medium range) to do this. Otherwise, the animal does not contribute to the encounter. The specifics of its behavior are up to you and your GM.",
@@ -15459,6 +16011,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "vehicles"
          ]
       },
       {
@@ -15474,6 +16030,11 @@
             {
                "name": "weird war"
             }
+         ],
+         "tags": [
+            "general",
+            "combat",
+            "career skills"
          ]
       },
       {
@@ -15500,6 +16061,10 @@
                "name": "Keyforge",
                "source": "sotc"
             }
+         ],
+         "tags": [
+            "combat",
+            "result manipulation"
          ]
       },
       {
@@ -15531,6 +16096,9 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general"
          ]
       },
       {
@@ -15562,6 +16130,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "social",
+            "combat",
+            "defense"
          ]
       },
       {
@@ -15593,6 +16166,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "social",
+            "result manipulation"
          ]
       },
       {
@@ -15624,6 +16201,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "support"
          ]
       },
       {
@@ -15655,6 +16236,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "social",
+            "status effect"
          ]
       },
       {
@@ -15694,6 +16279,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "vehicles"
          ]
       },
       {
@@ -15725,6 +16314,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged"
          ]
       },
       {
@@ -15756,6 +16349,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "characteristics"
          ]
       },
       {
@@ -15787,6 +16384,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "defense"
          ]
       },
       {
@@ -15823,6 +16424,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "vehicles",
+            "defense"
          ]
       },
       {
@@ -15854,6 +16460,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "defense"
          ]
       },
       {
@@ -15887,6 +16497,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "hacking",
+            "defense"
          ]
       },
       {
@@ -15920,6 +16535,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "hacking",
+            "defense"
          ]
       },
       {
@@ -15951,6 +16571,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "recovery"
          ]
       },
       {
@@ -15984,6 +16608,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "hacking"
          ]
       },
       {
@@ -16015,6 +16643,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "defense"
          ]
       },
       {
@@ -16046,6 +16678,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "melee"
          ]
       },
       {
@@ -16077,6 +16713,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "melee",
+            "downside"
          ]
       },
       {
@@ -16108,6 +16749,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "defense",
+            "critical injury"
          ]
       },
       {
@@ -16139,6 +16785,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged"
          ]
       },
       {
@@ -16170,6 +16820,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "defense"
          ]
       },
       {
@@ -16191,6 +16845,10 @@
             {
                "name": "modern day"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged"
          ]
       },
       {
@@ -16222,6 +16880,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "support",
+            "mobility"
          ]
       },
       {
@@ -16253,6 +16916,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "support",
+            "mobility"
          ]
       },
       {
@@ -16284,6 +16952,12 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "skills",
+            "narrative",
+            "mitigation"
          ]
       },
       {
@@ -16323,6 +16997,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged",
+            "defense"
          ]
       },
       {
@@ -16362,6 +17041,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "vehicles",
+            "mobility"
          ]
       },
       {
@@ -16401,6 +17085,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged",
+            "story points"
          ]
       },
       {
@@ -16432,6 +17121,9 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general"
          ]
       },
       {
@@ -16463,6 +17155,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged",
+            "mobility"
          ]
       },
       {
@@ -16494,6 +17191,12 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "support",
+            "skills",
+            "initiative"
          ]
       },
       {
@@ -16525,6 +17228,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "critical injury",
+            "story points"
          ]
       },
       {
@@ -16552,6 +17260,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "narrative"
          ]
       },
       {
@@ -16579,6 +17291,12 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "defense",
+            "story points",
+            "status effect"
          ]
       },
       {
@@ -16610,6 +17328,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "support",
+            "recovery"
          ]
       },
       {
@@ -16641,6 +17364,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "support",
+            "skills"
          ]
       },
       {
@@ -16672,6 +17400,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "support"
          ]
       },
       {
@@ -16703,6 +17435,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "crafting"
          ]
       },
       {
@@ -16734,6 +17470,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "mobility",
+            "status effect"
          ]
       },
       {
@@ -16765,6 +17506,12 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "skills",
+            "narrative",
+            "mitigation"
          ]
       },
       {
@@ -16796,6 +17543,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "money"
          ]
       },
       {
@@ -16827,6 +17578,12 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "animal companion",
+            "vehicles",
+            "mobility"
          ]
       },
       {
@@ -16858,6 +17615,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "story points",
+            "characteristics"
          ]
       },
       {
@@ -16876,6 +17638,10 @@
             {
                "name": "weird war"
             }
+         ],
+         "tags": [
+            "general",
+            "crafting"
          ]
       },
       {
@@ -16907,6 +17673,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "skills",
+            "skill check"
          ]
       },
       {
@@ -16938,6 +17709,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "skills",
+            "result manipulation"
          ]
       },
       {
@@ -16969,6 +17745,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "recovery"
          ]
       },
       {
@@ -16995,6 +17775,12 @@
                "name": "Keyforge",
                "source": "sotc"
             }
+         ],
+         "tags": [
+            "general",
+            "cybernetics",
+            "characteristics",
+            "skill check"
          ]
       },
       {
@@ -17013,6 +17799,10 @@
             {
                "name": "space opera"
             }
+         ],
+         "tags": [
+            "general",
+            "cybernetics"
          ]
       },
       {
@@ -17044,6 +17834,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "recovery"
          ]
       },
       {
@@ -17075,6 +17869,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "defense"
          ]
       },
       {
@@ -17106,6 +17904,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "defense"
          ]
       },
       {
@@ -17137,6 +17939,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "social"
          ]
       },
       {
@@ -17168,6 +17974,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "item quality"
          ]
       },
       {
@@ -17199,6 +18009,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "initiative"
          ]
       },
       {
@@ -17218,6 +18032,11 @@
                "name": "Terrinoth",
                "source": "rot"
             }
+         ],
+         "tags": [
+            "combat",
+            "ranged",
+            "item quality"
          ]
       },
       {
@@ -17245,6 +18064,12 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "initiative",
+            "combat",
+            "social"
          ]
       },
       {
@@ -17272,6 +18097,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "social",
+            "combat"
          ]
       },
       {
@@ -17299,6 +18128,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "social",
+            "combat"
          ]
       },
       {
@@ -17326,6 +18159,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "social",
+            "combat"
          ]
       },
       {
@@ -17353,6 +18190,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "social",
+            "combat"
          ]
       },
       {
@@ -17380,6 +18221,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "recovery"
          ]
       },
       {
@@ -17407,6 +18252,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "combat",
+            "defense"
          ]
       },
       {
@@ -17434,6 +18283,11 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "support",
+            "recovery"
          ]
       },
       {
@@ -17461,6 +18315,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "mobility"
          ]
       },
       {
@@ -17488,6 +18346,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "defense"
          ]
       },
       {
@@ -17515,6 +18377,10 @@
                "name": "Twilight Imperium",
                "source": "eoti"
             }
+         ],
+         "tags": [
+            "general",
+            "defense"
          ]
       }
    ],

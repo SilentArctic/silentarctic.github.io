@@ -7,7 +7,7 @@
          "abbreviation": "Fallout",
          "color": "#0e4e0b",
          "url": "https://www.dropbox.com/sh/sy07kxd2n3haz1d/AABkZzrdf0zFleUrUsAKmwbca?dl=0",
-         "version": "2025.1.20",
+         "version": "2025.12.09",
          "authors": [
             "Phil \"DarthGM\" Maiewski"
          ],
@@ -3119,7 +3119,7 @@
          "name": "Rad",
          "page": 8,
          "activation": "active",
-         "itemTypes": "any",
+         "gearType": "any",
          "description": [
             "When Rad is triggered, the target's {@rule Radiation|Radiation Level|fallout} increases by an amount equal to the weapon's Rad rating. When a character's {@rule Radiation|Radiation Level|fallout} is increased by the Rad item quality, they do not make a {@skill Resilience} check to try and mitigate the increase, but any Rad resistance they have is still applied.",
             "While wearing armor with this quality, reduce the {@rule Radiation|Radiation|Fallout} damage from all radioactive sources by an amount equal to the armor's Rad rating."
@@ -3129,7 +3129,7 @@
          "name": "Auto-Fire Only",
          "page": 10,
          "activation": "active",
-         "itemTypes": "weapon",
+         "gearType": "weapon",
          "description": [
             "Like {@quality Auto-Fire||crb}, but it must always be used."
          ]
@@ -5483,13 +5483,17 @@
    "talent": [
       {
          "name": "Chem Resistant",
-         "page": 7,
-         "tier": 1,
-         "activation": "passive",
-         "ranked": true,
-         "description": [
-            "When checking for addictions to {@rule Chems||fallout} at the end of an encounter, upgrade your {@skill Resilience||crb} check once per rank of Chem Resistance."
-         ],
+      "page": 7,
+      "tier": 1,
+      "activation": "passive",
+      "ranked": true,
+      "tags": [
+         "mitigation",
+         "defense"
+      ],
+      "description": [
+         "When checking for addictions to {@rule Chems||fallout} at the end of an encounter, upgrade your {@skill Resilience||crb} check once per rank of Chem Resistance."
+      ],
          "settings": [
             {
                "name": "modern day",
@@ -5499,13 +5503,17 @@
       },
       {
          "name": "Rad Resistant",
-         "page": 7,
-         "tier": 1,
-         "activation": "passive",
-         "ranked": true,
-         "description": [
-            "Reduce {@rule Radiation||Fallout} damage from all sources by 1 per rank of Rad Resistant."
-         ],
+      "page": 7,
+      "tier": 1,
+      "activation": "passive",
+      "ranked": true,
+      "tags": [
+         "mitigation",
+         "defense"
+      ],
+      "description": [
+         "Reduce {@rule Radiation||Fallout} damage from all sources by 1 per rank of Rad Resistant."
+      ],
          "settings": [
             {
                "name": "science fiction",
@@ -5515,13 +5523,17 @@
       },
       {
          "name": "Strong Back",
-         "page": 7,
-         "tier": 1,
-         "activation": "passive",
-         "ranked": true,
-         "description": [
-            "Increase your Encumbrance Threshold by 1 per rank of Strong Back."
-         ],
+      "page": 7,
+      "tier": 1,
+      "activation": "passive",
+      "ranked": true,
+      "tags": [
+         "general",
+         "characteristics"
+      ],
+      "description": [
+         "Increase your Encumbrance Threshold by 1 per rank of Strong Back."
+      ],
          "settings": [
             {
                "name": "all"
@@ -5530,13 +5542,17 @@
       },
       {
          "name": "Big Leagues",
-         "page": 7,
-         "tier": 2,
-         "activation": "passive",
-         "ranked": true,
-         "description": [
-            "Your character adds 1 damage per rank of Big Leagues to one hit per successful {@skill Melee||crb} combat check."
-         ],
+      "page": 7,
+      "tier": 2,
+      "activation": "passive",
+      "ranked": true,
+      "tags": [
+         "combat",
+         "melee"
+      ],
+      "description": [
+         "Your character adds 1 damage per rank of Big Leagues to one hit per successful {@skill Melee||crb} combat check."
+      ],
          "settings": [
             {
                "name": "all"
@@ -5545,13 +5561,17 @@
       },
       {
          "name": "Bloody Mess",
-         "page": 7,
-         "tier": 2,
-         "activation": "active (incidental)",
-         "ranked": false,
-         "description": [
-            "When you perform a combat check that defeats an opponent (or a minion from a minion group), you may spend {@symbols aaa or t} to {@rule disoriented|Disorient|crb} all opponents at short range from the target until the end of your next turn. The target is killed and cannot be revived by any means."
-         ],
+      "page": 7,
+      "tier": 2,
+      "activation": "active (incidental)",
+      "ranked": false,
+      "tags": [
+         "combat",
+         "status effect"
+      ],
+      "description": [
+         "When you perform a combat check that defeats an opponent (or a minion from a minion group), you may spend {@symbols aaa or t} to {@rule disoriented|Disorient|crb} all opponents at short range from the target until the end of your next turn. The target is killed and cannot be revived by any means."
+      ],
          "settings": [
             {
                "name": "all"
@@ -5560,13 +5580,17 @@
       },
       {
          "name": "Gunslinger",
-         "page": 7,
-         "tier": 2,
-         "activation": "passive",
-         "ranked": true,
-         "description": [
-            "Your character adds 1 damage per rank of Gunslinger to one hit per successful {@skill Ranged (Light)||crb} combat check."
-         ],
+      "page": 7,
+      "tier": 2,
+      "activation": "passive",
+      "ranked": true,
+      "tags": [
+         "combat",
+         "ranged"
+      ],
+      "description": [
+         "Your character adds 1 damage per rank of Gunslinger to one hit per successful {@skill Ranged (Light)||crb} combat check."
+      ],
          "settings": [
             {
                "name": "all"
@@ -5575,13 +5599,17 @@
       },
       {
          "name": "Iron Fist",
-         "page": 7,
-         "tier": 2,
-         "activation": "passive",
-         "ranked": true,
-         "description": [
-            "Your character adds 1 damage per rank of Iron Fist to one hit per successful {@skill Brawl||crb} combat check."
-         ],
+      "page": 7,
+      "tier": 2,
+      "activation": "passive",
+      "ranked": true,
+      "tags": [
+         "combat",
+         "unarmed"
+      ],
+      "description": [
+         "Your character adds 1 damage per rank of Iron Fist to one hit per successful {@skill Brawl||crb} combat check."
+      ],
          "settings": [
             {
                "name": "all"
@@ -5590,13 +5618,18 @@
       },
       {
          "name": "Pain Train",
-         "page": 8,
-         "tier": 2,
-         "activation": "active (incidental)",
-         "ranked": false,
-         "description": [
-            "When you move to engage a target, you may activate this talent to add 3 damage to one hit from a successful close combat check made before the beginning of your next turn."
-         ],
+      "page": 8,
+      "tier": 2,
+      "activation": "active (incidental)",
+      "ranked": false,
+      "tags": [
+         "combat",
+         "melee",
+         "mobility"
+      ],
+      "description": [
+         "When you move to engage a target, you may activate this talent to add 3 damage to one hit from a successful close combat check made before the beginning of your next turn."
+      ],
          "settings": [
             {
                "name": "all"
@@ -5605,13 +5638,17 @@
       },
       {
          "name": "Rifleman",
-         "page": 8,
-         "tier": 2,
-         "activation": "passive",
-         "ranked": true,
-         "description": [
-            "Your character adds 1 damage per rank of Rifleman to one hit per successful {@skill Ranged (Heavy)||crb} combat check."
-         ],
+      "page": 8,
+      "tier": 2,
+      "activation": "passive",
+      "ranked": true,
+      "tags": [
+         "combat",
+         "ranged"
+      ],
+      "description": [
+         "Your character adds 1 damage per rank of Rifleman to one hit per successful {@skill Ranged (Heavy)||crb} combat check."
+      ],
          "settings": [
             {
                "name": "all"
@@ -5620,13 +5657,17 @@
       },
       {
          "name": "Better Criticals",
-         "page": 8,
-         "tier": 3,
-         "activation": "passive",
-         "ranked": true,
-         "description": [
-            "Add 10 per rank of Better Criticals to any {@rule critical injuries|Critical Injury|crb} results inflicted on opponents."
-         ],
+      "page": 8,
+      "tier": 3,
+      "activation": "passive",
+      "ranked": true,
+      "tags": [
+         "combat",
+         "critical injury"
+      ],
+      "description": [
+         "Add 10 per rank of Better Criticals to any {@rule critical injuries|Critical Injury|crb} results inflicted on opponents."
+      ],
          "settings": [
             {
                "name": "all"
@@ -5635,13 +5676,17 @@
       },
       {
          "name": "Demolition Expert",
-         "page": 8,
-         "tier": 3,
-         "activation": "passive",
-         "ranked": true,
-         "description": [
-            "Increase {@quality Blast||crb} damage dealt by 1 per rank of Demolition Expert."
-         ],
+      "page": 8,
+      "tier": 3,
+      "activation": "passive",
+      "ranked": true,
+      "tags": [
+         "combat",
+         "item quality"
+      ],
+      "description": [
+         "Increase {@quality Blast||crb} damage dealt by 1 per rank of Demolition Expert."
+      ],
          "settings": [
             {
                "name": "all"
@@ -5650,14 +5695,19 @@
       },
       {
          "name": "Medic",
-         "page": 8,
-         "tier": 3,
-         "activation": "passive",
-         "ranked": true,
-         "description": [
-            "{@i Note: This talent replaces {@talent Painkiller Specialization||crb} in the CRB.}",
-            "When your character uses {@gear painkiller|Stimpacks|crb}, the target heals 1 additional wound per rank of Medic. The sixth {@gear painkiller|Stimpack|crb} and beyond each day still has no effect. Additionally, when your character uses {@gear RadAway|RadAway|fallout}, the target reduces their {@rule Radiation||fallout} by 1 additional level."
-         ],
+      "page": 8,
+      "tier": 3,
+      "activation": "passive",
+      "ranked": true,
+      "tags": [
+         "support",
+         "recovery",
+         "gear"
+      ],
+      "description": [
+         "{@i Note: This talent replaces {@talent Painkiller Specialization||crb} in the CRB.}",
+         "When your character uses {@gear painkiller|Stimpacks|crb}, the target heals 1 additional wound per rank of Medic. The sixth {@gear painkiller|Stimpack|crb} and beyond each day still has no effect. Additionally, when your character uses {@gear RadAway|RadAway|fallout}, the target reduces their {@rule Radiation||fallout} by 1 additional level."
+      ],
          "settings": [
             {
                "name": "Fallout",
@@ -5667,13 +5717,18 @@
       },
       {
          "name": "Commando",
-         "page": 8,
-         "tier": 4,
-         "activation": "active (maneuver)",
-         "ranked": false,
-         "description": [
-            "Perform the Commando maneuver to ignore the increased difficulty due to the {@quality Auto-Fire||crb} quality of attacks made this turn."
-         ],
+      "page": 8,
+      "tier": 4,
+      "activation": "active (maneuver)",
+      "ranked": false,
+      "tags": [
+         "combat",
+         "ranged",
+         "result manipulation"
+      ],
+      "description": [
+         "Perform the Commando maneuver to ignore the increased difficulty due to the {@quality Auto-Fire||crb} quality of attacks made this turn."
+      ],
          "settings": [
             {
                "name": "all"
@@ -5682,13 +5737,18 @@
       },
       {
          "name": "Heavy Gunner",
-         "page": 8,
-         "tier": 4,
-         "activation": "active (incidental)",
-         "ranked": false,
-         "description": [
-            "When making a {@skill Gunnery||crb} check, the character may spend {@symbols aaa or t} to {@rule staggered|Stagger|crb} the target until the end of the target's next turn."
-         ],
+      "page": 8,
+      "tier": 4,
+      "activation": "active (incidental)",
+      "ranked": false,
+      "tags": [
+         "combat",
+         "ranged",
+         "status effect"
+      ],
+      "description": [
+         "When making a {@skill Gunnery||crb} check, the character may spend {@symbols aaa or t} to {@rule staggered|Stagger|crb} the target until the end of the target's next turn."
+      ],
          "settings": [
             {
                "name": "all"
@@ -5697,13 +5757,18 @@
       },
       {
          "name": "Penetrator",
-         "page": 8,
-         "tier": 4,
-         "activation": "active (maneuver)",
-         "ranked": false,
-         "description": [
-            "Before making a combat check this turn, perform the Penetrator maneuver to add the {@quality Pierce||crb} quality to the attack with a rating equal to your {@characteristic Cunning||crb}. If the weapon already has {@quality Pierce||crb}, it is improved by an amount equal to your {@characteristic Cunning||crb}."
-         ],
+      "page": 8,
+      "tier": 4,
+      "activation": "active (maneuver)",
+      "ranked": false,
+      "tags": [
+         "combat",
+         "item quality",
+         "ranged"
+      ],
+      "description": [
+         "Before making a combat check this turn, perform the Penetrator maneuver to add the {@quality Pierce||crb} quality to the attack with a rating equal to your {@characteristic Cunning||crb}. If the weapon already has {@quality Pierce||crb}, it is improved by an amount equal to your {@characteristic Cunning||crb}."
+      ],
          "settings": [
             {
                "name": "all"
@@ -5712,13 +5777,17 @@
       },
       {
          "name": "Blitz",
-         "page": 8,
-         "tier": 5,
-         "activation": "active (incidental)",
-         "ranked": false,
-         "description": [
-            "Once per turn, you may move to Engaged range with an opponent at Short range as an Incidental action."
-         ],
+      "page": 8,
+      "tier": 5,
+      "activation": "active (incidental)",
+      "ranked": false,
+      "tags": [
+         "mobility",
+         "combat"
+      ],
+      "description": [
+         "Once per turn, you may move to Engaged range with an opponent at Short range as an Incidental action."
+      ],
          "settings": [
             {
                "name": "all"

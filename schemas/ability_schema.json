@@ -15,6 +15,10 @@
          "tags": {
             "$ref": "item_tags_sub_schema.json",
             "description": "Applicable tags for filtering."
+         },
+         "id": {
+            "type": "string",
+            "description": "Unique item id. You shouldn't have to touch this field."
          }
       },
       "required": [
