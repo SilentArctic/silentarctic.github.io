@@ -64,7 +64,8 @@
             }
          },
          "tags": {
-            "$ref": "talent_tags_sub_schema.json"
+            "$ref": "talent_tags_sub_schema.json",
+            "description": "Applicable tags for filtering."
          },
          "settings": {
             "$ref": "settings_sub_schema.json"

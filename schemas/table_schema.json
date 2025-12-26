@@ -51,19 +51,37 @@
          },
          "rows": {
             "type": "array",
-            "description": "Rows in the table.",
+            "description": "Rows in the table. Each top-level item represents a row and must have <key>:<value> pairs in the order of <col header/value>:<cell data>. A property name of \"subtitle\" will instead render a subtitle with the given value.",
             "items": {
-               "type": "object",
-               "title": "Subtitle",
-               "description": "Each row is an object containing key/value pairs. The key must match a column header or value, and the value is an array of strings containing the content of the row.",
-               "properties": {
-                  "subtitle": {
-                     "type": "string",
-                     "description": "A subtitle spans the entire width of the table and has a solid background to separate different sections of the table."
+               "anyOf": [
+                  {
+                     "type": "object",
+                     "title": "Subtitle",
+                     "description": "A subtitle row spans the entire width of the table and has a solid background to separate different sections of the table.",
+                     "properties": {
+                        "subtitle": {
+                           "type": "string",
+                           "description": "Subtitle text."
+                        }
+                     },
+                     "optional": [
+                        "subtitle"
+                     ]
+                  },
+                  {
+                     "type": "object",
+                     "title": "Row",
+                     "description": "Each row is an object containing key/value pairs. The key must match a column header or value, and the value is the cell content.",
+                     "patternProperties": {
+                        "^(?!subtitle$).*": {
+                           "type": ["string", "array"],
+                           "items": {
+                              "type": "string"
+                           },
+                           "description": "Cell content for the column."
+                        }
+                     }
                   }
-               },
-               "optional": [
-                  "subtitle"
                ]
             }
          },
