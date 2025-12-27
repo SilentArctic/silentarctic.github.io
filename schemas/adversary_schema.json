@@ -420,7 +420,8 @@
             "description": "Adversary description (advanced text is not supported by the Homebrew Builder)."
          },
          "settings": {
-            "$ref": "./settings_sub_schema.json"
+            "$ref": "./settings_sub_schema.json",
+            "description": "Override global content pack settings for this item."
          },
          "tags": {
             "type": "array",

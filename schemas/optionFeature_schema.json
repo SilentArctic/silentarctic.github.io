@@ -63,7 +63,8 @@
             "description": "Metadata for the option/feature. You likely won't need this."
          },
          "settings": {
-            "$ref": "settings_sub_schema.json"
+            "$ref": "settings_sub_schema.json",
+            "description": "Override global content pack settings for this item."
          },
          "id": {
             "type": "string",

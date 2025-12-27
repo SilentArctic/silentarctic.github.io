@@ -46,12 +46,12 @@
             "oneOf": [
                {
                   "type": "integer",
-                  "title": "Value",
+                  "title": "value",
                   "description": "Numerical value of the gear."
                },
                {
                   "type": "string",
-                  "title": "Default option",
+                  "title": "default option",
                   "description": "Some items can't be valued monetarily. These values provided options to indicate that.",
                   "enum": [
                      "priceless",
@@ -107,7 +107,8 @@
             }
          },
          "settings": {
-            "$ref": "./settings_sub_schema.json"
+            "$ref": "./settings_sub_schema.json",
+            "description": "Override global content pack settings for this item."
          },
          "id": {
             "type": "string",

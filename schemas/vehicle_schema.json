@@ -245,7 +245,10 @@
             }
          },
          "description": { "$ref": "./varyingDisplay_sub_schema.json" },
-         "settings": { "$ref": "./settings_sub_schema.json" },
+         "settings": {
+            "$ref": "./settings_sub_schema.json",
+            "description": "Override global content pack settings for this item."
+         },
          "id": {
             "type": "string",
             "description": "Unique item id. You shouldn't have to touch this field."

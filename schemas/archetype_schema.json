@@ -185,7 +185,7 @@
          },
          "abilities": {
             "type": "array",
-            "description": "List of unique adversary abilities",
+            "description": "List of unique archetype abilities",
             "items": {
                "oneOf": [
                   {
@@ -242,7 +242,8 @@
             }
          },
          "settings": {
-            "$ref": "./settings_sub_schema.json"
+            "$ref": "./settings_sub_schema.json",
+            "description": "Override global content pack settings for this item."
          },
          "id": {
             "type": "string",
