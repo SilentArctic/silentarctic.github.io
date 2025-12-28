@@ -56,18 +56,16 @@
             "description": "If the talent is ranked or not."
          },
          "description": {
-            "type": "array",
-            "description": "Talent description.",
-            "items": {
-               "type": "string",
-               "description": "Talent description."
-            }
+            "$ref": "./varyingDisplay_sub_schema.json",
+            "description": "Talent description."
          },
          "tags": {
-            "$ref": "talent_tags_sub_schema.json"
+            "$ref": "talent_tags_sub_schema.json",
+            "description": "Applicable tags for filtering."
          },
          "settings": {
-            "$ref": "settings_sub_schema.json"
+            "$ref": "settings_sub_schema.json",
+            "description": "Override global content pack settings for this item."
          },
          "id": {
             "type": "string",

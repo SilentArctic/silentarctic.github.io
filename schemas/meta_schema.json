@@ -12,7 +12,7 @@
             },
             "json": {
                "type": "string",
-               "description": "kebab-case title of your homebrew. This is used to differentiate your data from everything else and {@b must be unique}."
+               "description": "kebab-case title of your homebrew. This is used to differentiate your data from everything else and {@b must be unique}. This field can only be changed manually in a json editor."
             },
             "full": {
                "type": "string",
@@ -85,6 +85,7 @@
       },
       "filters": {
          "type": "object",
+         "description": "These custom properties will be added to the GenesysRef filters.",
          "properties": {
             "settings": {
                "type": "array",
@@ -130,7 +131,10 @@
          ],
          "additionalProperties": false
       },
-      "defaultItemSettings": { "$ref": "settings_sub_schema.json" }
+      "defaultItemSettings": {
+         "$ref": "settings_sub_schema.json",
+         "description": "Default settings for each item. Can be overridden by the item's optional \"settings\" property. If your content pack has a balanced mixture of different settings such as the EPG, set this as an empty array."
+      }
    },
    "required": [
       "source",

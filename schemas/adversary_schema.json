@@ -35,6 +35,7 @@
          },
          "characteristics": {
             "type": "object",
+            "description": "Adversary characteristics.",
             "properties": {
                "brawn": {
                   "type": "integer",
@@ -73,6 +74,7 @@
          },
          "derived": {
             "type": "object",
+            "description": "Attributes derived from characteristics and other features.",
             "properties": {
                "soak": {
                   "type": "integer",
@@ -88,9 +90,9 @@
                },
                "defense": {
                   "type": "array",
+                  "description": "Adversary's defense (first is melee, second is ranged).",
                   "items": {
-                     "type": "integer",
-                     "description": "Adversary's defense (first is melee, second is ranged)."
+                     "type": "integer"
                   },
                   "maxItems": 2
                }
@@ -107,6 +109,7 @@
          },
          "powerLevels": {
             "type": "object",
+            "description": "Estimates of an adversaries power (see page 84 in the Expanded Player's Guide).",
             "properties": {
                "combat": {
                   "type": "integer",
@@ -130,6 +133,7 @@
          },
          "skills": {
             "type": "array",
+            "description": "List of adversary skills.",
             "items": {
                "type": "object",
                "properties": {
@@ -258,6 +262,7 @@
             "properties": {
                "skills": {
                   "type": "array",
+                  "description": "List of skills the adversary can use to cast spells.",
                   "items": {
                      "type": "object",
                      "properties": {
@@ -281,6 +286,7 @@
                },
                "spells": {
                   "type": "array",
+                  "description": "List of pre-defined spells the adversary can cast.",
                   "items": {
                      "type": "object",
                      "properties": {
@@ -410,16 +416,18 @@
             }
          },
          "description": {
-            "$ref": "./varyingDisplay_sub_schema.json"
+            "$ref": "./varyingDisplay_sub_schema.json",
+            "description": "Adversary description (advanced text is not supported by the Homebrew Builder)."
          },
          "settings": {
-            "$ref": "./settings_sub_schema.json"
+            "$ref": "./settings_sub_schema.json",
+            "description": "Override global content pack settings for this item."
          },
          "tags": {
             "type": "array",
+            "description": "Deprecated. Adversary tags.",
             "items": {
-               "type": "string",
-               "description": "Deprecated. Adversary tags."
+               "type": "string"
             }
          },
          "id": {

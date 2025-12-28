@@ -106,16 +106,15 @@
             "description": "Url for a related image."
          },
          "wt": {
+            "description": "Wound threshold.",
             "oneOf": [
                {
                   "type": "integer",
-                  "title": "Standard",
-                  "description": "Wound threshold."
+                  "title": "Standard"
                },
                {
                   "type": "array",
                   "title": "Archetype Pair",
-                  "description": "Wound threshold.",
                   "items": {
                      "type": "integer"
                   }
@@ -123,16 +122,15 @@
             ]
          },
          "st": {
+            "description": "Strain threshold.",
             "oneOf": [
                {
                   "type": "integer",
-                  "title": "Standard",
-                  "description": "Strain threshold."
+                  "title": "Standard"
                },
                {
                   "type": "array",
                   "title": "Archetype Pair",
-                  "description": "Strain threshold.",
                   "items": {
                      "type": "integer"
                   }
@@ -185,16 +183,18 @@
          },
          "abilities": {
             "type": "array",
-            "description": "List of unique adversary abilities",
+            "description": "List of unique archetype abilities",
             "items": {
                "oneOf": [
                   {
                      "type": "string",
-                     "title": "Standard"
+                     "title": "External ability",
+                     "description": "Name of archetype ability from any source."
                   },
                   {
                      "type": "object",
-                     "title": "Archetype Pair",
+                     "title": "Private ability",
+                     "description": "Custom ability only for this archetype.",
                      "properties": {
                         "description": {
                            "type": "array",
@@ -242,7 +242,8 @@
             }
          },
          "settings": {
-            "$ref": "./settings_sub_schema.json"
+            "$ref": "./settings_sub_schema.json",
+            "description": "Override global content pack settings for this item."
          },
          "id": {
             "type": "string",
