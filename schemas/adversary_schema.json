@@ -90,9 +90,9 @@
                },
                "defense": {
                   "type": "array",
+                  "description": "Adversary's defense (first is melee, second is ranged).",
                   "items": {
-                     "type": "integer",
-                     "description": "Adversary's defense (first is melee, second is ranged)."
+                     "type": "integer"
                   },
                   "maxItems": 2
                }
@@ -425,9 +425,9 @@
          },
          "tags": {
             "type": "array",
+            "description": "Deprecated. Adversary tags.",
             "items": {
-               "type": "string",
-               "description": "Deprecated. Adversary tags."
+               "type": "string"
             }
          },
          "id": {

@@ -29,10 +29,10 @@
       "vehicle": { "$ref": "vehicle_schema.json" }
    },
    "required": [
-      "$schema",
       "_meta"
    ],
    "optional": [
+      "$schema",
       "adventure",
       "adversary",
       "adversaryAbility",
