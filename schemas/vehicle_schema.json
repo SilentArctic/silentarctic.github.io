@@ -134,7 +134,7 @@
                   },
                   "description": {
                      "type": "string",
-                     "description": "Vehicle description."
+                     "description": "DEPRECATED. Use this field to output weapon text (as seen in the books) instead of a table."
                   },
                   "fireArc": {
                      "type": "string",
