@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.12.7",
+         "version": "2025.12.30",
          "json": "core-rule-book",
          "full": "Genesys Core Rulebook",
          "abbreviation": "CRB",
@@ -11672,6 +11672,16 @@
          ]
       },
       {
+         "name": "Impossible Tasks",
+         "page": 18,
+         "type": "character",
+         "description": [
+            "Situations exist with impossibly low chances of success. In almost all cases, your GM simply states that any such check automatically fails without your needing to assemble and roll a dice pool.",
+            "However, your GM may decide to allow your player character (PC) to attempt a check for which success is extremely improbable: for throwing a grenade in hopes that it puts out a fire, scaling a perfectly smooth wall, or trying to tame a mother bear when you find yourself between her and her cubs, for instance. If you're the GM, you should only allow a PC to attempt an Impossible task during critical moments in a story's arc or in life-or-death situations.",
+            "If you want to attempt an Impossible task, you must spend one Story Point just to attempt the check. Your character gains no benefits for doing so, beyond being able to attempt the task in the first place (and you cannot spend any additional Story Points on the check). Once you've done so, an Impossible task adds five Difficulty dice {@dice difficulty|5} to the pool, the same as a Formidable task."
+         ]
+      },
+      {
          "name": "Trace Information",
          "page": 233,
          "type": "computers",
@@ -13876,7 +13886,7 @@
             },
             {
                "rarity": "9+",
-               "difficulty": "{@b Impossible} {see page 18}"
+               "difficulty": "{@b Impossible} (see {@sidebar Impossible Tasks|page 18})"
             }
          ]
       },
