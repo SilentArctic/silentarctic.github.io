@@ -12,7 +12,7 @@
             },
             "json": {
                "type": "string",
-               "description": "kebab-case title of your homebrew. This is used to differentiate your data from everything else and {@b must be unique}. This field can only be changed manually in a json editor."
+               "description": "kebab-case title of your homebrew. This is used to differentiate your data from everything else and **must be unique**. This field can only be changed manually in a json editor."
             },
             "full": {
                "type": "string",
