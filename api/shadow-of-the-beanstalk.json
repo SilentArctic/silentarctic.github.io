@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.12.7",
+         "version": "2025.12.30",
          "json": "shadow-of-the-beanstalk",
          "full": "Android: Shadow of the Beanstalk",
          "abbreviation": "SotB",
@@ -23,15 +23,12 @@
          ],
          "optionFeatureType": [
             "ice",
-            "icebreaker",
-            "attachment"
+            "icebreaker"
          ],
          "optionFeatureClass": [
             "barrier",
             "sentry",
-            "code gate",
-            "armor",
-            "weapon"
+            "code gate"
          ]
       },
       "defaultItemSettings": [
@@ -18539,7 +18536,7 @@
          "activation": "active (action)",
          "ranked": false,
          "description": [
-            "Once per session your character may make an {@difficulty average|Knowledge (Net)} during a Network encounter. If you succeed, your character knows the names, strengths, and other qualities of all ice (active or deactivated) on one system that you currently have access to, as well as all other characters (sysops and runners) that currently are accessing that system.",
+            "Once per session your character may make an {@difficulty average|Knowledge (The Net)} during a Network encounter. If you succeed, your character knows the names, strengths, and other qualities of all ice (active or deactivated) on one system that you currently have access to, as well as all other characters (sysops and runners) that currently are accessing that system.",
             "Your character may spend {@symbols aaa} or {@symbols t} from this check (whether or not they succeeded) to add {@symbols s} to all Computer checks involving that system that they make for the remainder of the encounter."
          ],
          "page": 52,

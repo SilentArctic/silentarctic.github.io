@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.12.30",
+         "version": "2025.12.30.2",
          "json": "core-rule-book",
          "full": "Genesys Core Rulebook",
          "abbreviation": "CRB",
@@ -4033,7 +4033,7 @@
          "description": [
             "Druids have a special connection with the primal powers of the natural world. They may be individuals who live in the wilderness, or regular people who have a particular affinity for life and nature. Druids can tap into the primal power of life to summon magic and perform fantastical feats.",
             "The Druid counts the following skills as career skills: {@skill Athletics}, {@skill Brawl}, {@skill Coordination}, {@skill Melee}, {@skill Primal}, {@skill Resilience}, {@skill Survival}, and {@skill Vigilance}. Before spending experience during character creation, a Druid may choose four of their career skills and gain one rank in each of them.",
-            "If you're using this career in a fantasy setting, you should switch {@skill Melee} for Melee (Heavy)."
+            "If you're using this career in a fantasy setting, you should switch {@skill Melee} for {@skill Melee (Heavy)}."
          ],
          "settings": [
             {
@@ -13149,7 +13149,7 @@
          "characteristic": "Intellect",
          "category": "magic",
          "description": [
-            "The Arcana skill represents your ability to manipulate magical energies, whether they are the fundamental forces of nature or power drawn from an unnatural source. Magic is used to cast spells and identify sources of magic in the world. It also includes your general knowledge of magic and its function. The Arcana skill is not, however, used for magic derived from the gods or similar divine sources; that would be the {@skill Divine} skill"
+            "The Arcana skill represents your ability to manipulate magical energies, whether they are the fundamental forces of nature or power drawn from an unnatural source. Magic is used to cast spells and identify sources of magic in the world. It also includes your general knowledge of magic and its function. The Arcana skill is not, however, used for magic derived from the gods or similar divine sources; that would be the {@skill Divine} skill."
          ],
          "shouldUse": [
             "Your character wants to throw a fireball at a group of enemies.",
