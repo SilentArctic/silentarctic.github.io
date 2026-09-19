@@ -31,6 +31,12 @@ node -e "const d=require('./<pack>'); console.log(JSON.stringify(d._meta.source,
 
 Note the abbreviation, version, and group sizes. In PDF mode, check the PDF exists.
 
+Snapshot the pack before anything changes. The final schema check (step 8) compares against this copy:
+
+```bash
+mkdir -p "<scratchpad>/lint" && cp <pack> "<scratchpad>/lint/<pack-basename>.before.json"
+```
+
 ## 2. Quick scan (always)
 
 ```bash
@@ -142,8 +148,24 @@ node .claude/skills/pack-core/scripts/bump-version.js --dest <pack>
 
 Run this once after any successful write. It may leave the version alone if today's version hasn't been pushed yet; quote its output line.
 
-## 7. Confirm and summarize
+## 7. Confirm
 
-- Re-run the step 2 check (and step 3 with the same scope) and confirm the fixed findings are gone.
-- Summarize: what was fixed, what was left and why (source errors, declined, schema), and the version line.
+Re-run the step 2 check (and step 3 with the same scope) and confirm the fixed findings are gone.
+
+## 8. Verify against the schema (always, last)
+
+After everything else, and even when nothing was changed, validate the whole file against the schema. This uses the same AJV setup as the repo's Jest test:
+
+```bash
+node .claude/skills/pack-core/scripts/validate.js --dest <pack> --baseline "<scratchpad>/lint/<pack-basename>.before.json"
+```
+
+- **`VALID`:** say so in the summary.
+- **"new since baseline" > 0:** this run caused a schema error. That shouldn't happen, because `patch.js` blocks new errors. Stop, show the errors, and fix or revert the operation that caused them before finishing.
+- **"already there at baseline":** these were in the file before the lint. List them under ℹ Schema. Don't fix them as part of this run unless the user asks; the schemas are mid-migration, so ask which side (data or schema) is meant to change.
+- For extra context, `--against HEAD` shows which errors are new since the last commit. That includes the user's own uncommitted edits, so never attribute those to the lint.
+
+## 9. Summarize
+
+- What was fixed, what was left and why (source errors, declined, schema), the version line, and the schema result from step 8.
 - Suggest `git diff <pack>`. Don't commit unless asked.
