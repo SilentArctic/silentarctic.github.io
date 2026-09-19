@@ -477,6 +477,11 @@ function lintHygiene(str, where, tags) {
       for (const m of str.matchAll(re)) warn('HYGIENE', `${where}: ${msg}: ${snippet(str, m.index, m.index + m[0].length)}`);
    }
    if (/^\s|\s$/.test(str)) warn('HYGIENE', `${where}: leading/trailing whitespace`);
+   for (const [open, close] of [['(', ')'], ['[', ']']]) {
+      const opens = str.split(open).length - 1;
+      const closes = str.split(close).length - 1;
+      if (opens !== closes) warn('HYGIENE', `${where}: unbalanced "${open}${close}" (${opens} "${open}" vs ${closes} "${close}")`);
+   }
 
    const outside = blankTags(str, tags, true);
    for (const m of outside.matchAll(/\b(Simple|Easy|Average|Hard|Daunting|Formidable)\s*\(/g)) {
@@ -613,8 +618,13 @@ for (const [group, items] of Object.entries(groupsToLint)) {
          error('REFS', `${label}.${ref.where}: ${r.error}`);
       }
 
-      /* adversary skills: the characteristic must be the skill's linked characteristic */
+      /* adversary stat-block rules and skills: the characteristic must be the skill's linked characteristic */
       if (group === 'adversary') {
+         const hasStrain = item.derived && item.derived.strain !== undefined;
+         if (item.type === 'nemesis' && item.derived && !hasStrain) warn('REFS', `${label}: nemesis without a strain threshold`);
+         if (item.type && item.type !== 'nemesis' && hasStrain) warn('REFS', `${label}: ${item.type} with a strain threshold (only nemeses have one)`);
+         if (item.type === 'minion' && (item.skills || []).some(s => s && s.ranks !== undefined)) warn('REFS', `${label}: minion skills should not have ranks`);
+         if (item.derived && (!Array.isArray(item.derived.defense) || item.derived.defense.length !== 2)) warn('REFS', `${label}: defense should be [melee, ranged]`);
          (Array.isArray(item.skills) ? item.skills : []).forEach((s, i) => {
             if (!s || typeof s.name !== 'string' || typeof s.characteristic !== 'string') return;
             const pack = s.source ? packs.byAbbr.get(String(s.source).toLowerCase()) : destPack;
