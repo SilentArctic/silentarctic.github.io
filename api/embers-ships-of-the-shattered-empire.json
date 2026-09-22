@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2026.9.22",
+         "version": "2026.9.22.1",
          "json": "embers-ships-of-the-shattered-empire",
          "full": "Twilight Imperium: Ships of the Shattered Empire",
          "abbreviation": "EotI:SSE",
@@ -289,6 +289,145 @@
       }
    ],
    "table": [
+      {
+         "name": "Table 1-1: Speed Advantage Difficulty",
+         "page": 8,
+         "columns": [
+            {
+               "header": "Difference in Speed",
+               "value": "difference",
+               "size": 2
+            },
+            {
+               "header": "Difficulty",
+               "value": "difficulty"
+            }
+         ],
+         "rows": [
+            {
+               "difference": "Initiating vehicle's speed is one or more higher than target vehicle.",
+               "difficulty": "{@difficulty easy}"
+            },
+            {
+               "difference": "Initiating vehicle is traveling at the same speed as target vehicle.",
+               "difficulty": "{@difficulty average}"
+            },
+            {
+               "difference": "Initiating vehicle's speed is one lower than target vehicle.",
+               "difficulty": "{@difficulty hard}"
+            },
+            {
+               "difference": "Initiating vehicle's speed is two or more lower than target vehicle.",
+               "difficulty": "{@difficulty daunting}"
+            }
+         ]
+      },
+      {
+         "name": "Table 1-2: Spending Advantage and Triumph in Starship Combat",
+         "page": 11,
+         "columns": [
+            {
+               "header": "Result",
+               "value": "result",
+               "size": 1
+            },
+            {
+               "header": "Result Options",
+               "value": "options",
+               "size": 5
+            }
+         ],
+         "rows": [
+            {
+               "result": "{@symbols a or t}",
+               "options": [
+                  "A scan of an enemy ship reveals that their communications are using a weak encryption, offering a chance to jam their signals or possibly even hack into their computer network. The next {@rule Jamming} or {@rule Hack Enemy's Systems} action to target that ship adds {@symbols ss} to the result."
+               ]
+            },
+            {
+               "result": "{@symbols aa or t}",
+               "options": [
+                  "The pilot of an allied ship of silhouette 4 or smaller can use a {@rule Reposition} maneuver as an out-of-turn {@rule Incidentals|incidental}.",
+                  "One of the crew manages to effect some temporary repairs, repairing 1 system strain for the character's ship.",
+                  "The ongoing fighting leads to casualties aboard an enemy ship of silhouette 4 or larger. One weapon of your choice on that ship cannot be used next turn while it is being recrewed."
+               ]
+            },
+            {
+               "result": "{@symbols aaa or t}",
+               "options": [
+                  "The captain, the first officer, the master gunner, or another crucial officer aboard the enemy vessel is injured in the fighting and suffers a {@rule Critical Injuries|Critical Injury}.",
+                  "A sizable portion of the crew aboard the enemy ship have been killed or injured in the fighting. Add {@dice setback} to all checks made by crew aboard the enemy ship for the remainder of the encounter."
+               ]
+            },
+            {
+               "result": "{@symbols t}",
+               "options": [
+                  "The captain, the first officer, the master gunner, or another crucial officer aboard the enemy vessel is severely injured or killed in the fighting. They suffer wounds equal to one more than their wound threshold and are {@rule incapacitated}.",
+                  "Brilliant predictive maneuvering allows the character's ship to be in the right place at the right time. At the start of the pilot's turn, they may turn the ship up to 90 degrees as an {@rule Incidentals|incidental}. This is in addition to any turns from the {@rule Reposition} maneuver and can happen before forced movement.",
+                  "The master gunner spots a flaw in the enemy's defense systems. The next combat check they make targeting an enemy ship treats the target's defense as 0."
+               ]
+            },
+            {
+               "result": "{@symbols tt}",
+               "options": [
+                  "One of the ship's crew hits a damaged component with their tools or fist out of frustration. To their surprise, the component starts working again! One {@rule Vehicle Critical Hits|Critical Hit} that compromised a component of the character's ship is automatically repaired."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Table 1-3: Spending Threat and Despair in Starship Combat",
+         "page": 12,
+         "columns": [
+            {
+               "header": "Result",
+               "value": "result",
+               "size": 1
+            },
+            {
+               "header": "Result Options",
+               "value": "options",
+               "size": 5
+            }
+         ],
+         "rows": [
+            {
+               "result": "{@symbols h or d}",
+               "options": [
+                  "Overtaxing the systems causes the character's ship to suffer 1 system strain. This may be triggered multiple times."
+               ]
+            },
+            {
+               "result": "{@symbols hh or d}",
+               "options": [
+                  "The drive systems aboard the character's ship flare, making it easier to track. Add {@dice boost|2} to any attempts to track the ship. Weapons with the {@quality Guided} quality add {@dice boost|2} to combat checks targeting the ship. Both effects last until the end of the next round.",
+                  "Solar flares or exotic energies interfere with communications and sensors on the character's ship. Increase the difficulty of all {@rule Jamming}, {@rule Plot Course}, {@rule Scan the Enemy}, or {@rule Hack Enemy's Systems} actions made aboard the ship by 1 until the end of the encounter."
+               ]
+            },
+            {
+               "result": "{@symbols hhh or d}",
+               "options": [
+                  "Several crew members are wounded or killed during the fighting. One of the PCs (players' choice) adds {@dice setback} to all checks they make until the end of the encounter. If the injured are treated with an {@difficulty average|medicine}, the penalty is removed.",
+                  "Exploding systems deal 2 strain and 2 wounds to one PC of the GM's choice. These are not reduced by the target's soak.",
+                  "The drive systems fluctuate, increasing or decreasing the speed of the character's ship by 1 (to a minimum of 0 or maximum of its maximum speed). The change is up to the GM and should be inconvenient for the players."
+               ]
+            },
+            {
+               "result": "{@symbols d}",
+               "options": [
+                  "A botched or desperate maneuver results in the character's ship heading toward a collision with an asteroid, derelict vessel, or even an enemy ship. Pick one large object in the encounter that the character's ship could hit; unless the pilot of the character's ship makes a successful {@rule Dangerous Driving} action before the end of the character's next turn, the ship will suffer a major {@rule Collisions|collision} (see page 222 of the {@title Genesys} Core Rulebook) with it.",
+                  "One PC of the GM's choice suffers 5 wounds (not reduced by soak) and a {@rule Critical Injuries|Critical Injury} as they are hit by explosions and shrapnel during the fighting.",
+                  "An NPC who has an important role aboard the ship is {@rule incapacitated} during the fighting. Unless they are successfully treated with a {@difficulty hard|medicine}, they die at the end of the encounter."
+               ]
+            },
+            {
+               "result": "{@symbols dd}",
+               "options": [
+                  "An overloaded component aboard the character's ship explodes in sparks and flames. The ship suffers a {@rule Vehicle Critical Hits|Critical Hit}. When generating this {@rule Vehicle Critical Hits|Critical Hit}, reroll any results of 127 or higher."
+               ]
+            }
+         ]
+      },
       {
          "name": "Table 3-1: Force Size",
          "page": 27,
@@ -683,6 +822,46 @@
    ],
    "sidebar": [
       {
+         "name": "Range Bands in Space",
+         "page": 9,
+         "type": "combat",
+         "description": [
+            "This sidebar echoes the {@sidebar Range Bands in Space|sidebar|crb} found on page 225 of the {@title Genesys} Core Rulebook but goes into a little more detail on the topic. Here we discuss what {@rule range bands} represent in space for the {@setting Twilight Imperium||eoti} setting specifically, to help you visualize the distances involved.",
+            "{@b Engaged:} If your ship is engaged with something, it's generally docked with it, tethered to it, or no more than one hundred meters away. At this distance, someone can cross between two ships easily, though they likely have to put on a spacesuit.",
+            "{@b Short range:} If your ship is short range from something, it's within visual range and probably within twenty kilometers. Many starfighter engagements occur within short range. Two capital ships slugging it out at short range are likely to pummel each other into pieces very quickly, and some have weapons that cannot even be used against targets this close.",
+            "{@b Medium range:} Medium range is within roughly two hundred kilometers, which is far enough that ships must rely on enhanced optics to view one another. {@vehicle Interceptor Starfighter|Starfighters|eoti} can still shoot at one another with their primary armaments at this range, and capital ships sometimes engage at this distance.",
+            "{@b Long range:} If your ship is long range from something, it's within roughly five thousand kilometers. This is far enough that you're primarily looking at it on your scanner displays rather than out your viewports. While this seems like a great distance, ships and weapons can still cross it very quickly. Starfighter missiles can reach this far, and this is often the distance at which major capital ships engage with their primary weapons.",
+            "{@b Extreme range:} This range, up to one hundred thousand kilometers away, is the maximum direct engagement range for most ships. Only the beam weapons on the largest {@vehicle dreadnought|dreadnoughts|eoti} can fire accurately at this distance, as well as some specialty weapons such as cruiser assault cannons. At this range, warships tend to engage more with anti-ship missiles and torpedoes.",
+            "{@b Strategic range:} This range includes anything within a star system. At this distance, only far-reaching weapons such as torpedoes, heavy missiles, and planetary defense cannons can hit anything accurately. Strategic range is also the longest distance that most starship sensors can detect something.",
+            "Obviously, strategic range includes a huge range of distances, anywhere from a few million kilometers to a few {@i billion} kilometers. It's reasonable to assume that some things may be beyond the range of even the most powerful weapons but still be within strategic range. Traveling to something at strategic range may take a matter of hours, rather than a few rounds in a structured encounter. Therefore, you can certainly tell your group that even though an enemy is within strategic range, it may take several hours to get close enough for a combat encounter to begin, despite the party having strategic-range weapons."
+         ]
+      },
+      {
+         "name": "Firing at Engaged Enemies",
+         "page": 10,
+         "type": "vehicle",
+         "description": [
+            "The rules on {@rule making ranged attacks while engaged} (see page 107 of the {@title Genesys} Core Rulebook) prohibit firing {@skill Gunnery} weapons at engaged targets. These rules were primarily written with individual characters in mind (since it's hard to fire a missile launcher at someone trying to stab you with a knife). However, they also apply to vehicles. At extremely close ranges, most starships find it very difficult or outright impossible to bring guns to bear, while missiles or torpedoes don't have time to arm or to acquire targets.",
+            "However, at your discretion, there may be some circumstances where a ship can fire weapons \"point blank\" at an engaged target. In these cases, it's up to you as the GM to determine the difficulty and the potential risks associated with the action."
+         ]
+      },
+      {
+         "name": "Running Enemy Ships",
+         "page": 12,
+         "type": "vehicle",
+         "description": [
+            "Although these guidelines refer to a ship run by the player characters, you can also use them when directing an enemy ship full of NPCs. The goal in that case is the same: limiting the number of checks for each ship."
+         ]
+      },
+      {
+         "name": "Who Put You in Charge?",
+         "page": 13,
+         "type": "vehicle",
+         "description": [
+            "The concept of a captain (who typically has complete authority over their ship) is often antithetical to an RPG group composed of a bunch of friends who have equal say in group decisions. Therefore, we recommend that if one of your PCs has taken on the role of captain, the player controlling that PC makes sure to determine their \"orders\" with the rest of the players before having their character give them. These out-of-character discussions let the group decide on their actions jointly before returning to the ongoing story where the PC captain issues the orders as if they were solely in charge. This process requires a little bit of group cooperation and some brief pauses in the narrative to discuss plans, but it generally results in a much more fun experience for everyone."
+         ]
+      },
+      {
          "name": "A Storytelling Tool",
          "page": 25,
          "type": "mass combat",
@@ -1026,6 +1205,318 @@
    ],
    "rule": [
       {
+         "name": "Facing and Turning",
+         "page": 6,
+         "type": "vehicle",
+         "description": [
+            "Positioning and facing already have some importance in vehicle rules, particularly when it comes to mounted guns. Most vehicle weapons have rules that give them a firing arc of some combination of front, rear, left, and right (or forward, aft, port, and starboard). Although smaller ships are often particularly agile and can spin and roll, larger ships are a bit too cumbersome to turn easily. To turn, they should use this modified version of the {@rule Reposition} vehicle maneuver.",
+            {
+               "type": "rule",
+               "_ref": {
+                  "name": "Reposition"
+               },
+               "description": []
+            },
+            {
+               "title": "Facing, Momentum, and Forced Movement",
+               "entries": [
+                  "The rules for {@rule Steering|steering} and forced movement (page 221, {@title Genesys} Core Rulebook) basically mean that as long as a vehicle is traveling at any sort of speed, it keeps moving. What direction it moves, however, is left up to the PC piloting the vehicle.",
+                  "This works well as a base rule, especially since the rules have to cover all kinds of vehicles in all kinds of settings. However, in the {@setting Twilight Imperium||eoti} setting, momentum and direction of travel play a more important role, represented by the following rule.",
+                  "{@b When a spaceship performs its forced movement during its turn, it must move in the direction it is facing at that moment.} For example, a character uses the {@rule Reposition} maneuver to turn a starship to the right at the beginning of their turn. Then at the end of their turn, the forced movement of their ship sends the ship to the right (relative to its original facing).",
+                  "This lets the rules simulate a version of inertia in space without too many complex limitations or rules. It also makes the {@rule Reposition} maneuver very important for pilots, as that's how they steer the ship!",
+                  {
+                     "title": "Agile Fighters",
+                     "entries": [
+                        "Smaller spacecraft like {@vehicle Interceptor Starfighter|starfighters|eoti} (or their atmospheric equivalents) have several advantages over larger vessels. One of these is their agility. {@b Any vehicle that is silhouette 4 or smaller can change its facing by any amount immediately before or after they perform their forced movement.}"
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Updated Dangerous Driving Action",
+         "page": 7,
+         "type": "action",
+         "description": [
+            "The Dangerous Driving action was originally designed for smaller vehicles, but it can also be used for larger vessels. If you use this action while controlling a vehicle with the {@skill Operating} skill, you make an {@skill Operating} check (instead of a {@skill Piloting} check) with a difficulty equal to half the vehicle's silhouette (rounding up)."
+         ]
+      },
+      {
+         "name": "Reposition",
+         "page": 7,
+         "type": "vehicle maneuver",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Pilot Only:} Yes",
+                  "{@b Silhouette:} Any",
+                  "{@b Current Speed:} Any (Special circumstances apply to stationary vehicles.)"
+               ]
+            },
+            "If the vehicle's speed is 1 or higher, the pilot may move the vehicle to another location that is within short range of their current location. Alternatively, the pilot may change the direction that their vehicle is facing by up to 45 degrees.",
+            "If the vehicle is stationary, the pilot may {@i only} use the Reposition maneuver to change facing by up to 45 degrees (some vehicles, at the GM's discretion, may not be able to turn when stationary).",
+            "If a vehicle is silhouette 4 or smaller, the pilot may change their facing by any amount when performing the Reposition maneuver.",
+            "While smaller ships and vehicles can still pull sharp turns, this rule makes facing play a more significant role when commanding larger starships because the pilot cannot turn to confront a new opponent immediately. Facing also becomes more important when you factor in forced movement from the {@b {@rule Steering}} section on page 221 of the {@title Genesys} Core Rulebook, as explained in the next section."
+         ]
+      },
+      {
+         "name": "Ramming and Boarding",
+         "page": 7,
+         "type": "vehicle action",
+         "description": [
+            "Ramming an enemy ship with your own vessel and sending teams of raiders to board it with pistols and blades in hand may seem particularly fantastical, but it fits well into a space opera setting like {@setting Twilight Imperium||eoti}. This section describes how to use the existing rules to create both situations.",
+            {
+               "title": "Ramming Attack",
+               "entries": [
+                  "A ramming attack is just a deliberate collision, and thus it is a tactic for the wildly desperate or the foolishly brave. However, sometimes that foolishness is called for in dangerous situations. Some shipbuilders even build rams or reinforced prows into their larger warships so that the ramming vessel can do much more damage in such situations.",
+                  "Before a character can ram their vehicle into another, they first need to successfully reach the target. The best way to do this is to have the character perform a {@rule Dangerous Driving} action (see page 227 of the {@title Genesys} Core Rulebook). If they succeed, they cause a collision. The difficulty should be set using {@table 1-1: Speed Advantage Difficulty}, which is {@table III.2-18: Speed Advantage Difficulty} on page 229 of the {@title Genesys} Core Rulebook reprinted here for convenience. Basically, the faster the vehicle that is attempting to ram is going, the easier it is to maneuver to hit their target and the more difficult it is for the target to avoid them.",
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 1-1: Speed Advantage Difficulty"
+                     },
+                     "columns": [],
+                     "rows": []
+                  },
+                  {
+                     "title": "Results of Ramming",
+                     "entries": [
+                        "If the check is successful, a major collision occurs (see {@b {@rule Collisions}} on page 222 of the {@title Genesys} Core Rulebook). Both the ramming vehicle and the target suffer a {@rule Vehicle Critical Hits|Critical Hit}, but they do have a chance to reduce the effects based on their defense. Remember that the {@rule Vehicle Critical Hits|Critical Hit} may be more severe due to the speed that the ramming vehicle was traveling (see {@table III.2-14: Vehicle Speeds in Structured Encounters} on page 221 of the {@title Genesys} Core Rulebook).",
+                        "In addition to the {@rule Vehicle Critical Hits|Critical Hit}, you can also have the ramming vehicle inflict hull trauma or system strain on the target by spending {@symbols a} from the check (possibly on a one-for-one basis, but perhaps more if circumstances warrant it). Likewise, {@symbols h} or {@symbols d} can inflict additional damage on the ramming vehicle. If the check fails, you can still have both vehicles suffer a minor collision (described on page 222 of the {@title Genesys} Core Rulebook) by spending several {@symbols a} or a {@symbols t}.",
+                        "We should point out that ramming is likely as dangerous to the vehicle attempting the ram as it is to the target. This is by design; crashing two ships or vehicles together is usually fatal for both. Also, the rules for {@rule collisions} call out that, at your discretion, very large vehicles may simply ignore {@rule collisions} with much smaller vehicles (and the smaller of the two may be destroyed outright without even rolling a {@rule Vehicle Critical Hits|Critical Hit}!). You can always tell your players that crashing their {@vehicle Interceptor Starfighter|starfighter|eoti} into the prow of an enemy {@vehicle dreadnought||eoti}—like a bug smashing against a car's windshield—isn't going to accomplish anything but their own demise."
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Boarding Attacks",
+               "entries": [
+                  "Boarding an enemy ship can be the climax of a successful chase or the highlight of a daring rescue. Likewise, struggling to repel enemy boarders is a dramatic encounter where the stakes are nothing less than keeping your vessel in your own hands.",
+                  "Boarding actions can be easily represented in the existing rules. However, there are a few points to keep in mind as they occur. Primarily, how close two vehicles need to be for one of them to attempt a boarding action and what the boarders need to do to get aboard their target.",
+                  "Boarding actions should only occur when a vehicle is engaged with another vehicle. As noted in both the {@title Genesys} Core Rulebook and the {@sidebar Range Bands in Space} sidebar on page 9, when dealing with starships, {@rule range bands} tend to represent much greater distances than they do on the ground. Only engaged, which represents two ships either docked together or at most one hundred meters apart, is close enough for people to travel from one ship to the other.",
+                  "Sometimes ships have special pieces of equipment such as boarding tubes that allow them to basically latch onto another ship, drill through their hull, and create a passageway between the two vessels. The exact rules for this are covered in those ships' profiles. If a ship doesn't have that equipment, the boarders have to do things more dangerously by donning spacesuits and jumping or boosting themselves from one ship to the other. If this happens, remember that while the ships may be using {@rule range bands} that represent hundreds or even millions of kilometers, the boarders are still operating at personal scale. So it may take a whole turn (or more!) to cross the gulf between ships. If the two ships are still moving, the boarders may be left behind if they can't reach their target in time.",
+                  "Once the boarders get to their target, they still must get inside. This can be handled narratively, but we have some suggestions for ways to attempt it:",
+                  {
+                     "type": "list",
+                     "items": [
+                        "{@b Hacking an airlock:} The boarders may find an airlock and hack its computer with a {@difficulty hard|computers} to unlock and open it.",
+                        "{@b Prying open an airlock or hatch:} The boarders could attempt to pry open an airlock or hatch with an {@difficulty average|athletics} if they have the right tool (such as a {@gear sarween gamma press||eoti}).",
+                        "{@b Cutting or blasting through the hull:} A more direct approach (admittedly with a risk of explosive decompression), this tactic does require the boarders to have powerful explosive charges or cutting tools. If they do, they can use them to make a {@difficulty hard|mechanics}. Failure here may result in the boarders doing the job too well and inflicting major damage on the ship."
+                     ]
+                  },
+                  "We also want to note that most military vessels have additional protections against boarding actions, such as more secure computers and thicker hulls and hatches. You should increase the difficulty once or twice for any checks made to attempt to board a military vessel.",
+                  "Once the boarders make entry, they still have to face the enemy crew. This can be handled with normal structured encounter rules."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Distant Missile and Torpedo Fire",
+         "page": 9,
+         "type": "vehicle",
+         "description": [
+            "In the {@setting Twilight Imperium||eoti} setting, factions build weapons with truly impressive ranges. Some can fire projectiles across star systems or to launch missiles that take hours or even days to reach their targets. To represent this, these weapons can fire out to {@b {@rule Range Bands|strategic range}}.",
+            "Strategic range is covered on page 224 of the {@title Genesys} Core Rulebook, and the {@sidebar Range Bands in Space} sidebar. As noted in the sidebar, since strategic range covers such wide distances, you as the GM can determine that something is simply too far away for even strategic-range weaponry to hit. However, even when something at strategic or extreme range can be attacked, the weapons may take some time to reach their target. This is especially true with missiles and torpedoes.",
+            "Missiles and torpedoes tend to move as fast as the fastest starships, but that's still nothing compared to the eyeblink speeds of heavy mass driver weapons or beam weapons that travel at the literal speed of light. Missiles and torpedoes make up for this by having a greater absolute range, as well as guidance systems to home in on their targets when they get there.",
+            "To represent these slower but extremely long-ranged weapons, you can use the following rule.",
+            {
+               "title": "Firing Weapons at Extreme and Strategic Ranges",
+               "entries": [
+                  "When you make an attack with a starship's torpedoes or missiles (or similar weapons) at a target at extreme or strategic range, spend an action to determine and build the dice pool (based on the current range of the target and other circumstances that affect the check), but do not make the check yet. At the end of the next turn of the target's pilot, make the combat check as an out-of-turn {@rule Incidentals|incidental}. If the target is no longer in range of the weapon or could not be hit by the attack for some reason, the check fails. If the attack misses but you trigger the {@quality Guided} quality of the weapon, use the rules for the {@quality Guided} quality on page 87 of the {@title Genesys} Core Rulebook as normal (the missile or torpedo is now close enough to try to reacquire the target without further delay)."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Fighter Minion Groups",
+         "page": 10,
+         "type": "vehicle",
+         "description": [
+            "Minion groups serve as a simple way to pit your characters against larger numbers of adversaries without bogging down combat encounters. These rules can also be used to represent groups of {@vehicle Interceptor Starfighter|starfighters|eoti} so that your player characters who want to play fighter aces can dogfight with multiple foes. The minion rules also let you represent several fighters flying in formation (usually a leader and one or two wingmates) for mutual defense and increased offensive power.",
+            {
+               "title": "Applying Minion Rules to Fighters",
+               "entries": [
+                  "When using these rules, have all the pilots of a formation of two to four fighters be minions in the same minion group. These minions follow all the rules for minion groups found on page 132 of the {@title Genesys} Core Rulebook. The important thing to note is that their ships also follow those rules.",
+                  "A minion group of starfighters has a single {@rule hull trauma threshold} shared by all fighters in the group. The threshold is equal to the combined total of all of the fighters' {@rule hull trauma threshold|hull trauma thresholds}. The same applies to the group's combined {@rule system strain threshold}. Although standard minion groups do not have a strain threshold, minion groups of vehicles do have a {@rule system strain threshold}. Each time the group suffers hull trauma or system strain, you apply it to the group's threshold. Individual ships are destroyed or disabled each time the total hull trauma or system strain suffered exceeds a single starfighter's share of the group's threshold.",
+                  {
+                     "type": "example",
+                     "entries": [
+                        "{@i You have a group of four minion pilots flying four Accipiter {@vehicle Interceptor Starfighter|interceptor starfighters|eoti}. The minion pilots each have a wound threshold of 4, so the group has a combined wound threshold of 16. The Accipiters have a {@rule hull trauma threshold} of 10 and {@rule system strain threshold} of 8, so the group has a combined {@rule hull trauma threshold} of 40 and {@rule system strain threshold} of 32.}"
+                     ]
+                  },
+                  "As with minion groups, characters do not attack a single starfighter, they attack the group as a whole. Narratively you may describe them as attacking an individual ship, but mechanically they're attacking the group.",
+                  "Finally, just as {@rule Critical Injuries} instantly incapacitate a minion character, {@rule Vehicle Critical Hits|Critical Hits} immediately destroy a minion starfighter. This causes the group to immediately suffer hull trauma equal to the {@rule hull trauma threshold} of a single ship plus one. (This supersedes any other {@rule Vehicle Critical Hits|Critical Hit} results that would normally be rolled on {@table III.2-19: Vehicle Critical Hit Result} in the {@title Genesys} Core Rulebook.)",
+                  {
+                     "type": "example",
+                     "entries": [
+                        "{@i Gingrish Mrarrigh attacks the minion group from our previous example with the dual heavy beam cannon aboard his {@vehicle corvette||eoti}. He scores a hit and—through extraordinary rolling and a few useful talents—manages to deal 21 damage (after reduction from armor) and a {@rule Vehicle Critical Hits|Critical Hit} to the group. First the 21 damage eliminates two of the Accipiter fighters outright (since each one's hull threshold is only 10). Then the {@rule Vehicle Critical Hits|Critical Hit} causes the group to suffer an additional 11 hull trauma, which eliminates a third starfighter. The flight of Accipiters loses three of their number to one ferocious volley from Gingrish's ship!}"
+                     ]
+                  },
+                  {
+                     "title": "Minion Groups Attacking and Making Skill Checks",
+                     "entries": [
+                        "When a minion group of starfighters makes an attack (or another skill check like a {@skill Piloting} check), they make one check for the group. The dice pool is formed using the minion's characteristic, and their ranks in the skill equal to the number of minions in the group beyond the first. Also, remember minions can only have ranks in a skill that is listed as a group skill in their profile."
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Spending Advantage, Threat, Triumph, and Despair During Starship Combat",
+         "page": 11,
+         "type": "vehicle",
+         "description": [
+            "Although all the ways to spend dice pool results during combat found on page 104 of the {@title Genesys} Core Rulebook are perfectly valid during starship combat, fighting in ships in space does have unique hazards and opportunities. We provide the suggestions in {@table 1-2: Spending Advantage and Triumph in Starship Combat} and {@table 1-3: Spending Threat and Despair in Starship Combat} as additional options for spending results. Hopefully they also give you inspiration for new and creative ways to interpret the dice pools at your own table.",
+            {
+               "type": "table",
+               "_ref": {
+                  "name": "Table 1-2: Spending Advantage and Triumph in Starship Combat"
+               },
+               "columns": [],
+               "rows": []
+            },
+            {
+               "type": "table",
+               "_ref": {
+                  "name": "Table 1-3: Spending Threat and Despair in Starship Combat"
+               },
+               "columns": [],
+               "rows": []
+            }
+         ]
+      },
+      {
+         "name": "PCs as Starship Crew",
+         "page": 11,
+         "type": "starship crew",
+         "description": [
+            "Larger warships may have anywhere from a few dozen to a couple hundred crew members, with equal numbers of soldiers and passengers. So how does a group of three to six player characters control a large ship?",
+            "Generally when the player characters are in command of a starship, they should take on the role of the \"bridge crew.\" They should be the heads of the various departments aboard a ship, the ones giving the orders to a larger cast of NPCs. This doesn't mean, however, that they don't get their hands dirty with piloting the ship, shooting the guns, and fixing whatever breaks. Instead, consider the PCs to be the most competent members of their departments, leading by example as they perform the tasks assigned to their departments. The goal is to make sure the PCs are the ones who are making most of the checks so that you, the GM, are not burdened with rolling a ton of NPC checks during each round.",
+            {
+               "type": "sidebar",
+               "_ref": {
+                  "name": "Running Enemy Ships"
+               },
+               "entries": []
+            },
+            "The following section discusses these departments, the roles the PCs can adopt as the department heads, and the actions they may perform during a combat encounter. These roles are fairly generic, and the names may change depending on the faction that the ship is from or if the ship is even part of a formal navy.",
+            {
+               "type": "rule",
+               "_ref": {
+                  "name": "Ship's Captain"
+               },
+               "description": []
+            },
+            {
+               "type": "rule",
+               "_ref": {
+                  "name": "Navigation Department and the Sailing Master"
+               },
+               "description": []
+            },
+            {
+               "type": "rule",
+               "_ref": {
+                  "name": "Gunnery Department and the Master Gunner"
+               },
+               "description": []
+            },
+            {
+               "type": "rule",
+               "_ref": {
+                  "name": "Engineering Department and the Chief Engineer"
+               },
+               "description": []
+            },
+            {
+               "type": "rule",
+               "_ref": {
+                  "name": "Medical Department and the Ship's Surgeon"
+               },
+               "description": []
+            },
+            {
+               "type": "rule",
+               "_ref": {
+                  "name": "Sensors and Communications and the Signals Officer"
+               },
+               "description": []
+            }
+         ]
+      },
+      {
+         "name": "Ship's Captain",
+         "page": 12,
+         "type": "starship crew",
+         "description": [
+            "Instead of being the head of a single department, the captain is in charge of the entire ship. While a good captain always listens to the advice of their subordinates, they are the ones who make the final decision.",
+            "Beyond making the decisions of where a ship goes, what it does, and who it fights, the captain can also directly oversee {@rule steering} the ship (especially if the PC who has taken on the role of captain has a high {@skill Operating} skill). In this case, the captain should make any {@skill Operating} checks and perform any {@b Pilot only} maneuvers and actions, but narratively they may have several NPCs helping them operate the controls.",
+            "It is also possible that the captain may be better suited to directing the fire of the ship's guns (especially if they have a high {@skill Gunnery} skill), so they could direct the fire of some of the ship's weapons while another PC or NPC handles piloting. Finally, some of the {@rule additional vehicle actions} found in {@table III.2-17: Additional Vehicle Actions} on page 229 of the {@title Genesys} Core Rulebook may be appropriate for a captain, especially {@rule Fire Discipline} and {@rule Plot Course}.",
+            {
+               "type": "sidebar",
+               "_ref": {
+                  "name": "Who Put You in Charge?"
+               },
+               "entries": []
+            }
+         ]
+      },
+      {
+         "name": "Navigation Department and the Sailing Master",
+         "page": 13,
+         "type": "starship crew",
+         "description": [
+            "The ship's navigation department, along with its head, the sailing master, is responsible for plotting courses and piloting the ship at both subluminal and superluminal speeds. This department is usually small even on large warships, with just three to six individuals.",
+            "The sailing master is the character who makes the {@skill Astrocartography|Astronavigation} checks to plot courses (especially when traveling at superluminal speeds). They can perform all of the {@b Pilot only} maneuvers and actions listed on pages 226-230 of the {@title Genesys} Core Rulebook. They may also perform additional actions such as {@rule Plot Course}.",
+            "The extra members of the department help the sailing master manage all the controls and take watches when the sailing master is off duty. They do not confer any additional bonuses. However, if the ship has a particularly skilled crew, you may let them add {@dice boost} to the sailing master's checks or let one of them perform the {@rule Copilot} action in particularly dire circumstances."
+         ]
+      },
+      {
+         "name": "Gunnery Department and the Master Gunner",
+         "page": 14,
+         "type": "starship crew",
+         "description": [
+            "As you might expect, the gunnery department handles the ship's weapons. The master gunner (or the executive officer in some navies) is responsible for all the gun crews on their ship, as well as for assigning targets and directing fire. The size of the department depends on how many guns are on the ship. {@vehicle Dreadnought|Dreadnoughts|eoti} and {@vehicle Carrier|carriers|eoti} have similarly sized crew complements, but while a {@vehicle dreadnought||eoti} may have a third of its two hundred crew working guns, the {@vehicle carrier||eoti} might have a mere dozen crew in its gunnery department because of the relative lack of weapons.",
+            "The master gunner is the character who makes the {@skill Gunnery} checks to fire weapons and performs vehicle actions such as {@rule Blanket Barrage} and {@rule Concentrated Barrage}. They may also perform additional actions such as {@rule Intercept Projectiles}.",
+            "The gunnery department is often where the number of checks to be made can get out of hand, since warships may have scores of weapons. For this reason, we recommend the master gunner rely on the {@rule Concentrated Barrage} action when attacking enemy ships (or the {@rule Blanket Barrage} action when defending against a swarm of enemy {@vehicle Interceptor Starfighter|starfighters|eoti}).",
+            "The first combines the fire of multiple weapons of the same type (such as all the capital-grade beam turrets on a {@vehicle dreadnought||eoti}) into a single check that can do devastating damage. It can also be used to combine the fire from multiple antifighter weapons to target a single fighter or group of fighters.",
+            "The second lets you combine the fire of all your antifighter weapons in a single check to make it more difficult for fighters to attack your ship. If the master gunner is busy directing the fire of the ship's main weapons, this can be a good action for a PC with less {@skill Gunnery} skill or an NPC to perform."
+         ]
+      },
+      {
+         "name": "Engineering Department and the Chief Engineer",
+         "page": 14,
+         "type": "starship crew",
+         "description": [
+            "The engineering department oversees maintaining and repairing any mechanical and computer systems on the ship, although traditionally many engineers hold the reactors and main drives as their domain. The chief engineer oversees the department and personally signs off on any major repairs and modifications to the ship. On smaller vessels and civilian transports, the chief engineer may also be the only engineer aboard, while larger warships may have between twenty and fifty crew members as a part of engineering.",
+            "The chief engineer is the character who makes {@rule Damage Control} actions to repair hull trauma, system strain, and {@rule Vehicle Critical Hits|Critical Hits}. Although they may have several dozen crew members helping out, they are usually the only one to make the check. If a ship is large enough to have a sizable engineering department, then it's complicated enough that multiple people need to participate in any repair attempts. The chief engineer's check is as much about identifying problems and directing their underlings to fix the right things as it is making the repairs themselves.",
+            "The chief engineer may also perform some {@rule additional vehicle actions} (especially when their vehicle is still undamaged). Possibilities include {@rule Boost Defenses} to improve the ship's shielding and {@rule Hack Enemy's Systems} to bring down an enemy ship's vital operations (although they might fight for that chance with the ship's signals department). And if all else fails, the chief engineer might roll up their sleeves and fix problems with a sarween plasma welder and elbow grease, using the {@rule Manual Repairs} action."
+         ]
+      },
+      {
+         "name": "Medical Department and the Ship's Surgeon",
+         "page": 15,
+         "type": "starship crew",
+         "description": [
+            "The medical department is responsible for maintaining the health of the ship's crew. In peacetime, this is a mix of preventative medicine and treatment for accidental injuries. During a battle, however, the ship's surgeon and their orderlies try to save the lives of crew members injured during the fighting. On small ships, the ship's surgeon may be the only medical officer aboard, but on ships with several hundred crew or more, they usually have several orderlies or medics helping them in their duties.",
+            "At least one {@rule Vehicle Critical Hits|Critical Hit} can inflict wounds or {@rule Critical Injuries} on characters, as can {@symbols h} or {@symbols d} spent during combat. In addition, allied NPCs can be {@rule incapacitated} during combat and may die without treatment (see {@table 1-3: Spending Threat and Despair in Starship Combat}). The ship's surgeon makes the {@skill Medicine} checks to heal these characters."
+         ]
+      },
+      {
+         "name": "Sensors and Communications and the Signals Officer",
+         "page": 15,
+         "type": "starship crew",
+         "description": [
+            "The communications department and sensors department may be two separate departments or two branches of the same department under the command of the signals officer. Any warship of {@vehicle destroyer||eoti} size or larger usually has several crew members serving in these departments.",
+            "Most ships have some form of superluminal communication system, with a maximum effective range of a couple light years for coherent messages. They also carry subluminal backup systems with much shorter ranges, and a few ships even have message drones.",
+            "The types of sensors on a ship depend on the ship's role and the faction that fitted it out. Some vessels (especially scout ships and spy vessels) have powerful gravitic sensors that can detect superluminal ship movements from scores or even hundreds of light years away, but these are very rare, specialized, and ruinously expensive systems. A ship is much more likely to have a standard suite of passive sensors that can detect ships or other powered objects within the boundaries of a star system (strategic range) and a suite of active sensors that can be used to detect even unpowered objects or stealthed ships within long range (see page 137 of {@title Embers of the Imperium} for more information).",
+            "The signals officer can do plenty of things to aid their comrades during combat. They can interfere with enemy communications using the {@rule Jamming} action, analyze targets for weaknesses with {@rule Scan the Enemy}, defend against missiles and torpedoes with {@rule Intercept Projectiles}, and even access an enemy's computer systems and wreak havoc with {@rule Hack Enemy's Systems}. They may also attempt to intercept and decrypt enemy communications or pick up garbled messages from their allies."
+         ]
+      },
+      {
          "name": "Mass Combat",
          "page": 24,
          "type": "mass combat",
@@ -1050,28 +1541,28 @@
             {
                "type": "rule",
                "_ref": {
-                  "name": "Mass Combat: Phases"
+                  "name": "Phases"
                },
                "description": []
             },
             {
                "type": "rule",
                "_ref": {
-                  "name": "Mass Combat: Building a Mass Combat Check Dice Pool"
+                  "name": "Building a Mass Combat Check Dice Pool"
                },
                "description": []
             },
             {
                "type": "rule",
                "_ref": {
-                  "name": "Mass Combat: Where the PCs Fit In"
+                  "name": "Where the PCs Fit In"
                },
                "description": []
             },
             {
                "type": "rule",
                "_ref": {
-                  "name": "Mass Combat: Tallying the Cost of Battle"
+                  "name": "Tallying the Cost of Battle"
                },
                "description": []
             }

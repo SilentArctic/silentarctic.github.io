@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2026.9.20",
+         "version": "2026.9.22.1",
          "json": "core-rule-book",
          "full": "Genesys Core Rulebook",
          "abbreviation": "CRB",
@@ -10784,6 +10784,159 @@
          "description": [
             "Bodies of water such as lakes, rivers, oceans, and swamps are pretty common in most locations, and sometimes characters need to cross them. Luckily, most individuals can swim, although some may be a lot better at it than others! Unless otherwise noted, characters treat any body of water as {@rule difficult and impassable terrain|difficult terrain}. The GM may also decide that some bodies of water, such as a river with a swift current or an ocean in a storm, are so difficult to move through that they require a successful {@skill Athletics} check to swim in. In this case, it requires at least one action as well as any number of maneuvers to swim through the water from one location to another.",
             "If completely submerged in water, a character can hold their breath for a number of rounds equal to their {@characteristic Brawn||crb} characteristic. Once this number is reached, the character starts to drown and is treated as suffocating (see {@rule Suffocation}, page 112) on each successive round until they surface or find some other source of air."
+         ]
+      },
+      {
+         "name": "Plot Course",
+         "page": 229,
+         "type": "vehicle action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Pilot Only:} No",
+                  "{@b Silhouette:} Any",
+                  "{@b Speed:} Any",
+                  "{@b Skill and Difficulty:} {@difficulty Average|Piloting} or {@difficulty Hard|Perception}"
+               ]
+            },
+            "The crew member studies the terrain ahead and plots a course that should take the vehicle safely through it. On a successful check, each uncanceled {@symbols s} reduces the {@dice setback} suffered for {@rule Difficult and Impassable Terrain|difficult terrain} by one."
+         ]
+      },
+      {
+         "name": "Copilot",
+         "page": 229,
+         "type": "vehicle action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Pilot Only:} No",
+                  "{@b Silhouette:} Any",
+                  "{@b Speed:} Any",
+                  "{@b Skill and Difficulty:} {@difficulty Average|Driving, Piloting, or Operating}"
+               ]
+            },
+            "The crew member serves as the vehicle's copilot, managing systems and auxiliary equipment to allow the pilot to focus on flying or driving. On a successful check, each uncancelled {@symbols s} downgrades the difficulty of the pilot's next {@skill Driving}, {@skill Piloting}, or {@skill Operating} check once."
+         ]
+      },
+      {
+         "name": "Jamming",
+         "page": 229,
+         "type": "vehicle action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Pilot Only:} No",
+                  "{@b Silhouette:} Any",
+                  "{@b Speed:} Any",
+                  "{@b Skill and Difficulty:} {@difficulty Average|Computers}"
+               ]
+            },
+            "The crew member uses the vehicle's systems to jam the communications of enemy vehicles. On a successful check, the enemy must make an {@difficulty Average|Computers} to use its own communication systems. The difficulty increases by one for each additional {@symbols ss}, and the jamming affects an additional target for each {@symbols a} spent."
+         ]
+      },
+      {
+         "name": "Boost Defenses",
+         "page": 229,
+         "type": "vehicle action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Pilot Only:} No",
+                  "{@b Silhouette:} Any",
+                  "{@b Speed:} Any",
+                  "{@b Skill and Difficulty:} {@difficulty Hard|Mechanics}"
+               ]
+            },
+            "The crew member reroutes power from other systems to boost the defensive systems of a vehicle. This only works if the vehicle already has a defense of 1 or greater. On a successful check, the vehicle suffers 1 system strain and increases the defense of the vehicle by one until the beginning of the character's next turn. Each additional {@symbols s} increases the duration by one round."
+         ]
+      },
+      {
+         "name": "Manual Repairs",
+         "page": 229,
+         "type": "vehicle action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Pilot Only:} No",
+                  "{@b Silhouette:} Any",
+                  "{@b Speed:} Any",
+                  "{@b Skill and Difficulty:} {@difficulty Hard|Athletics}"
+               ]
+            },
+            "In some cases, repairs can be as simple as welding a sturdy metal plate over a damaged system. If the character has the proper tools for the job, they can attempt to use the {@rule Damage Control} action with {@skill Athletics} rather than {@skill Mechanics}. If successful, the character removes one point of hull trauma from the vehicle, plus one additional point for each additional {@symbols ss}. This follows the limitations of the {@rule Damage Control} action, and thus may only be attempted once per encounter."
+         ]
+      },
+      {
+         "name": "Fire Discipline",
+         "page": 229,
+         "type": "vehicle action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Pilot Only:} No",
+                  "{@b Silhouette:} Any",
+                  "{@b Speed:} Any",
+                  "{@b Skill and Difficulty:} {@difficulty Hard|Leadership or Discipline}"
+               ]
+            },
+            "The character forgoes fighting to analyze the opponents' tactics and direct their comrades in achieving greater accuracy with weapons fire. If the check is successful, the next crew member firing a weapon on the vehicle adds {@dice boost} to their check (plus an additional crew member for every additional {@symbols ss}). The character may also spend {@symbols aaa} to allow every hit from shipboard weapons to inflict 1 system strain on their target as well as regular damage until the beginning of the character's next turn, as the carefully timed shots pummel shields and overload systems."
+         ]
+      },
+      {
+         "name": "Scan the Enemy",
+         "page": 229,
+         "type": "vehicle action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Pilot Only:} No",
+                  "{@b Silhouette:} Any",
+                  "{@b Speed:} Any",
+                  "{@b Skill and Difficulty:} {@difficulty Hard|Perception}"
+               ]
+            },
+            "The character uses the vehicle's scanners to study the enemy. If successful, the character learns what weapons the targeted vehicle has, its modifications, and its system strain and hull trauma thresholds. The character can also spend {@symbols aa} to learn its current system strain and hull trauma levels."
+         ]
+      },
+      {
+         "name": "Hack Enemy's Systems",
+         "page": 229,
+         "type": "vehicle action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Pilot Only:} No",
+                  "{@b Silhouette:} Any",
+                  "{@b Speed:} Any",
+                  "{@b Skill and Difficulty:} {@difficulty Hard|Computers}"
+               ]
+            },
+            "The character uses computers to attempt to disrupt the systems of an enemy vehicle. If successful, the character compromises the defenses of the target vehicle for one round per {@symbols s} (see the {@sidebar Vehicle Components} sidebar, on page 221). A {@symbols t} may be spent to compromise one enemy weapon of the character's choice, and {@symbols aa} may be spent to inflict 1 system strain on the target vehicle."
+         ]
+      },
+      {
+         "name": "Intercept Projectiles",
+         "page": 229,
+         "type": "vehicle action",
+         "description": [
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Pilot Only:} No",
+                  "{@b Silhouette:} Any",
+                  "{@b Speed:} Any",
+                  "{@b Skill and Difficulty:} {@difficulty Hard|Computers or Gunnery} or {@difficulty Average|Vigilance}"
+               ]
+            },
+            "The character tracks incoming attacks and uses vehicle systems to disrupt guided projectiles such as missiles, or drops flares and chaff at an opportune moment. If the check is successful, any attacks against their vehicle using weapons with the {@quality Guided} quality upgrade their difficulty once (plus an additional upgrade for every additional {@symbols ss}) until the start of the character's next turn."
          ]
       }
    ],
