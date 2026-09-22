@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2026.9.22.1",
+         "version": "2026.9.22.2",
          "json": "embers-ships-of-the-shattered-empire",
          "full": "Twilight Imperium: Ships of the Shattered Empire",
          "abbreviation": "EotI:SSE",
@@ -862,6 +862,40 @@
          ]
       },
       {
+         "name": "Ground Vehicles",
+         "page": 18,
+         "type": "vehicle",
+         "description": [
+            "Although this section mainly talks about starships, most of the advice works just as well when managing encounters involving ground vehicles or aircraft. Specifically, the advice for managing NPC crews and initiative for vehicles works just as well for ground vehicles as it does for starships."
+         ]
+      },
+      {
+         "name": "How Many Gunners Aboard a Ship?",
+         "page": 21,
+         "type": "vehicle",
+         "description": [
+            "Some warships, especially smaller ones such as {@vehicle Destroyer|destroyers|eoti}, are outfitted with multiple smaller weapons but also have particularly small crews. In these cases, the only way every gun could be crewed is if every crew member is a gunner. That leaves nobody to command, fix, or even fly the ship!",
+            "In ships like these, not all weapons are operated at the same time. Instead, a few gunners switch between weapons depending on where their targets are (since weapons often fire in a certain direction). Other weapons, such as long range missiles or torpedoes, may be operated by the captain or pilot.",
+            "Additionally, most of the weapons on ships are operated with computer assistance. That means a single gunnery team might be firing a whole bank of guns at once (in game terms, this is represented by the {@rule Blanket Barrage} or {@rule Concentrated Barrage} actions)."
+         ]
+      },
+      {
+         "name": "Crew Stat Blocks",
+         "page": 21,
+         "type": "vehicle",
+         "description": [
+            "Although we can imagine that the crew members of starships would have a wide range of specialized skill-sets, {@title Genesys}'s game mechanics are simple enough that you can use the same minion profile to represent all the basic crew members aboard a ship. We recommend using the {@adversary Combat Pilot|combat pilot|eoti} ({@title Embers of the Imperium} page 248) as a basic crew member and the {@adversary Field Commander|field commander|eoti} ({@title Embers of the Imperium} page 249) as a ship's captain or high-ranking officer. You can use the rules accompanying those profiles to adapt them to the galactic power they serve. Also, feel free to add any additional relevant skills to minion groups staffing particular stations, such as {@skill Computers} or {@skill Perception} for those in Engineering and Support."
+         ]
+      },
+      {
+         "name": "Crew Casualties and Player Comfort",
+         "page": 23,
+         "type": "vehicle",
+         "description": [
+            "We've already mentioned a few reasons why you would want to handle the idea of crew casualties narratively. However, you should also keep it narrative—or completely gloss over the entire concept of NPC crew members being killed or wounded—if it would make your players uncomfortable. Many people would rather play a swashbuckling and action-packed adventure than try to simulate some of the grim realities of war, so keep your players' comfort level in mind."
+         ]
+      },
+      {
          "name": "A Storytelling Tool",
          "page": 25,
          "type": "mass combat",
@@ -1514,6 +1548,328 @@
             "Most ships have some form of superluminal communication system, with a maximum effective range of a couple light years for coherent messages. They also carry subluminal backup systems with much shorter ranges, and a few ships even have message drones.",
             "The types of sensors on a ship depend on the ship's role and the faction that fitted it out. Some vessels (especially scout ships and spy vessels) have powerful gravitic sensors that can detect superluminal ship movements from scores or even hundreds of light years away, but these are very rare, specialized, and ruinously expensive systems. A ship is much more likely to have a standard suite of passive sensors that can detect ships or other powered objects within the boundaries of a star system (strategic range) and a suite of active sensors that can be used to detect even unpowered objects or stealthed ships within long range (see page 137 of {@title Embers of the Imperium} for more information).",
             "The signals officer can do plenty of things to aid their comrades during combat. They can interfere with enemy communications using the {@rule Jamming} action, analyze targets for weaknesses with {@rule Scan the Enemy}, defend against missiles and torpedoes with {@rule Intercept Projectiles}, and even access an enemy's computer systems and wreak havoc with {@rule Hack Enemy's Systems}. They may also attempt to intercept and decrypt enemy communications or pick up garbled messages from their allies."
+         ]
+      },
+      {
+         "name": "Starship Combat Encounter Size",
+         "page": 19,
+         "type": "starship battles",
+         "description": [
+            "Just as with normal combat encounters, there is an upper limit to how many participants you should include in a starship encounter. Too many and the encounter grows unwieldy and bogs down play—plus you run the risk of putting your players in an unwinnable fight.",
+            "The following are guidelines for encounters primarily focused on starfighters (and other small craft), on capital ships (vessels of silhouette 5 and larger), or on a mix of both. All guidelines are based on the number of ships involved, not their crew sizes.",
+            {
+               "type": "rule",
+               "_ref": {
+                  "name": "Fighter Encounters"
+               },
+               "description": []
+            },
+            {
+               "type": "rule",
+               "_ref": {
+                  "name": "Capital Ship Encounters"
+               },
+               "description": []
+            },
+            {
+               "type": "rule",
+               "_ref": {
+                  "name": "Combined Encounters"
+               },
+               "description": []
+            }
+         ]
+      },
+      {
+         "name": "Fighter Encounters",
+         "page": 19,
+         "type": "starship battles",
+         "description": [
+            "\"Fighter\" encounters are where all parties are controlling starfighters or {@vehicle Star Bomber|star bombers|eoti}. This is the case regardless of whether each PC has their own fighter or two or three PCs are collectively operating a larger starfighter or bomber.",
+            "When constructing these encounters, the most important thing to keep in mind is which fighters or bombers your player characters have. To put it bluntly, most starfighters are more fragile than the PCs are in a standard combat encounter. Not only can PCs improve their resilience and survivability through talents and equipment, they also have access to multiple sources of convenient healing (such as {@gear Dermal Sealer|dermal sealers|eoti}). And even if they are {@rule incapacitated}, an ally's {@skill Medicine} check can revive them.",
+            "None of these apply to starfighters and other small vehicles, however. There are only a few ways to make starfighters more survivable, and repairing them in the midst of combat is nearly impossible. Additionally, if a starfighter is incapacitated, it is much harder to get it working again. There's a good chance it may end up destroyed instead.",
+            "All of which is to say, when planning a starfighter encounter, you should aim for parity between the opposed forces rather than unleashing hordes of enemy fighters. Your PCs should go up against a roughly equal number of enemies (or slightly more if the enemies are mainly minions). The following are some suggested encounter sizes using the {@rule Fighter Minion Groups|fighter minion group} rules on page 10:",
+            {
+               "type": "list",
+               "items": [
+                  "One minion group of three starfighters for every two PC-operated vehicles. This is an engaging encounter that should not pose a serious threat to the PCs.",
+                  "One minion group of two starfighters for every two PC-operated vehicles, plus one nemesis-operated starfighter. This is good for an intense, climactic dogfight, especially if the nemesis uses maneuvers or talents to stay in the fight longer (see {@b {@rule Running a Battle}} on page 22).",
+                  "One minion group of two starfighters, plus one {@vehicle star bomber||eoti} (see {@b {@rule NPC Crews}} on page 20 for how to handle staffing a {@vehicle Star Bomber|bomber|eoti}). If there are four or more PC-operated vehicles, add a second minion group of starfighters. If the PCs have their own larger craft, you can increase the size of the minion groups to three. This is a good setup for an objective-based encounter, where the PCs must shoot down the {@vehicle Star Bomber|bomber|eoti} before it attacks an allied ship or position while the minion starfighters run interference.",
+                  "One rival-operated starfighter for each PC-operated starfighter (or two for any larger PC-operated vehicles). This is a \"classic\" dogfight where the PCs engage an equal force of enemies. As long as the PCs play out the encounter intelligently, they should triumph. However, cooperation and coordination are necessary for victory."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Capital Ship Encounters",
+         "page": 19,
+         "type": "starship battles",
+         "description": [
+            "\"Capital ship\" encounters occur when the players are in control of a capital ship and are engaging other capital ships. Anything of silhouette 5 or larger qualifies, but we recommend {@vehicle Destroyer|destroyers|eoti} and {@vehicle Cruiser|cruisers|eoti} as good capital ships for PCs.",
+            "Capital ship encounters generally only involve a few ships. They are often simply one-on-one duels between the PCs' ship and a single enemy vessel. What makes them interesting and challenging is maneuvering to bring primary weapons to bear (and attempting to stay out of the enemy's line of fire), shooting accurately, and dealing with the inevitable damage your ship suffers.",
+            "When constructing a capital ship encounter, we recommend limiting the number of combatant vessels to no more than four. Any conflict larger than that would be better handled as a {@rule mass combat} scenario.",
+            "Capital ship encounters have three basic variants you can use:",
+            {
+               "type": "list",
+               "items": [
+                  "A single capital ship of roughly the same size and type as the PCs' capital ship. This should be a straightforward encounter, with the PCs favored to win mostly because of the less skilled {@rule NPC Crews|NPC crew} (see page 20) on the adversary's ship.",
+                  "Two capital ships smaller than the PCs' capital ship. This might be two {@vehicle Destroyer|destroyers|eoti} versus a {@vehicle cruiser||eoti}, or two {@vehicle Corvette|corvettes|eoti} versus a {@vehicle destroyer||eoti}, for example. If the PCs' capital ship is particularly large, you can increase the number of enemy ships to three provided they are significantly smaller than the PCs' ship (three {@vehicle Destroyer|destroyers|eoti} versus a {@vehicle dreadnought||eoti}, for example). Here the PCs enjoy the advantage of strength and power, but you can make the encounter interesting by attacking their ship from several directions and trying to trick them into splitting their attention between enemies.",
+                  "A single capital ship larger than the PCs' ship, or two capital ships that are the same size and type as the PCs' ship. This is a really difficult fight for your players, and we recommend it only if their characters are particularly good at ship combat, their ship is unusually powerful, or they have devised some tactical advantage for the fight (ambushing the enemy from a nearby asteroid field or tricking them into splitting their forces, for example)."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Combined Encounters",
+         "page": 20,
+         "type": "starship battles",
+         "description": [
+            "Combined or mixed encounters may seem more daunting than the other encounters discussed here, but thanks to the flexibility of the {@title Genesys} rules, they're fairly easy to run. As with the other forms of encounters, our primary recommendation is to keep the encounter fairly limited in scope.",
+            "These encounters can also be grouped into three basic variants:",
+            {
+               "type": "list",
+               "items": [
+                  "A capital ship roughly the size and type of the PCs' capital ship and one minion group of two NPC starfighters for each PC-controlled starfighter. This is the simplest way to handle a group that has some people who want to engage with starfighters and some who want to control a bigger vessel. Have the capital ships and starfighters primarily engage their counterparts, but look for opportunities for them to help each other out.",
+                  "A capital ship smaller than the PCs' capital ship and two minion groups of three NPC starfighters, plus one additional minion group if there are at least two PCs with their own fighters. This encounter works particularly well if most or all of the PCs are aboard their capital ship, because it creates multiple threats that have to be dealt with by several gunners using different weapon systems. Any PCs with starfighters are outnumbered by the enemy fighters and have to work carefully in conjunction with the larger ship to survive.",
+                  "A single capital ship with a single minion group of two NPC starfighters if there are five or more PC-controlled fighters. This encounter works best if the PCs are all in starfighters and {@vehicle Star Bomber|bombers|eoti}. The PCs need to launch cooperative attacks to distract or disable the target's antistarfighter defenses, then either destroy it slowly or drive it off."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "NPC Crews",
+         "page": 20,
+         "type": "starship battles",
+         "description": [
+            "Since large vessels tend to have large crews, managing an entire starship crew can be an overwhelming task for a GM. Controlling each crew member individually also denies the GM the chance to take advantage of one of {@title Genesys}'s tools for simplifying encounters: minion groups.",
+            "Instead, we recommend a simplified approach. Depending on the size of the ship's crew (information available in every ship's stat block), most of an NPC crew should be composed of minion groups, with each group focused on a specific task. The size of the minion groups depends on how many total crew are aboard the ship (see {@b {@rule Minion Group Size}} on page 21).",
+            "Even if the ship's crew are mostly minions, you should use a rival or nemesis as the ship's captain. There may be a few other roles that you can fill with a single rival or nemesis at your discretion. However, remember that the more individual characters you add into a ship's crew, the more complex any combat encounters will become.",
+            "Finally, ships with smaller crews (generally less than ten) can be run by a crew of rivals or possibly a mix of rivals and one or two smaller minion groups. The guidelines here are for running combat encounters with larger military vessels, not patrol craft or transports with small crews and relatively few weapons.",
+            {
+               "type": "rule",
+               "_ref": {
+                  "name": "Crew Roles"
+               },
+               "description": []
+            },
+            {
+               "type": "rule",
+               "_ref": {
+                  "name": "Minion Group Size"
+               },
+               "description": []
+            }
+         ]
+      },
+      {
+         "name": "Crew Roles",
+         "page": 20,
+         "type": "starship battles",
+         "description": [
+            "To determine the NPC crew for a starship, first break up the crew into the three major roles required to run the ship during a structured encounter. Each role includes a brief description plus an overview of the actions and maneuvers crew may perform. This overview, while not comprehensive, provides guidance for running an encounter. Crew can still perform actions or maneuvers that are either on another role's list or not on any list at all.",
+            {
+               "title": "Command and Navigation",
+               "entries": [
+                  "Crew in command and navigation are responsible for steering or piloting the ship, plotting courses for standard and superluminal travel, and issuing orders to the rest of the crew. In smaller ships, this role may be limited to the captain or to the captain and a single helm officer or pilot. Larger ships may have dozens of crew serving in this role.",
+                  "While crew in this role generally focus on moving the ship or giving orders, they may also fire some of the ship's weapons. However, most of the guns should be operated by crew in the gunnery role.",
+                  "Some of the actions and maneuvers that crew in this role may perform include the following:",
+                  {
+                     "type": "list",
+                     "items": [
+                        "{@rule Accelerate|Accelerate/Decelerate} (maneuver)",
+                        "{@rule Brace for Impact} (maneuver)",
+                        "{@rule Copilot} (action)",
+                        "{@rule Updated Dangerous Driving Action|Dangerous Driving} (action)",
+                        "{@rule Fire Discipline} (action)",
+                        "{@rule Plot Course} (action)",
+                        "{@rule Reposition} (maneuver)"
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Gunnery",
+               "entries": [
+                  "Crew in this role are responsible for firing the ship's weapons. Individual weapons may have a single gunner or several crew, depending on their size and complexity. Larger ships with larger crews tend to have specific gunners for each weapon on the vessel.",
+                  "Some of the actions and maneuvers that crew in this role may perform include the following:",
+                  {
+                     "type": "list",
+                     "items": [
+                        "{@rule Aim} (maneuver)",
+                        "{@rule Blanket Barrage} (action)",
+                        "{@rule Concentrated Barrage} (action)",
+                        "Perform a Combat Check with Vehicle Weapons (action)",
+                        "{@rule Intercept Projectiles} (action)"
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Engineering and Support",
+               "entries": [
+                  "Crew in this role service the ship's engines, repair damage, oversee computer and electronic warfare systems, and operate scanners. They're the ones who keep the ship running. They can also support their ship and affect the enemy through electronic means.",
+                  "Some of the actions and maneuvers that crew in this role may perform include the following:",
+                  {
+                     "type": "list",
+                     "items": [
+                        "{@rule Assist} (maneuver)",
+                        "{@rule Boost Defenses} (action)",
+                        "{@rule Damage Control} (action)",
+                        "{@rule Hack Enemy's Systems|Hack Enemy Systems} (action)",
+                        "{@rule Intercept Projectiles} (action)",
+                        "{@rule Jamming} (action)",
+                        "{@rule Manual Repairs} (action)",
+                        "{@rule Scan the Enemy} (action)"
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Other",
+               "entries": [
+                  "Of course, there's a lot more to a crew than command, gunnery, and engineering. Large ships need everything from technical specialists and marines to doctors and cooks. However, most of those roles can be handled narratively and don't affect the outcome of a battle. Just remember that quite a few crew members aren't in any of the previous three categories but are doing other important things to keep the ship running."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Minion Group Size",
+         "page": 21,
+         "type": "starship battles",
+         "description": [
+            "The size of each minion group aboard a ship depends on the overall size of the ship's crew. We recommend using the following guidelines:",
+            {
+               "type": "list",
+               "items": [
+                  "Ships with 11-50 crew members: minion groups of two.",
+                  "Ships with 51-100 crew members: minion groups of three.",
+                  "Ships with 101+ crew members: minion groups of four."
+               ]
+            },
+            "When dealing with a ship's weapons, assume that each of the larger and more powerful weapons requires a full minion group to operate (a \"gun crew\" if you will). Smaller defensive weapons could be operated by individual members of a single minion group. In the latter case, the minion group could fire all of these defensive weapons when making a single attack as the group, just like a minion group of soldiers only makes one combat check even though narratively they are firing all their guns.",
+            "Remember that these are guidelines, though, not requirements. You can arrange your crews as you see fit.",
+            {
+               "type": "sidebar",
+               "_ref": {
+                  "name": "How Many Gunners Aboard a Ship?"
+               },
+               "entries": []
+            },
+            {
+               "type": "sidebar",
+               "_ref": {
+                  "name": "Crew Stat Blocks"
+               },
+               "entries": []
+            }
+         ]
+      },
+      {
+         "name": "Running a Battle",
+         "page": 22,
+         "type": "starship battles",
+         "description": [
+            "Once you have determined your ship's crew and designed your encounter, all that remains is to play it out! The following guidelines are intended to keep the encounter flowing as smoothly and as quickly as possible.",
+            {
+               "type": "rule",
+               "_ref": {
+                  "name": "Initiative in Starship Combat Encounters"
+               },
+               "description": []
+            },
+            {
+               "type": "rule",
+               "_ref": {
+                  "name": "What Should NPC Crews Be Doing?"
+               },
+               "description": []
+            },
+            {
+               "type": "rule",
+               "_ref": {
+                  "name": "Damage and Crew Casualties"
+               },
+               "description": []
+            }
+         ]
+      },
+      {
+         "name": "Initiative in Starship Combat Encounters",
+         "page": 22,
+         "type": "starship battles",
+         "description": [
+            "Initiative follows the same basic structure in starship-based combat encounters as it does in any combat encounter. However, even when organized into minion groups, there are significantly more NPCs than there are player characters. Generating so many NPC initiative slots would bog down the encounter.",
+            "In starship encounters, you instead generate one initiative slot for each NPC starship. Use the captain or pilot's {@skill Vigilance} or {@skill Cool} skill (whichever is appropriate) to generate the initiative slot.",
+            "When you fill an NPC initiative slot with a starship instead of a single adversary during an encounter, all the NPCs aboard that starship take their turn in whatever order you choose. Note that the number of NPCs who take a turn may be much smaller than the listed crew size (see {@b {@rule NPC Crews}} on page 20). Once every NPC aboard the ship who is eligible to take their turn has done so, initiative proceeds to the next unfilled slot."
+         ]
+      },
+      {
+         "name": "What Should NPC Crews Be Doing?",
+         "page": 22,
+         "type": "starship battles",
+         "description": [
+            "We already discussed how the majority of an NPC starship crew should be composed of minion groups. However, in larger ships such as {@vehicle Dreadnought|dreadnoughts|eoti} and {@vehicle Carrier|carriers|eoti}, there are enough people aboard that you can crew every gun and still have enough minion groups left over to perform dozens of actions.",
+            "We don't recommend doing this. Instead, remember that the purpose of this combat encounter is to create a thrilling, tense, and—most of all—{@i fun} experience for your players. Any ships crewed by NPCs should be doing just enough to serve this purpose and nothing more.",
+            "This section discusses roughly how many actions the crew of a larger ship should perform, what actions those should be, and what actions you should avoid.",
+            {
+               "title": "Command and Navigation",
+               "entries": [
+                  "Generally, a starship crewed by NPCs should have one NPC or minion group actively serving in the command and navigation role. Each turn, a ship is likely only performing one action and one maneuver from the recommended command and navigation list under {@b {@rule Crew Roles}} on page 20 (or two maneuvers if they downgrade their action following the rules on page 226 of the {@title Genesys} Core Rulebook).",
+                  "The NPC serving as the captain is an obvious choice for this role, but a large ship may have a minion group serving as the bridge crew. Whatever they do should be focused on moving the ship from place to place. Actions such as {@rule Plot Course} or {@rule Copilot} can be performed in rare circumstances but run the risk of slowing down the encounter. Stick with getting a ship from one location to another, or have them fire a long-range guided weapon like a missile or torpedo if the NPC doesn't have anything else to do with their action."
+               ]
+            },
+            {
+               "title": "Gunnery",
+               "entries": [
+                  "During a combat encounter, an NPC starship crew should focus on firing their ship's guns. However, this doesn't mean you should have them fire every gun every turn. Limiting your firing and using certain combat actions designed for starships keeps combat encounters from turning into a slog of dice rolls every time an NPC ship activates.",
+                  "First, remember that ship weapons tend to only fire in certain directions. This means not every weapon can fire all the time, even if you're running the encounter strictly as a \"theater of the mind\" without any sort of battle map, tokens, or miniatures.",
+                  "Next, although the profiles for larger ships may not have written limits on the amount of ammunition for weapons like missiles and torpedoes, that doesn't mean you should treat the weapons like they have infinite shots. Narratively, ships carry limited amounts of ordnance, and that means a captain won't waste powerful weapons on targets they can dispatch with their smaller guns.",
+                  "Finally, have your ships fire groups of the same weapons together in broadsides or volleys by using the {@rule Blanket Barrage} and {@rule Concentrated Barrage} actions ({@title Genesys} Core Rulebook, page 228). This lets your NPCs fire several weapons with a single check and feels cinematic and exciting. After all, a ship letting loose with all its guns in one massive broadside is a lot scarier to your players than rolling multiple checks for several weaker shots!"
+               ]
+            },
+            {
+               "title": "Engineering and Support",
+               "entries": [
+                  "Generally, you should perform no more than one of the actions from the engineering and support list under {@b {@rule Crew Roles}} on page 20 during each NPC ship's turn. These actions were originally created to give player characters more options during starship combat. Trying to perform many of them with an NPC crew slows down an encounter immensely (and risks boring your players).",
+                  "The default action your NPCs should perform is {@rule Damage Control}, and even then mostly just to repair {@rule Vehicle Critical Hits|Critical Hits} so that the NPC ship can keep fighting or flee. In a combat encounter, the NPC starship is supposed to threaten your PCs before being driven off or destroyed. So don't work too hard to repair the damage your players inflict!",
+                  {
+                     "title": "Special Cases",
+                     "entries": [
+                        "This guidance does come with a caveat, however. If your PCs always rely on a single weapon or tactic during a starship combat encounter, consider using some of the more specialized {@rule vehicle actions} to counter that and encourage them to think creatively. For example, if the PCs always launch torpedoes from maximum range, you can have your NPC ship start using {@rule Intercept Projectiles} ({@title Genesys} Core Rulebook, page 229) to make that approach more difficult. Likewise, if the PCs prefer to run away from every fight, you can use the {@rule Copilot} action to boost any {@skill Operating} or {@skill Piloting} checks your NPCs make to chase them (especially if they usually stay out of range of the NPCs' guns)."
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Damage and Crew Casualties",
+         "page": 23,
+         "type": "starship battles",
+         "description": [
+            "In a combat encounter involving starships, most of the rules involve damaging or destroying the ships themselves. However, large starships often have large crews, and people may also be injured or killed during the fighting. The following guidelines cover how you can simulate crew casualties on PC and NPC starships.",
+            {
+               "title": "Player Character Starships",
+               "entries": [
+                  "When dealing with player character starships, it's important to remember that not every hit should injure or kill crew members. Most attacks are absorbed by the armor or shielding of the ship, or they damage portions of the ship without people. You can also handle crew casualties completely narratively, announcing that a few crew members have been injured or killed when the PCs' ship suffers a particularly nasty hit. You should use the narrative approach if none of your PCs are skilled medics.",
+                  "However, if you want a more mechanics-focused solution, you can have the PCs' ship suffer casualties whenever it suffers a {@rule Vehicle Critical Hits|Critical Hit}. After rolling to determine the result, take the \"ones\" digit from your roll. That number (from 0 to 9) is how many NPCs aboard the ship are {@rule incapacitated} from the attack.",
+                  "Then during the next round, one of the PCs has the chance to perform an {@difficulty average|medicine} to try and stabilize some of the casualties. For each uncanceled {@symbols s}, one {@rule incapacitated} crew member is healed enough to return to their duties. {@symbols aa} may be spent to stabilize an {@rule incapacitated} crew member so that they will heal in the future. Any other NPC crew members who were {@rule incapacitated} during the previous round die of their injuries (or were already dead).",
+                  "How crew casualties affect the performance of the ship is up to you. It could include some weapons being unable to fire; penalties to checks to repair the ship, maneuver it, or use its systems; or even the PCs being unable to run the ship at all."
+               ]
+            },
+            {
+               "title": "NPC Starships",
+               "entries": [
+                  "If a ship is crewed entirely by NPCs, we highly recommend you either handle any crew casualties narratively or don't track them at all."
+               ]
+            },
+            {
+               "type": "sidebar",
+               "_ref": {
+                  "name": "Crew Casualties and Player Comfort"
+               },
+               "entries": []
+            }
          ]
       },
       {
