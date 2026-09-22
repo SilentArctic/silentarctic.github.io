@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.12.30.2",
+         "version": "2026.9.20",
          "json": "core-rule-book",
          "full": "Genesys Core Rulebook",
          "abbreviation": "CRB",
@@ -210,12 +210,12 @@
          "skills": [
             {
                "name": "Melee (Light)",
-               "characteristic": "agility",
+               "characteristic": "brawn",
                "source": "crb"
             },
             {
                "name": "Perception",
-               "characteristic": "willpower",
+               "characteristic": "cunning",
                "source": "crb"
             },
             {
@@ -526,7 +526,7 @@
             },
             {
                "name": "Perception",
-               "characteristic": "willpower",
+               "characteristic": "cunning",
                "source": "crb"
             },
             {
@@ -1587,7 +1587,8 @@
             "Combat CR:4",
             "Social CR:3",
             "General CR:4"
-         ]
+         ],
+         "page": 163
       },
       {
          "name": "Infantry",
@@ -1669,7 +1670,8 @@
             "Combat CR:3",
             "Social CR:1",
             "General CR:1"
-         ]
+         ],
+         "page": 163
       },
       {
          "name": "Occult Commando",
@@ -1807,7 +1809,8 @@
             "Combat CR:5",
             "Social CR:2",
             "General CR:4"
-         ]
+         ],
+         "page": 163
       },
       {
          "name": "Beastman",
@@ -1837,7 +1840,7 @@
             },
             {
                "name": "Perception",
-               "characteristic": "willpower",
+               "characteristic": "cunning",
                "source": "crb"
             },
             {
@@ -2742,8 +2745,7 @@
             {
                "name": "Computers",
                "characteristic": "intellect",
-               "ranks": 2,
-               "source": "sotb"
+               "ranks": 2
             },
             {
                "name": "Mechanics",
@@ -3144,17 +3146,26 @@
          "st": 8,
          "xp": 80,
          "skills": {
-            "skills": [
-               "athletics",
-               "coordination",
-               "resilience"
-            ],
+            "skills": [],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
                "An animalistic alien starts with one rank in {@skill Athletics}, {@skill Coordination}, or {@skill Resilience} during character creation. You still can't train their skills above rank 2 during character creation."
             ],
-            "choice": true
+            "choice": [
+               {
+                  "name": "Athletics",
+                  "ranks": 1
+               },
+               {
+                  "name": "Coordination",
+                  "ranks": 1
+               },
+               {
+                  "name": "Resilience",
+                  "ranks": 1
+               }
+            ]
          },
          "abilities": [
             "Natural Weapons"
@@ -3162,6 +3173,20 @@
          "description": [
             "Space opera settings often have alien species that are derivative of some terrestrial species. Fiction abounds with catlike aliens, turtle-like aliens, reptilian aliens, and so forth. Traditionally, these species are stronger, faster, or tougher than humans, and they share some traits with the nonsapient Terran species they mimic. Our animalistic alien species is stronger and faster than most average humans, but trades this for fewer starting XP. The physical appearance of this species is, of course, up to you."
          ],
+         "modifiers": {
+            "roll": [{
+               "name": "Natural Weapons",
+               "skills": [
+                  "brawl"
+               ],
+               "damage": 2,
+               "qualities": [{
+                  "name": "vicious",
+                  "value": 1
+               }],
+               "description": "+2 damage and add Vicious 1 to Brawl attacks."
+            }]
+         },
          "settings": [
             {
                "name": "space opera"
@@ -3183,15 +3208,13 @@
          "st": 10,
          "xp": 110,
          "skills": {
-            "skills": [
-               "any two non-career"
-            ],
+            "skills": [],
             "ranksTotal": 2,
             "ranksEach": 1,
             "description": [
                "An average human starts with one rank in each of two different non-career skills at character creation. They obtain this rank before spending experience points, and these skills may not be increased higher than rank 2 during character creation."
             ],
-            "choice": true
+            "choice": ["non-career"]
          },
          "abilities": [
             "Ready for Anything"
@@ -3241,7 +3264,7 @@
                "name": "science fiction"
             }
          ],
-         "page": 17
+         "page": 174
       },
       {
          "name": "Clone",
@@ -3257,15 +3280,13 @@
          "st": 10,
          "xp": 80,
          "skills": {
-            "skills": [
-               "two skills"
-            ],
+            "skills": [],
             "ranksTotal": 4,
             "ranksEach": 2,
             "description": [
                "You may select two skills when creating a clone character. Your clone character starts play with two ranks in each of these skills. You still can't train their skills above rank 2 during character creation."
             ],
-            "choice": true
+            "choice": ["any"]
          },
          "abilities": [
             "A Face in a Crowd"
@@ -3278,7 +3299,7 @@
                "name": "science fiction"
             }
          ],
-         "page": 17
+         "page": 174
       },
       {
          "name": "Dwarf",
@@ -3294,9 +3315,10 @@
          "st": 10,
          "xp": 90,
          "skills": {
-            "skills": [
-               "resilience"
-            ],
+            "skills": [{
+               "name": "Resilience",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -3314,7 +3336,7 @@
                "name": "fantasy"
             }
          ],
-         "page": 14
+         "page": 142
       },
       {
          "name": "Elf",
@@ -3330,9 +3352,10 @@
          "st": 10,
          "xp": 90,
          "skills": {
-            "skills": [
-               "perception"
-            ],
+            "skills": [{
+               "name": "Perception",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -3346,12 +3369,18 @@
          "description": [
             "Whether tall or short, with pointy or really pointy ears, most elves are known for their grace, longevity, and connection to the natural world. This profile is based on that common conception of an elf, with high Agility (and an innate defense) but a lower wound threshold."
          ],
+         "modifiers": {
+            "stats": {
+               "mDefense": 1,
+               "rDefense": 1
+            }
+         },
          "settings": [
             {
                "name": "fantasy"
             }
          ],
-         "page": 14
+         "page": 142
       },
       {
          "name": "Mongrel",
@@ -3367,9 +3396,10 @@
          "st": 8,
          "xp": 100,
          "skills": {
-            "skills": [
-               "discipline"
-            ],
+            "skills": [{
+               "name": "Discipline",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -3391,7 +3421,7 @@
                "name": "steampunk"
             }
          ],
-         "page": 15
+         "page": 152
       },
       {
          "name": "Orc",
@@ -3407,9 +3437,10 @@
          "st": 8,
          "xp": 100,
          "skills": {
-            "skills": [
-               "coercion"
-            ],
+            "skills": [{
+               "name": "Coercion",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -3428,7 +3459,7 @@
                "name": "fantasy"
             }
          ],
-         "page": 14
+         "page": 143
       },
       {
          "name": "Psionic",
@@ -3463,7 +3494,7 @@
                "name": "space opera"
             }
          ],
-         "page": 18
+         "page": 182
       },
       {
          "name": "Revenant",
@@ -3479,9 +3510,10 @@
          "st": 9,
          "xp": 100,
          "skills": {
-            "skills": [
-               "coercion"
-            ],
+            "skills": [{
+               "name": "Coercion",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -3503,7 +3535,7 @@
                "name": "steampunk"
             }
          ],
-         "page": 15
+         "page": 152
       },
       {
          "name": "Robot",
@@ -3519,15 +3551,13 @@
          "st": 10,
          "xp": 175,
          "skills": {
-            "skills": [
-               "one rank in six of the eight career skills (instead of the usual four)"
-            ],
-            "ranksTotal": 6,
+            "skills": [],
+            "ranksTotal": 2,
             "ranksEach": 1,
             "description": [
                "After selecting their career, your robot character may train one rank in six of the eight career skills (instead of the usual four)."
             ],
-            "choice": true
+            "choice": ["career"]
          },
          "abilities": [
             "Special Abilities (Robot)",
@@ -3558,9 +3588,10 @@
          "st": 10,
          "xp": 100,
          "skills": {
-            "skills": [
-               "cool"
-            ],
+            "skills": [{
+               "name": "Cool",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -3598,9 +3629,10 @@
          "st": 12,
          "xp": 100,
          "skills": {
-            "skills": [
-               "knowledge"
-            ],
+            "skills": [{
+               "name": "Knowledge",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -3638,9 +3670,10 @@
          "st": 8,
          "xp": 100,
          "skills": {
-            "skills": [
-               "athletics"
-            ],
+            "skills": [{
+               "name": "Athletics",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -3678,15 +3711,13 @@
          "st": 9,
          "xp": 100,
          "skills": {
-            "skills": [
-               "knowledge"
-            ],
+            "skills": [],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "vanguard starts with one rank in {@skill Knowledge} during character creation. You still can't train {@skill Knowledge} above rank 2 during character creation."
+               "A vanguard starts with one rank in {@skill Knowledge} during character creation. You still can't train {@skill Knowledge} above rank 2 during character creation."
             ],
-            "choice": false
+            "choice": ["knowledge"]
          },
          "abilities": [
             "Space Is Our Birthright",
@@ -5855,7 +5886,7 @@
          "page": 156,
          "description": [
             "This tonic does have the distinction of being created by an actual doctor, who was attempting to invent an anesthetic. However, various unscrupulous individuals have repurposed it as a incapacitating poison.",
-            "A character may covertly drug someone's food with this poison (requiring an {@b opposed {@skill Skulduggery} vs. {@skill Vigilance} check}) or apply it to a weapon such as a knife as a maneuver. If the target ingests the poison or it enters their bloodstream by other means, they must make a {@difficulty Hard|Resilience} check as an out-of-turn incidental or become immobilized for the next three rounds. The target also suffers 1 strain per {@symbols h}, and your GM can spend {@symbols d} to make them test against the poison again at the start of their next turn, as it remains in their system."
+            "A character may covertly drug someone's food with this poison (requiring an {@b opposed {@skill Skulduggery} vs. {@skill Vigilance} check}) or apply it to a weapon such as a knife as a maneuver. If the target ingests the poison or it enters their bloodstream by other means, they must make a {@difficulty Hard|Resilience} as an out-of-turn incidental or become immobilized for the next three rounds. The target also suffers 1 strain per {@symbols h}, and your GM can spend {@symbols d} to make them test against the poison again at the start of their next turn, as it remains in their system."
          ],
          "encumbrance": 0,
          "price": 525,
@@ -5955,7 +5986,7 @@
                "value": 1
             }
          ],
-         "page": 154,
+         "page": 161,
          "settings": [
             {
                "name": "weird war"
@@ -5983,7 +6014,7 @@
                "value": 2
             }
          ],
-         "page": 154,
+         "page": 161,
          "settings": [
             {
                "name": "weird war"
@@ -6018,7 +6049,7 @@
                "value": 2
             }
          ],
-         "page": 154,
+         "page": 161,
          "settings": [
             {
                "name": "weird war"
@@ -6065,7 +6096,7 @@
                "value": 3
             }
          ],
-         "page": 154,
+         "page": 161,
          "settings": [
             {
                "name": "weird war"
@@ -6101,7 +6132,7 @@
                "value": 1
             }
          ],
-         "page": 154,
+         "page": 161,
          "settings": [
             {
                "name": "weird war"
@@ -6492,7 +6523,7 @@
          "type": "weapon",
          "description": [
             "When you really want to make an impression in a firefight, a shotgun is a great way to go. Pulling a pistol from a hidden pocket just doesn't have the same dramatic effect as, say, drawing a lever-action 10 gauge out of a box of roses in slow motion. The flat thump of the report, the muzzle flash, the shocking recoil, even the loud clack-clack noise of working a pump action make these weapons an assault on everyone's senses, and also is what makes them so popular in action movies!",
-            "The stat line in {@table II.4-1: Modern Armor} is for a basic pump or semiautomatic hunting weapon with buckshot. Shotguns possess the {@quality Blast} quality due to the cloud of shot they fire and the {@quality Knockdown} quality due to the concussion of their blast (and, honestly, the {@sidebar Rule of Cool}). The basic shotgun stat line also assumes a magazine-fed weapon. If you wanted to have a simple break-action single- or double-barreled shotgun, you would give the weapon the {@quality Limited Ammo|Limited Ammo 1 or 2} quality. Sawed-off shotguns have their encumbrance reduced by two, and they gain the {@quality Inaccurate|Inaccurate 1} quality.",
+            "The stat line in {@table II.4-1: Modern Weapons} is for a basic pump or semiautomatic hunting weapon with buckshot. Shotguns possess the {@quality Blast} quality due to the cloud of shot they fire and the {@quality Knockdown} quality due to the concussion of their blast (and, honestly, the {@sidebar Rule of Cool}). The basic shotgun stat line also assumes a magazine-fed weapon. If you wanted to have a simple break-action single- or double-barreled shotgun, you would give the weapon the {@quality Limited Ammo|Limited Ammo 1 or 2} quality. Sawed-off shotguns have their encumbrance reduced by two, and they gain the {@quality Inaccurate|Inaccurate 1} quality.",
             "If you really want to dress up a scene, a character wielding a shotgun could add {@dice boost} to any {@skill Coercion} checks, especially if they rack the slide and glare menacingly at the target."
          ],
          "skill": {
@@ -6891,7 +6922,7 @@
          "name": "Gauss Rifle",
          "type": "weapon",
          "description": [
-            "A gauss rifle uses an electromagnetic rail or coil to hurl a metal projectile over a long distance at incredible speed. The main drawback of this weapon is that it takes some time to recharge its capacitors after firing, so we gave it {@quality Slow-Firing} (it's also important to do this for balance reasons, since this weapon is very powerful). We gave it {@quality Cumbersome} as well, so a character needs to be strong to carry it around, or must use a {@optionFeature bipod} (see page 207)."
+            "A gauss rifle uses an electromagnetic rail or coil to hurl a metal projectile over a long distance at incredible speed. The main drawback of this weapon is that it takes some time to recharge its capacitors after firing, so we gave it {@quality Slow-Firing} (it's also important to do this for balance reasons, since this weapon is very powerful). We gave it {@quality Cumbersome} as well, so a character needs to be strong to carry it around, or must use a {@gear Bipod Mount|bipod} (see page 207)."
          ],
          "skill": {
             "name": "Ranged (Heavy)"
@@ -6968,7 +6999,7 @@
          ]
       },
       {
-         "name": "Plasteel Carapice",
+         "name": "Plasteel Carapace",
          "type": "armor",
          "page": 176,
          "description": [
@@ -7776,7 +7807,7 @@
          "rarity": 4,
          "description": [
             "Holy icons are items that represent your character's faith and help them focus that faith to cast spells. These are generally religious symbols of some sort, perhaps necklaces, rings, emblems, or medallions. But they just as easily can simply represent your character's beliefs.",
-            "Holy icons enable divine spellcasters to perform unique miracles. When they are casting a spell, adding any Divine Only effects increase the spell's difficulty one less than they would normally. In addition, the number of wounds healed by heal spells cast by the user increases by two.."
+            "Holy icons enable divine spellcasters to perform unique miracles. When they are casting a spell, adding any Divine Only effects increase the spell's difficulty one less than they would normally. In addition, the number of wounds healed by heal spells cast by the user increases by two."
          ]
       },
       {
@@ -7864,7 +7895,7 @@
                "type": "list",
                "items": [
                   "{@b Use With:} This attachment can be applied to any {@skill Ranged (Heavy)} or {@skill Gunnery} weapon.",
-                  "{@b Modifiers}: If the user spends one {@rule preperation|preparation maneuver} to deploy the bipod, the weapon's {@quality Cumbersome} or {@quality Unwieldy} qualities are reduced by 2, to a minimum of 0, and the weapon's encumbrance is reduced by 2, to a minimum of 0, while the user fires from a crouched or prone position (or can brace the bipod against something solid).",
+                  "{@b Modifiers}: If the user spends one {@rule preparation|preparation maneuver} to deploy the bipod, the weapon's {@quality Cumbersome} or {@quality Unwieldy} qualities are reduced by 2, to a minimum of 0, and the weapon's encumbrance is reduced by 2, to a minimum of 0, while the user fires from a crouched or prone position (or can brace the bipod against something solid).",
                   "{@b Hard Points Required:} 1."
                ]
             }
@@ -8026,7 +8057,7 @@
             {
                "type": "list",
                "items": [
-                  "{@b Use With:} : This attachment can be applied to any ranged weapon that could logically benefit from the addition of a telescopic sight.",
+                  "{@b Use With:} This attachment can be applied to any ranged weapon that could logically benefit from the addition of a telescopic sight.",
                   "{@b Modifiers:} The user reduces the difficulty of ranged combat checks made with this weapon at long and extreme range by 1.",
                   "{@b Hard Points Required:} 1."
                ]
@@ -8047,7 +8078,7 @@
                "type": "list",
                "items": [
                   "{@b Use With:} This attachment can be applied to any {@skill Ranged (Heavy)} or {@skill Gunnery} weapon with an encumbrance of 4 or more.",
-                  "{@b Modifiers:} If the user spends two {@rule preparation|preparation maneuvers} to deploy the tripod, the weapon's {@skill Cumbersome} or {@skill Unwieldy} qualities are reduced by 3, to a minimum of 0, and the weapon's encumbrance is reduced by 4, to a minimum of 0. The weapon may not be moved (except to pivot on the tripod mount) once it has been set up. The user must spend two {@rule preparation|preparation maneuvers} to take the tripod down."
+                  "{@b Modifiers:} If the user spends two {@rule preparation|preparation maneuvers} to deploy the tripod, the weapon's {@quality Cumbersome} or {@quality Unwieldy} qualities are reduced by 3, to a minimum of 0, and the weapon's encumbrance is reduced by 4, to a minimum of 0. The weapon may not be moved (except to pivot on the tripod mount) once it has been set up. The user must spend two {@rule preparation|preparation maneuvers} to take the tripod down."
                ]
             }
          ]
@@ -8338,7 +8369,7 @@
                "type": "list",
                "items": [
                   "{@b Use With:} This attachment can be applied to any armor that uses hardened plates for protection.",
-                  "{@b Modifiers:} The armor gains the {@quality Reinforced} quality. The armor also increases its encoumbrance by 1.",
+                  "{@b Modifiers:} The armor gains the {@quality Reinforced} quality. The armor also increases its encumbrance by 1.",
                   "{@b Hard Points Required:} 2."
                ]
             }
@@ -8358,7 +8389,7 @@
                "type": "list",
                "items": [
                   "{@b Use With:} This attachment can be applied to any armor.",
-                  "{@b Modifiers:} While wearing this armor, the user may ignore the effects of vacuum or poionous atmospheric environments for up to one hour.",
+                  "{@b Modifiers:} While wearing this armor, the user may ignore the effects of vacuum or poisonous atmospheric environments for up to one hour.",
                   "{@b Hard Points Required:} 1."
                ]
             }
@@ -8393,7 +8424,7 @@
          ],
          "description": [
             "Sentries don't stop you from accessing restricted parts of a server. However, they spot unauthorized access and attempt to trace the offender.",
-            "{@b Effects:} If a character attempts to override this program and fails, the sysops or other system administrators are immediately notified of the intrusion. In addition, the sentry provides any sysops or system administrators who access the system during the encounter one suc cessful trace against the hacker."
+            "{@b Effects:} If a character attempts to override this program and fails, the sysops or other system administrators are immediately notified of the intrusion. In addition, the sentry provides any sysops or system administrators who access the system during the encounter one successful trace against the hacker."
          ]
       },
       {
@@ -8718,7 +8749,8 @@
                ]
             },
             "The pilot may increase the vehicle's current speed by one or more, to a maximum of the vehicle's maximum speed. The vehicle suffers a number of system strain equal to the amount its speed increased minus 1, to a minimum of 0."
-         ]
+         ],
+         "page": 226
       },
       {
          "name": "Actions",
@@ -9000,7 +9032,7 @@
          "page": 110,
          "type": "environment",
          "description": [
-            "Concealment is a situation that occurs when a character is hard to spot because of environmental effects such as darkness, smoke, tall grass, or mist. Concealment imposes penalties on ranged attacks and sight-based skill checks such as many {@skill Perception} checks. Conversely, it can provide bonuses for checks on other skills, such as Stealth.",
+            "Concealment is a situation that occurs when a character is hard to spot because of environmental effects such as darkness, smoke, tall grass, or mist. Concealment imposes penalties on ranged attacks and sight-based skill checks such as many {@skill Perception} checks. Conversely, it can provide bonuses for checks on other skills, such as {@skill Stealth}.",
             "The exact bonuses and penalties can be modified by the GM if needed. However, in general, concealment can be divided into levels based on how obscuring the concealment is. See {@table I.6-7: Concealment} for examples of different types of concealment. In each case, the type of concealment adds a number of {@dice setback} equal to the \"Dice Added\" entry to any ranged combat checks, {@skill Vigilance} checks, or {@skill Perception} checks against targets with concealment. Conversely, it adds a number of {@dice boost} equal to the \"Dice Added\" entry to any {@skill Stealth} checks made by a character with concealment. These Boosts or Setbacks may also be added to other skill checks if the GM feels it's appropriate."
          ]
       },
@@ -9062,7 +9094,7 @@
          "type": "character",
          "page": 177,
          "description": [
-            "Although modern cybernetics can give a disabled individual a replacement for a missing extremity, in the future they may do much more. These cybernetics are special pieces of gear that must be installed on a character with an {@difficulty Average|Medicine} check. They cannot be removed without surgery, requiring a second successful {@difficulty Average|Medicine} check.",
+            "Although modern cybernetics can give a disabled individual a replacement for a missing extremity, in the future they may do much more. These cybernetics are special pieces of gear that must be installed on a character with an {@difficulty Average|Medicine}. They cannot be removed without surgery, requiring a second successful {@difficulty Average|Medicine}.",
             "Thematically, cybernetics are supposed to enhance a character, so the ones presented here increase a character's derived stats, skills, or characteristics. To avoid letting increases get out of control, each stat, skill, or characteristic can only be increased by +1 due to cybernetics, no matter how many different cybernetics your character has that would increase that number."
          ]
       },
@@ -9178,7 +9210,7 @@
                "description": "Suggested effects for failing or generating {@symbols h} or {@symbols d}:",
                "items": [
                   "{@b Aversion:} The character is unnerved and distracted, and is {@rule disoriented} for the rest of the encounter. This is a good penalty for simple failure.",
-                  "Adrenaline Rush: Momentary panic gives the character a rush of adrenalin, but at a cost. The character adds {@dice boost} to their next check, but suffers 3 strain. This a good penalty for success with {@symbols h}.",
+                  "{@b Adrenaline Rush:} Momentary panic gives the character a rush of adrenalin, but at a cost. The character adds {@dice boost} to their next check, but suffers 3 strain. This a good penalty for success with {@symbols h}.",
                   "{@b Flee in Terror:} The character has to spend their next turn doing nothing but fleeing the source of the fear check (this includes downgrading their actions to maneuvers to move farther away). This is a good penalty for failure with a small amount of {@symbols h} or a {@symbols d}.",
                   "{@b Frozen in Terror:} The character is immobilized and staggered during their next turn. This is a good penalty for failure with a lot of {@symbols h} or {@symbols d}. This may also result in a {@table III.4-2: Traumas and their Effects|mental trauma} (see {@rule sanity})."
                ]
@@ -9877,7 +9909,7 @@
          "type": "action",
          "description": [
             "A PC makes a combat check when they use a combat skill to attack a target—by firing a gun, throwing a punch, or swinging a sword, for example. This is also referred to as an attack.",
-            "First and foremost, keep in mind that a combat check is a skill check. It follows all of the rules and procedures for making a skill check, including the steps for assem bling the dice pool. However, there are additional steps included in a combat check. All the steps a combat check follows are detailed here.",
+            "First and foremost, keep in mind that a combat check is a skill check. It follows all of the rules and procedures for making a skill check, including the steps for assembling the dice pool. However, there are additional steps included in a combat check. All the steps a combat check follows are detailed here.",
             {
                "title": "Step 1: Declare an Attack and Select Targets",
                "forceTitleLevel": 6,
@@ -9916,7 +9948,7 @@
                "title": "Step 5. Resolve Threat and Despair",
                "forceTitleLevel": 6,
                "entries": [
-                  "In the same fashion in which the controlling player determines how to spend {@symbols a} and {@symbols t} in their combat check, the GM then determines how to spend any {@symbols h} or {@symbols d} generated in the check. Much as fortune might favor the player, bad luck and circumstance can con spire against them. By default, the GM determines how {@symbols h} or {@symbols d} are spent, although in some cases (such as checks made by NPCs) they may give the players the option to spend these instead.",
+                  "In the same fashion in which the controlling player determines how to spend {@symbols a} and {@symbols t} in their combat check, the GM then determines how to spend any {@symbols h} or {@symbols d} generated in the check. Much as fortune might favor the player, bad luck and circumstance can conspire against them. By default, the GM determines how {@symbols h} or {@symbols d} are spent, although in some cases (such as checks made by NPCs) they may give the players the option to spend these instead.",
                   "Although many weapon descriptions include options for spending {@symbols a} and {@symbols t}, most do not for {@symbols h} and {@symbols d}; however, this is not always the case. Some particularly volatile or dangerous weapons do have these options, and if they do, the options are detailed in the weapon's description. Specific options for spending {@symbols h} and {@symbols d} in encounters do exist, however, and the most common of these can be found on {@table I.6-3: Spending Threat and Despair in Combat}, on page 104. As with {@symbols a} and {@symbols t}, keep in mind that these are not intended to be the only options available. As always, GMs may invent other ways to spend {@symbols h} and {@symbols d}, depending on the specific circumstances of the encounter, and any option that the players and GM agree on can be viable."
                ]
             },
@@ -9924,7 +9956,7 @@
                "title": "Step 6. Reduce Damage, Apply to Wound Threshold, and Apply Critical Injuries",
                "forceTitleLevel": 6,
                "entries": [
-                  "When a character suffers damage, whether from a rifle or claws, they reduce the damage received by their soak value. If any damage remains after this reduc tion, they suffer that many wounds. If the net result is zero or negative, the character suffers no wounds; their toughness and natural fortitude, in conjunction with any armor they might be wearing, have saved them from being injured. If the character suffers damage from multiple hits in an attack, they apply their soak value to each hit individually. For more information on damage and wounds, see Wounds, Strain, and States of Health, on page 112.",
+                  "When a character suffers damage, whether from a rifle or claws, they reduce the damage received by their soak value. If any damage remains after this reduction, they suffer that many wounds. If the net result is zero or negative, the character suffers no wounds; their toughness and natural fortitude, in conjunction with any armor they might be wearing, have saved them from being injured. If the character suffers damage from multiple hits in an attack, they apply their soak value to each hit individually. For more information on damage and wounds, see Wounds, Strain, and States of Health, on page 112.",
                   "An attack may also generate a Critical Injury. This may occur because the weapon's Critical rating is triggered, or because the target suffers a number of wounds greater than its wound threshold. More about Critical ratings is explained in Step 4: Resolve Advantage and Triumph.",
                   "When a Critical Injury is inflicted, the attacker rolls percentile dice on {@table I.6-10: Critical Injury Result}, on page 115. The result of the dice roll indicates which Critical Injury is inflicted.",
                   "Some weapons and talents modify this Critical Injury roll, potentially making it more or less effective. If an attack generates enough {@symbols a} to trigger more than one Critical Injury, the character makes a single Critical Injury roll, adding +10 to the result for each additional time the Critical rating is triggered."
@@ -9943,7 +9975,7 @@
          ]
       },
       {
-         "name": "Preperation",
+         "name": "Preparation",
          "page": 100,
          "type": "maneuver",
          "description": [
@@ -10187,8 +10219,8 @@
          "description": [
             "Just as fear is an integral part of horror, failure to overcome fear leads to insanity—especially given the types of fearsome threats characters face. These new rules can be used when a character fails a fear check particularly badly, to represent the ongoing effects of {@table III.4-2: Traumas and their Effects|mental trauma} that hinder the ability to act in rational manner. Note that all of the normal effects from fear checks still apply, but are now just the tip of the iceberg as sanity slips away…",
             "Whenever a PC fails a fear check with {@symbols d} or {@symbols hhhhh}, they also suffer a {@table III.4-2: Traumas and their Effects|mental trauma}. The trauma's severity should be the same as the difficulty of the fear check, although you may select a different trauma or modify the description of the trauma based on the actual fear-causing event. At your discretion, you can also apply a trauma when a character undergoes a particularly stressful encounter that results in them exceeding their strain threshold and falling unconscious. In this case, the exact trauma is up to you, but it should relate in some way to what caused the strain and to the intensity of the encounter. A near-lethal combat encounter, for example, might lead to a Phobia linked to bloodshed. Should a character gain the same trauma as one they already possess, they gain a trauma one severity level higher instead.",
-            "{@symbols t} on a successful fear check can be spent to remove one {@table III.4-2: Traumas and their Effects|mental trauma} that has an associated severity level that is the same as or less than the difficulty of the fear check. (For example, a successful {@difficulty Hard|fear} check with {@symbols t} could be used to remove a single Delusion, Phobia, or Obsession.) With your permission, traumas might also be removed (perhaps temporarily) via other methods such as intense meditation, therapy, medication, or similar means.",
-            "You and the player should determine the specifics concerning the character's trauma based on the encounter that created the trauma, and work this into the character's behavior. After all, these traumas should be as much roleplaying prompts as they are mechanical effects. In addition, while a character suffers from one of these traumas, you can spend {@symbols h and d} from any checks they make to add additional effects to their growing insanity. You can also invent similar effects based off the ones described here."
+            "{@symbols t} on a successful {@rule fear} check can be spent to remove one {@table III.4-2: Traumas and their Effects|mental trauma} that has an associated severity level that is the same as or less than the difficulty of the {@rule fear} check. (For example, a successful {@difficulty Hard} {@rule fear} check with {@symbols t} could be used to remove a single Delusion, Phobia, or Obsession.) With your permission, traumas might also be removed (perhaps temporarily) via other methods such as intense meditation, therapy, medication, or similar means.",
+            "You and the player should determine the specifics concerning the character's trauma based on the encounter that created the trauma, and work this into the character's behavior. After all, these traumas should be as much roleplaying prompts as they are mechanical effects. In addition, while a character suffers from one of these traumas, you can spend {@symbols h} and {@symbols d} from any checks they make to add additional effects to their growing insanity. You can also invent similar effects based off the ones described here."
          ]
       },
       {
@@ -10292,9 +10324,9 @@
          "type": "combat",
          "description": [
             "A character may opt to carry a pistol or a one-handed Melee weapon in each hand, increasing their volume of attacks at the expense of accuracy.",
-            "When attacking with two weapons, the charac ter must be using weapons that can each be reason ably held and wielded in one hand. Generally, these weapons are {@skill Ranged (Light)} weapons—such as pistols and grenades—and one-handed {@skill Melee} weapons or {@skill Brawl} weapons. If it's unclear whether or not a weapon can be wielded one-handed, the GM makes the final determination.",
-            "To make the attack, the player performs a combined check. First, the player designates one weapon as the primary weapon. When making the combined check, the character attacks with this weapon. The player then determines which skills and characteristics the character uses when making attacks with the pri mary weapon and which are used with the second ary weapon (the other weapon wielded). Finally, they determine the target.",
-            "To assemble the dice pool for this check, the player compares the skills that would be used to make an attack with each weapon by itself, and then compares the characteristics that would be used to make an attack with each weapon by itself. They then take the skill that they have fewer ranks in, and the characteristic that they have fewer ranks in, and use this skill and char acteristic to assemble their dice pool. It's very possible that the ranks in either the skills or characteristics are equal, in which case they can use either. If both checks would use the same skill or characteristic, they simply use that skill or characteristic.",
+            "When attacking with two weapons, the character must be using weapons that can each be reasonably held and wielded in one hand. Generally, these weapons are {@skill Ranged (Light)} weapons—such as pistols and grenades—and one-handed {@skill Melee} weapons or {@skill Brawl} weapons. If it's unclear whether or not a weapon can be wielded one-handed, the GM makes the final determination.",
+            "To make the attack, the player performs a combined check. First, the player designates one weapon as the primary weapon. When making the combined check, the character attacks with this weapon. The player then determines which skills and characteristics the character uses when making attacks with the primary weapon and which are used with the secondary weapon (the other weapon wielded). Finally, they determine the target.",
+            "To assemble the dice pool for this check, the player compares the skills that would be used to make an attack with each weapon by itself, and then compares the characteristics that would be used to make an attack with each weapon by itself. They then take the skill that they have fewer ranks in, and the characteristic that they have fewer ranks in, and use this skill and characteristic to assemble their dice pool. It's very possible that the ranks in either the skills or characteristics are equal, in which case they can use either. If both checks would use the same skill or characteristic, they simply use that skill or characteristic.",
             "They then compare the difficulty of the two combat checks they would make with each of their two weapons to hit their target, and select the check with the higher difficulty. Then, they increase the difficulty of the combat check by one. Finally, they make the check.",
             "If they succeed, they hit with their primary weapon in the normal manner. They may spend {@symbols aa} or {@symbols t} to hit with their secondary weapon as well. If both weapons hit, they may spend additional {@symbols a} or {@symbols t} to activate item qualities from either weapon. Each hit deals its weapon's base damage plus one point of damage per uncanceled success."
          ]
@@ -10304,7 +10336,7 @@
          "page": 108,
          "type": "combat",
          "description": [
-            "Although most characters probably feel more comfort able going into a fight with a good gun in their hand, there are times they must rely on their fists, feet, or other appendages.",
+            "Although most characters probably feel more comfortable going into a fight with a good gun in their hand, there are times they must rely on their fists, feet, or other appendages.",
             "Characters fighting unarmed generally use the {@skill Brawl} skill. Unlike other combat skills, the {@skill Brawl} skill is designed to be used independently of any weapon (although some weapons can be used in conjunction with the {@skill Brawl} skill).",
             "When a character makes an unarmed combat check using {@skill Brawl}, the attack has a base damage of their {@characteristic Brawn} rating, a range of engaged, a Critical rating of 5, and the {@quality Knockdown} item quality. Finally, when making a {@skill Brawl} attack, the attacker can choose to deal damage to the target's strain threshold instead of its wound threshold, still reducing the damage by the target's soak.",
             "Unlike other weapons, {@filter gear|Brawl weapons|skill:brawl=1} augment this basic attack. {@filter gear|Brawl weapons|skill:brawl=1} can add damage to the attack (as indicated in the {@gear Unarmed|Brawl} profile, on page 67) and may have an improved Critical rating and additional item qualities. When using a {@filter gear|Brawl weapon|skill:brawl=1}, the user can choose to use its Critical rating instead of the standard Brawl Critical rating. They also add any additional item qualities to the qualities already provided by the Brawl attack. If the weapon provides an improved version of an existing quality, the character uses the improved version."
@@ -10514,7 +10546,7 @@
                         },
                         "As a vehicle takes damage, sparks fly and systems begin to fail. The Damage Control action can mitigate this stress. When performing the Damage Control action, choose whether you want your character to repair system strain or hull trauma. Then, make a Mechanics check, with the difficulty determined by {@table III.2-16: Damage Control Difficulty}. If the check is successful, reduce the vehicle's system strain or hull trauma by one per uncanceled {@symbols s}.",
                         "Characters can use the Damage Control action to repair system strain multiple times during an encounter. However, only one Damage Control action can be made to repair hull trauma during an encounter—no matter how many characters are on the vehicle. In both cases, you decide whether your players' characters can use the Damage Control action, depending on the current situation (a fighter pilot probably couldn't climb out of their plane to patch their wing, after all).",
-                        "Characters can also use this action to repair Critical Hits the vehicle is suffering from. The difficulty of repairing a Critical Hit is listed in the Severity column of Table III.2-16: Critical Hit Result, on page 230. Checks to repair Critical Hits can be attempted multiple times, until the Critical Hit is repaired."
+                        "Characters can also use this action to repair Critical Hits the vehicle is suffering from. The difficulty of repairing a Critical Hit is listed in the Severity column of {@table III.2-19: Vehicle Critical Hit Result}, on page 230. Checks to repair Critical Hits can be attempted multiple times, until the Critical Hit is repaired."
                      ]
                   },
                   {
@@ -11195,7 +11227,7 @@
                      "title": "Movie Realism",
                      "entries": [
                         "While modern settings are heavily based in the modern real world, they are not intended to be entirely real. \"Verisimilitude\" is the watchword of the modern setting, and the best example of that is movie realism. In the movies, shotguns blast people through heavy wood doors, and spies leap from rooftop to rooftop or jump out of airplanes without messing up their perfectly coiffed hair. Heroes survive numerous gunshot wounds or falls through plate-glass windows and villains concoct convoluted schemes that would make Machiavelli jealous.",
-                        "When designing your modern setting, keep in mind that movie realism trumps real-world rules and laws every time. Never let physics get in the way of a good brawl, AK-47s are perfectly accurate when fired from the hip at full auto, and hacking into secure government computer systems always involves a slick graphical user interface. Follow the Rule of Cool (on the next page) and keep the action moving, and your players will stay happy"
+                        "When designing your modern setting, keep in mind that movie realism trumps real-world rules and laws every time. Never let physics get in the way of a good brawl, AK-47s are perfectly accurate when fired from the hip at full auto, and hacking into secure government computer systems always involves a slick graphical user interface. Follow the {@sidebar The Rule of Cool} (on the next page) and keep the action moving, and your players will stay happy"
                      ]
                   },
                   {
@@ -11324,7 +11356,7 @@
                      "entries": [
                         "Hard science fiction is predicated on the idea that the fiction is based on existing scientific principles as much as possible. There's no set minimum for how much science you need to have in a science fiction setting, but the more fantastical elements you introduce, the more your setting becomes \"science fantasy\" or \"space opera.\" (See page 179 for more information about the {@setting space opera} setting.)",
                         "Some people who develop hard science fiction settings keep their settings firmly grounded in existing scientific principles. These settings only have technologies that already exist or are likely to be invented in the next few decades based on existing scientific research. However, this imposes some pretty sharp limitations on what they can do in their own settings.",
-                        "Therefore, an option many people take is to choose one or two technologies that break from those limitations: a couple of technologies that may seem reasonable, even if we as a species have no idea how to figure them out quite yet. For example, in the {@setting Android} setting, the creators added two technologies that are currently outside our grasp. One is plentiful, reliable fusion power (as of this writing, we know it can be done, but we don't know how to replicate it in a lab and make a surplus of energy out of it). The other is braintaping, the technology that allows corporations to record a human mind and use the recording to create a thinking android or cloned human. It's something that seems reasonable when you hear it described, but nobody has any idea how to do it.",
+                        "Therefore, an option many people take is to choose one or two technologies that break from those limitations: a couple of technologies that may seem reasonable, even if we as a species have no idea how to figure them out quite yet. For example, in the {@setting Android||sotb} setting, the creators added two technologies that are currently outside our grasp. One is plentiful, reliable fusion power (as of this writing, we know it can be done, but we don't know how to replicate it in a lab and make a surplus of energy out of it). The other is braintaping, the technology that allows corporations to record a human mind and use the recording to create a thinking android or cloned human. It's something that seems reasonable when you hear it described, but nobody has any idea how to do it.",
                         {
                            "entries": [
                               {
@@ -11411,7 +11443,7 @@
                   {
                      "title": "This Seems Familiar",
                      "entries": [
-                        "Often, space opera settings feature familiar tropes from other genres. This likely stems from space opera's favoring of adventure and excitement over scientific accuracy. Whether it takes place in the future or another galaxy altogether, a space opera setting might feature elements that would be right at home in a Western, medieval fantasy adventure, detective story, or just about anything else. A space opera setting could include dutybound, star-faring knights or desperadoes with hightech revolvers. Characters might wield advanced melee weapons, even though the guns are equally advanced and feature all the advantages guns always do in a knife fight. Depending on the setting, plausible explanations might be provided for such anachronisms, or they might simply come down to the Rule of Cool. (See page 165 for more on this very important law of gaming.)",
+                        "Often, space opera settings feature familiar tropes from other genres. This likely stems from space opera's favoring of adventure and excitement over scientific accuracy. Whether it takes place in the future or another galaxy altogether, a space opera setting might feature elements that would be right at home in a Western, medieval fantasy adventure, detective story, or just about anything else. A space opera setting could include dutybound, star-faring knights or desperadoes with hightech revolvers. Characters might wield advanced melee weapons, even though the guns are equally advanced and feature all the advantages guns always do in a knife fight. Depending on the setting, plausible explanations might be provided for such anachronisms, or they might simply come down to {@sidebar the Rule of Cool}. (See page 165 for more on this very important law of gaming.)",
                         "One advantage this trope has for you as a GM is that you can borrow liberally from your favorite movies, books, and video games. By changing the details, you can insert characters, places, and even whole stories without your players recognizing them. A stagecoach robbery can become an attack on a spaceship. A hidden temple full of lizard people and magic items becomes, well, a hidden temple on another planet, inhabited by lizard-like aliens guarding ancient technology from the height of their civilization."
                      ]
                   }
@@ -11475,10 +11507,10 @@
                            "name": "{@gear Laser Cannon}"
                         },
                         {
-                           "name": "{@gear Laser Pistol}"
+                           "name": "{@gear Laser Pistol (Space Opera)|Laser Pistol}"
                         },
                         {
-                           "name": "{@gear Laser Rifle}"
+                           "name": "{@gear Laser Rifle (Space Opera)|Laser Rifle}"
                         },
                         {
                            "name": "{@gear Particle Grenade}"
@@ -11493,7 +11525,7 @@
                            "name": "{@gear Plasma Rifle}"
                         },
                         {
-                           "name": "{@gear Silver Rocket Launcher}"
+                           "name": "{@gear Sliver Rocket Launcher}"
                         },
                         {
                            "name": "{@gear Slug Pistol}"
@@ -11731,7 +11763,7 @@
          ]
       },
       {
-         "name": "Reparing Hull Trauma",
+         "name": "Repairing Hull Trauma",
          "page": 222,
          "type": "vehicle",
          "description": [
@@ -11784,6 +11816,16 @@
             "{@b Propulsion:} Propulsion in any form is what moves a vehicle. If a vehicle's propulsion is compromised, its pilot cannot perform the accelerate maneuver, and its current speed drops by one each round, to a minimum of 0.",
             "{@b Weapons:} Some vehicles are armed with one or more weapons. If a weapon is compromised, it cannot be used (see {@rule Item Maintenance}, on page 89).",
             "Repairing components requires a {@skill Mechanics} check. Often the difficulty is determined by the severity of the Critical Hit; otherwise, it should be {@difficulty Average} or {@difficulty Hard}, at you, the GM's, discretion."
+         ]
+      },
+      {
+         "name": "The Rule of Cool",
+         "page": 165,
+         "type": "Environment",
+         "description": [
+            "The Rule of Cool states that \"The limit of the willing suspension of disbelief for a given property is directly proportional to its degree of coolness.\" In other words, something ridiculous is easy to accept in media if it's sufficiently cool. Two spies chasing one another along construction gantries hundreds of feet in the air? Cool. Blasting a bad guy through a sheetrock wall with a shotgun? Cool. Escaping in a stylish European sports car that turns into a submarine? Very cool. Basically, if it's exciting, makes even a little bit of sense, and doesn't fly in the face of the laws of physics and nature too much, it's cool.",
+            "This can be taken too far, however. You have to keep two important things in mind when including things in a setting just because they're cool. First, people (even gamers) can only suspend their disbelief so far. Second, cool is subjective. The Rule of Cool doesn't give you a free pass to run roughshod over game realism and suspension of disbelief. It's supposed to be a way of spicing up a setting and incorporating exciting and explosive scenes with a healthy serving of movie logic. Always keep in mind the stated tone and themes of your game, and remember that verisimilitude—the appearance of truth or reality—is every bit as important to keeping your players engaged as coolness is.",
+            "For example, if you're playing a modern horror or horror survival game, you expect to encounter things like zombies and sorcerers and bloody sacrifices in jungle temples. If you're playing a gritty, reality-based, modern warfare game in which you're trying to save the world from a globespanning terror cabal, you expect to find rogue generals and warlords and corrupt politicians, not zombies. If suddenly your hard-bitten, high-speed/ low-drag modern warfare characters are jumped by a pack of zombies without your having stated at the beginning that \"Hey, there will be some supernatural elements in this game,\" your players are going to object, no matter how cool you think zombies are."
          ]
       }
    ],
@@ -13433,7 +13475,7 @@
          ],
          "narrative": [
             "Augment spells magically enhance characters or objects. Sometimes, the distinction is mostly narrative—it may be purely a matter of description whether a spell imbues a sword with power or improves the reflexes of the character wielding it. Although these effects are often helpful in combat, such spells can be useful in many circumstances, from helping an ally scale a sheer surface to keeping the party's horses galloping past their normal limits.",
-            "When determining the effect of an augment spell, see the Augment action's effects, on pages 215 and 216, for some of the possibilities. Of course, you or your players may want to try something not covered by those effects, such as temporarily repairing a weapon so that you can continue to wield it. In this case, you may set a difficulty by looking at the difficulty to repair the item (see Table I.5-4: Repairing Gear, on page 89). These spells could also be used to improve the effectiveness of gear (perhaps the augmented item adds {@dice boost} to checks related to its use). Augment could even let a character turn invisible or fly, although we recommend a difficulty of at least {@difficulty hard} for this!"
+            "When determining the effect of an augment spell, see the Augment action's effects, on pages 215 and 216, for some of the possibilities. Of course, you or your players may want to try something not covered by those effects, such as temporarily repairing a weapon so that you can continue to wield it. In this case, you may set a difficulty by looking at the difficulty to repair the item (see {@table I.5-4: Repairing Gear}, on page 89). These spells could also be used to improve the effectiveness of gear (perhaps the augmented item adds {@dice boost} to checks related to its use). Augment could even let a character turn invisible or fly, although we recommend a difficulty of at least {@difficulty hard} for this!"
          ],
          "structured": [
             "This is using magic to enhance people. A character selects one target they are engaged with (which can be themself), then makes a {@skill Primal} or {@skill Divine} skill check. The default difficulty of the check is {@difficulty average}. If the check is successful, until the end of your character's next turn, the target increases the ability of any skill checks they make by one (in effect, this means they add {@dice ability} to their checks). A character may not be affected by more than one Augment spell at the same time (so no stacking effects).",
@@ -13739,7 +13781,7 @@
          "narrative": [
             "At its most basic, healing magic can remove damage or strain from a character. The most powerful spells might cure deadly diseases or even raise the dead. Healing magic works much like the Medicine skill, but of course medicine in most fantasy worlds is fairly primitive.",
             "In game terms, healing magic is more difficult than an equivalent Medicine check. However, in exchange for this increased difficulty, healing magic can do things that a skilled doctor cannot. These include healing targets from afar, healing multiple targets at once, and on rare occasions, bringing the deceased back from the dead. Healing magic can also affect targets multiple times per encounter.",
-            "When using healing magic, the additional affects listed in {@table |III.2-11} should cover most of what you want to do in narrative time as well as structured time. For other effects—such as a spell to double the rate of natural healing for a target—you, the GM, can set the difficulty. If you're not sure what difficulty to assign, {@difficulty average} works for any acceleration of natural healing, while anything similar in scope and impact to bringing the dead back to life should be {@difficulty daunting} or even {@difficulty formidable}. Generally, we recommend making resurrection a rare and difficult endeavor, so that death doesn't lose its impact in your game."
+            "When using healing magic, the additional affects listed in {@table III.2-11: Heal Additional Effects} should cover most of what you want to do in narrative time as well as structured time. For other effects—such as a spell to double the rate of natural healing for a target—you, the GM, can set the difficulty. If you're not sure what difficulty to assign, {@difficulty average} works for any acceleration of natural healing, while anything similar in scope and impact to bringing the dead back to life should be {@difficulty daunting} or even {@difficulty formidable}. Generally, we recommend making resurrection a rare and difficult endeavor, so that death doesn't lose its impact in your game."
          ],
          "structured": [
             "Priests and other practitioners of divine magic are often known for their healing abilities. Often, those in touch with nature also possess the capacity to heal wounds and illness. The character can use the {@skill Divine} or {@skill Primal} magic skill in place of a {@skill Medicine} check in order to remove damage or heal Critical Injuries. When making the check, the character selects one target they are engaged with who is not incapacitated. The default difficulty of the check is {@difficulty easy}. Upon success, the character heals 1 wound per uncanceled {@symbols s}, and 1 strain per uncanceled {@symbols a}.",
@@ -13819,7 +13861,7 @@
    ],
    "table": [
       {
-         "name": "Table: Social Skill Interactions",
+         "name": "Table I.3-2: Social Skill Interactions",
          "columns": [
             {
                "header": "Acting Skill",
@@ -13833,21 +13875,22 @@
          "rows": [
             {
                "acting": "Coercion, Leadership",
-               "opposing": "Discipline"
+               "opposing": "Discipline: The mental fortitude to disobey orders, or the mental strength to resist interrogation and face threats without flinching."
             },
             {
                "acting": "Deception",
-               "opposing": "Vigilance"
+               "opposing": "Vigilance: The mental alertness to notice when someone is lying (since lies and deceptions, by their very nature, are not something someone announces)."
             },
             {
                "acting": "Charm",
-               "opposing": "Cool"
+               "opposing": "Cool: The ability to keep calm and maintain composure when being charmed or flattered, and to respond politely to flattery without giving away something or giving in to someone's requests."
             },
             {
                "acting": "Negotiation",
-               "opposing": "Negotiation"
+               "opposing": "Negotiation: Bargaining is usually a back-and-forth between two sides, with both sides using their negotiating skills to try to get as much of what they want as possible."
             }
-         ]
+         ],
+         "page": 55
       },
       {
          "name": "Table I.4-1: Mad Inventor Item Rarity",
@@ -14164,7 +14207,7 @@
                "options": [
                   "Negate the targeted enemy's defense (such as the defense gained from cover, equipment, or performing the guarded stance maneuver) until the end of the current round.",
                   "Ignore penalizing environmental effects such as inclement weather, zero gravity, or similar circumstances until the end of the active character's next turn.",
-                  "When dealing damage to a target, have the attack disable the opponent or one piece of gear rather than dealing wounds or strain. This could include hobbling them temporarily with a shot to the leg, or disabling their radio. This should be agreed upon by the player and the GM, and the effects are up to the GM (although Table I.6-10: Critical Injury Result, on page 115, is a good resource to consult for possible effects). The effects should be temporary and not too excessive.",
+                  "When dealing damage to a target, have the attack disable the opponent or one piece of gear rather than dealing wounds or strain. This could include hobbling them temporarily with a shot to the leg, or disabling their radio. This should be agreed upon by the player and the GM, and the effects are up to the GM (although {@table I.6-10: Critical Injury Result}, on page 115, is a good resource to consult for possible effects). The effects should be temporary and not too excessive.",
                   "Gain +1 melee or ranged defense until the end of the active character's next turn.",
                   "Force the target to drop a melee or ranged weapon they are wielding."
                ]
@@ -16593,7 +16636,7 @@
          "activation": "active (incidental)",
          "ranked": false,
          "description": [
-            "When making a {@skill Computers} check to hack a system or break into a secured network, before rolling, your character may use this talent to add {@symbols ss}{@symbols hh} to the results. If you are using the optional hacking rules on page 232 and your check generates {@symbols hh}, your GM should spend it on the I Know You! option in {@table III.2-22: Spending Symbols in Hacking Encounters} on page 234 of the Genesys Core Rulebook."
+            "When making a {@skill Computers} check to hack a system or break into a secured network, before rolling, your character may use this talent to add {@symbols ss}{@symbols hh} to the results. If you are using the optional hacking rules on page 232 and your check generates {@symbols hh}, your GM should spend it on the I Know You! option in {@table III.2-22: Spending Advantage, Triumph, Threat, and Despair in Hacking Encounters} on page 234 of the Genesys Core Rulebook."
          ],
          "page": 78,
          "settings": [
@@ -16976,7 +17019,7 @@
          "activation": "active (incidental, out of turn)",
          "ranked": false,
          "description": [
-            "When an opponent makes a ranged combat check, you can spend {@symbols hh} from that check to use this talent to cause their weapon to run out of ammo (see {@table I.6-3: Spending Threat and Despair in Combat} on page 104), as long as the weapon can normally run out of ammunition."
+            "When an opponent makes a ranged combat check, you can spend {@symbols hh} from that check to use this talent to cause their weapon to run out of ammo (see {@sidebar Tracking Ammo} on page 89), as long as the weapon can normally run out of ammunition."
          ],
          "page": 78,
          "settings": [
@@ -17638,7 +17681,7 @@
          "activation": "active (action)",
          "ranked": false,
          "description": [
-            "Once per session, your character may use this talent to make a {@skill Mechanics} check to attempt to cobble together the functional equivalent of any item using spare parts or salvage. The difficulty of the check is based on the item's rarity; see {@table I.4-1: Mad Inventor Item Rarity} in the {@title Genesys Core Rulebook}. Your GM will modify the check based on the circumstances and might decide that some items simply can't be created with what's available (if you are being held in a prison cell, for instance). Your GM may spend {@symbols d} on the check to indicate the item ends up being dangerous to the user and anyone around them in some way. For instance, a pistol might explode instead of running out of ammo, or a breathing mask might make the user light-headed."
+            "Once per session, your character may use this talent to make a {@skill Mechanics} check to attempt to cobble together the functional equivalent of any item using spare parts or salvage. The difficulty of the check is based on the item's rarity; see {@table I.4-1: Mad Inventor Item Rarity}. Your GM will modify the check based on the circumstances and might decide that some items simply can't be created with what's available (if you are being held in a prison cell, for instance). Your GM may spend {@symbols d} on the check to indicate the item ends up being dangerous to the user and anyone around them in some way. For instance, a pistol might explode instead of running out of ammo, or a breathing mask might make the user light-headed."
          ],
          "page": 80,
          "settings": [

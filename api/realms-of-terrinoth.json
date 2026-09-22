@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.12.6",
+         "version": "2026.9.20",
          "json": "realms-of-terrinoth",
          "full": "Realms of Terrinoth",
          "abbreviation": "RoT",
@@ -178,7 +178,7 @@
                "qualities": [
                   {
                      "name": "Blast",
-                     "ranks": 1,
+                     "ranks": 16,
                      "source": "crb"
                   },
                   {
@@ -326,6 +326,7 @@
          ],
          "abilities": [
             "Lightning Draw",
+            "Precision Strikes",
             "Poisoner",
             "Vanish"
          ],
@@ -898,7 +899,7 @@
             },
             {
                "name": "Melee (Light)",
-               "characteristic": "agility",
+               "characteristic": "brawn",
                "source": "crb"
             },
             {
@@ -1163,7 +1164,7 @@
             "wounds": 20,
             "strain": 14,
             "defense": [
-               0,
+               1,
                0
             ]
          },
@@ -2092,7 +2093,7 @@
          "derived": {
             "soak": 6,
             "wounds": 17,
-            "strain": 18,
+            "strain": 15,
             "defense": [
                1,
                1
@@ -2322,7 +2323,7 @@
                "qualities": [
                   {
                      "name": "Blast",
-                     "ranks": 1,
+                     "ranks": 12,
                      "source": "crb"
                   },
                   {
@@ -2635,8 +2636,8 @@
          ],
          "abilities": [
             "Encumbrance Capacity 12",
-            "Silhouette 2",
-            "Flyer"
+            "Flyer",
+            "Silhouette 2"
          ],
          "weapons": [
             {
@@ -2857,7 +2858,7 @@
             "soak": 4,
             "wounds": 14,
             "defense": [
-               0,
+               1,
                0
             ]
          },
@@ -3075,12 +3076,12 @@
             },
             {
                "name": "Melee (Light)",
-               "characteristic": "agility",
+               "characteristic": "brawn",
                "source": "crb"
             },
             {
                "name": "Ranged",
-               "characteristic": "brawn",
+               "characteristic": "agility",
                "source": "crb"
             },
             {
@@ -3325,7 +3326,7 @@
             "spells": [
                {
                   "name": "Fireball",
-                  "description": "Choose one target at short or medium range and make a {@difficulty Hard|Arcana}; if successful, this magic attack inflicts 8 damage +1 damage per {@symbols s}, with the {@quality BlastBlast 4|crb} and {@quality Burn|Burn 4|crb} qualities."
+                  "description": "Choose one target at short or medium range and make a {@difficulty Hard|Arcana}; if successful, this magic attack inflicts 8 damage +1 damage per {@symbols s}, with the {@quality Blast|Blast 4|crb} and {@quality Burn|Burn 4|crb} qualities."
                },
                {
                   "name": "Magic Shield",
@@ -3576,7 +3577,7 @@
          ],
          "characteristics": {
             "brawn": 5,
-            "agility": 5,
+            "agility": 4,
             "intellect": 3,
             "cunning": 3,
             "willpower": 3,
@@ -3728,7 +3729,7 @@
             "brawn": 3,
             "agility": 2,
             "intellect": 1,
-            "cunning": 3,
+            "cunning": 2,
             "willpower": 1,
             "presence": 1
          },
@@ -3753,7 +3754,7 @@
             },
             {
                "name": "Melee (Light)",
-               "characteristic": "agility",
+               "characteristic": "brawn",
                "source": "crb"
             },
             {
@@ -3948,7 +3949,7 @@
          ],
          "characteristics": {
             "brawn": 2,
-            "agility": 2,
+            "agility": 1,
             "intellect": 2,
             "cunning": 3,
             "willpower": 3,
@@ -4063,7 +4064,7 @@
             },
             {
                "name": "Melee (Light)",
-               "characteristic": "agility",
+               "characteristic": "brawn",
                "source": "crb"
             },
             {
@@ -4517,11 +4518,11 @@
             "spells": [
                {
                   "name": "Blood Funnel",
-                  "description": "Choose one target at short range for the attack and make a {@difficulty Hard|Arcana}; if the magic combat check succeeds, the target suffers 4 damage + 1 damage per uncanceled {@symbols s}, with Critical Rating 2 and the {@quality Blast|Blast 4|crb} and {@quality Vicious|Vicious 4|crb} qualities."
+                  "description": "Choose one target at short or medium range for this attack and make a {@difficulty Hard|Arcana}; if successful, this magic attack inflicts 8 damage + 1 additional damage per uncanceled {@symbols s}, with Critical Rating 2 and the {@quality Blast|Blast 5|crb} and {@quality Vicious|Vicious 5|crb} qualities."
                },
                {
                   "name": "Curse of the Night",
-                  "description": "Choose one target within short range and make a {@difficulty Hard|Arcana}; if the check succeeds, the tar-get decreases the ability of any skill checks they make by one and reduce their strain and wound thresholds by 4 until the end of the Lord of Bilehall's next turn. The Lord of Bilehall may maintain these effects by performing the Concentrate maneuver."
+                  "description": "Choose one target within short range and make a {@difficulty Hard|Arcana}; if the check succeeds, the target decreases the ability of any skill checks they make by one and reduces their strain and wound thresholds by 4 until the end of the Lord of Bilehall's next turn. The Lord of Bilehall may maintain these effects by performing the Concentrate maneuver."
                }
             ]
          },
@@ -4731,7 +4732,7 @@
       {
          "name": "Makhim",
          "type": "minion",
-         "page": 256,
+         "page": 258,
          "description": [
             "Makhim warriors are as fierce as any in Zanaga, and they have adapted to the environments they fight in. Most employ weapons that only a four-armed fighter could wield, like the dagger-like dolochs they wear a gauntlets. They also employ leather slings which they twist and swing to send a missile flying with tremendous momentum. Makhim are seldom encountered alone; they usually travel in great war parties, some scouting ahead, others staying to the shadows. At first glance, their opponents might believe they face but a few of the reptilian creatures, at least until the jungle comes alive with a cacophony of hissing war cries."
          ],
@@ -4759,7 +4760,7 @@
             },
             {
                "name": "Ranged",
-               "characteristic": "brawn",
+               "characteristic": "agility",
                "source": "crb"
             },
             {
@@ -4908,8 +4909,8 @@
          "talents": [],
          "abilities": [
             "Flyer",
-            "Silhouette 2",
-            "Poisonous Stinger"
+            "Poisonous Stinger",
+            "Silhouette 2"
          ],
          "weapons": [
             {
@@ -5378,8 +5379,8 @@
             "soak": 2,
             "wounds": 16,
             "defense": [
-               4,
-               4
+               0,
+               0
             ]
          },
          "skills": [
@@ -5528,9 +5529,12 @@
                "source": "crb"
             },
             "Chill of Nordros",
-            "Necromancy"
+            "Dark Insight"
          ],
-         "abilities": [],
+         "abilities": [{
+            "name": "Necromancy",
+            "description": "When this character uses the {@spell conjure} magic action, it gains the Summon Ally effect with no increase in difficulty. All creatures the character summons must be undead."
+         }],
          "spells": {
             "skills": [
                {
@@ -7567,7 +7571,7 @@
       {
          "name": "Thieves Guild Cutpurse",
          "type": "rival",
-         "page": 248,
+         "page": 249,
          "description": [
             "The thieves' guild holds great power in AlKalim, and its cutpurses are everywhere within the Caliphate. They come in many forms, from filthy street urchins and beggars feigning debilitating injuries to well-dressed merchants and offspring of the nobility, as the strength of a good thief is often the ability to get close to a target without raising suspicions. These nefarious robbers are most often found in taverns and markets where crowds are at their thickest, although daring individuals can operate wherever there is wealth for the taking. The guild takes a dim view of \"freelancers\" in its territory, so most cutpurses are accounted for. They are marked with the guild's tattoo and must tithe a measure of their take to the local den bosses.",
             "Many cutpurses work in teams, one or more distracting the mark while the others relieve them of their money. A victim who turns on a cutpurse might be in for a nasty surprise when they are led on a chase into a blind alley containing a dozen or so of the cutpurse's companions. Guild thieves are not above using clubs, blades, and fists to obtain what deception and quick fingers could not."
@@ -7933,7 +7937,7 @@
             {
                "name": "Athletics",
                "ranks": 3,
-               "characteristic": "agility",
+               "characteristic": "brawn",
                "source": "crb"
             },
             {
@@ -9296,12 +9300,23 @@
       {
          "name": "Prideful Roar",
          "description": [
-            "As a maneuver, a Pridelord can unleash a prideful roar. All other Singhara in the encounter remove {@dice setback} from checks until the end of the Pridelord's next turn. In addition, enemies within medium range of the Pridelord must make an {@difficulty Average|fear} as per page 243 of the {@title Genesys} Core Rulebook."
+            "As a maneuver, a Pridelord can unleash a prideful roar. All other Singhara in the encounter remove {@dice setback} from checks until the end of the Pridelord's next turn. In addition, enemies within medium range of the Pridelord must make an {@difficulty Average} {@rule fear||crb} check as per page 243 of the {@title Genesys} Core Rulebook."
          ],
          "tags": [
             "general",
             "leader",
             "fear",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Precision Strikes",
+         "description": [
+            "This character uses {@characteristic Cunning} in place of {@characteristic Brawn} for {@skill Brawl} and {@skill Melee (Light)} checks."
+         ],
+         "tags": [
+            "combat",
+            "passive",
             "skill check modifier"
          ]
       },
@@ -9674,9 +9689,11 @@
          "st": 8,
          "xp": 100,
          "skills": {
-            "skills": [
-               "coercion"
-            ],
+            "skills": [{
+               "name": "Coercion",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -9707,10 +9724,16 @@
          "st": 11,
          "xp": 90,
          "skills": {
-            "skills": [
-               "charm",
-               "resilience"
-            ],
+            "skills": [{
+               "name": "Charm",
+               "source": "crb",
+               "ranks": 1
+            },
+            {
+               "name": "Resilience",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 2,
             "ranksEach": 1,
             "description": [
@@ -9741,9 +9764,11 @@
          "st": 8,
          "xp": 90,
          "skills": {
-            "skills": [
-               "perception"
-            ],
+            "skills": [{
+               "name": "Perception",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -9758,6 +9783,25 @@
          "description": [
             "Given their animalistic appearance, straightforward culture, and soft-spoken nature, it is easy for the other races to see the Catfolk as lesser beings. They are surprisingly quick-witted and incredibly cunning, although most are happy to \"play primitive\" if it gains them an advantage while bartering or fighting."
          ],
+         "modifiers": {
+            "equipment": {
+               "weapon": [{
+                  "name": "Claws",
+                  "skill": {
+                     "name": "Brawl",
+                     "source": "crb"
+                  },
+                  "damage": "+1",
+                  "critical": 3,
+                  "range": "Engaged",
+                  "special": [{
+                     "name": "Vicious",
+                     "value": 1,
+                     "source": "crb"
+                  }]
+               }]
+            }
+         },
          "page": 68
       },
       {
@@ -9775,9 +9819,11 @@
          "st": 10,
          "xp": 90,
          "skills": {
-            "skills": [
-               "discipline"
-            ],
+            "skills": [{
+               "name": "Discipline",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -9793,6 +9839,15 @@
             "Those who survived the War of the Shadow Tear—the darkness that enveloped Mennara long before the mortal races came into being—have spent their long lives trying to atone by hunting Ynfernael creatures wherever they are found. The Deep Elves have an almost singular focus in this crusade and will stop at nothing to purge the Ynfernael from the world, as well as purge their still-fallen counterparts, the Daewyl Elves.",
             "However, there are those who feel that this drive is leading their clan down a dangerous path, as their search for a strategic advantage finds them ever more willing to embrace any power that may help them in their quest. This means that many Elves, including some among the Deep Elves themselves, are watching things unfold with a wary eye, guarding diligently against the day when the rest of the Elves might again be forced to wage war against their cousins."
          ],
+         "modifiers": {
+            "skills": [
+               {
+                  "name": "Knowledge (Forbidden)",
+                  "career": true,
+                  "ranks": 2
+               }
+            ]
+         },
          "page": 63
       },
       {
@@ -9810,9 +9865,11 @@
          "st": 10,
          "xp": 90,
          "skills": {
-            "skills": [
-               "resilience"
-            ],
+            "skills": [{
+               "name": "Resilience",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -9846,9 +9903,11 @@
          "st": 10,
          "xp": 90,
          "skills": {
-            "skills": [
-               "negotiation"
-            ],
+            "skills": [{
+               "name": "Negotiation",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -9880,9 +9939,11 @@
          "st": 10,
          "xp": 90,
          "skills": {
-            "skills": [
-               "streetwise"
-            ],
+            "skills": [{
+               "name": "Streetwise",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -9896,6 +9957,12 @@
          "description": [
             "Although there are many ways for Elves to escape the rigid caste system of their society, it is the Free Cities Elves who do it the most brazenly. Those who refer to themselves as Free Cities Elves, a voluntary colloquialism, are Elves who have forsaken their tribe or were born to Elves who did. They have chosen to live alongside the short-lived races as urbanites and are most commonly found in cities such as Dawnsmoor and Tamalir. Those calling themselves Free Cities Elves can also include Elves whose bloodline has mingled with that of Humans."
          ],
+         "modifiers": {
+            "stats": {
+               "mDefense": 1,
+               "rDefense": 1
+            }
+         },
          "page": 63
       },
       {
@@ -9912,9 +9979,11 @@
          "st": 9,
          "xp": 100,
          "skills": {
-            "skills": [
-               "cool"
-            ],
+            "skills": [{
+               "name": "Cool",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -9929,6 +9998,25 @@
             "Though village-dwelling Catfolk predominantly keep to themselves, those exiled into the world must find their place among the other races. This often leads to love, marriage, and offspring.",
             "Half-Catfolk most often retain the reflexes, senses, and coordination of their Catfolk parent, but commonly gain the aesthetics of their other parent's species. Many Half-Catfolk appear as heavily furred Humans with cat-like ears and clawed fingers, though there are nearly limitless variations. While most of the nearby societies accept such beings for what they are, full-blooded Catfolk see them as the byproducts of unworthy exiles. Thus, Half-Catfolk are often shunned and ridiculed by their pure-blooded cousins."
          ],
+         "modifiers": {
+            "equipment": {
+               "weapon": [{
+                  "name": "Claws",
+                  "skill": {
+                     "name": "Brawl",
+                     "source": "crb"
+                  },
+                  "damage": "+1",
+                  "critical": 3,
+                  "range": "Engaged",
+                  "special": [{
+                     "name": "Vicious",
+                     "value": 1,
+                     "source": "crb"
+                  }]
+               }]
+            }
+         },
          "page": 68
       },
       {
@@ -9946,9 +10034,11 @@
          "st": 10,
          "xp": 90,
          "skills": {
-            "skills": [
-               "negotiation"
-            ],
+            "skills": [{
+               "name": "Negotiation",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -9962,6 +10052,16 @@
          "description": [
             "The Highborn Elves are those only slightly removed from the most ancient bloodlines, those original Elves who dwelled in the Empyrean. As a result, these Elves have the strongest natural connection to Latariana's Door, and many have devoted their lives to deepening that connection and ascending Latariana's Stair to earn redemption. The Daughters of the Empyrean and the Darnati Warriors are most often drawn from this caste, and their proximity to the court at Caelcira necessitates a basic knowledge of etiquette and diplomacy. Beyond the Latari, the highborn of the other Elven tribes occupy similar positions of prestige."
          ],
+         "modifiers": {
+            "skills": [
+               {
+                  "name": "Divine",
+                  "source": "crb",
+                  "career": true,
+                  "ranks": 1
+               }
+            ]
+         },
          "page": 63
       },
       {
@@ -9978,21 +10078,19 @@
          "st": 10,
          "xp": 110,
          "skills": {
-            "skills": [
-               "any two non-career"
-            ],
+            "skills": [],
             "ranksTotal": 2,
             "ranksEach": 1,
             "description": [
                "Humans begin with one rank in each of two different non-career skills. You still cannot train these skills above rank 2 during character creation."
             ],
-            "choice": true
+            "choice": ["non-career"]
          },
          "abilities": [
             "Ready for Adventure"
          ],
          "description": [
-            "Once per session as an out-of-turn incidental, a Human may move one Humanity, short-lived and disadvantaged in many ways by nature, has nonetheless proven to be one of the most resilient and diverse races in Mennara. What Humans, a curious lot, lack in natural gifts of the sort bestowed on other races they make up for in their willingness to learn, their determination, and their sheer adaptability. Humans have weathered cataclysms beyond compare, and today it is largely by their strength of will and arms that the world is kept safe."
+            "Humanity, short-lived and disadvantaged in many ways by nature, has nonetheless proven to be one of the most resilient and diverse races in Mennara. What Humans, a curious lot, lack in natural gifts of the sort bestowed on other races they make up for in their willingness to learn, their determination, and their sheer adaptability. Humans have weathered cataclysms beyond compare, and today it is largely by their strength of will and arms that the world is kept safe."
          ],
          "page": 60
       },
@@ -10011,9 +10109,11 @@
          "st": 10,
          "xp": 90,
          "skills": {
-            "skills": [
-               "survival"
-            ],
+            "skills": [{
+               "name": "Survival",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -10028,7 +10128,13 @@
             "The Elves were not always at one with nature, but after their fall from grace, many found a new, deepened connection with the wilds. As successive generations were born and raised in Mennara, they felt an even greater calling to the world around them rather than the lofty heavens of their distant ancestors. They resolved to live in harmony with their new home and become its greatest protectors.",
             "It is from these Elves that the bulk of the Latari armies are drawn. Among the lowborn Elves are the famed Deepwood Archers, unrivaled in lethality with their extraordinary longbows, and the Leonx Riders and their fearsome feline mounts. Among the other Elven tribes, the lowborn occupy similarly martial or practical roles, and many leave Elven society entirely for a life of purpose and adventure experiencing the world."
          ],
-         "page": 60
+         "modifiers": {
+            "stats": {
+               "mDefense": 1,
+               "rDefense": 1
+            }
+         },
+         "page": 63
       },
       {
          "name": "Stone-Dweller Orc",
@@ -10045,9 +10151,11 @@
          "st": 8,
          "xp": 100,
          "skills": {
-            "skills": [
-               "cool"
-            ],
+            "skills": [{
+               "name": "Cool",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -10078,9 +10186,11 @@
          "st": 8,
          "xp": 100,
          "skills": {
-            "skills": [
-               "alchemy"
-            ],
+            "skills": [{
+               "name": "Alchemy",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -10111,10 +10221,16 @@
          "st": 11,
          "xp": 90,
          "skills": {
-            "skills": [
-               "charm",
-               "stealth"
-            ],
+            "skills": [{
+               "name": "Charm",
+               "source": "crb",
+               "ranks": 1
+            },
+            {
+               "name": "Stealth",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 2,
             "ranksEach": 1,
             "description": [
@@ -10402,6 +10518,18 @@
                "A {@gear holy icon} {@i or} {@gear shield} and {@gear leather armor}",
                "A {@gear lantern} and 2 {@gear herbs of healing} or traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, {@gear torches (3)|3 torches}, and a {@gear waterskin (empty)|waterskin}",
                "1d100 silver coins"
+            ],
+            "selections": [
+               { "name": "mace" },
+               [
+                  [{ "name": "holy icon" }],
+                  [{ "name": "shield" }, { "name": "leather armor" }]
+               ],
+               [
+                  [{ "name": "lantern" }, { "name": "herbs of healing", "quantity": 2 }],
+                  [{ "name": "backpack" }, { "name": "bedroll" }, { "name": "rope" }, { "name": "flint and steel" }, { "name": "torches (3)" }, { "name": "waterskin (empty)" }]
+               ],
+               { "name": "1d100 silver coins", "money": true, "formula": "1d100" }
             ]
          },
          "page": 70
@@ -10456,6 +10584,19 @@
                "A {@gear fine cloak} {@i or} traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, {@gear torches (3)|3 torches}, and a {@gear waterskin (empty)|waterskin}",
                "{@gear Padded armor}",
                "200 + 1d100 silver coins"
+            ],
+            "selections": [
+               { "name": "dagger" },
+               [
+                  [{ "name": "sword" }],
+                  [{ "name": "musical instrument" }]
+               ],
+               [
+                  [{ "name": "fine cloak" }],
+                  [{ "name": "backpack" }, { "name": "bedroll" }, { "name": "rope" }, { "name": "flint and steel" }, { "name": "torches (3)" }, { "name": "waterskin (empty)" }]
+               ],
+               { "name": "padded armor" },
+               { "name": "200 + 1d100 silver coins", "money": true, "formula": "200 + 1d100" }
             ]
          },
          "page": 70
@@ -10507,6 +10648,21 @@
                "A {@gear dagger} {@i or} {@gear sling}",
                "{@gear Heavy robes} {@i or} 1 {@gear stamina elixir}",
                "1d100 silver coins"
+            ],
+            "selections": [
+               [
+                  [{ "name": "magic staff" }],
+                  [{ "name": "magic wand" }]
+               ],
+               [
+                  [{ "name": "dagger" }],
+                  [{ "name": "sling" }]
+               ],
+               [
+                  [{ "name": "Heavy robes" }],
+                  [{ "name": "stamina elixir" }]
+               ],
+               { "name": "1d100 silver coins", "money": true, "formula": "1d100" }
             ]
          },
          "page": 70
@@ -10557,8 +10713,19 @@
             ],
             "gear": [
                "A {@gear staff} {@i or} a {@gear greataxe} and {@gear leather armor}",
-               "An {@gear apothecary's kit||rot} {@i or} traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, {@gear torches (3)|3 torches}, and a {@gear waterskin (empty)|waterskin}",
+               "An {@gear apothecary's kit} {@i or} traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, {@gear torches (3)|3 torches}, and a {@gear waterskin (empty)|waterskin}",
                "1d100 silver coins"
+            ],
+            "selections": [
+               [
+                  [{ "name": "staff" }],
+                  [{ "name": "greataxe" }, { "name": "leather armor" }]
+               ],
+               [
+                  [{ "name": "apothecary's kit" }],
+                  [{ "name": "backpack" }, { "name": "bedroll" }, { "name": "rope" }, { "name": "flint and steel" }, { "name": "torches (3)" }, { "name": "waterskin (empty)" }]
+               ],
+               { "name": "1d100 silver coins", "money": true, "formula": "1d100" }
             ]
          },
          "page": 71
@@ -10606,10 +10773,26 @@
             ],
             "gear": [
                "A {@gear dagger}",
-               "An {@gear alchemists' kit} {@i or} a {@gear sword}",
-               "A {@gear lantern} {@i or} {@gear healing herbs}",
+               "An {@gear alchemist's kit|alchemists' kit} {@i or} a {@gear sword}",
+               "A {@gear lantern} {@i or} {@gear herbs of healing|healing herbs}",
                "A {@gear fine cloak} {@i or} traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, {@gear torches (3)|3 torches}, and a {@gear waterskin (empty)|waterskin}",
                "1d100 silver coins"
+            ],
+            "selections": [
+               { "name": "dagger" },
+               [
+                  [{ "name": "alchemist's kit" }],
+                  [{ "name": "sword" }]
+               ],
+               [
+                  [{ "name": "lantern" }],
+                  [{ "name": "herbs of healing" }]
+               ],
+               [
+                  [{ "name": "fine cloak" }],
+                  [{ "name": "backpack" }, { "name": "bedroll" }, { "name": "rope" }, { "name": "flint and steel" }, { "name": "torches (3)" }, { "name": "waterskin (empty)" }]
+               ],
+               { "name": "1d100 silver coins", "money": true, "formula": "1d100" }
             ]
          },
          "page": 72
@@ -10665,6 +10848,22 @@
                "A {@gear fine cloak} {@i or} {@gear thieves' tools}",
                "Traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, {@gear torches (3)|3 torches}, and a {@gear waterskin (empty)|waterskin}",
                "1d100 silver coins"
+            ],
+            "selections": [
+               [
+                  [{ "name": "dagger" }],
+                  [{ "name": "cestus" }]
+               ],
+               [
+                  [{ "name": "sword" }, { "name": "dagger" }],
+                  [{ "name": "bow" }]
+               ],
+               [
+                  [{ "name": "fine cloak" }],
+                  [{ "name": "thieves' tools" }]
+               ],
+               [{ "name": "backpack" }, { "name": "bedroll" }, { "name": "rope" }, { "name": "flint and steel" }, { "name": "torches (3)" }, { "name": "waterskin (empty)" }],
+               { "name": "1d100 silver coins", "money": true, "formula": "1d100" }
             ]
          },
          "page": 72
@@ -10719,6 +10918,23 @@
                "{@gear Herbs of healing} and {@gear climbing gear} {@i or} {@gear winter clothing}",
                "Traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, {@gear torches (3)|3 torches}, and a {@gear waterskin (empty)|waterskin}",
                "1d100 silver coins"
+            ],
+            "selections": [
+               [
+                  [{ "name": "bow" }],
+                  [{ "name": "light spear" }]
+               ],
+               [
+                  [{ "name": "dagger" }],
+                  [{ "name": "health elixir", "quantity": 2 }]
+               ],
+               { "name": "leather armor" },
+               [
+                  [{ "name": "herbs of healing" }, { "name": "climbing gear" }],
+                  [{ "name": "winter clothing" }]
+               ],
+               [{ "name": "backpack" }, { "name": "bedroll" }, { "name": "rope" }, { "name": "flint and steel" }, { "name": "torches (3)" }, { "name": "waterskin (empty)" }],
+               { "name": "1d100 silver coins", "money": true, "formula": "1d100" }
             ]
          },
          "page": 73
@@ -10775,9 +10991,20 @@
                "2 {@gear health elixir|healing elixirs}",
                "Traveling gear consisting of a {@gear backpack}, a {@gear bedroll}, a {@gear rope}, {@gear flint and steel}, {@gear torches (3)|3 torches}, and a {@gear waterskin (empty)|waterskin}",
                "1d100 silver coins"
+            ],
+            "selections": [
+               [
+                  [{ "name": "sword" }, { "name": "shield" }],
+                  [{ "name": "axe" }, { "name": "shield" }],
+                  [{ "name": "halberd" }]
+               ],
+               { "name": "leather armor" },
+               { "name": "health elixir", "quantity": 2 },
+               [{ "name": "backpack" }, { "name": "bedroll" }, { "name": "rope" }, { "name": "flint and steel" }, { "name": "torches (3)" }, { "name": "waterskin (empty)" }],
+               { "name": "1d100 silver coins", "money": true, "formula": "1d100" }
             ]
          },
-         "page": 70
+         "page": 73
       }
    ],
    "gear": [
@@ -10856,7 +11083,7 @@
          ],
          "description": [
             "Nearly everyone in Terrinoth carries a knife at their belt; it is a useful tool for any number of mundane tasks. Daggers, on the other hand, are designed purely for killing. Their thin, razor-sharp blades tend to be perfectly balanced so they can be thrown with the flick of a wrist just as easily as they can slit an unwary throat.",
-            "Your character can stab or slash with a dagger using the profile in {@table 2-5: Melee Weapons} on page 94, or they can throw one using the following profile:",
+            "Your character can stab or slash with a dagger using the profile in {@table 2-5: Melee Weapons} on page 94, or they can throw one using the following profile: (Ranged; Damage +2; Critical 3; Range [Short]; Accurate 1, Limited Ammo 1).",
             {
                "title": "Thrown Stats",
                "type": "table",
@@ -11086,7 +11313,7 @@
          "description": [
             "Spears are perfect for fighting in tight formation, where soldiers can't swing a sword or axe without hitting one of their fellows. Thus, foot soldiers of the baronies tend to train with spear and shield in the art of forming a defensive wall of thrusting spear tips.",
             "Standard spears are too heavy to be wielded in one hand or thrown. \"Light\" spears (sometimes called javelins) on the other hand can be wielded one-handed and consist of a thick, four-foot-long wooden shaft topped by a heavy iron spearhead. These spears are also light enough to be thrown over short distances; the Orcs of the Broken Plains often use thrown spears to skewer their prey while hunting.",
-            "Your character can thrust or stab with a light spear using the profile in {@table 2-5: Melee Weapons}, or they can throw one using the following profile:.",
+            "Your character can thrust or stab with a light spear using the profile in {@table 2-5: Melee Weapons}, or they can throw one using the following profile: (Ranged; Damage +2; Critical 4; Range [Short]; Accurate 1, Limited Ammo 1).",
             {
                "title": "Thrown Stats",
                "type": "table",
@@ -11537,7 +11764,7 @@
          "description": [
             "Crossbows pack a more powerful punch than bows, though they take longer to load and ready for firing. Just as importantly, they only require the wielder to point the crossbow at the target and pull the trigger. The wealthy Free City of Riverwatch has long been able to afford keeping a company of city guards armed with crossbows, and those who hunt cultists and other dark creatures in the sewers of Nerekhall find them easier to use in tight spaces than a bow."
          ],
-         "page": 94
+         "page": 95
       },
       {
          "name": "Hand Crossbow",
@@ -11568,7 +11795,7 @@
          "description": [
             "A favorite weapon for assassins and bounty hunters, these small crossbows can easily fit under a cloak or can even be mounted on a reinforced glove. As such, they are frowned upon by many Town Watch members across Terrinoth, who view anyone they find carrying one with automatic suspicion."
          ],
-         "page": 94
+         "page": 95
       },
       {
          "name": "Heavy Crossbow",
@@ -11604,7 +11831,7 @@
          "description": [
             "Built for sieges and large battles, heavy crossbows have the power to punch a quarrel through a breastplate at a hundred paces. They are, however, cumbersome weapons. Some heavy crossbows even have siege bucklers attached just before the limbs, which only increases their weight. Recently, some of the baronies have begun fielding soldiers clad in plate mail and armed with heavy crossbows. The weight of their equipment makes them almost immobile, but they are nearly impervious to return fire and can hit nearly any target on the battlefield."
          ],
-         "page": 94
+         "page": 95
       },
       {
          "name": "Repeating Crossbow",
@@ -11635,7 +11862,7 @@
          "description": [
             "Nobody is quite sure who first invented this outlandish weapon, but most are quick to blame it on the Gnomes. A repeating crossbow has two pairs of limbs and strings that allow it to fire multiple shots in rapid succession. However, the lengthy reloading time makes many warriors wonder if the overcomplicated mechanism is really worth the fuss."
          ],
-         "page": 94
+         "page": 95
       },
       {
          "name": "Longbow",
@@ -11661,7 +11888,7 @@
          "description": [
             "Known as the signature weapon of the Elves, the longbow takes skill and grace to use. A practiced archer can take advantage of its tall, recurved limbs to propel an arrow over a great distance. Better yet, a truly skilled archer can draw and fire a longbow more quickly than a crossbow. Some Elves of the Free Cities claim their woodland cousins can fire three arrows in as many breaths, and with each shot pluck a feather from an eagle's wing."
          ],
-         "page": 94
+         "page": 95
       },
       {
          "name": "Sling",
@@ -11693,7 +11920,7 @@
             "Basically a leather cup attached to two lengths of cord, a sling is dirt cheap and its ammunition (any roughly spherical rock) even more so. A sling is more likely to be carried by shepherds and street urchins than by seasoned warriors, but a few adventurers keep one tucked away in a pouch as a weapon of desperation.",
             "{@symbols d or h} cannot be spent to cause a sling to run out of ammo."
          ],
-         "page": 95
+         "page": 96
       },
       {
          "name": "Throwing Axe",
@@ -11728,7 +11955,7 @@
          ],
          "description": [
             "The rangers of the Dunwarr Mountains are fond of saying that the only thing better than an axe is an axe you can throw at someone. No amount of balancing a hand axe for throwing can make it a truly accurate weapon, but if it hits, it is likely to do some serious damage.",
-            "Your character can hurl a throwing axe at their foe using the profile in {@table 2-6: Ranged Weapons} on page 95, or they can wield one using the following profile:",
+            "Your character can hurl a throwing axe at their foe using the profile in {@table 2-6: Ranged Weapons} on page 95, or they can wield one using the following profile: (Melee (Light); Damage +2; Critical 3; Range [Engaged]; Inaccurate 1, Vicious 1).",
             {
                "title": "Melee Stats",
                "type": "table",
@@ -11761,7 +11988,7 @@
                ]
             }
          ],
-         "page": 95
+         "page": 96
       },
       {
          "name": "Brigandine",
@@ -11975,7 +12202,7 @@
          "type": "gear",
          "description": [
             "Whether it is cut from bolts of vibrant, colorful silk or fashioned from rich, fur-lined velvet, nothing says someone is ludicrously wealthy and powerful (or wants to pass as such) like a fine cloak.",
-            "When wearing a fine cloak, your character removes {@dice setback} from any Charm, Deception, or Leadership checks they make. While worn, a cloak's encumbrance is 0."
+            "When wearing a fine cloak, your character removes {@dice setback} from any {@skill Charm}, {@skill Deception}, or {@skill Leadership} checks they make. While worn, a cloak's encumbrance is 0."
          ],
          "encumbrance": 1,
          "price": 90,
@@ -12390,7 +12617,7 @@
                "type": "list",
                "items": [
                   "{@b Activation:} Until the end of your character's turn, the lightning strike rune counts as a Ranged weapon with the following profile: (Discipline; Damage 8; Critical 3; Range [Long]; Auto-fire, Disorient 3).",
-                  "{@b Activation:} When your character casts an Attack spell, the first Range effect they add does not increase the check's difficulty. In addition, they must add the Lightning effect with no increase in difficulty. {@spell Attack||crb} spells cast by your character increase their base damage by five."
+                  "{@b Implement:} When your character casts an Attack spell, the first Range effect they add does not increase the check's difficulty. In addition, they must add the Lightning effect with no increase in difficulty. {@spell Attack||crb} spells cast by your character increase their base damage by five."
                ]
             },
             {
@@ -12612,7 +12839,7 @@
                "type": "list",
                "items": [
                   "{@b Activation:} While possessing a terror runebound shard, your character can ignore the effects of {@rule fear||crb}, as per page 243 of the {@title Genesys} Core Rulebook.",
-                  "{@b Implement:} When your character is casting a spell, any friendly affected targets are immune to the effects of {@rule fear||crb} for the spell's duration. Any enemy affected targets must immediately make a {@difficulty Daunting|fear} as an out-of turn-incidental."
+                  "{@b Implement:} When your character is casting a spell, any friendly affected targets are immune to the effects of {@rule fear||crb} for the spell's duration. Any enemy affected targets must immediately make a {@difficulty Daunting} {@rule fear||crb} check as an out-of-turn incidental."
                ]
             }
          ]
@@ -12783,7 +13010,7 @@
          "rarity": 6,
          "description": [
             "Power potions are similar to speed potions (see page 104), save that they increase upper body and core strength in particular. Those who imbibe power potions are better able to strike and block blows. Feats of strength, such as hefting weights and shifting objects, are also facilitated through the use of a power potion.",
-            "When your character uses a power potion they increase their {@characteristics Brawn||crb} by 1. This effect lasts until the end of the encounter or scene. If your character's {@characteristics Brawn||crb} is already 5, they instead add {@dice boost|2} to all checks using {@characteristics Brawn||crb}. When the potion wears off, your character suffers 6 strain."
+            "When your character uses a power potion they increase their {@characteristic Brawn||crb} by 1. This effect lasts until the end of the encounter or scene. If your character's {@characteristic Brawn||crb} is already 5, they instead add {@dice boost|2} to all checks using {@characteristic Brawn||crb}. When the potion wears off, your character suffers 6 strain."
          ]
       },
       {
@@ -12920,7 +13147,7 @@
                "type": "list",
                "items": [
                   "{@b Use With:} This attachment can be applied to any melee weapon.",
-                  "{@b Modifiers:} The weapon gains the {@quality Ensnare|Ensnare 1|crb} item quality.",
+                  "{@b Modifiers:} The weapon gains the {@quality Ensnare|Ensnare 1|crb} and {@quality Stun|Stun 4|crb} item qualities.",
                   "{@b Hard Points Required:} 1."
                ]
             }
@@ -13076,7 +13303,7 @@
          "rarity": 9,
          "description": [
             "Although the priests of Pollox deny any involvement, they are said to have smithed the Bloodscript Rings during the chaos following Timmorran Lokander's death. Rumor has it that the priesthood was concerned about wizards' vulnerability at that time and crafted items to protect them. The rings are made of a dark precious-metal alloy. On their inside edges are a series of complex sigils and wards scribed in crimson lettering. The rings are said to fill those who would harm the wearer with a sense of unnerving dread when magic is worked; even the wearer themself feels an internal weariness within.",
-            "When your character casts a spell while wearing a Bloodscript Ring, all other characters within short range must immediately make a {fear} check as an out-of-turn incidental. The difficulty of the check is equal to your character's ranks in {@skill Knowledge (Forbidden)}. While wearing a bloodscript ring, your character reduces their strain threshold by one."
+            "When your character casts a spell while wearing a Bloodscript Ring, all other characters within short range must immediately make a {@rule fear||crb} check as an out-of-turn incidental. The difficulty of the check is equal to your character's ranks in {@skill Knowledge (Forbidden)}. While wearing a bloodscript ring, your character reduces their strain threshold by one."
          ]
       },
       {
@@ -13216,7 +13443,7 @@
             }
          ],
          "description": [
-            "Priests of Kellos once ordered the forging of a flanged mace. They performed a series of warlike rituals on the weapon and imbued it with the spirit of their god’s wrathful aspect. When the mace is hefted in anger, the head of the weapon bursts into flames that scorch the foe.",
+            "Priests of Kellos once ordered the forging of a flanged mace. They performed a series of warlike rituals on the weapon and imbued it with the spirit of their god's wrathful aspect. When the mace is hefted in anger, the head of the weapon bursts into flames that scorch the foe.",
             "The Mace of Kellos is a magic implement as per page 218 of the {@title Genesys Core Rulebook}, and allows your character to use it to cast spells using the {@skill Divine||crb} skill. When casting a spell using the Mace of Kellos, your character adds {@dice boost|2} to the check. In addition, when the spellcaster casts an {@spell Attack||crb} spell, adding the Fire, Close Combat, and Holy effects do not increase its difficulty."
          ]
       },
@@ -13249,7 +13476,7 @@
       },
       {
          "name": "Serpent Dagger",
-         "page": 109,
+         "page": 110,
          "type": "weapon",
          "class": "magic",
          "skill": {
@@ -13289,7 +13516,7 @@
       },
       {
          "name": "Shadow Bracers",
-         "page": 109,
+         "page": 110,
          "type": "gear",
          "class": "magic",
          "encumbrance": 0,
@@ -13302,7 +13529,7 @@
       },
       {
          "name": "Shield of Light",
-         "page": 109,
+         "page": 110,
          "type": "weapon",
          "class": "magic",
          "skill": {
@@ -13347,7 +13574,7 @@
       },
       {
          "name": "Soulbound Sword",
-         "page": 109,
+         "page": 110,
          "type": "weapon",
          "class": "magic",
          "skill": {
@@ -13387,13 +13614,13 @@
          ],
          "description": [
             "Necromancers can bind the spirits of fearsome warriors within cursed blades. These soulbound swords have a sinister appearance, with morbid detailing such as skull-shaped pommels and guards made from carved bone. The black blades are slightly iridescent, and if an observer watches closely, they may be able to discern the shifting ghost trapped within. Bearers of these swords are said to benefit from some of the skill of the warrior spirit they carry, and the blades' merest touch often proves fatal. The grim reputation and appearance of Soulbound Swords also serves to inspire dread in their bearers' foes.",
-            "While wielding or wearing a Soulbound Sword your character reduces their strain threshold by two. As an incidental, while wielding a Soulbound Sword your character can allow it to assist them; they make an immediate {@difficulty Hard|fear}, and all engaged characters make an identical {@rule fear||crb} check as an out-of-turn incidental. Assuming your character doesn't drop the sword in terror, they count as having four ranks in {@skill Melee (Heavy)||crb} for attacks using the Soulbound Sword for the duration of the encounter. If your character already has four ranks or more in {@skill Melee (Heavy)||crb}, they instead add {@dice boost|2} to attacks using the sword.",
-            "If your character fails the {@rule fear||crb} check with {@symbols d}, the spirit within the blade possesses them entirely for the rest of the encounter, or longer at your GM's discretion. Your and your GM should work together to determine your character’s actions while possessed."
+            "While wielding or wearing a Soulbound Sword your character reduces their strain threshold by two. As an incidental, while wielding a Soulbound Sword your character can allow it to assist them; they make an immediate {@difficulty Hard} {@rule fear||crb} check, and all engaged characters make an identical {@rule fear||crb} check as an out-of-turn incidental. Assuming your character doesn't drop the sword in terror, they count as having four ranks in {@skill Melee (Heavy)||crb} for attacks using the Soulbound Sword for the duration of the encounter. If your character already has four ranks or more in {@skill Melee (Heavy)||crb}, they instead add {@dice boost|2} to attacks using the sword.",
+            "If your character fails the {@rule fear||crb} check with {@symbols d}, the spirit within the blade possesses them entirely for the rest of the encounter, or longer at your GM's discretion. Your and your GM should work together to determine your character's actions while possessed."
          ]
       },
       {
          "name": "Staff of Light",
-         "page": 109,
+         "page": 110,
          "type": "weapon",
          "skill": {
             "name": "Melee (Heavy)",
@@ -13419,7 +13646,7 @@
       },
       {
          "name": "Truelight Lantern",
-         "page": 110,
+         "page": 111,
          "type": "gear",
          "class": "magic",
          "encumbrance": 1,
@@ -13432,7 +13659,7 @@
       },
       {
          "name": "Warding Talisman",
-         "page": 110,
+         "page": 111,
          "type": "gear",
          "class": "magic",
          "encumbrance": 0,
@@ -13445,7 +13672,7 @@
       },
       {
          "name": "Winged Boots",
-         "page": 110,
+         "page": 111,
          "type": "gear",
          "class": "magic",
          "encumbrance": 1,
@@ -13455,6 +13682,57 @@
             "The Priesthood of Pollux sponsors all manner of magical research into artifacts that might allow their wearer to fly. Winged Boots are an example of such endeavors, but even so, they do not enable soaring flight. An adventurer equipped with winged boots can hover a few dozen yards above the ground or use the boots to safely slow a descent from a height.",
             "While wearing Winged Boots your character can fly (see the {@sidebar Flying||crb} sidebar on page 100 of the {@title Genesys Core Rulebook}). Your character does not need to use a maneuver in order to remain aloft (the boots do all the work and allow the wearer to hover in place) but cannot go above medium range from the ground.",
             "Winged boots have an encumbrance of 0 when worn. When not worn, Winged Boots have a tendency to spring upwards and fly away on their own."
+         ]
+      },
+      {
+         "name": "Blasting Rune",
+         "page": 118,
+         "type": "implement",
+         "class": "rune",
+         "encumbrance": 0,
+         "price": "priceless",
+         "rarity": null,
+         "damage": "+5",
+         "description": [
+            "A blasting rune works by imbuing a piece of stone within line of sight of the caster with such energy that it shatters apart in a small but powerful explosion. These runes are greatly prized by the Dwarves, who use them not only in defense, but also to break apart inaccessible bits of stone during their mining operations. The Orcs of the Broken Plains also make good use of this shard when they can manage to obtain one, because the craggy terrain of their homeland ensures that the bearer of such a rune is never far from a suitable weapon.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Activation:} Until the end of your character's turn, the blasting rune counts as a Ranged weapon with the following profile: (Discipline; Damage 9; Critical 3; Range [Medium]; Blast 7, Knockdown).",
+                  "{@b Implement:} When your character casts an {@spell Attack||crb} spell, they must add the Blast effect and may add the Impact effect with no increase in difficulty to either. {@spell Attack||crb} spells cast by your character increase their base damage by five."
+               ]
+            },
+            {
+               "title": "Blast",
+               "type": "table",
+               "columns": [
+                  {
+                     "header": "Skill"
+                  },
+                  {
+                     "header": "Dam",
+                     "value": "damage"
+                  },
+                  {
+                     "header": "Crit"
+                  },
+                  {
+                     "header": "Range"
+                  },
+                  {
+                     "header": "Special"
+                  }
+               ],
+               "rows": [
+                  {
+                     "skill": "{@skill Discipline||crb}",
+                     "damage": "9",
+                     "crit": 3,
+                     "range": "Medium",
+                     "special": "{@quality Blast|Blast 7|crb}, {@quality Knockdown||crb}"
+                  }
+               ]
+            }
          ]
       }
    ],
@@ -14179,7 +14457,7 @@
          "description": [
             "The creation of a magical item is beyond all but the most powerful practitioners of magic. Each magic item is as unique as the undertaking to create it. It is because of this unique nature that detailed rules for the creation of magic items are not included in this book. However, in certain rare cases, it may be possible for a Player Character to enchant a magic item.",
             "As the GM, you decide if it's possible for a character to create a particular magic item. Before the character can enchant an item, they must either craft or purchase a suitable item with the {@quality Superior||crb} quality - only the most masterfully crafted items have the potential to hold the magic required. The process of enchanting a magic item follows the normal guidelines for crafting, with you determining what additional tools and components are required, as well as the time needed and the magic skill to use for the crafting check - not all magic skills are appropriate for all magic items, just as they can't be used for all magic actions. We suggest a minimum difficulty of {@difficulty Hard} for even the most trifling magic item, with {@difficulty Formidable} appropriate for most.",
-            "If the check is successful, the item gains the intended magical abilities. Of course, you and the player can spend {@symbols a, t, h} and {@symbols d} for additional effects."
+            "If the check is successful, the item gains the intended magical abilities. Of course, you and the player can spend {@symbols a}, {@symbols t}, {@symbols h}, and {@symbols d} for additional effects."
          ]
       },
       {
@@ -14533,7 +14811,7 @@
                "cost": "{@symbols aaa or t}",
                "effect": [
                   "Increase the item's hard points by one.",
-                  "Reduce the difficulty of future checks to craft the item by one (to a minimum of {@difficulty Simple}."
+                  "Reduce the difficulty of future checks to craft the item by one (to a minimum of {@difficulty Simple})."
                ]
             },
             {
@@ -14819,7 +15097,7 @@
          "activation": "active (incidental, out of turn)",
          "ranked": false,
          "description": [
-            "{@i Your character must have purchased the {@skill Parry||crb} talent to benefit from this talent}. While wielding a weapon with the {@quality Defensive||crb} quality, your character may use {@skill Parry||crb} to reduce the damage of an attack targeting an engaged ally."
+            "{@i Your character must have purchased the {@talent Parry||crb} talent to benefit from this talent}. While wielding a weapon with the {@quality Defensive||crb} quality, your character may use {@talent Parry||crb} to reduce the damage of an attack targeting an engaged ally."
          ],
          "page": 87,
          "tags": [
@@ -15531,7 +15809,7 @@
          ]
       },
       {
-         "name": "Well-Travelled",
+         "name": "Well-Traveled",
          "tier": 2,
          "activation": "passive",
          "ranked": false,

@@ -18,7 +18,7 @@ Arguments: `$ARGUMENTS` (PDF path, printed page or range, destination JSON).
 ## Reading the book
 
 Stats usually sit in a **table** (e.g. "Table 2-2: Ranged Weapons"). Descriptions sit in the prose that follows. You need both.
-- If the table and the prose for an item fall on different sides of the page range, stop and ask (workflow boundary rule).
+- If an item starts inside the range and its table or prose continues on a following page, read forward to finish it (workflow boundary rule). If the part you need lies *before* the range, stop and ask.
 - The book's summary table itself is a separate `table` item. Mention it under ℹ with `/pack-table`.
 
 | Printed | JSON |

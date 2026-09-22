@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.12.6",
+         "version": "2026.09.21",
          "json": "expanded-players-guide",
          "full": "Expanded Player's Guide",
          "abbreviation": "EPG",
@@ -57,6 +57,11 @@
                2
             ]
          },
+         "powerLevels": {
+            "combat": 8,
+            "social": 4,
+            "general": 3
+         },
          "skills": [
             {
                "name": "Cool",
@@ -77,14 +82,14 @@
                "source": "crb"
             },
             {
-               "name": "Melee (light)",
+               "name": "Melee (Light)",
                "characteristic": "brawn",
                "ranks": 4,
                "source": "crb"
             }
          ],
          "talents": [
-            "Parry 2"
+            {"name":"Parry 2","source":"crb"}
          ],
          "abilities": [
             "Terrifying 4",
@@ -94,7 +99,7 @@
             {
                "name": "Gorgon blade",
                "skill": {
-                  "name": "Melee (light)",
+                  "name": "Melee (Light)",
                   "source": "crb"
                },
                "damage": 6,
@@ -119,10 +124,7 @@
             "Gorgon",
             "Official",
             "source:EPG",
-            "setting:Age of Myth",
-            "Combat CR:8",
-            "Social CR:4",
-            "General CR:3"
+            "setting:Age of Myth"
          ]
       },
       {
@@ -372,6 +374,12 @@
                "source": "crb"
             },
             {
+               "name": "Coercion",
+               "characteristic": "willpower",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
                "name": "Melee (Heavy)",
                "characteristic": "brawn",
                "ranks": 2,
@@ -426,7 +434,8 @@
                "range": "Engaged",
                "qualities": [
                   {
-                     "name": "Vicious 3",
+                     "name": "Vicious",
+                     "ranks": 3,
                      "source": "crb"
                   }
                ]
@@ -517,7 +526,8 @@
                      "source": "crb"
                   },
                   {
-                     "name": "Vicious 3",
+                     "name": "Vicious",
+                     "ranks": 3,
                      "source": "crb"
                   }
                ]
@@ -1398,7 +1408,8 @@
                      "source": "crb"
                   },
                   {
-                     "name": "Vicious 3",
+                     "name": "Vicious",
+                     "ranks": 3,
                      "source": "crb"
                   }
                ]
@@ -1645,8 +1656,8 @@
             "Official",
             "setting:Post Apocalypse",
             "Combat CR:3",
-            "Social CR:1",
-            "General CR:1"
+            "Social CR:5",
+            "General CR:2"
          ]
       },
       {
@@ -1991,7 +2002,8 @@
                "range": "Engaged",
                "qualities": [
                   {
-                     "name": "Vicious 3",
+                     "name": "Vicious",
+                     "ranks": 3,
                      "source": "crb"
                   }
                ]
@@ -2207,7 +2219,7 @@
             }
          ],
          "talents": [
-            "Swift"
+            {"name":"Swift","source":"crb"}
          ],
          "abilities": [
             "Ambush Predator",
@@ -2225,7 +2237,8 @@
                "range": "Engaged",
                "qualities": [
                   {
-                     "name": "Vicious 3",
+                     "name": "Vicious",
+                     "ranks": 3,
                      "source": "crb"
                   }
                ]
@@ -2804,7 +2817,8 @@
                      "source": "crb"
                   },
                   {
-                     "name": "Vicious 3",
+                     "name": "Vicious",
+                     "ranks": 3,
                      "source": "crb"
                   }
                ]
@@ -3186,9 +3200,9 @@
             "source:EPG",
             "Official",
             "setting:General",
-            "Combat CR:2",
-            "Social CR:1",
-            "General CR:2"
+            "Combat CR:1",
+            "Social CR:6",
+            "General CR:4"
          ]
       },
       {
@@ -3731,7 +3745,7 @@
          "skills": [
             {
                "name": "Cool",
-               "characteristic": "willpower",
+               "characteristic": "presence",
                "source": "crb"
             },
             {
@@ -4605,8 +4619,8 @@
             "Official",
             "setting:General",
             "Combat CR:1",
-            "Social CR:2",
-            "General CR:2"
+            "Social CR:1",
+            "General CR:1"
          ]
       },
       {
@@ -4673,7 +4687,7 @@
          "talents": [
             {
                "name": "Combat Medicine 2",
-               "source": "crb"
+               "source": "sotb"
             },
             {
                "name": "Painkiller Specialization 2",
@@ -4874,7 +4888,7 @@
             {
                "name": "Hatchet or similar tool",
                "skill": {
-                  "name": "Melee (light)",
+                  "name": "Melee (Light)",
                   "source": "crb"
                },
                "damage": 4,
@@ -4909,7 +4923,7 @@
          "page": 93,
          "type": "minion",
          "description": [
-            "Warriors are infantry fighters that could trained in close-quarters combat or ranged fighting. Depending on the equipment and the setting, warriors might represent a phalanx of Spartans, a horde of barbarians, squads of rifle infantry, or a line of archers."
+            "Warriors are infantry fighters that could be trained in close-quarters combat or ranged fighting. Depending on the equipment and the setting, warriors might represent a phalanx of Spartans, a horde of barbarians, squads of rifle infantry, or a line of archers."
          ],
          "characteristics": {
             "brawn": 3,
@@ -5046,7 +5060,7 @@
       {
          "name": "Been There, Done That",
          "description": [
-            "When providing assistance, this character adds {@symbols sa} to the results instead of {@dice boost})."
+            "When providing assistance, this character adds {@symbols sa} to the results instead of {@dice boost}."
          ],
          "tags": [
             "general",
@@ -5402,7 +5416,7 @@
       {
          "name": "Petrifying Gaze",
          "description": [
-            "As an action, may make an {@b opposed {@skill Cool||crb} versus {@skill Coordination||crb} check} targeting one character within medium range to {@rule immobilized|immobilize|crb} the target until the end of this character's next turn, plus one additional turn for each {@symbols ss}; may spend {@symbols aaa} to {@rule staggered|stagger|crb} target until the end of this character's next turn and may spend {@symbols t} to turn target to stone."
+            "As an action, may make an {@b opposed {@skill Cool||crb} versus {@skill Coordination||crb} check} targeting one character within medium range to {@rule immobilized|immobilize|crb} the target until the end of this character's next turn, plus one additional turn for each {@symbols ss}; may spend {@symbols aaa} to {@rule staggered|stagger|crb} target until the end of this character's next turn and may spend {@symbols t} to turn target to stone. See also {@sidebar Surviving Petrification}."
          ],
          "tags": [
             "combat",
@@ -5693,9 +5707,11 @@
          "st": 8,
          "xp": 85,
          "skills": {
-            "skills": [
-               "athletics"
-            ],
+            "skills": [{
+               "name": "Athletics",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -5707,7 +5723,7 @@
             "Tragic Fate"
          ],
          "description": [
-            "This character might have been born of a union between a mortal and a god, or perhaps they are the child of gods stolen at birth and robbed of their divine majesty."
+            "This character might have been born of a union between a mortal and a god, or perhaps they are the child of gods stolen at birth and robbed of some of their divine majesty."
          ],
          "settings": [
             {
@@ -5730,23 +5746,35 @@
          "st": 11,
          "xp": 115,
          "skills": {
-            "skills": [
-               "arcana",
-               "divine",
-               "primal"
-            ],
+            "skills": [],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "A sorcerer starts the game with {@skill arcana||crb}, {@skill divine||crb}, or {@skill primal||crb} as a career skill. Sorcerers also start with a single rank in the magic skill they select as a career skill during character creation. They obtain this rank before spending experience points, and these skills may not be increased above rank 2 during character creation."
+               "A sorcerer starts the game with {@skill Arcana||crb}, {@skill Divine||crb}, or {@skill Primal||crb} as a career skill. Sorcerers also start with a single rank in the magic skill they select as a career skill during character creation. They obtain this rank before spending experience points, and these skills may not be increased above rank 2 during character creation."
             ],
-            "choice": true
+            "choice": [
+               {
+                  "name": "arcana",
+                  "source": "crb",
+                  "ranks": 1
+               },
+               {
+                  "name": "divine",
+                  "source": "crb",
+                  "ranks": 1
+               },
+               {
+                  "name": "primal",
+                  "source": "crb",
+                  "ranks": 1
+               }
+            ]
          },
          "abilities": [
             "Supernatural Suspicion"
          ],
          "description": [
-            "In many mythologies, a person is born a magic user; magic is not a skill that can be learned or taught. This archetype plays into this concept, and should only be used if the game is using the magic alternative rules starting on page 210 of the {@title Genesys} Core Rulebook. It also plays with the idea that magic is something that is feared in most mythologies."
+            "In many mythologies, a person is born a magic user; magic is not a skill that can be learned or taught. This archetype plays into this concept, and should only be used if the game is using the magic alternate rules starting on page 210 of the {@title Genesys} Core Rulebook. It also plays with the idea that magic is something that is feared in most mythologies."
          ],
          "settings": [
             {
@@ -5769,18 +5797,34 @@
          "st": 10,
          "xp": 100,
          "skills": {
-            "skills": [
-               "deception",
-               "knowledge",
-               "skulduggery",
-               "streetwise"
-            ],
+            "skills": [],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "A trickster starts with a single rank in {@skill deception||crb}, {@skill knowledge||crb}, {@skill skulduggery||crb}, or {@skill streetwise||crb} during character creation. They obtain this rank before spending experience points, and these skills may not be increased aboce rank 2 during character creation."
+               "A trickster starts with a single rank in {@skill deception||crb}, {@skill knowledge||crb}, {@skill skulduggery||crb}, or {@skill streetwise||crb} during character creation. They obtain this rank before spending experience points, and these skills may not be increased above rank 2 during character creation."
             ],
-            "choice": true
+            "choice": [
+               {
+                  "name": "Deception",
+                  "source": "crb",
+                  "ranks": 1
+               },
+               {
+                  "name": "Knowledge",
+                  "source": "crb",
+                  "ranks": 1
+               },
+               {
+                  "name": "Skulduggery",
+                  "source": "crb",
+                  "ranks": 1
+               },
+               {
+                  "name": "Streetwise",
+                  "source": "crb",
+                  "ranks": 1
+               }
+            ]
          },
          "abilities": [
             "Too Clever by Half"
@@ -5809,9 +5853,11 @@
          "st": 10,
          "xp": 105,
          "skills": {
-            "skills": [
-               "perception"
-            ],
+            "skills": [{
+               "name": "Perception",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -5825,7 +5871,7 @@
             "Bite of the Wolf"
          ],
          "description": [
-            "The curse could have come from a family legacy or a bite from a feral monster, but the result is the same: an individual who transforms into a beast when the moon is full. Some search for a cure, while others embrace their feral nature. A few seek to use their terrible curse to battle others like themselves, knowing it is better to fall that way than let the call of the beast consume their soul."
+            "The curse could have come from a family legacy or a bite from a feral monster, but the result is the same: an individual who transforms into a beast when the moon is full. Some search for a cure, while others embrace their feral nature. A few seek to use their terrible curse to battle others like themselves, knowing it is better to fall that way than to let the call of the beast consume their soul."
          ],
          "settings": [
             {
@@ -5848,9 +5894,11 @@
          "st": 11,
          "xp": 85,
          "skills": {
-            "skills": [
-               "vigilance"
-            ],
+            "skills": [{
+               "name": "Vigilance",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -5864,7 +5912,7 @@
             "Vulnerable Heart"
          ],
          "description": [
-            "The dhampir, or half vampire, can either be the child of a union between a vampire and a living person or a human who has not yet fully succumbed to the thirst for blood. Dhampirs inherit some of the strengths (and weaknesses) of their vampire progenitors"
+            "The dhampir, or half vampire, can be either the child of a union between a vampire and a living person or a human who has not yet fully succumbed to the thirst for blood. Dhampirs inherit some of the strengths (and weaknesses) of their vampire progenitors."
          ],
          "settings": [
             {
@@ -5887,19 +5935,19 @@
          "st": 9,
          "xp": 90,
          "skills": {
-            "skills": [
-               "discipline",
-               "brawl",
-               "melee",
-               "ranged (light)",
-               "ranged (heavy)"
-            ],
+            "skills": [],
             "ranksTotal": 3,
-            "ranksEach": 2,
             "description": [
                "A fearless slayer begins the game with two ranks in {@skill discipline||crb} and one rank in a combat skill of your choice. They obtain these ranks before spending experience points, and these skills may not be increased above rank 2 during character creation."
             ],
-            "choice": true
+            "choice": [
+               "combat",
+               {
+                  "name": "Discipline",
+                  "source": "crb",
+                  "ranks": 2
+               }
+            ]
          },
          "abilities": [
             "Strike True"
@@ -5928,16 +5976,23 @@
          "st": 11,
          "xp": 100,
          "skills": {
-            "skills": [
-               "knowledge (supernatural)",
-               "arcana"
-            ],
+            "skills": [],
             "ranksTotal": 2,
             "ranksEach": 2,
             "description": [
-               "A loremaster begins the game with 2 ranks in {@skill knowledge (supernatural)} or one rank in {@skill arcana||crb} (if using the magic rules). They obtain this rank before spenind experience points, and these skills may not be increased above rank 2 during character creation."
+               "A loremaster begins the game with two ranks in {@skill knowledge (supernatural)} or one rank in {@skill arcana||crb} (if using the magic rules). They obtain this rank before spending experience points, and these skills may not be increased above rank 2 during character creation."
             ],
-            "choice": true
+            "choice": [
+               {
+                  "name": "Knowledge (Supernatural)",
+                  "ranks": 2
+               },
+               {
+                  "name": "Arcana",
+                  "source": "crb",
+                  "ranks": 1
+               }
+            ]
          },
          "abilities": [
             "Know Its Weakness"
@@ -5966,9 +6021,11 @@
          "st": 10,
          "xp": 160,
          "skills": {
-            "skills": [
-               "resilience"
-            ],
+            "skills": [{
+               "name": "Resilience",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -6004,22 +6061,30 @@
          "st": 12,
          "xp": 100,
          "skills": {
-            "skills": [
-               "mechanics",
-               "computers"
-            ],
+            "skills": [],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
                "A sleeper begins the game with one rank in {@skill mechanics||crb} or one rank in {@skill computers||crb}. They obtain this rank before spending experience points, and these skills may not be increased above rank 2 during character creation."
             ],
-            "choice": true
+            "choice": [
+               {
+                  "name": "Mechanics",
+                  "source": "crb",
+                  "ranks": 1
+               },
+               {
+                  "name": "Computers",
+                  "source": "crb",
+                  "ranks": 1
+               }
+            ]
          },
          "abilities": [
             "Remember This?"
          ],
          "description": [
-            "Sleepers are the near-perfect remnants of the humanity that existed before the apocalypse. Perhaps they were sealed in underground shelters, or they have just been thawed out of cyrosleep. Sleepers are unique thanks to their lack of mutations and general good health."
+            "Sleepers are the near-perfect remnants of the humanity that existed before the apocalypse. Perhaps they were sealed in underground shelters, or they have just been thawed out of cryosleep. Sleepers are unique thanks to their lack of mutations and general good health."
          ],
          "settings": [
             {
@@ -6042,13 +6107,15 @@
          "st": 7,
          "xp": 100,
          "skills": {
-            "skills": [
-               "survival"
-            ],
+            "skills": [{
+               "name": "Survival",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "A survivor begins the game wtih one rank in {@skill survival||crb}. They obtain this rank before spending experience points, and {@skill survival||crb} may not be increased above rank 2 during character creation."
+               "A survivor begins the game with one rank in {@skill survival||crb}. They obtain this rank before spending experience points, and {@skill survival||crb} may not be increased above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -6346,8 +6413,8 @@
          "type": "weapon",
          "page": 12,
          "description": [
-            "Apollo's bow was said to be so accurate, the god could not miss a shot. In addition, the merest graze from an arrow could bring on a terrible plaugue.",
-            "Before your character makes a combat check using the Bow of Apollo, remove all {@dice setback} from the pool. When a character suffers a Critical Injury from the Bow of Apollo, your character must choose to inflict the {@b Debilitating Illness} Crifical Injury if the target is not already suffering from this Critical Injury.",
+            "Apollo's bow was said to be so accurate, the god could not miss a shot. In addition, the merest graze from an arrow could bring on a terrible plague.",
+            "Before your character makes a combat check using the Bow of Apollo, remove all {@dice setback} from the pool. When a character suffers a Critical Injury from the Bow of Apollo, your character must choose to inflict the {@b Debilitating Illness} Critical Injury if the target is not already suffering from this Critical Injury.",
             "{@b Debilitating Illness (Hard [}{@dice difficulty|3}{@b ] Severity):} The target's wound threshold and strain threshold are halved (rounding up) until this Critical Injury is healed."
          ],
          "skill": {
@@ -6382,8 +6449,8 @@
          "type": "weapon",
          "page": 12,
          "description": [
-            "Engraved with runes of hunger and power, Dainsleif is a vicious longsword with a short hilt and a heavy steel pommel.",
-            "Increase the difficulty of checks to heal any Critical Injury inflicted by Dainsleif by two, to a maximum of {@difficulty formidable}."
+            "Engraved with runes of hunger and power, Dáinsleif is a vicious longsword with a short hilt and a heavy steel pommel.",
+            "Increase the difficulty of checks to heal any Critical Injuries inflicted by Dáinsleif by two, to a maximum of {@difficulty formidable}."
          ],
          "skill": {
             "name": "Melee (Light)",
@@ -6461,9 +6528,9 @@
          "type": "weapon",
          "page": 12,
          "description": [
-            "This hammer is so heavy that it would take a strong person two hands to swing, but the dwarves forging it were distracted by Loki and only made the shaft long enough for a single-hand grip. Thor himself can only wield the hammer in one hand thanks to the Jarngreiper gauntlets.",
-            "When making a combat check using Mjolnir, your character increases the damage dealt by +2 per {@symbols s} (rather than by +1). When your character makes a ranged combat check with Mjolnir, they may spend {@symbols aa or t} to have it return to their hand at the beginning of their next turn.",
-            "See {@gear Mjolnir (Ranged) (Norse)|Mjolnir (Ranged)}."
+            "This hammer is so heavy that it would take a strong person two hands to swing, but the dwarves forging it were distracted by Loki and only made the shaft long enough for a single-hand grip. Thor himself can only wield the hammer in one hand thanks to the Járngreiper gauntlets.",
+            "When making a combat check using Mjölnir, your character increases the damage dealt by +2 per {@symbols s} (rather than by +1). When your character makes a ranged combat check with Mjölnir, they may spend {@symbols aa or t} to have it return to their hand at the beginning of their next turn.",
+            "See {@gear Mjolnir (Ranged) (Norse)|Mjölnir (Ranged)}."
          ],
          "skill": {
             "name": "Melee (Light)",
@@ -6506,9 +6573,9 @@
          "type": "weapon",
          "page": 13,
          "description": [
-            "This hammer is so heavy that it would take a strong person two hands to swing, but the dwarves forging it were distracted by Loki and only made the shaft long enough for a single-hand grip. Thor himself can only wield the hammer in one hand thanks to the Jarngreiper gauntlets.",
-            "When making a combat check using Mjolnir, your character increases the damage dealt by +2 per {@symbols s} (rather than by +1). When your character makes a ranged combat check with Mjolnir, they may spend {@symbols aa or t} to have it return to their hand at the beginning of their next turn.",
-            "See {@gear Mjolnir (Melee) (Norse)|Mjolnir (Melee)}."
+            "This hammer is so heavy that it would take a strong person two hands to swing, but the dwarves forging it were distracted by Loki and only made the shaft long enough for a single-hand grip. Thor himself can only wield the hammer in one hand thanks to the Járngreiper gauntlets.",
+            "When making a combat check using Mjölnir, your character increases the damage dealt by +2 per {@symbols s} (rather than by +1). When your character makes a ranged combat check with Mjölnir, they may spend {@symbols aa or t} to have it return to their hand at the beginning of their next turn.",
+            "See {@gear Mjolnir (Melee) (Norse)|Mjölnir (Melee)}."
          ],
          "skill": {
             "name": "Ranged",
@@ -6610,7 +6677,7 @@
          "page": 13,
          "description": [
             "Peleus's sword, crafted by Hephaestus, god of the forge, is said to guarantee the wielder victory in combat.",
-            "When wielding the Sword of Peleus, your character reduces any wounds they suffer as a result of a combat check to 0. However, whenever your character is hit by an attack while they wield the Sword of Peleus, they suffer 2 strain. "
+            "While wielding the Sword of Peleus, your character reduces any wounds they suffer as a result of a combat check to 0. However, whenever your character is hit by an attack while they wield the Sword of Peleus, they suffer 2 strain."
          ],
          "skill": {
             "name": "melee (light)",
@@ -6652,7 +6719,7 @@
          "type": "weapon",
          "page": 13,
          "description": [
-            "The sacred weapon of Dionysus, the Thyrsus is a rod with a pine cone at the end. Honey drips from the pine cone, and a steel tip is hidden within the cone's scales. This rare, but not unique, weapon can induce a sacred frenzy in its targets, and it has been carried by satyrs, maenads, and the god himself.",
+            "The sacred weapon of Dionysus, the Thyrsus is a rod with a pine cone on the end. Honey drips from the pine cone, and a steel tip is hidden within the cone's scales. This rare, but not unique, weapon can induce a sacred frenzy in its targets, and it has been carried by satyrs, maenads, and the god himself.",
             "While wielding the Thyrsus, if your character makes a combat check that would incapacitate a character, the character instead heals all strain, then lashes out in a frenzied, ecstatic rampage for the remainder of the encounter. During their turn, they must make a {@skill brawl||crb} combat check targeting the closest engaged character (if they are engaged with multiple characters, select the target randomly). If they are not engaged with any character, they move in a random direction performing random nonsensical acts determined by your GM."
          ],
          "skill": {
@@ -6688,7 +6755,7 @@
          "page": 13,
          "description": [
             "The Aegis is the armor of the gods: a skin of golden scales worn off one shoulder, with the head of a Gorgon attached to the front. While the Gorgon's severed head no longer turns those who look at it into stone, it does strike fear into enemies and inspire courage in allies.",
-            "While wearing the Aegis, your character and any allies within medium range add {@symbols s} to any {@skill discipline||crb} and {@skill leadership||crb} checks they make. Any enemies within medium range must make a {@difficulty daunting|discipline} at the start of their next turn as an incidental. If they fail, they are immobilized until the end of the round, plus one additional round per {@symbols h}. If they succeed, they do not need to make this check again. (If your group is using the {@b Fear} rules found on page 243 of the Core Rulebook, this can be a fear check instead.)"
+            "While wearing the Aegis, your character and any allies within medium range add {@symbols s} to any {@skill discipline||crb} and {@skill leadership||crb} checks they make. Any enemies within medium range must make a {@difficulty daunting|discipline} at the start of their turn as an incidental. If they fail, they are immobilized until the end of the round, plus one additional round per {@symbols h}. If they succeed, they do not need to make this check again. (If your group is using the {@b Fear} rules found on page 243 of the Core Rulebook, this can be a fear check instead.)"
          ],
          "defense": 0,
          "soak": "+3",
@@ -6713,7 +6780,7 @@
          "page": 14,
          "description": [
             "Worn by the Green Knight of Arthurian legend, the Green Armor is a suit of heavy plate mail forged from some unidentifiable deep-green metal. The armor makes the wearer effectively immortal and invulnerable. It is said that some wearers can even lose their head or limb, pick it up, and effortlessly reattach it.",
-            "While wearing the Green Armor, Critical Injuries cannot be inflicted on your character. In addition, whenever your character would suffer wounds, they suffer strain instead. If your character exceeds their strain threshold, they are not incapacitated. However, they must concede victory to the enemy combatant and leave the encounter as quickly as possible."
+            "While wearing the Green Armor, Critical Injuries cannot be inflicted on your character. In addition, whenever your character would suffer wounds, they suffer strain instead. If your character's strain exceeds their strain threshold, they are not incapacitated. However, they must concede victory to the enemy combatant and leave the encounter as quickly as possible."
          ],
          "defense": 1,
          "soak": "+4",
@@ -6732,7 +6799,7 @@
          "page": 14,
          "description": [
             "The dwarves forged these iron gauntlets for Thor so that he would have the strength to wield his hammer one handed. Even by themselves, the gauntlets can make the wearer into a fearsome weapon, greatly increasing the individual's arm and grip strength, as well as protecting their hands and forearms from harm.",
-            "While wearing Jarngreiper, your character increases their Brawn by two, to a maximum of 6."
+            "While wearing Járngreiper, your character increases their Brawn by two, to a maximum of 6."
          ],
          "defense": 3,
          "soak": "+0",
@@ -6750,8 +6817,8 @@
          "type": "gear",
          "page": 14,
          "description": [
-            "The large, cumbersome bag, made from the tanned hides of several mismatched sea creatures, contains all the winds of the whole world. The bag was given to Odysseus by Aeolus, king of the four winds, but was lost in a storm when Odysseus' crew fought over it, thinking that it contained gold.",
-            "While your character holds the Bag of Wind, they reduce the difficulty of any Operating skill chekcs they make to direct sailing vessels by three, to a minimum of {@difficulty easy}. In addition, once per encounter, your character may briefly open the Bag of Wind as a maneuver. All characters and any objects that are not secured in front of your character and within medium range are pushed one range band away from your character and knocked prone."
+            "This large, cumbersome bag, made from the tanned hides of several mismatched sea creatures, contains all the winds of the whole world. The bag was given to Odysseus by Aeolus, king of the four winds, but was lost in a storm when Odysseus' crew fought over it, thinking that it contained gold.",
+            "While your character holds the Bag of Wind, they reduce the difficulty of any Operating skill checks they make to direct sailing vessels by three, to a minimum of {@difficulty easy}. In addition, once per encounter, your character may briefly open the Bag of Wind as a maneuver. All characters and any objects that are not secured in front of your character and within medium range are pushed one range band away from your character and knocked prone."
          ],
          "encumbrance": 2,
          "price": "priceless",
@@ -6784,8 +6851,8 @@
          "type": "gear",
          "page": 14,
          "description": [
-            "This elaborate signet ring bears two interlaced triangles forming a star. It was forged by God in brass and iron and given to King Solomon. The seal gives the wearer the ability to speak to animals and supernatural beings such as jinn. The seal can also be sued to stamp written directives that supernatural creatures and beings are compelled to obey.",
-            "While wearing the Seal of Solomon, your character may speak with and understand all living and supernatural creatures and being (this does not give the target any additional intelligence, so it's up to your GM what they can discuss). In addition, once per session, your character may write out a directive for a single supernatural creature or being within extreme range stamp it with the Seal of Solomon. That entity must make a successful {@difficulty formidable|discipline} or do exactly what the directive instructs it to do."
+            "This elaborate signet ring bears two interlaced triangles forming a star. It was forged by God in brass and iron and given to King Solomon. The seal gives the wearer the ability to speak to animals and supernatural beings such as jinn. The seal can also be used to stamp written directives that supernatural creatures and beings are compelled to obey.",
+            "While wearing the Seal of Solomon, your character may speak with and understand all living and supernatural creatures and beings (this does not give the target any additional intelligence, so it's up to your GM what they can discuss). In addition, once per session, your character may write out a directive for a single supernatural creature or being within extreme range and stamp it with the Seal of Solomon. That entity must make a successful {@difficulty formidable|discipline} or do exactly what the directive instructs it to do."
          ],
          "encumbrance": 0,
          "price": "priceless",
@@ -6797,12 +6864,12 @@
          ]
       },
       {
-         "name": "Seven-League Boots/Winged Sandals (Breten/Greek)",
+         "name": "Seven-League Boots/Winged Sandals (Breton/Greek)",
          "type": "gear",
          "page": 14,
          "description": [
             "Shoes that allow the wearer to move very fast feature in several mythologies. Wearing these Seelie (fairy) boots or winged sandals of the gods, a traveler can cover immense distances impossibly quickly.",
-            "During narrative encounters while wearing the Seven-League Boots or Winged Sandals, your character may walk supernaturally quickly (the exact speeds are up to the GM, but should be in the range of a kilometer every few steps). During structured excounters, your character may spend a move maneuver to move to any location within extreme range of their current position."
+            "During narrative encounters while wearing the Seven-League Boots or Winged Sandals, your character may walk supernaturally quickly (the exact speeds are up to the GM, but should be in the range of a kilometer every few steps). During structured encounters, your character may spend a move maneuver to move to any location within extreme range of their current position."
          ],
          "encumbrance": 1,
          "price": "priceless",
@@ -6818,7 +6885,7 @@
          "type": "weapon",
          "page": 22,
          "description": [
-            "Cavalry sabers are single-edged swords with curbed blades designed to deliver sweeping, punishing strikes."
+            "Cavalry sabers are single-edged swords with curved blades designed to deliver sweeping, punishing strikes."
          ],
          "skill": {
             "name": "melee",
@@ -6848,7 +6915,7 @@
          "type": "weapon",
          "page": 22,
          "description": [
-            "Crossbows are becoming antiquated and replaced with guns as the latter grow more reliable and easier to use, bust some people have discovered wood can be more effective than lead against certain creatures."
+            "Crossbows are becoming antiquated and replaced with guns as the latter grow more reliable and easier to use, but some people have discovered wood can be more effective than lead against certain creatures."
          ],
          "skill": {
             "name": "ranged (heavy)",
@@ -6888,8 +6955,8 @@
          "type": "weapon",
          "page": 22,
          "description": [
-            "A duelist foil is an ideal weapon for an upper-crust individual. Although it is not as sturdy as a saver, the needle-thin blade can pierce through most armor.",
-            "When a duelist foil is used to make a combat check, your GM may spend {@symbols hh} to cause it to become damaged one step (see page 89 of the Core Rulebook)."
+            "A duelist's foil is an ideal weapon for an upper-crust individual. Although it is not as sturdy as a saber, the needle-thin blade can pierce through most armor.",
+            "When a duelist's foil is used to make a combat check, your GM may spend {@symbols hh} to cause it to become damaged one step (see page 89 of the Core Rulebook)."
          ],
          "skill": {
             "name": "melee",
@@ -7030,7 +7097,7 @@
          "type": "weapon",
          "page": 23,
          "description": [
-            "Though they are akward weapons, stakes are quite potent against certain otherwise invulnerable creatures."
+            "Though they are awkward weapons, stakes are quite potent against certain otherwise invulnerable creatures."
          ],
          "skill": {
             "name": "melee",
@@ -7091,8 +7158,8 @@
          "type": "gear",
          "page": 23,
          "description": [
-            "For reasons no scholar of the supernatural can fathom, certain substances cause negative reactions among supernatural beings.. Strands of garlic, wolf's bane, substances used in religious ceremonies, and other items can repel even the most fearsome of creatures but have no effect on humans. Until they somehow remove such an item (often via their minions), a monster affected by it is utterly stymied.",
-            "Baneful items may form a barrier (laid in a line, hung over a threshold, or poured into a circle). Supernatural creatures may not cross barriers created by baneful items.",
+            "For reasons no scholar of the supernatural can fathom, certain substances cause negative reactions among supernatural beings. Strands of garlic, wolf's bane, substances used in religious ceremonies, and other items can repel even the most fearsome of creatures but have no effect on humans. Until they somehow remove such an item (often via their minions), a monster affected by it is utterly stymied.",
+            "Baneful items may form a barrier (laid in a line, hung over a threshold, or poured in a circle). Supernatural creatures may not cross barriers created by baneful items.",
             "The price of Baneful items varies from 10 to 200, depending on the item. The rarity varies from 1 to 5, depending on the item."
          ],
          "encumbrance": 2,
@@ -7111,7 +7178,7 @@
          "description": [
             "Based on professor Volta's wondrous electrical storage devices, a galvanic battery can deliver a steady current to power arcane devices or can give off a mighty discharge that can fell a human or revive things that were once human. In a pinch, it can even help bring someone back from the brink of death.",
             "While equipped with a galvanic battery, your character may target one other engaged character and make a {@difficulty hard|mechanics}. If the check is successful and the target is not incapacitated, the target suffers 6 strain. If the check is successful and the target is incapacitated, the target heals enough wounds to reduce the wounds it is currently suffering to its wound threshold. If the target is currently suffering The End is Nigh Critical Injury, that Critical Injury is also healed.",
-            "Once the battery has been used, it may not be used again until it has been recharged. This requires hooking it up to a power source such as a lightning rod or dynamo with a successful {@difficulty average|mechanics}"
+            "Once a battery has been used, it may not be used again until it has been recharged. This requires hooking it up to a power source such as a lightning rod or dynamo with a successful {@difficulty average|mechanics}"
          ],
          "encumbrance": 2,
          "price": 500,
@@ -7127,8 +7194,8 @@
          "type": "gear",
          "page": 24,
          "description": [
-            "Filled with assorted small books, vivisection and sample collection tools, charcoals for sketching new findings, vials for chemical analysis, and other essentials, this kit allows a scientist to act effectively even when away from their familiar laboratory.",
-            "Your character adds {@dice boost} to all Knowledge checks they make while using a science check."
+            "Filled with assorted small books, vivisection and sample-collecting tools, charcoals for sketching new findings, vials for chemical analysis, and other essentials, this kit allows a scientist to act effectively even when away from their familiar laboratory.",
+            "Your character adds {@dice boost} to all Knowledge checks they make while using a science kit."
          ],
          "encumbrance": 2,
          "price": 200,
@@ -7162,7 +7229,7 @@
          "type": "weapon",
          "page": 34,
          "description": [
-            "If you setting has lots of abandoned vehicles, characters can rip the leaf sprins froma truck's suspension and, with time and effort, straighten and sharpen them. The resulting sword is a heavier version of a regular sword."
+            "If your setting has lots of abandoned vehicles, characters can rip the leaf springs from a truck's suspension and, with time and effort, straighten and sharpen them. The resulting sword is a heavier version of a regular sword."
          ],
          "skill": {
             "name": "melee",
@@ -7227,7 +7294,7 @@
          "type": "weapon",
          "page": 35,
          "description": [
-            "A typical powder charge consists consists of a sack, bottle, or other container packed with gunpowder and detonated with a fuse. Various other sharp and deadly materials are often added to the charge to give it a little extra viciousness. However, these weapons are heavy and hard to throw, and may go off in your character's hands.",
+            "A typical powder charge consists of a sack, bottle, or other container packed with gunpowder and detonated with a fuse. Various other sharp and deadly materials are often added to the charge to give it a little extra viciousness. However, these weapons are heavy and hard to throw, and may go off in your character's hands.",
             "When your character uses a powder charge, your GM may spend {@symbols hhhh or d} to have the weapon fail to explode, or to explode prematurely and deal its base damage to all engaged targets (including your character)."
          ],
          "skill": {
@@ -7273,7 +7340,7 @@
          "type": "weapon",
          "page": 35,
          "description": [
-            "Shivs are homemade knives made from anything that can be sharpened to a point, such as an eating utensil, piece of scrap meta, glass shard, or toothbrush. Your character can make a shiv out of nearly any piece of scrap."
+            "Shivs are homemade knives made from anything that can be sharpened to a point, such as an eating utensil, piece of scrap metal, glass shard, or toothbrush. Your character can make a shiv out of nearly any piece of scrap."
          ],
          "skill": {
             "name": "melee",
@@ -7300,6 +7367,7 @@
       },
       {
          "name": "Thunderstick (melee)",
+         "page": 35,
          "type": "weapon",
          "description": [
             "Thundersticks are simple and brutal weapons that are little more than an explosive charge tied to the end of a long pole. While typically thrown like jabelins, they can be wielded as melee weapons in dire circumstances.",
@@ -7460,7 +7528,7 @@
          "type": "gear",
          "page": 36,
          "description": [
-            "For groups playing in a post apocalypse where radiation is a threat, we encourage including this item as the single potential way to get rid of radiation. Such drugs could be pills or injection.",
+            "For groups playing in a post apocalypse where radiation is a threat, we encourage including this item as the single potential way to get rid of radiation. Such drugs could be pills or an injection.",
             "When your character consumes a dose of anti-rad drugs, they remove one level of radiation (see {@sidebar A Certain Glow}, on page 29). A character may only benefit from consuming one dose of anti-rad drugs over a twenty-four hour period."
          ],
          "encumbrance": 0,
@@ -7511,7 +7579,7 @@
          "type": "gear",
          "page": 36,
          "description": [
-            "Cold weather gear features multiple layers of fur, leather, or thick fabric to resist wind and trap body heat. Meanwhile, hot weather gear tends to be loose, flowing and made of light fabric, to allow the skin to breathe while protecting it from the sun. However, both versions have roughly the same value and rules.",
+            "Cold weather gear features multiple layers of fur, leather, or thick fabric to resist wind and trap body heat. Meanwhile, hot weather gear tends to be loose, flowing, and made from light fabric, to allow the skin to breathe while protecting it from the sun. However, both versions have roughly the same value and rules.",
             "While your character is wearing cold or hot weather gear, they remove {@dice setback|2} added to checks they make due to cold or hot weather. When worn, cold or hot weather gear's encumbrance is 1."
          ],
          "encumbrance": 4,
@@ -7529,7 +7597,7 @@
          "page": 36,
          "description": [
             "These are handheld sensors used to detect radiation.",
-            "While your character is holding a Geiger counter, they know when they are about to enter an area that could force them to suffer a level of radiation (see {@sidebar A Certain Glow), on page 29)."
+            "While your character is holding a Geiger counter, they know when they are about to enter an area that could force them to suffer a level of radiation (see {@sidebar A Certain Glow}, on page 29)."
          ],
          "encumbrance": 1,
          "price": 200,
@@ -7580,7 +7648,7 @@
          "description": [
             "Scrap (1 piece)",
             "Scrap can be all sorts of ruined, broken, or scavenged trash and gear. Although they have no intrinsic value, some pieces of scrap can be fashioned into useful items. Some cultures may even use smaller pieces of scrap (such as keys, paper clips, or the caps from bottles) as currency.",
-            "When your character is attempting to make homemade versions of a regular item (see page 34), your GM should have pieces of scrap be the default raw material (how much scrap and if anything else is needed is up to the GM). What exactly each piece of scrap is has been left up to you and your GM to decide."
+            "When your character is attempting to make a homemade version of a regular item (see page 34), your GM should have pieces of scrap be the default raw material (how much scrap and if anything else is needed is up to the GM). What exactly each piece of scrap is has been left up to you and your GM to decide."
          ],
          "encumbrance": 1,
          "price": 2,
@@ -7597,7 +7665,7 @@
          "page": 36,
          "description": [
             "A survival kit is a collection of items-a first-aid kit, fire starter, fishing lines and hooks, a compass-contained in a portable case. These kits may be made of scavenged items, or salvaged intact from pre-apocalypse stores.",
-            "Characters with a survival check kit add {@symbols a} to all {@skill Survival||crb} skill checks they make. Pre-apocalypse kits add {@symbols sa} instead."
+            "Characters with a survival kit add {@symbols a} to all {@skill Survival||crb} skill checks they make. Pre-apocalypse kits add {@symbols sa} instead."
          ],
          "encumbrance": 2,
          "price": 45,
@@ -7614,7 +7682,7 @@
          "page": 36,
          "description": [
             "A survival kit is a collection of items-a first-aid kit, fire starter, fishing lines and hooks, a compass-contained in a portable case. These kits may be made of scavenged items, or salvaged intact from pre-apocalypse stores.",
-            "Characters with a survival check kit add {@symbols a} to all {@skill Survival||crb} skill checks they make. Pre-apocalypse kits add {@symbols sa} instead."
+            "Characters with a survival kit add {@symbols a} to all {@skill Survival||crb} skill checks they make. Pre-apocalypse kits add {@symbols sa} instead."
          ],
          "encumbrance": 2,
          "price": 250,
@@ -7662,11 +7730,43 @@
    ],
    "sidebar": [
       {
+         "name": "A Certain Glow",
+         "page": 29,
+         "type": "environment",
+         "description": [
+            "Lingering radiation is a common trope of the nuclear post apocalypse. Radiation can come from old and unexploded nuclear ordnance, piles of radioactive waste, bomb craters, irradiated water sources, and just about anywhere you can think of. Radiation sickness is nasty and, in real life, often fatal. It involves a gradual and painful breakdown of the body and includes things like hair loss, organ failure, and various forms of cancer. In short, it is awful.",
+            "We're not dealing with that kind of real-life radiation sickness in this setting, however. That said, radiation is still a big part of an after the bomb-type setting, so here are some simple radiation rules for your post-apocalypse setting.",
+            {
+               "title": "Radiation",
+               "entries": [
+                  "When the radiation rules are in effect, whenever a character is exposed to radiation (or for every day they spend in an environment with significant ambient radiation), they must make a {@difficulty hard|resilience}. You can increase or decrease the difficulty of the check based on the level of radiation the character is exposed to. If they fail, they suffer one level of radiation.",
+                  "Characters reduce their strain and wound thresholds by an amount equal to the number of levels of radiation they are currently suffering. If their wound or strain threshold ever drops to 0, they die.",
+                  "Some gear (such as radiation suits) can protect characters from suffering levels of radiation. However, removing levels of radiation is extremely difficult (it's important to note that treatments for curing radiation poisoning do not currently exist). {@gear Anti-rad Drugs} on page 36 are one way to remove radiation."
+               ]
+            }
+         ]
+      },
+      {
          "name": "Adjusted Costs",
          "page": 72,
          "type": "vehicle",
          "description": [
             "Some of these vehicles' prices do not match the actual costs of their real-world equivalents. This is because our pricing system evaluates vehicles across different historical eras with a single metric. However, other prices exceed what they should be based on the price-calculation system. In some cases, we have adjusted prices to account for intangibles such as modern computers or interstellar drives."
+         ]
+      },
+      {
+         "name": "Contagion",
+         "page": 30,
+         "type": "environment",
+         "description": [
+            "A setting where the apocalypse was caused by a pandemic can be especially deadly because the disease may still be around! The following are rules that represent a generically deadly disease.",
+            {
+               "title": "Disease",
+               "entries": [
+                  "When this rule is in effect, if a character engages a character who is infected or comes in contact with another disease vector (some diseases are waterborne, present in animals, or in some horrifying cases, airborne), they must make a {@difficulty daunting|resilience}. Failure means the character suffers 3 wounds and 3 strain. They also suffer 1 wound and 1 strain for each {@symbols h}. If the check generates {@symbols d}, the character doubles the total wounds and strain suffered.",
+                  "In addition, the character is now infected with the disease. They can make other characters sick, and at the start of each day, they must make another {@difficulty daunting|resilience} with the same consequences for failure. If the check succeeds and generates {@symbols t}, the character has overcome the disease and is no longer sick (although depending on the nature of the disease, they could get infected again in the future)."
+               ]
+            }
          ]
       },
       {
@@ -7708,11 +7808,20 @@
          "page": 71,
          "type": "vehicle",
          "description": [
-            "{@table III.2—19: Vehicle Critical Hit Results||crb}, on page 230 of the Core Rulebook, is designed to be a generic table of severe damage that can affect a vehicle. However, one thing it does not represent is the possibility of crashing or sinking (in the case of aircraft and watercraft, respectively).",
+            "{@table III.2-19: Vehicle Critical Hit Result||crb}, on page 230 of the Core Rulebook, is designed to be a generic table of severe damage that can affect a vehicle. However, one thing it does not represent is the possibility of crashing or sinking (in the case of aircraft and watercraft, respectively).",
             "To better represent this threat, we present the following optional rule. When a ship or aircraft suffers a Critical Hit, the attacker may spend an additional {@symbols aaa} or {@symbols t} to inflict a separate unique Crashing/Sinking Critical Hit on the target.",
             "{@b Crashing/Sinking ({@difficulty hard} Critical Hit):} The vehicle has a major leak in its hull, or its control surfaces are shredded. Roll 1d5; this is the number of rounds the vehicle remains afloat or in the air (not including the current round). If the Critical Hit has not been repaired by the end of the last round, the vehicle sinks or crashes and counts as having been destroyed.",
             "What happens to the passengers depends on the vehicle in question (and may be modified by you accordingly). In the case of most ships, passengers and crew can swim away from the sinking vessel; as long as they abandon ship before it sinks, they are not lost. In the case of most aircraft, survival depends on how hard the aircraft hits the ground. You may use the falling rules to represent a crash, with the \"height\" of the fall depending on the severity of the crash. PCs could even use {@skill Resilience||crb}, instead of {@skill Athletics||crb} or {@skill Coordination||crb}, to reduce damage.",
             "However in some cases, (such as a submerged submarine) when the vehicle sinks or crashes, nobody survives."
+         ]
+      },
+      {
+         "name": "Surviving Petrification",
+         "page": 15,
+         "type": "adversary",
+         "description": [
+            "Petrification, like death, can be a very frustrating experience for your players. To avoid an unexpected character death, you should be willing to turn your players' characters to stone but have a way for them to be restored to life later on. Magic is always a good solution: a {@difficulty daunting|Arcana, Divine, or Primal} should restore a petrified character. Another option is restoring the character upon the {@adversary Gorgon (Greek)|Gorgon's} defeat. Perhaps daubing the gorgon's blood on the statue can restore the stone to flesh.",
+            "Smart characters may fight a {@adversary Gorgon (Greek)|gorgon} without looking at it. They act as though they had the {@table I.6-10: Critical Injury Result|Blinded Critical Injury}, on page 115 of the Core Rulebook, but can't be targeted by {@adversaryAbility Petrifying Gaze}."
          ]
       },
       {
@@ -7981,7 +8090,7 @@
             {
                "name": "Terror",
                "description": [
-                  "The illusion terrifies those who behold it. When any character who does not know the illusion is fake spots it, they must make a {@difficulty Hard|Discipline}. They suffer 2 strain per {@symbols h} and, if they fail, are unable to approach the illusion. (If you are using the Fear rules from page 243 of the {@title Genesys} Core Rulebook, this can be a {@difficulty Hard|fear})."
+                  "The illusion terrifies those who behold it. When any character who does not know the illusion is fake spots it, they must make a {@difficulty Hard|Discipline}. They suffer 2 strain per {@symbols h} and, if they fail, are unable to approach the illusion. (If you are using the Fear rules from page 243 of the {@title Genesys} Core Rulebook, this can be a {@difficulty hard} {@rule fear||crb} check)."
                ],
                "difficultyMod": 2
             },
@@ -8597,7 +8706,7 @@
          ]
       },
       {
-         "name": "Table I.4-5: Population",
+         "name": "Table I.4-6: Population",
          "subtitle": "Trait - Setting - Population",
          "page": 48,
          "columns": [
@@ -9245,7 +9354,7 @@
             },
             {
                "effects": [
-                  "{@b Terror:} The illusion terrifies those who behold it. When any character who does not know the illusion is fake spots it, they must make a {@difficulty Hard|Discipline}. They suffer 2 strain per {@symbols h} and, if they fail, are unable to approach the illusion. (If you are using the Fear rules from page 243 of the {@title Genesys} Core Rulebook, this can be a {@difficulty Hard|fear})."
+                  "{@b Terror:} The illusion terrifies those who behold it. When any character who does not know the illusion is fake spots it, they must make a {@difficulty Hard|Discipline}. They suffer 2 strain per {@symbols h} and, if they fail, are unable to approach the illusion. (If you are using the Fear rules from page 243 of the {@title Genesys} Core Rulebook, this can be a {@difficulty hard} {@rule fear||crb} check)."
                ],
                "difficultyMod": "+ {@dice difficulty|2}"
             },
@@ -9837,7 +9946,7 @@
          ]
       },
       {
-         "name": "Motocycle",
+         "name": "Motorcycle",
          "page": 63,
          "silhouette": 1,
          "maxSpeed": 4,
@@ -9851,7 +9960,7 @@
             "source": "crb"
          },
          "complement": "1 driver",
-         "passengers": "0 (1 uncomforably)",
+         "passengers": "0 (1 uncomfortably)",
          "consumables": "5 hours",
          "encumbranceCapacity": 4,
          "price": 3255,
@@ -10033,7 +10142,7 @@
          "defense": 0,
          "armor": 1,
          "htt": 12,
-         "sst": 21,
+         "sst": 12,
          "controlSkill": {
             "name": "Operating",
             "source": "crb"
@@ -10074,6 +10183,9 @@
             {
                "name": "space opera",
                "source": "crb"
+            },
+            {
+               "name": "monsterworld"
             },
             {
                "name": "post apocalypse"
@@ -10135,7 +10247,7 @@
                ]
             },
             {
-               "name": "1 grill-mounted light machine gun",
+               "name": "1 grille-mounted light machine gun",
                "fireArc": "All",
                "skill": {
                   "name": "Gunnery",
@@ -10197,7 +10309,7 @@
             },
             {
                "name": "Spikey Bits",
-               "description": "When the wasteland buggy is involved in a {@rule collisions|collision|crb} (see page 222 of the Genesys Core Rulebook) all other vehicles and characters involved in the collision add +30 to the results of any Critical Hit or Critical Injury they suffer."
+               "description": "When the wasteland nomad rig is involved in a {@rule collisions|collision|crb} (see page 222 of the Genesys Core Rulebook), all other vehicles and characters involved in the collision add +30 to the results of any Critical Hit or Critical Injury they suffer."
             }
          ],
          "weapons": [
@@ -10542,7 +10654,6 @@
                   },
                   {
                      "name": "Knockdown",
-                     "ranks": 0,
                      "source": "crb"
                   }
                ]
@@ -10717,7 +10828,7 @@
          },
          "complement": "500-700 crew",
          "passengers": "25",
-         "consumables": "6 monhts",
+         "consumables": "6 months",
          "encumbranceCapacity": 200,
          "price": 1158000,
          "rarity": 7,
@@ -10833,7 +10944,7 @@
          "abilities": [
             {
                "name": "Ram",
-               "description": "When the trireme or galley deliberately collides with another ship (see {@rule collisions||crb} page 222 of the Genesys Core Rulebook), the other ship suffers 8 damage to its hull trauma threshold and adds +40 to the Critical Hit result it suffers. The trireme or galley reduces the results of the Critical Hit it suffers by -20."
+               "description": "When the trireme or galley deliberately collides with another ship (see {@rule collisions||crb} on page 222 of the Genesys Core Rulebook), the other ship suffers 8 damage to its hull trauma threshold and adds +40 to the Critical Hit result it suffers. The trireme or galley reduces the results of the Critical Hit it suffers by -20."
             }
          ],
          "settings": [
@@ -10844,7 +10955,8 @@
                "name": "fantasy",
                "source": "crb"
             }
-         ]
+         ],
+         "weapons": [{"name":"1 forward and 1 aft ballista","fireArc":"(Forward, Port, and Starboard) or (Aft, Port, and Starboard)","skill":{"name":"Ranged","source":"crb"},"damage":1,"critical":2,"range":"Long","qualities":[{"name":"Inaccurate","ranks":1,"source":"crb"}]}]
       },
       {
          "name": "Small Cargo Freighter",
@@ -10864,7 +10976,7 @@
          "passengers": "40",
          "consumables": "2 months",
          "encumbranceCapacity": 4000,
-         "price": 1000000,
+         "price": 100000,
          "rarity": 7,
          "description": [
             "Typically between sixty and ninety meters long, small freighters hire out independently to move cargo and passengers. This ship might be a river steamboat, an ocean cargo vessel, or a convoy ship in the midst of a war."
@@ -10906,7 +11018,7 @@
          },
          "complement": "300 crew",
          "passengers": "50",
-         "consumables": "2 monhts",
+         "consumables": "2 months",
          "encumbranceCapacity": 125,
          "price": 380000,
          "rarity": 7,
@@ -11072,7 +11184,7 @@
                ]
             },
             {
-               "name": "20 forward, 20 aft, and 20 starboard 40mm anti-air guns",
+               "name": "20 forward, 20 aft, 20 port, and 20 starboard 40mm anti-air guns",
                "fireArc": "Port or Starboard or Fore or Aft",
                "skill": {
                   "name": "Gunnery",
@@ -11258,7 +11370,7 @@
                   "source": "crb"
                },
                "damage": 12,
-               "critical": 3,
+               "critical": 2,
                "range": "Strategic",
                "qualities": [
                   {
@@ -11282,13 +11394,14 @@
                      "source": "crb"
                   },
                   {
-                     "name": "Auto-fire",
+                     "name": "Slow-Firing",
+                     "ranks": 2,
                      "source": "crb"
                   }
                ]
             },
             {
-               "name": "1 CWIS mount",
+               "name": "1 CIWS mount",
                "fireArc": "All",
                "skill": {
                   "name": "Gunnery",
@@ -11577,7 +11690,7 @@
                ]
             },
             {
-               "name": "2 CWIS mounts",
+               "name": "2 CIWS mounts",
                "fireArc": "All",
                "skill": {
                   "name": "Gunnery",
@@ -11632,7 +11745,7 @@
          "rarity": 6,
          "restricted": true,
          "description": [
-            "In some settings, zeppelins or other dirigibles have become the preeminent airborne vehicles. This is our take on a fanciful \"war zeppelin,\" which sports turretmounted cannons and armored plates while still being \"lighter than air.\" This type of vehicle would probably replace sea-going warships in the setting it's used in."
+            "In some settings, zeppelins or other dirigibles have become the preeminent airborne vehicles. This is our take on a fanciful \"war zeppelin,\" which sports turret-mounted cannons and armored plates while still being \"lighter than air.\" This type of vehicle would probably replace sea-going warships in the setting it's used in."
          ],
          "abilities": [
             {
@@ -11643,7 +11756,7 @@
          "weapons": [
             {
                "name": "1 forward and 1 aft twin 25-pound gun turret",
-               "fireArc": "Forward, Port, and Starboard",
+               "fireArc": "(Forward, Port, and Starboard) or (Aft, Port, and Starboard)",
                "skill": {
                   "name": "Gunnery",
                   "source": "crb"
@@ -12030,7 +12143,7 @@
                "qualities": [
                   {
                      "name": "Accurate",
-                     "ranks": 2,
+                     "ranks": 1,
                      "source": "crb"
                   },
                   {
@@ -12552,7 +12665,7 @@
                "details": "When the {@quality Blast||crb} quality is triggered, all vehicles within medium range suffer a hit."
             },
             {
-               "name": "10 heavy laster projectors",
+               "name": "10 heavy laser projectors",
                "fireArc": "All",
                "skill": {
                   "name": "Gunnery",
@@ -12583,7 +12696,7 @@
          ]
       },
       {
-         "name": "Long-Range exploration cruiser",
+         "name": "Long-Range Exploration Cruiser",
          "page": 73,
          "silhouette": 6,
          "maxSpeed": 3,
@@ -12641,7 +12754,7 @@
                ]
             },
             {
-               "name": "4 heavy laster projectors",
+               "name": "4 heavy laser projectors",
                "fireArc": "All",
                "skill": {
                   "name": "Gunnery",

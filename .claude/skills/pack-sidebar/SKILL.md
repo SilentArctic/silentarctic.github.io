@@ -25,7 +25,7 @@ Sidebars are the boxed or shaded text blocks with their own title. Find them vis
 | Box text | `description` (tagged; varyingDisplay allowed) |
 
 - Don't add `summary` (deprecated).
-- A sidebar that continues onto another page is one item. If it runs past the range, ask.
+- A sidebar that continues onto another page is one item. If it runs past the range, finish it from the following page(s) (workflow boundary rule).
 - Rules and items that embed this sidebar use `{ "type": "sidebar", "_ref": { "name": "<name>" }, "entries": [] }`. Mention any such embedding opportunities under ℹ.
 
 ## Exemplar

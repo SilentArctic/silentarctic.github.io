@@ -43,6 +43,7 @@ Arguments: `$ARGUMENTS` (PDF path, printed page or range, destination JSON).
   - A destination talent is a plain string: `"Ccrysusian Methodology"`.
   - A talent from another pack is an object: `{ "name": "Adversary 1", "source": "crb" }`. The rank goes in the name.
   - Drop the printed parenthetical summary. If it contradicts the actual talent, raise a ⚠.
+  - **Knack for It** and **Natural** are the exception: printed on an adversary, they name specific skills (eg. "remove {@dice setback|2} from Driving, Operating, and Piloting checks"), which the core talents leave to the player's choice. Write them as abilities instead (see "Knack for It 2" on SotB "Tenma Driver Clone"), with the specific skills in the text.
 - **Abilities:** each becomes a string reference to an `adversaryAbility` item.
   - If an ability with that name exists in **any** pack **and** the text matches, reference it by name. Include the rank: `"Silhouette 2"`, `"Terrifying 2"` (the base items are "Silhouette" and "Terrifying").
   - If it's new, stage an `adversaryAbility` item: `{ "name", "description": [tagged strings], "tags": [...] }`. Then reference it by name.
@@ -61,6 +62,7 @@ Arguments: `$ARGUMENTS` (PDF path, printed page or range, destination JSON).
   - **Ability text that names its own adversary** ("in a direction of the elder Titan's choosing"): the curated data rewrites it as "this character's" so the ability reads as reusable. That's a wording change, so propose it as a judgment call and apply it only when approved.
   - Printed ability text is a parenthetical, so its nested `[…]` brackets become `(…)`, the first letter is capitalized, and a period is added (see "Viral Infection", "Fling Aside").
 - **Weapons:** `{ "name", "skill": {name, source}, "damage", "critical", "range", "qualities": [{name, ranks, source}], "details" }`.
+  - Always use this table format (one field per stat). Never put the printed profile in a `description` string; that form is deprecated.
   - `name` is as printed, in sentence case ("Concealed mango-thumper").
   - `damage` is the printed **total** (an integer).
   - `range` is capitalized: `"Engaged"` … `"Strategic"`.

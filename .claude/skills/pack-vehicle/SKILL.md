@@ -38,6 +38,11 @@ Arguments: `$ARGUMENTS` (PDF path, printed page or range, destination JSON).
 | Named special rules | `abilities`: `[{ "name", "description" }]` (description is a single tagged string) |
 | Flavor text | `description` (strings) |
 
+- **Weapons always use the table format** (see EotI "Cruiser"): one field per stat. Never write the deprecated `{ "name", "description": "Fire Arc Forward; Damage 3; …" }` form.
+  - `skill` is always set. If the book doesn't print one, use `{ "name": "Gunnery", "source": "crb" }` (the CRB default for vehicle weapons) and report it.
+  - `range` drops the printed brackets: `[Medium]` → `"Medium"`.
+  - Damage or Critical printed "–": omit the field.
+  - Anything in the profile that isn't a stat or quality ("the difficulty for this check is always …", a conditional fire arc) goes in `details` as a sentence.
 - Weapon `name` is as printed, including counts and mounts ("1 turret-mounted assault cannon").
 - `fireArc` is as printed ("All", "Forward, Left, and Right").
 - Vehicle weapon quality ranks go in `ranks`.

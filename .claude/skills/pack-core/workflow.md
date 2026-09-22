@@ -9,8 +9,9 @@ Run commands from the repo root. Scripts live in `.claude/skills/pack-core/scrip
   - If the PDF path or the destination is missing, **stop**: say what's missing and do nothing else.
   - If the pages are missing, ask.
 - **Stay inside the pages you were given.** Never extract content from other pages.
-  - The one exception is probing a nearby page's printed page number to work out the PDF offset (step 2). Don't use any text from probed pages.
-  - If an item runs past the range, stop and ask before reading further.
+  - Probing a nearby page's printed page number to work out the PDF offset (step 2) is allowed. Don't use any text from probed pages.
+  - An item that **starts** inside the range may be finished from the following page(s) without asking (e.g. a stat block printed on the next page). Read forward only as far as that item needs, take only that item's content, and list the extra pages in the report's page map.
+  - Never start a new item that begins after the last page.
 - **Write only the destination file**, through `merge.js` and `bump-version.js`, plus small Edits to its `_meta.filters`.
   - Every change to a pack needs a version bump (step 9), or GenesysRef won't see it.
   - Never edit `schemas/` or other packs.
@@ -95,7 +96,7 @@ Use all three sources for every page.
   - Remove soft hyphens and collapse whitespace.
 - **Don't fix** spelling, grammar, capitalization, numbers, or punctuation. Log them as ⚠ source errors instead.
 - **Boundaries:**
-  - An item that continues after the last page → stop and ask whether to read the next page.
+  - An item that continues after the last page → keep reading the following page(s) until that item is complete (guardrail above), and report which pages were read.
   - An item that began before the first page → skip it and report it.
 - **Other content** on these pages that belongs to other item types (a sidebar, a table, a rule section, qualities…): don't import it. List it under ℹ with the skill that handles it. The exception is a companion group the type skill says it owns (e.g. adversary abilities).
 - **Images** can't be uploaded. If the item has an image, leave out `imageUrl` (and `{ "type": "image" }` entries) and mention it.

@@ -42,8 +42,10 @@ mean broken links, missing popovers, or plain text where dice and symbols should
 
 ## 3. Reference rules
 
-1. **Name.** Use the exact `name` of the target item (matching is case-insensitive).
-   - The name slot is also what displays. Keep the source's casing when only the case differs: `{@rule vacuum}` shows "vacuum".
+1. **Name.** Use the target item's `name`. Matching is case-insensitive, so write the name slot in the **source text's casing**.
+   - The name slot is also what displays. When only the casing differs from the item name, change the casing in the name slot and **never** add display text:
+     - item "Anti-Rad Drugs", printed "Anti-rad drugs" → `{@gear Anti-rad drugs}`, not `{@gear Anti-Rad Drugs|Anti-rad drugs}`
+     - item "Vacuum", printed "vacuum" → `{@rule vacuum}`
    - When the printed words differ (plural, rank, possessive, shortened, reworded), put the printed words in **display**:
      - `{@quality Breach|Breach 2}`
      - `{@rule concealment (darkness, smoke, and intervening terrain)|darkness}`
