@@ -1,0 +1,11 @@
+#!/bin/sh
+# Rebuild the collection indexes and block the push if they are out of date.
+node ./buildCollectionIndex.js || {
+   echo "pre-push: failed to build collection index; push aborted." >&2
+   exit 1
+}
+if ! git diff --quiet HEAD -- api/index.json api/community/index.json; then
+   echo "pre-push: collection index was out of date and has been rebuilt." >&2
+   echo "Commit api/index.json and api/community/index.json, then push again." >&2
+   exit 1
+fi

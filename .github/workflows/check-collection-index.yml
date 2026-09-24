@@ -1,0 +1,25 @@
+name: check-collection-index
+on:
+  pull_request:
+    branches:
+      - master
+permissions:
+  contents: read
+jobs:
+  check_index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Compile index.json from collections in ~/api
+        run: node ./buildCollectionIndex.js
+      - name: Verify committed index is up to date
+        run: |
+          if ! git diff --exit-code api/index.json api/community/index.json; then
+            echo "::error::Collection index is out of date. Run 'npm run index' (or 'npm install' to enable the pre-commit hook) and commit the result."
+            exit 1
+          fi
