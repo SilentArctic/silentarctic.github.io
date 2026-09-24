@@ -9798,7 +9798,10 @@
                      "name": "Vicious",
                      "value": 1,
                      "source": "crb"
-                  }]
+                  }],
+                  "description": [
+                     "Catfolk possess sharp, retractable claws and may choose to attack with them."
+                  ]
                }]
             }
          },
@@ -10013,7 +10016,10 @@
                      "name": "Vicious",
                      "value": 1,
                      "source": "crb"
-                  }]
+                  }],
+                  "description": [
+                     "Catfolk possess sharp, retractable claws and may choose to attack with them."
+                  ]
                }]
             }
          },

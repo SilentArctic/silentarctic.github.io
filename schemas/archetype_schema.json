@@ -149,7 +149,38 @@
                   "type": "array",
                   "description": "Starting skill options.",
                   "items": {
-                     "type": "string"
+                     "oneOf": [
+                        {
+                           "type": "string"
+                        },
+
+                        {
+                           "type": "object",
+                           "properties": {
+                              "name": {
+                                 "type": "string",
+                                 "description": "Skill name."
+                              },
+                              "source": {
+                                 "type": "string",
+                                 "description": "Skill source."
+                              },
+                              "ranks": {
+                                 "type": "number",
+                                 "description": "Skill ranks (default 1).",
+                                 "default": 1
+                              }
+                           },
+                           "required": [
+                              "name"
+                           ],
+                           "optional": [
+                              "source",
+                              "ranks"
+                           ],
+                           "additionalProperties": false
+                        }
+                     ]
                   }
                },
                "ranksTotal": {
@@ -168,8 +199,67 @@
                   }
                },
                "choice": {
-                  "type": "boolean",
-                  "description": "If the player has a choice between skills to put starting ranks into."
+                  "oneOf": [
+                     {
+                        "type": "boolean",
+                        "description": "If the player has a choice between skills to put starting ranks into."
+                     },
+
+                     {
+                        "type": "array",
+                        "items": {
+                           "oneOf": [
+                              {
+                                 "type": "string",
+                                 "enum": [
+                                    "any",
+                                    "career",
+                                    "non-career",
+                                    "general",
+                                    "combat",
+                                    "social",
+                                    "knowledge",
+                                    "magic",
+                                    "brawn",
+                                    "agility",
+                                    "intellect",
+                                    "cunning",
+                                    "willpower",
+                                    "presence"
+                                 ],
+                                 "description": "Can choose any skill within the given category."
+                              },
+
+                              {
+                                 "type": "object",
+                                 "properties": {
+                                    "name": {
+                                       "type": "string",
+                                       "description": "Skill name."
+                                    },
+                                    "source": {
+                                       "type": "string",
+                                       "description": "Skill source."
+                                    },
+                                    "ranks": {
+                                       "type": "number",
+                                       "description": "Skill ranks (default 1).",
+                                       "default": 1
+                                    }
+                                 },
+                                 "required": [
+                                    "name"
+                                 ],
+                                 "optional": [
+                                    "source",
+                                    "ranks"
+                                 ],
+                                 "additionalProperties": false
+                              }
+                           ]
+                        }
+                     }
+                  ]
                }
             },
             "required": [
@@ -241,6 +331,9 @@
                }
             }
          },
+         "modifiers": {
+            "type": "object"
+         },
          "settings": {
             "$ref": "./settings_sub_schema.json",
             "description": "Override global content pack settings for this item."
@@ -265,6 +358,7 @@
          "imageUrl",
          "why",
          "names",
+         "modifiers",
          "settings"
       ],
       "additionalProperties": false

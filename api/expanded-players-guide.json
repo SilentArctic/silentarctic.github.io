@@ -5937,6 +5937,7 @@
          "skills": {
             "skills": [],
             "ranksTotal": 3,
+            "ranksEach": 2,
             "description": [
                "A fearless slayer begins the game with two ranks in {@skill discipline||crb} and one rank in a combat skill of your choice. They obtain these ranks before spending experience points, and these skills may not be increased above rank 2 during character creation."
             ],

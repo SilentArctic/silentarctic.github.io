@@ -12,6 +12,10 @@
             "type": "integer",
             "description": "Source page reference."
          },
+         "tribe": {
+            "type": "string",
+            "description": "Tribe, faction, etc. An additional term used for grouping vehicles together."
+         },
          "variant": {
             "type": "boolean",
             "description": "If this vehicle is a variant of another vehicle (variants are created as separate entries)."
@@ -272,6 +276,7 @@
       ],
       "optional": [
          "page",
+         "tribe",
          "variant",
          "hasVariants",
          "imageUrl",
