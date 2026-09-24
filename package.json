@@ -5,6 +5,8 @@
    "main": "index.js",
    "scripts": {
       "test": "jest __tests__/collectionSchema.test.js",
+      "index": "node ./buildCollectionIndex.js",
+      "prepare": "git config core.hooksPath .githooks || true",
       "sync": "git checkout dev && git pull && git checkout master && git pull && git checkout dev && git merge --no-ff master"
    },
    "repository": {

@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.12.6",
+         "version": "2026.9.21",
          "json": "embers-of-the-imperium",
          "full": "Twilight Imperium: Embers of the Imperium",
          "abbreviation": "EotI",
@@ -123,11 +123,11 @@
                "source": "crb"
             }
          ],
-         "abilities": [],
+         "abilities": ["Zealous Devotion"],
          "talents": [],
          "weapons": [
             {
-               "name": "Concealed mango-thumper",
+               "name": "Concealed magno-thumper",
                "skill": {
                   "name": "Ranged (Light)",
                   "source": "crb"
@@ -412,7 +412,7 @@
          "talents": [],
          "weapons": [
             {
-               "name": "Marcro-soldering pike",
+               "name": "Macro-soldering pike",
                "skill": {
                   "name": "Melee",
                   "source": "crb"
@@ -551,7 +551,7 @@
             {
                "name": "Deception",
                "ranks": 2,
-               "characteristic": "presence",
+               "characteristic": "cunning",
                "source": "crb"
             },
             {
@@ -568,7 +568,7 @@
             {
                "name": "Perception",
                "ranks": 2,
-               "characteristic": "willpower",
+               "characteristic": "cunning",
                "source": "crb"
             },
             {
@@ -654,7 +654,7 @@
             {
                "name": "Deception",
                "ranks": 3,
-               "characteristic": "presence",
+               "characteristic": "cunning",
                "source": "crb"
             },
             {
@@ -1111,7 +1111,7 @@
             {
                "name": "Perception",
                "ranks": 3,
-               "characteristic": "willpower",
+               "characteristic": "cunning",
                "source": "crb"
             },
             {
@@ -1128,7 +1128,7 @@
          "talents": [
             {
                "name": "Precision Strike",
-               "source": "crb"
+               "source": "eoti"
             }
          ],
          "weapons": [
@@ -1156,7 +1156,7 @@
             }
          ],
          "gear": [
-            "{@gear Sealed Environment Suit}: +2 soak, +2 wound threshold"
+            "{@gear Sealed Environmental Suit}: +2 soak, +2 wound threshold"
          ]
       },
       {
@@ -1313,7 +1313,7 @@
          ]
       },
       {
-         "name": "Durzuga Envoy",
+         "name": "Dirzuga Envoy",
          "page": 240,
          "type": "rival",
          "description": [
@@ -1446,7 +1446,7 @@
             },
             {
                "name": "Knowledge (Science)",
-               "ranks": 3,
+               "ranks": 4,
                "characteristic": "intellect"
             },
             {
@@ -1608,9 +1608,9 @@
          ],
          "abilities": [
             "EM Flood",
+            "Flyer",
             "Radiowave Communications",
-            "Spaceworthy",
-            "Flyer"
+            "Spaceworthy"
          ],
          "talents": [
             {
@@ -1865,8 +1865,7 @@
             {
                "name": "Knowledge (Culture)",
                "ranks": 1,
-               "characteristic": "intellect",
-               "source": "crb"
+               "characteristic": "intellect"
             },
             {
                "name": "Perception",
@@ -1921,7 +1920,7 @@
          "page": 243,
          "type": "rival",
          "description": [
-            "Pituis are dangerous and regrettably commonplace vermin found on heavily industrialized worlds throughout the galaxy, originally created by the {@rule Mahact Gene-Sorcerers|Mahact} as a form of waste-disposal. These bloblike masses consume a number of industrial chemical biproducts for food, but they reproduce asexually, can squeeze through almost any opening, and secrete powerful acids on their pseudopods. Worse, certain biochemical compounds in their oozing bodies, if absorbed into the body, can cause massive cerebral hemorrhages in most creatures."
+            "Pituis are dangerous and regrettably commonplace vermin found on heavily industrialized worlds throughout the galaxy, originally created by the {@rule Mahact Gene-Sorcerers|Mahact} as a form of waste-disposal. These blob-like masses consume a number of industrial chemical biproducts for food, but they reproduce asexually, can squeeze through almost any opening, and secrete powerful acids on their pseudopods. Worse, certain biochemical compounds in their oozing bodies, if absorbed into the body, can cause massive cerebral hemorrhages in most creatures."
          ],
          "powerLevels": {
             "combat": 4,
@@ -1996,7 +1995,7 @@
       },
       {
          "name": "Wake Worm",
-         "page": 242,
+         "page": 243,
          "type": "minion",
          "description": [
             "The mere mention of wake worms is enough to make most captains restart their preflight checklist from scratch. The bane of trade hubs across the galaxy, these space-black worms are between six and ten meters long and consume stellar fast ions to create microbursts of plasma propulsion. This would be fine, except most starship engines emit a radiation the worms find irresistible. If they wriggle into engine housings, they can wreak absolute havoc when a ship crosses the lightspeed barrier."
@@ -2040,7 +2039,8 @@
             }
          ],
          "abilities": [
-            "Engine Trouble"
+            "Engine Trouble",
+            "Silhouette 2"
          ],
          "talents": [],
          "weapons": [
@@ -2065,7 +2065,7 @@
       },
       {
          "name": "Young Titan",
-         "page": 242,
+         "page": 243,
          "type": "rival",
          "description": [
             "Younger Titans are smaller versions of their elders, a mere three or four meters tall. They have a curious nature that borders on naïve and tend to enjoy traveling the galaxy and learning about the natural world. Most are friendly and eagerly socialize with all manner of beings. Eventually, their travels become punctuated with returns to {@rule Elysium}, until, as they reach adulthood, their stays there begin to outlast their periods of travel."
@@ -2192,7 +2192,7 @@
             "While skilled at arranging criminal activity for profit, leaders of gangs and organized criminal syndicates find they have to rule through fear. Often, they instill fear through detached, dissociative monologues alongside an unpredictable combination of screaming rage and cold-blooded, calculated murder. The most powerful crime bosses can control syndicates whose influence spans entire colonies, and some even have multisystem criminal enterprises."
          ],
          "powerLevels": {
-            "combat": 7,
+            "combat": 9,
             "social": 7,
             "general": 5
          },
@@ -2426,6 +2426,11 @@
                "range": "Engaged",
                "qualities": [
                   {
+                     "name": "Defensive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
                      "name": "Superior",
                      "source": "crb"
                   }
@@ -2449,7 +2454,7 @@
             }
          ],
          "gear": [
-            "Desert combat armor: +1 soak, adds {@dice boost} to {@skill Resilience||crb} and {@skill Survival||crb} checks in desert climates",
+            "Desert combat armor: +1 soak, 1 defense, adds {@dice boost} to {@skill Resilience||crb} and {@skill Survival||crb} checks in desert climates",
             "Survival pack"
          ]
       },
@@ -2608,7 +2613,7 @@
             {
                "name": "Perception",
                "ranks": 2,
-               "characteristic": "willpower",
+               "characteristic": "cunning",
                "source": "crb"
             },
             {
@@ -2666,7 +2671,7 @@
             {
                "name": "Coercion",
                "ranks": 4,
-               "characteristic": "cunning",
+               "characteristic": "willpower",
                "source": "crb"
             },
             {
@@ -2696,7 +2701,7 @@
             {
                "name": "Negotiation",
                "ranks": 3,
-               "characteristic": "intellect",
+               "characteristic": "presence",
                "source": "crb"
             },
             {
@@ -2786,7 +2791,7 @@
                   },
                   {
                      "name": "Limited Ammo",
-                     "ranks": 2,
+                     "ranks": 1,
                      "source": "crb"
                   }
                ]
@@ -2950,7 +2955,7 @@
             },
             {
                "name": "Perception",
-               "characteristic": "willpower",
+               "characteristic": "cunning",
                "source": "crb"
             }
          ],
@@ -3126,7 +3131,7 @@
          "page": 247,
          "type": "rival",
          "description": [
-            "Smugglers might say they are a necessary, unappreciated part of the galactic economy. At their very best, smugglers break blockades and battle lines to deliver food and medical supplies to refugees and regions in need. At their worst, they move blackmarket weapons, narcotics, and even enslaved laborers. No matter the cargo or security, if the price is right, there is a desperate smuggler willing to make the run. Some smugglers run as part of a crew, but others prefer to work alone."
+            "Smugglers might say they are a necessary, unappreciated part of the galactic economy. At their very best, smugglers break blockades and battle lines to deliver food and medical supplies to refugees and regions in need. At their worst, they move black-market weapons, narcotics, and even enslaved laborers. No matter the cargo or security, if the price is right, there is a desperate smuggler willing to make the run. Some smugglers run as part of a crew, but others prefer to work alone."
          ],
          "powerLevels": {
             "combat": 4,
@@ -3457,7 +3462,7 @@
          "variant": true,
          "description": [
             "Standing militaries field a suite of combat vehicles, including starfighters, bombers, gunships, landing craft, tanks, troop transports, and more. Most combat pilots who operate them hold an officer's rank, particularly when it comes to more powerful or expensive vehicles. This profile also works for a gunner or crew member on a warship.",
-            "The Shikrai Kun Akaruk lead the Shikrai Kun Akarun, including disciplined airborne soldiers and instinctive pilots in Shrike interceptors and Aerie Sentinel mechs. Units frequently rotate command to increase unit cohesion, and they favor quick hitand-fade attacks.",
+            "The Shikrai Kun Akaruk lead the Shikrai Kun Akarun, including disciplined airborne soldiers and instinctive pilots in Shrike interceptors and Aerie Sentinel mechs. Units frequently rotate command to increase unit cohesion, and they favor quick hit-and-fade attacks.",
             "{@b Combat Pilot:} Gain the {@talent knack for it|Knack for It (Piloting)|crb} talent."
          ],
          "powerLevels": {
@@ -4442,7 +4447,7 @@
       },
       {
          "name": "Combat Pilot (Xxcha Kingdom)",
-         "page": 518,
+         "page": 251,
          "type": "minion",
          "variant": true,
          "description": [
@@ -4925,7 +4930,7 @@
          "variant": true,
          "description": [
             "Rank-and-file troops require leadership in the field, whether from a grizzled sergeant or from a fresh-faced junior officer. This profile represents a character who might lead an entire platoon, a squad, or even just an elite fire team into battle. It can also represent a tank commander, starship bridge officer, or fighter squadron leader if it replaces the {@gear beam rifle} with a {@gear beam pistol}.",
-            "The Shikrai Kun Akaruk lead the Shikrai Kun Akarun, including disciplined airborne soldiers and instinctive pilots in Shrike interceptors and Aerie Sentinel mechs. Units frequently rotate command to increase unit cohesion, and they favor quick hitand-fade attacks.",
+            "The Shikrai Kun Akaruk lead the Shikrai Kun Akarun, including disciplined airborne soldiers and instinctive pilots in Shrike interceptors and Aerie Sentinel mechs. Units frequently rotate command to increase unit cohesion, and they favor quick hit-and-fade attacks.",
             "Gain the Flyer ability (can fly via wingpack; see the {@sidebar Flying||crb} sidebar on page 100 of the {@title Genesys} Core Rulebook); gain the Many Feathers, One Wing ability (Shikrai characters within long range of the field commander who assist on another Shikrai's check (see {@rule Assist||crb} on page 98 of the {@title Genesys} Core Rulebook) add an additional {@dice boost} to the check). Increase combat power level to 6."
          ],
          "powerLevels": {
@@ -5170,7 +5175,7 @@
          "description": [
             "Rank-and-file troops require leadership in the field, whether from a grizzled sergeant or from a fresh-faced junior officer. This profile represents a character who might lead an entire platoon, a squad, or even just an elite fire team into battle. It can also represent a tank commander, starship bridge officer, or fighter squadron leader if it replaces the {@gear beam rifle} with a {@gear beam pistol}.",
             "Saar war packs and scrapper crews, no matter if they fly the Rho escort fighters, a Scavenger Zeta mech, or a scrap freighter, all look to a ship captain or clan elder to direct them.",
-            "Gain the Elder Howl ability (once per session, may spend an action to force all opponents within long range to make an {@difficulty Easy|fear}; increase the difficulty of this check by 1 for each other Saar minion group, rival, or nemesis in the current encounter, to a maximum of {@difficulty Daunting}). Increase combat rating to 6."
+            "Gain the Elder Howl ability (once per session, may spend an action to force all opponents within long range to make an {@difficulty Easy} {@rule fear||crb} check; increase the difficulty of this check by 1 for each other Saar minion group, rival, or nemesis in the current encounter, to a maximum of {@difficulty Daunting}). Increase combat rating to 6."
          ],
          "powerLevels": {
             "combat": 6,
@@ -6678,7 +6683,7 @@
          "variant": true,
          "description": [
             "Each of the great powers in the galaxy has its own standing army of soldiers, each with unique equipment and training. The equipment can be modified using the optional rules from {@table 2-1: Cultural Manufacturing Differences} on page 106.",
-            "The Shikrai Kun Akaruk lead the Shikrai Kun Akarun, including disciplined airborne soldiers and instinctive pilots in Shrike interceptors and Aerie Sentinel mechs. Units frequently rotate command to increase unit cohesion, and they favor quick hitand-fade attacks.",
+            "The Shikrai Kun Akaruk lead the Shikrai Kun Akarun, including disciplined airborne soldiers and instinctive pilots in Shrike interceptors and Aerie Sentinel mechs. Units frequently rotate command to increase unit cohesion, and they favor quick hit-and-fade attacks.",
             "Increase {@characteristic Agility||crb} by 1; gain the Flyer ability (can fly via wingpack; see the {@sidebar Flying||crb} sidebar on page 100 of the {@title Genesys} Core Rulebook); replace beam rifle with Shikrai needle bow (Ranged [Heavy]; Damage 1; Critical 1; Range [Medium]; Limited Ammo 1, Pierce 6, Unwieldy 3) and 10 arrows."
          ],
          "powerLevels": {
@@ -7245,7 +7250,7 @@
          "description": [
             "Each of the great powers in the galaxy has its own standing army of soldiers, each with unique equipment and training. The equipment can be modified using the optional rules from {@table 2-1: Cultural Manufacturing Differences} on page 106.",
             "The Sol Federation fields an experienced officer corps whose members foster an unyielding will to win any fight, no matter how hopeless or how extreme the environment. The rank-andfile Sol troopers are not as fearsome as the Federation's infamous Spec Ops forces, but they are dedicated and drilled to operate as a cohesive unit. If they run into problems they can't handle, they call down heavy support in the form of ZS Thunderbolt mechs, GA Hailstorm artillery tanks, and F5 Hurricane escort fighters.",
-            "Increase {@characteristics Willpower} by 1."
+            "Increase {@characteristic Willpower} by 1."
          ],
          "powerLevels": {
             "combat": 3,
@@ -8687,7 +8692,8 @@
          ],
          "abilities": [
             "Grab and Toss",
-            "Multitentacled"
+            "Multitentacled",
+            "Silhouette 2"
          ],
          "talents": [
             {
@@ -8757,7 +8763,7 @@
             {
                "name": "Coercion",
                "ranks": 3,
-               "characteristic": "cunning",
+               "characteristic": "willpower",
                "source": "crb"
             },
             {
@@ -8952,7 +8958,7 @@
       },
       {
          "name": "Sol Spec Ops Drop Trooper",
-         "page": 253,
+         "page": 254,
          "type": "minion",
          "powerLevels": {
             "combat": 5,
@@ -8983,7 +8989,7 @@
             },
             {
                "name": "Cool",
-               "characteristic": "agility",
+               "characteristic": "presence",
                "source": "crb"
             },
             {
@@ -9123,8 +9129,8 @@
             }
          ],
          "abilities": [
-            "Terrifying 3",
-            "Fighting Horde"
+            "Fighting Horde",
+            "Terrifying 3"
          ],
          "weapons": [
             {
@@ -9159,7 +9165,7 @@
                "range": "Short",
                "qualities": [
                   {
-                     "name": "Cumbersom",
+                     "name": "Cumbersome",
                      "ranks": 3,
                      "source": "crb"
                   },
@@ -9278,7 +9284,7 @@
                ]
             },
             {
-               "name": "Gold-placed shudder blade",
+               "name": "Gold-plated shudder blade",
                "skill": {
                   "name": "Melee",
                   "source": "crb"
@@ -9369,14 +9375,14 @@
                   },
                   {
                      "name": "Vicious",
-                     "ranks": 2,
+                     "ranks": 3,
                      "source": "crb"
                   }
                ]
             }
          ],
          "description": [
-            "Also referred to as {@i flyers}, these small drones use a triple antigrav thruster design to achieve flight, and their thin legs dangle from a central, sensor-laden body, making them look like some kind of floating spider. Their legs each mount a dart shooter, and they rotate fire to sustain streams of molten darts laced in arsenic. The {@rule Nekro Virus} dispatches them in swarms to disrupt and harass foes, pinning the enemy in place while the massive {@adversary Defiler|Defilers} and {@vehicle Nekro Mordred|Mordreds} close for the slaughter."
+            "Also referred to as {@i flyers}, these small drones use a triple antigrav thruster design to achieve flight, and their thin legs dangle from a central, sensor-laden body, making them look like some kind of floating spider. Their legs each mount a dart shooter, and they rotate fire to sustain streams of molten darts laced in arsenic. The {@rule Nekro Virus} dispatches them in swarms to disrupt and harass foes, pinning the enemy in place while the massive {@adversary Nekro Defiler|Defilers} and {@vehicle Nekro Mordred|Mordreds} close for the slaughter."
          ]
       },
       {
@@ -9493,11 +9499,11 @@
          ]
       },
       {
-         "name": "Nekro Grindellow",
+         "name": "Nekro Grindellow Impaler",
          "page": 257,
          "type": "nemesis",
          "description": [
-            "Added to the Nekro arsenal after an attack on a Jol-Nar military outpost, Grindellow Impalers incorporate several design elements from the Hylar krillostrat armored suit. Their large, spherical body supports seven long tentacles, six tipped with leafshaped razor blades and one armed with a long-range positron emitter. Impalers serve the Nekro as advanced infiltration and elimination engines. They often lie dormant, waiting for targets to wander into range before suddenly activating and attacking."
+            "Added to the Nekro arsenal after an attack on a Jol-Nar military outpost, Grindellow Impalers incorporate several design elements from the Hylar krillostrat armored suit. Their large, spherical body supports seven long tentacles, six tipped with leaf-shaped razor blades and one armed with a long-range positron emitter. Impalers serve the Nekro as advanced infiltration and elimination engines. They often lie dormant, waiting for targets to wander into range before suddenly activating and attacking."
          ],
          "powerLevels": {
             "combat": 9,
@@ -9839,7 +9845,7 @@
          ],
          "weapons": [
             {
-               "name": "Integrated laser scalpal",
+               "name": "Integrated laser scalpel",
                "skill": {
                   "name": "Melee",
                   "source": "crb"
@@ -10012,7 +10018,7 @@
             },
             {
                "name": "Ranged (Heavy)",
-               "characteristic": "brawn",
+               "characteristic": "agility",
                "source": "crb"
             },
             {
@@ -10051,7 +10057,7 @@
                ]
             },
             {
-               "name": "Integrated legionnarie blade",
+               "name": "Integrated legionnaire blade",
                "skill": {
                   "name": "Melee",
                   "source": "crb"
@@ -10225,7 +10231,7 @@
          ],
          "weapons": [
             {
-               "name": "Eliminator hight-intensity beam rifle",
+               "name": "Eliminator high-intensity beam rifle",
                "skill": {
                   "name": "Ranged (Heavy)",
                   "source": "crb"
@@ -10451,7 +10457,7 @@
                ]
             },
             {
-               "name": "2 improvised shudder charges",
+               "name": "2 improvised plasma charges",
                "skill": {
                   "name": "Ranged (Light)",
                   "source": "crb"
@@ -10808,7 +10814,7 @@
          "page": 261,
          "type": "minion",
          "description": [
-            "The Vuil'raith shape flesh to strike terror in their victims. The rank and file of their nightmare armies are gibbering meatshapes of fanged maws, razor-sharp claws, flailing tentacles, and countless glowing eyes, all intended to leave their foes recoiling in horror."
+            "The Vuil'raith shape flesh to strike terror in their victims. The rank and file of their nightmare armies are gibbering meat-shapes of fanged maws, razor-sharp claws, flailing tentacles, and countless glowing eyes, all intended to leave their foes recoiling in horror."
          ],
          "powerLevels": {
             "combat": 3,
@@ -10968,7 +10974,7 @@
          "page": 262,
          "type": "rival",
          "description": [
-            "Enthralled Creuss warriors, these hulking sentinels wear runecovered armor that glows an ominous crimson instead of the cold blue of most Creuss armor. Each of the Crimson Legionnaires was once a part of the grand armada dispatched to search for Ixth. When they discovered the Mahact tomb, the genesorcerers corrupted them all, many hundreds of thousands of individuals bound to serve in an instant. Now the Mahact use them as an elite praetorian guard, the core of an army that the gene-sorcerers are building to reconquer the galaxy."
+            "Enthralled Creuss warriors, these hulking sentinels wear rune-covered armor that glows an ominous crimson instead of the cold blue of most Creuss armor. Each of the Crimson Legionnaires was once a part of the grand armada dispatched to search for Ixth. When they discovered the Mahact tomb, the gene-sorcerers corrupted them all, many hundreds of thousands of individuals bound to serve in an instant. Now the Mahact use them as an elite praetorian guard, the core of an army that the gene-sorcerers are building to reconquer the galaxy."
          ],
          "powerLevels": {
             "combat": 7,
@@ -11070,7 +11076,7 @@
             }
          ],
          "gear": [
-            "Crimson runic armor: 2 defense, +2 soak, +6 would threshold"
+            "Crimson runic armor: 2 defense, +2 soak, +6 wound threshold"
          ]
       },
       {
@@ -11180,7 +11186,7 @@
       },
       {
          "name": "Nekro Injector Hull Crawler",
-         "page": 277,
+         "page": 278,
          "type": "rival",
          "powerLevels": {
             "combat": 6,
@@ -11261,7 +11267,7 @@
       },
       {
          "name": "Nekro Injector Hull Framework",
-         "page": 278,
+         "page": 279,
          "type": "nemesis",
          "powerLevels": {
             "combat": 12,
@@ -11462,7 +11468,7 @@
          "derived": {
             "soak": 3,
             "wounds": 5,
-            "defense": []
+            "defense": [0, 0]
          },
          "skills": [
             {
@@ -11776,7 +11782,7 @@
       {
          "name": "Elder Howl",
          "description": [
-            "Once per session, may spend an action to force all opponents within long range to make an {@difficulty Easy|fear}; increase the difficulty of this check by 1 for each other minion group, rival, or nemesis of this character's same type in the current encounter, to a maximum of {@difficulty Daunting}."
+            "Once per session, may spend an action to force all opponents within long range to make an {@difficulty Easy} {@rule fear||crb} check; increase the difficulty of this check by 1 for each other minion group, rival, or nemesis of this character's same type in the current encounter, to a maximum of {@difficulty Daunting}."
          ],
          "tags": [
             "general",
@@ -12190,7 +12196,7 @@
       {
          "name": "Send a Message",
          "description": [
-            "When this character incapacitates an enemy, may suffer 2 strain to force all opponents within medium range to make a {@difficulty Hard|fear} (see {@rule fear||crb}, page 243 of the {@title Genesys} Core Rulebook)."
+            "When this character incapacitates an enemy, may suffer 2 strain to force all opponents within medium range to make a {@difficulty Hard} {@rule fear||crb} check (see {@rule fear||crb}, page 243 of the {@title Genesys} Core Rulebook)."
          ],
          "tags": [
             "combat",
@@ -12263,7 +12269,7 @@
       {
          "name": "Swat",
          "description": [
-            "After making a successful combat check with its fists against a target of silhouette 2 or smaller, may spend {@symbols aaa} or {@symbols t} to fling the target up to medium range in a direction of this character's choosing; on the target's next turn, it suffers the effects of {@rule falling||crb} from short range (see page 112 of the {@title Genesys} Core Rulebook))."
+            "After making a successful combat check with its fists against a target of silhouette 2 or smaller, may spend {@symbols aaa} or {@symbols t} to fling the target up to medium range in a direction of this character's choosing; on the target's next turn, it suffers the effects of {@rule falling||crb} from short range (see page 112 of the {@title Genesys} Core Rulebook)."
          ],
          "tags": [
             "combat",
@@ -12443,6 +12449,18 @@
             "offensive",
             "crowd control"
          ]
+      },
+      {
+         "name": "Zealous Devotion",
+         "description": [
+            "May sacrifice one minion from this group as a maneuver to add {@symbols ss} to the group's next check."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "maneuver",
+            "results modifier"
+         ]
       }
    ],
    "archetype": [
@@ -12461,13 +12479,15 @@
          "st": 12,
          "xp": 100,
          "skills": {
-            "skills": [
-               "vigilance"
-            ],
+            "skills": [{
+               "name": "Vigilance",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
-               "A Creuss starts with one rank in {@skill Vigilance||crb}. They obtain this rank before spending experience points, and they may not increase {@skill Vigilance||crb} above rank 2 during character creation"
+               "A Creuss starts with one rank in {@skill Vigilance||crb}. They obtain this rank before spending experience points, and they may not increase {@skill Vigilance||crb} above rank 2 during character creation."
             ],
             "choice": false
          },
@@ -12487,7 +12507,7 @@
          ],
          "why": [
             "The Creuss function very differently from most species. Outside of their armor, they are insubstantial ghosts who unfortunately can quickly wither away and even die when exposed to \"normal\" reality. But if they're bold enough, they can leave their suit for short periods of time and take advantage of their ethereal form.",
-            "A Creuss character probably serves the interests of the {@rule Ghosts of Creuss}, the mysterious faction of Creuss that has taken an interest in the material universe and potentially in ruling the shattered Imperium. However, not all Creuss remain loyal to their home dimension and work to support its power in the material universe. Some have ventured into the wider galaxy simply to explore and experience this strange realm. If you like the idea of playing a mysterious traveler who can teleport from place to place, an enigmatic sage who speaks in riddles, or a smug researcher with a unique perspective on the world, a Creuss is the right choice for you"
+            "A Creuss character probably serves the interests of the {@rule Ghosts of Creuss}, the mysterious faction of Creuss that has taken an interest in the material universe and potentially in ruling the shattered Imperium. However, not all Creuss remain loyal to their home dimension and work to support its power in the material universe. Some have ventured into the wider galaxy simply to explore and experience this strange realm. If you like the idea of playing a mysterious traveler who can teleport from place to place, an enigmatic sage who speaks in riddles, or a smug researcher with a unique perspective on the world, a Creuss is the right choice for you."
          ],
          "names": {
             "description": [
@@ -12517,9 +12537,11 @@
          "st": 9,
          "xp": 95,
          "skills": {
-            "skills": [
-               "Discipline"
-            ],
+            "skills": [{
+               "name": "Discipline",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksEach": 1,
             "ranksTotal": 1,
             "choice": false,
@@ -12536,7 +12558,7 @@
             "Although many people think of them as the {@rule Naalu Collective|Naalu}, the serpentine species hailing from {@rule Druaa and Maaluuk|Druaa} insists that their species shares the same name as their home. In fact, they claim {@rule Druaa and Maaluuk|Druaa} was named after their species during their early eras of scientific enlightenment. However, those scholars who believe the Druaa actually evolved on neighboring {@rule Druaa and Maaluuk|Maaluuk} suggest that they chose the name of their adopted homeworld to help cement their claim."
          ],
          "why": [
-            "The Druaa start with slightly fewer experience points and a lower wound and strain threshold than other species, but they trade this for the unique ability to read minds. This makes them very powerful in social settings and can also be used in all sorts of creative ways by inventive players"
+            "The Druaa start with slightly fewer experience points and a lower wound and strain threshold than other species, but they trade this for the unique ability to read minds. This makes them very powerful in social settings and can also be used in all sorts of creative ways by inventive players."
          ],
          "names": {
             "description": [
@@ -12566,9 +12588,11 @@
          "st": 12,
          "xp": 80,
          "skills": {
-            "skills": [
-               "mechanics"
-            ],
+            "skills": [{
+               "name": "Mechanics",
+               "source": "crb",
+               "ranks": 2
+            }],
             "ranksTotal": 2,
             "ranksEach": 2,
             "choice": false,
@@ -12617,9 +12641,11 @@
          "st": 11,
          "xp": 100,
          "skills": {
-            "skills": [
-               "negotiation"
-            ],
+            "skills": [{
+               "name": "Negotiation",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "choice": false,
@@ -12633,7 +12659,7 @@
          "description": [
             "The Hacan are an ancient species, well established in the galaxy. Hailing from the hot and dry planets of the tri-system of {@rule Kenara System|Kenara}, the trading clans of the Hacan long ago established themselves among the galaxy's dominant economic powerhouses. Even in the depths of the Twilight Wars and the grim times that followed, some intrepid Hacan traders still plied the spacelanes, and now the Emirates are poised to regain their titles as the masters of commerce once again.",
             "Hacan tend to be tall and imposing, covered in a short coat of tawny, golden hair. Males also have thick manes that they wear in a variety of styles. The Hacan's sharp canines and somewhat carnivorous diet are the only remnants of their distant evolutionary roots, and as a species, they tend toward patience and caution rather than aggression.",
-            "Thanks to their long history of trade and commerce, Hacan have traveled across the galaxy and settled in enclaves on a number of worlds. Some of these maintain close ties with their kin in the {@rule Kenara system}, while others have broken away and formed their own culture. But many of the Hacan who live of-world still tend toward a nomadic lifestyle, trading the sands of their home for the endless expanse of stars."
+            "Thanks to their long history of trade and commerce, Hacan have traveled across the galaxy and settled in enclaves on a number of worlds. Some of these maintain close ties with their kin in the {@rule Kenara system}, while others have broken away and formed their own culture. But many of the Hacan who live off-world still tend toward a nomadic lifestyle, trading the sands of their home for the endless expanse of stars."
          ],
          "why": [
             "The Hacan have the stereotype of being consummate traders, and while most Hacan are not merchants, their high {@characteristic Presence||crb} and their Savvy Negotiator ability make them innately good at social encounters. Hacan can be skilled diplomats and \"face\" characters for their groups, and their high strain threshold means they can shrug off snide comments and scathing rebukes. Plus, their physical characteristics are solidly average, so Hacan can be effective combatants as well. Hacan in the {@rule The Keleres of the Council|Keleres} may have been assigned by the {@rule Emirates of Hacan|Emirates}, but not all Hacan serve the Quieron. Your character may have grown up on a distant enclave or lived a nomadic life among the stars. In this case, they may have pledged allegiance to any one of the great powers. If you're excited about playing a dignified but dangerous leonine alien, a grizzled trader with years of experience plying the spacelanes, or a suave diplomatic envoy, a Hacan is the right choice for you."
@@ -12671,9 +12697,9 @@
             ],
             "ranksEach": 1,
             "ranksTotal": 2,
-            "choice": true,
+            "choice":  ["non-career"],
             "description": [
-               "A Human starts with one rank in each of two non-career skills. They obtain this rank before spending experience points, and they may not increase either of those skills above rank 2 during character creation"
+               "A Human starts with one rank in each of two non-career skills. They obtain this rank before spending experience points, and they may not increase either of those skills above rank 2 during character creation."
             ]
          },
          "abilities": [
@@ -12717,12 +12743,10 @@
          "st": 8,
          "xp": 90,
          "skills": {
-            "skills": [
-               "one knowledge skill"
-            ],
+            "skills": [],
             "ranksEach": 2,
             "ranksTotal": 2,
-            "choice": true,
+            "choice": ["knowledge"],
             "description": [
                "A Hylar starts with two ranks in one knowledge skill of their choice. They obtain this rank before spending experience points, and they may not increase this skill above rank 3 during character creation."
             ]
@@ -12768,12 +12792,10 @@
          "st": 10,
          "xp": 100,
          "skills": {
-            "skills": [
-               "one combat skill"
-            ],
+            "skills": [],
             "ranksEach": 1,
             "ranksTotal": 1,
-            "choice": true,
+            "choice": ["combat"],
             "description": [
                "A Letnev starts with one rank in one combat skill of their choice. They obtain this rank before spending experience points, and they may not increase this skill above rank 2 during character creation."
             ]
@@ -12817,9 +12839,11 @@
          "st": 7,
          "xp": 85,
          "skills": {
-            "skills": [
-               "athletics"
-            ],
+            "skills": [{
+               "name": "Athletics",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksEach": 1,
             "ranksTotal": 1,
             "choice": false,
@@ -12884,8 +12908,16 @@
          "xp": 70,
          "skills": {
             "skills": [
-               "computers",
-               "coordination"
+               {
+                  "name": "Computers",
+                  "source": "crb",
+                  "ranks": 1
+               },
+               {
+                  "name": "Coordination",
+                  "source": "crb",
+                  "ranks": 1
+               }
             ],
             "ranksEach": 1,
             "ranksTotal": 2,
@@ -12939,9 +12971,11 @@
          "st": 9,
          "xp": 110,
          "skills": {
-            "skills": [
-               "astrocartography"
-            ],
+            "skills": [{
+               "name": "Astrocartography",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksEach": 1,
             "ranksTotal": 1,
             "choice": false,
@@ -12988,9 +13022,11 @@
          "st": 9,
          "xp": 100,
          "skills": {
-            "skills": [
-               "coordination"
-            ],
+            "skills": [{
+               "name": "Coordination",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksEach": 1,
             "ranksTotal": 1,
             "choice": false,
@@ -13039,9 +13075,11 @@
          "st": 7,
          "xp": 60,
          "skills": {
-            "skills": [
-               "discipline"
-            ],
+            "skills": [{
+               "name": "Discipline",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksEach": 1,
             "ranksTotal": 1,
             "choice": false,
@@ -13092,9 +13130,11 @@
          "st": 10,
          "xp": 90,
          "skills": {
-            "skills": [
-               "leadership"
-            ],
+            "skills": [{
+               "name": "Leadership",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksEach": 1,
             "ranksTotal": 1,
             "choice": false,
@@ -13144,9 +13184,11 @@
          "st": 10,
          "xp": 90,
          "skills": {
-            "skills": [
-               "vigilance"
-            ],
+            "skills": [{
+               "name": "Vigilance",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksEach": 1,
             "ranksTotal": 1,
             "choice": false,
@@ -13159,10 +13201,10 @@
          ],
          "description": [
             "The reptilian Xxcha have a reputation as peaceful philosophers. Though many of them are, this ignores their equal strength as warriors and leaders. While the Xxcha were once a truly peaceful faction, the invasion and eventual scouring of one of their two homeworlds, {@rule Archon Ren and Archon Tau|Archon Tau}, taught them to never let down their guard. Now, the {@rule Xxcha Kingdom} believes in peace backed by strength, as do many individual Xxcha.",
-            "Like many species in the galaxy, the Xxcha are humanoid bipeds, although they have distinctly reptilian characteristics including scaly skin, a beaked mouth, and a ponderous, thickboned body. They evolved in the tropical forests of their twin homeworlds, {@rule Archon Ren and Archon Tau}, and although they are warm-blooded, they still quickly grow uncomfortable in cold climates. Their tough skin and physiology of dense muscle bundles and thick bones means they are incredibly resilient; many Xxcha warriors have shrugged off attacks that could have killed a member of another species."
+            "Like many species in the galaxy, the Xxcha are humanoid bipeds, although they have distinctly reptilian characteristics including scaly skin, a beaked mouth, and a ponderous, thick-boned body. They evolved in the tropical forests of their twin homeworlds, {@rule Archon Ren and Archon Tau}, and although they are warm-blooded, they still quickly grow uncomfortable in cold climates. Their tough skin and physiology of dense muscle bundles and thick bones means they are incredibly resilient; many Xxcha warriors have shrugged off attacks that could have killed a member of another species."
          ],
          "why": [
-            "The Xxcha have slightly lower starting experience and two characteristics at rank 1, but they trade this for having two characteristics at rank 3. This means they're purpose-built to be more focused, although they still have enough experience for proper customization. Their high {@characteritic Willpower||crb} and rank in {@skill Vigilance||crb} makes them good as defensive social characters, as they're likely to spot lies and less likely to be coerced. Their unique species ability, on the other hand, makes them good at surviving combat, so they're powerfully defensive all around.",
+            "The Xxcha have slightly lower starting experience and two characteristics at rank 1, but they trade this for having two characteristics at rank 3. This means they're purpose-built to be more focused, although they still have enough experience for proper customization. Their high {@characteristic Willpower||crb} and rank in {@skill Vigilance||crb} makes them good as defensive social characters, as they're likely to spot lies and less likely to be coerced. Their unique species ability, on the other hand, makes them good at surviving combat, so they're powerfully defensive all around.",
             "Many Xxcha, both within the {@rule Xxcha Kingdom|Kingdom} and without, support the {@rule The Keleres of the Council|Keleres} and {@rule the Galactic Council}. The goal of galactic unity fits with many of their cultural philosophies, so Xxcha sent from the {@rule Xxcha Kingdom|Kingdom} to serve as {@rule The Keleres of the Council|Keleres} tend to be more enthusiastic about their tasks than those dispatched by other civilizations. However, the Xxcha are an old species with numerous colony worlds, not all of which have kept their ties to {@rule Archon Ren and Archon Tau}. If you want to play a grizzled mercenary who's seen the galaxy, a patient and considerate diplomat, or a bumbling bureaucrat who's actually a clever spymaster, then playing an Xxcha is right for you."
          ],
          "names": {
@@ -13193,9 +13235,11 @@
          "st": 10,
          "xp": 90,
          "skills": {
-            "skills": [
-               "stealth"
-            ],
+            "skills": [{
+               "name": "Stealth",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksEach": 1,
             "ranksTotal": 1,
             "choice": false,
@@ -13273,7 +13317,7 @@
       {
          "name": "Biomechanical",
          "description": [
-            "A Titan does not need to breathe and can survive in {@rule vacuum||crb} without protection. They do need to sleep and consume moderate amounts of silicates and other minerals to survive"
+            "A Titan does not need to breathe and can survive in {@rule vacuum||crb} without protection. They do need to sleep and consume moderate amounts of silicates and other minerals to survive."
          ],
          "tags": [
             "general",
@@ -13383,7 +13427,7 @@
       {
          "name": "Harness",
          "description": [
-            "All Rokha in a partnership wear a harness that allows their Naaz to ride on their shoulders. The harness is equipment with an encumbrance value of 0, and while the Naaz is riding on the Rokha's shoulders, they may move with the Rokha without spending a maneuver"
+            "All Rokha in a partnership wear a harness that allows their Naaz to ride on their shoulders. The harness is equipment with an encumbrance value of 0, and while the Naaz is riding on the Rokha's shoulders, they may move with the Rokha without spending a maneuver."
          ],
          "tags": [
             "general",
@@ -13640,6 +13684,19 @@
                "{@gear Savant} or {@gear familiar|mechanimiliar} (familiar with the {@skill Mechanics||crb} skill)",
                "{@gear comm-bead}",
                "2d100 aurei"
+            ],
+            "selections": [
+               [
+                  [{ "name": "shot pistol" }],
+                  [{ "name": "shudder blade" }]
+               ],
+               { "name": "space suit" },
+               [
+                  [{ "name": "savant" }],
+                  [{ "name": "familiar" }]
+               ],
+               { "name": "comm-bead" },
+               { "name": "2d100 aurei", "money": true, "formula": "2d100" }
             ]
          },
          "usefulTalents": {
@@ -13727,6 +13784,19 @@
                "{@gear Intruder puck} or {@gear umbral lens}",
                "{@gear Comm-bead}",
                "1d10 aurei"
+            ],
+            "selections": [
+               { "name": "collapsible blade" },
+               [
+                  [{ "name": "covert armored skin" }],
+                  [{ "name": "morphic kit" }]
+               ],
+               [
+                  [{ "name": "intruder puck" }],
+                  [{ "name": "umbral lens" }]
+               ],
+               { "name": "comm-bead" },
+               { "name": "1d10 aurei", "money": true, "formula": "1d10" }
             ]
          },
          "usefulTalents": {
@@ -13817,6 +13887,20 @@
                "{@gear Medicum} or {@gear quintisensor}",
                "2 {@gear z-tab|z-tabs} or 2 {@gear dermal sealer|dermal sealers}",
                "1d100 aurei"
+            ],
+            "selections": [
+               { "name": "collapsible blade" },
+               { "name": "hostile environment clothing" },
+               [{ "name": "familiar" }, { "name": "breather mask" }, { "name": "savant" }],
+               [
+                  [{ "name": "medicum" }],
+                  [{ "name": "quintisensor" }]
+               ],
+               [
+                  [{ "name": "z-tab", "quantity": 2 }],
+                  [{ "name": "dermal sealer", "quantity": 2 }]
+               ],
+               { "name": "1d100 aurei", "money": true, "formula": "1d100" }
             ]
          },
          "usefulTalents": {
@@ -13906,6 +13990,18 @@
                "2 pairs of {@gear autocuffs}, or {@gear ambassador}, or {@gear quintisensor}",
                "2 {@gear z-tab|z-tabs}",
                "1d100 aurei"
+            ],
+            "selections": [
+               { "name": "beam pistol" },
+               { "name": "echo garment" },
+               [{ "name": "savant" }, { "name": "comm-bead" }],
+               [
+                  [{ "name": "autocuffs", "quantity": 2 }],
+                  [{ "name": "ambassador" }],
+                  [{ "name": "quintisensor" }]
+               ],
+               { "name": "z-tab", "quantity": 2 },
+               { "name": "1d100 aurei", "money": true, "formula": "1d100" }
             ]
          },
          "usefulTalents": {
@@ -13944,7 +14040,7 @@
          }
       },
       {
-         "name": "Keleres Liason",
+         "name": "Keleres Liaison",
          "page": 43,
          "skills": [
             {
@@ -13995,6 +14091,16 @@
                "{@gear Savant}, {@gear ambassador}, and {@gear comm-bead}",
                "1 {@gear z-tab}",
                "1d100 + 100 aurei"
+            ],
+            "selections": [
+               [
+                  [{ "name": "ambassadorial staff" }],
+                  [{ "name": "shot pistol" }]
+               ],
+               { "name": "dignitary's garb" },
+               [{ "name": "savant" }, { "name": "ambassador" }, { "name": "comm-bead" }],
+               { "name": "z-tab" },
+               { "name": "1d100 + 100 aurei", "money": true, "formula": "1d100 + 100" }
             ]
          },
          "usefulTalents": {
@@ -14084,6 +14190,13 @@
                "{@gear Breather mask} and {@gear light beacon}",
                "1 {@gear dermal sealer}",
                "2d10 aurei"
+            ],
+            "selections": [
+               [{ "name": "shot rifle" }, { "name": "infantry grenade" }],
+               { "name": "infantry combat armor" },
+               [{ "name": "breather mask" }, { "name": "light beacon" }],
+               { "name": "dermal sealer" },
+               { "name": "2d10 aurei", "money": true, "formula": "2d10" }
             ]
          },
          "usefulTalents": {
@@ -14174,6 +14287,20 @@
                "{@gear Comm-bead}",
                "1 {@gear dermal sealer}",
                "1d100 aurei"
+            ],
+            "selections": [
+               [
+                  [{ "name": "praetorian defender" }],
+                  [{ "name": "shot pistol" }, { "name": "deflector buckler" }]
+               ],
+               { "name": "echo garment" },
+               [
+                  [{ "name": "quintisensor" }],
+                  [{ "name": "medicum" }]
+               ],
+               { "name": "comm-bead" },
+               { "name": "dermal sealer" },
+               { "name": "1d100", "money": true, "formula": "1d00" }
             ]
          },
          "usefulTalents": {
@@ -14266,6 +14393,17 @@
                "{@gear Ascender rig} or {@gear perimeter beacon}",
                "1 {@gear dermal sealer}",
                "2d10 aurei"
+            ],
+            "selections": [
+               { "name": "beam rifle" },
+               { "name": "echo garment" },
+               { "name": "pouches and packs" },
+               [
+                  [{ "name": "ascender rig" }],
+                  [{ "name": "perimeter beacon" }]
+               ],
+               { "name": "dermal sealer" },
+               { "name": "2d10 aurei", "money": true, "formula": "2d10" }
             ]
          },
          "usefulTalents": {
@@ -14358,6 +14496,21 @@
                "{@gear Familiar|Mechanimiliar} (familiar with the {@skill Mechanics||crb} skill) or a {@gear portable toolkit}",
                "1 {@gear Fire-suppression sphere} or 1 {@gear bypass pack} or 1 {@gear adhesive rod}",
                "1d100 aurei"
+            ],
+            "selections": [
+               { "name": "viribuii" },
+               { "name": "space suit" },
+               { "name": "spacer trunk" },
+               [
+                  [{ "name": "{@gear familiar|mechanimiliar}" }],
+                  [{ "name": "portable toolkit" }]
+               ],
+               [
+                  [{ "name": "fire-suppression sphere" }],
+                  [{ "name": "bypass pack" }],
+                  [{ "name": "adhesive rod" }]
+               ],
+               { "name": "1d100 aurei", "money": true, "formula": "1d100" }
             ]
          },
          "usefulTalents": {
@@ -15366,7 +15519,7 @@
          "page": 115,
          "type": "weapon",
          "description": [
-            "Originally designed by the {@rule Yssaril Tribes|Yssaril} and created from its owner's DNA, the bio-shiv consists of genetic material spliced with flexible polymers that give it the appearance of a thin, bonelike lattice. The weapon is normally \"sheathed\" in a specially created pocket along the wearer's arm or leg. While within the wearer's body, the material is as flexible as any tissue and cannot be detected on most scanners. Even the pocket appears to be an old scar. However, when drawn, the weapon hardens into a sharp, thin knife. The shiv can even be \"resheathed\" (albeit a painful process), and as it is reinserted into the skin, it returns to its malleable state",
+            "Originally designed by the {@rule Yssaril Tribes|Yssaril} and created from its owner's DNA, the bio-shiv consists of genetic material spliced with flexible polymers that give it the appearance of a thin, bone-like lattice. The weapon is normally \"sheathed\" in a specially created pocket along the wearer's arm or leg. While within the wearer's body, the material is as flexible as any tissue and cannot be detected on most scanners. Even the pocket appears to be an old scar. However, when drawn, the weapon hardens into a sharp, thin knife. The shiv can even be \"resheathed\" (albeit a painful process), and as it is reinserted into the skin, it returns to its malleable state",
             "While the bio-shiv is sheathed, those searching the character add {@symbols fff} to the results of any checks made to find the bio-shiv.",
             "This weapon may be modified with {@table 2-1: Cultural Manufacturing Differences}."
          ],
@@ -16518,7 +16671,7 @@
             },
             "Almost two meters long, this blade is an heirloom from an ancient species that plied the starlanes long before even the rise of the Mahact. The surface of the blade is cold to the touch. It is entirely black, reflecting no light at all, yet those who view it claim to see something stirring within its inky depths. Seeing the blade's irregular swirling effects can induce nausea and vertigo, but the person who wields it sees—and hears—something else entirely.",
             "Within the blade is an artificial sentience that can communicate with the blade's possessor. This sentience has witnessed and catalogued thousands of battles and can provide guidance to the wielder. The advice proves valuable, but the blade's end goal is always to corrupt the wielder's thoughts to an unthinking desire for destruction and conquest.",
-            "While within short range of the Obsidian, a character is {@rule disoriented||crb}. While wielding the Obsidian, your character cannot be {@rule disoriented||crb}. Your character also adds {@symbols sa} to all {@skill Leadership||crb} checks and {@skill Knowledge||crb} checks they make while wielding the Obsidian. The GM may spend {@sybmols d} from any skill checks your character makes while wielding the Obsidian to have the Obsidian's whispers distract your character, adding {@dice setback|2} to all skill checks they make for the remainder of the encounter. Other narrative effects could cause your character's motivations to change to ones based on conquest, domination, or superiority.",
+            "While within short range of the Obsidian, a character is {@rule disoriented||crb}. While wielding the Obsidian, your character cannot be {@rule disoriented||crb}. Your character also adds {@symbols sa} to all {@skill Leadership||crb} checks and {@skill Knowledge||crb} checks they make while wielding the Obsidian. The GM may spend {@symbols d} from any skill checks your character makes while wielding the Obsidian to have the Obsidian's whispers distract your character, adding {@dice setback|2} to all skill checks they make for the remainder of the encounter. Other narrative effects could cause your character's motivations to change to ones based on conquest, domination, or superiority.",
             "This weapon requires two hands to wield."
          ],
          "encumbrance": 4,
@@ -16582,7 +16735,7 @@
                ]
             },
             "These firearms were developed long ago by the Mahact kings for use by their deadliest sharpshooters. Reapers have a long barrel with a slightly angled handgrip. When one is drawn, a metallic sleeve unfurls from the grip and tightly encases the shooter's hand and forearm. This stabilizes the shooter's aim and provides a small amount of protection in close-quarters combat.",
-            "The Reaper draws bioelectric energy from the shooter and uses an ill-understood process to focus it into a relatively lowpowered beam that nevertheless causes fearsome injuries in living targets. Shooters must be careful of this ability, as Reapers have no limiters on the amount of energy that they drain. There are a dozen known Reapers currently circulating throughout the galaxy, sometimes passing to a new owner after the previous wielder killed themself from overuse.",
+            "The Reaper draws bioelectric energy from the shooter and uses an ill-understood process to focus it into a relatively low-powered beam that nevertheless causes fearsome injuries in living targets. Shooters must be careful of this ability, as Reapers have no limiters on the amount of energy that they drain. There are a dozen known Reapers currently circulating throughout the galaxy, sometimes passing to a new owner after the previous wielder killed themself from overuse.",
             "{@symbols d} may not be spent to cause a Reaper to run out of ammo. When your character uses a Reaper to make a {@skill Ranged (Light)||crb} check, they suffer 3 strain. If your character exceeds their strain threshold while wielding a Reaper, they suffer a Critical Injury and add +30 to the result."
          ],
          "encumbrance": 2,
@@ -16658,7 +16811,7 @@
                "type": "list",
                "items": [
                   "{@b Use With:} This attachment can be applied to any weapon.",
-                  "{@b Modifiers:} This weapon gains the {@quality Superior||crb} item quality.",
+                  "{@b Modifiers:} The weapon gains the {@quality Superior||crb} item quality.",
                   "{@b Hard Points Required:} 1."
                ]
             }
@@ -16702,7 +16855,7 @@
       },
       {
          "name": "Carbo-Mesh Bonding",
-         "page": 125,
+         "page": 126,
          "type": "attachment",
          "class": "weapon",
          "description": [
@@ -16799,7 +16952,7 @@
             {
                "type": "list",
                "items": [
-                  "{@b Use With:} This attachment can be used with any {@skill Ranged (Heavy)||crb} weapon.",
+                  "{@b Use With:} This attachment may be used with any {@skill Ranged (Heavy)||crb} weapon.",
                   "{@b Modifiers:} After a decksweeper module is installed on your character's weapon, your character may fire the weapon using the following secondary weapon profile: {@skill Ranged (Heavy)||crb}; Damage 6; Critical 4; Range (Short); {@quality Blast|Blast 6|crb}, {@quality Concussive|Concussive 1|crb}, {@quality Limited Ammo|Limited Ammo 1|crb}, {@quality Vicious|Vicious 1|crb}. The weapon increases any {@quality Cumbersome||crb} or {@quality Unwieldy||crb} item qualities it already has by 1 and increases its encumbrance by 1. Reloads cost 25 aurei.",
                   "{@b Hard Points Required:} 2."
                ]
@@ -16927,7 +17080,7 @@
                "type": "list",
                "items": [
                   "{@b Use With:} This attachment may be used with any {@skill Ranged (Light)||crb} or {@skill Ranged (Heavy)||crb} weapon.",
-                  "{@b Modifiers:} The weapon increases its base damage by 2 and gains the {@quality Inaccurate|Inaccurate 1|crb} quality.",
+                  "{@b Modifiers:} The weapon increases its base damage by 2 and gains the {@quality Inaccurate|Inaccurate 1|crb} item quality.",
                   "{@b Hard Points Required:} 2."
                ]
             }
@@ -16959,7 +17112,7 @@
             {
                "type": "list",
                "items": [
-                  "{@b Use With:} This attachment can be used with any ranged weapon that could logically benefit from the addition of a telescopic sight.",
+                  "{@b Use With:} This attachment may be used with any ranged weapon that could logically benefit from the addition of a telescopic sight.",
                   "{@b Modifiers:} Your character reduces the difficulty of ranged combat checks made with this weapon at long and extreme range by 1. Your character may remove {@dice setback} added to combat checks they make with this weapon due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness, smoke, or other environmental effects|crb} that obscure vision.",
                   "{@b Hard Points Required:} 1."
                ]
@@ -17091,7 +17244,7 @@
                "type": "list",
                "items": [
                   "{@b Use With:} This attachment can be used with any {@skill Melee||crb} weapon with a physical blade.",
-                  "{@b Modifiers:} The weapon gains the {@quality Vicious|Vicious 2|crb} item quality or raises its existing {@quality Vicious||crb} by 2, and it gains the {@quality Sunder||crb} item quality.",
+                  "{@b Modifiers:} The weapon gains the {@quality Vicious|Vicious 2|crb} item quality or raises its existing {@quality Vicious||crb} quality by 2, and it gains the {@quality Sunder||crb} item quality.",
                   "{@b Hard Points Required:} 1."
                ]
             }
@@ -17211,7 +17364,7 @@
                "type": "list",
                "items": [
                   "{@b Use With:} This attachment can be applied to any armor.",
-                  "{@b Modifiers:} When wearing this armor, as a maneuver, your character may move to any point within short range, even vertically. Once per encounter, the antigrav rig can be activated to allow your character to leap to any point within medium range as a maneuver, or activated as an out-ofturn incidental to reduce your character's falling distance by two range bands.",
+                  "{@b Modifiers:} When wearing this armor, as a maneuver, your character may move to any point within short range, even vertically. Once per encounter, the antigrav rig can be activated to allow your character to leap to any point within medium range as a maneuver, or activated as an out-of-turn incidental to reduce your character's falling distance by two range bands.",
                   "{@b Hard Points Required:} 3."
                ]
             }
@@ -17251,7 +17404,7 @@
                "type": "list",
                "items": [
                   "{@b Use With:} This attachment may be applied to any armor.",
-                  "{@b Modifiers:} : Increase the soak provided by the armor by 1. Increase the armor's encumbrance value by 3. The armor gains the {@quality Cumbersome|Cumbersome 3|crb} item quality.",
+                  "{@b Modifiers:} Increase the soak provided by the armor by 1. Increase the armor's encumbrance value by 3. The armor gains the {@quality Cumbersome|Cumbersome 3|crb} item quality.",
                   "{@b Hard Points Required:} 2."
                ]
             }
@@ -17305,7 +17458,7 @@
       },
       {
          "name": "Equipment Mount",
-         "page": 0,
+         "page": 129,
          "type": "attachment",
          "class": "armor",
          "description": [
@@ -17324,7 +17477,7 @@
          "rarity": 1
       },
       {
-         "name": "Integrated Deflector Shield",
+         "name": "Integrated Deflector Field",
          "page": 130,
          "type": "attachment",
          "class": "armor",
@@ -17458,7 +17611,7 @@
                "type": "list",
                "items": [
                   "{@b Use With:} This attachment can be applied to any armor.",
-                  "{@b Modifiers:} When wearing this attachment, your character adds {@symbols s} to any {@skill Coercion||crb} checks they make and {@symbols f} to any {@skill Charm||crb} or {@skill Stealth||crb} checks they make. Once per session, you may spend a Story Point to force one character within short range of your character to make a {@difficulty Hard|fear|1}, with the overall results adjudicated by your GM.",
+                  "{@b Modifiers:} When wearing this attachment, your character adds {@symbols s} to any {@skill Coercion||crb} checks they make and {@symbols f} to any {@skill Charm||crb} or {@skill Stealth||crb} checks they make. Once per session, you may spend a Story Point to force one character within short range of your character to make a {@difficulty Hard||1} {@rule fear||crb} check, with the overall results adjudicated by your GM.",
                   "{@b Hard Points Required:} 1."
                ]
             }
@@ -17556,11 +17709,11 @@
    "optionFeature": [],
    "rule": [
       {
-         "name": "[0.0.0.] \"Null\"",
+         "name": "[0.0.0] \"Null\"",
          "page": 227,
          "type": "stellar geography",
          "description": [
-            "See page 227 of {@title Twilight Imperium: Embers of the Imperium} for more information on [0.0.0.] \"Null\"."
+            "See page 227 of {@title Twilight Imperium: Embers of the Imperium} for more information on [0.0.0] \"Null\"."
          ]
       },
       {
@@ -17949,10 +18102,10 @@
       },
       {
          "name": "Vuil'raith Cabal",
-         "page": 2,
+         "page": 221,
          "type": "galactic threat",
          "description": [
-            "See page of {@title Twilight Imperium: Embers of the Imperium} for more information on the Vuil'raith Cabal."
+            "See page 221 of {@title Twilight Imperium: Embers of the Imperium} for more information on the Vuil'raith Cabal."
          ]
       },
       {
@@ -17976,7 +18129,7 @@
          "page": 98,
          "type": "great civilization",
          "description": [
-            "See page 98 of {@title Twilight Imperium: Embers of the Imperium} for more information on the Xxcha Kingodm."
+            "See page 98 of {@title Twilight Imperium: Embers of the Imperium} for more information on the Xxcha Kingdom."
          ]
       },
       {
@@ -18359,7 +18512,7 @@
          ],
          "shouldNotUse": [
             "Your character is trying to decipher the writings on an ancient crypt world. That requires {@skill Knowledge (Lore)}.",
-            "Your character wants to calculate a route for their starship to take. This requires the {@skill Astrocartography||crb skill.",
+            "Your character wants to calculate a route for their starship to take. This requires the {@skill Astrocartography||crb} skill.",
             "Your character is trying to repair a ship's mass-drive. Understanding the drive's principles may require Science, but your character needs to use {@skill Mechanics||crb} to fix or modify it."
          ]
       }
@@ -18874,7 +19027,7 @@
          "activation": "passive",
          "ranked": false,
          "description": [
-            "Your character does not count zero-gravity environments as {@rule difficult and impassable terrain|difficult terrain|crb}. When your character is exposed to {@rule vacuum||crb} without protective gear, they may hold their breath for a number of rounds equal to twice their {@characteristic Brawn||crb} and only suffer 2 wounds for each round they are exposed to {@rule vacuum||crb}."
+            "Your character does not count {@rule gravity|zero-gravity} environments as {@rule difficult and impassable terrain|difficult terrain|crb}. When your character is exposed to {@rule vacuum||crb} without protective gear, they may hold their breath for a number of rounds equal to twice their {@characteristic Brawn||crb} and only suffer 2 wounds for each round they are exposed to {@rule vacuum||crb}."
          ],
          "tags": [
             "general",
@@ -18896,7 +19049,7 @@
             "Keleres"
          ],
          "description": [
-            "{@i Your character must be a {@archetype Gashlai} or a {@archetype N'orr} or have allegiance to the {@rule Yin Brotherhood}, the {@rule Argent Flight}, or the {@rule The Keleres of the Council|Keleres} to benefit from this talent.} Your character rerolls failed fear checks."
+            "{@i Your character must be a {@archetype Gashlai} or a {@archetype N'orr} or have allegiance to the {@rule Yin Brotherhood}, the {@rule Argent Flight}, or the {@rule The Keleres of the Council|Keleres} to benefit from this talent.} Your character rerolls failed {@rule fear} checks."
          ],
          "tags": [
             "general",
@@ -19051,7 +19204,7 @@
          "activation": "active (action)",
          "ranked": false,
          "description": [
-            "Once per session, your character may use this talent to make an {@difficulty average|cool}. If successful, they may choose one item that has been lost, misplaced, or left behind during a previous encounter and then find the item on their person or in an easily accessible location"
+            "Once per session, your character may use this talent to make an {@difficulty average|cool}. If successful, they may choose one item that has been lost, misplaced, or left behind during a previous encounter and then find the item on their person or in an easily accessible location."
          ],
          "tags": [
             "general",
@@ -20155,7 +20308,7 @@
                "qualities": [
                   {
                      "name": "Breach",
-                     "ranks": 2,
+                     "ranks": 1,
                      "source": "crb"
                   }
                ]
@@ -20275,7 +20428,7 @@
                "qualities": [
                   {
                      "name": "Breach",
-                     "ranks": 2,
+                     "ranks": 1,
                      "source": "crb"
                   }
                ]
@@ -20370,7 +20523,7 @@
          "passengers": "2 (using external handrails)",
          "consumables": "10 hours",
          "encumbranceCapacity": "4",
-         "price": 54400,
+         "price": 54500,
          "rarity": 5,
          "restricted": true,
          "abilities": [
@@ -20402,7 +20555,7 @@
                   },
                   {
                      "name": "Breach",
-                     "ranks": 2,
+                     "ranks": 1,
                      "source": "crb"
                   },
                   {
@@ -20515,7 +20668,7 @@
                "qualities": [
                   {
                      "name": "Breach",
-                     "ranks": 2,
+                     "ranks": 1,
                      "source": "crb"
                   }
                ]
@@ -20543,6 +20696,11 @@
                   },
                   {
                      "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 1,
                      "source": "crb"
                   }
                ]
@@ -20677,13 +20835,13 @@
                   {
                      "title": "{@vehicle heavy mech (Hacan Pride of Kenara)|Hacan Pride of Kenara}",
                      "entries": [
-                        "Increase speed to 3; reduce armor to 2; increase consumables to 2 weeks; replace one twin-barreled beam cannon with armmounted shudder lance (Fire Arc All; Melee; Damage 5; Critical 3; Range [Engaged]; {@quality Accurate|Accurate 1|crb}, {@quality Breach|Breach 2|crb}, {@quality Superior||crb})."
+                        "Increase speed to 3; reduce armor to 2; increase consumables to 2 weeks; replace one twin-barreled beam cannon with arm-mounted shudder lance (Fire Arc All; Melee; Damage 5; Critical 3; Range [Engaged]; {@quality Accurate|Accurate 1|crb}, {@quality Breach|Breach 2|crb}, {@quality Superior||crb})."
                      ]
                   },
                   {
                      "title": "{@vehicle heavy mech (Federation ZS Thunderbolt Mk2)|Federation ZS Thunderbolt Mk2}",
                      "entries": [
-                        "Increase hull trauma threshold to 20; reduce system strain threshold to 12; reduce price to 62,500 aurei; replace shouldermounted shard missile battery with multibarrel mass driver battery (Fire Arc Forward; Gunnery; Damage 5; Critical 4; Range [Extreme]; {@quality Auto-fire||crb}, {@quality Knockdown||crb}, {@quality Slow-Firing|Slow-Firing 1|crb})."
+                        "Increase hull trauma threshold to 20; reduce system strain threshold to 12; reduce price to 62,500 aurei; replace shoulder-mounted shard missile battery with multibarrel mass driver battery (Fire Arc Forward; Gunnery; Damage 5; Critical 4; Range [Extreme]; {@quality Auto-fire||crb}, {@quality Knockdown||crb}, {@quality Slow-Firing|Slow-Firing 1|crb})."
                      ]
                   },
                   {
@@ -20836,7 +20994,7 @@
                   {
                      "title": "Hacan Pride of Kenara",
                      "entries": [
-                        "Increase speed to 3; reduce armor to 2; increase consumables to 2 weeks; replace one twin-barreled beam cannon with armmounted shudder lance (Fire Arc All; Melee; Damage 5; Critical 3; Range [Engaged]; {@quality Accurate|Accurate 1|crb}, {@quality Breach|Breach 2|crb}, {@quality Superior||crb})."
+                        "Increase speed to 3; reduce armor to 2; increase consumables to 2 weeks; replace one twin-barreled beam cannon with arm-mounted shudder lance (Fire Arc All; Melee; Damage 5; Critical 3; Range [Engaged]; {@quality Accurate|Accurate 1|crb}, {@quality Breach|Breach 2|crb}, {@quality Superior||crb})."
                      ]
                   }
                ]
@@ -21027,6 +21185,11 @@
                      "name": "Guided",
                      "ranks": 4,
                      "source": "crb"
+                  },
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 2,
+                     "source": "crb"
                   }
                ],
                "details": "When the {@quality Blast||crb} item quality is triggered, all characters within medium range suffer one hit; may not be used against targets within long range."
@@ -21120,7 +21283,8 @@
                   },
                   {
                      "name": "Slow-Firing",
-                     "source": "crb"
+                     "source": "crb",
+                     "ranks": 1
                   }
                ],
                "details": "May not be used against targets within short range."
@@ -21293,7 +21457,7 @@
             }
          ],
          "description": [
-            "The largest of the {@rule Nekro Virus|Nekro's} ground-based machines, Mordreds have a hulking armored form that inspires fear and terror in anyone forced to stand against one. Each controlled by three virus AIs, Mordreds seek out enemy vehicles to destroy at a distance or cleave through up close with their vicious scythelike limbs. Once they deal with any armored opposition, they join their smaller counterparts in slaughtering any organics still alive."
+            "The largest of the {@rule Nekro Virus|Nekro's} ground-based machines, Mordreds have a hulking armored form that inspires fear and terror in anyone forced to stand against one. Each controlled by three virus AIs, Mordreds seek out enemy vehicles to destroy at a distance or cleave through up close with their vicious scythe-like limbs. Once they deal with any armored opposition, they join their smaller counterparts in slaughtering any organics still alive."
          ]
       },
       {
@@ -21964,7 +22128,7 @@
                "forceTitleLevel": 5,
                "entries": [
                   {
-                     "title": "Sol F5 Hurrican Mk5",
+                     "title": "Sol F5 Hurricane Mk5",
                      "entries": [
                         "Change FTL range/speed to medium/slow; increase price to 48,000 aurei; replace beam cannon with twin light assault cannon (Fire Arc Forward; {@skill Gunnery||crb}; Damage 3; Critical 4; Range [Medium]; {@quality Accurate|Accurate 1|crb}, {@quality Auto-fire||crb}); replace anti-ship missiles and seeker missiles with lightning mass driver warhead system (Fire Arc Forward; {@skill Gunnery||crb}; Damage 6; Critical 4; Range [Medium]; {@quality Linked|Linked 5|crb}; after firing, this weapon runs out of ammo and must be reloaded at a base or {@vehicle carrier})."
                      ]
@@ -22206,11 +22370,11 @@
          "abilities": [
             {
                "name": "Demonship 1/2",
-               "description": "This vessel is a living creature with a singular consciousness. The consciousness acts like a character during structured encounters, but it cannot leave the ship. It also does not have a wound threshold; physical attacks and effects that inflict wounds have no effect on the consciousness. When the consciousness takes its turn, it may perform one attack with each of its weapons."
+               "description": "This vessel is a living creature with a singular consciousness. The consciousness acts like a character during structured encounters, but it cannot leave the ship. It also does not have a wound threshold; physical attacks and effects that inflict wounds have no effect on the consciousness."
             },
             {
                "name": "Demonship 2/2",
-               "description": "The consciousness counts as having a rating of 3 in all characteristics. It also has ranks in the following skills: {@skill Cool|Cool 1|crb}, {@skill Brawl|Brawl 4|crb}, {@skill Gunnery|Gunnery 4|crb}, {@skill Operating|Operating 5|crb}, {@skill Vigilance|Vigilance 4|crb}. It does not have a strain threshold, but it may perform additional maneuvers (the ship suffers 2 system strain when it does so). If the ship exceeds its system strain threshold, then the consciousness is incapacitated."
+               "description": "The consciousness counts as having a rating of 3 in all characteristics. It also has ranks in the following skills: {@skill Cool|Cool 1|crb}, {@skill Gunnery|Gunnery 3|crb}, {@skill Vigilance|Vigilance 3|crb}. It does not have a strain threshold, but it may perform additional maneuvers (the ship suffers 2 system strain when it does so). If the ship exceeds its system strain threshold, then the consciousness is incapacitated."
             }
          ],
          "weapons": [
@@ -22319,7 +22483,7 @@
             }
          ],
          "description": [
-            "These FTL-capable fighters are constructed from an array of carefully shaped crystals held in place by a rugged aerospace frame, hence the \"hybrid\" moniker. The crystals enhance the telepathic ability of the {@archetype Naalu} pilot to aid in combat. The hostile intent of an enemy pilot is sensed by the {@archetype Naalu}, warning them to juke out of the way of incoming fire. The {@archetype Naalu} pilot is also able to sense the thoughts of their targets, enabling them to predict in which direction their quarry will attempt to evade them."
+            "These FTL-capable fighters are constructed from an array of carefully shaped crystals held in place by a rugged aerospace frame, hence the \"hybrid\" moniker. The crystals enhance the telepathic ability of the {@archetype Druaa|Naalu} pilot to aid in combat. The hostile intent of an enemy pilot is sensed by the {@archetype Druaa|Naalu}, warning them to juke out of the way of incoming fire. The {@archetype Druaa|Naalu} pilot is also able to sense the thoughts of their targets, enabling them to predict in which direction their quarry will attempt to evade them."
          ]
       },
       {
@@ -23433,7 +23597,7 @@
                   {
                      "title": "{@vehicle carrier (Naalu Aethersong Carrier)|Naalu Aethersong Carrier}",
                      "entries": [
-                        "Increase handling to -2; increase defense to 3; reduce hull trauma threshold to 65; increase price to 3,000,000 aurei; gain the Mindlink Node vehicle special rule (all {@rule Naalu|Naalu Collective} starfighter pilots within extreme range of the Aethersong Carrier add {@dice boost} to {@skill Piloting||crb} and {@skill Gunnery||crb} checks they make and can communicate with each other telepathically)."
+                        "Increase handling to -2; increase defense to 3; reduce hull trauma threshold to 65; increase price to 3,000,000 aurei; gain the Mindlink Node vehicle special rule (all {@rule Naalu Collective|Naalu} starfighter pilots within extreme range of the Aethersong Carrier add {@dice boost} to {@skill Piloting||crb} and {@skill Gunnery||crb} checks they make and can communicate with each other telepathically)."
                      ]
                   },
                   {
@@ -23580,7 +23744,7 @@
             },
             {
                "name": "Mindlink Node",
-               "description": "All {@rule Naalu|Naalu Collective} starfighter pilots within extreme range of the Aethersong Carrier add {@dice boost} to {@skill Piloting||crb} and {@skill Gunnery||crb} checks they make and can communicate with each other telepathically)."
+               "description": "All {@rule Naalu Collective|Naalu} starfighter pilots within extreme range of the Aethersong Carrier add {@dice boost} to {@skill Piloting||crb} and {@skill Gunnery||crb} checks they make and can communicate with each other telepathically."
             }
          ],
          "weapons": [
@@ -23618,7 +23782,7 @@
                   {
                      "title": "Naalu Aethersong Carrier",
                      "entries": [
-                        "Increase handling to -2; increase defense to 3; reduce hull trauma threshold to 65; increase price to 3,000,000 aurei; gain the Mindlink Node vehicle special rule (all {@archetype Naalu} starfighter pilots within extreme range of the Aethersong Carrier add {@dice boost} to {@skill Piloting||crb} and {@skill Gunnery||crb} checks they make and can communicate with each other telepathically)."
+                        "Increase handling to -2; increase defense to 3; reduce hull trauma threshold to 65; increase price to 3,000,000 aurei; gain the Mindlink Node vehicle special rule (all {@archetype Druaa|Naalu} starfighter pilots within extreme range of the Aethersong Carrier add {@dice boost} to {@skill Piloting||crb} and {@skill Gunnery||crb} checks they make and can communicate with each other telepathically)."
                      ]
                   }
                ]
@@ -23643,7 +23807,7 @@
          "complement": "200 officers and crew",
          "passengers": "500 soldiers (increase to 2,000 soldiers and 10 {@vehicle light mech|light mechs} or {@vehicle rambler|ramblers} if the {@vehicle interceptor starfighter|interceptors} and {@vehicle escort fighter|escort fighters} are removed)",
          "consumables": "6 months",
-         "encumbranceCapacity": "1,000; plus 24 {@vehicle interceptor starfighter|interceptors}, 66 {@vehicle escort fighter|escort fighters}, 8 {@vehicle combat dropship|dropships}, and 4 {@vehicle shuttle|shuttles}",
+         "encumbranceCapacity": "1,000; plus 54 {@vehicle interceptor starfighter|interceptors}, 36 {@vehicle escort fighter|escort fighters}, 8 {@vehicle combat dropship|dropships}, and 4 {@vehicle shuttle|shuttles}",
          "ftlRange": "Extreme",
          "ftlSpeed": "slow",
          "price": 3500000,
@@ -23659,7 +23823,7 @@
                "description": "When making an attack targeting this vehicle, the Critical rating of any weapons used counts as 2 higher."
             },
             {
-               "name": "Defense Sport Cloud",
+               "name": "Defense Spore Cloud",
                "description": "All non-Arborec pilots within medium range of the carrier add {@symbols fh} to all {@skill Piloting||crb} and {@skill Gunnery||crb} checks they make."
             }
          ],
@@ -23817,7 +23981,7 @@
          },
          "complement": "20 officers and crew",
          "passengers": "15",
-         "consumables": "4 monhs",
+         "consumables": "4 months",
          "encumbranceCapacity": "100, plus 1 {@vehicle shuttle}",
          "ftlRange": "Medium",
          "ftlSpeed": "fast",
@@ -23932,7 +24096,7 @@
             }
          ],
          "description": [
-            "Destroyers are a collective term for fast, maneuverable, FTLcapable escort warships. They are bigger than corvettes but smaller than cruisers, usually with a length or width of one to two hundred meters. Traditionally they serve as escorts or picket line defenders, shielding vulnerable ships from enemy flankers.",
+            "Destroyers are a collective term for fast, maneuverable, FTL-capable escort warships. They are bigger than corvettes but smaller than cruisers, usually with a length or width of one to two hundred meters. Traditionally they serve as escorts or picket line defenders, shielding vulnerable ships from enemy flankers.",
             "Typically, destroyers perform two roles: harassing larger warships with torpedoes and seeing off starfighters with their considerable antifighter weaponry. Destroyers can be overwhelmed by large swarms of starfighters, but they are likely to eliminate many of them in the process. However, most destroyers stand little chance by themselves against cruisers or larger warships. Generally, this means the only times destroyers operate independently of larger warships is on scouting missions or when escorting convoys, where their armament is sufficient to deal with most pirates.",
             {
                "title": "Alternate Variants",
@@ -23977,7 +24141,7 @@
          },
          "complement": "20 officers and crew",
          "passengers": "15",
-         "consumables": "4 monhs",
+         "consumables": "4 months",
          "encumbranceCapacity": "100, plus 1 {@vehicle shuttle}",
          "ftlRange": "Medium",
          "ftlSpeed": "fast",
@@ -24105,7 +24269,7 @@
             }
          ],
          "description": [
-            "Destroyers are a collective term for fast, maneuverable, FTLcapable escort warships. They are bigger than corvettes but smaller than cruisers, usually with a length or width of one to two hundred meters. Traditionally they serve as escorts or picket line defenders, shielding vulnerable ships from enemy flankers.",
+            "Destroyers are a collective term for fast, maneuverable, FTL-capable escort warships. They are bigger than corvettes but smaller than cruisers, usually with a length or width of one to two hundred meters. Traditionally they serve as escorts or picket line defenders, shielding vulnerable ships from enemy flankers.",
             "Typically, destroyers perform two roles: harassing larger warships with torpedoes and seeing off starfighters with their considerable antifighter weaponry. Destroyers can be overwhelmed by large swarms of starfighters, but they are likely to eliminate many of them in the process. However, most destroyers stand little chance by themselves against cruisers or larger warships. Generally, this means the only times destroyers operate independently of larger warships is on scouting missions or when escorting convoys, where their armament is sufficient to deal with most pirates.",
             {
                "title": "Alternate Variants",
@@ -24127,7 +24291,7 @@
          "variant": true,
          "silhouette": 5,
          "maxSpeed": 4,
-         "handling": 1,
+         "handling": -1,
          "defense": 2,
          "armor": 4,
          "htt": 45,
@@ -24138,7 +24302,7 @@
          },
          "complement": "20 officers and crew",
          "passengers": "15",
-         "consumables": "4 monhs",
+         "consumables": "4 months",
          "encumbranceCapacity": "100, plus 1 {@vehicle shuttle}",
          "ftlRange": "Medium",
          "ftlSpeed": "fast",
@@ -24230,7 +24394,7 @@
             }
          ],
          "description": [
-            "Destroyers are a collective term for fast, maneuverable, FTLcapable escort warships. They are bigger than corvettes but smaller than cruisers, usually with a length or width of one to two hundred meters. Traditionally they serve as escorts or picket line defenders, shielding vulnerable ships from enemy flankers.",
+            "Destroyers are a collective term for fast, maneuverable, FTL-capable escort warships. They are bigger than corvettes but smaller than cruisers, usually with a length or width of one to two hundred meters. Traditionally they serve as escorts or picket line defenders, shielding vulnerable ships from enemy flankers.",
             "Typically, destroyers perform two roles: harassing larger warships with torpedoes and seeing off starfighters with their considerable antifighter weaponry. Destroyers can be overwhelmed by large swarms of starfighters, but they are likely to eliminate many of them in the process. However, most destroyers stand little chance by themselves against cruisers or larger warships. Generally, this means the only times destroyers operate independently of larger warships is on scouting missions or when escorting convoys, where their armament is sufficient to deal with most pirates.",
             {
                "title": "Alternate Variants",
@@ -24263,7 +24427,7 @@
          },
          "complement": "20 officers and crew",
          "passengers": "40",
-         "consumables": "4 monhs",
+         "consumables": "4 months",
          "encumbranceCapacity": "50, plus 2 {@vehicle interceptor starfighter|interceptor starfighters} and 1 {@vehicle combat dropship|dropship}",
          "ftlRange": "Medium",
          "ftlSpeed": "very fast",
@@ -24378,7 +24542,7 @@
             }
          ],
          "description": [
-            "Destroyers are a collective term for fast, maneuverable, FTLcapable escort warships. They are bigger than corvettes but smaller than cruisers, usually with a length or width of one to two hundred meters. Traditionally they serve as escorts or picket line defenders, shielding vulnerable ships from enemy flankers.",
+            "Destroyers are a collective term for fast, maneuverable, FTL-capable escort warships. They are bigger than corvettes but smaller than cruisers, usually with a length or width of one to two hundred meters. Traditionally they serve as escorts or picket line defenders, shielding vulnerable ships from enemy flankers.",
             "Typically, destroyers perform two roles: harassing larger warships with torpedoes and seeing off starfighters with their considerable antifighter weaponry. Destroyers can be overwhelmed by large swarms of starfighters, but they are likely to eliminate many of them in the process. However, most destroyers stand little chance by themselves against cruisers or larger warships. Generally, this means the only times destroyers operate independently of larger warships is on scouting missions or when escorting convoys, where their armament is sufficient to deal with most pirates.",
             {
                "title": "Alternate Variants",
@@ -24413,7 +24577,7 @@
          "passengers": "10",
          "consumables": "6 weeks",
          "encumbranceCapacity": 100,
-         "ftlRange": "Long",
+         "ftlRange": "Short",
          "ftlSpeed": "fast",
          "price": 135500,
          "rarity": 6,
@@ -24532,7 +24696,7 @@
          "passengers": "10",
          "consumables": "2 weeks",
          "encumbranceCapacity": 50,
-         "ftlRange": "Long",
+         "ftlRange": "Short",
          "ftlSpeed": "fast",
          "price": 135500,
          "rarity": 6,
@@ -24639,7 +24803,7 @@
          "passengers": "10",
          "consumables": "6 weeks",
          "encumbranceCapacity": 100,
-         "ftlRange": "Long",
+         "ftlRange": "Short",
          "ftlSpeed": "fast",
          "price": 140000,
          "rarity": 6,
@@ -24741,7 +24905,7 @@
          "passengers": "10",
          "consumables": "6 weeks",
          "encumbranceCapacity": "100, plus 1 {@vehicle interceptor starfighter}",
-         "ftlRange": "Long",
+         "ftlRange": "Short",
          "ftlSpeed": "fast",
          "price": 135500,
          "rarity": 6,
@@ -24845,7 +25009,7 @@
             "source": "crb"
          },
          "complement": "200 officers and crew",
-         "passengers": "200 passengers and soldier",
+         "passengers": "200 passengers and soldiers",
          "consumables": "8 months",
          "encumbranceCapacity": "400, plus 12 {@vehicle interceptor starfighter|interceptors} or {@vehicle escort fighter|escort fighters}, 3 {@vehicle shuttle|shuttles}, and 2 {@vehicle combat dropship|dropships}",
          "ftlRange": "Medium",
@@ -24866,7 +25030,7 @@
          "weapons": [
             {
                "name": "1 forward, 1 port, and 1 starboard triple capital-grade beam turret",
-               "fireArc": "Forward, Port, and Starboard",
+               "fireArc": "Forward, Port, and Starboard, or Forward and Port, or Forward and Starboard",
                "skill": {
                   "name": "Gunnery",
                   "source": "crb"
@@ -24943,7 +25107,7 @@
             }
          ],
          "description": [
-            "Dreadnoughts are the core of any major battlefleet. Huge, dangerous, and ruinously expensive to build and operate, these are prestige ships for most of the Great Civilizations. The major powers of the galaxy maintain their fleets of dreadnoughts to intimidate and deter their foes. Ironically, this, plus their extensive cost, means most navies tend to carefully husband these vessels, keeping them in \"home\" or \"reserve\" fleets unless fullfledged war breaks out and leaving cruisers and destroyers to do most of the real work of maintaining an interstellar empire.",
+            "Dreadnoughts are the core of any major battlefleet. Huge, dangerous, and ruinously expensive to build and operate, these are prestige ships for most of the Great Civilizations. The major powers of the galaxy maintain their fleets of dreadnoughts to intimidate and deter their foes. Ironically, this, plus their extensive cost, means most navies tend to carefully husband these vessels, keeping them in \"home\" or \"reserve\" fleets unless full-fledged war breaks out and leaving cruisers and destroyers to do most of the real work of maintaining an interstellar empire.",
             "All dreadnoughts are built around powerful weapons. They carry the heaviest of the capital-grade weapons, which includes basically any guns lethal enough to crack the hulls of other battle line warships (or any smaller ships that stray into range). Dreadnoughts protect this with the thickest armor and most powerful shields a ship can carry, and they also carry a squadron or two of starfighters and some missile batteries for antifighter and ground bombardment work.",
             "However, all the firepower, armor, and defensive systems come at a price. Dreadnoughts are slow, relatively, and do not have the sheer range or stamina of a cruiser. Battle lines of dreadnoughts tend to be unwieldy, clumsy formations, their only saving grace being the sheer bloody power at their disposal.",
             {
@@ -24965,7 +25129,7 @@
                   {
                      "title": "{@vehicle dreadnought (N'orr Exotrireme)|N'orr Exotrireme}",
                      "entries": [
-                        "Increase price to 18,000,000 aurei; replace all triple capitalgrade beam turrets with 4 port and 4 starboard capital-grade plasma batteries (Fire Arc Port or Fire Arc Starboard; Damage 15; Critical 2; Range [Extreme]; {@quality Burn|Burn 1|crb}; when attacking a target of silhouette 4 or smaller, increase difficulty by 1); gain the Ram vehicle special rule (when the exotrireme deliberately collides with another ship [see {@rule collisions||crb} on page 222 of the {@title Genesys} Core Rulebook], the other ship suffers 30 damage to its hull trauma threshold and adds +40 to the Critical Hit result it suffers; the exotrireme reduces the result of the Critical Hit it suffers by 20)."
+                        "Increase price to 18,000,000 aurei; replace all triple capital-grade beam turrets with 4 port and 4 starboard capital-grade plasma batteries (Fire Arc Port or Fire Arc Starboard; Damage 15; Critical 2; Range [Extreme]; {@quality Burn|Burn 1|crb}; when attacking a target of silhouette 4 or smaller, increase difficulty by 1); gain the Ram vehicle special rule (when the exotrireme deliberately collides with another ship [see {@rule collisions||crb} on page 222 of the {@title Genesys} Core Rulebook], the other ship suffers 30 damage to its hull trauma threshold and adds +40 to the Critical Hit result it suffers; the exotrireme reduces the result of the Critical Hit it suffers by 20)."
                      ]
                   }
                ]
@@ -24988,7 +25152,7 @@
             "source": "crb"
          },
          "complement": "200 officers and crew",
-         "passengers": "200 passengers and soldier",
+         "passengers": "200 passengers and soldiers",
          "consumables": "8 months",
          "encumbranceCapacity": "400, plus 12 {@vehicle interceptor starfighter|interceptors} or {@vehicle escort fighter|escort fighters}, 3 {@vehicle shuttle|shuttles}, and 2 {@vehicle combat dropship|dropships}",
          "ftlRange": "Medium",
@@ -25009,7 +25173,7 @@
          "weapons": [
             {
                "name": "1 forward, 1 port, and 1 starboard triple capital-grade beam turret",
-               "fireArc": "Forward, Port, and Starboard",
+               "fireArc": "Forward, Port, and Starboard, or Forward and Port, or Forward and Starboard",
                "skill": {
                   "name": "Gunnery",
                   "source": "crb"
@@ -25081,7 +25245,7 @@
             }
          ],
          "description": [
-            "Dreadnoughts are the core of any major battlefleet. Huge, dangerous, and ruinously expensive to build and operate, these are prestige ships for most of the Great Civilizations. The major powers of the galaxy maintain their fleets of dreadnoughts to intimidate and deter their foes. Ironically, this, plus their extensive cost, means most navies tend to carefully husband these vessels, keeping them in \"home\" or \"reserve\" fleets unless fullfledged war breaks out and leaving cruisers and destroyers to do most of the real work of maintaining an interstellar empire.",
+            "Dreadnoughts are the core of any major battlefleet. Huge, dangerous, and ruinously expensive to build and operate, these are prestige ships for most of the Great Civilizations. The major powers of the galaxy maintain their fleets of dreadnoughts to intimidate and deter their foes. Ironically, this, plus their extensive cost, means most navies tend to carefully husband these vessels, keeping them in \"home\" or \"reserve\" fleets unless full-fledged war breaks out and leaving cruisers and destroyers to do most of the real work of maintaining an interstellar empire.",
             "All dreadnoughts are built around powerful weapons. They carry the heaviest of the capital-grade weapons, which includes basically any guns lethal enough to crack the hulls of other battle line warships (or any smaller ships that stray into range). Dreadnoughts protect this with the thickest armor and most powerful shields a ship can carry, and they also carry a squadron or two of starfighters and some missile batteries for antifighter and ground bombardment work.",
             "However, all the firepower, armor, and defensive systems come at a price. Dreadnoughts are slow, relatively, and do not have the sheer range or stamina of a cruiser. Battle lines of dreadnoughts tend to be unwieldy, clumsy formations, their only saving grace being the sheer bloody power at their disposal.",
             {
@@ -25114,7 +25278,7 @@
             "source": "crb"
          },
          "complement": "200 officers and crew",
-         "passengers": "200 passengers and soldier",
+         "passengers": "200 passengers and soldiers",
          "consumables": "8 months",
          "encumbranceCapacity": "400, plus 36 {@vehicle interceptor starfighter|interceptors} or {@vehicle escort fighter|escort fighters}, 3 {@vehicle shuttle|shuttles}, and 2 {@vehicle combat dropship|dropships}",
          "ftlRange": "Medium",
@@ -25135,7 +25299,7 @@
          "weapons": [
             {
                "name": "1 forward, 1 port, and 1 starboard triple capital-grade beam turret",
-               "fireArc": "Forward, Port, and Starboard",
+               "fireArc": "Forward, Port, and Starboard, or Forward and Port, or Forward and Starboard",
                "skill": {
                   "name": "Gunnery",
                   "source": "crb"
@@ -25212,7 +25376,7 @@
             }
          ],
          "description": [
-            "Dreadnoughts are the core of any major battlefleet. Huge, dangerous, and ruinously expensive to build and operate, these are prestige ships for most of the Great Civilizations. The major powers of the galaxy maintain their fleets of dreadnoughts to intimidate and deter their foes. Ironically, this, plus their extensive cost, means most navies tend to carefully husband these vessels, keeping them in \"home\" or \"reserve\" fleets unless fullfledged war breaks out and leaving cruisers and destroyers to do most of the real work of maintaining an interstellar empire.",
+            "Dreadnoughts are the core of any major battlefleet. Huge, dangerous, and ruinously expensive to build and operate, these are prestige ships for most of the Great Civilizations. The major powers of the galaxy maintain their fleets of dreadnoughts to intimidate and deter their foes. Ironically, this, plus their extensive cost, means most navies tend to carefully husband these vessels, keeping them in \"home\" or \"reserve\" fleets unless full-fledged war breaks out and leaving cruisers and destroyers to do most of the real work of maintaining an interstellar empire.",
             "All dreadnoughts are built around powerful weapons. They carry the heaviest of the capital-grade weapons, which includes basically any guns lethal enough to crack the hulls of other battle line warships (or any smaller ships that stray into range). Dreadnoughts protect this with the thickest armor and most powerful shields a ship can carry, and they also carry a squadron or two of starfighters and some missile batteries for antifighter and ground bombardment work.",
             "However, all the firepower, armor, and defensive systems come at a price. Dreadnoughts are slow, relatively, and do not have the sheer range or stamina of a cruiser. Battle lines of dreadnoughts tend to be unwieldy, clumsy formations, their only saving grace being the sheer bloody power at their disposal.",
             {
@@ -25245,7 +25409,7 @@
             "source": "crb"
          },
          "complement": "200 officers and crew",
-         "passengers": "200 passengers and soldier",
+         "passengers": "200 passengers and soldiers",
          "consumables": "8 months",
          "encumbranceCapacity": "400, plus 12 {@vehicle interceptor starfighter|interceptors} or {@vehicle escort fighter|escort fighters}, 3 {@vehicle shuttle|shuttles}, and 2 {@vehicle combat dropship|dropships}",
          "ftlRange": "Medium",
@@ -25337,7 +25501,7 @@
             }
          ],
          "description": [
-            "Dreadnoughts are the core of any major battlefleet. Huge, dangerous, and ruinously expensive to build and operate, these are prestige ships for most of the Great Civilizations. The major powers of the galaxy maintain their fleets of dreadnoughts to intimidate and deter their foes. Ironically, this, plus their extensive cost, means most navies tend to carefully husband these vessels, keeping them in \"home\" or \"reserve\" fleets unless fullfledged war breaks out and leaving cruisers and destroyers to do most of the real work of maintaining an interstellar empire.",
+            "Dreadnoughts are the core of any major battlefleet. Huge, dangerous, and ruinously expensive to build and operate, these are prestige ships for most of the Great Civilizations. The major powers of the galaxy maintain their fleets of dreadnoughts to intimidate and deter their foes. Ironically, this, plus their extensive cost, means most navies tend to carefully husband these vessels, keeping them in \"home\" or \"reserve\" fleets unless full-fledged war breaks out and leaving cruisers and destroyers to do most of the real work of maintaining an interstellar empire.",
             "All dreadnoughts are built around powerful weapons. They carry the heaviest of the capital-grade weapons, which includes basically any guns lethal enough to crack the hulls of other battle line warships (or any smaller ships that stray into range). Dreadnoughts protect this with the thickest armor and most powerful shields a ship can carry, and they also carry a squadron or two of starfighters and some missile batteries for antifighter and ground bombardment work.",
             "However, all the firepower, armor, and defensive systems come at a price. Dreadnoughts are slow, relatively, and do not have the sheer range or stamina of a cruiser. Battle lines of dreadnoughts tend to be unwieldy, clumsy formations, their only saving grace being the sheer bloody power at their disposal.",
             {
@@ -25347,7 +25511,7 @@
                   {
                      "title": "N'orr Exotrireme",
                      "entries": [
-                        "Increase price to 18,000,000 aurei; replace all triple capitalgrade beam turrets with 4 port and 4 starboard capital-grade plasma batteries (Fire Arc Port or Fire Arc Starboard; Damage 15; Critical 2; Range [Extreme]; {@quality Burn|Burn 1|crb}; when attacking a target of silhouette 4 or smaller, increase difficulty by 1); gain the Ram vehicle special rule (when the exotrireme deliberately collides with another ship [see {@rule collisions||crb} on page 222 of the {@title Genesys} Core Rulebook], the other ship suffers 30 damage to its hull trauma threshold and adds +40 to the Critical Hit result it suffers; the exotrireme reduces the result of the Critical Hit it suffers by 20)."
+                        "Increase price to 18,000,000 aurei; replace all triple capital-grade beam turrets with 4 port and 4 starboard capital-grade plasma batteries (Fire Arc Port or Fire Arc Starboard; Damage 15; Critical 2; Range [Extreme]; {@quality Burn|Burn 1|crb}; when attacking a target of silhouette 4 or smaller, increase difficulty by 1); gain the Ram vehicle special rule (when the exotrireme deliberately collides with another ship [see {@rule collisions||crb} on page 222 of the {@title Genesys} Core Rulebook], the other ship suffers 30 damage to its hull trauma threshold and adds +40 to the Critical Hit result it suffers; the exotrireme reduces the result of the Critical Hit it suffers by 20)."
                      ]
                   }
                ]
@@ -25550,7 +25714,7 @@
                   {
                      "title": "{@vehicle cruiser (Mentak Coalition Corsair-class Cruiser)|Mentak Coalition Corsair-class Cruiser}",
                      "entries": [
-                        "Increase handling to 0; increase defense to 3; reduce armor to 4; change FTL range/speed to extreme/very fast; cruiser now carries 6 {@vehicle interceptor starfigher|interceptor starfighters}; reduce price to 3,100,000 aurei."
+                        "Increase handling to 0; increase defense to 3; reduce armor to 4; change FTL range/speed to extreme/very fast; cruiser now carries 6 {@vehicle Interceptor Starfighter|interceptor starfighters}; reduce price to 3,100,000 aurei."
                      ]
                   },
                   {
@@ -25791,7 +25955,7 @@
                   {
                      "title": "Mentak Coalition Corsair-class Cruiser",
                      "entries": [
-                        "Increase handling to 0; increase defense to 3; reduce armor to 4; change FTL range/speed to extreme/very fast; cruiser now carries 6 {@vehicle interceptor starfigher|interceptor starfighters}; reduce price to 3,100,000 aurei."
+                        "Increase handling to 0; increase defense to 3; reduce armor to 4; change FTL range/speed to extreme/very fast; cruiser now carries 6 {@vehicle Interceptor Starfighter|interceptor starfighters}; reduce price to 3,100,000 aurei."
                      ]
                   }
                ]
@@ -25864,7 +26028,7 @@
                "details": "When attacking a target of silhouette 4 or smaller, increase difficulty by 1; may not be used against targets within medium range."
             },
             {
-               "name": "1 prow capital-grade beam turrets",
+               "name": "1 prow capital-grade beam turret",
                "fireArc": "Forward and Port, or Forward and Starboard",
                "skill": {
                   "name": "Gunnery",
@@ -25988,7 +26152,7 @@
                "name": "Gaping maw",
                "fireArc": "Forward",
                "skill": {
-                  "name": "Gunnery",
+                  "name": "Brawl",
                   "source": "crb"
                },
                "damage": 30,
@@ -26009,7 +26173,7 @@
                   "name": "Brawl",
                   "source": "crb"
                },
-               "damage": 12,
+               "damage": 13,
                "critical": 4,
                "range": "Medium",
                "details": "May spend {@symbols t} on a successful combat check to have all enemy ships within range suffer one hit from this attack, dealing base damage + 1 per {@symbols s}."

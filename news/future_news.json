@@ -1,1 +1,6 @@
-[]
+[
+   {
+      "date": "January 2026",
+      "message": "The {@genesysref /homebrew-builder|Homebrew Builder} is now available! Easily create Genesys Ref data with the handy user interface and share it with your friends and the community!"
+   }
+]

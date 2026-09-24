@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2025.12.7",
+         "version": "2026.09.21",
          "json": "shadow-of-the-beanstalk",
          "full": "Android: Shadow of the Beanstalk",
          "abbreviation": "SotB",
@@ -23,15 +23,12 @@
          ],
          "optionFeatureType": [
             "ice",
-            "icebreaker",
-            "attachment"
+            "icebreaker"
          ],
          "optionFeatureClass": [
             "barrier",
             "sentry",
-            "code gate",
-            "armor",
-            "weapon"
+            "code gate"
          ]
       },
       "defaultItemSettings": [
@@ -162,13 +159,12 @@
                "source": "crb"
             }
          ],
-         "talents": [
+         "talents": [],
+         "abilities": [
             {
                "name": "Natural",
-               "source": "crb"
-            }
-         ],
-         "abilities": [
+               "description": "Once per session, may reroll any one {@skill Charm||crb} or {@skill Cool||crb} check."
+            },
             "Bioroid"
          ],
          "weapons": [],
@@ -176,7 +172,7 @@
             "Fuzzy restraints"
          ],
          "description": [
-            "Pleasure bioroids are an attempt by Haas-Bioroid to move their products into the entertainment markets. Unlike most bioroids, Adonis, Eve, and to a certain extent, the cheaper Kevin- and Lisa-models, are built to appear as human as possible. Many nightclubs and other high-end social spaces employ luxury-model Adonis or Eve units to “entertain” their customers, while in seedier areas of New Angeles, pleasure bioroids sate humanity's basest instincts."
+            "Pleasure bioroids are an attempt by Haas-Bioroid to move their products into the entertainment markets. Unlike most bioroids, Adonis, Eve, and to a certain extent, the cheaper Kevin- and Lisa-models, are built to appear as human as possible. Many nightclubs and other high-end social spaces employ luxury-model Adonis or Eve units to \"entertain\" their customers, while in seedier areas of New Angeles, pleasure bioroids sate humanity's basest instincts."
          ],
          "tags": [
             "source:SotB",
@@ -473,7 +469,7 @@
                "qualities": [
                   {
                      "name": "Blast",
-                     "ranks": 1,
+                     "ranks": 10,
                      "source": "crb"
                   },
                   {
@@ -556,7 +552,7 @@
             {
                "name": "Charm",
                "characteristic": "presence",
-               "ranks": 2,
+               "ranks": 3,
                "source": "crb"
             },
             {
@@ -605,14 +601,14 @@
          "talents": [
             {
                "name": "Adversary 1",
-               "source": "Crb"
-            },
-            {
-               "name": "Natural",
                "source": "crb"
             }
          ],
          "abilities": [
+            {
+               "name": "Natural",
+               "description": "Once per session, may reroll any one {@skill Coercion||crb} or {@skill Negotiation||crb} check."
+            },
             "Full Weight of the Law"
          ],
          "weapons": [
@@ -698,7 +694,7 @@
          "abilities": [
             "Early Warning",
             "Flyer",
-            "Construct",
+            "Mechanical",
             "Silhouette 0",
             "Telepresence"
          ],
@@ -734,7 +730,7 @@
             "intellect": 4,
             "cunning": 2,
             "willpower": 5,
-            "presence": 4
+            "presence": 2
          },
          "derived": {
             "soak": 2,
@@ -860,7 +856,8 @@
                "name": "science fiction",
                "source": "crb"
             }
-         ]
+         ],
+         "page": 171
       },
       {
          "name": "Civic Brigadier",
@@ -878,7 +875,7 @@
             "soak": 3,
             "wounds": 4,
             "defense": [
-               0,
+               1,
                0
             ]
          },
@@ -1026,7 +1023,7 @@
                "name": "Clever Retort",
                "source": "crb"
             },
-            "Customer Service Experience"
+            "Customer Service Experience 3"
          ],
          "abilities": [
             "Threat of Ban"
@@ -1114,7 +1111,7 @@
          "abilities": [
             "Flyer",
             "Focus Fire",
-            "Construct",
+            "Mechanical",
             "Silhouette 0",
             "Telepresence"
          ],
@@ -1786,7 +1783,7 @@
          ],
          "gear": [
             "Concealed Buckyweave Clothing: 1 defense, +1 soak.",
-            "Sub-dermal armor, enhanced reflexes, cybernetic lungs, 2 snap locks, PAD full of warrants"
+            "Sub-dermal armor, enhanced reflexes, cybernetic lungs, 3 snap locks, PAD full of warrants"
          ],
          "description": [
             "The NAPD has one of the largest urban jurisdictions in the worlds, and it is hopelessly unable to field enough officers to cover it. Bounty hunters pick up the slack, serving summonses and warrants and taking fugitives off the streets, especially in the undercity. Relentless trackers and fierce combatants, bounty hunters tend to favor concealed or cybernetic armaments that allow them to approach their targets without alerting them."
@@ -1873,7 +1870,7 @@
             }
          ],
          "talents": [
-            "Adversary 1"
+            {"name":"Adversary 1","source":"crb"}
          ],
          "abilities": [
             "Expert Instruction"
@@ -2073,7 +2070,7 @@
             "intellect": 2,
             "cunning": 3,
             "willpower": 3,
-            "presence": 2
+            "presence": 1
          },
          "derived": {
             "soak": 3,
@@ -2171,6 +2168,16 @@
                      "source": "crb"
                   }
                ]
+            },
+            {
+               "name": "Utility Knife",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
+               "damage": 4,
+               "critical": 4,
+               "range": "Engaged"
             }
          ],
          "gear": [
@@ -2386,10 +2393,10 @@
             {
                "name": "Adversary 2",
                "source": "crb"
-            },
-            "Drone Master"
+            }
          ],
          "abilities": [
+            "Drone Master",
             "Pit Trap Programs"
          ],
          "weapons": [
@@ -2663,7 +2670,8 @@
                "name": "science fiction",
                "source": "crb"
             }
-         ]
+         ],
+         "page": 153
       },
       {
          "name": "G-Mod Bodyguard",
@@ -2953,14 +2961,14 @@
          ],
          "talents": [],
          "abilities": [
-            "Construct",
+            "Mechanical",
             "Impressively Flexible",
             "Catlike",
             "Silhouette 0"
          ],
          "weapons": [
             {
-               "name": "Titanium claw",
+               "name": "Titanium claws",
                "skill": {
                   "name": "Brawl",
                   "source": "crb"
@@ -3267,7 +3275,7 @@
          "talents": [],
          "abilities": [
             "Flyer",
-            "Construct",
+            "Mechanical",
             "Telepresence"
          ],
          "weapons": [
@@ -3299,7 +3307,7 @@
                "qualities": [
                   {
                      "name": "Blast",
-                     "ranks": 1,
+                     "ranks": 10,
                      "source": "crb"
                   },
                   {
@@ -3324,6 +3332,11 @@
                "critical": 2,
                "range": "Extreme",
                "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 5,
+                     "source": "crb"
+                  },
                   {
                      "name": "Breach",
                      "ranks": 2,
@@ -3439,7 +3452,7 @@
                      "source": "crb"
                   }
                ],
-               "details": "Gains Pierce 2 against prone targets."
+               "details": "Gains Pierce 5 against prone targets."
             }
          ],
          "gear": [],
@@ -3564,7 +3577,7 @@
          ],
          "abilities": [
             "Determined Hunter",
-            "Personalized Icebreaker Suit"
+            "Personalized Icebreaker Suite"
          ],
          "weapons": [
             {
@@ -3598,7 +3611,8 @@
                "name": "science fiction",
                "source": "crb"
             }
-         ]
+         ],
+         "page": 174
       },
       {
          "name": "Kati Jones",
@@ -3695,7 +3709,7 @@
          ],
          "weapons": [],
          "gear": [
-            "Flight suit, leather jacket, custom hopper (use luxury hopper profile (page 113 SotB) with encumbrance capacity 40, hopperbike"
+            "Flight suit, leather jacket, custom hopper (use luxury hopper profile on page 114 with encumbrance capacity of 40), hopperbike"
          ],
          "tags": [
             "source:SotB",
@@ -3713,7 +3727,8 @@
                "name": "science fiction",
                "source": "crb"
             }
-         ]
+         ],
+         "page": 184
       },
       {
          "name": "Liberty Society Rep",
@@ -3909,7 +3924,8 @@
                "name": "science fiction",
                "source": "crb"
             }
-         ]
+         ],
+         "page": 164
       },
       {
          "name": "Loonie Revolutionary",
@@ -3917,15 +3933,15 @@
          "type": "rival",
          "characteristics": {
             "brawn": 1,
-            "agility": 1,
-            "intellect": 3,
+            "agility": 3,
+            "intellect": 2,
             "cunning": 3,
             "willpower": 2,
             "presence": 3
          },
          "derived": {
-            "soak": 1,
-            "wounds": 9,
+            "soak": 3,
+            "wounds": 10,
             "defense": [
                0,
                0
@@ -3997,7 +4013,7 @@
             "Armored Space Suit: +2 soak"
          ],
          "description": [
-            "Despite what City Hall claims, the Lunar Insurrection still looms large in the minds of Heinlein's citizenry. Many Loonies bear an asteroid-sized grudge against Earth for the lives lost during the War and the brutal crackdowns that followed. Groups of former insurrectionists and revolutionaries still gather in out-of-the-way places like the Docklands, plotting raids and acts of violence against Heinlein’s administration and the corporations that dominate lunar life."
+            "Despite what City Hall claims, the Lunar Insurrection still looms large in the minds of Heinlein's citizenry. Many Loonies bear an asteroid-sized grudge against Earth for the lives lost during the War and the brutal crackdowns that followed. Groups of former insurrectionists and revolutionaries still gather in out-of-the-way places like the Docklands, plotting raids and acts of violence against Heinlein's administration and the corporations that dominate lunar life."
          ],
          "tags": [
             "source:SotB",
@@ -4166,7 +4182,7 @@
          ],
          "talents": [],
          "abilities": [
-            "Construct"
+            "Mechanical"
          ],
          "weapons": [
             {
@@ -4779,7 +4795,7 @@
                "damage": 5,
                "critical": 4,
                "range": "Medium",
-               "details": "As an incidental may choose to apply one of the following qualities before making an attack: {@quality Blast|Blast 4|crb}, {@quality Pierce|Pierce 2|crb}, {@quality Stun Damage||crb}."
+               "details": "As an incidental, may choose to apply one of the following qualities before making an attack: {@quality Blast|Blast 4|crb}, {@quality Pierce|Pierce 2|crb}, {@quality Stun Damage||crb}."
             }
          ],
          "gear": [
@@ -4971,7 +4987,7 @@
                "damage": 5,
                "critical": 4,
                "range": "Medium",
-               "details": "As an incidental may choose to apply one of the following qualities before making an attack: {@quality Blast|Blast 4|crb}, {@quality Pierce|Pierce 2|crb}, {@quality Stun Damage||crb}."
+               "details": "As an incidental, may choose to apply one of the following qualities before making an attack: {@quality Blast|Blast 4|crb}, {@quality Pierce|Pierce 2|crb}, {@quality Stun Damage||crb}."
             },
             {
                "name": "Stun Baton",
@@ -5230,7 +5246,7 @@
                "qualities": [
                   {
                      "name": "Cumbersome",
-                     "ranks": 2,
+                     "ranks": 3,
                      "source": "crb"
                   },
                   {
@@ -5255,7 +5271,7 @@
                "damage": 8,
                "critical": 3,
                "range": "Short",
-               "details": "As an incidental may choose to apply one of the following qualities before making an attack: {@qualiyt Blast|Blast 5|crb}, {@quality Knockdown||crb}, {@quality Stun Damage||crb}, {@quality Vicious|Vicious 2|crb}"
+               "details": "As an incidental, may choose to apply one of the following qualities before making an attack: {@quality Blast|Blast 5|crb}, {@quality Knockdown||crb}, {@quality Stun Damage||crb}, {@quality Vicious|Vicious 2|crb}"
             },
             {
                "name": "Backup Fletcher Pistol",
@@ -5351,7 +5367,7 @@
             },
             {
                "name": "Perception",
-               "characteristic": "willpower",
+               "characteristic": "cunning",
                "ranks": 2,
                "source": "crb"
             },
@@ -5382,7 +5398,7 @@
                "range": "Short",
                "qualities": [
                   {
-                     "name": "Disoriant",
+                     "name": "Disorient",
                      "ranks": 4,
                      "source": "crb"
                   },
@@ -5751,7 +5767,7 @@
             {
                "name": "Power Gauntlet",
                "skill": {
-                  "name": "Melee",
+                  "name": "Brawl",
                   "source": "crb"
                },
                "damage": 8,
@@ -5978,13 +5994,9 @@
             }
          ],
          "talents": [
-            "Burn Through",
-            {
-               "name": "Natural",
-               "source": "crb"
-            }
+            "Burn Through"
          ],
-         "abilities": [],
+         "abilities": [{"name":"Natural","description":"Once per session, may reroll one {@skill Computers (Hacking)} or {@skill Knowledge (The Net)} check."}],
          "weapons": [
             {
                "name": "Synap Pistol",
@@ -6207,6 +6219,10 @@
                   {
                      "name": "Knockdown",
                      "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
                   }
                ]
             },
@@ -6248,7 +6264,8 @@
                "name": "science fiction",
                "source": "crb"
             }
-         ]
+         ],
+         "page": 157
       },
       {
          "name": "Regulator",
@@ -6436,19 +6453,19 @@
          "page": 220,
          "type": "rival",
          "characteristics": {
-            "brawn": 3,
+            "brawn": 1,
             "agility": 2,
-            "intellect": 2,
-            "cunning": 3,
-            "willpower": 3,
-            "presence": 2
+            "intellect": 4,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 3
          },
          "derived": {
-            "soak": 3,
-            "wounds": 12,
+            "soak": 2,
+            "wounds": 11,
             "defense": [
                1,
-               1
+               0
             ]
          },
          "skills": [
@@ -6536,13 +6553,13 @@
          },
          "skills": [
             {
-               "name": "Perception",
-               "characteristic": "cunning",
+               "name": "Athletics",
+               "characteristic": "brawn",
                "source": "crb"
             },
             {
-               "name": "Vigilance",
-               "characteristic": "willpower",
+               "name": "Perception",
+               "characteristic": "cunning",
                "source": "crb"
             }
          ],
@@ -6551,7 +6568,7 @@
          ],
          "abilities": [
             "Flyer",
-            "Construct",
+            "Mechanical",
             "Telepresence"
          ],
          "weapons": [],
@@ -6590,8 +6607,8 @@
             "presence": 4
          },
          "derived": {
-            "soak": 6,
-            "wounds": 6,
+            "soak": 7,
+            "wounds": 15,
             "defense": [
                0,
                0
@@ -6673,7 +6690,7 @@
             "intellect": 4,
             "cunning": 3,
             "willpower": 1,
-            "presence": 5
+            "presence": 3
          },
          "derived": {
             "soak": 2,
@@ -6762,7 +6779,7 @@
             "brawn": 2,
             "agility": 3,
             "intellect": 4,
-            "cunning": 2,
+            "cunning": 3,
             "willpower": 5,
             "presence": 2
          },
@@ -6777,15 +6794,9 @@
          },
          "skills": [
             {
-               "name": "Brawl",
+               "name": "Athletics",
                "characteristic": "brawn",
-               "ranks": 4,
-               "source": "crb"
-            },
-            {
-               "name": "Coercion",
-               "characteristic": "willpower",
-               "ranks": 5,
+               "ranks": 2,
                "source": "crb"
             },
             {
@@ -6797,25 +6808,49 @@
             {
                "name": "Discipline",
                "characteristic": "willpower",
-               "ranks": 3,
-               "source": "crb"
-            },
-            {
-               "name": "Gunnery",
-               "characteristic": "agility",
                "ranks": 4,
                "source": "crb"
             },
             {
-               "name": "Survival",
+               "name": "Driving",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Melee",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Piloting",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
                "characteristic": "cunning",
                "ranks": 3,
                "source": "crb"
             },
             {
+               "name": "Streetwise",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
                "name": "Vigilance",
                "characteristic": "willpower",
-               "ranks": 3,
+               "ranks": 5,
                "source": "crb"
             }
          ],
@@ -6941,7 +6976,7 @@
             {
                "name": "Knowledge (Society)",
                "characteristic": "intellect",
-               "source": "crb"
+               "source": "sotb"
             },
             {
                "name": "Ranged (Light)",
@@ -6987,6 +7022,7 @@
             }
          ],
          "gear": [
+            "Bright Yellow Jacket: +1 soak",
             "Security PAD, 2 snap locks"
          ],
          "description": [
@@ -7093,7 +7129,7 @@
             "wounds": 10,
             "defense": [
                0,
-               0
+               2
             ]
          },
          "skills": [
@@ -7222,12 +7258,12 @@
             "agility": 2,
             "intellect": 1,
             "cunning": 2,
-            "willpower": 3,
+            "willpower": 1,
             "presence": 2
          },
          "derived": {
             "soak": 4,
-            "wounds": 4,
+            "wounds": 14,
             "defense": [
                0,
                0
@@ -7440,8 +7476,8 @@
             "soak": 4,
             "wounds": 16,
             "defense": [
-               0,
-               0
+               1,
+               1
             ]
          },
          "skills": [
@@ -7980,8 +8016,8 @@
          },
          "derived": {
             "soak": 2,
-            "wounds": 12,
-            "strain": 18,
+            "wounds": 10,
+            "strain": 15,
             "defense": [
                0,
                0
@@ -8316,16 +8352,16 @@
          "page": 234,
          "type": "rival",
          "characteristics": {
-            "brawn": 3,
-            "agility": 1,
-            "intellect": 1,
-            "cunning": 1,
+            "brawn": 1,
+            "agility": 2,
+            "intellect": 2,
+            "cunning": 2,
             "willpower": 1,
-            "presence": 1
+            "presence": 3
          },
          "derived": {
-            "soak": 5,
-            "wounds": 8,
+            "soak": 3,
+            "wounds": 4,
             "defense": [
                0,
                0
@@ -8366,7 +8402,7 @@
          "talents": [],
          "abilities": [
             "Edutainment",
-            "Construct"
+            "Mechanical"
          ],
          "weapons": [],
          "gear": [],
@@ -8559,13 +8595,9 @@
             {
                "name": "Daring Aviator 2",
                "source": "crb"
-            },
-            {
-               "name": "Natural",
-               "source": "crb"
             }
          ],
-         "abilities": [],
+         "abilities": [{"name":"Natural","description":"Once per session, may reroll one {@skill Athletics||crb} or {@skill Coordination||crb} check."}],
          "weapons": [
             {
                "name": "Auto-fletcher",
@@ -8917,7 +8949,7 @@
       {
          "name": "Apparent Precognition",
          "description": [
-            "Once per encounter when making a combat check, may use {@skill Discipline||crb} and {@skill Willpower||crb} instead of the normal skill and characteristic."
+            "Once per encounter when making a combat check, may use {@skill Discipline||crb} and {@characteristic Willpower||crb} instead of the normal skill and characteristic."
          ],
          "tags": [
             "combat",
@@ -9091,6 +9123,19 @@
             "action",
             "encounter",
             "movement"
+         ]
+      },
+      {
+         "name": "Drone Master",
+         "description": [
+            "This character may control up to two drone rivals or a minion group of four drone minions; may spend a maneuver to allow each rival or minion group under their control to perform an action and a maneuver during this character's turn."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "maneuver",
+            "leader",
+            "support"
          ]
       },
       {
@@ -9369,7 +9414,7 @@
          ]
       },
       {
-         "name": "Personalized Icebreaker Suit",
+         "name": "Personalized Icebreaker Suite",
          "description": [
             "Always considered to have a strength 4 icebreaker that can affect barriers, sentries, and code gates. If break ice action fails, may spend {@symbols aaaa} or {@symbols t} to not suffer any effects of failing to break ice."
          ],
@@ -9419,7 +9464,7 @@
       {
          "name": "Quiet Code",
          "description": [
-            "When making a {@skill Computer (Hacking)} check, {@symbols h} may not be spent to alert other users to this character's presence."
+            "When making a {@skill Computers (Hacking)} check, {@symbols h} may not be spent to alert other users to this character's presence."
          ],
          "tags": [
             "general",
@@ -9735,15 +9780,13 @@
          "st": 9,
          "xp": 85,
          "skills": {
-            "skills": [
-               "two ranks in two skills"
-            ],
+            "skills": [],
             "ranksTotal": 4,
             "ranksEach": 2,
             "description": [
                "A clone starts with two ranks in each of two different skills at character creation. They obtain these ranks before spending experience points, and these skills may not be increased higher than rank 2 during character creation."
             ],
-            "choice": false
+            "choice": ["any"]
          },
          "abilities": [
             "Underestimated"
@@ -9782,9 +9825,11 @@
          "st": 8,
          "xp": 100,
          "skills": {
-            "skills": [
-               "mechanics"
-            ],
+            "skills": [{
+               "name": "Mechanics",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -9817,7 +9862,7 @@
          ]
       },
       {
-         "name": "G-mod",
+         "name": "G-Mod",
          "characteristics": {
             "brawn": 2,
             "agility": 2,
@@ -9830,9 +9875,11 @@
          "st": 11,
          "xp": 90,
          "skills": {
-            "skills": [
-               "resilience"
-            ],
+            "skills": [{
+               "name": "Resilience",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -9842,7 +9889,7 @@
          },
          "abilities": [
             "Enhanced Genetic Modifications",
-            "G-mod"
+            "G-Mod"
          ],
          "description": [
             "If cyborgs are a melding of person and machine, then g-mods are the complete changing of that person into something new. While some individuals may have their genes subtly altered, g-mods modify their DNA in profound and radical ways, changing their appearance, their intellect, and sometimes the core functions of their bodies. To date, g-modding is the closest humankind has come to true transhumanism, with some arguing that the most modified g-mods are no longer entirely Homo sapiens.",
@@ -9877,9 +9924,11 @@
          "st": 11,
          "xp": 100,
          "skills": {
-            "skills": [
-               "coordination"
-            ],
+            "skills": [{
+               "name": "Coordination",
+               "source": "crb",
+               "ranks": 1
+            }],
             "ranksTotal": 1,
             "ranksEach": 1,
             "description": [
@@ -9924,15 +9973,13 @@
          "st": 10,
          "xp": 120,
          "skills": {
-            "skills": [
-               "any two non-career"
-            ],
-            "ranksTotal": 1,
+            "skills": [],
+            "ranksTotal": 2,
             "ranksEach": 1,
             "description": [
                "A natural starts with one rank in each of two different non-career skills at character creation. They obtain this rank before spending experience points, and these skills may not be increased higher than rank 2 during character creation."
             ],
-            "choice": true
+            "choice": ["non-career"]
          },
          "abilities": [
             "Ready for Anything"
@@ -9986,7 +10033,7 @@
       {
          "name": "Enhanced Genetic Modifications",
          "description": [
-            "Once per session when your character uses one of their g-mods to modify a check, you may spend a Story Point to add {@symbols s} equal to your character's ranks in {@skill Resilience||crb} to the results (in addition to any other affects the g-mod has)."
+            "Once per session when your character uses one of their g-mods to modify a check, you may spend a Story Point to add {@symbols s} equal to your character's ranks in {@skill Resilience||crb} to the results (in addition to any other effects the g-mod has)."
          ],
          "tags": [
             "general",
@@ -9997,7 +10044,7 @@
          ]
       },
       {
-         "name": "G-mod",
+         "name": "G-Mod",
          "description": [
             "Your character begins play with one {@filter gear|g-mod|source:shadow-of-the-beanstalk=1;type:g-mod=1} (see page 106) that costs a total of 1,000 credits or less. They do not need to make any check to assimilate this g-mod."
          ],
@@ -10219,9 +10266,9 @@
                "If you have a Bounty Hunter character, you may choose to start with the following gear instead of spending credits during {@b Step 7} of character creation:"
             ],
             "gear": [
-               "{@gear Bullpup carbine} {@i or} a {@gear stun baton}, 2 {@gear glop grenades}, and {@gear light body armor}",
-               "{@gear Brass knuckles} {@i or} 2 {@gear slap patches}",
-               "3 {@gear snap locks} and a {@gear utility belt}",
+               "{@gear Bullpup carbine} {@i or} a {@gear stun baton}, 2 {@gear Glop Grenade|glop grenades}, and {@gear light body armor}",
+               "{@gear Brass knuckles} {@i or} 2 {@gear slap-patch|slap patches}",
+               "3 {@gear Snap-Locks|snap locks} and a {@gear utility belt}",
                "1d100 credits"
             ]
          },
@@ -10307,10 +10354,10 @@
                "If you have a Con Artist character, you may choose to start with the following gear instead of spending credits during {@b Step 7} of character creation:"
             ],
             "gear": [
-               "A {@gear fletcher pistol} {@i or} a {@gear monoblade} and 3 {@gear stun grenades}",
+               "A {@gear fletcher pistol} {@i or} a {@gear monoblade} and 3 {@gear Stun Grenade|stun grenades}",
                "{@gear Concealed buckyweave} {@i or} a {@gear disguise kit} and {@gear lockpick set}",
-               "2 {@gear slap-patches} {@i or} one dose of {@gear sting}",
-               "A {@gear personal comlink} and 2 {@gear happy patches}",
+               "2 {@gear slap-patch|slap-patches} {@i or} one dose of {@gear sting}",
+               "A {@gear personal comlink} and 2 {@gear Happy Patch|happy patches}",
                "1d100 credits"
             ]
          },
@@ -10403,7 +10450,7 @@
             ],
             "gear": [
                "A {@gear synap pistol} and {@gear durable clothing} {@i or} {@gear concealed buckyweave} and a {@gear palm stunner}",
-               "A {@gear modular backpack} {@i or} a {@gear cross body bag} and {@gear load bearing gear}",
+               "A {@gear modular backpack} {@i or} a {@gear Cross-Body Bag|cross body bag} and {@gear Load-Bearing Gear|load bearing gear}",
                "A {@gear PAD} and {@gear smartspecs} {@i or} a {@gear monocam}, {@gear personal comlink}, and {@gear reader}",
                "1d100 credits"
             ]
@@ -10497,8 +10544,8 @@
             ],
             "gear": [
                "A {@gear fletcher pistol} {@i or} a {@gear hand cannon}",
-               "{@gear Concealed buckyweave} and a {@gear light pistor} {@i or} a {@gear forensic kit}",
-               "A {@gear personal comlink}, 2 {@gear slap-patches}, and 2 {@gear doses of stim}.",
+               "{@gear Concealed buckyweave} and a {@gear light pistol} {@i or} a {@gear Forensics Kit|forensic kit}",
+               "A {@gear personal comlink}, 2 {@gear slap-patch|slap-patches}, and 2 doses of {@gear stim}.",
                "1d100 credits"
             ]
          },
@@ -10531,7 +10578,7 @@
                },
                {
                   "tier": 3,
-                  "name": "Hard-Boiled"
+                  "name": "Hard Boiled"
                }
             ]
          },
@@ -10593,7 +10640,7 @@
             "gear": [
                "A {@gear laser pistol} {@i or} a {@gear charged crystal katana}",
                "A {@gear personal comlink} and one {@gear slap-patch}",
-               "1 dose of {@gear Lo-Fi} and 4 doses of {@gear stims} {@i or} 2 doses of {@gear Sting}",
+               "1 dose of {@gear Low-Fi|Lo-Fi} and 4 doses of {@gear stim|stims} {@i or} 2 doses of {@gear Sting}",
                "200+1d100 credits"
             ]
          },
@@ -10690,7 +10737,7 @@
             "gear": [
                "2 {@gear brass knuckles} {@i or} a {@gear sledgehammer}",
                "A {@gear space suit} {@i or} an {@gear environmental hardsuit} and a {@gear portable toolkit}",
-               "A {@gear hand-held diognostic scanner} {@i or} a {@gear micro-welder}",
+               "A {@gear Handheld Diagnostic Scanner|hand-held diagnostic scanner} {@i or} a {@gear micro-welder}",
                "1d100 credits"
             ]
          },
@@ -10781,8 +10828,8 @@
                "If you have a Runner character, you may choose to start with the following gear instead of spending credits during {@b Step 7} of character creation:"
             ],
             "gear": [
-               "{@skill Durable clothing} and a {@gear palm stunner} {@i or} a {@gear light pistol}",
-               "A {@gear PAD} with {@ice Ice Wall||sotb} and {@icebreaker Battering Ram||sotb} {@i or} a {@gear PAD} with {@icebreaker Garrote} and {@icebreaker Gordian Blade}",
+               "{@gear Durable clothing} and a {@gear palm stunner} {@i or} a {@gear light pistol}",
+               "A {@gear PAD} with {@optionFeature Ice Wall} and {@optionFeature Battering Ram} {@i or} a {@gear PAD} with {@optionFeature Garrote} and {@optionFeature Gordian Blade}",
                "A {@gear personal comlink}",
                "1d100 credits"
             ]
@@ -10794,7 +10841,7 @@
             "talents": [
                {
                   "tier": 1,
-                  "name": "Disenfancisto"
+                  "name": "Disenfrancisto"
                },
                {
                   "tier": 1,
@@ -10877,7 +10924,7 @@
             "gear": [
                "A {@gear pistol} and {@gear light body armor} {@i or} a {@gear bullpup carbine}",
                "{@gear Durable clothing} {@i or} a {@gear utility belt}",
-               "2 {@gear slap-patches} {@i or} 1 dose of {@gear Sting}",
+               "2 {@gear slap-patch|slap-patches} {@i or} 1 dose of {@gear Sting}",
                "1d100 credits"
             ]
          },
@@ -10964,8 +11011,8 @@
             ],
             "gear": [
                "A {@gear synap pistol} {@i or} an {@gear environmental hardsuit} and {@gear brass knuckles}",
-               "A {@gear modular backpack} {@i or} a {@gear utility belt} and 2 {@gear emergency repair patches}",
-               "A {@gear portable toolkit} and {@gear las-scanner} {@i or} a {@gear PAD} with {@ice authenticator||sotb}",
+               "A {@gear modular backpack} {@i or} a {@gear utility belt} and 2 {@gear Emergency Repair Patch|emergency repair patches}",
+               "A {@gear portable toolkit} and {@gear las-scanner} {@i or} a {@gear PAD} with {@optionFeature Authenticator|authenticator}",
                "50+1d100 credits"
             ]
          },
@@ -13771,7 +13818,7 @@
          "encumbrance": 1,
          "price": 35,
          "rarity": 2,
-         "page": 102,
+         "page": 103,
          "settings": [
             {
                "name": "Android"
@@ -13933,7 +13980,7 @@
          "type": "cybernetic",
          "description": [
             "Cyberlimbs are high-tech prosthetics designed to replace an individual's missing organic limbs. Available in a variety of styles and qualities—from low-cost, hard-plastic military surplus arms to the lifelike creations used by top athletes and racers to replace limbs lost in accidents—they are a very common cybernetic enhancement. As with many implants that began as medical devices, cyberlimbs are currently seeing a rise in use for increasing the performance of human bodies.",
-            "A cyberlimb increases your character's {@charactieristic Brawn||crb} or {@characteristic Agility||crb} rating—your choice when your character obtains the limb—by 1. If a character has one or more cybernetic arms, they decrease their strain threshold by 1, and if they have one or more cybernetic legs, they decrease their strain threshold by 1."
+            "A cyberlimb increases your character's {@characteristic Brawn||crb} or {@characteristic Agility||crb} rating—your choice when your character obtains the limb—by 1. If a character has one or more cybernetic arms, they decrease their strain threshold by 1, and if they have one or more cybernetic legs, they decrease their strain threshold by 1."
          ],
          "price": 2000,
          "rarity": 4,
@@ -13965,7 +14012,7 @@
          "type": "cybernetic",
          "description": [
             "Cyberlimbs are high-tech prosthetics designed to replace an individual's missing organic limbs. Available in a variety of styles and qualities—from low-cost, hard-plastic military surplus arms to the lifelike creations used by top athletes and racers to replace limbs lost in accidents—they are a very common cybernetic enhancement. As with many implants that began as medical devices, cyberlimbs are currently seeing a rise in use for increasing the performance of human bodies.",
-            "A cyberlimb increases your character's {@charactieristic Brawn||crb} or {@characteristic Agility||crb} rating—your choice when your character obtains the limb—by 1. If a character has one or more cybernetic arms, they decrease their strain threshold by 1, and if they have one or more cybernetic legs, they decrease their strain threshold by 1."
+            "A cyberlimb increases your character's {@characteristic Brawn||crb} or {@characteristic Agility||crb} rating—your choice when your character obtains the limb—by 1. If a character has one or more cybernetic arms, they decrease their strain threshold by 1, and if they have one or more cybernetic legs, they decrease their strain threshold by 1."
          ],
          "price": 2000,
          "rarity": 4,
@@ -14660,7 +14707,7 @@
                "items": [
                   "{@b Models Include:} Argus Icarus System.",
                   "{@b Use With:} This attachment can be applied to any armor with a rigid external carapace.",
-                  "{@b Modifiers:} When wearing this armor, once per encounter your character may activate the jump jets as an incidental. Until the end of your character's next turn, they may {@side flying|fly|crb} and do not suffer damage from falling.",
+                  "{@b Modifiers:} When wearing this armor, once per encounter your character may activate the jump jets as an incidental. Until the end of your character's next turn, they may {@sidebar flying|fly|crb} and do not suffer damage from falling.",
                   "{@b Hard Points Required:} 2."
                ]
             }
@@ -14675,12 +14722,12 @@
          "price": 125,
          "rarity": 2,
          "description": [
-            "While some armor is unmistakably military in appearance, other armor can be tailored to look indistinguishable from street clothing with the right flare and cut.While some armor is unmistakably military in appearance, other armor can be tailored to look indistinguishable from street clothing with the right flare and cut.",
+            "While some armor is unmistakably military in appearance, other armor can be tailored to look indistinguishable from street clothing with the right flare and cut.",
             {
                "type": "list",
                "items": [
                   "{@b Models Include:} Custom work only.",
-                  "{@b Use With:} This attachment can be applied to {@gear optical camouflage}, {@gear environmental hardsuit}, and {@gear light body armor}.",
+                  "{@b Use With:} This attachment can be applied to {@gear Optical Camouflage Suit|optical camouflage}, {@gear environmental hardsuit|environmental hardsuits}, and {@gear light body armor}.",
                   "{@b Modifiers:} This armor looks like normal clothing. Anyone searching your character adds {@dice setback|2} to {@skill Perception||crb} checks to notice that they are wearing armor.",
                   "{@b Hard Points Required:} 0."
                ]
@@ -14700,7 +14747,7 @@
             {
                "type": "list",
                "items": [
-                  "{@b Models Include:} Weyland AMX Power Assist System, HHI “Brawler” Heavy Power Support System.",
+                  "{@b Models Include:} Weyland AMX Power Assist System, HHI \"Brawler\" Heavy Power Support System.",
                   "{@b Use With:} This attachment can be applied to any armor with a rigid external carapace.",
                   "{@b Modifiers:} When wearing this armor, your character increases their encumbrance threshold by 5, and adds {@symbols s} to any {@characteristic Brawn||crb}-based checks they make.",
                   "{@b Hard Points Required:} 2."
@@ -14826,7 +14873,7 @@
             {
                "type": "list",
                "items": [
-                  "{@b Models Include:}  Cantor Mind-Lightning Link.",
+                  "{@b Models Include:} Cantor Mind-Lightning Link.",
                   "{@b Use With:} This attachment can be applied to any {@sidebar What's a Smart Weapon?|smart} ranged weapon.",
                   "{@b Modifiers:} Your character must have a {@gear Brain Machine Interface|BMI}, {@gear skulljack}, or {@gear spinal modem} installed to benefit from this attachment. When your character makes the first combat check with this weapon in an encounter, add {@symbols sh} to the results. Your character can also use mental commands to fire this weapon even if they are not holding it, as long as the weapon is within long range.",
                   "{@b Hard Points Required:} 1."
@@ -16328,7 +16375,7 @@
                            "title": "Exchanging Favors",
                            "page": 80,
                            "entries": [
-                              "Exchanging a favor for a favor is simple, and it generally doesn't require a check. It's simply a matter of saying “if you do this thing for me, I'll do this equivalent thing for you.” However, sometimes your character may want to exchange a favor for a bigger favor or a smaller favor. In those cases, your character is going to need to make a check.",
+                              "Exchanging a favor for a favor is simple, and it generally doesn't require a check. It's simply a matter of saying \"if you do this thing for me, I'll do this equivalent thing for you.\" However, sometimes your character may want to exchange a favor for a bigger favor or a smaller favor. In those cases, your character is going to need to make a check.",
                               {
                                  "title": "Exchanging a Bigger Favor for a Smaller Favor (Stringing Them Along)",
                                  "page": 81,
@@ -16424,7 +16471,7 @@
          "page": 231,
          "description": [
             "Haas-Bioroid's Android Loss Prevention Program (HALPP) officially doesn't exist, because bioroids never run away or disobey their programming. Unofficially, it has a massive staff and works around the clock to hunt down \"malfunctioning\" bioroids before the public hears about them.",
-            "A loss prevention agent can be represented with the cybermod bounty hunter profile and adding this ability: Shutdown Authorization (as an action, may make an {@difficulty Average| Computers (Hacking)} to {@rule staggered|stagger|crb} and {@rule immobilized|immobilize|crb} one bioroid within short range for the remainder of the encounter; if the target is a PC bioroid, the check becomes an {@b opposed {@skill Computers (Hacking)} versus {@skill Discipline||crb} check}."
+            "A loss prevention agent can be represented with the cybermod bounty hunter profile and adding this ability: Shutdown Authorization (as an action, may make an {@difficulty Average|Computers (Hacking)} to {@rule staggered|stagger|crb} and {@rule immobilized|immobilize|crb} one bioroid within short range for the remainder of the encounter; if the target is a PC bioroid, the check becomes an {@b opposed {@skill Computers (Hacking)} versus {@skill Discipline||crb} check})."
          ],
          "type": "Adversary"
       },
@@ -16438,11 +16485,11 @@
          ]
       },
       {
-         "name": "Skull Jacks and Spinal Modems",
+         "name": "Skulljacks and Spinal Modems",
          "page": 98,
          "type": "gear",
          "description": [
-            "Some runners and sysops use cybernetics that have similar effects to computers and BMIs. The most common of these devices are {@gear skulljacks} and {@gear spinal modems}, which can be found on page 105 and 106"
+            "Some runners and sysops use cybernetics that have similar effects to computers and BMIs. The most common of these devices are {@gear Skulljack|skulljacks} and {@gear Spinal Modem|spinal modems}, which can be found on page 105 and 106"
          ]
       },
       {
@@ -16459,7 +16506,7 @@
          "type": "character",
          "description": [
             "Most of the drugs found in New Angeles are chemically or psychologically addictive. Some players may not want to roleplay dealing with the side effects of addiction. This is entirely reasonable, especially since people can have traumatic experiences with addiction in real life. So if some players or your GM want to use the rules for addiction, make sure the entire group agrees first!",
-            "If your group is using the alternate rules for addiction, whenever a character uses an addictive drug (which includes every drug in this section except {@rule slap-patch|slap-patches}) regularly, you or your GM can decide that your character is at risk of becoming addicted (what constitutes \"regular\" use is also up to you and your GM). If your character is at risk of becoming addicted, they must make a {@difficulty Hard|Resilience or Discipline} (depending on whether you and your GM feel the drug is more physiologically or psychologically addictive).",
+            "If your group is using the alternate rules for addiction, whenever a character uses an addictive drug (which includes every drug in this section except {@gear slap-patch|slap-patches}) regularly, you or your GM can decide that your character is at risk of becoming addicted (what constitutes \"regular\" use is also up to you and your GM). If your character is at risk of becoming addicted, they must make a {@difficulty Hard|Resilience or Discipline} (depending on whether you and your GM feel the drug is more physiologically or psychologically addictive).",
             "Once your character is addicted, they must use the drug they are addicted to once a day, or decrease their strain threshold by half until they do so. To end their addiction, your character must go without using the drug they are addicted to for at least one week or more, and may also need to make another {@skill Resilience||crb} or {@skill Discipline||crb} check to overcome the addiction."
          ]
       },
@@ -16573,7 +16620,7 @@
          "characteristic": "Intellect",
          "category": "knowledge",
          "description": [
-            "Your character needs to know the specifics of the Fed's jurisdiction in New AngeleThis skill has two distinct aspects that it governs. The first is knowledge about societies in general and how they function, which can include economic theory, sociology, law, and the like. The second aspect is information about the society your character lives in, specifically the society of New Angeles. This includes information on who Miranda Rhapsody is and what her greatest hits are, the distinguishing features of each New Angeles district, the difference between plaza level and the undercity, and how long it takes to get from the Root to the Castle on a beanpod., which would require the Knowledge (Society) skill instead."
+            "This skill has two distinct aspects that it governs. The first is knowledge about societies in general and how they function, which can include economic theory, sociology, law, and the like. The second aspect is information about the society your character lives in, specifically the society of New Angeles. This includes information on who Miranda Rhapsody is and what her greatest hits are, the distinguishing features of each New Angeles district, the difference between plaza level and the undercity, and how long it takes to get from the Root to the Castle on a beanpod."
          ],
          "shouldUse": [
             "Your character wants to remember facts about New Angeles.",
@@ -16688,7 +16735,7 @@
    "table": [
       {
          "name": "Table 2-1: Example Favors",
-         "page": 90,
+         "page": 80,
          "columns": [
             {
                "header": "Favor Size",
@@ -17000,7 +17047,7 @@
    },
       {
          "name": "Table 3-3: Trace Information",
-         "page": 132,
+         "page": 131,
          "columns": [
             {
                "header": "Traces",
@@ -17316,7 +17363,7 @@
          "activation": "passive",
          "ranked": false,
          "description": [
-            "Your character's encumbrance threshold is 10 plus their Brawn, instead of 5 plus their Brawn. Your character reduces the {@quality Cumbersome||crb} rating of any weapon she carries by 1, to a minimum of 3."
+            "Your character's encumbrance threshold is 10 plus their Brawn, instead of 5 plus their Brawn. Your character reduces the {@quality Cumbersome||crb} rating of any weapon they carry by 1, to a minimum of 3."
          ],
          "page": 47,
          "settings": [
@@ -17387,7 +17434,7 @@
          "activation": "passive",
          "ranked": false,
          "description": [
-            "When your character performs the activate program maneuver in a hacking encounter, they can choose not to deactivate one other active icebreaker. They may have two icebreakers active at once."
+            "When your character performs the activate program maneuver (page 132) in a hacking encounter, they can choose not to deactivate one other active icebreaker. They may have two icebreakers active at once."
          ],
          "page": 48,
          "settings": [
@@ -17531,7 +17578,7 @@
          "ranked": false,
          "description": [
             "Once per session, your character may use this talent to produce a small but narratively useful item from their pockets, backpack, or similar receptacle (it turns out the item had been there the whole time).",
-            "Your GM has final say as to what items can be produced with Deep Pockets, but generally it them should cost less than 100 credits and have an encumbrance of 0 or 1."
+            "Your GM has final say as to what items can be produced with Deep Pockets, but generally the item should cost less than 100 credits and have an encumbrance of 0 or 1."
          ],
          "page": 45,
          "settings": [
@@ -17578,7 +17625,7 @@
          "activation": "passive",
          "ranked": false,
          "description": [
-            "When you take this talent, your character gains {@skill Streetwise||crb} or {@skill Survival||crb} (your choice) as a career skill. In addition, once per session your character may collect a small favor from any other disenfrancisto, even if they do not owe your character a favor."
+            "When you take this talent, your character gains {@skill Streetwise||crb} or {@skill Survival||crb} (your choice) as a career skill. In addition, once per session, your character may collect a small favor from any other disenfrancisto, even if they do not owe your character a favor."
          ],
          "page": 45,
          "settings": [
@@ -17674,7 +17721,7 @@
          "activation": "passive",
          "ranked": false,
          "description": [
-            "When you take this talent, your character gains one Knowledge skill (of your choice) as a career skill. In addition, once per session your character may collect a small favor from a member of an institute of higher learning, even if they do not owe your character a favor."
+            "When you take this talent, your character gains one Knowledge skill (of your choice) as a career skill. In addition, once per session, your character may collect a small favor from a member of an institute of higher learning, even if they do not owe your character a favor."
          ],
          "page": 45,
          "settings": [
@@ -17863,7 +17910,7 @@
          "activation": "passive",
          "ranked": false,
          "description": [
-            "Your character adds the {@quality Stun||crb} quality to their {@skill Brawl||crb} combat checks with a rating equal to two plus your character's ranks in {@skill Coordination||crb} (this does not stack with other instances of the {@quality Stun||crb} quality)."
+            "Your character adds the {@quality Stun||crb} quality to their {@skill Brawl||crb} combat checks, with a rating equal to two plus your character's ranks in {@skill Coordination||crb} (this does not stack with other instances of the {@quality Stun||crb} quality)."
          ],
          "page": 45,
          "settings": [
@@ -17887,7 +17934,7 @@
          "activation": "active (incidental, out of turn)",
          "ranked": false,
          "description": [
-            "When your character is targeted by a social check that they may use this talent to spend {@symbols hhh} or {@symbols d} to reduce any strain the check inflicts by a number equal to their ranks in {@skill Charm||crb}. If they do, the character who targeted them suffers an amount of strain equal to the amount of strain reduced."
+            "When your character is targeted by a social skill check they may use this talent to spend {@symbols hhh} or {@symbols d} to reduce any strain the check inflicts by a number equal to their ranks in {@skill Charm||crb}. If they do so, the character who targeted them suffers an amount of strain equal to the amount of strain reduced."
          ],
          "page": 50,
          "settings": [
@@ -17910,7 +17957,7 @@
          "activation": "active (action)",
          "ranked": false,
          "description": [
-            "While armed with a {@skill Melee||crb} weapon, your character may use this talent to make an {@difficulty average|Melee}. If successful, your character may force one engaged target to either drop one weapon they are holding or move one range band in a direction of your choosing.",
+            "While armed with a {@skill Melee||crb} weapon, your character may use this talent to make an {@difficulty average|Melee}. If successful, your character may force one engaged target to either drop one weapon they are holding or move up to one range band in a direction of your choosing.",
             "If your character forces a named rival or nemesis into dangerous terrain (or off a ledge or cliff) using this talent, your GM can spend a Story Point to allow them to catch themselves at the edge and fall prone instead."
          ],
          "page": 50,
@@ -17960,7 +18007,7 @@
          "activation": "active (maneuver)",
          "ranked": false,
          "description": [
-            "When your character has access to the Network, they can use this talent to upgrade the ability of the next {@skill Knowledge||crb} check they make that turn twice, and the difficulty of the check once. {@symbols d} means that they learn some seemingly relevant and believable information that turns out to be completely (and possibly maliciously) false."
+            "If your character has access to the Network, they may use this talent to upgrade the ability of the next {@skill Knowledge||crb} check they make during their turn twice and the difficulty of that check once. Your GM must spend a {@symbols d} to have your character learn some seemingly relevant and believable information that turns out to be completely (and possibly maliciously) false."
          ],
          "page": 45,
          "settings": [
@@ -18055,7 +18102,7 @@
          "activation": "active (action)",
          "ranked": false,
          "description": [
-            "While driving or piloting a vehicle, your character may use this talent to select one other vehicle within medium range and make an opposed {@skill Driving||crb} or {@skill Piloting||crb} verus {@skill Driving||crb} or {@skill Piloting||crb} check (depending on whether your character and their opponent are using {@skill Driving||crb} or {@skill Piloting||crb} to control their vehicle) targeting the other vehicle's driver or pilot. If successful, roll twice on the {@table Table III.2-19 Vehicle Critical Hit Result||crb}, on page 230 of the {@title Genesys Core Rulebook}. Choose one Critical Hit result to apply to your character's vehicle, and the other to apply to the other vehicle. You may spend {@symbols t} to add +20 to one Critical Hit result. Your GM may spend {@symbols d} to add +20 to both Critical Hit results."
+            "While driving or piloting a vehicle, your character may use this talent to select one other vehicle within medium range and make an opposed {@skill Driving||crb} or {@skill Piloting||crb} versus {@skill Driving||crb} or {@skill Piloting||crb} check (depending on whether your character and their opponent are using {@skill Driving||crb} or {@skill Piloting||crb} to control their vehicle) targeting the other vehicle's driver or pilot. If successful, roll twice on {@table III.2-19: Vehicle Critical Hit Result||crb}, on page 230 of the {@title Genesys Core Rulebook}. Choose one Critical Hit result to apply to your character's vehicle, and the other to apply to the other vehicle. You may spend {@symbols t} to add +20 to one Critical Hit result. Your GM may spend {@symbols d} to add +20 to both Critical Hit results."
          ],
          "page": 51,
          "settings": [
@@ -18149,7 +18196,7 @@
          "activation": "active (maneuver)",
          "ranked": false,
          "description": [
-            "You may spend a Story Point to allow your character to use this talent to temporarily repair one damaged item they are engaged with. For a number of rounds equal to your character's ranks in Mechanics, the item may be used without penalty (see page 89 of the Genesys Core Rulebook), even if it is unusable. When the effect ends, the item is damaged one additional step; if it was already suffering from major damage, it is destroyed and cannot be repaired."
+            "You may spend a Story Point to use this talent to have your character temporarily repair one damaged item they are engaged with. For a number of rounds equal to your character's ranks in Mechanics, the item may be used without penalty (see page 89 of the Genesys Core Rulebook), even if it is unusable. When the effect ends, the item is damaged one additional step; if it was already suffering from major damage, it is destroyed and cannot be repaired."
          ],
          "page": 49,
          "settings": [
@@ -18269,7 +18316,7 @@
          "activation": "active (incidental)",
          "ranked": false,
          "description": [
-            "When your character disorients or knocks their target prone when making a {@skill Brawl||crb} combat check, they may use this talent to cause the target to suffer wounds equal to your character's ranks in {@skill Skulduggery||crb}."
+            "When your character disorients or knocks their target prone while making a {@skill Brawl||crb} combat check, they may use this talent to cause the target to suffer wounds equal to your character's ranks in {@skill Skulduggery||crb}."
          ],
          "page": 45,
          "settings": [
@@ -18344,7 +18391,7 @@
          "activation": "active (action)",
          "ranked": false,
          "description": [
-            "Your character may use this talent to make an opposed {@skill Brawl||crb} vs. {@skill Resilience||crb} check targeting one engaged opponent. If the check succeeds, the target is knocked prone and {@rule immobilized||crb} until the end of your character's next turn. If the target is a minion or rival, your character may spend {@symbols t} to incapacitate (but not kill) the target instead."
+            "Your character may use this talent to make an opposed {@skill Brawl||crb} versus {@skill Resilience||crb} check targeting one engaged opponent. If the check succeeds, the target is knocked prone and is {@rule immobilized||crb} until the end of your character's next turn. If the target is a minion or rival, your character can spend {@symbols t} to incapacitate (but not kill) the target instead."
          ],
          "page": 51,
          "settings": [
@@ -18369,7 +18416,7 @@
          "activation": "passive",
          "ranked": false,
          "description": [
-            "When you take this talent, your character gains {@skill Melee||crb} or {@skill Skulduggery||crb} (your choice) as a career skill. In addition, once per session your character may collect a small favor from a member of a single orgcrime group (chosen when you take this talent), even if they do not owe your character a favor."
+            "When you take this talent, your character gains {@skill Melee||crb} or {@skill Skulduggery||crb} (your choice) as a career skill. In addition, once per session, your character may collect a small favor from a member of a single orgcrime group (chosen when you take this talent), even if they do not owe your character a favor."
          ],
          "page": 45,
          "settings": [
@@ -18440,7 +18487,7 @@
          "activation": "active (incidental)",
          "ranked": false,
          "description": [
-            "Once per session, you may spend one Story Point use this talent to let your character learn if a character of your choice is in New Angeles, and if so, what district.",
+            "Once per session, you may spend one Story Point to use this talent to let your character learn if a character of your choice is in New Angeles, and if so, what district.",
             "At your GM's discretion, the information may take up to an hour to come back to your character."
          ],
          "page": 49,
@@ -18515,7 +18562,7 @@
          "activation": "active (incidental, out of turn)",
          "ranked": false,
          "description": [
-            "When your character is targeted by a combat check while in an urban environment, you may spend one Story Point to use this talent before the dice pool is rolled. If you do so, your character's opponent removes all {@dice setback} added to the check, and instead adds an equal number of {@symbols f} to the results.."
+            "When your character is targeted by a combat check while in an urban environment, you may spend one Story Point to use this talent before the dice pool is rolled. If you do so, your character's opponent removes all {@dice setback} added to the check, and instead adds an equal number of {@symbols f} to the results."
          ],
          "page": 52,
          "settings": [
@@ -18539,7 +18586,7 @@
          "activation": "active (action)",
          "ranked": false,
          "description": [
-            "Once per session your character may make an {@difficulty average|Knowledge (Net)} during a Network encounter. If you succeed, your character knows the names, strengths, and other qualities of all ice (active or deactivated) on one system that you currently have access to, as well as all other characters (sysops and runners) that currently are accessing that system.",
+            "Once per session your character may make an {@difficulty average|Knowledge (The Net)} during a Network encounter. If you succeed, your character knows the names, strengths, and other qualities of all ice (active or deactivated) on one system that you currently have access to, as well as all other characters (sysops and runners) that currently are accessing that system.",
             "Your character may spend {@symbols aaa} or {@symbols t} from this check (whether or not they succeeded) to add {@symbols s} to all Computer checks involving that system that they make for the remainder of the encounter."
          ],
          "page": 52,
@@ -18564,7 +18611,7 @@
          "activation": "passive",
          "ranked": false,
          "description": [
-            "When you take this talent, your character gains {@skill Ranged (Heavy)||crb} or {@skill Resilience||crb} as a career skill. In addition, once per session, your character may collect a small favor from a current or former member of a single country's military (chosen when you take this talent), even if they do not owe your character's a favor."
+            "When you take this talent, your character gains {@skill Ranged (Heavy)||crb} or {@skill Resilience||crb} as a career skill. In addition, once per session, your character may collect a small favor from a current or former member of a single country's military (chosen when you take this talent), even if they do not owe your character a favor."
          ],
          "page": 46,
          "settings": [
@@ -18589,7 +18636,7 @@
          "activation": "passive",
          "ranked": false,
          "description": [
-            "When you take this talent, your character gains {@skill Perception||crb} or {@skill Ranged (Light)||crb} as a career skill. In addition, once per session your character may collect a small favor from a current or former member of the NAPD or New Angeles city government, even if they do no owe your character a favor."
+            "When you take this talent, your character gains {@skill Perception||crb} or {@skill Ranged (Light)||crb} as a career skill. In addition, once per session, your character may collect a small favor from a current or former member of the NAPD or New Angeles city government, even if they do not owe your character a favor."
          ],
          "page": 47,
          "settings": [
@@ -18674,7 +18721,7 @@
             "name": "Piloting",
             "source": "crb"
          },
-         "complement": "1 Driver or completely autonomous",
+         "complement": "1 driver or completely autonomous vehicle",
          "passengers": 0,
          "price": 40000,
          "rarity": 4,
@@ -18707,7 +18754,7 @@
             "name": "Piloting",
             "source": "crb"
          },
-         "complement": "1 Driver or completely autonomous",
+         "complement": "1 driver or completely autonomous vehicle",
          "passengers": 3,
          "price": 14000,
          "rarity": 2,
@@ -18740,8 +18787,8 @@
             "name": "Piloting",
             "source": "crb"
          },
-         "complement": "1 Driver",
-         "passengers": 1,
+         "complement": "1 driver",
+         "passengers": "1 (barely)",
          "price": 8000,
          "rarity": 3,
          "consumables": "None",
@@ -18774,7 +18821,7 @@
             "name": "Piloting",
             "source": "crb"
          },
-         "complement": "1 Driver",
+         "complement": "1 driver",
          "passengers": 3,
          "price": 85000,
          "rarity": 3,
@@ -18807,8 +18854,8 @@
             "name": "Piloting",
             "source": "crb"
          },
-         "complement": "2 NAPD Officers",
-         "passengers": 3,
+         "complement": "2 NAPD officers",
+         "passengers": "3 prisoners",
          "price": 60000,
          "rarity": 3,
          "consumables": "None",
@@ -18840,7 +18887,7 @@
             "name": "Driving",
             "source": "crb"
          },
-         "complement": "1 Driver",
+         "complement": "1 driver",
          "passengers": 5,
          "price": 5000,
          "rarity": 3,
@@ -18863,7 +18910,7 @@
       {
          "name": "Groundtruck",
          "silhouette": 3,
-         "maxSpeed": 2,
+         "maxSpeed": 1,
          "handling": -2,
          "defense": 0,
          "armor": 0,
@@ -18873,8 +18920,8 @@
             "name": "Driving",
             "source": "crb"
          },
-         "complement": "1 Driver",
-         "passengers": 5,
+         "complement": "1 driver",
+         "passengers": 3,
          "price": 7500,
          "rarity": 3,
          "consumables": "None",
@@ -18906,7 +18953,7 @@
             "name": "Piloting",
             "source": "crb"
          },
-         "complement": "1 Pilot, 1 ECW operator, 1 crew chief",
+         "complement": "1 pilot, 1 ECW operator, 1 crew chief",
          "passengers": 15,
          "price": 750000,
          "rarity": 6,
@@ -18915,15 +18962,81 @@
          "weapons": [
             {
                "name": "Chin-mounted railgun",
-               "description": "Fire Arc Forward; Damage 3; Critical 2; Range Extreme; Breach 1; Vicious 2."
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 3,
+               "critical": 2,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
             },
             {
                "name": "Air-to-air missiles",
-               "description": "Fire Arc Forward; Damage 5; Critical 3; Range Strategic; Guided 3; Limited Ammo 4."
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 3,
+               "range": "Strategic",
+               "qualities": [
+                  {
+                     "name": "Guided",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
+               ]
             },
             {
                "name": "2 auto-turret support fletchers",
-               "description": "Fire Arc Starboard or Fire Arc Port; Damage 6; Critical 2; Range Medium; Blast 6; Personal Scale; Pierce 4; Vicious 3."
+               "fireArc": "Starboard or Port",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 2,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 6,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Personal Scale",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
+               ]
             }
          ],
          "page": 116,
@@ -18953,12 +19066,12 @@
             "name": "Piloting",
             "source": "crb"
          },
-         "complement": "1 Pilot, 1 co-pilot",
+         "complement": "1 pilot, 1 co-pilot",
          "passengers": 20,
          "price": 500000,
          "rarity": 5,
          "consumables": "None",
-         "encumbranceCapacity": 200,
+         "encumbranceCapacity": "200 (without passengers)",
          "page": 116,
          "description": [
             "Passenger dropships are small, fast, and luxurious transatmospheric vessels designed to transport wealthy VIPs and expensive cargo from Earth to orbit. The passenger compartments tend to be spacious and well-appointed, since the cost of boosting someone into orbit is exorbitant anyway. Passenger dropships tend to be sleek, delta-winged vehicles with powerful enough engines that they can escape atmosphere without additional boosters."
@@ -18987,7 +19100,7 @@
             "source": "crb"
          },
          "complement": "8 civilian crew",
-         "passengers": 10,
+         "passengers": "10 (increased to 50 if cargo pods are replaced with transport pods)",
          "price": 50000000,
          "rarity": 5,
          "consumables": "12 months",
@@ -19061,11 +19174,49 @@
          "weapons": [
             {
                "name": "Forward-mounted laser cannon",
-               "description": "Fire Arc Forward; Damage 3; Critical 3; Range Extreme; Accurate 1."
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 3,
+               "critical": 3,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
             },
             {
                "name": "Self-guided missiles",
-               "description": "Fire Arc Forwards; Damage 6; Critical3; Range Strategic; Guided 4; Limited Ammo 6; Vicious 2."
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 3,
+               "range": "Strategic",
+               "qualities": [
+                  {
+                     "name": "Guided",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 6,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
             }
          ],
          "page": 117,

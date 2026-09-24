@@ -115,13 +115,13 @@
                   "type": "integer",
                   "description": "Adversary's approximate combat strength."
                },
-               "general": {
-                  "type": "integer",
-                  "description": "Adversary's approximate general strength."
-               },
                "social": {
                   "type": "integer",
                   "description": "Adversary's approximate social strength."
+               },
+               "general": {
+                  "type": "integer",
+                  "description": "Adversary's approximate general strength."
                }
             },
             "required": [

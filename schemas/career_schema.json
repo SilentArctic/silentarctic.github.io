@@ -59,6 +59,120 @@
                      "type": "string"
                   },
                   "description": "List of starting gear."
+               },
+               "selections": {
+                  "type": "array",
+                  "description": "",
+                  "items": {
+                     "anyOf": [
+                        {
+                           "type": "object",
+                           "properties": {
+                              "name": {
+                                 "type": "string"
+                              },
+                              "quantity": {
+                                 "type": "number"
+                              },
+                              "money": {
+                                 "type": "boolean",
+                                 "description": "If this is a money item"
+                              },
+                              "formula": {
+                                 "type": "string",
+                                 "description": "Formula for calculating starting money."
+                              },
+                              "source": {
+                                 "type": "string"
+                              }
+                           },
+                           "required": [
+                              "name"
+                           ],
+                           "optional": [
+                              "quantity",
+                              "money",
+                              "formula",
+                              "source"
+                           ],
+                           "additionalProperties": false
+                        },
+                        {
+                           "type": "array",
+                           "items": {
+                              "type": "array",
+                              "items": {
+                                 "type": "object",
+                                 "properties": {
+                                    "name": {
+                                       "type": "string"
+                                    },
+                                    "quantity": {
+                                       "type": "number"
+                                    },
+                                    "money": {
+                                       "type": "boolean",
+                                       "description": "If this is a money item"
+                                    },
+                                    "formula": {
+                                       "type": "string",
+                                       "description": "Formula for calculating starting money."
+                                    },
+                                    "source": {
+                                       "type": "string"
+                                    }
+                                 },
+                                 "required": [
+                                    "name"
+                                 ],
+                                 "optional": [
+                                    "quantity",
+                                    "money",
+                                    "formula",
+                                    "source"
+                                 ],
+                                 "additionalProperties": false
+                              }
+                           }
+                        },
+                        {
+                           "type": "array",
+                           "description": "A bundle of items received together.",
+                           "items": {
+                              "type": "object",
+                              "properties": {
+                                 "name": {
+                                    "type": "string"
+                                 },
+                                 "quantity": {
+                                    "type": "number"
+                                 },
+                                 "money": {
+                                    "type": "boolean",
+                                    "description": "If this is a money item"
+                                 },
+                                 "formula": {
+                                    "type": "string",
+                                    "description": "Formula for calculating starting money."
+                                 },
+                                 "source": {
+                                    "type": "string"
+                                 }
+                              },
+                              "required": [
+                                 "name"
+                              ],
+                              "optional": [
+                                 "quantity",
+                                 "money",
+                                 "formula",
+                                 "source"
+                              ],
+                              "additionalProperties": false
+                           }
+                        }
+                     ]
+                  }
                }
             },
             "description": "Suggested starting gear.",

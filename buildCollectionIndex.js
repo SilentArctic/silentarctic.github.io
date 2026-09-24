@@ -6,6 +6,7 @@ function createIndex(path) {
    /* filter out index.json and create index data */
    fs.readdirSync(path)
       .filter(file => file !== 'index.json' && file !== 'community')
+      .sort()
       .forEach(file => {
          let data = fs.readFileSync(`${path}/${file}`);
          data = JSON.parse(data);
@@ -24,4 +25,5 @@ try {
    createIndex('./api/community');
 } catch (error) {
    console.error(error);
+   process.exitCode = 1;
 }
