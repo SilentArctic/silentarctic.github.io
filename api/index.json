@@ -1,6 +1,6 @@
 {
    "core-rule-book.json": {
-      "version": "2025.12.7",
+      "version": "2026.5.23",
       "json": "core-rule-book",
       "full": "Genesys Core Rulebook",
       "abbreviation": "CRB",
