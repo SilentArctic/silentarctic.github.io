@@ -1,6 +1,6 @@
 {
    "core-rule-book.json": {
-      "version": "2026.5.23",
+      "version": "2026.9.22.1",
       "json": "core-rule-book",
       "full": "Genesys Core Rulebook",
       "abbreviation": "CRB",
@@ -16,7 +16,7 @@
       "originType": "core"
    },
    "embers-of-the-imperium.json": {
-      "version": "2025.12.6",
+      "version": "2026.9.21",
       "json": "embers-of-the-imperium",
       "full": "Twilight Imperium: Embers of the Imperium",
       "abbreviation": "EotI",
@@ -31,8 +31,24 @@
       "releaseDate": "28 April 2023",
       "originType": "core"
    },
+   "embers-ships-of-the-shattered-empire.json": {
+      "version": "2026.9.22.2",
+      "json": "embers-ships-of-the-shattered-empire",
+      "full": "Twilight Imperium: Ships of the Shattered Empire",
+      "abbreviation": "EotI:SSE",
+      "color": "#EF3F22",
+      "authors": [
+         "EDGE Studio"
+      ],
+      "convertedBy": [
+         "SilentArctic"
+      ],
+      "url": "https://www.edge-studio.net/games/twilight-imperium-ships/",
+      "releaseDate": "9 Jan 2026",
+      "originType": "core"
+   },
    "expanded-players-guide.json": {
-      "version": "2025.12.6",
+      "version": "2026.09.21",
       "json": "expanded-players-guide",
       "full": "Expanded Player's Guide",
       "abbreviation": "EPG",
@@ -49,7 +65,7 @@
       "originType": "core"
    },
    "realms-of-terrinoth.json": {
-      "version": "2025.12.6",
+      "version": "2026.9.20",
       "json": "realms-of-terrinoth",
       "full": "Realms of Terrinoth",
       "abbreviation": "RoT",
@@ -62,7 +78,7 @@
       "originType": "core"
    },
    "secrets-of-the-crucible.json": {
-      "version": "2025.12.7",
+      "version": "2026.09.21",
       "json": "secrets-of-the-crucible",
       "full": "Keyforge: Secrets of the Crucible",
       "abbreviation": "SotC",
@@ -78,7 +94,7 @@
       "originType": "core"
    },
    "shadow-of-the-beanstalk.json": {
-      "version": "2025.12.7",
+      "version": "2026.09.21",
       "json": "shadow-of-the-beanstalk",
       "full": "Android: Shadow of the Beanstalk",
       "abbreviation": "SotB",
