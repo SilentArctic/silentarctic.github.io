@@ -13841,7 +13841,7 @@
             {
                "name": "Misfortune",
                "description": [
-                  "After the target makes a check, you may change one {@dice setback} to a face displaying a {@symbols h}."
+                  "After the target makes a check, you may change one {@dice setback} to a face displaying a {@symbols f}."
                ],
                "difficultyMod": 1
             },
@@ -15380,7 +15380,7 @@
             {
                "name": "Misfortune",
                "effects": [
-                  "{@b Misfortune:} After the target makes a check, you may change one {@dice setback} to a face displaying a {@symbols h}."
+                  "{@b Misfortune:} After the target makes a check, you may change one {@dice setback} to a face displaying a {@symbols f}."
                ],
                "difficultyMod": "+ {@dice difficulty|1}"
             },
