@@ -1,0 +1,2692 @@
+{
+   "$schema": "https://silentarctic.github.io/schemas/schema.json",
+   "_meta": {
+      "source": {
+         "version": "2026.09.25",
+         "json": "book-of-online-sourced-triumphs-8-environments-set-pieces-and-obstacles",
+         "full": "Book Of Online Sourced Triumphs 8: Environments: Set Pieces & Obstacles",
+         "abbreviation": "BOOST:8",
+         "color": "#30F030",
+         "authors": [
+            "Caleb \"Cptn_Smitty\" Smith",
+            "Jennifer \"jendefer\" Van Boxel",
+            "Micah-Shalom \"FatCrab\" Kesselman",
+            "Genesys RPG Community",
+            "Matt \"DatMatt\" Mensch",
+            "Evan Koser",
+            "Flame112",
+            "Giri Raman",
+            "J. Scott Zumwalt",
+            "Matthew Steiner",
+            "Ryall \"OtO\" Hyatt",
+            "Swordbreaker",
+            "Topsecret"
+         ],
+         "convertedBy": [
+            "SilentArctic"
+         ],
+         "url": "https://www.drivethrurpg.com/en/product/409871/boost-8-environments-set-pieces-obstacles",
+         "releaseDate": "11 September 2022"
+      },
+      "filters": {},
+      "defaultItemSettings": []
+   },
+   "rule": [
+      {
+         "name": "Set Pieces",
+         "page": 4,
+         "type": "set piece",
+         "description": [
+            "Set Pieces are prepared narrative environments that can be dropped into any setting, session, or encounter, helping to make your {@title Genesys} game flow smoothly. These set pieces provide a description of the location and optional rules that can be employed to bring these locations to life.",
+            "While advance consideration of a specific set piece will help you (the GM) to adapt and employ it to your specific session, we intended these set pieces to be used at a moment's notice, providing you with a quick reference and—at the very least—tables of dice results relating to a specific environment.",
+            {
+               "title": "What's in This Part of the BOOST?",
+               "entries": [
+                  "In the following section of this issue of BOOST, you will find Set Pieces broken down into the following:",
+                  {
+                     "type": "list",
+                     "items": [
+                        "{@b Set Piece Name:} This is the title of the set piece, providing an initial description of what you can expect to find. Below the title, you will find that set piece's author.",
+                        "{@b Overview:} This section provides a brief narrative explanation of what you can expect to find in the set piece.",
+                        "{@b Use This Environment When…:} This section finishes that sentence (or starts a new sentence), explaining the intended use of the set piece and gives specific examples of what a character could expect to find. Some set pieces provide suggestions for adapting the set piece to specific settings, while others add additional narrative dressing that could be used to bring it to life.",
+                        "{@b Lay of the Land:} Here you will find descriptions and rules for using the set piece in an encounter, including rule references from the {@title Genesys} Core Rulebook, conditions and penalties that might be applied to characters in the set piece, and anything else that GMs will need to know to get started using the set piece.",
+                        "{@b Special Rules:} These rules are custom options that can be (and are often required to be) used in a specific set piece. They can range from conditions to penalties to skill check options that characters can make, providing a special and unique experience while playing in a set piece.",
+                        "{@b Tables for Spending Dice Results:} These tables were custom-made for each set piece, providing in-depth interactions and outcomes that can only be possible in specific environments. Often, options for these dice results might reference or trigger a special rule."
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Environmental Obstacles",
+         "page": 25,
+         "type": "set piece",
+         "description": [
+            "If {@rule set pieces} can be likened to a stage in which encounters play out, Environmental Obstacles would be the props and special effects. These obstacles could be items, natural (or supernatural) conditions, or a literal obstacle standing between the characters and their goal.",
+            "Unlike {@rule set pieces}, environmental obstacles are intended to be dropped into any encounter, providing an additional element and/or hindrance for characters to interact with. Obstacles are much smaller in scope than {@rule set pieces}, and can similarly be reskinned to fit any setting.",
+            {
+               "title": "What's in This Part of the BOOST?",
+               "entries": [
+                  "In the following section of this issue of BOOST, you will find Environmental Obstacles broken down into the following:",
+                  {
+                     "type": "list",
+                     "items": [
+                        "{@b Obstacle Name:} This is the title of the obstacle, providing an initial description of what you can expect to find. Below the title, you will find that obstacle's author.",
+                        "{@b Description:} This section provides a brief narrative explanation of what the obstacle is and how it can be used.",
+                        "{@b Special Rules:} These rules are the bulk of what makes up the obstacle. They can range from conditions to penalties to skill check options that characters can make, adding an extra layer of possibilities to the encounter.",
+                        "{@b Optional Special Rules:} These rules provide additional options, but are not as crucial to the obstacle and could be ignored in favor of simplicity or for setting-specific reasons.",
+                        "{@b Tables for Spending Dice Results:} These tables were custom made for the obstacle, providing in-depth interactions and outcomes when interacting with them. Often, options for these dice results might reference or trigger a special rule."
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Drenching Water",
+         "page": 26,
+         "type": "set piece",
+         "description": [
+            {
+               "title": "Description",
+               "entries": [
+                  "Drenching Water is any situation where water (or any liquid) rains down or saturates an area, such as pouring rain or a sprinkler system triggering. The abundant water can cause slippery terrain and poor visibility."
+               ]
+            },
+            {
+               "title": "Special Rules",
+               "entries": [
+                  "The following rules can be used in an encounter to represent the effects of water raining down over an area:",
+                  {
+                     "type": "list",
+                     "items": [
+                        "{@b Pouring Water:} The raining water adds {@dice setback} for {@rule Concealment (Darkness, Smoke, and Intervening Terrain)|concealment}.",
+                        "{@b Dousing:} Increase the difficulty of fire-based attacks by 1 and the number of {@symbols a} required to activate the {@quality Blast} quality by 1. The {@quality Burn} quality cannot be activated.",
+                        "{@b Conductive:} Electricity-based attacks reduce their critical rating by 1 (to a minimum of 1) and gain the {@quality Superior} and {@quality Vicious|Vicious 2} qualities (or increase their {@quality Vicious} quality by 2).",
+                        "{@b Slippery When Wet:} All attacks gain the {@quality Knockdown} quality."
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Optional Special Rules",
+               "entries": [
+                  {
+                     "type": "list",
+                     "items": [
+                        "{@b Flooded:} The area becomes {@rule Difficult and Impassable Terrain|difficult terrain}.",
+                        "{@b Electrical Device/Wires:} Using the {@rule Aim} maneuver, a character can make an attack targeting an electrical device or exposed wires that is present in the encounter. If the attack succeeds, the electrical device or exposed wires electrocute the surrounding area and all characters within short range of it, causing them to suffer 6 strain. {@symbols t} on this attack can be used to cause an electrocuted character to suffer a {@rule Critical Injuries|Critical Injury}."
+                     ]
+                  }
+               ]
+            },
+            {
+               "type": "table",
+               "_ref": {
+                  "name": "Table 16-1: Spending Advantage and Triumph in Drenching Water"
+               },
+               "columns": [],
+               "rows": []
+            },
+            {
+               "type": "table",
+               "_ref": {
+                  "name": "Table 16-2: Spending Threat and Despair in Drenching Water"
+               },
+               "columns": [],
+               "rows": []
+            },
+            "{@b Author:} Caleb \"Cptn_Smitty\" Smith"
+         ]
+      },
+      {
+         "name": "Explosive Barrels",
+         "page": 27,
+         "type": "set piece",
+         "description": [
+            {
+               "title": "Description",
+               "entries": [
+                  "Explosive Barrels could be anything from barrels of gasoline to crates of dynamite to canisters of unstable hyperdrive fuel. Any encounter that includes explosive barrels increases the risk of damage and danger, as well as the likely possibility of multiple explosions."
+               ]
+            },
+            {
+               "title": "Special Rules",
+               "entries": [
+                  "The following rules can be used in an encounter when exploding barrels are present:",
+                  {
+                     "type": "list",
+                     "items": [
+                        "{@b Explosive Barrel:} If a barrel explodes, it deals 10 damage to all characters within short range and knocks them {@rule prone}.",
+                        "{@b Targeting A Barrel:} A character can target a barrel with a ranged weapon, using the {@rule Aim} rules for targeting an item found on page 98 of the {@title Genesys} Core Rulebook. If they succeed, the barrel explodes.",
+                        "{@b Accidental Explosion:} When attacking a target engaged with a barrel (or a target within short range of a barrel, per the GM's discretion), the attacker may spend {@symbols aaa} or a {@symbols t} to hit the barrel instead of the target, causing the barrel to explode. Additionally, the GM may spend {@symbols hhh} or {@symbols d} to have the attacker hit the exploding barrel instead of the target."
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Optional Special Rules",
+               "entries": [
+                  {
+                     "type": "list",
+                     "items": [
+                        "{@b Thrown Barrel:} A character can throw a barrel at a target within short range as a combat check using the {@skill Athletics} skill. This attack gains the {@quality Cumbersome|Cumbersome 4} and {@quality Inaccurate|Inaccurate 1} item qualities. If the check succeeds, the barrel hits the target and explodes, dealing 10 damage to the target and all characters within short range, except for the attacking character. {@symbols hh} on this check can be used to cause the attacking character to also be hit by this blast."
+                     ]
+                  }
+               ]
+            },
+            "{@b Author:} Caleb \"Cptn_Smitty\" Smith"
+         ]
+      },
+      {
+         "name": "Gravity Distortion",
+         "page": 27,
+         "type": "set piece",
+         "description": [
+            {
+               "title": "Description",
+               "entries": [
+                  "Gravity distortion is any situation where gravity will behave more chaotically. For example, artificial gravity is failing or becoming unstable on a spaceship, an alien world is affected by distortions of a nearby black hole, etc. These effects will usually be a situation of gravity shifting directions or behaving strangely, not just the standard rules for light or heavy {@rule gravity} found on pages 110-111 of the {@title Genesys} Core Rulebook. We have split the rules found here into two parts: one for narrative or structured encounters and one for vehicle encounters."
+               ]
+            },
+            {
+               "title": "Special Rules",
+               "entries": [
+                  "The following rules can be used in an encounter to represent the effects of gravity distortion on an area.",
+                  {
+                     "type": "list",
+                     "items": [
+                        "{@b Shifting Gravity:} Standing up from {@rule prone} is an incidental (unless gravity is changed to flow the same way. See the {@table 17-1: Spending Advantage, Triumph, Threat, and Despair in Gravity Distortion (in Narrative and Structured Encounters)|table} on the next page.)",
+                        "{@b Debris and Flying Objects:} Other things than characters are affected by the gravitational distortion. Many objects or debris should always be moving about to land on and hang on to.",
+                        "{@b Keep It Short:} Since falling will likely occur, try to keep the distance to short for each fall in most circumstances.",
+                        "{@b Waves and Currents (Vehicles Only):} For each turn going with the flow of gravity, increase the vehicle's max speed by 1 (to a max of 5). For each turn against the gravity flow, decrease the max speed by 1 (to a minimum of 1). In addition, for each speed increase, reduce the vehicle's {@rule handling} by 1."
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Optional Special Rules",
+               "entries": [
+                  {
+                     "type": "list",
+                     "items": [
+                        "{@b Other Gravity Rules:} In the {@title Genesys} Core Rulebook on pages 110-111, you can find rules for strong, low, and zero {@rule gravity}. Usually, these will provide {@dice boost} or {@dice setback} to most physical skill checks and make all movement {@rule Difficult and Impassable Terrain|difficult terrain}.",
+                        "{@b Three-Dimensional Movement:} Movements might be more three-dimensional. GMs can use this as a strong narrative element as the players get tossed about by gravitational forces. Characters should lose their sense of direction.",
+                        "{@b Weaker Gravitational Pull:} The gravitational forces could be weaker than normal, allowing for less falling damage to reduce the deadliness of the encounter. Reduce all {@rule falling} damage by half.",
+                        "{@b Chaotic Ordnance (Vehicles Only):} Using a vehicle weapon that fires a physical payload like missiles incurs a {@dice setback|3} penalty.",
+                        "{@b Gravitational Crush (Vehicles Only):} Any system strain caused by movement of the vehicles or from piloting checks deals one additional strain."
+                     ]
+                  }
+               ]
+            },
+            {
+               "type": "table",
+               "_ref": {
+                  "name": "Table 17-1: Spending Advantage, Triumph, Threat, and Despair in Gravity Distortion (in Narrative and Structured Encounters)"
+               },
+               "columns": [],
+               "rows": []
+            },
+            {
+               "type": "table",
+               "_ref": {
+                  "name": "Table 17-2: Spending Advantage, Triumph, Threat, and Despair in Gravity Distortion (in Vehicle Encounters)"
+               },
+               "columns": [],
+               "rows": []
+            },
+            "{@b Author:} Giri Raman"
+         ]
+      },
+      {
+         "name": "Steep Cliffside",
+         "page": 29,
+         "type": "set piece",
+         "description": [
+            {
+               "title": "Description",
+               "entries": [
+                  "A steep cliffside can be encountered in the high mountains, along a wind-swept beach, in a large construction site, or anywhere there is a dramatic elevation change."
+               ]
+            },
+            {
+               "title": "Special Rules",
+               "entries": [
+                  "The following rules can be used in an encounter when a steep cliffside is present:",
+                  {
+                     "type": "list",
+                     "items": [
+                        "{@b Climbing the Slope:} The cliffside is considered {@rule Difficult and Impassable Terrain|impassable terrain}, requiring an {@difficulty average|Athletics or Coordination} to traverse one range band. Failure means the character does not progress up the cliff face.",
+                        "{@b Loose Sand/Rocks:} Add {@dice setback|2} to any combat checks made while climbing the cliffside.",
+                        "{@b Overhanging Ledges:} A series of ledges lead to false paths and confusing dead ends when climbing the cliff face. An {@difficulty average|Survival or Discipline} is required to avoid frustration. Failure causes the character to suffer 2 strain, +1 per uncancelled {@symbols h}.",
+                        "{@b Sharp Rocks or Protruding Roots:} A strata of the cliffside is riddled with volcanic stone, thorny vines, or sharp-edged roots. There are many hand and footholds, but this part of the cliff face requires an {@difficulty average|Resilience or Coordination} to cross without injury. On a failed check the character passes this part of the slope but suffers 3 wounds, +1 strain for each uncanceled {@symbols h}."
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Optional Special Rules",
+               "entries": [
+                  {
+                     "type": "list",
+                     "items": [
+                        "{@b Gust of Wind:} A sudden gust of wind sweeps along the cliffside, pulling at anyone climbing the slope. An {@difficulty average|Athletics} is needed to avoid sliding one range band back down the cliffside.",
+                        "{@b Icy Rime:} Some cliffsides are covered in a thin layer of ice, making the slope dangerously slick. Characters without gloves or other protection must succeed at a {@difficulty hard|Resilience} or suffer 2 wounds, +1 strain per uncanceled {@symbols h}.",
+                        "{@b Rockslide:} A substantial portion of the cliff face comes loose and collapses, requiring a {@difficulty hard|Coordination or Vigilance} to avoid a {@rule falling|fall} from short range (page 112 of the {@title Genesys} Core Rulebook). {@symbols hh} or {@symbols d} generated on the check causes the character to be buried beneath fallen debris and at risk of {@rule suffocation} (page 112 of the {@title Genesys} Core Rulebook). An {@difficulty average|Athletics or Survival} is needed to free a buried character."
+                     ]
+                  }
+               ]
+            },
+            {
+               "type": "table",
+               "_ref": {
+                  "name": "Table 18-1: Spending Advantage and Triumph on a Steep Cliffside"
+               },
+               "columns": [],
+               "rows": []
+            },
+            {
+               "type": "table",
+               "_ref": {
+                  "name": "Table 18-2: Spending Threat and Despair on a Steep Cliffside"
+               },
+               "columns": [],
+               "rows": []
+            },
+            "{@b Author:} Ryall \"OtO\" Hyatt"
+         ]
+      }
+   ],
+   "table": [
+      {
+         "name": "Table 1-1: Spending Advantage and Triumph in an Abandoned Mine",
+         "page": 5,
+         "foot": "{@b Author:} Evan Koser",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols a} or {@symbols t}",
+               "results": "The character finds a useful tool for navigating the passageways, granting {@dice boost} on all checks to move from one room to the next."
+            },
+            {
+               "cost": "{@symbols aa} or {@symbols t}",
+               "results": [
+                  "The discovery of a hidden shaft creates a new passageway, introduces oxygen to a space, or creates a new place for water to drain.",
+                  "A stream of freshwater is untainted by hazardous waste; characters who drink it immediately heal 3 strain."
+               ]
+            },
+            {
+               "cost": "{@symbols aaa} or {@symbols t}",
+               "results": "The character uncovers a cache of unused blasting chemicals that may be harvested."
+            },
+            {
+               "cost": "{@symbols t}",
+               "results": "A network of wide tunnels makes for clear passage from one end of the location to the other, allowing the party to pass freely from room to room."
+            }
+         ]
+      },
+      {
+         "name": "Table 1-2: Spending Threat and Despair in an Abandoned Mine",
+         "page": 6,
+         "foot": "{@b Author:} Evan Koser",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols h} or {@symbols d}",
+               "results": "Water drips from a stalactite and douses the PCs' torch."
+            },
+            {
+               "cost": "{@symbols hh} or {@symbols d}",
+               "results": "A minor collapse or shift of the ground creates {@rule Difficult and Impassable Terrain|difficult terrain} in a medium area around the character."
+            },
+            {
+               "cost": "{@symbols hhh} or {@symbols d}",
+               "results": [
+                  "A cave-in blocks the way the character(s) came through. See {@b Cave-In} special rules above.",
+                  "A cache of unused explosive materials ignites and explodes, immediately dealing 2 wounds to all within short range."
+               ]
+            },
+            {
+               "cost": "{@symbols hhhh} or {@symbols d}",
+               "results": "A pocket of hazardous gas erupts in a short range around the character. All living creatures within range must make a {@difficulty hard|Resilience} as an out-of-turn incidental or suffer 4 wounds. {@symbols hhh} may be spent to {@rule disoriented|disorient} affected characters for the remainder of the encounter (or until the character is healed). {@symbols d} can be spent to force the character to make the check again at the start of their next turn (or after their next skill check, if not in a structured encounter)."
+            },
+            {
+               "cost": "{@symbols d}",
+               "results": "A room begins to inexplicably fill with water, immediately turning the space into {@rule Difficult and Impassable Terrain|difficult terrain}. PCs have only three rounds before the space is completely full."
+            }
+         ]
+      },
+      {
+         "name": "Table 2-1: Spending Advantage and Triumph in Buried Ruins",
+         "page": 7,
+         "foot": "{@b Author:} Matthew Steiner",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols a} or {@symbols t}",
+               "results": [
+                  "The grandeur of the ruins overtakes the character, and they recover 2 strain.",
+                  "The character finds a trinket worth 2d10 or less currency on the ground. It has no other use."
+               ]
+            },
+            {
+               "cost": "{@symbols aa} or {@symbols t}",
+               "results": "A carving or painting on the wall gives the character an idea or hint. Choose a skill (subject to GM approval) and add {@dice boost|2} the next time the character makes a skill check for that skill."
+            },
+            {
+               "cost": "{@symbols aaa} or {@symbols t}",
+               "results": "The character finds a secret passageway that either bypasses a hazard or reveals a new chamber. It stays on the same level."
+            },
+            {
+               "cost": "{@symbols aaaa} or {@symbols t}",
+               "results": [
+                  "The character forces an enemy into a booby trap or collapses something onto them. They suffer 2 wounds and either become {@rule immobilized} or {@rule prone} (as determined by the active player).",
+                  "The carvings give the character a great insight into the nature of these ruins. For the rest of the encounter upgrade all appropriate {@skill Knowledge} checks once."
+               ]
+            },
+            {
+               "cost": "{@symbols t}",
+               "results": [
+                  "The character finds a passage to either a higher level or one below.",
+                  "The character discovers a treasure worth up to 100 currency, with each additional {@symbols t} adding an additional 100."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Table 2-2: Spending Threat and Despair in Buried Ruins",
+         "page": 7,
+         "foot": "{@b Author:} Matthew Steiner",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols h} or {@symbols d}",
+               "results": "The spookiness of the ruins overtakes the character, who suffers 2 strain."
+            },
+            {
+               "cost": "{@symbols hh} or {@symbols d}",
+               "results": "The character's light source goes out."
+            },
+            {
+               "cost": "{@symbols hhh} or {@symbols d}",
+               "results": [
+                  "{@b Venomous Critter} (see Special Rules)",
+                  "A passage behind the character is blocked and they will need to find a new way out."
+               ]
+            },
+            {
+               "cost": "{@symbols hhhh} or {@symbols d}",
+               "results": "Either a booby trap goes off or something just finally gives way. The character must either spend a maneuver to dodge whatever is happening (if they can still take maneuvers) or suffer 2 wounds and either become {@rule prone} or {@rule immobilized} for 2 turns."
+            },
+            {
+               "cost": "{@symbols d}",
+               "results": "{@b Collapsing Floor} (see Special Rules)"
+            }
+         ]
+      },
+      {
+         "name": "Table 3-1: Spending Advantage and Triumph in a Deep Forest",
+         "page": 8,
+         "foot": "{@b Author:} Matt \"DatMatt\" Mensch",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols a} or {@symbols t}",
+               "results": "{@b Enhanced Concealment}"
+            },
+            {
+               "cost": "{@symbols aa} or {@symbols t}",
+               "results": "{@b Enhanced Cover}"
+            },
+            {
+               "cost": "{@symbols aaa} or {@symbols t}",
+               "results": "{@b Wildlife Distraction}"
+            },
+            {
+               "cost": "{@symbols aaaa} or {@symbols t}",
+               "results": "{@b Falling Timber}"
+            },
+            {
+               "cost": "{@symbols t}",
+               "results": "{@b Wildlife Interference}"
+            }
+         ]
+      },
+      {
+         "name": "Table 3-2: Spending Threat and Despair in a Deep Forest",
+         "page": 8,
+         "foot": "{@b Author:} Matt \"DatMatt\" Mensch",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols h} or {@symbols d}",
+               "results": "{@b Enhanced Concealment}"
+            },
+            {
+               "cost": "{@symbols hh} or {@symbols d}",
+               "results": "{@b Enhanced Cover}"
+            },
+            {
+               "cost": "{@symbols hhh} or {@symbols d}",
+               "results": "{@b Wildlife Distraction}"
+            },
+            {
+               "cost": "{@symbols hhhh} or {@symbols d}",
+               "results": "{@b Falling Timber}"
+            },
+            {
+               "cost": "{@symbols d}",
+               "results": "{@b Wildlife Interference}"
+            }
+         ]
+      },
+      {
+         "name": "Table 4-1: Spending Advantage and Triumph in an Eldritch Otherworld",
+         "page": 9,
+         "foot": "{@b Author:} Swordbreaker",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols a} or {@symbols t}",
+               "results": "The character sees or realizes something minor about the eldritch otherworld that gives them a clear goal of where to go next."
+            },
+            {
+               "cost": "{@symbols aa} or {@symbols t}",
+               "results": "The character picks up a trick when trying to navigate the otherworld, granting {@dice boost} to any further checks to navigate the environment until the end of the encounter."
+            },
+            {
+               "cost": "{@symbols aaa} or {@symbols t}",
+               "results": "When making a {@rule fear} check, the character bolsters their nerves against the terrifying sights and sounds; reduce the difficulty of the next {@rule fear} check they make by one."
+            },
+            {
+               "cost": "{@symbols t}",
+               "results": "The character ignores the {@b Eerie Restlessness} rule until the end of the encounter."
+            },
+            {
+               "cost": "{@symbols tt}",
+               "results": "The character is able to overcome their personal fears, and no longer adds {@dice setback|2} due to {@rule fear} checks they make based on their fear motivation."
+            }
+         ]
+      },
+      {
+         "name": "Table 4-2: Spending Threat and Despair in an Eldritch Otherworld",
+         "page": 9,
+         "foot": "{@b Author:} Swordbreaker",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols h} or {@symbols d}",
+               "results": "The character is struck by a terrifying sight, suffering 2 strain."
+            },
+            {
+               "cost": "{@symbols hh} or {@symbols d}",
+               "results": "The path the character is traveling seemingly disappears, making them lose their way."
+            },
+            {
+               "cost": "{@symbols hhh} or {@symbols d}",
+               "results": "The character suffers an accident and hurts themself trying to traverse the terrain, suffering a {@rule Critical Injuries|Critical Injury}. Upgrade the difficulty of any checks made to heal this injury once."
+            },
+            {
+               "cost": "{@symbols d}",
+               "results": "Increase the difficulty of the next {@rule fear} check the character makes by one. If the character fails this check, the GM may apply this penalty until the character leaves the eldritch otherworld."
+            },
+            {
+               "cost": "{@symbols dd}",
+               "results": "The character reduces their strain threshold by 2 until the end of the encounter."
+            }
+         ]
+      },
+      {
+         "name": "Table 5-1: Spending Advantage and Triumph in an Enchanting Starfield",
+         "page": 10,
+         "foot": "{@b Author:} Evan Koser",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols a} or {@symbols t}",
+               "results": "A rough path through the fog is discovered, reducing the time needed to pass through the enchanting starfield."
+            },
+            {
+               "cost": "{@symbols aa} or {@symbols t}",
+               "results": [
+                  "The character is able to temporarily overcome the fog's obscurity.",
+                  "The character steels themselves and adds a {@dice boost} to all future {@rule fear} checks."
+               ]
+            },
+            {
+               "cost": "{@symbols aaa} or {@symbols t}",
+               "results": "Overcome and ignore the penalties of the {@b Astral Haze} or the {@b Astral Malaise} special rules."
+            },
+            {
+               "cost": "{@symbols t}",
+               "results": "A clear path around the fog is discovered."
+            }
+         ]
+      },
+      {
+         "name": "Table 5-2: Spending Threat and Despair in an Enchanting Starfield",
+         "page": 11,
+         "foot": "{@b Author:} Evan Koser",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols h} or {@symbols d}",
+               "results": [
+                  "The character is wracked by an internal voice putting them down, and may not receive assistance from allies on their next skill check.",
+                  "The {@b Astral Malaise} makes it difficult to finish tasks to completion, even thoughts seem to…. The character must suffer 2 strain to perform their next skill check."
+               ]
+            },
+            {
+               "cost": "{@symbols hh} or {@symbols d}",
+               "results": [
+                  "The uncertainty of the landscape leaves the character too unsettled to focus, downgrading the ability of their next skill check.",
+                  "A startling apparition appears; the character must roll an {@difficulty average} {@rule fear} check."
+               ]
+            },
+            {
+               "cost": "{@symbols hhh} or {@symbols d}",
+               "results": [
+                  "A character hurts themself in their confusion and suffers one wound.",
+                  "The character is completely unnerved and cannot recover strain until the end of the scene (or the end of their next turn, if in a structured encounter)."
+               ]
+            },
+            {
+               "cost": "{@symbols d}",
+               "results": "A flash-burst of light erupts in a short range radius around the PC. Characters in the area must make a {@difficulty hard|Resilience} or become blinded until the end of the scene (or the end of their next turn, if in a structured encounter). Blinded characters cannot see. Upgrade the difficulty of all checks twice, and upgrade the difficulty of {@skill Perception} and {@skill Vigilance} checks three times."
+            }
+         ]
+      },
+      {
+         "name": "Table 6-1: Spending Advantage and Triumph in Endless Sand Dunes",
+         "page": 12,
+         "foot": "{@b Author:} Matthew Steiner",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols a} or {@symbols t}",
+               "results": [
+                  "The character's target slips in the sand and falls {@rule prone}.",
+                  "The character finds a trinket worth 2d10 currency buried in the sand. It has no other use."
+               ]
+            },
+            {
+               "cost": "{@symbols aa} or {@symbols t}",
+               "results": "The character finds a silhouette 0 item buried in the sands by someone long gone. Increase the silhouette by 1 for each 2 additional {@symbols a}."
+            },
+            {
+               "cost": "{@symbols aaa} or {@symbols t}",
+               "results": [
+                  "The character pushes their opponent down a dune. The target falls {@rule prone} and moves to short range.",
+                  "The character finds a shaded rocky outcropping they can use to rest for a while. Roll a {@difficulty simple|Cool or Discipline} to recover strain equal to {@symbols s}."
+               ]
+            },
+            {
+               "cost": "{@symbols aaaa} or {@symbols t}",
+               "results": [
+                  "A large amount of sand falls on the character's opponent. They must succeed at an {@difficulty average|Coordination} or become buried up to their chest, {@rule immobilized|immobilizing} them and requiring a {@difficulty hard|Athletics} to get out.",
+                  "The character comes across a caravan going their way."
+               ]
+            },
+            {
+               "cost": "{@symbols t}",
+               "results": "The character has discovered a group of plants around a small, hidden spring, providing food and water for their party."
+            }
+         ]
+      },
+      {
+         "name": "Table 6-2: Spending Threat and Despair in Endless Sand Dunes",
+         "page": 12,
+         "foot": "{@b Author:} Matthew Steiner",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols h} or {@symbols d}",
+               "results": "Sand gets in one of the character's items, which adds {@dice setback} to all checks when using this item. The character may spend a maneuver to clear it out."
+            },
+            {
+               "cost": "{@symbols hh} or {@symbols d}",
+               "results": "A combination of mirages and everything looking the same throws the character off course. Upgrade the difficulty of the next {@skill Survival} check made to find the character's way."
+            },
+            {
+               "cost": "{@symbols hhh} or {@symbols d}",
+               "results": "An item left on the ground becomes buried by the shifting sands. It's unlikely the character shall see it again."
+            },
+            {
+               "cost": "{@symbols hhhh} or {@symbols d}",
+               "results": "{@b Sunstroke}"
+            },
+            {
+               "cost": "{@symbols d}",
+               "results": "{@b Sandstorm}"
+            }
+         ]
+      },
+      {
+         "name": "Table 7-1: Spending Advantage and Triumph in Icy Waters",
+         "page": 13,
+         "foot": "{@b Author:} Matthew Steiner",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols a} or {@symbols t}",
+               "results": [
+                  "The character's target is knocked {@rule prone}.",
+                  "If the character is {@b skating}, they can move one range band as an incidental."
+               ]
+            },
+            {
+               "cost": "{@symbols aa} or {@symbols t}",
+               "results": "The character identifies a {@b thin} or {@b thick} section of ice in a convenient location. If thin, damaging it requires one less {@symbols a}, if thick, it cannot be cracked or snapped."
+            },
+            {
+               "cost": "{@symbols aaa} or {@symbols t}",
+               "results": [
+                  "The character begins to get used to moving on the ice. They take 1 fewer {@dice setback} from physical activities on the ice for the rest of the encounter.",
+                  "{@b Shifting Ice}"
+               ]
+            },
+            {
+               "cost": "{@symbols aaaa} or {@symbols t}",
+               "results": [
+                  "{@b Thin ice} begins cracking under the target (see {@b Cracking Ice} special rule).",
+                  "For the rest of the encounter, your character can start or stop skating without making a check."
+               ]
+            },
+            {
+               "cost": "{@symbols t}",
+               "results": [
+                  "{@b Thick ice} begins cracking under the target (see {@b Cracking Ice} special rule).",
+                  "{@b Thin ice} snaps under the target (see {@b Snapping Ice} special rule)."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Table 7-2: Spending Threat and Despair in Icy Waters",
+         "page": 14,
+         "foot": "{@b Author:} Matthew Steiner",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols h} or {@symbols d}",
+               "results": [
+                  "The glare on the ice distracts your character, add a {@dice setback} to their next check.",
+                  "Your character misidentifies whether a spot of ice is thick or thin."
+               ]
+            },
+            {
+               "cost": "{@symbols hh} or {@symbols d}",
+               "results": [
+                  "The chill is getting to you, make a {@difficulty hard|Resilience} as an incidental, failure causes you to suffer 4 strain.",
+                  "Your character loses control while {@b skating} and must use the mandatory maneuver to move towards or away from the same target as their last movement."
+               ]
+            },
+            {
+               "cost": "{@symbols hhh} or {@symbols d}",
+               "results": [
+                  "A piece of equipment gets iced over and requires a maneuver to clear it before it can be used again.",
+                  "{@b Shifting Ice}"
+               ]
+            },
+            {
+               "cost": "{@symbols hhhh} or {@symbols d}",
+               "results": [
+                  "{@b Thin ice} begins cracking under your character (see {@b Cracking Ice} special rule).",
+                  "The wind begins picking up and is getting colder. Add {@dice setback} to all checks this character makes until the end of the encounter."
+               ]
+            },
+            {
+               "cost": "{@symbols d}",
+               "results": [
+                  "{@b Thick ice} begins cracking under your character (see {@b Cracking Ice} special rule).",
+                  "{@b Thin ice} snaps under the character (see {@b Snapping Ice} special rule)."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Table 8-1: Spending Advantage and Triumph in an Illusory Grove",
+         "page": 15,
+         "foot": "{@b Author:} Ryall \"OtO\" Hyatt",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols a} or {@symbols t}",
+               "results": "The character discerns some clue to the workings of the Grove's illusions, adding {@dice boost} to all allied characters' next skill check."
+            },
+            {
+               "cost": "{@symbols aa} or {@symbols t}",
+               "results": "The character uncovers a cache of supplies, including one {@gear health elixir||rot} (or {@gear painkiller} in modern and science fiction settings)."
+            },
+            {
+               "cost": "{@symbols aaa} or {@symbols t}",
+               "results": "The character perceives the entrance to the grove and can find their way back out if they wish, without further skill checks."
+            },
+            {
+               "cost": "{@symbols aaaa} or {@symbols t}",
+               "results": "The character has a moment of clarity that briefly pierces the illusions around them, revealing one trap or group of ambushers nearby (see {@b Traps} and {@b Ambush} special rules)."
+            },
+            {
+               "cost": "{@symbols t}",
+               "results": "The character has begun to grasp the weird logic of the Illusory Grove, and upgrades all {@skill Perception} and {@skill Vigilance} checks they make while inside the Grove."
+            }
+         ]
+      },
+      {
+         "name": "Table 8-2: Spending Threat and Despair in an Illusory Grove",
+         "page": 15,
+         "foot": "{@b Author:} Ryall \"OtO\" Hyatt",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols h} or {@symbols d}",
+               "results": "The Illusory Grove reminds the character of some past trauma, and they suffer 2 strain."
+            },
+            {
+               "cost": "{@symbols hh} or {@symbols d}",
+               "results": [
+                  "The character mistakenly thinks they have figured out the logic of the Grove, adding {@dice setback} to all allied characters' next skill check.",
+                  "Confusingly, the area around the character is now {@rule Difficult and Impassable Terrain|difficult terrain}."
+               ]
+            },
+            {
+               "cost": "{@symbols hhh} or {@symbols d}",
+               "results": "The character immediately triggers a trap (see {@b Traps} special rules)."
+            },
+            {
+               "cost": "{@symbols hhhh} or {@symbols d}",
+               "results": "The character is separated from the rest of the party, requiring a successful {@difficulty hard|Survival} to reunite with their allies."
+            },
+            {
+               "cost": "{@symbols d}",
+               "results": "The character is overwhelmed by the Illusory Grove, and upgrades the difficulty of all {@skill Discipline} and {@skill Vigilance} checks they make while within the Grove."
+            }
+         ]
+      },
+      {
+         "name": "Table 9-1: Potential Skill Checks (Misty Graveyard)",
+         "page": 16,
+         "foot": "{@b Author:} Caleb \"Cptn_Smitty\" Smith",
+         "columns": [
+            {
+               "header": "Obstacle",
+               "value": "obstacle",
+               "size": 3
+            },
+            {
+               "header": "Skill",
+               "value": "skill",
+               "size": 1
+            },
+            {
+               "header": "Difficulty",
+               "value": "difficulty",
+               "size": 1
+            },
+            {
+               "header": "Notes",
+               "value": "notes",
+               "size": 3
+            }
+         ],
+         "rows": [
+            {
+               "obstacle": "Climbing over the spiked-topped, mist-slicked fence",
+               "skill": "{@skill Athletics}",
+               "difficulty": "{@b Average (}{@dice difficulty|2|1}{@dice setback}{@b )}",
+               "notes": "The tips of the fence are spiked, with a {@dice setback} for the metal being wet and slippery from the mist. {@symbols d} could result in getting snagged on the fence's spiked top, damaging gear, clothing, or injuring the character."
+            },
+            {
+               "obstacle": "Picking the lock that chains the fence closed",
+               "skill": "{@skill Skulduggery}",
+               "difficulty": "{@difficulty hard}",
+               "notes": "{@symbols hhh} could be spent to make the chain rattle, alerting anyone (or anything) inside the graveyard."
+            },
+            {
+               "obstacle": "Break the chain locking the gate",
+               "skill": "{@skill Athletics}",
+               "difficulty": "{@difficulty daunting}",
+               "notes": "{@symbols hh} could be spent to make the chain rattle, alerting anyone (or anything) inside the graveyard."
+            }
+         ]
+      },
+      {
+         "name": "Table 9-2: Spending Threat and Despair in a Misty Graveyard",
+         "page": 16,
+         "foot": "{@b Author:} Caleb \"Cptn_Smitty\" Smith",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols h} or {@symbols d}",
+               "results": "{@b Lost in the Fog}: The active character becomes {@rule disoriented} until the end of their next turn. This can be alleviated by any other character spending an {@symbols a}."
+            },
+            {
+               "cost": "{@symbols hh} or {@symbols d}",
+               "results": "{@b Tripping Hazard}: The active character falls {@rule prone}."
+            },
+            {
+               "cost": "{@symbols hhh} or {@symbols d}",
+               "results": "{@b \"Where'd It Go?!\"}: The active character drops a held item. Due to the darkness and fog, they cannot retrieve it until they succeed at an {@b Average (}{@dice difficulty|2}{@dice setback|3}{@b ) Perception check}. Any active character can spend {@symbols aaa} to find the dropped item."
+            },
+            {
+               "cost": "{@symbols d}",
+               "results": "{@b Frightening Tombstone}: The active character must make an {@difficulty average} {@rule fear} check as an incidental, as per the fear rules on page 243 of the {@title Genesys} Core Rulebook."
+            }
+         ]
+      },
+      {
+         "name": "Table 10-1: Spending Advantage and Triumph in a Ruined Temple",
+         "page": 18,
+         "foot": "{@b Author:} Topsecret",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols a} or {@symbols t}",
+               "results": [
+                  "The character finds a small amount of currency (10-50) hidden in the temple.",
+                  "The character spots a convenient way up to the top of a nearby wall or room, which may be traversed with a {@rule move} maneuver."
+               ]
+            },
+            {
+               "cost": "{@symbols aa} or {@symbols t}",
+               "results": "The character identifies a safe route around any traps or decaying walls in the area, ignoring any {@rule Difficult and Impassable Terrain|difficult terrain} effects in this part of the temple."
+            },
+            {
+               "cost": "{@symbols aaa} or {@symbols t}",
+               "results": "The character spots a secret hideout or shelter, providing either {@rule cover} with Defense 2 or a small significant find such as a valuable trinket."
+            },
+            {
+               "cost": "{@symbols aaaa} or {@symbols t}",
+               "results": "{@b It All Makes Sense…} (see Special Rules)"
+            },
+            {
+               "cost": "{@symbols t}",
+               "results": "{@b What a Find!} (see Special Rules)"
+            }
+         ]
+      },
+      {
+         "name": "Table 10-2: Spending Threat and Despair in a Ruined Temple",
+         "page": 18,
+         "foot": "{@b Author:} Topsecret",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols h} or {@symbols d}",
+               "results": "The character drops something small somewhere in the ruins."
+            },
+            {
+               "cost": "{@symbols hh} or {@symbols d}",
+               "results": "Unexpectedly slick terrain causes the character to fall {@rule prone} and suffer 1 strain."
+            },
+            {
+               "cost": "{@symbols hhh} or {@symbols d}",
+               "results": "{@b Baffling Layout}"
+            },
+            {
+               "cost": "{@symbols hhhh} or {@symbols d}",
+               "results": "{@b ...What Was That?}"
+            },
+            {
+               "cost": "{@symbols d}",
+               "results": "{@b It's Coming Down!} (see Special Rules)"
+            }
+         ]
+      },
+      {
+         "name": "Table 11-1: Spending Advantage and Triumph at the Seaside",
+         "page": 20,
+         "foot": "{@b Author:} Topsecret",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols a} or {@symbols t}",
+               "results": "The character gets used to the water. Ignore up to one {@dice setback} from water spray, mist, or waves."
+            },
+            {
+               "cost": "{@symbols aa} or {@symbols t}",
+               "results": "Sensing the danger, the character plants their feet firm on the rock, sand, or soil. Any attempt to force them to move from their current position costs an additional {@symbols a} or {@symbols h} as appropriate."
+            },
+            {
+               "cost": "{@symbols aaa} or {@symbols t}",
+               "results": "{@b Firm Hold} (see Special Rules)"
+            },
+            {
+               "cost": "{@symbols aaaa} or {@symbols t}",
+               "results": "Knock a target who is within short range from a cliff or hole in the rock over the edge. At the GM's discretion, this can be disallowed for particularly nimble or skilled combative characters."
+            },
+            {
+               "cost": "{@symbols t}",
+               "results": [
+                  "{@b The Sea Calls} (see Special Rules)",
+                  "{@b Sea Legs} (see Special Rules)"
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Table 11-2: Spending Threat and Despair at the Seaside",
+         "page": 20,
+         "foot": "{@b Author:} Topsecret",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols h} or {@symbols d}",
+               "results": "An animal or a group of animals (such as a flock of gulls or a group of fish) distract the character. They must spend a maneuver to chase them away."
+            },
+            {
+               "cost": "{@symbols hh} or {@symbols d}",
+               "results": [
+                  "The character slips on the slick rock, falling {@rule prone}.",
+                  "The character gains a slight fear of the waves and adds {@dice setback} when within short range of the water."
+               ]
+            },
+            {
+               "cost": "{@symbols hhh} or {@symbols d}",
+               "results": "{@b Near or in the water:} A medium size wave pulls the character into the water. They move one range band away from their current position and are now in the water, suffering {@rule Difficult and Impassable Terrain|difficult terrain} penalties to return to shore."
+            },
+            {
+               "cost": "{@symbols hhhh} or {@symbols d}",
+               "results": [
+                  "{@b Near or in the water}: A massive wave pulls the character far out to sea (see {@b Swim Harder} special rule above).",
+                  "{@b Out of the water}: A massive wave knocks the character {@rule prone}, pushing them away from the shore one range band. They suffer 3 strain."
+               ]
+            },
+            {
+               "cost": "{@symbols d}",
+               "results": "Fierce winds force the character off a cliff's edge (see {@b Don't You Let Go!} special rule above)."
+            }
+         ]
+      },
+      {
+         "name": "Table 12-1: Spending Advantage and Triumph on a Small Farm",
+         "page": 21,
+         "foot": "{@b Author:} Matt \"DatMatt\" Mensch",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols a} or {@symbols t}",
+               "results": "{@b Distracting Creature}"
+            },
+            {
+               "cost": "{@symbols aa} or {@symbols t}",
+               "results": "{@b Obnoxious Insects}"
+            },
+            {
+               "cost": "{@symbols aaa} or {@symbols t}",
+               "results": "{@b Irrigation System Malfunction}"
+            },
+            {
+               "cost": "{@symbols aaaa} or {@symbols t}",
+               "results": "{@b Heavy Equipment Malfunction}"
+            },
+            {
+               "cost": "{@symbols t}",
+               "results": "{@b Fire!}"
+            }
+         ]
+      },
+      {
+         "name": "Table 12-2: Spending Threat and Despair on a Small Farm",
+         "page": 21,
+         "foot": "{@b Author:} Matt \"DatMatt\" Mensch",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols h} or {@symbols d}",
+               "results": "{@b Distracting Creature}"
+            },
+            {
+               "cost": "{@symbols hh} or {@symbols d}",
+               "results": "{@b Obnoxious Insects}"
+            },
+            {
+               "cost": "{@symbols hhh} or {@symbols d}",
+               "results": "{@b Irrigation System Malfunction}"
+            },
+            {
+               "cost": "{@symbols hhhh} or {@symbols d}",
+               "results": "{@b Heavy Equipment Malfunction}"
+            },
+            {
+               "cost": "{@symbols d}",
+               "results": "{@b Fire!}"
+            }
+         ]
+      },
+      {
+         "name": "Table 13-1: Spending Threat and Despair in a Twisted Alternate Dimension",
+         "page": 22,
+         "foot": "{@b Author:} Flame112",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols h} or {@symbols d}",
+               "results": "Based on the twisted location they are in, your character learns something important and useful about the real version of this location."
+            },
+            {
+               "cost": "{@symbols hh} or {@symbols d}",
+               "results": "Based on a twisted NPC in the scene, your character learns the Motivations of the real version of an NPC."
+            },
+            {
+               "cost": "{@symbols hhh} or {@symbols d}",
+               "results": "A helpful and good version of a normally-unfriendly or even villainous NPC shows up to and is helpful for the PCs."
+            },
+            {
+               "cost": "{@symbols hhhh} or {@symbols d}",
+               "results": "Your character's future self appears in a mirror and hands them an item useful in this situation."
+            },
+            {
+               "cost": "{@symbols d}",
+               "results": "An alternate version of your character, who made very different life choices, joins the party for a while. To generate them, they swap your character's highest and lowest characteristics. They lose all ranks in your character's highest ranked skill and gain 4 ranks in a different skill from their new highest characteristic. The GM decides any ties."
+            }
+         ]
+      },
+      {
+         "name": "Table 13-2: Spending Advantage and Triumph in a Twisted Alternate Dimension",
+         "page": 22,
+         "foot": "{@b Author:} Flame112",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols a} or {@symbols t}",
+               "results": "Something bad happens to, or is revealed about, the twisted version of an item, location, or NPC your character cares about. Your character imagines it applying to the real thing and suffers 2 strain."
+            },
+            {
+               "cost": "{@symbols aa} or {@symbols t}",
+               "results": "A twisted NPC knows exactly what to say to target your character's Motivations. They get {@dice setback|2} to the next skill check targeting your character."
+            },
+            {
+               "cost": "{@symbols aaa} or {@symbols t}",
+               "results": "An unhelpful, evil version of a normally-friendly NPC shows up to make things worse for the PCs."
+            },
+            {
+               "cost": "{@symbols aaaa} or {@symbols t}",
+               "results": "Your character sees their past self in desperate need through a mirror and is compelled to help them. Your character must give them an item important to you or suffer 4 strain."
+            },
+            {
+               "cost": "{@symbols t}",
+               "results": "Your character is replaced by an alternate version of themself. See the rules in the {@b Spending} {@symbols h} {@b and} {@symbols d} section above for generating them, but instead of joining the party, they replace your character, and you play them. At the end of the encounter, your normal character returns."
+            }
+         ]
+      },
+      {
+         "name": "Table 14-1: Spending Advantage and Triumph at an Underwater Volcano",
+         "page": 23,
+         "foot": "{@b Author:} Matt \"DatMatt\" Mensch",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols a} or {@symbols t}",
+               "results": "{@b Bubbles}"
+            },
+            {
+               "cost": "{@symbols aa} or {@symbols t}",
+               "results": "{@b Panicked Animal}"
+            },
+            {
+               "cost": "{@symbols aaa} or {@symbols t}",
+               "results": "{@b Super-Heated Gas Eruption}"
+            },
+            {
+               "cost": "{@symbols aaaa} or {@symbols t}",
+               "results": "{@b Dust Eruption}"
+            },
+            {
+               "cost": "{@symbols t}",
+               "results": "{@b Magma Eruption} - on them!"
+            }
+         ]
+      },
+      {
+         "name": "Table 14-2: Spending Threat and Despair at an Underwater Volcano",
+         "page": 23,
+         "foot": "{@b Author:} Matt \"DatMatt\" Mensch",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols h} or {@symbols d}",
+               "results": "{@b Bubbles}"
+            },
+            {
+               "cost": "{@symbols hh} or {@symbols d}",
+               "results": "{@b Panicked Animal}"
+            },
+            {
+               "cost": "{@symbols hhh} or {@symbols d}",
+               "results": "{@b Super-Heated Gas Eruption}"
+            },
+            {
+               "cost": "{@symbols hhhh} or {@symbols d}",
+               "results": "{@b Dust Eruption}"
+            },
+            {
+               "cost": "{@symbols d}",
+               "results": "{@b Magma Eruption}"
+            }
+         ]
+      },
+      {
+         "name": "Table 15-1: Spending Advantage and Triumph at the Warehouse at the Docks",
+         "page": 24,
+         "foot": "{@b Author:} J. Scott Zumwalt",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols a} or {@symbols t}",
+               "results": "While in the lower storage area, the active character may take {@rule cover} as an incidental."
+            },
+            {
+               "cost": "{@symbols aa} or {@symbols t}",
+               "results": "The {@rule cover} the target is using becomes damaged and its effective Defense is reduced by 1."
+            },
+            {
+               "cost": "{@symbols aaa} or {@symbols t}",
+               "results": "Your character is able to move to better {@rule cover} as an incidental."
+            },
+            {
+               "cost": "{@symbols t}",
+               "results": "The crane is activated, dropping the hook onto any target of your choice that is in the storage area. If the target is a minion group, one minion is immediately defeated. If the target is a rival or nemesis they are knocked {@rule prone}. (This may only occur once per encounter.)"
+            }
+         ]
+      },
+      {
+         "name": "Table 15-2: Spending Threat and Despair at the Warehouse at the Docks",
+         "page": 24,
+         "foot": "{@b Author:} J. Scott Zumwalt",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols h} or {@symbols d}",
+               "results": "The contents of a nearby crate spill out creating {@rule Difficult and Impassable Terrain|difficult terrain} near your character. Any {@rule cover} your character is using is not affected."
+            },
+            {
+               "cost": "{@symbols hh} or {@symbols d}",
+               "results": "A fire extinguisher erupts suddenly near your character, covering them in white foam. They will suffer 2 strain at the start of each of their turns until they spend 2 maneuvers to wipe most of it off. (This may only occur twice per encounter.)"
+            },
+            {
+               "cost": "{@symbols hhh} or {@symbols d}",
+               "results": "Your character falls through the open crane door and into the water. They must spend 4 maneuvers to return to the warehouse. If the character is a minion group, only one member falls in and that member is defeated."
+            },
+            {
+               "cost": "{@symbols d}",
+               "results": "If your character is in the elevated office area they fall into the lower storage area. They may make an {@difficulty average|Athletics} to land on some crates. If they fail they take half {@rule falling} damage from short range. If they succeed they take no damage. In both cases they are {@rule prone}."
+            }
+         ]
+      },
+      {
+         "name": "Table 16-1: Spending Advantage and Triumph in Drenching Water",
+         "page": 26,
+         "foot": "{@b Author:} Caleb \"Cptn_Smitty\" Smith",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols a} or {@symbols t}",
+               "results": "The target gets water in their eyes, giving them a {@dice setback} on their next check."
+            },
+            {
+               "cost": "{@symbols aa} or {@symbols t}",
+               "results": "Your character uses the slippery surroundings to their advantage, sliding to any spot within short range as an incidental."
+            },
+            {
+               "cost": "{@symbols aaa} or {@symbols t}",
+               "results": "The target drops a held item or weapon into the water, requiring two maneuvers to search for it and retrieve it."
+            },
+            {
+               "cost": "{@symbols t}",
+               "results": "A shot or strike hits something electrical, triggering the effect of {@b Electrical Device/Wires} short range from the target."
+            }
+         ]
+      },
+      {
+         "name": "Table 16-2: Spending Threat and Despair in Drenching Water",
+         "page": 26,
+         "foot": "{@b Author:} Caleb \"Cptn_Smitty\" Smith",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols h} or {@symbols d}",
+               "results": "The active character slips and falls {@rule prone}."
+            },
+            {
+               "cost": "{@symbols hh} or {@symbols d}",
+               "results": "The target takes advantage of the momentum of the attack, sliding to any spot within short range as an out-of-turn incidental."
+            },
+            {
+               "cost": "{@symbols hhh} or {@symbols d}",
+               "results": "The active character drops a held item or weapon into the water, requiring two maneuvers to search for it and retrieve it."
+            },
+            {
+               "cost": "{@symbols d}",
+               "results": "A shot or strike hits something electrical, triggering the effect of {@b Electrical Device/Wires} short range from the active character."
+            }
+         ]
+      },
+      {
+         "name": "Table 17-1: Spending Advantage, Triumph, Threat, and Despair in Gravity Distortion (in Narrative and Structured Encounters)",
+         "page": 28,
+         "foot": "{@b Author:} Giri Raman",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols a} or {@symbols t}",
+               "results": "Your character can reduce {@rule falling} damage by 1 for each {@symbols a} spent."
+            },
+            {
+               "cost": "{@symbols aa} or {@symbols t}",
+               "results": "Your character finds a favorable change in gravity allowing instant movement to anywhere within short range."
+            },
+            {
+               "cost": "{@symbols aaa} or {@symbols t}",
+               "results": [
+                  "An item in the encounter selected by your character gets caught in a gravitation shift and moves one range band in any direction.",
+                  "Your character can change gravity flow to any direction until the end of their next turn."
+               ]
+            },
+            {
+               "cost": "{@symbols t}",
+               "results": [
+                  "Gravitation Surfing: Until the end of their next turn, your character ignores {@rule Difficult and Impassable Terrain|difficult terrain} and can move anywhere as if they could fly (hover, see page 100 of the {@title Genesys} Core Rulebook).",
+                  "Your character can change the gravity direction to any direction they choose for the rest of the encounter."
+               ]
+            },
+            {
+               "cost": "{@symbols h} or {@symbols d}",
+               "results": "The active character becomes dizzy from gravitational shifts and is {@rule disoriented} until the end of their next turn."
+            },
+            {
+               "cost": "{@symbols hh} or {@symbols d}",
+               "results": [
+                  "The active character accidentally makes a {@rule move} maneuver as an incidental in a direction chosen by the GM.",
+                  "The active character treats all movement as {@rule Difficult and Impassable Terrain|difficult terrain} until the end of their next turn."
+               ]
+            },
+            {
+               "cost": "{@symbols hhh} or {@symbols d}",
+               "results": [
+                  "The active character drops a held item or a weapon, which gets caught by gravity, and is sent flying in a random direction.",
+                  "The active character becomes stuck and {@rule immobilized} until their next turn ends."
+               ]
+            },
+            {
+               "cost": "{@symbols d}",
+               "results": "The active character falls, spiraling in a gravitational current up to a distance of long range. The character can attempt a {@difficulty daunting|Athletics} to desperately escape the deadly fall."
+            }
+         ]
+      },
+      {
+         "name": "Table 17-2: Spending Advantage, Triumph, Threat, and Despair in Gravity Distortion (in Vehicle Encounters)",
+         "page": 28,
+         "foot": "{@b Author:} Giri Raman",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols a} or {@symbols t}",
+               "results": [
+                  "Notice a gravitational wave, adding {@dice boost} to the next {@skill Piloting} check made with the vehicle.",
+                  "The next time the vehicle takes system strain from movement (see optional rules), ignore the one point of extra strain."
+               ]
+            },
+            {
+               "cost": "{@symbols aa} or {@symbols t}",
+               "results": "Gravitational distortion adds {@dice setback} to the next combat check against your character's vehicle."
+            },
+            {
+               "cost": "{@symbols aaa} or {@symbols t}",
+               "results": [
+                  "Ignore the effects of the {@rule Gravity Distortion} until the active character's next turn.",
+                  "Gravity bends beam weapons, increasing their range by one range band until the active character's next turn."
+               ]
+            },
+            {
+               "cost": "{@symbols t}",
+               "results": [
+                  "A gravitational burst moves the vehicle one range band in any direction as an out-of-turn incidental.",
+                  "Dense Gravity: Gain a temporary shield of 5 hull trauma and 5 system strain. Any damage to the vehicle target these first."
+               ]
+            },
+            {
+               "cost": "{@symbols h} or {@symbols d}",
+               "results": "Sudden gravitational jolt slows the vehicle down by 1 point of speed."
+            },
+            {
+               "cost": "{@symbols hh} or {@symbols d}",
+               "results": "Gravitation distorts the shields reducing their effectiveness by 1 until the end of the active character's next turn."
+            },
+            {
+               "cost": "{@symbols hhh} or {@symbols d}",
+               "results": "Beams and objects are drawn to the vehicle, reducing the difficulty to hit the active character's vehicle by one until the end of their next turn."
+            },
+            {
+               "cost": "{@symbols d}",
+               "results": [
+                  "The active character's vehicle suffers a {@rule Collisions|minor collision}.",
+                  "One vehicle component (see page 221 of the {@title Genesys} Core Rulebook) becomes compromised. (This does not count towards the vehicle's accumulated {@rule Vehicle Critical Hits|Critical Hits}.)"
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Table 18-1: Spending Advantage and Triumph on a Steep Cliffside",
+         "page": 29,
+         "foot": "{@b Author:} Ryall \"OtO\" Hyatt",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols a} or {@symbols t}",
+               "results": "The character showers dirt and rock onto their opponent, adding {@dice setback} to the target's next skill check."
+            },
+            {
+               "cost": "{@symbols aa} or {@symbols t}",
+               "results": "The character finds a ledge that provides secure footing, upgrading their next check made to climb the cliffside."
+            },
+            {
+               "cost": "{@symbols aaa} or {@symbols t}",
+               "results": "The character spots an easier path up the cliffside, allowing them to climb one range band as a maneuver."
+            },
+            {
+               "cost": "{@symbols t}",
+               "results": "The character centers themselves, reducing strain suffered from any cliffside hazard by 1 for the rest of the scene or encounter."
+            }
+         ]
+      },
+      {
+         "name": "Table 18-2: Spending Threat and Despair on a Steep Cliffside",
+         "page": 29,
+         "foot": "{@b Author:} Ryall \"OtO\" Hyatt",
+         "columns": [
+            {
+               "header": "Cost",
+               "value": "cost",
+               "size": 1
+            },
+            {
+               "header": "Results",
+               "value": "results",
+               "size": 4
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols h} or {@symbols d}",
+               "results": "A handhold gives out, adding {@dice setback} to the character's next skill check."
+            },
+            {
+               "cost": "{@symbols hh} or {@symbols d}",
+               "results": "The cliff face around the character becomes unstable, upgrading the difficulty of the next check they make."
+            },
+            {
+               "cost": "{@symbols hhh} or {@symbols d}",
+               "results": "The character slips and slides down the cliffside one range band."
+            },
+            {
+               "cost": "{@symbols d}",
+               "results": "The character hangs precariously from the cliff face, upgrading any combat checks that target them until the beginning of their next turn."
+            },
+            {
+               "cost": "{@symbols dd}",
+               "results": "The character triggers a {@b Rockslide} (see Optional Special Rules above)."
+            }
+         ]
+      }
+   ],
+   "adventure": [
+      {
+         "name": "Abandoned Mine",
+         "chapters": [
+            {
+               "title": "Overview",
+               "page": 5,
+               "entries": [
+                  "{@i Set Piece}",
+                  "{@b Author:} Evan Koser",
+                  "An unassuming entrance leads into the cliffside, the only available light being that which spills in from outside. A shallow stream flows out of the mouth of the mine, partially shrouded by overgrowth consisting of bushes, vines, and other wild flora."
+               ]
+            },
+            {
+               "title": "Use This Environment When...",
+               "page": 5,
+               "entries": [
+                  "This set piece is intended for use when the PCs stumble upon some kind of industrial site that is no longer under productive use. Though it may be abandoned of its original purpose, the locale does not necessarily need to be devoid of inhabitants. Creatures and adversaries alike may find solace in the dark and secluded caverns. The labyrinthine passageways can act as a serious deterrent against unwanted occupants who are not familiar with their layout. While the title assumes this locale may be a \"mine,\" any sort of industrial backdrop may suffice: a quarry, an industrial park, or other excavation site."
+               ]
+            },
+            {
+               "title": "Lay of the Land",
+               "page": 5,
+               "entries": [
+                  "The only visible or otherwise noticeable entrance is a single threshold which appears to have been lazily blocked off by wooden beams, rope, tape, or other barrier left behind by those who wished to keep people out. Left behind are containers of hazardous waste, tools and equipment, perhaps even rundown machinery. The entire complex slopes upward from the point-of-entry, hence the flowing stream of cold water. The water is undrinkable, as it carries waste, toxic materials, and other hazardous runoff.",
+                  "The narrow and tight passageways may sometimes require an {@skill Athletics} or {@skill Coordination} check in order to traverse from one room to the next, with the difficulty beginning at {@difficulty easy} and increasing based on the circumstances. Stalactites and stalagmites litter the premises, and the irregular bulbous walls glisten with moisture which reflects all light; this causes a disorienting effect that makes {@skill Perception} checks particularly difficult (add {@dice setback|2})."
+               ]
+            },
+            {
+               "title": "Special Rules",
+               "page": 5,
+               "entries": [
+                  "{@b Are You Afraid of the Dark?:} After characters enter the mine they must make an {@difficulty average} {@rule fear} check. Characters whose Fear Motivation relates to darkness must make a {@difficulty hard} {@rule fear} check instead. Unknown creatures, entities, or even dead bodies shrouded by darkness may also call for a {@rule fear} check.",
+                  "{@b Blackdamp:} A mixture of gasses and a reduction of oxygen in this space makes the atmosphere unbreathable. Characters may attempt to hold their breath, and the area is otherwise hazardous with a hazard rating of 2 (see {@rule Environmental Effects} on page 110, {@title Genesys} Core Rulebook).",
+                  "{@b Cave-In:} Ranging from minor to major, the abandoned tunnels and passageways are prone to collapsing support beams, crumbling rocks, or other falling debris. Characters within medium range of the cave-in must make an {@difficulty average|Athletics or Coordination} as an out-of-turn incidental to dodge the falling materials or suffer 2 wounds. {@symbols hh} may be spent to increase the intensity of the cave-in from minor to moderate, or from moderate to major. {@symbols d} can be spent to {@rule immobilized|immobilize} affected characters.",
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 1-1: Spending Advantage and Triumph in an Abandoned Mine"
+                     },
+                     "columns": [],
+                     "rows": []
+                  },
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 1-2: Spending Threat and Despair in an Abandoned Mine"
+                     },
+                     "columns": [],
+                     "rows": []
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Buried Ruins",
+         "chapters": [
+            {
+               "title": "Overview",
+               "page": 6,
+               "entries": [
+                  "{@i Set Piece}",
+                  "{@b Author:} Matthew Steiner",
+                  "Rising out of the ground, stone structures loom above the explorers. Faces of long forgotten rulers lie crumbled and half buried, writings of an unknown script are visible on crumbling walls, and even a few pieces of pottery can still be found. While magnificent, these ruins are not without dangers. Who knows what lurks in the cracks? What secrets might they hold? There may be an entrance to the ruins around, assuming it does not just collapse under your feet."
+               ]
+            },
+            {
+               "title": "Use This Environment When...",
+               "page": 6,
+               "entries": [
+                  "This set piece is intended for use if your characters are exploring buried ruins, either as a destination or just a setting. They will need to deal with animals that have made their home here, fragile structures that could collapse on top of them, or even crumbling ceilings beneath them that may plunge them into the ruins below. These can be Egyptian-styled desert ruins, Mesoamerican or South Asian jungle ruins, Mediterranean ruins from Greece or Rome, or even alien structures. They can be far from civilization or an active excavation site, and range from the size of small buildings to cities. Then of course you could always involve whatever is within the ruins..."
+               ]
+            },
+            {
+               "title": "Lay of the Land",
+               "page": 6,
+               "entries": [
+                  "The ruins will be, at minimum, medium range from one end to the other if only the tip is visible or it is a relatively small structure, while ruins of a whole city can be as large as extreme range. Individual walls, lone columns, and collapsed statues are scattered around the area, providing easy access to {@rule cover} should that be needed. At the GM's discretion the {@b {@rule Interact with the Environment|taking cover}} maneuver (page 99 of the {@title Genesys} Core Rulebook) can be done instead as an incidental.",
+                  "A lot can be learned from studying the writings and images left behind, which can add {@symbols a} to appropriate {@skill Knowledge} or {@skill Perception} checks made when using them. The whole thing goes down at least one story, but no paths will be visible at first. Due to increasing darkness, {@rule Concealment (Darkness, Smoke, and Intervening Terrain)|concealment} increases by one for each level down you go."
+               ]
+            },
+            {
+               "title": "Special Rules",
+               "page": 6,
+               "entries": [
+                  "{@b Historian Heaven:} While in the ruins a character may choose to make a {@difficulty simple|Knowledge} to recover strain at the end of an encounter instead of {@skill Cool} or {@skill Discipline}.",
+                  "{@b Venomous Critter:} Whether a spider, snake, scorpion, or similar creature, it doesn't like that the character disturbed it. Roll {@dice proficiency}{@dice ability} against the character's {@skill Resilience} as an attack with {@quality Pierce|Pierce 4}, {@quality Vicious|Vicious 1}, with {@symbols h} dealing strain.",
+                  "{@b Collapsing Floor:} The ground below the character collapses; they take short range {@rule falling} damage. There is no way to climb back up unless someone can lower a rope, but there should be other ways out if they go further in the ruins. Additional {@symbols d} can cause either longer falls or additional characters to fall.",
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 2-1: Spending Advantage and Triumph in Buried Ruins"
+                     },
+                     "columns": [],
+                     "rows": []
+                  },
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 2-2: Spending Threat and Despair in Buried Ruins"
+                     },
+                     "columns": [],
+                     "rows": []
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Deep Forest",
+         "chapters": [
+            {
+               "title": "Overview",
+               "page": 7,
+               "entries": [
+                  "{@i Set Piece}",
+                  "{@b Author:} Matt \"DatMatt\" Mensch",
+                  "This environment is a temperate coniferous forest, far from civilization."
+               ]
+            },
+            {
+               "title": "Use This Environment When...",
+               "page": 7,
+               "entries": [
+                  "This set piece is intended for use if/when a forest setting is needed. It's a pretty generic forest by most measures."
+               ]
+            },
+            {
+               "title": "Lay of the Land",
+               "page": 7,
+               "entries": [
+                  "Deep in the forest primeval, far from civilization, time seems to stand still. Strange noises break the eerie silence on occasion, evoking thoughts of terrible beasts waiting for a chance to score their next meal. Towering trees and thick undergrowth make passage difficult if one strays off the trail. What made the trail, one may never know."
+               ]
+            },
+            {
+               "title": "Special Rules",
+               "page": 7,
+               "entries": [
+                  "The effects below describe the results of the tables below; for results benefiting the acting character, apply the effects to a target of their choosing. For results hindering the acting character, apply the effects to them instead.",
+                  "{@b Enhanced Concealment:} The affected character gains {@dice boost} to any attempts to conceal themselves until they move from their position or perform an action or maneuver that warrants negation.",
+                  "{@b Enhanced Cover:} The affected character gains +1 Defense to all incoming attacks until they move from this position.",
+                  "{@b Wildlife Distraction}: A large but harmless specimen of local fauna trundles through the area and grants the affected character a free out-of-turn maneuver while the opposition is briefly in disarray due to the ruckus.",
+                  "{@b Falling Timber}: A large, dead specimen of local flora falls at exactly the right/wrong time, costing the affected character their free maneuver for that round, forcing them to dodge out of the way. If they've already spent their maneuvers, the character spends 2 strain to evade the falling flora.",
+                  "{@b Wildlife Interference}: A large, hostile specimen of local fauna decides now is an opportune time to pursue a meal. The creature joins the fray and attacks the affected character.",
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 3-1: Spending Advantage and Triumph in a Deep Forest"
+                     },
+                     "columns": [],
+                     "rows": []
+                  },
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 3-2: Spending Threat and Despair in a Deep Forest"
+                     },
+                     "columns": [],
+                     "rows": []
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Eldritch Otherworld",
+         "chapters": [
+            {
+               "title": "Overview",
+               "page": 8,
+               "entries": [
+                  "{@i Set Piece}",
+                  "{@b Author:} Swordbreaker",
+                  "An eldritch otherworld may be a pocket dimension, the realm of eldritch abominations, the afterworld of the condemned dead, the night terror-plagued dreamscape of the sleeping, or even a digital cyberspace wracked with a destructive virus. While all of these may seem to vary a great deal on the surface level, all share a common theme: a complete defiance to anything approaching reality."
+               ]
+            },
+            {
+               "title": "Use This Environment When...",
+               "page": 8,
+               "entries": [
+                  "An eldritch otherworld pairs well with the horror tone (page 242 of the {@title Genesys} Core Rulebook), especially if the setting is drawing on the cosmic horror genre. It may also be an unintentional location when a character generates {@symbols d} when using the {@talent Teleportation||epg} talent ({@title Expanded Player's Guide} page 97)."
+               ]
+            },
+            {
+               "title": "Lay of the Land",
+               "page": 8,
+               "entries": [
+                  "Eldritch otherworlds are marked by inexplicable and confusing terrain that defies logic and whatever your characters consider \"normal.\" Expect the laws of physics and time to not seem to work at all times. There may be floating landmasses drifting in a swirling void, strange rock formations in unnatural geometric shapes, broken fragments of wildly different climes in close proximity to each other, and more.",
+                  "This environment pairs well with the {@rule fear} and {@rule sanity} rules (page 243-244 of the {@title Genesys} Core Rulebook). The environment is extremely alien and disconcerting for all not native to it, and it wouldn't be unusual for characters to hear faint whispering on the wind, see misleading apparitions out of the corner of their eye, or get lost in a seemingly endless maze of confusing geometry.",
+                  "If using the magic rules (page 210 {@title Genesys} Core Rulebook), characters may find the eldritch otherworld especially hostile to their magic casting, and the GM may upgrade the difficulty of any magic checks once."
+               ]
+            },
+            {
+               "title": "Special Rules",
+               "page": 9,
+               "entries": [
+                  "{@b Strange Angles:} All characters add {@dice setback|2} to any checks made to navigate or traverse the eldritch otherworld.",
+                  "{@b Nightmare Fuel:} If using the {@rule fear} and {@rule sanity} rules, characters must make an upgraded {@difficulty hard||1} {@rule fear} check once per encounter. Additionally, all {@rule fear} checks in this location prey on a character's own personal fear motivation, adding {@dice setback|2} to the check.",
+                  "{@b Eerie Restlessness:} Any time a character recovers strain while within an eldritch otherworld they recover 1 fewer strain (to a minimum of 0).",
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 4-1: Spending Advantage and Triumph in an Eldritch Otherworld"
+                     },
+                     "columns": [],
+                     "rows": []
+                  },
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 4-2: Spending Threat and Despair in an Eldritch Otherworld"
+                     },
+                     "columns": [],
+                     "rows": []
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Enchanting Starfield",
+         "chapters": [
+            {
+               "title": "Overview",
+               "page": 9,
+               "entries": [
+                  "{@i Set Piece}",
+                  "{@b Author:} Evan Koser",
+                  "A thick, glittering swirl of stardust and nebula obscure the horizon as far as the eye can see. The interior of the cosmic cloud appears to glow softly from within. A scarcely perceptible breeze seems to carry with it a haunting melody. Pocket-flashes of light appear and reappear on the peripheries of your vision like fireflies in the night."
+               ]
+            },
+            {
+               "title": "Use This Environment When...",
+               "page": 9,
+               "entries": [
+                  "This set piece is intended to be used in any setting as a catalyst for a party to confront their inner (or very real) demons.",
+                  "Perhaps the starry field is a murk of haunted horrors, or a dazzling magical mist. Of course, it could just be mundane fog. The ever-present dim glow from within the fog could be an illusion, or it could be the result of a device or creature. You can scrap the haunting melody and exchange it for a chilling wind that sends one's neck hairs rising, or really ham it up and throw in a chorus of disembodied voices. The flashing lights might be various encounters, mental or in the physical space. Perhaps they are just props for atmosphere, in which case you might consider adding a scant-seen silhouette to the visual description to illustrate an unknown looming presence."
+               ]
+            },
+            {
+               "title": "Lay of the Land",
+               "page": 10,
+               "entries": [
+                  "The PCs may find themselves quickly overwhelmed by lack of vision. Their first and biggest obstacle will be to navigate through (or around) the environment without getting lost. Going around the environment necessitates taking more time in whatever journey they may already be on. Going through the environment should be presented as the riskier, but quicker option.",
+                  "Inherently, the mist itself is unthreatening, but its omnipresence throughout the scenes in this location should not be underplayed. Periodically pepper the otherwise imperceptible landscape with strange occurrences, such as movement in the peripheries of vision, flickering shadows, or flash-bursts of light—all to help induce a sense of displacement.",
+                  "The internal light may be illusory, or could be generated from a source the PCs can uncover and investigate. The nature of such a device or being will depend on what draws the party, and of course the tones and themes of your adventure. A successful interaction with such a device should help clear up the {@b Astral Malaise} and/or {@b Astral Haze} (see {@b Special Rules} on the next page.)"
+               ]
+            },
+            {
+               "title": "Special Rules",
+               "page": 10,
+               "entries": [
+                  "{@b Obscurity:} The swathe of swirling star-stuff is difficult to see through or around. Skill checks that involve vision or line-of-sight automatically add {@dice setback|2}.",
+                  "{@b Astral Haze:} The swarm of light and obscurity creates a confusing and stimulating environment, causing a character to become {@rule disoriented} while they are within its area. The {@dice setback} caused from being {@rule disoriented} cannot be negated through normal means.",
+                  "{@b Astral Malaise:} Each additional step into the obfuscated mists feels heavier than the last. When a character suffers strain for any reason, they suffer one additional strain.",
+                  {
+                     "type": "sidebar",
+                     "title": "The Mind-Killer",
+                     "page": 10,
+                     "entries": [
+                        "When the party first arrives, set a timer between 5–10 minutes (given what you know about your own party's dynamic). When the time runs out, or after a PC makes a skill check (whichever comes first), have the party roll an {@difficulty easy|Discipline} (this could be a {@rule fear} check if you're using the rules found on page 243 of the {@title Genesys} Core Rulebook).",
+                        "Failure leaves the PC startled and {@rule disoriented} for the remainder of the scene (on top of the {@b Astral Haze}), while success could translate to ignoring one of the environmental effects. You can refer to the {@table 5-1: Spending Advantage and Triumph in an Enchanting Starfield|table in this section} or in the {@title Genesys} Core Rulebook for spending other results.",
+                        "After the first check, reset the timer for an interval you're comfortable with and repeat the process. Increase the difficulty by one each time, to a maximum you feel is appropriate (though {@difficulty daunting} should suffice).",
+                        "As the frightful overtones color the narrative, be sure to draw upon the characters' Fear motivations for inspiration about what PCs may see in the fog, or encounter in their mindscape. A {@symbols t} during this check should allow a PC to avoid having to make these recurring checks."
+                     ]
+                  },
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 5-1: Spending Advantage and Triumph in an Enchanting Starfield"
+                     },
+                     "columns": [],
+                     "rows": []
+                  },
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 5-2: Spending Threat and Despair in an Enchanting Starfield"
+                     },
+                     "columns": [],
+                     "rows": []
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Endless Sand Dunes",
+         "chapters": [
+            {
+               "title": "Overview",
+               "page": 11,
+               "entries": [
+                  "{@i Set Piece}",
+                  "{@b Author:} Matthew Steiner",
+                  "Sand rises and falls as far as the eye can see. The sand dunes appear like ripples on the desert, ranging in size from a few inches to those that tower like monoliths. The hot sun beats down in the day, and the cold winds blow at night. Water is scarce, and with one sand dune looking the same as the next, an inexperienced traveler may find it easy to lose their way. The sand gets everywhere, and if anyone was here before you, the sands buried any sign of it long ago."
+               ]
+            },
+            {
+               "title": "Use This Environment When...",
+               "page": 11,
+               "entries": [
+                  "You should use this set piece when your player characters need to cross a wide sandy desert where the greatest danger is exposure to elements. Depending on how long your characters spend traveling, they may need to deal with both the hot midday sun or the cold nights, or perhaps just one, especially if the desert is on an alien world. Maybe there are mountains in the distance that can help them navigate, or maybe the sands stretch to the horizon providing no aid at all. While mostly an empty habitat, the sandy desert can be the home of all sorts of creatures which may lurk between or even under the dunes.…"
+               ]
+            },
+            {
+               "title": "Lay of the Land",
+               "page": 11,
+               "entries": [
+                  "As far as the eye can see there is nothing but hills of sand, rising and falling and shifting with the wind. Finding water in such an environment requires a {@difficulty formidable|Survival}, while finding food requires a slightly easier {@difficulty daunting|Survival}. Navigating through the dunes to find a particular location or destination adds {@dice setback|2} to the check. Most dunes are up to medium range in height from bottom to top, but others may include flat areas and higher dunes. Because of the shifting sand, characters attempting to climb up or down the sides treat it as {@rule Difficult and Impassable Terrain|difficult terrain} (page 110 of the {@title Genesys} Core Rulebook)."
+               ]
+            },
+            {
+               "title": "Special Rules",
+               "page": 11,
+               "entries": [
+                  "{@b Throw Sand in Their Eyes:} As an action a character may make an opposed {@skill Skulduggery} versus {@skill Vigilance} check against anyone in engaged range. If successful, the target is blinded (page 115 of the {@title Genesys} Core Rulebook) until they can use a maneuver to clear the sand from their eyes. You may spend {@symbols a} to increase the number of maneuvers needed to clear it.",
+                  "{@b Sunstroke:} The heat is getting to you. The GM rolls a {@dice ability|3}, damage 3, stun damage attack against your character's {@skill Resilience}. Upgrade once for each Sunstroke attack your character has already faced this encounter. {@symbols t} causes half of the strain to be dealt as wounds instead.",
+                  "{@b Sandstorm:} At the end of the round a surprise sandstorm will cover the area. Anything beyond short range gains total {@rule Concealment (Darkness, Smoke, and Intervening Terrain)|concealment} and anything within short range has level 2 {@rule Concealment (Darkness, Smoke, and Intervening Terrain)|concealment}. Any small items left unattended are considered lost in the sands. At the beginning of every round while the sandstorm is in effect the GM rolls a {@dice proficiency}{@dice ability|2}, damage 1, stun damage attack against everyone's {@skill Resilience}. The sandstorm ends either at the end of the encounter or when it rolls a {@symbols d}.",
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 6-1: Spending Advantage and Triumph in Endless Sand Dunes"
+                     },
+                     "columns": [],
+                     "rows": []
+                  },
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 6-2: Spending Threat and Despair in Endless Sand Dunes"
+                     },
+                     "columns": [],
+                     "rows": []
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Icy Waters",
+         "chapters": [
+            {
+               "title": "Overview",
+               "page": 12,
+               "entries": [
+                  "{@i Set Piece}",
+                  "{@b Author:} Matthew Steiner",
+                  "Smooth ice spreads out as far as the eye can see, separating everyone from the frigid waters beneath. The air is cold as your warm breath forms icy clouds of vapor. You find moving about tricky due to how slippery everything is. Those who can maintain their balance can easily move about, but those who cannot need to grab onto whatever they can find to keep their balance. Just beware of any gaps in the ice, or worse, surprise cracks, or you may end your journey as a popsicle.…"
+               ]
+            },
+            {
+               "title": "Use This Environment When...",
+               "page": 12,
+               "entries": [
+                  "You should use this set piece when your characters are moving around a body of water where a significant portion, if not all, is frozen solid. The environment is inhospitable, and moving around is difficult to do without falling over. The overall surface will be flat, except any parts where there are gaps leading to the water below. This can be as small as a frozen pond or as large as a whole ocean."
+               ]
+            },
+            {
+               "title": "Lay of the Land",
+               "page": 13,
+               "entries": [
+                  "The icy waters will be, at minimum, medium range from one end to the other if it is a frozen pond or extremely small ice floe, but can be as large as desired to cover anything up to an ocean. When designing the environment, the GM should decide if there are any pre-existing gaps in the ice (ice fishing spots, the environment is drift ice, an ice-breaker passed through recently, etc.) and if the ice is {@b thick} or {@b thin}. Certain {@symbols a} and {@symbols h} results are cheaper or more expensive depending on the thickness of the ice (you could declare a whole pond thin ice, or have one spot halfway between the players and their destination that's thinner, as an example).",
+                  "An {@difficulty average|Perception or Survival} may identify where thin ice is. The ice is {@rule Difficult and Impassable Terrain|difficult terrain} unless the character takes a skating action (see below). In addition, any physical action, such as an attack, will add {@dice setback|2} to the roll unless they take a maneuver to brace themselves first or are skating. Any land-based vehicles decrease {@rule handling} by 2 unless it is designed for the environment (dog sleds, etc.)."
+               ]
+            },
+            {
+               "title": "Special Rules",
+               "page": 13,
+               "entries": [
+                  "{@b Skating:} As an action while not {@rule prone}, a character may make an {@difficulty average|Coordination} with {@dice setback|2} unless the character is wearing some form of skates or has the {@talent Swift} talent (page 76 of the {@title Genesys} Core Rulebook). If the check fails, the character goes {@rule prone} and moves one range band in the direction they were trying to go. If successful, the character no longer treats the terrain as difficult and may move from medium to engaged range or long to medium range in a single maneuver.",
+                  "However, they must spend one maneuver each turn to move (even in a circle) or else they stop skating, fall {@rule prone}, and move one range band in the direction of their last movement. Ceasing to skate also requires the same {@difficulty average|Coordination} it takes to start skating, with the same result of failure. Running into either the edge of the ice or a solid object will stop the character, inflicting 3 wounds and 3 strain.",
+                  "{@b Frigid Waters:} If a character without proper insulation falls in the water for any reason, they suffer 1 wound at the beginning of each turn they remain in the frigid water. Furthermore, once out of the water and until the end of the encounter, they suffer 1 strain at the beginning of each turn unless they can warm up near a sufficient heat source.",
+                  "{@b Cracking Ice:} Cracking ice is visible under the target, and will break in that spot at the end of the target's next turn. Also at the end of that character's turn, the cracking will spread in a line up to short range. If the target is a player, the choice of where it spreads is up to the GM unless the players spend a story point to switch control to them or to stop the cracking. Likewise, if the target is an NPC, the direction the cracking will spread is under the players' control unless the GM uses a story point to switch control or stop it. Additional {@symbols h} may cause additional cracks to spread out.",
+                  "{@b Snapping Ice:} The ice below the character snaps open and they fall into the frigid water. Additional {@symbols d} can cause additional characters to fall, while additional {@symbols h} may cause the ice around the hole to start cracking.",
+                  "{@b Shifting Ice:} If there is broken ice near either the character or their target, the ice shifts in a way that forces all skating characters engaged with the chosen character to move one range band in any direction as an out-of-turn incidental. Characters that are not skating must make a {@difficulty hard|Coordination}, with failure resulting in the same shift. This can be used to force enemies out of position or get allies into a good position. It can even knock characters into the water. Additional {@symbols a} or {@symbols h} may be used to either upgrade the difficulty or increase the range from the target that characters are affected at.",
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 7-1: Spending Advantage and Triumph in Icy Waters"
+                     },
+                     "columns": [],
+                     "rows": []
+                  },
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 7-2: Spending Threat and Despair in Icy Waters"
+                     },
+                     "columns": [],
+                     "rows": []
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Illusory Grove",
+         "chapters": [
+            {
+               "title": "Overview",
+               "page": 14,
+               "entries": [
+                  "{@i Set Piece}",
+                  "{@b Author:} Ryall \"OtO\" Hyatt",
+                  "This shadowed and puzzling terrain contains tricks of light, false paths, mirrored landmarks, and concealed dangers like pits and collapsing deadfalls."
+               ]
+            },
+            {
+               "title": "Use This Environment When...",
+               "page": 14,
+               "entries": [
+                  "You should use this set piece when the players' characters enter a forested area that has been magically altered, such as a fae's protected wood or the gardens around a sorcerer's tower. In a science fiction setting, this environment can represent a large greenhouse packed with alien or bio-engineered plants that emit hallucinatory pheromones. In a cyberpunk setting this terrain might be masked with holographic projections and rely on sub-audible pulses of sound to confuse the senses. In a modern setting, this environment could be a collection of stage dressings and sets in a movie studio's storage building, the flats and lighting rigs in a theater's storerooms, or the jumbled backstage rooms of an amusement park."
+               ]
+            },
+            {
+               "title": "Lay of the Land",
+               "page": 14,
+               "entries": [
+                  "When first entering the Illusory Grove, the path ahead seems obvious. Sunlight streams down through wide gaps in the canopy and a well-trod path is clear. Not long after the PCs enter, however, the underbrush grows thicker and soon there is no longer a clear way forward. The PCs are met with sections of the Grove that require a variety of skills to navigate. To pass through the different sections of the Illusory Grove, the characters must succeed at a series of three {@difficulty hard} checks: {@skill Survival}, {@skill Knowledge|Knowledge (Geography)}, and {@skill Discipline} (or substitute skills that make sense for your setting).",
+                  "Failure at any point means that while the PCs do progress, they are lost for some amount of time appropriate to the pacing of the adventure (mere moments, minutes, or possibly hours), unable to discern even the way they entered the grove. The characters pass the same landmarks again, find footprints that are their own, or see a tall and unique tree that is always the same distance away despite their efforts to approach it. Even on a successful check, the PCs are likely frustrated and confused by the time they find their way through to the next section of the Grove. While they remain in the Illusory Grove, the PCs risk triggering traps and are at a disadvantage during an ambush.",
+                  "The three sections of the grove might first be thickets of thorn bushes and brambles, then the twisted branches and shadowed trunks of fallen trees, and lastly, a dense stand of arrow-straight saplings. In a modern setting, the characters may wind through tall rolls of painted scrim and piled curtains, then half-dismantled painted flats of castle walls and farm porches, and finally a maze of metal frames, thick ropes, and stacked sandbags. In a cyberpunk setting, the holographic terrain can shift at a moment's notice, featuring strange vistas like deserts of glass, vertical pools of silvery water, or overgrown corridors of industrial debris."
+               ]
+            },
+            {
+               "title": "Special Rules",
+               "page": 15,
+               "entries": [
+                  "{@b Traps:} Make an {@difficulty average|Vigilance} (or {@skill Perception} check if the characters are actively looking) to avoid a pit trap, with failure resulting in a {@rule falling|fall} from short range into a smooth-sided hole (or through a trapdoor in modern or science fiction settings). A {@b Hard (}{@dice difficulty|3}{@b )} {@skill Vigilance} (or {@skill Perception}) check is required to avoid triggering a deadfall trap of rocks and branches (or pieces of set dressing and sandbags in a modern setting, or crates and scaffolding in a cyberpunk setting) that deals 3 wounds to all characters in short range and knocks them {@rule prone}.",
+                  "{@b Ambush:} An appropriate group of adversaries might lay in wait for the PCs, perhaps attacking after a trap is triggered. An opposed {@skill Vigilance} vs. {@skill Stealth} check is needed to spot the ambushers before they attack. Failure adds a difficulty die to the PCs' {@rule Determine Initiative|initiative checks} at the beginning of the structured encounter.",
+                  "{@b Frustrating Illusions:} After minutes or hours spent wandering the Illusory Grove, the confusion begins to wear on the characters. An {@difficulty average|Discipline} is needed to avoid the effects of frustration, with failure resulting in the character suffering 3 strain.",
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 8-1: Spending Advantage and Triumph in an Illusory Grove"
+                     },
+                     "columns": [],
+                     "rows": []
+                  },
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 8-2: Spending Threat and Despair in an Illusory Grove"
+                     },
+                     "columns": [],
+                     "rows": []
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Misty Graveyard",
+         "chapters": [
+            {
+               "title": "Overview",
+               "page": 16,
+               "entries": [
+                  "{@i Set Piece}",
+                  "{@b Author:} Caleb \"Cptn_Smitty\" Smith",
+                  "In the dead of night, mist blankets the earth as countless tombstones and statues stand erect, keeping their endless vigil over this courtyard of final resting."
+               ]
+            },
+            {
+               "title": "Use This Environment When...",
+               "page": 16,
+               "entries": [
+                  "You should use this environment when you want to provide an eerie or spooky set piece with plenty of natural {@rule Concealment (Darkness, Smoke, and Intervening Terrain)|concealment} and {@rule cover}. Due to the mist, darkness, and ample hiding places, {@dice setback} abound in the graveyard, making it an exciting location for combat, skill challenges, searches, and hunts."
+               ]
+            },
+            {
+               "title": "Lay of the Land",
+               "page": 16,
+               "entries": [
+                  "The Graveyard covers an area of long range by long range with an iron fence running along its boundary. The iron fence has a height of short range and has two entry points; the main entry gate in the front and a small gate in the back. Both gates are locked with a chain.",
+                  "Tombstones, statues, and other grave markers fill the area, along with a few trees scattered around—objects perfect for providing {@rule cover}. At the very center sits a small stone mausoleum, a single room building short range in length, width, and height. No lights shine over the graveyard, and with the mist over the ground, {@rule Concealment (Darkness, Smoke, and Intervening Terrain)|concealment} from darkness will apply {@dice setback|3} to relevant checks (see Concealment on page 110 of the {@title Genesys} Core Rulebook)."
+               ]
+            },
+            {
+               "title": "Obstacles/Threats",
+               "page": 16,
+               "entries": [
+                  "To gain entrance into the graveyard, each PC could individually attempt to scale the fence. Alternatively, the PCs could pick the lock that chains the gate closed, or attempt to break the chain with brute force (see below).",
+                  "The graveyard has little inherent threats, other than the aforementioned darkness and the potential tripping hazard. However, for various plot reasons, there could be guards patrolling the grounds, on the lookout for any intruders. Two minion groups of two guards each could slowly move around the perimeter of the graveyard. They start at long range from the PCs, but could periodically move one range band closer.",
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 9-1: Potential Skill Checks (Misty Graveyard)"
+                     },
+                     "columns": [],
+                     "rows": []
+                  },
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 9-2: Spending Threat and Despair in a Misty Graveyard"
+                     },
+                     "columns": [],
+                     "rows": []
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Mushroom Forest",
+         "chapters": [
+            {
+               "title": "Overview",
+               "page": 17,
+               "entries": [
+                  "{@i Set Piece}",
+                  "{@b Author:} Swordbreaker",
+                  "Stems the size of tree trunks rise around you. Gigantic, strangely-shaped caps block out the sunlight. The ground is an uneven mesh of mycelium and fungus. A heavy, earthy scent hangs in the air as clouds of giant mushroom spores leave a thick haze that obscure what's around the next bend. The mushroom forest is a strange and alien environment, hostile and mysterious all at once."
+               ]
+            },
+            {
+               "title": "Use This Environment When...",
+               "page": 17,
+               "entries": [
+                  "It may be an isolated valley in a fantasy setting, the never-before-seen environment of an uncharted alien planet, the byproduct of some apocalypse that has left the world in ruins, or a strange dreamscape found by delving into the minds of the sleeping. Characters may be in search of a rare ingredient of an alchemical concoction, or are trying to find the source of an ever expanding colony of mushrooms before it consumes the entire region, making it uninhabitable."
+               ]
+            },
+            {
+               "title": "Lay of the Land",
+               "page": 17,
+               "entries": [
+                  "Gigantic fungi cover the landscape in a dense, forest-like thicket, perhaps stretching on for miles. Characters may have to travel between the trunks, though in some instances, the caps of gigantic mushrooms form walkable pathways reaching high into the sky, with even larger fungi standing above."
+               ]
+            },
+            {
+               "title": "Obstacles/Threats",
+               "page": 17,
+               "entries": [
+                  "{@b Alien Terrain}: The unusual environment of a gigantic mushroom forest may prove alien to even a skilled survivalist. Add {@dice setback|2} to all {@skill Survival} checks made to traverse the terrain, while any checks made to find food or water is upgraded once to represent the possibility of the food or water being poisoned or polluted from toxic spores.",
+                  "{@b Spore Storm}: At some point, a \"spore storm\" may confront the player characters; the thick clouds and layers of mushroom spores get whipped up in strong winds, emulating a powerful dust storm. Aside from severely limiting visibility to short range for everyone, all characters must make a {@skill Resilience} check (with the difficulty determined by the GM) to withstand the effects. Failure in this case may mean the characters get lost, separated, or somebody starts to suffocate due to inhaling too many spores.",
+                  "{@b Toxic Mists}: The player characters might enter an area that is toxic enough that some form of protection is required at all times, ranging from simple coverings to gas masks to fully sealed environmental suits. Immediate or prolonged exposure may have characters suffer as if afflicted from a {@rule Fire, Acid, and Corrosive Atmospheres|corrosive atmosphere} with a rating of 6. (page 111 of the {@title Genesys} Core Rulebook)."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Ruined Temple",
+         "chapters": [
+            {
+               "title": "Overview",
+               "page": 18,
+               "entries": [
+                  "{@i Set Piece}",
+                  "{@b Author:} Topsecret",
+                  "A ruined temple or other similar large structure, which has now fallen into decay."
+               ]
+            },
+            {
+               "title": "Use This Environment When...",
+               "page": 18,
+               "entries": [
+                  "Use the ruined temple when the PCs wish to explore an abandoned structure or ruins.",
+                  "{@b Modification Suggestions:}",
+                  {
+                     "type": "list",
+                     "items": [
+                        "{@b Original Function:} Place of worship, organization headquarters, fortress, residence, etc.",
+                        "{@b Creators:} Ancient civilization, religious organization, cryptic group, warrior clan, etc.",
+                        "{@b Background environment:} Buried temple, a desert temple, a space temple, a volcano temple, etc."
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Lay of the Land",
+               "page": 18,
+               "entries": [
+                  "The temple has multiple pieces of decaying structure, such as crumbling walls or fences, which could qualify as {@rule Difficult and Impassable Terrain|difficult terrain}. A large central or rearmost room is dedicated to the main function of the temple, such as worship or discussion. Various scattered statues, engravings, flooring, art, and mosaics (or if appropriate, computer access or technological artifacts) can be found around the temple. Traps could also be present in the area. Secret areas can be included which might lead to a higher or lower level of the area. Vegetation, if appropriate, provides further {@rule Concealment (Darkness, Smoke, and Intervening Terrain)|concealment} and atmosphere."
+               ]
+            },
+            {
+               "title": "Special Rules",
+               "page": 18,
+               "entries": [
+                  "{@b An Ancient Secret:} Characters may make appropriate {@skill Knowledge} checks concerning the layout, creators, function, and history of the structure. These facts can be used narratively but also may grant {@dice boost} to varied checks.",
+                  "{@b It All Makes Sense…:} The character notices a pattern in the ruins or cracks a secret code in written language. Upgrade all {@skill Knowledge} and {@skill Perception} checks while in the ruins, or ignore the effects of {@rule cover} when this character makes combat checks against adversaries hiding in the ruins.",
+                  "{@b What a Find!:} Rare items can often be found in ancient structures. It is best to make sure these items are somehow important to the PCs, the villain(s), and the story, such as an ancient record, a valuable artifact, or a powerful weapon. These items can be discovered with a {@symbols t}, or with a {@difficulty hard|Perception}. A few quick notes of items tailored to the current setting will be helpful for using this quickly during the session.",
+                  "{@b Baffling Layout:} The temple layout or structure confuses the character. They are {@rule disoriented} until the end of the encounter or until they succeed at an {@difficulty average|Discipline}.",
+                  "{@b ...What Was That?:} A loud noise, a creepy chill, or the clanking of machinery spooks the character. The character who rolled the threat must make a {@rule fear} check (page 243-244 {@title Genesys} Core Rulebook). The difficulty may be set by the GM.",
+                  "{@b It's Coming Down!:} The roof or walls begin to cave in. All characters in the way of the falling structure (engaged with the character who rolled {@symbols d} or with a narratively significant character) must make a {@difficulty hard|Vigilance or Coordination} to avoid being hit. Characters who fail suffer 7 damage. {@symbols hhh} or {@symbols d} from the check can be used to inflict a {@rule Critical Injuries|critical injury}.",
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 10-1: Spending Advantage and Triumph in a Ruined Temple"
+                     },
+                     "columns": [],
+                     "rows": []
+                  },
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 10-2: Spending Threat and Despair in a Ruined Temple"
+                     },
+                     "columns": [],
+                     "rows": []
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Seaside",
+         "chapters": [
+            {
+               "title": "Overview",
+               "page": 19,
+               "entries": [
+                  "{@i Set Piece}",
+                  "{@b Author:} Topsecret",
+                  "A seaside environment with jagged rocks, staggering cliffs, and powerful waves."
+               ]
+            },
+            {
+               "title": "Use This Environment When...",
+               "page": 19,
+               "entries": [
+                  "Use the seaside environment when the PCs encounter trouble near an ocean or large lake."
+               ]
+            },
+            {
+               "title": "Lay of the Land",
+               "page": 19,
+               "entries": [
+                  "The seaside prominently features an ocean or lake. The weather can vary from calm to fierce storms. Tidal waves may crash in, creating havoc for the characters engrossed in their own troubles. One or more structures, as recommended in the Modification Suggestions, can be placed about to create atmosphere as appropriate. Fierce winds also can provide struggles. If the seaside is rocky with cliffs surrounding it, small holes and slick rock may make movement more difficult or tense. Seaside is very flexible and can combine with certain other {@rule set pieces} to make creative environments.",
+                  {
+                     "title": "Modification Suggestions",
+                     "page": 19,
+                     "entries": [
+                        {
+                           "type": "list-no-bullet",
+                           "items": [
+                              "{@b Setback Ideas:} Night cycle, water spray, slick rock, mist, wildlife interfering, waves.",
+                              "{@b Difficult Terrain Ideas:} Holes in the rock filled with water, slick rock, jagged rocks, walking near cliffs.",
+                              "{@b Cover Ideas:} Boulders, rocks, cliff angles, small depressions in the earth, trees, structures, ice formations.",
+                              "{@b Background Environment:} Rocky seaside, sandy seaside, tropical seaside, arctic seaside, etc.",
+                              "{@b Unusual Twists:} Toxic water, acid rain, a tsunami/hurricane is coming, ships/planes battle over the water.",
+                              "{@b Structure Ideas:} Scaffolding, shack, lighthouse, pole houses, research station, abandoned village."
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Special Rules",
+               "page": 19,
+               "entries": [
+                  "{@b Watch Your Step:} Effects that cause characters to move against their will can be very powerful in this setting. It is important to let player characters know where they are in relation to any cliffs. Any character that falls in a hole filled with water must spend a maneuver to escape it (similar to being {@rule prone}). Falling off a cliff (intentional or not) could lead to {@rule falling} damage. Being in the water can also risk a character being swept out to sea due to threat (see {@b Swim Harder}).",
+                  "{@b Firm Hold:} The character grabs an ally who is being swept out to sea or is hanging on the edge of a cliff and narrowly pulls them to safety. The character must be within reasonable (short) range to do this.",
+                  "{@b The Sea Calls:} The character is inspired by the grandeur and strength of the sea. They lose any prior penalties from fear of the water or sea for the remainder of the encounter. They also upgrade the ability of checks made while standing or swimming in the water once.",
+                  "{@b Sea Legs:} This character no longer suffers {@rule Difficult and Impassable Terrain|difficult terrain} penalties from the water and may automatically succeed at checks to swim in currents (see below for examples of the normal penalties of water and currents.)",
+                  "{@b Don't You Let Go!:} A nemesis, rival, or player character may be forced off the edge of a cliff. Whether above rock or water, they should be hanging on to the edge of the cliff. The character (or ally) must perform a {@difficulty hard|Athletics or Coordination} to climb back on to the top (or be pulled to safety). Anyone targeting this character with a combat check can spend {@symbols t} to loosen their grip, causing them to suffer a {@rule falling|fall} from short range.",
+                  "{@b Swim Harder:} The character is swept up in the currents and must spend a maneuver to keep afloat and not sink. Checks that require one to stop swimming should be upgraded twice. Trying to swim against ocean or sea currents while being attacked or under stress should require a {@difficulty hard|Athletics} to move back in near the shore and away from the currents. Success means the character moves one range band closer to shore and is no longer under the effects of the currents. Failure means the character stays in the currents away from the shore.",
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 11-1: Spending Advantage and Triumph at the Seaside"
+                     },
+                     "columns": [],
+                     "rows": []
+                  },
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 11-2: Spending Threat and Despair at the Seaside"
+                     },
+                     "columns": [],
+                     "rows": []
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Small Farm",
+         "chapters": [
+            {
+               "title": "Overview",
+               "page": 21,
+               "entries": [
+                  "{@i Set Piece}",
+                  "{@b Author:} Matt \"DatMatt\" Mensch",
+                  "This environment is a small working farm."
+               ]
+            },
+            {
+               "title": "Use This Environment When...",
+               "page": 21,
+               "entries": [
+                  "This set piece intends to represent a small farm with plants and animals. It will likely work best with terrestrial locales."
+               ]
+            },
+            {
+               "title": "Lay of the Land",
+               "page": 21,
+               "entries": [
+                  "A small farm generally has crops, trees, livestock, equipment, and a number of buildings of different sizes, all on a plot of land that can support all these things. Often they are divided up by fences."
+               ]
+            },
+            {
+               "title": "Special Rules",
+               "page": 21,
+               "entries": [
+                  "The effects below describe the results of the tables below; for results benefiting the acting character, apply the effects to a target of their choosing. For results hindering the acting character, apply the effects to them instead.",
+                  "{@b Distracting Creature:} A harmless silhouette 0 creature causes a distraction for a round.",
+                  "{@b Obnoxious Insects:} An obnoxious insect, or several, become engaged with the character and cause them to suffer 1 strain per round for 2 rounds and costs them one maneuver for those two rounds as they deal with the pesky critter.",
+                  "{@b Irrigation System Malfunction:} A nearby piece of irrigation equipment springs a leak and begins spraying water on the character and all those engaged with them. All affected characters suffer {@dice setback|2} to checks until they disengage from the leaky equipment.",
+                  "{@b Heavy Equipment Malfunction:} A large piece of farm equipment malfunctions in a spectacular way and threatens the character and all engaged with them. All affected parties must spend a maneuver to disengage or spend an action to make a {@difficulty hard|Coordination or Athletics} to avoid taking 6 damage from the malfunctioning equipment. This effect lasts until the equipment is sufficiently stopped.",
+                  "{@b Fire!:} A combustible substance catches fire near the character. The fire starts engaged with the affected character and inflicts 5 damage. Each consecutive round, it spreads one range band in all directions and affects characters and things in those range bands appropriately. The fire will not spread past medium range…unless it makes sense in the ongoing narrative.",
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 12-1: Spending Advantage and Triumph on a Small Farm"
+                     },
+                     "columns": [],
+                     "rows": []
+                  },
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 12-2: Spending Threat and Despair on a Small Farm"
+                     },
+                     "columns": [],
+                     "rows": []
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Twisted Alternate Dimension",
+         "chapters": [
+            {
+               "title": "Overview",
+               "page": 22,
+               "entries": [
+                  "{@i Set Piece}",
+                  "{@b Author:} Flame112",
+                  "In the Twisted Alternate Dimension, everything is disorienting and backwards from the real world. Left is right, good is evil, your edgy orphan adventurers now have eerily supportive parents, your bitter rival is your new best friend, and your worst enemy might just be yourself."
+               ]
+            },
+            {
+               "title": "Use This Environment When...",
+               "page": 22,
+               "entries": [
+                  "…your players travel to a parallel dimension, a mirror realm, an alternate plane, or some kind of trippy dream."
+               ]
+            },
+            {
+               "title": "Lay of the Land",
+               "page": 22,
+               "entries": [
+                  "The Twisted Alternate Dimension will be most interesting when it's set somewhere that the players are already familiar with. You should populate it with familiar NPCs and locations, with some aspect of their personality twisted to an unpleasant extreme. The guard who usually lets the PCs off with a warning is now an authoritarian abusing the law. The grandmotherly figure who bakes the party cookies might now be an evil witch brewing foul concoctions. When the party enters their friendly home tavern, they're met with hostile stares and gleaming daggers instead of jovial cries and friendly bar fights. However, it's not all bad. That creepy cult the party encounters again and again might be a force of peace and goodwill here."
+               ]
+            },
+            {
+               "title": "Special Rules",
+               "page": 22,
+               "entries": [
+                  "In the Twisted Alternate Dimension, all the good dice and symbols are bad, and all the bad dice and symbols are good. Dice pools are constructed using {@dice difficulty}, {@dice challenge}, and {@dice setback} as if they were {@dice ability}, {@dice proficiency}, and {@dice boost}, and vice versa for the difficulty pool. Characters making a skill check hope to roll {@symbols f}, {@symbols h}, and {@symbols d} instead of {@symbols s}, {@symbols a}, and {@symbols t}. Example: Adam has 4 ranks in {@characteristic Presence}, 2 ranks in {@skill Charm}, and he is targeting an NPC with 3 ranks in {@characteristic Presence} and 1 in {@skill Cool}. In the Twisted Alternate Dimension, Adam's player rolls {@dice challenge|2}{@dice difficulty|2} against {@dice proficiency}{@dice ability|2}.",
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 13-1: Spending Threat and Despair in a Twisted Alternate Dimension"
+                     },
+                     "columns": [],
+                     "rows": []
+                  },
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 13-2: Spending Advantage and Triumph in a Twisted Alternate Dimension"
+                     },
+                     "columns": [],
+                     "rows": []
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Underwater Volcano",
+         "chapters": [
+            {
+               "title": "Overview",
+               "page": 23,
+               "entries": [
+                  "{@i Set Piece}",
+                  "{@b Author:} Matt \"DatMatt\" Mensch",
+                  "This environment is a volcano that is underwater or otherwise submerged."
+               ]
+            },
+            {
+               "title": "Use This Environment When...",
+               "page": 23,
+               "entries": [
+                  "This set piece can be used for any setting in which a liquid covers a terrestrial surface."
+               ]
+            },
+            {
+               "title": "Lay of the Land",
+               "page": 23,
+               "entries": [
+                  "Underwater volcanoes aren't necessarily a giant mountain with a caldera. This is a giant undersea bubble of sand and sharp rocks with several super-heated gas vents erupting irregularly. On rare occasions, magma will spew forth with great peril to all nearby."
+               ]
+            },
+            {
+               "title": "Special Rules",
+               "page": 23,
+               "entries": [
+                  "The effects below describe the results of the tables below; for results benefiting the acting character, apply the effects to a target of their choosing. For results hindering the acting character, apply the effects to them instead.",
+                  "{@b Bubbles:} A shifting of the surface below the character causes a burst of harmless bubbles to surround them. The character suffers {@dice setback} on all checks to interact with the environment or those around them until the end of their next turn.",
+                  "{@b Panicked Animal:} A setting-appropriate creature moves recklessly past the character, costing them their free maneuver until the end of their next turn. Additionally, they suffer {@dice setback} on all checks to interact with the environment or those around them until the end of their next turn.",
+                  "{@b Super-Heated Gas Eruption:} A volcanic vent spews forth a vent of hot gas around the character that causes burns. The character suffers 5 damage per turn that they remain in engaged range with the area, for a maximum of 3 turns. The character also suffers the effects of the {@b Bubbles} special rule.",
+                  "{@b Dust Eruption:} A volcanic vent spews forth super-heated dust around the character. The character and all creatures within short range suffer 5 damage and 3 strain while they remain within short range of the area, for a maximum of 3 turns. The character additionally suffers {@dice setback|2} to all {@skill Perception} and {@skill Coordination} checks, and suffers the effects of the {@b Bubbles} special rule.",
+                  "{@b Magma Eruption:} A fast-moving blob of molten material erupts nearby, causing all characters within short range to suffer 5 damage and 3 strain until they move to medium range from the phenomenon, for a maximum of 5 turns. All characters within short range additionally suffer the effects of the {@b Bubbles} special rule.",
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 14-1: Spending Advantage and Triumph at an Underwater Volcano"
+                     },
+                     "columns": [],
+                     "rows": []
+                  },
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 14-2: Spending Threat and Despair at an Underwater Volcano"
+                     },
+                     "columns": [],
+                     "rows": []
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Warehouse at the Docks",
+         "chapters": [
+            {
+               "title": "Overview",
+               "page": 24,
+               "entries": [
+                  "{@i Set Piece}",
+                  "{@b Author:} J. Scott Zumwalt",
+                  "This generic warehouse is temporary storage for goods and materials that have arrived by ships and will leave by semi trailer trucks."
+               ]
+            },
+            {
+               "title": "Lay of the Land",
+               "page": 24,
+               "entries": [
+                  "The warehouse features an array of large truck bays where trailers can be backed up to load items out, a large door that opens to the water that has a crane to hoist items off of a ship to load them in, a large area where all the items are stored, and a series of raised administrative offices accessible via stairs.",
+                  "{@b Large:} From end to end the length of the warehouse is long range. From the administrative area to the other side with the large door to the water is medium range. While on the lower storage area two characters cannot target each other from the long ends of the warehouse due to the amount of crates blocking line-of-sight. Characters can see each other only when at medium range. Characters in the administrative area can target any character in the lower storage area.",
+                  "{@b High Ground:} Characters that perform ranged attacks from the elevated office area to a character in the large storage area ignore most {@rule cover} (depending on line-of-sight) and gain {@dice boost|2} to their attack. Characters performing ranged attacks from the lower storage area to characters in the elevated office area suffer {@dice setback|2} to their attacks. Going up or down the stairs requires two maneuvers.",
+                  "{@b Lot of Cover:} Crates, boxes, and support beams provide {@rule cover} throughout the storage area. Crates and boxes provide Defense 2 and support beams provide Defense 3. Any time a crate is damaged an assortment of consumer goods (coffee makers, action figures, bath towels, dishes, flatware, or anything else similar) spills onto the floor and creates {@rule Difficult and Impassable Terrain|difficult terrain} in the immediate area.",
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 15-1: Spending Advantage and Triumph at the Warehouse at the Docks"
+                     },
+                     "columns": [],
+                     "rows": []
+                  },
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 15-2: Spending Threat and Despair at the Warehouse at the Docks"
+                     },
+                     "columns": [],
+                     "rows": []
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

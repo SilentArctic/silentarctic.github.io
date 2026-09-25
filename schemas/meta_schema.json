@@ -10,6 +10,23 @@
                "type": "string",
                "description": "Version of your homebrew. You can use an actual versioning system, but I suggest using the most recent date it was updated in format \"YYYY.MM.DD\"."
             },
+            "currentRelease": {
+               "type": "object",
+               "properties": {
+                  "version": {
+                     "type": "string",
+                     "description": "Version of the source as of this conversion, usually using semantic versioning such as `v2.2`. This field provides an easy check that the json conversion is up-to-date with the source."
+                  },
+                  "date": {
+                     "type": "string",
+                     "description": "Date of the source, as of this conversion. This field provides an easy check that json conversion is up-to-date with the source."
+                  }
+               },
+               "optional": [
+                  "version",
+                  "date"
+               ]
+            },
             "json": {
                "type": "string",
                "description": "kebab-case title of your homebrew. This is used to differentiate your data from everything else and **must be unique**. This field can only be changed manually in a json editor."
@@ -75,6 +92,7 @@
             "authors"
          ],
          "optional": [
+            "currentRelease",
             "color",
             "url",
             "convertedBy",

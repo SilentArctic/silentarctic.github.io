@@ -237,6 +237,22 @@
                   "description": {
                      "type": "string",
                      "description": "Ability description."
+                  },
+                  "children": {
+                     "type": "array",
+                     "items": {
+                        "type": "object",
+                        "properties": {
+                           "name": {
+                              "type": "string",
+                              "description": "Vehicle ability name."
+                           },
+                           "description": {
+                              "type": "string",
+                              "description": "Ability description."
+                           }
+                        }
+                     }
                   }
                },
                "required": [
