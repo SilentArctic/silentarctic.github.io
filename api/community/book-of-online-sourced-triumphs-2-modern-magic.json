@@ -1,0 +1,754 @@
+{
+   "$schema": "https://silentarctic.github.io/schemas/schema.json",
+   "_meta": {
+      "source": {
+         "version": "2025.12.06",
+         "json": "book-of-online-sourced-triumphs-2-modern-magic",
+         "full": "Book Of Online Sourced Triumphs 2: Modern Magic",
+         "abbreviation": "BOOST:2",
+         "color": "#30F030",
+         "authors": [
+            "Flame112",
+            "Archellus",
+            "CantComplain",
+            "Dmitry Arkhipov",
+            "Gazrok (Chris Markham)",
+            "MaceWindows",
+            "Ryall \"O the Owl\" Hyatt",
+            "Thomas Nelson Kjar"
+         ],
+         "convertedBy": [
+            "SilentArctic"
+         ],
+         "url": "https://www.drivethrurpg.com/en/product/318788/boost-2-modern-magic",
+         "releaseDate": "28 June 2020"
+      },
+      "filters": {},
+      "defaultItemSettings": []
+   },
+   "archetype": [
+      {
+         "name": "Shapeshifter",
+         "page": 2,
+         "characteristics": {
+            "brawn": 2,
+            "agility": 1,
+            "intellect": 2,
+            "cunning": 3,
+            "willpower": 2,
+            "presence": 2
+         },
+         "wt": 8,
+         "st": 9,
+         "xp": 100,
+         "skills": {
+            "description": [
+               "Shapeshifters begin with one rank in {@skill Cool||crb}. You still cannot train ther {@skill Cool||crb} above rank 2 during character creation."
+            ],
+            "skills": [
+               "Cool"
+            ],
+            "ranksTotal": 1,
+            "ranksEach": 1,
+            "choice": false
+         },
+         "abilities": [
+            "Shapeshift",
+            "Iron Sensitivity"
+         ],
+         "description": [
+            "Most shapeshifters are little more than predatory, hive minded parasites of human society. Typically, an adult shapeshifter replaces a human infant with a juvenile shapeshifter, which grows and develops and nearly perfectly mimics an ordinary child. Generally, the parents raising a shapeshifter never suspect that anything is amiss, never realizing that any love and warmth they feel from their child is only a cunning mimicry of the real thing. As shapeshifters mature, the time comes for it to venture into the world, infiltrating human society, and doing the bidding of the Shapeshifter Queen.",
+            "Shapeshifters who are player characters have a key distinction from others of their kind. Exposure to iron during critical developmental periods can free a shapeshifter from the compulsion to obey their Queen, resulting in a being that retains its shapeshifting capabilities, but is actually capable of empathy and emotional connection with humans. T hese shapeshifters frequently find themselves the targets of the Queen-controlled shapeshifters, as well as monster hunters who don’t particularly care to distinguish between the types.",
+            "{@b Author:} Flame112"
+         ]
+      }
+   ],
+   "talent": [
+      {
+         "name": "Never a Dull Moment",
+         "page": 3,
+         "tier": 1,
+         "activation": "passive",
+         "ranked": false,
+         "description": [
+            "Whenever your character makes a check that yields no uncanceled {@symbols ah} and no {@symbols td}, add {@symbols a} to the result if the GM Story Point pool contains at least as many Story Points as the player pool. Add {@symbols h} to the result if it contains fewer.",
+            "{@b Author:} Thomas Nelson Kjar"
+         ]
+      },
+      {
+         "name": "Clairvoiance",
+         "page": 3,
+         "prerequisites": true,
+         "tier": 2,
+         "activation": "passive",
+         "ranked": true,
+         "description": [
+            "{@i Your character must have at least 1 rank in a magic skill to benefit from this talent}. Your character adds {@dice boost} per rank of Clairvoyance to checks made to find specific locations or navigate urban environments.",
+            "{@b Author:} MaceWindows"
+         ]
+      },
+      {
+         "name": "Potent Results",
+         "page": 3,
+         "tier": 2,
+         "activation": "passive",
+         "ranked": true,
+         "description": [
+            "When you purchase this talent for your character, choose one skill. When your character makes checks with that skill, after you have canceled out {@symbols a} and {@symbols h},  you add an additional {@symbols a} if the net result produced {@symbols a} and an additional {@symbols h} if the net result produced {@symbols h}.",
+            "{@b Author:} Thomas Nelson Kjar"
+         ]
+      },
+      {
+         "name": "Unrestrained Spell-Slinging",
+         "page": 3,
+         "tier": 3,
+         "activation": "active (incidental)",
+         "ranked": false,
+         "description": [
+            "Once per encounter when your character casts a spell, they may use this talent to alter how {@symbols a} and {@symbols h} are resolved for the spell's check. For this check, {@symbols a} and {@symbols h} do not cancel. Instead, spend all {@symbols a} first. Then spend all {@symbols h}.",
+            "{@b Author:} Thomas Nelson Kjar"
+         ]
+      },
+      {
+         "name": "Call-Out the Traffic Gods",
+         "page": 3,
+         "tier": 3,
+         "activation": "active (action)",
+         "ranked": false,
+         "description": [
+            "This incantation is performed by rolling a small toy representation of the vehicle your character is driving across the dashboard or similar. Your vehicle will be directed through traffic as red lights turn green and lanes clear up just in time or present quick and safe detours.",
+            "Once per encounter, you may spend a story point. If you do so, your character may downgrade all {@rule Dangerous Driving||crb} checks made due to traffic until the end of the encounter.",
+            "{@b Author:} Archellus"
+         ]
+      },
+      {
+         "name": "Clairvoiance (Improved)",
+         "page": 3,
+         "prerequisites": [
+            "Clairvoiance"
+         ],
+         "tier": 4,
+         "activation": "active (incidental)",
+         "ranked": false,
+         "description": [
+            "{@i Your character must have purchased the {@talent Clairvoyance} talent to benefit from this talent.} Once per session, your character may reveal the existence of one location in a town or city that has not been established previously as if a Story Point had been spent. This may include a store that buys or sells just what the character needs, a well-hidden location to hide from pursuers, or a community center of like-minded people willing to aid the character. The exact details must be discussed and approved by the GM.",
+            "{@b Author:} MaceWindows"
+         ]
+      }
+   ],
+   "quality": [
+      {
+         "name": "Bane",
+         "page": 4,
+         "activation": "passive",
+         "gearType": "weapon",
+         "description": [
+            "Weapons with bane quality have been enchanted or represent something that is anathema to a certain type of creature. When a creature of the type is hit by a weapon with bane quality, reduce the crit rating of the weapon by 1 and the creature suffers a number of wounds equal to the rating of Bane in addition to the damage of the attack.",
+            "{@b Author:} Archellus"
+         ]
+      },
+      {
+         "name": "Infernal Casing",
+         "page": 4,
+         "activation": "passive",
+         "gearType": "weapon",
+         "description": [
+            "These ammunitions are small rituals unto themselves. Containing wardings and trapping a lesser demon inside the casing. When fired from a ranged weapon the casing shoots out the demon soul that flies screaming into its victim damaging their very core and soul. Naturally, using a weapon of this type is taxing on one’s own soul.",
+            " All damage by the weapon is converted to {@quality stun damage||crb}.  If hit, the target must make a {@rule fear||crb} check as described on page 243 of the {@title Genesys Core Rulebook}, with the difficulty equal to the rating of Infernal Casing. Each time a character fires a weapon with Infernal Casing they suffer 1 strain.",
+            "{@b Author:} Archellus"
+         ]
+      }
+   ],
+   "gear": [
+      {
+         "name": "Heavy Mana Pistol",
+         "type": "weapon",
+         "page": 4,
+         "price": "n/a",
+         "rarity": 8,
+         "skill": {
+            "name": "Ranged (Light)",
+            "source": "crb"
+         },
+         "damage": "7",
+         "critical": 3,
+         "range": "Medium",
+         "encumbrance": 1,
+         "hardPoints": 8,
+         "special": [
+            {
+               "name": "Knockdown",
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "Equivalent to a .45 caliber pistol, with a Mana containment chamber instead of a standard magazine. The Mana chamber is filled with the equivalent of 20 rounds of magical force ammunition. This weapon is made to resemble other modern pistols, but with integrated gemstones enchanted to direct magical energy. To reload this weapon, the wielder must have at least one rank in the {@skill Arcana||crb} skill and spend 2 strain as a maneuver.",
+            "{@b Author:} Gazrok (Chris Markham)"
+         ]
+      },
+      {
+         "name": "Clipith",
+         "type": "gear",
+         "page": 4,
+         "price": 2000,
+         "description": [
+            "A minor demon called Clioperthael is bound to this paperclip. The demon has had a curious interest in computers since their invention and is very eager to share the knowledge. Unfortunately, Clipith, as the demon prefers to call itself, is incredibly obnoxious, annoying and overall hard to deal with.",
+            "If the paperclip to which the demon is bound is with your character, they suffer 1 strain every time they make a {@skill Computers||crb} check. Additionally, as an incidental, they can suffer 2 strain and have the demon assist them in that {@skill Computers||crb} check. The demon's {@characteristic Intellect||crb} rating is 2, and its {@skill Computers||crb} rank is 5.",
+            "Your GM can also have Clippith interject in a conversation that involves anything related to computers (to everybody's frustration).",
+            "{@b Author:} Dmitry Arkhipov"
+         ],
+         "rarity": 8,
+         "encumbrance": 0
+      },
+      {
+         "name": "Disilluminator",
+         "type": "gear",
+         "page": 4,
+         "price": 0,
+         "rarity": 6,
+         "description": [
+            "The Disilluminator is a device that can remove or return light from nearby electrical light sources. The wielder can spend a maneuver to remove all electrical light sources within a medium range, or if they have already done this, return the lights to their original state.",
+            "{@b Author:} CantComplain"
+         ],
+         "encumbrance": 1
+      },
+      {
+         "name": "Enchanted Bullets",
+         "type": "gear",
+         "page": 5,
+         "price": 25,
+         "rarity": 4,
+         "description": [
+            "These bullets have been inlaid with special material, ancient text, or etchings anathema to a certain type of creature. When loaded into a ranged weapon, the weapon gains the {@quality Bane} quality for the rest of the encounter or until the ammo runs out.",
+            "{@b Author:} Archellus"
+         ],
+         "encumbrance": 1
+      },
+      {
+         "name": "Forensic Seance Kit",
+         "type": "gear",
+         "page": 5,
+         "price": 1500,
+         "rarity": 6,
+         "encumbrance": 2,
+         "description": [
+            "As a detective, a wide array of tools exist to help solve even the most puzzling of crimes. But nothing provides greater insight than witnessing first-hand the events that transpired at a crime scene. The forensic seance kit contains a football-sized glass sphere, which when attuned with properly causes ghostly apparitions to materialize around the crime scene, playing out the last key moments that occurred.",
+            "While at the scene of a crime, a character may use the forensic seance kit to make a {@difficulty Hard|Arcana }. Each character present with at least one rank in {@skill Arcana||crb} may add {@dice boost} with assistance. On a successful check, the spirit of anyone that died at the scene within two weeks appears, playing out their final moments before vanishing again. The character may spend {@symbols t} to allow one of the spirits to be aware of the character, and they may be asked one yes or no question before they disappear.",
+            "{@b Author:} MaceWindows"
+         ]
+      },
+      {
+         "name": "Invisibility Cloak",
+         "type": "gear",
+         "page": 5,
+         "price": "n/a",
+         "rarity": 9,
+         "description": [
+            "The Invisibility cloak render’s the user invisible when they hide underneath it. Adds {@dice setback|4} of concealment when the user wears it. Overtime, this magical effect can wear off. {@symbols hh} can be spent on checks to permanently reduce the amount of concealment it provides by 1.",
+            "{@b Author:} CantComplain"
+         ],
+         "encumbrance": 1
+      }
+   ],
+   "adversary": [
+      {
+         "name": "The Algorythmist",
+         "page": 5,
+         "type": "nemesis",
+         "characteristics": {
+            "brawn": 2,
+            "agility": 3,
+            "cunning": 5,
+            "intellect": 3,
+            "willpower": 3,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 16,
+            "strain": 18,
+            "defense": [
+               2,
+               2
+            ]
+         },
+         "description": [
+            "In a modern world where magic is as real as any other force, there are those who dedicate their lives to gaining a scientific understanding of the powers of the arcane. Where some rely on the incantations and rituals of mystical tradition, and others seek understanding achieved through meditation and hallucinatory aids, the Algorythmist works their magic by mathematical equations and logic. Quantum processors, augmented reality glasses, neural-interfaced headsets, and myriad other technological totems- each unique to the individual Algorythmist- allow these cyber-mages to work their arcane powers.",
+            "Always searching for a new equation or a solution to a tricky logical puzzle, an Algorythmist must fund their research and experimentation. Algorythmists can be found employed by government agencies, crime syndicates, or corporations. Occasionally, an Algorythmist attracts a group of like-minded magic users and finds themself leading a cult of sorts. More often, an Algorythmist avoids long term responsibilities, using their powers to take what resources they need to complete their next project.",
+            "{@b Author:} Ryall \"O the Owl\" Hyall"
+         ],
+         "skills": [
+            {
+               "name": "Arcana",
+               "characteristic": "intellect",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Computers",
+               "characteristic": "intellect",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Knowledge",
+               "characteristic": "intellect",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Mechanics",
+               "characteristic": "intellect",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Quantum Gating"
+         ],
+         "gear": [
+            "Neural-linked tablet: When this character casts a spell and adds the Additional Target effect, do not increase the difficulty. Also, when this character successfully casts a {@spell Curse||crb} or {@spell Dispel||crb} spell, they heal 1 strain. This implement functions only for this character.",
+            "Quantum matrix generator: This character gains a melee and ranged defense of 2. Opponents may spend {@symbols hhh} or {@symbols d} generated on any check made by this character to cause the item to explode, inflicting 3 wounds.",
+            "Heavy clothing: Increase soak by 1."
+         ],
+         "spells": {
+            "skills": [
+               {
+                  "name": "Arcana",
+                  "source": "crb"
+               }
+            ],
+            "spells": [
+               {
+                  "name": "B = 0? No",
+                  "description": "Select one target within short range and succeed on a {@difficulty Hard|Arcana}. If successful, this magic attack deals 10 damage plus 1 per {@symbols s}."
+               },
+               {
+                  "name": "Paradoxical Cascade",
+                  "description": "Select two targets within short range that are under the effects of a spell and succeed on a {@difficulty Hard|Arcana}. All effects that the targets are under immediately end. May spend {@symbols a} each to affect additional targets."
+               }
+            ]
+         }
+      },
+      {
+         "name": "Master of Mirrors",
+         "page": 6,
+         "type": "nemesis",
+         "characteristics": {
+            "brawn": 2,
+            "agility": 1,
+            "cunning": 4,
+            "intellect": 4,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 14,
+            "strain": 17,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Alchemy",
+               "characteristic": "intellect",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Arcana",
+               "characteristic": "intellect",
+               "ranks": 4,
+               "source": "crb"
+            },
+            {
+               "name": "Coercion",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Deception",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Skulduggery",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Knowledge",
+               "characteristic": "intellect",
+               "ranks": 4,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Magic Staff",
+               "skill": {
+                  "name": "Melee (Heavy)",
+                  "source": "crb"
+               },
+               "damage": 4,
+               "critical": 4,
+               "range": "Engaged"
+            }
+         ],
+         "description": [
+            "A mage who has spent too much time in strange, alternate dimensions sometimes begins to suffer from strange, alternate modes of thinking. These mages typically have devious master plans centered around stealing peoples’ reflections or growing their collections of people trapped in mirrors. They typically establish their lairs in funhouses and mirror mazes, and are sometimes accompanied by a pack of tamed {@adversary Mirror Beast|Mirror Beasts}.",
+            "{@b Author:} Flame112"
+         ],
+         "abilities": [
+            "Distortion",
+            "Smoke and Mirrors"
+         ],
+         "spells": {
+            "skills": [
+               {
+                  "name": "Arcana",
+                  "source": "crb"
+               }
+            ],
+            "spells": [
+               {
+                  "name": "Shardblast",
+                  "description": "Choose a target at short or medium range for this attack and make a {@difficulty Hard|Arcana}. If successful, this magic attack inflicts 8 damage +1 damage per {@symbols s}, with the {@quality Blast|Blast 4|crb} and {@quality Vicious|Vicious 4|crb} qualities."
+               },
+               {
+                  "name": "Mirror Shift",
+                  "description": "Make a {@difficulty Hard|Arcana}. If successful, add {@symbols h} to the results of combat checks targeting this adversary, and this adversary may spend {@symbols hhh} or {@symbols d} from any combat check targeting them to cause the attack to harmlessly hit a mirror image rather than the adversary (this applies even if the attacker realizes the effect is an illusion)."
+               }
+            ]
+         }
+      },
+      {
+         "name": "Minor Poltergeist",
+         "type": "minion",
+         "page": 6,
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "cunning": 2,
+            "intellect": 2,
+            "willpower": 3,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 1,
+            "wounds": 5,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Ghostly",
+            "Undead",
+            "Partial Possessiveness"
+         ],
+         "weapons": [
+            {
+               "name": "Spectral Claws",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 3,
+               "critical": 2,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun damage",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "description": [
+            "{@b Author:} Archellus"
+         ]
+      },
+      {
+         "name": "Mirror Beast",
+         "page": 7,
+         "type": "rival",
+         "characteristics": {
+            "brawn": 3,
+            "agility": 3,
+            "cunning": 1,
+            "intellect": 3,
+            "willpower": 1,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 10,
+            "defense": [
+               1,
+               1
+            ]
+         },
+         "description": [
+            "These creatures resemble wolves, if said wolves were made of thousands of shards of animated reflective glass. When a pack manages to break into our dimension (usually as a result of a ritual gone wrong), their preferred prey are mages.",
+            "{@b Author:} Flame112"
+         ],
+         "skills": [
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Coordination",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 4,
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Stealth",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Pounce",
+            {
+               "name": "Reflect Harm",
+               "description": "Once per encounter as an action, this adversary may heal any wounds it has taken and cause an engaged creature to suffer an equal number of wounds."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Shardclaws",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 2,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Shapeshifter",
+         "page": 7,
+         "type": "nemesis",
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "cunning": 3,
+            "intellect": 4,
+            "willpower": 3,
+            "presence": 3
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 14,
+            "strain": 18,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "description": [
+            "Shapeshifters are parasites of human society and tools of the Shapeshifter Queen. The life cycle of a shapeshifter has three stages. First, a human baby is replaced with a juvenile shapeshifter which grows and develops in place of the discarded child. As an adult, under the direction of their Queen, shapeshifters use their powers to infiltrate every echelon of society. From there, they steal information, blackmail leaders and organizations, seed more new shapeshifters into the world, as well as carrying out strange and inscrutable tasks that don’t appear to have any effect at all. Finally, when a Shapeshifter has completed all tasks that the Queen has for it, it returns to merge with her and impart all the information it has learned.",
+            "Shapeshifters are completely ruthless, unfeeling creatures, but are extremely adept at influencing, seducing, and exploiting humans who fail to see through their facade. However, exposure to iron during critical developmental periods can free a shapeshifter from the compulsion to obey their Queen, resulting in a being that retains its shapeshifting capabilities, but is actually capable of empathy and emotional connection with humans. These shapeshifters frequently find themselves the targets of the more Queen-controlled shapeshifters, as well as monster hunters who don’t particularly care to distinguish between the two.",
+            "Shapeshifters have typically supplanted important figures like police chiefs, gang leaders, or CEOs. At the GM’s direction, they may have additional ranks in unlisted skills related to the role they are playing.",
+            "{@b Author:} Flame112"
+         ],
+         "skills": [
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Charm",
+               "characteristic": "presence",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Deception",
+               "characteristic": "cunning",
+               "ranks": 4,
+               "source": "crb"
+            },
+            {
+               "name": "Knowledge",
+               "characteristic": "intellect",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Skulduggery",
+               "characteristic": "intellect",
+               "ranks": 4,
+               "source": "crb"
+            },
+            {
+               "name": "Stealth",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "spells": {
+            "skills": [],
+            "spells": []
+         },
+         "talents": [
+            {
+               "name": "Can't We Talk About This?",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Shapeshift",
+            "Iron Sensitivity"
+         ]
+      }
+   ],
+   "adversaryAbility": [
+      {
+         "name": "Quantum Gating",
+         "description": [
+            "Once per session, reroll any one {@skill Arcana||crb} skill check."
+         ],
+         "tags": [
+            "skill"
+         ]
+      },
+      {
+         "name": "Partial Possessiveness",
+         "tags": [
+            "action",
+            "combat"
+         ],
+         "description": [
+            "A minor poltergeist can try and possess a limb or object by making an {@b opposed Discipline versus Resilience or Discipline check}. If successful, reduce the number of Minor Poltergeists in the minion group by 1. The limb or object is now possessed and will attack independently on its own initiative always at the end of the turn. A limb or object will attack with whatever nature it is and do damage accordingly. The skill used will be the Minor Poltergeist’s {@skill Discipline||crb}. If possessing an object, the Minor Poltergeist can be forced out if the object is sundered. If possessing a limb, the minor poltergeist is forced out and flees if they take strain or wound damage exceeding their wound threshold. Any damage taken by the minor poltergeist while possessing a limb will also be taken by the victim. A Minor Poltergeist can also be forced out with a successful {@spell Dispel||crb} magic spell.",
+            "{@b Author:} Archellus"
+         ]
+      },
+      {
+         "name": "Shapeshift",
+         "description": [
+            "This adversary has a base form, which is their appearance any time they are not using this ability. This adversary may suffer 4 strain and absorb a physical trace of another creature (hair, fingernails, discarded cigarette butt). If they do, this adversary changes their silhouette and appearance to match that of the creature. This adversary’s characteristics, derived attributes, and equipment are unaffected. This adversary perfectly mimics any natural features (scars, moles, missing appendix, etc.) but is unable to copy artificial ones (tattoos, piercings, medical implants). Pretending to be someone without doing anything out of the ordinary does not require any checks, but behaving strangely or interacting with characters who know the real creature particularly well may require this adversary to pass an {@b opposed Deception versus Vigilance check}, with the difficulty reduced by {@dice difficulty|2}, in order to avoid suspicion. This adversary may end the effect as an action, and it ends automatically if they become incapacitated.",
+            "{@b Author:} Flame112"
+         ],
+         "tags": [
+            "action",
+            "social"
+         ]
+      },
+      {
+         "name": "Iron Sensitivity",
+         "tags": [
+            "weakness"
+         ],
+         "description": [
+            "When this adversary is in physical contact with iron, they suffer from {@rule Suffocation||crb} as described on page 112 of the {@title Genesys Core Rulebook}. Most modern metals are alloyed with enough other metals that coming into contact with them isn’t an issue, but historical weapons (as well as the modern weapons and tools used by monster hunters) are likely to cause this effect. Iron weapons are also considered a {@quality Bane} for Shapeshifters.",
+            "{@b Author:} Flame112"
+         ]
+      }
+   ],
+   "archetypeAbility": [
+      {
+         "name": "Iron Sensitivity",
+         "tags": [
+            "weakness"
+         ],
+         "description": [
+            "When your character is in physical contact with iron, they suffer from {@rule Suffocation||crb} as described on page 112 of the {@title Genesys Core Rulebook}. Most modern metals are alloyed with enough other metals that coming into contact with them isn’t an issue, but historical weapons (as well as the modern weapons and tools used by monster hunters) are likely to cause this effect. Iron weapons are also considered a {@quality Bane} for Shapeshifters.",
+            "{@b Author:} Flame112"
+         ]
+      },
+      {
+         "name": "Shapeshift",
+         "description": [
+            "Your character has a base form, which is their appearance any time they are not using this ability. Your character may suffer 4 strain and absorb a physical trace of another creature (hair, fingernails, discarded cigarette butt). If they do, your character changes their silhouette and appearance to match that of the creature. Your character's characteristics, derived attributes, and equipment are unaffected. Your character perfectly mimics any natural features (scars, moles, missing appendix, etc.) but is unable to copy artificial ones (tattoos, piercings, medical implants). Pretending to be someone without doing anything out of the ordinary does not require any checks, but behaving strangely or interacting with characters who know the real creature particularly well may require your character to pass an {@b opposed Deception versus Vigilance check}, with the difficulty reduced by {@dice difficulty|2}, in order to avoid suspicion. Your character may end the effect as an action, and it ends automatically if they become incapacitated.",
+            "{@b Author:} Flame112"
+         ],
+         "tags": [
+            "social",
+            "action"
+         ]
+      }
+   ]
+}

@@ -1,0 +1,2306 @@
+{
+   "$schema": "https://silentarctic.github.io/schemas/schema.json",
+   "_meta": {
+      "source": {
+         "version": "2026.09.25",
+         "json": "book-of-online-sourced-triumphs-7-modular-encounters",
+         "full": "Book Of Online Sourced Triumphs 7: Modular Encounters",
+         "abbreviation": "BOOST:7",
+         "color": "#30F030",
+         "authors": [
+            "Flame112",
+            "Genesys RPG Community",
+            "Giri Raman",
+            "Haris Rehman",
+            "Jennifer \"jendefer\" Van Boxel",
+            "Matt \"DatMatt\" Mensch",
+            "Micah-Shalom \"FatCrab\" Kesselman",
+            "Ryall \"OtO\" Hyatt"
+         ],
+         "convertedBy": [
+            "SilentArctic"
+         ],
+         "url": "https://www.drivethrurpg.com/en/product/390112/boost-7-modular-encounters",
+         "releaseDate": "13 March 2022"
+      },
+      "filters": {},
+      "defaultItemSettings": []
+   },
+   "vehicle": [
+      {
+         "name": "Oizys-class Sloop",
+         "page": 11,
+         "silhouette": 4,
+         "maxSpeed": 4,
+         "handling": -1,
+         "defense": 1,
+         "armor": 1,
+         "htt": 30,
+         "sst": 22,
+         "controlSkill": {
+            "name": "Operating",
+            "source": "crb"
+         },
+         "complement": "60 crew",
+         "passengers": "15",
+         "consumables": "1 year",
+         "encumbranceCapacity": "70",
+         "price": 1500000,
+         "rarity": 7,
+         "weapons": [
+            {
+               "name": "Paired Flare Lenses",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 3,
+               "critical": 4,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Battery of 4 Accelerator Cannons",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Linked",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "description": [
+            "This fast, overpowered little warship is a favorite of pirates. The Oizys-class Sloop's light armor and lack of missile bays make this ship ideal for decisive engagements rather than drawn-out battles.",
+            "{@b Author:} Ryall \"OtO\" Hyatt"
+         ]
+      },
+      {
+         "name": "Faction Light Assault Mech Unit",
+         "page": 18,
+         "silhouette": 2,
+         "maxSpeed": 3,
+         "handling": 2,
+         "defense": 0,
+         "armor": 1,
+         "htt": 10,
+         "sst": 10,
+         "controlSkill": {
+            "name": "Driving",
+            "source": "crb"
+         },
+         "complement": "1 driver",
+         "passengers": "None",
+         "consumables": "3 days",
+         "encumbranceCapacity": "5",
+         "price": 30000,
+         "rarity": 5,
+         "restricted": true,
+         "weapons": [
+            {
+               "name": "Shoulder-mounted Las Cannon",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 1,
+               "critical": 4,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Auto-Fire",
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Disc Mine Launcher",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 2,
+               "critical": 4,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Guided",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Sonic Hammer",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
+               "damage": 3,
+               "critical": 4,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Disorient",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Concussive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Inaccurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "description": [
+            "{@link https://app.rpgsessions.com/vehicle/620fe5dcf8a60e0011066495|https://app.rpgsessions.com/vehicle/620fe5dcf8a60e0011066495}",
+            "{@b Author:} Giri Raman"
+         ]
+      },
+      {
+         "name": "Faction Scout Exosuit",
+         "page": 18,
+         "silhouette": 2,
+         "maxSpeed": 2,
+         "handling": 0,
+         "defense": 1,
+         "armor": 0,
+         "htt": 6,
+         "sst": 6,
+         "controlSkill": {
+            "name": "Driving",
+            "source": "crb"
+         },
+         "complement": "1 driver",
+         "passengers": "None",
+         "consumables": "1 day",
+         "encumbranceCapacity": "3",
+         "price": 10000,
+         "rarity": 5,
+         "restricted": true,
+         "weapons": [
+            {
+               "name": "ARC Lance",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 2,
+               "critical": 2,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Ensnare",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Laser Cannon",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 9,
+               "critical": 3,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Cumbersome",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Personal Scale",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "description": [
+            "{@link https://app.rpgsessions.com/vehicle/620fe5dcf8a60e0011066495|https://app.rpgsessions.com/vehicle/620fe5dcf8a60e0011066495}",
+            "{@b Author:} Giri Raman"
+         ]
+      },
+      {
+         "name": "Heavy Mechanical Tactical Unit",
+         "page": 18,
+         "silhouette": 3,
+         "maxSpeed": 3,
+         "handling": 0,
+         "defense": 0,
+         "armor": 2,
+         "htt": 14,
+         "sst": 12,
+         "controlSkill": {
+            "name": "Driving",
+            "source": "crb"
+         },
+         "complement": "1 pilot, 1 gunner/operator",
+         "passengers": "2 (using external hand-rails)",
+         "consumables": "2 days",
+         "encumbranceCapacity": "10",
+         "price": 50000,
+         "rarity": 6,
+         "restricted": true,
+         "abilities": [
+            {
+               "name": "Repulsor Thrusters",
+               "description": "May spend 1 system strain per round to fly and hover to a maximum of medium range from the ground. While airborne, it increases {@rule handling} by +1."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Twin-linked Beam Cannon",
+               "fireArc": "Front",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 1,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Armored Fist",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 1,
+               "critical": 4,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Concussive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Shoulder-mounted Rocket Bay",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 2,
+               "critical": 4,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "description": [
+            "{@link https://app.rpgsessions.com/vehicle/620fe9a8bf30180012a83200|https://app.rpgsessions.com/vehicle/620fe9a8bf30180012a83200}",
+            "{@b Author:} Giri Raman"
+         ]
+      },
+      {
+         "name": "Mobile Recon Strike Exosuit",
+         "page": 19,
+         "silhouette": 2,
+         "maxSpeed": 3,
+         "handling": 1,
+         "defense": 2,
+         "armor": 1,
+         "htt": 15,
+         "sst": 12,
+         "controlSkill": {
+            "name": "Piloting",
+            "source": "crb"
+         },
+         "complement": "1 pilot",
+         "passengers": "None",
+         "consumables": "1 day",
+         "encumbranceCapacity": "6",
+         "price": 20000,
+         "rarity": 7,
+         "restricted": true,
+         "abilities": [
+            {
+               "name": "Versatile",
+               "description": "{@skill Driving} can also be used to control this vehicle."
+            },
+            {
+               "name": "Repulsor Thrusters",
+               "description": "May spend 1 system strain per round to fly and hover to a maximum of medium range from the ground. While airborne, it increases {@rule handling} by +1."
+            },
+            {
+               "name": "Vehicle Traits",
+               "description": "For each Mobile Recon Strike Exosuit, assign one of the following traits:",
+               "children": [
+                  {
+                     "name": "Fine-tuned Adjustment Stabilizer",
+                     "description": "Removes {@dice setback} from using fine motor skills while piloting an Exosuit."
+                  },
+                  {
+                     "name": "Mechanical Diagnostics and Repair Tool",
+                     "description": "Allows repairs and machine interface from suits. Acts as {@rule the right tool for the job} and adds {@dice boost} for {@skill Mechanics} and {@skill Computers} checks."
+                  },
+                  {
+                     "name": "Back-mounted Recon Drone",
+                     "description": "Allows launch and control of a utility drone. While the drone is active, it grants {@dice boost|2} to all {@skill Perception} and {@skill Survival} checks. As an action, a Character can control the drone from the Vehicle. If the Character has the {@talent Animal Companion} talent or equivalent, it follows that talent's rules."
+                  }
+               ]
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Arm-mounted Beam Cannon",
+               "fireArc": "Front",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 1,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "AI-guided Missiles",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 4,
+               "critical": 3,
+               "range": "Extreme",
+               "qualities": [
+                  {
+                     "name": "Guided",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "description": [
+            "{@link https://app.rpgsessions.com/vehicle/620feaedbf30180012a83213|https://app.rpgsessions.com/vehicle/620feaedbf30180012a83213}",
+            "{@b Author:} Giri Raman"
+         ]
+      }
+   ],
+   "adversary": [
+      {
+         "name": "Council",
+         "page": 2,
+         "type": "nemesis",
+         "characteristics": {
+            "brawn": 2,
+            "agility": 3,
+            "intellect": 3,
+            "cunning": 3,
+            "willpower": 3,
+            "presence": 4
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 15,
+            "strain": 15,
+            "defense": [
+               1,
+               1
+            ]
+         },
+         "skills": [
+            {
+               "name": "Charm",
+               "characteristic": "presence",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Coercion",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Deception",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Knowledge (Lore)",
+               "characteristic": "intellect",
+               "ranks": 3,
+               "source": "rot"
+            },
+            {
+               "name": "Leadership",
+               "characteristic": "presence",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Melee (Light)",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Negotiation",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Primal",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 1,
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "The council consists of multiple members, but during social combat treat it mechanically as a single Nemesis NPC with the following statistics:",
+            "{@b Author:} Jennifer \"jendefer\" Van Boxel"
+         ]
+      },
+      {
+         "name": "Skeleswarm",
+         "page": 6,
+         "type": "rival",
+         "characteristics": {
+            "brawn": 3,
+            "agility": 1,
+            "intellect": 2,
+            "cunning": 3,
+            "willpower": 1,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 20,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Stealth",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Swarm",
+            "Undead",
+            {
+               "name": "Undying",
+               "description": "When the Skeleswarm reaches half its wound threshold, it may spawn a minion group consisting of 3 {@adversary Swarmling|Swarmlings}. Additionally, the GM may spend {@symbols hhh} from any check made by a PC to manifest a single {@adversary Swarmling} to an existing minion group, removing damage from the group accordingly. The GM may also spend {@symbols d} to manifest 2 {@adversary Swarmling|Swarmlings} to an existing minion group."
+            },
+            {
+               "name": "Terrifying",
+               "description": "At the start of the encounter, all opponents within medium range must make an {@difficulty average} {@rule fear} check as an out-of-turn incidental (see page 243 of the {@title Genesys} Core Rulebook)."
+            },
+            {
+               "name": "Many Hands",
+               "description": "This character gains {@dice boost} on all {@skill Brawl} checks for its configuration of its many hands."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Clawing hands",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 4,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Ensnare",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "a special treasure of the GM's choosing that furthers the almighty plot"
+         ],
+         "description": [
+            "This undead creature is the amalgam of the bones of creatures it has consumed. It has many arms with many hands, all with multiple joints and gruesome claws at their ends. The creature never leaves the water, making its torso of rib cages, skulls, and other structural bones difficult to view.",
+            "Its primary motivation is to consume its victims and add their biomass to its own. Once encapsulated, the bones could form yet another wickedly clawed hand at the end of a multi-jointed arm.",
+            "{@b Author:} Matt \"DatMatt\" Mensch"
+         ]
+      },
+      {
+         "name": "Swarmling",
+         "page": 7,
+         "type": "minion",
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 1,
+            "cunning": 1,
+            "willpower": 1,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 1,
+            "wounds": 3,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Stealth",
+               "characteristic": "agility",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Swarm",
+            "Undead"
+         ],
+         "weapons": [
+            {
+               "name": "Clawing hands",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 4,
+               "critical": 4,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Ensnare",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "description": [
+            "Sometimes portions of the creature segment and pursue victims on their own. Their strength is in numbers, and they rarely operate in groups fewer than 3.",
+            "{@b Author:} Matt \"DatMatt\" Mensch"
+         ]
+      },
+      {
+         "name": "Mirror Keeper",
+         "page": 12,
+         "type": "nemesis",
+         "characteristics": {
+            "brawn": 3,
+            "agility": 3,
+            "intellect": 4,
+            "cunning": 4,
+            "willpower": 5,
+            "presence": 3
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 0,
+            "strain": 0,
+            "defense": [
+               1,
+               2
+            ]
+         },
+         "skills": [
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Charm",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Coercion",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Resilience",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 4,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Clever Retort",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Terrifying",
+               "description": "At the start of the encounter, all opponents must make a {@difficulty hard} {@rule fear} check as an out-of-turn incidental, as per page 243 of the {@title Genesys} Core Rulebook. If there are multiple sources of {@rule fear} in the encounter, the opponents only make one {@rule fear} check against the most terrifying enemy."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Spectral grasp",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 7,
+               "critical": 2,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun",
+                     "source": "crb"
+                  }
+               ],
+               "details": "{@quality Stun} equals the number of Figments still alive (up to 4)."
+            }
+         ],
+         "description": [
+            "{@b Author:} Micah-Shalom \"FatCrab\" Kesselman"
+         ]
+      },
+      {
+         "name": "Faction Combat Pilot",
+         "page": 17,
+         "type": "rival",
+         "characteristics": {
+            "brawn": 3,
+            "agility": 4,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 14,
+            "defense": [
+               1,
+               1
+            ]
+         },
+         "skills": [
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Computers",
+               "characteristic": "intellect",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Driving",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Gunnery",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Mechanics",
+               "characteristic": "intellect",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Piloting",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Melee",
+               "characteristic": "brawn",
+               "ranks": 1,
+               "source": "crb"
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Las pistol",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 4,
+               "range": "Short"
+            },
+            {
+               "name": "Monoedge short blade",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 2,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "{@gear Space suit}: +1 soak +1 defense (included above).",
+            "Vehicle: {@vehicle Faction Light Assault Mech Unit}"
+         ],
+         "description": [
+            "Hardened combat veterans and mech pilots.",
+            "{@link https://app.rpgsessions.com/char/ffg-gen/rival/620fdcf3bf30180012a83163|https://app.rpgsessions.com/char/ffg-gen/rival/620fdcf3bf30180012a83163}",
+            "{@b Author:} Giri Raman"
+         ]
+      },
+      {
+         "name": "Faction Scout Pilot Reinforcement",
+         "page": 17,
+         "type": "minion",
+         "characteristics": {
+            "brawn": 2,
+            "agility": 3,
+            "intellect": 3,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 8,
+            "defense": [
+               1,
+               1
+            ]
+         },
+         "skills": [
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "source": "crb"
+            },
+            {
+               "name": "Driving",
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Gunnery",
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Mechanics",
+               "characteristic": "intellect",
+               "source": "crb"
+            },
+            {
+               "name": "Piloting",
+               "characteristic": "agility",
+               "source": "crb"
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Las pistol",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 4,
+               "range": "Short"
+            }
+         ],
+         "gear": [
+            "{@gear Space suit}: +1 soak, +1 defense (included above).",
+            "Vehicle: {@vehicle Faction Scout Exosuit}"
+         ],
+         "description": [
+            "Light Scouts in Exosuits.",
+            "{@link https://app.rpgsessions.com/char/ffg-gen/minion/61b3e2a8bf30180012a31c38|https://app.rpgsessions.com/char/ffg-gen/minion/61b3e2a8bf30180012a31c38}",
+            "{@b Author:} Giri Raman"
+         ]
+      },
+      {
+         "name": "Allied Researcher",
+         "page": 17,
+         "type": "rival",
+         "characteristics": {
+            "brawn": 2,
+            "agility": 1,
+            "intellect": 3,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 12,
+            "defense": [
+               1,
+               1
+            ]
+         },
+         "motivations": [
+            {
+               "name": "Desire",
+               "description": "Knowledge"
+            },
+            {
+               "name": "Fear",
+               "description": "Failure"
+            },
+            {
+               "name": "Strength",
+               "description": "Idealistic"
+            },
+            {
+               "name": "Flaw",
+               "description": "Recklessness"
+            }
+         ],
+         "skills": [
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Knowledge (Science)",
+               "characteristic": "intellect",
+               "ranks": 3,
+               "source": "eoti"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Heavy)",
+               "characteristic": "agility",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Knowledge is Dangerous"
+         ],
+         "weapons": [
+            {
+               "name": "Long-las",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "communicator",
+            "{@gear databook|databooks|sotc}",
+            "several recording drones"
+         ],
+         "description": [
+            "{@link https://app.rpgsessions.com/char/ffg-gen/rival/620fe961f8a60e00110664c6|https://app.rpgsessions.com/char/ffg-gen/rival/620fe961f8a60e00110664c6}",
+            "{@b Author:} Giri Raman"
+         ]
+      },
+      {
+         "name": "Recon Drone",
+         "page": 17,
+         "type": "rival",
+         "characteristics": {
+            "brawn": 1,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 1,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 12,
+            "defense": [
+               2,
+               2
+            ]
+         },
+         "skills": [
+            {
+               "name": "Coordination",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Computers",
+               "characteristic": "intellect",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 1,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Flyer",
+            "Construct",
+            "Telepresence"
+         ],
+         "weapons": [
+            {
+               "name": "Beam burst array",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Auto-Fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Disorient",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Personal Scale",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "description": [
+            "{@link https://app.rpgsessions.com/char/ffg-gen/rival/620fedeff8a60e001106650d|https://app.rpgsessions.com/char/ffg-gen/rival/620fedeff8a60e001106650d}",
+            "{@b Author:} Giri Raman"
+         ]
+      },
+      {
+         "name": "Gym Member",
+         "page": 22,
+         "type": "minion",
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 5,
+            "defense": [
+               1,
+               1
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Resilience",
+               "characteristic": "brawn",
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "The attendees at the Red Glove Gym are normal folks looking to better themselves. They are trained in a little boxing but aren't really much when it comes to fighting. Generally these are blue collar folks but you occasionally have a white collar exec or two who grew up here attending the gym to visit their man {@adversary Ox the Stampede|Ox}.",
+            "{@b Author:} Haris Rehman"
+         ]
+      },
+      {
+         "name": "Reese the Secretary",
+         "page": 22,
+         "type": "rival",
+         "npc": true,
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 1,
+            "presence": 3
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 10,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Charm",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Deception",
+               "characteristic": "cunning",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Negotiation",
+               "characteristic": "presence",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Clever Retort",
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "Reese is the gym's secretary. They file papers and keep the accounts balanced. Reese is working on an accounting degree but likes this job at the gym. It's very close to their apartment and {@adversary Ox the Stampede|Ox} offers good pay and hours. Just don't ask them to fight. They can't. They really really can't.",
+            "{@b Author:} Haris Rehman"
+         ]
+      },
+      {
+         "name": "Alex, the Hobbyist",
+         "page": 22,
+         "type": "rival",
+         "npc": true,
+         "characteristics": {
+            "brawn": 3,
+            "agility": 2,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 15,
+            "defense": [
+               1,
+               1
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Resilience",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "Alex, the hobbyist, actually really enjoys boxing but isn't quite up to a competing level yet. Granted, they can take on the {@adversary Gym Member|gym members} fine, but any truly serious contender will be a fight for them. {@adversary Ox the Stampede|Ox} hopes to train them a bit more to be a decent amateur boxer in the local circuit. In fact, they used to be very out of shape a few years back, until they came under his wing and are really happy with their progress.",
+            "{@b Author:} Haris Rehman"
+         ]
+      },
+      {
+         "name": "Simon, the Aspirant",
+         "page": 23,
+         "type": "rival",
+         "npc": true,
+         "characteristics": {
+            "brawn": 3,
+            "agility": 2,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 15,
+            "defense": [
+               2,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Resilience",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
+            {
+               "name": "Second Wind 4",
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "Simon, the Aspirant, is the son of a white collar exec who has visited {@adversary Ox the Stampede|Ox} for years. He caught {@adversary Ox the Stampede|Ox's} attention when he boxed {@adversary Rosa the Up-and-Comer|Rosa} for a good three rounds before going down. Though he went down hard, he got back up for another go. She still got him, but only after another full round. Since then, {@adversary Ox the Stampede|Ox} has been teaching him to some success on the local amateur circuit, with his highest achievement being a second place finish in a tournament a few months ago.",
+            "{@b Author:} Haris Rehman"
+         ]
+      },
+      {
+         "name": "Rosa the Up-and-Comer",
+         "page": 23,
+         "type": "nemesis",
+         "npc": true,
+         "characteristics": {
+            "brawn": 3,
+            "agility": 3,
+            "intellect": 3,
+            "cunning": 3,
+            "willpower": 3,
+            "presence": 3
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 17,
+            "strain": 13,
+            "defense": [
+               3,
+               1
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Coordination",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 4,
+               "source": "crb"
+            },
+            {
+               "name": "Resilience",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Stealth",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
+            {
+               "name": "Lucky Strike",
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "Rosa was born to a single mother, who fought tooth and nail every day to make sure she could have a roof over her head. She took her first job at fifteen to help, and now is currently on track to get a math degree. She still works a job to help her mother out, but ever since she has come under {@adversary Ox the Stampede|Ox's} tutelage she has earned some good winnings from the state and regional tournament circuit. Some say that she could possibly go national. She trains hard and fights hard, often able to land at least one devastating hit amongst a flurry of blows she launches at her opponent.",
+            "{@b Author:} Haris Rehman"
+         ]
+      },
+      {
+         "name": "Ox the Stampede",
+         "page": 23,
+         "type": "nemesis",
+         "npc": true,
+         "characteristics": {
+            "brawn": 4,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 3,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 21,
+            "strain": 18,
+            "defense": [
+               3,
+               1
+            ]
+         },
+         "skills": [
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 4,
+               "source": "crb"
+            },
+            {
+               "name": "Coercion",
+               "characteristic": "willpower",
+               "ranks": 5,
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Leadership",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Streetwise",
+               "characteristic": "cunning",
+               "ranks": 4,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Indomitable",
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "Ox is a veteran of the army who wants to give back to his community. Sure, his gym may be in a lower-class area of town, but that's just the way he likes it. Ox is a fierce competitor and hates refusing challenges. He is also boisterous and loves chatting up his gym folks. And {@adversary Reese the Secretary|Reese}. He'll wax poetic about {@adversary Reese the Secretary|Reese} being almost there to being a pro (accountant).",
+            "{@b Author:} Haris Rehman"
+         ]
+      }
+   ],
+   "sidebar": [
+      {
+         "name": "Using Minions in Vehicle Encounters",
+         "page": 16,
+         "type": "vehicle",
+         "description": [
+            "Minions can be a powerful narrative tool in a vehicle encounter. They can represent swarms of smaller units and be used to much the same effect as minions in a standard encounter.",
+            {
+               "type": "list",
+               "items": [
+                  "Use the Minion profile and upgrade their skill check as per usual.",
+                  "When a vehicle takes damage, apply the same rules as minions see page 131 of the {@title Genesys} Core Rulebook. Apply soak once and have the vehicle use a single {@rule hull trauma threshold} shared by all group members equal to all members' sum.",
+                  "Each time a Minion Vehicle exceeds their {@rule Hull Trauma Threshold|hull trauma}, assume the pilot is out of the fight and their vehicle destroyed, and reduce the group size by one.",
+                  "Follow all other guidelines for running minions. See page 132 of the {@title Genesys} Core Rulebook."
+               ]
+            },
+            "{@b Author:} Giri Raman"
+         ]
+      },
+      {
+         "name": "Boxing Encounters",
+         "page": 21,
+         "type": "combat",
+         "description": [
+            "The PCs will have several opportunities to engage in boxing matches during this adventure. Boxing encounters are treated like combat encounters with a few rules changes:",
+            {
+               "type": "list",
+               "items": [
+                  "Treat {@gear unarmed} attacks as if they had a base damage of 5+{@characteristic Brawn}. All damage is automatically non-lethal.",
+                  "Any {@rule Critical Injuries|Critical Injury} roll over 100 is treated as if it were 100, with {@rule Critical Injuries|Critical Injury} effects not applying after the match is over.",
+                  "PCs and Nemeses who exceed their wound or strain thresholds during the match may make an {@difficulty easy} {@characteristic Willpower} check to heal all of their wounds and strain, stand back up, and continue the fight. The difficulty of the check increases by one each additional time the character goes down, and once the check would be {@difficulty formidable}, they may no longer attempt the check.",
+                  "If a PC is {@rule incapacitated}, another PC is allowed to take up the mat for the defeated one, and continue on."
+               ]
+            },
+            "{@b Author:} Haris Rehman"
+         ]
+      }
+   ],
+   "adventure": [
+      {
+         "name": "Convince the Council to Act",
+         "chapters": [
+            {
+               "title": "Abstract",
+               "page": 2,
+               "entries": [
+                  "{@b Author:} Jennifer \"jendefer\" Van Boxel",
+                  "{@b Encounter Tags:} Social",
+                  "The PCs' recent efforts were just a stop-gap measure to address a long term problem. Now, they must convince local authorities to take action on a more permanent basis. If the PCs succeed, the problem is safe in someone else's hands. If they fail, they may have to invest more of their own resources. On a compromise, the PCs get buy-in from this council, on the condition that the PCs canvass other groups capable of contributing to a solution."
+               ]
+            },
+            {
+               "title": "Encounter Details",
+               "page": 2,
+               "entries": [
+                  "The PCs have recently made progress dealing with the undead corruption in a forest, perhaps by driving out monsters or summoners. They have to move on, but they know the area needs ongoing maintenance, so they seek help from the ruling council of a nearby region. The GM should handle this interaction using the Social Combat mechanics starting on page 118 of the {@title Genesys} Core Rulebook.",
+                  {
+                     "title": "Possible Goals",
+                     "page": 2,
+                     "entries": [
+                        "The PCs seek to convince the council to take responsibility for the ongoing threat, perhaps by sending guardians to patrol the area. The council views the issue as a universal problem, not one specifically under their jurisdiction. If forced to a compromise, they accept their role and agree to send one representative to the site. However, they require their counterparts in other nearby councils to likewise contribute to monitoring the area. And they require the PCs to help with this effort. That might take the form of meeting with those councils (possibly including their own \"home\" council) or drafting letters to those parties and delivering them.",
+                        "If the PCs do not accept that compromise and the social combat ends in the PCs losing, then the council insists the PCs personally do more to stop the problem. For example, councilors might escort the PCs back to the site for a tour of the problem area. Or the council might provide a Minion group to assist the PCs in some other follow-up task."
+                     ]
+                  },
+                  {
+                     "title": "Interacting with the Council",
+                     "page": 2,
+                     "entries": [
+                        "The council consists of multiple members, but during social combat treat it mechanically as a single Nemesis NPC with the following statistics:",
+                        "{@adversary Council}",
+                        "Players choose one PC to act as lead presenter; all PCs can participate in the conversation with the council, but the council's attacks target the lead presenter's strain.",
+                        "Although the council has one strain pool, PCs can focus their arguments on specific members of the council, benefiting from knowledge of their individual motivations once learned. PCs not making social skill checks can perform other checks (such as {@skill Knowledge}) to back up arguments or provide evidence. Such checks do not cause strain to the council, but a successful roll upgrades the next social check performed by a PC in addition to providing {@dice boost} for aiding another. PCs can spend any {@symbols a} and {@symbols h} on such rolls as per the Social Encounter rules.",
+                        "Narratively, the council may have more than four members, but the following details should be sufficient to cover any interactions between the PCs and its members."
+                     ]
+                  },
+                  {
+                     "title": "Council Head",
+                     "page": 3,
+                     "entries": [
+                        "Primarily serves as a moderator and wants everyone to get along; used to spending a lot of time getting people to a place of agreement.",
+                        "{@b Desire:} Justice, {@b Fear:} Failure, {@b Strength:} Patience, {@b Flaw:} Timid"
+                     ]
+                  },
+                  {
+                     "title": "First Councilor",
+                     "page": 3,
+                     "entries": [
+                        "A grumpy elder secretly in love with the Second Councilor who supports any position they take; more concerned with defending their home turf than dealing with problems outside their jurisdiction.",
+                        "{@b Desire:} Love, {@b Fear:} Commitment, {@b Strength:} Courage, {@b Flaw:} Pride"
+                     ]
+                  },
+                  {
+                     "title": "Second Councilor",
+                     "page": 3,
+                     "entries": [
+                        "Does not have faith in the honesty of whatever group some of the PCs identify with (youth, religion, nationality, culture, class); demands concrete evidence before making any decisions.",
+                        "{@b Desire:} Safety, {@b Fear:} Change, {@b Strength:} Analysis, {@b Flaw:} Intolerance"
+                     ]
+                  },
+                  {
+                     "title": "Magic Advisor",
+                     "page": 3,
+                     "entries": [
+                        "Foremost authority on some obscure area of magic that touches on whatever the problem is that the PCs present; might get distracted by minutiae rather than take action.",
+                        "{@b Desire:} Expertise, {@b Fear:} Humiliation, {@b Strength:} Wisdom, {@b Flaw:} Compulsion"
+                     ]
+                  },
+                  {
+                     "title": "Halfway Twist",
+                     "page": 3,
+                     "entries": [
+                        "When one party reaches half their strain threshold, the GM may spend a Story Point to bring in additional support for the council. A matter that is already consuming council resources has reached an elevated level of severity, distracting the council from the PCs' issue. The side triggering the event determines the extent of the mechanical penalty to the PCs. If the council reaches half its strain threshold first, add {@dice setback} to each PC's check in the following round. If the PC lead presenter reaches half their strain threshold first, add {@dice setback|2}. Remember that {@talent Knack For It} can potentially allow the removal of those {@dice setback}."
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Conversion Guide",
+               "page": 3,
+               "entries": [
+                  {
+                     "title": "Science Fiction",
+                     "page": 3,
+                     "entries": [
+                        "The issue could be some sort of dangerous stellar phenomena like destabilized wormholes or devouring aliens. The council controls one of the planets of the solar system. The magical advisor would then be a scientific advisor."
+                     ]
+                  },
+                  {
+                     "title": "Steampunk",
+                     "page": 3,
+                     "entries": [
+                        "The issue could be the remnants of a mad scientist's army still lurking nearby. The council represents one of the settlements near the site."
+                     ]
+                  },
+                  {
+                     "title": "Modern Day",
+                     "page": 3,
+                     "entries": [
+                        "The issue could be environmental pollution, and the council is one of the nations adjacent to the affected area (international waters, for example)."
+                     ]
+                  },
+                  {
+                     "title": "Weird War",
+                     "page": 3,
+                     "entries": [
+                        "The issue could be a supernatural experimental program conducted by the enemy. The council is the leadership of one of the allied nation's local regiments. As an extra complication, the issue could occur in an officially neutral territory."
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Sample Playthrough",
+               "page": 4,
+               "entries": [
+                  "PCs Tric and Heppa, two young elves, were recently in the haunted Grey Woods. There, ancient tree beings asked for their aid dealing with the magical corruption in the area since they have not had an elvish sentry to help them in centuries. The PCs unseated an encampment of shadow mages, which temporarily addressed the problem, but they cannot linger to make sure none return. The next leg of their journey takes them across the Great River to the Western Forest, home of a prominent elvish council that the PCs petition on this matter. Respecting the PCs' credentials from their home forest, the council grants them an audience.",
+                  {
+                     "title": "Relevant PC Stats",
+                     "page": 4,
+                     "entries": [
+                        "{@b Tric:} Skills: {@skill Charm} {@dice proficiency|3}, {@skill Deception} {@dice proficiency|3}, {@skill Discipline} {@dice proficiency}{@dice ability}, {@skill Negotiation} {@dice proficiency}{@dice ability|2}, Talents: {@talent Knack for It} ({@skill Charm}), {@talent Clever Retort}",
+                        "{@b Heppa:} Skills: {@skill Charm} {@dice proficiency|2}, {@skill Knowledge (Geography)||rot} {@dice proficiency|2}{@dice ability|2}, {@skill Knowledge (Lore)||rot} {@dice proficiency|3}{@dice ability}"
+                     ]
+                  },
+                  {
+                     "title": "Round 1",
+                     "page": 4,
+                     "entries": [
+                        "{@b TRIC:} Tric, the lead presenter, uses {@skill Charm} to inform the council about the situation in the Grey Woods and share the tree beings' request for a sentry.",
+                        "{@b CHECK:} {@dice proficiency|3}{@dice challenge|2}{@dice difficulty|2}→{@symbols sssshhhh}",
+                        "Lord Beo grumbles that this matter is of no concern to the council, the problem being way across the Great River and the council having more important problems to worry about.",
+                        "High Lord Aol expresses surprise that the ill tidings are from a place so nearby, rather than from the PCs' home forest. He admonishes Lord Beo for not treating these emissaries with respect and encourages the visitors to continue.",
+                        "{@symbols hh} causes Tric to suffer 2 strain due to Lord Beo's dismissive attitude and the division apparently present in the council.",
+                        "{@symbols hh} exposes that Tric's Flaw is Deception; he is clearly a troublemaker, prone to spinning wild tales.",
+                        "A successful social skill check inflicts 1 strain plus successes, so the council suffers 5 strain, represented by the high lord encouraging the discussion to continue.",
+                        "{@b Strain Tally:} Council: 5/15, Tric: 2/13",
+                        "{@b HEPPA:} Heppa backs up her companion, using {@skill Charm} to politely inform the council that the PCs have been studying undead unrest on their travels, and that the Grey Woods situation is part of a much larger problem.",
+                        "{@b CHECK:} {@dice proficiency|2}{@dice challenge|2}{@dice difficulty|2}→{@symbols fffaa}",
+                        "With her {@symbols aa}, Heppa provides Tric a {@dice boost} on his next check, represented by her handing over to the council the maps she has prepared on their travels.",
+                        "The failed social skill check inflicts 2 strain on Heppa, expressed as Heppa worrying over when she will get her precious maps back.",
+                        "{@b Strain Tally:} Council: 5/15, Tric: 2/13",
+                        "{@b COUNCIL:} The council rolls {@skill Coercion}, representing the belittling the PCs receive from uncooperative council members. Lady Cali is dismissive of these drawings on paper, saying they are not true evidence, perhaps even just stories made up by youth seeking attention.",
+                        "{@b CHECK:} {@dice proficiency|2}{@dice ability}{@dice challenge}{@dice difficulty}→{@symbols sh}",
+                        "{@symbols h} causes the council to suffer 1 strain, narratively explained as the high lord admonishing the other council members for their unwelcoming attitudes.",
+                        "The council's successful social check inflicts 2 strain on the lead presenter, Tric.",
+                        "{@b Strain Tally:} Council: 6/15, Tric: 4/13"
+                     ]
+                  },
+                  {
+                     "title": "Round 2",
+                     "page": 4,
+                     "entries": [
+                        "{@b HEPPA:} Heppa uses {@skill Knowledge (Geography)||rot} to further build the PCs' case by citing the precise location of recent undead activities, including information the PCs learned from interacting with lower-ranking elves since their arrival in the Western Forest. She wishes to communicate that the corruption is really not a localized problem and could spread from the Grey Woods.",
+                        "{@b CHECK:} {@dice proficiency|2}{@dice ability|2}{@dice difficulty|3}→{@symbols faaa}",
+                        "The roll does not succeed, so Heppa does not articulate things clearly enough to help Tric.",
+                        "She uses the {@symbols aaa} to learn the Desire of the grumpy council member, which is Love. Narratively, she gains this insight by observing how Lord Beo watches and responds to Lady Cali during the meeting, backing all of her positions. She points this out to Tric, wondering aloud if she looks at her beloved that way.",
+                        "{@b Strain Tally:} Council: 6/15, Tric: 4/13",
+                        "{@b TRIC:} Addressing the disbelief expressed by Lady Cali's arguments, Tric uses {@skill Deception}, exaggerating the prowess of his own forest's undead fighters. He gains {@dice boost} from Heppa's roll in the previous round, when she shared her maps. He gains another {@dice boost} from showing physical evidence, scars he bears from the recent fight in the Grey Woods. Additionally, he gains {@dice boost|2} from sharing that his own father died while defending their home forest from undead, highlighting the loss of a loved one to target Lord Beo's Desire.",
+                        "{@b CHECK:} {@dice proficiency|3}{@dice boost|4}{@dice challenge}{@dice difficulty|2}→{@symbols ssh}",
+                        "Tric takes the {@symbols h} as 1 strain, since his father is a rather touchy subject for him.",
+                        "The successful social skill check inflicts 1 strain plus successes, so the council suffers 3 strain. Some of them remember Tric's father, who made a stir in the Western Forest when he visited last century.",
+                        "{@b Strain Tally:} Council: 9/15, Tric: 5/13",
+                        "{@b COUNCIL:} The council rolls {@skill Leadership}. Lord Beo suggests that Tric and Heppa's forest, even though much farther away, should provide the sentry if their elves are such great undead fighters. Using {@talent Clever Retort} to add {@symbols hh} to the council's check, Tric interjects that in his small forest their arrows are sharp, but their bows are few.",
+                        "{@b CHECK:} {@dice proficiency|3}{@dice ability}{@dice challenge}{@dice difficulty}→{@symbols sad}",
+                        "The council recovers 1 strain with their {@symbols a}, since Lord Beo's idea seems reasonable to several members.",
+                        "The players decide to spend the {@symbols d} to upgrade the council's next check. Narratively, this plays out as more fracturing among the council. The druid Dana, magical advisor to the council, takes Lord Beo to task for making light of serious threats to the natural world. She gets sidetracked from the Grey Woods issue, though, worried about corruption in other regions that she thinks the Western Forest should go deal with.",
+                        "The council's successful social check inflicts 2 strain on the lead presenter, Tric. He and Heppa consider who from their forest might best fit the sentry role.",
+                        "Since the council has reached half its strain threshold, the GM spends a Story Point to activate the Halfway Twist. Suddenly, a messenger arrives with news of increased undead activities near a major elvish forest in the northeast.",
+                        "{@b Strain Tally:} Council: 8/15, Tric: 7/13"
+                     ]
+                  },
+                  {
+                     "title": "Round 3",
+                     "page": 5,
+                     "entries": [
+                        "{@b HEPPA:} Worried that the tree beings' request is being overshadowed by larger agenda items, Heppa makes a {@skill Knowledge (Lore)||rot} check to discuss the potential magical impacts of a corruption source right across the river from the Western Forest. She includes information on how it has already affected some types of plants.",
+                        "{@b CHECK:} {@dice proficiency|3}{@dice ability}{@dice difficulty|3}{@dice setback}→{@symbols sat}",
+                        "A successful non-social check in this modular encounter upgrades the next social check and provides a {@dice boost}. Heppa spends her {@symbols a} to provide another {@dice boost}. Tric's next argument is greatly strengthened by the information Heppa has introduced.",
+                        "The players spend the {@symbols t} to arrange a private audience with the druid Dana later for their own private agenda. Narratively, Dana takes an interest in one of the plants mentioned.",
+                        "{@b Strain Tally:} Council: 8/15, Tric: 7/13",
+                        "{@b TRIC:} Tric uses {@skill Charm} to persuade the council to make a small act, sending just one single sentry to the Grey Woods. That person can collect information on behalf of the council and help them decide for themselves whether a larger investment is warranted. He has {@talent Knack for It} for {@skill Charm}, so the Halfway Twist {@dice setback} does not apply to his roll.",
+                        "{@b CHECK:} {@dice proficiency|3}{@dice ability}{@dice boost|2}{@dice challenge|2}{@dice difficulty|2}→{@symbols sssh}",
+                        "The discussion wears everyone down. Tric suffers 1 strain from the {@symbols h}. The council suffers 4 strain from the success with {@symbols sss}.",
+                        "{@b Strain Tally:} Council: 12/15, Tric: 8/13",
+                        "{@b COUNCIL:} Since both sides are past half their strain threshold, High Lord Aol proposes a compromise at this point using {@skill Negotiation}, upgraded by the {@symbols d} from the previous round.",
+                        "{@b CHECK:} {@dice proficiency|2}{@dice ability|2}{@dice challenge|2}{@dice difficulty}→{@symbols faat}",
+                        "The council suffers 2 strain for the failed roll but recovers them by using {@symbols aa}.",
+                        "High Lord Aol shares some history, that the Grey Woods has not been a site of elvish settlement in hundreds of years due to civil strife in the past. The lingering pain and distress probably helped feed the dark magics that were later worked there. He views it as the responsibility of all elfdom to address this issue. He offers that the Western Forest will send a sentry, but each of the other great elvish forests must do the same—including the one the PCs come from—to create a council of sentries.",
+                        "He spends his {@symbols t} to get insight from the PCs on their forest's politicians so that he can craft a message that will appeal to them. The players are satisfied with this arrangement, and the PCs agree to contribute to and transport that letter.",
+                        "{@b Final Strain Tally:} Council: 12/15, Tric: 8/13"
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Bog Wild",
+         "chapters": [
+            {
+               "title": "Abstract",
+               "page": 6,
+               "entries": [
+                  "{@b Author:} Matt \"DatMatt\" Mensch",
+                  "{@b Encounter Tags:} Combat, Stealth",
+                  "The PCs must cross a waist-deep, murky bog to get to Where They're Going. Circumnavigating the bog is nigh impossible, but the GM should determine the validity of that claim. Success results in the PCs living to fight another day, while failure results in them adding their biomass to the undead thing that inhabits the bog."
+               ]
+            },
+            {
+               "title": "Encounter Details",
+               "page": 6,
+               "entries": [
+                  {
+                     "title": "Key Concepts",
+                     "page": 6,
+                     "entries": [
+                        {
+                           "type": "list",
+                           "items": [
+                              "The bog is {@rule Difficult and Impassable Terrain|difficult terrain}, with movement costing double ({@title Genesys} Core Rulebook page 110).",
+                              "The bog is Scary, Cold, and Wet. GMs should impose {@dice setback} on the initial {@rule Fear} check ({@title Genesys} Core Rulebook page 243 or the {@title Expanded Fear Guidelines} available on the Genesys Foundry).",
+                              "Since the bog is Scary, Cold, and Wet, the GM should consider imposing {@dice setback} liberally. The more, the merrier–see below.",
+                              "Described as sneaky, hungry, and patient, the {@adversary Skeleswarm} waits until the PCs are well within the bog before it makes its move.",
+                              "The {@adversary Skeleswarm} may shape dismembered parts, including those from itself, into minions that join the battle."
+                           ]
+                        }
+                     ],
+                     "forceTitleLevel": 3
+                  },
+                  "{@adversary Skeleswarm}",
+                  "{@adversary Swarmling}"
+               ]
+            },
+            {
+               "title": "Conversion Guide",
+               "page": 7,
+               "entries": [
+                  "A monster is a monster is a monster. Care was taken to make this encounter setting agnostic, but it is designed with beginning characters in mind. This could easily play out as a Horror From Beyond Space and Time™ or a Super-science Experiment Gone Wrong™ style of adventure.",
+                  "To scale this up for characters with greater combat skills, we recommend increasing the wound threshold, strain threshold, soak, and damage of the main creature. Operating with minion groups no fewer than 4 provides a great tactic as well. Finally, adding a rank of {@talent Adversary} would pose a particularly difficult challenge. The more {@dice setback} included, the better the chance of spawning a group of {@adversary Swarmling|Swarmlings} to spice up the encounter for seasoned PCs."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "The Colossus",
+         "chapters": [
+            {
+               "title": "Abstract",
+               "page": 8,
+               "entries": [
+                  "{@b Author:} Micah-Shalom \"FatCrab\" Kesselman",
+                  "{@b Encounter Tags:} Combat, Puzzle",
+                  "A colossally large creature rampages and the PCs must put a stop to it. The creature is arbitrarily large–too large to confront through brute force–and the PCs have to maneuver across its enormous body and interact with various vulnerable points to have any chance of subduing the creature."
+               ]
+            },
+            {
+               "title": "Encounter Details",
+               "page": 8,
+               "entries": [
+                  "Any turn spent climbing upon, and navigating across, the Colossus requires an incidental {@difficulty average|Athletics}. Success allows the PC to spend maneuvers to move on the Colossus. Failing this check means navigation across the living terrain was too fraught and results in the character {@rule falling} a short distance off of the Colossus (see page 112 of the {@title Genesys} Core Rulebook), keeping in mind there are plenty of protruding odds and ends of the Colossus with which a character can attempt to break their fall as per the rules for {@rule falling|falling damage}; {@symbols hhh} may be spent from a successful check to have the character maintain their position on the Colossus, but still fail to make any progress towards their intended location (i.e., they will need to reattempt with another maneuver). If the GM wishes to make this encounter substantially more challenging, they may consider increasing the fall distance to medium and/or applying an automatic {@rule Critical Injuries|Critical Injury} to any fall.",
+                  "Any characters not on the Colossus are vulnerable to the Colossus' Devastate attack described below. Even when no characters have been knocked off the Colossus, describe the Colossus as laying waste to the surrounding environment as the encounter progresses. All of the seals must be secured for a full round to defeat the Colossus. Note, this gives the Colossus at least one opportunity to break the seals; however, players may spend {@symbols a} and {@symbols t} to decrease the likelihood of the Colossus succeeding such a check. All vulnerable points on the Colossus require 2 maneuvers to reach and the points are as follows:",
+                  {
+                     "title": "Seal of the Spine",
+                     "page": 8,
+                     "entries": [
+                        "This point binds the Colossus' torso and successfully securing the Seal of the Spine reduces the check to navigate across the Colossus to a {@difficulty simple|Athletics} and prevents the Colossus from performing the Shake It Off maneuver. If the GM wishes to make this encounter slightly more challenging, still requiring the check to be rolled is a good option. Securing the Seal of the Spine requires succeeding on an {@difficulty average|Mechanics}."
+                     ]
+                  },
+                  {
+                     "title": "Seal of the Limb",
+                     "page": 8,
+                     "entries": [
+                        "Each limb, however many there are, has this seal present. Successfully securing the Seal of the Limb prevents the Colossus from taking the Devastate attack action on its next turn. Securing the Seal of the Limb requires succeeding on an {@difficulty average|Brawl or Melee}. If the GM wishes to make this encounter slightly less challenging, allowing the PCs to use a ranged attack is a good option–assume any point on the Colossus is at most medium range from any other point."
+                     ]
+                  },
+                  {
+                     "title": "Seal of the Spirit",
+                     "page": 8,
+                     "entries": [
+                        "This point binds the Colossus' spirit and successfully securing the Seal of the Spirit increases the difficulty of the Colossus' Break the Seals maneuver by one step. Securing the Seal of the Spirit requires succeeding on a {@difficulty hard|Knowledge (Lore)||rot}.",
+                        {
+                           "type": "sidebar",
+                           "title": "Knowledge of the Seals",
+                           "page": 8,
+                           "entries": [
+                              "The GM can keep the mechanics of the Seals a secret to be discovered as each one is secured, or provide it to the players as they enter the encounter. Another option is to have the PCs attempt a relevant Knowledge skill check and decide how much mechanical information they know based on that."
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "title": "Hard Mode",
+                     "page": 9,
+                     "entries": [
+                        "If you want to give the PCs an even greater challenge, consider implementing swarming minions that attack the PCs while on the Colossus–these minions should be easily defeated, if the characters take the time to fight them, but have the {@quality Knockdown} quality on their attacks, which results in the affected character falling off the Colossus (without suffering additional damage from the fall itself). Attack the PCs with minion groups sized to one unit per {@symbols h} rolled if running this encounter in Hard Mode. Beware, this will certainly extend the duration of this scene by quite a bit."
+                     ]
+                  },
+                  {
+                     "title": "Colossus Abilities",
+                     "page": 9,
+                     "entries": [
+                        {
+                           "type": "list",
+                           "items": [
+                              "{@b A Class of Its Own:} The Colossus is enormous and does not have wounds or strain as it cannot be simply beaten to death. Its seals must be secured as above in order to bring it down. The Colossus may also take a second maneuver for free.",
+                              "{@b Shake It Off:} The Colossus spends a maneuver to buck and shake as it attempts to cast off unwanted characters. All characters (including minion groups in Hard Mode) must succeed an {@difficulty average|Athletics} or be sent flying off the Colossus, suffering 1 wound per uncancelled {@symbols f} as well as no longer being on the Colossus.",
+                              "{@b Devastate:} The Colossus spends an action and brings its might down upon the area around it, shattering the ground and throwing rubble and debris into the sky. Anything not clinging to the Colossus must make a {@difficulty daunting|Resilience}, keyed off of either {@characteristic Brawn} or {@characteristic Agility} as the corresponding player prefers. Characters suffer 1 wound damage per uncancelled {@symbols f}.",
+                              "{@b Break the Seals:} The Colossus spends a maneuver to shatter its seals and fully unleash itself once again. The Colossus makes a {@difficulty hard|Discipline} to unsecure every one of the seals that has been secured. For purposes of this check, the Colossus has 3 {@characteristic Willpower} and 2 ranks in {@skill Discipline}."
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Conversion Guidance",
+               "page": 9,
+               "entries": [
+                  "This encounter can pretty easily be converted to science fiction, science fantasy, or even within fantasy (i.e., this could be a dragon rather than the clear {@title Shadow of the Colossus}-inspired formulation in which it is presented). For science fiction and/or science fantasy, consider using {@skill Computers} for the Seal of the Spirit instead of {@skill Knowledge (Lore)||rot}. In settings that use the advanced hacking rules of {@title Shadow of the Beanstalk}, the Seal of the Spirit could instead be a hacking encounter; however, this seal should then be permanently secured upon a successful hack in order to prevent the encounter from dragging for too long."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Sabotage and Ambush",
+         "chapters": [
+            {
+               "title": "Abstract",
+               "page": 10,
+               "entries": [
+                  "{@b Author:} Ryall \"OtO\" Hyatt",
+                  "{@b Encounter Tags:} Combat, Skill Challenge",
+                  "In this science fiction or space opera encounter the PCs need to repair a vital navigation antenna via a risky spacewalk, when they discover a hidden mine attached to the hull of their ship. The mine will need to be disarmed in a complex process that involves a series of exacting steps. It is during this tense ordeal that the PCs' ship is attacked by a pirate raider.",
+                  "Best for parties of 4 or more players."
+               ]
+            },
+            {
+               "title": "Encounter Details",
+               "page": 10,
+               "entries": [
+                  "While traveling between ports, the PCs' ship experiences a malfunction of its navigation antenna. This vital piece of equipment must be repaired before the ship can jump to hyperspace, engage its warp engines, calculate the gate point, or perform whichever form of interstellar travel used in the setting of your game. The malfunction can happen before or during transit but should occur when the ship is far enough from port that the PCs cannot reasonably expect outside help.",
+                  "To reach the antenna, one or more PCs will need to spacewalk across the hull of the ship using a series of handholds and tether points, requiring a successful {@difficulty average|Athletics} with {@dice setback} if the PC is wearing a {@gear space suit} (i.e. not a robot or android). Failure inflicts 3 strain as the PC momentarily tumbles away from the ship to be caught by their tether.",
+                  "Once at the navigation antenna, an {@difficulty average|Computers or Mechanics} is needed to discern why the array has malfunctioned. Success discovers that an explosive mine with an integrated tracking beacon has been attached to the power relay for the antenna. Failing the check also uncovers the mine, but only after activating a defensive system that emits a surge of energy, inflicting 3 wounds on all characters within short range.",
+                  "At this point, PCs stationed inside the ship at a sensors station or otherwise able to access the ship's systems should have an opportunity to spot an approaching pirate raider by making an {@b Average ({@dice difficulty|2}{@dice setback|2}) {@skill Vigilance} check} with setback due to the pirate's baffled drive unit. A successful roll results in the discovery of another ship entering long range, while failure means the other ship manages to close to medium range before detection. {@symbols a} on the roll can be used to discern the attacking ship's weapons systems, while a {@symbols t} may spot the raider while it is still at extreme range.",
+                  "{@b {@rule determine Initiative|Roll Initiative}} and begin a structured encounter.",
+                  "If the {@rule accelerate}, {@rule decelerate}, {@rule evade}, or {@rule reposition} maneuvers are taken by the ship's pilot, all characters on the outer hull must immediately make an {@b {@skill Athletics} check} as an out-of-turn incidental with a difficulty equal to the current speed of the ship (or new speed in the case of the {@rule Accelerate} maneuver). Failure on this check inflicts 3 strain, plus 1 wound per uncancelled {@symbols f}, as the character loses their grip on the hull and is caught abruptly by their tether.",
+                  "Disarming the mine requires three skill checks, made in order. If the characters' ship has received a successful hit in the round, upgrade these skill checks once. At the GM's discretion, failing a check may mean that the check must be made again (though the cost of failure is high on its own). {@symbols hhhh} or a {@symbols d} rolled on a successful check may upgrade any check that interacts with a ship's system, such as a pilot action or attack roll made with a ship's weapon. Failing a check with {@symbols hhhh} or a {@symbols d} may set off the mine, dealing 10 damage to characters in short range (applying their Soak) and triggering a {@rule Critical Injuries|Critical Injury} roll, as well as 3 hull trauma to the ship and triggering a {@rule Vehicle Critical Hits|vehicle Critical Hit}.",
+                  "First, a successful {@difficulty average|Skulduggery} is needed to remove the outer casing of the mine. Failure on this check triggers a plasma pulse that inflicts 3 system strain on the ship itself, and 1 wound per uncancelled {@symbols f} on any character in short range.",
+                  "Second, a successful {@difficulty average|Coordination} is required to pull out, twist, and secure several arming pins from the sequencer unit so that the mine's controller can be accessed. Failure triggers a feedback loop in the nearby conduits running through the ship's hull, damaging an important system. Apply the Weapons Damaged {@rule Vehicle Critical Hits|vehicle critical hit} to the ship (found on page 130 of the {@title Genesys} core rulebook).",
+                  "Finally, a successful {@difficulty average|Charm or Deception} is needed to convince the rudimentary AI in control of the mine's warhead to deactivate itself. If your setting does not have artificial intelligence, substitute a {@difficulty hard|Computers} instead. Failure triggers a very large EM pulse that overloads power regulators at several places aboard the characters' ship. Apply the Fire! {@rule Vehicle Critical Hits|vehicle critical hit} to the ship (found on page 130 of the {@title Genesys} core rulebook).",
+                  "Once the mine is disarmed the navigation antenna comes back online and the characters' ship can activate its FTL drive normally. The enemy ship will likely break off the attack at this point, as the pirate's advantage has been lost.",
+                  "Below is an example profile of a pirate raider's ship:",
+                  "{@vehicle Oizys-class Sloop}"
+               ]
+            },
+            {
+               "title": "Conversion Guidance",
+               "page": 11,
+               "entries": [
+                  "In a fantasy, steampunk or weird war setting, the characters' ship might be an ocean-going vessel or airship. The mine can be mechanical or make use of the weird technologies of the game world. In a fantasy or weird war setting, the mine might be magical. The final skill check to disarm the mine could require {@skill Alchemy}, Occult, or a magic skill."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Through the Shattered Glass",
+         "chapters": [
+            {
+               "title": "Abstract",
+               "page": 12,
+               "entries": [
+                  "{@b Author:} Micah-Shalom \"FatCrab\" Kesselman",
+                  "{@b Encounter Tags:} Stealth, Social",
+                  "This encounter forces the players to engage with their characters' motivations, while also providing a horror stealth challenge. The PCs are seeking a location, item, person, or other goal, but must sneak their way through a psycho-reactive maze while being pursued by some...thing. The PCs must successfully navigate a {@skill Stealth} skill challenge through the maze before the pursuer successfully claims them. A Rival clone (\"Figment\") of each PC tags along with their respective PC as a mental projection of the PC (characters other than the respective original PC do not see the clone Rivals) and attempts to hinder their progress through the maze so that the pursuer might find them."
+               ]
+            },
+            {
+               "title": "Encounter Details",
+               "page": 12,
+               "entries": [
+                  "The PCs must make it through the Maze of Shattered Mirrors; however, the {@adversary Mirror Keeper} pursues them and seeks to trap them in one of the many mirror shards that litter the labyrinth. This encounter happens in structured time, with the PCs always going first and the {@adversary Mirror Keeper} going last. After every PC's turn, a social encounter \"mini-round\" between the PC and their respective Figment occurs. The players must achieve 10 total uncancelled {@symbols s} on {@skill Stealth} checks to conclude the encounter, which occurs in structured time.",
+                  "The {@adversary Mirror Keeper} starts a short distance away from each PC and can never be farther than medium distance away, regardless of PC repositioning (i.e., the PCs always perceive the {@adversary Mirror Keeper} as, at most, medium range away). The {@adversary Mirror Keeper} is not corporeal and cannot be attacked. If the {@adversary Mirror Keeper} is somehow vanquished, another identical {@adversary Mirror Keeper} simply enters the scene from one of the mirrored walls of the Maze. Nevertheless, the {@adversary Mirror Keeper} uses the stat array below and continuously pursues the PCs on its turn. The PCs may still attempt attacks on the {@adversary Mirror Keeper}, but any wounds or strain dealt this way will be inconsequential (but {@symbols a} and {@symbols t} can still be spent to inflict status effects).",
+                  "{@adversary Mirror Keeper}",
+                  "Successful {@skill Stealth} checks by the PCs opposed to the {@adversary Mirror Keeper|Mirror Keeper's} {@skill Vigilance} can move the PCs one range band away from the {@adversary Mirror Keeper}, up to a maximum of medium. PCs may spend a maneuver to steel themselves before making the {@skill Stealth} check and thus grant them a {@dice boost} on the check. Maneuvers in this encounter cannot be spent to simply move the PCs away from the {@adversary Mirror Keeper}. The {@adversary Mirror Keeper} is ever just out of sight but never out of mind.",
+                  "The Figments are manifestations of not just the PCs' Fears and Weaknesses, but also their Strengths and Desires. However, the Figments warp the PCs' Strengths and Desires to feed into their Fears and Weaknesses. Figments are rivals with identical skills as their originating PC, but their wound threshold is the lower of the originating PC's wound or strain threshold. Using social combat rules, a single round of a structured social encounter takes place immediately before each PC takes their turn and between the PC and their respective Figment. First, the Figment takes a social action targeting the PC ({@skill Coercion} is often reasonable given the context, but keep in mind social skill interactions), and then the PC takes a social action targeting the Figment. Following this, and spending of roll results, the PC takes their normal turn however they wish.",
+                  "The Figments try to drain the PCs' will to carry on and inherently, and intimately, know everything about their opponents. Accordingly, they always gain an upgrade on their social attacks and, likewise, the PCs always receive an upgrade on their responsive social attacks. Optional: if a PC had a major social encounter involving their Fear or Weakness recently, then give the PC another innate upgrade on their social attack rolls. The players should flavor the narrative of the social attacks by both their respective PC and its Figment--this is a chance for players to really explore their characters' motivations.",
+                  "Any {@symbols d} rolled by a PC or {@symbols t} rolled by the corresponding Figment should be used to move the {@adversary Mirror Keeper} one range band closer. Players may spend {@symbols t} to reduce the {@adversary Mirror Keeper|Mirror Keeper's} {@characteristic Willpower} by 1, to a minimum of 1, or {@symbols aaa} to reduce the {@adversary Mirror Keeper|Mirror Keeper's} {@skill Vigilance} by 1, to a minimum of 0. Optional: if a PC defeats a Figment, consider changing their Fear and Weakness motivations after this encounter."
+               ]
+            },
+            {
+               "title": "Example Playthrough",
+               "page": 13,
+               "entries": [
+                  "PCs Alfred, Bella, Caroline, and Doyle find themselves in the {@adversary Mirror Keeper|Mirror Keeper's} labyrinth. They will need to achieve 10 total uncancelled {@symbols s} from {@skill Stealth} checks to escape the maze, while the {@adversary Mirror Keeper} and their Figments pursue them.",
+                  "They enter structured time as the encounter begins, 4 PC slots followed by 1 NPC slot for the {@adversary Mirror Keeper}. All PCs pass the {@rule fear} check required by the {@adversary Mirror Keeper|Mirror Keeper's} Terrifying ability. Alfred takes the first slot and before he takes an action, his social encounter mini-round begins with his Figment. Alfred's Figment takes Alfred's wound threshold, as it is lower, and has 12 wound threshold and the same skills as Alfred. Alfred's Figment goes first, making a {@skill Coercion} check against Alfred's {@skill Discipline}, with one upgrade. The Figment rolls {@symbols sss} and so inflicts 3 strain on Alfred. Alfred tries to focus his thoughts and asks the GM to check {@skill Discipline} against the Figment's {@skill Coercion}. This makes narrative sense in the context, so the GM allows it. Alfred then flips a Story Point to upgrade the check, giving him two upgrades (recall Figments and PCs get free upgrades against each other for knowing each other's motivations). Alfred rolls a whopping {@symbols ssss} and {@symbols t}, inflicting 4 strain (which become wounds as the Figment is a rival) on the Figment, leaving it at 8 wounds, and then uses the {@symbols t} to reduce the {@adversary Mirror Keeper|Mirror Keeper's} {@characteristic Willpower} by 1. While this is occurring, Alfred's player is describing the social skill interactions between the Figment and Alfred. Alfred then performs a {@skill Stealth} check against the {@adversary Mirror Keeper}, which ends up being {@symbols ffffa}. Alfred fails his {@skill Stealth} check, failing to progress the skill challenge, but generating {@symbols a} and passing it as a {@dice boost} to the next PC action. The round moves on to the next PC slot.",
+                  "Bella takes the next PC slot. Her interaction with her Figment goes similarly to the above, except she generates {@symbols aaa} on her roll and reduces the {@adversary Mirror Keeper|Mirror Keeper's} {@skill Vigilance} ranks by 1. The {@adversary Mirror Keeper} now has 4 {@characteristic Willpower} and 3 {@skill Vigilance}. Bella then attempts her {@skill Stealth} check and generates only {@symbols ss}, but it's better than nothing. Likewise with Alfred, the GM is teasing narrative information out from the encounter about Bella's interactions with her Figment and her motivations.",
+                  "Caroline fails to produce any useful result on her Figment interaction and, in fact, the Figment gets a {@symbols t} and the {@adversary Mirror Keeper} is nearly upon Caroline by the time she attempts her {@skill Stealth} check. Caroline, however, is skilled in {@skill Stealth} because she's played by a dirty power gamer. She manages a whopping {@symbols ssss} on the {@skill Stealth} check, enabling her to spend a maneuver to gain back a range band on the {@adversary Mirror Keeper} and progressing the challenge. The GM takes the opportunity to get Caroline's player to really dive deep into Caroline's motivations and her horrible performance against her Figment and the player realizes story and character development is much more interesting to the table as a whole than becoming absurdly sneaky.",
+                  "Doyle goes next and deals a wound to his Figment, but also takes a beating, entering his main turn with 5 strain. He spends a maneuver to add a {@dice boost} to his {@skill Stealth} check. Nevertheless, Doyle fails and in fact rolls a {@symbols d}, which the GM uses to have the {@adversary Mirror Keeper} descend directly upon Doyle, his psyche fracturing under the pressure and horror.",
+                  "The {@adversary Mirror Keeper} starts her turn engaged with Doyle. She attacks with her spectral grasp and does 8 wounds damage to Doyle, who suffers 5 of it after soak is applied. She also rolls a {@symbols t} and Doyle asks the GM if he can spend that {@symbols t} to go before his Figment because he has an idea. The GM allows it, impressed by his players' quickly taking to the encounter--wow, what a great encounter. The GM is forever thankful he picked up the free BOOSTs and the second round begins."
+               ]
+            },
+            {
+               "title": "Conversion Guidance",
+               "page": 14,
+               "entries": [
+                  "In a science fiction or science fantasy setting, the {@adversary Mirror Keeper} can instead be a psychic creature and/or thing able to directly manipulate the PCs' minds. This could in fact be an entirely digital environment in, say, a sensedep tank for {@title Shadow of the Beanstalk}. In a modern day setting without fantastical or scifi elements, this could be a dream sequence or the like."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Search and Rescue Modular Mech Encounter",
+         "chapters": [
+            {
+               "title": "Abstract",
+               "page": 15,
+               "entries": [
+                  "{@b Author:} Giri Raman",
+                  "{@b Encounter Tags:} Combat, Vehicle, Search and Rescue",
+                  "The PCs' group is an elite mech squad sent to a remote alien planet to rescue a research team that is stranded there. The planet is resource-rich and disputed by two other factions fighting over it.",
+                  "Enemy forces have detected the research team, and the PCs must move to intercept them before their reinforcement arrives. But, unfortunately, the extraction team can't get a precise pinpoint on their location.",
+                  "The PCs will have to defeat and cut off enemy forces while protecting the research team and repairing their equipment to signal the waiting cruiser. Alternatively, they can try and help the research team in their objective of entering a strange alien ruin found hidden beneath the surface."
+               ]
+            },
+            {
+               "title": "Encounter Details",
+               "page": 15,
+               "entries": [
+                  "Two factions are in dispute over a small harsh planet. This world has scarce wildlife and a fragile, but still breathable atmosphere. Nevertheless, several rare minerals exist in the bedrock.",
+                  "The PCs are hired or sent by a different faction or organization to extract a research team sent to investigate a strange alien beacon detected a few weeks ago. The PCs are sent into the area from a large cruiser hiding in the shadow of one of the planet's four moons.",
+                  "The team enters the planet in a dropship equipped with small Mech units that provide different gears and tools to accomplish the various tasks and defend against heavily-armed enemies.",
+                  "This encounter uses the Vehicle rules found in the {@title Genesys} Core Rulebook on page 220.",
+                  {
+                     "title": "Possible Goals",
+                     "page": 15,
+                     "entries": [
+                        "The PCs have several options on how they want to approach the encounter.",
+                        {
+                           "title": "Objective 1: Locate the Signal",
+                           "page": 15,
+                           "entries": [
+                              "{@difficulty average|Perception} to notice signal or {@difficulty hard|Computers} to boost the signal and get a clear path."
+                           ]
+                        },
+                        {
+                           "title": "Objective 2: Set Up a Defensive Perimeter",
+                           "page": 15,
+                           "entries": [
+                              "The PCs must cut off enemy reinforcements to give enough time to rescue the research team. Then, destroy or disable enemy mech units."
+                           ]
+                        },
+                        {
+                           "title": "Objective 3: Signal the Cruiser to Come Rescue",
+                           "page": 15,
+                           "entries": [
+                              "The dust storms in the area are causing significant damage to the researcher's Signal Array. The PCs must fix the signal array. {@difficulty hard|Mechanics or Computers} to boost the signal."
+                           ]
+                        },
+                        {
+                           "title": "Alternative Objective: Enter the Alien Structure, or Convince the Research Team to Leave",
+                           "page": 15,
+                           "entries": [
+                              "Unknown to the PCs, the research team has discovered the source of the alien beacon to come from inside an ancient alien structure hidden beneath the ground. They have uncovered an entrance but cannot decipher how to open it and hide inside. Nevertheless, the researchers are very insistent upon entering their discovery.",
+                              "The PCs can try to access the structure by solving and decrypting the meaning of strange scripts located on the structure's external metal surface to access the hidden superstructure below. Use skills such as {@skill Knowledge (Science)||eoti}, {@skill Mechanics}, or {@skill Computers}. A GM can use a small and straightforward skill challenge without a strict failure trigger (e.g., five total uncancelled successes, or simply one successful skill check per PC, etc.)"
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "title": "Suggested Initial Setup",
+                     "page": 16,
+                     "entries": [
+                        "The PC enters a canyon in their small mech units. Although visibility is low (see Environment), scanners indicate the signal is up ahead to the north.",
+                        "PCs are going north at a speed of 2, and enemies are entering from the west traveling at speed 3. The encounter starts at long range. The researchers are at strategic range from both the PCs and the enemy vehicles.",
+                        "The Researcher's plastic habitat is damaged and has limited air supply. The air supply will last five rounds until they go unconscious. {@difficulty average|Mechanics} to repair.",
+                        "The battle begins with the PCs being detected by two Enemy vehicles (see {@vehicle Faction Light Assault Mech Unit}, 18)."
+                     ]
+                  },
+                  {
+                     "title": "Reinforcements",
+                     "page": 16,
+                     "entries": [
+                        "Enemy reinforcements will arrive after three rounds of combat. Initially, a group of two {@adversary Faction Scout Pilot Reinforcement|minion exosuits} enter the battle. Then, for each round, one additional minion joins the fray. The minion arrives at a speed of 2 in strategic range.",
+                        "The PCs can cut off the reinforcements if they cave in the canyon entrance. The cave-in can be accomplished in several ways, either through clever use of {@symbols a} or {@symbols t}, or attacking boulders, canyon walls, etc. Finally, PCs can place charges using a {@difficulty hard|Mechanics}. PCs should be allowed creative skill use; however, upgrade or add {@dice setback} to emphasize the danger and haste of the cave-in.",
+                        {
+                           "type": "sidebar",
+                           "_ref": {
+                              "name": "Using Minions in Vehicle Encounters"
+                           },
+                           "entries": []
+                        }
+                     ]
+                  },
+                  {
+                     "title": "Environment",
+                     "page": 16,
+                     "entries": [
+                        "The alien planet is a harsh arid world with a thin but breathable atmosphere. There is scarce wildlife of various kinds but no intelligent life. Instead, two different factions claim the world, each excavating massive strip mines on the planet's surface. Dust from the enormous gashes on the planet's surfaces is whirled up by howling winds, creating local dust storms."
+                     ]
+                  },
+                  {
+                     "title": "Environmental Effects",
+                     "page": 16,
+                     "entries": [
+                        "{@b Dust storms:} The rocky plains feature frequent dust storms and reduce visibility-imposed {@dice setback} for all skill checks made beyond medium range.",
+                        "{@b Sinkholes:} Large sinkholes frequently occur in the area. A GM can spend {@symbols hhh} or {@symbols d} on any check to cause the ground under a vehicle to become unstable and fall {@rule prone}. Reduce current speed to 0 and require a {@difficulty hard|Driving} to get out of the hole again.",
+                        "{@b Thin Atmosphere:} This effect is only relevant if the PC gets out of their vehicle or suits or if a hull breach happens. The air is thin, imposing {@dice setback|2} on {@characteristic Brawn}-based checks. After three rounds, any exposed characters will very slowly become deprived of air, and if they suffer strain for any reason, they suffer double the amount."
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Adversaries",
+               "page": 17,
+               "entries": [
+                  "{@adversary Faction Combat Pilot}",
+                  "{@adversary Faction Scout Pilot Reinforcement}",
+                  "{@adversary Allied Researcher}",
+                  "{@adversary Recon Drone}"
+               ]
+            },
+            {
+               "title": "Vehicles",
+               "page": 18,
+               "entries": [
+                  "{@vehicle Faction Light Assault Mech Unit}",
+                  "{@vehicle Faction Scout Exosuit}",
+                  "{@vehicle Heavy Mechanical Tactical Unit}",
+                  "{@vehicle Mobile Recon Strike Exosuit}"
+               ]
+            },
+            {
+               "title": "Conversion Guidance",
+               "page": 19,
+               "entries": [
+                  {
+                     "title": "Modern or Steampunk",
+                     "page": 19,
+                     "entries": [
+                        "This modular encounter uses a sci-fi setting with small mech units. A GM could alter this to a modern setting using armored vehicles instead. If so, remove the Thin Atmosphere environmental effect from the encounter - the same for steampunk or any other setting using ground vehicles on an Earth-like planet."
+                     ]
+                  },
+                  {
+                     "title": "Fantasy",
+                     "page": 19,
+                     "entries": [
+                        "The majority of the encounter uses the vehicle rules. If you use this encounter in a fantasy setting, consider applying {@sidebar Optional Rules: Using Steeds as Vehicles||sotc} found on page 151 of {@title Keyforge: Secrets of the Crucible}. The rest of the encounter should stay the same.",
+                        "Use the same stats for the enemy pilots, substitute {@skill piloting} for {@skill riding}, and adjust the gear in their profile.",
+                        "For the secondary objective, the research team could be setting up a teleportation circle or other means of escape that fits the setting. Then, meeting the alternative ending substitute {@skill Knowledge (Science)||eoti} for {@skill Knowledge (Lore)||rot} or using magic skills or even {@skill Skulduggery} to open the structure.",
+                        "For mounts, use the {@adversary War Mount||rot} or {@adversary Gurak Tol||rot}, found on page 105 and page 202 of {@title Realms of Terrinoth}. Note that both PCs and adversaries will deal damage on the personal scale in such an encounter."
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Showdown at the Red Glove Gym!",
+         "chapters": [
+            {
+               "title": "Abstract",
+               "page": 20,
+               "entries": [
+                  "{@b Author:} Haris Rehman",
+                  "{@b Encounter Tags:} Combat, Social",
+                  "In this starting-to-low-level encounter, players are on the trail of a case involving a petty robbery. They learn that the person who runs the local Red Glove Gym may know the culprit's identity. Heading there they meet {@adversary Ox the Stampede|Ox}, local legend and champion class boxer. Now the PCs need to decide whether to duel {@adversary Ox the Stampede|Ox} and his trainees or try to play into his more community-oriented motivations. This encounter works best for 2-5 player characters."
+               ]
+            },
+            {
+               "title": "Encounter Details",
+               "page": 20,
+               "entries": [
+                  {
+                     "title": "Setting the Scene",
+                     "page": 20,
+                     "entries": [
+                        "A merchant at a local store sweeps up broken glass as the PCs go by. The PCs overhear them bemoaning the loss and notice the PCs. If the PCs don't question the proprietor, they move towards the PCs and ask them for help.",
+                        "The merchant reveals that he lost money from the register, a few items of low to moderate value (generic \"goods\" like cheap jewelry or dishware), and a championship plaque from their time as a local fighter. They inform the PCs that according to witnesses or cameras (depending on setting), there were three robbers. One of them had a jacket from the local Red Glove gym. If the PCs don't reach this conclusion, the merchant suggests talking to the man who runs the establishment, who might know the identity of at least one of the culprits."
+                     ]
+                  },
+                  {
+                     "title": "The Red Glove Gym",
+                     "page": 20,
+                     "entries": [
+                        "The PCs can easily locate the nearby Red Glove gym by simply asking for directions. If you provide specific directions, or if a PC asks for them for mapping purposes, a local might say, \"Go down two streets away from the store, make a left and go down another two. From there it's on your right on the corner. A simple building really, with the words RED GLOVE GYM emblazoned at the front along with a large boxing glove punching up on each end.\" The GM can embellish the description if there are further questions, explaining that the sign consists of neon lights or gaudish paint.",
+                        "As the PCs enter the building, read the following aloud:",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "You enter the Red Glove Gym, hot on the case. A small reception area greets you as you enter in front of what seems to be a small office with a window with the blinds drawn. You see weight racks and punching bags set up in sections with walls adorned with posters heralding old matches. Along one of the walls stands a single display case showing a trophy and medal collection. In the center of the large open room is clearly the pride and joy of the Red Glove Gym: a boxing ring with enough folding chairs all around for a small crowd of onlookers. Gym members are either sparring in the ring, watching that fight, or training. At the reception desk, a secretary reads a local paper, but puts it down to greet you all."
+                           ]
+                        },
+                        "If the PCs get kicked out of the gym or no longer wish to persuade people to give them the information about the robbery, they will have to come back after hours and break in in order to find the information they need. See \"After Dark\" section for details.",
+                        "The secretary, {@adversary Reese the Secretary|Reese}, (see \"Adversaries\") is willing to answer most questions the PCs may ask about the gym.",
+                        {
+                           "type": "list",
+                           "items": [
+                              "The secretary claims to have no knowledge of any possible robbery suspects. Passing a social check against them will have them mention the PCs are treading dangerous water here and it would be best if they didn't attract attention.",
+                              "Asking where {@adversary Ox the Stampede|Ox} is will result in a simple answer that he is busy, while a successful social check will reveal that he is busy in his office.",
+                              "Using {@skill Coercion} to make any checks will upgrade the check's difficulty by one, as the secretary has been in the gym for a few years and is not impressed by tough guy nonsense. Using {@skill Coercion} will also result in the gym patrons to be more hostile to the PCs as they see them harassing the person who just does the paperwork for them for no good reason.",
+                              "Using the {@skill Charm} skill adds {@dice boost} to the check. It helps to be nice to the bored desk jockey. It also results in the {@adversary Gym Member|gym members} being more relaxed, though still guarded, around the PCs, as they seem to be decent people.",
+                              "If the PCs attempt to physically intimidate or menace the secretary, the {@adversary Gym Member|gym members} will rally to aid the secretary. Depending on the time of day, there are about 6-12 {@adversary Gym Member|gym members}, with three being actual amateur boxers for purposes of the fight (see \"Adversaries\"). {@adversary Ox the Stampede|Ox} will come out ready to fight after the last amateur boxer goes down, and will not afford the PCs any rest. All attacks by the gym folk are non-lethal (they aren't murderers after all, just boxers.)"
+                           ]
+                        },
+                        "The PCs may also want to interview the {@adversary Gym Member|gym members}, which includes three amateur boxers. The regular {@adversary Gym Member|gym members} don't have any useful information, but they can direct the PCs to the boxers, who know more. The two boxers in the ring, {@adversary Alex, the Hobbyist|Alex} and {@adversary Simon, the Aspirant|Simon} (see \"Hobbyist\" and \"Aspirant\" in the Adversaries section) will stay focused on their bout, while the third, {@adversary Rosa the Up-and-Comer|Rosa}, (the \"Up-and-Comer\") is available for conversation. The Up-and-Comer can be chatted with to try to glean any useful information, or the PCs can challenge her for the info via a boxing match.",
+                        {
+                           "type": "list",
+                           "items": [
+                              "They know someone left the gym before they joined.",
+                              "{@adversary Ox the Stampede|Ox} wasn't happy with them at all with this person because he felt their presence painted the gym in a negative light.",
+                              "{@adversary Ox the Stampede|Ox} feels this person is behind the robbery, but {@adversary Ox the Stampede|Ox} doesn't want the police involved, because it would bring further disgrace to the gym."
+                           ]
+                        },
+                        "If the PCs request to speak directly with {@adversary Ox the Stampede|Ox}, he tells them they must beat, in order, a {@adversary gym member}, the \"Hobbyist\", the \"Aspirant\", and the \"Up-and-Comer\" in a boxing match before talking to him. This can be negotiated down to just a {@adversary gym member} and one of the amateur boxers after a {@difficulty hard} check using an appropriate social skill.",
+                        "After winning the required boxing matches, {@adversary Ox the Stampede|Ox} will then emerge and talk. Upon finding out the PCs are investigating the robbery, {@adversary Ox the Stampede|Ox} will shut down the conversation and will say that they'll have to box him for more information. If the PCs learned enough to get the information on how {@adversary Ox the Stampede|Ox} wants to improve the local community and set these people on a better path, then {@adversary Ox the Stampede|Ox} will still be up for talking. Otherwise, it's fight time.",
+                        "Beating {@adversary Ox the Stampede|Ox} will result in him taking the party to his office to tell them about Spider, his former trainee. Spider abandoned the gym to try and become a high ranking enforcer for the local Calegheri crime family. {@adversary Ox the Stampede|Ox} isn't happy with the choice Spider has made and believes that the theft was part of an initiation into their crime family's ranks. {@adversary Ox the Stampede|Ox} tells the PCs that what really makes his blood boil is the fact a championship plaque was stolen, as the store owner got that fair and square. {@adversary Ox the Stampede|Ox} hates people getting hard-earned rewards getting taken away for no reason and is willing to help the PCs ensure justice, if they will agree to one condition. He asks the party to not kill Spider or turn him into the cops; they have to make sure that Spider comes back to {@adversary Ox the Stampede|Ox} to continue his training. See the \"Next Steps\" section for where the PCs can go from here.",
+                        {
+                           "type": "sidebar",
+                           "_ref": {
+                              "name": "Boxing Encounters"
+                           },
+                           "entries": []
+                        }
+                     ]
+                  },
+                  {
+                     "title": "After Dark",
+                     "page": 22,
+                     "entries": [
+                        "If the PCs cannot beat {@adversary Ox the Stampede|Ox} and his crew or simply do not wish to fight through his crew they can instead leave the gym. It closes at around 2200/10pm local time (once it is very dark out). To get inside quietly, the PCs will have to get past a lock with an {@difficulty average|Skulduggery} as well as an alarm with a {@difficulty hard|Skulduggery or Computers} (depending on how high tech you want the alarm to be). If the players fail to stop the alarm from going off, it rings loudly and they will have a limited time to get the information they need before the police arrive. The players should not know how long they have, but you should give them at least 10 minutes before they have to leave or risk discovery and arrest.",
+                        "The players can move freely around the gym as it is empty at this hour. Getting into {@adversary Ox the Stampede|Ox's} office will require picking the lock with a {@difficulty hard|Skulduggery}. Once inside, they can access his records, his computer, and a mini fridge that has some bottled water and root beer.",
+                        "In his records, there are journals stretching back decades, even before he opened the gym. He recounts his time serving in the army, the gym opening, and the stories of a few generations of champs and local heroes. Taped to the back of the war journals are a group of three dog tags, of people he lost to the war. As for the champs, there are photos of them taken before the bouts they were headed to. Each champ almost always wears a nervous smile.",
+                        "Getting into {@adversary Ox the Stampede|Ox's} computer requires an {@difficulty average|Computers} to get past the password lock. Once logged in, they find a full recycle bin where there are files labeled \"SPIDER DRAFT No(1-7)\". These files are drafts of emails trying to get this person he knows as Spider to not join the Calegheri crime family and pleading with them to instead return to the gym before he commits any serious crimes. It is noted Spider had a stable job and a good crew here to run with instead of the malice, deceit, and murder that is organized crime."
+                     ]
+                  },
+                  {
+                     "title": "Next Steps",
+                     "page": 22,
+                     "entries": [
+                        "However they acquired the information, the PCs should now know who the culprit is, and at least one avenue for further investigation (the Calegheri crime family). How they move forward with this and what exactly Spider is up to is up to you, the GM, and the decisions your players make. The story is yours. Take the reins and hopefully you get something memorable."
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Adversaries",
+               "page": 22,
+               "entries": [
+                  "{@adversary Gym Member}",
+                  "{@adversary Reese the Secretary}",
+                  "{@adversary Alex, the Hobbyist}",
+                  "{@adversary Simon, the Aspirant}",
+                  "{@adversary Rosa the Up-and-Comer}",
+                  "{@adversary Ox the Stampede}"
+               ]
+            },
+            {
+               "title": "Conversion Guide",
+               "page": 23,
+               "entries": [
+                  "This encounter is designed with a modern setting in mind but can easily be adapted to an earlier time period (use a locked file cabinet instead of a computer for the documents) or a sci-fi/cyberpunk setting (Pepper and Salt augmentations on {@adversary Ox the Stampede|Ox's} crew and the big one themself as you feel needed to keep the fight a challenge).",
+                  "For fantasy, replace the computer with a magically locked treasure chest. The email drafts can become discarded letters. Convert {@adversary Ox the Stampede|Ox} and crew to the setting as needed reflecting the diversity in {@adversary Ox the Stampede|Ox's} crew and their fighting styles.",
+                  "One thing I recommend is keeping it in mind the encounter is not meant to kill PCs but introduce multiple options to deal with a situation to the players, being designed with new players in mind."
+               ]
+            }
+         ]
+      }
+   ]
+}

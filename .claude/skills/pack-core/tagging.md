@@ -91,6 +91,10 @@ mean broken links, missing popovers, or plain text where dice and symbols should
   - U+F22BB hexagon: red = challenge, yellow = proficiency
 - **Colored dice are also drawn with a dark outline glyph** at the same spot. `pdf-runs.js` drops these duplicates. Never count them as extra dice, or as setback dice.
 - **Where the table was confirmed:** visually in Embers of the Imperium. Other books may use different codes, so check the first symbols of a new book against its page image. Anything unknown prints as `[[glyph …]]`.
+- **Letter-coded font "GenesysGlyphsAndDice"** (community books; confirmed in BOOST 9). It uses the client's own letters, and `pdf-runs.js` decodes it too:
+  - `s a t f h d` are the result symbols; `k` diamond, `j` square, `l` hexagon are dice (color picks the die, as above).
+  - `c`, `p`, `g` are the combat/social/general power-level icons. The printed value after the icon is merged in: `{@social +2}`.
+  - A white `x` drawn right after a die is its up-arrow, so the die becomes `{@dice ability^}` / `{@dice difficulty^|2}`.
 - **What the printed icons look like:**
 
 | Printed | Looks like | Tag |
@@ -101,6 +105,8 @@ mean broken links, missing popovers, or plain text where dice and symbols should
 | difficulty die | purple diamond | `{@dice difficulty}` |
 | proficiency die | yellow hexagon | `{@dice proficiency}` |
 | challenge die | red hexagon | `{@dice challenge}` |
+| upgrade icon | a die with an up-arrow (green diamond = upgrade ability, purple = upgrade difficulty) | `{@dice ability^}`, `{@dice difficulty^\|2}` |
+| die with a modifier | a die marked +, −, ↑ or ↓ | suffix the die name: `+`, `-`, `^` (up), `v` (down) |
 | success / advantage / triumph / failure / threat / despair | result symbols | `{@symbols s}` / `a` / `t` / `f` / `h` / `d` |
 
 - Several identical dice use a count: `{@dice setback|2}`.

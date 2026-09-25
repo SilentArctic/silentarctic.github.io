@@ -1,0 +1,1023 @@
+{
+   "$schema": "https://silentarctic.github.io/schemas/schema.json",
+   "_meta": {
+      "source": {
+         "version": "2026.09.25",
+         "json": "book-of-online-sourced-triumphs-9-motivational-play",
+         "full": "Book Of Online Sourced Triumphs 9: Motivational Play",
+         "abbreviation": "BOOST:9",
+         "color": "#30F030",
+         "authors": [
+            "Micah-Shalom \"FatCrab\" Kesselman",
+            "Genesys RPG Community",
+            "Carson \"Swordbreaker\" Worth",
+            "Jennifer \"jendefer\" Van Boxel",
+            "Adam \"CircleofNoms\" Brown",
+            "Ryall Hyatt",
+            "Amnesiac",
+            "Matt \"DatMatt\" Mensch"
+         ],
+         "convertedBy": [
+            "SilentArctic"
+         ],
+         "url": "https://www.drivethrurpg.com/en/product/491350/boost-9-motivational-play",
+         "releaseDate": "12 August 2024"
+      },
+      "defaultItemSettings": []
+   },
+   "talent": [
+      {
+         "name": "Enlightening Conversation",
+         "page": 1,
+         "tier": 2,
+         "activation": "passive",
+         "ranked": false,
+         "tags": [
+            "social",
+            "general",
+            "motivation",
+            "skill check",
+            "skill swap"
+         ],
+         "description": [
+            "When your character makes a check during a social encounter to discern one of another character's Motivations ({@i see} p. 124 of the {@title Genesys Core Rulebook}), they may make an {@b opposed {@skill Charm} vs {@skill Cool} check} (instead of a {@skill Perception} vs {@skill Cool} check).",
+            "{@b Author:} Carson \"Swordbreaker\" Worth"
+         ]
+      },
+      {
+         "name": "Misleading Behavior",
+         "page": 1,
+         "tier": 2,
+         "activation": "active (incidental, out of turn)",
+         "ranked": false,
+         "tags": [
+            "social",
+            "general",
+            "motivation",
+            "story points",
+            "defense"
+         ],
+         "description": [
+            "When an opponent would learn one of your character's Motivations, you may spend a Story Point to have the opponent learn a false Motivation of the same type instead. The opponent adds a number of {@dice setback} equal to the nature of the false Motivation when they attempt to use it against your character.",
+            "{@b Author:} Carson \"Swordbreaker\" Worth"
+         ]
+      },
+      {
+         "name": "Misleading Behavior (Improved)",
+         "page": 1,
+         "prerequisites": [
+            "Misleading Behavior"
+         ],
+         "tier": 3,
+         "activation": "active (incidental, out of turn)",
+         "ranked": false,
+         "tags": [
+            "social",
+            "general",
+            "motivation",
+            "story points",
+            "defense",
+            "support"
+         ],
+         "description": [
+            "{@i Your character must have purchased the {@talent Misleading Behavior} talent to benefit from this talent.}",
+            "When one of your character's allies would have one of their Motivations revealed, you may spend a Story Point to have the opponent learn a false Motivation of the same type instead. The opponent adds a number of {@dice setback} equal to the nature of the false Motivation when they attempt to use it against your character's ally.",
+            "{@b Author:} Carson \"Swordbreaker\" Worth"
+         ]
+      },
+      {
+         "name": "Subtle Observations",
+         "page": 1,
+         "tier": 3,
+         "activation": "active (incidental)",
+         "ranked": false,
+         "tags": [
+            "social",
+            "general",
+            "motivation",
+            "story points",
+            "investigation"
+         ],
+         "description": [
+            "When your character makes a check during a social encounter to discern one of another character's Motivations ({@i see} p. 124 of the {@title Genesys Core Rulebook}), you may spend a Story Point to have your character's observations go unnoticed by the target or any other characters in the encounter.",
+            "{@b Author:} Carson \"Swordbreaker\" Worth"
+         ]
+      },
+      {
+         "name": "Unity of Purpose",
+         "page": 1,
+         "tier": 4,
+         "activation": "active (incidental, out of turn)",
+         "ranked": false,
+         "tags": [
+            "social",
+            "general",
+            "motivation",
+            "story points",
+            "support",
+            "skill check",
+            "downside"
+         ],
+         "description": [
+            "Once per session when an allied character makes a social check or is targeted by an opposed social check, you may spend a Story Point to have that ally apply one of your character's Motivations to the dice pool of the check. If the ally's check fails or if the opponent's check succeeds, your character suffers 2 strain.",
+            "You and the GM must work together to determine what Motivation is most appropriate for the check; for example, the ally may apply {@dice boost} if their check works with your character's Strength, or {@dice setback|2} to an opposing character's check if it is working against your character's Fear.",
+            "{@b Author:} Carson \"Swordbreaker\" Worth"
+         ]
+      },
+      {
+         "name": "Fate",
+         "page": 6,
+         "tier": 2,
+         "activation": "active (incidental)",
+         "ranked": false,
+         "tags": [
+            "general",
+            "motivation",
+            "narrative",
+            "story points",
+            "result manipulation",
+            "downside"
+         ],
+         "description": [
+            "Your character is fated to some eventuality. Discuss this eventuality with your GM, paying close attention to your character's motivations. Once per session, when you spend a Story Point to upgrade a die for a roll relating to your Fate and your motivations, you may choose to set that die aside and count it as having rolled {@symbols t}. When you do this, the GM may then spend a Story Point to upgrade the difficulty of a roll later in the session, then count that upgraded die as having rolled {@symbols d}.",
+            "{@b Author:} Adam \"CircleofNoms\" Brown"
+         ]
+      },
+      {
+         "name": "Destiny",
+         "page": 6,
+         "tier": 2,
+         "activation": "active (incidental)",
+         "ranked": true,
+         "tags": [
+            "general",
+            "motivation",
+            "narrative",
+            "result manipulation",
+            "downside"
+         ],
+         "description": [
+            "Your character has a destiny of some kind. Discuss this destiny with your GM, paying close attention to your character's motivations. Once per session, when you make a roll relating to your Destiny and your Motivations, you may add a number of {@symbols s} or {@symbols a} to the roll results equal to your ranks in Destiny. You may choose any combination of {@symbols s} or {@symbols a} you wish, but the total number of both cannot exceed your ranks in Destiny. For each {@symbols s} added to the roll result using this talent, you suffer 1 Strain.",
+            "{@b Author:} Adam \"CircleofNoms\" Brown"
+         ]
+      }
+   ],
+   "gear": [
+      {
+         "name": "Endocannabinoid Disinhibitor",
+         "type": "gear",
+         "class": "medical",
+         "page": 2,
+         "description": [
+            "{@i A.K.A. Flux or So Random}",
+            "This drug is most often applied through a nasal mister. A character may spend a maneuver to spray the Endocannabinoid Disinhibitor into each of their own nostrils. It is also available as a topical cream.",
+            "Characters can use the Endocannabinoid Disinhibitor's topical formulation to apply it to an unaware target by spending an action to make an {@b opposed {@skill Skulduggery} vs {@skill Vigilance} check}. A character that is dosed with Endocannabinoid Disinhibitor adds {@symbols fhh} to all {@skill Deception} or {@skill Negotiation} checks, and {@symbols saa} to all {@skill Charm} checks, for the remainder of the encounter. The character also adds {@symbols ff} to the strain recovery roll they make at the end of the encounter.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 50,
+         "rarity": 7,
+         "encumbrance": 0
+      },
+      {
+         "name": "Exuberance",
+         "type": "gear",
+         "class": "medical",
+         "page": 2,
+         "description": [
+            "{@i A.K.A. Hey Ya or Lolz}",
+            "A character can suffer 3 strain to apply a sticker or patch of this drug onto their skin as a maneuver. For the remainder of the encounter or scene, all {@skill Charm} and {@skill Negotiation} checks made by the character are upgraded twice, but {@skill Deception} and {@skill Charm} checks targeting the character add {@dice boost|2}. A character can only benefit from one dose of Exuberance at a time.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 100,
+         "rarity": 8,
+         "encumbrance": 0
+      },
+      {
+         "name": "Mirror Neuron Enhancement",
+         "type": "gear",
+         "class": "medical",
+         "page": 2,
+         "description": [
+            "{@i A.K.A. Mini Tab or Monkey See}",
+            "A character can smear a dose of this clear gel across their forehead as a maneuver. After applying the dose, the character can learn one motivation from an engaged character as an incidental. If the MNE Gel is unused in an encounter or scene, the effect expires at the end of that current encounter or scene.",
+            "A character suffers 3 strain each time they use an MNE Gel in a scene after the first. The first full night's rest for a character that has used MNE Gel in the preceding day only recovers strain equal to half of the character's strain threshold (in contrast to fully recovering the character's strain as usual).",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 75,
+         "rarity": 8,
+         "encumbrance": 0
+      },
+      {
+         "name": "Neuro-Sedative",
+         "type": "gear",
+         "class": "medical",
+         "page": 2,
+         "description": [
+            "{@i A.K.A. Bewilder or Rift}",
+            "A character can spend a maneuver to swallow a small dissolving capsule of this drug. Until the end of the current encounter, the difficulty of all social checks targeting the character are increased by 1, but the character adds {@dice setback|2} to any {@characteristic Brawn}, {@characteristic Agility}, or {@characteristic Intellect} based skill checks they attempt. Also, the character must forgo the strain recovery roll they would normally make at the end of the encounter.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 20,
+         "rarity": 5,
+         "encumbrance": 0
+      },
+      {
+         "name": "Circlet of Hidden Thought",
+         "type": "magic",
+         "page": 2,
+         "description": [
+            "Add {@dice setback} to social checks that target the wearer of this delicate metal headband. In addition, once per encounter when one of the wearer's motivations should be revealed, they may substitute a false motivation instead.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 1000,
+         "rarity": 9,
+         "encumbrance": 0
+      },
+      {
+         "name": "Gorget of Honor",
+         "type": "magic",
+         "page": 2,
+         "description": [
+            "This ornamental crescent of worked metal is patterned with regal iconography and imparts an aura of certitude to its wearer. When wearing the Gorget of Honor, add +2 to the strain inflicted on an opponent in a social encounter with successful opposed {@skill Coercion} or {@skill Leadership} skill checks.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 1200,
+         "rarity": 8,
+         "encumbrance": 1
+      },
+      {
+         "name": "Tranquility Harp",
+         "type": "magic",
+         "page": 3,
+         "description": [
+            "This beautifully crafted harp has a braided silk harness that allows it to be played while standing. The Tranquility Harp's magic is such that anyone can play it and produce pleasant music, but in the hands of a skilled musician the result is transcendent.",
+            "When a character uses a maneuver to play the Tranquility Harp, until the end of their next turn, allies in short range that make a social check reduce the cost of revealing a target's motivations by {@symbols a}. Once per encounter, as an action, a character playing the Tranquility Harp can target an ally in medium range and make an {@difficulty average|charm}. If successful, the target heals strain equal to uncanceled {@symbols s}, and additional allies can be affected by spending {@symbols aa} for each.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 1200,
+         "rarity": 9,
+         "encumbrance": 2
+      },
+      {
+         "name": "Headsman's Blade",
+         "type": "weapon",
+         "class": "magic",
+         "page": 3,
+         "description": [
+            "This well-crafted but unadorned sword was used to perform hundreds of official beheadings, and has become imbued with a lingering echo of the death it has caused. This weapon has the following profile: {@skill Melee (Heavy)}, Dam +4, Crit 2, Range: Engaged, Enc 3, HP 0, {@quality Concussive|Concussive 1}, {@quality Accurate|Accurate 1}, {@quality Reinforced}.",
+            "When a character uses the Headsman's Blade in combat for the first time by making an attack roll, they gain a new Flaw: Unhealthy Attachment, with the magic weapon as its focus. In addition, they add the {@quality Inaccurate|Inaccurate 2} quality to attacks they make with any other weapon or spell, including unarmed attacks. If this Flaw is removed, the character will regain it should they wield the Headsman's Blade again.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 1500,
+         "rarity": 9,
+         "skill": {
+            "name": "Melee (Heavy)",
+            "source": "crb"
+         },
+         "damage": "+4",
+         "critical": 2,
+         "range": "Engaged",
+         "encumbrance": 3,
+         "hardPoints": 0,
+         "special": [
+            {
+               "name": "Concussive",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Accurate",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Reinforced",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Water of Stillness",
+         "type": "magic",
+         "page": 3,
+         "description": [
+            "This self-refilling metal flask contains a draught of the waters of the next world. If a character possesses more than one Fear or Flaw when they drink from the flask, they may make a {@difficulty hard|resilience}; if successful they may choose one of these motivations to remove from their character sheet.",
+            "The Water of Stillness cannot reduce the number of Fears or Flaws below one. If they fail the check, the character suffers 4 strain. A character may use this item once per week, with additional sips from the flask turning to ashes in the mouth.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 1000,
+         "rarity": 8,
+         "encumbrance": 1
+      }
+   ],
+   "adversaryAbility": [
+      {
+         "name": "Inspire Aversion",
+         "description": [
+            "{@b Power Level:} {@social +2}",
+            "As an action, this adversary can target a character and attempt an {@b opposed {@skill Coercion} vs {@skill Discipline} check}. If successful, they implant a temporary Fear in the target with themselves as the focus that lasts until the end of the current session.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "tags": [
+            "social",
+            "active",
+            "action",
+            "session",
+            "opposed",
+            "motivation",
+            "offensive",
+            "narrative"
+         ]
+      },
+      {
+         "name": "Spark Attraction",
+         "description": [
+            "{@b Power Level:} {@social +2}",
+            "As an action, this adversary can target a character and attempt an {@b opposed {@skill Charm} vs {@skill Cool} check}. If successful, they implant a temporary Desire in the target with themselves as the focus that lasts until the end of the current session.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "tags": [
+            "social",
+            "active",
+            "action",
+            "session",
+            "opposed",
+            "motivation",
+            "offensive",
+            "narrative"
+         ]
+      }
+   ],
+   "table": [
+      {
+         "name": "Table 1: Drugs",
+         "page": 2,
+         "columns": [
+            {
+               "header": "Name",
+               "value": "name",
+               "size": 2
+            },
+            {
+               "header": "Encum",
+               "value": "encum"
+            },
+            {
+               "header": "Price",
+               "value": "price"
+            },
+            {
+               "header": "Rarity",
+               "value": "rarity"
+            }
+         ],
+         "rows": [
+            {
+               "name": "{@gear Endocannabinoid Disinhibitor}",
+               "encum": "0",
+               "price": "50",
+               "rarity": "7"
+            },
+            {
+               "name": "{@gear Exuberance}",
+               "encum": "0",
+               "price": "100",
+               "rarity": "8"
+            },
+            {
+               "name": "{@gear Mirror Neuron Enhancement}",
+               "encum": "0",
+               "price": "75",
+               "rarity": "8"
+            },
+            {
+               "name": "{@gear Neuro-Sedative}",
+               "encum": "0",
+               "price": "20",
+               "rarity": "5"
+            }
+         ]
+      },
+      {
+         "name": "Table 2: Magical Items",
+         "page": 3,
+         "columns": [
+            {
+               "header": "Name",
+               "value": "name",
+               "size": 2
+            },
+            {
+               "header": "Encum",
+               "value": "encum"
+            },
+            {
+               "header": "Price",
+               "value": "price"
+            },
+            {
+               "header": "Rarity",
+               "value": "rarity"
+            }
+         ],
+         "rows": [
+            {
+               "name": "{@gear Circlet of Hidden Thought}",
+               "encum": "0",
+               "price": "1000",
+               "rarity": "9"
+            },
+            {
+               "name": "{@gear Gorget of Honor}",
+               "encum": "1",
+               "price": "1200",
+               "rarity": "8"
+            },
+            {
+               "name": "{@gear Tranquility Harp}",
+               "encum": "2",
+               "price": "1200",
+               "rarity": "9"
+            },
+            {
+               "name": "{@gear Headsman's Blade}",
+               "encum": "3",
+               "price": "1500",
+               "rarity": "9"
+            },
+            {
+               "name": "{@gear Water of Stillness}",
+               "encum": "1",
+               "price": "1000",
+               "rarity": "8"
+            }
+         ]
+      },
+      {
+         "name": "Table 3: Conviction Aspects",
+         "page": 8,
+         "columns": [
+            {
+               "header": "Aspects",
+               "value": "aspect",
+               "size": 1
+            },
+            {
+               "header": "Effects",
+               "value": "effect",
+               "size": 3
+            }
+         ],
+         "rows": [
+            {
+               "aspect": "Hidden",
+               "effect": "Your character's Desire, Fear, Strength, and Flaw must be known before their Conviction can be learned/revealed."
+            },
+            {
+               "aspect": "Bond (Negative)",
+               "effect": "Upgrade the difficulty of all checks your character makes while the bonded character is in the same encounter."
+            },
+            {
+               "aspect": "Bond (Positive)",
+               "effect": "Upgrade all checks your character makes while the bonded character is in the same encounter."
+            },
+            {
+               "aspect": "Ashamed",
+               "effect": "The first time in an encounter when this Conviction is engaged with directly, your character suffers a Critical Remark (suffer 5 strain)."
+            },
+            {
+               "aspect": "Consuming",
+               "effect": "The GM may spend {@symbols d} on any check your character makes that is connected to this Conviction in order to link this Conviction to another Motivation."
+            },
+            {
+               "aspect": "Compulsion",
+               "effect": "The GM may spend a Story Point and {@symbols d} or {@symbols hhh} on any check your character makes to introduce into the encounter something that triggers the Compulsion."
+            },
+            {
+               "aspect": "Driven",
+               "effect": [
+                  "Once per session you may spend a {@symbols t} on any check your character makes that is connected to this Conviction to have your character heal all of their strain.",
+                  "Once per session, the GM may spend a {@symbols d} from any check your character makes that is connected to this Conviction to have your character suffer an amount of strain until they reach their strain threshold."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Table 4: Expanded NPC Motivations",
+         "page": 10,
+         "columns": [
+            {
+               "header": "#",
+               "value": "card",
+               "size": 1
+            },
+            {
+               "header": "Strength",
+               "value": "strength",
+               "size": 3
+            },
+            {
+               "header": "Flaw",
+               "value": "flaw",
+               "size": 3
+            },
+            {
+               "header": "Desire",
+               "value": "desire",
+               "size": 3
+            },
+            {
+               "header": "Fear",
+               "value": "fear",
+               "size": 3
+            }
+         ],
+         "rows": [
+            {
+               "card": "1",
+               "strength": "Adaptable",
+               "flaw": "Wrath",
+               "desire": "Discovery",
+               "fear": "Change"
+            },
+            {
+               "card": "2",
+               "strength": "Analytical",
+               "flaw": "Obsession",
+               "desire": "Transcendence",
+               "fear": "Rejection"
+            },
+            {
+               "card": "3",
+               "strength": "Courageous",
+               "flaw": "Deception",
+               "desire": "Glory",
+               "fear": "Crowds"
+            },
+            {
+               "card": "4",
+               "strength": "Curious",
+               "flaw": "Greed",
+               "desire": "Justice",
+               "fear": "Expression"
+            },
+            {
+               "card": "5",
+               "strength": "Resourceful",
+               "flaw": "Shallow",
+               "desire": "Love",
+               "fear": "Failure"
+            },
+            {
+               "card": "6",
+               "strength": "Independent",
+               "flaw": "Ignorance",
+               "desire": "Power",
+               "fear": "Humiliation"
+            },
+            {
+               "card": "7",
+               "strength": "Patient",
+               "flaw": "Intolerance",
+               "desire": "Redemption",
+               "fear": "Isolation"
+            },
+            {
+               "card": "8",
+               "strength": "Clever",
+               "flaw": "Arrogance",
+               "desire": "Change",
+               "fear": "Nemesis"
+            },
+            {
+               "card": "9",
+               "strength": "Wise",
+               "flaw": "Recklessness",
+               "desire": "Vengeance",
+               "fear": "Obscurity"
+            },
+            {
+               "card": "10",
+               "strength": "Compassionate",
+               "flaw": "Timidity",
+               "desire": "Wealth",
+               "fear": "Poverty"
+            },
+            {
+               "card": "J",
+               "strength": "Confident",
+               "flaw": "Carelessness",
+               "desire": "Absolution",
+               "fear": "Suffering"
+            },
+            {
+               "card": "Q",
+               "strength": "Creative",
+               "flaw": "Tired",
+               "desire": "Freedom",
+               "fear": "Supernatural"
+            },
+            {
+               "card": "K",
+               "strength": "Persistent",
+               "flaw": "Envy",
+               "desire": "Honor",
+               "fear": "Imprisonment"
+            },
+            {
+               "card": "A",
+               "strength": "Empathetic",
+               "flaw": "Biased",
+               "desire": "Destruction",
+               "fear": "The Unknown"
+            },
+            {
+               "card": "♥",
+               "strength": "The Strength is intrinsic to the character.",
+               "flaw": "The Flaw is intrinsic to the character.",
+               "desire": "The Desire is intrinsic to the character.",
+               "fear": "The Fear is very tied to its physical manifestation."
+            },
+            {
+               "card": "♣",
+               "strength": "The Strength is related to a secret past.",
+               "flaw": "The Flaw has been forced upon the character.",
+               "desire": "The Desire is related to a secret from the past.",
+               "fear": "The Fear is tied to an emotional, psychological, or spiritual manifestation of it."
+            },
+            {
+               "card": "♦",
+               "strength": "The Strength is extrinsic to the character.",
+               "flaw": "The character is aware of the Flaw and actively tries to fix it.",
+               "desire": "The Desire is extrinsic to the character.",
+               "fear": "The Fear derives from a singular punctuated event or item."
+            },
+            {
+               "card": "♠",
+               "strength": "The Strength is related to a well-known past event.",
+               "flaw": "The character does not see the Flaw as a flaw, and may even view it as a strength.",
+               "desire": "The Desire is related to an event in the past or future.",
+               "fear": "The Fear arose slowly over time and derives from a multitude of the character's experiences."
+            }
+         ],
+         "foot": "{@b * Aces may be treated as an Ace or a 1.} {@b Alternative Suit Rules:} ♥ = Desire; ♠ = Fear; ♦ = Strength; ♣ = Flaw."
+      }
+   ],
+   "rule": [
+      {
+         "name": "Motivational Equipment",
+         "page": 4,
+         "type": "gear",
+         "description": [
+            "Motivations are an avenue for broadening the scope of magic in a setting. When Motivations are tied to equipment, this could represent cursed or blessed items, items inhabited by a spirit or consciousness, or simply enchantment in general. This approach can be applied to weapons, armor, tools, or magical implements. The idea is to provide more ways for players to engage with their Motivations, as well as fuel for fun roleplaying beats. In some cases, such equipment could act as a seed for a character-growth arc and lead to a player adjusting one of their PC's Motivations on a permanent basis.",
+            "Below we provide four categories of motivational equipment, along with examples of how they might show up in a game. In all cases, recognizing that the equipment interacts with Motivation requires a {@difficulty hard|knowledge} appropriate to your setting. For example, this could be {@skill Knowledge (Lore)||rot} or {@skill Knowledge (Adventuring)||rot} for a {@title Realms of Terrinoth} game.",
+            {
+               "title": "Only Characters with a Specific Motivation Can Use the Item at All",
+               "entries": [
+                  "Example: This pendant is enchanted to make the bearer more captivating to an audience. It provides a {@dice boost} to {@skill Charm} and {@skill Negotiation} checks but only for a character whose Strength is witty or wise."
+               ]
+            },
+            {
+               "title": "Characters with a Specific Motivation Get a Bonus When Using the Item",
+               "entries": [
+                  "Example: This holy icon is blessed by a deity associated with learning. It operates as a standard {@gear holy icon} ({@title Genesys Core Rulebook}, p. 219) for most characters. However, for a character whose Desire is expertise or knowledge, the number of wounds healed by {@spell Heal|heal} spells increases by four instead of two."
+               ]
+            },
+            {
+               "title": "Characters with a Specific Motivation Get a Penalty When Using the Item",
+               "entries": [
+                  "Example: This potent {@gear crossbow||rot} is enchanted to teach its wielder patience and consideration. For most characters, it simply does 8 damage instead of 7 ({@i see} {@title Realms of Terrinoth}, p. 95). However, for a character whose Flaw is recklessness or anger, it has {@quality Prepare|Prepare 2} instead of {@quality Prepare|Prepare 1} and attacks with it add a {@dice setback}."
+               ]
+            },
+            {
+               "title": "The Item Can Alter One of the Character's Motivations While They Bear It",
+               "entries": [
+                  "When the user is a PC, this requires players who are willing to lean into the temporary new Motivation. The GM should provide scenarios in which this change has significance. When a character picks up the item, they make a {@difficulty hard|discipline}. On a success, they are aware of the influence the item exerts on their Motivations but are able to suppress it. On a failure, their equivalent Motivation facet is replaced with the new one in a way that is completely seamless to them for as long as they bear the item. The GM may allow additional {@skill Discipline} checks to escape the item's influence when narratively appropriate, or the player may spend {@symbols t} from some other roll to reattempt this.",
+                  "Example: This staff bears the taint of years in the possession of a crazed hermit mage. It affects the Fear motivation, changing it to isolation.",
+                  "When Heppa picks up the staff, she finds herself thinking that she could settle down and study it for the rest of her life but that it would be so horrible to be alone for that whole time. Her fear of commitment is gone, replaced by the staff's fear of isolation. Heppa succeeds the {@skill Discipline} check, so she has sufficient awareness to realize the staff's influence and push it aside.",
+                  "Example: This sword is inhabited by a jealous spirit. While a character bears it, they too become more possessive. It affects the Desire motivation, changing it to very specifically center on this one object.",
+                  "When Tric picks up the sword, he decides that it is best for him to take charge of it in order to safely deliver it to the person who commissioned its recovery. However, as time goes on, he makes up more and more excuses to delay that delivery. Having failed the {@skill Discipline} check, his Desire is now maintaining control of the sword."
+               ]
+            },
+            "{@b Author:} Jennifer \"jendefer\" Van Boxel"
+         ]
+      },
+      {
+         "name": "Motivating Relationships",
+         "page": 5,
+         "type": "motivation",
+         "description": [
+            "Once per session per Motivation facet ({@i see} {@title Genesys Core Rulebook}, p. 46), a Motivating Relationship may be invoked by either the owning PC or the PC who is the target of the Motivating Relationship. To invoke a Motivating Relationship, the corresponding player must spend a Story Point as an out-of-turn incidental. For the rest of the encounter, checks for the relevant PCs related to the respective Motivating Relationship double any beneficial effects granted to the roll.",
+            "For example, if an effect would add {@dice boost}, then it instead adds {@dice boost|2}; or, if an effect would grant {@dice ability^}, then it instead grants {@dice ability^|2}. The invoking character must reveal a memory or similar information, such as a plot twist, that links the motivating relationship to the encounter.",
+            "Motivating Relationships may be invoked only once per Motivation facet per session, regardless of whether or not the impacted characters have invoked a Motivating Relationship for the same Motivation facet this session. Effectively, this means that only four Motivating Relationships may be invoked per session. For example, if a Motivating Relationship for the Strength Motivation facet has already been invoked this session, another cannot be no matter who invoked the Motivating Relationship earlier.",
+            "Once a Motivating Relationship has been invoked, then the GM may spend a Story Point or {@symbols hhh} generated by either PC's checks in subsequent encounters to invoke a negative or difficult aspect of the relationship to give both PCs {@dice difficulty^} on their next check respectively. The players should work with the GM to decide the aspect and how it relates to the encounter in which it was invoked.",
+            "At character creation, each player should choose from and answer one question from each Motivation facet list. Preferably this is done at the table as a sort of preamble to session 1 so that the group can collaboratively weave their characters' interconnected backstories together.",
+            {
+               "title": "Strength",
+               "entries": [
+                  "Choose one from:",
+                  {
+                     "type": "list",
+                     "items": [
+                        "You went through training or a similar process with ____. What did you experience with them that helped you realize or begin to understand your {@b Strength}?",
+                        "____ was instrumental in you overcoming a trial or tribulation that deeply tested your {@b Strength}. What was the trial and what did they do?",
+                        "____ inspires you to behave towards your {@b Strength}. What is it about them that you find inspiring?"
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Flaw",
+               "entries": [
+                  "Choose one from:",
+                  {
+                     "type": "list",
+                     "items": [
+                        "____ has helped you overcome your {@b Flaw} at critical moments in at least one past situation. What was it?",
+                        "Your {@b Flaw} is particularly difficult for ____. Why is that?",
+                        "____'s presence modulates your {@b Flaw} in some way, either amplifying it, directing it, minimizing it, or the like. How is your {@b Flaw} modulated by ____ and what is it about them that causes this?"
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Desire",
+               "entries": [
+                  "Choose one from:",
+                  {
+                     "type": "list",
+                     "items": [
+                        "____ is associated with your {@b Desire}, either symbolically or in definitive and actionable ways. How are they associated with your {@b Desire}?",
+                        "In the past, ____ got in the way of you achieving your {@b Desire}. How?",
+                        "You are aware of specific, actionable ways in which your {@b Desire} and ____'s {@b Desire} coincide. What are they?"
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Fear",
+               "entries": [
+                  "Choose one from:",
+                  {
+                     "type": "list",
+                     "items": [
+                        "____ once helped you overcome your {@b Fear} for a moment. How?",
+                        "You find ____ inspirational insofar as your {@b Fear} is concerned. What about them inspires you?",
+                        "Something about ____, currently or in their past, effectively manifests some aspect of your {@b Fear}. What is that thing?"
+                     ]
+                  }
+               ]
+            },
+            "{@b Author:} Micah-Shalom \"FatCrab\" Kesselman"
+         ]
+      },
+      {
+         "name": "Emotional Risk",
+         "page": 6,
+         "type": "motivation",
+         "description": [
+            "If a player can successfully convince the GM that their character's Desire or Strength relates to a skill check their character is about to make, they can upgrade the check once. If they fail, their character suffers 3 strain. Each motivation can only be used once in this way per session.",
+            "If a GM feels that a character's Fear or Flaw relates to a skill check the character is about to make, they can upgrade the difficulty of the check once. If the character succeeds, they immediately recover 3 strain. Each motivation can only be used once in this way per session.",
+            "{@b Author:} Ryall Hyatt"
+         ]
+      },
+      {
+         "name": "Destiny and Fate",
+         "page": 6,
+         "type": "motivation",
+         "description": [
+            "Destiny is defined as the set of events that will necessarily happen to a person, place, or thing at some point in the future. The concept of Fate is similar, but differs in the connotation of random chance. These are powerful concepts that have existed in one form or another since the beginning of human civilization. From the religions of ancient Sumer and Babylon, to the myths of classical Greece, to the published works of Nietzsche, Fate and Destiny have been important and controversial topics of thought. These concepts have been central to the debate over free will. In gaming, they represent a player's desire to prescribe their character's future, giving them a strong hand in determining the course of a campaign.",
+            {
+               "title": "Translating Destiny and Fate to Genesys",
+               "entries": [
+                  "{@talent Fate} and {@talent Destiny} are represented here as two talents that interact with a character's Motivations, pushing them to follow their motivations in pursuit of their destiny or fate. In a world where fate and destiny are real, it must be necessary that a character's personality and tendencies are tied intricately to that destiny and/or fate. Destiny and fate change the connotation of Motivations from a guide that players use to exercise their character's free will, to a script that naturally leads to the ultimate eventuality as determined by their personality and circumstances.",
+                  "Destiny is, in this case, an eventuality that explicitly draws on the will of the character. A character with a destiny will make their destiny come to pass because they are choosing to act in ways that make it so. Fate is, conversely, an eventuality that is forced upon a character despite their actions or regardless of them. A character with Fate is either choosing to deny it or to let it happen without actively pursuing it.",
+                  "Note that a character doesn't have to pursue their Destiny positively. The story of Oedipus is a great example of destiny, which happens precisely because the character attempts to avoid it. On the other hand, a character who ignores their Fate is just as likely for it to happen even if they don't pursue it. Fate will happen because of the character's circumstances, even their choices, but not because the character is mindful of that eventuality. A fated character stumbles into their destiny and may see it as a great surprise."
+               ]
+            },
+            {
+               "title": "Talents",
+               "entries": [
+                  "See the {@talent Fate} and {@talent Destiny} talents."
+               ]
+            },
+            {
+               "title": "Tying It to Your Motivations",
+               "entries": [
+                  "It is critically important that your Fate or Destiny be tied to your Motivations. The natural tendencies of a character are the basis for why and how their Destiny or Fate will come to pass.",
+                  {
+                     "type": "list",
+                     "items": [
+                        "{@b Desire}: Linking fate/destiny to the character's desire is simple. A character can have a desire that vaguely defines their wants, and their fate/destiny defines a much more concrete end that aligns with the desire. A character with a desire of \"Ambition\" might have a destiny relating to becoming a ruler or influential individual. Alternatively, their Desire can decisively oppose their eventual fate/destiny. A character with a desire of \"Safety\" could have a Fate that binds them to a life of war.",
+                        "{@b Fear}: In contrast with Desire, a character's Fear can be just as powerful a tool to push them toward their destiny/fate. A character with a Fear of \"Failure\" can be paired with a destiny/fate that says they will be a grand hero. In this way, their fear of failing drives them to pursue success. Alternatively, a Fate which ends in a character's eventual gruesome death can affirm a character's Fear, and by avoiding their fear they pursue their fate/destiny unwittingly.",
+                        "{@b Strength}: What your character is good at is a great way to determine what their eventual fate/destiny will be. A character is likely to lean on their Strengths in times of great stress, and through those strengths, their fate/destiny is brought into being. A character who is \"Adaptable\" can be paired with the Fate of being a survivor of a family catastrophe. Alternatively, a character who is \"Idealistic\" could be paired with the negative Fate of causing a famine or apocalypse as they fail to plan for certain catastrophes.",
+                        "{@b Flaws}: Flaws are classic facets of character that bring out negative destinies/fates. Greek tragic heroes often fell victim to their fate because their flaws made it inevitable. A character with a Flaw of \"Greed\" could be fated to become a wealthy magnate even if they never wanted that. Alternatively, Flaws can be used to justify positive fates/destinies, as the character either works to overcome them or makes the right decision for the wrong reasons. A character with a Flaw of \"Laziness\" could have a fate/destiny to rescue a great king as the character doesn't bother to go on a quest, putting them in the perfect spot to intercept an assassin."
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Pointers for Writing Fates and Destinies",
+               "entries": [
+                  "Determining the Fate or Destiny of a character isn't an easy or simple task. Here are a few pointers to get the most out of Fate and Destiny.",
+                  {
+                     "type": "list",
+                     "items": [
+                        "Keep it concrete, but vague. The destiny/fate should be able to be expressed in one or two sentences but shouldn't have something as concrete as a name or a date. Oracles in ancient Greece were notorious for making proclamations that could have multiple interpretations. This means that the player is afforded some flexibility in applying the talent but cannot choose to use it any time they wish.",
+                        "Make it grandiose. A character who receives a prophecy about their future is going to be an important person. Knowing that you are destined to make a lot of bread isn't particularly interesting. Making the fate/destiny grand and sweeping does two things: it makes the character seem more important, and it puts the \"end\" of the fate/destiny far into the future.",
+                        "Make it achievable. A character who is destined to do something that is flatly impossible within the setting is a problem. The character should be able to achieve their fate/destiny at some point. This allows the player to determine when they are moving toward their fate/destiny and when they are not."
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Resolving Fate/Destiny",
+               "entries": [
+                  "If a character should ever \"achieve\" their Fate/Destiny within the story, there are three options for the player and the GM.",
+                  {
+                     "type": "list",
+                     "items": [
+                        "Reinterpret it. Simply redefine the end-state of this destiny/fate. This allows the campaign to keep going without any interruption. Perhaps it could be slightly rewritten to represent the character gaining a new understanding of their fate/destiny.",
+                        "Abandon it. In this case, the character removes the talent(s) from their talent list and replaces the lost talent(s) with other talents of equal rank.",
+                        "Retire the character. Fate and destiny are not small things. When Fate appears in ancient narratives, it is often the herald of that character's death. If the group doesn't want to end the game right there, the character can simply be retired or killed, and the player makes a new character (perhaps with a new fate/destiny)."
+                     ]
+                  }
+               ]
+            },
+            "{@b Author:} Adam \"CircleofNoms\" Brown"
+         ]
+      },
+      {
+         "name": "Conviction",
+         "page": 8,
+         "type": "motivation",
+         "description": [
+            "These rules are designed to represent the deeply held beliefs, ideals and emotions that are behind and influence a character's Motivations, these are Convictions.",
+            {
+               "title": "1. Linking to Motivations",
+               "entries": [
+                  "When a Conviction is created it is linked to a motivation, ideally the one most thematically tied to the Conviction. This can be a good opportunity to change a Character's motivations so that there is a particularly good fit with the Conviction.",
+                  "A Motivation that is linked to a Conviction is \"Deeply Motivated\" and works as normal except that whenever it would add a {@dice boost} it also adds {@dice ability^} to the check and whenever it would add a {@dice setback} it also adds {@dice difficulty^}.",
+                  {
+                     "type": "example",
+                     "title": "Example of Linking Motivations",
+                     "entries": [
+                        "Detective Jack Powell who has the Desire Motivation: Justice, has just watched their partner get gunned down, this moment causes the creation of the Conviction: The Ends Justify The Means with the Aspect: Driven which is linked to the Desire: Justice representing that it is felt even more deeply now by the character.",
+                        "Later when Powell's Captain tells them to drop the case a {@skill Leadership} check is made against Powell's {@skill Discipline}. Because the Captain is going against Powell's Desire and so {@dice setback|2} is added to the check, and because the Desire is linked to a Conviction and so is Deeply Motivated, {@dice difficulty^} is also added to the difficulty."
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "2. Direct Engagement with Convictions",
+               "entries": [
+                  "Sometimes a Conviction will come to the forefront, usually in a social encounter, in a way that the focus has moved beyond the linked Motivation. In this situation the Conviction can either add {@dice boost|2} and {@dice ability^|2} or add {@dice setback|2} and {@dice difficulty^|2}.",
+                  {
+                     "type": "example",
+                     "title": "Example of Engaging with Convictions",
+                     "entries": [
+                        "The PC is trying to get information on a crime lord out of one of their Lieutenants. Thankfully they have learned that they are stealing from their boss which is represented by the Conviction: Secret Skimming with the Aspect: Hidden. The PC makes a {@skill Coercion} check against the Lieutenant threatening that they will expose them. The PC using the Conviction as leverage adds {@dice boost|2} and {@dice ability^|2}."
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "3. Learning Convictions",
+               "entries": [
+                  "The main method for learning Convictions expands upon the method for learning Motivations (i.e., spending {@symbols a} or {@symbols t} to learn another character's or spending {@symbols h} or {@symbols d} to reveal their own).",
+                  "When a character learns another character's linked Motivation, they also learn that there is a Conviction and what Aspects (see below) it has but not what the Conviction is.",
+                  "A character that knows the linked Motivation may spend {@symbols aaaa} or {@symbols t} to learn the linked Conviction. Likewise, the GM may spend {@symbols hhhh} or {@symbols d} on a check they made to reveal to a character that knows their Linked Motivation what their linked Conviction is. As with Motivations where an opposed {@skill Perception} versus {@skill Cool} check may be made (representing the target's ability to maintain an even tone and neutral affectation, and not let their internal thoughts tinge their words or demeanor), there may be other ways—especially narratively—that a character might come to learn of a Conviction. The most simple of these is without a check, the character may openly express their Conviction or it could be learned from a third party. But a GM could allow any of the typical social checks to be performed to learn a conviction.",
+                  {
+                     "type": "list-no-bullet",
+                     "items": [
+                        "{@b {@skill Perception} versus {@skill Cool}}: still applies in the same way as with Motivations, typically a Conviction is representing something more deeply held and so the difficulty should be upgraded.",
+                        "{@b {@skill Charm} versus {@skill Cool}}: genuinely getting to know another character and them opening up and talking about themselves.",
+                        "{@b {@skill Deception} versus {@skill Vigilance}}: being a false confidant or pretending to be a trusted ally.",
+                        "{@b {@skill Leadership} versus {@skill Discipline}}: an authority figure demanding/requesting honesty, performing psychoanalysis upon a patient might take this form.",
+                        "{@b {@skill Coercion} versus {@skill Discipline}}: forcing information out of a target such as through an interrogation, threats or torture.",
+                        "{@b {@skill Negotiation} versus {@skill Negotiation}}: two characters agreeing to put their cards on the table to make their positions clear with each other, success here might mean getting to withhold some information."
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "4. Aspects of Convictions",
+               "entries": [
+                  "When creating a Conviction you should use as few Aspects as possible to represent the theme of the Conviction, usually one or two is plenty.",
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Table 3: Conviction Aspects"
+                     },
+                     "columns": [],
+                     "rows": []
+                  },
+                  {
+                     "title": "Example Convictions",
+                     "entries": [
+                        {
+                           "type": "list-no-bullet",
+                           "items": [
+                              "{@b Shameful Secret}: Something you don't want anyone else to know and you try hard to keep it hidden (Aspects: Hidden, Ashamed)",
+                              "{@b Uncontrolled Addiction}: You want it, need it and the getting of it is taking over your whole life (Aspects: Consuming, Compulsion)",
+                              "{@b Secret Urges}: Something deep within you demands but you can't let anyone else know (Aspects: Hidden, Compulsion)",
+                              "{@b Personal Regret}: You hurt this person in the past and the guilt is always there (Aspects: Bond (Negative), Ashamed)",
+                              "{@b Leadership Worship}: You admire them and try to fashion yourself in their image (Aspects: Bond (Positive), Consuming)"
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "5. Gaining and Losing Convictions",
+               "entries": [
+                  "Outside of character creation any pivotal narrative or character moment is a possibility to gain or lose a Conviction. Because Convictions are very integral to the player's character the PC and the GM should be in agreement when a change is made.",
+                  {
+                     "type": "example",
+                     "title": "Example of Losing Convictions",
+                     "entries": [
+                        "In their reckless pursuit of justice Detective Jack Powell causes the death of an innocent civilian which prompts them to have a change of heart and lose the Conviction: The Ends Justify The Means and cause his Desire: Justice to no longer be Deeply Motivated."
+                     ]
+                  }
+               ]
+            },
+            "{@b Author:} Amnesiac"
+         ]
+      },
+      {
+         "name": "NPC Motivations Expansion and Generator",
+         "page": 9,
+         "type": "motivation",
+         "description": [
+            "This entry can also be found in the {@title Unmastered Play Guide} on DriveThruRPG. For more information on using this generator, please refer to that product.",
+            "The entries on {@b {@table 4: Expanded NPC Motivations}} have been designed specifically for NPCs to give them more easily actionable motivations, but there is no reason they cannot also be used for PCs. There are also 13 options per type of motivation. The suit provides further information for manifesting the motivation. Alternatively, you can use the suit to decide which motivation type the card refers to. This alternative suit rule is useful if you are unsure what type of motivation you want to generate for an NPC in the first place.",
+            "Many adversaries do not require more than one or two motivations, if they need any at all. You also do not always need to determine all four motivations at once and typically should, at least initially, generate only one motivation per type. While NPCs usually have only one Strength, Flaw, Fear, and/or Desire at a time, this can change for many reasons.",
+            {
+               "type": "table",
+               "_ref": {
+                  "name": "Table 4: Expanded NPC Motivations"
+               },
+               "columns": [],
+               "rows": []
+            },
+            "{@b Author:} Micah-Shalom \"FatCrab\" Kesselman"
+         ]
+      },
+      {
+         "name": "Genesys Motivations Expanded",
+         "page": 11,
+         "type": "motivation",
+         "description": [
+            "It's one thing to have a backstory and a single word in each Motivation slot on the character sheet, but it can be so much more without paragraphs of content. We'll look at expanding motivations with {@b questions}, {@b triggers}, and {@b goals}. This will not only help guide the decisions a player makes with their character with more precision, but will also feed the GM crucial information to craft stories - after all, if the stories don't represent the PC's motivations and goals, why are they there?",
+            {
+               "title": "Questions",
+               "entries": [
+                  "To help flesh out a character's motivations, we can ask five questions regarding the specific theme chosen. Why is the character motivated in this way? How does it affect their approach to problems? We suggest creating five questions before the first session, but answer only two of them. The remaining questions should be answered during play and can help drive the story towards a PC's goals.",
+                  "Answering a question in play can yield 1-5 XP, depending on the impact of the answer.",
+                  "Good questions are evocative and should be deeply personal to the character. For example, \"why is this person driven to succeed at becoming a laser sword wielding star knight?\" is a great question. Tough questions lead to great stories."
+               ]
+            },
+            {
+               "title": "Triggers",
+               "entries": [
+                  "Triggers are events tied to motivations that often represent a trauma or a hardship; when some event activates a trigger, the PC gains 1-5 XP, depending on the severity. This should be something that creates a difficult situation in the current scene - addictions, lost loves, and regrets are all great triggers.",
+                  "Good triggers are specific events, not broadly applied ideas like \"uses space wizard magic\" or \"has second breakfast.\" A good trigger could be \"When your character is forced to harm another despite swearing off violence, gain XP.\" An often-triggered trigger isn't optimal; sure, it could garner more XP, but it doesn't really represent a hard choice a character had to make or lingering mental trauma that burdens them. Characters with problems are interesting."
+               ]
+            },
+            {
+               "title": "Goals",
+               "entries": [
+                  "A PC can benefit from having goals that are shared with the group; a rule of thumb is to have one long-term goal, a couple mid-term goals, and several short-term goals. An example of each follows:",
+                  {
+                     "type": "list-no-bullet",
+                     "items": [
+                        "1. Long-term goal: Defeat the Emperor",
+                        "2. Long-term goal: Destroy this magical ring",
+                        "3. Mid-term goal: Train as a space knight wizard",
+                        "4. Mid-term goal: Recruit the horse riders to your cause",
+                        "5. Short-term goal: Pick up some power converters at Tosche Station",
+                        "6. Short-term goal: Make it to the Elf stronghold to meet with the leader"
+                     ]
+                  },
+                  "A good goal is actionable; goals like \"have fun\" or \"see the world\" are less specific and harder for a GM to quantify into stories.",
+                  "Meeting a goal is a milestone, and an experience award is due when the goal is achieved; for a short-term goal, 5 XP is a good benchmark and likely represents a few sessions of play. For mid-term, 10-20 is a good benchmark and likely denotes the culmination of a long arc. For long-term goals, 30-50 XP might be appropriate and likely denotes the completion of an overarching plot central to the story."
+               ]
+            },
+            {
+               "title": "Conclusion",
+               "entries": [
+                  "Utilizing questions, triggers, and goals can help hone a broad concept into a concise concept that's easily referenced and digested by the GM and other players. It can be interesting and fun to work these as a group during session zero, and there are great benefits not only for internal consistency for a character, but also to bind PCs together."
+               ]
+            },
+            {
+               "title": "Acknowledgements",
+               "entries": [
+                  "Questions and Triggers are inspired by {@title Orbital Blues}, a fantastic TTRPG, from Soul Muppet Publishing. Goals are inspired by {@title The Gamemaster's Handbook of Proactive Roleplaying}, by Jonah Fishel & Tristan Fishel."
+               ]
+            },
+            "{@b Author:} Matt \"DatMatt\" Mensch"
+         ]
+      }
+   ]
+}

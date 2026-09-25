@@ -8,7 +8,8 @@
  * Output per PDF page (PDF page indexes, not printed page numbers):
  *   {@i …} / {@b …}      italic / bold runs as printed (headings and "Tier:" labels show up bold too)
  *   {@symbols aa}        result symbols, decoded from the Genesys symbol font
- *   {@dice difficulty|2} dice, decoded from glyph shape + fill color
+ *   {@dice difficulty|2} dice, decoded from glyph shape + fill color ({@dice ability^} with an upgrade arrow)
+ *   {@social +2}         power-level icons with the value printed after them
  *   [[glyph U+XXXXX #color]]  a glyph not in the table: confirm it visually and extend GLYPHS below
  * Wording is approximate here (line-break hyphens are kept as "-|"); take exact wording from pdftotext.
  *
@@ -79,6 +80,24 @@ const GLYPHS = {
    0xF22B7: { shape: 'diamond' }, // ability (green) / difficulty (purple)
    0xF22B8: { shape: 'square' }, // boost (light blue) / setback (black)
    0xF22BB: { shape: 'hexagon' }, // proficiency (yellow) / challenge (red)
+
+   /*
+    * "GenesysGlyphsAndDice" (confirmed visually in BOOST 9, 2026-09-25): plain letters, the same codes
+    * the GenesysRef client font uses. A white "x" drawn right after a die is its up-arrow (upgrade icon).
+    */
+   0x66: { symbol: 'f' }, // failure
+   0x68: { symbol: 'h' }, // threat
+   0x64: { symbol: 'd' }, // despair
+   0x73: { symbol: 's' }, // success
+   0x61: { symbol: 'a' }, // advantage
+   0x74: { symbol: 't' }, // triumph
+   0x6B: { shape: 'diamond' }, // k
+   0x6A: { shape: 'square' }, // j
+   0x6C: { shape: 'hexagon' }, // l
+   0x63: { power: 'combat' }, // c
+   0x70: { power: 'social' }, // p
+   0x67: { power: 'general' }, // g
+   0x78: { modifier: '^' }, // x: upgrade arrow over the preceding die
 };
 
 function colorClass(hex) {
@@ -92,7 +111,7 @@ function colorClass(hex) {
    if (r > 150 && g > 130 && b < 100) return 'yellow';
    if (b >= r && b >= g && g > r) return 'blue';
    if (g > r && g > b) return 'green';
-   if (r > g && b > g && Math.abs(r - b) < 70) return 'purple';
+   if (r > g && b > g && (b >= r || r - b < 70)) return 'purple'; // BOOST 9 difficulty is #52439b
    if (r > g && r > b) return 'red';
    return 'unknown';
 }
@@ -146,6 +165,8 @@ function glyphTokens(item) {
       const color = colorClass(item.font.color);
       if (g?.symbol) tokens.push({ kind: 'symbol', value: g.symbol });
       else if (g?.shape && DICE[g.shape][color]) tokens.push({ kind: 'dice', value: DICE[g.shape][color] });
+      else if (g?.power) tokens.push({ kind: 'power', value: g.power });
+      else if (g?.modifier) tokens.push({ kind: 'modifier', value: g.modifier });
       else tokens.push({ kind: 'unknown', value: `[[glyph U+${cp.toString(16).toUpperCase()} ${item.font.color}]]` });
    }
    return tokens;
@@ -179,8 +200,15 @@ function renderPage(page) {
    let pendingGlyphs = [];
    const flushGlyphs = () => {
       if (!pendingGlyphs.length) return;
-      const groups = [];
+      /* a modifier glyph (upgrade arrow) belongs to the die before it: ability + ^ → ability^ */
+      const tokens = [];
       for (const t of pendingGlyphs) {
+         const prev = tokens[tokens.length - 1];
+         if (t.kind === 'modifier' && prev?.kind === 'dice') prev.value += t.value;
+         else tokens.push({ ...t });
+      }
+      const groups = [];
+      for (const t of tokens) {
          const last = groups[groups.length - 1];
          if (last && last.kind === t.kind && (t.kind === 'symbol' || last.value === t.value)) last.items.push(t);
          else groups.push({ kind: t.kind, value: t.value, items: [t] });
@@ -188,6 +216,8 @@ function renderPage(page) {
       out += groups.map(g => {
          if (g.kind === 'symbol') return `{@symbols ${g.items.map(t => t.value).join('')}}`;
          if (g.kind === 'dice') return `{@dice ${g.value}${g.items.length > 1 ? `|${g.items.length}` : ''}}`;
+         if (g.kind === 'power') return `{@${g.value}}`; // its value follows as text; merged below
+         if (g.kind === 'modifier') return `[[modifier ${g.value} without a die]]`;
          return g.items.map(t => t.value).join('');
       }).join('');
       pendingGlyphs = [];
@@ -234,6 +264,8 @@ function renderPage(page) {
          });
       } while (out !== prev);
    }
+   /* power-level icon + the printed value after it: "{@social}+2" → "{@social +2}" */
+   out = out.replace(/\{@(combat|social|general)\}\s*([+-]?\s*\d+)/g, (m, kind, n) => `{@${kind} ${n.replace(/\s/g, '')}}`);
    return out.replace(/[ \t]+\n/g, '\n').trim();
 }
 

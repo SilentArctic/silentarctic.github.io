@@ -1,0 +1,894 @@
+{
+   "$schema": "https://silentarctic.github.io/schemas/schema.json",
+   "_meta": {
+      "source": {
+         "version": "2025.12.27",
+         "json": "book-of-online-sourced-triumphs-4-steampunk",
+         "full": "Book Of Online Sourced Triumphs 4 Steampunk",
+         "abbreviation": "BOOST:4",
+         "color": "#30F030",
+         "authors": [
+            "Flame112",
+            "Giri Raman",
+            "Chris Markham",
+            "Tyler Comstock",
+            "Caleb \"Cptn_Smitty\" Smith"
+         ],
+         "convertedBy": [
+            "SilentArctic"
+         ],
+         "releaseDate": "10 November 2020",
+         "url": "https://www.drivethrurpg.com/en/product/335612/boost-4-steampunk"
+      },
+      "filters": {},
+      "defaultItemSettings": [
+         {
+            "name": "Steampunk",
+            "source": "crb"
+         }
+      ]
+   },
+   "gear": [
+      {
+         "name": "\"Edison\" Lightning Gun",
+         "type": "weapon",
+         "page": 5,
+         "description": [
+            "Once Tesla's prototype was in hand, government engineers streamlined it into a more stable and reliable Lightning Gun, ready for mass production. They added insulation to protect the wielder and extended the focusing coils, effectively doubling the range. One inspired engineer figured out how to incorporate the electricity storage into the gun itself, reducing production costs by almost 20% and earning himself a fine promotion. It was quickly discovered by field agents issued an \"Edison\" that some safety features are easily removable, allowing for a devastating overcharge effect similar to the original.",
+            "{@b Author:} Tyler Comstock"
+         ],
+         "price": 400,
+         "rarity": 4,
+         "skill": {
+            "name": "Ranged (Heavy)",
+            "source": "crb"
+         },
+         "damage": "5",
+         "critical": 3,
+         "range": "Medium",
+         "encumbrance": 5,
+         "special": [
+            {
+               "name": "Auto-fire",
+               "source": "crb"
+            },
+            {
+               "name": "Cumbersome",
+               "value": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Overcharge"
+            },
+            {
+               "name": "Stun",
+               "value": 4,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Clockwork Aviation Interface Flight Suit",
+         "type": "gear",
+         "page": 2,
+         "description": [
+            "This full suit comes with built in measurement instruments and thick wires and coils that must be attached to the clockworks of a vehicle. When attached a pilot can feel the electrical currents of his vehicle. Colored liquid in tubes indicate various pressures and measurements.",
+            "When worn and while attached to a vehicle, the suit provides {@dice boost} on all {@skill Piloting||crb} and {@skill Mechanics||crb} checks. The suit also grants an extra free maneuver while attached to the vehicle (a character can still only take 2 maneuvers per turn); however, any character attached to the vehicle suffers half of any system strain the vehicle takes. The GM can spend {@symbols hhh} or {@symbols d} on any check to have the pilot suffer a personal critical hit from the currents running through the suit and their body.",
+            "{@b Author:} Giri Raman"
+         ],
+         "price": 500,
+         "rarity": 7,
+         "encumbrance": "3"
+      },
+      {
+         "name": "Conduit Backpack",
+         "type": "gear",
+         "page": 2,
+         "description": [
+            "This large and heavy backpack is not for storage but carries a small engine that can be charged either by hand or through delicate gears. Its large and heavy and the mechanics inside makes a rhythmic ticking noise. The charge a backpack holds is enough to power special weapons and gear which can be attached to the backpack with thick cords.",
+            "A Conduit backpack imposes {@dice setback} on the wielder to {@skill stealth||crb} checks due to its bulk and noise. A GM can spend {@symbols d} from any roll to fully deplete the backpack requiring a {@difficulty Hard|Mechanics} to restart.",
+            "The backpack comes with 3 hardpoints and this is the maximum number of attachments or power it can hold.",
+            "{@b Author:} Giri Raman"
+         ],
+         "price": 800,
+         "rarity": 8,
+         "encumbrance": "4"
+      },
+      {
+         "name": "Extravagant Hat",
+         "type": "gear",
+         "page": 2,
+         "description": [
+            "This elaborate headpiece is covered in whirling cogs, pumping pistons, and, literally, all the bells and whistles. Wearing this shows off your undeniable superiority to the hatless masses that gaze in awe. Until you find someone with a better hat.",
+            "When purchasing or constructing an Extravagant Hat, your character may spend multiples of the base cost to increase the ranking of the hat by the multiple that you spend. For example, spending 1500 instead of 500 gets you a Rank 3 Extravagant Hat. During social encounters, the character wearing the highest-ranked Extravagant Hat in the scene inflicts an additional strain whenever they would inflict strain.",
+            "{@b Author:} Flame112"
+         ],
+         "price": 500,
+         "rarity": 5,
+         "encumbrance": "2"
+      },
+      {
+         "name": "Glider Wings",
+         "type": "gear",
+         "page": 2,
+         "description": [
+            "These are foldable wings with whirling gears and fans to aid glide down. They can be used to glide down from an airship or from other great heights. This grant flight for a limited time while descending.",
+            "A character can fly (see {@title Genesys Core Rulebook} p. 100), although the character can never change altitude. The GM has the final say in how long the flight lasts depending on the altitude. Special: Glider wings can be attached to a {@gear Conduit Backpack}, allowing for a true flight; this takes up 2 hardpoints of the backpack.",
+            "{@b Author:} Giri Raman"
+         ],
+         "price": 400,
+         "rarity": 5,
+         "encumbrance": "3"
+      },
+      {
+         "name": "Lightning Disc Launcher",
+         "type": "weapon",
+         "page": 5,
+         "description": [
+            "This weapon is a disc worn on the forearm attached with intricate gears and levers. A user can charge up the disc by spinning a small handle charging it with electric power and winding the coils and gears making it ready for flight.",
+            "A character may spend {@symbols aa} on an attack roll to have the disc return to the forearm mount. This can also be spent from the roll of the guided quality.",
+            "{@b Author:} Giri Raman"
+         ],
+         "price": 300,
+         "rarity": 5,
+         "skill": {
+            "name": "Ranged (Light)",
+            "source": "crb"
+         },
+         "damage": "4",
+         "critical": 2,
+         "range": "Long",
+         "encumbrance": 2,
+         "special": [
+            {
+               "name": "Limited Ammo",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Prepare",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Pierce",
+               "value": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Vicious",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Guided",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Lightning Lance",
+         "type": "weapon",
+         "page": 5,
+         "description": [
+            "The lightning lance is an experimental ray weapon that can discharge several beams of lightning at their target causing severe shock and scorching. Often shaped like a trident with a long shaft full of coils and gears. This weapon requires a special backpack (see {@gear Conduit Backpack}). The lightning lance takes up 1 hardpoint of the backpack.",
+            "{@b Author:} Giri Raman"
+         ],
+         "price": 1500,
+         "rarity": 9,
+         "skill": {
+            "name": "Ranged (Heavy)",
+            "source": "crb"
+         },
+         "damage": "10",
+         "critical": 2,
+         "range": "Medium",
+         "encumbrance": 5,
+         "special": [
+            {
+               "name": "Auto-fire",
+               "source": "crb"
+            },
+            {
+               "name": "Inaccurate",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Slow-firing",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Stun Damage",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Lightning Truncheon",
+         "type": "weapon",
+         "page": 5,
+         "description": [
+            "These short staves are full of gear and springs. It ends in a heavy copper head. When a character swings the Truncheon a whirling and crackling sound issues from the Truncheon as it builds up energy that can be released on impact from the copper head. A wielder must be careful though not to touch the copper head once it is charged and only wield it through its insulated handle.",
+            "Special: A GM can use {@symbols hh} or {@symbols d} from an attack roll to have the weapons stun quality discharge on the wielder.",
+            "{@b Author:} Giri Raman"
+         ],
+         "price": 175,
+         "rarity": 4,
+         "skill": {
+            "name": "Melee",
+            "source": "crb"
+         },
+         "damage": "+2",
+         "critical": 4,
+         "range": "Engaged",
+         "encumbrance": 1,
+         "special": [
+            {
+               "name": "Disorient",
+               "value": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Stun Damage",
+               "source": "crb"
+            },
+            {
+               "name": "Stun",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Overpressurized Steam Cartridge",
+         "type": "gear",
+         "page": 2,
+         "description": [
+            "Phineas Phillips Firing Solutions Co.'s Famous Overpressurized Steam Cartridges have been specifically engineered for easy attachment to any modern ranged weapon. Outfit your soldiers with these and you'll easily tear through any opposition, no matter how heavily armored they may be. Phineas Phillips Firing Solutions Co. is not responsible for any equipment damage that occurs as a result of the usage of Famous Overpressurized Steam Cartridges.",
+            "A character may take a maneuver to attach an Overpressurized Steam Cartridge to their ranged weapon. Once the Cartridge is attached, the next shot the character fires gains the {@quality Breach|Breach 1|crb} quality or increases an existing {@quality Breach||crb} quality by one (and ignores any existing {@quality Pierce||crb} quality). After firing the Cartridge, the weapon is damaged by one step.",
+            "{@b Author:} Flame112"
+         ],
+         "price": 300,
+         "rarity": 6,
+         "encumbrance": "1"
+      },
+      {
+         "name": "Pressurized Steam Canister",
+         "description": [
+            "A marvel of innovation and patented by none other than {@i Professor Steam & Sons Engineering Co.}, the pressurized steam canister was the catalyst for much of the technological wonders produced by the company. No larger than one's forearm, a canister fits into many an apparatus, powering its mechanisms and delivering miracles of engineering.",
+            "If a pressurized steam canister is punctured or damaged, it releases a cloud of white steam. The steam fills an area of short range, providing {@table i.6-7: concealment|concealment|crb} worth 2 dice (see page 110 of the {@title Genesys Core Rulebook}), and dissipates at the end of the round.",
+            "{@b Author:} Caleb “Cptn_Smitty” Smith"
+         ],
+         "type": "gear",
+         "rarity": 2,
+         "price": 25,
+         "encumbrance": "2",
+         "page": 3
+      },
+      {
+         "name": "Pressurized Steam Canister Combustion Filament Cap",
+         "type": "gear",
+         "page": 3,
+         "description": [
+            "This simple device turns any canister of pressurized steam into a deadly weapon! Step one: twist the combustion filament cap onto the mouth of the canister. Step two: activate the combustion filament. Step three: throw the canister at the unfortunate souls what earned your ire! Then watch as your problems disappear in a burst of white steam.",
+            "When attached to a {@gear pressurized steam canister}, the combustion filament cap provides the following weapons profile: {@skill Ranged (Light)||crb}; Damage 8; Critical 3; Range (Short); {@quality Blast|Blast 5|crb}, {@quality Burn|Burn 1|crb}, {@quality Limited Ammo|Limited Ammo 1|crb}, {@quality Prepare|Prepare 1|crb}.",
+            "{@b Author:} Caleb “Cptn_Smitty” Smith"
+         ],
+         "rarity": 4,
+         "price": 60,
+         "encumbrance": "1"
+      },
+      {
+         "name": "Prof. Steam & Sons' Inflate-O-Matic Para-Loon Pack",
+         "type": "gear",
+         "page": 3,
+         "description": [
+            "Nothing short of a miniature hot air balloon extending from your back, the Inflate-O-Matic Para-loon Pack is a simple apparatus that allows a wearer to descend through the air with control and grace. When activated, the pressurized steam canister causes the miniaturized motor strapped to your back to inflate the canvas balloon, which releases from its compartment and floats overhead. Once activated, have no fear of falling as you float majestically through the air!",
+            "You can activate the Inflate-O-Matic Para-loon Pack as an incidental, allowing you to {@sidebar flying|hover|crb} (see page 100 of the {@title Genesys Core Rulebook}). A character wearing an activated para-loon pack takes no fall damage and can control the direction of their descent as they fall. A character can make an {@difficulty Easy} {@skill Coordination||crb} or {@skill Mechanics||crb} check to repack the canvas balloon into its pack.",
+            "{@b Author:} Caleb “Cptn_Smitty” Smith"
+         ],
+         "price": 250,
+         "rarity": 4,
+         "encumbrance": "3"
+      },
+      {
+         "name": "Sonic Disruptor Pistol",
+         "type": "weapon",
+         "page": 4,
+         "description": [
+            "The Sonic Disruptor Pistol is a one-handed, ranged weapon designed to do sonic damage to creatures normally immune to traditional weaponry. Invulnerability to intense sonic vibrations is rare in both the natural and supernatural world, and this pistol was designed to capitalize on this happenstance. The bulbous sound chamber on top of the pistol generates sound from the power canister, with the coils amplifying and channeling the sound waves into the tuning fork end of the pistol.",
+            "The shooter can select between three (3) power levels, but the higher power settings drain the power source more quickly. Each shot at power level 1 drains one charge, two charges at level 2, and three charges at level 3. Each small power canister (consisting of a proprietary alchemical mixture) holds a total of 10 charges. Most users carry at least one spare canister.",
+            "{@b Author:} Chris Markham"
+         ],
+         "price": 800,
+         "rarity": 7,
+         "encumbrance": 2,
+         "damage": "4, 6, or 8",
+         "critical": 3,
+         "range": "Medium",
+         "special": [
+            {
+               "name": "Pierce",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Stun Damage",
+               "source": "crb"
+            }
+         ],
+         "skill": {
+            "name": "Ranged (Light)",
+            "source": "crb"
+         }
+      },
+      {
+         "name": "Spring-Extending Sleeve Pistol",
+         "type": "weapon",
+         "page": 4,
+         "description": [
+            "{@i Professor Steam & Sons Engineering Co.} presents the spring-extending sleeve pistol! With just a flick of the wrist, this small firearm springs forth from your forearm, providing a quick and surprising advantage to any situation!",
+            "Add {@dice setback|2} to any check made to spot the spring-extending sleeve pistol while on your character. The pistol can be activated with an incidental, springing from your sleeve into your hand.",
+            "{@b Author:} Caleb “Cptn_Smitty” Smith"
+         ],
+         "price": 150,
+         "rarity": 6,
+         "skill": {
+            "name": "Ranged (Light)",
+            "source": "crb"
+         },
+         "damage": "4",
+         "critical": 2,
+         "range": "Short",
+         "encumbrance": 1,
+         "special": [
+            {
+               "name": "Accurate",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Limited Ammo",
+               "value": 2,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Steamblast Shotgun",
+         "type": "weapon",
+         "page": 4,
+         "description": [
+            "Blow your enemies away with the extraordinary steamblast shotgun! A {@i Professor Steam & Sons} original, this revolutionary design uses pressurized steam in place of traditional shotgun ammunition. By converting the pressurized steam into \"air shot\" (patent pending), the steamblast shotgun delivers a tremendous payload of searing steam!",
+            "When triggering the {@quality Blast||crb}, {@quality Burn||crb}, or {@quality Knockdown||crb} qualities, you may reduce this weapon's current {@quality limited ammo||crb} quality by 1. If you do, reduce the amount of {@symbols a} required to activate one of those qualities by 1. This weapon uses a {@gear pressurized steam canister} as ammo.",
+            "{@b Author:} Caleb \"Cptn_Smitty\" Smith"
+         ],
+         "price": 625,
+         "rarity": 5,
+         "encumbrance": 4,
+         "skill": {
+            "name": "Ranged (Heavy)",
+            "source": "crb"
+         },
+         "damage": "7",
+         "critical": 3,
+         "range": "Short",
+         "special": [
+            {
+               "name": "Blast",
+               "value": 6,
+               "source": "crb"
+            },
+            {
+               "name": "Burn",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Knockdown",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Tesla Gun",
+         "type": "weapon",
+         "page": 5,
+         "description": [
+            "Nikolai Tesla developed the prototype lightning gun in secret in order to defend himself and his inventions from those who would seek to use them for evil. Although the weapon itself is quite light, a backpack mounted electricity storage unit is required to provide power. Unfortunately, the prototype was developed in a hurry, and it shows.",
+            "The unwieldy energy discharge means that the weapon can only be fired on {@quality Auto-Fire||crb}, and the wielder suffers 4 strain damage each time the weapon is fired. Extra safety equipment is required to protect the wielder.",
+            "{@b Author:} Tyler Comstock"
+         ],
+         "price": 1150,
+         "rarity": 9,
+         "skill": {
+            "name": "Ranged (Heavy)",
+            "source": "crb"
+         },
+         "damage": "4",
+         "critical": 3,
+         "range": "Short",
+         "encumbrance": 6,
+         "special": [
+            {
+               "name": "Auto-fire",
+               "source": "crb"
+            },
+            {
+               "name": "Overcharge"
+            },
+            {
+               "name": "Stun",
+               "value": 4,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Tesla's Revenge",
+         "type": "weapon",
+         "page": 5,
+         "description": [
+            "\"This time... it's personal.\"",
+            "{@b Author:} Tyler Comstock"
+         ],
+         "price": 1575,
+         "rarity": 10,
+         "skill": {
+            "name": "Ranged (Heavy)",
+            "source": "crb"
+         },
+         "damage": "9",
+         "critical": 3,
+         "range": "Medium",
+         "encumbrance": 4,
+         "special": [
+            {
+               "name": "Auto-fire",
+               "source": "crb"
+            },
+            {
+               "name": "Blast",
+               "value": 6,
+               "source": "crb"
+            },
+            {
+               "name": "Stun",
+               "value": 4,
+               "source": "crb"
+            },
+            {
+               "name": "Superior",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Twin Lightning Blasters",
+         "type": "weapon",
+         "page": 5,
+         "description": [
+            "These elegant pistols always come in pairs and are attached with heavy cords to their power source. They are an exquisite piece of craftsmanship that must be finely attuned and maintained. Adjusting special gears and dials on each pistol makes them fire in perfect unison their lightning rounds always finding its target even firing around cover.",
+            "Special: Attacks with the Twin Lightning Blasters ignores {@dice setback} from {@rule cover||crb} and {@rule concealment (darkness, smoke, and intervening terrain)|concealment|crb}. This weapon requires a special backpack (see {@gear Conduit Backpack}). The Twin Lightning blasters take up 1 hardpoint of the backpack.",
+            "{@b Author:} Giri Raman"
+         ],
+         "price": 1000,
+         "rarity": 8,
+         "skill": {
+            "name": "Ranged (Light)",
+            "source": "crb"
+         },
+         "damage": "6",
+         "critical": 3,
+         "range": "Medium",
+         "encumbrance": 3,
+         "special": [
+            {
+               "name": "Accurate",
+               "source": "crb",
+               "value": 1
+            },
+            {
+               "name": "Prepare",
+               "value": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Stun Damage",
+               "source": "crb"
+            },
+            {
+               "name": "Linked",
+               "source": "crb",
+               "value": 2
+            }
+         ]
+      }
+   ],
+   "optionFeature": [
+      {
+         "name": "Copper Circuit",
+         "page": 3,
+         "type": "craftmanship",
+         "description": [
+            "Copper circuit armor is made from small copper units that link together to form scales of interconnected circuits used to both channels and store electrical energy. Only the richest can afford copper circuit armor while both flashy in nature it is also very resistant to lightning.",
+            "Copper Circuit weapons have modified Clockwork infusers to recharge weapons naturally and also add more energy to the attack.",
+            "{@b Armor:} Increase the armor’s soak and defense by 1. The wearer of the armor adds one point of soak against any source of electricity. And remove 1 point of strain caused by {@quality Stun||crb} quality.",
+            "{@b Weapon:} Weapons built with Copper Circuit may never run out of ammo. The weapon reduces the {@quality slow-firing||crb} quality by 1 to a min of 1, and gains the {@quality Stun|Stun 2|crb} quality or increases existing {@quality Stun||crb} quality by 1. Reduce the weapon’s hardpoints by 1 (to a minimum of 0)."
+         ],
+         "labels": [
+            {
+               "name": "Price",
+               "description": "Cost x 10"
+            },
+            {
+               "name": "Rarity",
+               "description": "7"
+            }
+         ]
+      }
+   ],
+   "quality": [
+      {
+         "name": "Overcharge",
+         "page": 5,
+         "activation": "active",
+         "gearType": "weapon",
+         "description": [
+            "As an incidental, the attack loses the {@quality Auto-Fire||crb} quality, gains the {@quality Blast|Blast 6|crb} and {@quality Prepare|Prepare 1|crb} qualities, and increases its base damage by 4 for one round. While overcharged, {@symbols hhh} or {@symbols d} can be spent to deal {@quality Blast||crb} damage to the wielder and anyone within engaged range."
+         ]
+      }
+   ],
+   "archetype": [
+      {
+         "name": "Spring-Loaded Clockwork Automaton",
+         "characteristics": {
+            "brawn": 3,
+            "agility": 1,
+            "intellect": 1,
+            "cunning": 1,
+            "willpower": 1,
+            "presence": 1
+         },
+         "wt": 11,
+         "st": 11,
+         "xp": 150,
+         "nickname": "Clockwork Automaton (Spring-Loaded)",
+         "page": 6,
+         "skills": {
+            "skills": [
+               "Athletics"
+            ],
+            "ranksTotal": 1,
+            "ranksEach": 1,
+            "description": [
+               "A Spring-loaded Automaton starts with one rank in {@skill Athletics||crb} during character creation. You still can't train their {@skill Athletics||crb} above rank 2 during character creation."
+            ],
+            "choice": false
+         },
+         "description": [
+            "Perhaps the pinnacle feat of the {@i Professor Steam & Sons Engineering Co.}, the clockwork automaton is a true \"mechanical man\", capable of performing any task any human could—and more! What is perhaps most astonishing about these automatons is their development of individual personalities. While it is clear from their bronze or copper casing, whirling gears, and spinning servos, these are indeed creatures made of clockwork, you might not otherwise know just from speaking to them!",
+            "What is more, these clockwork automatons come in two forms: spring-loaded and steam-powered. While both require a pressurized steam canister to be installed in their midsection chassis, each operates with different abilities! Watch the spring-loaded automaton leap high into the air, while the steam-powered moves about at blinding speeds! Yes, let us one and all welcome our clockwork brethren to this world. Welcome Clockwork Automatons!",
+            "{@i (Full patent and ownership of clockwork automatons and clockwork automaton design belong solely to the Prof. Steam & Sons Engineering Co., all rights reserved. Any use of clockwork automatons or the clockwork automaton design [including by the clockwork automatons themselves] is prohibited and subject to prosecution to the fullest extent of the law.)}",
+            "{@b Author:} Caleb \"Cptn_Smitty\" Smith"
+         ],
+         "abilities": [
+            "Mechanized Being",
+            "Spring-Loaded Feet",
+            "Spring-Loaded Fist",
+            "Unwound"
+         ]
+      },
+      {
+         "name": "Steam-Powered Clockwork Automaton",
+         "characteristics": {
+            "brawn": 3,
+            "agility": 1,
+            "intellect": 1,
+            "cunning": 1,
+            "willpower": 1,
+            "presence": 1
+         },
+         "wt": 11,
+         "st": 11,
+         "xp": 150,
+         "nickname": "Clockwork Automaton (Steam-Powered)",
+         "page": 6,
+         "skills": {
+            "skills": [
+               "Resilience"
+            ],
+            "ranksTotal": 1,
+            "ranksEach": 1,
+            "description": [
+               "A Steam-powered Automaton starts with one rank in {@skill Resilience||crb} during character creation. You still can't train their {@skill Resilience||crb} above rank 2 during character creation."
+            ],
+            "choice": false
+         },
+         "description": [
+            "Perhaps the pinnacle feat of the {@i Professor Steam & Sons Engineering Co.}, the clockwork automaton is a true \"mechanical man\", capable of performing any task any human could—and more! What is perhaps most astonishing about these automatons is their development of individual personalities. While it is clear from their bronze or copper casing, whirling gears, and spinning servos, these are indeed creatures made of clockwork, you might not otherwise know just from speaking to them!",
+            "What is more, these clockwork automatons come in two forms: spring-loaded and steam-powered. While both require a pressurized steam canister to be installed in their midsection chassis, each operates with different abilities! Watch the spring-loaded automaton leap high into the air, while the steam-powered moves about at blinding speeds! Yes, let us one and all welcome our clockwork brethren to this world. Welcome Clockwork Automatons!",
+            "{@i (Full patent and ownership of clockwork automatons and clockwork automaton design belong solely to the Prof. Steam & Sons Engineering Co., all rights reserved. Any use of clockwork automatons or the clockwork automaton design [including by the clockwork automatons themselves] is prohibited and subject to prosecution to the fullest extent of the law.)}",
+            "{@b Author:} Caleb \"Cptn_Smitty\" Smith"
+         ],
+         "abilities": [
+            "Mechanized Being",
+            "Steam-Powered Servos",
+            "Steam-Powered Punch",
+            "Out of Steam"
+         ]
+      }
+   ],
+   "archetypeAbility": [
+      {
+         "name": "Mechanized Being",
+         "description": [
+            "This character is an artificial being made of metal. It does not need to eat, sleep, or breathe, is unaffected by toxins or poisons, and sinks when in water. Since they are inorganic, they do not benefit from painkillers or {@skill Medicine||crb} checks, instead using a {@skill Mechanics||crb} check to \"heal\" them following the guidelines on page 116 of the {@title Genesys Core Rulebook}."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "resistance"
+         ]
+      },
+      {
+         "name": "Out of Steam",
+         "description": [
+            "Once per encounter, when this character makes a check resulting in a {@symbols d}, the GM may spend it to cause the character to run out of steam. While they are out of steam, they cannot use their steam-powered servos or steam powered punch abilities. This character remains out of steam until they spend a maneuver installing a fresh canister of {@gear overpressurized steam cartridge|pressurized steam} within themselves."
+         ],
+         "tags": [
+            "general",
+            "status effect"
+         ]
+      },
+      {
+         "name": "Spring-Loaded Feet",
+         "description": [
+            "This character adds {@dice boost} to skill checks made to run or jump, and can jump up to a height of short range as a maneuver."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "movement",
+            "skill check modifier",
+            "maneuver"
+         ]
+      },
+      {
+         "name": "Spring-Loaded Fist",
+         "description": [
+            "This character can punch with spring-loaded fists. When making an un-armed combat check, they add +1 to their base damage, have a critical rating of 3, and can target a character up to short distance away."
+         ],
+         "tags": [
+            "combat",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Steam-Powered Punch",
+         "description": [
+            "This character's punches explode with searing steam. When making an unarmed combat check, they add +1 to their base damage, have a critical rating of 3, and have the {@quality Burn|Burn 1|crb} quality."
+         ],
+         "tags": [
+            "combat",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Steam-Powered Servos",
+         "description": [
+            "This character can perform a second maneuver to move without suffering strain. They still cannot exceed the limitation of two maneuvers in a turn. When this character performs two consecutive maneuvers to move, they can up to long range away (instead of medium range as normal)."
+         ],
+         "tags": [
+            "general",
+            "maneuver",
+            "movement",
+            "free maneuver"
+         ]
+      },
+      {
+         "name": "Unwound",
+         "description": [
+            "Once per encounter, when then this character makes a check that results in a {@symbols d}, the GM may spend it to cause the character to become unwound. While unwound, this character cannot use their spring-loaded feet or spring-loaded fist abilities. This character remains unwound until they can install a {@gear pressurized steam canister} within themselves."
+         ],
+         "tags": [
+            "general",
+            "status effect"
+         ]
+      }
+   ],
+   "vehicle": [
+      {
+         "name": "Clockwork Sky Needle",
+         "page": 7,
+         "silhouette": 2,
+         "maxSpeed": 4,
+         "handling": 3,
+         "defense": 0,
+         "armor": 0,
+         "htt": 10,
+         "sst": 10,
+         "controlSkill": {
+            "name": "Piloting",
+            "source": "crb"
+         },
+         "complement": "1 pilot",
+         "consumables": "4 hours",
+         "encumbranceCapacity": "2",
+         "price": 5000,
+         "rarity": 6,
+         "description": [
+            "These small slender clockwork air fighters use intricate mechanisms to drive several wings to propel them forward and stay in the air. Creating a distinct buzzing sound. Swift and agile they lack heavy firepower but swarms of them can still do some damage."
+         ],
+         "weapons": [
+            {
+               "name": "Auto-rotary cannon",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 2,
+               "critical": 4,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Clockwork Striker",
+         "page": 7,
+         "silhouette": 3,
+         "maxSpeed": 5,
+         "handling": 2,
+         "defense": 0,
+         "armor": 0,
+         "htt": 15,
+         "sst": 12,
+         "controlSkill": {
+            "name": "Piloting",
+            "source": "crb"
+         },
+         "complement": "1 pilot, 1 co-pilot",
+         "consumables": "1 day",
+         "encumbranceCapacity": "5",
+         "price": 50000,
+         "rarity": 5,
+         "description": [
+            "More sturdy than the {@vehicle Clockwork Sky Needle|Needle} these sky planes usually have wings with Gas filled pontoons to help with updrift and a more powerful engine capable of building up large amounts of electricity. This can often be seen as crackling blue charge building up on coils underneath the Striker. The Striker is piloted by a small crew of 2. These planes are deadly and fast.",
+            "{@b Author:} Giri Raman"
+         ]
+      },
+      {
+         "name": "Fishing Vessel, Civilian Airship",
+         "page": 7,
+         "silhouette": 3,
+         "maxSpeed": 3,
+         "handling": 1,
+         "defense": 0,
+         "armor": 0,
+         "htt": 12,
+         "sst": 10,
+         "controlSkill": {
+            "name": "Piloting",
+            "source": "crb"
+         },
+         "complement": "1 pilot, 5-10 crew (fishers)",
+         "consumables": "1 day",
+         "encumbranceCapacity": "35",
+         "rarity": 4,
+         "description": [
+            "These small crafts fly over the great seas to harvest the bounty of the ocean to sell in the great cities. Small and fragile, these vessels have no great means of defense and rely on their small size and agility to outmaneuver opponents. Usually captained by seasoned air captains who have retired to live off the fruits of the oceans. Being a crew aboard these vessels is not for the faint of heart and many times crew operate tethered to the ship suspended over the open sea."
+         ],
+         "price": 5500
+      },
+      {
+         "name": "Sky Hunger, Heavy War Airship",
+         "page": 7,
+         "silhouette": 4,
+         "maxSpeed": 4,
+         "handling": -1,
+         "defense": 0,
+         "armor": 1,
+         "htt": 35,
+         "sst": 25,
+         "controlSkill": {
+            "name": "Operating",
+            "source": "crb"
+         },
+         "complement": "10 crew",
+         "passengers": "25",
+         "consumables": "3 weeks",
+         "encumbranceCapacity": "50",
+         "price": 225000,
+         "rarity": 6,
+         "restricted": true,
+         "description": [
+            "These Airships are the most commonly used for war and transportation of smaller crews. The vessels usually feature a transportation compartment fitted for either passengers or cargo. Much smaller than the mighty Armored War Zeppelins, these war ships are no less dreaded for their mighty Tesla Lance capable of releasing a high beam of electricity."
+         ],
+         "weapons": [
+            {
+               "name": "Tesla Lance",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 2,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-firing",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Twin-cannon turrets",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Linked",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Auto-rotary gun",
+               "fireArc": "Rear",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 2,
+               "critical": 4,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Defensive gun nest x2",
+               "fireArc": "1x port / 1x starboard",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "details": "One nest fires to port, the other to starboard.",
+               "damage": 2,
+               "critical": 4,
+               "range": "Long"
+            }
+         ]
+      }
+   ]
+}

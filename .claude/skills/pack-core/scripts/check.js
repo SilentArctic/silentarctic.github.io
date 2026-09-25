@@ -397,8 +397,10 @@ function lintTags(str, where) {
       const parts = content.split('|');
       switch (name) {
          case 'dice': {
-            const [dn, count, upgrades] = parts;
-            if (!(dn in lib.DICE_NAMES)) error('TAGS', `${where}: unknown die "${dn}" (use boost/setback/ability/difficulty/proficiency/challenge, lowercase): ${at}`);
+            const [rawName, count, upgrades] = parts;
+            /* optional modifier suffix: + - ^ (upgrade) v (downgrade), e.g. {@dice ability^} */
+            const dn = /[-+^v]$/.test(rawName) && rawName.slice(0, -1) in lib.DICE_NAMES ? rawName.slice(0, -1) : rawName;
+            if (!(dn in lib.DICE_NAMES)) error('TAGS', `${where}: unknown die "${rawName}" (use boost/setback/ability/difficulty/proficiency/challenge, lowercase, optionally suffixed + - ^ v): ${at}`);
             if (count !== undefined && !/^[1-9]\d*$/.test(count)) error('TAGS', `${where}: dice count must be a positive integer (got "${count}"): ${at}`);
             if (upgrades !== undefined && upgrades !== '' && !/^\d+$/.test(upgrades)) error('TAGS', `${where}: dice upgrades must be an integer: ${at}`);
             if (upgrades && !['ability', 'difficulty'].includes(lib.DICE_NAMES[dn])) warn('TAGS', `${where}: upgrades only apply to ability/difficulty dice: ${at}`);
@@ -413,7 +415,8 @@ function lintTags(str, where) {
          case 'combat':
          case 'general':
          case 'social':
-            if (!/^\d+$/.test(content)) error('TAGS', `${where}: {@${name}} expects a number: ${at}`);
+            /* a signed value is an ability's power-level modifier, e.g. {@social +2} */
+            if (!/^[+-]?\d+$/.test(content)) error('TAGS', `${where}: {@${name}} expects a number (optionally signed): ${at}`);
             break;
          case 'difficulty': {
             const [level, skill, upgrades, source] = parts;
