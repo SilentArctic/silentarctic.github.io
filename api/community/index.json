@@ -19,6 +19,189 @@
       "releaseDate": "24 May 2020",
       "originType": "community"
    },
+   "book-of-online-sourced-triumphs-2-modern-magic.json": {
+      "version": "2025.12.06",
+      "json": "book-of-online-sourced-triumphs-2-modern-magic",
+      "full": "Book Of Online Sourced Triumphs 2: Modern Magic",
+      "abbreviation": "BOOST:2",
+      "color": "#30F030",
+      "authors": [
+         "Flame112",
+         "Archellus",
+         "CantComplain",
+         "Dmitry Arkhipov",
+         "Gazrok (Chris Markham)",
+         "MaceWindows",
+         "Ryall \"O the Owl\" Hyatt",
+         "Thomas Nelson Kjar"
+      ],
+      "convertedBy": [
+         "SilentArctic"
+      ],
+      "url": "https://www.drivethrurpg.com/en/product/318788/boost-2-modern-magic",
+      "releaseDate": "28 June 2020",
+      "originType": "community"
+   },
+   "book-of-online-sourced-triumphs-3-deep-dive.json": {
+      "version": "2025.12.07",
+      "json": "book-of-online-sourced-triumphs-3-deep-dive",
+      "full": "Book Of Online Sourced Triumphs 3: Deep Dive",
+      "abbreviation": "BOOST:3",
+      "color": "#30F030",
+      "authors": [
+         "Caleb \"Cptn_Smitty\" Smith",
+         "Chris Markham",
+         "Digital APEX",
+         "Dmitry Arkhipov",
+         "Flame112",
+         "Giri Raman",
+         "LuciferSpandex"
+      ],
+      "convertedBy": [
+         "SilentArctic"
+      ],
+      "url": "https://www.drivethrurpg.com/en/product/324753/boost-3-deep-dive",
+      "releaseDate": "19 August 2020",
+      "originType": "community"
+   },
+   "book-of-online-sourced-triumphs-4-steampunk.json": {
+      "version": "2025.12.27",
+      "json": "book-of-online-sourced-triumphs-4-steampunk",
+      "full": "Book Of Online Sourced Triumphs 4 Steampunk",
+      "abbreviation": "BOOST:4",
+      "color": "#30F030",
+      "authors": [
+         "Flame112",
+         "Giri Raman",
+         "Chris Markham",
+         "Tyler Comstock",
+         "Caleb \"Cptn_Smitty\" Smith"
+      ],
+      "convertedBy": [
+         "SilentArctic"
+      ],
+      "releaseDate": "10 November 2020",
+      "url": "https://www.drivethrurpg.com/en/product/335612/boost-4-steampunk",
+      "originType": "community"
+   },
+   "book-of-online-sourced-triumphs-5-weird-west.json": {
+      "version": "2026.09.24",
+      "json": "book-of-online-sourced-triumphs-5-weird-west",
+      "full": "Book Of Online Sourced Triumphs 5: Weird West",
+      "abbreviation": "BOOST:5",
+      "color": "#30F030",
+      "authors": [
+         "Micah-Shalom \"FatCrab\" Kesselman",
+         "Flame112",
+         "Caleb \"Cptn_Smitty\" Smith",
+         "Anubis",
+         "Chris Markham",
+         "Craftidore",
+         "Skarpie"
+      ],
+      "convertedBy": [
+         "SilentArctic"
+      ],
+      "url": "https://www.drivethrurpg.com/en/product/343725/boost-5-weird-west",
+      "releaseDate": "18 January 2021",
+      "originType": "community"
+   },
+   "book-of-online-sourced-triumphs-6-space-fantasy.json": {
+      "version": "2026.09.25",
+      "json": "book-of-online-sourced-triumphs-6-space-fantasy",
+      "full": "Book Of Online Sourced Triumphs 6: Space Fantasy",
+      "abbreviation": "BOOST:6",
+      "color": "#30F030",
+      "authors": [
+         "Micah-Shalom \"FatCrab\" Kesselman",
+         "Flame112",
+         "Genesys RPG Community",
+         "Chris Markham",
+         "Craftidore",
+         "Ryall Hyatt",
+         "Silvak the Judge"
+      ],
+      "convertedBy": [
+         "SilentArctic"
+      ],
+      "url": "https://www.drivethrurpg.com/en/product/368101/boost-6-space-fantasy",
+      "releaseDate": "19 August 2021",
+      "originType": "community"
+   },
+   "book-of-online-sourced-triumphs-7-modular-encounters.json": {
+      "version": "2026.09.24",
+      "json": "book-of-online-sourced-triumphs-7-modular-encounters",
+      "full": "Book Of Online Sourced Triumphs 7: Modular Encounters",
+      "abbreviation": "BOOST:7",
+      "color": "#30F030",
+      "authors": [
+         "Flame112",
+         "Genesys RPG Community",
+         "Giri Raman",
+         "Haris Rehman",
+         "Jennifer \"jendefer\" Van Boxel",
+         "Matt \"DatMatt\" Mensch",
+         "Micah-Shalom \"FatCrab\" Kesselman",
+         "Ryall \"OtO\" Hyatt"
+      ],
+      "convertedBy": [
+         "SilentArctic"
+      ],
+      "url": "https://www.drivethrurpg.com/en/product/390112/boost-7-modular-encounters",
+      "releaseDate": "13 March 2022",
+      "originType": "community"
+   },
+   "book-of-online-sourced-triumphs-8-environments-set-pieces-and-obstacles.json": {
+      "version": "2026.09.24",
+      "json": "book-of-online-sourced-triumphs-8-environments-set-pieces-and-obstacles",
+      "full": "Book Of Online Sourced Triumphs 8: Environments: Set Pieces & Obstacles",
+      "abbreviation": "BOOST:8",
+      "color": "#30F030",
+      "authors": [
+         "Caleb \"Cptn_Smitty\" Smith",
+         "Jennifer \"jendefer\" Van Boxel",
+         "Micah-Shalom \"FatCrab\" Kesselman",
+         "Genesys RPG Community",
+         "Matt \"DatMatt\" Mensch",
+         "Evan Koser",
+         "Flame112",
+         "Giri Raman",
+         "J. Scott Zumwalt",
+         "Matthew Steiner",
+         "Ryall \"OtO\" Hyatt",
+         "Swordbreaker",
+         "Topsecret"
+      ],
+      "convertedBy": [
+         "SilentArctic"
+      ],
+      "url": "https://www.drivethrurpg.com/en/product/409871/boost-8-environments-set-pieces-obstacles",
+      "releaseDate": "11 September 2022",
+      "originType": "community"
+   },
+   "book-of-online-sourced-triumphs-9-motivational-play.json": {
+      "version": "2026.09.25",
+      "json": "book-of-online-sourced-triumphs-9-motivational-play",
+      "full": "Book Of Online Sourced Triumphs 9: Motivational Play",
+      "abbreviation": "BOOST:9",
+      "color": "#30F030",
+      "authors": [
+         "Micah-Shalom \"FatCrab\" Kesselman",
+         "Genesys RPG Community",
+         "Carson \"Swordbreaker\" Worth",
+         "Jennifer \"jendefer\" Van Boxel",
+         "Adam \"CircleofNoms\" Brown",
+         "Ryall Hyatt",
+         "Amnesiac",
+         "Matt \"DatMatt\" Mensch"
+      ],
+      "convertedBy": [
+         "SilentArctic"
+      ],
+      "url": "https://www.drivethrurpg.com/en/product/491350/boost-9-motivational-play",
+      "releaseDate": "12 August 2024",
+      "originType": "community"
+   },
    "fallout-a-post-apocalyptic-campaign-setting.json": {
       "json": "fallout-a-post-apocalyptic-campaign-setting",
       "full": "Fallout: A Post-Apocalyptic Campaign Setting",
