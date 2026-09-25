@@ -1,7 +1,7 @@
 {
    "book-of-online-sourced-triumphs-1-mutation.json": {
       "json": "book-of-online-sourced-triumphs-1-mutation",
-      "full": "B.O.O.S.T. #1: Mutation",
+      "full": "Book of Online Sourced Triumphs #1: Mutation",
       "abbreviation": "BOOST:1",
       "color": "#30F030",
       "url": "https://www.drivethrurpg.com/product/314884/BOOST-1-Mutation/",
@@ -129,7 +129,7 @@
       "originType": "community"
    },
    "book-of-online-sourced-triumphs-7-modular-encounters.json": {
-      "version": "2026.09.24",
+      "version": "2026.09.25",
       "json": "book-of-online-sourced-triumphs-7-modular-encounters",
       "full": "Book Of Online Sourced Triumphs 7: Modular Encounters",
       "abbreviation": "BOOST:7",
@@ -152,7 +152,7 @@
       "originType": "community"
    },
    "book-of-online-sourced-triumphs-8-environments-set-pieces-and-obstacles.json": {
-      "version": "2026.09.24",
+      "version": "2026.09.25",
       "json": "book-of-online-sourced-triumphs-8-environments-set-pieces-and-obstacles",
       "full": "Book Of Online Sourced Triumphs 8: Environments: Set Pieces & Obstacles",
       "abbreviation": "BOOST:8",
