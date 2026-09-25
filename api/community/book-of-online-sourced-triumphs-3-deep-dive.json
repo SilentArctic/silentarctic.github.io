@@ -1,0 +1,1142 @@
+{
+   "$schema": "https://silentarctic.github.io/schemas/schema.json",
+   "_meta": {
+      "source": {
+         "version": "2025.12.07",
+         "json": "book-of-online-sourced-triumphs-3-deep-dive",
+         "full": "Book Of Online Sourced Triumphs 3: Deep Dive",
+         "abbreviation": "BOOST:3",
+         "color": "#30F030",
+         "authors": [
+            "Caleb \"Cptn_Smitty\" Smith",
+            "Chris Markham",
+            "Digital APEX",
+            "Dmitry Arkhipov",
+            "Flame112",
+            "Giri Raman",
+            "LuciferSpandex"
+         ],
+         "convertedBy": [
+            "SilentArctic"
+         ],
+         "url": "https://www.drivethrurpg.com/en/product/324753/boost-3-deep-dive",
+         "releaseDate": "19 August 2020"
+      },
+      "filters": {
+         "magicSkills": []
+      },
+      "defaultItemSettings": []
+   },
+   "gear": [
+      {
+         "name": "Harpoon Gun",
+         "type": "weapon",
+         "page": 2,
+         "price": 550,
+         "rarity": 2,
+         "description": [
+            "The Harpoon Gun is an underwater fishing implement designed to launch a spear at fish or other underwater targets. Either rubber band or air-powered, the launched harpoon spears into its target, with a rope attached to the harpoon enabling the user to pull a speared target to them.",
+            "The Harpoon Gun comes with a single {@gear harpoon}, which itself could be used as a melee weapon. The harpoon gun suffers no penalties from being used underwater. When a target ensnared by the harpoon gun attempts to make an {@skill Athletics||crb} check to break free, they instead make the {@skill Athletics||crb} check opposed by the {@skill Athletics||crb} of the user of the harpoon gun or the {@skill Athletics||crb} of whatever character is holding the harpoon’s rope (instead of the {@difficulty Hard|Athletics} it usually is to break free from the effects.) Alternatively, the user of the harpoon gun or whoever is holding the rope may make an {@skill Athletics||crb} check opposed by the {@skill Athletics||crb} of the target ensnared by the harpoon. Success results in the character pulling the target into engaged range.",
+            "{@b Author:} Caleb \"Cptn_Smitty\" Smith"
+         ],
+         "skill": {
+            "name": "Ranged (Heavy)",
+            "source": "crb"
+         },
+         "damage": "8",
+         "critical": 3,
+         "range": "Short",
+         "encumbrance": 3,
+         "special": [
+            {
+               "name": "Ensnare",
+               "value": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Limited Ammo",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Pierce",
+               "value": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Unwieldy",
+               "value": 3,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Harpoon",
+         "type": "weapon",
+         "page": 2,
+         "price": 225,
+         "rarity": 2,
+         "description": [
+            "Ammunition for the {@gear harpoon gun}. This item can also be used as a standalone melee weapon.",
+            "{@b Author:} Caleb \"Cptn_Smitty\" Smith"
+         ],
+         "skill": {
+            "name": "Melee",
+            "source": "crb"
+         },
+         "damage": "+2",
+         "critical": 3,
+         "range": "Engaged",
+         "encumbrance": 2,
+         "special": [
+            {
+               "name": "Pierce",
+               "value": 2,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Injection Knife",
+         "type": "weapon",
+         "price": 1000,
+         "rarity": 7,
+         "description": [
+            "This particularly wicked weapon resembles an ordinary combat knife, but has a hollow channel running through the length of it which can be used to deliver a nasty surprise to a victim. If loaded with the appropriate kind of cartridge, the knife can be used to deliver a payload of a frozen ball of gas. This gas rapidly expands once injected into the target, causing massive amounts of damage and trauma. Using this weapon outside of survival situations is likely to be met with legal repercussions.",
+            "When a critical hit is triggered with this weapon, you may expend a loaded {@gear Air Cartridge} in order to add 5 damage to the hit and +40 to the critical injury roll. The weapon may be loaded with another {@gear Air Cartridge} as a maneuver.",
+            "{@b Author:} Flame112"
+         ],
+         "restricted": true,
+         "page": 2,
+         "skill": {
+            "name": "Melee",
+            "source": "crb"
+         },
+         "damage": "+1",
+         "critical": 3,
+         "range": "Engaged",
+         "encumbrance": 1
+      },
+      {
+         "name": "Trident of the Deep",
+         "type": "weapon",
+         "page": 2,
+         "price": "n/a",
+         "rarity": 10,
+         "description": [
+            "This ancient weapon has a handle inlaid with mother of pearl and has barnacles growing on it. In the ports, they tell tales of legendary sea captains that can't drown and always come back from the bottomless depths.",
+            "While wielding this weapon, a character never treats water as {@rule difficult and impassable terrain|difficult terrain|crb} and can breathe underwater.",
+            "Once per session, while touching a body of water your character may summon a total of 2 silhouette worth of aquatic or similar underwater animals. This functions like the {@spell Conjure||crb} spell with the Summon Ally effect (see {@title Genesys Core Rulebook} page 216). The animal remains for the duration of the encounter even if your character does not use a concentrate maneuver to maintain the spell.",
+            "{@b Author:} Giri Raman"
+         ],
+         "skill": {
+            "name": "Melee (Light)",
+            "source": "crb"
+         },
+         "damage": "+3",
+         "critical": 3,
+         "range": "Engaged",
+         "encumbrance": 3,
+         "special": [
+            {
+               "name": "Accurate",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Defensive",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Superior",
+               "source": "crb"
+            }
+         ],
+         "hardPoints": 1
+      },
+      {
+         "name": "Aquatic Armor",
+         "type": "armor",
+         "page": 3,
+         "price": 1200,
+         "rarity": 5,
+         "description": [
+            "A sealed full-body exosuit that regulates and refreshes the user’s breathable air, the Aquatic Armor turns a diver into a living submersible. With propellor-assisted propulsion and a vision-enhancing visor, the Aquatic Armor can function for 6 hours underwater before needing to be recharged.",
+            "While wearing a powered Aquatic Armor, a character can breathe underwater, does not treat water as {@rule difficult and impassable terrain|difficult terrain|crb}, and removes {@dice setback|2} from {@skill Perception||crb}, {@skill Vigilance||crb}, or combat checks caused by darkness. Additionally, the Aquatic Armor essentially allows a character to fly underwater, allowing them to move from long range to short using a single maneuver.",
+            "{@b Author:} Caleb \"Cptn_Smitty\" Smith"
+         ],
+         "defense": 0,
+         "encumbrance": 3,
+         "soak": "2",
+         "hardPoints": 2,
+         "settings": [
+            {
+               "name": "Space Opera",
+               "source": "crb"
+            },
+            {
+               "name": "Science Fiction",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Air Cartridge",
+         "type": "gear",
+         "page": 3,
+         "price": 30,
+         "rarity": 6,
+         "encumbrance": 1,
+         "description": [
+            "This cartridge of compressed air is used to reload an {@gear Injection Knife}.",
+            "{@b Author:} Flame112"
+         ]
+      },
+      {
+         "name": "Diving Weights",
+         "type": "gear",
+         "page": 3,
+         "price": 50,
+         "rarity": 2,
+         "encumbrance": 2,
+         "description": [
+            "This belt fits snugly around the waist and can be adjusted to suit the depth the character wishes to reach. The character will naturally sink to a specified depth while wearing the weights, and can swim normally at that depth. As a maneuver, the character may remove the diving weights. If they do so, the item sinks into the depths, but the character begins to naturally rise to the surface of the body of water, moving one range band upwards each turn.",
+            "{@b Author:} LuciferSpandex"
+         ],
+         "settings": [
+            {
+               "name": "Modern Day",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Guestweed",
+         "type": "gear",
+         "page": 3,
+         "price": 200,
+         "rarity": 4,
+         "encumbrance": 0,
+         "description": [
+            "A magical plant that temporarily grants anyone that consumes it aquatic capabilities.",
+            "A character that consumes guestweed does not treat water as {@rule difficult and impassable terrain|difficult terrain|crb} and can breathe underwater. This effect lasts until the end of the encounter, or one hour. {@symbols d} rolled from any check while under the effects of guestweed could be used to end its effects, making the character lose its benefits. Alternatively, a character could use the {@spell Dispel||crb} spell, targeting a character under the effects of guestweed to make the character lose its benefits.",
+            "{@b Author:} Caleb \"Cptn_Smitty\" Smith (original concept by Chris Markham)"
+         ],
+         "settings": [
+            {
+               "name": "Fantasy",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Message from the Deep",
+         "type": "gear",
+         "page": 3,
+         "price": 100,
+         "rarity": 8,
+         "description": [
+            "Some say that when you put your ear to a seashell, you can hear the ocean. While those of a more scientific bent will tell you that this is perfectly natural, tales persist of folks receiving an actual message from time to time.",
+            "This enchanted seashell can take many forms and decorations. It's more of a minor trinket than an actual spell. When crafted, it can contain a message that can be stored inside the seashell and heard by a recipient if you take the seashell and put it up to your ear.",
+            "Mages of the high seas use these to communicate with each other and some leave arcane markings or riddles.",
+            "It is whispered that the first mages learned these secrets from the bottom of the ocean. Whatever creature sends messages to the surface in this fashion is unknown, but some lose their minds after hearing ancient words from the deep.",
+            "{@b Author:} Giri Raman"
+         ]
+      },
+      {
+         "name": "Potion of Water Breathing",
+         "type": "alchemy",
+         "page": 4,
+         "price": 75,
+         "rarity": 3,
+         "encumbrance": 1,
+         "description": [
+            "Brewed from various fish oils and magical plants, a potion of water breathing is just what any adventurer would need when planning any type of watery expedition.",
+            "When your character uses a potion of water breathing, they can breathe underwater until the end of the scene or encounter.",
+            "{@b Author:} Caleb \"Cptn_Smitty\" Smith (original concept by Chris Markham)"
+         ],
+         "settings": [
+            {
+               "name": "fantasy",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Rebreather",
+         "type": "gear",
+         "page": 4,
+         "price": 100,
+         "rarity": 2,
+         "description": [
+            "A rebreather is a small device a person puts over their mouth, allowing them to breathe underwater by recycling their air over and over again.",
+            "A character using a rebreather can breathe underwater for one hour, after which the rebreather begins to fail. A failing rebreather can no longer properly filter the user’s carbon dioxide, causing the character to become {@rule Disoriented||crb}. {@symbols hh} on any check while using a failing rebreather causes it to stop working completely.",
+            "{@b Author:} Caleb \"Cptn_Smitty\" Smith"
+         ],
+         "settings": [
+            {
+               "name": "Science Fiction",
+               "source": "crb"
+            },
+            {
+               "name": "Space Opera",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Ring of Water Breathing",
+         "type": "magic",
+         "page": 4,
+         "price": 350,
+         "rarity": 6,
+         "settings": [
+            {
+               "name": "Fantasy",
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "A magical ring made from a tiny, mystical fish, this ring is highly valued among sailors and others that fear a watery grave.",
+            "A character wearing a ring of water breathing can breathe underwater as long as they are wearing it.",
+            "{@b Author:} Caleb \"Cptn_Smitty\" Smith (original concept by Chris Markham)"
+         ]
+      },
+      {
+         "name": "SCUBA Gear",
+         "type": "gear",
+         "page": 4,
+         "price": 200,
+         "rarity": 2,
+         "encumbrance": 3,
+         "settings": [
+            {
+               "name": "Modern Day",
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "An apparatus designed to allow a person to breathe oxygen and operate while underwater, SCUBA gear comes with a regulator and two tanks of oxygen worn on the back, providing a character with one hour of breathable air each. It also includes fins to help swim efficiently, a mask to be able to see clearly underwater, and a wetsuit to help keep the diver warm.",
+            "A character using SCUBA Gear can breathe underwater for up to two hours, and removes {@dice setback} from checks made to move, resist cold, and see clearly while underwater. An opponent may spend {@symbols t} from a successful attack to puncture an oxygen tank, causing it to begin to leak and lose its supply of oxygen by the end of the next round.",
+            "{@ Author:} Caleb \"Cptn_Smitty\" Smith"
+         ]
+      },
+      {
+         "name": "Underwater Scooter",
+         "type": "gear",
+         "page": 4,
+         "price": 300,
+         "rarity": 3,
+         "encumbrance": 2,
+         "settings": [
+            {
+               "name": "Modern Day",
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "A small, propeller-driven device with handles on either side, an underwater scooter allows a diver to glide through the water with minimal efforts.",
+            "An underwater scooter requires two hands to operate, and a character using one can move through water without suffering the penalty for {@rule difficult and impassable terrain|difficult terrain|crb}. Additionally, a character using an underwater scooter does not suffer two strain to perform a second maneuver to move.",
+            "{@b Author:} Caleb \"Cptn_Smitty\" Smith"
+         ]
+      }
+   ],
+   "sidebar": [
+      {
+         "name": "Restricted (R) Items",
+         "description": [
+            "Using this item outside of survival situations is likely to be met with legal repercussions."
+         ],
+         "type": "gear"
+      },
+      {
+         "name": "Adapting to Any Setting",
+         "page": 11,
+         "type": "setting",
+         "description": [
+            "This micro-adventure is meant to be able to be used in any setting that has an ocean or large body of water. The GM simply needs to use setting-specific elements to flesh out the scene. In a fantasy game, large galleons or sail ships would be used, while in a {@setting modern day|modern-day|crb} setting the sunken ship could be an ocean liner, military craft, yacht, or even a submarine. {@setting science fiction|Sci-fi|crb} and {@setting Space Opera||crb} games can utilize any type of craft, even crashed starships that fell from the sky. The ocean or body of water used doesn’t even need to be on Earth!"
+         ]
+      },
+      {
+         "name": "The Cavern",
+         "page": 14,
+         "type": "environment",
+         "description": [
+            "The ocean depths can be a dangerous place for anyone that needs to breathe air. To help ensure a player character does not find themselves in a situation where they drown and die unnecessary or anticlimactically, the GM can have them find a small cavern of air. This cavern could be found during the skill challenge by spending some {@symbols a} or {@symbols h}, or by the PCs spending a story point. The cavern should always be, at most, long range from the sunken ship, to help ensure the PCs will be able to make their way to it if the need arises. However, the GM might want to only give or reveal this option at the very last moment, when it is most dramatic."
+         ]
+      },
+      {
+         "name": "Skill Challenge Basics",
+         "page": 13,
+         "type": "setting",
+         "description": [
+            "While skill challenges are often run differently at every table, here are some suggestions for how to use them in this adventure, which could be followed or ignored per your own fancy.",
+            {
+               "type": "list",
+               "items": [
+                  "Skill Challenges are intended to give narrative control of the scene to the players, allowing them to use any skill they wish as long as they can justify it and narrate it. If the GM disagrees, instead of rejecting the idea, a particularly high difficulty can be given (unless of course, the proposed idea is impossible).",
+                  "If a player succeeds at a check, they may not use that skill again for this skill challenge.",
+                  "If a player fails at a check, they may attempt to use that skill again on another check, but with an upgraded difficulty.",
+                  "Each player should take a turn making a check before a player makes another check. An assisted or combined check should count for both players' \"turn\"",
+                  "The skill challenge should be more narrative than structured, so counting maneuvers isn't necessary (but a character should not be able to {@rule Aim||crb} four times to get four boosts.)",
+                  "If a character proposes a skill and narrates a potentially dangerous situation, failing that check should not result in sidetracking the skill challenge. (For example, if a character says they want to use {@skill Brawl||crb} to fight off a shark, failing the check should not result in a combat encounter, but can simply be that they need to flee. Of course, {@symbols h} and {@symbols d} might tell a different story.)"
+               ]
+            }
+         ]
+      }
+   ],
+   "optionFeature": [
+      {
+         "name": "Coral",
+         "type": "Material",
+         "class": "Implement Material",
+         "page": 5,
+         "description": [
+            "Underneath the surface of the sea, life flourishes as much as on land, and nowhere is it more diverse than the coral reefs. The reefs themselves are formed from colonies of small creatures that are held together with \"coral skeleton\", which is usually just called coral. Corals can have different colors: red, pink, white, blue, and even black-- and are often valued as much as precious gems. Being the basis of such thriving ecosystems corals amplify healing and protection magic.",
+            "When your character casts a {@spell Heal||crb} or {@spell Barrier||crb} spell using a coral implement, you may add {@symbols s} to the results.",
+            "{@b Author:} Dmitry Arkhipov"
+         ],
+         "labels": [
+            {
+               "name": "Price",
+               "description": "Cost x 1.5"
+            },
+            {
+               "name": "Rarity",
+               "description": "+4"
+            }
+         ]
+      },
+      {
+         "name": "Pearl",
+         "type": "Material",
+         "class": "Implement Material",
+         "page": 5,
+         "labels": [
+            {
+               "name": "Price",
+               "description": "Cost x 1.5"
+            },
+            {
+               "name": "Rarity",
+               "description": "+4"
+            }
+         ],
+         "description": [
+            "Pearls are formed when a mollusc continually secretes layers of fluid in order to coat a swallowed irritant and protect the creature from it. Pearls that form near areas of magical resonance can become imbued with the power of the ocean. Finding a pearl large enough to carve into a magical implement can be an adventure in and of itself.",
+            "When your character casts any spell using a pearl implement while on a boat (or similar vehicle) or underwater, you may reduce the difficulty by 1.",
+            "{@b Author:} Flame112"
+         ],
+         "info": []
+      },
+      {
+         "name": "Amphibious Firearm",
+         "type": "Craftmanship",
+         "page": 9,
+         "description": [
+            "Amphibious firearms are guns designed to be fired underwater, and because their mechanisms are designed for high density mediums, they are less effective when fired in the air. This craftmanship cannot be applied to weapons that use the {@skill Gunnery||crb} skill.",
+            "{@b Weapons:} Decrease range by one range band, to a minimum range of Short. Weapon may be fired underwater without the penalties listed in General Properties 4. Decrease damage by 1 and add {@quality Pierce|Pierce 2|crb} item quality (or increase an existing {@quality Pierce||crb} quality by 2). When fired in a non-liquid medium (such as air or vacuum), add {@quality Inaccurate|Inaccurate 2|crb} (or modify existing {@quality Accurate||crb} or {@quality Inaccurate||crb} qualities as appropriate) item quality and {@quality Inferior||crb} item quality. Amphibious firearms require specialized ammunition, and therefore cannot use normal Extra Reload items.",
+            "{@b Ammunition:} Amphibious Firearm Extra Reloads cannot be used in any weapon that does not have the Amphibious Firearms craftsmanship.",
+            "{@b Author:} Digital APEX"
+         ],
+         "labels": [
+            {
+               "name": "Price",
+               "description": "x2"
+            },
+            {
+               "name": "Rarity",
+               "description": "+2"
+            }
+         ]
+      }
+   ],
+   "vehicle": [
+      {
+         "name": "Deep-Sea Exploration Submersible",
+         "page": 5,
+         "description": [
+            "These submersibles can come in different forms and sizes depending on the job they were designed for. When used for exploration, a submersible usually brings tools and gear to interact with the environment in the deep sea below.",
+            "{@b Author:} Giri Raman"
+         ],
+         "silhouette": 2,
+         "maxSpeed": 2,
+         "handling": -1,
+         "armor": 1,
+         "defense": 0,
+         "htt": 10,
+         "sst": 10,
+         "controlSkill": {
+            "name": "Piloting",
+            "source": "crb"
+         },
+         "complement": "2 crew",
+         "passengers": "2",
+         "consumables": "1 week.",
+         "encumbranceCapacity": "10",
+         "price": 30000,
+         "rarity": 6,
+         "abilities": [
+            {
+               "name": "Robotic Arms",
+               "description": "A submersible has one or more robotic arms attached to the vessel that can interact with objects at engaged range to the submersible. A pilot or other crewmember can use any skill they normally could through the robotic arm (A GM has the final say regarding which skills can be used via the robotic arm.)"
+            }
+         ]
+      }
+   ],
+   "adversary": [
+      {
+         "name": "Deinosuchus",
+         "type": "rival",
+         "page": 6,
+         "characteristics": {
+            "brawn": 4,
+            "agility": 2,
+            "cunning": 1,
+            "intellect": 2,
+            "willpower": 1,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 6,
+            "wounds": 42,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 4,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 1,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
+            {
+               "name": "Parry 3",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Amphibious",
+            "Terrifying 3",
+            "Silhouette 2"
+         ],
+         "weapons": [
+            {
+               "name": "Huge crushing jaws",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Vicious",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
+               ],
+               "critical": 3
+            },
+            {
+               "name": "Tail slap",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 7,
+               "critical": 3,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Concussive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Blast",
+                     "ranks": 6,
+                     "source": "crb"
+                  }
+               ],
+               "details": "Immune to Blast damage from it's own tail slap."
+            }
+         ],
+         "description": [
+            "Massive, prehistoric crocodilian. Having existed some 82-73 million years ago, this monstrous beast was frozen in its underwater nest during the previous ice age, and has been recently thawed out by a recent deep sea mining operation, and It. Is. Hungry.",
+            "Alternatively, just a ridiculously old crocodile that has lived long enough to get that size- that itself would upset an ecosystem by its sheer appetite alone.",
+            "{@b Author:} Digital APEX"
+         ]
+      },
+      {
+         "name": "Giant Turtle",
+         "page": 6,
+         "type": "rival",
+         "characteristics": {
+            "brawn": 4,
+            "agility": 1,
+            "cunning": 1,
+            "intellect": 2,
+            "willpower": 3,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 6,
+            "wounds": 21,
+            "defense": [
+               1,
+               1
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Resilience",
+               "characteristic": "brawn",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Aquatic",
+            {
+               "name": "Jet Spray",
+               "description": "May spend {@symbols aa} on a successful water spray attack to move a silhouette 1 target hit by 1 range band. If a target is moved this way it also falls {@rule prone||crb}."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Snapping jaw",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 3,
+               "range": "Engaged"
+            },
+            {
+               "name": "Water spray",
+               "skill": {
+                  "name": "Resilience",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 4,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 6,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Disorient",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "description": [
+            "Usually, these benevolent creatures roam the great oceans floating on currents that run from the depths to shallower waters. Sailors sometimes mistake their great shells for small islands and the creatures have been known to help those shipwrecked at sea.",
+            "Rumors say that these giant sea monsters know hidden paths beneath the waves to a secret island chain where they come to mate and meet. Untold treasures and the secret of the ancient turtle god are guarded there. A being said to remember everything from the dawn of time.",
+            "{@b Author:} Giri Raman"
+         ]
+      },
+      {
+         "name": "Electric Eel",
+         "page": 6,
+         "type": "rival",
+         "characteristics": {
+            "brawn": 3,
+            "agility": 2,
+            "cunning": 1,
+            "intellect": 3,
+            "willpower": 1,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 11,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Stealth",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            },
+            "Sly Hunter"
+         ],
+         "abilities": [
+            "Amphibious",
+            {
+               "name": "Constrict",
+               "description": "The electric eel can spend {@symbols aaa} or {@symbols t} from an attack (even an unsuccessful one), or a {@symbols d} from the combat check of an engaged opponent to constrict their target, wrapping themselves around their victim, binding them tight while letting off electrical shocks. A constricted character loses their free maneuver and suffers 2 strain at the end of their turn. A constricted victim can attempt an {@b opposed Athletics check} to try and free themselves from the electric eel."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Shocking bite",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 3,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Pierce",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "description": [
+            "The electric eel is 5-foot long, snake-like fish with a mouth full of razor-sharp teeth. After clamping down on its victim, it can release electric energy, shocking its opponent. If given the opportunity, it will wrap itself around its victim, continuously shocking and constricting them.",
+            "{@b Author:} Caleb \"Cptn_Smitty\" Smith"
+         ]
+      },
+      {
+         "name": "Sea Stallion",
+         "page": 7,
+         "type": "rival",
+         "characteristics": {
+            "brawn": 3,
+            "agility": 3,
+            "cunning": 1,
+            "intellect": 1,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 12,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Stealth",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Aquatic"
+         ],
+         "weapons": [
+            {
+               "name": "Tail slap",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 3,
+               "range": "Engaged"
+            }
+         ],
+         "description": [
+            "Only the strongest merfolk can tame and ride these seahorses. More than once these underwater stallions have helped their riders avoid dangerous sea hazards.",
+            "These steeds are often used as mounts by merfolk and other aquatic humanoids (and count as natural animals for Terrinoth for purposes of {@spell Transform||epg} spell action)",
+            "{@b Author:} Chris Markham"
+         ]
+      },
+      {
+         "name": "Serpent of the Deep",
+         "page": 7,
+         "type": "nemesis",
+         "characteristics": {
+            "brawn": 5,
+            "agility": 2,
+            "cunning": 3,
+            "intellect": 1,
+            "willpower": 2,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 5,
+            "wounds": 35,
+            "defense": [
+               0,
+               0
+            ],
+            "strain": 22
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 4,
+               "source": "crb"
+            },
+            {
+               "name": "Coordination",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 4,
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Stealth",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 1,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
+            "Sly Hunter"
+         ],
+         "abilities": [
+            "Amphibious",
+            {
+               "name": "Crushing coil",
+               "description": "The Serpent binds its victims with its powerful body, constricting around them. If a character ensnared by this creature's attacks attempts to break free, instead of the normal difficulty, the difficulty is opposed by this creature's {@skill Athletics||crb}. Characters ensnared by this creature suffer 2 strain at the start of their turn."
+            },
+            "Silhouette 3",
+            "Terrifying 3"
+         ],
+         "weapons": [
+            {
+               "name": "Striking maw",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 9,
+               "critical": 3,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Vicious",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Binding body",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 4,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Ensnare",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "description": [
+            "A massive snake-like reptile, the Serpent of the Deep is a fierce, territorial predator. It is capable of quickly snapping out with its long snout, and its powerful body will squeeze tight anyone it can wrap itself around.",
+            "{@b Author:} Caleb \"Cptn_Smitty\" Smith"
+         ]
+      }
+   ],
+   "table": [
+      {
+         "name": "Table: Specific Threat/Despair Results",
+         "page": 10,
+         "columns": [
+            {
+               "header": "Cost"
+            },
+            {
+               "header": "Result Options",
+               "value": "options",
+               "size": 5
+            }
+         ],
+         "rows": [
+            {
+               "cost": "{@symbols h} or {@symbols d}",
+               "options": [
+                  "{@b Lost heading:} The acting character either suffers two strain or becomes prone.",
+                  "{@b Murky depths:} The acting character adds {@dice setback} to all checks involving sight until the end of their next turn."
+               ]
+            },
+            {
+               "cost": "{@symbols hh} or {@symbols d}",
+               "options": [
+                  "{@b Dropped gear:} The acting character drops one weapon or piece of equipment they are carrying on them, and the item drops to the ocean floor below. Unless the character succeeds an {@difficulty Average|Athletics or Coordination} to grab the item before it drops too far away(or they are already at the ocean floor).If the character fails, or does not attempt the check, they will have to succeed on a {@difficulty Hard|Perception or Survival} on a subsequent turn to find the item, in addition to having to travel to wherever it has fallen."
+               ]
+            },
+            {
+               "cost": "{@symbols hhh} or {@symbols d}",
+               "options": [
+                  "{@b Thermal Vent:} The acting character has come too close to the pathway for the superheated water escaping a Thermal Vent. The environment makes a {@difficulty Simple|Thermal Vent} against the character with a {@dice proficiency|2} dice pool. The character suffers 1 strain for each {@symbols s}, and {@symbols t} can be spent to cause the character to suffer 1 wound as well. Until the character moves away from the Thermal Vent, the environment repeats this attack at the start of each round. if a character suffers additional Thermal Vent results while one is still active, they have maneuvered closer to the source of the heat which upgrades the dice pool once each time.",
+                  "{@b Air Supply Compromised:} The character's access to breathable air is interrupted. Depending on the setting, this might look like a slashed air line, a damaged tank, or a cracked filter on a futuristic water splitter. Regardless of the technology, the character suddenly finds themself with a lungful of seawater. Each round, the character must spend a maneuver holding their air supply together, or suffer the effects of {@rule suffocation||crb} as described on page 112 of the {@title Genesys Core Rulebook}.",
+                  "{@b Vision Obscured:} Most land-dweller's eyes are not suited to the inky depths of the ocean, nor the pressure of the deep sea. Depending on the setting, their diving mask might crack, the spotlights on their helmet flicker and die, or the magic bubble of air around their head is disrupted. Regardless, the character now suffers a number of setback on all checks that rely on sight depending on their depth underwater.",
+                  "{@b A Bigger fish:} The commotion caused by the character draws unwanted attention in the form of a large sea creature. Choose a rival or nemesis creature of an appropriate challenge to enter the encounter, intent on investigating whatever prey is in its hunting grounds."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Table: Spending Triumph and Despair in Skill Challenges",
+         "page": 13,
+         "columns": [
+            {
+               "header": "Symbol"
+            },
+            {
+               "header": "Results",
+               "size": 5
+            }
+         ],
+         "rows": [
+            {
+               "symbol": "{@symbols t}",
+               "results": "Increase the amount of failed checks the party can make before failing the skill challenge by one."
+            },
+            {
+               "symbol": "{@symbols d}",
+               "results": "Increase the amount of {@symbols s} the party needs to complete the skill challenge by one."
+            }
+         ]
+      }
+   ],
+   "talent": [
+      {
+         "name": "Sly Hunter",
+         "page": 6,
+         "tier": 1,
+         "activation": "active (incidental)",
+         "description": [
+            "When in the wilderness, this character may use {@skill Survival||crb} when rolling {@rule determine initiative|Initiative|crb} instead of {@skill Vigilance||crb} or {@skill Cool||crb}.",
+            "{@b Author:} Caleb \"Cptn_Smitty\" Smith"
+         ],
+         "tags": [
+            "initiative",
+            "skill check"
+         ],
+         "ranked": false
+      }
+   ],
+   "rule": [
+      {
+         "name": "Deep Dive Encounters",
+         "page": 8,
+         "type": "environment",
+         "description": [
+            "Whether it's dozens or hundreds of feet below the surface of an ocean, or submerged in a thick, viscous liquid that hampers your sight and your movement, a Deep Dive Encounter has your character function in fluid space in three dimensions, though it is primarily designed around individual characters being underwater.",
+            "1. Being fully under water counts as {@rule difficult and impassable terrain|difficult terrain|crb} when moving.",
+            "2. All non-combat checks add {@dice setback|2} to their dice pools due to the increased difficulty of functioning underwater without exceptional talent or training.",
+            "3. Add {@dice setback} to dice pools for {@skill Brawl||crb} and one-handed melee weapons, and {@dice setback|2} for dice pools involving two-handed melee weapons. This does not apply if most or all of the acting character is outside the water and the target is near the surface (typically Engaged distance).",
+            "4. If the target of a ranged combat check is further under the water than Engaged distance, reduce the damage of the attack by 1 and add {@dice setback} to the dice pool. If weapon is underwater when it is fired, instead upgrade the difficulty of the check once and reduce the damage by 2. {@symbols d} should be used to either damage the weapon, or cause it to become so filled with water (or other liquid) that it is unusable until cleaned.",
+            "5. Characters in underwater encounters can use the {@rule Unexpected Angle} action."
+         ]
+      },
+      {
+         "name": "Unexpected Angle",
+         "page": 8,
+         "type": "action",
+         "description": [
+            "Your character maneuvers in such a way that they come at their target from a direction they can’t properly defend against. Your character must have used a {@rule Move||crb} maneuver during the current or previous turn; Make a contested {@skill Athletics||crb} or {@skill Survival||crb} check against the target’s {@skill Coordination||crb} or {@skill Vigilance||crb} (use the better of each skill for each character); on a success, upgrade the ability of all combat checks made by the acting character against the target character once, and upgrade the difficulty of all combat checks made by the target character against the acting character once- these effects last until the end of the acting character’s next turn unless they spend a {@rule Move||crb} maneuver to extend the effects until the end of the character’s next turn. The target can use this same action to negate the original Unexpected Angle action and apply the benefits of this action against the new target, with the same duration limit. If the acting character fails, {@symbols d} can be spent to grant the benefits of Unexpected Angle against the acting character."
+         ]
+      },
+      {
+         "name": "Running Deep Sea Encounters",
+         "page": 10,
+         "type": "encounter",
+         "description": [
+            "{@i So your players sank to the bottom of the ocean.}",
+            "Maybe it was intentional, and they are taking their first steps from the diving bell dressed in thick diving suits. Maybe they are exploring the depths of a mermish civilization, praying that their water-breathing spell will hold. Maybe they're watching the oxygen gauge on their sealed enviro-suit slowly dwindle as they plumb the liquid methane pools of neptune.",
+            "Regardless of how they came to be underwater, they are there, and an adventuring party will eventually find themselves in trouble wherever they go. Below are some useful quick-reference rules to help make your undersea combats more engaging.",
+            {
+               "title": "Weights",
+               "entries": [
+                  "Buoyancy is a real problem when underwater. If your players are operating outside of a sealed vehicle (a submersible, for example), they will struggle to swim below a certain depth as the weight of water around them pushes them up. Consider the {@gear Diving Weights} item for any deep sea adventures."
+               ]
+            },
+            {
+               "title": "In Combat",
+               "entries": [
+                  "Particular weapons are unwieldy, or completely unusable, underwater.",
+                  "The more a melee weapon relies on momentum, the more it will be hampered by the resistance of the water. Flexible weapons like flails and whips cannot be swung with enough force to warrant a combat check. Attacks made with maces, axes and other similar weapons suffer {@dice setback|2}. Weapons with slashing edges- including most swords- can still be used underwater, albeit awkwardly, and suffer {@dice setback}. Stabbing weapons like spears, stilettos and bayonets can generally be used as normal.",
+                  "Ranged weapons are more complex, but it is safe to assume that most weapons not specifically built for underwater use are unusable. Certain modern weapons like bows made of synthetic material or gas-propelled projectiles like harpoon guns should generally function as normal but should have a maximum range of medium. Futuristic weapons should follow similar guidelines.",
+                  "Creatures (or players) that are adapted to underwater life are at a significant advantage over their land-dwelling counterparts. While undersea, any physical check a water-dwelling creature makes against a land-dwelling one is upgraded once."
+               ]
+            },
+            {
+               "title": "Additional Options for Threats and Despairs Under Water",
+               "entries": [
+                  {
+                     "type": "table",
+                     "_ref": {
+                        "name": "Specific Threat/Despair Results"
+                     },
+                     "columns": [],
+                     "rows": []
+                  }
+               ]
+            },
+            "{@b Author:} LuciferSpandex"
+         ]
+      }
+   ]
+}

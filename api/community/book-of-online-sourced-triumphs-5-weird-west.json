@@ -1,0 +1,943 @@
+{
+   "$schema": "https://silentarctic.github.io/schemas/schema.json",
+   "_meta": {
+      "source": {
+         "version": "2026.09.24",
+         "json": "book-of-online-sourced-triumphs-5-weird-west",
+         "full": "Book Of Online Sourced Triumphs 5: Weird West",
+         "abbreviation": "BOOST:5",
+         "color": "#30F030",
+         "authors": [
+            "Micah-Shalom \"FatCrab\" Kesselman",
+            "Flame112",
+            "Caleb \"Cptn_Smitty\" Smith",
+            "Anubis",
+            "Chris Markham",
+            "Craftidore",
+            "Skarpie"
+         ],
+         "convertedBy": [
+            "SilentArctic"
+         ],
+         "url": "https://www.drivethrurpg.com/en/product/343725/boost-5-weird-west",
+         "releaseDate": "18 January 2021"
+      },
+      "defaultItemSettings": [{
+         "name": "weird west"
+      }]
+   },
+   "gear": [
+      {
+         "name": "The Adventurer's Blunderbuss",
+         "type": "weapon",
+         "page": 1,
+         "description": [
+            "The adventurer's blunderbuss has been the go-to weapon for monster-hunters and vigilantes alike. By its nature, it is a very dangerous weapon, and often inflicts bystander casualties. Consequently, nearly all towns have laws restricting ownership of adventurer's blunderbusses. The adventurer's blunderbuss is often described as having \"a lot of stopping power.\" Its shot is thrown hard enough that many find themselves knocked {@rule prone} or stopped in their tracks by it.",
+            "The adventurer's blunderbuss is a one-handed weapon, with a ridiculously oversized barrel, which is shaped like a trumpet. Unlike most shotguns, the blunderbuss has no choke at the end of its barrel, instead flaring out for the maximum possible spread, at the expense of damage.",
+            "When attacking a minion group where the minions are at engaged range, {@quality Blast} requires one less {@symbols a} to be triggered.",
+            "If an ally is engaged with the target, the GM may spend {@symbols hh} or {@symbols d} to deal damage equal to the {@quality Blast} rating to that ally.",
+            "{@b Author:} Craftidore"
+         ],
+         "price": 725,
+         "restricted": true,
+         "rarity": 4,
+         "skill": {
+            "name": "Ranged (Light)",
+            "source": "crb"
+         },
+         "damage": "6",
+         "critical": 4,
+         "range": "Short",
+         "encumbrance": 2,
+         "special": [
+            {
+               "name": "Knockdown",
+               "source": "crb"
+            },
+            {
+               "name": "Slow-Firing",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Blast",
+               "value": 5,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Six Shooter",
+         "type": "weapon",
+         "page": 1,
+         "description": [
+            "The six shooter is the cowboy's main weapon. No one in the Weird West leaves home without one. Its fame and popularity comes from both its obvious effectiveness and relatively cheap price tag.",
+            "The GM may spend {@symbols hhh} or {@symbols d} to make the Six Shooter run out of ammo.",
+            "{@b Author:} Craftidore"
+         ],
+         "price": 450,
+         "rarity": 2,
+         "skill": {
+            "name": "Ranged (Light)",
+            "source": "crb"
+         },
+         "damage": "7",
+         "critical": 4,
+         "range": "Medium",
+         "encumbrance": 2,
+         "special": [
+            {
+               "name": "Pierce",
+               "value": 1,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Commanding Bullwhip",
+         "type": "weapon",
+         "page": 1,
+         "description": [
+            "This bullwhip is of some eldritch make forgotten to history and best left out of thought and mind by those who wish to keep their wits. Outwardly, it appears to be nothing more than a run of the mill bullwhip used to corral cattle or, in a pinch, combat foes. However, it slices through the mind as well as through the air and, in the grip of one with the fortitude and willingness to sacrifice their sanity, can be used to dominate lesser minds.",
+            "As an action, a character wielding the Commanding Bullwhip can force a non-sentient living target to make an {@b opposed {@skill Discipline}} check against the wielder's {@characteristic Willpower} characteristic. If the check fails, the wielder may, as an {@rule Incidentals|incidental}, force the target to take an action of the wielder's choosing. The wielder may spend a story point to use this feature on a sentient living target. The GM may spend a {@symbols t} from the {@skill Discipline} check to inflict the wielder with {@rule Disoriented|Disorient} for a number of rounds equal to the number of uncanceled {@symbols s} of the check (minimum of 1). The GM should also consider inflicting lasting {@rule Sanity|sanity} effects on the wielder, as per the {@title Genesys Core Rulebook}.",
+            "{@b Author:} Micah-Shalom \"FatCrab\" Kesselman"
+         ],
+         "price": 1050,
+         "rarity": 8,
+         "skill": {
+            "name": "Melee",
+            "source": "crb"
+         },
+         "damage": "+4",
+         "critical": 3,
+         "range": "Short",
+         "encumbrance": 1,
+         "special": [
+            {
+               "name": "Vicious",
+               "value": 2,
+               "source": "crb"
+            }
+         ]
+      }
+   ],
+   "quality": [
+      {
+         "name": "Blood Cursed",
+         "page": 2,
+         "activation": "passive",
+         "gearType": "weapon",
+         "description": [
+            "Blood Cursed weapons are often ancient artifacts that bring great power to the wielder but with even greater costs. The player and GM are encouraged to work together as to how the player is able to wield this power or even what type of cost it requires to use it (be that a debt to an otherworldly god or a deal with Death herself).",
+            "After an ability check is made that uses a Blood Cursed weapon, your character may suffer an amount of Wounds up to the Blood Cursed rating to add or increase the {@quality Vicious} rating of the weapon by an equal amount for that attack.",
+            "{@b Author:} Skarpie"
+         ]
+      }
+   ],
+   "talent": [
+      {
+         "name": "Cinematic Ammo Count",
+         "page": 2,
+         "tier": 1,
+         "activation": "passive",
+         "ranked": false,
+         "tags": [
+            "combat",
+            "ranged",
+            "mitigation"
+         ],
+         "description": [
+            "Weapons which run out of ammo on a number of threats require one additional threat to run out of ammo when you are using them. That weapon still runs out of ammo on a {@symbols d}.",
+            "{@b Author:} Craftidore"
+         ]
+      },
+      {
+         "name": "Always Shoot First",
+         "page": 2,
+         "tier": 2,
+         "activation": "active (incidental, out of turn)",
+         "ranked": false,
+         "tags": [
+            "combat",
+            "initiative",
+            "downside"
+         ],
+         "description": [
+            "When you are the target of an attack, if you have not acted this encounter, you may suffer 2 strain. If you do so, you may take an out-of-turn maneuver before the attack is resolved. You also lose your free maneuver on your next turn.",
+            "If you do not have a free maneuver (either because of the {@table I.6-10: Critical Injury Result|71-75 Hamstrung} crit or other circumstances) you may not use this talent.",
+            "{@b Author:} Craftidore"
+         ]
+      },
+      {
+         "name": "Gunslinger",
+         "page": 2,
+         "tier": 3,
+         "activation": "passive",
+         "ranked": false,
+         "tags": [
+            "general",
+            "gear",
+            "narrative",
+            "ranged"
+         ],
+         "description": [
+            "When the character gains this talent, they choose a pistol costing less than or equal to 500. They have this pistol at all times, no matter the circumstances (i.e. the character could be stripped naked and thrown in a pit with no possessions, and they would still (miraculously) have this pistol).",
+            "{@b Author:} Craftidore"
+         ]
+      },
+      {
+         "name": "Always Shoot First (Improved)",
+         "page": 2,
+         "prerequisites": [
+            "Always Shoot First"
+         ],
+         "tier": 4,
+         "activation": "active (incidental, out of turn)",
+         "ranked": false,
+         "tags": [
+            "combat",
+            "initiative",
+            "second action",
+            "downside"
+         ],
+         "description": [
+            "When you are the target of an attack, if you have not acted this encounter, you may suffer 3 strain. If you do so, you may take an out-of-turn action before the attack is resolved. You also lose your action on your next turn.",
+            "{@i This talent requires the {@talent Always Shoot First} Talent.}",
+            "{@b Author:} Craftidore"
+         ]
+      },
+      {
+         "name": "Gunslinger (Improved)",
+         "page": 2,
+         "prerequisites": [
+            "Gunslinger"
+         ],
+         "tier": 4,
+         "activation": "passive",
+         "ranked": false,
+         "tags": [
+            "general",
+            "gear",
+            "narrative",
+            "ranged"
+         ],
+         "description": [
+            "When the character gains this talent, they may choose a pistol or rifle costing less than or equal to 1000 (this replaces the pistol referenced in the {@talent Gunslinger} talent). They have this at all times, no matter the circumstances.",
+            "{@i This talent requires the {@talent Gunslinger} Talent.}",
+            "{@b Author:} Craftidore"
+         ]
+      },
+      {
+         "name": "Gunslinger (Supreme)",
+         "page": 2,
+         "prerequisites": [
+            "Gunslinger (Improved)"
+         ],
+         "tier": 5,
+         "activation": "passive",
+         "ranked": false,
+         "tags": [
+            "general",
+            "gear",
+            "narrative"
+         ],
+         "description": [
+            "When the character gains this talent, they may choose any weapon costing less than or equal to 2000 (this replaces the pistol or rifle referenced in the {@talent Gunslinger (Improved)} talent). They have this at all times, no matter the circumstances.",
+            "{@i This talent requires the {@talent Gunslinger (Improved)} Talent.}",
+            "{@b Author:} Craftidore"
+         ]
+      }
+   ],
+   "archetypeAbility": [
+      {
+         "name": "Digging Appendages",
+         "description": [
+            "Diggers gain {@dice boost} to checks made to dig or mine without tools.",
+            "{@b Authors:} Craftidore and Anubis"
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Digger Intuition",
+         "description": [
+            "Diggers remove up to {@dice setback|2} from checks to distinguish gold from fool's gold (or other gold substitutes).",
+            "{@b Authors:} Craftidore and Anubis"
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier"
+         ]
+      }
+   ],
+   "archetype": [
+      {
+         "name": "Diggers",
+         "page": 3,
+         "characteristics": {
+            "brawn": 3,
+            "agility": 1,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 2
+         },
+         "wt": 10,
+         "st": 9,
+         "xp": 100,
+         "skills": {
+            "skills": [
+               "Athletics"
+            ],
+            "ranksTotal": 1,
+            "ranksEach": 1,
+            "description": [
+               "A Digger starts with one rank in {@skill Athletics}. They may not train {@skill Athletics} higher than rank 2 during character creation."
+            ],
+            "choice": false
+         },
+         "abilities": [
+            "Digging Appendages",
+            "Digger Intuition"
+         ],
+         "description": [
+            "Diggers appeared a number of decades ago. Few but the diggers themselves knew where they had come from, but they swiftly became a staple of the frontier.",
+            "{@b Appearance:} Though they are humanoid, they could never be mistaken for humans. Diggers have 4 arms, 1 is shaped to scoop loose sediment, another hardened to be used as a pickax (neither of which is capable of holding weapons or gear), and the other 2 have hands, as with an ordinary human. Their legs are stumpy, and their feet are webbed.",
+            "{@b Culture:} Diggers are similar to their parent humans in their culture and tastes, but are looked down upon by other miners, as they have many innate advantages over humans living on the frontier. The Diggers were originally created by aliens, using sample human DNA, with the goal of creating the perfect miners. However, the project was abandoned, and the aliens decided to dump their abominable creations in the Weird West, where they found their original sample DNA. Most diggers are aware of their alien origins, though they rarely give that information to others.",
+            "{@b Authors:} Craftidore and Anubis"
+         ]
+      }
+   ],
+   "adversaryAbility": [
+      {
+         "name": "Your Shame is Confessed",
+         "description": [
+            "Over the course of multiple encounters and scenes, this character may \"pocket\" a {@dice boost} each time a PC fails a check in their vicinity; these pocketed {@dice boost} may be spent freely by this character in a later combat encounter; during combat encounters, if a PC fails a check and rolls a {@symbols d} in the vicinity of this character, this character receives an automatic upgrade on their next attack targeting the PC in addition to the {@symbols d}'s normal spend.",
+            "{@b Author:} Micah-Shalom \"FatCrab\" Kesselman"
+         ],
+         "tags": [
+            "general",
+            "combat",
+            "passive",
+            "results modifier",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Ghostly (Wraith)",
+         "description": [
+            "May move over or through terrain (including doors and walls) without penalty. Halve the damage dealt to the wraith before applying soak, unless the attack came from a magical source such as a spell or magical weapon, or silver.",
+            "{@b Author:} Chris Markham"
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "movement",
+            "weakness"
+         ]
+      },
+      {
+         "name": "Terrifying (Wraith)",
+         "description": [
+            "At the start of the encounter, all of its opponents must make a {@difficulty daunting} {@rule fear} check as an out-of-turn incidental, as per page 243 of the {@title Genesys Core Rulebook}.",
+            "{@b Author:} Chris Markham"
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "fear",
+            "crowd control"
+         ]
+      },
+      {
+         "name": "Undead (Wraith)",
+         "description": [
+            "Does not need to breathe, eat, or drink, and can survive underwater, immune to poisons and toxins.",
+            "{@b Author:} Chris Markham"
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "resistance"
+         ]
+      }
+   ],
+   "adversary": [
+      {
+         "name": "Blood Hounds",
+         "page": 3,
+         "type": "minion",
+         "powerLevels": {
+            "combat": 2,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 3,
+            "agility": 1,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 5,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Coordination",
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "source": "crb"
+            },
+            {
+               "name": "Stealth",
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "source": "crb"
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Claws and fangs",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 2,
+               "critical": 3,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "description": [
+            "These hounds, while similar in appearance to a \"cowboy's best friend,\" are one of the main terrors of the Weird West. They often prowl at night, striking in packs of 3-5 against any settlers foolish enough to travel alone at night.",
+            "{@link https://app.rpgsessions.com/char/ffg-gen/minion/5fdc036236261c0011bcb6d3|https://app.rpgsessions.com/char/ffg-gen/minion/5fdc036236261c0011bcb6d3}",
+            "{@b Author:} Craftidore"
+         ]
+      },
+      {
+         "name": "Occultist Centaur",
+         "page": 3,
+         "type": "rival",
+         "powerLevels": {
+            "combat": 4,
+            "social": 2,
+            "general": 4
+         },
+         "characteristics": {
+            "brawn": 3,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 4,
+            "willpower": 1,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 14,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Coordination",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Primal",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Charm",
+               "characteristic": "presence",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Deception",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Fan the Hammer",
+               "source": "crb"
+            }
+         ],
+         "weapons": [
+            {
+               "name": "{@gear Six shooter}",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 7,
+               "critical": 4,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Pierce",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "Extra Reload",
+            "Occult Symbol"
+         ],
+         "description": [
+            "Occult centaurs believe in the magic of the world. They flow with nature and use its power. Occult centaurs are not known for their self control, and often engage in trickery and mischief. They are prone to fits of anger and fluctuating moods.",
+            "{@link https://app.rpgsessions.com/char/ffg-gen/rival/5fdbdbdb6cbf0e0011059a6f|https://app.rpgsessions.com/char/ffg-gen/rival/5fdbdbdb6cbf0e0011059a6f}",
+            "{@b Author:} Craftidore"
+         ]
+      },
+      {
+         "name": "Man of God(s)",
+         "page": 4,
+         "type": "nemesis",
+         "powerLevels": {
+            "combat": 2,
+            "social": 1,
+            "general": 4
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 1,
+            "presence": 3
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 14,
+            "strain": 16,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Alchemy",
+               "characteristic": "intellect",
+               "ranks": 4,
+               "source": "crb"
+            },
+            {
+               "name": "Knowledge",
+               "characteristic": "intellect",
+               "ranks": 4,
+               "source": "crb"
+            },
+            {
+               "name": "Medicine",
+               "characteristic": "intellect",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Negotiation",
+               "characteristic": "presence",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Melee",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Your Shame is Confessed"
+         ],
+         "weapons": [
+            {
+               "name": "Defiled religious iconography",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
+               "damage": 2,
+               "critical": 2,
+               "range": "Engaged",
+               "details": "Has religious and spiritual value, and will have a different effect depending on PC's connection to whichever faith the Man of God(s) has chosen to defile; consider adding the {@quality Blood Cursed} item quality as described above."
+            }
+         ],
+         "gear": [
+            "{@gear Symbol of Faith|religious symbol|epg}",
+            "Ghostly Phylactery: If slain, the Man of God(s) will reconstitute itself at the location of the Ghostly Phylactery at the next full moon, unless it is soaked in blessed waters for at least one entire night."
+         ],
+         "description": [
+            "Who knows where the Man of God(s) came from. It is certainly a mystery that has confounded many would-be town saviors immediately before their demise at his unholy hands. Regardless of his origins, the Man of God(s) has installed himself in this small, dusty town as priest and counsel to the local flock. Unknown to the townsfolk, however, is that the Man of God(s) is an ageless monstrosity that feeds off their faith and supplication--and occasionally their flesh, once he has engorged himself on their sins and shame.",
+            "{@b Author:} Micah-Shalom \"FatCrab\" Kesselman"
+         ]
+      },
+      {
+         "name": "Emily Jenson",
+         "page": 6,
+         "type": "nemesis",
+         "npc": true,
+         "characteristics": {
+            "brawn": 3,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 3,
+            "willpower": 3,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 22,
+            "strain": 18,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 4,
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Ghostly (Wraith)",
+            "Terrifying (Wraith)",
+            "Undead (Wraith)"
+         ],
+         "weapons": [
+            {
+               "name": "Spectral claws",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 4,
+               "critical": 1,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Wailing cry",
+               "skill": {
+                  "name": "Ranged",
+                  "source": "crb"
+               },
+               "damage": 4,
+               "critical": 5,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "description": [
+            "Emily's coach driver became {@rule disoriented} in a storm that kicked up once reaching this part of the journey. He unknowingly had driven through an ancestral burial ground of the local indigenous people. Angered by the intrusion, the ancestral spirits opened a rip in the fabric of reality, and the coach plunged into the etheric plane to their demise. Emily, filled with rage at being sent away from her beau, became a conduit for the pent-up energy of the disturbed spirits at the time of her death. Now, whenever a coach approaches near the disturbance, the rift opens, and the ghostly carriage emerges to punish the living.",
+            "The bodies of Emily, her driver, the horses, and the carriage are currently stuck in the etheric plane. If the wraith is defeated, it will close the rift and all of the aforementioned bodies, including Emily's, will be restored to life.",
+            "{@b Author:} Chris Markham"
+         ]
+      }
+   ],
+   "vehicle": [
+      {
+         "name": "Carriage",
+         "page": 5,
+         "silhouette": 2,
+         "maxSpeed": 2,
+         "handling": -1,
+         "defense": 0,
+         "armor": 0,
+         "htt": 4,
+         "sst": 4,
+         "controlSkill": {
+            "name": "Riding",
+            "source": "crb"
+         },
+         "complement": "1 driver",
+         "passengers": "5",
+         "consumables": "None",
+         "encumbranceCapacity": "8",
+         "price": 1100,
+         "rarity": 3,
+         "description": [
+            "The carriage is of a normal variety and is pulled by a team of four (4) horses.",
+            "{@b Author:} Chris Markham"
+         ]
+      },
+      {
+         "name": "The Ghost Carriage",
+         "page": 6,
+         "silhouette": 2,
+         "maxSpeed": 4,
+         "handling": -1,
+         "defense": 0,
+         "armor": 0,
+         "htt": 4,
+         "sst": 4,
+         "controlSkill": {
+            "name": "Riding",
+            "source": "crb"
+         },
+         "complement": "1 (ghostly) driver",
+         "passengers": "N/A (ethereal)",
+         "consumables": "None",
+         "encumbranceCapacity": "N/A (ethereal)",
+         "rarity": 10,
+         "price": 0,
+         "abilities": [
+            {
+               "name": "Ghostly",
+               "description": "The ghost carriage has the same Ghostly ability as {@adversary Emily Jenson|Emily}: {@adversaryAbility Ghostly (Wraith)}."
+            }
+         ],
+         "description": [
+            "{@i The book prints the Control Skill, Price, and Rarity as N/A.}",
+            "{@b Weapons:} None. However, it does have the same Ghostly ability as {@adversary Emily Jenson|Emily} (see below) and has an attack form once it has merged with a terrestrial coach (see Effects of the Ghost Carriage).",
+            "It is up to the GM as to how detailed they want to run a chase scene, but the ghostly carriage is supernatural, and is vastly faster than the normal {@vehicle Carriage|coach} driven by the group. Any lone riders notice that the ghost carriage is focused on pursuing the carriage only.",
+            {
+               "title": "Effects of the Ghost Carriage",
+               "entries": [
+                  "Once the ghost carriage overtakes the normal {@vehicle Carriage|coach}, it temporarily merges with it. Once merged, both carriages stop moving. Any characters inside the coach must make a {@difficulty hard|Resilience}. Those failing the check are {@rule Immobilized}. Those succeeding can feel a draining feeling (suffer 2 strain) and have a sudden urge to exit the coach. The horses automatically fail their checks, as they are hitched to the coach. {@rule Immobilized} characters suffer 2 strain at the start of each turn. Other characters can try to remove those still within the coach but will need to again succeed in the same Resilience skill check as mentioned previously. If there are characters outside the carriage (either on foot or on horseback), the driver ({@adversary Emily Jenson|Ms. Jenson's spirit}) attacks them."
+               ]
+            },
+            "{@b Author:} Chris Markham"
+         ]
+      }
+   ],
+   "adventure": [
+      {
+         "name": "Ghost Carriage",
+         "chapters": [
+            {
+               "title": "Summary",
+               "page": 4,
+               "entries": [
+                  "{@i A Mini-Adventure Encounter}",
+                  "{@b Author:} Chris Markham",
+                  "Travel between cities has always contained an element of danger. In recent months however, carriage travel between two major settlements has often led to a grisly discovery. While the carriages are found intact, the bodies of the horses and passengers are desiccated and the hair of all (including the horses) is stark white!",
+                  "The local sheriff is at a loss to explain the attacks, and no witnesses have come forward to reveal the cause of the mysterious killings. Travel by horseback or train seems unaffected by the attacks. Outside help is needed (where the PCs come in).",
+                  "{@b GM NOTE:} The PCs should have some means of dealing with supernatural creatures, either magic or they should discover some additional information, such as needing silver weapons or some other means, to combat spiritual foes."
+               ]
+            },
+            {
+               "title": "Deputization",
+               "page": 4,
+               "entries": [
+                  "The local sheriff has offered to deputize the group to investigate the attacks. The town merchants have gotten together to collect a fund for a reward for the sheriff to offer if needed. The GM should consider what they feel appropriate for their respective group. If needed, the sheriff can accompany the PCs (if they need extra muscle, etc.). Use the statistics for a {@adversary Field Leader||epg}, in the {@title Expanded Player's Guide}, pg. 92 (replacing {@skill Driving|Drive} with {@skill Riding|Ride} for skills) for the sheriff.",
+                  {
+                     "title": "Sheriff Dyson (Rival)",
+                     "page": 4,
+                     "entries": [
+                        "Sheriff Dyson is an older man in his forties with bushy white hair and a matching mustache. His skin is leathery and tanned, showing his years in the saddle. His clothes are worn and often dusty, though his badge is polished to a high sheen. He is well-respected in the town and known as a capable agent for law and order. However, he's out of his depth in these recent occurrences and knows he needs help. He speaks with a strong, low voice that imparts wisdom."
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Investigation",
+               "page": 4,
+               "entries": [
+                  "Most of the townsfolk don't leave, so they have little information to give the group. The GM is encouraged to come up with their own merchants or other town personalities, but only three people in town have pertinent information on the attacks. The group should encounter them sooner or later in their investigation.",
+                  {
+                     "title": "Stella (Saloon Gal, Rival)",
+                     "page": 5,
+                     "entries": [
+                        "Stella is a young, attractive woman with long black hair and she is dressed in attire appropriate to her occupation.",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "\"I'm willin' ta tell ya what I know, but I work for a livin'…you buyin'?\""
+                           ]
+                        },
+                        "If a PC pays for her \"services,\" or otherwise offers a bribe, she is willing to relate her story. No skill roll is needed if she is paid, but if the PCs otherwise try to {@skill Charm} or {@skill Coercion|Intimidate} the information from her, it should be a {@difficulty hard} skill check. What she knows:",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "\"I was comin' back ta town aboard the train, just a couple weeks ago. That's when I saw it. A glowin' carriage, comin' right up behind the other one! It was stormin' a little, so not sure what happened after that. Though, I heard they didn't make it.\""
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "title": "Mr. Harvey Jenson (Fars Wellgo, Rival)",
+                     "page": 5,
+                     "entries": [
+                        "Mr. Jenson is the owner of the local Fars Wellgo branch. He is thin, in his thirties, with slick black hair and a thin black mustache. He is dressed very well-to-do. He is still grieving the loss of his daughter from when the trouble started. He is adamant in his beliefs the coaches have been attacked by (as he calls them) \"savages.\" If asked about his daughter, he fully admits he sent her to attend finishing school in the city.",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "\"No daughter of mine is going to be some farmer's wife!\""
+                           ]
+                        },
+                        "He is a bit terse and sore when speaking any further about his daughter, but is otherwise cooperative. He furnished the majority of the reward money and has no problem mentioning this to the group if they seem combative or treat him like a suspect. What he knows:",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "\"The last coach that was attacked, I had sent two of my best men to ride along with it. They vanished just like my daughter's coach did before, though we did find the coach and others in the same condition as the other attacks. It's those savages, I just know it! Avenge my daughter! I want their scalps!\""
+                           ]
+                        },
+                        "If the PCs don't suggest it, at some point, he'll offer the use of one of his coaches should the group decide to bait the attackers by making the journey to the city. This is the only way to reach the next step of the encounter."
+                     ]
+                  },
+                  {
+                     "title": "Earl (Town Drunk, Rival)",
+                     "page": 5,
+                     "entries": [
+                        "Earl is the quintessential town drunk. Slovenly dressed, he has a week's worth of stubble growth, and most stables smell better. Still, he has some information that may be of use to the group. He isn't difficult to {@skill Charm} or {@skill Coercion|Intimidate} (difficulty of {@difficulty average}). If bribed with money or alcohol, the GM should add an appropriate amount of {@dice boost} commensurate with the amount of the bribe. What he knows (this narrative should be rife with pauses, hiccups, and other generally unpleasant noises):",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "\"The Jenson gal was on the first coach that had trouble. Though it just vanished, it didn't suffer the same fate as the others. She was being sent to the big city to get her away from that farmer fella. I guess vanishin' is better than what happened to the others!\""
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Bait",
+               "page": 5,
+               "entries": [
+                  "The Sheriff and Mr. Jenson will do all they can to outfit the PCs with any needed (mundane) equipment or gear that they request, including ammunition. Statistics for the carriage are as follows:",
+                  "{@vehicle Carriage}",
+                  "The first half of the journey is uneventful. Once the \"road\" (really just a worn trail) gets fairly close to the train tracks, the weather turns dark, and a slight storm kicks up. Eventually, the group sees a ghostly white, translucent coach that is quickly gaining on them and driven by a ghostly woman with her features twisted into an angry snarl!",
+                  "{@vehicle The Ghost Carriage}",
+                  "It is up to the GM as to how detailed they want to run a chase scene, but the ghostly carriage is supernatural, and is vastly faster than the normal {@vehicle Carriage|coach} driven by the group. Any lone riders notice that the ghost carriage is focused on pursuing the carriage only.",
+                  {
+                     "title": "Effects of the Ghost Carriage",
+                     "page": 6,
+                     "forceTitleLevel": 3,
+                     "entries": [
+                        "Once the ghost carriage overtakes the normal {@vehicle Carriage|coach}, it temporarily merges with it. Once merged, both carriages stop moving. Any characters inside the coach must make a {@difficulty hard|Resilience}. Those failing the check are {@rule Immobilized}. Those succeeding can feel a draining feeling (suffer 2 strain) and have a sudden urge to exit the coach. The horses automatically fail their checks, as they are hitched to the coach. {@rule Immobilized} characters suffer 2 strain at the start of each turn. Other characters can try to remove those still within the coach but will need to again succeed in the same Resilience skill check as mentioned previously. If there are characters outside the carriage (either on foot or on horseback), the driver ({@adversary Emily Jenson|Ms. Jenson's spirit}) attacks them."
+                     ]
+                  },
+                  "{@adversary Emily Jenson}"
+               ]
+            },
+            {
+               "title": "Wrap-up",
+               "page": 6,
+               "entries": [
+                  "Assuming the group defeats the {@adversary Emily Jenson|Wraith}, they have ended the attacks and solved the mystery of Emily's disappearance. The town will be very grateful, especially Mr. Jenson."
+               ]
+            }
+         ]
+      }
+   ]
+}

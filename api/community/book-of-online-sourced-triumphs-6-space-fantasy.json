@@ -1,0 +1,4013 @@
+{
+   "$schema": "https://silentarctic.github.io/schemas/schema.json",
+   "_meta": {
+      "source": {
+         "version": "2026.09.25",
+         "json": "book-of-online-sourced-triumphs-6-space-fantasy",
+         "full": "Book Of Online Sourced Triumphs 6: Space Fantasy",
+         "abbreviation": "BOOST:6",
+         "color": "#30F030",
+         "authors": [
+            "Micah-Shalom \"FatCrab\" Kesselman",
+            "Flame112",
+            "Genesys RPG Community",
+            "Chris Markham",
+            "Craftidore",
+            "Ryall Hyatt",
+            "Silvak the Judge"
+         ],
+         "convertedBy": [
+            "SilentArctic"
+         ],
+         "url": "https://www.drivethrurpg.com/en/product/368101/boost-6-space-fantasy",
+         "releaseDate": "19 August 2021"
+      },
+      "defaultItemSettings": [{
+         "name": "space fantasy"
+      }]
+   },
+   "gear": [
+      {
+         "name": "R94 Arcane Rifle",
+         "type": "weapon",
+         "page": 1,
+         "description": [
+            "The R94 Arcane Rifle is a magically powered rifle. It uses inlaid spells to propel the bullets. There is a display screen on the rifle which lets the user draw spellwork on the bullet itself, though the bullet's surface area limits what can be accomplished with the spellwork.",
+            "Because someone's {@skill Arcana} knowledge can increase the effectiveness of this weapon, it gains the {@quality Arcane Magitek} weapon quality.",
+            "{@b Author:} Craftidore"
+         ],
+         "price": 1100,
+         "rarity": 7,
+         "skill": {
+            "name": "Ranged (Heavy)",
+            "source": "crb"
+         },
+         "damage": "7",
+         "critical": 3,
+         "range": "Long",
+         "encumbrance": 4,
+         "special": [
+            {
+               "name": "Arcane Magitek"
+            },
+            {
+               "name": "Auto-Fire",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Divine Pistol",
+         "type": "weapon",
+         "page": 1,
+         "description": [
+            "The Divine Pistol is a certain type of pistol with prayers written on the handles. It comes in a number of different makes and models, the main difference between them being which god the prayers are written to. The gods tend to aid the aim of those who follow them.",
+            "Because someone's faith can increase the effectiveness of this weapon, it gains the {@quality Divine Magitek} weapon quality.",
+            "{@b Author:} Craftidore"
+         ],
+         "price": 1000,
+         "rarity": 6,
+         "skill": {
+            "name": "Ranged (Light)",
+            "source": "crb"
+         },
+         "damage": "5",
+         "critical": 3,
+         "range": "Long",
+         "encumbrance": 3,
+         "special": [
+            {
+               "name": "Divine Magitek"
+            },
+            {
+               "name": "Unwieldy",
+               "value": 2,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Lightbow",
+         "type": "weapon",
+         "page": 1,
+         "description": [
+            "The Lightbow may seem low-tech, but it is a highly innovative invention. It funnels the energy of the user's surroundings into the string of the bow. The tension of the bowstring fluctuates based on the user's need, making it easy to draw the bow while retaining attack power upon release.",
+            "The user can use their {@skill Primal} magical capability to increase the bow's attack power.",
+            "{@b Author:} Craftidore"
+         ],
+         "price": 1000,
+         "rarity": 6,
+         "skill": {
+            "name": "Ranged (Heavy)",
+            "source": "crb"
+         },
+         "damage": "8",
+         "critical": 3,
+         "range": "Long",
+         "encumbrance": 3,
+         "special": [
+            {
+               "name": "Primal Magitek"
+            },
+            {
+               "name": "Unwieldy",
+               "value": 2,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Artificer's Gear",
+         "type": "gear",
+         "page": 1,
+         "description": [
+            "Artificer's gear includes all the tools found in the {@gear artificer's toolkit}, as well as advanced diagnostic tools and an artificial intelligence which helps troubleshoot problems.",
+            "While in possession of artificer's gear, you are considered to be in possession of an {@gear artificer's toolkit}. When using artificer's gear, while making an {@skill Artifice|artificing} check, add {@symbols s} to the result.",
+            "{@b Author:} Craftidore"
+         ],
+         "price": 250,
+         "rarity": 7,
+         "encumbrance": 4
+      },
+      {
+         "name": "Artificer's Toolkit",
+         "type": "gear",
+         "page": 1,
+         "description": [
+            "The artificer's toolkit provides the tools necessary to build, disassemble, repair, or modify just about anything mechanical or Magitek based. A true artificer would not be caught dead without their toolkit.",
+            "The artificer's toolkit is treated as the \"{@rule The Right Tool for the Job|right tool for the job}\" when making {@skill Artifice|artificing} checks (as well as {@skill mechanics} checks, if your setting is using the {@skill Mechanics} skill).",
+            "{@b Author:} Craftidore"
+         ],
+         "price": 75,
+         "rarity": 3,
+         "encumbrance": 2
+      },
+      {
+         "name": "Primal Radar",
+         "type": "gear",
+         "page": 1,
+         "description": [
+            "The primal radar is a wilderness survival tool which links the mind of the user to any surrounding plants and small animals within Medium range. In areas of light vegetation (such as a room with multiple house plants) upgrade the difficulty of {@skill Stealth} checks made against anyone using the primal radar once. In areas of medium vegetation (such as a garden), upgrade the difficulty of {@skill Stealth} checks made against anyone using the primal radar twice. In areas of high vegetation (such as a thick jungle), {@skill Stealth} checks made against someone using the primal radar are \"Impossible\" checks. Even if the user of the primal radar cannot see or hear a character trying to remain unnoticed while in medium range of the user, they must still make a {@skill Stealth} check.",
+            "{@i You may only use the primal radar if you have ranks in the {@skill Primal} skill.}",
+            "{@b Author:} Craftidore"
+         ],
+         "price": 600,
+         "rarity": 7,
+         "encumbrance": 1
+      },
+      {
+         "name": "Portable Barrier Dome",
+         "type": "gear",
+         "page": 2,
+         "description": [
+            "Developed by combining magic and technology, Portable Barrier Domes are created by casting a variation of a {@spell Barrier} spell on a small containment device. The containment device is then imbued with a stabilizing spell to create a lasting effect. The user may take a maneuver to pull out and/or activate the PBD. This will create a dome shaped force field around themselves (engaged range) and protect them from ranged attacks.",
+            "All ranged attacks against the character with the device deal damage to the dome instead. The dome has a Wound Threshold of 9, which fully regenerates after 1 day. If the dome exceeds its threshold, it is destroyed and the device overheats, destroying it one step.",
+            "The PBD cannot prevent pure magic (such as {@spell Attack|attack spells}) and can be affected by anti magic spells and devices (such as {@spell Dispel}), as well as being instantly deactivated (and destroyed 1 step) by EMP blasts.",
+            "{@b Author:} Silvak the Judge"
+         ],
+         "price": 200,
+         "rarity": 6,
+         "encumbrance": 0
+      },
+      {
+         "name": "Blunder Knucks",
+         "type": "weapon",
+         "page": 23,
+         "description": [
+            "This device is a finger-less half glove with a rigid strip of conductive material across the knuckles and an embedded micro-battery in the palm. A close-quarters weapon, blunder knucks are designed to disable foes and their armor.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 150,
+         "rarity": 3,
+         "skill": {
+            "name": "Brawl",
+            "source": "crb"
+         },
+         "damage": "+2",
+         "critical": 4,
+         "range": "Engaged",
+         "encumbrance": 1,
+         "special": [
+            {
+               "name": "Sunder",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Boarding Mace",
+         "type": "weapon",
+         "page": 23,
+         "description": [
+            "In tight compartments, surrounded by vital machinery and piping, {@gear Coil Gun|coil guns} and flare lenses quickly lead to catastrophic damage to ship systems. A well-balanced boarding mace, with its conductive head and hefty batteries, is the preferred weapon of many a deckhand.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 300,
+         "rarity": 4,
+         "skill": {
+            "name": "Melee",
+            "source": "crb"
+         },
+         "damage": "+3",
+         "critical": 4,
+         "range": "Engaged",
+         "encumbrance": 2,
+         "special": [
+            {
+               "name": "Stun",
+               "value": 3,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Burner",
+         "type": "weapon",
+         "page": 23,
+         "description": [
+            "This hand weapon emits a stream of agitated particles that quickly ignites light materials as easily as it does skin and flesh.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 300,
+         "rarity": 5,
+         "skill": {
+            "name": "Ranged (Light)",
+            "source": "crb"
+         },
+         "damage": "6",
+         "critical": 4,
+         "range": "Short",
+         "encumbrance": 1,
+         "special": [
+            {
+               "name": "Burn",
+               "value": 2,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Molecular Thread",
+         "type": "weapon",
+         "page": 23,
+         "description": [
+            "Consisting only of a thin, molded grip that can extend a molecule-thin line of thread at the press of a button, this weapon is a common self-defense device.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 400,
+         "rarity": 6,
+         "skill": {
+            "name": "Melee",
+            "source": "crb"
+         },
+         "damage": "+2",
+         "critical": 2,
+         "range": "Engaged",
+         "encumbrance": 1,
+         "special": [
+            {
+               "name": "Breach",
+               "value": 1,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Coil Gun",
+         "type": "weapon",
+         "page": 23,
+         "description": [
+            "A heavy weapon consisting of a thick battery pack and a long barrel encircled by a spiraling magnetic accelerator, a coil gun packs a big punch.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 450,
+         "rarity": 6,
+         "skill": {
+            "name": "Ranged (Heavy)",
+            "source": "crb"
+         },
+         "damage": "7",
+         "critical": 2,
+         "range": "Medium",
+         "encumbrance": 4,
+         "special": [
+            {
+               "name": "Knockdown",
+               "source": "crb"
+            },
+            {
+               "name": "Pierce",
+               "value": 2,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Flare Pistol",
+         "type": "weapon",
+         "page": 24,
+         "description": [
+            "A flare pistol is a lensed weapon that emits a concentrated laser beam, ripping apart molecules in a thin line of destruction.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 450,
+         "rarity": 7,
+         "skill": {
+            "name": "Ranged (Light)",
+            "source": "crb"
+         },
+         "damage": "6",
+         "critical": 2,
+         "range": "Medium",
+         "encumbrance": 2,
+         "special": [
+            {
+               "name": "Pierce",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Vicious",
+               "value": 2,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Flare Rifle",
+         "type": "weapon",
+         "page": 24,
+         "description": [
+            "A larger, more powerful version of a {@gear flare pistol} that requires two hands to operate.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 1000,
+         "rarity": 8,
+         "skill": {
+            "name": "Ranged (Heavy)",
+            "source": "crb"
+         },
+         "damage": "9",
+         "critical": 2,
+         "range": "Long",
+         "encumbrance": 3,
+         "special": [
+            {
+               "name": "Pierce",
+               "value": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Vicious",
+               "value": 3,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Stinger",
+         "type": "weapon",
+         "page": 24,
+         "description": [
+            "A compact and easily concealed hand weapon that fires jacketed darts, this is a popular option for self-protection.",
+            "Add {@dice setback|2} to skill checks made to find this item when concealed.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 350,
+         "rarity": 4,
+         "skill": {
+            "name": "Ranged (Light)",
+            "source": "crb"
+         },
+         "damage": "4",
+         "critical": 3,
+         "range": "Short",
+         "encumbrance": 1,
+         "special": [
+            {
+               "name": "Pierce",
+               "value": 2,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Stun Ray",
+         "type": "weapon",
+         "page": 24,
+         "description": [
+            "This wide-nosed hand weapon emits a pulse of disruptive energy, playing havoc with the electromagnetic systems of a living being. Stun rays only cause strain damage.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 350,
+         "rarity": 4,
+         "skill": {
+            "name": "Ranged (Light)",
+            "source": "crb"
+         },
+         "damage": "6",
+         "critical": 5,
+         "range": "Short",
+         "encumbrance": 2,
+         "special": [
+            {
+               "name": "Blast",
+               "value": 5,
+               "source": "crb"
+            },
+            {
+               "name": "Stun Damage",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Armored Tunic",
+         "type": "armor",
+         "page": 24,
+         "description": [
+            "A fitted tunic with plates of impact resistant and energy dispersing material woven into the fabric.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 200,
+         "rarity": 3,
+         "defense": 0,
+         "soak": "+2",
+         "encumbrance": 2
+      },
+      {
+         "name": "Combat Armor",
+         "type": "armor",
+         "page": 24,
+         "description": [
+            "Consisting of thick plates of hardened material layered over an under-suit of protective mesh, this armor also has a self-contained pressure suit with two hours of breathable air when sealed. Sealing the combat armor requires a maneuver.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 2000,
+         "rarity": 8,
+         "defense": 1,
+         "soak": "+2",
+         "encumbrance": 5
+      },
+      {
+         "name": "Deckhand's Belt",
+         "type": "armor",
+         "page": 24,
+         "description": [
+            "A common apparatus, this thick belt has a compact battery and bands of fibers that project a protective, energetic cushion when the wearer is struck.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 150,
+         "rarity": 4,
+         "defense": 1,
+         "soak": "+1",
+         "encumbrance": 1
+      },
+      {
+         "name": "Repulsion Field Generator",
+         "type": "armor",
+         "page": 24,
+         "description": [
+            "This heavy, fist-sized device produces a field of deflective energy around its user.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 1500,
+         "rarity": 6,
+         "defense": 3,
+         "soak": "+0",
+         "encumbrance": 2
+      },
+      {
+         "name": "Adrenaline Hypo",
+         "type": "gear",
+         "page": 24,
+         "description": [
+            "This small, single use syringe works exactly like a {@gear Painkiller} (Page 95 of the {@title Genesys Core Rulebook}) but restoring Strain rather than Wounds.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 50,
+         "rarity": 4,
+         "encumbrance": 0
+      },
+      {
+         "name": "Field Meter",
+         "type": "gear",
+         "page": 24,
+         "description": [
+            "This palm-sized device can detect radiation levels, electromagnetic currents, and even gravimetric variation.",
+            "Add {@dice boost} to {@skill Perception} and {@skill Vigilance} checks made while using a field meter. In addition, the GM may determine that there are narrative benefits to using this device.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 200,
+         "rarity": 6,
+         "encumbrance": 1
+      },
+      {
+         "name": "Hand Radio",
+         "type": "gear",
+         "page": 24,
+         "description": [
+            "A common communication device with a range of up to orbital scale, though requiring line of sight (while ignoring minor obstructions like buildings or station walls).",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 150,
+         "rarity": 4,
+         "encumbrance": 1
+      },
+      {
+         "name": "Heel Rockets",
+         "type": "gear",
+         "page": 24,
+         "description": [
+            "When activated, these small rockets allow the user to fly or hover for the duration of one encounter, or ten minutes.",
+            "After use, the heel rockets' fuel cell must be recharged. This can be done at any shop that sells them, or at a fuel station, for 25 Sols.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 350,
+         "rarity": 6,
+         "encumbrance": 2
+      },
+      {
+         "name": "Medical Case",
+         "type": "gear",
+         "page": 25,
+         "description": [
+            "Necessary to perform {@skill Medicine} checks to heal characters, the medical case also provides the benefit of either one {@gear palliative tonic} or {@gear adrenaline hypo} per encounter.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 400,
+         "rarity": 4,
+         "encumbrance": 3
+      },
+      {
+         "name": "Palliative Tonic",
+         "type": "gear",
+         "page": 25,
+         "description": [
+            "This single use vial, when imbibed, works exactly like a {@gear Painkiller} (Page 95 of {@title Genesys Core Rulebook}).",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 25,
+         "rarity": 3,
+         "encumbrance": 0
+      },
+      {
+         "name": "Punch Card Machine",
+         "type": "gear",
+         "page": 25,
+         "description": [
+            "This device is required to perform {@skill Computers} checks to interact with computer terminals.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 400,
+         "rarity": 5,
+         "encumbrance": 2
+      },
+      {
+         "name": "Slide Rule",
+         "type": "gear",
+         "page": 25,
+         "description": [
+            "A trusty slide rule greatly assists in any calculation.",
+            "Add {@dice boost} to any {@skill Computers} or {@skill Astrocartography} checks made while using a slide rule.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 100,
+         "rarity": 6,
+         "encumbrance": 1
+      },
+      {
+         "name": "Standard Tool Kit",
+         "type": "gear",
+         "page": 25,
+         "description": [
+            "Required to perform {@skill Mechanics} checks to repair mechanical devices or {@archetype Robot} characters.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 275,
+         "rarity": 4,
+         "encumbrance": 4
+      },
+      {
+         "name": "Lab Coat",
+         "type": "gear",
+         "page": 25,
+         "description": [
+            "In addition to lending an air of authority, lab coats also possess useful pockets and pouches of all sizes.",
+            "Add {@dice boost} to any {@skill Leadership} or {@skill Negotiation} checks made while wearing a lab coat and increase the {@rule encumbrance threshold} of the wearer by 2.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 150,
+         "rarity": 5,
+         "encumbrance": -2
+      },
+      {
+         "name": "Ship's Suit",
+         "type": "gear",
+         "page": 25,
+         "description": [
+            "The common attire of ship hands everywhere, ship's suits are usually marked with the colors and crests of the ship that employs the wearer.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 75,
+         "rarity": 3,
+         "encumbrance": 2
+      },
+      {
+         "name": "Ship's Suit (Tailored)",
+         "type": "gear",
+         "page": 25,
+         "description": [
+            "Officers tend to wear better made and more expensive versions of the common {@gear ship's suit}.",
+            "Add {@dice boost} to all social checks made while wearing a tailored ship's suit.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 200,
+         "rarity": 5,
+         "encumbrance": 2
+      },
+      {
+         "name": "Space Suit",
+         "type": "gear",
+         "page": 25,
+         "description": [
+            "Space suits are needed for extra-vehicular activities and when exploring environments that lack a breathable atmosphere. Modern space suits are sleek and form fitting, while older models are quite bulky and stiff. For an older space suit, reduce the cost to 300 Sols and add {@dice setback} to all {@skill Athletics} and {@skill Coordination} checks made while wearing the suit.",
+            "Once sealed, which takes a maneuver, the suit provides 3 hours of breathable air.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "price": 500,
+         "rarity": 7,
+         "encumbrance": 3
+      }
+   ],
+   "rule": [
+      {
+         "name": "Magitek Crafting Rules",
+         "page": 3,
+         "type": "gear",
+         "description": [
+            "A weapon may be granted the {@quality Primal Magitek}, {@quality Divine Magitek}, or {@quality Arcane Magitek} item qualities provided the weapon does not already possess a Magitek item quality. In order to do this, a character must succeed at a {@difficulty hard|Artifice}. If successful, decrease the weapon's base damage by one and give it one Magitek item quality. The upgrade process requires 150 credits/dollars/generic currency worth of materials and 3 hours of work. The average price to have someone else upgrade it is 300 credits/dollars/generic currency.",
+            "{@b Author:} Craftidore"
+         ]
+      }
+   ],
+   "quality": [
+      {
+         "name": "Primal Magitek",
+         "page": 2,
+         "activation": "passive",
+         "gearType": "weapon",
+         "description": [
+            "When making a combat check with this weapon, add {@symbols a} per rank in {@skill Primal}.",
+            "If the user has no ranks in {@skill Primal}, add {@dice setback|2} to the check.",
+            "The Primal Magitek weapon quality should only apply to weapons which allow the user to increase their effectiveness by channeling their magic into them. Weapons which use magical technology but are operated the same regardless of magical affinity should not possess this weapon quality.",
+            "{@b Author:} Craftidore"
+         ]
+      },
+      {
+         "name": "Divine Magitek",
+         "page": 2,
+         "activation": "passive",
+         "gearType": "weapon",
+         "description": [
+            "When making a combat check with this weapon, add {@dice boost} per rank in {@skill Divine}.",
+            "If the user has no ranks in {@skill Divine}, add {@dice setback|2} to the check.",
+            "The Divine Magitek weapon quality should only apply to weapons which allow the user to increase their effectiveness by channeling their magic into them. Weapons which use magical technology but are operated the same regardless of magical affinity should not possess this weapon quality.",
+            "{@b Author:} Craftidore"
+         ]
+      },
+      {
+         "name": "Arcane Magitek",
+         "page": 2,
+         "activation": "passive",
+         "gearType": "weapon",
+         "description": [
+            "When a successful combat check with this weapon is made, the user treats the base damage as the normal base damage plus their ranks in {@skill Arcana}.",
+            "If the user has no ranks in {@skill Arcana}, add {@dice setback|2} to the check.",
+            "The Arcane Magitek weapon quality should only apply to weapons which allow the user to increase their effectiveness by channeling their magic into them. Weapons which use magical technology but are operated the same regardless of magical affinity should not possess this weapon quality.",
+            "{@b Author:} Craftidore"
+         ]
+      }
+   ],
+   "skill": [
+      {
+         "name": "Artifice",
+         "page": 3,
+         "characteristic": "Intellect",
+         "category": "general",
+         "description": [
+            "The Artifice skill allows your character to build, disassemble, repair, or modify anything which works via magical technology (regardless of whether or not such items have a Magitek item quality). It can be used to fix the engines on a magical airship or increase the range of the telepathically linked radios.",
+            "If your Space Fantasy game has no prevalent mundane technology, only magical technology, use this skill in place of {@skill Mechanics}. If both magical technology and mundane technology are prevalent then use both Artifice and {@skill Mechanics}, but (with your GM's permission) when you select a career for your character with the {@skill Mechanics} skill, you may choose to make the Artifice skill a career skill instead.",
+            "{@b Author:} Craftidore"
+         ],
+         "shouldUse": [
+            "Your character needs to repair a damaged weapon, vehicle, or other piece of equipment which uses magical technology.",
+            "Your character wants to sabotage something which uses magical technology.",
+            "Your character wishes to add the {@quality Primal Magitek}, {@quality Divine Magitek}, or {@quality Arcane Magitek} item qualities to a weapon (see {@rule Magitek Crafting Rules})."
+         ],
+         "shouldNotUse": [
+            "You are trying to repair or work with mundane technology (use {@skill Mechanics}).",
+            "You are trying to cast a spell or power something of magical technology with magic (use {@skill Arcana}, {@skill Divine}, or {@skill Primal}).",
+            "You are trying to operate magical technology which doesn't require knowledge of its inner workings to use (like how people use phones without knowing how they work on the inside) (use {@skill Operating})."
+         ]
+      }
+   ],
+   "career": [
+      {
+         "name": "Doc",
+         "page": 21,
+         "skills": [
+            {
+               "name": "Charm",
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "source": "crb"
+            },
+            {
+               "name": "Leadership",
+               "source": "crb"
+            },
+            {
+               "name": "Medicine",
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "source": "crb"
+            },
+            {
+               "name": "Knowledge",
+               "source": "crb"
+            },
+            {
+               "name": "Resilience",
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "Sooner or later, everyone needs to see the Doc.",
+            "A Doc has the following skills as career skills: {@skill Charm}, {@skill Cool}, {@skill Discipline}, {@skill Leadership}, {@skill Medicine}, {@skill Perception}, {@skill Knowledge}, {@skill Resilience}. A Doc chooses four of these career skills and gains one rank in each before spending experience (XP).",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "startingGear": {
+            "description": [
+               "Rather than spending currency during character creation, players with Doc characters may instead choose to start with the following gear:"
+            ],
+            "gear": [
+               "{@gear Hand Radio}",
+               "{@gear Field Meter}",
+               "{@gear Medical Case}",
+               "{@gear Ship's Suit (Tailored)|Tailored Ship's Suit} or {@gear Lab Coat}",
+               "1d100 Sols"
+            ],
+            "selections": [
+               {
+                  "name": "Hand Radio"
+               },
+               {
+                  "name": "Field Meter"
+               },
+               {
+                  "name": "Medical Case"
+               },
+               [
+                  [
+                     {
+                        "name": "Ship's Suit (Tailored)"
+                     }
+                  ],
+                  [
+                     {
+                        "name": "Lab Coat"
+                     }
+                  ]
+               ],
+               {
+                  "name": "1d100 Sols",
+                  "money": true,
+                  "formula": "1d100"
+               }
+            ]
+         }
+      },
+      {
+         "name": "Egghead",
+         "page": 22,
+         "skills": [
+            {
+               "name": "Astrocartography",
+               "source": "crb"
+            },
+            {
+               "name": "Computers",
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "source": "crb"
+            },
+            {
+               "name": "Gunnery",
+               "source": "crb"
+            },
+            {
+               "name": "Knowledge",
+               "source": "crb"
+            },
+            {
+               "name": "Negotiation",
+               "source": "crb"
+            },
+            {
+               "name": "Operating",
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "From the calculation chamber to the fusion control deck, every good ship needs an Egghead.",
+            "An Egghead has the following skills as career skills: {@skill Astrocartography}, {@skill Computers}, {@skill Discipline}, {@skill Gunnery}, {@skill Knowledge}, {@skill Negotiation}, {@skill Operating}, {@skill Perception}. An Egghead chooses four of these career skills and gains one rank in each before spending experience (XP).",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "startingGear": {
+            "description": [
+               "Rather than spending currency during character creation, players with Egghead characters may instead choose to start with the following gear:"
+            ],
+            "gear": [
+               "{@gear Hand Radio}",
+               "{@gear Slide Rule}",
+               "{@gear Field Meter}",
+               "{@gear Ship's Suit (Tailored)|Tailored Ship's Suit} or {@gear Lab Coat}",
+               "{@gear Punch Card Machine}",
+               "1d100 Sols"
+            ],
+            "selections": [
+               {
+                  "name": "Hand Radio"
+               },
+               {
+                  "name": "Slide Rule"
+               },
+               {
+                  "name": "Field Meter"
+               },
+               [
+                  [
+                     {
+                        "name": "Ship's Suit (Tailored)"
+                     }
+                  ],
+                  [
+                     {
+                        "name": "Lab Coat"
+                     }
+                  ]
+               ],
+               {
+                  "name": "Punch Card Machine"
+               },
+               {
+                  "name": "1d100 Sols",
+                  "money": true,
+                  "formula": "1d100"
+               }
+            ]
+         }
+      },
+      {
+         "name": "Grease Monkey",
+         "page": 22,
+         "skills": [
+            {
+               "name": "Brawl",
+               "source": "crb"
+            },
+            {
+               "name": "Coordination",
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "source": "crb"
+            },
+            {
+               "name": "Mechanics",
+               "source": "crb"
+            },
+            {
+               "name": "Negotiation",
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "source": "crb"
+            },
+            {
+               "name": "Piloting",
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "When it is really broken, call a Grease Monkey to fix it.",
+            "A Grease Monkey has the following skills as career skills: {@skill Brawl}, {@skill Coordination}, {@skill Discipline}, {@skill Mechanics}, {@skill Negotiation}, {@skill Perception}, {@skill Piloting}, {@skill Vigilance}. A Grease Monkey chooses four of these career skills and gains one rank in each before spending experience (XP).",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "startingGear": {
+            "description": [
+               "Rather than spending currency during character creation, players with Grease Monkey characters may instead choose to start with the following gear:"
+            ],
+            "gear": [
+               "{@gear Hand Radio}",
+               "{@gear Standard Tool Kit}",
+               "{@gear Blunder Knucks}",
+               "2 {@gear Palliative Tonic|Palliative Tonics} and 1 {@gear Adrenaline Hypo}",
+               "{@gear Ship's Suit}",
+               "{@gear Deckhand's Belt}",
+               "1d100 Sols"
+            ],
+            "selections": [
+               {
+                  "name": "Hand Radio"
+               },
+               {
+                  "name": "Standard Tool Kit"
+               },
+               {
+                  "name": "Blunder Knucks"
+               },
+               {
+                  "name": "Palliative Tonic",
+                  "quantity": 2
+               },
+               {
+                  "name": "Adrenaline Hypo"
+               },
+               {
+                  "name": "Ship's Suit"
+               },
+               {
+                  "name": "Deckhand's Belt"
+               },
+               {
+                  "name": "1d100 Sols",
+                  "money": true,
+                  "formula": "1d100"
+               }
+            ]
+         }
+      },
+      {
+         "name": "Jack of All Trades",
+         "page": 22,
+         "skills": [
+            {
+               "name": "Mechanics",
+               "source": "crb"
+            },
+            {
+               "name": "Medicine",
+               "source": "crb"
+            },
+            {
+               "name": "Melee",
+               "source": "crb"
+            },
+            {
+               "name": "Negotiation",
+               "source": "crb"
+            },
+            {
+               "name": "Piloting",
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "source": "crb"
+            },
+            {
+               "name": "Skulduggery",
+               "source": "crb"
+            },
+            {
+               "name": "Streetwise",
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "Often a second or third mate, a Jack of All Trades is essential crew.",
+            "A Jack of All Trades has the following skills as career skills: {@skill Mechanics}, {@skill Medicine}, {@skill Melee}, {@skill Negotiation}, {@skill Piloting}, {@skill Ranged (Light)}, {@skill Skulduggery}, {@skill Streetwise}. A Jack of All Trades chooses four of these career skills and gains one rank in each before spending experience (XP).",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "startingGear": {
+            "description": [
+               "Rather than spending currency during character creation, players with Jack of All Trades characters may instead choose to start with the following gear:"
+            ],
+            "gear": [
+               "{@gear Hand Radio}",
+               "{@gear Boarding Mace}",
+               "{@gear Stinger}",
+               "{@gear Ship's Suit (Tailored)|Tailored Ship's Suit}",
+               "{@gear Deckhand's Belt}",
+               "1d100 Sols"
+            ],
+            "selections": [
+               {
+                  "name": "Hand Radio"
+               },
+               {
+                  "name": "Boarding Mace"
+               },
+               {
+                  "name": "Stinger"
+               },
+               {
+                  "name": "Ship's Suit (Tailored)"
+               },
+               {
+                  "name": "Deckhand's Belt"
+               },
+               {
+                  "name": "1d100 Sols",
+                  "money": true,
+                  "formula": "1d100"
+               }
+            ]
+         }
+      },
+      {
+         "name": "Muscle",
+         "page": 22,
+         "skills": [
+            {
+               "name": "Brawl",
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "source": "crb"
+            },
+            {
+               "name": "Coercion",
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "source": "crb"
+            },
+            {
+               "name": "Melee",
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Heavy)",
+               "source": "crb"
+            },
+            {
+               "name": "Streetwise",
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "When push comes to shove, the Muscle does the shoving.",
+            "The Muscle has the following skills as career skills: {@skill Brawl}, {@skill Cool}, {@skill Coercion}, {@skill Discipline}, {@skill Melee}, {@skill Ranged (Heavy)}, {@skill Streetwise}, {@skill Vigilance}. The Muscle chooses four of these career skills and gains one rank in each before spending experience (XP).",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "startingGear": {
+            "description": [
+               "Rather than spending currency during character creation, players with Muscle characters may instead choose to start with the following gear:"
+            ],
+            "gear": [
+               "{@gear Hand Radio}",
+               "{@gear Coil Gun} or {@gear Blunder Knucks} and {@gear Boarding Mace}",
+               "2 {@gear Palliative Tonic|Palliative Tonics} and 1 {@gear Adrenaline Hypo}",
+               "{@gear Armored Tunic}",
+               "{@gear Ship's Suit}",
+               "1d100 Sols"
+            ],
+            "selections": [
+               {
+                  "name": "Hand Radio"
+               },
+               [
+                  [
+                     {
+                        "name": "Coil Gun"
+                     }
+                  ],
+                  [
+                     {
+                        "name": "Blunder Knucks"
+                     },
+                     {
+                        "name": "Boarding Mace"
+                     }
+                  ]
+               ],
+               {
+                  "name": "Palliative Tonic",
+                  "quantity": 2
+               },
+               {
+                  "name": "Adrenaline Hypo"
+               },
+               {
+                  "name": "Armored Tunic"
+               },
+               {
+                  "name": "Ship's Suit"
+               },
+               {
+                  "name": "1d100 Sols",
+                  "money": true,
+                  "formula": "1d100"
+               }
+            ]
+         }
+      },
+      {
+         "name": "Rocket Jockey",
+         "page": 22,
+         "skills": [
+            {
+               "name": "Astrocartography",
+               "source": "crb"
+            },
+            {
+               "name": "Charm",
+               "source": "crb"
+            },
+            {
+               "name": "Coordination",
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "source": "crb"
+            },
+            {
+               "name": "Gunnery",
+               "source": "crb"
+            },
+            {
+               "name": "Operating",
+               "source": "crb"
+            },
+            {
+               "name": "Piloting",
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "Only a certain type of person has the mixture of talent and raw confidence necessary to be a Rocket Jockey.",
+            "A Rocket Jockey has the following skills as career skills: {@skill Astrocartography}, {@skill Charm}, {@skill Coordination}, {@skill Cool}, {@skill Discipline}, {@skill Gunnery}, {@skill Operating}, {@skill Piloting}. A Rocket Jockey chooses four of these career skills and gains one rank in each before spending experience (XP).",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "startingGear": {
+            "description": [
+               "Rather than spending currency during character creation, players with Rocket Jockey characters may instead choose to start with the following gear:"
+            ],
+            "gear": [
+               "{@gear Hand Radio}",
+               "{@gear Slide Rule}",
+               "{@gear Stinger}",
+               "{@gear Ship's Suit (Tailored)|Tailored Ship's Suit}",
+               "{@gear Deckhand's Belt}",
+               "1d100 Sols"
+            ],
+            "selections": [
+               {
+                  "name": "Hand Radio"
+               },
+               {
+                  "name": "Slide Rule"
+               },
+               {
+                  "name": "Stinger"
+               },
+               {
+                  "name": "Ship's Suit (Tailored)"
+               },
+               {
+                  "name": "Deckhand's Belt"
+               },
+               {
+                  "name": "1d100 Sols",
+                  "money": true,
+                  "formula": "1d100"
+               }
+            ]
+         }
+      },
+      {
+         "name": "Skipper",
+         "page": 23,
+         "skills": [
+            {
+               "name": "Coercion",
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "source": "crb"
+            },
+            {
+               "name": "Gunnery",
+               "source": "crb"
+            },
+            {
+               "name": "Leadership",
+               "source": "crb"
+            },
+            {
+               "name": "Operating",
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "source": "crb"
+            },
+            {
+               "name": "Resilience",
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "The Skipper is where the buck stops, and a good one earns their crew's unquestionable loyalty.",
+            "A Skipper has the following skills as career skills: {@skill Coercion}, {@skill Discipline}, {@skill Gunnery}, {@skill Leadership}, {@skill Operating}, {@skill Perception}, {@skill Ranged (Light)}, {@skill Resilience}. A Skipper chooses four of these career skills and gains one rank in each before spending experience (XP).",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "startingGear": {
+            "description": [
+               "Rather than spending currency during character creation, players with Skipper characters may instead choose to start with the following gear:"
+            ],
+            "gear": [
+               "{@gear Hand Radio}",
+               "{@gear Stinger} or {@gear Burner}",
+               "2 {@gear Palliative Tonic|Palliative Tonics} and 1 {@gear Adrenaline Hypo}",
+               "{@gear Ship's Suit (Tailored)|Tailored Ship's Suit}",
+               "{@gear Armored Tunic} or {@gear Deckhand's Belt}",
+               "1d100 Sols"
+            ],
+            "selections": [
+               {
+                  "name": "Hand Radio"
+               },
+               [
+                  [
+                     {
+                        "name": "Stinger"
+                     }
+                  ],
+                  [
+                     {
+                        "name": "Burner"
+                     }
+                  ]
+               ],
+               {
+                  "name": "Palliative Tonic",
+                  "quantity": 2
+               },
+               {
+                  "name": "Adrenaline Hypo"
+               },
+               {
+                  "name": "Ship's Suit (Tailored)"
+               },
+               [
+                  [
+                     {
+                        "name": "Armored Tunic"
+                     }
+                  ],
+                  [
+                     {
+                        "name": "Deckhand's Belt"
+                     }
+                  ]
+               ],
+               {
+                  "name": "1d100 Sols",
+                  "money": true,
+                  "formula": "1d100"
+               }
+            ]
+         }
+      },
+      {
+         "name": "Smooth Talker",
+         "page": 23,
+         "skills": [
+            {
+               "name": "Charm",
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "source": "crb"
+            },
+            {
+               "name": "Deception",
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "source": "crb"
+            },
+            {
+               "name": "Negotiation",
+               "source": "crb"
+            },
+            {
+               "name": "Streetwise",
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "source": "crb"
+            }
+         ],
+         "description": [
+            "A ship's purser or ship's agent is almost always a Smooth Talker, using their innate charm to forward the crew's interest.",
+            "A Smooth Talker has the following skills as career skills: {@skill Charm}, {@skill Cool}, {@skill Deception}, {@skill Discipline}, {@skill Negotiation}, {@skill Streetwise}, {@skill Vigilance}. A Smooth Talker chooses four of these career skills and gains one rank in each before spending experience (XP).",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "startingGear": {
+            "description": [
+               "Rather than spending currency during character creation, players with Smooth Talker characters may instead choose to start with the following gear:"
+            ],
+            "gear": [
+               "{@gear Hand Radio}",
+               "{@gear Stun Ray} or {@gear Molecular Thread}",
+               "2 {@gear Palliative Tonic|Palliative Tonics} and 1 {@gear Adrenaline Hypo}",
+               "{@gear Ship's Suit (Tailored)|Tailored Ship's Suit}",
+               "{@gear Deckhand's Belt}",
+               "2d100 Sols"
+            ],
+            "selections": [
+               {
+                  "name": "Hand Radio"
+               },
+               [
+                  [
+                     {
+                        "name": "Stun Ray"
+                     }
+                  ],
+                  [
+                     {
+                        "name": "Molecular Thread"
+                     }
+                  ]
+               ],
+               {
+                  "name": "Palliative Tonic",
+                  "quantity": 2
+               },
+               {
+                  "name": "Adrenaline Hypo"
+               },
+               {
+                  "name": "Ship's Suit (Tailored)"
+               },
+               {
+                  "name": "Deckhand's Belt"
+               },
+               {
+                  "name": "2d100 Sols",
+                  "money": true,
+                  "formula": "2d100"
+               }
+            ]
+         }
+      }
+   ],
+   "archetype": [
+      {
+         "name": "Irongall",
+         "page": 4,
+         "characteristics": {
+            "brawn": 3,
+            "agility": 1,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 2
+         },
+         "wt": 11,
+         "st": 10,
+         "xp": 90,
+         "skills": {
+            "skills": [
+               "Resilience"
+            ],
+            "ranksTotal": 1,
+            "ranksEach": 1,
+            "description": [
+               "Irongalls begin with one rank in {@skill Resilience}. You still cannot train their {@skill Resilience} above rank 2 during character creation."
+            ],
+            "choice": false
+         },
+         "abilities": [
+            "Alloyed Galls",
+            "Photosynthesis",
+            "Lumbering"
+         ],
+         "description": [
+            "During their training and cultivation, the Irongalls endure decades of painful growth of generations of ironwasp larvae. The galls the larvae leave behind fortify the Irongalls with a sturdy bark that fears neither axe nor fire nor laser pistol. Irongalls patrol the lands of the Consortium and protect their slender brethren.",
+            "{@b Author:} Flame112"
+         ]
+      },
+      {
+         "name": "Pettler",
+         "page": 4,
+         "characteristics": {
+            "brawn": 1,
+            "agility": 2,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 3
+         },
+         "wt": 8,
+         "st": 12,
+         "xp": 90,
+         "skills": {
+            "skills": [
+               "Negotiation"
+            ],
+            "ranksTotal": 1,
+            "ranksEach": 1,
+            "description": [
+               "Pettlers begin with one rank in {@skill Negotiation}. You still cannot train their {@skill Negotiation} above rank 2 during character creation."
+            ],
+            "choice": false
+         },
+         "abilities": [
+            "Ambrosial Aroma",
+            "Photosynthesis"
+         ],
+         "description": [
+            "With careful pruning, a Pettler's incredible floral arrangements will attract outsiders to their even more incredible deals. A relatable face always seems to set the outsiders at ease, and the mind-altering pheromones are just an added bonus. Pettlers can typically be found on trade and diplomacy missions to secure wealth and fertile soil for the Consortium.",
+            "{@b Author:} Flame112"
+         ]
+      },
+      {
+         "name": "Carniflor",
+         "page": 4,
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 2,
+            "cunning": 3,
+            "willpower": 2,
+            "presence": 1
+         },
+         "wt": 10,
+         "st": 10,
+         "xp": 90,
+         "skills": {
+            "skills": [
+               "Stealth"
+            ],
+            "ranksTotal": 1,
+            "ranksEach": 1,
+            "description": [
+               "Carniflors begin with one rank in {@skill Stealth}. You still cannot train their {@skill Stealth} above rank 2 during character creation."
+            ],
+            "choice": false
+         },
+         "abilities": [
+            "Barbed Vines",
+            "Digestive Enzymes"
+         ],
+         "description": [
+            "Divergent evolution has turned the Carniflors away from blessed sunlight, towards a more expeditious (and bloody) source of nutrition. They sometimes have difficulty distinguishing between friend-meat and meat-meat. Carniflors are typically sent on missions to stalk and hunt the enemies of the Consortium in whatever dark corners they hide.",
+            "{@b Author:} Flame112"
+         ]
+      },
+      {
+         "name": "Fibian",
+         "page": 5,
+         "characteristics": {
+            "brawn": 2,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 1,
+            "presence": 3
+         },
+         "wt": 10,
+         "st": 10,
+         "xp": 100,
+         "skills": {
+            "skills": [
+               "Mechanics"
+            ],
+            "ranksTotal": 1,
+            "ranksEach": 1,
+            "description": [
+               "Fibians begin with one (1) rank in {@skill Mechanics}. They still cannot train {@skill Mechanics} above rank 2 during character creation."
+            ],
+            "choice": false
+         },
+         "abilities": [
+            "Amphibious",
+            "Leap",
+            "Swamp Dweller"
+         ],
+         "description": [
+            "Fibians come from a swampy world on the outer edge of civilized space. Like many humanoids, their history is marred by warfare, but as they became a space-faring people, their planet was united. They are an industrious species and almost all Fibians take an active interest in learning how things work from a very early age.",
+            "{@b Appearance:} Fibians are strong, frog-like humanoids standing roughly the same height as most humans. They have bald, frog-like heads and very wrinkly necks. Their hands and feet are webbed, and most Fibians spend more time out of water than in it.",
+            "{@b Society:} Throughout most of their history, Fibians were tribal. After the great unification of the tribes, their society started to more closely resemble that of other interstellar worlds. Still, honor is a very important quality to the Fibians, and they are known for their loyalty and honesty. They are often mechanics, pilots, or other careers involving machinery, as such workings are often revered as almost divine in nature.",
+            "{@b Author:} Chris Markham"
+         ]
+      }
+   ],
+   "archetypeAbility": [
+      {
+         "name": "Alloyed Galls",
+         "description": [
+            "Your character's soak is increased by one.",
+            "{@b Author:} Flame112"
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "stat modifier",
+            "defensive"
+         ]
+      },
+      {
+         "name": "Photosynthesis",
+         "description": [
+            "Spending six (6) hours in abundant light with adequate water allows you to produce enough nutrients to survive for a week.",
+            "{@b Author:} Flame112"
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "narrative"
+         ]
+      },
+      {
+         "name": "Lumbering",
+         "description": [
+            "When you suffer strain to perform a second maneuver, spend one (1) additional strain.",
+            "{@b Author:} Flame112"
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "passive",
+            "weakness",
+            "movement"
+         ]
+      },
+      {
+         "name": "Ambrosial Aroma",
+         "description": [
+            "Add {@symbols a} to {@skill Charm}, {@skill Negotiation}, and {@skill Leadership} checks targeting creatures within Short range who can smell.",
+            "{@b Author:} Flame112"
+         ],
+         "tags": [
+            "social",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Barbed Vines",
+         "description": [
+            "Your character adds the quality {@quality Ensnare|Ensnare 1} to their {@skill Melee} and {@skill Brawl} combat checks.",
+            "{@b Author:} Flame112"
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "item quality",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Digestive Enzymes",
+         "description": [
+            "Once per encounter, a Carniflor character may use an action to dissolve and absorb the nutrients from an {@rule incapacitated} organic creature. If they do, they may heal any combination of wounds or strain totalling the value of the consumed creature's silhouette.",
+            "{@b Author:} Flame112"
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "active",
+            "action",
+            "encounter",
+            "recovery"
+         ]
+      },
+      {
+         "name": "Amphibious",
+         "description": [
+            "Fibians are able to breathe water as well as air, and do not treat water as {@rule Difficult and Impassable Terrain|difficult terrain}.",
+            "{@b Author:} Chris Markham"
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "movement"
+         ]
+      },
+      {
+         "name": "Leap",
+         "description": [
+            "Fibians may spend a maneuver to horizontally jump from up to Medium range to engage an opponent; if making a vertical jump, a Fibian may leap up to anywhere within Short range.",
+            "{@b Author:} Chris Markham"
+         ],
+         "tags": [
+            "combat",
+            "general",
+            "active",
+            "maneuver",
+            "movement"
+         ]
+      },
+      {
+         "name": "Swamp Dweller",
+         "description": [
+            "Fibians add {@dice boost} to {@skill Stealth} checks made in a swamp environment.",
+            "{@b Author:} Chris Markham"
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier"
+         ]
+      }
+   ],
+   "adversary": [
+      {
+         "name": "Artificer",
+         "page": 5,
+         "type": "rival",
+         "powerLevels": {
+            "combat": 2,
+            "social": 1,
+            "general": 7
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 3,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 10,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Artifice",
+               "characteristic": "intellect",
+               "ranks": 3
+            },
+            {
+               "name": "Computers",
+               "characteristic": "intellect",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Mechanics",
+               "characteristic": "intellect",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Operating",
+               "characteristic": "intellect",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Resilience",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Arcana",
+               "characteristic": "intellect",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Divine",
+               "characteristic": "willpower",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Primal",
+               "characteristic": "cunning",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Knowledge",
+               "characteristic": "intellect",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Wrench",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
+               "damage": 3,
+               "critical": 5,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Inferior",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Disorient",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ],
+               "details": "Encumbrance 1"
+            }
+         ],
+         "gear": [
+            "{@gear Artificer's Gear}: add {@symbols s} to checks this character makes to repair or fix magical technology"
+         ],
+         "description": [
+            "Artificers work on magical technology. This career requires them to be good at a lot of things. They need to know how to artifice, have a bit of working knowledge about all types of magic, and decent ability to operate the devices they create."
+         ]
+      },
+      {
+         "name": "Morgessa",
+         "page": 18,
+         "type": "nemesis",
+         "npc": true,
+         "characteristics": {
+            "brawn": 3,
+            "agility": 4,
+            "intellect": 2,
+            "cunning": 3,
+            "willpower": 2,
+            "presence": 3
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 20,
+            "strain": 12,
+            "defense": [
+               1,
+               1
+            ]
+         },
+         "skills": [
+            {
+               "name": "Coercion",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Leadership",
+               "characteristic": "presence",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "ranks": 4,
+               "source": "crb"
+            },
+            {
+               "name": "Piloting",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            },
+            {
+               "name": "Inspiring Rhetoric",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Live to Fight Again",
+            "Metamorphic Serum"
+         ],
+         "weapons": [
+            {
+               "name": "{@gear Burner}",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 4,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Burn",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "{@gear Deckhand's Belt|deckhands belt}: 1 Defense, +1 Soak",
+            "{@gear hand radio}",
+            "{@gear Ship's Suit (Tailored)|tailored ship's suit}"
+         ],
+         "description": [
+            "This proud and athletic woman is one of the Despot of Vordun's most trusted agents, and commands perfect loyalty from those in her charge.",
+            "{@b Author:} Ryall Hyatt"
+         ]
+      },
+      {
+         "name": "Vordun Thug",
+         "page": 19,
+         "type": "rival",
+         "characteristics": {
+            "brawn": 3,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 12,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Piloting",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Metamorphic Serum"
+         ],
+         "weapons": [
+            {
+               "name": "{@gear Stinger}",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 4,
+               "critical": 3,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "{@gear ship's suit}"
+         ],
+         "description": [
+            "Conditioned to serve unquestioningly and enhanced with experimental stimulants, these dangerous men and women are the Despot's most effective enforcers.",
+            "{@b Author:} Ryall Hyatt"
+         ]
+      },
+      {
+         "name": "Yortin Fleinn",
+         "page": 19,
+         "type": "rival",
+         "npc": true,
+         "characteristics": {
+            "brawn": 2,
+            "agility": 4,
+            "intellect": 2,
+            "cunning": 3,
+            "willpower": 1,
+            "presence": 3
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 14,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Computers",
+               "characteristic": "intellect",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Negotiation",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Stealth",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Skulduggery",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Natural",
+               "description": "Once per session, may reroll one {@skill Stealth} or {@skill Skulduggery} check ({@title Genesys} Core Rulebook, p.79)."
+            }
+         ],
+         "weapons": [
+            {
+               "name": "{@gear Stinger}",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 4,
+               "critical": 3,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "{@gear punch card machine}",
+            "tailored tunic"
+         ],
+         "description": [
+            "A man well-known around Gymir's seedy underbelly as a sneak thief and burglar. Available to steal anything for the right price.",
+            "{@b Author:} Ryall Hyatt"
+         ]
+      },
+      {
+         "name": "Nine Sisters Security",
+         "page": 19,
+         "type": "minion",
+         "characteristics": {
+            "brawn": 3,
+            "agility": 2,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 5,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "source": "crb"
+            },
+            {
+               "name": "Melee",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "source": "crb"
+            }
+         ],
+         "weapons": [
+            {
+               "name": "{@gear Boarding mace}",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 4,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Stun",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "{@gear Stun ray}",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 5,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 5,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Stun Damage",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "security tunic: +1 Soak"
+         ],
+         "description": [
+            "Well dressed and well built, these local professionals are just trying to keep things peaceful.",
+            "{@b Author:} Ryall Hyatt"
+         ]
+      },
+      {
+         "name": "Sharan Joels",
+         "page": 19,
+         "type": "rival",
+         "npc": true,
+         "characteristics": {
+            "brawn": 2,
+            "agility": 4,
+            "intellect": 2,
+            "cunning": 3,
+            "willpower": 2,
+            "presence": 3
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 16,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Computers",
+               "characteristic": "intellect",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Deception",
+               "characteristic": "cunning",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Stealth",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Skulduggery",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "One Step Ahead"
+         ],
+         "weapons": [
+            {
+               "name": "{@gear Flare pistol}",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 2,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Pierce",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "{@gear hand radio}",
+            "{@gear armored tunic}: +2 Soak"
+         ],
+         "description": [
+            "An experienced agent for Solarian Intelligence that has spent a bit too long undercover.",
+            "{@b Author:} Ryall Hyatt"
+         ]
+      },
+      {
+         "name": "Anju",
+         "page": 19,
+         "type": "nemesis",
+         "npc": true,
+         "characteristics": {
+            "brawn": 3,
+            "agility": 4,
+            "intellect": 3,
+            "cunning": 3,
+            "willpower": 3,
+            "presence": 3
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 18,
+            "strain": 14,
+            "defense": [
+               1,
+               1
+            ]
+         },
+         "skills": [
+            {
+               "name": "Charm",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Knowledge",
+               "characteristic": "intellect",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Leadership",
+               "characteristic": "presence",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Negotiation",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Adversary 2",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Born Leader"
+         ],
+         "gear": [
+            "{@gear Deckhand's belt}: 1 Defense, +1 Soak",
+            "tailored tunic"
+         ],
+         "description": [
+            "Inquisitive, funny, and smart, this Daradeen noble is hard not to like.",
+            "{@b Author:} Ryall Hyatt"
+         ]
+      },
+      {
+         "name": "Old Mining Robot",
+         "page": 20,
+         "type": "nemesis",
+         "characteristics": {
+            "brawn": 5,
+            "agility": 2,
+            "intellect": 1,
+            "cunning": 1,
+            "willpower": 3,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 7,
+            "wounds": 24,
+            "strain": 14,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Resilience",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Stomp",
+            "Silhouette 3"
+         ],
+         "weapons": [
+            {
+               "name": "Ore scoops",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 12,
+               "critical": 3,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Disorient",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "thick plating: +2 Soak"
+         ],
+         "description": [
+            "This massive industrial robot has been reprogrammed as a trap for the unwary.",
+            "{@b Author:} Ryall Hyatt"
+         ]
+      },
+      {
+         "name": "Gertra",
+         "page": 20,
+         "type": "rival",
+         "npc": true,
+         "characteristics": {
+            "brawn": 2,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 3,
+            "willpower": 3,
+            "presence": 3
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 14,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Coercion",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Knowledge",
+               "characteristic": "intellect",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Leadership",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "talents": [
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
+         ],
+         "gear": [
+            "armored furs: +2 Soak"
+         ],
+         "description": [
+            "A silver haired, stern but charismatic cult leader with a big vision for her followers and the future of her order.",
+            "{@b Author:} Ryall Hyatt"
+         ]
+      },
+      {
+         "name": "Follower of Disa",
+         "page": 20,
+         "type": "minion",
+         "characteristics": {
+            "brawn": 3,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 5,
+            "wounds": 6,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "source": "crb"
+            },
+            {
+               "name": "Melee",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "source": "crb"
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Ceremonial blade",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 2,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "armored furs: +2 Soak"
+         ],
+         "description": [
+            "Immersed in tales of the old ways, these cultists cannot be reasoned with.",
+            "{@b Author:} Ryall Hyatt"
+         ]
+      }
+   ],
+   "adversaryAbility": [
+      {
+         "name": "Live to Fight Again",
+         "description": [
+            "Once per session, may use this ability as an incidental to have this adversary escape the current encounter. However this happens, the adversary may not return to the encounter. The GM might decide that this ability cannot be used in some locations/situations.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "tags": [
+            "general",
+            "combat",
+            "active",
+            "incidental",
+            "session",
+            "movement",
+            "narrative"
+         ]
+      },
+      {
+         "name": "Metamorphic Serum",
+         "description": [
+            "Once per encounter, this character may use this ability as a maneuver to inject themselves with a metamorphic reagent which causes their muscles to bulge and their fingers sprout long claws. They increase their {@characteristic Brawn} and Soak by 2 and gain the following attack profile: Claws ({@skill Melee}; Damage +3; Crit 3).",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "maneuver",
+            "encounter",
+            "stat modifier",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Born Leader",
+         "description": [
+            "Once per round, may suffer 3 Strain to perform the Born Leader maneuver to upgrade an allied character's next skill check.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "tags": [
+            "general",
+            "social",
+            "combat",
+            "active",
+            "maneuver",
+            "support",
+            "leader",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Stomp",
+         "description": [
+            "Once per turn this adversary can perform the Stomp action to shake the environment with its heavy footfalls, triggering an out-of-turn {@difficulty hard|Coordination} for enemies within medium range. Failure knocks the enemy {@rule prone}, while each {@symbols h} generated causes one wound.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "action",
+            "crowd control",
+            "offensive",
+            "status effect"
+         ]
+      }
+   ],
+   "vehicle": [
+      {
+         "name": "Saucer-class Shuttle",
+         "page": 26,
+         "silhouette": 3,
+         "maxSpeed": 5,
+         "handling": 1,
+         "defense": 0,
+         "armor": 2,
+         "htt": 12,
+         "sst": 8,
+         "controlSkill": {
+            "name": "Piloting",
+            "source": "crb"
+         },
+         "complement": "2 crew",
+         "passengers": "4",
+         "consumables": "4 days",
+         "encumbranceCapacity": "16",
+         "price": 100000,
+         "rarity": 4,
+         "weapons": [
+            {
+               "name": "Light Flare Lens",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 2,
+               "critical": 3,
+               "range": "Short"
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Fusion Drive",
+               "description": "No."
+            },
+            {
+               "name": "Gate Capable",
+               "description": "No."
+            }
+         ],
+         "description": [
+            "Nearly ubiquitous in settled space, this six-seater craft is a capable shuttle used for landing on the surface of moons and small planets. These craft can also be outfitted with heavier weapons, sacrificing passenger and cargo capacity to instead play the role of a star fighter.",
+            "{@b Author:} Ryall Hyatt"
+         ]
+      },
+      {
+         "name": "Attack Saucer",
+         "page": 26,
+         "silhouette": 3,
+         "maxSpeed": 5,
+         "handling": 0,
+         "defense": 0,
+         "armor": 2,
+         "htt": 12,
+         "sst": 8,
+         "controlSkill": {
+            "name": "Piloting",
+            "source": "crb"
+         },
+         "complement": "2 crew",
+         "passengers": "0",
+         "consumables": "4 days",
+         "encumbranceCapacity": "6",
+         "price": 100000,
+         "rarity": 4,
+         "weapons": [
+            {
+               "name": "Paired Light Flare Lenses",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 2,
+               "critical": 3,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Linked",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Torpedo Launcher",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Breach",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Fusion Drive",
+               "description": "No."
+            },
+            {
+               "name": "Gate Capable",
+               "description": "No."
+            }
+         ],
+         "description": [
+            "When outfitted as a fighter craft, the {@vehicle Saucer-class Shuttle|Saucer's} {@rule Handling} is reduced to 0, Passenger Capacity to 0, Encumbrance Capacity to 6, and the following weapon profiles replace the existing profile: Paired Light Flare Lenses (Fire Arc Forward; Damage 2; Critical 3; Range [Short]; {@quality Linked|Linked 1}).",
+            "Torpedo Launcher (Fire Arc Forward; Damage 6; Critical 3; Range [Long]; {@quality Blast|Blast 4}, {@quality Breach|Breach 2}, {@quality Limited Ammo|Limited Ammo 2}).",
+            "{@b Author:} Ryall Hyatt"
+         ]
+      },
+      {
+         "name": "Baadal-class Shuttle",
+         "page": 26,
+         "silhouette": 3,
+         "maxSpeed": 5,
+         "handling": 1,
+         "defense": 0,
+         "armor": 2,
+         "htt": 16,
+         "sst": 10,
+         "controlSkill": {
+            "name": "Piloting",
+            "source": "crb"
+         },
+         "complement": "3 crew",
+         "passengers": "6",
+         "consumables": "10 days",
+         "encumbranceCapacity": "20",
+         "price": 250000,
+         "rarity": 8,
+         "weapons": [
+            {
+               "name": "Turret-Mounted Accelerator Cannon",
+               "fireArc": "All",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 4,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Fusion Drive",
+               "description": "No."
+            },
+            {
+               "name": "Gate Capable",
+               "description": "No."
+            }
+         ],
+         "description": [
+            "This sleek, arrowhead-shaped craft is the standard Daradeen shuttle. Nimble, and sporting a powerful accelerator cannon, this craft is suited to transport high-value passengers.",
+            "{@b Author:} Ryall Hyatt"
+         ]
+      },
+      {
+         "name": "Kissimmee-class Cutter",
+         "page": 26,
+         "silhouette": 4,
+         "maxSpeed": 5,
+         "handling": 0,
+         "defense": 2,
+         "armor": 4,
+         "htt": 45,
+         "sst": 35,
+         "controlSkill": {
+            "name": "Operating",
+            "source": "crb"
+         },
+         "complement": "100 crew",
+         "passengers": "20",
+         "consumables": "2 years",
+         "encumbranceCapacity": "100",
+         "price": 2500000,
+         "rarity": 7,
+         "weapons": [
+            {
+               "name": "1 Port and 1 Starboard Forward-Mounted Paired Flare Lenses",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 4,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Battery of 5 Port Mounted Heavy Accelerator Cannons",
+               "fireArc": "Port",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Battery of 5 Starboard Mounted Heavy Accelerator Cannons",
+               "fireArc": "Starboard",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "2 Forward and 2 Rear Torpedo Launchers",
+               "fireArc": "2 Forward and 2 Rear",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Breach",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Fusion Drive",
+               "description": "Yes."
+            },
+            {
+               "name": "Shuttle Complement",
+               "description": "2 {@vehicle Saucer-class Shuttle|Saucer-class Shuttles}"
+            },
+            {
+               "name": "Gate Capable",
+               "description": "Yes."
+            }
+         ],
+         "description": [
+            "A well-built and durable ship, the Kissimmee-class Cutter is favored by merchant escort and light transport crews for its versatility and dependability. Able to accept a wide variety of parts and relatively easy to retrofit, this class has been in service for several decades.",
+            "{@b Author:} Ryall Hyatt"
+         ]
+      },
+      {
+         "name": "Ca Den Raider-class Frigate",
+         "page": 27,
+         "silhouette": 5,
+         "maxSpeed": 4,
+         "handling": -1,
+         "defense": 2,
+         "armor": 5,
+         "htt": 70,
+         "sst": 55,
+         "controlSkill": {
+            "name": "Operating",
+            "source": "crb"
+         },
+         "complement": "300 crew",
+         "passengers": "60",
+         "consumables": "2 years",
+         "encumbranceCapacity": "150",
+         "price": 5000000,
+         "rarity": 8,
+         "weapons": [
+            {
+               "name": "1 Port and 1 Starboard Forward-Mounted Paired Flare Lenses",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 4,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "1 Port and 1 Starboard Rear-Mounted Paired Flare Lenses",
+               "fireArc": "Rear",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 4,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "2 Batteries of 5 Port Mounted Heavy Accelerator Cannons",
+               "fireArc": "Port",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "2 Batteries of 5 Starboard Mounted Heavy Accelerator Cannons",
+               "fireArc": "Starboard",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "6 Forward and 2 Rear Torpedo Launchers",
+               "fireArc": "2 Forward and 2 Rear",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Breach",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Fusion Drive",
+               "description": "Yes."
+            },
+            {
+               "name": "Shuttle Complement",
+               "description": "2 {@vehicle Saucer-class Shuttle|Saucer-class Shuttles}, 4 {@vehicle Attack Saucer|Attack Saucers}"
+            },
+            {
+               "name": "Gate Capable",
+               "description": "Yes."
+            }
+         ],
+         "description": [
+            "This sturdy and well-armed warship serves as the backbone of the Vordunish fleet. Two Ca Dens are enough to subdue a small colony or space station, and a single Raider can often withstand a Solarian Cruiser's barrage long enough to ignite their out-sized fusion drive and escape the larger vessel.",
+            "{@b Author:} Ryall Hyatt"
+         ]
+      },
+      {
+         "name": "Chaandanee-class Sloop",
+         "page": 27,
+         "silhouette": 4,
+         "maxSpeed": 5,
+         "handling": 1,
+         "defense": 2,
+         "armor": 5,
+         "htt": 55,
+         "sst": 35,
+         "controlSkill": {
+            "name": "Operating",
+            "source": "crb"
+         },
+         "complement": "120 crew",
+         "passengers": "20",
+         "consumables": "2 years",
+         "encumbranceCapacity": "100",
+         "price": 10000000,
+         "rarity": 10,
+         "restricted": true,
+         "weapons": [
+            {
+               "name": "1 Port and 1 Starboard Forward-Mounted Paired Flare Lenses",
+               "fireArc": "Forward",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "2 Batteries of 3 Port Mounted Heavy Accelerator Cannons",
+               "fireArc": "Port",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "2 Batteries of 3 Starboard Mounted Heavy Accelerator Cannons",
+               "fireArc": "Starboard",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Breach",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "3 Forward and 2 Rear Torpedo Launchers",
+               "fireArc": "2 Forward and 2 Rear",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Breach",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Fusion Drive",
+               "description": "Yes."
+            },
+            {
+               "name": "Shuttle Complement",
+               "description": "2 {@vehicle Baadal-class Shuttle|Baadal-class Shuttles}"
+            },
+            {
+               "name": "Gate Capable",
+               "description": "Yes."
+            }
+         ],
+         "description": [
+            "Daradeen ships are advanced, and punch well above their weight. The experimental Chaandanee-class Sloop is no exception, being as fast as other vessels of its class but better armored and carrying heavier weapons. This small, versatile warship will fill many roles for the Daradeen navy, from light patrol to convoy escort to transport of vital personnel.",
+            "{@b Author:} Ryall Hyatt"
+         ]
+      }
+   ],
+   "setting": [
+      {
+         "name": "Mechanism, \"Chanis,\" The Clockwork System",
+         "page": 6,
+         "summary": [
+            "Chanis is a massive artificial gigastructure orbiting a small red dwarf star colloquially known as Lus. Whatever naturally occurring planets may have once populated the Chanis system, they have long since been harvested and rendered down to provide the raw materials for the current Chanis gigastructure.",
+            "Chanis comprises a number of components. Gris, a ringworld orbital ring, circumscribes Lus. A secondary and also inhabited ring, Igris, is made of enormous semi-rigidly tethered rectangular tiles and provides a diurnal cycle to Gris. Lusleen is a hollowed out moon-turned-megapolis and anchors Igris. Lusleen is the primary port of harbor and trade hub of Chanis. Finally, there is the Riverbelt, a stream of pulverized and constantly colliding spacial objects caught in the shielding mechanism that loosely wraps around all sides of Gris, provides a constantly shifting starscape to the night skies as well as a buffer against dangers such as comets and asteroids entering into Chanis and threatening Gris. The Riverbelt is also a major hazard, making it difficult to actually land ships anywhere on Gris, thus providing the ringworld and its myriad species and cultures a rather severe incidental isolation.",
+            "Chanis can be lifted to any science fiction or science fantasy setting. As conceived, though, it is firmly in the science fantasy genre and acts as a point of confluence for many magic influences, be they leylines, colliding dimensions, a universal mystic little-\"f\" force that may be in certain unnamed properties well known to players of the {@title Genesys} system, or otherwise. Using the special properties of Chanis' multiple gigantic components, these magical influences are harvested and redistributed throughout the system to power, among other things, the Riverbelt, the countless slight adjustments necessary to maintain the sublimely synchronized orbits of Gris and Igris, life support systems in Igris and Lusleen, and modulations of Lus' stellar atmosphere that would otherwise make such a (relatively speaking) tight orbit of a red dwarf star totally inhospitable to any life or even stable formulations. Moreover, the Riverbelt and the underside of Gris, which is engraved with enormous planet-sized runes, interact in such a way that the materials of the Riverbelt deposit into Gris' underside and perpetually heal the structure and maintain the structural integrity of the ringworld.",
+            "{@b Author:} Micah-Shalom \"FatCrab\" Kesselman"
+         ],
+         "lore": [
+            {
+               "title": "Chanis Adventure Seeds",
+               "page": 6,
+               "entries": [
+                  {
+                     "type": "list",
+                     "items": [
+                        "A clue from an adventure in another system has brought the PCs to Chanis. The clue brings them first to Lusleen, where they find out that it is actually related to an isolated civilization on the surface of Gris. The civilization is hostile to outsiders and the PCs must successfully navigate the Riverbelt to reach the civilization.",
+                        "Chanis is a great weapon of cosmic proportions! A villain has discovered that Chanis can be wielded in such a way that the planet-ending forces of the red dwarf, Lus, are directed through the interstitial void in between points in space to impact and obliterate planets anywhere in the galaxy. The PCs must stop the villain from gaining control of this incredible weapon--or perhaps they are the ones intent on uncovering its use and invoking its enormous power."
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Lus",
+               "page": 6,
+               "entries": [
+                  "A small red dwarf star, Lus is modulated by the orbital system that surrounds it. However, solar patterns are still somewhat unpredictable, with sunspot swarms and mild flares relatively frequent. As a result, Gris and Igris tend to have likewise somewhat unpredictable, albeit fairly mild, seasons and seasonal weather. Due to Lus' influence, the difficulty of space navigation checks is upgraded once while made in Chanis or otherwise under the influence of Lus.",
+                  {
+                     "title": "Lus Adventure Seeds",
+                     "page": 6,
+                     "entries": [
+                        {
+                           "type": "list",
+                           "items": [
+                              "A spacecraft has entered dangerously close to Lus' corona and has become unresponsive. Mysterious and seemingly malicious incorporeal entities have overtaken the ship and they cannot be communicated with--they seem able to possess organics and ship systems with equal ease. The ship's technology is fairly advanced to allow it to get so close to a star and would make valuable salvage to a group that could retrieve it."
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Gris",
+               "page": 7,
+               "entries": [
+                  "Gris is the primary inhabited \"planet\" of Chanis, and all of the habitable areas exist on the inner surface of the ring (i.e., the side facing Lus and Igris). Centrifugal force provides the majority of subjective gravity on the internal side of the ring and the inside edge is approximately 0.25 AU, or 235 million kilometers, from Lus. With a circumference of approximately 1476.5M km and an 11000km width, Gris has a habitable surface area of about 1.6242034e+13 square kilometers--or a crapton of real estate as it's known to most explorers (in comparison, Earth's surface area is 5.101e+9 square kilometers).",
+                  "The diurnal period, due to the slightly slower rotational speed of Igris and its enormous rectangular shading tiles, of all inhabited regions of Gris is 26 hours split into 13 hour days and 13 hour nights. Grisians rarely track time beyond the diurnal period, as there is no significant seasonal variance. However, Gris completes a full rotation around Lus (a.k.a., a \"year\") approximately every 53.5 hours, given its tangential rotational speeds of around 1,220 km/s.",
+                  "Gris' atmosphere is kept in the ring via an edgewall which extends 2000 km from the external (or \"backside\") of the ring. Enormous mountains characterize the edgewall, with plentiful sheer faces and often shifting or avalanching surfaces. The internal floor of Gris extends, on average, about 400 km above the backside. As a result, there are various \"underdarks\" made up of subterranean systems and expanses inhabited by unique flora and fauna throughout Gris.",
+                  "Large, antenna-like towers that protrude from the rim of the edgewall at regular intervals are common attractions to spacefaring visitors to Chanis. These towers extend to (astronomically speaking) a fairly close range of counterpart antennae located on Lusleen. As the structures orbit within range of each other, magical energy transfers between them. This maintains a certain equilibrium within the greater structure of the entire Chanis system and is part of a cosmically sized circuit that soothes Lus (which would otherwise have wildly variable solar weather) and redirects and slows foreign objects such as meteors, comets, etc. approaching the system at dangerous vectors as a sort of shield.",
+                  "Gris is inhabited by myriad different species and cultures across its massive habitable surface. These species and cultures are of varying characteristics and development, but generally are not actually spacefaring. Familiarity with magic and capacity for its use also varies greatly across groups. It is not uncommon for civilizations to be totally ignorant of most others on Gris and beyond. However, travel and adventure is common across the ringworld, and though only a small handful of starfaring cultures inhabit Gris, almost all are accustomed to totally alien visitors, technologies, and magics making their way through their regions.",
+                  "Gris is a nexus of magical energies and all magic (or equivalent) related checks receive a {@dice boost} while on Gris.",
+                  {
+                     "title": "Gris Adventure Seeds",
+                     "page": 7,
+                     "entries": [
+                        {
+                           "type": "list",
+                           "items": [
+                              "A crash landing due to collisions in the Riverbelt has left the PCs stranded in a technologically primitive region of Gris. The PCs will need to supplement their ship repairs with magical artifacts from the area cultures to bring the ship up to capability to make it to Lusleen.",
+                              "The PCs make first contact with a Grisian culture that resides, at least partially, in one of the many underdarks of the ring. The culture has no real knowledge beyond the immediately adjacent regions, and certainly is unfamiliar with spacefaring civilizations or the technology for such.",
+                              "A city on Gris is under threat from meteor rains emanating from the Riverbelt! What started as a few, if highly unusual, meteor strikes in the outlying areas has rapidly become a meteor swarm of smaller objects. It seems things will get worse--more destructive and deadlier--before they get better. Without help from the PCs, the entire city is at risk of being pulverized out of existence.",
+                              "A businessman from Lusleen wants the PCs to investigate a competitor's production facilities on Gris' surface. For an additional fee, the businessman would like the PCs to commit some light espionage and sabotage--or some heavy sabotage involving assassination for a proportionally larger fee."
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Igris",
+               "page": 7,
+               "entries": [
+                  "Igris is a spiraling ribbon orbiting Lus just inside the orbit of Gris. Igris comprises an 11,000 km wide ribbon with eight (8) twists and orbit at a slightly slower rate than Gris, having an orbital period of 107 hours. As a result of the slower orbital period and twists, Gris experiences a diurnal cycle. As between Gris and Igris, the ribbon completes a rotational period every 53.5 hours.",
+                  "Igris is home primarily to two different species that can exist in its harsh, sunwashed and airless environment: the Ethereals and the Automata. However, a number of domed cities and spaceports dot Igris' otherwise perfectly smooth and empty surface, on both the Lus-side and the Gris-side of Igris. The domed cities house various organic and other species that cannot survive that near-vacuum of Igris' surface.",
+                  "The Ethereals are made of a smokey energy that somehow maintains a generally humanoid shape. The Ethereal civilization is unfathomably ancient and thought to be as old as Chanis (or at least its current construction) itself. According to legend and rumor, the Ethereals were originally constructs of whatever forces first built Chanis, intended to maintain Gris and Igris.",
+                  "The Automata are not so much a species as much as a loosely related collection of sentient machine beings. The Automata are all that remains of a short-lived highly technological empire that conquered a substantial portion of Gris. Eventually the empire fell and the Automata fled to Igris where, due to the nature of their construction, they were able to flourish without worry of organic beings interfering (or enacting retribution for acts related to their imperial origin).",
+                  "Another remarkable feature of Igris is that it is not a \"complete\" ring. Igris actually extends from polar opposite sides of Lusleen, securely anchored to the labyrinthine once-moon. As Lusleen is tidally locked to Lus, it helps secure and stabilize Igris' orbit.",
+                  "Igris is a realm of shadows and contrasts. {@skill Stealth} checks on Igris receive a {@dice boost} and {@skill perception} checks receive a {@dice setback}.",
+                  {
+                     "title": "Igris Adventure Seeds",
+                     "page": 8,
+                     "entries": [
+                        {
+                           "type": "list",
+                           "items": [
+                              "A war is brewing between the Ethereals and the Automata. The PCs have been caught up in the middle of the conflict.",
+                              "A mad Automata is attempting to destroy one of the dome cities of Igris! The PCs must find a way to stop them before their plans come to fruition and countless organics die or lose their homes!",
+                              "Grob Nekrteks, a technonecromancer of little renown, has converted a dome city into Grobbers--strange hiveminded hybrids blending organic tissue and Automata technology and slaved to Grob's will. Grob and his Grobbers are expanding rapidly across Igris and rumor has it that Grob intends to sabotage Igris so that it collapses into Gris, giving the technonecromancer an endless supply of organic flesh and technological hardware to build his great technonecromantic empire!"
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Lusleen",
+               "page": 8,
+               "entries": [
+                  "Lusleen is, other than the red dwarf star Lus, perhaps the one remaining natural planetary structure in Chanis. Even then, however, Lusleen has been hollowed out over the eons to the point that the moon's surface is little more than a regolith skin wrapping a honeycombed interior of tunnels and chambers making up Lusleen's megalopolis. While about the size of Earth's moon, it is in fact half the total mass as a result of the endlessly mazing tunnels, caverns, catacombs, tramways, and the like.",
+                  "Lusleen's surface has no atmosphere and, outside of the various spaceports scattered across the surface that lead directly into the internal city, is entirely devoid of both organic or constructed life. Two massive structures tangentially extend 3,000 km out of each of Lusleen's poles. These structures are used to harvest and distribute magical energies from Gris' rotation through the system-wide circuit of Chanis.",
+                  "Lusleen's interior is home to an enormous chaotic metropolis. Various governments run various districts, but the general state of Lusleen is fairly anarchic. Crime syndicates run rampant and oligarchical business consortia are the ultimate wielders of power in Lusleen. More so than anywhere else in Chanis, Lusleen principally runs on money and power--and money is necessary to buy power.",
+                  "The difficulty of finding items for sale on Lusleen is reduced once, to a minimum of {@difficulty easy}; however, all such checks are upgraded once. On a {@symbols d}, the PCs have run afoul of an oligarch and/or a local criminal syndicate, as appropriate.",
+                  {
+                     "title": "Lusleen Adventure Seeds",
+                     "page": 8,
+                     "entries": [
+                        {
+                           "type": "list",
+                           "items": [
+                              "An oligarch is recruiting offworlders to gather intelligence on the competition. Whatever the PCs ultimately uncover, the oligarch will demand they follow up with a little \"aggressive espionage\" or will put a bounty on their heads.",
+                              "Criminal syndicates are going to war and the PCs better choose a side! There will be no neutral ground in this conflict.",
+                              "Deep in Lusleen there is an abandoned section of the city that is rumored to house ancient laboratories still holding untold treasures. However, just because the area is abandoned, does not mean it is {@i uninhabited}."
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Riverbelt",
+               "page": 8,
+               "entries": [
+                  "The Riverbelt is a vaguely defined region of pulverized materials caught in the various fields of force and influence that act as a mild sort of shield for Gris. Objects caught in the Riverbelt are pulverized to a fine dust in the Lus-facing side of the stream before being cycled to the side of the stream covering Gris' backside. The dust on the backside is absorbed into Gris itself to repair and maintain the various structures and systems keeping the ringworld sound.",
+                  "The pulverizing side of the Riverbelt is a chaotic and dangerous place, where objects constantly collide and disintegrate each other into ever smaller pieces. Only the truly desperate hide in the Riverstream and call it home--but those who are able to survive the location are generally left in isolation. Occasionally pirates and other scoundrels will try to make a living in the Riverstream as ships necessarily have to pass through it if they wish to transit between the surface of Gris and Igris, Lusleen, or the greater cosmos beyond.",
+                  "An aesthetically pleasant side-effect of the Riverstream is that it provides an artificial starry night sky to inhabitants of Gris, who would otherwise have nothing more than the pitch black of Igris above them for their night sky. Rather, the pulverizing objects reflect light back to Gris and give the Riverstream the appearance of an ever shifting and flowing starfield.",
+                  "{@skill Piloting} checks in the Riverbelt are upgraded once. On a {@symbols d}, the PCs crashland on a roving asteroid and will need to make repairs quick before it inevitably collides with other objects in the Riverbelt!",
+                  {
+                     "title": "Riverbelt Adventure Seeds",
+                     "page": 9,
+                     "entries": [
+                        {
+                           "type": "list",
+                           "items": [
+                              "Bounty hunters, Hawk and Hound, are on the prowl in the Riverbelt and are either hunting the PCs or have mistaken them for a different bounty. Hawk is an Automata able to fly independently through the void of the Riverbelt, and Hound is a sentient ship (organic, technological, or both) that primarily communicates through Hawk.",
+                              "The PCs have been hired to shut down a pirate operation based out of the Riverbelt. The pirates have developed a way to protect larger asteroids from colliding with other objects in the Riverbelt and have inhabited a larger asteroid-turned-fortress.",
+                              "A great race through the Riverbelt is starting soon! The race is deadly and few survive to the finish line, but the rewards are great–and the destroyed ships of those who fail to finish certainly make good bonus salvage."
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "The Solar Republic!",
+         "page": 20,
+         "summary": [
+            "Taking inspiration from the space operas and planetary romances of the early-to-mid 20th century, {@b The Solar Republic!} mini-setting features anachronistic technology, themes of adventure and heroism, and an idealized vision of human endeavor common to the genre.",
+            "Smart-mouthed grease monkeys, dashing rocket jockeys, and an occasional jack-of-all-trades loyally accompany their skipper on daring adventures across the settled star systems of mankind. Punch card computers and reams of ticker tape, beeping field scanners and trusty slide rules, coil guns and stun rays are all part and parcel with fusion-rockets and saucer landing craft.",
+            "The remaining sections of this gazette give a brief but wide-ranging look at this mini-setting.",
+            "{@b Author:} Ryall Hyatt"
+         ],
+         "lore": [
+            {
+               "title": "Section 1: The Big Picture",
+               "page": 20,
+               "entries": [
+                  {
+                     "title": "Settled Space",
+                     "page": 20,
+                     "entries": [
+                        "The first wave of human settlement left Sol on huge, slow-moving colony ships. These generation ships, packed with equipment of all kinds and crewed by humanity's finest, fanned out into nearby space. Centuries passed between the stars, and by the time the great seed-ships reached their destinations they were met by settlers who had out-paced them on smaller, faster, fusion driven rocket ships – a technology invented a century after the generation ships departed Sol.",
+                        "Still, communication was slow and travel slower. Humanity developed in pockets, separated by vast and largely empty space. Whole cultures rose and fell with little to no outside contact. Not until the discovery of gating technology, a bending of space itself only possible at certain balance points at the edges of star systems, did humanity begin an uneven and sometimes violent re-assimilation into a common civilization.",
+                        "Now, decades later, much of humankind is united under a single banner: {@b The Solar Republic!}"
+                     ]
+                  },
+                  {
+                     "title": "The Despot of Vordun",
+                     "page": 21,
+                     "entries": [
+                        "The largest thorn in the side of the Solar Republic is also the most dangerous. Once Commodore Harlas Ashrod, now known as the Despot of Vordun, this former hero of the Solar Republic renounced their position in the Solarian Fleet to carve out a crude empire of captured settlements and outposts at the far edge of colonized space. Sitting atop their throne of melted Solarian crests, the Despot of Vordun plots and schemes, planning to one day destroy the Solar Republic and rule all of humankind."
+                     ]
+                  },
+                  {
+                     "title": "Regency of Daradeen",
+                     "page": 21,
+                     "entries": [
+                        "The Daradeen are an insular culture spanning three systems, with only loose trading ties to the Solar Republic. It is suspected that some long-ago conflict led to their self-isolation. Indeed, they possess powerful warships that patrol the boundaries of their territory and turn aside ships that seek entrance to their region of space, and trade is limited to a single port at the edge of Daradeen space.",
+                        "The Solarian Council would love nothing more than to bring the Daradeen star systems (and their advanced navy) into the Republic. For now, the Council is happy enough to maintain good trade relations."
+                     ]
+                  },
+                  {
+                     "title": "Aliens?",
+                     "page": 21,
+                     "entries": [
+                        "Humans in {@b The Solar Republic!} setting have not yet encountered sentient aliens, and in fact what life has been found has been of the single-celled variety. In the centuries of human settlement, however, cultures have diverged dramatically. Further, experimentation and engineered adaptation has led to wild variations in hair and skin color, and sometimes even more extreme changes in physiology."
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Section 4: Spacecraft",
+               "page": 26,
+               "entries": [
+                  "Spacecraft in {@b The Solar Republic!} setting maneuver on high impulse plasma thrusters when near planetary systems, space stations, and engaged in ship-to-ship combat. This form of propulsion is represented by the Max Speed rating and in all ways follows the normal rules for vehicle combat as described in the {@title Genesys Core Rulebook}.",
+                  "When traveling to the edge of a star system to reach a Gate-Point that allows rapid travel between stars, star ships engage their fusion rockets. It takes two rounds to cycle up a fusion drive, and once activated in the third round, the craft cannot change direction until the fusion drive is deactivated. When a ship's fusion drive is active, its speed is doubled.",
+                  "It becomes nearly impossible to target a ship that has engaged its fusion drive, upgrading any combat checks targeting the vessel three times. Further, it is extremely dangerous to pursue a ship with an active fusion drive too closely. When within Long range a {@rule Dangerous Driving} action is required instead of the {@rule Reposition} Maneuver to close one range band. {@symbols hh} generated on this check result in a vehicle critical hit for the pursuer as fusion exhaust sweeps across their ship.",
+                  "It should be noted that it generally takes several weeks to a few months of travel under fusion drive to reach a Gate-Point. A successful {@skill Astrocartography} check is needed to plot a Gate-Jump, and then a successful {@skill Computers} check is required to create a punch card for the massive Gate Processing Computer. Once these steps have been completed and the ship has reached the jump point, the actual jump is instantaneous. Of course, another period of weeks or months is required to reach the inner system of the target star.",
+                  {
+                     "type": "list",
+                     "items": [
+                        "{@vehicle Saucer-class Shuttle}",
+                        "{@vehicle Attack Saucer}",
+                        "{@vehicle Baadal-class Shuttle}",
+                        "{@vehicle Kissimmee-class Cutter}",
+                        "{@vehicle Ca Den Raider-class Frigate}",
+                        "{@vehicle Chaandanee-class Sloop}"
+                     ]
+                  }
+               ]
+            }
+         ],
+         "characterOptions": [
+            {
+               "title": "Section 2: New Starting Character Options",
+               "page": 21,
+               "entries": [
+                  "In keeping with the genre exemplified by early-to-mid 20th century science fiction, the character options in this section are flavored with a touch of dashing bravado and anachronistic flare. In no way are these descriptions meant to limit players' characterizations, and have been written to exclude the darker bias of that bygone era.",
+                  "{@b The Solar Republic!} setting is in all ways meant to be inclusive, drawing on the wonder and inspirational spirit of the possibilities of humanity.",
+                  "After all, the future belongs to us all!",
+                  {
+                     "title": "Archetypes",
+                     "page": 21,
+                     "entries": [
+                        "{@b The Solar Republic!} campaign setting uses the following archetypes from the {@title Genesys Core Rulebook}:",
+                        {
+                           "title": "{@archetype Average Human|The Average Human}, {@archetype The Laborer|Laborer}, {@archetype The Intellectual|Intellectual}, or {@archetype The Aristocrat|Aristocrat}",
+                           "page": 21,
+                           "entries": [
+                              "These archetypes represent the basic variations in humanity found across the worlds and star systems settled by the human diaspora."
+                           ]
+                        },
+                        {
+                           "title": "{@archetype Mongrel|The Mongrel}",
+                           "page": 21,
+                           "entries": [
+                              "This archetype represents a character who has been subject to experimentation by some exiled scientist or perhaps exposed to an alien microbe."
+                           ]
+                        },
+                        {
+                           "title": "{@archetype Animalistic Alien}",
+                           "page": 21,
+                           "entries": [
+                              "This archetype represents engineered changes made by various settlements of humans to better adapt to the planets on which they live. No sentient aliens have (yet) been found by humans in {@b The Solar Republic!} setting, but there are dramatic biological variations in the human diaspora across settled space."
+                           ]
+                        },
+                        {
+                           "title": "{@archetype Robot}",
+                           "page": 21,
+                           "entries": [
+                              "This archetype represents the sentient robots that have been built to replace or supplement human labor. Fully sentient robots are rare, but not unheard of. The Republic has yet to pass a set of universal laws to govern robots, so each port or settled planet must decide for themselves how robots are treated.",
+                              "Robots in {@b The Solar Republic!} setting most often resemble the shiny humanoid-shaped constructions found in the fiction of the early- to mid-20th century.",
+                              "Rather than the {@b {@archetypeAbility Networked Intelligence}} special ability, increase a Robot's starting experience to 185."
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "title": "Careers",
+                     "page": 21,
+                     "entries": [
+                        "{@b The Solar Republic!} setting has several careers for players to choose from for their characters, styled to capture the spirit of the genre.",
+                        "If the GM allows, players may choose to take the starting equipment package for their chosen career, rather than spending currency during {@b Step 7} of character creation.",
+                        {
+                           "type": "list",
+                           "items": [
+                              "{@career Doc}",
+                              "{@career Egghead}",
+                              "{@career Grease Monkey}",
+                              "{@career Jack of All Trades}",
+                              "{@career Muscle}",
+                              "{@career Rocket Jockey}",
+                              "{@career Skipper}",
+                              "{@career Smooth Talker}"
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Section 3: New Gear",
+               "page": 23,
+               "entries": [
+                  "In this section is detailed all the weapons, armor, and equipment needed to play through the Sapphire Lily mini-adventure. The GM can use the gear that follows to inspire additional items and technologies should the game continue past the events of the adventure.",
+                  "{@b The Solar Republic!} assumes that starting characters are officers aboard their star ship and therefore better equipped than the average spacer. It is recommended that characters be given 1000 in currency to spend on {@b Step 7} of character creation, rather than 500.",
+                  "In {@b The Solar Republic!}, the standard currency is called the Sol.",
+                  {
+                     "title": "Weapons",
+                     "page": 23,
+                     "forceTitleLevel": 3,
+                     "entries": [
+                        {
+                           "type": "list",
+                           "items": [
+                              "{@gear Blunder Knucks}",
+                              "{@gear Boarding Mace}",
+                              "{@gear Burner}",
+                              "{@gear Molecular Thread}",
+                              "{@gear Coil Gun}",
+                              "{@gear Flare Pistol}",
+                              "{@gear Flare Rifle}",
+                              "{@gear Stinger}",
+                              "{@gear Stun Ray}"
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "title": "Armor",
+                     "page": 24,
+                     "forceTitleLevel": 3,
+                     "entries": [
+                        {
+                           "type": "list",
+                           "items": [
+                              "{@gear Armored Tunic}",
+                              "{@gear Combat Armor}",
+                              "{@gear Deckhand's Belt}",
+                              "{@gear Repulsion Field Generator}"
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "title": "Tools",
+                     "page": 24,
+                     "forceTitleLevel": 3,
+                     "entries": [
+                        {
+                           "type": "list",
+                           "items": [
+                              "{@gear Adrenaline Hypo}",
+                              "{@gear Field Meter}",
+                              "{@gear Hand Radio}",
+                              "{@gear Heel Rockets}",
+                              "{@gear Medical Case}",
+                              "{@gear Palliative Tonic}",
+                              "{@gear Punch Card Machine}",
+                              "{@gear Slide Rule}",
+                              "{@gear Standard Tool Kit}"
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "title": "Garments",
+                     "page": 25,
+                     "forceTitleLevel": 3,
+                     "entries": [
+                        {
+                           "type": "list",
+                           "items": [
+                              "{@gear Lab Coat}",
+                              "{@gear Ship's Suit}",
+                              "{@gear Ship's Suit (Tailored)}",
+                              "{@gear Space Suit}"
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ],
+   "adventure": [
+      {
+         "name": "The Sapphire Lily",
+         "chapters": [
+            {
+               "title": "The Sapphire Lily",
+               "page": 10,
+               "entries": [
+                  "{@b Author:} Ryall Hyatt",
+                  "In this short adventure, the PCs have a dangerous encounter with henchmen of the dastardly Despot of Vordun. The characters quickly discover an evil plot that may lead to the Despot's victory over the Solar Republic. Pursuing the Despot's minions will take the PCs to forgotten asteroid caves and aboard a beautiful prototype star ship. Will the heroes help to protect the Republic and thwart the Despot's plan? Will they seek fame and glory, or are they only interested in a reward of cold hard cash? And will they be tempted by the love of a mysterious royal somehow central to the Despot's plot?",
+                  {
+                     "title": "The Solar Republic!",
+                     "page": 10,
+                     "entries": [
+                        "{@i An Adventure and Mini-Setting Gazette}",
+                        "Gather your crew and board your fusion rocket ship for an adventure-packed visit to Epsilon Eridani. Intrigue, ray guns, and punch-card computers await in this {@setting Space Opera} adventure setting, {@b {@setting The Solar Republic!}}",
+                        {
+                           "title": "In This Gazette…",
+                           "page": 10,
+                           "entries": [
+                              "In the first chapter of this booklet the reader will find a short adventure, suitable for three to five players, meant to be played in one to three sessions. Here also are descriptions of marvelous locations interspersed with the adventure's narrative. At the end of this chapter are included several adversary profiles mentioned in the adventure.",
+                              "The second chapter of the booklet contains a brief synopsis of {@b {@setting The Solar Republic!}} adventure setting along with new careers, setting specific weapons and gear, and a few of the ships common to the setting.",
+                              "Along with the {@title Genesys Core Rulebook} and a set of Genesys dice, this Gazette contains everything you need to run an adventure in {@b {@setting The Solar Republic!}} campaign setting."
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Section 1: Gymir Station",
+               "page": 10,
+               "entries": [
+                  "A popular stop on the Dalin trade run, Port Gymir is a hub-and-wheel style space station and small repair yard in orbit of the gas giant Aegir in the Epsilon Eridani system. Positioned inside Republic space, it is not uncommon to see Solarian Fleet patrol ships docked to the station's long central spires. While the saloons, clubs, and dancehalls of the station's commercial ring are known for their rowdy crowds, and many of Aegir's smaller moons play host to smugglers and semi-legal enterprises, Port Gymir is considered by most ships' captains a safe place to lay over and refuel.",
+                  "The space station itself consists of one large and two smaller wheels spinning around a long central hub and docking spires. The three rings are connected by sturdy spokes to the central structure, with the two smaller rings rotating in opposition to the larger one. The large, outer ring is the habitation wheel, with housing and independent life support, as well as expansive hydroponics facilities. The two smaller, inner rings are dedicated to commercial enterprise and power generation, respectively. The spokes are structural, but also contain power conduits and elevators for travel to the central hub. The hub contains station security and control, and long spires extend outward from the station's center in either direction to provide docking facilities for visiting spacecraft.",
+                  {
+                     "title": "Why Gymir?",
+                     "page": 10,
+                     "entries": [
+                        "The PCs may have stopped at Port Gymir to resupply or refuel their ship, or they may have needed repairs available at the port's shipyards. The PCs might be seeking a respite from adventure and want to enjoy the station's dancehalls, famous for their bawdy entertainment. The station is also a place to find work for a crew of traders, smugglers, or guns-for-hire."
+                     ]
+                  },
+                  {
+                     "title": "A Ship, a Ship!",
+                     "page": 11,
+                     "entries": [
+                        "This adventure assumes that the PCs are senior officers aboard a trading and light escort starship (a {@vehicle Kissimmee-class Cutter} as detailed in the second section of this Gazetteer), and that said ship is already docked at Gymir Station. Have the players choose an appropriately adventurous name for their vessel - something like Ganymede's Veil, or The Flare Runner."
+                     ]
+                  },
+                  {
+                     "title": "As All Good Stories Do",
+                     "page": 11,
+                     "entries": [
+                        "The adventure begins in a nightclub, the Nine Daughters Hall. A big band, twenty players strong, commands the main stage, belting out a neo-swing number that has the dance floor jumping. A full-throated singer lays soaring vocals across the hard-hitting rhythm and biting hooks. The air is smoky and alight with the glow of cigarillos, the haze pierced by two spotlights shining down from a catwalk far above.",
+                        "The PCs are somewhere in the club, perhaps at the bar ordering a drink, perhaps on the floor with a newly met dance partner, or perhaps enjoying a proper meal for the first time in months at one of the white-clad tables that ring the dance floor.",
+                        "{@skill Ranged (Heavy)} weapons are not allowed in the Nine Daughters Hall, and {@adversary Nine Sisters Security|security} will have their eye on any characters otherwise armed. Add {@dice setback} to {@skill Stealth} or {@skill Skulduggery} rolls that an obviously armed character makes."
+                     ]
+                  },
+                  {
+                     "title": "A Matter of Price",
+                     "page": 11,
+                     "entries": [
+                        "A scuffle breaks out near one of the PCs, between an aggressive, broad-shouldered woman in a tailored ship's suit and a slim man in a shiny silver tunic. The woman has a hold on the man's tunic, and she uses her leverage to pull and shake him. She shoves him, sending the man on a collision course with one of the PCs.",
+                        "A successful {@difficulty average|Coordination} will avoid the collision, allowing the man to fall {@rule prone} at the PC's feet. Failure results in the PC also being knocked {@rule prone}.",
+                        "A successful {@difficulty hard|Athletics} will allow the PC to catch the man and avoid the collision. Other PCs may wish to scan the crowd or gather more information about the woman. Immediately, they see two other toughs clad in ship's suits with markings that match the woman's own. A successful {@difficulty average|Perception} reveals the following:",
+                        {
+                           "type": "list",
+                           "items": [
+                              "The woman is armed with a {@gear Burner} and is wearing a {@gear Deckhand's Belt}. Her companions are each armed with a {@gear Stinger}.",
+                              "The club's {@adversary Nine Sisters Security|security personnel} have noticed the disturbance but are not moving to stop it."
+                           ]
+                        },
+                        "Read or paraphrase the following:",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "The man in the silver tunic, face turning red, protests, 'You agreed to half upfront, Morgessa, and I won't be intimidated into less.'",
+                              "'How dare you argue with me, you petty thief! You'll take what I give you, and like it, Fleinn.'",
+                              "The woman, Morgessa, is now flanked by her two henchmen.",
+                              "'I have friends of my own,' says Fleinn. 'As you will soon learn.'",
+                              "Morgessa's eyes turn to the PC."
+                           ]
+                        },
+                        "Initiative can be rolled here, and a structured encounter can begin. {@adversary Morgessa} and her {@adversary Vordun Thug|thugs} intend to rough up {@adversary Yortin Fleinn} and any of his compatriots. They begin the encounter assuming that the PC is one of their targets.",
+                        "A successful {@difficulty hard|Charm or Coercion} will convince Morgessa that the PC is unaffiliated with the man they intend to intimidate. Otherwise, and if the {@adversary Vordun Thug|thugs} act first, one of Morgessa's {@adversary Vordun Thug|thugs} attacks the PC and the other attacks Fleinn. Morgessa stands back, using her {@talent Inspiring Rhetoric (Improved)} talent to bolster her henchmen.",
+                        "The {@adversary Vordun Thug|thugs} do not draw their weapons, using their fists instead. PCs who draw their weapons will be targeted by the club's {@adversary Nine Sisters Security|security people} who have been bribed by Morgessa to stay out of the fistfight. {@adversary Nine Sisters Security|Security} will tell them to holster their weapons and enforce the command with their {@gear Stun Ray|Stun Rays} and {@gear Boarding Mace|Boarding Maces}.",
+                        "If Morgessa's original target is {@rule incapacitated}, she gloats for a moment and then exits the scene.",
+                        "If Morgessa and her {@adversary Vordun Thug|thugs} become outnumbered, Morgessa drops below half of her wound or strain threshold, or one of her henchmen is {@rule incapacitated}, she immediately withdraws from the fight, using her {@b {@adversaryAbility Live to Fight Again}} ability.",
+                        "If the PCs question Yortin Fleinn, a successful {@difficulty average|Charm or Coercion} or a small bribe can reveal any of the following:",
+                        {
+                           "type": "list",
+                           "items": [
+                              "Morgessa hired Fleinn to steal an item through an off-station contact.",
+                              "Fleinn knows that Morgessa represents a powerful interest, but no specifics.",
+                              "The item is in Ambassador Sudh's residence, envoy from Daradeen.",
+                              "The item is a jewel called the Sapphire Lily. Fleinn does not know why Morgessa wants the item."
+                           ]
+                        },
+                        "A successful {@difficulty average|Knowledge} can reveal any of the following about the Daradeen:",
+                        {
+                           "type": "list",
+                           "items": [
+                              "The Regency of Daradeen is an insular culture that spans three systems and possesses advanced starships.",
+                              "While contact is limited, they do trade with the Solar Republic and have an ambassador on Gymir Station.",
+                              "Daradeen are gender fluid as a rule, and even have a fluid biological expression."
+                           ]
+                        },
+                        "If the PCs somehow capture one of Morgessa's thugs, he will bite down on a hollow tooth that contains a deadly toxin before answering questions.",
+                        "Examining a thug's body, or if a PC managed to pick-pocket a thug earlier, discovers a ship's badge that bears the sigil of the Despot of Vordun and a small hardcase with 2 {@gear Adrenaline Hypo|adrenaline hypos} and a mystery syringe. A {@difficulty hard|Medicine} reveals the syringe contains {@adversaryAbility Metamorphic Serum|metamorphic serum} (see {@adversary Vordun Thug} profile later in this gazette). The same check, or a separate successful {@difficulty average|Medicine} of the body, finds numerous injection scars.",
+                        "A successful {@difficulty easy|Knowledge} can impart the following about the Despot of Vordun:",
+                        {
+                           "type": "list",
+                           "items": [
+                              "A former hero of the Solarian Navy, the Despot now seeks to rule the Solar Republic.",
+                              "The conflict is at a near stalemate despite the Solarian advantage in numbers, as the Despot is crafty and willing to sacrifice his troops."
+                           ]
+                        },
+                        "Fleinn does not hang around for long, saying he has other business to attend."
+                     ]
+                  },
+                  {
+                     "title": "Hard to Refuse",
+                     "page": 12,
+                     "entries": [
+                        "The PCs may be interested enough to pursue the Despot's plot on their own. If not, or if at any point the GM wants to increase the stakes, they are approached by a woman who introduces herself as {@adversary Sharan Joels}, of Solarian Intelligence.",
+                        "Agent Joels knows Morgessa is an agent of the Despot of Vordun. Solarian assets are spread thin, and so she is enlisting the PCs to disrupt Morgessa's plan, whatever it is.",
+                        "Agent Joels appeals to the PCs' patriotism first, then offers a reward of 10k Sols, then informs the PCs that their ship will be impounded until and unless they stop Morgessa.",
+                        "The agent could well become a thorn in the PCs' side, spurring them on when they get stuck by revealing information they missed. She can be aggressive and annoying, which will be all the better when she is revealed to be a double agent later."
+                     ]
+                  },
+                  {
+                     "title": "On the Trail",
+                     "page": 12,
+                     "entries": [
+                        "If the PCs want to ask around the seedier side of the Station, a successful {@difficulty average|Streetwise} will reveal any of the following:",
+                        {
+                           "type": "list",
+                           "items": [
+                              "Morgessa has been trying to hire a sneakthief or picklock for a tough job.",
+                              "Fleinn has spread the word that Morgessa cannot be trusted."
+                           ]
+                        },
+                        "For information about the Daradeen ambassador, an {@difficulty average|Charm or Coercion} at a nightlife establishment reveals any of the following:",
+                        {
+                           "type": "list",
+                           "items": [
+                              "Ambassador Sudh loves the nightlife of Gymir station and can often be found at the I Lopt Gambling Parlor.",
+                              "The ambassador is hosting guests from Daradeen, who arrived on a {@vehicle Baadal-class Shuttle|Baadal-class shuttle} rather than docking their advanced starship with the station."
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "title": "Well Met",
+                     "page": 12,
+                     "entries": [
+                        "If the PCs want to find the ambassador it is easy to track them down at the I Lopt Gambling Parlor. Accompanying Ambassador Sudh are two important Daradeen guests who are on a visit to the station. Representative Gnanik is older and officious, while the attaché {@adversary Anju} is young and curious. The three stand at a Centauri roulette table as bets are placed. A Daradeen security officer is close by, armed with a {@gear Flare Rifle}.",
+                        "Upon being informed of the plot to steal an item from their residence, Ambassador Sudh realizes their passkey is missing. Gnanik and Anju immediately become alarmed.",
+                        "Read or paraphrase the following:",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "Gnanik grabs at the ambassador's sleeve, angrily asking, 'Ambassador, do you realize what this could mean?'",
+                              "'Stay calm, honored one. I must have dropped the passkey at the saloon. My security will protect…'",
+                              "'We must return to your residence at once,' Gnanik interrupts.",
+                              "'Ah but the game has barely begun…'",
+                              "'The very future of Daradeen is at stake, Ambassador,' says the bright-eyed Anju. 'If the Lily falls into the wrong hands the consequences are unthinkable.'",
+                              "Ambassador Sudh blushes in embarrassment and bows to the younger Daradeen.",
+                              "'Of course, you are correct. Perhaps these dashing folks can be convinced to join us.' The Ambassador turns to the PCs. 'They seem to be informed on whatever is afoot.'"
+                           ]
+                        },
+                        "On the way to the Ambassador's residence, a successful {@difficulty average|Charm} will cause one of the Daradeen to reveal the existence of the Sapphire Lily. {@symbols t} generated on the check can reveal that the possessor of the Lily can demand the future regent of Daradeen's hand in marriage.",
+                        "The Daradeen, if asked, say that the regent-to-be is aboard a nearby ship. A successful {@difficulty hard|Vigilance} reveals that to be a lie. If pressed further, the Daradeen will not reveal the location of the future regent."
+                     ]
+                  },
+                  {
+                     "title": "The Ransacked Residence",
+                     "page": 13,
+                     "entries": [
+                        "The Daradeen Ambassador's residence is in the habitat ring of Gymir station. Reaching this area requires travel up to the central hub and then back down one of the structural spokes. A passkey is required to enter the ring level on which the residence is located.",
+                        "A successful {@difficulty hard|Computers} or {@difficulty average|Skulduggery} utilizing a {@gear punch card machine} will bypass security. Alternately, a {@difficulty hard|Mechanics} can brute force the security locks.",
+                        "This level is gorgeously appointed, with beds of exotic plantings, fountains, and ponds full of colorful fish. Faux clouds pattern the lighting arrays overhead. Balconies and suspended walkways overlook the lower residence levels and an artificial stream a hundred meters below.",
+                        "Whether the PCs arrive at the Ambassador's residence on their own or with the Daradeens, they find the large doorway to the suite open and unattended. The security systems have been deactivated, and a guard lies unconscious just inside the entrance.",
+                        "The guard can be roused with a successful {@difficulty average|Medicine}. They say that they were surprised and overwhelmed by several attackers. The guard describes a man that the PCs recognize as {@adversary Yortin Fleinn}.",
+                        "A search determines that the Sapphire Lily is missing. If the PCs are alone, a successful {@difficulty average|Perception} finds 2k in precious gems and a safe. A successful {@difficulty hard|Skulduggery} will open the safe, which contains 4k Sols in hard currency. All this should indicate that the thieves were only after the Sapphire Lily.",
+                        "A successful {@difficulty hard|Computers} will give the PCs access to the scanner logs and the physical characteristics of the thieves. One is undeniably Yortin Fleinn. A muddled audio recording gives a clue: the phrase Caves of Disin. A successful {@difficulty average|Knowledge} allows the PC to recognize the name as referring to the asteroid caves on one of Aegir's larger moonlets, Blar Kirkja.",
+                        "If present, the Daradeens will offer the PCs a reward of 10k Sols if they are able to retrieve the Sapphire Lily. Anju will also insist on accompanying the PCs. Ambassador Sudh and Representative Gnanik at first argue against the idea, but Anju quickly reminds them of the importance of the Lily, and they relent.",
+                        "If the PCs do not want Anju to accompany them, the reward is increased to 13k Sols if they acquiesce. If not enough, Anju will attempt an Opposed {@skill Charm} check, or begin a social encounter, to convince the PCs. They are willing to pay up to 15k Sols in the end."
+                     ]
+                  },
+                  {
+                     "title": "Who is Anju?",
+                     "page": 13,
+                     "entries": [
+                        "At this point the PCs may suspect that young {@adversary Anju} is more than just an attaché. If pressed with a successful {@difficulty hard|Charm}, they will admit to being a member of the Royal Court, and therefore of higher rank than both the ambassador and Representative Gnanik.",
+                        "The truth is that Anju is the future Regent, and they will return to claim the throne of Daradeen once they have found a foreign 'noble' to marry. What constitutes a 'noble' is unclear even to Anju, but they intend to choose their own spouse. The return of the Sapphire Lily is the only way to assure that outcome.",
+                        "The PCs may discover Anju's true identity when the GM thinks best, preferably at a dramatic moment.",
+                        "While accompanying the PCs, Anju can prove useful by upgrading important rolls with their {@adversaryAbility Born Leader} ability. They can also serve as the voice of the GM, helping to spur the PCs on toward recovering the Sapphire Lily."
+                     ]
+                  },
+                  {
+                     "title": "Well, Well, Well",
+                     "page": 14,
+                     "entries": [
+                        "Just after the PCs exit the Ambassador's residence, they hear a chime indicating an artificial rainstorm is about to begin. They have time to reach the lifts, needing only to cross the suspended walkway leading to the lift lobby.",
+                        "Here they are accosted by several of Morgessa's {@adversary Vordun Thug|thugs}. Read or paraphrase the following:",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "Three well-muscled, rough looking people block the walkway ahead. Their ship suits are familiar, marking them as more of Morgessa's {@adversary Vordun Thug|thugs}.",
+                              "'Morgessa was right, you are involved with that rat Fleinn! Hand over the jewel, or you all are going to see how rats are dealt with in Vordun!'",
+                              "There is the hum of a pair of Knucklers powering on from behind you, as two more {@adversary Vordun Thug|thugs} appear from around a fountain."
+                           ]
+                        },
+                        "They are demanding the Sapphire Lily, convinced the PCs are in league with Fleinn. This will likely start a combat encounter. The {@adversary Vordun Thug|thugs} are not pulling punches, and one or more immediately inject themselves with {@adversaryAbility Metamorphic Serum}. They will kill the PCs if they can.",
+                        "The walkway is narrow enough to create a bottleneck, and the {@adversary Vordun Thug|thugs} may try to push the PCs over the edge, triggering a {@rule falling|fall} at short range to another walkway below.",
+                        "After the first round of combat, another chime sounds from overhead, and an artificial rainstorm begins. This adds {@dice setback} to all skill checks, and {@dice setback|2} to combat checks."
+                     ]
+                  },
+                  {
+                     "title": "Tracking Fleinn",
+                     "page": 14,
+                     "entries": [
+                        "If the PCs have not discovered that {@adversary Yortin Fleinn} has the Lily, a successful {@difficulty easy|Perception} finds a silver brooch in the lift lobby or on the walkway which the PCs recognize as belonging to Fleinn. The PCs might also receive a {@gear hand radio} call from Sharan Joels the intelligence agent that puts them on Fleinn's trail, or a call from Fleinn himself offering to sell the Sapphire Lily. If the latter, then Fleinn tells the PCs to meet him on Blar Kirkja, a moonlet with extensive natural caves.",
+                        "There is a security terminal in the lift lobby, and others throughout the station. A successful {@difficulty average|Computers} at one can search the station's logs for Yortin Fleinn's name and find that he has requested clearance for a shuttle departure. Alternately, a successful {@difficulty average|Streetwise} in the commercial section of the station finds someone who overheard Fleinn talking about 'going to ground' for a few days until something blows over. A successful {@difficulty average|Knowledge} can reveal that the many moonlets orbiting Aegir often serve as hiding places for smugglers and thieves.",
+                        "If the PCs are not able to pick up Fleinn's trail, they can spot him entering a lift to the docking spires. Pursuing him will lead them to a shuttle bay just as he is departing the station. As a reminder, the spires and station center are a {@rule Gravity|micro-gravity environment}."
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Section 2: Blar Kirkja",
+               "page": 14,
+               "entries": [
+                  "Blar Kirkja is an irregular moonlet that spans fifty kilometers at its widest point. Extensive caves and mine shafts wind beneath the grey rock and dust of the planetesimal's surface. One of the first bodies around Aegir to be mined, Blar Kirkja was treated with an almost superstitious reverence in the early days of Epsilon Eridani's settlement, but that time was centuries ago.",
+                  {
+                     "title": "Quiet, and Dark",
+                     "page": 14,
+                     "entries": [
+                        "An old mining dock is the only facility with power readings on Blar Kirkja. Tall cliffs surround the space dock, requiring a successful {@rule Dangerous Driving} check to dock with one of the two passive docking ports that are still active. The other port is occupied by another {@vehicle Saucer-class Shuttle|saucer shuttle} craft. As the shuttle docks, the characters feel the light gravity of the moonlet take hold.",
+                        "The PCs' saucer has {@gear Space Suit|spacesuits} for the party, which will be required to enter the facility as it is no longer pressurized. A successful {@difficulty average|Mechanics or Skulduggery} is needed to open the secured docking hatch.",
+                        "Once inside, the PCs find a cavernous, empty cargo bay. The meager lamps provided with the spacesuits barely illuminate the cart rails that lead into two large tunnels cut into the rock wall opposite the dock. A control station, stripped of its parts, overlooks the room from atop a raised platform.",
+                        "If the PCs wish to investigate the other shuttle, a successful {@difficulty hard|Mechanics or Skulduggery} opens the docking hatch. Success on an {@difficulty average|Computers} confirms that this was {@adversary Yortin Fleinn}'s shuttle.",
+                        "A successful {@difficulty easy|Perception or Survival} spots fresh tracks through the dust on the cargo bay's floor. {@symbols a} can reveal any of the following:",
+                        {
+                           "type": "list",
+                           "items": [
+                              "A symbol that marks the same passage to which the tracks lead.",
+                              "There is evidence of other recent visitors to this facility.",
+                              "It seems that people regularly use this dock every few weeks."
+                           ]
+                        },
+                        "A successful {@difficulty average|Knowledge}, or {@symbols a} generated on the check, can reveal any of the following about the symbol:",
+                        {
+                           "type": "list",
+                           "items": [
+                              "The marking is the name Disa, written in an old runic language.",
+                              "The rune is written in a manner that indicates a direction, like a trail marker.",
+                              "There were once religious cults in the Epsilon Eridani system that used this ancient language.",
+                              "Disa is the name of a mythological woman associated with sacrifice."
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "title": "A Forgotten Place",
+                     "page": 15,
+                     "entries": [
+                        "One of the tunnels leads into the housing section of the facility and is ultimately a dead end. Again, anything of use has been stripped, and the old mess hall, infirmary, entertainment room, and crew quarters are eerie in the airless dark. A successful {@difficulty average|Perception} discovers an old, but serviceable, {@gear Medical Case|medicine case} and four {@gear Palliative Tonic|palliative tonics}.",
+                        "The other tunnel, where the tracks from the cargo bay lead, opens into an ore processing center. Huge conveyor belts and giant bins and chutes are all that remains of the machinery here. Beyond this begin the mining tunnels leading deeper into the rock.",
+                        "In the ore processing center the PCs encounter an {@adversary Old Mining Robot|old mining robot}. A successful out-of-turn {@difficulty hard|Vigilance} will spot the robot before it activates. A successful {@difficulty hard|Stealth} is required to approach the robot without triggering its defenses. A successful {@difficulty hard|Mechanics} can disable the robot. Otherwise, the large machine activates and attacks the PCs.",
+                        "Read or paraphrase the following:",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "A cloud of dust accompanies the vibrations through the rock beneath your feet, as the ancient robot unfolds itself. Kaleidoscopic blinking lights illuminate the mist of particles that rain down around you, while the machine's large manipulator arms cut deep furrows of shadow through the glow.",
+                              "The robot focuses its receptors on your group. One sturdy leg swings forward as it attacks."
+                           ]
+                        },
+                        "{@symbols hhh} generated on any check during the encounter can loosen an air hose on that character's spacesuit, causing the loss of fifteen minutes of breathable air before they can reattach the hose.",
+                        "During the encounter, it is recommended to use the {@rule Nemesis Extra Activation Rules|additional activation optional rule} for the robot. On this activation, the robot can use their {@adversaryAbility Stomp} ability to shake the machinery and rock walls with its heavy footfalls, triggering an out-of-turn {@difficulty hard|Coordination} for each of the PCs. Failure knocks the character {@rule prone}, while each {@symbols h} generated causes one wound.",
+                        "Success on an {@difficulty average|Perception} in the ore processing center finds an emergency kit with two {@gear Palliative Tonic|palliative tonics} and three {@gear Adrenaline Hypo|adrenaline hypos}."
+                     ]
+                  },
+                  {
+                     "title": "Deeper, One Must Go",
+                     "page": 15,
+                     "entries": [
+                        "Quickly finding their way through the tunnels requires the PCs to succeed on an {@difficulty average|Survival}, with an upgrade if they previously discovered the recent tracks through the dust. This takes one hour, minus fifteen minutes per {@symbols a} after the first. Failure means the PCs become lost in the tunnels and luckily reach the final chamber with only a few minutes of oxygen left in their suits. {@symbols a} can be used to find the following:",
+                        {
+                           "type": "list",
+                           "items": [
+                              "More of the glyphs mark the cave walls, and clearly indicate a path through the tunnels.",
+                              "The recent tracks follow the path indicated by the symbols.",
+                              "A spacesuit lies crumpled along a passage, containing a desiccated body and a half-full oxygen tank with an hour of breathable air."
+                           ]
+                        },
+                        "As the PCs reach the end of the maze of tunnels, they encounter an airlock set into a stone wall. A successful {@difficulty average|Computers} can access the airlock's closed circuit camera, giving a view of more tunnel beyond. A successful {@difficulty hard|Mechanics or Skulduggery} can cycle the airlock and allow the PCs to pass through.",
+                        "Once through the airlock, a hand scanner can verify the presence of breathable atmosphere. The PCs spacesuits will automatically recharge their tanks.",
+                        "The characters are now in a natural tunnel, unworked and jagged with rocky projections. Ahead, there is the glow of artificial light. A large glyph is painted on the wall here, and success on an {@difficulty average|Knowledge} translates the word as Disablot. {@symbols a} can reveal the following:",
+                        {
+                           "type": "list",
+                           "items": [
+                              "Disablot is the name of an ancient ritual, meaning blood sacrifice.",
+                              "There are rumors that some who seek refuge among the asteroids orbiting the gas giant Aegir disappear without a trace."
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "title": "Just What Has Been Found?",
+                     "page": 16,
+                     "entries": [
+                        "A successful {@difficulty easy|Perception} will note the sounds of voices echoing down the tunnel from up ahead. {@symbols a} can be used to make out one of the voices – that of {@adversary Yortin Fleinn} – pleading for his life.",
+                        "As the PCs make their way along the natural tunnel, the passage grows wider. A slab of smooth stone overhead, tilted at an angle and running for ten meters, is painted with a mural of pictures and glyphs. A successful {@difficulty easy|Knowledge} deciphers the story of a woman, Disa, saving the lives of hundreds of innocents by choosing just a few people to be sacrificed instead.",
+                        "The tunnel opens into a large, cathedral-like space lit by the glow of flood lights angled up toward the craggy ceiling above. The far walls of the space are folded and uneven, creating deep pools of shadow. In the center of the space (long range to the PCs) a dozen people, wrapped in tight garments made of fur, stand in a loose circle around an altar of black stone. A man has been laid upon the altar, bound by hand and foot. It is Yortin Fleinn.",
+                        "Read or paraphrase the following:",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "A group of a dozen figures, clad in furs and swaying to a slow chant they intone in unison, are arrayed around a jet black altar of stone.",
+                              "One figure stands beside the altar, her tight hood of white fur thrown back to reveal silver hair and a severe, lined face. In her hands she holds a transparent case, inside of which is a large jewel, intricately carved into the shape of a flower.",
+                              "'Please, Gertra, I will give you the Lily if you let me free!' Fleinn's tone is desperate.",
+                              "'That jewel has value beyond its beauty alone. Whoever holds it will wield great power, as the Regent of Daradeen must marry the one who presents it!'",
+                              "The silver haired woman looks down at Fleinn with a stern and unforgiving expression.",
+                              "'I know exactly what I hold, Yortin. With this blessing the Followers of Disa will at last move from the darkness into the light. A shame you will not see it.'",
+                              "'Begin the sacrifice.'"
+                           ]
+                        },
+                        "At {@adversary Gertra|Gertra's} words two of the other figures move toward the altar, both drawing forth long blades that shine in the reflected flood lights. Gertra strides toward the back of the chamber while the volume of the chanting increases. If uninterrupted, the cultists end Fleinn's life.",
+                        "The PCs may want to begin an encounter with the {@adversary Follower of Disa|Followers of Disa}, or they might try to pursue Gertra without interfering with the ritual. Success on a {@difficulty hard|Stealth} will allow the PCs to circle the edge of the chamber without alerting the cultists. As they do, Gertra has exited the room via a passage concealed in the shadows of the far wall.",
+                        "If the cultists become aware of the PCs they will attack them as Gertra leaves through the concealed passage, forming three minion groups of four each.",
+                        "Once the PCs do follow Gertra, they find a narrow natural tunnel through the stone that at times becomes difficult to pass through. A successful {@difficulty average|Coordination} is required to pass without injury. A failed check deals one wound per uncanceled {@symbols f} and one strain per uncanceled {@symbols h}, ignoring soak. While this happens the sound of a cycling airlock echoes down the passage from up ahead.",
+                        "When the PCs reach the airlock it should be obvious from the readouts that there is no breathable air on the other side. Arrayed along the wall near the airlock are a dozen {@gear Space Suit|space suits}.",
+                        "No check is needed to cycle through the airlock, and when the PCs do, they find a large cavern that has been converted to a landing bay for several saucer shuttles. Across the space is a rift in the stone that provides a breathtaking view of the gas giant Aegir against a sea of stars.",
+                        "Long range to the PCs, between the airlock and the five saucers, are twelve people in spacesuits involved in a confrontation. Once again, the PCs recognize the colors and insignia of {@adversary Morgessa|Morgessa's} crew, as she and six of her henchmen block Gertra and five of her followers from approaching the shuttles. Everyone involved has weapons drawn, save Gertra who has a bulky duffle bag over her shoulder.",
+                        "Anyone with a {@gear hand radio} can find the frequency that the two groups are using to communicate. If they do, read or paraphrase the following:",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "'Listen you old loony, that jewel belongs to the Despot of Vordun, and I intend to bring it to him,' says Morgessa in an exasperated voice.",
+                              "'Nonsense, this is a gift from our mistress, Disa. I will be married to the Regent of Daradeen and use that mighty fleet to bring Disa's truth to the galaxy. Out of our way!'",
+                              "'You're going nowhere, fruitcake. Hand over the Sapphire Lily and I will let you live.'",
+                              "Gertra laughs, declaring, 'I will do you no such favor, witch! Kill her!'"
+                           ]
+                        },
+                        "The two groups attack one another. If the PCs have not heard the above conversation, they simply watch a fight break out between the two groups. If they do not interfere, two members of each group fall to the first volley of weapons fire. Soon, however, Morgessa's gang takes the upper hand. As Gertra's last follower drops, she holds up a hand and then tosses her duffle toward Morgessa. The gang leader strides forward toward the duffle bag and Gertra backs away.",
+                        "Morgessa snatches up the duffle and rips it open, pulling forth an empty transparent box. Before she has time to react Gertra scrambles up the ramp into one of the saucer shuttles and manages to take off. Morgessa's gang is not able to stop her.",
+                        "If the PCs choose to involve themselves in the confrontation, a confusing, three-way encounter ensues. Gertra will attempt to escape with the Sapphire Lily stuffed inside her {@gear space suit}. The cult leader will toss the duffle toward Morgessa as a distraction, and during a heavy firefight the gang leader will not spare the time to check the duffle bag as she grabs it.",
+                        "Anju, if they are present, begs the PCs to be careful not to damage the Sapphire Lily.",
+                        "Any of the adversaries might fire into the ceiling above the PCs during the encounter, causing a rock fall. A successful {@difficulty average|Coordination or Athletics} is required to avoid being knocked {@rule prone}, with each uncanceled {@symbols f} causing one wound ignoring soak.",
+                        "{@symbols hhh} or a despair generated on any PC skill check can result in a tear in that character's {@gear space suit}. A successful {@difficulty easy|Mechanics} is required to repair the damage. Otherwise, all breathable atmosphere escapes the suit in three rounds.",
+                        "Should the PCs manage to incapacitate Gertra, one of her followers performs the distraction with the duffle bag and drags the cult leader onto the shuttle. If the PCs prevent this outcome another of the cultists manages to escape, having had the Sapphire Lily all along. If necessary, they have been faking their death since early in the encounter.",
+                        "Morgessa, for her part, will use her {@b {@adversaryAbility Live to Fight Again}} ability to escape, should she be reduced to half her wound threshold."
+                     ]
+                  },
+                  {
+                     "title": "Follow That Shuttle!",
+                     "page": 17,
+                     "entries": [
+                        "The PCs can easily board any of the remaining {@vehicle Saucer-class Shuttle|saucer-class shuttles}. A {@rule Dangerous Driving} check is needed to safely exit the ersatz landing bay.",
+                        "Success on an {@difficulty easy|Computers} will track the other shuttle crafts that have just left the cavern. Alternately, a successful {@difficulty average|Perception} will spot the other shuttle through the viewport. If needed, Anju or a crackling communication from Agent Sharan Joels can point the PCs toward Gertra's goal.",
+                        "Gertra, or her follower, is headed toward a Daradeen ship that floats alone in an orbit two kilometers from Gymir station.",
+                        "Anju, if they are present, identifies the ship as the Khojakarta. This is the ship that they and Representative Gnanik arrived on, which is tasked with delivering the Sapphire Lily to an appropriate spouse for the new regent-to-be. If the PCs do not yet know, Anju informs them that the future regent will marry whoever presents them the Sapphire Lily.",
+                        "The saucer-class shuttle that carries Gertra or her follower docks with the Khojakarta. No check is needed for the PCs to also dock with the {@vehicle Chaandanee-class Sloop|Chaandanee-class sloop}."
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Section 3: The Khojakarta",
+               "page": 17,
+               "entries": [
+                  "A prototype Daradeen vessel, the Khojakarta is as gorgeous to behold as it is deadly. Sleek, bristling with weapons ports, and obviously newly built, this {@vehicle Chaandanee-class Sloop|Chaandanee-class sloop} hangs in orbit around Aegir, glinting against the blackness of space.",
+                  {
+                     "title": "A Gift or a Curse",
+                     "page": 17,
+                     "entries": [
+                        "As the PCs exit the shuttle, they see Gertra (or her follower) floating in the center of the docking bay facing a half circle of Daradeen crew-people. The PCs also recognize Agent {@adversary Sharan Joels} who is for some reason among the Daradeen. If {@adversary Anju} did not accompany the PCs earlier, they are also present.",
+                        "As a reminder, ships not under way are a {@rule Gravity|micro-gravity environment}, which adds {@dice setback|2} to all {@characteristic Brawn} and {@characteristic Agility} checks.",
+                        "Read or paraphrase the following:",
+                        {
+                           "type": "read-aloud",
+                           "entries": [
+                              "The Cultist of Disa floats in the center of the docking bay before a half circle of Daradeen, the Sapphire Lily held above her head.",
+                              "'Bring the new regent to me, immediately! I am their rightful betrothed, as I possess the Sapphire…'",
+                              "A beam of energy pierces the woman's chest, silencing the cultist as the Sapphire Lily twirls from her hand. Agent Sharan Joels lowers her weapon, a cold smile painted across her lips.",
+                              "'Thank you, Sharan,' says Morgessa, who is framed by one of the airlocks that ring the docking bay, her burner drawn.",
+                              "'Keep your soldiers back, Regent Anju,' Agent Joels says with a sneer. 'No Daradeen can interfere with this conflict.'",
+                              "Anju looks at you with sadness in her eyes, confirming, 'It is true, by custom I cannot stop this fight for the Sapphire Lily, and for my hand in marriage.'"
+                           ]
+                        },
+                        "{@adversary Morgessa} launches herself toward the Sapphire Lily, starting the final structured encounter of the adventure. If she manages to capture the jewel, she and Sharan Joels will attempt to flee by returning to her {@vehicle Saucer-class Shuttle|saucer-class shuttle}. The two women will fight to the death to achieve this goal, and if Morgessa is {@rule incapacitated} Sharan will try to flee alone with the Sapphire Lily.",
+                        "Morgessa cannot use her {@b {@adversaryAbility Live to Fight Again}} ability in this encounter, though she may resort to injecting herself with {@adversaryAbility Metamorphic Serum|metamorphic serum} if reduced to half her Wound or Strain threshold."
+                     ]
+                  },
+                  {
+                     "title": "What Future May Come",
+                     "page": 18,
+                     "entries": [
+                        "If Morgessa or Sharan Joels succeed in escaping with the Sapphire Lily their last words are as follows:",
+                        "'Soon the Despot of Vordun will find you, Regent Anju, and claim his place by your side as your rightful husband!'",
+                        "If the PCs recover the Sapphire Lily, they are paid a reward of 15k Sols by Regent-to-be Anju, no matter what they negotiated earlier.",
+                        "If one of the characters presents the intricately carved jewel to Anju, either on purpose or by accident, they are now betrothed in the eyes of the Daradeen and destined to rule by Anju's side. Anju's presence almost instantly becomes intoxicating to the PC that presents the Sapphire Lily, as the Daradeen's fluid identity comports to their future spouse. The Regent-to-be has their own free will, and while the strict, almost mystical nature of Daradeen tradition requires a marriage, Anju does not have to be happy about it. A betrothed PC is likely to find that they are subject to rituals and social pressure that they do not enjoy.",
+                        "Finally, should the GM desire a cliffhanger for the end of the adventure, sirens blare throughout the Khojakarta, calling the crew to battle stations. Morgessa's {@vehicle Ca Den Raider-class Frigate|Ca Den Raider} has attacked the Daradeen Sloop, seeking to avenge her death!"
+                     ]
+                  }
+               ]
+            },
+            {
+               "title": "Section 4: Adversaries",
+               "page": 18,
+               "entries": [
+                  "{@adversary Morgessa}",
+                  "{@adversary Vordun Thug}",
+                  "{@adversary Yortin Fleinn}",
+                  "{@adversary Nine Sisters Security}",
+                  "{@adversary Sharan Joels}",
+                  "{@adversary Anju}",
+                  "{@adversary Old Mining Robot}",
+                  "{@adversary Gertra}",
+                  "{@adversary Follower of Disa}"
+               ]
+            }
+         ]
+      }
+   ]
+}
