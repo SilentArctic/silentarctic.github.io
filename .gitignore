@@ -1,12 +1,12 @@
 /node_modules
 .git
-.vscode
 stage.json
 
 getAdversaryAbilities.js
 updateAdversaryAbilities.js
 /api/abilities
 /api/adversaries
+/api/private
 /notion
 
-WORK_LEDGER.md
+WORK_LEDGER.*.md

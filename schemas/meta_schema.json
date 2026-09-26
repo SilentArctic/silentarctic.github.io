@@ -82,6 +82,10 @@
             "module": {
                "type": "boolean",
                "description": "For official Modules. If true, Core Collection will not be installed by default for new users."
+            },
+            "updateKey": {
+               "type": "string",
+               "description": "Private content packs only. Generated automatically and used to verify update requests. Do not edit."
             }
          },
          "required": [
@@ -97,7 +101,8 @@
             "url",
             "convertedBy",
             "releaseDate",
-            "module"
+            "module",
+            "updateKey"
          ],
          "additionalProperties": false
       },

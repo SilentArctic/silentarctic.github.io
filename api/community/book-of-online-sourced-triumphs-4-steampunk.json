@@ -8,11 +8,12 @@
          "abbreviation": "BOOST:4",
          "color": "#30F030",
          "authors": [
+            "Genesys RPG Community",
+            "Caleb \"Cptn_Smitty\" Smith",
+            "Chris Markham",
             "Flame112",
             "Giri Raman",
-            "Chris Markham",
-            "Tyler Comstock",
-            "Caleb \"Cptn_Smitty\" Smith"
+            "Tyler Comstock"
          ],
          "convertedBy": [
             "SilentArctic"
