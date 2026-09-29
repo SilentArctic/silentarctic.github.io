@@ -3,7 +3,7 @@
    "_meta": {
       "source": {
          "version": "2026.9.29",
-         "json": "twilight-imperium-mecatol-report",
+         "json": "embers-mecatol-report",
          "full": "Twilight Imperium: Mecatol Report",
          "abbreviation": "EotI:MR",
          "color": "#EF3F22",
@@ -803,6 +803,18 @@
             "incidental (out of turn)",
             "story point cost",
             "free maneuver"
+         ]
+      },
+      {
+         "name": "Retaliatory Strike",
+         "description": [
+            "This character may spend {@symbols hhh} or {@symbols d} from an opponent's combat check targeting this creature to throw the opponent to any location within short range. The opponent lands {@rule prone} and suffers 4 strain."
+         ],
+         "tags": [
+            "combat",
+            "results spend",
+            "defensive",
+            "incidental (out of turn)"
          ]
       },
       {
