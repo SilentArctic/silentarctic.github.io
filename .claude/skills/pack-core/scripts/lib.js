@@ -49,11 +49,28 @@ const DICE_NAMES = {
 
 const DIFFICULTIES = ['simple', 'easy', 'average', 'hard', 'daunting', 'formidable'];
 
-/* every pack file in api/ and api/community/ */
+/* pack tiers by folder: official (api/), community (api/community/), private (api/private/, gitignored) */
+const TIER_DIRS = { official: 'api', community: path.join('api', 'community'), private: path.join('api', 'private') };
+
+function packTier(file) {
+   const dir = path.relative(ROOT, path.dirname(path.resolve(file)));
+   return Object.keys(TIER_DIRS).find(t => TIER_DIRS[t] === dir) || 'official';
+}
+
+/* packs in one set share an abbreviation prefix before ":" (BOOST:1, EotI:SSE, RoT:ES); SET_ALIASES groups the rest */
+const SET_ALIASES = { zgm: 'zynnythryx', ztb: 'zynnythryx' };
+
+function packSet(abbr) {
+   const lower = abbr.toLowerCase();
+   return SET_ALIASES[lower] || lower.split(':')[0];
+}
+
+/* every pack file in api/, api/community/, and api/private/ (when present) */
 function listPackFiles() {
    const files = [];
-   for (const dir of ['api', path.join('api', 'community')]) {
+   for (const dir of Object.values(TIER_DIRS)) {
       const abs = path.join(ROOT, dir);
+      if (!fs.existsSync(abs)) continue;
       for (const f of fs.readdirSync(abs)) {
          if (f.endsWith('.json') && f !== 'index.json') files.push(path.join(abs, f));
       }
@@ -82,7 +99,7 @@ function loadPacks(overrides = {}) {
       }
       const abbr = data?._meta?.source?.abbreviation;
       if (!abbr) continue;
-      const pack = { file, abbr, abbrLower: abbr.toLowerCase(), data, names: buildNameIndex(data) };
+      const pack = makePack(file, abbr, data);
       byAbbr.set(pack.abbrLower, pack);
       byFile.set(path.resolve(file), pack);
    }
@@ -92,12 +109,26 @@ function loadPacks(overrides = {}) {
       if (byFile.has(file)) continue;
       const abbr = data?._meta?.source?.abbreviation;
       if (!abbr) continue;
-      const pack = { file, abbr, abbrLower: abbr.toLowerCase(), data, names: buildNameIndex(data) };
+      const pack = makePack(file, abbr, data);
       byAbbr.set(pack.abbrLower, pack);
       byFile.set(file, pack);
    }
 
    return { byAbbr, byFile };
+}
+
+function makePack(file, abbr, data) {
+   return { file, abbr, abbrLower: abbr.toLowerCase(), tier: packTier(file), set: packSet(abbr), data, names: buildNameIndex(data) };
+}
+
+/**
+ * Packs `pack` may reference, highest priority first: itself, the rest of its set, CRB, then the others.
+ * Official packs may only reference official packs; community and private packs may reference every pack.
+ */
+function refScope(packs, pack) {
+   const all = [...packs.byAbbr.values()].filter(p => p !== pack && (pack.tier !== 'official' || p.tier === 'official'));
+   const rank = p => (p.set === pack.set ? 0 : p.abbrLower === 'crb' ? 1 : 2);
+   return [pack, ...all.sort((x, y) => rank(x) - rank(y))];
 }
 
 /* Map<group, Map<lowerName, originalName>> */
@@ -319,6 +350,9 @@ module.exports = {
    readJson,
    listPackFiles,
    loadPacks,
+   packTier,
+   packSet,
+   refScope,
    buildNameIndex,
    packHas,
    whereIs,

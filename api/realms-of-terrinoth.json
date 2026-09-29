@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2026.9.20",
+         "version": "2026.9.27",
          "json": "realms-of-terrinoth",
          "full": "Realms of Terrinoth",
          "abbreviation": "RoT",
@@ -161,7 +161,7 @@
                },
                {
                   "name": "Words of Unmaking",
-                  "description": "The dragon chooses one magic item (including a magic weapon and armor) or runebound shard within medium range and make an {@difficulty Daunting|Arcana}. If successful, until the beginning of the dragon's next turn that item loses its magical ability and becomes a mundane gem, suit of armor, sword, rock, etc. The dragon may maintain this spell by performing the concentrate maneuver."
+                  "description": "The dragon chooses one magic item (including a magic weapon and armor) or runebound shard within medium range and make an {@difficulty Daunting|Arcana}. If successful, until the beginning of the dragon's next turn that item loses its magical ability and becomes a mundane gem, suit of armor, sword, rock, etc. The dragon may maintain this spell by performing the {@rule concentrate} maneuver."
                }
             ]
          },
@@ -746,8 +746,8 @@
             }
          ],
          "gear": [
-            "Plate Armor: +2 soak, +1 defense.",
-            "War Mount: see RoT page 105"
+            "{@gear Plate Armor}: +2 soak, +1 defense.",
+            "{@adversary War Mount}: see RoT page 105"
          ],
          "tags": [
             "source:RoT",
@@ -1024,14 +1024,14 @@
                },
                {
                   "name": "Exsanguinate",
-                  "description": "Select one target at short or medium range for this curse and make a {@difficulty Hard|Divine}. If the check is successful, until the end of the witch's next turn, the target deceases the ability of any skill checks they make by one and suffers one additional wound each time they suffer wounds. The witch can maintain these effects with the concentrate maneuver."
+                  "description": "Select one target at short or medium range for this curse and make a {@difficulty Hard|Divine}. If the check is successful, until the end of the witch's next turn, the target deceases the ability of any skill checks they make by one and suffers one additional wound each time they suffer wounds. The witch can maintain these effects with the {@rule concentrate} maneuver."
                }
             ]
          },
          "weapons": [],
          "gear": [
             "Bone staff: +4 damage to magic attacks; the first Range effect added does not increase difficulty; when used to cast a spell that inflicts 1 or more wounds, caster heals 1 wound.",
-            "Leather Armor: +1 soak"
+            "{@gear Leather Armor}: +1 soak"
          ],
          "tags": [
             "source:RoT",
@@ -1273,7 +1273,7 @@
          ],
          "gear": [
             "Battered Armor: +2 soak, +1 defense.",
-            "War mount (see page 105 of RoT)"
+            "{@adversary War mount} (see page 105 of RoT)"
          ],
          "tags": [
             "source:RoT",
@@ -1467,7 +1467,7 @@
             }
          ],
          "gear": [
-            "Leather Armor: +1 soak"
+            "{@gear Leather Armor}: +1 soak"
          ],
          "tags": [
             "source:RoT",
@@ -1562,7 +1562,7 @@
             "spells": [
                {
                   "name": "Tremor",
-                  "description": "The Dimora chooses one target at short range and makes an {@difficulty Average|Arcana}. If the check is successful, this magic attack inflicts 7 damage, +1 damage per {@symbols s} and the target and all characters engaged with the target are knocked prone. The Dimora can spend {@symbols a} on the check to move the target up to one range band in any direction."
+                  "description": "The Dimora chooses one target at short range and makes an {@difficulty Average|Arcana}. If the check is successful, this magic attack inflicts 7 damage, +1 damage per {@symbols s} and the target and all characters engaged with the target are knocked {@rule prone}. The Dimora can spend {@symbols a} on the check to move the target up to one range band in any direction."
                },
                {
                   "name": "Prison of Stone",
@@ -1731,11 +1731,11 @@
             "spells": [
                {
                   "name": "Cyclone",
-                  "description": "The Djinn chooses one target at up to medium range and make a {@difficulty Hard|Arcana}. If successful, this magic attack inflicts 4 damage +1 damage per {@symbols s}, with the Disorient 4 and Knockdown qualities. The Djinn can also spend {@symbols a} to move the target up to one range band in any direction."
+                  "description": "The Djinn chooses one target at up to medium range and make a {@difficulty Hard|Arcana}. If successful, this magic attack inflicts 4 damage +1 damage per {@symbols s}, with the {@quality Disorient|Disorient 4} and {@quality Knockdown} qualities. The Djinn can also spend {@symbols a} to move the target up to one range band in any direction."
                },
                {
                   "name": "Twisted Wish",
-                  "description": "The Djinn chooses one target within short range and make a {@difficulty Daunting|Arcana}. If successful, until the end of the Djinn's next turn, each time the target makes a skill check, decrease the ability by one and the Djinn may choose to change any die in the pool not displaying {@symbols t} or {@symbols d} to any other face. The Djinn may sustain these effects with the concentrate maneuver."
+                  "description": "The Djinn chooses one target within short range and make a {@difficulty Daunting|Arcana}. If successful, until the end of the Djinn's next turn, each time the target makes a skill check, decrease the ability by one and the Djinn may choose to change any die in the pool not displaying {@symbols t} or {@symbols d} to any other face. The Djinn may sustain these effects with the {@rule concentrate} maneuver."
                }
             ]
          },
@@ -1930,7 +1930,7 @@
             }
          ],
          "gear": [
-            "Scale Armor: +2 soak"
+            "{@gear Scale|Scale Armor}: +2 soak"
          ],
          "tags": [
             "source:RoT",
@@ -3011,17 +3011,17 @@
             "spells": [
                {
                   "name": "Addling Tune",
-                  "description": "Make an {@difficulty Average|Verse}. If the check is successful, until the end of the minstrel's next turn, all other characters within medium range must first suffer one strain before using the concentrate maneuver. The minstrel can sustain this effect with the concentrate maneuver."
+                  "description": "Make an {@difficulty Average|Verse}. If the check is successful, until the end of the minstrel's next turn, all other characters within medium range must first suffer one strain before using the {@rule concentrate} maneuver. The minstrel can sustain this effect with the {@rule concentrate} maneuver."
                },
                {
                   "name": "Demoralizing Stanza",
-                  "description": "Select one target within short range and make an {@difficulty Average|Verse}. If the check is successful, until the end of the minstrel's next turn, the target decreases the ability of any skill checks they make by one. The minstrel can sustain this effect with the concentrate maneuver."
+                  "description": "Select one target within short range and make an {@difficulty Average|Verse}. If the check is successful, until the end of the minstrel's next turn, the target decreases the ability of any skill checks they make by one. The minstrel can sustain this effect with the {@rule concentrate} maneuver."
                }
             ]
          },
          "weapons": [],
          "gear": [
-            "Lute, pipes, and other musical instruments.",
+            "Lute, pipes, and other {@gear musical instrument|musical instruments}.",
             "Colorful garb"
          ],
          "tags": [
@@ -3216,7 +3216,7 @@
                },
                {
                   "name": "Bad Luck",
-                  "description": "Choose a target at short or medium range and make a {@difficulty Hard|Arcana}. If successful, the target decreases the ability of any skill checks they make by 1 until the end of the goblin witcher's next turn, and when the target makes a check, may change one {@dice setback} to a face displaying f. The goblin witcher may maintain these effects by performing the concentrate maneuver."
+                  "description": "Choose a target at short or medium range and make a {@difficulty Hard|Arcana}. If successful, the target decreases the ability of any skill checks they make by 1 until the end of the goblin witcher's next turn, and when the target makes a check, may change one {@dice setback} to a face displaying f. The goblin witcher may maintain these effects by performing the {@rule concentrate} maneuver."
                }
             ]
          },
@@ -3330,14 +3330,14 @@
                },
                {
                   "name": "Magic Shield",
-                  "description": "Make a {@difficulty Hard|Arcana}; if successful, until the end of the wizard's next turn, reduce the damage of all hits against them by one, plus one for every {@symbols ss}, and the wizard gains +3 defense. The wizard can maintain these effects with the concentrate maneuver."
+                  "description": "Make a {@difficulty Hard|Arcana}; if successful, until the end of the wizard's next turn, reduce the damage of all hits against them by one, plus one for every {@symbols ss}, and the wizard gains +3 defense. The wizard can maintain these effects with the {@rule concentrate} maneuver."
                }
             ]
          },
          "weapons": [],
          "gear": [
-            "Magic staff: Add +4 damage to magic attacks; the first Range effect added does not increase difficulty.",
-            "Heavy Robes: +1 defense"
+            "{@gear Magic staff}: Add +4 damage to magic attacks; the first Range effect added does not increase difficulty.",
+            "{@gear Heavy Robes}: +1 defense"
          ],
          "tags": [
             "source:RoT",
@@ -3556,7 +3556,7 @@
             }
          ],
          "gear": [
-            "When bonded with an Orc outrider, a Gurak Tol gains armor that adds +2 to its soak."
+            "When bonded with an {@adversary Orc outrider}, a Gurak Tol gains armor that adds +2 to its soak."
          ],
          "tags": [
             "source:RoT",
@@ -4402,7 +4402,8 @@
             }
          ],
          "gear": [
-            "Leather Armor: +1 soak, Leonx see page 180"
+            "{@gear Leather Armor}: +1 soak",
+            "{@adversary Leonx} (see page 180)"
          ],
          "tags": [
             "source:RoT",
@@ -4522,7 +4523,7 @@
                },
                {
                   "name": "Curse of the Night",
-                  "description": "Choose one target within short range and make a {@difficulty Hard|Arcana}; if the check succeeds, the target decreases the ability of any skill checks they make by one and reduces their strain and wound thresholds by 4 until the end of the Lord of Bilehall's next turn. The Lord of Bilehall may maintain these effects by performing the Concentrate maneuver."
+                  "description": "Choose one target within short range and make a {@difficulty Hard|Arcana}; if the check succeeds, the target decreases the ability of any skill checks they make by one and reduces their strain and wound thresholds by 4 until the end of the Lord of Bilehall's next turn. The Lord of Bilehall may maintain these effects by performing the {@rule Concentrate} maneuver."
                }
             ]
          },
@@ -4551,7 +4552,7 @@
             }
          ],
          "gear": [
-            "Magic Staff: Add +4 damage to magic attacks; the first Range effect added does not increase difficulty"
+            "{@gear Magic Staff}: Add +4 damage to magic attacks; the first Range effect added does not increase difficulty"
          ],
          "tags": [
             "source:RoT",
@@ -4718,7 +4719,7 @@
             }
          ],
          "gear": [
-            "Heraldic plate armor (+2 soak, +1 defense)"
+            "Heraldic {@gear plate armor} (+2 soak, +1 defense)"
          ],
          "tags": [
             "source:RoT",
@@ -5549,11 +5550,11 @@
                },
                {
                   "name": "Wilt",
-                  "description": "Choose two targets within short range and make an {@difficulty Average|Arcana}. If successful, the Necromancer can choose one additional target for each {@symbols a} and all targets reduce the ability of any skill checks they make by one until the end of the necromancer's next turn. If an affected character suffers strain for any reason, they suffer 1 additional strain. The necromancer can perform the concentrate maneuver to maintain all effects of this curse."
+                  "description": "Choose two targets within short range and make an {@difficulty Average|Arcana}. If successful, the Necromancer can choose one additional target for each {@symbols a} and all targets reduce the ability of any skill checks they make by one until the end of the necromancer's next turn. If an affected character suffers strain for any reason, they suffer 1 additional strain. The necromancer can perform the {@rule concentrate} maneuver to maintain all effects of this curse."
                },
                {
                   "name": "Wall of Bones",
-                  "description": "Make a {@difficulty Hard|Arcana}. If successful, the necromancer reduces the damage of all hits they suffer by 1 plus 1 for every {@symbols ss} beyond the first until the end of his next turn; in addition, if an attack targeting the necromancer generates {@symbols hhh} or {@symbols d}, the attacker suffers a hit inflicting damage equal to the total damage of the attack; the necromancer may perform the concentrate maneuver to maintain the effects of this barrier."
+                  "description": "Make a {@difficulty Hard|Arcana}. If successful, the necromancer reduces the damage of all hits they suffer by 1 plus 1 for every {@symbols ss} beyond the first until the end of his next turn; in addition, if an attack targeting the necromancer generates {@symbols hhh} or {@symbols d}, the attacker suffers a hit inflicting damage equal to the total damage of the attack; the necromancer may perform the {@rule concentrate} maneuver to maintain the effects of this barrier."
                }
             ]
          },
@@ -5583,8 +5584,8 @@
          ],
          "gear": [
             "Bone staff: Add +4 damage to magic attacks; the first Range effect added does not increase difficulty; when used to cast a spell that inflicts 1 or more wounds, caster heals 1 wound.",
-            "Heavy Robes: +1 defense.",
-            "Forbidden Grimoire: A user with the Dark Insight talent can add the Additional Target and Enervate effects to Curse spells with no increase in difficulty"
+            "{@gear Heavy Robes}: +1 defense.",
+            "Forbidden Grimoire: A user with the {@talent Dark Insight} talent can add the Additional Target and Enervate effects to {@spell Curse} spells with no increase in difficulty"
          ],
          "tags": [
             "source:RoT",
@@ -5923,9 +5924,9 @@
             }
          ],
          "gear": [
-            "Leather Armor: +1 soak.",
+            "{@gear Leather Armor}: +1 soak.",
             "Extra spears.",
-            "Armored Gurak Tol mount"
+            "Armored {@adversary Gurak Tol} mount"
          ],
          "tags": [
             "source:RoT",
@@ -6005,13 +6006,13 @@
                },
                {
                   "name": "Ancestral Strength",
-                  "description": "The spiritspeaker chooses two allies within short range and makes a {@difficulty Hard|Primal}. If the check is successful, the spiritspeaker may affect additional targets in range by spending {@symbols a} for each additional target. Targets affected by this spell increase the ability of skill checks they make until the end of the spiritspeaker's next turn by one. The spiritspeaker may sustain the effects of this spell by performing the concentrate maneuver."
+                  "description": "The spiritspeaker chooses two allies within short range and makes a {@difficulty Hard|Primal}. If the check is successful, the spiritspeaker may affect additional targets in range by spending {@symbols a} for each additional target. Targets affected by this spell increase the ability of skill checks they make until the end of the spiritspeaker's next turn by one. The spiritspeaker may sustain the effects of this spell by performing the {@rule concentrate} maneuver."
                }
             ]
          },
          "weapons": [],
          "gear": [
-            "Magic staff: Add +4 damage to magic attacks; the first Range effect added to a spell does not increase its difficulty.",
+            "{@gear Magic staff}: Add +4 damage to magic attacks; the first Range effect added to a spell does not increase its difficulty.",
             "Beast-Hide Robes: +1 defense"
          ],
          "tags": [
@@ -6202,7 +6203,7 @@
             }
          ],
          "gear": [
-            "Heavy Robes: +1 defense"
+            "{@gear Heavy Robes}: +1 defense"
          ],
          "tags": [
             "source:RoT",
@@ -6785,7 +6786,7 @@
          ],
          "weapons": [
             {
-               "name": "Spear",
+               "name": "Light Spear",
                "skill": {
                   "name": "Melee (Light)",
                   "source": "crb"
@@ -6908,7 +6909,7 @@
          ],
          "weapons": [
             {
-               "name": "Spear",
+               "name": "Light Spear",
                "skill": {
                   "name": "Melee (Light)",
                   "source": "crb"
@@ -7363,7 +7364,7 @@
          },
          "weapons": [],
          "gear": [
-            "Magic Staff: The first Range effect added to a spell does not increase its difficulty; increase damage of Attack spells by +4",
+            "{@gear Magic Staff}: The first Range effect added to a spell does not increase its difficulty; increase damage of {@spell Attack} spells by +4",
             "Robes: +1 defense"
          ],
          "tags": [
@@ -7771,7 +7772,7 @@
             "spells": [
                {
                   "name": "Blinding Curse",
-                  "description": "The Fae chooses one target within short range and makes an {@difficulty Average|Arcana}. If the check is successful, the target decreases the ability of all checks they make and adds {@dice setback|2} to all checks involving sight until the end of the Fae's next turn. The Fae can sustain these effects by performing the concentrate maneuver."
+                  "description": "The Fae chooses one target within short range and makes an {@difficulty Average|Arcana}. If the check is successful, the target decreases the ability of all checks they make and adds {@dice setback|2} to all checks involving sight until the end of the Fae's next turn. The Fae can sustain these effects by performing the {@rule concentrate} maneuver."
                },
                {
                   "name": "Shuddering Paralysis",
@@ -7899,7 +7900,7 @@
             }
          ],
          "gear": [
-            "Leather Armor: +1 soak"
+            "{@gear Leather Armor}: +1 soak"
          ],
          "tags": [
             "source:RoT",
@@ -8296,7 +8297,7 @@
                },
                {
                   "name": "Boil Blood",
-                  "description": "Select one target at short range for this curse and make an {@difficulty Average|Divine}. If the check is successful, until the end of the witch or warlock's next turn, the target decreases the ability of any skill checks they make by one and suffers one additional strain each time they suffer strain for any reason. The witch or warlock can maintain these effects with the concentrate maneuver."
+                  "description": "Select one target at short range for this curse and make an {@difficulty Average|Divine}. If the check is successful, until the end of the witch or warlock's next turn, the target decreases the ability of any skill checks they make by one and suffers one additional strain each time they suffer strain for any reason. The witch or warlock can maintain these effects with the {@rule concentrate} maneuver."
                }
             ]
          },
@@ -8732,7 +8733,7 @@
       {
          "name": "Ancestral Gaze",
          "description": [
-            "While within short range of a Dwarf Ancestral Specter, living Dwarves add {@symbols s} to their combat checks and {@symbols t} if the opponent is a dragon."
+            "While within short range of a {@adversary Dwarf Ancestral Specter}, living Dwarves add {@symbols s} to their combat checks and {@symbols t} if the opponent is a dragon."
          ],
          "tags": [
             "combat",
@@ -8952,7 +8953,7 @@
       {
          "name": "Eyeless Sight",
          "description": [
-            "This character does not add {@dice setback} to checks due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness or concealment|crb}, and are immune to abilities or Critical Injuries that affect a creature's sight."
+            "This character does not add {@dice setback} to checks due to {@rule concealment (darkness, smoke, and intervening terrain)|darkness or concealment|crb}, and are immune to abilities or {@rule Critical Injuries} that affect a creature's sight."
          ],
          "tags": [
             "general",
@@ -9011,7 +9012,7 @@
       {
          "name": "Ghostly (Dwarf Ancestral Specter)",
          "description": [
-            "Dwarf Ancestral Specters ignore the effects of terrain and darkness."
+            "{@adversary Dwarf Ancestral Specter|Dwarf Ancestral Specters} ignore the effects of terrain and darkness."
          ],
          "tags": [
             "general",
@@ -9022,7 +9023,7 @@
       {
          "name": "Giant Stomp!",
          "description": [
-            "{@skill Brawl||crb} attacks that this character makes have a Critical rating of 3, and if they inflict Critical Injuries +40 is added to the resulting Critical Injury result."
+            "{@skill Brawl||crb} attacks that this character makes have a Critical rating of 3, and if they inflict {@rule Critical Injuries} +40 is added to the resulting Critical Injury result."
          ],
          "tags": [
             "combat",
@@ -9150,7 +9151,7 @@
       {
          "name": "Leonx Bond",
          "description": [
-            "When a Leonx Rider directs its mount, the mount may perform an action and a maneuver and is not limited to using its maneuvers to move."
+            "When a {@adversary Leonx Rider} directs its mount, the mount may perform an action and a maneuver and is not limited to using its maneuvers to move."
          ],
          "tags": [
             "general",
@@ -9476,7 +9477,7 @@
       {
          "name": "Tail Catapult",
          "description": [
-            "When engaged with a Gurak Tol that the Orc outrider is bonded with, the Orc outrider may use the steed to perform a {@skill Ranged||crb} attack with the following profile: {@skill Ranged||crb}; Damage 8; Critical 4; Range (Medium); Concussive 1, Inaccurate 1, Knockdown.",
+            "When engaged with a {@adversary Gurak Tol} that the {@adversary Orc outrider} is bonded with, the {@adversary Orc outrider} may use the steed to perform a {@skill Ranged||crb} attack with the following profile: {@skill Ranged||crb}; Damage 8; Critical 4; Range (Medium); {@quality Concussive|Concussive 1}, {@quality Inaccurate|Inaccurate 1}, {@quality Knockdown}.",
             {
                "type": "table",
                "columns": [
@@ -10258,7 +10259,7 @@
       {
          "name": "Battle Rage",
          "description": [
-            "When making a melee attack, a Broken Plains Orc can choose to add {@dice setback} to the check to add +2 to the damage dealt by one hit of that attack."
+            "When making a melee attack, a {@archetype Broken Plains Orc} can choose to add {@dice setback} to the check to add +2 to the damage dealt by one hit of that attack."
          ],
          "tags": [
             "combat",
@@ -10271,7 +10272,7 @@
       {
          "name": "Catfolk Ancestry",
          "description": [
-            "Half-Catfolk choose either the {@archetypeAbility Claws} or {@archetypeAbility Fleet of Paw} special ability from the {@archetype Catfolk} entry."
+            "{@archetype Half-Catfolk} choose either the {@archetypeAbility Claws} or {@archetypeAbility Fleet of Paw} special ability from the {@archetype Catfolk} entry."
          ],
          "tags": [
             "general",
@@ -10281,7 +10282,7 @@
       {
          "name": "Claws",
          "description": [
-            "Catfolk possess sharp, retractable claws and may choose to attack with the following weapon profile: (Brawl; Damage +1; Critical 3; Range [Engaged]; Vicious 1).",
+            "{@archetype Catfolk} possess sharp, retractable claws and may choose to attack with the following weapon profile: ({@skill Brawl}; Damage +1; Critical 3; Range [Engaged]; {@quality Vicious|Vicious 1}).",
             {
                "type": "table",
                "columns": [
@@ -10332,7 +10333,7 @@
       {
          "name": "Fleet of Paw",
          "description": [
-            "Catfolk can perform a second maneuver to move without suffering strain. They still cannot exceed the limitation of two maneuvers in a turn."
+            "{@archetype Catfolk} can perform a second maneuver to move without suffering strain. They still cannot exceed the limitation of two maneuvers in a turn."
          ],
          "tags": [
             "general",
@@ -10343,7 +10344,7 @@
       {
          "name": "Hot Tempered",
          "description": [
-            "While a Stone-Dweller Orc's strain exceeds half of their strain threshold, they add {@dice setback|2} to all social skill checks and add 1 to the damage of one hit of each melee attack they make."
+            "While a {@archetype Stone-Dweller Orc}'s strain exceeds half of their strain threshold, they add {@dice setback|2} to all social skill checks and add 1 to the damage of one hit of each melee attack they make."
          ],
          "tags": [
             "combat",
@@ -10392,7 +10393,7 @@
       {
          "name": "Ready for Adventure",
          "description": [
-            "Once per session as an out-of-turn incidental, a Human may move one Story Point from the Game Master's pool to the players' pool."
+            "Once per session as an out-of-turn incidental, a {@archetype Human} may move one Story Point from the Game Master's pool to the players' pool."
          ],
          "tags": [
             "general",
@@ -10427,7 +10428,7 @@
       {
          "name": "Tenacious",
          "description": [
-            "After a Sunderlands Orc hits a character with a successful combat check, they add {@dice boost} to combat checks targeting the same character until the end of the encounter."
+            "After a {@archetype Sunderlands Orc} hits a character with a successful combat check, they add {@dice boost} to combat checks targeting the same character until the end of the encounter."
          ],
          "tags": [
             "combat",
@@ -10452,7 +10453,7 @@
       {
          "name": "Tricksy",
          "description": [
-            "Once per encounter during their turn, a Wanderer Gnome may use this ability and spend a Story Point to produce a previously undocumented small item (encumbrance 1 or less) with a rarity no greater than 4 from a pocket, bag, pouch, nearby windowsill, passing cart, or other convenient location—even if there is no logical explanation for the item's presence. This item cannot be a weapon unless the weapon has the Limited Ammo 1 quality."
+            "Once per encounter during their turn, a {@archetype Wanderer Gnome} may use this ability and spend a Story Point to produce a previously undocumented small item (encumbrance 1 or less) with a rarity no greater than 4 from a pocket, bag, pouch, nearby windowsill, passing cart, or other convenient location—even if there is no logical explanation for the item's presence. This item cannot be a weapon unless the weapon has the {@quality Limited Ammo|Limited Ammo 1} quality."
          ],
          "tags": [
             "general",
@@ -11089,7 +11090,7 @@
          ],
          "description": [
             "Nearly everyone in Terrinoth carries a knife at their belt; it is a useful tool for any number of mundane tasks. Daggers, on the other hand, are designed purely for killing. Their thin, razor-sharp blades tend to be perfectly balanced so they can be thrown with the flick of a wrist just as easily as they can slit an unwary throat.",
-            "Your character can stab or slash with a dagger using the profile in {@table 2-5: Melee Weapons} on page 94, or they can throw one using the following profile: (Ranged; Damage +2; Critical 3; Range [Short]; Accurate 1, Limited Ammo 1).",
+            "Your character can stab or slash with a dagger using the profile in Table 2-5: Melee Weapons on page 94, or they can throw one using the following profile: ({@skill Ranged}; Damage +2; Critical 3; Range [Short]; {@quality Accurate|Accurate 1}, {@quality Limited Ammo|Limited Ammo 1}).",
             {
                "title": "Thrown Stats",
                "type": "table",
@@ -11319,7 +11320,7 @@
          "description": [
             "Spears are perfect for fighting in tight formation, where soldiers can't swing a sword or axe without hitting one of their fellows. Thus, foot soldiers of the baronies tend to train with spear and shield in the art of forming a defensive wall of thrusting spear tips.",
             "Standard spears are too heavy to be wielded in one hand or thrown. \"Light\" spears (sometimes called javelins) on the other hand can be wielded one-handed and consist of a thick, four-foot-long wooden shaft topped by a heavy iron spearhead. These spears are also light enough to be thrown over short distances; the Orcs of the Broken Plains often use thrown spears to skewer their prey while hunting.",
-            "Your character can thrust or stab with a light spear using the profile in {@table 2-5: Melee Weapons}, or they can throw one using the following profile: (Ranged; Damage +2; Critical 4; Range [Short]; Accurate 1, Limited Ammo 1).",
+            "Your character can thrust or stab with a light spear using the profile in Table 2-5: Melee Weapons, or they can throw one using the following profile: ({@skill Ranged}; Damage +2; Critical 4; Range [Short]; {@quality Accurate|Accurate 1}, {@quality Limited Ammo|Limited Ammo 1}).",
             {
                "title": "Thrown Stats",
                "type": "table",
@@ -11377,39 +11378,7 @@
          ],
          "description": [
             "Spears are perfect for fighting in tight formation, where soldiers can't swing a sword or axe without hitting one of their fellows. Thus, foot soldiers of the baronies tend to train with spear and shield in the art of forming a defensive wall of thrusting spear tips.",
-            "Standard spears are too heavy to be wielded in one hand or thrown. \"Light\" spears (sometimes called javelins) on the other hand can be wielded one-handed and consist of a thick, four-foot-long wooden shaft topped by a heavy iron spearhead. These spears are also light enough to be thrown over short distances; the Orcs of the Broken Plains often use thrown spears to skewer their prey while hunting.",
-            "Your character can thrust or stab with a light spear using the profile in {@table 2-5: Melee Weapons}, or they can throw one using the following profile:",
-            {
-               "title": "Thrown Stats",
-               "type": "table",
-               "columns": [
-                  {
-                     "header": "Skill"
-                  },
-                  {
-                     "header": "Dam",
-                     "value": "damage"
-                  },
-                  {
-                     "header": "Crit"
-                  },
-                  {
-                     "header": "Range"
-                  },
-                  {
-                     "header": "Special"
-                  }
-               ],
-               "rows": [
-                  {
-                     "skill": "{@skill Ranged||crb}",
-                     "damage": "+2",
-                     "crit": 4,
-                     "range": "Short",
-                     "special": "{@quality Accurate|Accurate 1|crb}, {@quality Limited Ammo|Limited Ammo 1|crb}"
-                  }
-               ]
-            }
+            "Standard spears are too heavy to be wielded in one hand or thrown. \"Light\" spears (sometimes called javelins) on the other hand can be wielded one-handed and consist of a thick, four-foot-long wooden shaft topped by a heavy iron spearhead. These spears are also light enough to be thrown over short distances; the Orcs of the Broken Plains often use thrown spears to skewer their prey while hunting."
          ],
          "page": 93
       },
@@ -11961,7 +11930,7 @@
          ],
          "description": [
             "The rangers of the Dunwarr Mountains are fond of saying that the only thing better than an axe is an axe you can throw at someone. No amount of balancing a hand axe for throwing can make it a truly accurate weapon, but if it hits, it is likely to do some serious damage.",
-            "Your character can hurl a throwing axe at their foe using the profile in {@table 2-6: Ranged Weapons} on page 95, or they can wield one using the following profile: (Melee (Light); Damage +2; Critical 3; Range [Engaged]; Inaccurate 1, Vicious 1).",
+            "Your character can hurl a throwing axe at their foe using the profile in Table 2-6: Ranged Weapons on page 95, or they can wield one using the following profile: ({@skill Melee (Light)}; Damage +2; Critical 3; Range [Engaged]; {@quality Inaccurate|Inaccurate 1}, {@quality Vicious|Vicious 1}).",
             {
                "title": "Melee Stats",
                "type": "table",
@@ -12021,7 +11990,7 @@
          "rarity": 4,
          "description": [
             "As heavy as it is reliable, chainmail offers protection matched with flexibility. Thousands of small linked rings make up a suit of chainmail, providing a reliable defense against slashing and piercing weapons. Some adventurers wear suits of chainmail passed down from their ancestors; others still use the hauberk they looted from the first tomb they explored. The only drawback is the time it takes to forge and link the numerous rings together adds significantly to the cost.",
-            "Chainmail is restrictive and noisy, so your character adds {@dice setback} to Stealth checks they make while wearing it."
+            "Chainmail is restrictive and noisy, so your character adds {@dice setback} to {@skill Stealth} checks they make while wearing it."
          ],
          "modifiers": [
             {
@@ -12085,7 +12054,7 @@
          "rarity": 6,
          "description": [
             "Few things on the battlefield are more impressive and awe-inspiring than a full suit of plate armor, and few items are a sterner test of the smith's craft. Forging even a light breastplate takes time and care, and constructing an entire suit of interlocking armor plates can take months of painstaking work. Unsurprisingly, only the finest knights of the baronies wear plate armor, although occasionally a wandering adventurer may discover a set of plate buried in some long-forgotten crypt or dungeon and claim it for their own.",
-            "Plate armor is heavy and very noisy. Your character adds {@dice setback|2} to Stealth checks they make while wearing it."
+            "Plate armor is heavy and very noisy. Your character adds {@dice setback|2} to {@skill Stealth} checks they make while wearing it."
          ],
          "modifiers": [
             {
@@ -12107,7 +12076,7 @@
          "rarity": 4,
          "description": [
             "Something of a compromise between leather and chainmail armor, scale armor consists of hundreds of tiny metal scales attached to a leather jerkin. It is easier to forge than chainmail, but the scales and the leather combined make the armor heavy and unwieldy. Many spear companies mustered by the Barons wear scale armor reinforced with greaves and a breastplate.",
-            "The rattling of hundreds of scales is fairly noisy, so your character adds {@dice setback} to Stealth checks they make while wearing it."
+            "The rattling of hundreds of scales is fairly noisy, so your character adds {@dice setback} to {@skill Stealth} checks they make while wearing it."
          ],
          "modifiers": [
             {
@@ -12123,8 +12092,8 @@
          "type": "gear",
          "description": [
             "Alchemists work with an impressive array of specialized tools to craft their potions and elixirs. Those who travel tend to rely on a portable kit of the devices most essential to their trade, such as a simple mortar and pestle along with a number of flasks, tin measuring cups, and pouches in which to store various alchemical ingredients. Those with access to fully stocked labs, though, can use also use alembics, crucibles, glassware, and more to create even more wondrous concoctions.",
-            "When your character uses an alchemists' kit, they have the right tool for the job (as per page 93 of the Genesys Core Rulebook) when making Alchemy checks, although some potions and elixirs may require specialized ingredients. At your GM's discretion, some complex alchemical items may not be crafted with the limited resources of an alchemists' kit.",
-            "An alchemists' lab includes all the items in an alchemists' kit and more. When your character uses an alchemists' lab, they add {@dice boost} to Alchemy checks. While the many tools and devices included are extremely heavy and cumbersome (and thus require a room to contain them), a lab can be considered somewhat portable if a wagon and draft animal are given over entirely to transporting it."
+            "When your character uses an alchemists' kit, they have {@rule the right tool for the job} (as per page 93 of the {@title Genesys Core Rulebook}) when making {@skill Alchemy} checks, although some potions and elixirs may require specialized ingredients. At your GM's discretion, some complex alchemical items may not be crafted with the limited resources of an alchemists' kit.",
+            "An alchemists' lab includes all the items in an alchemists' kit and more. When your character uses an alchemists' lab, they add {@dice boost} to {@skill Alchemy} checks. While the many tools and devices included are extremely heavy and cumbersome (and thus require a room to contain them), a lab can be considered somewhat portable if a wagon and draft animal are given over entirely to transporting it."
          ],
          "encumbrance": 3,
          "price": 300,
@@ -12136,8 +12105,8 @@
          "type": "gear",
          "description": [
             "Alchemists work with an impressive array of specialized tools to craft their potions and elixirs. Those who travel tend to rely on a portable kit of the devices most essential to their trade, such as a simple mortar and pestle along with a number of flasks, tin measuring cups, and pouches in which to store various alchemical ingredients. Those with access to fully stocked labs, though, can use also use alembics, crucibles, glassware, and more to create even more wondrous concoctions.",
-            "When your character uses an alchemists' kit, they have the right tool for the job (as per page 93 of the Genesys Core Rulebook) when making Alchemy checks, although some potions and elixirs may require specialized ingredients. At your GM's discretion, some complex alchemical items may not be crafted with the limited resources of an alchemists' kit.",
-            "An alchemists' lab includes all the items in an alchemists' kit and more. When your character uses an alchemists' lab, they add {@dice boost} to Alchemy checks. While the many tools and devices included are extremely heavy and cumbersome (and thus require a room to contain them), a lab can be considered somewhat portable if a wagon and draft animal are given over entirely to transporting it."
+            "When your character uses an alchemists' kit, they have {@rule the right tool for the job} (as per page 93 of the {@title Genesys Core Rulebook}) when making {@skill Alchemy} checks, although some potions and elixirs may require specialized ingredients. At your GM's discretion, some complex alchemical items may not be crafted with the limited resources of an alchemists' kit.",
+            "An alchemists' lab includes all the items in an alchemists' kit and more. When your character uses an alchemists' lab, they add {@dice boost} to {@skill Alchemy} checks. While the many tools and devices included are extremely heavy and cumbersome (and thus require a room to contain them), a lab can be considered somewhat portable if a wagon and draft animal are given over entirely to transporting it."
          ],
          "encumbrance": 8,
          "price": 600,
@@ -12149,7 +12118,7 @@
          "type": "gear",
          "description": [
             "Like alchemists, apothecaries often travel with specialized kits. These kits commonly contain bandages, salves, poultices, and other items necessary to heal the injured and sick.",
-            "An apothecary's kit allows your character to perform Medicine checks to heal wounds and Critical Injuries without penalty."
+            "An apothecary's kit allows your character to perform {@skill Medicine} checks to heal wounds and {@rule Critical Injuries} without penalty."
          ],
          "encumbrance": 2,
          "price": 150,
@@ -12161,7 +12130,7 @@
          "type": "gear",
          "description": [
             "Few things are more essential to the traveler and adventurer than the humble backpack. Without its copious storage space, one could not carry the supplies needed for a lengthy journey—or escape from a spider-infested tomb with a haul of loot.",
-            "While wearing a backpack, your character increases their encumbrance threshold by four."
+            "While wearing a backpack, your character increases their {@rule encumbrance threshold} by four."
          ],
          "encumbrance": -4,
          "price": 50,
@@ -12184,7 +12153,7 @@
          "type": "gear",
          "description": [
             "Ropes, pitons, and a small hammer make climbing up a sheer cliff or wall merely difficult, rather than nearly impossible (and possibly fatal).",
-            "When your character uses climbing gear they remove {@dice setback} from any Athletics checks they make to climb something."
+            "When your character uses climbing gear they remove {@dice setback} from any {@skill Athletics} checks they make to climb something."
          ],
          "encumbrance": 1,
          "price": 20,
@@ -12196,7 +12165,7 @@
          "type": "gear",
          "description": [
             "This can include additional arrows in a spare pouch, crossbow bolts wrapped in a leather pouch, or missiles for other ranged weapons such as blowpipes or dart throwers.",
-            "If your character has an extra quiver, they can spend a maneuver to replenish their ranged weapon when it has suffered an \"out of ammo\" {@symbols t} result. Note this does not replenish weapons with the Limited Ammo quality as they do not actually run out of ammunition."
+            "If your character has an extra quiver, they can spend a maneuver to replenish their ranged weapon when it has suffered an \"out of ammo\" {@symbols t} result. Note this does not replenish weapons with the {@quality Limited Ammo} quality as they do not actually run out of ammunition."
          ],
          "encumbrance": 2,
          "price": 25,
@@ -12243,7 +12212,7 @@
          "type": "gear",
          "description": [
             "Though most of the folks of the Free Cities assume that the forests of Terrinoth are full of kobolds and bane spiders, those who live beyond the walls of civilization know that there are wonders to be found among the trees. One of these is a certain blend of herbs said to have been discovered by the Elves. When crushed and packed into a wound (or cast into a pot of boiling water to form an aromatic vapor), these herbs have the almost supernatural ability to help the injured recover from grievous wounds.",
-            "When making a Medicine check, your character may use herbs of healing to add {@symbols sa} to the results. The herbs are consumed when used."
+            "When making a {@skill Medicine} check, your character may use herbs of healing to add {@symbols sa} to the results. The herbs are consumed when used."
          ],
          "encumbrance": 0,
          "price": 50,
@@ -12290,7 +12259,7 @@
          "type": "gear",
          "description": [
             "Thieves' tools allow those without keys to attempt to open any mechanical locks or latches, even complicated ones.",
-            "When making a Skulduggery check to open a lock or latch, your character adds {@symbols a} to the results."
+            "When making a {@skill Skulduggery} check to open a lock or latch, your character adds {@symbols a} to the results."
          ],
          "encumbrance": 1,
          "price": 75,
@@ -12349,7 +12318,7 @@
          "type": "gear",
          "description": [
             "Made of thick wool and furs, winter clothing keeps the wearer warm in the coldest environments.",
-            "When wearing winter clothing, your character removes {@dice setback|2} from any Survival or Resilience checks they make due to cold weather. When worn, winter clothing's encumbrance is 1."
+            "When wearing winter clothing, your character removes {@dice setback|2} from any {@skill Survival} or {@skill Resilience} checks they make due to cold weather. When worn, winter clothing's encumbrance is 1."
          ],
          "encumbrance": 4,
          "price": 100,
@@ -12366,7 +12335,7 @@
          "rarity": 4,
          "description": [
             "Priests and templars wear these devices to proclaim their faith, and thus holy icons usually incorporate the iconography of a particular deity. In the Land of Steel, one is most likely to see priests wearing pendants crafted in the likeness of a hand holding a flame, the symbol of the god Kellos. Many priests of the Latari Elves favor icons depicting a star wrought in cold, gleaming silver—a reminder of their lost birthright. Likewise, some Dunwarr Dwarves have a badge or icon on their shield or armor that is etched in runes or depicts the face of a Dwarven woman. They treat these icons with religious reverence, but any attempts to ask about their significance gets a cold glare and a suggestion to go bother someone else.",
-            "When your character casts a spell while using a holy icon, adding any Divine Only effects increases the spell's difficulty one less than they would normally. In addition, when your character casts a Heal spell, the number of wounds healed increases by two."
+            "When your character casts a spell while using a holy icon, adding any {@skill Divine} Only effects increases the spell's difficulty one less than they would normally. In addition, when your character casts a {@spell Heal} spell, the number of wounds healed increases by two."
          ]
       },
       {
@@ -12379,7 +12348,7 @@
          "rarity": 5,
          "description": [
             "A magic scepter superficially resembles a mace, though many are wrought from the finest materials or are intricately decorated with words of power. Greyhaven scholars claim that the resemblance to a weapon helps the scepter boost and channel magical energies in battle.",
-            "When your character casts a spell while using a magic scepter, add {@dice boost} to the check and adding the Close Combat effect does not increase the difficulty. In addition, Attack spells cast by your character increase their base damage by two."
+            "When your character casts a spell while using a magic scepter, add {@dice boost} to the check and adding the Close Combat effect does not increase the difficulty. In addition, {@spell Attack} spells cast by your character increase their base damage by two."
          ]
       },
       {
@@ -12392,7 +12361,7 @@
          "rarity": 6,
          "description": [
             "Most of the mages in Terrinoth prefer the trusty and reliable staff over other options. Whether carved from wood, forged from iron, or even wrought from bone, a staff signifies travel and distance. This link helps wizards increase the range at which they can cast spells. A staff also doubles as a handy walking stick for many an elderly mage on the road.",
-            "When your character casts a spell while using a magic staff, the first Range effect added to the spell does not increase the spell's difficulty. In addition, Attack spells cast by your character increase their base damage by four."
+            "When your character casts a spell while using a magic staff, the first Range effect added to the spell does not increase the spell's difficulty. In addition, {@spell Attack} spells cast by your character increase their base damage by four."
          ]
       },
       {
@@ -12418,7 +12387,7 @@
          "rarity": 7,
          "description": [
             "Wands can be crafted from just about anything that has suitable magical significance, but most are small sticks easily slipped into a pocket or pouch. Learned and powerful wizards tend to craft multiple wands, making each one a focus for a different type of spell. Thus, wands are usually known by their effects and are referred to with names such as \"wand of fire,\" \"wand of enervation,\" or \"wand of restoration.\" Of course, even though wizards may craft multiple wands during their studies, this doesn't make wands common by any means.",
-            "When your character makes or obtains a wand, your GM determines one effect that the wand lets your character add to any appropriate spell without increasing the spell's difficulty. Without a wand, the effect your GM chooses should only increase the difficulty of a spell by one. Attack spells cast by your character increase their base damage by three."
+            "When your character makes or obtains a wand, your GM determines one effect that the wand lets your character add to any appropriate spell without increasing the spell's difficulty. Without a wand, the effect your GM chooses should only increase the difficulty of a spell by one. {@spell Attack} spells cast by your character increase their base damage by three."
          ]
       },
       {
@@ -12432,7 +12401,7 @@
          "description": [
             "While the scholars of Greyhaven University continuously and vigorously disagree as to whether bards are actual users of magic or are a bunch of charlatans, the truth is that most bards are probably a mixture of both. Their use of magic—such as it is—is likely entirely instinctive and affected greatly by the bard's charisma. What this means is that bards do not craft magical implements as other spellcasters do, but over time, they tend to infuse the instruments they play with some small measure of power.",
             "Some instruments have even been passed from bard to bard and, over generations, have become magical relics in their own right. Of course, a great many more instruments get passed off as magical relics when their owners need to make up the money lost in an ill-advised night of carousing.",
-            "When your character casts a spell using the Verse skill while using a musical instrument, adding the Additional Target effect does not increase its difficulty"
+            "When your character casts a spell using the {@skill Verse} skill while using a musical instrument, adding the Additional Target effect does not increase its difficulty"
          ]
       },
       {
@@ -12449,7 +12418,7 @@
             {
                "type": "list",
                "items": [
-                  "{@b Activation:} Until the end of your character's turn, the arcane bolt rune counts as a Ranged weapon with the following profile: (Ranged; Damage 8; Critical 3; Range [Medium]; Auto-fire).",
+                  "{@b Activation:} Until the end of your character's turn, the arcane bolt rune counts as a Ranged weapon with the following profile: ({@skill Ranged}; Damage 8; Critical 3; Range [Medium]; {@quality Auto-fire}).",
                   "{@b Implement:} When your character casts an {@spell Attack||crb} spell, the first Range effect added does not increase the check's difficulty. In addition, they must add the Impact effect with no increase in difficulty. {@spell Attack||crb} spells cast by your character increase their base damage by four."
                ]
             },
@@ -12500,7 +12469,7 @@
             {
                "type": "list",
                "items": [
-                  "{@b Activation:} Until the end of your character's turn, the ice storm rune counts as a Ranged weapon with the following profile: (Discipline; Damage 7; Critical 2; Range [Medium]; Blast 4, Ensnare 3).",
+                  "{@b Activation:} Until the end of your character's turn, the ice storm rune counts as a Ranged weapon with the following profile: ({@skill Discipline}; Damage 7; Critical 2; Range [Medium]; {@quality Blast|Blast 4}, {@quality Ensnare|Ensnare 3}).",
                   "{@b Implement:} When your character casts an {@spell Attack||crb} spell, they must add the Ice and Blast effects with no increase in difficulty. {@spell Attack||crb} spells cast by your character increase their base damage by four."
                ]
             },
@@ -12551,7 +12520,7 @@
             {
                "type": "list",
                "items": [
-                  "{@b Activation:} Until the end of your character's turn, the immolation rune counts as a Ranged weapon with the following profile: (Discipline; Damage 8; Critical 3; Range [Short]; Burn 2).",
+                  "{@b Activation:} Until the end of your character's turn, the immolation rune counts as a Ranged weapon with the following profile: ({@skill Discipline}; Damage 8; Critical 3; Range [Short]; {@quality Burn|Burn 2}).",
                   "{@b Implement:} When your character casts an {@spell Attack||crb} spell, they must add the Fire and Deadly effects with no increase in difficulty. In addition, after rolling the magic combat check but before applying damage, your character may choose to suffer any number of wounds no greater than half their wound threshold in order to add an equal amount of damage to all hits of the attack."
                ]
             },
@@ -12622,8 +12591,8 @@
             {
                "type": "list",
                "items": [
-                  "{@b Activation:} Until the end of your character's turn, the lightning strike rune counts as a Ranged weapon with the following profile: (Discipline; Damage 8; Critical 3; Range [Long]; Auto-fire, Disorient 3).",
-                  "{@b Implement:} When your character casts an Attack spell, the first Range effect they add does not increase the check's difficulty. In addition, they must add the Lightning effect with no increase in difficulty. {@spell Attack||crb} spells cast by your character increase their base damage by five."
+                  "{@b Activation:} Until the end of your character's turn, the lightning strike rune counts as a Ranged weapon with the following profile: ({@skill Discipline}; Damage 8; Critical 3; Range [Long]; {@quality Auto-fire}, {@quality Disorient|Disorient 3}).",
+                  "{@b Implement:} When your character casts an {@spell Attack} spell, the first Range effect they add does not increase the check's difficulty. In addition, they must add the Lightning effect with no increase in difficulty. {@spell Attack||crb} spells cast by your character increase their base damage by five."
                ]
             },
             {
@@ -12773,7 +12742,7 @@
             {
                "type": "list",
                "items": [
-                  "{@b Activation:} Until the end of your character's turn, the sunburst rune counts as a Ranged weapon with the following profile: (Ranged; Damage 4; Critical 1; Range [Medium]; Breach 1).",
+                  "{@b Activation:} Until the end of your character's turn, the sunburst rune counts as a Ranged weapon with the following profile: ({@skill Ranged}; Damage 4; Critical 1; Range [Medium]; {@quality Breach|Breach 1}).",
                   "{@b Implement:} When your character casts an {@spell Attack||crb} spell, they must add the Holy effect with no increase in difficulty and gains the {@quality Breach|Breach 1|crb} quality. This is an exception to the normal restriction limiting Holy to spells using the {@skill Divine||crb} skill."
                ]
             },
@@ -12931,7 +12900,7 @@
          "rarity": 3,
          "description": [
             "Just as the mounts of Mennara come in a variety of forms, so do the saddlebags. Saddlebags allow creatures to carry more gear and traveling supplies then usual, and thus provide their riders a wider range of operation.",
-            "Saddlebags increase a mount's encumbrance threshold by four."
+            "Saddlebags increase a mount's {@rule encumbrance threshold} by four."
          ]
       },
       {
@@ -12955,7 +12924,7 @@
          "rarity": 5,
          "description": [
             "Bottled courage is usually nothing more than a stiff measure of alcohol mixed with a concoction of stimulating herbs and mushrooms. The imbiber becomes heedless of danger and immune to sights and experiences that might otherwise leave them traumatized.",
-            "When your character uses bottled courage, they upgrade {@skill Discipline||crb} checks made to resist fear and {@skill Coercion||crb} once until the end of the scene or encounter."
+            "When your character uses bottled courage, they upgrade {@skill Discipline||crb} checks made to resist {@rule fear} and {@skill Coercion||crb} once until the end of the scene or encounter."
          ]
       },
       {
@@ -13335,7 +13304,7 @@
          "rarity": 10,
          "description": [
             "This artifact is rumored to be the work of necromancers, though its origins are unknown, and arcanists have been known to use it. Set within a gilded frame is a glass dome, beneath which swirls a dark, viscous liquid. The bones of a Human hand float upon the liquid. They are bleached white, save for the final joint of the first finger, which is dyed scarlet. Should someone succeed in activating the device, they may ask it to indicate a desired destination, or where something or someone may be found. The bones will then slowly form a hand that points in the right direction.",
-            "When your character makes a Knowledge (Geography), Perception, or Vigilance check to chart a course, find a location, avoid becoming lost, or otherwise navigate, they may choose to use the Dead Man's Compass as an incidental after rolling the check but before determining the results; your character suffers a number of wounds and adds an equal number of {@symbols s} to the check. If these wounds cause the character to exceed their wound threshold, add +50 to the resulting Critical Injury roll."
+            "When your character makes a {@skill Knowledge (Geography)}, {@skill Perception}, or {@skill Vigilance} check to chart a course, find a location, avoid becoming lost, or otherwise navigate, they may choose to use the Dead Man's Compass as an incidental after rolling the check but before determining the results; your character suffers a number of wounds and adds an equal number of {@symbols s} to the check. If these wounds cause the character to exceed their wound threshold, add +50 to the resulting Critical Injury roll."
          ]
       },
       {
@@ -13389,7 +13358,7 @@
          "rarity": 6,
          "description": [
             "Whether due to enchantments cast upon them during their construction or merely because of the superlative skill of Elven cobblers, these boots are renowned for providing their wearers with surefootedness, superior ankle support, and extreme comfort. An adventurer wearing Elven Boots will find themselves able to hike tirelessly through difficult terrain and outpace companions in mundane footwear.",
-            "While wearing Elven Boots your character reduces the number of maneuvers required to change range bands by one, to a minimum of 1. Elven boots have an encumbrance of 0 when worn."
+            "While wearing Elven Boots your character reduces the number of maneuvers required to change {@rule range bands} by one, to a minimum of 1. Elven boots have an encumbrance of 0 when worn."
          ]
       },
       {
@@ -13477,7 +13446,7 @@
          ],
          "description": [
             "Prismatic Staffs were crafted by the students of Timmorran under his guidance. Their purpose was to provide the wizards with badges of office as well as a degree of personal protection. They are impressive artifacts: long shafts of silver topped with crystal orbs that display a shifting kaleidoscope of rainbow colors. A bewildering lightshow can be projected from the orbs, the intensity of which dazzles unwary opponents.",
-            "A Prismatic Staff is a magic implement, as described on page 218 of the {@title Genesys Core Rulebook}. When your character casts a spell while using a Prismatic Staff, the first Range effect added to the spell does not increase the spell's difficulty. In addition, {@spell Attack||crb} spells cast by your character increase their base damage by three and gain the Disorient and Concussive 2 item qualities."
+            "A Prismatic Staff is a magic implement, as described on page 218 of the {@title Genesys Core Rulebook}. When your character casts a spell while using a Prismatic Staff, the first Range effect added to the spell does not increase the spell's difficulty. In addition, {@spell Attack||crb} spells cast by your character increase their base damage by three and gain the {@quality Disorient} and {@quality Concussive|Concussive 2} item qualities."
          ]
       },
       {
@@ -13704,7 +13673,7 @@
             {
                "type": "list",
                "items": [
-                  "{@b Activation:} Until the end of your character's turn, the blasting rune counts as a Ranged weapon with the following profile: (Discipline; Damage 9; Critical 3; Range [Medium]; Blast 7, Knockdown).",
+                  "{@b Activation:} Until the end of your character's turn, the blasting rune counts as a Ranged weapon with the following profile: ({@skill Discipline}; Damage 9; Critical 3; Range [Medium]; {@quality Blast|Blast 7}, {@quality Knockdown}).",
                   "{@b Implement:} When your character casts an {@spell Attack||crb} spell, they must add the Blast effect and may add the Impact effect with no increase in difficulty to either. {@spell Attack||crb} spells cast by your character increase their base damage by five."
                ]
             },
@@ -13749,8 +13718,8 @@
          "page": 97,
          "description": [
             "Ancient weapons and armor back date to the time of the Penacor Kings, when magic was more potent and widespread in the world. Ancient weaponry and armor is remarkably tough, resistant to corrosion, and able to hold a sharp edge despite heavy use.",
-            "{@b Armor:} Increase the armor's soak and defense by 1. The armor gains the Reinforced item quality. Reduce the armor's hard points by 1 (to a minimum of 0).",
-            "{@b Weapon:} Increase the weapon's damage by 1 and reduce its Critical rating by 1. The weapon gains the Reinforced item quality. Reduce the weapon's hard points by 1 (to a minimum of 0).",
+            "{@b Armor:} Increase the armor's soak and defense by 1. The armor gains the {@quality Reinforced} item quality. Reduce the armor's hard points by 1 (to a minimum of 0).",
+            "{@b Weapon:} Increase the weapon's damage by 1 and reduce its Critical rating by 1. The weapon gains the {@quality Reinforced} item quality. Reduce the weapon's hard points by 1 (to a minimum of 0).",
             {
                "type": "list-no-bullet",
                "items": [
@@ -13791,7 +13760,7 @@
          "page": 97,
          "description": [
             "Elven craft weaves wood harvested from the Deepwoods of the Aymhelin with iridescent moonstone and inlays of gleaming silver. The resulting items are as beautiful as they are light and durable, and blades crafted from moonstone are said to be as sharp as starlight on the coldest winter nights.",
-            "{@b Armor:} Reduce the armor's encumbrance value by 2, to a minimum of 0. In addition, your character removes {@dice setback} from Stealth checks they make.",
+            "{@b Armor:} Reduce the armor's encumbrance value by 2, to a minimum of 0. In addition, your character removes {@dice setback} from {@skill Stealth} checks they make.",
             "{@b Weapon:} Reduce the weapon's damage by 1 and Critical rating by 1, to a minimum of 1.",
             {
                "type": "list-no-bullet",
@@ -13853,7 +13822,7 @@
          "page": 99,
          "description": [
             "Implements carved of animal bone have long been used by spiritspeakers, witches, and the nightseers of the ancient Loth Caara tribes. Implements crafted from the bones of Humans and their kind are associated with necromancy and other dark magics. When properly prepared, the bones of an ordinary mortal creature can produce frightening effects.",
-            "When your character successfully casts an Attack or Curse spell, they heal 1 wound.",
+            "When your character successfully casts an {@spell Attack} or {@spell Curse} spell, they heal 1 wound.",
             {
                "type": "list-no-bullet",
                "items": [
@@ -13937,7 +13906,7 @@
          "page": 99,
          "description": [
             "Students of spiritspeakers and old magical traditions associate the yew with the natural cycle of renewal and rebirth. The Latari Elves who guard the borders of the Aymhelin prize it for this natural resonance, and sometimes even bind tomes between thinly laminated sheets of yew.",
-            "When your character successfully casts an Augment, Barrier, or Heal spell using this implement, they heal 1 strain.",
+            "When your character successfully casts an {@spell Augment}, {@spell Barrier}, or {@spell Heal} spell using this implement, they heal 1 strain.",
             {
                "type": "list-no-bullet",
                "items": [
@@ -14047,7 +14016,7 @@
             "Some heroes (and their reputations) are inseparable from their chosen weapon. These weapons are often just as famous as the heroes who wield them. Your character's signature weapon may be enchanted, or even intelligent. It could instead simply be a well-crafted weapon that your character wields effortlessly. The full capabilities of such a singular weapon, particularly one of magical or unknown provenance, sometimes only become apparent in the crucible of battle, in moments of true hardship and heroism.",
             "{@b Base:} Your character has a signature weapon, which is chosen from {@table 2-1: Signature Weapons} which can be of {@optionFeature Dwarven}, {@optionFeature Elven}, or {@optionFeature Steel} craftsmanship (see page 97). You and the GM should work together to determine what form the weapon takes and how it came to your character's possession. The appearance of the weapon does not affect its profile, but may dictate what attachments are available. (For instance, if you describe your Signature Weapon as a halberd, you can't add the weighted head attachment.) In addition, choose one attachment that the signature weapon does not possess. When you activate this ability, your signature weapon gains the effects of that attachment while the ability remains active (this does not have a cost or require any hard points). Other attachments can be added to the signature weapon in the standard way.",
             "If your character's signature weapon is ever lost or destroyed, it either finds its way back to your character against all odds, or your character obtains a new signature weapon. Work with the GM to decide how this happens, based on the ongoing story. Your character should obtain their new weapon (or reacquire it) at the start of the next session, if not sooner. Conversely, your character can never possess more than one signature weapon at a time. If this ever occurs (as a result of finding a lost signature weapon after obtaining a replacement, for instance), work with the GM to remove all but one signature weapon from your character's possession in a suitably dramatic fashion.",
-            "{@b Improved:} Your character's signature weapon gains either the Reinforced quality or can be revealed to actually be of ancient craftsmanship (see page 97) and thus gain that benefit.",
+            "{@b Improved:} Your character's signature weapon gains either the {@quality Reinforced} quality or can be revealed to actually be of ancient craftsmanship (see page 97) and thus gain that benefit.",
             "{@b Supreme:} Your character's signature weapon gains 2 hard points and an attachment of your choice of rarity 9 or less at no cost (subject to the limits of its new total hard points)."
          ]
       },
@@ -14058,7 +14027,7 @@
          "description": [
             "Your character can fight on despite having the most horrendous injuries. It might be sheer willpower that lets them accomplish this feat, or perhaps they are something more than mortal. In any case, even the most grievous wounds do not slow them down in the heat of battle.",
             "{@b Base:} When you activate this Heroic Ability, choose one Critical Injury your character is suffering (except for \"dead\"). As long as this ability is active, do not suffer any effects of that Critical Injury, including adding +10 to further rolls on the Critical Injury Result table. You can also activate this Heroic Ability as an out-of-turn incidental when your character suffers a Critical Injury.",
-            "{@b Improved:} While this ability is active, your character does not suffer the effects of any Critical Injuries they are suffering (except for the \"dead\" Critical Injury).",
+            "{@b Improved:} While this ability is active, your character does not suffer the effects of any {@rule Critical Injuries} they are suffering (except for the \"dead\" Critical Injury).",
             "{@b Supreme:} While this ability is active, your character also ignores the effects of the \"dead\" result. They still die when the ability ends, unless the Critical Injury is somehow removed first."
          ]
       },
@@ -14401,7 +14370,7 @@
                "page": 114,
                "entries": [
                   "Your character is not restricted to those potions listed on page 102 to 104. If you wish to craft a new potion, talk to your GM about your idea and work with them to determine the potion's effects. The potions in this book are a good guideline for the kinds of effects a potion might have, as well as an appropriate rarity (and therefore crafting difficulty). Your GM has the final say on the effects of the potion and the difficulty of the check to prepare it.",
-                  "Most poisons should function similarly to the basic {@gear poison} on page 102, requiring the target to make a Resilience check, with the result of the check determining the severity of the poison's effects. For instance, a poison intended to render the target unconscious might function just like the basic poison, except that it inflicts strain instead of wounds if the target fails their check."
+                  "Most poisons should function similarly to the basic {@gear poison} on page 102, requiring the target to make a {@skill Resilience} check, with the result of the check determining the severity of the poison's effects. For instance, a poison intended to render the target unconscious might function just like the basic poison, except that it inflicts strain instead of wounds if the target fails their check."
                ]
             },
             {
@@ -14422,7 +14391,7 @@
          "page": 112,
          "type": "gear",
          "description": [
-            "Characters may craft almost anything, from swords and crossbows to ships and clockwork devices, given sufficient time, resources, and skill. Although fletching, blacksmithing, and tannery are very different trades, for simplicity, most crafting uses the Mechanics skill. The use of Alchemy to create potions is a kind of crafting, but is distinct enough for its own skill and so it has additional rules on page 113. Regardless of the skill used, we also call a skill check to craft an item a crafting check.",
+            "Characters may craft almost anything, from swords and crossbows to ships and clockwork devices, given sufficient time, resources, and skill. Although fletching, blacksmithing, and tannery are very different trades, for simplicity, most crafting uses the {@skill Mechanics} skill. The use of {@rule Alchemy} to create potions is a kind of crafting, but is distinct enough for its own skill and so it has additional rules on page 113. Regardless of the skill used, we also call a skill check to craft an item a crafting check.",
             "All crafting follows the same basic guidelines, although the process your character undertakes within the narrative of the game may vary greatly. Of course, your GM might modify these rules based on the situation and the specific item, and might impose additional requirements.",
             {
                "title": "The Crafting Process",
@@ -14603,7 +14572,7 @@
          "characteristic": "Presence",
          "category": "magic",
          "description": [
-            "The Verse skill is a character's ability to achieve magical effects through poetry, song, or performance. Most users of this skill learn their repertoire and techniques by rote and improvise by instinct. Unlike other magic skills, Verse is defined by its signature methods and practices. It may even draw from the same sources of power as Arcana, Divine, or Primal magic, depending on the storytelling and performing tradition of the character. A character with ranks in Verse can achieve supernatural effects through the seemingly mundane acts of singing, playing music, or other type of performing."
+            "The Verse skill is a character's ability to achieve magical effects through poetry, song, or performance. Most users of this skill learn their repertoire and techniques by rote and improvise by instinct. Unlike other magic skills, Verse is defined by its signature methods and practices. It may even draw from the same sources of power as {@skill Arcana}, {@skill Divine}, or {@skill Primal} magic, depending on the storytelling and performing tradition of the character. A character with ranks in Verse can achieve supernatural effects through the seemingly mundane acts of singing, playing music, or other type of performing."
          ],
          "shouldUse": [
             "Your character wants to fortify their allies in battle with an inspiring song.",
@@ -14851,7 +14820,7 @@
             {
                "cost": "{@symbols hhh or d}",
                "effect": [
-                  "If the item is a weapon, it gains the Inaccurate 1 quality.",
+                  "If the item is a weapon, it gains the {@quality Inaccurate|Inaccurate 1} quality.",
                   "Decrease the item's hard points by one, to a minimum of 0.",
                   "Your character's tools are ruined in the process and must be replaced."
                ]
@@ -15002,7 +14971,7 @@
          "activation": "active (action)",
          "ranked": false,
          "description": [
-            "Your character may use this talent to attack an unaware adversary using a Melee (Light) weapon. A Backstab is a melee attack, and follows the normal rules for performing a combat check (see page 101 of the {@title Genesys Core Rulebook}), using the character's {@skill Skulduggery||crb} skill instead of {@skill Melee (Light)||crb}. If the check succeeds, each uncanceled {@symbols s} adds +2 damage (instead of the normal +1)."
+            "Your character may use this talent to attack an unaware adversary using a {@skill Melee (Light)} weapon. A Backstab is a melee attack, and follows the normal rules for performing a combat check (see page 101 of the {@title Genesys Core Rulebook}), using the character's {@skill Skulduggery||crb} skill instead of {@skill Melee (Light)||crb}. If the check succeeds, each uncanceled {@symbols s} adds +2 damage (instead of the normal +1)."
          ],
          "page": 89,
          "tags": [
@@ -15089,7 +15058,7 @@
          "activation": "active (incidental)",
          "ranked": false,
          "description": [
-            "When your character makes a {@skill Brawl||crb}, {@skill Melee (Light)||crb}, or {@skill Melee (Heavy)||crb} combat check after using a maneuver to engage a target, you may spend {@symbols aaa} or {@symbols t} to use this talent to knock the target prone and move them up to one range band away from your character."
+            "When your character makes a {@skill Brawl||crb}, {@skill Melee (Light)||crb}, or {@skill Melee (Heavy)||crb} combat check after using a maneuver to engage a target, you may spend {@symbols aaa} or {@symbols t} to use this talent to knock the target {@rule prone} and move them up to one range band away from your character."
          ],
          "page": 84,
          "tags": [
@@ -15133,7 +15102,7 @@
          "activation": "active (maneuver)",
          "ranked": true,
          "description": [
-            "Once per encounter, your character may use this talent to choose a number of adversaries within short range no greater than your character's ranks in Challenge! (a minion group counts as a single adversary for this purpose). Until the encounter ends or your character is incapacitated, these adversaries add {@dice boost} to combat checks targeting your character and {@dice setback|2} to combat checks targeting other characters."
+            "Once per encounter, your character may use this talent to choose a number of adversaries within short range no greater than your character's ranks in Challenge! (a minion group counts as a single adversary for this purpose). Until the encounter ends or your character is {@rule incapacitated}, these adversaries add {@dice boost} to combat checks targeting your character and {@dice setback|2} to combat checks targeting other characters."
          ],
          "page": 84,
          "tags": [
@@ -15333,7 +15302,7 @@
          "activation": "active (incidental)",
          "ranked": true,
          "description": [
-            "When your character makes a combat check with a Ranged or Melee (Light) weapon, they may suffer 2 strain to use this talent to add the {@quality Ensnare||crb} quality to the attack. The rating of the {@quality Ensnare||crb} quality is equal to your character's ranks in Exploit."
+            "When your character makes a combat check with a {@skill Ranged} or {@skill Melee (Light)} weapon, they may suffer 2 strain to use this talent to add the {@quality Ensnare||crb} quality to the attack. The rating of the {@quality Ensnare||crb} quality is equal to your character's ranks in Exploit."
          ],
          "page": 88,
          "tags": [
@@ -15362,7 +15331,7 @@
          "activation": "active (incidental)",
          "ranked": false,
          "description": [
-            "When making a {@skill Brawl||crb} or {@skill Melee (Light)||crb} check, your character may use Agility instead of Brawn."
+            "When making a {@skill Brawl||crb} or {@skill Melee (Light)||crb} check, your character may use {@characteristic Agility} instead of {@characteristic Brawn}."
          ],
          "page": 84,
          "tags": [
@@ -15492,7 +15461,7 @@
          "activation": "passive",
          "ranked": false,
          "description": [
-            "When your character uses the Conjure magic action, the spell gains the Summon Ally effect without increasing the difficulty. All creatures your character summons must be naturally occurring animals native to the area"
+            "When your character uses the {@spell Conjure} magic action, the spell gains the Summon Ally effect without increasing the difficulty. All creatures your character summons must be naturally occurring animals native to the area"
          ],
          "page": 88,
          "tags": [
@@ -15551,7 +15520,7 @@
          "activation": "active (incidental)",
          "ranked": false,
          "description": [
-            "When making a {@skill Brawl||crb} or {@skill Ranged||crb} check, your character may use Cunning instead of Brawn and Agility."
+            "When making a {@skill Brawl||crb} or {@skill Ranged||crb} check, your character may use {@characteristic Cunning} instead of {@characteristic Brawn} and {@characteristic Agility}."
          ],
          "page": 84,
          "tags": [
@@ -15627,7 +15596,7 @@
          "activation": "passive",
          "ranked": false,
          "description": [
-            "When your character is incapacitated due to having exceeded their strain threshold while in their normal form, they undergo the following change as an out-of-turn incidental: they heal all strain, increase their Brawn and Agility by one to a maximum of 5 and reduce their Intellect and Willpower by one to a minimum of 1. They deal +1 damage when making unarmed attacks and their unarmed attacks have a Critical rating of 3, but they cannot use magic skills or make ranged attacks. Your GM should ensure that NPCs react appropriately to this (at the very least, upgrading the difficulty of social skill checks twice). Your character reverts to their normal form after eight hours or if they become incapacitated (for instance, by exceeding their wound or strain threshold)."
+            "When your character is {@rule incapacitated} due to having exceeded their strain threshold while in their normal form, they undergo the following change as an out-of-turn incidental: they heal all strain, increase their {@characteristic Brawn} and {@characteristic Agility} by one to a maximum of 5 and reduce their {@characteristic Intellect} and {@characteristic Willpower} by one to a minimum of 1. They deal +1 damage when making unarmed attacks and their unarmed attacks have a Critical rating of 3, but they cannot use magic skills or make ranged attacks. Your GM should ensure that NPCs react appropriately to this (at the very least, upgrading the difficulty of social skill checks twice). Your character reverts to their normal form after eight hours or if they become {@rule incapacitated} (for instance, by exceeding their wound or strain threshold)."
          ],
          "page": 84,
          "tags": [
@@ -15716,7 +15685,7 @@
          "activation": "passive",
          "ranked": false,
          "description": [
-            "Your character adds {@symbols a} to {@skill Brawl||crb} checks and combat checks using improvised weapons."
+            "Your character adds {@symbols a} to {@skill Brawl||crb} checks and combat checks using {@rule improvised weapons}."
          ],
          "page": 87,
          "tags": [
@@ -15745,7 +15714,7 @@
          "activation": "passive",
          "ranked": false,
          "description": [
-            "{@i Your character must have purchased the {@talent Templar} talent to benefit from this talent}. When your character casts the single {@skill Divine||crb} spell per encounter granted by the {@talent Templar} talent, they do not add {@dice setback} for wearing heavy armor (armor with +2 soak or higher), using a shield, or not having at least one hand free (see {@table III.2-3: Penalties When Casting Spells||crb}, on page 210 of the Genesys Core Rulebook)."
+            "{@i Your character must have purchased the {@talent Templar} talent to benefit from this talent}. When your character casts the single {@skill Divine||crb} spell per encounter granted by the {@talent Templar} talent, they do not add {@dice setback} for wearing heavy armor (armor with +2 soak or higher), using a shield, or not having at least one hand free (see {@table III.2-3: Penalties When Casting Spells||crb}, on page 210 of the {@title Genesys Core Rulebook})."
          ],
          "page": 89,
          "tags": [

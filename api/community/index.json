@@ -8,9 +8,9 @@
       "version": "2025.12.09",
       "authors": [
          "Genesys RPG Community",
-         "Flame112",
          "Archellus",
          "Caleb \"Cptn_Smitty\" Smith",
+         "Flame112",
          "J. Scott \"DrainSmith\" Zumwalt"
       ],
       "convertedBy": [
@@ -26,10 +26,11 @@
       "abbreviation": "BOOST:2",
       "color": "#30F030",
       "authors": [
-         "Flame112",
+         "Genesys RPG Community",
          "Archellus",
          "CantComplain",
          "Dmitry Arkhipov",
+         "Flame112",
          "Gazrok (Chris Markham)",
          "MaceWindows",
          "Ryall \"O the Owl\" Hyatt",
@@ -49,6 +50,7 @@
       "abbreviation": "BOOST:3",
       "color": "#30F030",
       "authors": [
+         "Genesys RPG Community",
          "Caleb \"Cptn_Smitty\" Smith",
          "Chris Markham",
          "Digital APEX",
@@ -71,11 +73,12 @@
       "abbreviation": "BOOST:4",
       "color": "#30F030",
       "authors": [
+         "Genesys RPG Community",
+         "Caleb \"Cptn_Smitty\" Smith",
+         "Chris Markham",
          "Flame112",
          "Giri Raman",
-         "Chris Markham",
-         "Tyler Comstock",
-         "Caleb \"Cptn_Smitty\" Smith"
+         "Tyler Comstock"
       ],
       "convertedBy": [
          "SilentArctic"
@@ -91,12 +94,13 @@
       "abbreviation": "BOOST:5",
       "color": "#30F030",
       "authors": [
-         "Micah-Shalom \"FatCrab\" Kesselman",
-         "Flame112",
-         "Caleb \"Cptn_Smitty\" Smith",
+         "Genesys RPG Community",
          "Anubis",
+         "Caleb \"Cptn_Smitty\" Smith",
          "Chris Markham",
          "Craftidore",
+         "Flame112",
+         "Micah-Shalom \"FatCrab\" Kesselman",
          "Skarpie"
       ],
       "convertedBy": [
@@ -113,11 +117,11 @@
       "abbreviation": "BOOST:6",
       "color": "#30F030",
       "authors": [
-         "Micah-Shalom \"FatCrab\" Kesselman",
-         "Flame112",
          "Genesys RPG Community",
          "Chris Markham",
          "Craftidore",
+         "Flame112",
+         "Micah-Shalom \"FatCrab\" Kesselman",
          "Ryall Hyatt",
          "Silvak the Judge"
       ],
@@ -135,8 +139,8 @@
       "abbreviation": "BOOST:7",
       "color": "#30F030",
       "authors": [
-         "Flame112",
          "Genesys RPG Community",
+         "Flame112",
          "Giri Raman",
          "Haris Rehman",
          "Jennifer \"jendefer\" Van Boxel",
@@ -158,16 +162,16 @@
       "abbreviation": "BOOST:8",
       "color": "#30F030",
       "authors": [
-         "Caleb \"Cptn_Smitty\" Smith",
-         "Jennifer \"jendefer\" Van Boxel",
-         "Micah-Shalom \"FatCrab\" Kesselman",
          "Genesys RPG Community",
-         "Matt \"DatMatt\" Mensch",
+         "Caleb \"Cptn_Smitty\" Smith",
          "Evan Koser",
          "Flame112",
          "Giri Raman",
          "J. Scott Zumwalt",
+         "Jennifer \"jendefer\" Van Boxel",
+         "Matt \"DatMatt\" Mensch",
          "Matthew Steiner",
+         "Micah-Shalom \"FatCrab\" Kesselman",
          "Ryall \"OtO\" Hyatt",
          "Swordbreaker",
          "Topsecret"
@@ -186,14 +190,14 @@
       "abbreviation": "BOOST:9",
       "color": "#30F030",
       "authors": [
-         "Micah-Shalom \"FatCrab\" Kesselman",
          "Genesys RPG Community",
+         "Adam \"CircleofNoms\" Brown",
+         "Amnesiac",
          "Carson \"Swordbreaker\" Worth",
          "Jennifer \"jendefer\" Van Boxel",
-         "Adam \"CircleofNoms\" Brown",
-         "Ryall Hyatt",
-         "Amnesiac",
-         "Matt \"DatMatt\" Mensch"
+         "Matt \"DatMatt\" Mensch",
+         "Micah-Shalom \"FatCrab\" Kesselman",
+         "Ryall Hyatt"
       ],
       "convertedBy": [
          "SilentArctic"

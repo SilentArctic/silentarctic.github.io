@@ -1,6 +1,6 @@
 {
    "core-rule-book.json": {
-      "version": "2026.9.22.1",
+      "version": "2026.9.26",
       "json": "core-rule-book",
       "full": "Genesys Core Rulebook",
       "abbreviation": "CRB",
@@ -15,8 +15,42 @@
       "releaseDate": "30 November 2017",
       "originType": "core"
    },
+   "embers-inspection-tour.json": {
+      "version": "2026.9.29",
+      "json": "embers-inspection-tour",
+      "full": "Twilight Imperium: Inspection Tour",
+      "abbreviation": "EotI:IT",
+      "color": "#EF3F22",
+      "authors": [
+         "EDGE Studio"
+      ],
+      "convertedBy": [
+         "mr4nd3rsn"
+      ],
+      "url": "https://www.edge-studio.net/shares/twilight-imperium/",
+      "releaseDate": "20 March 2024",
+      "module": true,
+      "originType": "core"
+   },
+   "embers-mecatol-report.json": {
+      "version": "2026.9.29",
+      "json": "embers-mecatol-report",
+      "full": "Twilight Imperium: Mecatol Report",
+      "abbreviation": "EotI:MR",
+      "color": "#EF3F22",
+      "authors": [
+         "EDGE Studio"
+      ],
+      "convertedBy": [
+         "SilentArctic"
+      ],
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/f6/be/f6be8343-a4fc-47e4-a722-efe3e01fc5d9/ti_codex_4_rules.pdf",
+      "releaseDate": "11 June 2025",
+      "module": true,
+      "originType": "core"
+   },
    "embers-of-the-imperium.json": {
-      "version": "2026.9.21",
+      "version": "2026.9.28",
       "json": "embers-of-the-imperium",
       "full": "Twilight Imperium: Embers of the Imperium",
       "abbreviation": "EotI",
@@ -32,7 +66,7 @@
       "originType": "core"
    },
    "embers-ships-of-the-shattered-empire.json": {
-      "version": "2026.9.22.2",
+      "version": "2026.9.28",
       "json": "embers-ships-of-the-shattered-empire",
       "full": "Twilight Imperium: Ships of the Shattered Empire",
       "abbreviation": "EotI:SSE",
@@ -65,7 +99,7 @@
       "originType": "core"
    },
    "realms-of-terrinoth.json": {
-      "version": "2026.9.20",
+      "version": "2026.9.27",
       "json": "realms-of-terrinoth",
       "full": "Realms of Terrinoth",
       "abbreviation": "RoT",
@@ -78,7 +112,7 @@
       "originType": "core"
    },
    "secrets-of-the-crucible.json": {
-      "version": "2026.09.21",
+      "version": "2026.09.28",
       "json": "secrets-of-the-crucible",
       "full": "Keyforge: Secrets of the Crucible",
       "abbreviation": "SotC",
@@ -94,7 +128,7 @@
       "originType": "core"
    },
    "shadow-of-the-beanstalk.json": {
-      "version": "2026.09.21",
+      "version": "2026.09.28",
       "json": "shadow-of-the-beanstalk",
       "full": "Android: Shadow of the Beanstalk",
       "abbreviation": "SotB",
@@ -107,40 +141,6 @@
          "SilentArctic"
       ],
       "releaseDate": "7 February 2019",
-      "originType": "core"
-   },
-   "twilight-imperium-inspection-tour.json": {
-      "version": "2025.1.20",
-      "json": "twilight-imperium-inspection-tour",
-      "full": "Twilight Imperium: Inspection Tour",
-      "abbreviation": "EotI:IT",
-      "color": "#EF3F22",
-      "authors": [
-         "EDGE Studio"
-      ],
-      "convertedBy": [
-         "mr4nd3rsn"
-      ],
-      "url": "https://www.edge-studio.net/shares/twilight-imperium/",
-      "releaseDate": "20 March 2024",
-      "module": true,
-      "originType": "core"
-   },
-   "twilight-imperium-mecatol-report.json": {
-      "version": "2025.12.6",
-      "json": "twilight-imperium-mecatol-report",
-      "full": "Twilight Imperium: Mecatol Report",
-      "abbreviation": "EotI:MR",
-      "color": "#EF3F22",
-      "authors": [
-         "EDGE Studio"
-      ],
-      "convertedBy": [
-         "SilentArctic"
-      ],
-      "url": "https://images-cdn.fantasyflightgames.com/filer_public/f6/be/f6be8343-a4fc-47e4-a722-efe3e01fc5d9/ti_codex_4_rules.pdf",
-      "releaseDate": "11 June 2025",
-      "module": true,
       "originType": "core"
    }
 }
