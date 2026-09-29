@@ -51,22 +51,38 @@ mean broken links, missing popovers, or plain text where dice and symbols should
      - `{@rule concealment (darkness, smoke, and intervening terrain)|darkness}`
      - `{@gear torches (3)|3 torches}`
      - `{@gear dignitary's garb|Ambassadorial clothing}`
-2. **Source.**
+2. **Scope: which packs a file may reference.**
+
+   | Destination | May reference |
+   |---|---|
+   | `api/*.json` (official) | Only sibling files: the other official packs in `api/`. **Never** `api/community/` or `api/private/`. |
+   | `api/community/*.json` | Every pack in `api/`, `api/community/`, and `api/private/`. |
+   | `api/private/*.json` | Every pack in `api/`, `api/community/`, and `api/private/`. |
+
+   - **Name conflicts.** When the same name (same type) exists in several packs you may reference, pick the first match in this order:
+     1. the destination itself
+     2. other packs in the same **set**: packs whose abbreviations share a prefix before `:` (`BOOST:1`…`BOOST:9`; `EotI`, `EotI:SSE`, `EotI:IT`, `EotI:MR`; `RoT`, `RoT:ES`), plus Zynnythryx (`ZGM`, `ZTB`)
+     3. CRB
+     4. any other pack in scope
+   - Meaning still wins over priority. If a lower-priority pack's item is clearly the one the text means, tag that one and list it under "ℹ Judgment calls".
+   - `check.js` enforces this. A sourced tag to a pack out of scope is an error, "found in" suggestions follow this priority, and HINTS list their options in this order.
+   - Sets are defined in `lib.js` (`packSet`, `SET_ALIASES`). A new set that doesn't share an abbreviation prefix needs a `SET_ALIASES` entry.
+3. **Source.**
    - **Omit it** when the target is in the destination pack or in CRB (the fallback covers it).
-   - Add `||abbr` (lowercase) for any **other** pack: `{@skill Verse||rot}`, `{@talent Finesse||rot}`. Abbreviations come from `api/index.json` and `api/community/index.json`.
+   - Add `||abbr` (lowercase) for any **other** pack, including packs in the same set: `{@skill Verse||rot}`, `{@talent Finesse||rot}`. Abbreviations come from `api/index.json`, `api/community/index.json`, and `api/private/index.json`.
    - Add `||crb` only when the destination has a same-named item that would shadow the CRB one you mean. `check.js` hints at these cases.
    - Older data is full of `||crb` from before the fallback existed. Don't add new ones, and don't strip old ones.
-3. **Tables.** Leave out the `Table ` prefix, because the app adds it back.
+4. **Tables.** Leave out the `Table ` prefix, because the app adds it back.
    - The item `Table 2-1: Cultural Manufacturing Differences` is tagged `{@table 2-1: Cultural Manufacturing Differences}` and renders as "Table 2-1: Cultural Manufacturing Differences".
    - A short in-text reference: `see {@table 2-1: Cultural Manufacturing Differences|Table 2-1}`.
    - (A `_ref` embed is different: it uses the item's full name, *with* "Table ".)
-4. **Ranks** go in the display. The name stays the base item:
+5. **Ranks** go in the display. The name stays the base item:
    - `{@quality Pierce|Pierce 2}`
    - `{@talent Adversary|Adversary 2}`
-5. **The target must exist.** `check.js` REFS verifies this.
-   - If nothing by that name exists in any pack, leave the text untagged and report it (see workflow step 6).
+6. **The target must exist.** `check.js` REFS verifies this.
+   - If nothing by that name exists in any pack in scope, leave the text untagged and report it (see workflow step 6).
    - Staged items count as existing, so new items can reference each other.
-6. **Pick the right type** when a name exists in several groups. Go by meaning.
+7. **Pick the right type** when a name exists in several groups. Go by meaning.
    - In EotI, "Winnu" is both a species (`archetype`) and a faction (`rule`):
      - "must be a Winnu" → archetype
      - "allegiance to the Winnu" → rule
@@ -129,6 +145,8 @@ The difficulty tag renders **"Average (◆◆) Skill check"**, including the bol
 | an opposed Deception versus Discipline check | `an opposed {@skill Deception} versus {@skill Discipline} check` |
 
 ## 6. What to tag (every occurrence in prose, not just the first)
+
+`check.js` HINTS flag untagged mentions of names from every pack in scope (section 3, rule 2). For names that only a pack outside the destination's set and CRB has, it flags capitalized mentions only, because lowercase ones are nearly always ordinary words. So you still need to read the text yourself.
 
 - **Skills**, by exact name: `{@skill Knowledge (Lore)}`, `{@skill Ranged (Light)}`, `{@skill Astrocartography}`.
   - Tag when the text means the skill ("a Stealth check", "ranks in Leadership", "gains Perception as a career skill").

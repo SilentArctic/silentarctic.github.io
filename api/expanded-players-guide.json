@@ -5621,7 +5621,7 @@
       {
          "name": "Undead",
          "description": [
-            "Does not need to breathe, eat, or drink (except blood), can survive underwater, and is immune to poisons and toxins."
+            "Does not need to breathe, eat, or drink (except blood for some), can survive underwater, and is immune to poisons and toxins."
          ],
          "tags": [
             "general",

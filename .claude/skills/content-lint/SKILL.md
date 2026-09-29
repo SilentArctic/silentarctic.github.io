@@ -1,6 +1,6 @@
 ---
 name: content-lint
-description: Lint a GenesysRef content pack for data errors, and optionally compare it against its source PDF for text and stat discrepancies. Usage /content-lint <pack-json> [pdf-path] [printed-pages]
+description: Lint a GenesysRef content pack for data errors and missing tags, and optionally compare it against its source PDF for text and stat discrepancies. Usage /content-lint <pack-json> [pdf-path] [printed-pages]
 argument-hint: <pack-json> [pdf-path] [printed-pages]
 disable-model-invocation: true
 ---
@@ -8,7 +8,7 @@ disable-model-invocation: true
 # Content lint
 
 Arguments: `$ARGUMENTS`
-1. **Pack** (required): `api/<name>.json` or `api/community/<name>.json`. If it's missing or doesn't exist, **stop** and say so.
+1. **Pack** (required): `api/<name>.json`, `api/community/<name>.json`, or `api/private/<name>.json`. If it's missing or doesn't exist, **stop** and say so.
 2. **PDF** (optional): the source book. Given → also run the PDF comparison (step 3). Not given → quick scan only.
 3. **Printed pages** (optional, PDF mode only): e.g. `241-243` or `50,52-55`. Limits the comparison to items whose `page` is in the range. Without pages, the whole pack is compared.
 
@@ -40,20 +40,28 @@ mkdir -p "<scratchpad>/lint" && cp <pack> "<scratchpad>/lint/<pack-basename>.bef
 ## 2. Quick scan (always)
 
 ```bash
-node .claude/skills/pack-core/scripts/check.js --dest <pack> --all --max 9999
+node .claude/skills/pack-core/scripts/check.js --dest <pack> --all --hints --max 9999 > "<scratchpad>/lint/<pack-basename>-check.txt"
 ```
+
+The output is long because of HINTS, so read the saved file in parts.
 
 Sort the output into these buckets. Each finding gets its item, field, the problem, and a proposed fix.
 
 | Bucket | Source | Typical examples |
 |---|---|---|
 | Broken tags | TAGS errors | `{@charactieristic`, `{@sybmols d}`, `{@dice bosot}`, unclosed tags, illegal nesting |
-| Broken references | REFS errors | a tag or structured ref that resolves nowhere, a wrong `source`, `{@difficulty Easy\|fear}` (fear isn't a skill) |
+| Broken references | REFS errors | a tag or structured ref that resolves nowhere, a wrong `source`, `{@difficulty Easy\|fear}` (fear isn't a skill), an official pack referencing a community or private pack (out of scope) |
+| Missing tags | HINTS, plus your own reading | an untagged skill, talent, quality, rule, gear, etc. that the text means as the game entity; untagged dice, symbols, or difficulties; a missing `{@b}`, `{@i}`, or `{@title}` |
 | Data consistency | REFS warnings | an adversary skill's characteristic ≠ the skill's; a minion with skill ranks; a rival with strain; a nemesis without strain; defense not `[melee, ranged]` |
 | Text hygiene | HYGIENE | unbalanced `()`/`[]` (e.g. "Rulebook))."), double spaces, curly quotes, untagged difficulties or tables |
 | Schema | SCHEMA errors | Schemas are mid-migration. Compare with other packs before calling something an error, and never propose schema edits as fixes. Mention these separately. |
 
-- Leave `--hints` (untagged mentions) off unless the user asks. It's noisy on a whole pack.
+- **Missing tags.** Judge each HINT against `tagging.md` sections 6 and 7. Report it only when the text means that game entity. Drop generic words, self-references, page references, and structured fields.
+  - Scope and priority follow `tagging.md` section 3, rule 2.
+    - Official packs may only reference `api/` packs. Community and private packs may reference every pack.
+    - On a name clash, the order is: the pack itself, then its set, then CRB, then the rest. HINTS already list their options in that order.
+  - Group repeats. For example, "rule `fear` untagged in 12 items" is one finding with the items listed. For a recurring call ("is 'fear' always the rule?"), ask once instead of listing every occurrence.
+  - Some misses HINTS can't see: shortened names, lowercase names that only packs outside the set have, and untagged dice, symbols, and formatting. Look for these while reading the items you report on. On a whole-pack run, say they were only spot-checked.
 - For a proposed tag fix, look at how the same thing is tagged elsewhere in the pack and follow that.
 
 ## 3. PDF comparison (only with a PDF)
@@ -109,6 +117,9 @@ Data errors (N):
   1. adversary "Elder Titan" skills: Knowledge (Science) 3 → 4 (book p.241)
   2. …
 Broken tags / references (N): …
+Missing tags (N):
+  5. talent "Unity of Purpose" description[1]: "your character's Fear" → {@rule Fear}
+  6. "fear" untagged in 12 items (list) → {@rule fear}
 Data consistency (N): …
 Text hygiene (N): …
 ⚠ Source errors, data left as is (N): p.243 "Biochemcial Toxin" (book typo; data has "Biochemical Toxin")
@@ -150,7 +161,7 @@ Run this once after any successful write. It may leave the version alone if toda
 
 ## 7. Confirm
 
-Re-run the step 2 check (and step 3 with the same scope) and confirm the fixed findings are gone.
+Re-run the step 2 check (and step 3 with the same scope) and confirm the fixed findings are gone. Missing tags you fixed drop out of HINTS.
 
 ## 8. Verify against the schema (always, last)
 

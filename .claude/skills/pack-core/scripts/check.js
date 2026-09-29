@@ -71,6 +71,9 @@ if (staged) {
 const packs = lib.loadPacks({ [destFile]: effectiveDest });
 const destPack = packs.byFile.get(destFile) || [...packs.byAbbr.values()].find(p => p.abbrLower === destAbbrLower);
 const crbPack = packs.byAbbr.get('crb');
+/* packs the destination may reference, highest priority first (see tagging.md "Reference scope") */
+const scope = lib.refScope(packs, destPack);
+const inScope = new Set(scope.map(p => p.abbrLower));
 
 const out = { SCHEMA: [], TAGS: [], REFS: [], HYGIENE: [], HINTS: [] };
 const counts = { SCHEMA: 0, TAGS: 0, REFS: 0 }; // errors only
@@ -226,8 +229,23 @@ function packLabel(abbrLower) {
    return packs.byAbbr.get(abbrLower)?.abbr || abbrLower;
 }
 
+/* in-scope packs (minus `exclude`) that contain type/name, highest priority first */
 function elsewhere(type, name, exclude = []) {
-   return lib.whereIs(packs, type, name).filter(a => !exclude.includes(a.toLowerCase()));
+   return scope.filter(p => !exclude.includes(p.abbrLower) && lib.packHas(p, type, name)).map(p => p.abbr);
+}
+
+/* packs the destination may not reference that contain type/name */
+function outOfScope(type, name) {
+   return lib.whereIs(packs, type, name).filter(a => !inScope.has(a.toLowerCase()));
+}
+
+function scopeError(pack) {
+   return `${destAbbr} is an official pack and can't reference ${pack.tier} pack ${pack.abbr}`;
+}
+
+function notFound(type, name, lookedWhere) {
+   const barred = outOfScope(type, name);
+   return `${type} "${name}" not found in ${lookedWhere}${barred.length ? ` (only in ${barred.join(', ')}, which ${destAbbr} can't reference)` : ' (or any pack)'}`;
 }
 
 const shadowHintsShown = new Set();
@@ -237,7 +255,8 @@ const lookedIn = destAbbrLower === 'crb' ? 'CRB' : `${destAbbr} or CRB`;
 function resolveTagRef(type, name, source) {
    if (source) {
       const pack = packs.byAbbr.get(source.toLowerCase());
-      if (!pack) return { error: `unknown source "${source}" (not an abbreviation in api/index.json or api/community/index.json)` };
+      if (!pack) return { error: `unknown source "${source}" (not an abbreviation in api/index.json, api/community/index.json, or api/private/index.json)` };
+      if (!inScope.has(pack.abbrLower)) return { error: scopeError(pack) };
       if (lib.packHas(pack, type, name)) return { ok: true };
       const found = elsewhere(type, name, [source.toLowerCase()]);
       return { error: `${type} "${name}" not found in ${pack.abbr}${found.length ? ` (found in: ${found.join(', ')})` : ''}` };
@@ -253,7 +272,7 @@ function resolveTagRef(type, name, source) {
    if (lib.packHas(crbPack, type, name)) return { ok: true };
    const found = elsewhere(type, name, [destAbbrLower, 'crb']);
    if (found.length) return { error: `${type} "${name}" not in ${lookedIn}; found in ${found.join(', ')} → add ||${found[0].toLowerCase()}` };
-   return { error: `${type} "${name}" not found in ${lookedIn} (or any pack)` };
+   return { error: notFound(type, name, lookedIn) };
 }
 
 /* resolve a STRUCTURED ref ({name, source}); unsourced refs must live in the destination */
@@ -265,6 +284,7 @@ function resolveStructuredRef(type, name, source, { anyPack = false, stripRank =
    if (source) {
       const pack = packs.byAbbr.get(String(source).toLowerCase());
       if (!pack) return { error: `unknown source "${source}"` };
+      if (!inScope.has(pack.abbrLower)) return { error: scopeError(pack) };
       if (has(pack)) return { ok: true };
       const found = tryNames.flatMap(n => elsewhere(type, n, [String(source).toLowerCase()]));
       return { error: `${type} "${name}" not found in ${pack.abbr}${found.length ? ` (found in: ${[...new Set(found)].join(', ')})` : ''}` };
@@ -273,7 +293,7 @@ function resolveStructuredRef(type, name, source, { anyPack = false, stripRank =
    const found = [...new Set(tryNames.flatMap(n => elsewhere(type, n, [destAbbrLower])))];
    if (anyPack && found.length) return { ok: true };
    if (found.length) return { error: `${type} "${name}" is not in ${destAbbr}; found in ${found.join(', ')} → add "source": "${found[0].toLowerCase()}"` };
-   return { error: `${type} "${name}" not found in ${destAbbr} (or any pack)` };
+   return { error: notFound(type, name, destAbbr) };
 }
 
 /* structured references per item group */
@@ -521,24 +541,25 @@ const HINT_TYPES = ['skill', 'characteristic', 'quality', 'talent', 'rule', 'arc
 /* for these, a game term is capitalized in prose ("make a Stealth check"); lowercase matches are generic words */
 const REQUIRE_CAPITAL = new Set(['skill', 'characteristic', 'quality', 'talent', 'archetype', 'spell', 'career', 'specialization', 'setting']);
 
+/* 0 destination, 1 same set, 2 CRB, 3 any other pack in scope */
+function scopeRank(pack) {
+   if (pack === destPack) return 0;
+   if (pack.set === destPack.set) return 1;
+   return pack.abbrLower === 'crb' ? 2 : 3;
+}
+
 let hintMatchers = null;
 function buildHintMatchers() {
-   /* packs to draw names from: destination, CRB, and packs the destination already references */
-   const raw = lib.readText(destFile);
-   const referenced = new Set([destAbbrLower, 'crb']);
-   for (const m of raw.matchAll(/\|\|?([A-Za-z0-9:]+)\}/g)) referenced.add(m[1].toLowerCase());
-   for (const m of raw.matchAll(/"source":\s*"([^"]+)"/g)) referenced.add(m[1].toLowerCase());
-
+   /* draw names from every pack in scope; on a name clash the higher-priority pack wins (scope is ordered) */
    const matchers = [];
    for (const type of HINT_TYPES) {
-      const map = new Map(); // lower → { name, abbr }
-      for (const abbr of referenced) {
-         const pack = packs.byAbbr.get(abbr);
-         const names = pack?.names.get(type);
+      const map = new Map(); // lower → { name, abbr, rank }
+      for (const pack of scope) {
+         const names = pack.names.get(type);
          if (!names) continue;
          for (const [lower, original] of names) {
             if (lower.length < 3 || map.has(lower)) continue;
-            map.set(lower, { name: original, abbr: pack.abbrLower });
+            map.set(lower, { name: original, abbr: pack.abbrLower, rank: scopeRank(pack) });
          }
       }
       if (!map.size) continue;
@@ -561,10 +582,12 @@ function lintHints(str, where, tags, ownNames) {
       for (const m of outside.matchAll(re)) {
          const lower = m[0].toLowerCase();
          if (ownNames.has(lower)) continue;
-         if (REQUIRE_CAPITAL.has(type) && m[0][0] !== m[0][0].toUpperCase()) continue;
+         const target = map.get(lower);
+         /* lowercase matches of names that only another book has are nearly always ordinary words ("ancient", "limited") */
+         if ((REQUIRE_CAPITAL.has(type) || target.rank === 3) && m[0][0] !== m[0][0].toUpperCase()) continue;
          const key = `${m.index}:${m[0].length}`;
          if (!spans.has(key)) spans.set(key, { start: m.index, end: m.index + m[0].length, text: m[0], targets: [] });
-         spans.get(key).targets.push({ type, ...map.get(lower) });
+         spans.get(key).targets.push({ type, ...target });
       }
    }
 
@@ -573,7 +596,7 @@ function lintHints(str, where, tags, ownNames) {
    const kept = all.filter(s => !all.some(o => o !== s && o.start <= s.start && o.end >= s.end && (o.end - o.start) > (s.end - s.start)));
 
    for (const s of kept.sort((a, b) => a.start - b.start)) {
-      const options = s.targets.map(t => {
+      const options = s.targets.sort((a, b) => a.rank - b.rank).map(t => {
          const needsSource = t.abbr !== destAbbrLower && t.abbr !== 'crb';
          const caseNote = s.text === t.name ? '' : ` [name "${t.name}"]`;
          return `{@${t.type} ${s.text}${needsSource ? `||${t.abbr}` : ''}}${caseNote}`;
