@@ -2,7 +2,7 @@
    "$schema": "https://silentarctic.github.io/schemas/schema.json",
    "_meta": {
       "source": {
-         "version": "2026.9.28",
+         "version": "2026.9.29",
          "json": "embers-of-the-imperium",
          "full": "Twilight Imperium: Embers of the Imperium",
          "abbreviation": "EotI",
@@ -12496,9 +12496,7 @@
             "Insubstantial Form",
             "Ethereal Awareness",
             {
-               "description": [
-                  "Your character starts the game with a {@gear sealed environmental suit} (see page 117)."
-               ]
+               "description": "Your character starts the game with a {@gear sealed environmental suit} (see page 117)."
             }
          ],
          "description": [

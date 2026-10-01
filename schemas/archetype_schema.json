@@ -287,10 +287,7 @@
                      "description": "Custom ability only for this archetype.",
                      "properties": {
                         "description": {
-                           "type": "array",
-                           "items": {
-                              "type": "string"
-                           }
+                           "type": "string"
                         }
                      }
                   }
