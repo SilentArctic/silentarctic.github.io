@@ -25,11 +25,13 @@
             "items": {
                "type": ["string", "integer"]
             },
-            "description": "Deprecated. Shortened summary that will appear in popovers."
+            "description": "Deprecated. Shortened summary that will appear in popovers.",
+            "x-hb": { "hidden": true }
          },
          "id": {
             "type": "string",
-            "description": "Unique item id. You shouldn't have to touch this field."
+            "description": "Unique item id. You shouldn't have to touch this field.",
+            "x-hb": { "hidden": true }
          }
       },
       "required": [

@@ -9788,6 +9788,7 @@
             "equipment": {
                "weapon": [{
                   "name": "Claws",
+                  "type": "weapon",
                   "skill": {
                      "name": "Brawl",
                      "source": "crb"
@@ -9795,6 +9796,9 @@
                   "damage": "+1",
                   "critical": 3,
                   "range": "Engaged",
+                  "encumbrance": 0,
+                  "price": "n/a",
+                  "rarity": null,
                   "special": [{
                      "name": "Vicious",
                      "value": 1,
@@ -10006,6 +10010,7 @@
             "equipment": {
                "weapon": [{
                   "name": "Claws",
+                  "type": "weapon",
                   "skill": {
                      "name": "Brawl",
                      "source": "crb"
@@ -10013,6 +10018,9 @@
                   "damage": "+1",
                   "critical": 3,
                   "range": "Engaged",
+                  "encumbrance": 0,
+                  "price": "n/a",
+                  "rarity": null,
                   "special": [{
                      "name": "Vicious",
                      "value": 1,
