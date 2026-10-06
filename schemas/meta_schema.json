@@ -29,7 +29,8 @@
             },
             "json": {
                "type": "string",
-               "description": "kebab-case title of your homebrew. This is used to differentiate your data from everything else and **must be unique**. This field can only be changed manually in a json editor."
+               "description": "kebab-case title of your homebrew. This is used to differentiate your data from everything else and **must be unique**. This field can only be changed manually in a json editor.",
+               "readOnly": true
             },
             "full": {
                "type": "string",
@@ -45,7 +46,8 @@
             },
             "color": {
                "type": "string",
-               "description": "The hex-color of the abbreviation when displayed in tables and headers. Please make sure the color is readable in all color schemes. Defaults to black/white based on theme."
+               "description": "The hex-color of the abbreviation when displayed in tables and headers. Please make sure the color is readable in all color schemes. Defaults to black/white based on theme.",
+               "x-hb": { "widget": "color" }
             },
             "url": {
                "type": "string",

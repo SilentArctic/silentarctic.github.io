@@ -151,11 +151,14 @@
                   "items": {
                      "oneOf": [
                         {
-                           "type": "string"
+                           "type": "string",
+                           "title": "Skill",
+                           "description": "Skill name."
                         },
 
                         {
                            "type": "object",
+                           "title": "Skill with details",
                            "properties": {
                               "name": {
                                  "type": "string",
@@ -193,6 +196,7 @@
                },
                "description": {
                   "type": "array",
+                  "x-hb": { "widget": "paragraphs" },
                   "description": "Text displayed on the archetype. This is *not* derived from the other fields here due to the vast variety of possibilities.",
                   "items": {
                      "type": "string"
@@ -202,15 +206,19 @@
                   "oneOf": [
                      {
                         "type": "boolean",
+                        "title": "Any choice",
                         "description": "If the player has a choice between skills to put starting ranks into."
                      },
 
                      {
                         "type": "array",
+                        "title": "Limited choice",
+                        "description": "Skills or skill categories the player can choose from.",
                         "items": {
                            "oneOf": [
                               {
                                  "type": "string",
+                                 "title": "Category",
                                  "enum": [
                                     "any",
                                     "career",
@@ -232,6 +240,7 @@
 
                               {
                                  "type": "object",
+                                 "title": "Skill",
                                  "properties": {
                                     "name": {
                                        "type": "string",
@@ -286,17 +295,30 @@
                      "title": "Private ability",
                      "description": "Custom ability only for this archetype.",
                      "properties": {
+                        "name": {
+                           "type": "string",
+                           "description": "Ability name."
+                        },
                         "description": {
-                           "type": "string"
+                           "type": "string",
+                           "description": "Ability description."
                         }
-                     }
+                     },
+                     "required": [
+                        "description"
+                     ],
+                     "optional": [
+                        "name"
+                     ],
+                     "additionalProperties": false
                   }
                ]
             }
          },
          "description": {
             "type": "array",
-            "description": "Adversary description.",
+            "x-hb": { "widget": "paragraphs" },
+            "description": "Archetype description.",
             "items": {
                "type": "string"
             }
@@ -314,6 +336,7 @@
             "properties": {
                "description": {
                   "type": "array",
+                  "x-hb": { "widget": "paragraphs" },
                   "description": "Brief description about this archetype's naming conventions.",
                   "items": {
                      "type": "string"
@@ -329,7 +352,169 @@
             }
          },
          "modifiers": {
-            "type": "object"
+            "type": "object",
+            "description": "Mechanical effects applied to characters with this archetype in the Character Builder.",
+            "x-hb": { "hidden": true },
+            "properties": {
+               "stats": {
+                  "type": "object",
+                  "description": "Bonuses added to derived stats.",
+                  "properties": {
+                     "soak": {
+                        "type": "integer"
+                     },
+                     "mDefense": {
+                        "type": "integer",
+                        "description": "Melee defense."
+                     },
+                     "rDefense": {
+                        "type": "integer",
+                        "description": "Ranged defense."
+                     },
+                     "wt": {
+                        "type": "integer",
+                        "description": "Wound threshold."
+                     },
+                     "st": {
+                        "type": "integer",
+                        "description": "Strain threshold."
+                     },
+                     "et": {
+                        "type": "integer",
+                        "description": "Encumbrance threshold."
+                     }
+                  },
+                  "additionalProperties": false
+               },
+               "skills": {
+                  "type": "array",
+                  "description": "Skill ranks granted by the archetype.",
+                  "items": {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string",
+                           "description": "Skill name."
+                        },
+                        "source": {
+                           "type": "string",
+                           "description": "Skill source."
+                        },
+                        "career": {
+                           "type": "boolean",
+                           "description": "If the skill becomes a career skill."
+                        },
+                        "ranks": {
+                           "type": "integer",
+                           "description": "Skill ranks granted."
+                        }
+                     },
+                     "required": [
+                        "name"
+                     ],
+                     "optional": [
+                        "source",
+                        "career",
+                        "ranks"
+                     ],
+                     "additionalProperties": false
+                  }
+               },
+               "roll": {
+                  "type": "array",
+                  "description": "Modifiers applied to matching checks. With no skills or skillTypes, applies to every check.",
+                  "items": {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string",
+                           "description": "Modifier name."
+                        },
+                        "description": {
+                           "type": "string",
+                           "description": "Text shown with the roll."
+                        },
+                        "skills": {
+                           "type": "array",
+                           "description": "Skill names this modifier applies to.",
+                           "items": {
+                              "type": "string"
+                           }
+                        },
+                        "skillTypes": {
+                           "type": "array",
+                           "description": "Skill categories this modifier applies to.",
+                           "items": {
+                              "type": "string"
+                           }
+                        },
+                        "damage": {
+                           "type": "integer",
+                           "description": "Damage added to attacks."
+                        },
+                        "qualities": {
+                           "type": "array",
+                           "description": "Item qualities added to attacks.",
+                           "items": {
+                              "type": "object",
+                              "properties": {
+                                 "name": {
+                                    "type": "string"
+                                 },
+                                 "value": {
+                                    "type": "integer"
+                                 },
+                                 "source": {
+                                    "type": "string"
+                                 }
+                              },
+                              "required": [
+                                 "name"
+                              ],
+                              "optional": [
+                                 "value",
+                                 "source"
+                              ],
+                              "additionalProperties": false
+                           }
+                        }
+                     },
+                     "required": [
+                        "name",
+                        "description"
+                     ],
+                     "optional": [
+                        "skills",
+                        "skillTypes",
+                        "damage",
+                        "qualities"
+                     ],
+                     "additionalProperties": false
+                  }
+               },
+               "equipment": {
+                  "type": "object",
+                  "description": "Gear the character starts with, grouped by equipment type.",
+                  "propertyNames": {
+                     "enum": [
+                        "weapon",
+                        "armor",
+                        "gear"
+                     ]
+                  },
+                  "additionalProperties": {
+                     "type": "array",
+                     "items": { "$ref": "./gear_schema.json#/items" }
+                  }
+               }
+            },
+            "optional": [
+               "stats",
+               "skills",
+               "roll",
+               "equipment"
+            ],
+            "additionalProperties": false
          },
          "settings": {
             "$ref": "./settings_sub_schema.json",
@@ -337,7 +522,8 @@
          },
          "id": {
             "type": "string",
-            "description": "Unique item id. You shouldn't have to touch this field."
+            "description": "Unique item id. You shouldn't have to touch this field.",
+            "x-hb": { "hidden": true }
          }
       },
       "required": [
