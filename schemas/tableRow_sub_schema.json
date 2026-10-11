@@ -1,0 +1,35 @@
+{
+   "$id": "https://silentarctic.github.io/schemas/tableRow_sub_schema.json",
+   "oneOf": [
+      {
+         "type": "object",
+         "title": "Subtitle",
+         "description": "A subtitle row spans the entire width of the table and has a solid background to separate different sections of the table.",
+         "properties": {
+            "subtitle": {
+               "type": "string",
+               "description": "Subtitle text."
+            }
+         },
+         "required": [
+            "subtitle"
+         ],
+         "additionalProperties": false
+      },
+      {
+         "type": "object",
+         "title": "Row",
+         "description": "Each row is an object containing key/value pairs. The key must match a column header or value, and the value is the cell content.",
+         "propertyNames": {
+            "not": { "const": "subtitle" }
+         },
+         "additionalProperties": {
+            "type": ["string", "number", "array"],
+            "items": {
+               "type": "string"
+            },
+            "description": "Cell content for the column."
+         }
+      }
+   ]
+}

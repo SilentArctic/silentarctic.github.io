@@ -20,6 +20,7 @@
                   },
                   "description": {
                      "type": "array",
+                     "x-hb": { "widget": "paragraphs" },
                      "description": "List of spell effects to add to the spell. These will be grouped into their own subtable to as not to be confused with \"base\" effects.",
                      "items": {
                         "type": "string",
@@ -48,7 +49,8 @@
          },
          "id": {
             "type": "string",
-            "description": "Unique item id. You shouldn't have to touch this field."
+            "description": "Unique item id. You shouldn't have to touch this field.",
+            "x-hb": { "hidden": true }
          }
       },
       "required": [

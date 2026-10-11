@@ -426,13 +426,15 @@
          "tags": {
             "type": "array",
             "description": "Deprecated. Adversary tags.",
+            "x-hb": { "hidden": true },
             "items": {
                "type": "string"
             }
          },
          "id": {
             "type": "string",
-            "description": "Unique item id. You shouldn't have to touch this field."
+            "description": "Unique item id. You shouldn't have to touch this field.",
+            "x-hb": { "hidden": true }
          }
       },
       "required": [

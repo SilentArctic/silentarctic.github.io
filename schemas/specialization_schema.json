@@ -120,6 +120,7 @@
          },
          "description": {
             "type": "array",
+            "x-hb": { "widget": "paragraphs" },
             "description": "Specialization description.",
             "items": {
                "type": "string",
@@ -132,7 +133,8 @@
          },
          "id": {
             "type": "string",
-            "description": "Unique item id. You shouldn't have to touch this field."
+            "description": "Unique item id. You shouldn't have to touch this field.",
+            "x-hb": { "hidden": true }
          }
       },
       "required": [

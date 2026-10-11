@@ -172,6 +172,7 @@
                   "items": {
                      "oneOf": [
                         {
+                           "title": "Text",
                            "type": "string",
                            "description": "Plain text item."
                         },
@@ -284,19 +285,8 @@
                "rows": {
                   "type": "array",
                   "description": "Rows in the table.",
-                  "items": {
-                     "type": "object",
-                     "description": "Each row is an object containing key/value pairs. The key must match a column header or value, and the value is an array of strings containing the content of the row.",
-                     "properties": {
-                        "subtitle": {
-                           "type": "string",
-                           "description": "A subtitle spans the entire width of the table and has a solid background to separate different sections of the table."
-                        }
-                     },
-                     "optional": [
-                        "subtitle"
-                     ]
-                  }
+                  "x-hb": { "widget": "tableRows" },
+                  "items": { "$ref": "tableRow_sub_schema.json" }
                },
                "_ref": {
                   "type": "object",
@@ -412,6 +402,7 @@
                },
                "description": {
                   "type": "array",
+                  "x-hb": { "widget": "paragraphs" },
                   "items": {
                      "type": "string"
                   }

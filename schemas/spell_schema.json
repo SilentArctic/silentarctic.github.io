@@ -72,6 +72,7 @@
          },
          "narrative": {
             "type": "array",
+            "x-hb": { "widget": "paragraphs" },
             "description": "Narrative description of the spell.",
             "items": {
                "type": "string",
@@ -80,6 +81,7 @@
          },
          "structured": {
             "type": "array",
+            "x-hb": { "widget": "paragraphs" },
             "description": "Structured description of the spell.",
             "items": {
                "type": "string",
@@ -98,6 +100,7 @@
                   },
                   "description": {
                      "type": "array",
+                     "x-hb": { "widget": "paragraphs" },
                      "description": "Effect description.",
                      "items": {
                         "type": "string",
@@ -126,7 +129,8 @@
          },
          "id": {
             "type": "string",
-            "description": "Unique item id. You shouldn't have to touch this field."
+            "description": "Unique item id. You shouldn't have to touch this field.",
+            "x-hb": { "hidden": true }
          }
       },
       "required": [
