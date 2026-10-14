@@ -49,8 +49,8 @@ const DICE_NAMES = {
 
 const DIFFICULTIES = ['simple', 'easy', 'average', 'hard', 'daunting', 'formidable'];
 
-/* pack tiers by folder: official (api/), community (api/community/), private (api/private/, gitignored) */
-const TIER_DIRS = { official: 'api', community: path.join('api', 'community'), private: path.join('api', 'private') };
+/* pack tiers by folder: official (api/), community (api/community/), premium (api/private/, gitignored) */
+const TIER_DIRS = { official: 'api', community: path.join('api', 'community'), premium: path.join('api', 'private') };
 
 function packTier(file) {
    const dir = path.relative(ROOT, path.dirname(path.resolve(file)));
@@ -123,7 +123,7 @@ function makePack(file, abbr, data) {
 
 /**
  * Packs `pack` may reference, highest priority first: itself, the rest of its set, CRB, then the others.
- * Official packs may only reference official packs; community and private packs may reference every pack.
+ * Official packs may only reference official packs; community and premium packs may reference every pack.
  */
 function refScope(packs, pack) {
    const all = [...packs.byAbbr.values()].filter(p => p !== pack && (pack.tier !== 'official' || p.tier === 'official'));

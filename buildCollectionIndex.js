@@ -12,8 +12,8 @@ function createIndex(path, originType) {
          let data = fs.readFileSync(`${path}/${file}`);
          data = JSON.parse(data);
 
-         /* private packs carry a secret updateKey, used to verify update requests; generate once, never index it */
-         if (originType === 'private' && !data._meta.source.updateKey) {
+         /* premium packs carry a secret updateKey, used to verify update requests; generate once, never index it */
+         if (originType === 'premium' && !data._meta.source.updateKey) {
             data._meta.source.updateKey = crypto.randomBytes(24).toString('base64url');
             fs.writeFileSync(`${path}/${file}`, JSON.stringify(data, null, 3));
          }
@@ -32,7 +32,7 @@ try {
    createIndex('./api/community', 'community');
 
    /* api/private is a separate, gitignored repo and may not exist (e.g. in CI) */
-   if (fs.existsSync('./api/private')) createIndex('./api/private', 'private');
+   if (fs.existsSync('./api/private')) createIndex('./api/private', 'premium');
 } catch (error) {
    console.error(error);
    process.exitCode = 1;

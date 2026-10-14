@@ -87,7 +87,7 @@
             },
             "updateKey": {
                "type": "string",
-               "description": "Private content packs only. Generated automatically and used to verify update requests. Do not edit."
+               "description": "Premium content packs only. Generated automatically and used to verify update requests. Do not edit."
             }
          },
          "required": [

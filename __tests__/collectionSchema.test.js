@@ -8,18 +8,18 @@ const path = require('path');
 const requireDirectory = require('require-directory');
 
 /* api/private is a separate, gitignored repo and may not exist (e.g. in CI) */
-const hasPrivate = fs.existsSync(path.join(__dirname, '../api/private'));
+const hasPremium = fs.existsSync(path.join(__dirname, '../api/private'));
 
-const privateCollections = hasPrivate
+const premiumCollections = hasPremium
    ? requireDirectory(module, '../api/private', { recurse: false })
    : {};
-const privateIndex = privateCollections.index;
-delete privateCollections.index;
+const premiumIndex = premiumCollections.index;
+delete premiumCollections.index;
 
 const collections = {
    ...requireDirectory(module, '../api', { recurse: false }),
    ...requireDirectory(module, '../api/community'),
-   ...privateCollections,
+   ...premiumCollections,
 };
 delete collections.index;
 
@@ -72,17 +72,17 @@ describe('All collections should match schema', () => {
    });
 });
 
-describe('Private collections', () => {
-   /* updateKey authorizes update requests, so every private pack needs one and it must never be public */
+describe('Premium collections', () => {
+   /* updateKey authorizes update requests, so every premium pack needs one and it must never be public */
    it('should have an updateKey', () => {
-      forEach(privateCollections, (collection, name) => {
+      forEach(premiumCollections, (collection, name) => {
          if (!collection._meta.source.updateKey) console.log(name, 'is missing _meta.source.updateKey (run npm run index)');
          expect(typeof collection._meta.source.updateKey).toBe('string');
       });
    });
 
    it('should not expose updateKey in index.json', () => {
-      if (!privateIndex) return;
-      expect(JSON.stringify(privateIndex)).not.toContain('updateKey');
+      if (!premiumIndex) return;
+      expect(JSON.stringify(premiumIndex)).not.toContain('updateKey');
    });
 });

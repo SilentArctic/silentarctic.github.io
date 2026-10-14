@@ -50,7 +50,7 @@ Sort the output into these buckets. Each finding gets its item, field, the probl
 | Bucket | Source | Typical examples |
 |---|---|---|
 | Broken tags | TAGS errors | `{@charactieristic`, `{@sybmols d}`, `{@dice bosot}`, unclosed tags, illegal nesting |
-| Broken references | REFS errors | a tag or structured ref that resolves nowhere, a wrong `source`, `{@difficulty Easy\|fear}` (fear isn't a skill), an official pack referencing a community or private pack (out of scope) |
+| Broken references | REFS errors | a tag or structured ref that resolves nowhere, a wrong `source`, `{@difficulty Easy\|fear}` (fear isn't a skill), an official pack referencing a community or premium pack (out of scope) |
 | Missing tags | HINTS, plus your own reading | an untagged skill, talent, quality, rule, gear, etc. that the text means as the game entity; untagged dice, symbols, or difficulties; a missing `{@b}`, `{@i}`, or `{@title}` |
 | Data consistency | REFS warnings | an adversary skill's characteristic ≠ the skill's; a minion with skill ranks; a rival with strain; a nemesis without strain; defense not `[melee, ranged]` |
 | Text hygiene | HYGIENE | unbalanced `()`/`[]` (e.g. "Rulebook))."), double spaces, curly quotes, untagged difficulties or tables |
@@ -58,7 +58,7 @@ Sort the output into these buckets. Each finding gets its item, field, the probl
 
 - **Missing tags.** Judge each HINT against `tagging.md` sections 6 and 7. Report it only when the text means that game entity. Drop generic words, self-references, page references, and structured fields.
   - Scope and priority follow `tagging.md` section 3, rule 2.
-    - Official packs may only reference `api/` packs. Community and private packs may reference every pack.
+    - Official packs may only reference `api/` packs. Community and premium packs may reference every pack.
     - On a name clash, the order is: the pack itself, then its set, then CRB, then the rest. HINTS already list their options in that order.
   - Group repeats. For example, "rule `fear` untagged in 12 items" is one finding with the items listed. For a recurring call ("is 'fear' always the rule?"), ask once instead of listing every occurrence.
   - Some misses HINTS can't see: shortened names, lowercase names that only packs outside the set have, and untagged dice, symbols, and formatting. Look for these while reading the items you report on. On a whole-pack run, say they were only spot-checked.
