@@ -36,7 +36,6 @@
             "type": "string",
             "description": "Maximum default range of the spell. self/engaged/short/medium/long/extreme/strategic.",
             "enum": [
-               "",
                "Self",
                "Engaged",
                "Short",
