@@ -12,13 +12,10 @@
             "type": "integer",
             "description": "Source page reference."
          },
-         "imageUrl": {
-            "type": "string",
-            "description": "Url to a related image."
-         },
          "characteristic": {
             "type": "string",
-            "description": "Characteristic linked to the skill."
+            "description": "Characteristic linked to the skill.",
+            "x-hb": { "span": 1 }
          },
          "category": {
             "type": "string",
@@ -31,6 +28,12 @@
                "other"
             ],
             "description": "Category of the skill. One of \"general\", \"combat\", \"social\", \"knowledge\", \"magic\", \"other\"."
+         },
+         "imageUrl": {
+            "title": "Image URL",
+            "type": "string",
+            "description": "Url to a related image.",
+            "x-hb": { "span": "full" }
          },
          "description": {
             "$ref": "./varyingDisplay_sub_schema.json",
@@ -61,7 +64,8 @@
                   },
                   "source": {
                      "type": "string",
-                     "description": "Spell source abbreviation (omit if the spell is part of this collection)."
+                     "description": "Spell source abbreviation (omit if the spell is part of this collection).",
+                     "x-hb": { "span": 1 }
                   }
                },
                "required": [

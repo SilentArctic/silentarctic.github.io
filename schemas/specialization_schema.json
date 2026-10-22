@@ -12,16 +12,19 @@
                   "description": "Talent name."
                },
                "right": {
+                  "title": "Connects right",
                   "type": "boolean",
                   "description": "If the talent should connect to the talent to its right."
                },
                "down": {
+                  "title": "Connects down",
                   "type": "boolean",
                   "description": "If the talent should connect to the talent underneath."
                },
                "source": {
                   "type": "string",
-                  "description": "Talent source (abbreviation). Example: crb."
+                  "description": "Talent source (abbreviation). Example: crb.",
+                  "x-hb": { "span": 1 }
                }
             },
             "required": [
@@ -49,8 +52,10 @@
             "description": "Source page reference."
          },
          "imageUrl": {
+            "title": "Image URL",
             "type": "string",
-            "description": "Url to a related image."
+            "description": "Url to a related image.",
+            "x-hb": { "span": "full" }
          },
          "career": {
             "type": "object",
@@ -62,7 +67,8 @@
                },
                "source": {
                   "type": "string",
-                  "description": "Career source (abbreviation). Example: crb."
+                  "description": "Career source (abbreviation). Example: crb.",
+                  "x-hb": { "span": 1 }
                }
             },
             "required": [
@@ -85,7 +91,8 @@
                   },
                   "source": {
                      "type": "string",
-                     "description": "Skill source (abbreviation). Example: crb"
+                     "description": "Skill source (abbreviation). Example: crb",
+                     "x-hb": { "span": 1 }
                   }
                },
                "required": [
@@ -102,18 +109,23 @@
             "description": "Set of talents for the specialization. Each row is allowed up to 4 talents",
             "properties": {
                "row1": {
+                  "title": "Row 1",
                   "$ref": "#/$defs/talentRow"
                },
                "row2": {
+                  "title": "Row 2",
                   "$ref": "#/$defs/talentRow"
                },
                "row3": {
+                  "title": "Row 3",
                   "$ref": "#/$defs/talentRow"
                },
                "row4": {
+                  "title": "Row 4",
                   "$ref": "#/$defs/talentRow"
                },
                "row5": {
+                  "title": "Row 5",
                   "$ref": "#/$defs/talentRow"
                }
             }

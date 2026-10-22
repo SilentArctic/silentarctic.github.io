@@ -35,31 +35,24 @@
          },
          "characteristics": {
             "type": "object",
-            "description": "Adversary characteristics.",
             "properties": {
                "brawn": {
-                  "type": "integer",
-                  "description": "Adversary's brawn."
+                  "type": "integer"
                },
                "agility": {
-                  "type": "integer",
-                  "description": "Adversary's agility."
+                  "type": "integer"
                },
                "intellect": {
-                  "type": "integer",
-                  "description": "Adversary's intellect."
+                  "type": "integer"
                },
                "cunning": {
-                  "type": "integer",
-                  "description": "Adversary's cunning."
+                  "type": "integer"
                },
                "willpower": {
-                  "type": "integer",
-                  "description": "Adversary's willpower."
+                  "type": "integer"
                },
                "presence": {
-                  "type": "integer",
-                  "description": "Adversary's presence."
+                  "type": "integer"
                }
             },
             "required": [
@@ -70,27 +63,28 @@
                "willpower",
                "presence"
             ],
-            "additionalProperties": false
+            "additionalProperties": false,
+            "x-hb": { "columns": 3 }
          },
          "derived": {
             "type": "object",
             "description": "Attributes derived from characteristics and other features.",
             "properties": {
                "soak": {
-                  "type": "integer",
-                  "description": "Adversary's soak."
+                  "type": "integer"
                },
                "wounds": {
                   "type": "integer",
-                  "description": "Adversary's wound threshold."
+                  "title": "Wound Threshold"
                },
                "strain": {
                   "type": "integer",
-                  "description": "Adversary's strain threshold (only for Nemesis adversaries)."
+                  "description": "Only for Nemesis.",
+                  "title": "Strain Threshold"
                },
                "defense": {
                   "type": "array",
-                  "description": "Adversary's defense (first is melee, second is ranged).",
+                  "description": "First is melee, second is ranged.",
                   "items": {
                      "type": "integer"
                   },
@@ -105,7 +99,8 @@
             "optional": [
                "strain"
             ],
-            "additionalProperties": false
+            "additionalProperties": false,
+            "x-hb": { "columns": 3 }
          },
          "powerLevels": {
             "type": "object",
@@ -159,7 +154,8 @@
                   },
                   "source": {
                      "type": "string",
-                     "description": "Source of the skill (abbreviation) if not found in this content pack (example: CRB)."
+                     "description": "Source of the skill (abbreviation) if not found in this content pack (example: CRB).",
+                     "x-hb": { "span": 1 }
                   }
                },
                "required": [
@@ -184,7 +180,8 @@
                   },
                   "description": {
                      "type": "string",
-                     "description": "Motivation details."
+                     "description": "Motivation details.",
+                     "x-hb": { "span": "full" }
                   }
                },
                "required": [
@@ -213,7 +210,8 @@
                         },
                         "source": {
                            "type": "string",
-                           "description": "Talent source (abbreviation) (example: CRB)."
+                           "description": "Talent source (abbreviation) (example: CRB).",
+                           "x-hb": { "span": 1 }
                         }
                      },
                      "required": [
@@ -245,7 +243,8 @@
                         },
                         "description": {
                            "type": "string",
-                           "description": "Ability details."
+                           "description": "Ability details.",
+                           "x-hb": { "span": "full" }
                         }
                      },
                      "required": [
@@ -272,7 +271,8 @@
                         },
                         "source": {
                            "type": "string",
-                           "description": "Source of the skill (abbreviation) if not found in this content pack (example: CRB)."
+                           "description": "Source of the skill (abbreviation) if not found in this content pack (example: CRB).",
+                           "x-hb": { "span": 1 }
                         }
                      },
                      "required": [
@@ -296,7 +296,8 @@
                         },
                         "description": {
                            "type": "string",
-                           "description": "Details of the spell."
+                           "description": "Details of the spell.",
+                           "x-hb": { "span": "full" }
                         }
                      },
                      "required": [
@@ -331,7 +332,8 @@
                         },
                         "source": {
                            "type": "string",
-                           "description": "Source of the skill (abbreviation) if not found in this content pack (example: CRB)."
+                           "description": "Source of the skill (abbreviation) if not found in this content pack (example: CRB).",
+                           "x-hb": { "span": 1 }
                         }
                      },
                      "required": [
@@ -377,7 +379,8 @@
                            },
                            "source": {
                               "type": "string",
-                              "description": "Source of the quality (abbreviation) if not found in this content pack (example: CRB)."
+                              "description": "Source of the quality (abbreviation) if not found in this content pack (example: CRB).",
+                              "x-hb": { "span": 1 }
                            }
                         },
                         "required": [
@@ -391,7 +394,8 @@
                      }
                   },
                   "details": {
-                     "type": "string"
+                     "type": "string",
+                     "x-hb": { "span": "full" }
                   }
                },
                "required": [

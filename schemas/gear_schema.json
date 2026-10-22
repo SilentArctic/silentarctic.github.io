@@ -28,15 +28,18 @@
          },
          "class": {
             "type": "string",
-            "description": "Subcategory for the gear. Ex: Military, Energy, etc."
+            "description": "Subcategory for the gear. Ex: Military, Energy, etc.",
+            "x-hb": { "span": 1 }
          },
          "page": {
             "type": "integer",
             "description": "Source page reference."
          },
          "imageUrl": {
+            "title": "Image URL",
             "type": "string",
-            "description": "Url to an image of the gear."
+            "description": "Url to an image of the gear.",
+            "x-hb": { "span": "full" }
          },
          "description": {
             "$ref": "./varyingDisplay_sub_schema.json",
@@ -62,16 +65,16 @@
                }
             ]
          },
-         "restricted": {
-            "type": "boolean",
-            "description": "If the gear is a restricted item."
-         },
          "rarity": {
             "type": [
                "integer",
                "null"
             ],
             "description": "How rare the gear is."
+         },
+         "restricted": {
+            "type": "boolean",
+            "description": "If the gear is a restricted item."
          },
          "modifiers": {
             "type": "array",
@@ -131,9 +134,38 @@
          "modifiers",
          "settings"
       ],
+      "propertyNames": {
+         "enum": [
+            "name",
+            "type",
+            "class",
+            "page",
+            "imageUrl",
+            "description",
+            "price",
+            "rarity",
+            "restricted",
+            "modifiers",
+            "settings",
+            "id",
+            "skill",
+            "damage",
+            "critical",
+            "range",
+            "encumbrance",
+            "hardPoints",
+            "special",
+            "defense",
+            "soak",
+            "qualities"
+         ]
+      },
       "allOf": [
          {
             "if": {
+               "required": [
+                  "type"
+               ],
                "properties": {
                   "type": {
                      "const": "weapon"
@@ -151,7 +183,8 @@
                         },
                         "source": {
                            "type": "string",
-                           "description": "Source of the skill (abbreviation)."
+                           "description": "Source of the skill (abbreviation).",
+                           "x-hb": { "span": 1 }
                         }
                      },
                      "required": [
@@ -167,7 +200,8 @@
                         "string",
                         "integer"
                      ],
-                     "description": "Base damage of the weapon. Melee weapons likely have a \"+\" prefix to indicate the use's Brawn should be added to the damage."
+                     "description": "Base damage of the weapon. Melee weapons likely have a \"+\" prefix to indicate the use's Brawn should be added to the damage.",
+                     "x-hb": { "span": 1 }
                   },
                   "critical": {
                      "type": "integer",
@@ -209,7 +243,8 @@
                            },
                            "source": {
                               "type": "string",
-                              "description": "Source of the quality (abbreviation) (\"likely CRB\") if not found in this content pack."
+                              "description": "Source of the quality (abbreviation) (\"likely CRB\") if not found in this content pack.",
+                              "x-hb": { "span": 1 }
                            }
                         },
                         "required": [
@@ -239,6 +274,9 @@
          },
          {
             "if": {
+               "required": [
+                  "type"
+               ],
                "properties": {
                   "type": {
                      "const": "armor"
@@ -253,7 +291,8 @@
                   },
                   "soak": {
                      "type": "string",
-                     "description": "Amount of soak provided by the armor."
+                     "description": "Amount of soak provided by the armor.",
+                     "x-hb": { "span": 1 }
                   },
                   "encumbrance": {
                      "type": "integer",
@@ -279,7 +318,8 @@
                            },
                            "source": {
                               "type": "string",
-                              "description": "Source of the quality (abbreviation) (\"likely CRB\") if not found in this content pack."
+                              "description": "Source of the quality (abbreviation) (\"likely CRB\") if not found in this content pack.",
+                              "x-hb": { "span": 1 }
                            }
                         },
                         "required": [
@@ -306,6 +346,9 @@
          },
          {
             "if": {
+               "required": [
+                  "type"
+               ],
                "properties": {
                   "type": {
                      "enum": [
@@ -336,6 +379,9 @@
          },
          {
             "if": {
+               "required": [
+                  "type"
+               ],
                "properties": {
                   "type": {
                      "enum": [
@@ -353,6 +399,9 @@
          },
          {
             "if": {
+               "required": [
+                  "type"
+               ],
                "properties": {
                   "type": {
                      "const": "implement"
@@ -363,7 +412,8 @@
                "properties": {
                   "damage": {
                      "type": "string",
-                     "description": "Damage added to the Attack spell."
+                     "description": "Damage added to the Attack spell.",
+                     "x-hb": { "span": 1 }
                   },
                   "encumbrance": {
                      "type": "integer",
@@ -378,6 +428,9 @@
          },
          {
             "if": {
+               "required": [
+                  "type"
+               ],
                "properties": {
                   "type": {
                      "const": "attachment"
@@ -408,7 +461,8 @@
                            },
                            "source": {
                               "type": "string",
-                              "description": "Source of the quality (abbreviation) (\"likely CRB\") if not found in this content pack."
+                              "description": "Source of the quality (abbreviation) (\"likely CRB\") if not found in this content pack.",
+                              "x-hb": { "span": 1 }
                            }
                         },
                         "required": [

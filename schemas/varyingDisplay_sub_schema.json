@@ -30,6 +30,7 @@
                   "description": "Section Title."
                },
                "forceTitleLevel": {
+                  "title": "Title level",
                   "type": "integer",
                   "description": "Forces the title to appear as a certain heading type. Title level 1 is for chapter headings, title level 2 for section headings, etc."
                },
@@ -38,6 +39,7 @@
                   "description": "Source page reference."
                },
                "hasModal": {
+                  "title": "Opens as modal",
                   "type": "boolean",
                   "description": "If the text container can be clicked on to open as a modal. This should rarely be set to true."
                },
@@ -52,7 +54,8 @@
                      },
                      "source": {
                         "type": "string",
-                        "description": "Source of the item (abbreviation). Example: crb."
+                        "description": "Source of the item (abbreviation). Example: crb.",
+                        "x-hb": { "span": 1 }
                      }
                   },
                   "required": [
@@ -136,7 +139,8 @@
                },
                "by": {
                   "type": "string",
-                  "description": "Author attribution."
+                  "description": "Author attribution.",
+                  "x-hb": { "span": 1 }
                }
             },
             "required": [
@@ -164,7 +168,8 @@
                },
                "description": {
                   "type": "string",
-                  "description": "List description (rendered between the title and the list)."
+                  "description": "List description (rendered between the title and the list).",
+                  "x-hb": { "span": "full" }
                },
                "items": {
                   "type": "array",
@@ -192,7 +197,8 @@
                               },
                               "description": {
                                  "type": "string",
-                                 "description": "List description (rendered between the title and the list)."
+                                 "description": "List description (rendered between the title and the list).",
+                                 "x-hb": { "span": "full" }
                               },
                               "items": {
                                  "type": "array",
@@ -298,7 +304,8 @@
                      },
                      "source": {
                         "type": "string",
-                        "description": "Table source (abbreviation). Example: crb."
+                        "description": "Table source (abbreviation). Example: crb.",
+                        "x-hb": { "span": 1 }
                      }
                   },
                   "required": [
@@ -359,8 +366,10 @@
                   "description": "Required to show an image."
                },
                "imageUrl": {
+                  "title": "Image URL",
                   "type": "string",
-                  "description": "Url to the image."
+                  "description": "Url to the image.",
+                  "x-hb": { "span": "full" }
                }
             },
             "required": [
@@ -389,7 +398,8 @@
                      },
                      "source": {
                         "type": "string",
-                        "description": "Rule source (abbreviation). Example: crb."
+                        "description": "Rule source (abbreviation). Example: crb.",
+                        "x-hb": { "span": 1 }
                      }
                   },
                   "required": [

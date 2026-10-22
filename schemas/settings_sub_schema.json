@@ -10,7 +10,8 @@
          },
          "source": {
             "type": "string",
-            "description": "Setting source (abbreviation). Example: crb."
+            "description": "Setting source (abbreviation). Example: crb.",
+            "x-hb": { "span": 1 }
          }
       },
       "required": [

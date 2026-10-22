@@ -25,8 +25,10 @@
             "description": "If this vehicle has any variants."
          },
          "imageUrl": {
+            "title": "Image URL",
             "type": "string",
-            "description": "Url to an image of the vehicle."
+            "description": "Url to an image of the vehicle.",
+            "x-hb": { "span": "full" }
          },
          "silhouette": {
             "type": "integer",
@@ -49,12 +51,16 @@
             "description": "The vehicle's armor."
          },
          "htt": {
+            "title": "Hull trauma threshold",
             "type": "integer",
-            "description": "The vehicle's hull trauma threshold."
+            "description": "The vehicle's hull trauma threshold.",
+            "x-hb": { "span": 2 }
          },
          "sst": {
+            "title": "System strain threshold",
             "type": "integer",
-            "description": "The vehicle's system strain threshold."
+            "description": "The vehicle's system strain threshold.",
+            "x-hb": { "span": 2 }
          },
          "controlSkill": {
             "type": "object",
@@ -66,7 +72,8 @@
                },
                "source": {
                   "type": "string",
-                  "description": "Source of the skill (abbreviation) if not found in this content pack (example: CRB)."
+                  "description": "Source of the skill (abbreviation) if not found in this content pack (example: CRB).",
+                  "x-hb": { "span": 1 }
                }
             },
             "required": [
@@ -79,7 +86,8 @@
          },
          "complement": {
             "type": "string",
-            "description": "Number of crew required to operate this vehicle."
+            "description": "Number of crew required to operate this vehicle.",
+            "x-hb": { "span": 1 }
          },
          "passengers": {
             "type": ["string", "integer"],
@@ -87,13 +95,15 @@
          },
          "consumables": {
             "type": "string",
-            "description": "Amount of consumables (hours, days, weeks, etc) this vehicle holds before needing to restock."
+            "description": "Amount of consumables (hours, days, weeks, etc) this vehicle holds before needing to restock.",
+            "x-hb": { "span": 1 }
          },
          "encumbranceCapacity": {
             "type": ["string", "integer"],
             "description": "Total encumbrance this vehicle can hold."
          },
          "ftlRange": {
+            "title": "FTL range",
             "type": "string",
             "enum": [
                "None",
@@ -105,6 +115,7 @@
             "description": "Distance the vehicle can travel at faster-than-light speeds."
          },
          "ftlSpeed": {
+            "title": "FTL speed",
             "type": "string",
             "enum": [
                "none",
@@ -134,15 +145,8 @@
                "properties": {
                   "name": {
                      "type": "string",
-                     "description": "Weapon name."
-                  },
-                  "description": {
-                     "type": "string",
-                     "description": "DEPRECATED. Use this field to output weapon text (as seen in the books) instead of a table."
-                  },
-                  "fireArc": {
-                     "type": "string",
-                     "description": "Angle at which the weapon can fire."
+                     "description": "Weapon name.",
+                     "x-hb": { "span": "full" }
                   },
                   "skill": {
                      "type": "object",
@@ -153,7 +157,8 @@
                         },
                         "source": {
                            "type": "string",
-                           "description": "Source of the skill (abbreviation) if not found in this content pack (example: CRB)."
+                           "description": "Source of the skill (abbreviation) if not found in this content pack (example: CRB).",
+                           "x-hb": { "span": 1 }
                         }
                      },
                      "required": [
@@ -163,6 +168,11 @@
                         "source"
                      ],
                      "additionalProperties": false
+                  },
+                  "fireArc": {
+                     "type": "string",
+                     "description": "Angle at which the weapon can fire.",
+                     "x-hb": { "span": 1 }
                   },
                   "damage": {
                      "type": "integer",
@@ -192,7 +202,8 @@
                            },
                            "source": {
                               "type": "string",
-                              "description": "Source of the quality (abbreviation) if not found in this content pack."
+                              "description": "Source of the quality (abbreviation) if not found in this content pack.",
+                              "x-hb": { "span": 1 }
                            }
                         },
                         "required": [
@@ -207,7 +218,13 @@
                   },
                   "details": {
                      "type": "string",
-                     "description": "Extra weapon details."
+                     "description": "Extra weapon details.",
+                     "x-hb": { "span": "full" }
+                  },
+                  "description": {
+                     "type": "string",
+                     "description": "DEPRECATED. Use this field to output weapon text (as seen in the books) instead of a table.",
+                     "x-hb": { "hidden": true }
                   }
                },
                "required": [
@@ -236,7 +253,8 @@
                   },
                   "description": {
                      "type": "string",
-                     "description": "Ability description."
+                     "description": "Ability description.",
+                     "x-hb": { "span": "full" }
                   },
                   "children": {
                      "type": "array",
@@ -249,7 +267,8 @@
                            },
                            "description": {
                               "type": "string",
-                              "description": "Ability description."
+                              "description": "Ability description.",
+                              "x-hb": { "span": "full" }
                            }
                         }
                      }

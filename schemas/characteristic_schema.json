@@ -8,6 +8,10 @@
             "type": "string",
             "description": "Characteristic name."
          },
+         "page": {
+            "type": "integer",
+            "description": "Source page reference."
+         },
          "description": {
             "type": "array",
             "x-hb": { "widget": "paragraphs" },
@@ -15,10 +19,6 @@
             "items": {
                "type": "string"
             }
-         },
-         "page": {
-            "type": "integer",
-            "description": "Source page reference."
          },
          "id": {
             "type": "string",

@@ -8,13 +8,15 @@
             "type": "string",
             "description": "Talent name."
          },
-         "imageUrl": {
-            "type": "string",
-            "description": "Url to an image related to the talent."
-         },
          "page": {
             "type": "integer",
             "description": "Source page reference."
+         },
+         "imageUrl": {
+            "title": "Image URL",
+            "type": "string",
+            "description": "Url to an image related to the talent.",
+            "x-hb": { "span": "full" }
          },
          "prerequisites": {
             "oneOf": [

@@ -8,24 +8,8 @@
          "properties": {
             "version": {
                "type": "string",
-               "description": "Version of your homebrew. You can use an actual versioning system, but I suggest using the most recent date it was updated in format \"YYYY.MM.DD\"."
-            },
-            "currentRelease": {
-               "type": "object",
-               "properties": {
-                  "version": {
-                     "type": "string",
-                     "description": "Version of the source as of this conversion, usually using semantic versioning such as `v2.2`. This field provides an easy check that the json conversion is up-to-date with the source."
-                  },
-                  "date": {
-                     "type": "string",
-                     "description": "Date of the source, as of this conversion. This field provides an easy check that json conversion is up-to-date with the source."
-                  }
-               },
-               "optional": [
-                  "version",
-                  "date"
-               ]
+               "description": "Version of your homebrew. You can use an actual versioning system, but I suggest using the most recent date it was updated in format \"YYYY.MM.DD\".",
+               "x-hb": { "span": 1 }
             },
             "json": {
                "type": "string",
@@ -38,11 +22,13 @@
             },
             "abbreviation": {
                "type": "string",
-               "description": "The abbreviated name of your homebrew, used in reference tags and shown as the source. Use colons to separate title/subtitle. {@b Underscore characters are reserved for translation files.}"
+               "description": "The abbreviated name of your homebrew, used in reference tags and shown as the source. Use colons to separate title/subtitle. {@b Underscore characters are reserved for translation files.}",
+               "x-hb": { "span": 1 }
             },
             "language": {
                "type": "string",
-               "description": "The collection's language, spelled out. Defaults to English."
+               "description": "The collection's language, spelled out. Defaults to English.",
+               "x-hb": { "span": 1 }
             },
             "color": {
                "type": "string",
@@ -51,11 +37,32 @@
             },
             "url": {
                "type": "string",
-               "description": "Web address of your homebrew. Can link to drivethrurpg, or any other website at which your product is located."
+               "description": "Web address of your homebrew. Can link to drivethrurpg, or any other website at which your product is located.",
+               "x-hb": { "span": "full" }
             },
             "releaseDate": {
                "type": "string",
-               "description": "Source release date. Please use the format: D Month YYYY (28 April 2023)."
+               "description": "Source release date. Please use the format: D Month YYYY (28 April 2023).",
+               "x-hb": { "span": 1 }
+            },
+            "currentRelease": {
+               "type": "object",
+               "properties": {
+                  "version": {
+                     "type": "string",
+                     "description": "Version of the source as of this conversion, usually using semantic versioning such as `v2.2`. This field provides an easy check that the json conversion is up-to-date with the source.",
+                     "x-hb": { "span": 1 }
+                  },
+                  "date": {
+                     "type": "string",
+                     "description": "Date of the source, as of this conversion. This field provides an easy check that json conversion is up-to-date with the source.",
+                     "x-hb": { "span": 1 }
+                  }
+               },
+               "optional": [
+                  "version",
+                  "date"
+               ]
             },
             "authors": {
                "type": "array",
@@ -87,7 +94,8 @@
             },
             "updateKey": {
                "type": "string",
-               "description": "Premium content packs only. Generated automatically and used to verify update requests. Do not edit."
+               "description": "Premium content packs only. Generated automatically and used to verify update requests. Do not edit.",
+               "x-hb": { "hidden": true }
             }
          },
          "required": [
@@ -127,6 +135,7 @@
                }
             },
             "optionFeatureType": {
+               "title": "Option/feature type",
                "type": "array",
                "items": {
                   "type": "string",
@@ -134,6 +143,7 @@
                }
             },
             "optionFeatureClass": {
+               "title": "Option/feature class",
                "type": "array",
                "items": {
                   "type": "string",
@@ -141,6 +151,7 @@
                }
             },
             "talentPrereqs": {
+               "title": "Talent prerequisites",
                "type": "array",
                "items": {
                   "type": "string",

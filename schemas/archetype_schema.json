@@ -12,6 +12,21 @@
             "type": "string",
             "description": "Optional nickname (ideal for keeping similar archetypes together ie. Dwarf (Dunwarr) and Dwarf (Forge)."
          },
+         "page": {
+            "type": "integer",
+            "description": "Source page reference."
+         },
+         "xp": {
+            "type": "integer",
+            "description": "Starting XP.",
+            "title": "XP"
+         },
+         "imageUrl": {
+            "title": "Image URL",
+            "type": "string",
+            "description": "Url for a related image.",
+            "x-hb": { "span": "full" }
+         },
          "characteristics": {
             "oneOf": [
                {
@@ -51,7 +66,8 @@
                      "willpower",
                      "presence"
                   ],
-                  "additionalProperties": false
+                  "additionalProperties": false,
+                  "x-hb": { "columns": 3 }
                },
                {
                   "type": "array",
@@ -92,20 +108,14 @@
                         "willpower",
                         "presence"
                      ],
-                     "additionalProperties": false
+                     "additionalProperties": false,
+                     "x-hb": { "columns": 3 }
                   }
                }
             ]
          },
-         "page": {
-            "type": "integer",
-            "description": "Source page reference."
-         },
-         "imageUrl": {
-            "type": "string",
-            "description": "Url for a related image."
-         },
          "wt": {
+            "title": "Wound threshold",
             "description": "Wound threshold.",
             "oneOf": [
                {
@@ -122,6 +132,7 @@
             ]
          },
          "st": {
+            "title": "Strain threshold",
             "description": "Strain threshold.",
             "oneOf": [
                {
@@ -136,10 +147,6 @@
                   }
                }
             ]
-         },
-         "xp": {
-            "type": "integer",
-            "description": "Starting XP."
          },
          "skills": {
             "type": "object",
@@ -166,7 +173,8 @@
                               },
                               "source": {
                                  "type": "string",
-                                 "description": "Skill source."
+                                 "description": "Skill source.",
+                                 "x-hb": { "span": 1 }
                               },
                               "ranks": {
                                  "type": "number",
@@ -187,6 +195,7 @@
                   }
                },
                "ranksTotal": {
+                  "title": "Total ranks",
                   "type": "integer",
                   "description": "Meta field. # of total ranks this archetype starts with."
                },
@@ -248,7 +257,8 @@
                                     },
                                     "source": {
                                        "type": "string",
-                                       "description": "Skill source."
+                                       "description": "Skill source.",
+                                       "x-hb": { "span": 1 }
                                     },
                                     "ranks": {
                                        "type": "number",
@@ -301,7 +311,8 @@
                         },
                         "description": {
                            "type": "string",
-                           "description": "Ability description."
+                           "description": "Ability description.",
+                           "x-hb": { "span": "full" }
                         }
                      },
                      "required": [
@@ -324,6 +335,7 @@
             }
          },
          "why": {
+            "title": "Reasons to play",
             "type": "array",
             "description": "Reasons why one would choose to play as this archetype.",
             "items": {
@@ -364,22 +376,27 @@
                         "type": "integer"
                      },
                      "mDefense": {
+                        "title": "Melee defense",
                         "type": "integer",
                         "description": "Melee defense."
                      },
                      "rDefense": {
+                        "title": "Ranged defense",
                         "type": "integer",
                         "description": "Ranged defense."
                      },
                      "wt": {
+                        "title": "Wound threshold",
                         "type": "integer",
                         "description": "Wound threshold."
                      },
                      "st": {
+                        "title": "Strain threshold",
                         "type": "integer",
                         "description": "Strain threshold."
                      },
                      "et": {
+                        "title": "Encumbrance threshold",
                         "type": "integer",
                         "description": "Encumbrance threshold."
                      }
@@ -398,7 +415,8 @@
                         },
                         "source": {
                            "type": "string",
-                           "description": "Skill source."
+                           "description": "Skill source.",
+                           "x-hb": { "span": 1 }
                         },
                         "career": {
                            "type": "boolean",
@@ -432,7 +450,8 @@
                         },
                         "description": {
                            "type": "string",
-                           "description": "Text shown with the roll."
+                           "description": "Text shown with the roll.",
+                           "x-hb": { "span": "full" }
                         },
                         "skills": {
                            "type": "array",
@@ -465,7 +484,8 @@
                                     "type": "integer"
                                  },
                                  "source": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "x-hb": { "span": 1 }
                                  }
                               },
                               "required": [

@@ -6,7 +6,8 @@
       "properties": {
          "spell": {
             "type": "string",
-            "description": "Name of the spell these effects should be added to/removed from."
+            "description": "Name of the spell these effects should be added to/removed from.",
+            "x-hb": { "span": "full" }
          },
          "add": {
             "type": "array",
@@ -28,6 +29,7 @@
                      }
                   },
                   "difficultyMod": {
+                     "title": "Difficulty modifier",
                      "type": "integer",
                      "description": "Difficulty modifier the effect adds to the spell."
                   }

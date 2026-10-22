@@ -8,17 +8,19 @@
             "type": "string",
             "description": "Name of the option or feature."
          },
-         "page": {
-            "type": "integer",
-            "description": "Source page reference."
-         },
          "type": {
             "type": "string",
-            "description": "Primary type of the option/feature. Add this to the content pack's _meta.filters.optionFeatureType array if it is not a standard type."
+            "description": "Primary type of the option/feature. Add this to the content pack's _meta.filters.optionFeatureType array if it is not a standard type.",
+            "x-hb": { "span": 1 }
          },
          "class": {
             "type": "string",
-            "description": "Secondary type of the option/feature. Add this to the content pack's _meta.filters.optionFeatureClass array if it is not a standard class."
+            "description": "Secondary type of the option/feature. Add this to the content pack's _meta.filters.optionFeatureClass array if it is not a standard class.",
+            "x-hb": { "span": 1 }
+         },
+         "page": {
+            "type": "integer",
+            "description": "Source page reference."
          },
          "labels": {
             "type": "array",
@@ -56,7 +58,8 @@
             "items": {
                "type": "string",
                "description": "Deprecated. Do not add values here."
-            }
+            },
+            "x-hb": { "hidden": true }
          },
          "meta": {
             "type": "object",
