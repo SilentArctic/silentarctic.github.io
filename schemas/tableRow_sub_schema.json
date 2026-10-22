@@ -4,7 +4,7 @@
       {
          "type": "object",
          "title": "Subtitle",
-         "description": "A subtitle row spans the entire width of the table and has a solid background to separate different sections of the table.",
+         "description": "Full-width shaded row that splits the table into sections.",
          "properties": {
             "subtitle": {
                "type": "string",
@@ -19,7 +19,7 @@
       {
          "type": "object",
          "title": "Row",
-         "description": "Each row is an object containing key/value pairs. The key must match a column header or value, and the value is the cell content.",
+         "description": "Cells keyed by column value (or header, if the column has no value).",
          "propertyNames": {
             "not": { "const": "subtitle" }
          },
@@ -28,7 +28,7 @@
             "items": {
                "type": "string"
             },
-            "description": "Cell content for the column."
+            "description": "Cell content."
          }
       }
    ]

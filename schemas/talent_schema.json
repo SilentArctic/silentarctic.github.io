@@ -10,12 +10,12 @@
          },
          "page": {
             "type": "integer",
-            "description": "Source page reference."
+            "description": "Source page number."
          },
          "imageUrl": {
             "title": "Image URL",
             "type": "string",
-            "description": "Url to an image related to the talent.",
+            "description": "URL of a related image.",
             "x-hb": { "span": "full" }
          },
          "prerequisites": {
@@ -23,15 +23,15 @@
                {
                   "title": "Yes / No",
                   "type": "boolean",
-                  "description": "If the talent has any prerequisites."
+                  "description": "Whether the talent has prerequisites."
                },
                {
                   "title": "Named Prereqs",
                   "type": "array",
-                  "description": "List of specific prerequisites",
+                  "description": "Specific prerequisites. Add new ones to _meta.filters.talentPrereqs.",
                   "items": {
                      "type": "string",
-                     "description": "Specific prerequisites."
+                     "description": "Prerequisite."
                   }
                }
             ]
@@ -51,11 +51,11 @@
                "active (maneuver)",
                "active (action)"
             ],
-            "description": "Talent activation timing. passive/active (incidental, out of turn)/active (incidental)/active (maneuver)/active (action)."
+            "description": "When and how the talent is used."
          },
          "ranked": {
             "type": "boolean",
-            "description": "If the talent is ranked or not."
+            "description": "Whether the talent can be taken more than once."
          },
          "description": {
             "$ref": "./varyingDisplay_sub_schema.json",
@@ -63,15 +63,15 @@
          },
          "tags": {
             "$ref": "talent_tags_sub_schema.json",
-            "description": "Applicable tags for filtering."
+            "description": "Tags used for filtering."
          },
          "settings": {
             "$ref": "settings_sub_schema.json",
-            "description": "Override global content pack settings for this item."
+            "description": "Settings (genres) this item belongs to. Overrides the content pack's defaultItemSettings."
          },
          "id": {
             "type": "string",
-            "description": "Unique item id. You shouldn't have to touch this field.",
+            "description": "Generated automatically. Don't edit.",
             "x-hb": { "hidden": true }
          }
       },

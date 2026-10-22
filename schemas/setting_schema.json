@@ -10,7 +10,7 @@
          },
          "page": {
             "type": "integer",
-            "description": "Source page reference."
+            "description": "Source page number."
          },
          "summary": {
             "type": "array",
@@ -25,12 +25,15 @@
          },
          "codex": {
             "$ref": "varyingDisplay_sub_schema.json",
-            "description": "References to important items and figures"
+            "description": "Key people, places, and things."
          },
-         "characterOptions": { "$ref": "varyingDisplay_sub_schema.json" },
+         "characterOptions": {
+            "$ref": "varyingDisplay_sub_schema.json",
+            "description": "Character creation options for this setting."
+         },
          "id": {
             "type": "string",
-            "description": "Unique item id. You shouldn't have to touch this field.",
+            "description": "Generated automatically. Don't edit.",
             "x-hb": { "hidden": true }
          }
       },

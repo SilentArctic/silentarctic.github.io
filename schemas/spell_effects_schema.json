@@ -6,32 +6,31 @@
       "properties": {
          "spell": {
             "type": "string",
-            "description": "Name of the spell these effects should be added to/removed from.",
+            "description": "Spell to change (example: Attack).",
             "x-hb": { "span": "full" }
          },
          "add": {
             "type": "array",
-            "description": "List of spell effects to add.",
+            "description": "Effects to add.",
             "items": {
                "type": "object",
                "properties": {
                   "name": {
                      "type": "string",
-                     "description": "Name of the effect."
+                     "description": "Effect name."
                   },
                   "description": {
                      "type": "array",
                      "x-hb": { "widget": "paragraphs" },
-                     "description": "List of spell effects to add to the spell. These will be grouped into their own subtable to as not to be confused with \"base\" effects.",
+                     "description": "Effect text. Shown in its own subtable, apart from the base effects.",
                      "items": {
-                        "type": "string",
-                        "description": "Effect description to add.."
+                        "type": "string"
                      }
                   },
                   "difficultyMod": {
                      "title": "Difficulty modifier",
                      "type": "integer",
-                     "description": "Difficulty modifier the effect adds to the spell."
+                     "description": "Difficulty dice added."
                   }
                },
                "required": [
@@ -43,15 +42,15 @@
          },
          "remove": {
             "type": "array",
-            "description": "List of effects to remove from the spell. These effects will still appear on the table, but will have a note to identify the effect as invalid for the setting.",
+            "description": "Effects to remove. They stay in the table, marked as unavailable.",
             "items": {
                "type": "string",
-               "description": "Spell effect name to remove."
+               "description": "Effect name."
             }
          },
          "id": {
             "type": "string",
-            "description": "Unique item id. You shouldn't have to touch this field.",
+            "description": "Generated automatically. Don't edit.",
             "x-hb": { "hidden": true }
          }
       },

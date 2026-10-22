@@ -10,7 +10,7 @@
          },
          "page": {
             "type": "integer",
-            "description": "Source page reference."
+            "description": "Source page number."
          },
          "characteristic": {
             "type": "string",
@@ -27,31 +27,31 @@
                "magic",
                "other"
             ],
-            "description": "Category of the skill. One of \"general\", \"combat\", \"social\", \"knowledge\", \"magic\", \"other\"."
+            "description": "Skill category, used for grouping and filtering."
          },
          "imageUrl": {
             "title": "Image URL",
             "type": "string",
-            "description": "Url to a related image.",
+            "description": "URL of a related image.",
             "x-hb": { "span": "full" }
          },
          "description": {
             "$ref": "./varyingDisplay_sub_schema.json",
-            "description": "Skill information. Each array item will be its own paragraph. Also accepts varying displays."
+            "description": "Skill description."
          },
          "shouldUse": {
             "type": "array",
             "items": {
                "type": "string"
             },
-            "description": "Suggested reasons to use the skill."
+            "description": "Examples of when to use the skill."
          },
          "shouldNotUse": {
             "type": "array",
             "items": {
                "type": "string"
             },
-            "description": "Suggested reasons to not use the skill."
+            "description": "Examples of when not to use the skill."
          },
          "spells": {
             "type": "array",
@@ -64,7 +64,7 @@
                   },
                   "source": {
                      "type": "string",
-                     "description": "Spell source abbreviation (omit if the spell is part of this collection).",
+                     "description": "Source abbreviation (example: CRB). Omit if it's in this content pack.",
                      "x-hb": { "span": 1 }
                   }
                },
@@ -76,15 +76,15 @@
                ],
                "additionalProperties": false
             },
-            "description": "List of spells that use this skill."
+            "description": "Spells cast with this skill."
          },
          "settings": {
             "$ref": "./settings_sub_schema.json",
-            "description": "Override global content pack settings for this item."
+            "description": "Settings (genres) this item belongs to. Overrides the content pack's defaultItemSettings."
          },
          "id": {
             "type": "string",
-            "description": "Unique item id. You shouldn't have to touch this field.",
+            "description": "Generated automatically. Don't edit.",
             "x-hb": { "hidden": true }
          }
       },

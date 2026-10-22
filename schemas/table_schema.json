@@ -10,33 +10,33 @@
          },
          "page": {
             "type": "integer",
-            "description": "Source page reference."
+            "description": "Source page number."
          },
          "subtitle": {
             "type": "string",
-            "description": "Subtitle (goes above the table)."
+            "description": "Text above the table."
          },
          "foot": {
             "type": "string",
-            "description": "Alternate subtitle (goes below the table)."
+            "description": "Text below the table."
          },
          "columns": {
             "type": "array",
-            "description": "List of column headers for the table.",
+            "description": "Table columns.",
             "items": {
                "type": "object",
                "properties": {
                   "header": {
                      "type": "string",
-                     "description": "Label displayed at the top of the column."
+                     "description": "Column heading."
                   },
                   "value": {
                      "type": "string",
-                     "description": "This value is mapped to the rows so each value is placed in the correct column. If this value is omitted, the \"header\" value will be used instead (case insensitive)."
+                     "description": "Row key for this column. Defaults to the header (case-insensitive)."
                   },
                   "size": {
                      "type": "integer",
-                     "description": "Width of the column. This is calculated as a fraction of the total column sizes. Example: three columns with widths 2, 3, 3. Total is 8, so the first column will be 2/8 (or 1/4) the total width of the table."
+                     "description": "Relative width. Sizes 2, 3, 3 give widths of 2/8, 3/8, 3/8."
                   }
                },
                "required": [
@@ -51,13 +51,13 @@
          },
          "rows": {
             "type": "array",
-            "description": "Rows in the table. Each top-level item represents a row and must have <key>:<value> pairs in the order of <col header/value>:<cell data>. A property name of \"subtitle\" will instead render a subtitle with the given value.",
+            "description": "One object per row, keyed by column value. A \"subtitle\" key renders a subtitle row.",
             "x-hb": { "widget": "tableRows" },
             "items": { "$ref": "tableRow_sub_schema.json" }
          },
          "id": {
             "type": "string",
-            "description": "Unique item id. You shouldn't have to touch this field.",
+            "description": "Generated automatically. Don't edit.",
             "x-hb": { "hidden": true }
          }
       },

@@ -3,7 +3,7 @@
    "type": "array",
    "items": {
       "type": "string",
-      "description": "Tags for abilities.",
+      "description": "Tags used for filtering.",
       "enum": [
          "combat",
          "social",

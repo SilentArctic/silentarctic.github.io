@@ -6,11 +6,11 @@
       "properties": {
          "name": {
             "type": "string",
-            "description": "Setting name."
+            "description": "Setting name (example: fantasy)."
          },
          "source": {
             "type": "string",
-            "description": "Setting source (abbreviation). Example: crb.",
+            "description": "Source abbreviation (example: CRB).",
             "x-hb": { "span": 1 }
          }
       },

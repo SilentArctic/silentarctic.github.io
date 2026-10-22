@@ -10,11 +10,11 @@
          },
          "nickname": {
             "type": "string",
-            "description": "Optional nickname (ideal for keeping similar archetypes together ie. Dwarf (Dunwarr) and Dwarf (Forge)."
+            "description": "Groups similar archetypes (example: Dwarf (Dunwarr) and Dwarf (Forge))."
          },
          "page": {
             "type": "integer",
-            "description": "Source page reference."
+            "description": "Source page number."
          },
          "xp": {
             "type": "integer",
@@ -24,7 +24,7 @@
          "imageUrl": {
             "title": "Image URL",
             "type": "string",
-            "description": "Url for a related image.",
+            "description": "URL of a related image.",
             "x-hb": { "span": "full" }
          },
          "characteristics": {
@@ -116,7 +116,7 @@
          },
          "wt": {
             "title": "Wound threshold",
-            "description": "Wound threshold.",
+            "description": "Base wound threshold. Brawn is added on top.",
             "oneOf": [
                {
                   "type": "integer",
@@ -133,7 +133,7 @@
          },
          "st": {
             "title": "Strain threshold",
-            "description": "Strain threshold.",
+            "description": "Base strain threshold. Willpower is added on top.",
             "oneOf": [
                {
                   "type": "integer",
@@ -154,7 +154,7 @@
             "properties": {
                "skills": {
                   "type": "array",
-                  "description": "Starting skill options.",
+                  "description": "Skills the archetype grants ranks in.",
                   "items": {
                      "oneOf": [
                         {
@@ -173,12 +173,12 @@
                               },
                               "source": {
                                  "type": "string",
-                                 "description": "Skill source.",
+                                 "description": "Source abbreviation (example: CRB). Omit if it's in this content pack.",
                                  "x-hb": { "span": 1 }
                               },
                               "ranks": {
                                  "type": "number",
-                                 "description": "Skill ranks (default 1).",
+                                 "description": "Ranks granted. Defaults to 1.",
                                  "default": 1
                               }
                            },
@@ -197,16 +197,16 @@
                "ranksTotal": {
                   "title": "Total ranks",
                   "type": "integer",
-                  "description": "Meta field. # of total ranks this archetype starts with."
+                  "description": "Total free ranks the player assigns. Used by the character sheet."
                },
                "ranksEach": {
                   "type": "integer",
-                  "description": "Meta field. # of ranks each skill receives."
+                  "description": "Ranks per picked skill. Skills picked = ranksTotal / ranksEach."
                },
                "description": {
                   "type": "array",
                   "x-hb": { "widget": "paragraphs" },
-                  "description": "Text displayed on the archetype. This is *not* derived from the other fields here due to the vast variety of possibilities.",
+                  "description": "Skill text shown on the archetype. Not generated from the other fields.",
                   "items": {
                      "type": "string"
                   }
@@ -216,7 +216,7 @@
                      {
                         "type": "boolean",
                         "title": "Any choice",
-                        "description": "If the player has a choice between skills to put starting ranks into."
+                        "description": "Whether the player picks the skills."
                      },
 
                      {
@@ -244,7 +244,7 @@
                                     "willpower",
                                     "presence"
                                  ],
-                                 "description": "Can choose any skill within the given category."
+                                 "description": "Any skill in this category."
                               },
 
                               {
@@ -257,12 +257,12 @@
                                     },
                                     "source": {
                                        "type": "string",
-                                       "description": "Skill source.",
+                                       "description": "Source abbreviation (example: CRB). Omit if it's in this content pack.",
                                        "x-hb": { "span": 1 }
                                     },
                                     "ranks": {
                                        "type": "number",
-                                       "description": "Skill ranks (default 1).",
+                                       "description": "Ranks granted. Defaults to 1.",
                                        "default": 1
                                     }
                                  },
@@ -292,18 +292,18 @@
          },
          "abilities": {
             "type": "array",
-            "description": "List of unique archetype abilities",
+            "description": "Archetype abilities.",
             "items": {
                "oneOf": [
                   {
                      "type": "string",
                      "title": "External ability",
-                     "description": "Name of archetype ability from any source."
+                     "description": "Name of an archetype ability from any installed content pack."
                   },
                   {
                      "type": "object",
                      "title": "Private ability",
-                     "description": "Custom ability only for this archetype.",
+                     "description": "An ability written only for this archetype.",
                      "properties": {
                         "name": {
                            "type": "string",
@@ -311,7 +311,7 @@
                         },
                         "description": {
                            "type": "string",
-                           "description": "Ability description.",
+                           "description": "Ability text.",
                            "x-hb": { "span": "full" }
                         }
                      },
@@ -337,7 +337,7 @@
          "why": {
             "title": "Reasons to play",
             "type": "array",
-            "description": "Reasons why one would choose to play as this archetype.",
+            "description": "Reasons to pick this archetype.",
             "items": {
                "type": "string"
             }
@@ -349,14 +349,14 @@
                "description": {
                   "type": "array",
                   "x-hb": { "widget": "paragraphs" },
-                  "description": "Brief description about this archetype's naming conventions.",
+                  "description": "Naming conventions.",
                   "items": {
                      "type": "string"
                   }
                },
                "names": {
                   "type": "array",
-                  "description": "List of suggested names.",
+                  "description": "Example names.",
                   "items": {
                      "type": "string"
                   }
@@ -365,7 +365,7 @@
          },
          "modifiers": {
             "type": "object",
-            "description": "Mechanical effects applied to characters with this archetype in the Character Builder.",
+            "description": "Effects applied to characters with this archetype on the character sheet.",
             "x-hb": { "hidden": true },
             "properties": {
                "stats": {
@@ -415,12 +415,12 @@
                         },
                         "source": {
                            "type": "string",
-                           "description": "Skill source.",
+                           "description": "Source abbreviation (example: CRB). Omit if it's in this content pack.",
                            "x-hb": { "span": 1 }
                         },
                         "career": {
                            "type": "boolean",
-                           "description": "If the skill becomes a career skill."
+                           "description": "Whether the skill becomes a career skill."
                         },
                         "ranks": {
                            "type": "integer",
@@ -478,13 +478,16 @@
                               "type": "object",
                               "properties": {
                                  "name": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "Quality name."
                                  },
                                  "value": {
-                                    "type": "integer"
+                                    "type": "integer",
+                                    "description": "Quality ranks."
                                  },
                                  "source": {
                                     "type": "string",
+                                    "description": "Source abbreviation (example: CRB). Omit if it's in this content pack.",
                                     "x-hb": { "span": 1 }
                                  }
                               },
@@ -538,11 +541,11 @@
          },
          "settings": {
             "$ref": "./settings_sub_schema.json",
-            "description": "Override global content pack settings for this item."
+            "description": "Settings (genres) this item belongs to. Overrides the content pack's defaultItemSettings."
          },
          "id": {
             "type": "string",
-            "description": "Unique item id. You shouldn't have to touch this field.",
+            "description": "Generated automatically. Don't edit.",
             "x-hb": { "hidden": true }
          }
       },

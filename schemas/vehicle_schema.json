@@ -10,69 +10,69 @@
          },
          "page": {
             "type": "integer",
-            "description": "Source page reference."
+            "description": "Source page number."
          },
          "tribe": {
             "type": "string",
-            "description": "Tribe, faction, etc. An additional term used for grouping vehicles together."
+            "description": "Faction or group, used to group vehicles."
          },
          "variant": {
             "type": "boolean",
-            "description": "If this vehicle is a variant of another vehicle (variants are created as separate entries)."
+            "description": "Whether this is a variant of another vehicle."
          },
          "hasVariants": {
             "type": "boolean",
-            "description": "If this vehicle has any variants."
+            "description": "Whether variants of this vehicle exist. Each variant is its own entry."
          },
          "imageUrl": {
             "title": "Image URL",
             "type": "string",
-            "description": "Url to an image of the vehicle.",
+            "description": "URL of an image of the vehicle.",
             "x-hb": { "span": "full" }
          },
          "silhouette": {
             "type": "integer",
-            "description": "The vehicle's silhouette."
+            "description": "Silhouette (size)."
          },
          "maxSpeed": {
             "type": "integer",
-            "description": "The vehicle's max speed."
+            "description": "Max speed."
          },
          "handling": {
             "type": "integer",
-            "description": "The vehicle's handling."
+            "description": "Handling. Negative for vehicles that are hard to steer."
          },
          "defense": {
             "type": "integer",
-            "description": "The vehicle's innate defense."
+            "description": "Defense."
          },
          "armor": {
             "type": "integer",
-            "description": "The vehicle's armor."
+            "description": "Armor (vehicle soak)."
          },
          "htt": {
             "title": "Hull trauma threshold",
             "type": "integer",
-            "description": "The vehicle's hull trauma threshold.",
+            "description": "Hull trauma threshold.",
             "x-hb": { "span": 2 }
          },
          "sst": {
             "title": "System strain threshold",
             "type": "integer",
-            "description": "The vehicle's system strain threshold.",
+            "description": "System strain threshold.",
             "x-hb": { "span": 2 }
          },
          "controlSkill": {
             "type": "object",
-            "description": "Skill used when making control checks.",
+            "description": "Skill used to pilot or drive.",
             "properties": {
                "name": {
                   "type": "string",
-                  "description": "Name of the control skill."
+                  "description": "Skill name."
                },
                "source": {
                   "type": "string",
-                  "description": "Source of the skill (abbreviation) if not found in this content pack (example: CRB).",
+                  "description": "Source abbreviation (example: CRB). Omit if it's in this content pack.",
                   "x-hb": { "span": 1 }
                }
             },
@@ -86,21 +86,21 @@
          },
          "complement": {
             "type": "string",
-            "description": "Number of crew required to operate this vehicle.",
+            "description": "Crew needed to operate it.",
             "x-hb": { "span": 1 }
          },
          "passengers": {
             "type": ["string", "integer"],
-            "description": "Number of passengers that can comfortably occupy this vehicle."
+            "description": "Passenger capacity."
          },
          "consumables": {
             "type": "string",
-            "description": "Amount of consumables (hours, days, weeks, etc) this vehicle holds before needing to restock.",
+            "description": "How long supplies last (example: 2 weeks).",
             "x-hb": { "span": 1 }
          },
          "encumbranceCapacity": {
             "type": ["string", "integer"],
-            "description": "Total encumbrance this vehicle can hold."
+            "description": "Cargo capacity, in encumbrance."
          },
          "ftlRange": {
             "title": "FTL range",
@@ -112,7 +112,7 @@
                "Long",
                "Extreme"
             ],
-            "description": "Distance the vehicle can travel at faster-than-light speeds."
+            "description": "Faster-than-light range."
          },
          "ftlSpeed": {
             "title": "FTL speed",
@@ -124,22 +124,23 @@
                "fast",
                "very fast"
             ],
-            "description": "How fast this vehicle can travel at faster-than-light speeds."
+            "description": "Faster-than-light speed."
          },
          "price": {
             "type": "integer",
-            "description": "Cost of the vehicle."
+            "description": "Price."
          },
          "rarity": {
             "type": "integer",
-            "description": "How rare the vehicle is."
+            "description": "Rarity, 0 to 10."
          },
          "restricted": {
             "type": "boolean",
-            "description": "If the vehicle is restricted."
+            "description": "Whether the vehicle is restricted (R)."
          },
          "weapons": {
             "type": "array",
+            "description": "Mounted weapons.",
             "items": {
                "type": "object",
                "properties": {
@@ -153,11 +154,11 @@
                      "properties": {
                         "name": {
                            "type": "string",
-                           "description": "Skill to use the weapon."
+                           "description": "Skill used to attack."
                         },
                         "source": {
                            "type": "string",
-                           "description": "Source of the skill (abbreviation) if not found in this content pack (example: CRB).",
+                           "description": "Source abbreviation (example: CRB). Omit if it's in this content pack.",
                            "x-hb": { "span": 1 }
                         }
                      },
@@ -171,7 +172,7 @@
                   },
                   "fireArc": {
                      "type": "string",
-                     "description": "Angle at which the weapon can fire.",
+                     "description": "Firing arc (example: Forward).",
                      "x-hb": { "span": 1 }
                   },
                   "damage": {
@@ -180,21 +181,22 @@
                   },
                   "critical": {
                      "type": "integer",
-                     "description": "Advantages required to trigger a critical hit."
+                     "description": "Critical rating: Advantage needed to trigger a critical hit."
                   },
                   "range": {
                      "type": "string",
                      "enum": ["Engaged", "Short", "Medium", "Long", "Extreme", "Strategic"],
-                     "description": "Weapon's maximum range."
+                     "description": "Maximum range."
                   },
                   "qualities": {
                      "type": "array",
+                     "description": "Weapon qualities.",
                      "items": {
                         "type": "object",
                         "properties": {
                            "name": {
                               "type": "string",
-                              "description": "Weapon quality name."
+                              "description": "Quality name."
                            },
                            "ranks": {
                               "type": "integer",
@@ -202,7 +204,7 @@
                            },
                            "source": {
                               "type": "string",
-                              "description": "Source of the quality (abbreviation) if not found in this content pack.",
+                              "description": "Source abbreviation (example: CRB). Omit if it's in this content pack.",
                               "x-hb": { "span": 1 }
                            }
                         },
@@ -223,7 +225,7 @@
                   },
                   "description": {
                      "type": "string",
-                     "description": "DEPRECATED. Use this field to output weapon text (as seen in the books) instead of a table.",
+                     "description": "Deprecated. Shows book-style weapon text instead of a table.",
                      "x-hb": { "hidden": true }
                   }
                },
@@ -244,30 +246,32 @@
          },
          "abilities": {
             "type": "array",
+            "description": "Vehicle abilities.",
             "items": {
                "type": "object",
                "properties": {
                   "name": {
                      "type": "string",
-                     "description": "Vehicle ability name."
+                     "description": "Ability name."
                   },
                   "description": {
                      "type": "string",
-                     "description": "Ability description.",
+                     "description": "Ability text.",
                      "x-hb": { "span": "full" }
                   },
                   "children": {
                      "type": "array",
+                     "description": "Sub-abilities, listed under this one.",
                      "items": {
                         "type": "object",
                         "properties": {
                            "name": {
                               "type": "string",
-                              "description": "Vehicle ability name."
+                              "description": "Ability name."
                            },
                            "description": {
                               "type": "string",
-                              "description": "Ability description.",
+                              "description": "Ability text.",
                               "x-hb": { "span": "full" }
                            }
                         }
@@ -283,14 +287,17 @@
                "additionalProperties": false
             }
          },
-         "description": { "$ref": "./varyingDisplay_sub_schema.json" },
+         "description": {
+            "$ref": "./varyingDisplay_sub_schema.json",
+            "description": "Vehicle description."
+         },
          "settings": {
             "$ref": "./settings_sub_schema.json",
-            "description": "Override global content pack settings for this item."
+            "description": "Settings (genres) this item belongs to. Overrides the content pack's defaultItemSettings."
          },
          "id": {
             "type": "string",
-            "description": "Unique item id. You shouldn't have to touch this field.",
+            "description": "Generated automatically. Don't edit.",
             "x-hb": { "hidden": true }
          }
       },

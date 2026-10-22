@@ -10,31 +10,31 @@
          },
          "type": {
             "type": "string",
-            "description": "Primary type of the option/feature. Add this to the content pack's _meta.filters.optionFeatureType array if it is not a standard type.",
+            "description": "Primary type. Add new types to _meta.filters.optionFeatureType.",
             "x-hb": { "span": 1 }
          },
          "class": {
             "type": "string",
-            "description": "Secondary type of the option/feature. Add this to the content pack's _meta.filters.optionFeatureClass array if it is not a standard class.",
+            "description": "Secondary type. Add new classes to _meta.filters.optionFeatureClass.",
             "x-hb": { "span": 1 }
          },
          "page": {
             "type": "integer",
-            "description": "Source page reference."
+            "description": "Source page number."
          },
          "labels": {
             "type": "array",
-            "description": "Extra labels. These are placed above the description and persist across the description and info tabs.",
+            "description": "Labels shown above the description on every tab.",
             "items": {
                "type": "object",
                "properties": {
                   "name": {
                      "type": "string",
-                     "description": "Label name. This will be bolded"
+                     "description": "Label name, shown in bold."
                   },
                   "description": {
                      "type": ["string", "integer"],
-                     "description": "Label description."
+                     "description": "Label value."
                   }
                },
                "required": [
@@ -50,29 +50,28 @@
          },
          "info": {
             "$ref": "varyingDisplay_sub_schema.json",
-            "description": "Extra information. This is displayed in a secondary tab."
+            "description": "Extra details, shown on a second tab."
          },
          "summary": {
             "type": "array",
-            "description": "Deprecated. This used to be a short blurb that appeared in the popover.",
+            "description": "Deprecated. Leave empty.",
             "items": {
-               "type": "string",
-               "description": "Deprecated. Do not add values here."
+               "type": "string"
             },
             "x-hb": { "hidden": true }
          },
          "meta": {
             "type": "object",
-            "description": "Metadata for the option/feature. You likely won't need this.",
+            "description": "Internal metadata. Leave empty.",
             "x-hb": { "hidden": true }
          },
          "settings": {
             "$ref": "settings_sub_schema.json",
-            "description": "Override global content pack settings for this item."
+            "description": "Settings (genres) this item belongs to. Overrides the content pack's defaultItemSettings."
          },
          "id": {
             "type": "string",
-            "description": "Unique item id. You shouldn't have to touch this field.",
+            "description": "Generated automatically. Don't edit.",
             "x-hb": { "hidden": true }
          }
       },

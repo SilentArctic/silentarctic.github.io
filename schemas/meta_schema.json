@@ -4,58 +4,59 @@
    "properties": {
       "source": {
          "type": "object",
-         "description": "Source meta-data used for tracking and creating items correctly.",
+         "description": "Identifies the content pack.",
          "properties": {
             "version": {
                "type": "string",
-               "description": "Version of your homebrew. You can use an actual versioning system, but I suggest using the most recent date it was updated in format \"YYYY.MM.DD\".",
+               "description": "Content pack version. The last update date works well (example: 2024.04.28).",
                "x-hb": { "span": 1 }
             },
             "json": {
                "type": "string",
-               "description": "kebab-case title of your homebrew. This is used to differentiate your data from everything else and **must be unique**. This field can only be changed manually in a json editor.",
+               "description": "Unique kebab-case ID (example: my-homebrew). Must not match any other content pack. Only editable in a JSON editor.",
                "readOnly": true
             },
             "full": {
                "type": "string",
-               "description": "The full name of your homebrew, with correct casing."
+               "description": "Full content pack name."
             },
             "abbreviation": {
                "type": "string",
-               "description": "The abbreviated name of your homebrew, used in reference tags and shown as the source. Use colons to separate title/subtitle. {@b Underscore characters are reserved for translation files.}",
+               "description": "Short name shown as the source and used in tags. Separate title and subtitle with a colon. Underscores are reserved for translation files.",
                "x-hb": { "span": 1 }
             },
             "language": {
                "type": "string",
-               "description": "The collection's language, spelled out. Defaults to English.",
+               "description": "Language, spelled out (example: German). Defaults to English.",
                "x-hb": { "span": 1 }
             },
             "color": {
                "type": "string",
-               "description": "The hex-color of the abbreviation when displayed in tables and headers. Please make sure the color is readable in all color schemes. Defaults to black/white based on theme.",
+               "description": "Hex color for the abbreviation in tables and headers. Check it reads well in every theme. Defaults to black or white by theme.",
                "x-hb": { "widget": "color" }
             },
             "url": {
                "type": "string",
-               "description": "Web address of your homebrew. Can link to drivethrurpg, or any other website at which your product is located.",
+               "description": "Where to get the content pack (example: a DriveThruRPG page).",
                "x-hb": { "span": "full" }
             },
             "releaseDate": {
                "type": "string",
-               "description": "Source release date. Please use the format: D Month YYYY (28 April 2023).",
+               "description": "Release date as D Month YYYY (example: 28 April 2023).",
                "x-hb": { "span": 1 }
             },
             "currentRelease": {
                "type": "object",
+               "description": "The source release this conversion matches.",
                "properties": {
                   "version": {
                      "type": "string",
-                     "description": "Version of the source as of this conversion, usually using semantic versioning such as `v2.2`. This field provides an easy check that the json conversion is up-to-date with the source.",
+                     "description": "Source version this conversion matches (example: v2.2).",
                      "x-hb": { "span": 1 }
                   },
                   "date": {
                      "type": "string",
-                     "description": "Date of the source, as of this conversion. This field provides an easy check that json conversion is up-to-date with the source.",
+                     "description": "Source date this conversion matches.",
                      "x-hb": { "span": 1 }
                   }
                },
@@ -68,33 +69,33 @@
                "type": "array",
                "items": {
                   "type": "string",
-                  "description": "Name of contributing author."
+                  "description": "Author name."
                },
-               "description": "List of authors."
+               "description": "Authors."
             },
             "convertedBy": {
                "type": "array",
                "items": {
                   "type": "string",
-                  "description": "Name of converting author."
+                  "description": "Name."
                },
-               "description": "List of people who converted the collection from PDF/etc to GenesysRef JSON format."
+               "description": "People who converted the source to GenesysRef JSON."
             },
             "translatedBy": {
                "type": "array",
                "items": {
                   "type": "string",
-                  "description": "Name of translating author."
+                  "description": "Name."
                },
-               "description": "List of people who translated the collection from a different language. Do not use this field if the source material was itself a translation."
+               "description": "Translators. Skip if the source itself was a translation."
             },
             "module": {
                "type": "boolean",
-               "description": "For official Modules. If true, Core Collection will not be installed by default for new users."
+               "description": "Official modules only. When true, new users don't get the Core Collection by default."
             },
             "updateKey": {
                "type": "string",
-               "description": "Premium content packs only. Generated automatically and used to verify update requests. Do not edit.",
+               "description": "Premium content packs only. Generated automatically. Don't edit.",
                "x-hb": { "hidden": true }
             }
          },
@@ -118,7 +119,7 @@
       },
       "filters": {
          "type": "object",
-         "description": "These custom properties will be added to the GenesysRef filters.",
+         "description": "Custom values added to GenesysRef's list filters.",
          "properties": {
             "settings": {
                "type": "array",
@@ -139,7 +140,7 @@
                "type": "array",
                "items": {
                   "type": "string",
-                  "description": "New optionFeature type to add to filters."
+                  "description": "New option/feature type to add to filters."
                }
             },
             "optionFeatureClass": {
@@ -147,7 +148,7 @@
                "type": "array",
                "items": {
                   "type": "string",
-                  "description": "New optionFeature class to add to filters."
+                  "description": "New option/feature class to add to filters."
                }
             },
             "talentPrereqs": {
@@ -169,7 +170,7 @@
       },
       "defaultItemSettings": {
          "$ref": "settings_sub_schema.json",
-         "description": "Default settings for each item. Can be overridden by the item's optional \"settings\" property. If your content pack has a balanced mixture of different settings such as the EPG, set this as an empty array."
+         "description": "Settings (genres) for items without their own \"settings\". Leave empty for packs that span many settings, like the EPG."
       }
    },
    "required": [

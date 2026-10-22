@@ -24,39 +24,39 @@
                "treasure",
                "weapon"
             ],
-            "description": "Type of gear. Different types have different properties available."
+            "description": "Gear type. Each type adds its own fields."
          },
          "class": {
             "type": "string",
-            "description": "Subcategory for the gear. Ex: Military, Energy, etc.",
+            "description": "Subcategory (example: Energy, Military).",
             "x-hb": { "span": 1 }
          },
          "page": {
             "type": "integer",
-            "description": "Source page reference."
+            "description": "Source page number."
          },
          "imageUrl": {
             "title": "Image URL",
             "type": "string",
-            "description": "Url to an image of the gear.",
+            "description": "URL of an image of the gear.",
             "x-hb": { "span": "full" }
          },
          "description": {
             "$ref": "./varyingDisplay_sub_schema.json",
-            "description": "Item description. Advanced descriptions can only be modified with a json editor."
+            "description": "Gear description."
          },
          "price": {
-            "description": "Value of the gear.",
+            "description": "Price.",
             "oneOf": [
                {
                   "type": "integer",
                   "title": "value",
-                  "description": "Numerical value of the gear."
+                  "description": "Price."
                },
                {
                   "type": "string",
                   "title": "default option",
-                  "description": "Some items can't be valued monetarily. These values provided options to indicate that.",
+                  "description": "For items that have no price.",
                   "enum": [
                      "priceless",
                      "n/a",
@@ -70,22 +70,25 @@
                "integer",
                "null"
             ],
-            "description": "How rare the gear is."
+            "description": "Rarity, 0 to 10."
          },
          "restricted": {
             "type": "boolean",
-            "description": "If the gear is a restricted item."
+            "description": "Whether the gear is restricted (R)."
          },
          "modifiers": {
             "type": "array",
+            "description": "Stat changes the item grants. Only used by the Emporium export.",
             "items": {
                "type": "object",
                "properties": {
                   "name": {
-                     "type": "string"
+                     "type": "string",
+                     "description": "What it changes (example: Brawn, Strain Threshold, encumbrance)."
                   },
                   "type": {
                      "type": "string",
+                     "description": "A characteristic, skill, derived stat (thresholds, soak, defense), or own stat (this item's stats).",
                      "enum": [
                         "characteristic",
                         "skill",
@@ -94,6 +97,7 @@
                      ]
                   },
                   "value": {
+                     "description": "Signed change (example: +1). Skills also accept dice and symbol tags.",
                      "type": [
                         "string",
                         "integer"
@@ -112,11 +116,11 @@
          },
          "settings": {
             "$ref": "./settings_sub_schema.json",
-            "description": "Override global content pack settings for this item."
+            "description": "Settings (genres) this item belongs to. Overrides the content pack's defaultItemSettings."
          },
          "id": {
             "type": "string",
-            "description": "Unique item id. You shouldn't have to touch this field.",
+            "description": "Generated automatically. Don't edit.",
             "x-hb": { "hidden": true }
          }
       },
@@ -179,11 +183,11 @@
                      "properties": {
                         "name": {
                            "type": "string",
-                           "description": "Skill used to attack with the weapon."
+                           "description": "Skill used to attack."
                         },
                         "source": {
                            "type": "string",
-                           "description": "Source of the skill (abbreviation).",
+                           "description": "Source abbreviation (example: CRB). Omit if it's in this content pack.",
                            "x-hb": { "span": 1 }
                         }
                      },
@@ -200,12 +204,12 @@
                         "string",
                         "integer"
                      ],
-                     "description": "Base damage of the weapon. Melee weapons likely have a \"+\" prefix to indicate the use's Brawn should be added to the damage.",
+                     "description": "Base damage. Prefix \"+\" for melee weapons that add Brawn (example: +2).",
                      "x-hb": { "span": 1 }
                   },
                   "critical": {
                      "type": "integer",
-                     "description": "Number of advantages required to trigger a critical hit with the weapon."
+                     "description": "Critical rating: Advantage needed to trigger a critical hit."
                   },
                   "range": {
                      "type": "string",
@@ -217,7 +221,7 @@
                         "Extreme",
                         "Strategic"
                      ],
-                     "description": "The weapon's maximum effective range."
+                     "description": "Maximum range."
                   },
                   "encumbrance": {
                      "type": "integer",
@@ -225,25 +229,25 @@
                   },
                   "hardPoints": {
                      "type": "integer",
-                     "description": "How many hardpoints the weapon has."
+                     "description": "Hard points available for attachments."
                   },
                   "special": {
                      "type": "array",
-                     "description": "List of weapon qualities",
+                     "description": "Weapon qualities.",
                      "items": {
                         "type": "object",
                         "properties": {
                            "name": {
                               "type": "string",
-                              "description": "Weapon quality name."
+                              "description": "Quality name."
                            },
                            "value": {
                               "type": "integer",
-                              "description": "Quality ranks (if any)."
+                              "description": "Quality ranks. Omit for unranked qualities."
                            },
                            "source": {
                               "type": "string",
-                              "description": "Source of the quality (abbreviation) (\"likely CRB\") if not found in this content pack.",
+                              "description": "Source abbreviation (example: CRB). Omit if it's in this content pack.",
                               "x-hb": { "span": 1 }
                            }
                         },
@@ -287,11 +291,11 @@
                "properties": {
                   "defense": {
                      "type": "integer",
-                     "description": "Amount of defense provided by the armor."
+                     "description": "Defense granted."
                   },
                   "soak": {
                      "type": "string",
-                     "description": "Amount of soak provided by the armor.",
+                     "description": "Soak granted.",
                      "x-hb": { "span": 1 }
                   },
                   "encumbrance": {
@@ -300,7 +304,7 @@
                   },
                   "hardPoints": {
                      "type": "integer",
-                     "description": "How many hardpoints the armor has."
+                     "description": "Hard points available for attachments."
                   },
                   "special": {
                      "type": "array",
@@ -310,15 +314,15 @@
                         "properties": {
                            "name": {
                               "type": "string",
-                              "description": "Armor quality name."
+                              "description": "Quality name."
                            },
                            "value": {
                               "type": "integer",
-                              "description": "Quality ranks (if any)."
+                              "description": "Quality ranks. Omit for unranked qualities."
                            },
                            "source": {
                               "type": "string",
-                              "description": "Source of the quality (abbreviation) (\"likely CRB\") if not found in this content pack.",
+                              "description": "Source abbreviation (example: CRB). Omit if it's in this content pack.",
                               "x-hb": { "span": 1 }
                            }
                         },
@@ -369,7 +373,7 @@
                         "string",
                         "integer"
                      ],
-                     "description": "Encumbrance of the gear. Use negative values for items like backpacks that increase encumbrance capacity."
+                     "description": "Encumbrance. Use a negative value for items that raise capacity, like backpacks."
                   }
                },
                "optional": [
@@ -441,27 +445,28 @@
                "properties": {
                   "hardPoints": {
                      "type": "integer",
-                     "description": "How many hardpoints the attachment requires."
+                     "description": "Hard points the attachment uses."
                   },
                   "qualities": {
                      "type": "array",
+                     "description": "Qualities the attachment adds.",
                      "items": {
                         "type": "object",
                         "properties": {
                            "name": {
                               "type": "string",
-                              "description": "Attachment quality name."
+                              "description": "Quality name."
                            },
                            "ranks": {
                               "type": [
                                  "string",
                                  "integer"
                               ],
-                              "description": "Quality ranks (if any)."
+                              "description": "Quality ranks. Omit for unranked qualities."
                            },
                            "source": {
                               "type": "string",
-                              "description": "Source of the quality (abbreviation) (\"likely CRB\") if not found in this content pack.",
+                              "description": "Source abbreviation (example: CRB). Omit if it's in this content pack.",
                               "x-hb": { "span": 1 }
                            }
                         },

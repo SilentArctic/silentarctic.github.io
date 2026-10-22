@@ -10,15 +10,15 @@
          },
          "description": {
             "$ref": "varyingDisplay_sub_schema.json",
-            "description": "Ability details"
+            "description": "Ability text."
          },
          "tags": {
             "$ref": "item_tags_sub_schema.json",
-            "description": "Applicable tags for filtering."
+            "description": "Tags used for filtering."
          },
          "id": {
             "type": "string",
-            "description": "Unique item id. You shouldn't have to touch this field.",
+            "description": "Generated automatically. Don't edit.",
             "x-hb": { "hidden": true }
          }
       },

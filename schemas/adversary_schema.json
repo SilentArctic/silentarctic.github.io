@@ -10,7 +10,7 @@
          },
          "page": {
             "type": "integer",
-            "description": "Source page reference."
+            "description": "Source page number."
          },
          "type": {
             "type": "string",
@@ -19,19 +19,19 @@
                "rival",
                "nemesis"
             ],
-            "description": "Type of this adversary."
+            "description": "Adversary tier. Minions have no skill ranks. Only nemeses track strain."
          },
          "npc": {
             "type": "boolean",
-            "description": "If this adversary is a named NPC."
+            "description": "Whether this adversary is a named NPC."
          },
          "hasVariants": {
             "type": "boolean",
-            "description": "If this adversary has any variants (variants are created as separate entries)."
+            "description": "Whether variants of this adversary exist. Each variant is its own entry."
          },
          "variant": {
             "type": "boolean",
-            "description": "If this adversary is a variant of an adversary."
+            "description": "Whether this is a variant of another adversary."
          },
          "characteristics": {
             "type": "object",
@@ -79,12 +79,12 @@
                },
                "strain": {
                   "type": "integer",
-                  "description": "Only for Nemesis.",
+                  "description": "Nemeses only.",
                   "title": "Strain Threshold"
                },
                "defense": {
                   "type": "array",
-                  "description": "First is melee, second is ranged.",
+                  "description": "Melee, then ranged (example: [1, 0]).",
                   "items": {
                      "type": "integer"
                   },
@@ -104,19 +104,19 @@
          },
          "powerLevels": {
             "type": "object",
-            "description": "Estimates of an adversaries power (see page 84 in the Expanded Player's Guide).",
+            "description": "Power estimates (Expanded Player's Guide p. 84).",
             "properties": {
                "combat": {
                   "type": "integer",
-                  "description": "Adversary's approximate combat strength."
+                  "description": "Combat power level."
                },
                "social": {
                   "type": "integer",
-                  "description": "Adversary's approximate social strength."
+                  "description": "Social power level."
                },
                "general": {
                   "type": "integer",
-                  "description": "Adversary's approximate general strength."
+                  "description": "General power level."
                }
             },
             "required": [
@@ -128,17 +128,17 @@
          },
          "skills": {
             "type": "array",
-            "description": "List of adversary skills.",
+            "description": "Skills the adversary has.",
             "items": {
                "type": "object",
                "properties": {
                   "name": {
                      "type": "string",
-                     "description": "Name of skill."
+                     "description": "Skill name."
                   },
                   "characteristic": {
                      "type": "string",
-                     "description": "Characteristic tied to the skill.",
+                     "description": "Characteristic the skill uses.",
                      "enum": [
                         "brawn",
                         "agility",
@@ -150,11 +150,11 @@
                   },
                   "ranks": {
                      "type": "integer",
-                     "description": "Adversary's ranks in the skill (omit for Minions)."
+                     "description": "Skill ranks. Omit for minions."
                   },
                   "source": {
                      "type": "string",
-                     "description": "Source of the skill (abbreviation) if not found in this content pack (example: CRB).",
+                     "description": "Source abbreviation (example: CRB). Omit if it's in this content pack.",
                      "x-hb": { "span": 1 }
                   }
                },
@@ -171,6 +171,7 @@
          },
          "motivations": {
             "type": "array",
+            "description": "Desires, fears, strengths, and flaws.",
             "items": {
                "type": "object",
                "properties": {
@@ -193,12 +194,13 @@
          },
          "talents": {
             "type": "array",
+            "description": "Talents the adversary has.",
             "items": {
                "oneOf": [
                   {
                      "title": "Internal Talent",
                      "type": "string",
-                     "description": "Name of talent from this collection."
+                     "description": "Name of a talent in this content pack."
                   },
                   {
                      "title": "External Talent",
@@ -206,11 +208,11 @@
                      "properties": {
                         "name": {
                            "type": "string",
-                           "description": "Name of talent from other collection."
+                           "description": "Talent name."
                         },
                         "source": {
                            "type": "string",
-                           "description": "Talent source (abbreviation) (example: CRB).",
+                           "description": "Source abbreviation (example: CRB).",
                            "x-hb": { "span": 1 }
                         }
                      },
@@ -225,25 +227,27 @@
          },
          "abilities": {
             "type": "array",
+            "description": "Adversary abilities.",
             "items": {
                "oneOf": [
                   {
                      "title": "External Ability",
                      "type": "string",
-                     "description": "Name of ability found in this, or any, content pack's Adversary Abilities."
+                     "description": "Name of an adversary ability from any installed content pack."
                   },
 
                   {
                      "title": "Private Ability",
                      "type": "object",
+                     "description": "An ability written only for this adversary.",
                      "properties": {
                         "name": {
                            "type": "string",
-                           "description": "Name of this ability which is not found in any Adversary Abilities."
+                           "description": "Ability name."
                         },
                         "description": {
                            "type": "string",
-                           "description": "Ability details.",
+                           "description": "Ability text.",
                            "x-hb": { "span": "full" }
                         }
                      },
@@ -258,20 +262,21 @@
          },
          "spells": {
             "type": "object",
+            "description": "Magic skills and prepared spells, for spellcasters.",
             "properties": {
                "skills": {
                   "type": "array",
-                  "description": "List of skills the adversary can use to cast spells.",
+                  "description": "Magic skills the adversary casts with.",
                   "items": {
                      "type": "object",
                      "properties": {
                         "name": {
                            "type": "string",
-                           "description": "Name of the magic skill this adversary can use."
+                           "description": "Skill name."
                         },
                         "source": {
                            "type": "string",
-                           "description": "Source of the skill (abbreviation) if not found in this content pack (example: CRB).",
+                           "description": "Source abbreviation (example: CRB). Omit if it's in this content pack.",
                            "x-hb": { "span": 1 }
                         }
                      },
@@ -286,17 +291,17 @@
                },
                "spells": {
                   "type": "array",
-                  "description": "List of pre-defined spells the adversary can cast.",
+                  "description": "Prepared spells, written out in full.",
                   "items": {
                      "type": "object",
                      "properties": {
                         "name": {
                            "type": "string",
-                           "description": "Spell name. Consider adding the difficulty here as well (example: {@difficulty Average})."
+                           "description": "Spell name. Can include the difficulty with a difficulty tag."
                         },
                         "description": {
                            "type": "string",
-                           "description": "Details of the spell.",
+                           "description": "Spell effects.",
                            "x-hb": { "span": "full" }
                         }
                      },
@@ -316,6 +321,7 @@
          },
          "weapons": {
             "type": "array",
+            "description": "Weapons the adversary attacks with.",
             "items": {
                "type": "object",
                "properties": {
@@ -328,11 +334,11 @@
                      "properties": {
                         "name": {
                            "type": "string",
-                           "description": "Name of skill used with this weapon."
+                           "description": "Skill used to attack."
                         },
                         "source": {
                            "type": "string",
-                           "description": "Source of the skill (abbreviation) if not found in this content pack (example: CRB).",
+                           "description": "Source abbreviation (example: CRB). Omit if it's in this content pack.",
                            "x-hb": { "span": 1 }
                         }
                      },
@@ -346,11 +352,11 @@
                   },
                   "damage": {
                      "type": "integer",
-                     "description": "The weapon's damage."
+                     "description": "Total damage, Brawn included."
                   },
                   "critical": {
                      "type": "integer",
-                     "description": "Number of advantage required to trigger a critical hit."
+                     "description": "Critical rating: Advantage needed to trigger a critical hit."
                   },
                   "range": {
                      "type": "string",
@@ -362,16 +368,17 @@
                         "Extreme",
                         "Strategic"
                      ],
-                     "description": "The weapon's maximum range."
+                     "description": "Maximum range."
                   },
                   "qualities": {
                      "type": "array",
+                     "description": "Weapon qualities.",
                      "items": {
                         "type": "object",
                         "properties": {
                            "name": {
                               "type": "string",
-                              "description": "Weapon quality name."
+                              "description": "Quality name."
                            },
                            "ranks": {
                               "type": "integer",
@@ -395,6 +402,7 @@
                   },
                   "details": {
                      "type": "string",
+                     "description": "Extra notes shown with the weapon.",
                      "x-hb": { "span": "full" }
                   }
                },
@@ -414,22 +422,23 @@
          },
          "gear": {
             "type": "array",
+            "description": "Other gear the adversary carries.",
             "items": {
                "type": "string",
-               "description": "Any other gear the adversary possesses. Words after a colon (:) will not be bolded."
+               "description": "Gear entry. Text before \": \" is bolded; without one, the whole entry is."
             }
          },
          "description": {
             "$ref": "./varyingDisplay_sub_schema.json",
-            "description": "Adversary description (advanced text is not supported by the Homebrew Builder)."
+            "description": "Adversary description."
          },
          "settings": {
             "$ref": "./settings_sub_schema.json",
-            "description": "Override global content pack settings for this item."
+            "description": "Settings (genres) this item belongs to. Overrides the content pack's defaultItemSettings."
          },
          "tags": {
             "type": "array",
-            "description": "Deprecated. Adversary tags.",
+            "description": "Deprecated. Use powerLevels instead.",
             "x-hb": { "hidden": true },
             "items": {
                "type": "string"
@@ -437,7 +446,7 @@
          },
          "id": {
             "type": "string",
-            "description": "Unique item id. You shouldn't have to touch this field.",
+            "description": "Generated automatically. Don't edit.",
             "x-hb": { "hidden": true }
          }
       },

@@ -6,17 +6,17 @@
          {
             "title": "String",
             "type": "string",
-            "description": "Any plain text."
+            "description": "A paragraph of text."
          },
 
          {
             "title": "Advanced Text",
             "type": "object",
-            "description": "Can display a variety of containers including plain text, sidebars, tables, lists, etc.",
+            "description": "Titled block of entries. The type sets the style.",
             "properties": {
                "type": {
                   "type": "string",
-                  "description": "Type of text container. This will change how the text is displayed.",
+                  "description": "Display style.",
                   "enum": [
                      "text",
                      "sidebar",
@@ -27,34 +27,37 @@
                },
                "title": {
                   "type": "string",
-                  "description": "Section Title."
+                  "description": "Heading."
                },
                "forceTitleLevel": {
                   "title": "Title level",
                   "type": "integer",
-                  "description": "Forces the title to appear as a certain heading type. Title level 1 is for chapter headings, title level 2 for section headings, etc."
+                  "description": "Heading level override. 1 is a chapter heading, 2 a section heading, and so on."
                },
                "page": {
                   "type": "integer",
-                  "description": "Source page reference."
+                  "description": "Source page number."
                },
                "hasModal": {
                   "title": "Opens as modal",
                   "type": "boolean",
-                  "description": "If the text container can be clicked on to open as a modal. This should rarely be set to true."
+                  "description": "Whether clicking the block opens it in a modal. Rarely needed."
                },
-               "entries": { "$ref": "varyingDisplay_sub_schema.json" },
+               "entries": {
+                  "$ref": "varyingDisplay_sub_schema.json",
+                  "description": "Content of the block."
+               },
                "_ref": {
                   "type": "object",
-                  "description": "Displays other existing content (like a table) so you don't have to write it out again.",
+                  "description": "Shows an existing item of this type instead of writing it out (example: a sidebar).",
                   "properties": {
                      "name": {
                         "type": "string",
-                        "description": "Name of the item."
+                        "description": "Item name."
                      },
                      "source": {
                         "type": "string",
-                        "description": "Source of the item (abbreviation). Example: crb.",
+                        "description": "Source abbreviation (example: CRB). Defaults to this content pack.",
                         "x-hb": { "span": 1 }
                      }
                   },
@@ -84,16 +87,15 @@
          {
             "title": "Notice",
             "type": "object",
-            "description": "A notice container is used to draw attention to specific text. They can be colored blue (standard), green, yellow, and red.",
+            "description": "Colored callout box.",
             "properties": {
                "type": {
                   "type": "string",
-                  "enum": ["notice"],
-                  "description": "Required to display a notice block."
+                  "enum": ["notice"]
                },
                "variant": {
                   "type": "string",
-                  "description": "This dictates the color of the notice. info: blue, success: green, warn: yellow, error: red.",
+                  "description": "Color. info is blue (default), success green, warn yellow, error red.",
                   "enum": [
                      "info",
                      "success",
@@ -103,10 +105,10 @@
                },
                "entries": {
                   "type": "array",
-                  "description": "Text displayed in the notice.",
+                  "description": "Notice text.",
                   "items": {
                      "type": "string",
-                     "description": "Text displayed in the notice."
+                     "description": "Notice text."
                   }
                }
             },
@@ -123,11 +125,11 @@
          {
             "title": "Quote",
             "type": "object",
+            "description": "Quoted text with an attribution.",
             "properties": {
                "type": {
                   "type": "string",
-                  "enum": ["quote"],
-                  "description": "Required to display a quote block."
+                  "enum": ["quote"]
                },
                "entries": {
                   "type": "array",
@@ -139,7 +141,7 @@
                },
                "by": {
                   "type": "string",
-                  "description": "Author attribution.",
+                  "description": "Who said it.",
                   "x-hb": { "span": 1 }
                }
             },
@@ -156,30 +158,31 @@
          {
             "title": "List",
             "type": "object",
+            "description": "List of items, bulleted by default.",
             "properties": {
                "type": {
                   "type": "string",
                   "enum": ["list", "list-no-bullet"],
-                  "description": "Required to show a list. list-no-bullet will render the list without bullet points on the left."
+                  "description": "list-no-bullet hides the bullets."
                },
                "title": {
                   "type": "string",
-                  "description": "List title."
+                  "description": "Title above the list."
                },
                "description": {
                   "type": "string",
-                  "description": "List description (rendered between the title and the list).",
+                  "description": "Text between the title and the list.",
                   "x-hb": { "span": "full" }
                },
                "items": {
                   "type": "array",
-                  "description": "List of items for the list.",
+                  "description": "List items. Use a list object for a nested list.",
                   "items": {
                      "oneOf": [
                         {
                            "title": "Text",
                            "type": "string",
-                           "description": "Plain text item."
+                           "description": "List item."
                         },
                         {
                            "title": "List",
@@ -189,23 +192,23 @@
                               "type": {
                                  "type": "string",
                                  "enum": ["list", "list-no-bullet"],
-                                 "description": "Required to show a list. list-no-bullet will render the list without bullet points on the left."
+                                 "description": "list-no-bullet hides the bullets."
                               },
                               "title": {
                                  "type": "string",
-                                 "description": "List title."
+                                 "description": "Title above the list."
                               },
                               "description": {
                                  "type": "string",
-                                 "description": "List description (rendered between the title and the list).",
+                                 "description": "Text between the title and the list.",
                                  "x-hb": { "span": "full" }
                               },
                               "items": {
                                  "type": "array",
-                                 "description": "List of items for the list.",
+                                 "description": "List items. Use a list object for a nested list.",
                                  "items": {
                                     "type": "string",
-                                    "description": "Plain text item."
+                                    "description": "List item."
                                  }
                               }
                            },
@@ -237,15 +240,15 @@
          {
             "title": "Table",
             "type": "object",
+            "description": "A table written inline, or an existing one shown by _ref.",
             "properties": {
                "type": {
                   "type": "string",
-                  "enum": ["table"],
-                  "description": "Required to show a table."
+                  "enum": ["table"]
                },
                "page": {
                   "type": "integer",
-                  "description": "Source page reference."
+                  "description": "Source page number."
                },
                "title": {
                   "type": "string",
@@ -253,29 +256,29 @@
                },
                "subtitle": {
                   "type": "string",
-                  "description": "Subtitle (goes above the table)."
+                  "description": "Text above the table."
                },
                "foot": {
                   "type": "string",
-                  "description": "Alternate subtitle (goes below the table)."
+                  "description": "Text below the table."
                },
                "columns": {
                   "type": "array",
-                  "description": "List of column headers for the table.",
+                  "description": "Table columns.",
                   "items": {
                      "type": "object",
                      "properties": {
                         "header": {
                            "type": "string",
-                           "description": "Label displayed at the top of the column."
+                           "description": "Column heading."
                         },
                         "value": {
                            "type": "string",
-                           "description": "This value is mapped to the rows so each value is placed in the correct column. If this value is omitted, the \"header\" value will be used instead (case insensitive)."
+                           "description": "Row key for this column. Defaults to the header (case-insensitive)."
                         },
                         "size": {
                            "type": "integer",
-                           "description": "Width of the column. This is calculated as a fraction of the total column sizes. Example: three columns with widths 2, 3, 3. Total is 8, so the first column will be 2/8 (or 1/4) the total width of the table."
+                           "description": "Relative width. Sizes 2, 3, 3 give widths of 2/8, 3/8, 3/8."
                         }
                      },
                      "required": [
@@ -290,13 +293,13 @@
                },
                "rows": {
                   "type": "array",
-                  "description": "Rows in the table.",
+                  "description": "One object per row, keyed by column value. A \"subtitle\" key renders a subtitle row.",
                   "x-hb": { "widget": "tableRows" },
                   "items": { "$ref": "tableRow_sub_schema.json" }
                },
                "_ref": {
                   "type": "object",
-                  "description": "Displays other existing content (like a table) so you don't have to write it out again.",
+                  "description": "Shows an existing item of this type instead of writing it out (example: a sidebar).",
                   "properties": {
                      "name": {
                         "type": "string",
@@ -304,7 +307,7 @@
                      },
                      "source": {
                         "type": "string",
-                        "description": "Table source (abbreviation). Example: crb.",
+                        "description": "Source abbreviation (example: CRB). Defaults to this content pack.",
                         "x-hb": { "span": 1 }
                      }
                   },
@@ -334,18 +337,20 @@
          {
             "title": "Grid",
             "type": "object",
-            "description": "A masonry-style grid for organizing content into a grid.",
+            "description": "Masonry layout. Arranges entries into columns.",
             "properties": {
                "type": {
                   "type": "string",
-                  "enum": ["grid"],
-                  "description": "Required to show a grid."
+                  "enum": ["grid"]
                },
                "columns": {
                   "type": "integer",
-                  "description": "# of columns in the grid."
+                  "description": "Number of columns."
                },
-               "entries": { "$ref": "varyingDisplay_sub_schema.json" }
+               "entries": {
+                  "$ref": "varyingDisplay_sub_schema.json",
+                  "description": "Grid content. Each entry is one cell."
+               }
             },
             "required": [
                "type",
@@ -362,14 +367,21 @@
             "properties": {
                "type": {
                   "type": "string",
-                  "enum": ["image"],
-                  "description": "Required to show an image."
+                  "enum": ["image"]
                },
                "imageUrl": {
                   "title": "Image URL",
                   "type": "string",
-                  "description": "Url to the image.",
+                  "description": "Image URL.",
                   "x-hb": { "span": "full" }
+               },
+               "height": {
+                  "type": "string",
+                  "description": "Maximum display height as a CSS length (example: 400px). The image keeps its aspect ratio."
+               },
+               "width": {
+                  "type": "string",
+                  "description": "Maximum display width as a CSS length (example: 400px or 50%). The image keeps its aspect ratio."
                }
             },
             "required": [
@@ -381,24 +393,23 @@
          {
             "title": "Rule",
             "type": "object",
-            "description": "Displays an existing rule in the text.",
+            "description": "Shows an existing rule.",
             "properties": {
                "type": {
                   "type": "string",
-                  "enum": ["rule"],
-                  "description": "Required to show a rule."
+                  "enum": ["rule"]
                },
                "_ref": {
                   "type": "object",
-                  "description": "Displays an existing rule so it doesn't have to be written out again.",
+                  "description": "The rule to show.",
                   "properties": {
                      "name": {
                         "type": "string",
-                        "description": "Name of the rule."
+                        "description": "Rule name."
                      },
                      "source": {
                         "type": "string",
-                        "description": "Rule source (abbreviation). Example: crb.",
+                        "description": "Source abbreviation (example: CRB). Defaults to this content pack.",
                         "x-hb": { "span": 1 }
                      }
                   },
@@ -412,6 +423,7 @@
                },
                "description": {
                   "type": "array",
+                  "description": "Leave empty. The rule's own text is shown.",
                   "x-hb": { "widget": "paragraphs" },
                   "items": {
                      "type": "string"

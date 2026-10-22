@@ -10,21 +10,21 @@
          },
          "page": {
             "type": "integer",
-            "description": "Source page reference."
+            "description": "Source page number."
          },
          "imageUrl": {
             "title": "Image URL",
             "type": "string",
-            "description": "Url to a related image.",
+            "description": "URL of a related image.",
             "x-hb": { "span": "full" }
          },
          "concentration": {
             "type": "boolean",
-            "description": "If the spell allows the concentration maneuver to sustain its effects to the next round."
+            "description": "Whether the concentrate maneuver can sustain the spell."
          },
          "difficulty": {
             "type": "string",
-            "description": "Base difficulty of the spell. simple/easy/average/hard/daunting/formidable.",
+            "description": "Base difficulty.",
             "enum": [
                "simple",
                "easy",
@@ -36,7 +36,7 @@
          },
          "range": {
             "type": "string",
-            "description": "Maximum default range of the spell. self/engaged/short/medium/long/extreme/strategic.",
+            "description": "Base range.",
             "enum": [
                "Self",
                "Engaged",
@@ -49,7 +49,7 @@
          },
          "skills": {
             "type": "array",
-            "description": "List of skills which can be used to cast this spell.",
+            "description": "Skills that can cast this spell.",
             "items": {
                "type": "object",
                "properties": {
@@ -59,7 +59,7 @@
                   },
                   "source": {
                      "type": "string",
-                     "description": "Skill source (abbreviation). Example: crb.",
+                     "description": "Source abbreviation (example: CRB). Omit if it's in this content pack.",
                      "x-hb": { "span": 1 }
                   }
                },
@@ -75,24 +75,24 @@
          "narrative": {
             "type": "array",
             "x-hb": { "widget": "paragraphs" },
-            "description": "Narrative description of the spell.",
+            "description": "Narrative description.",
             "items": {
                "type": "string",
-               "description": "Narrative description of the spell."
+               "description": "Narrative description."
             }
          },
          "structured": {
             "type": "array",
             "x-hb": { "widget": "paragraphs" },
-            "description": "Structured description of the spell.",
+            "description": "Rules description.",
             "items": {
                "type": "string",
-               "description": "Structured description of the spell."
+               "description": "Rules description."
             }
          },
          "additionalEffects": {
             "type": "array",
-            "description": "List of additional effects that may optionally be added to the spell.",
+            "description": "Optional effects that raise the difficulty when added.",
             "items": {
                "type": "object",
                "properties": {
@@ -103,19 +103,19 @@
                   "difficultyMod": {
                      "title": "Difficulty modifier",
                      "type": "integer",
-                     "description": "Difficulty modifier the effect adds to the spell. The value here translates to a number of difficulty dice."
+                     "description": "Difficulty dice added."
                   },
                   "difficultyUpgrade": {
                      "type": "integer",
-                     "description": "Number of difficulty dice to upgrade when adding this effect."
+                     "description": "Difficulty dice upgraded."
                   },
                   "description": {
                      "type": "array",
                      "x-hb": { "widget": "paragraphs" },
-                     "description": "Effect description.",
+                     "description": "Effect text.",
                      "items": {
                         "type": "string",
-                        "description": "Effect description."
+                        "description": "Effect text."
                      }
                   }
                },
@@ -132,7 +132,7 @@
          },
          "id": {
             "type": "string",
-            "description": "Unique item id. You shouldn't have to touch this field.",
+            "description": "Generated automatically. Don't edit.",
             "x-hb": { "hidden": true }
          }
       },

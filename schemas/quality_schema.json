@@ -11,7 +11,7 @@
          },
          "page": {
             "type": "integer",
-            "description": "Source page reference."
+            "description": "Source page number."
          },
          "activation": {
             "type": "string",
@@ -29,14 +29,15 @@
                "weapon",
                "vehicle"
             ],
-            "description": "What gear category the quality can apply to."
+            "description": "Gear the quality can apply to."
          },
          "description": {
-            "$ref": "varyingDisplay_sub_schema.json"
+            "$ref": "varyingDisplay_sub_schema.json",
+            "description": "Quality text."
          },
          "id": {
             "type": "string",
-            "description": "Unique item id. You shouldn't have to touch this field.",
+            "description": "Generated automatically. Don't edit.",
             "x-hb": { "hidden": true }
          }
       },

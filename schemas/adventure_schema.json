@@ -8,11 +8,17 @@
             "type": "string",
             "description": "Adventure name."
          },
-         "chapters": { "$ref": "varyingDisplay_sub_schema.json" },
-         "settings": { "$ref": "settings_sub_schema.json" },
+         "chapters": {
+            "$ref": "varyingDisplay_sub_schema.json",
+            "description": "Adventure text. Usually one titled block per chapter."
+         },
+         "settings": {
+            "$ref": "settings_sub_schema.json",
+            "description": "Settings (genres) this item belongs to. Overrides the content pack's defaultItemSettings."
+         },
          "id": {
             "type": "string",
-            "description": "Unique item id. You shouldn't have to touch this field.",
+            "description": "Generated automatically. Don't edit.",
             "x-hb": { "hidden": true }
          }
       },

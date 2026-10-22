@@ -10,27 +10,27 @@
          },
          "page": {
             "type": "integer",
-            "description": "Page number on which the sidebar is found."
+            "description": "Source page number."
          },
          "type": {
             "type": "string",
-            "description": "Sidebar type classification. Used for filtering."
+            "description": "Sidebar category, used for filtering."
          },
          "description": {
             "$ref": "./varyingDisplay_sub_schema.json",
-            "description": "Sidebar text and other information."
+            "description": "Sidebar text."
          },
          "summary": {
             "type": "array",
             "items": {
                "type": ["string", "integer"]
             },
-            "description": "Deprecated. Shortened summary that will appear in popovers.",
+            "description": "Deprecated. Leave empty.",
             "x-hb": { "hidden": true }
          },
          "id": {
             "type": "string",
-            "description": "Unique item id. You shouldn't have to touch this field.",
+            "description": "Generated automatically. Don't edit.",
             "x-hb": { "hidden": true }
          }
       },
