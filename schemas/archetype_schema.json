@@ -222,7 +222,7 @@
                      {
                         "type": "array",
                         "title": "Limited choice",
-                        "description": "Skills or skill categories the player can choose from.",
+                        "description": "Skills only: the player picks ranksTotal / ranksEach of them. A category with skills: the skills are granted outright and the player picks one skill from the category at 1 rank. Only the first category is used. (Homebrew Builder uses this to populate skill selection).",
                         "items": {
                            "oneOf": [
                               {

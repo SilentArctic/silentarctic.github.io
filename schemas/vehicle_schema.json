@@ -102,6 +102,12 @@
             "type": ["string", "integer"],
             "description": "Cargo capacity, in encumbrance."
          },
+         "hardPoints": {
+            "title": "Hard points",
+            "type": ["string", "integer"],
+            "description": "Hard points available for attachments.",
+            "x-hb": { "span": 1 }
+         },
          "ftlRange": {
             "title": "FTL range",
             "type": "string",
@@ -324,6 +330,7 @@
          "hasVariants",
          "imageUrl",
          "passengers",
+         "hardPoints",
          "weapons",
          "abilities",
          "ftlRange",

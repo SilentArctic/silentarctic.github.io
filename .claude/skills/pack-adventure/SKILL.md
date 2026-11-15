@@ -7,9 +7,11 @@ disable-model-invocation: true
 
 # Adventures → content pack
 
+**Recommended effort:** high (long chapters with embedded stat blocks and many cross-links).
+
 Arguments: `$ARGUMENTS` (PDF path, printed page or range, destination JSON).
 
-**First**, read `.claude/skills/pack-core/workflow.md` and `.claude/skills/pack-core/tagging.md`, and follow the workflow step by step. This file only adds what's specific to adventures.
+**First**, read `.claude/skills/pack-core/workflow.md` and `.claude/skills/pack-core/tagging.md` (skip a file only if its full text is still in your context, e.g. earlier in a `/pack-core` run; re-read it after any context summary), and follow the workflow step by step. This file only adds what's specific to adventures.
 
 ## Writes
 
@@ -27,7 +29,7 @@ An adventure shows other items; it never copies them. Everything that exists (or
 | Captioned table ("Table 1-1: …") | `{ "type": "table", "_ref": { "name": "Table 1-1: …" }, "columns": [], "rows": [] }` |
 | Titled sidebar (boxed text with its own title) | `{ "type": "sidebar", "_ref": { "name": "…" }, "entries": [] }` |
 | Rules section that is a rule item (a status, hazard, subsystem) | `{ "type": "rule", "_ref": { "name": "…" }, "description": [] }` |
-| Gear, vehicle, talent, quality, spell profile or description | A tag at the mention (`{@gear Six Shooter}`, `{@vehicle Carriage|coach}`); the profile isn't copied. |
+| Gear, vehicle, talent, quality, spell profile or description | A tag at the mention (`{@gear Six Shooter}`, `{@vehicle Carriage\|coach}`); the profile isn't copied. |
 | Any other mention of an existing item | The normal tag (`tagging.md`). |
 
 - `_ref` only renders for **tables, sidebars, and rules**. The client shows a `_ref` through the target's `description` or table view, and an adversary/gear `_ref` renders nothing. Everything else is a tag.
@@ -83,7 +85,7 @@ Straight after extracting, and before staging anything:
     - A section that sits *inside* the flow of its parent would break that flow if it rendered at 2. Examples: a rules aside mid-scene, a run-in heading, or a subsection followed by more of the parent's text or tag lines. Give it `"forceTitleLevel": 3` (see "Effects of the Ghost Carriage" in BOOST:5 "Ghost Carriage").
     - Children render one level below their parent's *rendered* level: under a forced 3, they're 4 without forcing. Only force a deeper section when it too would render at 1–2 and disrupt the content.
   - Otherwise, only use `forceTitleLevel` when the rendered level would be wrong. Don't skip levels.
-  - List every forced level under ℹ judgment calls.
+  - Log every forced level as a ledger decision (auto-resolved, with `Undo?` = drop the `forceTitleLevel`).
 - **Ask early.** Right after extraction, if any boundary or nesting was a judgment call, show the proposed outline and ask before staging. List chapter titles with pages, nested sections indented, plus where the adventure starts and ends.
 
   ```
@@ -95,7 +97,7 @@ Straight after extracting, and before staging anything:
   └─ Wrap-up (p.6)
   ```
 
-  If no boundary was a judgment call, list the outline under ℹ judgment calls instead.
+  If no boundary was a judgment call, log the outline as an auto-resolved ledger decision instead of asking.
 
 ## Reading the book
 
@@ -107,7 +109,7 @@ Straight after extracting, and before staging anything:
 | Read-aloud / boxed player text | `{ "type": "read-aloud", "entries": [ … ] }` (add `title` only when printed) |
 | Worked examples | `{ "type": "example", "title": "…", "entries": [ … ] }` |
 | Bulleted / run-in lists (checks, outcomes, clues) | `{ "type": "list", "items": [ … ] }`, or `list-no-bullet` for run-in bold labels |
-| Skill checks | `{@difficulty average|Perception}`, `{@difficulty hard|Vigilance or Coordination|1}`; results `{@symbols aa}` |
+| Skill checks | `{@difficulty average\|Perception}`, `{@difficulty hard\|Vigilance or Coordination\|1}`; results `{@symbols aa}` |
 | Statuses and rules named in prose | `{@rule immobilized}` |
 | NPCs without stat blocks | Plain prose; tag only if an item exists |
 | Images, maps, handout art | Left out and listed (the user adds `{ "type": "image", "imageUrl" }` later) |

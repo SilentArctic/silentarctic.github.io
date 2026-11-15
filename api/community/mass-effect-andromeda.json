@@ -1,0 +1,4176 @@
+{
+   "$schema": "https://silentarctic.github.io/schemas/schema.json",
+   "_meta": {
+      "source": {
+         "version": "2026.11.11",
+         "json": "mass-effect-andromeda",
+         "full": "Mass Effect: Andromeda",
+         "abbreviation": "ME:A",
+         "color": "#4A9FE0",
+         "url": "https://files.blusunrize.de/documents/Genesys-MassEffectAndromeda.pdf",
+         "currentRelease": {
+            "version": "v2.1",
+            "date": "4 September 2026"
+         },
+         "authors": [
+            "BluSunrize"
+         ],
+         "convertedBy": [
+            "SilentArctic"
+         ]
+      },
+      "filters": {
+         "talentPrereqs": [
+            "Angara"
+         ]
+      },
+      "defaultItemSettings": [
+         {
+            "name": "space opera",
+            "source": "crb"
+         },
+         {
+            "name": "Mass Effect"
+         }
+      ]
+   },
+   "talent": [
+      {
+         "name": "A Career in Ruins",
+         "page": 7,
+         "tier": 1,
+         "activation": "passive",
+         "ranked": false,
+         "description": [
+            "When you take this talent, your character gains {@skill Coordination}, {@skill Knowledge (Society)||me} or {@skill Perception} as a career skill. In addition, when using one of these skills to explore ruins or relics of a bygone civilization, your character may spend {@symbols aa} to heal 3 strain."
+         ],
+         "tags": [
+            "general",
+            "career skills",
+            "recovery",
+            "investigation"
+         ]
+      },
+      {
+         "name": "Black Market Contacts",
+         "page": 7,
+         "tier": 1,
+         "activation": "active (incidental)",
+         "ranked": true,
+         "description": [
+            "When looking to purchase illegal, exotic, or black market goods, your character may use this talent to decrease an item's {@rule rarity} by one per rank of Black Market Contacts. For each decrease to the item's {@rule rarity}, its cost increases by 50% of its base cost."
+         ],
+         "tags": [
+            "general",
+            "social",
+            "money",
+            "gear",
+            "downside"
+         ]
+      },
+      {
+         "name": "Frontier Navigator",
+         "page": 7,
+         "tier": 1,
+         "activation": "passive",
+         "ranked": false,
+         "description": [
+            "When you take this talent, your character gains {@skill Astrocartography}, {@skill Piloting} or {@skill Operating} as a career skill. In addition, when using one of these skills to chart a course or fly through hostile conditions, your character may spend {@symbols aa} to heal 3 strain."
+         ],
+         "tags": [
+            "general",
+            "career skills",
+            "recovery",
+            "vehicles"
+         ]
+      },
+      {
+         "name": "Outpost Engineer",
+         "page": 7,
+         "tier": 1,
+         "activation": "passive",
+         "ranked": false,
+         "description": [
+            "When you take this talent, your character gains {@skill Computers}, {@skill Knowledge (PhysSci)||me} or {@skill Mechanics} as a career skill. In addition, when using one of these skills to help build up an {@rule Outposts|outpost}, your character may spend {@symbols aa} to heal 3 strain."
+         ],
+         "tags": [
+            "general",
+            "career skills",
+            "recovery",
+            "crafting"
+         ]
+      },
+      {
+         "name": "Wilderness Explorer",
+         "page": 7,
+         "tier": 1,
+         "activation": "passive",
+         "ranked": false,
+         "description": [
+            "When you take this talent, your character gains {@skill Driving}, {@skill Knowledge (LifeSci)||me} or {@skill Survival} as a career skill. In addition, when using one of these skills to traverse hostile terrain or find shelter, your character may spend {@symbols aa} to heal 3 strain."
+         ],
+         "tags": [
+            "general",
+            "career skills",
+            "recovery",
+            "vehicles"
+         ]
+      },
+      {
+         "name": "Aerial Assault",
+         "page": 7,
+         "tier": 2,
+         "activation": "active (incidental)",
+         "ranked": false,
+         "description": [
+            "While your character is {@sidebar flying} as a result of using {@gear Jump Jets||me} (see page 71 of the {@title Mass Effect} setting) or similar equipment, they may spend {@symbols aa} to extend the duration of their flight by one round."
+         ],
+         "tags": [
+            "combat",
+            "mobility",
+            "gear"
+         ]
+      },
+      {
+         "name": "Blooded",
+         "page": 7,
+         "tier": 2,
+         "activation": "passive",
+         "ranked": true,
+         "description": [
+            "Your character adds {@dice boost} for each rank of Blooded to any checks they make to resist drugs or poisons. Reduce the duration of any effects caused by drugs or poisons (including beneficial ones) by 1 round per rank of Blooded, to a minimum of 1."
+         ],
+         "tags": [
+            "general",
+            "skill check",
+            "mitigation",
+            "downside"
+         ]
+      },
+      {
+         "name": "Camouflage Technique",
+         "page": 7,
+         "tier": 2,
+         "activation": "active (incidental)",
+         "ranked": false,
+         "description": [
+            "When making a {@skill Stealth} check while in the wilderness, your character may use this talent to add a number of {@symbols s} equal to their ranks in {@skill Survival} to the check."
+         ],
+         "tags": [
+            "general",
+            "skill check",
+            "result manipulation"
+         ]
+      },
+      {
+         "name": "Frontier Diplomacy",
+         "page": 7,
+         "tier": 2,
+         "activation": "active (maneuver)",
+         "ranked": false,
+         "description": [
+            "If your character is armed, they may use this talent to conspicuously display their weapon and add {@symbols ssh} to the results of the next social skill check they make this turn. This may have additional narrative repercussions at your GM's discretion."
+         ],
+         "tags": [
+            "social",
+            "skill check",
+            "result manipulation",
+            "narrative",
+            "downside"
+         ]
+      },
+      {
+         "name": "Game Hunter",
+         "page": 7,
+         "tier": 2,
+         "activation": "passive",
+         "ranked": false,
+         "description": [
+            "Your character counts the Critical rating of their weapon as one lower to a minimum of 1 when making an attack targeting an animal."
+         ],
+         "tags": [
+            "combat",
+            "critical injury",
+            "melee",
+            "ranged"
+         ]
+      },
+      {
+         "name": "Aerial Assault (Improved)",
+         "page": 8,
+         "tier": 3,
+         "activation": "passive",
+         "ranked": false,
+         "prerequisites": true,
+         "description": [
+            "{@i Your character must have purchased the {@talent Aerial Assault} talent to benefit from this talent.} While your character is {@sidebar flying} as a result of using {@gear Jump Jets||me} (see page 71 of the {@title Mass Effect} setting) or similar equipment, they add {@symbols a} to any combat checks they make."
+         ],
+         "tags": [
+            "combat",
+            "mobility",
+            "gear",
+            "result manipulation"
+         ]
+      },
+      {
+         "name": "Community Support",
+         "page": 8,
+         "tier": 3,
+         "activation": "passive",
+         "ranked": false,
+         "prerequisites": [
+            "Angara"
+         ],
+         "description": [
+            "{@i Your character must be an {@archetype angara} or have spent ample time alongside {@archetype angara} to benefit from this talent.} When assisting another character's skill check, if your character knows the other's Strength or Desire Motivation, they may reroll up to three dice from the check."
+         ],
+         "tags": [
+            "general",
+            "support",
+            "result manipulation",
+            "motivation",
+            "allegiance"
+         ]
+      },
+      {
+         "name": "Munitions Engineer",
+         "page": 8,
+         "tier": 3,
+         "activation": "passive",
+         "ranked": false,
+         "description": [
+            "When your character makes a {@skill Mechanics} check to craft {@filter gear|ammunition upgrades|source:mass-effect=1;class:ammunition=1} (see page 62 of the {@title Mass Effect} setting) they reduce the difficulty of the check by one. Additionally, they may spend {@symbols aa} instead of {@symbols t} from the check to increase the rating of the quality provided by the ammunition by one."
+         ],
+         "tags": [
+            "general",
+            "crafting",
+            "skill check",
+            "mitigation",
+            "gear",
+            "item quality"
+         ]
+      },
+      {
+         "name": "Something to Prove",
+         "page": 8,
+         "tier": 3,
+         "activation": "active (incidental)",
+         "ranked": false,
+         "description": [
+            "Once per session, your character may suffer 4 strain to use this talent in order to reroll one failed skill check. If the check succeeds, your character heals 4 strain."
+         ],
+         "tags": [
+            "general",
+            "result manipulation",
+            "recovery"
+         ]
+      },
+      {
+         "name": "Aerial Assault (Supreme)",
+         "page": 8,
+         "tier": 4,
+         "activation": "active (incidental, out of turn)",
+         "ranked": false,
+         "prerequisites": true,
+         "description": [
+            "{@i Your character must have purchased the {@talent Aerial Assault} talent to benefit from this talent.} When your character is targeted by a combat check while they are {@sidebar flying} as a result of using {@gear Jump Jets||me} (see page 71 of the {@title Mass Effect} setting) or similar equipment, they may use this talent and suffer a number of strain no greater than their ranks in {@skill Coordination} to add an equal number of {@symbols f} to the results of the check."
+         ],
+         "tags": [
+            "combat",
+            "defense",
+            "mobility",
+            "gear",
+            "result manipulation"
+         ]
+      },
+      {
+         "name": "Backlash",
+         "page": 8,
+         "tier": 4,
+         "activation": "active (incidental, out of turn)",
+         "ranked": false,
+         "prerequisites": true,
+         "description": [
+            "{@i Your character must have purchased the {@talent Parry} talent and have at least one rank in {@skill Biotics||me} to benefit from this talent.} While your character has one hand free, they may use the {@talent Parry} talent to reduce the damage from ranged attacks as well as melee attacks targeting your character.",
+            "Additionally, after the attack is resolved, you may spend {@symbols d} or {@symbols hhh} from the attacker's check to inflict damage equal to your character's ranks in {@skill Biotics||me} plus their ranks in {@talent Parry} to the attacker."
+         ],
+         "tags": [
+            "combat",
+            "defense",
+            "magic",
+            "melee",
+            "ranged"
+         ]
+      },
+      {
+         "name": "Havoc Slam",
+         "page": 8,
+         "tier": 4,
+         "activation": "passive",
+         "ranked": false,
+         "prerequisites": true,
+         "description": [
+            "{@i Your character must have purchased the {@talent Aerial Assault} talent to benefit from this talent.} When your character makes a melee attack, the attack inflicts additional damage equal to the number of {@rule range bands} they have moved during their turn."
+         ],
+         "tags": [
+            "combat",
+            "melee",
+            "mobility"
+         ]
+      },
+      {
+         "name": "Avatar of Justice",
+         "page": 8,
+         "tier": 5,
+         "activation": "active (incidental)",
+         "ranked": false,
+         "description": [
+            "When making a combat check, your character may suffer 1 strain to use this talent in order to downgrade the difficulty of the check a number of times equal to the number of Story Points in the players' pool."
+         ],
+         "tags": [
+            "combat",
+            "mitigation",
+            "story points"
+         ]
+      },
+      {
+         "name": "Avatar of Vengeance",
+         "page": 8,
+         "tier": 5,
+         "activation": "active (incidental)",
+         "ranked": false,
+         "description": [
+            "When your character inflicts a {@rule Critical Injuries|Critical Injury}, they may suffer 2 strain to use this talent in order to add +5 for each Story Point in the GM pool to the {@rule Critical Injuries|Critical Injury} roll."
+         ],
+         "tags": [
+            "combat",
+            "critical injury",
+            "story points"
+         ]
+      }
+   ],
+   "archetypeAbility": [
+      {
+         "name": "Sunlight Dependency",
+         "description": [
+            "If an angaran is not exposed to natural or artificial sunlight over the course of 24 hours, they \"go dark\", reducing their wound and strain thresholds by 2. This condition remains in effect until the angaran is exposed to sunlight again for at least an hour."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "weakness",
+            "stat modifier"
+         ]
+      },
+      {
+         "name": "Bioelectric Focus",
+         "description": [
+            "Angara may use tech powers without an {@filter gear|omni-tool|source:mass-effect=1;class:omni-tool=1}, instead relying on their natural bioelectric abilities. When doing so, they may ready a number of tech powers equal to their ranks in {@skill Tech||me}, add +3 to the damage of {@spell Tech Attack|tech attacks|me} and add {@dice boost} to all tech power checks. However, they may not ready the Incinerate or Cryo Blast powers."
+         ],
+         "tags": [
+            "combat",
+            "magic",
+            "passive",
+            "gear",
+            "skill check modifier"
+         ]
+      }
+   ],
+   "archetype": [
+      {
+         "name": "Angara",
+         "page": 6,
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 2,
+            "cunning": 1,
+            "willpower": 2,
+            "presence": 3
+         },
+         "wt": 11,
+         "st": 10,
+         "xp": 100,
+         "skills": {
+            "skills": [],
+            "ranksTotal": 1,
+            "ranksEach": 1,
+            "description": [
+               "Angara begin the game with one rank in {@skill Cool}, {@skill Charm}, {@skill Discipline} or {@skill Survival}. They obtain this rank before spending experience points, and this skill may not be increased higher than rank 2 during character creation."
+            ],
+            "choice": [
+               {
+                  "name": "Cool",
+                  "source": "crb",
+                  "ranks": 1
+               },
+               {
+                  "name": "Charm",
+                  "source": "crb",
+                  "ranks": 1
+               },
+               {
+                  "name": "Discipline",
+                  "source": "crb",
+                  "ranks": 1
+               },
+               {
+                  "name": "Survival",
+                  "source": "crb",
+                  "ranks": 1
+               }
+            ]
+         },
+         "abilities": [
+            {
+               "name": "Environmental Adaption",
+               "description": "Angara may remove {@dice setback} imposed by cold environments."
+            },
+            "Sunlight Dependency",
+            "Bioelectric Focus",
+            {"name":"Lack of Biotics","description":"Angara cannot become biotic or acquire a {@skill Biotics|biotic|me} skill rank by any means. They cannot use biotic powers, but they can be affected by them. {@i At your GM's discretion, you may ignore this restriction. Angara are considered to not have trained {@skill Biotics||me} due to lacking the necessary implants. With the arrival of the Milky Way races, this could of course be changed.}"}
+         ],
+         "description": [
+            "The angara are the only known sentient species local to the Heleus cluster. Scattered across numerous worlds, the angara are reuniting as a people. Though much of their culture and scientific knowledge has been lost, the angara continue to rebuild and resist the kett conquest of Heleus.",
+            "Angara have a unique control over electromagnetism. Specialized skin cells and organs allow them to generate and control electromagnetic fields artistically or unleash them in combat.",
+            "Their oral histories describe how ancient angara were tribal and nomadic before settling in cities. Many of them still live in large, tight-knit families and workplaces have a guild-like organizational structure. Politically the angara remain divided. Attempts at a reformed government were disrupted by the kett. Approximately five years ago, a coherent resistance movement emerged on Aya, the first to draw unilateral political support, with the goal of driving the kett out of Heleus for good."
+         ],
+         "why": [
+            "A people divided by their internal resistance movements and under constant threat by the kett, the angara are not dealt an easy lot in life.",
+            "Yet still they chose to accept the Milky Way races into Heleus, shared their knowledge and assistance.",
+            "Angara are in turn daring to leave their tight-knit communities and engage in cultural exchange with the newcomers. They are socially capable and talented in matters of survival and technology, making them a great addition to any party exploring the new mysteries of Heleus."
+         ]
+      }
+   ],
+   "sidebar": [
+      {
+         "name": "Personal Quests in the Initiative",
+         "page": 9,
+         "type": "character",
+         "description": [
+            {
+               "type": "list",
+               "items": [
+                  "Find a missing ark or supply ship, or recover a set of cryo pods ejected when an ark hit the Scourge.",
+                  "Revive a friend or family member from cryo.",
+                  "Rise to the position of power among the {@rule Andromeda Initiative|Initiative's} leaders."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Personal Quests among the Angara",
+         "page": 10,
+         "type": "character",
+         "description": [
+            {
+               "type": "list",
+               "items": [
+                  "Establish long lasting diplomatic relations and trade deals between the {@rule angara} and the new arrivals from the Milky Way.",
+                  "Find a disillusioned {@archetype angara} among the Roekaar and convince them to return.",
+                  "Uncover and chronicle the past of the {@archetype Angara}, and the true reason the Jardaan created them."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Personal Quests and the Outlaws",
+         "page": 11,
+         "type": "character",
+         "description": [
+            {
+               "type": "list",
+               "items": [
+                  "Build up a front of legal businesses, raking in enough money to make a comfortable life in the Heleus cluster.",
+                  "Create a smuggling outfit to rival the other {@rule Outlaws|outlaw} groups.",
+                  "Rise to a position of power among the Outcasts or Collective."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Personal Quests and Outposts",
+         "page": 12,
+         "type": "character",
+         "description": [
+            {
+               "type": "list",
+               "items": [
+                  "Becoming a governor of one of the newly founded colonies.",
+                  "Build a house for yourself, your family and your friends, to live out a peaceful life on the new frontier.",
+                  "Immortalize yourself through an outpost or colony named after you."
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Architects",
+         "page": 31,
+         "type": "adversary",
+         "description": [
+            "The largest known Remnant constructs, Architects, are those that supposedly dug out the large caverns that now house the vaults. While a few of them are encountered and fought by Ryder, they are not given stats in this chapter, due to their rarity and very unique, multi-phase combat."
+         ]
+      }
+   ],
+   "rule": [
+      {
+         "name": "Factions on the Frontier",
+         "page": 9,
+         "type": "faction",
+         "description": [
+            "Within the Heleus cluster of Andromeda, a variety of new factions work with and against each other for control of the sector. From the {@rule angara}, who have been under duress by the kett for decades to the {@rule Andromeda Initiative|Initiative}, newly arrived from the Milky Way and looking to set foot on the prospected golden worlds.",
+            "Any of these factions have benefits to provide, if you do right by them, and are sure to have work for your characters, should you want it. On the flip side, starting off in Andromeda may require picking up some debts with people, which may need to be repaid as your story progresses.",
+            "All but one of the factions introduced in {@title Mass Effect} are not found in {@title Andromeda} anymore, as such institutions as {@rule C-Sec||me}, the {@rule Citadel Space Governments|Citadel government|me}, {@rule Omega||me} or {@rule Cerberus||me} have been left behind. In their stead, you'll find new factions to fill their positions. The {@rule Mercenary Groups|Mercenary faction|me} however, is still widely applicable throughout the cluster, as various new companies keep cropping up to do all manners of dirty work for the right price.",
+            {
+               "type": "rule",
+               "_ref": {
+                  "name": "Andromeda Initiative"
+               },
+               "description": []
+            },
+            {
+               "type": "rule",
+               "_ref": {
+                  "name": "Angara"
+               },
+               "description": []
+            },
+            {
+               "type": "rule",
+               "_ref": {
+                  "name": "Outlaws"
+               },
+               "description": []
+            },
+            {
+               "type": "rule",
+               "_ref": {
+                  "name": "Outposts"
+               },
+               "description": []
+            }
+         ]
+      },
+      {
+         "name": "Andromeda Initiative",
+         "page": 9,
+         "type": "faction",
+         "description": [
+            "After its 600 year journey, the Initiative had a rather rough start into the new life in Heleus. With the Nexus being hit by the Scourge upon arrival, and the arks all appearing late and running into trouble, tensions have been running high. Following an uprising, many of the early woken colonists fled, and the Nexus is now more dependent than ever on the Pathfinders finding viable worlds to establish {@rule outposts}.",
+            {
+               "title": "Interacting with the Initiative",
+               "entries": [
+                  "As a member of the Initiative, you are likely to be one of the specialists, revived for their expertise in certain areas. Tasked with establishing {@rule outposts}, solving issues on the Nexus or the arks, or establishing contact to the other factions of the cluster brings with it the benefit of influence. You may work hard to allow your friends and family an expedited retrieval from Cryo, or slowly lever yourself into a position of power within the Initiative hierarchy."
+               ]
+            },
+            {
+               "type": "sidebar",
+               "_ref": {
+                  "name": "Personal Quests in the Initiative"
+               },
+               "entries": []
+            }
+         ]
+      },
+      {
+         "name": "Angara",
+         "page": 10,
+         "type": "faction",
+         "description": [
+            "As the only known sapient species from the Heleus cluster, the angara have been harassed by the kett for decades. As such, their initial disposition towards outsiders is cautious and reserved, though the recent interactions with the {@rule Andromeda Initiative|Initiative} and the Pathfinder have warmed them up. The Roekaar, a militant subgroup, disagrees with this position and expresses their xenophobia through hostile action against the angara and Milky Way races.",
+            {
+               "title": "Interacting with the Angara",
+               "entries": [
+                  "If your character is an {@archetype angara} and part of a diverse party of characters, they are likely to be a member of the Angaran Resistance, the current largest group of your people, organized under a quasi-government on Aya. In your service to this faction, you may have fought the kett for years, holding them back on the few worlds that your people have settled on. These good relations may allow you to call on support from the Resistance and its members, to help yourself and your newfound allies from the Milky Way.",
+                  "When working for the angara, you can trust most of them to be just and true in their requests. Your character may be tasked to organize supplies or otherwise assist in the struggle against the kett and the Roekaar, or called upon to improve relations with the {@rule Andromeda Initiative|Initiative}."
+               ]
+            },
+            {
+               "type": "sidebar",
+               "_ref": {
+                  "name": "Personal Quests among the Angara"
+               },
+               "entries": []
+            }
+         ]
+      },
+      {
+         "name": "Outlaws",
+         "page": 11,
+         "type": "faction",
+         "description": [
+            "A collection of exiles of the {@rule Andromeda Initiative|Initiative}, Outlaws is a term referring to various groups of criminals in the Heleus cluster. The majority of them fall into two factions, the Outcasts led by Sloan Kelly and the Collective, led by the elusive \"Charlatan\". Both groups struggle over control of Kadara, though currently Kelly's Outcasts hold the Kadara Port settlement, and thus the planet.",
+            "Their acts of piracy, smuggling, and other criminal activity are found across most of the cluster, and many of them will work for hire as mercenaries or raiders.",
+            {
+               "title": "Interacting with Outlaws",
+               "entries": [
+                  "If your character is part of a group of outlaws, they are unlikely to ask for legal business. Stealing, threatening, even killing are part of the daily work of the outlaws, and it is all too easy to get embroiled in the conflict between the two major groups.",
+                  "In return, having friends among the outlaws means easy access to all manner of illegal equipment, illicit substances, hiding places and restricted information. Just make sure not to get the groups confused."
+               ]
+            },
+            {
+               "type": "sidebar",
+               "_ref": {
+                  "name": "Personal Quests and the Outlaws"
+               },
+               "entries": []
+            }
+         ]
+      },
+      {
+         "name": "Outposts",
+         "page": 12,
+         "type": "faction",
+         "description": [
+            "With the Pathfinders establishing new outposts across the viable worlds of Heleus, each of them slowly matures into its own faction. While they are still associated with the {@rule Andromeda Initiative|Initiative}, and receive their directives, supplies and assigned colonists from the Nexus and arks, each outpost quickly becomes its own society, with individual needs and opportunities.",
+            "This faction is a broad cover for the various outposts established in the cluster, and any work done and recognition gained should be specific to one outpost, not all of them. This faction may also represent outposts not created by the {@rule Andromeda Initiative|Initiative}, by exiles or those who departed the Nexus for other reasons.",
+            "Examples of known outposts are:",
+            {
+               "type": "list",
+               "items": [
+                  "{@b Ditaeon:} Settled on Kadara and populated largely by miners, this outpost excavates the planet's rich supply of sulfur. Holds a fragile peace with Kadara Port.",
+                  "{@b New Tuchanka:} The krogan settlement, founded by those who departed the Nexus after the uprising. Following negotiations with clan-leader Nakmor Morda, the {@rule Andromeda Initiative|Initiative} now has their own outpost connected to this settlement and is working with the krogan settlement to ensure prosperity for both.",
+                  "{@b Prodromos:} Founded in the Fairwinds Basin on Eos, Prodromos is the third attempted outpost on the barren planet, and the first successful one. With the kett's hold on the planet diminished, and the vault's activation reducing the radiation in the atmosphere, this outpost now serves as a scientific research base for new {@rule Andromeda Initiative|Initiative} technologies.",
+                  "{@b Taerve Uni:} Founded on the frozen world of Voeld, this outpost was named in angaran as a symbol of cooperation. With the planet's rich supply of frozen water, this has become the outpost's primary export."
+               ]
+            },
+            {
+               "title": "Interacting with an Outpost",
+               "entries": [
+                  "If your character is one of the first to have settled a planet, you were undoubtedly given important tasks in regards to making it viable and sustainable for the new arrivals. These duties are not to be taken lightly, and despite your travels and exploration of Heleus, you are expected to make an appearance and contribute to the outpost regularly.",
+                  "When asking for support from the inhabitants of an outpost, you are sure to be given assistance where it does not endanger the colony, and are likely to find valuable information and breakthroughs in technology here, at the frontier."
+               ]
+            },
+            {
+               "type": "sidebar",
+               "_ref": {
+                  "name": "Personal Quests and Outposts"
+               },
+               "entries": []
+            }
+         ]
+      }
+   ],
+   "gear": [
+      {
+         "name": "Cryo-Gauntlet",
+         "page": 13,
+         "type": "weapon",
+         "class": "unique",
+         "description": [
+            "One of the few discovered pieces of Remnant weaponry that can be wielded by humanoids, the cryo-gauntlet is an encompassing armor piece that deploys itself from a Remnant tech core, and then covers the target with a flood of super-cooled particles. While its impact is not particularly powerful, the freezing effect is near instantaneous.",
+            "A cryo-gauntlet's {@quality Ensnare} quality triggers automatically on any target the weapon hits, with no need to spend {@symbols a}. A {@symbols t} from a successful combat check with this weapon may be spent to {@rule staggered|stagger} the target. The cryo-gauntlet is a unique weapon and can not have any weapon making applied to it."
+         ],
+         "skill": {
+            "name": "Brawl",
+            "source": "crb"
+         },
+         "damage": "+2",
+         "critical": 4,
+         "range": "Engaged",
+         "encumbrance": 2,
+         "hardPoints": 0,
+         "price": 4000,
+         "rarity": 9,
+         "special": [
+            {
+               "name": "Ensnare",
+               "value": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Reinforced",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Combat Shotgun",
+         "page": 14,
+         "type": "weapon",
+         "class": "mass driver",
+         "description": [
+            "These fully automatic variants of the commonly carried weaponry are far more lethal and rarely found in civilian hands. With their high fire-rates, they are highly lethal in the tight hallways of spaceships, making them popular in the hands of mercenaries and pirates."
+         ],
+         "skill": {
+            "name": "Ranged (Heavy)",
+            "source": "crb"
+         },
+         "damage": "8",
+         "critical": 3,
+         "range": "Short",
+         "encumbrance": 4,
+         "hardPoints": 2,
+         "price": 1300,
+         "rarity": 5,
+         "special": [
+            {
+               "name": "Auto-fire",
+               "source": "crb"
+            },
+            {
+               "name": "Blast",
+               "value": 5,
+               "source": "crb"
+            },
+            {
+               "name": "Inaccurate",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Vicious",
+               "value": 2,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Cobra RPG",
+         "page": 14,
+         "type": "weapon",
+         "class": "omni-blade",
+         "description": [
+            "While not a separate weapon, the Cobra RPG is a {@filter gear|software|source:mass-effect=1;class:software=1} installed on a user's {@filter gear|omni-tool|source:mass-effect=1;class:omni-tool=1}, combined with an upgrade to its fabrication module. It uses a mix of omnigel and other fabrication components along with volatile chemicals to fire an explosive projectile.",
+            "The Cobra requires two slots on the {@filter gear|omni-tool|source:mass-effect=1;class:omni-tool=1} and behaves like an {@filter gear|omni-blade|source:mass-effect=1;class:omni-blade=1} (see page 60 of {@title Mass Effect}). Additional shots for this weapon cost 700 credits and are encumbrance 0.",
+            "{@b Slots:} This item's hard points are the omni-tool slots it fills; it can only be installed in an omni-tool."
+         ],
+         "skill": {
+            "name": "Gunnery",
+            "source": "crb"
+         },
+         "damage": "15",
+         "critical": 3,
+         "range": "Medium",
+         "encumbrance": 0,
+         "hardPoints": 2,
+         "price": 3400,
+         "rarity": 7,
+         "special": [
+            {
+               "name": "Blast",
+               "value": 5,
+               "source": "crb"
+            },
+            {
+               "name": "Breach",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Inaccurate",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Limited Ammo",
+               "value": 1,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Sticky Grenade",
+         "page": 14,
+         "type": "weapon",
+         "class": "explosive",
+         "description": [
+            "These grenades are covered in a shell of sticky glue. While inactive, the glue is hardened, but moments after activation, it is made sticky by an electric pulse, allowing the device to be stuck to walls, ceilings, vehicles or people.",
+            "Sticky grenades can be set to detonate on contact or set with a timer to detonate up to three rounds after being activated. Setting the timer can be done as an incidental. Once a sticky grenade hits a target, it adheres to it and requires an {@difficulty average|Athletics} to remove."
+         ],
+         "skill": {
+            "name": "Ranged (Light)",
+            "source": "crb"
+         },
+         "damage": "10",
+         "critical": 4,
+         "range": "Short",
+         "encumbrance": 1,
+         "hardPoints": 0,
+         "price": 150,
+         "rarity": 8,
+         "special": [
+            {
+               "name": "Blast",
+               "value": 5,
+               "source": "crb"
+            },
+            {
+               "name": "Limited Ammo",
+               "value": 1,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Venom Shotgun",
+         "page": 14,
+         "type": "weapon",
+         "class": "unique",
+         "description": [
+            "Developed by the salarian Special Tasks Group, the Venom is designed as an exceptional weapon for dangerous sorties. Its projectiles are effectively micro-grenades, flying in a low arc to explode at the target. It also possesses a secondary fire which fires a cluster charge that explodes into multiple smaller grenades on impact. Due to its state as a STG weapon, the {@rule Andromeda Initiative|Initiative} only possesses very few of them, and is loath to part with them.",
+            "As a maneuver, a user may choose to charge the Venom to fire a cluster round; the next attack with the weapon gains the {@quality Blast|Blast 6} quality. The Venom is a unique weapon and can not have any weapon making applied to it."
+         ],
+         "skill": {
+            "name": "Ranged (Heavy)",
+            "source": "crb"
+         },
+         "damage": "8",
+         "critical": 4,
+         "range": "Medium",
+         "encumbrance": 4,
+         "hardPoints": 2,
+         "price": 2075,
+         "restricted": true,
+         "rarity": 8,
+         "special": [
+            {
+               "name": "Concussive",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Inaccurate",
+               "value": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Knockdown",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Modular Carry Frame",
+         "page": 15,
+         "type": "gear",
+         "class": "storage",
+         "description": [
+            "With the far more limited options for resupplying in the Heleus cluster, carrying additional equipment into the field becomes all the more important. As such, large, modular backpack systems have gained popularity again with explorers, travelers and soldiers alike. A sturdy metal frame which accepts a variety of modules in addition to providing the usual magnetic mounting points for weaponry.",
+            "The frame can be outfitted with up to three of the following modules. Each module beyond the first adds one {@dice setback} to any {@skill Coordination} and {@skill Stealth} checks the character makes.",
+            {
+               "type": "list",
+               "items": [
+                  "{@b {@gear Temperature Management Module}:} This module comes with a bodysuit or may plug into a character's armor to serve as an advanced climate control system, removing up to {@dice setback|2} from the user's checks added due to extreme heat or cold.",
+                  "{@b {@gear Communications Module}:} A communications hub with a strong antenna that allows encrypted communication at great ranges across a planetary surface. The encryption adds {@dice setback|2} to any checks made to intercept and unscramble them.",
+                  "{@b {@gear Sensor Module}:} With advanced scanning software and VI systems, this module provides awareness of any movements in the surrounding area. The system adds {@symbols s} to any checks to detect movement at up to long range and adds {@symbols a} to any {@skill Vigilance} checks made to {@rule determine initiative}.",
+                  "{@b {@gear Atmosphere Module}:} When attached to a {@gear vacuum sealed|vacuum sealed suit|me} or a {@gear Breath Mask and Respirator|breath mask|me}, this module provides an additional 12 hours of breathable atmosphere to the user.",
+                  "{@b {@gear Storage Module}:} An array of boxes and pouches which allows storing a variety of survival gear, ammunition, spare rations and other pieces of equipment. This module increases a character's {@rule encumbrance threshold} by 3."
+               ]
+            }
+         ],
+         "encumbrance": 0,
+         "price": 50,
+         "rarity": 2
+      },
+      {
+         "name": "Temperature Management Module",
+         "page": 15,
+         "type": "gear",
+         "class": "storage",
+         "description": [
+            "{@i Module for the {@gear Modular Carry Frame}.}",
+            "This module comes with a bodysuit or may plug into a character's armor to serve as an advanced climate control system, removing up to {@dice setback|2} from the user's checks added due to extreme heat or cold."
+         ],
+         "encumbrance": 2,
+         "price": 500,
+         "rarity": 3
+      },
+      {
+         "name": "Communications Module",
+         "page": 15,
+         "type": "gear",
+         "class": "storage",
+         "description": [
+            "{@i Module for the {@gear Modular Carry Frame}.}",
+            "A communications hub with a strong antenna that allows encrypted communication at great ranges across a planetary surface. The encryption adds {@dice setback|2} to any checks made to intercept and unscramble them."
+         ],
+         "encumbrance": 2,
+         "price": 500,
+         "rarity": 4
+      },
+      {
+         "name": "Sensor Module",
+         "page": 15,
+         "type": "gear",
+         "class": "storage",
+         "description": [
+            "{@i Module for the {@gear Modular Carry Frame}.}",
+            "With advanced scanning software and VI systems, this module provides awareness of any movements in the surrounding area. The system adds {@symbols s} to any checks to detect movement at up to long range and adds {@symbols a} to any {@skill Vigilance} checks made to {@rule determine initiative}."
+         ],
+         "encumbrance": 2,
+         "price": 800,
+         "rarity": 3
+      },
+      {
+         "name": "Atmosphere Module",
+         "page": 15,
+         "type": "gear",
+         "class": "storage",
+         "description": [
+            "{@i Module for the {@gear Modular Carry Frame}.}",
+            "When attached to a {@gear vacuum sealed|vacuum sealed suit|me} or a {@gear Breath Mask and Respirator|breath mask|me}, this module provides an additional 12 hours of breathable atmosphere to the user."
+         ],
+         "encumbrance": 3,
+         "price": 300,
+         "rarity": 3
+      },
+      {
+         "name": "Storage Module",
+         "page": 15,
+         "type": "gear",
+         "class": "storage",
+         "description": [
+            "{@i Module for the {@gear Modular Carry Frame}.}",
+            "An array of boxes and pouches which allows storing a variety of survival gear, ammunition, spare rations and other pieces of equipment. This module increases a character's {@rule encumbrance threshold} by 3."
+         ],
+         "encumbrance": -3,
+         "price": 25,
+         "rarity": 2
+      },
+      {
+         "name": "Direct AI Interface",
+         "page": 15,
+         "type": "cybernetic",
+         "description": [
+            "Designed for the Pathfinder program, these unique neural implants allow for a direct connection to a shipboard Artificial Intelligence. The user's raw sensory input is relayed to the AI, which in turn can offer feedback on all perceived situations. When fully synchronized, the implant becomes two-way, allowing the AI to provide direct neural input which the body of the user processes as its own - though the {@rule Andromeda Initiative} normally has safeguards in place to prevent this from happening.",
+            "A character with the direct AI interface decreases their strain threshold by 1. They can establish a link with an AI to allow them direct access to their sensory experiences - though usually the implant comes pre-made for a specific AI. While operating in one-way mode, the direct AI interface upgrades the ability of all {@characteristic Intellect}-based checks once.",
+            "Additionally, once per session, a character with this implant may spend an action and select three skills that they have one or no ranks in. Until the end of the current encounter, they count as having four ranks in each of the selected skills and one fewer rank in all other skills. They also suffer 2 strain at the beginning of each of their turns. If they are {@rule incapacitated}, the implant changes back to one-way mode.",
+            {
+               "type": "sidebar",
+               "_ref": {
+                  "name": "Replacements not Improvements",
+                  "source": "me"
+               },
+               "entries": []
+            }
+         ],
+         "price": 6000,
+         "rarity": 9,
+         "restricted": true,
+         "modifiers": [
+            {
+               "name": "Strain Threshold",
+               "type": "derived",
+               "value": "-1"
+            }
+         ]
+      },
+      {
+         "name": "Reflex Booster",
+         "page": 16,
+         "type": "cybernetic",
+         "description": [
+            "Originally designed to heal or replace damaged nervous systems, this invasive procedure uses nanomachines and nerve therapy to supercharge a user's nervous system. They gain incredible speed and reflexes, but some claim that after the upgrade, their perception changed to perceive everything slower than usual.",
+            "A character with this implant increases their ranks in {@skill Coordination} and {@skill Vigilance} by 1 and decreases their strain threshold by 1.",
+            {
+               "type": "sidebar",
+               "_ref": {
+                  "name": "Replacements not Improvements",
+                  "source": "me"
+               },
+               "entries": []
+            }
+         ],
+         "price": 800,
+         "rarity": 5,
+         "modifiers": [
+            {
+               "name": "Coordination",
+               "type": "skill",
+               "value": "+1"
+            },
+            {
+               "name": "Vigilance",
+               "type": "skill",
+               "value": "+1"
+            },
+            {
+               "name": "Strain Threshold",
+               "type": "derived",
+               "value": "-1"
+            }
+         ]
+      },
+      {
+         "name": "Corrosive Acid (1 dose)",
+         "page": 16,
+         "type": "gear",
+         "class": "drug",
+         "description": [
+            "Acids are dangerous, if imprecise weapons. They come in various states, as aerosols or liquid and can be applied to a target by exposure, as well as injection or ingestion.",
+            "A character affected by acid must make a {@difficulty hard|Resilience}. On a failed check, they suffer 2 wounds at the beginning of their turn for the next three rounds, plus one additional round per {@symbols h}."
+         ],
+         "encumbrance": 0,
+         "price": 600,
+         "rarity": 6
+      },
+      {
+         "name": "Oblivion (1 dose)",
+         "page": 16,
+         "type": "gear",
+         "class": "drug",
+         "description": [
+            "Discovered among the plant-life of Kadara, Oblivion is a highly addictive drug synthesized from a strain of bacteria. Despite its potential lethal consequences, it has quickly grown to become the most popular drug on Kadara, due to its relaxing and hallucinogenic effects.",
+            "A character may consume a dose of Oblivion as a maneuver. When they do, they heal all strain but are {@rule disoriented} and lose their free maneuver for the remainder of the encounter (or one hour in narrative time).",
+            "Taking a second dose makes the character unable to perform actions for this duration. Consuming a third dose within that time span requires the character to make a {@difficulty daunting|Resilience}. If they fail, they suffer an immediate {@rule Critical Injuries|critical injury} with a +40 modifier. Any additional doses upgrade the difficulty of the check once."
+         ],
+         "encumbrance": 0,
+         "price": 65,
+         "rarity": 6,
+         "restricted": true
+      },
+      {
+         "name": "Environmental Protection Field",
+         "page": 16,
+         "type": "gear",
+         "class": "survival",
+         "description": [
+            "These large energy fields are commonly projected around small, budding colony setups to protect them from the various dangers of the environment. Comprised of myriads of nanomachines suspended in a mass effect field, their settings are variable depending on the requirements posed. On planets with dangerous wildlife, they may simply be formed into a fence whereas they can be expanded to fully encompassing domes to shield against radiation and toxins. The energy requirements of these systems are massive and colonies require many field projectors to work in unison to cover their area.",
+            "The environmental protection field serves as a mostly narrative tool to facilitate the survival of a small installation or colony in hostile terrain. The given price and encumbrance are given mostly for the purposes of PCs acquiring this technology for a colony in need.",
+            "While inside an environmental protection field, reduce the difficulty of any {@skill Resilience} checks to resist environmental conditions by one. Additionally, the rating of any external {@rule Fire, Acid, and Corrosive Atmospheres|hot or corrosive environment} (see page 111 of the {@title Genesys} Core Rulebook) is reduced by 5 to a minimum of 0."
+         ],
+         "encumbrance": 7,
+         "price": 2200,
+         "rarity": 4
+      },
+      {
+         "name": "Condenser-Filtration Unit",
+         "page": 16,
+         "type": "gear",
+         "class": "survival",
+         "description": [
+            "A combination of water pump, filtration system and condenser, this portable device serves to provide liquid water for up to 3 people per day. It can extract moisture from the air or filter water from other sources such as pools and rivers. Additionally, it contains a heating system for boiling the water for cooking. The rechargeable power cell can power the device for a month."
+         ],
+         "encumbrance": 3,
+         "price": 300,
+         "rarity": 2
+      },
+      {
+         "name": "Survival Shelter",
+         "page": 16,
+         "type": "gear",
+         "class": "survival",
+         "description": [
+            "Designed as a one-person emergency solution, the survival shelters are standard upon most {@rule Andromeda Initiative|Initiative} vessels. Made of strong fabrics, a few composite elements and an insulating compound dispensed between the layers it offers ample protection from the elements. It's waterproof to full submersion, fireproof to temperatures common for volcanic areas, and can withstand lightning strikes. Setting up a shelter takes only a few minutes. First time users can rely on the aid of an augmented reality assembly guide, deployed from their {@filter gear|omni-tool|source:mass-effect=1;class:omni-tool=1}."
+         ],
+         "encumbrance": 2,
+         "price": 150,
+         "rarity": 4
+      },
+      {
+         "name": "Climbing Gear",
+         "page": 16,
+         "type": "gear",
+         "class": "tools",
+         "description": [
+            "A set of climbing gear features a variety of tools useful to scale up various surfaces, from rock faces to buildings. The kit comes with a harness, two coils of micro-filament rope, some pitons that use small mass effect fields to attach themselves to any surface. The harness has a small motor that allows it to automatically ascend the rope, and a one-shot grapnel launcher for quick ascents.",
+            "To use the grapnel launcher, a character must make a {@skill Ranged (Light)} skill check with a difficulty set by the range of the wall, building, or other structure. The harness allows the character to ascend or descend without making a check."
+         ],
+         "encumbrance": 2,
+         "price": 400,
+         "rarity": 4
+      },
+      {
+         "name": "Cryo Pod",
+         "page": 17,
+         "type": "gear",
+         "class": "tools",
+         "description": [
+            "Cryogenic stasis chambers, or cryo pods, are a relic from long-range space exploration, before the discovery of mass relays. By lowering an individual's body temperature to slow down vital function and then suspending them in a mass effect stasis field, the pod entrant is preserved perfectly on their long trip through space. While the technology fell out of favor in the Milky Way, it became relevant again for the 600 year journey to Andromeda.",
+            "While inside a cryo pod, a character is considered {@rule incapacitated}. They do not age physically, nor are they affected by the effects of disease or poison. Time spent inside a cryo pod does not count as natural regeneration for the purposes of recovering wounds or healing {@rule Critical Injuries|critical injuries}. Awakening from cryogenic stasis can be a disorienting experience, and at the GM's discretion may result in a {@skill Resilience} check resulting in strain or {@rule disoriented|disorientation}."
+         ],
+         "encumbrance": 10,
+         "price": 3000,
+         "rarity": 4
+      },
+      {
+         "name": "Forward Station",
+         "page": 17,
+         "type": "gear",
+         "class": "tools",
+         "description": [
+            "Forward stations serve as important tools in the initial exploration and colonization of the Heleus cluster. Usually deployed into the orbit of viable planets by automated ships, they are then called down into areas by explorers with appropriate {@rule Andromeda Initiative|Initiative} authorization.",
+            "When deployed, a forward station acts as a point of resupply, and any character engaged with a station may spend a maneuver to retrieve and immediately use a {@gear spare thermal clip||me}, reloading their weapon if it has run out of ammo. The station also serves as a beacon and allows communication to any vessel in orbit.",
+            "Additionally, the station is equipped with ground-penetrating sensor equipment that adds {@dice boost|2} to any checks made to find valuable minerals within extreme range."
+         ],
+         "encumbrance": 15,
+         "price": 6000,
+         "rarity": 7
+      },
+      {
+         "name": "Ultraviolet \"Angaran Sun\" Lamp",
+         "page": 17,
+         "type": "gear",
+         "class": "tools",
+         "description": [
+            "Due to the angaran's {@archetypeAbility Sunlight Dependency|dependency on sunlight} - or specifically the electromagnetic radiation emitted by stars, long time spent aboard spaceships, stations or underground brings potential health risks for them. To ensure they receive enough sunlight intake, the angara produce powerful ultraviolet lamps which provide them with heat, light and comfort."
+         ],
+         "encumbrance": 4,
+         "price": 1500,
+         "rarity": 4
+      },
+      {
+         "name": "Electrical Conduits",
+         "page": 18,
+         "type": "attachment",
+         "class": "armor",
+         "description": [
+            "By layering a fine metallic mesh on the outside of the armor and connecting it to the power supply, the resulting electrical shocks can serve as a deterrent to local wildlife or foolhardy colonists. As such, this attachment has gained popularity with the guards and security forces on the new colony worlds.",
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any armor.",
+                  "{@b Modifiers:} If your character is targeted by a melee combat check while wearing the armor, they may spend {@symbols hh} or {@symbols d} to cause the attacker to suffer 2 strain.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "hardPoints": 1,
+         "price": 600,
+         "rarity": 5
+      },
+      {
+         "name": "Experimental Heat Vents",
+         "page": 18,
+         "type": "attachment",
+         "class": "armor",
+         "description": [
+            "In what is considered a rather radical move by most, certain {@rule Outlaws} and other mercenaries use their armor's heat-regulation systems as a way to vent excess heat from their weaponry. This comes at a cost to their health, but greatly increases the uptime of their automatic fire.",
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any armor with a rigid carapace.",
+                  "{@b Modifiers:} When using a weapon with the {@quality Auto-fire} quality, your character may suffer 1 wound instead of spending {@symbols aa} to trigger the quality. Additionally, when using any weapon that uses thermal clips and does not have the {@quality Limited Ammo} quality, your character may suffer 2 wounds to ignore an out of ammo result caused by {@symbols h} or {@symbols d}.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "hardPoints": 1,
+         "price": 2300,
+         "rarity": 7
+      },
+      {
+         "name": "Ballistic Shield",
+         "page": 18,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "A strong metal shield that attaches to the barrel of a gun, designed to protect the user's face and neck from incoming shrapnel and projectiles. These shields are most commonly found attached to machineguns or other weapons designed to be used from an emplacement, where the shield can help to cover the remaining parts exposed from the position.",
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any {@skill Ranged (Heavy)} or {@skill Gunnery} weapon that could logically mount such a shield.",
+                  "{@b Modifiers:} The weapon gains the {@quality Deflection|Deflection 1} quality or increases their existing {@quality Deflection} quality by 1.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "hardPoints": 1,
+         "price": 150,
+         "rarity": 3,
+         "qualities": [
+            {
+               "name": "Deflection",
+               "ranks": 1,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Charged Surface",
+         "page": 18,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "By sending an electrical current through the striking surface of a melee weapon, the weapon's effectiveness against kinetic barriers and synthetic targets is greatly increased. A popular modification with the angara, who use their own bioelectric fields when wielding their close-quarter weapons, the use of a more artificial power source has made them a common sight among the Milky Way colonists.",
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any melee weapon.",
+                  "{@b Modifiers:} The weapon gains the {@quality Phasic|Phasic 1|me} and {@quality Stun|Stun 2} qualities or increases their existing {@quality Phasic||me} or {@quality Stun} qualities by those amounts.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "hardPoints": 1,
+         "price": 450,
+         "rarity": 5,
+         "qualities": [
+            {
+               "name": "Phasic",
+               "ranks": 1,
+               "source": "me"
+            },
+            {
+               "name": "Stun",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Environmental Adaption Kit",
+         "page": 19,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "Within the rough and potentially dangerous environments of the Heleus cluster, proper maintenance and preventive measures are necessary to prevent weaponry from suffering malfunctions and be potentially rendered useless.",
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any ranged weapon.",
+                  "{@b Modifiers:} Prevents the weapon from breaking down as a result of a specific type of environment.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "hardPoints": 1,
+         "price": 100,
+         "rarity": 2
+      },
+      {
+         "name": "Flak Cannon",
+         "page": 19,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "Popular especially among krogan mercenaries and soldiers looking for portable heavy firepower, the flak cannon is an extension mounted under a rifle's barrel or integrated into its lower frame. With a flick of a button, the weapon's trigger is changed to fire the flak round, which explodes into a cluster of shrapnel explosives at its target point.",
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any {@skill Ranged (Heavy)} weapon.",
+                  "{@b Modifiers:} As an incidental, a wielder may switch their weapon to fire using the following profile: {@b Flak Cannon:} ({@skill Ranged (Heavy)|Ranged [Heavy]}; Damage 8; Critical 4; Range [Medium]; {@quality Blast|Blast 6}, {@quality Limited Ammo|Limited Ammo 1}, {@quality Vicious|Vicious 2}). The weapon's encumbrance increases by 1. Spare shells for the Flak Cannon cost 100 credits.",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ],
+         "hardPoints": 2,
+         "price": 1500,
+         "rarity": 5,
+         "modifiers": [
+            {
+               "name": "encumbrance",
+               "type": "own stat",
+               "value": 1
+            }
+         ]
+      },
+      {
+         "name": "Neurochemical Reward System",
+         "page": 19,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "A cruel invention of the kett, the use of microscopic needles in the grip of a weapon dispenses a chemical cocktail that induces a high whenever an opponent is defeated with the weapon. While not technically outlawed, the use of this technology is frowned upon.",
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any weapon that features a hilt, handle or grip.",
+                  "{@b Modifiers:} Upon incapacitating an enemy with the weapon, the character wielding it recovers 2 strain. The GM may spend {@symbols hh} from the combat check to {@rule disoriented|disorient} the character for one round.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "hardPoints": 1,
+         "price": 1250,
+         "rarity": 7
+      },
+      {
+         "name": "Plasma Charge Bolt Conversion",
+         "page": 19,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "Replacing a majority of the internal components of a rifle with tech adapted from kett and angaran weaponry, this modification allows the weapon to fire explosive bolts of plasma instead of mundane metal projectiles.",
+            "The downside to this conversion is the greatly increased thermal output, which has been known to overload common thermal clips.",
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any ranged weapon that fires projectiles.",
+                  "{@b Modifiers:} The weapon gains the {@quality Blast|Blast 6} and {@quality Disorient|Disorient 2} qualities, or increases their existing {@quality Blast} or {@quality Disorient} qualities by those amounts. The GM may spend {@symbols hh} to have the weapon run out of ammo.",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ],
+         "hardPoints": 2,
+         "price": 2700,
+         "rarity": 8,
+         "qualities": [
+            {
+               "name": "Blast",
+               "ranks": 6,
+               "source": "crb"
+            },
+            {
+               "name": "Disorient",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Plasma Seeking Bolt Conversion",
+         "page": 19,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "Another modification based on kett technology, this major conversion replaces a weapon's projectiles with plasma bolts that home in on a target. As with the explosive bolts, this system also tends to overheat a weapon quickly.",
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any ranged weapon that fires projectiles.",
+                  "{@b Modifiers:} The weapon gains the {@quality Guided|Guided 3} quality. The GM may spend {@symbols hh} to have the weapon run out of ammo.",
+                  "{@b Hard Points Required:} 2."
+               ]
+            }
+         ],
+         "hardPoints": 2,
+         "price": 2700,
+         "rarity": 8,
+         "qualities": [
+            {
+               "name": "Guided",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Ricochet Projectiles",
+         "page": 19,
+         "type": "attachment",
+         "class": "weapon",
+         "description": [
+            "A popular modification among mercenaries and pirates, involving the replacement of the metal projectile block of a weapon with a composite material that bounces and ricochets off of hard surfaces, causing a chaotic hail of bullets within close quarters.",
+            {
+               "type": "list-no-bullet",
+               "items": [
+                  "{@b Use With:} This attachment can be applied to any ranged weapon that fires projectiles.",
+                  "{@b Modifiers:} When a combat check against a target misses, you may spend {@symbols aaa} or {@symbols t} to cause a lucky ricochet to hit the target, inflicting the weapon's base damage. The GM may spend {@symbols hhh} or {@symbols d} from a combat check involving the weapon to inflict one hit dealing base damage on you or another character in the encounter.",
+                  "{@b Hard Points Required:} 1."
+               ]
+            }
+         ],
+         "hardPoints": 1,
+         "price": 600,
+         "rarity": 6
+      }
+   ],
+   "adversaryAbility": [
+      {
+         "name": "Bioelectric Focus",
+         "description": [
+            "Add +3 to the damage of {@spell Tech Attack|tech attacks|me}; add {@dice boost} to all tech power checks; may not ready the Incinerate or Cryo Blast powers."
+         ],
+         "tags": [
+            "combat",
+            "magic",
+            "passive",
+            "offensive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Photoreflective Camouflage",
+         "description": [
+            "As an action may make an {@difficulty average|Survival}; if successful, until the end of this character's next turn, they are rendered invisible, disengage from all foes, are unable to be engaged and gain {@rule Concealment (Darkness, Smoke, and Intervening Terrain)|concealment} worth three dice."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "action",
+            "defensive",
+            "movement"
+         ]
+      },
+      {
+         "name": "Swarming",
+         "description": [
+            "As an incidental, at the start of its turn a minion group that is engaged with an enemy may remove a member of its group as a casualty to add +4 damage to the minion group's next {@skill Brawl} attack in that turn."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "incidental",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Tail Swipe",
+         "description": [
+            "May spend {@symbols aa} from a tail attack to hit another engaged target."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "results spend",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Airdrop Deployment",
+         "description": [
+            "When {@rule falling} any distance, may make an {@difficulty easy|Coordination} as an out-of-turn incidental; on a success this character does not suffer any damage from {@rule falling} and lands on their feet."
+         ],
+         "tags": [
+            "general",
+            "active",
+            "incidental (out of turn)",
+            "movement",
+            "defensive"
+         ]
+      },
+      {
+         "name": "Wide-Spectrum Optics",
+         "description": [
+            "Remove {@dice setback|2} due to smoke or darkness from all checks."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Exalted Physiology",
+         "description": [
+            "Remove {@dice setback|2} imposed by hostile environmental conditions. May operate in {@rule vacuum} for 8 hours before suffering its effects."
+         ],
+         "tags": [
+            "general",
+            "passive",
+            "resistance",
+            "skill check modifier"
+         ]
+      },
+      {
+         "name": "Berserker Rage",
+         "description": [
+            "After suffering wounds equal to or higher than half its threshold, this character will discard any previous attempts at ranged combat and instead charge and attack any enemies at close range, adding {@symbols saa} to any {@skill Brawl} checks they make."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "offensive",
+            "results modifier"
+         ]
+      },
+      {
+         "name": "Smoke Glands",
+         "description": [
+            "May spend a maneuver to exude a smoke screen from their position, granting all characters in short range {@rule Concealment (Darkness, Smoke, and Intervening Terrain)|concealment} worth +3 dice for two rounds (see the Concealment section on page 110 of the {@title Genesys} Core Rulebook)."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "maneuver",
+            "defensive",
+            "crowd control",
+            "support"
+         ]
+      },
+      {
+         "name": "Ascendant's Orb",
+         "description": [
+            "While this character is protected by their orb, they reduce any damage dealt to them by 10 before applying soak. The orb can be destroyed with a successful combat check after spending at least one maneuver to {@rule aim} at it (see the {@rule aim} maneuver on page 98 of the {@title Genesys} Core Rulebook). The GM should indicate the effects of the shield stemming from the orb. As an action, this character may make a {@difficulty hard|Tech||me} to summon a new orb if theirs has been destroyed."
+         ],
+         "tags": [
+            "combat",
+            "passive",
+            "active",
+            "action",
+            "defensive",
+            "resistance",
+            "weakness"
+         ]
+      },
+      {
+         "name": "Deploy Breacher",
+         "description": [
+            "As an action may make an {@difficulty average|Mechanics}; if successful, add a new {@adversary Breacher} rival to the combat encounter, which rolls initiative at the end of the round. May spend {@symbols aa} from a failed check to gain an additional use of Unfinished Breacher Core."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "action",
+            "support",
+            "results spend"
+         ]
+      },
+      {
+         "name": "Latch On",
+         "description": [
+            "May spend {@symbols aa} from a combat check to latch onto an enemy. They must spend 2 maneuvers to disengage from this character. While latched on, this character's attacks gain the {@quality Breach|Breach 1} quality."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "results spend",
+            "movement",
+            "offensive",
+            "item quality"
+         ]
+      },
+      {
+         "name": "Dome Discharge",
+         "description": [
+            "May spend {@symbols aa} from a successful attack with Energy Discharge to hit all characters engaged with this character that are not Remnant."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "results spend",
+            "crowd control",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Independent Turrets",
+         "description": [
+            "Once per turn, may spend {@symbols t} from a successful attack with the Auto Turrets to make another attack against a different target within range."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "results spend",
+            "offensive"
+         ]
+      },
+      {
+         "name": "Deploy Shield",
+         "description": [
+            "As a maneuver, may anchor to the ground and deploy a shield, gaining 3 ranged defense. While anchored, may not perform the {@rule move} maneuver and can not be forced to move by talents, biotic or tech powers."
+         ],
+         "tags": [
+            "combat",
+            "active",
+            "maneuver",
+            "defensive",
+            "weakness"
+         ]
+      }
+   ],
+   "adversary": [
+      {
+         "name": "Angaran Resistance",
+         "page": 20,
+         "type": "rival",
+         "description": [
+            "Fighting their hardest against the kett and the rebel Roekaar, these soldiers make use of powerful weaponry and their own bioelectric fields to control the battlefield.",
+            "{@b Tech:} Angara can have up to 2 tech abilities readied and may select any of their additional effects. The tech powers they use most often are the following:"
+         ],
+         "powerLevels": {
+            "combat": 2,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 1,
+            "willpower": 2,
+            "presence": 3
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 14,
+            "defense": [
+               1,
+               1
+            ]
+         },
+         "skills": [
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Melee",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Heavy)",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Tech",
+               "characteristic": "intellect",
+               "ranks": 2,
+               "source": "me"
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Environmental Adaption",
+               "description": "Remove {@dice setback} imposed by cold environments."
+            },
+            "Bioelectric Focus"
+         ],
+         "talents": [
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
+         ],
+         "spells": {
+            "skills": [
+               {
+                  "name": "Tech",
+                  "source": "me"
+               }
+            ],
+            "spells": [
+               {
+                  "name": "Energy Drain",
+                  "description": "Make an {@difficulty average|Tech||me} targeting an opponent in short or medium range; if successful, until the end of the angaran's next turn, the target decreases their melee and ranged defense by up to 1 and the angaran increases their defense by an equal amount. The angaran can maintain these effects with the {@rule concentrate|concentrate maneuver}."
+               },
+               {
+                  "name": "Overload",
+                  "description": "Make an {@difficulty average|Tech||me} targeting an opponent in short range; if successful, the target suffers 5 damage + 1 damage per uncanceled {@symbols s}, with the {@quality Phasic|Phasic 1|me} quality."
+               },
+               {
+                  "name": "Tactical Cloak",
+                  "description": "Make an {@difficulty average|Tech||me}; if successful, until the end of the angaran's next turn, they are rendered invisible, disengage from all foes, are unable to be engaged and gain {@rule Concealment (Darkness, Smoke, and Intervening Terrain)|concealment} worth three dice. The angaran can maintain these effects with the {@rule concentrate|concentrate maneuver}."
+               },
+               {
+                  "name": "Supply Pylon",
+                  "description": "Make an {@difficulty average|Tech||me}; if successful, summon a barricade at engaged range that lasts until the end of the angaran's next turn and provides ranged defense of 2 for up to three characters. The angaran can maintain this construct with the {@rule concentrate|concentrate maneuver}."
+               }
+            ]
+         },
+         "weapons": [
+            {
+               "name": "Marksman rifle",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Accurate",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Combat knife",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
+               "damage": 3,
+               "critical": 3,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Pierce",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "{@gear Light Armor||me}: 1 defense, +1 soak."
+         ]
+      },
+      {
+         "name": "Angaran Historian",
+         "page": 20,
+         "type": "rival",
+         "description": [
+            "Studying the artifacts of their own people, as well as those few recovered from the kett or Remnant bases, the historians and curators of the angaran people try to decipher more about their mysterious past and their own connection to the Jardaan."
+         ],
+         "powerLevels": {
+            "combat": 1,
+            "social": 1,
+            "general": 2
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 3,
+            "cunning": 1,
+            "willpower": 2,
+            "presence": 3
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 13,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Astrocartography",
+               "characteristic": "intellect",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Charm",
+               "characteristic": "presence",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Knowledge (LifeSci)",
+               "characteristic": "intellect",
+               "ranks": 1,
+               "source": "me"
+            },
+            {
+               "name": "Knowledge (Society)",
+               "characteristic": "intellect",
+               "ranks": 3,
+               "source": "me"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Streetwise",
+               "characteristic": "cunning",
+               "ranks": 1,
+               "source": "crb"
+            }
+         ],
+         "abilities": [],
+         "talents": [
+            {
+               "name": "Applied Research 1",
+               "source": "me"
+            }
+         ],
+         "gear": [
+            "{@gear Cultural Etiquette Manual|Cultural Etiquette Manual (Angara)|me}"
+         ]
+      },
+      {
+         "name": "Angaran Speaker",
+         "page": 21,
+         "type": "nemesis",
+         "description": [
+            "Filling roles of teachers, preachers, and military commanders, those angara gifted with rhetoric talent are able to shape the future of their people and set a course towards cooperation or confrontation."
+         ],
+         "powerLevels": {
+            "combat": 1,
+            "social": 3,
+            "general": 2
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 2,
+            "cunning": 3,
+            "willpower": 2,
+            "presence": 4
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 13,
+            "strain": 14,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Charm",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Coercion",
+               "characteristic": "willpower",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Deception",
+               "characteristic": "cunning",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Leadership",
+               "characteristic": "presence",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Knowledge (Society)",
+               "characteristic": "intellect",
+               "ranks": 2,
+               "source": "me"
+            }
+         ],
+         "abilities": [],
+         "talents": [
+            {
+               "name": "Inspiring Rhetoric",
+               "source": "crb"
+            }
+         ]
+      },
+      {
+         "name": "Adhi",
+         "page": 21,
+         "type": "rival",
+         "description": [
+            "A large creature, similar to canine species. While it retains a spinal fin similar to certain reptiles, its genome indicates limited amounts of uplifting, granting the creature resistance to hazardous environments and a cunning predatory mind. The creature's powerful jaws can even pose a threat to travelers wearing hardsuits. The {@rule Outlaws} of the Heleus cluster are known to use domesticated Adhi, outfitted with cybernetics to control them."
+         ],
+         "powerLevels": {
+            "combat": 2,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 3,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 3,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 9,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 1,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            {
+               "name": "Environmental Adaption",
+               "description": "Remove {@dice setback} imposed by hot or cold environments."
+            },
+            {
+               "name": "Pounce",
+               "description": "As an action make an opposed {@skill Athletics} vs {@skill Resilience} check targeting an opponent within short range; if successful, this character moves into engaged range and the target is knocked {@rule prone}."
+            }
+         ],
+         "talents": [],
+         "weapons": [
+            {
+               "name": "Strong jaws",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 3,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Pierce",
+                     "ranks": 3,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Challyrion",
+         "page": 22,
+         "type": "rival",
+         "description": [
+            "This quadrupedal, heavy-bodied creature seems to possess a natural camouflage ability, which renders it nearly invisible to the naked eye. Using this ability, Challyrions sneak up on their prey before tackling it to the ground with a powerful pounce and tearing into it with their sharp claws."
+         ],
+         "powerLevels": {
+            "combat": 3,
+            "social": 1,
+            "general": 2
+         },
+         "characteristics": {
+            "brawn": 3,
+            "agility": 2,
+            "intellect": 1,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 9,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Stealth",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Photoreflective Camouflage",
+            {
+               "name": "Pounce",
+               "description": "As an action make an opposed {@skill Athletics} vs {@skill Resilience} check targeting an opponent within short range; if successful, this character moves into engaged range and the target is knocked {@rule prone}."
+            }
+         ],
+         "talents": [],
+         "weapons": [
+            {
+               "name": "Claws",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 3,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Spit",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 4,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Burn",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Eiroch",
+         "page": 22,
+         "type": "nemesis",
+         "description": [
+            "Large, aggressive carnivores found throughout the Heleus cluster, Eirochs are mostly solitary hunters that seem to hunt prey for the chance to feed as much as demonstrating their physical strength. They are covered in tough scales and plates that make them highly resistant to physical damages and environmental conditions, and their large claws and caustic spit make them lethal to humanoids."
+         ],
+         "powerLevels": {
+            "combat": 4,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 4,
+            "agility": 2,
+            "intellect": 1,
+            "cunning": 2,
+            "willpower": 3,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 7,
+            "wounds": 26,
+            "strain": 15,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Charge",
+            "Silhouette 2"
+         ],
+         "talents": [
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Claws",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 3,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Concussive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Acid spit",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 7,
+               "critical": 3,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Burn",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Kaerkyn / Shemrys",
+         "page": 23,
+         "type": "minion",
+         "description": [
+            "Kaerkyn are a species of insects native to Eos and other desert planets. They remain indifferent to humanoids, unless provoked by an attack or an explorer unknowingly entering their nesting grounds, in which case they will swarm and defend it furiously.",
+            "Shemrys are a subspecies which develops a set of glands that allows them to spit a mildly corrosive acid."
+         ],
+         "powerLevels": {
+            "combat": 2,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 1,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 4,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Silhouette 0",
+            "Swarming"
+         ],
+         "talents": [],
+         "weapons": [
+            {
+               "name": "Pincers",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 4,
+               "critical": 4,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Spit",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 4,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Burn",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ],
+               "details": "{@i Shemrys only.}"
+            }
+         ]
+      },
+      {
+         "name": "Rylkor / Echidna",
+         "page": 23,
+         "type": "rival",
+         "description": [
+            "A lanky herbivore found throughout the Heleus cluster. Initially believed to be reptilian, later investigation showed them to be monotremes, a variation of mammals that lays eggs. While usually neutral, they turn hostile when their nests are threatened, attacking with an acidic spit attack or a swipe of their powerful tail.",
+            "The Echidna is a subspecies showing up on Elaadeen or Voeld, indicating that it is more adjusted to extreme temperature conditions."
+         ],
+         "powerLevels": {
+            "combat": 2,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 3,
+            "intellect": 1,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 10,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Coordination",
+               "characteristic": "agility",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Tail Swipe"
+         ],
+         "talents": [
+            {
+               "name": "Swift",
+               "source": "crb"
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Spit",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 4,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Burn",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Tail",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 4,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Taurg / Galorn",
+         "page": 23,
+         "type": "rival",
+         "description": [
+            "Taurgs are slow, bulky, hoofed creatures that are docile unless provoked. When aggravated, they attempt to scare their targets off with trumpeting barks before charging to headbutt or trample them. The {@rule Andromeda Initiative} is currently investigating the viability of these creatures as livestock for the newly founded colonies.",
+            "Galorn appear to be a subspecies found prominently around Remnant ruins, though so far no causation between the two has been discovered."
+         ],
+         "powerLevels": {
+            "combat": 2,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 3,
+            "agility": 1,
+            "intellect": 1,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 6,
+            "wounds": 15,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 1,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Charge",
+            "Silhouette 2"
+         ],
+         "talents": [],
+         "weapons": [
+            {
+               "name": "Headbutt",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 3,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Disorient",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Hydra",
+         "page": 24,
+         "type": "rival",
+         "description": [
+            "The Hydra is a mechanized hardsuit built from security mechs, but controlled by an organic pilot. These units are employed by the various {@rule Outlaws|Outlaw} factions and occasionally the Roekaar, when they can get their hands on one. While not particularly mobile, the arsenal on this unit is devastating to light infantry."
+         ],
+         "powerLevels": {
+            "combat": 6,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 4,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 7,
+            "wounds": 20,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Coordination",
+               "characteristic": "agility",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Gunnery",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Resilience",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Airdrop Deployment",
+            "Wide-Spectrum Optics"
+         ],
+         "talents": [],
+         "weapons": [
+            {
+               "name": "Accelerator cannon",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 10,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Cumbersome",
+                     "ranks": 4,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 5,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Missile volley",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 12,
+               "critical": 4,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 10,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Guided",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Prepare",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Slow-Firing",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Mechanical claw",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 7,
+               "critical": 4,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Ensnare",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "Hydra Mechanized Hardsuit: +3 soak, +1 {@characteristic Brawn}, +5 wound threshold, {@rule vacuum} sealed."
+         ]
+      },
+      {
+         "name": "Smuggler",
+         "page": 24,
+         "type": "rival",
+         "description": [
+            "With the sparse resources in Heleus, and the storages of the Nexus and arks being rationed and restricted, the black market is experiencing a boom in business, resulting in the prosperity of such ports as Kadara. Smuggling, thievery and other less-than-legal acquisition of goods is profitable and widely practiced. If there is an item you need, or need to transfer to someone without Nexus security finding out, a smuggling contract is a worthwhile investment."
+         ],
+         "powerLevels": {
+            "combat": 1,
+            "social": 2,
+            "general": 2
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 3,
+            "willpower": 2,
+            "presence": 3
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 12,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Charm",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Piloting",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Skulduggery",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Streetwise",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 1,
+               "source": "crb"
+            }
+         ],
+         "abilities": [],
+         "talents": [
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Heavy pistol",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 3,
+               "range": "Medium"
+            }
+         ],
+         "gear": [
+            "{@gear Durable Clothing||me}: +1 soak."
+         ]
+      },
+      {
+         "name": "Anointed",
+         "page": 25,
+         "type": "rival",
+         "description": [
+            "A selection of {@adversary Chosen}, equipped with shields and heavy weapons, the Anointed are powerful shock troopers of the kett infantry. They often serve as officers, commanding squads of troopers, and barrage enemy positions with their Soned plasma cannons."
+         ],
+         "powerLevels": {
+            "combat": 6,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 3,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 3,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 15,
+            "defense": [
+               1,
+               1
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Gunnery",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Resilience",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Exalted Physiology"
+         ],
+         "talents": [],
+         "weapons": [
+            {
+               "name": "Plasma machine gun",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 10,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Cumbersome",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Phasic",
+                     "ranks": 2,
+                     "source": "me"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "{@gear Light Armor||me}: 1 defense, +1 soak."
+         ]
+      },
+      {
+         "name": "Ascendant",
+         "page": 25,
+         "type": "nemesis",
+         "description": [
+            "The highest known caste of kett that has been seen in the Heleus cluster, the Ascendant serve as commanders of kett bases and commanding elite detachments. Their armor is woven with eezo nodes that allow them to levitate, using their bioelectric abilities - no doubt adapted from angara - to control this ability and send lethal shocks at their targets. Additionally, they are constantly protected by an energy field generated by the orb that travels with them, making the Ascendant a deadly opponent in offensive and defensive abilities."
+         ],
+         "powerLevels": {
+            "combat": 3,
+            "social": 2,
+            "general": 3
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 3,
+            "intellect": 4,
+            "cunning": 3,
+            "willpower": 3,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 15,
+            "defense": [
+               1,
+               1
+            ]
+         },
+         "skills": [
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Coordination",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Leadership",
+               "characteristic": "presence",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Tech",
+               "characteristic": "intellect",
+               "ranks": 3,
+               "source": "me"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Exalted Physiology",
+            "Hoverer",
+            "Ascendant's Orb"
+         ],
+         "talents": [
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Ball lightning",
+               "skill": {
+                  "name": "Tech",
+                  "source": "me"
+               },
+               "damage": 8,
+               "critical": 4,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Disorient",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Linked",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Phasic",
+                     "ranks": 3,
+                     "source": "me"
+                  },
+                  {
+                     "name": "Prepare",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "{@gear Durable Clothing||me}: +1 soak."
+         ]
+      },
+      {
+         "name": "Behemoth",
+         "page": 26,
+         "type": "rival",
+         "description": [
+            "The monstrous result of combining kett and krogan genetics, the Behemoth is a violent creature controlled by its instincts. Unable to communicate, their minds broken by the exaltation, Behemoths are used as heavy support units. Their thick natural armor plates render them nearly impervious to small arms fire, which makes them a deadly enemy in close quarters."
+         ],
+         "powerLevels": {
+            "combat": 5,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 4,
+            "agility": 2,
+            "intellect": 1,
+            "cunning": 1,
+            "willpower": 3,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 7,
+            "wounds": 18,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Heavy)",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Resilience",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 1,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Exalted Physiology",
+            "Berserker Rage"
+         ],
+         "talents": [
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Plasma shotgun",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 3,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 5,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Phasic",
+                     "ranks": 2,
+                     "source": "me"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Headbutt",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 7,
+               "critical": 5,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Concussive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Chosen",
+         "page": 26,
+         "type": "minion",
+         "description": [
+            "The common infantry troopers of the kett, chosen are disciplined and loyal frontline soldiers. They are conditioned to not question any orders and perform them with ruthless efficiency. Their modified genetic makeup compensates their lack of shields and sealed armor."
+         ],
+         "powerLevels": {
+            "combat": 5,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 3,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 3,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 6,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "source": "crb"
+            },
+            {
+               "name": "Melee",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Heavy)",
+               "characteristic": "agility",
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Exalted Physiology"
+         ],
+         "talents": [],
+         "weapons": [
+            {
+               "name": "Burst-fire plasma rifle",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Linked",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Phasic",
+                     "ranks": 2,
+                     "source": "me"
+                  }
+               ]
+            },
+            {
+               "name": "1 high explosive grenade",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 4,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 5,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Monomolecular sword",
+               "skill": {
+                  "name": "Melee",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 2,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Defensive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Unwieldy",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "Chosen Armor: +1 soak."
+         ]
+      },
+      {
+         "name": "Destined",
+         "page": 27,
+         "type": "rival",
+         "description": [
+            "The Destined are kett soldiers chosen to lead their troops in the field. They are genetically engineered from a species beyond the Heleus cluster, and are far closer to the \"original\" kett genome. Working as support specialists in combat, they command troops and grant them cover with their biological smoke screen.",
+            "{@b Tech:} Destined have access to the {@spell Tech Augment|Augment|me} action but may only use the following tech power:"
+         ],
+         "powerLevels": {
+            "combat": 4,
+            "social": 1,
+            "general": 2
+         },
+         "characteristics": {
+            "brawn": 3,
+            "agility": 3,
+            "intellect": 2,
+            "cunning": 2,
+            "willpower": 3,
+            "presence": 2
+         },
+         "derived": {
+            "soak": 4,
+            "wounds": 14,
+            "defense": [
+               1,
+               1
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Discipline",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Leadership",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Heavy)",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Tech",
+               "characteristic": "intellect",
+               "ranks": 2,
+               "source": "me"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Exalted Physiology",
+            "Smoke Glands"
+         ],
+         "talents": [
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
+         ],
+         "spells": {
+            "skills": [
+               {
+                  "name": "Tech",
+                  "source": "me"
+               }
+            ],
+            "spells": [
+               {
+                  "name": "Tactical Cloak",
+                  "description": "Make an {@difficulty average|Tech||me}; if successful, the destined is rendered invisible, disengages from all foes, is unable to be engaged and gains {@rule Concealment (Darkness, Smoke, and Intervening Terrain)|concealment} worth three dice."
+               }
+            ]
+         },
+         "weapons": [
+            {
+               "name": "Plasma shotgun",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 3,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 5,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Phasic",
+                     "ranks": 2,
+                     "source": "me"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "1 high explosive grenade",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 4,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 5,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ],
+         "gear": [
+            "{@gear Light Armor||me}: 1 defense, +1 soak."
+         ]
+      },
+      {
+         "name": "Fiend",
+         "page": 27,
+         "type": "nemesis",
+         "description": [
+            "Created from {@adversary Eiroch|Eirochs} that have been exalted with kett genetics, the Fiend is a heavily armored siege unit. With an even more pronounced violent tendency than the creature they were created from and an unnatural threshold for pain, these monsters charge their victims and pummel them to the ground, or cover them in caustic acids from a distance, should they be unable to close in."
+         ],
+         "powerLevels": {
+            "combat": 4,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 4,
+            "agility": 2,
+            "intellect": 1,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 7,
+            "wounds": 26,
+            "strain": 12,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Exalted Physiology",
+            "Charge",
+            "Silhouette 2"
+         ],
+         "talents": [
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Claws",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 3,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Concussive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Knockdown",
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Acid spit",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 7,
+               "critical": 3,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Burn",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Wraith",
+         "page": 28,
+         "type": "rival",
+         "description": [
+            "Wraiths are exalted from {@adversary Challyrion|Challyrions}, another species of wildlife found in the Heleus cluster. The kett kept the biological camouflage of the creature, while improving its natural weapons and enhancing its cognitive capabilities to make them worthwhile attack or guard animals."
+         ],
+         "powerLevels": {
+            "combat": 2,
+            "social": 1,
+            "general": 2
+         },
+         "characteristics": {
+            "brawn": 3,
+            "agility": 2,
+            "intellect": 1,
+            "cunning": 3,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 9,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Stealth",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Survival",
+               "characteristic": "cunning",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Exalted Physiology",
+            "Photoreflective Camouflage",
+            {
+               "name": "Pounce",
+               "description": "As an action make an opposed {@skill Athletics} vs {@skill Resilience} check targeting an opponent within short range; if successful, this character moves into engaged range and the target is knocked {@rule prone}."
+            }
+         ],
+         "talents": [],
+         "weapons": [
+            {
+               "name": "Claws",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 3,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Spit",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 4,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Burn",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Assembler",
+         "page": 29,
+         "type": "rival",
+         "description": [
+            "This maintenance unit is not designed primarily for combat purposes, and as such, its personal defense weapons are rather unimpressive. What it lacks in firepower, it makes up with processing power and fabrication speed however, constantly churning out {@adversary Breacher} units to deter intruders."
+         ],
+         "powerLevels": {
+            "combat": 2,
+            "social": 1,
+            "general": 2
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 3,
+            "cunning": 1,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 10,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Mechanics",
+               "characteristic": "intellect",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Knowledge (PhysSci)",
+               "characteristic": "intellect",
+               "ranks": 1,
+               "source": "me"
+            },
+            {
+               "name": "Ranged (Light)",
+               "characteristic": "agility",
+               "ranks": 1,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Deploy Breacher",
+            "Mechanical"
+         ],
+         "talents": [],
+         "weapons": [
+            {
+               "name": "Defense beam",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 5,
+               "critical": 4,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Phasic",
+                     "ranks": 1,
+                     "source": "me"
+                  }
+               ]
+            },
+            {
+               "name": "Unfinished Breacher core",
+               "skill": {
+                  "name": "Ranged (Light)",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 3,
+               "range": "Short",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 7,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Limited Ammo",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Breacher",
+         "page": 29,
+         "type": "rival",
+         "description": [
+            "A hovering combat drone, assembled at fast speeds as an immediate response to intruders. What they lack in mechanical and system stability they make up in speed and aggressiveness, charging at targets to grapple them and break them apart with crude mechanical tools."
+         ],
+         "powerLevels": {
+            "combat": 2,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 1,
+            "cunning": 1,
+            "willpower": 1,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 5,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Coordination",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Hoverer",
+            "Latch On",
+            "Mechanical"
+         ],
+         "talents": [],
+         "weapons": [
+            {
+               "name": "Grinding wheels",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 3,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Vicious",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Creeper",
+         "page": 30,
+         "type": "minion",
+         "description": [
+            "These small, bug-like machines are designed as maintenance and repair units, crawling around remnant structures and keeping them intact. When provoked by intruders or damage to the structure, they will swarm the hostile entities and \"bite\" them with their miniature cutting tools."
+         ],
+         "powerLevels": {
+            "combat": 1,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 2,
+            "intellect": 1,
+            "cunning": 2,
+            "willpower": 1,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 2,
+            "wounds": 4,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "source": "crb"
+            },
+            {
+               "name": "Mechanics",
+               "characteristic": "intellect",
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Silhouette 0"
+         ],
+         "talents": [],
+         "weapons": [
+            {
+               "name": "Pincers",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 4,
+               "critical": 4,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Destroyer",
+         "page": 30,
+         "type": "nemesis",
+         "description": [
+            "A hulking construct, designed as a heavy weapons platform to defend the most sensitive Remnant structures. Plated in strong armor, covered by very powerful shield generators, and armed with a wide arsenal of weapons, these units are only exceeded in lethality by Progenitors (an even more powerful version of the Destroyer) and {@sidebar Architects} (which dwarf even the krogan's military vehicles)."
+         ],
+         "powerLevels": {
+            "combat": 6,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 4,
+            "agility": 3,
+            "intellect": 1,
+            "cunning": 1,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 7,
+            "wounds": 24,
+            "strain": 16,
+            "defense": [
+               3,
+               3
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Gunnery",
+               "characteristic": "agility",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Dome Discharge",
+            "Independent Turrets",
+            "Mechanical"
+         ],
+         "talents": [
+            {
+               "name": "Adversary 1",
+               "source": "crb"
+            }
+         ],
+         "weapons": [
+            {
+               "name": "Auto turrets",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 10,
+               "critical": 3,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Auto-fire",
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 2,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Vicious",
+                     "ranks": 2,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Heavy pulse cannon",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 12,
+               "critical": 4,
+               "range": "Long",
+               "qualities": [
+                  {
+                     "name": "Blast",
+                     "ranks": 8,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 5,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Phasic",
+                     "ranks": 2,
+                     "source": "me"
+                  },
+                  {
+                     "name": "Prepare",
+                     "ranks": 1,
+                     "source": "crb"
+                  }
+               ]
+            },
+            {
+               "name": "Energy discharge",
+               "skill": {
+                  "name": "Brawl",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 5,
+               "range": "Engaged",
+               "qualities": [
+                  {
+                     "name": "Phasic",
+                     "ranks": 3,
+                     "source": "me"
+                  },
+                  {
+                     "name": "Stun",
+                     "ranks": 4,
+                     "source": "crb"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Nullifier",
+         "page": 31,
+         "type": "rival",
+         "description": [
+            "Excavation drones that have been refitted and reprogrammed to attack intruders, the Nullifiers are heavily armored and hard to damage once they deploy their shields. Their powerful cannons can be dangerous even to well equipped adventurers."
+         ],
+         "powerLevels": {
+            "combat": 3,
+            "social": 1,
+            "general": 1
+         },
+         "characteristics": {
+            "brawn": 3,
+            "agility": 2,
+            "intellect": 1,
+            "cunning": 1,
+            "willpower": 3,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 5,
+            "wounds": 15,
+            "defense": [
+               0,
+               0
+            ]
+         },
+         "skills": [
+            {
+               "name": "Athletics",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Brawl",
+               "characteristic": "brawn",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Gunnery",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 2,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Deploy Shield",
+            "Mechanical"
+         ],
+         "talents": [],
+         "weapons": [
+            {
+               "name": "Plasma pulse cannon",
+               "skill": {
+                  "name": "Gunnery",
+                  "source": "crb"
+               },
+               "damage": 8,
+               "critical": 4,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Concussive",
+                     "ranks": 1,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Phasic",
+                     "ranks": 2,
+                     "source": "me"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Observer",
+         "page": 31,
+         "type": "rival",
+         "description": [
+            "Levitating drones used to monitor, maintain and patrol remnant structures. They are equipped for precise scans of any Remnant technology to detect even minor damages, while also using their lasers to analyze and repair structures. When provoked, their beam technology's wave pattern is adjusted on the fly to make for a dangerous weapon."
+         ],
+         "powerLevels": {
+            "combat": 2,
+            "social": 1,
+            "general": 2
+         },
+         "characteristics": {
+            "brawn": 2,
+            "agility": 3,
+            "intellect": 1,
+            "cunning": 2,
+            "willpower": 2,
+            "presence": 1
+         },
+         "derived": {
+            "soak": 3,
+            "wounds": 8,
+            "defense": [
+               2,
+               2
+            ]
+         },
+         "skills": [
+            {
+               "name": "Cool",
+               "characteristic": "presence",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Coordination",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Perception",
+               "characteristic": "cunning",
+               "ranks": 3,
+               "source": "crb"
+            },
+            {
+               "name": "Ranged (Heavy)",
+               "characteristic": "agility",
+               "ranks": 2,
+               "source": "crb"
+            },
+            {
+               "name": "Vigilance",
+               "characteristic": "willpower",
+               "ranks": 3,
+               "source": "crb"
+            }
+         ],
+         "abilities": [
+            "Hoverer",
+            "Mechanical"
+         ],
+         "talents": [],
+         "weapons": [
+            {
+               "name": "Focus beam",
+               "skill": {
+                  "name": "Ranged (Heavy)",
+                  "source": "crb"
+               },
+               "damage": 6,
+               "critical": 3,
+               "range": "Medium",
+               "qualities": [
+                  {
+                     "name": "Linked",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Pierce",
+                     "ranks": 3,
+                     "source": "crb"
+                  },
+                  {
+                     "name": "Phasic",
+                     "ranks": 2,
+                     "source": "me"
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

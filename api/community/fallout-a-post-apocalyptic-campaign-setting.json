@@ -2636,6 +2636,11 @@
          "description": [
             "Robots in the wasteland come in a variety of shapes and sizes. Their capabilities are determined by their original purpose of construction; the hovering Mr. Handy came with a trio of spindly arms that have pincer hands, buzzsaws, or even small flame projectors. Meanwhile the Protectron series of robots were used in fire and rescue, police and security, and even construction. Other robots were specifically built with warfare in mind, and possess a lethal variety of weapons bonded directly to their metal frames."
          ],
+         "modifiers": {
+            "stats": {
+               "soak": 2
+            }
+         },
          "settings": [
             {
                "name": "science fiction",

@@ -32,7 +32,7 @@ if (!stagedFile || !flags.dest) {
 }
 const destFile = path.resolve(flags.dest);
 const dryRun = !!flags['dry-run'];
-const replaceNames = new Set([].concat(flags.replace || []).map(n => String(n).trim().toLowerCase()));
+const replaceNames = new Set([].concat(flags.replace || []).map(n => lib.normName(String(n))));
 const replaceAll = !!flags['replace-all'];
 
 const staged = lib.readJson(stagedFile);
@@ -75,36 +75,47 @@ function diff(a, b, p, out) {
 
 function mergeForReplace(existing, incoming) {
    const keepExisting = !flags['overwrite-preserved'];
+   const preserved = k => PRESERVE.includes(k) && (keepExisting || !(k in incoming));
+   /* the staged key order wins; a preserved key missing from staging stays after the key it followed */
+   const lead = [];
+   const after = new Map(); // incoming key → preserved existing keys that follow it
+   const existingKeys = Object.keys(existing);
+   existingKeys.forEach((k, i) => {
+      if (k in incoming || !preserved(k)) return;
+      const anchor = existingKeys.slice(0, i).reverse().find(p => p in incoming);
+      if (anchor === undefined) lead.push(k);
+      else after.set(anchor, [...(after.get(anchor) || []), k]);
+   });
    const out = {};
-   for (const k of Object.keys(existing)) {
-      if (PRESERVE.includes(k) && (keepExisting || !(k in incoming))) out[k] = existing[k];
-      else if (k in incoming) out[k] = incoming[k];
-   }
+   for (const k of lead) out[k] = existing[k];
    for (const k of Object.keys(incoming)) {
-      if (!(k in out)) out[k] = incoming[k];
+      out[k] = preserved(k) && k in existing ? existing[k] : incoming[k];
+      for (const p of after.get(k) || []) out[p] = existing[p];
    }
    return out;
 }
 
 const cmpName = (a, b) => String(a ?? '').localeCompare(String(b ?? ''), 'en', { sensitivity: 'base' });
 
-function detectOrder(items) {
+/* `nameOf` is the group's item → name function (lib.itemName bound to the group) */
+function detectOrder(items, nameOf) {
    if (items.length < 2) return 'append';
-   const alpha = items.every((it, i) => i === 0 || cmpName(items[i - 1].name, it.name) <= 0);
+   const alpha = items.every((it, i) => i === 0 || cmpName(nameOf(items[i - 1]), nameOf(it)) <= 0);
    if (alpha) return 'alphabetical';
    const paged = items.every(it => Number.isInteger(it.page)) && items.every((it, i) => i === 0 || items[i - 1].page <= it.page);
    if (paged) return 'page';
    return 'append';
 }
 
-function insertionIndex(order, items, item) {
+function insertionIndex(order, items, item, nameOf) {
    if (order === 'alphabetical') {
-      const idx = items.findIndex(x => cmpName(x.name, item.name) > 0);
+      const idx = items.findIndex(x => cmpName(nameOf(x), nameOf(item)) > 0);
       return idx === -1 ? items.length : idx;
    }
    if (order === 'page' && Number.isInteger(item.page)) {
       /* a base item goes before its variants on the same page ("Carrier" before "Carrier (Naalu …)") */
-      const variantIdx = items.findIndex(x => x.page === item.page && cmpName(String(x.name).slice(0, item.name.length + 2), `${item.name} (`) === 0);
+      const name = String(nameOf(item) ?? '');
+      const variantIdx = items.findIndex(x => x.page === item.page && cmpName(String(nameOf(x) ?? '').slice(0, name.length + 2), `${name} (`) === 0);
       if (variantIdx !== -1) return variantIdx;
       /* otherwise after every item on the same or an earlier page (book order within a page is unknown) */
       const idx = items.findIndex(x => x.page > item.page);
@@ -144,11 +155,13 @@ for (const [group, items] of Object.entries(staged)) {
       problems.push(`staged group "${group}" is not an array`);
       continue;
    }
+   const nameOf = it => lib.itemName(it, group);
+   const keyOf = it => lib.nameKey(it, group);
    const seen = new Set();
    for (const it of items) {
-      const k = String(it?.name ?? '').trim().toLowerCase();
+      const k = keyOf(it);
       if (!k) problems.push(`${group}: staged item without a name`);
-      if (seen.has(k)) problems.push(`${group}: duplicate staged name ${JSON.stringify(it.name)}`);
+      if (seen.has(k)) problems.push(`${group}: duplicate staged name ${JSON.stringify(nameOf(it))}`);
       seen.add(k);
    }
 
@@ -168,20 +181,21 @@ for (const [group, items] of Object.entries(staged)) {
       const last = root.props[root.props.length - 1];
       ops.push({ at: last.value.end, remove: 0, text: `,${EOL}${rootIndent}${JSON.stringify(group)}: ${arrayText}` });
       report.newGroups.push(group);
-      items.forEach(it => report.added.push(`${group}: ${it.name}`));
+      items.forEach(it => report.added.push(`${group}: ${nameOf(it)}`));
       continue;
    }
 
    const arr = prop.value;
    const propIndent = lineIndent(text, prop.keyStart) ?? rootIndent;
    const elemIndent = (arr.elements[0] && lineIndent(text, arr.elements[0].start)) ?? propIndent + UNIT;
-   const order = detectOrder(existingItems);
+   const order = detectOrder(existingItems, nameOf);
    const replacedHere = new Set();
    const inserts = new Map(); // slot index → items
 
    for (const item of items) {
-      const lower = String(item.name).trim().toLowerCase();
-      const idx = existingItems.findIndex(x => String(x?.name ?? '').trim().toLowerCase() === lower);
+      const lower = keyOf(item);
+      const label = `${group}: ${nameOf(item)}`;
+      const idx = existingItems.findIndex(x => keyOf(x) === lower);
       if (idx !== -1) {
          if (replaceAll || replaceNames.has(lower)) {
             const merged = mergeForReplace(existingItems[idx], item);
@@ -189,22 +203,22 @@ for (const [group, items] of Object.entries(staged)) {
             const el = arr.elements[idx];
             ops.push({ at: el.start, remove: el.end - el.start, text: serialize(merged, UNIT, elemIndent) });
             replacedHere.add(lower);
-            report.replaced.push({ label: `${group}: ${item.name}`, changes });
+            report.replaced.push({ label, changes });
          } else {
             const changes = diff(existingItems[idx], mergeForReplace(existingItems[idx], item), '', []);
-            report.skipped.push({ label: `${group}: ${item.name}`, changes });
+            report.skipped.push({ label, changes });
          }
          continue;
       }
-      const slot = insertionIndex(order, existingItems, item);
+      const slot = insertionIndex(order, existingItems, item, nameOf);
       if (!inserts.has(slot)) inserts.set(slot, []);
       inserts.get(slot).push(item);
-      report.added.push(`${group}: ${item.name}${order === 'append' ? '' : ` (${order} order, position ${slot})`}`);
+      report.added.push(`${label}${order === 'append' ? '' : ` (${order} order, position ${slot})`}`);
    }
    touched.set(group, replacedHere);
 
    for (const [slot, slotItems] of inserts) {
-      if (order === 'alphabetical') slotItems.sort((a, b) => cmpName(a.name, b.name));
+      if (order === 'alphabetical') slotItems.sort((a, b) => cmpName(nameOf(a), nameOf(b)));
       else if (order === 'page') slotItems.sort((a, b) => (a.page ?? 0) - (b.page ?? 0));
       const texts = slotItems.map(it => serialize(it, UNIT, elemIndent));
       if (arr.elements.length === 0) {
@@ -218,7 +232,7 @@ for (const [group, items] of Object.entries(staged)) {
 }
 
 for (const name of replaceNames) {
-   const inStaged = Object.values(staged).some(items => Array.isArray(items) && items.some(it => String(it?.name ?? '').trim().toLowerCase() === name));
+   const inStaged = Object.entries(staged).some(([group, items]) => Array.isArray(items) && items.some(it => lib.nameKey(it, group) === name));
    if (!inStaged) problems.push(`--replace "${name}" does not match any staged item`);
 }
 
@@ -248,12 +262,14 @@ for (const key of Object.keys(original)) {
       if (JSON.stringify(original[key]) !== JSON.stringify(merged[key])) untouchedProblems.push(`"${key}" changed unexpectedly`);
       continue;
    }
-   const stagedNames = new Set(staged[key].map(it => String(it.name).trim().toLowerCase()));
+   const keyOf = it => lib.nameKey(it, key);
+   const stagedNames = new Set(staged[key].map(keyOf));
+   const originalNames = new Set(original[key].map(keyOf));
    const replaced = touched.get(key) || new Set();
-   const before = original[key].filter(it => !replaced.has(String(it?.name ?? '').trim().toLowerCase()));
+   const before = original[key].filter(it => !replaced.has(keyOf(it)));
    const after = merged[key].filter(it => {
-      const n = String(it?.name ?? '').trim().toLowerCase();
-      return !(stagedNames.has(n) && (replaced.has(n) || !original[key].some(o => String(o?.name ?? '').trim().toLowerCase() === n)));
+      const n = keyOf(it);
+      return !(stagedNames.has(n) && (replaced.has(n) || !originalNames.has(n)));
    });
    if (JSON.stringify(before) !== JSON.stringify(after)) untouchedProblems.push(`existing "${key}" items changed unexpectedly`);
 }

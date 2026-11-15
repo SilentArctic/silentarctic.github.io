@@ -7,9 +7,11 @@ disable-model-invocation: true
 
 # Archetypes / species → content pack
 
+**Recommended effort:** high (values are read from page images and number-heavy stat blocks or tables, where a misread digit is a data error).
+
 Arguments: `$ARGUMENTS` (PDF path, printed page or range, destination JSON).
 
-**First**, read `.claude/skills/pack-core/workflow.md` and `.claude/skills/pack-core/tagging.md`, and follow the workflow step by step. This file only adds what's specific to archetypes.
+**First**, read `.claude/skills/pack-core/workflow.md` and `.claude/skills/pack-core/tagging.md` (skip a file only if its full text is still in your context, e.g. earlier in a `/pack-core` run; re-read it after any context summary), and follow the workflow step by step. This file only adds what's specific to archetypes.
 
 ## Writes
 

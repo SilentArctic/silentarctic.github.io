@@ -11,6 +11,10 @@
  *   { "group": "talent", "name": "X", "path": "description[0]", "set": "Whole new paragraph text." }
  *   { "group": "adversary", "name": "Wake Worm", "path": "page", "set": 243 }
  *   { "group": "adversaryAbility", "name": "Swat", "path": "description[0]", "find": "Rulebook)).", "replace": "Rulebook)." }
+ *   { "group": "talent", "name": "Gaurd Duty", "path": "name", "set": "Guard Duty" }   (rename)
+ *
+ * `name` is the item's name before this patch (also for later ops on a renamed item). An exact match wins;
+ * otherwise case and surrounding spaces are ignored. A rename that clashes with another item is refused.
  *
  * - `set` replaces the value at `path` (the key must already exist, except on objects where it's added last).
  *   A replaced array keeps its layout: one element per line if it was multi-line, inline otherwise.
@@ -53,13 +57,26 @@ function parsePath(p) {
    return parts;
 }
 
-function itemNode(root, group, name) {
+/*
+ * Resolve an op to its item's index in the ORIGINAL pack: an exact name match wins (so items that differ
+ * only by case or spacing stay targetable); otherwise a case/space-insensitive match. Every op names the
+ * item as it was before the patch, even after an earlier op renamed it. Ops never add or remove items
+ * (verified below), so the index stays valid.
+ */
+function itemIndex(group, name) {
+   const data = original[group];
+   if (!Array.isArray(data)) throw new Error(`no group "${group}"`);
+   const find = test => data.map((it, k) => (test(it) ? k : -1)).filter(k => k !== -1);
+   let matches = find(it => lib.itemName(it, group) === name);
+   if (!matches.length) matches = find(it => lib.nameKey(it, group) === lib.normName(name));
+   if (matches.length !== 1) throw new Error(`${group}["${name}"]: ${matches.length} items with that name`);
+   return matches[0];
+}
+
+function itemNode(root, group, index) {
    const groupProp = root.props.find(p => p.key === group);
    if (!groupProp) throw new Error(`no group "${group}"`);
-   const data = JSON.parse(text)[group];
-   const matches = data.map((it, k) => (it?.name === name ? k : -1)).filter(k => k !== -1);
-   if (matches.length !== 1) throw new Error(`${group}["${name}"]: ${matches.length} items with that name`);
-   return groupProp.value.elements[matches[0]];
+   return groupProp.value.elements[index];
 }
 
 function walk(node, parts, label) {
@@ -104,8 +121,9 @@ for (const [n, op] of fixes.entries()) {
    const label = `#${n + 1} ${op.group}["${op.name}"].${op.path}`;
    const parts = parsePath(op.path);
    if (!parts.length) throw new Error(`${label}: empty path`);
+   const index = itemIndex(op.group, op.name);
    const root = lib.parseWithSpans(text);
-   const item = itemNode(root, op.group, op.name);
+   const item = itemNode(root, op.group, index);
    const { node, parent, key } = walk(item, parts, label);
    const splice = (a, b, s) => {
       text = text.slice(0, a) + s + text.slice(b);
@@ -142,14 +160,14 @@ for (const [n, op] of fixes.entries()) {
    } else {
       throw new Error(`${label}: needs "set", "delete", or "find"/"replace"`);
    }
-   applied[applied.length - 1].op = op;
+   Object.assign(applied[applied.length - 1], { op, index });
 }
 
 /* ---------------------------------------------------------------- verify */
 
 const result = JSON.parse(text);
 const problems = [];
-const touched = new Set(fixes.map(f => `${f.group}\u0000${f.name}`));
+const touched = new Set(applied.map(a => `${a.op.group}\u0000${a.index}`));
 for (const group of new Set([...Object.keys(original), ...Object.keys(result)])) {
    const a = original[group];
    const b = result[group];
@@ -162,12 +180,17 @@ for (const group of new Set([...Object.keys(original), ...Object.keys(result)]))
       continue;
    }
    a.forEach((it, k) => {
-      if (!touched.has(`${group}\u0000${it?.name}`) && JSON.stringify(it) !== JSON.stringify(b[k])) problems.push(`untouched item ${group}["${it?.name}"] changed`);
+      const isTouched = touched.has(`${group}\u0000${k}`);
+      if (!isTouched && JSON.stringify(it) !== JSON.stringify(b[k])) problems.push(`untouched item ${group}["${lib.itemName(it, group)}"] changed`);
+      /* a rename must not collide with another item in the group (links resolve by name) */
+      if (isTouched && lib.nameKey(b[k], group) !== lib.nameKey(it, group)) {
+         const clash = b.find((o, j) => j !== k && lib.nameKey(o, group) === lib.nameKey(b[k], group));
+         if (clash) problems.push(`renamed ${group}["${lib.itemName(it, group)}"] → "${lib.itemName(b[k], group)}" clashes with an existing item`);
+      }
    });
 }
 for (const a of applied) {
-   const item = result[a.op.group].find(x => x?.name === a.op.name);
-   let v = item;
+   let v = result[a.op.group][a.index];
    for (const p of a.parts) v = v == null ? undefined : v[p];
    if (JSON.stringify(v) !== JSON.stringify(a.expect)) problems.push(`${a.label}: result ${JSON.stringify(v)} ≠ expected ${JSON.stringify(a.expect)}`);
 }
@@ -184,7 +207,7 @@ const newErrors = [...afterKeys].filter(k => !beforeKeys.has(k));
 console.log(`patch: ${applied.length} operation(s) → ${lib.relative(destFile)}${flags['dry-run'] ? ' [dry run]' : ''}`);
 for (const a of applied) {
    const before = (() => {
-      let v = original[a.op.group].find(x => x?.name === a.op.name);
+      let v = original[a.op.group][a.index];
       for (const p of a.parts) v = v == null ? undefined : v[p];
       return v;
    })();

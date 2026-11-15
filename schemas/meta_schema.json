@@ -25,6 +25,11 @@
                "description": "Short name shown as the source and used in tags. Separate title and subtitle with a colon. Underscores are reserved for translation files.",
                "x-hb": { "span": 1 }
             },
+            "releaseDate": {
+               "type": "string",
+               "description": "Release date as D Month YYYY (example: 28 April 2023).",
+               "x-hb": { "span": 1 }
+            },
             "language": {
                "type": "string",
                "description": "Language, spelled out (example: German). Defaults to English.",
@@ -38,12 +43,8 @@
             "url": {
                "type": "string",
                "description": "Where to get the content pack (example: a DriveThruRPG page).",
+               "title": "URL",
                "x-hb": { "span": "full" }
-            },
-            "releaseDate": {
-               "type": "string",
-               "description": "Release date as D Month YYYY (example: 28 April 2023).",
-               "x-hb": { "span": 1 }
             },
             "currentRelease": {
                "type": "object",

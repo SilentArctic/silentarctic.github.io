@@ -7,9 +7,11 @@ disable-model-invocation: true
 
 # Careers → content pack
 
+**Recommended effort:** medium (rules text needs judgment (ranked or not, tags, references) but has no image stat blocks).
+
 Arguments: `$ARGUMENTS` (PDF path, printed page or range, destination JSON).
 
-**First**, read `.claude/skills/pack-core/workflow.md` and `.claude/skills/pack-core/tagging.md`, and follow the workflow step by step. This file only adds what's specific to careers.
+**First**, read `.claude/skills/pack-core/workflow.md` and `.claude/skills/pack-core/tagging.md` (skip a file only if its full text is still in your context, e.g. earlier in a `/pack-core` run; re-read it after any context summary), and follow the workflow step by step. This file only adds what's specific to careers.
 
 ## Writes
 

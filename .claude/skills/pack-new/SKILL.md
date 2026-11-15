@@ -7,6 +7,8 @@ disable-model-invocation: true
 
 # Create a new content pack
 
+**Recommended effort:** low (short prose or mechanical steps).
+
 Arguments: `$ARGUMENTS`
 - A destination JSON path (required).
 - Optionally, a PDF and the printed pages holding the title/credits page. Read only those pages.

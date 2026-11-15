@@ -3567,6 +3567,11 @@
          "description": [
             "Robots in a space opera can be found in all shapes and sizes. It could be roughly humanoid but built from nearly impervious alloys; a giant, crab-like tank; or a featureless, hovering sphere. Due to the diversity of options for a robot character, we took an approach similar to that for the bioroid on page 174, starting with low characteristics but a lot of XP."
          ],
+         "modifiers": {
+            "stats": {
+               "soak": 1
+            }
+         },
          "settings": [
             {
                "name": "space opera"

@@ -7,9 +7,11 @@ disable-model-invocation: true
 
 # Vehicles → content pack
 
+**Recommended effort:** high (values are read from page images and number-heavy stat blocks or tables, where a misread digit is a data error).
+
 Arguments: `$ARGUMENTS` (PDF path, printed page or range, destination JSON).
 
-**First**, read `.claude/skills/pack-core/workflow.md` and `.claude/skills/pack-core/tagging.md`, and follow the workflow step by step. This file only adds what's specific to vehicles.
+**First**, read `.claude/skills/pack-core/workflow.md` and `.claude/skills/pack-core/tagging.md` (skip a file only if its full text is still in your context, e.g. earlier in a `/pack-core` run; re-read it after any context summary), and follow the workflow step by step. This file only adds what's specific to vehicles.
 
 ## Writes
 
@@ -46,7 +48,7 @@ Arguments: `$ARGUMENTS` (PDF path, printed page or range, destination JSON).
 - Weapon `name` is as printed, including counts and mounts ("1 turret-mounted assault cannon").
 - `fireArc` is as printed ("All", "Forward, Left, and Right").
 - Vehicle weapon quality ranks go in `ranks`.
-- **Variants** follow the adversary convention: the base gets `hasVariants: true`; each variant is a full entry `"Base (Variant)"` with `variant: true`.
+- **Variants** follow the adversary convention: the base gets `hasVariants: true`; each variant is a full entry `"Base (Variant)"` with `variant: true`, and `page` follows the adversary rule.
 - Printed stats with no schema field (sensor range, max altitude, hard points, manufacturer…) are a ⚠ schema gap.
   - See how EotI handled similar vehicles, and ask before putting them in `description`.
 

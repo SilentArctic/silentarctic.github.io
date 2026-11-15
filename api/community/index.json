@@ -221,5 +221,43 @@
       ],
       "releaseDate": "12 April 2019",
       "originType": "community"
+   },
+   "mass-effect-andromeda.json": {
+      "version": "2026.11.11",
+      "json": "mass-effect-andromeda",
+      "full": "Mass Effect: Andromeda",
+      "abbreviation": "ME:A",
+      "color": "#4A9FE0",
+      "url": "https://files.blusunrize.de/documents/Genesys-MassEffectAndromeda.pdf",
+      "currentRelease": {
+         "version": "v2.1",
+         "date": "4 September 2026"
+      },
+      "authors": [
+         "BluSunrize"
+      ],
+      "convertedBy": [
+         "SilentArctic"
+      ],
+      "originType": "community"
+   },
+   "mass-effect.json": {
+      "version": "2026.11.11",
+      "json": "mass-effect",
+      "full": "Mass Effect",
+      "abbreviation": "ME",
+      "color": "#4A9FE0",
+      "url": "https://files.blusunrize.de/documents/Genesys-MassEffect.pdf",
+      "currentRelease": {
+         "version": "v2.2",
+         "date": "4 September 2026"
+      },
+      "authors": [
+         "BluSunrize"
+      ],
+      "convertedBy": [
+         "SilentArctic"
+      ],
+      "originType": "community"
    }
 }

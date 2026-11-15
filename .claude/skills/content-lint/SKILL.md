@@ -7,6 +7,8 @@ disable-model-invocation: true
 
 # Content lint
 
+**Recommended effort:** medium (judging each finding against the PDF needs care; a quick scan without a PDF is fine at low).
+
 Arguments: `$ARGUMENTS`
 1. **Pack** (required): `api/<name>.json`, `api/community/<name>.json`, or `api/private/<name>.json`. If it's missing or doesn't exist, **stop** and say so.
 2. **PDF** (optional): the source book. Given → also run the PDF comparison (step 3). Not given → quick scan only.

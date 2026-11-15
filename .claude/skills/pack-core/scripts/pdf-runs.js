@@ -66,8 +66,8 @@ const tool = name => (bin ? path.join(bin, name) : name);
 
 /*
  * Genesys symbol font (confirmed visually in Embers of the Imperium, 2026-09-18).
- * Dice share one glyph per shape; the fill color picks the die. Colored dice are also drawn with
- * a dark outline glyph at the same spot, which is dropped as a duplicate.
+ * Dice share one glyph per shape; the fill color picks the die. Dice are often drawn twice at the
+ * same spot (an outline, then the fill); renderPage keeps only the fill.
  * Other books may use other codes: anything unknown prints as [[glyph …]] for a visual check.
  */
 const GLYPHS = {
@@ -100,27 +100,63 @@ const GLYPHS = {
    0x78: { modifier: '^' }, // x: upgrade arrow over the preceding die
 };
 
-function colorClass(hex) {
+function rgb(hex) {
    const m = /^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(hex || '');
-   if (!m) return 'unknown';
-   const [r, g, b] = m.slice(1).map(x => parseInt(x, 16));
-   const max = Math.max(r, g, b);
-   const min = Math.min(r, g, b);
-   if (max < 70) return 'black';
-   if (min > 225) return 'white';
-   if (r > 150 && g > 130 && b < 100) return 'yellow';
-   if (b >= r && b >= g && g > r) return 'blue';
-   if (g > r && g > b) return 'green';
-   if (r > g && b > g && (b >= r || r - b < 70)) return 'purple'; // BOOST 9 difficulty is #52439b
-   if (r > g && r > b) return 'red';
-   return 'unknown';
+   return m ? m.slice(1).map(x => parseInt(x, 16)) : null;
 }
 
-const DICE = {
-   diamond: { green: 'ability', purple: 'difficulty' },
-   square: { blue: 'boost', black: 'setback' },
-   hexagon: { yellow: 'proficiency', red: 'challenge' },
+/* near-black fill: setback dice and the dark outline glyphs drawn under colored dice */
+function isBlack(hex) {
+   const c = rgb(hex);
+   return !!c && Math.max(...c) < 70;
+}
+
+/* hue in degrees, saturation and lightness 0–1 */
+function hsl(hex) {
+   const c = rgb(hex);
+   if (!c) return null;
+   const [r, g, b] = c.map(x => x / 255);
+   const max = Math.max(r, g, b);
+   const min = Math.min(r, g, b);
+   const d = max - min;
+   const l = (max + min) / 2;
+   const s = d === 0 ? 0 : d / (1 - Math.abs(2 * l - 1));
+   let h = 0;
+   if (d) {
+      if (max === r) h = 60 * (((g - b) / d) % 6);
+      else if (max === g) h = 60 * ((b - r) / d + 2);
+      else h = 60 * ((r - g) / d + 4);
+   }
+   return { h: (h + 360) % 360, s, l };
+}
+
+/*
+ * Each die shape only has to tell its own two dice apart, so pick the nearest hue among them.
+ * Reference hues from the books seen so far: ability #3fa535, difficulty #6c247a / #52439b,
+ * boost #83cddf / #73dccd (ME:A teal), proficiency #ffe700 / #ffd618, challenge #821c1c, setback #1d1d1b.
+ * A color far from every candidate (or grey/white) returns null and prints as [[glyph …]] for a visual check.
+ */
+const DIE_HUES = {
+   diamond: { ability: 120, difficulty: 270 },
+   square: { boost: 195 },
+   hexagon: { proficiency: 52, challenge: 0 },
 };
+const MAX_HUE_DISTANCE = 75;
+
+function dieFor(shape, hex) {
+   if (shape === 'square' && isBlack(hex)) return 'setback';
+   const c = hsl(hex);
+   const candidates = DIE_HUES[shape];
+   if (!c || !candidates || c.s < 0.25 || c.l < 0.12 || c.l > 0.92) return null;
+   let best = null;
+   let bestDist = Infinity;
+   for (const [die, hue] of Object.entries(candidates)) {
+      const diff = Math.abs(c.h - hue) % 360;
+      const dist = Math.min(diff, 360 - diff);
+      if (dist < bestDist) [best, bestDist] = [die, dist];
+   }
+   return bestDist <= MAX_HUE_DISTANCE ? best : null;
+}
 
 /* ---------------------------------------------------------------- parse */
 
@@ -147,9 +183,9 @@ for (const line of xml.split(/\r?\n/)) {
       pages.push(current);
       continue;
    }
-   const tm = /<text top="(-?\d+)" left="(-?\d+)"[^>]*font="(\d+)"[^>]*>(.*)<\/text>/.exec(line);
+   const tm = /<text top="(-?\d+)" left="(-?\d+)"(?: width="(-?\d+)")?[^>]*font="(\d+)"[^>]*>(.*)<\/text>/.exec(line);
    if (!tm || !current) continue;
-   current.items.push({ left: Number(tm[2]), font: fonts[tm[3]] || {}, raw: tm[4] });
+   current.items.push({ top: Number(tm[1]), left: Number(tm[2]), width: Number(tm[3] || 0), font: fonts[tm[4]] || {}, raw: tm[5] });
 }
 
 /* ---------------------------------------------------------------- render */
@@ -162,9 +198,9 @@ function glyphTokens(item) {
       if (ch.trim() === '' || ch === NBSP) continue;
       const cp = ch.codePointAt(0);
       const g = GLYPHS[cp];
-      const color = colorClass(item.font.color);
+      const die = g?.shape ? dieFor(g.shape, item.font.color) : null;
       if (g?.symbol) tokens.push({ kind: 'symbol', value: g.symbol });
-      else if (g?.shape && DICE[g.shape][color]) tokens.push({ kind: 'dice', value: DICE[g.shape][color] });
+      else if (die) tokens.push({ kind: 'dice', value: die });
       else if (g?.power) tokens.push({ kind: 'power', value: g.power });
       else if (g?.modifier) tokens.push({ kind: 'modifier', value: g.modifier });
       else tokens.push({ kind: 'unknown', value: `[[glyph U+${cp.toString(16).toUpperCase()} ${item.font.color}]]` });
@@ -180,13 +216,23 @@ function styled(raw) {
 
 function renderPage(page) {
    const items = page.items;
-   /* drop dark outline glyphs duplicated under a colored die at the same position */
+   /*
+    * Dice are often drawn twice at the same spot: first an outline glyph in the surrounding text color
+    * (black body text, white sidebar text, a colored caption or header), then the colored fill. Outline
+    * first was true for every stacked pair in EotI, SSE, WftT, Mecatol and SotC (2026-11-11), so keep the
+    * last glyph of a stack. A stack has the same text and width within a quarter glyph width; a real
+    * second die sits a full glyph width away. Same-color stacks (SSE setback squares drawn twice) are the
+    * only case that could hide a real die, so those are counted on stderr.
+    */
+   const stacked = (a, b) => !!(a && b && a.font.symbol && b.font.symbol && a.raw === b.raw && a.width === b.width
+      && Math.abs(a.left - b.left) <= Math.max(1, b.width / 4));
+   let sameColor = 0;
    const keep = items.map((it, i) => {
-      if (!it.font.symbol || colorClass(it.font.color) !== 'black') return true;
-      const twin = [items[i - 1], items[i + 1]].find(o => o && o.font.symbol && o !== it && colorClass(o.font.color) !== 'black'
-         && Math.abs(o.left - it.left) <= 3 && o.raw === it.raw);
-      return !twin;
+      if (!stacked(it, items[i + 1])) return true;
+      if (it.font.color === items[i + 1].font.color) sameColor++;
+      return false;
    });
+   if (sameColor) console.error(`pdf-runs: PDF page ${page.number}: dropped ${sameColor} same-color doubled glyph(s); check the page image if a die count looks low`);
 
    const parts = []; // { text, glyph }
    items.forEach((it, i) => {

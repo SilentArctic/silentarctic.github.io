@@ -33,7 +33,8 @@ mean broken links, missing popovers, or plain text where dice and symbols should
 | power level | `{@combat n}` `{@social n}` `{@general n}` | `{@combat 3}` |
 | reference | `{@type name\|display\|source}` | `{@skill Stealth}`, `{@quality Breach\|Breach 2}`, `{@talent Finesse\|\|rot}` |
 | external link | `{@link url\|display}` | Only for URLs printed in the source. |
-| internal link / filter | `{@genesysref …}` `{@filter …}` | Don't generate these unless asked. |
+| internal link | `{@genesysref …}` | Don't generate unless asked. |
+| filter | `{@filter group\|display\|query}` | A mention of a whole category of items: `{@filter gear\|ammunition upgrades\|source:mass-effect=1;class:ammunition=1}` (source is the pack's `_meta.source.json`). Log each one as a decision. |
 
 - **Dice** names are always the full lowercase names: `boost`, `setback`, `ability`, `difficulty`, `proficiency`, `challenge`.
 - **Symbols:** `{@symbols aa} or {@symbols t}` and `{@symbols aa or t}` are both used. Match the destination's existing style.
@@ -64,7 +65,7 @@ mean broken links, missing popovers, or plain text where dice and symbols should
      2. other packs in the same **set**: packs whose abbreviations share a prefix before `:` (`BOOST:1`…`BOOST:9`; `EotI`, `EotI:SSE`, `EotI:IT`, `EotI:MR`; `RoT`, `RoT:ES`), plus Zynnythryx (`ZGM`, `ZTB`)
      3. CRB
      4. any other pack in scope
-   - Meaning still wins over priority. If a lower-priority pack's item is clearly the one the text means, tag that one and list it under "ℹ Judgment calls".
+   - Meaning still wins over priority. If a lower-priority pack's item is clearly the one the text means, tag that one and log it as a decision in the ledger.
    - `check.js` enforces this. A sourced tag to a pack out of scope is an error, "found in" suggestions follow this priority, and HINTS list their options in this order.
    - Sets are defined in `lib.js` (`packSet`, `SET_ALIASES`). A new set that doesn't share an abbreviation prefix needs a `SET_ALIASES` entry.
 3. **Source.**
@@ -105,7 +106,7 @@ mean broken links, missing popovers, or plain text where dice and symbols should
   - U+F22B7 diamond: purple = difficulty, green = ability
   - U+F22B8 square: light blue = boost, black = setback
   - U+F22BB hexagon: red = challenge, yellow = proficiency
-- **Colored dice are also drawn with a dark outline glyph** at the same spot. `pdf-runs.js` drops these duplicates. Never count them as extra dice, or as setback dice.
+- **Dice are often drawn twice at the same spot:** first an outline glyph in the surrounding text color (black, white in sidebars, a caption or header color), then the fill. `pdf-runs.js` keeps only the fill. Never count outlines as extra dice, or as setback dice. Same-color doubles (setback squares drawn twice) are logged on stderr; check the page image if a die count looks low.
 - **Where the table was confirmed:** visually in Embers of the Imperium. Other books may use different codes, so check the first symbols of a new book against its page image. Anything unknown prints as `[[glyph …]]`.
 - **Letter-coded font "GenesysGlyphsAndDice"** (community books; confirmed in BOOST 9). It uses the client's own letters, and `pdf-runs.js` decodes it too:
   - `s a t f h d` are the result symbols; `k` diamond, `j` square, `l` hexagon are dice (color picks the die, as above).
@@ -167,6 +168,7 @@ The difficulty tag renders **"Average (◆◆) Skill check"**, including the bol
   ```bash
   node -e "const d=require('./api/<pack>.json'); for (const g of ['rule','archetype']) for (const i of d[g]||[]) if (/<word>/i.test(i.name)) console.log(g, '→', i.name)"
   ```
+- **Whole categories** ("any ammunition upgrade") → `{@filter …}` (section 2). Log each.
 - **Every die, symbol, and difficulty.**
 - **Formatting:**
   - Bold runs → `{@b}`.
@@ -204,5 +206,5 @@ Use structure only where the field's schema is varyingDisplay. Plain string arra
 
 ## 9. Judgment calls
 
-- When a mention could reasonably go either way, choose by meaning. List the choice under "ℹ Judgment calls" in the report.
+- When a mention could reasonably go either way, choose by meaning, and log the choice as a decision in the ledger.
 - If the same uncertainty repeats across many items (e.g. "is 'fear' always the rule?"), ask once and apply the answer consistently.

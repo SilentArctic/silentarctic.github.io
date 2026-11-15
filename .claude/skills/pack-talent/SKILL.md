@@ -7,9 +7,11 @@ disable-model-invocation: true
 
 # Talents → content pack
 
+**Recommended effort:** medium (rules text needs judgment (ranked or not, tags, references) but has no image stat blocks).
+
 Arguments: `$ARGUMENTS` (PDF path, printed page or range, destination JSON).
 
-**First**, read `.claude/skills/pack-core/workflow.md` and `.claude/skills/pack-core/tagging.md`, and follow the workflow step by step. This file only adds what's specific to talents.
+**First**, read `.claude/skills/pack-core/workflow.md` and `.claude/skills/pack-core/tagging.md` (skip a file only if its full text is still in your context, e.g. earlier in a `/pack-core` run; re-read it after any context summary), and follow the workflow step by step. This file only adds what's specific to talents.
 
 ## Writes
 
@@ -33,7 +35,7 @@ Each talent has a bold name heading, a stat block (**Tier**, **Activation**, **R
 | Activation: Active (Action) | `"active (action)"` |
 | Ranked: Yes / No | `ranked: true / false` |
 | Description paragraphs | `description`: one tagged string per paragraph |
-| Italic prerequisite sentence | Keep it in `description` as `{@i …}` with the archetype/rule tags inside. Also list the names in `prerequisites`: `["Gashlai", "N'orr", "Yin Brotherhood"]` |
+| Italic prerequisite sentence | Keep it in `description` as `{@i …}` with the archetype/rule tags inside. Set `prerequisites: true` (right after `ranked`) for any "must have … to benefit from this talent" sentence, whether it asks for a talent or skill ranks. Use a names array (`["Gashlai", "N'orr", "Yin Brotherhood"]`) only for species and faction prerequisites. |
 
 - Any other activation wording, or a tier outside 1–5, is a ⚠ schema gap. Propose the closest value and ask.
 - **`tags`** (filter tags): pick from the enum in `talent_tags_sub_schema.json`. Tags exist to *find* talents, so be generous and include every tag that applies.
@@ -50,7 +52,8 @@ Each talent has a bold name heading, a stat block (**Tier**, **Activation**, **R
     - faction/species prerequisite → `allegiance`
     - story-driven use → `narrative`
   - **Before choosing,** compare with the most similar existing talents in the destination, then CRB, and mirror their tags. List your picks as a judgment call.
-- **`prerequisites`:** add any name that isn't already in `_meta.filters.talentPrereqs` (EotI does this for species and factions).
+- **`ranked`:** `true` only if the text scales with the talent's own ranks ("per rank of X", "ranks in X", "each additional rank"); otherwise `false`. This wins over the printed Ranked line and over any summary table. Check every talent, and log each change from the printed value as an auto-resolved E# citing this rule.
+- **`prerequisites` names array:** add any name that isn't already in `_meta.filters.talentPrereqs` (EotI does this for species and factions).
 - **`settings`:** omit unless the book limits the talent to specific settings that differ from the pack default.
 
 ## Tagging notes
@@ -62,7 +65,6 @@ Each talent has a bold name heading, a stat block (**Tier**, **Activation**, **R
 ## Consistency checks (⚠ when they fail)
 
 - The Activation line should agree with the text. For example, "may use this talent as a maneuver" doesn't fit `Activation: Active (Action)`.
-- "Ranked: No", yet the text scales "per rank" (or the reverse).
 - An (Improved)/(Supreme) talent's tier should be higher than its base talent's.
 
 ## Exemplars

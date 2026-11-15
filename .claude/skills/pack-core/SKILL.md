@@ -1,11 +1,13 @@
 ---
 name: pack-core
-description: Import a whole book (or a large page range) into a GenesysRef content pack across every item type in one run. It surveys the pages once, asks every question up front, then runs each /pack-* type skill in dependency order, pausing for review after each type. Usage /pack-core <pdf-path> <printed-pages|all> <destination-json>
+description: Import a whole book (or a large page range) into a GenesysRef content pack across every item type in one run. It surveys the pages once, asks every question up front, then runs each /pack-* type skill in dependency order, with one ledger review at the end. Usage /pack-core <pdf-path> <printed-pages|all> <destination-json>
 argument-hint: <pdf-path> <printed-pages|all> <destination-json>
 disable-model-invocation: true
 ---
 
 # Whole-book import
+
+**Recommended effort:** high (it surveys the whole book and orchestrates every type; each type's report names the next type's recommended level).
 
 Arguments: `$ARGUMENTS` (PDF path, printed page range or `all`, destination JSON).
 
@@ -74,20 +76,19 @@ Stage, tag, check, and merge one type at a time. Merging each type before the ne
 `book` items are never part of this run: they are a manual-only special case (`/pack-book`). Skip types the book doesn't have. If a rule's text links to gear or talents, move `rule` after them: whatever an item links to is imported before it.
 
 For each type:
-1. Read that type's `SKILL.md`, schema, and exemplars (workflow step 1.3–1.4).
+1. Read that type's `SKILL.md`, schema, and exemplars (workflow step 1.3–1.4). Don't re-read `workflow.md` or `tagging.md` while their full text is still in your context; re-read them after any context summary.
 2. Stage to `<scratchpad>/pack/<dest-basename>.<n>-<type>.staged.json`. A small generator script is fine for repetitive items.
 3. Tag, run `check.js`, judge each hint, and do the `merge.js --dry-run` preview (workflow steps 5–7).
-4. **Pause for review.** Show that type's report:
-   - Items added, and update candidates.
-   - Print only the short summary and counts (workflow step 7) and point to `WORK_LEDGER.<json>.md`, which holds that type's new entries.
-   - Wait for the user's reply ("fix E3", "change D2", "ok").
-   - Apply the fixes, then merge.
-   - If the user asked to run straight through without pauses, skip the wait. The tables are still shown.
+4. **Short report, then continue.** The user reviews the ledger once at the end (§5), not per type.
+   - Print the type's short summary and counts (workflow step 7), then merge.
+   - Still stop for questions as they come up, and for updates to existing items shown by the dry run.
+   - Name the next type and its **Recommended effort** ("next: adversary, recommended effort high"). If that differs from the current level, wait so the user can change the session's effort setting.
 5. Update `_meta.filters` if needed (workflow step 8).
 
 ## 5. Finish
 
-- Run `bump-version.js` **once**, after the last merge.
+- **Ledger review.** Point the user to `WORK_LEDGER.<json>.md` and wait. Apply their replies ("fix E3", "change D2", ticked boxes) to the merged pack exactly as workflow step 7 says (`patch.js`, or a fresh copy of the item re-staged and merged with `--replace`). Never re-merge the earlier types' staging files: they predate later fixes and would undo them.
+- Run `bump-version.js` **once**, after the last change.
 - Run a final `check.js` against the whole pack. Two SCHEMA errors about `$schema` and `_meta` "is not an array" are expected when the pack itself is checked as a staging file.
 - **Final summary:**
   - Items per group.
@@ -106,4 +107,4 @@ Page by page, forward links are everywhere:
 
 In dependency order, none of those links broke.
 
-The cost is that decisions pile up between stops. The per-type pause and the ledger exist because the single end-of-run report of that first attempt left out about 20 decisions.
+The cost is that decisions pile up between stops. The ledger exists because the single end-of-run chat report of that first attempt left out about 20 decisions. Reviewing at the end works because the ledger, not the chat, holds every decision.

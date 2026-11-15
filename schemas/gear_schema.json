@@ -15,6 +15,7 @@
                "armor",
                "artifact",
                "attachment",
+               "vehicle attachment",
                "cybernetic",
                "g-mod",
                "gear",
@@ -22,7 +23,8 @@
                "magic",
                "mount",
                "treasure",
-               "weapon"
+               "weapon",
+               "vehicle weapon"
             ],
             "description": "Gear type. Each type adds its own fields."
          },
@@ -60,7 +62,8 @@
                   "enum": [
                      "priceless",
                      "n/a",
-                     "if you have to ask..."
+                     "if you have to ask...",
+                     "varies"
                   ]
                }
             ]
@@ -161,7 +164,10 @@
             "special",
             "defense",
             "soak",
-            "qualities"
+            "qualities",
+            "pricePerSilhouette",
+            "silhouetteMin",
+            "silhouetteMax"
          ]
       },
       "allOf": [
@@ -485,6 +491,150 @@
                   "hardPoints"
                ],
                "optional": [
+                  "qualities"
+               ]
+            }
+         },
+         {
+            "if": {
+               "required": [
+                  "type"
+               ],
+               "properties": {
+                  "type": {
+                     "const": "vehicle attachment"
+                  }
+               }
+            },
+            "then": {
+               "properties": {
+                  "hardPoints": {
+                     "type": [
+                        "string",
+                        "integer"
+                     ],
+                     "description": "Hard points the attachment uses. Use \"varies\" when it depends on the vehicle or option.",
+                     "x-hb": { "span": 1 }
+                  },
+                  "pricePerSilhouette": {
+                     "title": "Price per silhouette",
+                     "type": "boolean",
+                     "description": "Whether the price is multiplied by the vehicle's silhouette."
+                  }
+               },
+               "required": [
+                  "hardPoints"
+               ],
+               "optional": [
+                  "pricePerSilhouette"
+               ]
+            }
+         },
+         {
+            "if": {
+               "required": [
+                  "type"
+               ],
+               "properties": {
+                  "type": {
+                     "const": "vehicle weapon"
+                  }
+               }
+            },
+            "then": {
+               "properties": {
+                  "skill": {
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "type": "string",
+                           "description": "Skill used to attack."
+                        },
+                        "source": {
+                           "type": "string",
+                           "description": "Source abbreviation (example: CRB). Omit if it's in this content pack.",
+                           "x-hb": { "span": 1 }
+                        }
+                     },
+                     "required": [
+                        "name"
+                     ],
+                     "optional": [
+                        "source"
+                     ],
+                     "additionalProperties": false
+                  },
+                  "damage": {
+                     "type": "integer",
+                     "description": "Weapon damage."
+                  },
+                  "critical": {
+                     "type": "integer",
+                     "description": "Critical rating: Advantage needed to trigger a critical hit."
+                  },
+                  "range": {
+                     "type": "string",
+                     "enum": [
+                        "Engaged",
+                        "Short",
+                        "Medium",
+                        "Long",
+                        "Extreme",
+                        "Strategic"
+                     ],
+                     "description": "Maximum range."
+                  },
+                  "silhouetteMin": {
+                     "title": "Minimum silhouette",
+                     "type": "integer",
+                     "description": "Smallest vehicle silhouette that can mount the weapon."
+                  },
+                  "silhouetteMax": {
+                     "title": "Maximum silhouette",
+                     "type": "integer",
+                     "description": "Largest vehicle silhouette that can mount the weapon."
+                  },
+                  "qualities": {
+                     "type": "array",
+                     "description": "Weapon qualities.",
+                     "items": {
+                        "type": "object",
+                        "properties": {
+                           "name": {
+                              "type": "string",
+                              "description": "Quality name."
+                           },
+                           "ranks": {
+                              "type": "integer",
+                              "description": "Quality ranks. Omit for unranked qualities."
+                           },
+                           "source": {
+                              "type": "string",
+                              "description": "Source abbreviation (example: CRB). Omit if it's in this content pack.",
+                              "x-hb": { "span": 1 }
+                           }
+                        },
+                        "required": [
+                           "name"
+                        ],
+                        "optional": [
+                           "ranks",
+                           "source"
+                        ],
+                        "additionalProperties": false
+                     }
+                  }
+               },
+               "required": [
+                  "skill",
+                  "damage",
+                  "critical",
+                  "range"
+               ],
+               "optional": [
+                  "silhouetteMin",
+                  "silhouetteMax",
+                  "restricted",
                   "qualities"
                ]
             }

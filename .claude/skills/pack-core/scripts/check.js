@@ -61,7 +61,8 @@ if (staged) {
       if (!Array.isArray(items)) continue;
       const list = Array.isArray(effectiveDest[group]) ? effectiveDest[group] : (effectiveDest[group] = []);
       for (const item of items) {
-         const idx = list.findIndex(x => sameName(x?.name, item?.name));
+         const key = lib.nameKey(item, group);
+         const idx = key ? list.findIndex(x => lib.nameKey(x, group) === key) : -1;
          if (idx === -1) list.push(item);
          else list[idx] = item;
       }
@@ -89,10 +90,6 @@ function hint(section, msg) {
    out[section].push(`hint   ${msg}`);
 }
 
-function sameName(a, b) {
-   return typeof a === 'string' && typeof b === 'string' && a.trim().toLowerCase() === b.trim().toLowerCase();
-}
-
 /* ---------------------------------------------------------------- SCHEMA */
 
 const validate = lib.makeValidator();
@@ -113,12 +110,13 @@ if (staged) {
       }
       const seen = new Set();
       for (const item of items) {
-         const key = (item?.name || '').trim().toLowerCase();
-         if (seen.has(key)) error('SCHEMA', `${group}: duplicate staged name ${JSON.stringify(item.name)}`);
+         const key = lib.nameKey(item, group);
+         const name = JSON.stringify(lib.itemName(item, group));
+         if (seen.has(key)) error('SCHEMA', `${group}: duplicate staged name ${name}`);
          seen.add(key);
-         const existing = (dest[group] || []).some(x => sameName(x?.name, item?.name));
-         if (existing) warn('SCHEMA', `${group}[${JSON.stringify(item.name)}] already exists in the destination (update: needs approval + merge --replace)`);
-         if (!existing && item && item.id !== undefined) warn('SCHEMA', `${group}[${JSON.stringify(item.name)}] new items should not carry an "id"`);
+         const existing = !!key && (dest[group] || []).some(x => lib.nameKey(x, group) === key);
+         if (existing) warn('SCHEMA', `${group}[${name}] already exists in the destination (update: needs approval + merge --replace)`);
+         if (!existing && item && item.id !== undefined) warn('SCHEMA', `${group}[${name}] new items should not carry an "id"`);
       }
    }
 }
@@ -513,6 +511,28 @@ function lintHygiene(str, where, tags) {
    for (const m of outside.matchAll(/\bTables?\s+[IVX]*\.?\d+(\.\d+)?-\d+/g)) {
       warn('HYGIENE', `${where}: untagged table reference → {@table …}: ${snippet(str, m.index, m.index + m[0].length)}`);
    }
+   if (!allMode) lintOxfordComma(str, where);
+}
+
+/*
+ * Possible missing Oxford comma: "A, B and C" → "A, B, and C" (workflow step 3).
+ * Heuristic: a short segment (1–3 words or tags) between a comma and "and"/"or",
+ * not starting with a word that usually opens a clause. Staged runs only, since
+ * older pack text predates the rule.
+ */
+const CLAUSE_START = new Set(('you your they their he his she her it its we our this that these those which who whom whose ' +
+   'if when whenever then but so as while although though because once after before until unless where whereas ' +
+   'however instead otherwise also even only just each every both either neither such and or nor').split(' '));
+function lintOxfordComma(str, where) {
+   const TOK = String.raw`(?:\{@[^{}]*\}|[A-Za-z0-9][\w'-]*)`;
+   const re = new RegExp(String.raw`${TOK}, (${TOK}(?: ${TOK}){0,2}) (?:and|or) ${TOK}`, 'g');
+   for (const m of str.matchAll(re)) {
+      const first = m[1].match(/^\{@\S+\s+([^}|]*)|^(\S+)/);
+      const word = (first[1] ?? first[2] ?? '').split(/\s/)[0].toLowerCase();
+      if (CLAUSE_START.has(word)) continue;
+      if (/\b(?:and|or)$/i.test(m[1])) continue;
+      warn('HYGIENE', `${where}: possible missing Oxford comma (fix and log as T# if it's a list): ${snippet(str, m.index, m.index + m[0].length)}`);
+   }
 }
 
 /**
@@ -614,16 +634,17 @@ for (const [group, items] of Object.entries(groupsToLint)) {
    for (const item of items) {
       if (!item || typeof item !== 'object') continue;
       itemCount++;
-      const label = `${group}[${JSON.stringify(item.name ?? '?')}]`;
+      const own = lib.itemName(item, group);
+      const label = `${group}[${JSON.stringify(own ?? '?')}]`;
 
       if (item.page === undefined && !['adversaryAbility', 'archetypeAbility', 'spellEffects', 'book', 'adventure'].includes(group)) {
          warn('SCHEMA', `${label}: no "page"`);
       }
 
       const ownNames = new Set();
-      if (typeof item.name === 'string') {
-         ownNames.add(item.name.toLowerCase());
-         ownNames.add(item.name.replace(/\s*\(.*\)\s*$/, '').toLowerCase());
+      if (typeof own === 'string') {
+         ownNames.add(own.toLowerCase());
+         ownNames.add(own.replace(/\s*\(.*\)\s*$/, '').toLowerCase());
       }
 
       walkStrings(item, [], (str, pathArr) => {

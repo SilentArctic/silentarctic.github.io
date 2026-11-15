@@ -1,6 +1,7 @@
 {
    "$id": "https://silentarctic.github.io/schemas/varyingDisplay_sub_schema.json",
    "type": "array",
+   "x-hb": { "widget": "paragraphs" },
    "items": {
       "oneOf": [
          {
@@ -91,7 +92,8 @@
             "properties": {
                "type": {
                   "type": "string",
-                  "enum": ["notice"]
+                  "enum": ["notice"],
+                  "x-hb": { "hidden": true }
                },
                "variant": {
                   "type": "string",
@@ -129,7 +131,8 @@
             "properties": {
                "type": {
                   "type": "string",
-                  "enum": ["quote"]
+                  "enum": ["quote"],
+                  "x-hb": { "hidden": true }
                },
                "entries": {
                   "type": "array",
@@ -244,7 +247,8 @@
             "properties": {
                "type": {
                   "type": "string",
-                  "enum": ["table"]
+                  "enum": ["table"],
+                  "x-hb": { "hidden": true }
                },
                "page": {
                   "type": "integer",
@@ -341,7 +345,8 @@
             "properties": {
                "type": {
                   "type": "string",
-                  "enum": ["grid"]
+                  "enum": ["grid"],
+                  "x-hb": { "hidden": true }
                },
                "columns": {
                   "type": "integer",
@@ -367,7 +372,8 @@
             "properties": {
                "type": {
                   "type": "string",
-                  "enum": ["image"]
+                  "enum": ["image"],
+                  "x-hb": { "hidden": true }
                },
                "imageUrl": {
                   "title": "Image URL",
@@ -397,7 +403,8 @@
             "properties": {
                "type": {
                   "type": "string",
-                  "enum": ["rule"]
+                  "enum": ["rule"],
+                  "x-hb": { "hidden": true }
                },
                "_ref": {
                   "type": "object",

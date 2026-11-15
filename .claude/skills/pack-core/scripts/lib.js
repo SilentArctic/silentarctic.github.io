@@ -131,6 +131,21 @@ function refScope(packs, pack) {
    return [pack, ...all.sort((x, y) => rank(x) - rank(y))];
 }
 
+/* an item's key: its name, or `spell` for spellEffects (which have no name) */
+function itemName(item, group) {
+   return group === 'spellEffects' ? item?.spell : item?.name;
+}
+
+/* THE name-matching rule (trimmed, case-insensitive), shared by every script; '' for a non-string */
+function normName(name) {
+   return typeof name === 'string' ? name.trim().toLowerCase() : '';
+}
+
+/* an item's matching key; '' when it has no name */
+function nameKey(item, group) {
+   return normName(itemName(item, group));
+}
+
 /* Map<group, Map<lowerName, originalName>> */
 function buildNameIndex(data) {
    const index = new Map();
@@ -138,7 +153,8 @@ function buildNameIndex(data) {
       if (!Array.isArray(items)) continue;
       const names = new Map();
       for (const item of items) {
-         if (item && typeof item.name === 'string') names.set(item.name.trim().toLowerCase(), item.name);
+         const name = itemName(item, group);
+         if (typeof name === 'string') names.set(normName(name), name);
       }
       index.set(group, names);
    }
@@ -150,7 +166,7 @@ function packHas(pack, type, name) {
    if (!pack) return false;
    const names = pack.names.get(type);
    if (!names) return false;
-   const lower = name.trim().toLowerCase();
+   const lower = normName(name);
    if (type === 'table') return names.has(`table ${lower}`) || names.has(lower);
    return names.has(lower);
 }
@@ -184,7 +200,8 @@ function describeDataPath(collection, dataPath) {
    if (!match) return dataPath || '(root)';
    const [, group, index, rest] = match;
    const item = collection?.[group]?.[Number(index)];
-   const label = item && typeof item.name === 'string' ? JSON.stringify(item.name) : `#${index}`;
+   const name = itemName(item, group);
+   const label = typeof name === 'string' ? JSON.stringify(name) : `#${index}`;
    return `${group}[${label}]${rest}`;
 }
 
@@ -353,6 +370,9 @@ module.exports = {
    packTier,
    packSet,
    refScope,
+   itemName,
+   normName,
+   nameKey,
    buildNameIndex,
    packHas,
    whereIs,

@@ -7,11 +7,13 @@ disable-model-invocation: true
 
 # Book item → content pack
 
+**Recommended effort:** medium (a whole-book table of contents with many links, but little judgment per entry).
+
 Arguments: `$ARGUMENTS` (PDF path, printed page or range, destination JSON).
 
 A `book` item represents the **entire source material** (an actual book/PDF) as a table of contents laid out in GenesysRef-readable entries. It is a special case: **run it manually only**, and it is **not** part of `/pack-core`.
 
-**First**, read `.claude/skills/pack-core/workflow.md` and `.claude/skills/pack-core/tagging.md`, and follow the workflow step by step. This file only adds what's specific to book items.
+**First**, read `.claude/skills/pack-core/workflow.md` and `.claude/skills/pack-core/tagging.md` (skip a file only if its full text is still in your context, e.g. earlier in a `/pack-core` run; re-read it after any context summary), and follow the workflow step by step. This file only adds what's specific to book items.
 
 ## Core rule: no duplicated text
 

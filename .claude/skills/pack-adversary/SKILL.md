@@ -7,9 +7,11 @@ disable-model-invocation: true
 
 # Adversaries → content pack
 
+**Recommended effort:** high (values are read from page images and number-heavy stat blocks or tables, where a misread digit is a data error).
+
 Arguments: `$ARGUMENTS` (PDF path, printed page or range, destination JSON).
 
-**First**, read `.claude/skills/pack-core/workflow.md` and `.claude/skills/pack-core/tagging.md`, and follow the workflow step by step. This file only adds what's specific to adversaries.
+**First**, read `.claude/skills/pack-core/workflow.md` and `.claude/skills/pack-core/tagging.md` (skip a file only if its full text is still in your context, e.g. earlier in a `/pack-core` run; re-read it after any context summary), and follow the workflow step by step. This file only adds what's specific to adversaries.
 
 ## Writes
 
@@ -77,6 +79,7 @@ Arguments: `$ARGUMENTS` (PDF path, printed page or range, destination JSON).
   - No mapping and no obvious catalog match → leave it untagged and list it as a judgment call.
 - **Variants:**
   - The base profile gets `hasVariants: true`.
+  - `page`: a variant split out of the base's stat block takes the base's page. A variant with its own stat block (the EotI faction variants) takes the printed page of that stat block.
   - Each variant is a full entry named `"Base (Variant)"` with `variant: true`: modifications applied to the stats, plus the modification text in `description` (see EotI "Combat Pilot (Argent Flight)").
   - If the book prints only the modifications, confirm this convention with the user before expanding them.
 - Named unique characters get `npc: true`.

@@ -103,8 +103,9 @@ Use all three sources for every page.
   - Remove soft hyphens and collapse whitespace.
   - When it isn't clear whether a hyphen at a line break is real, log the choice as a decision.
 - **Typos and printing errors.**
-  - **Fix obvious typos** without asking, use the corrected text in the data, and log each as a typo (T#): missing or extra apostrophes, missing plurals or plurals that shouldn't be, misspellings, missing words, and established words spelled one way in most places and differently in a few.
-  - **Don't fix** anything else: numbers, stat values, names, capitalization that might be intentional, wording or grammar choices, and stray spacing inside quotes. Keep them as printed and log them as printing errors (E#) with a proposed fix. They're corrected only when the user approves.
+  - **Fix obvious typos** without asking, use the corrected text in the data, and log each as a typo (T#): missing or extra apostrophes, missing plurals or plurals that shouldn't be, misspellings, missing words, established words spelled one way in most places and differently in a few, and a missing Oxford comma.
+  - **Oxford comma.** Prefer it. In a list of three or more items joined by "and" or "or", add the comma before the conjunction when the source leaves it out ("Brawl, Melee and Ranged" → "Brawl, Melee, and Ranged"). Log each instance as its own T# (`Fixed: "Brawl, Melee, and Ranged"`). Don't add one where the words after the last comma aren't the list's final item (a new clause, an appositive, or a pair joined as one item, like "salt and pepper").
+  - **Don't fix** anything else: numbers, stat values, names, capitalization that might be intentional, other wording or grammar choices, and stray spacing inside quotes. Keep them as printed and log them as printing errors (E#) with a proposed fix. They're corrected only when the user approves.
 - **Don't add content that isn't printed** (lists, summaries, values copied from another item) without asking. If the user approves, log it as a decision.
 - **Boundaries:** see the guardrail "Stay inside the pages you were given". Report pages read past the range and items skipped at the start.
 - **Other content** on these pages that belongs to other item types (a sidebar, a table, a rule section, qualities…): don't import it. List it under ℹ with the skill that handles it. The exception is a companion group the type skill says it owns (e.g. adversary abilities).
@@ -118,6 +119,7 @@ Use all three sources for every page.
 - Format: `{ "<group>": [ …items… ] }`, with one key per group written.
 - Item rules:
   - Never add `id`.
+  - `name` is in standard title case: capitalize every word except articles, coordinating conjunctions, and short prepositions (a, an, the, and, but, or, nor, of, to, in, on, at, by, for, as), which stay lowercase unless first or last: "Avatar of Justice", "To the Death". Don't keep a book's capitalized "Of" or "The" mid-name. Log a change from the printed casing as an auto-resolved decision.
   - `page` is the printed page of the item's heading.
   - Omit `settings` unless the source ties the item to settings that differ from `_meta.defaultItemSettings`. Ask if unsure.
   - Key order matches existing items (usually `name`, `page`, then the type's fields, with `description` last or near-last).
@@ -132,6 +134,25 @@ Use all three sources for every page.
 Apply `.claude/skills/pack-core/tagging.md` to every prose string. This is the bulk of the work, so be thorough and consistent.
 
 ## 6. Check
+
+First, proofread the staging against the book:
+
+1. **Numbers against the image.** Open each page image again and compare every staged number and short stat value with it, one item at a time:
+   - characteristics, soak, wounds, strain, defense, power levels, skill ranks
+   - weapon damage, critical, range, and quality ranks
+   - vehicle profiles, archetype thresholds and XP, gear rows, price, rarity, and encumbrance
+   `pdftotext` and `pdf-runs.js` can scramble stat-block columns, and `pdf-compare.js` doesn't check these values, so the image is the only check. Log each correction as a decision ("corrected from the image").
+2. **Wording against the PDF:**
+   ```bash
+   node .claude/skills/pack-core/scripts/pdf-compare.js --dest "<staged>" --pdf "<pdf>" --pages <printed pages> --offset <PDF page − printed page>
+   ```
+   - It lists TEXT (word differences), STATS (adversary skill, talent, and ability names and ranks), PAGE (the name isn't on its page), and MISS (prose it couldn't find).
+   - Each finding is a lead. Check it against the page image.
+   - Fix real slips. Log genuine source issues as T# or E# (step 3).
+   - Expect leads from your own normalizations and typo fixes.
+   - It takes a few seconds, so re-run it after large edits.
+
+Then lint:
 
 ```bash
 node .claude/skills/pack-core/scripts/check.js "<staged>" --dest <dest>
@@ -170,13 +191,21 @@ Ledger: WORK_LEDGER.<json>.md — 3 decisions (1 needs attention), 2 uncertainti
 
 - Ask in chat only about things that first appear at this step, such as updates to existing items shown by the dry run. Ask them all (several AskUserQuestion calls if needed) and wait.
 - Otherwise merge straight away (steps 8–9).
-- When the user later says which boxes are ticked (or replies "fix E3, change D2, undo T4, undo D9"): apply them in staging, re-run step 6, merge with `--replace` for the affected items, then bump the version once.
+- When the user later says which boxes are ticked (or replies "fix E3, change D2, undo T4, undo D9"), apply them to the **merged pack**. Never re-merge an older staging file: it would silently undo every `patch.js` fix and hand edit made since it was staged.
+  - **Text and value changes:** `patch.js` ops (span-limited and verified; nothing is written if a check fails). Combine several changes to one string into one `set`.
+  - **Restructuring an item** (adding, removing, or reordering entries): print the item from the pack, stage that fresh copy with the change, re-run step 6 on it, and merge with `--replace "<name>"`.
+  - **Renaming an item:** a `patch.js` op on `path: "name"`. Name the item by its old name in every op of that run, including later ops on the same item. `patch.js` refuses a new name that clashes with another item in the group. Links resolve by name, so search `api/` for the old name and fix every tag or string ref to it in the same run (`check.js` REFS errors show the ones inside this pack).
+  - Then run `check.js` on the pack and bump the version once (step 9).
 
 ### The ledger file
 
 `WORK_LEDGER.<json>.md` at the repo root, where `<json>` is the destination's `_meta.source.json` (e.g. `WORK_LEDGER.book-of-online-sourced-triumphs-6-space-fantasy.md`), so different sources never collide. Create it if missing, otherwise append. **Delete it once the user has settled it** (never commit it). Numbers continue across types and runs (D1…, U1…, E1…, T1…).
 
-A ⚠ anywhere in the `pack-*` skills means a needs-attention ledger entry.
+A ⚠ anywhere in the `pack-*` skills means a needs-attention ledger entry. Likewise, wherever a skill or `tagging.md` says "judgment call", "report it", or "list it" about a choice you made, that's a ledger Decision (needs attention if there's a real alternative). Only content you didn't import (ℹ other content) stays in the chat report.
+
+**The user reviews the whole ledger once, at the end of the pack**, not after each type. So write every entry to stand on its own:
+- When a later item reuses or depends on an earlier decision (a mapping, a name, a link target), add that item to the original entry's Locations instead of writing a new entry. An end-of-run fix must reach every place it applies.
+- The Alternatives say exactly what would change, so a fix can be applied with `patch.js` after everything is merged.
 
 - **Sections, in this order:** `## Decisions`, `## Uncertainties`, `## Printing errors`, `## Typos`. Omit empty sections.
   - Decision: a choice made, with or without asking (tagging, structure, schema gap, unprinted value, a link, the user's answer to a question).
@@ -189,25 +218,25 @@ A ⚠ anywhere in the `pack-*` skills means a needs-attention ledger entry.
 ```
 - D37: Unmatched items left unlinked: security tunic, tailored tunic
   - Location:
-    - adversary > Yortin Fleinn > gear
-    - adversary > Anju > gear
+    - adversary > Yortin Fleinn > gear (p.87)
+    - adversary > Anju > gear (p.88)
   - Alternatives:
     - [ ] Link tailored tunic -> Ship's Suit (Tailored)
 
 - E35: Flare pistol printed as Pierce 2; the gear item has Pierce 1
   - Location:
-    - adversary > Sharan Joels > weapons
+    - adversary > Sharan Joels > weapons (p.89)
   - Kept: as printed
   - [ ] Fix -> Pierce 1
 
 - T24: "weapons dawn"
   - Location:
-    - adventure > The Sapphire Lily > chapters > Encounter 2
+    - adventure > The Sapphire Lily > chapters > Encounter 2 (p.112)
   - Fixed: "drawn"
   - [ ] Undo?
 ```
 
-- **Location is a pseudo-path, one bullet per place**: `group > item name > field`, then chapter or section titles for nested text (`adventure > The Sapphire Lily > chapters > Scene 2`). Not the printed page number; put the page in the text only when it matters.
+- **Location is a pseudo-path plus the page, one bullet per place**: `group > item name > field`, then chapter or section titles for nested text, ending with the printed page where that text appears (`adventure > The Sapphire Lily > chapters > Scene 2 (p.112)`). Use the printed page, not the PDF index.
 - The ledger is complete. Never shorten it to "about 15 typos".
 
 ## 8. Merge
